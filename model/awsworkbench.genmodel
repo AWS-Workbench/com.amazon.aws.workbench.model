@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/com.amazon.aws.workbench.model/src-gen" creationIcons="false"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
+    modelDirectory="/com.amazon.aws.workbench.model/src-gen" creationIcons="false"
     editDirectory="/com.amazon.aws.workbench.model.edit/src-gen" editorDirectory="/com.amazon.aws.workbench.model.editor/src-gen"
     modelPluginID="com.amazon.aws.workbench.model" modelName="Awsworkbench" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
     codeFormatting="true" importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0"
@@ -9,6 +10,39 @@
   <testsDirectory xsi:nil="true"/>
   <genPackages prefix="Awsworkbench" basePackage="com.amazon.aws.workbench.model"
       disposableProviderFactory="true" ecorePackage="awsworkbench.ecore#/">
-    <genClasses ecoreClass="awsworkbench.ecore#//MyClass"/>
+    <nestedGenPackages prefix="Datatypes" disposableProviderFactory="true" ecorePackage="awsworkbench.ecore#//datatypes">
+      <nestedGenPackages prefix="Java" disposableProviderFactory="true" ecorePackage="awsworkbench.ecore#//datatypes/java">
+        <nestedGenPackages prefix="Lang" disposableProviderFactory="true" ecorePackage="awsworkbench.ecore#//datatypes/java/lang">
+          <genDataTypes ecoreDataType="awsworkbench.ecore#//datatypes/java/lang/Number"/>
+        </nestedGenPackages>
+      </nestedGenPackages>
+    </nestedGenPackages>
+    <nestedGenPackages prefix="Builders" disposableProviderFactory="true" ecorePackage="awsworkbench.ecore#//builders">
+      <genClasses ecoreClass="awsworkbench.ecore#//builders/VpcBuilder">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//builders/VpcBuilder/cidr"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//builders/VpcBuilder/enableDnsHostnames"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//builders/VpcBuilder/enableDnsSupport"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//builders/VpcBuilder/maxAzs"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//builders/VpcBuilder/natGateways"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//builders/VpcBuilder/vpnGateway"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//builders/VpcBuilder/vpnGatewayAsn"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//builders/VpcBuilder/generatedClassName"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//builders/VpcBuilder/varName"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//builders/VpcBuilder/identifier"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//builders/VpcBuilder/additionalCode"/>
+      </genClasses>
+      <genClasses ecoreClass="awsworkbench.ecore#//builders/AppBuilder">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//builders/AppBuilder/autoSynth"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//builders/AppBuilder/outdir"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//builders/AppBuilder/runtimeInfo"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//builders/AppBuilder/stackTraces"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//builders/AppBuilder/treeMetadata"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//builders/AppBuilder/generatedClassName"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//builders/AppBuilder/varName"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//builders/AppBuilder/identifier"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//builders/AppBuilder/additionalCode"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference awsworkbench.ecore#//builders/AppBuilder/vpcbuilder"/>
+      </genClasses>
+    </nestedGenPackages>
   </genPackages>
 </genmodel:GenModel>

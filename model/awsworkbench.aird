@@ -5,7 +5,7 @@
     <semanticResources>awsworkbench.genmodel</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_VofkoLm_EeqNlJ9l2PQxgA">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']"/>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_VpS14Lm_EeqNlJ9l2PQxgA" name="awsworkbench" repPath="#_Vo9esLm_EeqNlJ9l2PQxgA" changeId="eed6adc6-2828-410c-aec2-76ffaf99b00c">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_VpS14Lm_EeqNlJ9l2PQxgA" name="awsworkbench" repPath="#_Vo9esLm_EeqNlJ9l2PQxgA" changeId="0be4247d-f383-4f6e-a1a3-5779c6d181e9">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']"/>
         <target xmi:type="ecore:EPackage" href="awsworkbench.ecore#/"/>
       </ownedRepresentationDescriptors>
@@ -130,6 +130,10 @@
             <children xmi:type="notation:Node" xmi:id="_nWy6A7uOEeqqU-xaXkLupA" type="3010" element="_nWuokruOEeqqU-xaXkLupA">
               <styles xmi:type="notation:FontStyle" xmi:id="_nWy6BLuOEeqqU-xaXkLupA" fontName=".AppleSystemUIFont" fontHeight="8"/>
               <layoutConstraint xmi:type="notation:Location" xmi:id="_nWy6BbuOEeqqU-xaXkLupA"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_T_tEgLvFEeqqU-xaXkLupA" type="3010" element="_T_qoQbvFEeqqU-xaXkLupA">
+              <styles xmi:type="notation:FontStyle" xmi:id="_T_tEgbvFEeqqU-xaXkLupA" fontName=".AppleSystemUIFont" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_T_tEgrvFEeqqU-xaXkLupA"/>
             </children>
             <styles xmi:type="notation:SortingStyle" xmi:id="_nWwdwruOEeqqU-xaXkLupA"/>
             <styles xmi:type="notation:FilteringStyle" xmi:id="_nWwdw7uOEeqqU-xaXkLupA"/>
@@ -329,6 +333,14 @@
         <target xmi:type="ecore:EAttribute" href="awsworkbench.ecore#//builders/VpcBuilder/additionalCode"/>
         <semanticElements xmi:type="ecore:EAttribute" href="awsworkbench.ecore#//builders/VpcBuilder/additionalCode"/>
         <ownedStyle xmi:type="diagram:BundledImage" uid="_nWuok7uOEeqqU-xaXkLupA" labelAlignment="LEFT">
+          <description xmi:type="style:BundledImageDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']"/>
+      </ownedElements>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_T_qoQbvFEeqqU-xaXkLupA" name="defaultInstanceTenancy : DefaultInstanceTenancy = DEFAULT" tooltipText="">
+        <target xmi:type="ecore:EAttribute" href="awsworkbench.ecore#//builders/VpcBuilder/defaultInstanceTenancy"/>
+        <semanticElements xmi:type="ecore:EAttribute" href="awsworkbench.ecore#//builders/VpcBuilder/defaultInstanceTenancy"/>
+        <ownedStyle xmi:type="diagram:BundledImage" uid="_T_qoQrvFEeqqU-xaXkLupA" labelAlignment="LEFT">
           <description xmi:type="style:BundledImageDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']/@style"/>
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']"/>

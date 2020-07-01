@@ -5,6 +5,7 @@ package com.amazon.aws.workbench.model.awsworkbench.builders.impl;
 import com.amazon.aws.workbench.model.awsworkbench.builders.BuildersPackage;
 import com.amazon.aws.workbench.model.awsworkbench.builders.VpcBuilder;
 
+import com.amazon.aws.workbench.model.awsworkbench.enums.DefaultInstanceTenancy;
 import org.eclipse.emf.common.notify.Notification;
 
 import org.eclipse.emf.ecore.EClass;
@@ -31,6 +32,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.builders.impl.VpcBuilderImpl#getVarName <em>Var Name</em>}</li>
  *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.builders.impl.VpcBuilderImpl#getIdentifier <em>Identifier</em>}</li>
  *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.builders.impl.VpcBuilderImpl#getAdditionalCode <em>Additional Code</em>}</li>
+ *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.builders.impl.VpcBuilderImpl#getDefaultInstanceTenancy <em>Default Instance Tenancy</em>}</li>
  * </ul>
  *
  * @generated
@@ -255,6 +257,26 @@ public class VpcBuilderImpl extends MinimalEObjectImpl.Container implements VpcB
 	 * @ordered
 	 */
 	protected String additionalCode = ADDITIONAL_CODE_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getDefaultInstanceTenancy() <em>Default Instance Tenancy</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getDefaultInstanceTenancy()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final DefaultInstanceTenancy DEFAULT_INSTANCE_TENANCY_EDEFAULT = DefaultInstanceTenancy.DEFAULT;
+
+	/**
+	 * The cached value of the '{@link #getDefaultInstanceTenancy() <em>Default Instance Tenancy</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getDefaultInstanceTenancy()
+	 * @generated
+	 * @ordered
+	 */
+	protected DefaultInstanceTenancy defaultInstanceTenancy = DEFAULT_INSTANCE_TENANCY_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -544,6 +566,31 @@ public class VpcBuilderImpl extends MinimalEObjectImpl.Container implements VpcB
 	 * @generated
 	 */
 	@Override
+	public DefaultInstanceTenancy getDefaultInstanceTenancy() {
+		return defaultInstanceTenancy;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setDefaultInstanceTenancy(DefaultInstanceTenancy newDefaultInstanceTenancy) {
+		DefaultInstanceTenancy oldDefaultInstanceTenancy = defaultInstanceTenancy;
+		defaultInstanceTenancy = newDefaultInstanceTenancy == null ? DEFAULT_INSTANCE_TENANCY_EDEFAULT
+				: newDefaultInstanceTenancy;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, BuildersPackage.VPC_BUILDER__DEFAULT_INSTANCE_TENANCY,
+					oldDefaultInstanceTenancy, defaultInstanceTenancy));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 		case BuildersPackage.VPC_BUILDER__CIDR:
@@ -568,6 +615,8 @@ public class VpcBuilderImpl extends MinimalEObjectImpl.Container implements VpcB
 			return getIdentifier();
 		case BuildersPackage.VPC_BUILDER__ADDITIONAL_CODE:
 			return getAdditionalCode();
+		case BuildersPackage.VPC_BUILDER__DEFAULT_INSTANCE_TENANCY:
+			return getDefaultInstanceTenancy();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -612,6 +661,9 @@ public class VpcBuilderImpl extends MinimalEObjectImpl.Container implements VpcB
 			return;
 		case BuildersPackage.VPC_BUILDER__ADDITIONAL_CODE:
 			setAdditionalCode((String) newValue);
+			return;
+		case BuildersPackage.VPC_BUILDER__DEFAULT_INSTANCE_TENANCY:
+			setDefaultInstanceTenancy((DefaultInstanceTenancy) newValue);
 			return;
 		}
 		super.eSet(featureID, newValue);
@@ -658,6 +710,9 @@ public class VpcBuilderImpl extends MinimalEObjectImpl.Container implements VpcB
 		case BuildersPackage.VPC_BUILDER__ADDITIONAL_CODE:
 			setAdditionalCode(ADDITIONAL_CODE_EDEFAULT);
 			return;
+		case BuildersPackage.VPC_BUILDER__DEFAULT_INSTANCE_TENANCY:
+			setDefaultInstanceTenancy(DEFAULT_INSTANCE_TENANCY_EDEFAULT);
+			return;
 		}
 		super.eUnset(featureID);
 	}
@@ -697,6 +752,8 @@ public class VpcBuilderImpl extends MinimalEObjectImpl.Container implements VpcB
 		case BuildersPackage.VPC_BUILDER__ADDITIONAL_CODE:
 			return ADDITIONAL_CODE_EDEFAULT == null ? additionalCode != null
 					: !ADDITIONAL_CODE_EDEFAULT.equals(additionalCode);
+		case BuildersPackage.VPC_BUILDER__DEFAULT_INSTANCE_TENANCY:
+			return defaultInstanceTenancy != DEFAULT_INSTANCE_TENANCY_EDEFAULT;
 		}
 		return super.eIsSet(featureID);
 	}
@@ -734,6 +791,8 @@ public class VpcBuilderImpl extends MinimalEObjectImpl.Container implements VpcB
 		result.append(identifier);
 		result.append(", additionalCode: ");
 		result.append(additionalCode);
+		result.append(", defaultInstanceTenancy: ");
+		result.append(defaultInstanceTenancy);
 		result.append(')');
 		return result.toString();
 	}

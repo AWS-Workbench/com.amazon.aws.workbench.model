@@ -8,6 +8,15 @@
       </eSubpackages>
     </eSubpackages>
   </eSubpackages>
+   <eSubpackages name="enums" nsURI="default.enums" nsPrefix="enums">
+   
+   <eClassifiers xsi:type="ecore:EEnum" name="DefaultInstanceTenancy" instanceClassName="software.amazon.awscdk.services.ec2.DefaultInstanceTenancy">
+              <eLiterals name="DEFAULT" value="0"/>
+              <eLiterals name="DEDICATED" value="1"/>
+   </eClassifiers>
+            
+   
+   </eSubpackages>
   <eSubpackages name="builders" nsURI="default.builders" nsPrefix="builders">
     <eClassifiers xsi:type="ecore:EClass" name="VpcBuilder">
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="cidr" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -22,6 +31,7 @@
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="varName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="identifier" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="additionalCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+       <eStructuralFeatures xsi:type="ecore:EAttribute" name="defaultInstanceTenancy" eType="//enums/DefaultInstanceTenancy"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="AppBuilder">
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="autoSynth" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject"/>

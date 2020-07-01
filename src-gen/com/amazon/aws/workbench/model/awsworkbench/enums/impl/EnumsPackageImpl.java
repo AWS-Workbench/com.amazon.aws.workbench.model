@@ -1,17 +1,20 @@
 /**
  */
-package com.amazon.aws.workbench.model.awsworkbench.datatypes.java.lang.impl;
+package com.amazon.aws.workbench.model.awsworkbench.enums.impl;
 
 import com.amazon.aws.workbench.model.awsworkbench.builders.BuildersPackage;
 
 import com.amazon.aws.workbench.model.awsworkbench.builders.impl.BuildersPackageImpl;
 
-import com.amazon.aws.workbench.model.awsworkbench.datatypes.java.lang.LangFactory;
 import com.amazon.aws.workbench.model.awsworkbench.datatypes.java.lang.LangPackage;
 
+import com.amazon.aws.workbench.model.awsworkbench.datatypes.java.lang.impl.LangPackageImpl;
+
+import com.amazon.aws.workbench.model.awsworkbench.enums.DefaultInstanceTenancy;
+import com.amazon.aws.workbench.model.awsworkbench.enums.EnumsFactory;
 import com.amazon.aws.workbench.model.awsworkbench.enums.EnumsPackage;
-import com.amazon.aws.workbench.model.awsworkbench.enums.impl.EnumsPackageImpl;
-import org.eclipse.emf.ecore.EDataType;
+
+import org.eclipse.emf.ecore.EEnum;
 import org.eclipse.emf.ecore.EPackage;
 
 import org.eclipse.emf.ecore.impl.EPackageImpl;
@@ -22,13 +25,13 @@ import org.eclipse.emf.ecore.impl.EPackageImpl;
  * <!-- end-user-doc -->
  * @generated
  */
-public class LangPackageImpl extends EPackageImpl implements LangPackage {
+public class EnumsPackageImpl extends EPackageImpl implements EnumsPackage {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EDataType numberEDataType = null;
+	private EEnum defaultInstanceTenancyEEnum = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -41,12 +44,12 @@ public class LangPackageImpl extends EPackageImpl implements LangPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see org.eclipse.emf.ecore.EPackage.Registry
-	 * @see com.amazon.aws.workbench.model.awsworkbench.datatypes.java.lang.LangPackage#eNS_URI
+	 * @see com.amazon.aws.workbench.model.awsworkbench.enums.EnumsPackage#eNS_URI
 	 * @see #init()
 	 * @generated
 	 */
-	private LangPackageImpl() {
-		super(eNS_URI, LangFactory.eINSTANCE);
+	private EnumsPackageImpl() {
+		super(eNS_URI, EnumsFactory.eINSTANCE);
 	}
 
 	/**
@@ -59,7 +62,7 @@ public class LangPackageImpl extends EPackageImpl implements LangPackage {
 	/**
 	 * Creates, registers, and initializes the <b>Package</b> for this model, and for any others upon which it depends.
 	 *
-	 * <p>This method is used to initialize {@link LangPackage#eINSTANCE} when that field is accessed.
+	 * <p>This method is used to initialize {@link EnumsPackage#eINSTANCE} when that field is accessed.
 	 * Clients should not invoke it directly. Instead, they should simply access that field to obtain the package.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -68,44 +71,44 @@ public class LangPackageImpl extends EPackageImpl implements LangPackage {
 	 * @see #initializePackageContents()
 	 * @generated
 	 */
-	public static LangPackage init() {
+	public static EnumsPackage init() {
 		if (isInited)
-			return (LangPackage) EPackage.Registry.INSTANCE.getEPackage(LangPackage.eNS_URI);
+			return (EnumsPackage) EPackage.Registry.INSTANCE.getEPackage(EnumsPackage.eNS_URI);
 
 		// Obtain or create and register package
-		Object registeredLangPackage = EPackage.Registry.INSTANCE.get(eNS_URI);
-		LangPackageImpl theLangPackage = registeredLangPackage instanceof LangPackageImpl
-				? (LangPackageImpl) registeredLangPackage
-				: new LangPackageImpl();
+		Object registeredEnumsPackage = EPackage.Registry.INSTANCE.get(eNS_URI);
+		EnumsPackageImpl theEnumsPackage = registeredEnumsPackage instanceof EnumsPackageImpl
+				? (EnumsPackageImpl) registeredEnumsPackage
+				: new EnumsPackageImpl();
 
 		isInited = true;
 
 		// Obtain or create and register interdependencies
-		Object registeredPackage = EPackage.Registry.INSTANCE.getEPackage(EnumsPackage.eNS_URI);
-		EnumsPackageImpl theEnumsPackage = (EnumsPackageImpl) (registeredPackage instanceof EnumsPackageImpl
+		Object registeredPackage = EPackage.Registry.INSTANCE.getEPackage(LangPackage.eNS_URI);
+		LangPackageImpl theLangPackage = (LangPackageImpl) (registeredPackage instanceof LangPackageImpl
 				? registeredPackage
-				: EnumsPackage.eINSTANCE);
+				: LangPackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(BuildersPackage.eNS_URI);
 		BuildersPackageImpl theBuildersPackage = (BuildersPackageImpl) (registeredPackage instanceof BuildersPackageImpl
 				? registeredPackage
 				: BuildersPackage.eINSTANCE);
 
 		// Create package meta-data objects
-		theLangPackage.createPackageContents();
 		theEnumsPackage.createPackageContents();
+		theLangPackage.createPackageContents();
 		theBuildersPackage.createPackageContents();
 
 		// Initialize created meta-data
-		theLangPackage.initializePackageContents();
 		theEnumsPackage.initializePackageContents();
+		theLangPackage.initializePackageContents();
 		theBuildersPackage.initializePackageContents();
 
 		// Mark meta-data to indicate it can't be changed
-		theLangPackage.freeze();
+		theEnumsPackage.freeze();
 
 		// Update the registry and return the package
-		EPackage.Registry.INSTANCE.put(LangPackage.eNS_URI, theLangPackage);
-		return theLangPackage;
+		EPackage.Registry.INSTANCE.put(EnumsPackage.eNS_URI, theEnumsPackage);
+		return theEnumsPackage;
 	}
 
 	/**
@@ -114,8 +117,8 @@ public class LangPackageImpl extends EPackageImpl implements LangPackage {
 	 * @generated
 	 */
 	@Override
-	public EDataType getNumber() {
-		return numberEDataType;
+	public EEnum getDefaultInstanceTenancy() {
+		return defaultInstanceTenancyEEnum;
 	}
 
 	/**
@@ -124,8 +127,8 @@ public class LangPackageImpl extends EPackageImpl implements LangPackage {
 	 * @generated
 	 */
 	@Override
-	public LangFactory getLangFactory() {
-		return (LangFactory) getEFactoryInstance();
+	public EnumsFactory getEnumsFactory() {
+		return (EnumsFactory) getEFactoryInstance();
 	}
 
 	/**
@@ -147,8 +150,8 @@ public class LangPackageImpl extends EPackageImpl implements LangPackage {
 			return;
 		isCreated = true;
 
-		// Create data types
-		numberEDataType = createEDataType(NUMBER);
+		// Create enums
+		defaultInstanceTenancyEEnum = createEEnum(DEFAULT_INSTANCE_TENANCY);
 	}
 
 	/**
@@ -175,11 +178,13 @@ public class LangPackageImpl extends EPackageImpl implements LangPackage {
 		setNsPrefix(eNS_PREFIX);
 		setNsURI(eNS_URI);
 
-		// Initialize data types
-		initEDataType(numberEDataType, Number.class, "Number", IS_SERIALIZABLE, !IS_GENERATED_INSTANCE_CLASS);
+		// Initialize enums and add enum literals
+		initEEnum(defaultInstanceTenancyEEnum, DefaultInstanceTenancy.class, "DefaultInstanceTenancy");
+		addEEnumLiteral(defaultInstanceTenancyEEnum, DefaultInstanceTenancy.DEFAULT);
+		addEEnumLiteral(defaultInstanceTenancyEEnum, DefaultInstanceTenancy.DEDICATED);
 
 		// Create resource
 		createResource(eNS_URI);
 	}
 
-} //LangPackageImpl
+} //EnumsPackageImpl

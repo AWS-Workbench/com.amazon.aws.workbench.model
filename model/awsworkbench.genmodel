@@ -17,6 +17,12 @@
         </nestedGenPackages>
       </nestedGenPackages>
     </nestedGenPackages>
+    <nestedGenPackages prefix="Enums" disposableProviderFactory="true" ecorePackage="awsworkbench.ecore#//enums">
+      <genEnums typeSafeEnumCompatible="false" ecoreEnum="awsworkbench.ecore#//enums/DefaultInstanceTenancy">
+        <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//enums/DefaultInstanceTenancy/DEFAULT"/>
+        <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//enums/DefaultInstanceTenancy/DEDICATED"/>
+      </genEnums>
+    </nestedGenPackages>
     <nestedGenPackages prefix="Builders" disposableProviderFactory="true" ecorePackage="awsworkbench.ecore#//builders">
       <genClasses ecoreClass="awsworkbench.ecore#//builders/VpcBuilder">
         <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//builders/VpcBuilder/cidr"/>
@@ -30,6 +36,7 @@
         <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//builders/VpcBuilder/varName"/>
         <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//builders/VpcBuilder/identifier"/>
         <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//builders/VpcBuilder/additionalCode"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//builders/VpcBuilder/defaultInstanceTenancy"/>
       </genClasses>
       <genClasses ecoreClass="awsworkbench.ecore#//builders/AppBuilder">
         <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//builders/AppBuilder/autoSynth"/>

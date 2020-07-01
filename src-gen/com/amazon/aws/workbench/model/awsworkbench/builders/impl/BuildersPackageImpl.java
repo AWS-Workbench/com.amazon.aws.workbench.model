@@ -11,6 +11,8 @@ import com.amazon.aws.workbench.model.awsworkbench.datatypes.java.lang.LangPacka
 
 import com.amazon.aws.workbench.model.awsworkbench.datatypes.java.lang.impl.LangPackageImpl;
 
+import com.amazon.aws.workbench.model.awsworkbench.enums.EnumsPackage;
+import com.amazon.aws.workbench.model.awsworkbench.enums.impl.EnumsPackageImpl;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
@@ -94,14 +96,20 @@ public class BuildersPackageImpl extends EPackageImpl implements BuildersPackage
 		LangPackageImpl theLangPackage = (LangPackageImpl) (registeredPackage instanceof LangPackageImpl
 				? registeredPackage
 				: LangPackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(EnumsPackage.eNS_URI);
+		EnumsPackageImpl theEnumsPackage = (EnumsPackageImpl) (registeredPackage instanceof EnumsPackageImpl
+				? registeredPackage
+				: EnumsPackage.eINSTANCE);
 
 		// Create package meta-data objects
 		theBuildersPackage.createPackageContents();
 		theLangPackage.createPackageContents();
+		theEnumsPackage.createPackageContents();
 
 		// Initialize created meta-data
 		theBuildersPackage.initializePackageContents();
 		theLangPackage.initializePackageContents();
+		theEnumsPackage.initializePackageContents();
 
 		// Mark meta-data to indicate it can't be changed
 		theBuildersPackage.freeze();
@@ -229,6 +237,16 @@ public class BuildersPackageImpl extends EPackageImpl implements BuildersPackage
 	@Override
 	public EAttribute getVpcBuilder_AdditionalCode() {
 		return (EAttribute) vpcBuilderEClass.getEStructuralFeatures().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getVpcBuilder_DefaultInstanceTenancy() {
+		return (EAttribute) vpcBuilderEClass.getEStructuralFeatures().get(11);
 	}
 
 	/**
@@ -383,6 +401,7 @@ public class BuildersPackageImpl extends EPackageImpl implements BuildersPackage
 		createEAttribute(vpcBuilderEClass, VPC_BUILDER__VAR_NAME);
 		createEAttribute(vpcBuilderEClass, VPC_BUILDER__IDENTIFIER);
 		createEAttribute(vpcBuilderEClass, VPC_BUILDER__ADDITIONAL_CODE);
+		createEAttribute(vpcBuilderEClass, VPC_BUILDER__DEFAULT_INSTANCE_TENANCY);
 
 		appBuilderEClass = createEClass(APP_BUILDER);
 		createEAttribute(appBuilderEClass, APP_BUILDER__AUTO_SYNTH);
@@ -423,6 +442,7 @@ public class BuildersPackageImpl extends EPackageImpl implements BuildersPackage
 
 		// Obtain other dependent packages
 		LangPackage theLangPackage = (LangPackage) EPackage.Registry.INSTANCE.getEPackage(LangPackage.eNS_URI);
+		EnumsPackage theEnumsPackage = (EnumsPackage) EPackage.Registry.INSTANCE.getEPackage(EnumsPackage.eNS_URI);
 
 		// Create type parameters
 
@@ -463,6 +483,9 @@ public class BuildersPackageImpl extends EPackageImpl implements BuildersPackage
 		initEAttribute(getVpcBuilder_AdditionalCode(), ecorePackage.getEString(), "additionalCode", null, 0, 1,
 				VpcBuilder.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
 				!IS_DERIVED, IS_ORDERED);
+		initEAttribute(getVpcBuilder_DefaultInstanceTenancy(), theEnumsPackage.getDefaultInstanceTenancy(),
+				"defaultInstanceTenancy", null, 0, 1, VpcBuilder.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(appBuilderEClass, AppBuilder.class, "AppBuilder", !IS_ABSTRACT, !IS_INTERFACE,
 				IS_GENERATED_INSTANCE_CLASS);

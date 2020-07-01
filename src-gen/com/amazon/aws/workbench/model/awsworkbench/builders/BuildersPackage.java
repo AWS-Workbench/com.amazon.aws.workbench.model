@@ -166,13 +166,22 @@ public interface BuildersPackage extends EPackage {
 	int VPC_BUILDER__ADDITIONAL_CODE = 10;
 
 	/**
+	 * The feature id for the '<em><b>Default Instance Tenancy</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VPC_BUILDER__DEFAULT_INSTANCE_TENANCY = 11;
+
+	/**
 	 * The number of structural features of the '<em>Vpc Builder</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int VPC_BUILDER_FEATURE_COUNT = 11;
+	int VPC_BUILDER_FEATURE_COUNT = 12;
 
 	/**
 	 * The number of operations of the '<em>Vpc Builder</em>' class.
@@ -433,6 +442,17 @@ public interface BuildersPackage extends EPackage {
 	EAttribute getVpcBuilder_AdditionalCode();
 
 	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.builders.VpcBuilder#getDefaultInstanceTenancy <em>Default Instance Tenancy</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Default Instance Tenancy</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.builders.VpcBuilder#getDefaultInstanceTenancy()
+	 * @see #getVpcBuilder()
+	 * @generated
+	 */
+	EAttribute getVpcBuilder_DefaultInstanceTenancy();
+
+	/**
 	 * Returns the meta object for class '{@link com.amazon.aws.workbench.model.awsworkbench.builders.AppBuilder <em>App Builder</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -672,6 +692,14 @@ public interface BuildersPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute VPC_BUILDER__ADDITIONAL_CODE = eINSTANCE.getVpcBuilder_AdditionalCode();
+
+		/**
+		 * The meta object literal for the '<em><b>Default Instance Tenancy</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute VPC_BUILDER__DEFAULT_INSTANCE_TENANCY = eINSTANCE.getVpcBuilder_DefaultInstanceTenancy();
 
 		/**
 		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.builders.impl.AppBuilderImpl <em>App Builder</em>}' class.

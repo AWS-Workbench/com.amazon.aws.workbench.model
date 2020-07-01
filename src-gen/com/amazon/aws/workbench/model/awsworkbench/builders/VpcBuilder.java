@@ -2,6 +2,7 @@
  */
 package com.amazon.aws.workbench.model.awsworkbench.builders;
 
+import com.amazon.aws.workbench.model.awsworkbench.enums.DefaultInstanceTenancy;
 import org.eclipse.emf.ecore.EObject;
 
 /**
@@ -24,6 +25,7 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.builders.VpcBuilder#getVarName <em>Var Name</em>}</li>
  *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.builders.VpcBuilder#getIdentifier <em>Identifier</em>}</li>
  *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.builders.VpcBuilder#getAdditionalCode <em>Additional Code</em>}</li>
+ *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.builders.VpcBuilder#getDefaultInstanceTenancy <em>Default Instance Tenancy</em>}</li>
  * </ul>
  *
  * @see com.amazon.aws.workbench.model.awsworkbench.builders.BuildersPackage#getVpcBuilder()
@@ -273,5 +275,30 @@ public interface VpcBuilder extends EObject {
 	 * @generated
 	 */
 	void setAdditionalCode(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Default Instance Tenancy</b></em>' attribute.
+	 * The literals are from the enumeration {@link com.amazon.aws.workbench.model.awsworkbench.enums.DefaultInstanceTenancy}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Default Instance Tenancy</em>' attribute.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.enums.DefaultInstanceTenancy
+	 * @see #setDefaultInstanceTenancy(DefaultInstanceTenancy)
+	 * @see com.amazon.aws.workbench.model.awsworkbench.builders.BuildersPackage#getVpcBuilder_DefaultInstanceTenancy()
+	 * @model dataType="com.amazon.aws.workbench.model.awsworkbench.enums.DefaultInstanceTenancy"
+	 * @generated
+	 */
+	DefaultInstanceTenancy getDefaultInstanceTenancy();
+
+	/**
+	 * Sets the value of the '{@link com.amazon.aws.workbench.model.awsworkbench.builders.VpcBuilder#getDefaultInstanceTenancy <em>Default Instance Tenancy</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Default Instance Tenancy</em>' attribute.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.enums.DefaultInstanceTenancy
+	 * @see #getDefaultInstanceTenancy()
+	 * @generated
+	 */
+	void setDefaultInstanceTenancy(DefaultInstanceTenancy value);
 
 } // VpcBuilder

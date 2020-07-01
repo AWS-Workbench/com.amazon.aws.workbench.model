@@ -17,6 +17,14 @@
    <extension point="org.eclipse.emf.ecore.generated_package">
       <!-- @generated awsworkbench -->
       <package
+            uri="default.enums"
+            class="com.amazon.aws.workbench.model.awsworkbench.enums.EnumsPackage"
+            genModel="model/awsworkbench.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated awsworkbench -->
+      <package
             uri="default.builders"
             class="com.amazon.aws.workbench.model.awsworkbench.builders.BuildersPackage"
             genModel="model/awsworkbench.genmodel"/>

@@ -10,46 +10,60 @@
   <testsDirectory xsi:nil="true"/>
   <genPackages prefix="Awsworkbench" basePackage="com.amazon.aws.workbench.model"
       disposableProviderFactory="true" ecorePackage="awsworkbench.ecore#/">
-    <nestedGenPackages prefix="Datatypes" disposableProviderFactory="true" ecorePackage="awsworkbench.ecore#//datatypes">
-      <nestedGenPackages prefix="Java" disposableProviderFactory="true" ecorePackage="awsworkbench.ecore#//datatypes/java">
-        <nestedGenPackages prefix="Lang" disposableProviderFactory="true" ecorePackage="awsworkbench.ecore#//datatypes/java/lang">
-          <genDataTypes ecoreDataType="awsworkbench.ecore#//datatypes/java/lang/Number"/>
+    <nestedGenPackages prefix="Awsdiagrams" disposableProviderFactory="true" ecorePackage="awsworkbench.ecore#//awsdiagrams">
+      <nestedGenPackages prefix="Datatypes" disposableProviderFactory="true" ecorePackage="awsworkbench.ecore#//awsdiagrams/datatypes">
+        <nestedGenPackages prefix="Java" disposableProviderFactory="true" ecorePackage="awsworkbench.ecore#//awsdiagrams/datatypes/java">
+          <nestedGenPackages prefix="Lang" disposableProviderFactory="true" ecorePackage="awsworkbench.ecore#//awsdiagrams/datatypes/java/lang">
+            <genDataTypes ecoreDataType="awsworkbench.ecore#//awsdiagrams/datatypes/java/lang/Number"/>
+          </nestedGenPackages>
         </nestedGenPackages>
       </nestedGenPackages>
-    </nestedGenPackages>
-    <nestedGenPackages prefix="Enums" disposableProviderFactory="true" ecorePackage="awsworkbench.ecore#//enums">
-      <genEnums typeSafeEnumCompatible="false" ecoreEnum="awsworkbench.ecore#//enums/DefaultInstanceTenancy">
-        <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//enums/DefaultInstanceTenancy/DEFAULT"/>
-        <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//enums/DefaultInstanceTenancy/DEDICATED"/>
-      </genEnums>
-    </nestedGenPackages>
-    <nestedGenPackages prefix="Builders" disposableProviderFactory="true" ecorePackage="awsworkbench.ecore#//builders">
-      <genClasses ecoreClass="awsworkbench.ecore#//builders/VpcBuilder">
-        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//builders/VpcBuilder/cidr"/>
-        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//builders/VpcBuilder/enableDnsHostnames"/>
-        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//builders/VpcBuilder/enableDnsSupport"/>
-        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//builders/VpcBuilder/maxAzs"/>
-        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//builders/VpcBuilder/natGateways"/>
-        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//builders/VpcBuilder/vpnGateway"/>
-        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//builders/VpcBuilder/vpnGatewayAsn"/>
-        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//builders/VpcBuilder/generatedClassName"/>
-        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//builders/VpcBuilder/varName"/>
-        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//builders/VpcBuilder/identifier"/>
-        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//builders/VpcBuilder/additionalCode"/>
-        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//builders/VpcBuilder/defaultInstanceTenancy"/>
-      </genClasses>
-      <genClasses ecoreClass="awsworkbench.ecore#//builders/AppBuilder">
-        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//builders/AppBuilder/autoSynth"/>
-        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//builders/AppBuilder/outdir"/>
-        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//builders/AppBuilder/runtimeInfo"/>
-        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//builders/AppBuilder/stackTraces"/>
-        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//builders/AppBuilder/treeMetadata"/>
-        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//builders/AppBuilder/generatedClassName"/>
-        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//builders/AppBuilder/varName"/>
-        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//builders/AppBuilder/identifier"/>
-        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//builders/AppBuilder/additionalCode"/>
-        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference awsworkbench.ecore#//builders/AppBuilder/vpcbuilder"/>
-      </genClasses>
+      <nestedGenPackages prefix="Core" disposableProviderFactory="true" ecorePackage="awsworkbench.ecore#//awsdiagrams/core">
+        <genClasses ecoreClass="awsworkbench.ecore#//awsdiagrams/core/AppBuilder">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//awsdiagrams/core/AppBuilder/autoSynth"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//awsdiagrams/core/AppBuilder/outdir"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//awsdiagrams/core/AppBuilder/runtimeInfo"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//awsdiagrams/core/AppBuilder/stackTraces"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//awsdiagrams/core/AppBuilder/treeMetadata"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//awsdiagrams/core/AppBuilder/generatedClassName"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//awsdiagrams/core/AppBuilder/varName"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//awsdiagrams/core/AppBuilder/identifier"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//awsdiagrams/core/AppBuilder/additionalCode"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference awsworkbench.ecore#//awsdiagrams/core/AppBuilder/stackbuilder"/>
+        </genClasses>
+        <genClasses ecoreClass="awsworkbench.ecore#//awsdiagrams/core/StackBuilder">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//awsdiagrams/core/StackBuilder/description"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//awsdiagrams/core/StackBuilder/stackName"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//awsdiagrams/core/StackBuilder/terminationProtection"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//awsdiagrams/core/StackBuilder/generatedClassName"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//awsdiagrams/core/StackBuilder/varName"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//awsdiagrams/core/StackBuilder/identifier"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//awsdiagrams/core/StackBuilder/additionalCode"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference awsworkbench.ecore#//awsdiagrams/core/StackBuilder/vpcbuilder"/>
+        </genClasses>
+      </nestedGenPackages>
+      <nestedGenPackages prefix="Services" disposableProviderFactory="true" ecorePackage="awsworkbench.ecore#//awsdiagrams/services">
+        <nestedGenPackages prefix="Ec2" disposableProviderFactory="true" ecorePackage="awsworkbench.ecore#//awsdiagrams/services/ec2">
+          <genEnums typeSafeEnumCompatible="false" ecoreEnum="awsworkbench.ecore#//awsdiagrams/services/ec2/DefaultInstanceTenancy">
+            <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//awsdiagrams/services/ec2/DefaultInstanceTenancy/DEFAULT"/>
+            <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//awsdiagrams/services/ec2/DefaultInstanceTenancy/DEDICATED"/>
+          </genEnums>
+          <genClasses ecoreClass="awsworkbench.ecore#//awsdiagrams/services/ec2/VpcBuilder">
+            <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//awsdiagrams/services/ec2/VpcBuilder/cidr"/>
+            <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//awsdiagrams/services/ec2/VpcBuilder/enableDnsHostnames"/>
+            <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//awsdiagrams/services/ec2/VpcBuilder/enableDnsSupport"/>
+            <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//awsdiagrams/services/ec2/VpcBuilder/maxAzs"/>
+            <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//awsdiagrams/services/ec2/VpcBuilder/natGateways"/>
+            <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//awsdiagrams/services/ec2/VpcBuilder/vpnGateway"/>
+            <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//awsdiagrams/services/ec2/VpcBuilder/vpnGatewayAsn"/>
+            <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//awsdiagrams/services/ec2/VpcBuilder/generatedClassName"/>
+            <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//awsdiagrams/services/ec2/VpcBuilder/varName"/>
+            <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//awsdiagrams/services/ec2/VpcBuilder/identifier"/>
+            <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//awsdiagrams/services/ec2/VpcBuilder/additionalCode"/>
+            <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//awsdiagrams/services/ec2/VpcBuilder/defaultInstanceTenancy"/>
+          </genClasses>
+        </nestedGenPackages>
+      </nestedGenPackages>
     </nestedGenPackages>
   </genPackages>
 </genmodel:GenModel>

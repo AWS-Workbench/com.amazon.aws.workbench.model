@@ -1,13 +1,18 @@
 /**
  */
-package com.amazon.aws.workbench.model.awsworkbench.datatypes.java.lang.impl;
+package com.amazon.aws.workbench.model.awsworkbench.awsdiagrams.datatypes.java.lang.impl;
 
-import com.amazon.aws.workbench.model.awsworkbench.core.CorePackage;
-import com.amazon.aws.workbench.model.awsworkbench.core.impl.CorePackageImpl;
-import com.amazon.aws.workbench.model.awsworkbench.datatypes.java.lang.LangFactory;
-import com.amazon.aws.workbench.model.awsworkbench.datatypes.java.lang.LangPackage;
-import com.amazon.aws.workbench.model.awsworkbench.services.ec2.Ec2Package;
-import com.amazon.aws.workbench.model.awsworkbench.services.ec2.impl.Ec2PackageImpl;
+import com.amazon.aws.workbench.model.awsworkbench.awsdiagrams.core.CorePackage;
+
+import com.amazon.aws.workbench.model.awsworkbench.awsdiagrams.core.impl.CorePackageImpl;
+
+import com.amazon.aws.workbench.model.awsworkbench.awsdiagrams.datatypes.java.lang.LangFactory;
+import com.amazon.aws.workbench.model.awsworkbench.awsdiagrams.datatypes.java.lang.LangPackage;
+
+import com.amazon.aws.workbench.model.awsworkbench.awsdiagrams.services.ec2.Ec2Package;
+
+import com.amazon.aws.workbench.model.awsworkbench.awsdiagrams.services.ec2.impl.Ec2PackageImpl;
+
 import org.eclipse.emf.ecore.EDataType;
 import org.eclipse.emf.ecore.EPackage;
 
@@ -38,7 +43,7 @@ public class LangPackageImpl extends EPackageImpl implements LangPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see org.eclipse.emf.ecore.EPackage.Registry
-	 * @see com.amazon.aws.workbench.model.awsworkbench.datatypes.java.lang.LangPackage#eNS_URI
+	 * @see com.amazon.aws.workbench.model.awsworkbench.awsdiagrams.datatypes.java.lang.LangPackage#eNS_URI
 	 * @see #init()
 	 * @generated
 	 */

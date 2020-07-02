@@ -10,24 +10,23 @@
       <!-- @generated awsworkbench -->
       <package
             uri="default.datatypes.java.lang"
-            class="com.amazon.aws.workbench.model.awsworkbench.datatypes.java.lang.LangPackage"
+            class="com.amazon.aws.workbench.model.awsworkbench.awsdiagrams.datatypes.java.lang.LangPackage"
             genModel="model/awsworkbench.genmodel"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.generated_package">
       <!-- @generated awsworkbench -->
       <package
-            uri="default.enums"
-            class="com.amazon.aws.workbench.model.awsworkbench.enums.EnumsPackage"
+            uri="default.awsworkbench.awsdiagrams.core"
+            class="com.amazon.aws.workbench.model.awsworkbench.awsdiagrams.core.CorePackage"
             genModel="model/awsworkbench.genmodel"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.generated_package">
       <!-- @generated awsworkbench -->
       <package
-            uri="default.builders"
-            class="com.amazon.aws.workbench.model.awsworkbench.builders.BuildersPackage"
+            uri="default.awsworkbench.awsdiagrams.services.ec2"
+            class="com.amazon.aws.workbench.model.awsworkbench.awsdiagrams.services.ec2.Ec2Package"
             genModel="model/awsworkbench.genmodel"/>
    </extension>
-
 </plugin>

@@ -1,51 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="awsworkbench" nsURI="http://www.amazon.com/awsworkbench" nsPrefix="awsworkbench">
-  <eSubpackages name="datatypes" nsURI="default.datatypes" nsPrefix="datatypes">
-    <eSubpackages name="java" nsURI="default.datatypes.java" nsPrefix="java">
-      <eSubpackages name="lang" nsURI="default.datatypes.java.lang" nsPrefix="lang">
-        <eClassifiers xsi:type="ecore:EDataType" name="Number" instanceClassName="java.lang.Number"/>
+  <eSubpackages name="awsdiagrams" nsURI="default.awsworkbench.awsdiagrams" nsPrefix="awsdiagrams">
+    <eSubpackages name="datatypes" nsURI="default.awsworkbench.awsdiagrams.datatypes"
+        nsPrefix="datatypes">
+      <eSubpackages name="java" nsURI="default.datatypes.java" nsPrefix="java">
+        <eSubpackages name="lang" nsURI="default.datatypes.java.lang" nsPrefix="lang">
+          <eClassifiers xsi:type="ecore:EDataType" name="Number" instanceClassName="java.lang.Number"/>
+        </eSubpackages>
       </eSubpackages>
     </eSubpackages>
-  </eSubpackages>
-   <eSubpackages name="enums" nsURI="default.enums" nsPrefix="enums">
-   
-   <eClassifiers xsi:type="ecore:EEnum" name="DefaultInstanceTenancy" instanceClassName="software.amazon.awscdk.services.ec2.DefaultInstanceTenancy">
-              <eLiterals name="DEFAULT" value="0"/>
-              <eLiterals name="DEDICATED" value="1"/>
-   </eClassifiers>
-            
-   
-   </eSubpackages>
-  <eSubpackages name="builders" nsURI="default.builders" nsPrefix="builders">
-    <eClassifiers xsi:type="ecore:EClass" name="VpcBuilder">
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="cidr" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="enableDnsHostnames" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="enableDnsSupport" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="maxAzs" eType="#//datatypes/java/lang/Number"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="natGateways" eType="#//datatypes/java/lang/Number"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="vpnGateway" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="vpnGatewayAsn" eType="#//datatypes/java/lang/Number"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="generatedClassName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
-          defaultValueLiteral="software.amazon.awscdk.services.ec2.Vpc"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="varName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="identifier" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="additionalCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-       <eStructuralFeatures xsi:type="ecore:EAttribute" name="defaultInstanceTenancy" eType="//enums/DefaultInstanceTenancy"/>
-    </eClassifiers>
-    <eClassifiers xsi:type="ecore:EClass" name="AppBuilder">
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="autoSynth" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="outdir" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="runtimeInfo" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="stackTraces" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="treeMetadata" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="generatedClassName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
-          defaultValueLiteral="software.amazon.awscdk.core.App"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="varName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="identifier" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="additionalCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-      <eStructuralFeatures xsi:type="ecore:EReference" name="vpcbuilder" upperBound="-1"
-          eType="#//builders/VpcBuilder" containment="true"/>
-    </eClassifiers>
+    <eSubpackages name="core" nsURI="default.awsworkbench.awsdiagrams.core" nsPrefix="core">
+      <eClassifiers xsi:type="ecore:EClass" name="AppBuilder">
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="autoSynth" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="outdir" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="runtimeInfo" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="stackTraces" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="treeMetadata" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="generatedClassName"
+            eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+            defaultValueLiteral="software.amazon.awscdk.core.App"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="varName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="identifier" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="additionalCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" name="stackbuilder" upperBound="-1"
+            eType="#//awsdiagrams/core/StackBuilder" containment="true"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" name="StackBuilder">
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="stackName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="terminationProtection"
+            eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="generatedClassName"
+            eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+            defaultValueLiteral="software.amazon.awscdk.core.Stack"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="varName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="identifier" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="additionalCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" name="vpcbuilder" upperBound="-1"
+            eType="#//awsdiagrams/services/ec2/VpcBuilder" containment="true"/>
+      </eClassifiers>
+    </eSubpackages>
+    <eSubpackages name="services" nsURI="default.awsworkbench.awsdiagrams.services"
+        nsPrefix="services">
+      <eSubpackages name="ec2" nsURI="default.awsworkbench.awsdiagrams.services.ec2"
+          nsPrefix="ec2">
+        <eClassifiers xsi:type="ecore:EEnum" name="DefaultInstanceTenancy" instanceClassName="software.amazon.awscdk.services.ec2.DefaultInstanceTenancy">
+          <eLiterals name="DEFAULT"/>
+          <eLiterals name="DEDICATED" value="1"/>
+        </eClassifiers>
+        <eClassifiers xsi:type="ecore:EClass" name="VpcBuilder">
+          <eStructuralFeatures xsi:type="ecore:EAttribute" name="cidr" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+          <eStructuralFeatures xsi:type="ecore:EAttribute" name="enableDnsHostnames"
+              eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject"/>
+          <eStructuralFeatures xsi:type="ecore:EAttribute" name="enableDnsSupport"
+              eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject"/>
+          <eStructuralFeatures xsi:type="ecore:EAttribute" name="maxAzs" eType="#//awsdiagrams/datatypes/java/lang/Number"/>
+          <eStructuralFeatures xsi:type="ecore:EAttribute" name="natGateways" eType="#//awsdiagrams/datatypes/java/lang/Number"/>
+          <eStructuralFeatures xsi:type="ecore:EAttribute" name="vpnGateway" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject"/>
+          <eStructuralFeatures xsi:type="ecore:EAttribute" name="vpnGatewayAsn" eType="#//awsdiagrams/datatypes/java/lang/Number"/>
+          <eStructuralFeatures xsi:type="ecore:EAttribute" name="generatedClassName"
+              eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+              defaultValueLiteral="software.amazon.awscdk.services.ec2.Vpc"/>
+          <eStructuralFeatures xsi:type="ecore:EAttribute" name="varName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+          <eStructuralFeatures xsi:type="ecore:EAttribute" name="identifier" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+          <eStructuralFeatures xsi:type="ecore:EAttribute" name="additionalCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+          <eStructuralFeatures xsi:type="ecore:EAttribute" name="defaultInstanceTenancy"
+              eType="#//awsdiagrams/services/ec2/DefaultInstanceTenancy"/>
+        </eClassifiers>
+      </eSubpackages>
+    </eSubpackages>
   </eSubpackages>
 </ecore:EPackage>

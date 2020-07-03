@@ -9,24 +9,9 @@
    <extension point="org.eclipse.emf.ecore.generated_package">
       <!-- @generated awsworkbench -->
       <package
-            uri="default.datatypes.java.lang"
-            class="com.amazon.aws.workbench.model.awsworkbench.awsdiagrams.datatypes.java.lang.LangPackage"
+            uri="http://www.amazon.com/awsworkbench"
+            class="com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage"
             genModel="model/awsworkbench.genmodel"/>
    </extension>
 
-   <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated awsworkbench -->
-      <package
-            uri="default.awsworkbench.awsdiagrams.core"
-            class="com.amazon.aws.workbench.model.awsworkbench.awsdiagrams.core.CorePackage"
-            genModel="model/awsworkbench.genmodel"/>
-   </extension>
-
-   <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated awsworkbench -->
-      <package
-            uri="default.awsworkbench.awsdiagrams.services.ec2"
-            class="com.amazon.aws.workbench.model.awsworkbench.awsdiagrams.services.ec2.Ec2Package"
-            genModel="model/awsworkbench.genmodel"/>
-   </extension>
 </plugin>

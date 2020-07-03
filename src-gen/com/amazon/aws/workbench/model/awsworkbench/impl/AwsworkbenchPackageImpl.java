@@ -6,6 +6,7 @@ import com.amazon.aws.workbench.model.awsworkbench.AppBuilder;
 import com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchFactory;
 import com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage;
 import com.amazon.aws.workbench.model.awsworkbench.DefaultInstanceTenancy;
+import com.amazon.aws.workbench.model.awsworkbench.ServiceResources;
 import com.amazon.aws.workbench.model.awsworkbench.StackBuilder;
 import com.amazon.aws.workbench.model.awsworkbench.VpcBuilder;
 
@@ -45,6 +46,13 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	 * @generated
 	 */
 	private EClass vpcBuilderEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass serviceResourcesEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -320,7 +328,7 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	 * @generated
 	 */
 	@Override
-	public EReference getStackBuilder_Vpcbuilder() {
+	public EReference getStackBuilder_Serviceresources() {
 		return (EReference) stackBuilderEClass.getEStructuralFeatures().get(7);
 	}
 
@@ -460,6 +468,26 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	 * @generated
 	 */
 	@Override
+	public EClass getServiceResources() {
+		return serviceResourcesEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getServiceResources_ParentStack() {
+		return (EAttribute) serviceResourcesEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EEnum getDefaultInstanceTenancy() {
 		return defaultInstanceTenancyEEnum;
 	}
@@ -524,7 +552,7 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 		createEAttribute(stackBuilderEClass, STACK_BUILDER__VAR_NAME);
 		createEAttribute(stackBuilderEClass, STACK_BUILDER__IDENTIFIER);
 		createEAttribute(stackBuilderEClass, STACK_BUILDER__ADDITIONAL_CODE);
-		createEReference(stackBuilderEClass, STACK_BUILDER__VPCBUILDER);
+		createEReference(stackBuilderEClass, STACK_BUILDER__SERVICERESOURCES);
 
 		vpcBuilderEClass = createEClass(VPC_BUILDER);
 		createEAttribute(vpcBuilderEClass, VPC_BUILDER__CIDR);
@@ -539,6 +567,9 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 		createEAttribute(vpcBuilderEClass, VPC_BUILDER__IDENTIFIER);
 		createEAttribute(vpcBuilderEClass, VPC_BUILDER__ADDITIONAL_CODE);
 		createEAttribute(vpcBuilderEClass, VPC_BUILDER__DEFAULT_INSTANCE_TENANCY);
+
+		serviceResourcesEClass = createEClass(SERVICE_RESOURCES);
+		createEAttribute(serviceResourcesEClass, SERVICE_RESOURCES__PARENT_STACK);
 
 		// Create enums
 		defaultInstanceTenancyEEnum = createEEnum(DEFAULT_INSTANCE_TENANCY);
@@ -576,6 +607,7 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
+		vpcBuilderEClass.getESuperTypes().add(this.getServiceResources());
 
 		// Initialize classes, features, and operations; add parameters
 		initEClass(appBuilderEClass, AppBuilder.class, "AppBuilder", !IS_ABSTRACT, !IS_INTERFACE,
@@ -631,9 +663,9 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 		initEAttribute(getStackBuilder_AdditionalCode(), ecorePackage.getEString(), "additionalCode", null, 0, 1,
 				StackBuilder.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
 				!IS_DERIVED, IS_ORDERED);
-		initEReference(getStackBuilder_Vpcbuilder(), this.getVpcBuilder(), null, "vpcbuilder", null, 0, -1,
-				StackBuilder.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES,
-				!IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getStackBuilder_Serviceresources(), this.getServiceResources(), null, "serviceresources", null,
+				0, -1, StackBuilder.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE,
+				!IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(vpcBuilderEClass, VpcBuilder.class, "VpcBuilder", !IS_ABSTRACT, !IS_INTERFACE,
 				IS_GENERATED_INSTANCE_CLASS);
@@ -645,15 +677,17 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 		initEAttribute(getVpcBuilder_EnableDnsSupport(), ecorePackage.getEBooleanObject(), "enableDnsSupport", null, 0,
 				1, VpcBuilder.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
 				!IS_DERIVED, IS_ORDERED);
-		initEAttribute(getVpcBuilder_MaxAzs(), this.getNumber(), "maxAzs", null, 0, 1, VpcBuilder.class, !IS_TRANSIENT,
-				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getVpcBuilder_NatGateways(), this.getNumber(), "natGateways", null, 0, 1, VpcBuilder.class,
+		initEAttribute(getVpcBuilder_MaxAzs(), ecorePackage.getEIntegerObject(), "maxAzs", null, 0, 1, VpcBuilder.class,
 				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getVpcBuilder_NatGateways(), ecorePackage.getEIntegerObject(), "natGateways", null, 0, 1,
+				VpcBuilder.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+				!IS_DERIVED, IS_ORDERED);
 		initEAttribute(getVpcBuilder_VpnGateway(), ecorePackage.getEBooleanObject(), "vpnGateway", null, 0, 1,
 				VpcBuilder.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
 				!IS_DERIVED, IS_ORDERED);
-		initEAttribute(getVpcBuilder_VpnGatewayAsn(), this.getNumber(), "vpnGatewayAsn", null, 0, 1, VpcBuilder.class,
-				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getVpcBuilder_VpnGatewayAsn(), ecorePackage.getEIntegerObject(), "vpnGatewayAsn", null, 0, 1,
+				VpcBuilder.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+				!IS_DERIVED, IS_ORDERED);
 		initEAttribute(getVpcBuilder_GeneratedClassName(), ecorePackage.getEString(), "generatedClassName",
 				"software.amazon.awscdk.services.ec2.Vpc", 0, 1, VpcBuilder.class, !IS_TRANSIENT, !IS_VOLATILE,
 				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -668,6 +702,12 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 		initEAttribute(getVpcBuilder_DefaultInstanceTenancy(), this.getDefaultInstanceTenancy(),
 				"defaultInstanceTenancy", null, 0, 1, VpcBuilder.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
 				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(serviceResourcesEClass, ServiceResources.class, "ServiceResources", IS_ABSTRACT, !IS_INTERFACE,
+				IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getServiceResources_ParentStack(), ecorePackage.getEString(), "parentStack", null, 0, 1,
+				ServiceResources.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+				!IS_DERIVED, IS_ORDERED);
 
 		// Initialize enums and add enum literals
 		initEEnum(defaultInstanceTenancyEEnum, DefaultInstanceTenancy.class, "DefaultInstanceTenancy");

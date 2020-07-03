@@ -2,8 +2,6 @@
  */
 package com.amazon.aws.workbench.model.awsworkbench;
 
-import org.eclipse.emf.ecore.EObject;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Vpc Builder</b></em>'.
@@ -31,7 +29,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface VpcBuilder extends EObject {
+public interface VpcBuilder extends ServiceResources {
 	/**
 	 * Returns the value of the '<em><b>Cidr</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -103,12 +101,12 @@ public interface VpcBuilder extends EObject {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Max Azs</em>' attribute.
-	 * @see #setMaxAzs(Number)
+	 * @see #setMaxAzs(Integer)
 	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getVpcBuilder_MaxAzs()
-	 * @model dataType="com.amazon.aws.workbench.model.awsworkbench.Number"
+	 * @model
 	 * @generated
 	 */
-	Number getMaxAzs();
+	Integer getMaxAzs();
 
 	/**
 	 * Sets the value of the '{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder#getMaxAzs <em>Max Azs</em>}' attribute.
@@ -118,19 +116,19 @@ public interface VpcBuilder extends EObject {
 	 * @see #getMaxAzs()
 	 * @generated
 	 */
-	void setMaxAzs(Number value);
+	void setMaxAzs(Integer value);
 
 	/**
 	 * Returns the value of the '<em><b>Nat Gateways</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Nat Gateways</em>' attribute.
-	 * @see #setNatGateways(Number)
+	 * @see #setNatGateways(Integer)
 	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getVpcBuilder_NatGateways()
-	 * @model dataType="com.amazon.aws.workbench.model.awsworkbench.Number"
+	 * @model
 	 * @generated
 	 */
-	Number getNatGateways();
+	Integer getNatGateways();
 
 	/**
 	 * Sets the value of the '{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder#getNatGateways <em>Nat Gateways</em>}' attribute.
@@ -140,7 +138,7 @@ public interface VpcBuilder extends EObject {
 	 * @see #getNatGateways()
 	 * @generated
 	 */
-	void setNatGateways(Number value);
+	void setNatGateways(Integer value);
 
 	/**
 	 * Returns the value of the '<em><b>Vpn Gateway</b></em>' attribute.
@@ -169,12 +167,12 @@ public interface VpcBuilder extends EObject {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Vpn Gateway Asn</em>' attribute.
-	 * @see #setVpnGatewayAsn(Number)
+	 * @see #setVpnGatewayAsn(Integer)
 	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getVpcBuilder_VpnGatewayAsn()
-	 * @model dataType="com.amazon.aws.workbench.model.awsworkbench.Number"
+	 * @model
 	 * @generated
 	 */
-	Number getVpnGatewayAsn();
+	Integer getVpnGatewayAsn();
 
 	/**
 	 * Sets the value of the '{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder#getVpnGatewayAsn <em>Vpn Gateway Asn</em>}' attribute.
@@ -184,7 +182,7 @@ public interface VpcBuilder extends EObject {
 	 * @see #getVpnGatewayAsn()
 	 * @generated
 	 */
-	void setVpnGatewayAsn(Number value);
+	void setVpnGatewayAsn(Integer value);
 
 	/**
 	 * Returns the value of the '<em><b>Generated Class Name</b></em>' attribute.

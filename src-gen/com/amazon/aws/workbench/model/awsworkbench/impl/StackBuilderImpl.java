@@ -3,8 +3,8 @@
 package com.amazon.aws.workbench.model.awsworkbench.impl;
 
 import com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage;
+import com.amazon.aws.workbench.model.awsworkbench.ServiceResources;
 import com.amazon.aws.workbench.model.awsworkbench.StackBuilder;
-import com.amazon.aws.workbench.model.awsworkbench.VpcBuilder;
 
 import java.util.Collection;
 
@@ -37,7 +37,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.StackBuilderImpl#getVarName <em>Var Name</em>}</li>
  *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.StackBuilderImpl#getIdentifier <em>Identifier</em>}</li>
  *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.StackBuilderImpl#getAdditionalCode <em>Additional Code</em>}</li>
- *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.StackBuilderImpl#getVpcbuilder <em>Vpcbuilder</em>}</li>
+ *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.StackBuilderImpl#getServiceresources <em>Serviceresources</em>}</li>
  * </ul>
  *
  * @generated
@@ -184,14 +184,14 @@ public class StackBuilderImpl extends MinimalEObjectImpl.Container implements St
 	protected String additionalCode = ADDITIONAL_CODE_EDEFAULT;
 
 	/**
-	 * The cached value of the '{@link #getVpcbuilder() <em>Vpcbuilder</em>}' containment reference list.
+	 * The cached value of the '{@link #getServiceresources() <em>Serviceresources</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getVpcbuilder()
+	 * @see #getServiceresources()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<VpcBuilder> vpcbuilder;
+	protected EList<ServiceResources> serviceresources;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -388,12 +388,12 @@ public class StackBuilderImpl extends MinimalEObjectImpl.Container implements St
 	 * @generated
 	 */
 	@Override
-	public EList<VpcBuilder> getVpcbuilder() {
-		if (vpcbuilder == null) {
-			vpcbuilder = new EObjectContainmentEList<VpcBuilder>(VpcBuilder.class, this,
-					AwsworkbenchPackage.STACK_BUILDER__VPCBUILDER);
+	public EList<ServiceResources> getServiceresources() {
+		if (serviceresources == null) {
+			serviceresources = new EObjectContainmentEList<ServiceResources>(ServiceResources.class, this,
+					AwsworkbenchPackage.STACK_BUILDER__SERVICERESOURCES);
 		}
-		return vpcbuilder;
+		return serviceresources;
 	}
 
 	/**
@@ -404,8 +404,8 @@ public class StackBuilderImpl extends MinimalEObjectImpl.Container implements St
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-		case AwsworkbenchPackage.STACK_BUILDER__VPCBUILDER:
-			return ((InternalEList<?>) getVpcbuilder()).basicRemove(otherEnd, msgs);
+		case AwsworkbenchPackage.STACK_BUILDER__SERVICERESOURCES:
+			return ((InternalEList<?>) getServiceresources()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -432,8 +432,8 @@ public class StackBuilderImpl extends MinimalEObjectImpl.Container implements St
 			return getIdentifier();
 		case AwsworkbenchPackage.STACK_BUILDER__ADDITIONAL_CODE:
 			return getAdditionalCode();
-		case AwsworkbenchPackage.STACK_BUILDER__VPCBUILDER:
-			return getVpcbuilder();
+		case AwsworkbenchPackage.STACK_BUILDER__SERVICERESOURCES:
+			return getServiceresources();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -468,9 +468,9 @@ public class StackBuilderImpl extends MinimalEObjectImpl.Container implements St
 		case AwsworkbenchPackage.STACK_BUILDER__ADDITIONAL_CODE:
 			setAdditionalCode((String) newValue);
 			return;
-		case AwsworkbenchPackage.STACK_BUILDER__VPCBUILDER:
-			getVpcbuilder().clear();
-			getVpcbuilder().addAll((Collection<? extends VpcBuilder>) newValue);
+		case AwsworkbenchPackage.STACK_BUILDER__SERVICERESOURCES:
+			getServiceresources().clear();
+			getServiceresources().addAll((Collection<? extends ServiceResources>) newValue);
 			return;
 		}
 		super.eSet(featureID, newValue);
@@ -505,8 +505,8 @@ public class StackBuilderImpl extends MinimalEObjectImpl.Container implements St
 		case AwsworkbenchPackage.STACK_BUILDER__ADDITIONAL_CODE:
 			setAdditionalCode(ADDITIONAL_CODE_EDEFAULT);
 			return;
-		case AwsworkbenchPackage.STACK_BUILDER__VPCBUILDER:
-			getVpcbuilder().clear();
+		case AwsworkbenchPackage.STACK_BUILDER__SERVICERESOURCES:
+			getServiceresources().clear();
 			return;
 		}
 		super.eUnset(featureID);
@@ -537,8 +537,8 @@ public class StackBuilderImpl extends MinimalEObjectImpl.Container implements St
 		case AwsworkbenchPackage.STACK_BUILDER__ADDITIONAL_CODE:
 			return ADDITIONAL_CODE_EDEFAULT == null ? additionalCode != null
 					: !ADDITIONAL_CODE_EDEFAULT.equals(additionalCode);
-		case AwsworkbenchPackage.STACK_BUILDER__VPCBUILDER:
-			return vpcbuilder != null && !vpcbuilder.isEmpty();
+		case AwsworkbenchPackage.STACK_BUILDER__SERVICERESOURCES:
+			return serviceresources != null && !serviceresources.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}

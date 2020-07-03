@@ -11,7 +11,6 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -37,7 +36,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class VpcBuilderImpl extends MinimalEObjectImpl.Container implements VpcBuilder {
+public class VpcBuilderImpl extends ServiceResourcesImpl implements VpcBuilder {
 	/**
 	 * The default value of the '{@link #getCidr() <em>Cidr</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -106,7 +105,7 @@ public class VpcBuilderImpl extends MinimalEObjectImpl.Container implements VpcB
 	 * @generated
 	 * @ordered
 	 */
-	protected static final Number MAX_AZS_EDEFAULT = null;
+	protected static final Integer MAX_AZS_EDEFAULT = null;
 
 	/**
 	 * The cached value of the '{@link #getMaxAzs() <em>Max Azs</em>}' attribute.
@@ -116,7 +115,7 @@ public class VpcBuilderImpl extends MinimalEObjectImpl.Container implements VpcB
 	 * @generated
 	 * @ordered
 	 */
-	protected Number maxAzs = MAX_AZS_EDEFAULT;
+	protected Integer maxAzs = MAX_AZS_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getNatGateways() <em>Nat Gateways</em>}' attribute.
@@ -126,7 +125,7 @@ public class VpcBuilderImpl extends MinimalEObjectImpl.Container implements VpcB
 	 * @generated
 	 * @ordered
 	 */
-	protected static final Number NAT_GATEWAYS_EDEFAULT = null;
+	protected static final Integer NAT_GATEWAYS_EDEFAULT = null;
 
 	/**
 	 * The cached value of the '{@link #getNatGateways() <em>Nat Gateways</em>}' attribute.
@@ -136,7 +135,7 @@ public class VpcBuilderImpl extends MinimalEObjectImpl.Container implements VpcB
 	 * @generated
 	 * @ordered
 	 */
-	protected Number natGateways = NAT_GATEWAYS_EDEFAULT;
+	protected Integer natGateways = NAT_GATEWAYS_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getVpnGateway() <em>Vpn Gateway</em>}' attribute.
@@ -166,7 +165,7 @@ public class VpcBuilderImpl extends MinimalEObjectImpl.Container implements VpcB
 	 * @generated
 	 * @ordered
 	 */
-	protected static final Number VPN_GATEWAY_ASN_EDEFAULT = null;
+	protected static final Integer VPN_GATEWAY_ASN_EDEFAULT = null;
 
 	/**
 	 * The cached value of the '{@link #getVpnGatewayAsn() <em>Vpn Gateway Asn</em>}' attribute.
@@ -176,7 +175,7 @@ public class VpcBuilderImpl extends MinimalEObjectImpl.Container implements VpcB
 	 * @generated
 	 * @ordered
 	 */
-	protected Number vpnGatewayAsn = VPN_GATEWAY_ASN_EDEFAULT;
+	protected Integer vpnGatewayAsn = VPN_GATEWAY_ASN_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getGeneratedClassName() <em>Generated Class Name</em>}' attribute.
@@ -375,7 +374,7 @@ public class VpcBuilderImpl extends MinimalEObjectImpl.Container implements VpcB
 	 * @generated
 	 */
 	@Override
-	public Number getMaxAzs() {
+	public Integer getMaxAzs() {
 		return maxAzs;
 	}
 
@@ -385,8 +384,8 @@ public class VpcBuilderImpl extends MinimalEObjectImpl.Container implements VpcB
 	 * @generated
 	 */
 	@Override
-	public void setMaxAzs(Number newMaxAzs) {
-		Number oldMaxAzs = maxAzs;
+	public void setMaxAzs(Integer newMaxAzs) {
+		Integer oldMaxAzs = maxAzs;
 		maxAzs = newMaxAzs;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, AwsworkbenchPackage.VPC_BUILDER__MAX_AZS, oldMaxAzs,
@@ -399,7 +398,7 @@ public class VpcBuilderImpl extends MinimalEObjectImpl.Container implements VpcB
 	 * @generated
 	 */
 	@Override
-	public Number getNatGateways() {
+	public Integer getNatGateways() {
 		return natGateways;
 	}
 
@@ -409,8 +408,8 @@ public class VpcBuilderImpl extends MinimalEObjectImpl.Container implements VpcB
 	 * @generated
 	 */
 	@Override
-	public void setNatGateways(Number newNatGateways) {
-		Number oldNatGateways = natGateways;
+	public void setNatGateways(Integer newNatGateways) {
+		Integer oldNatGateways = natGateways;
 		natGateways = newNatGateways;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, AwsworkbenchPackage.VPC_BUILDER__NAT_GATEWAYS,
@@ -447,7 +446,7 @@ public class VpcBuilderImpl extends MinimalEObjectImpl.Container implements VpcB
 	 * @generated
 	 */
 	@Override
-	public Number getVpnGatewayAsn() {
+	public Integer getVpnGatewayAsn() {
 		return vpnGatewayAsn;
 	}
 
@@ -457,8 +456,8 @@ public class VpcBuilderImpl extends MinimalEObjectImpl.Container implements VpcB
 	 * @generated
 	 */
 	@Override
-	public void setVpnGatewayAsn(Number newVpnGatewayAsn) {
-		Number oldVpnGatewayAsn = vpnGatewayAsn;
+	public void setVpnGatewayAsn(Integer newVpnGatewayAsn) {
+		Integer oldVpnGatewayAsn = vpnGatewayAsn;
 		vpnGatewayAsn = newVpnGatewayAsn;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, AwsworkbenchPackage.VPC_BUILDER__VPN_GATEWAY_ASN,
@@ -641,16 +640,16 @@ public class VpcBuilderImpl extends MinimalEObjectImpl.Container implements VpcB
 			setEnableDnsSupport((Boolean) newValue);
 			return;
 		case AwsworkbenchPackage.VPC_BUILDER__MAX_AZS:
-			setMaxAzs((Number) newValue);
+			setMaxAzs((Integer) newValue);
 			return;
 		case AwsworkbenchPackage.VPC_BUILDER__NAT_GATEWAYS:
-			setNatGateways((Number) newValue);
+			setNatGateways((Integer) newValue);
 			return;
 		case AwsworkbenchPackage.VPC_BUILDER__VPN_GATEWAY:
 			setVpnGateway((Boolean) newValue);
 			return;
 		case AwsworkbenchPackage.VPC_BUILDER__VPN_GATEWAY_ASN:
-			setVpnGatewayAsn((Number) newValue);
+			setVpnGatewayAsn((Integer) newValue);
 			return;
 		case AwsworkbenchPackage.VPC_BUILDER__GENERATED_CLASS_NAME:
 			setGeneratedClassName((String) newValue);

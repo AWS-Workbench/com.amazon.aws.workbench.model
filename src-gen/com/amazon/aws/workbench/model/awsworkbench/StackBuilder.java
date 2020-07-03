@@ -22,7 +22,7 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.StackBuilder#getVarName <em>Var Name</em>}</li>
  *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.StackBuilder#getIdentifier <em>Identifier</em>}</li>
  *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.StackBuilder#getAdditionalCode <em>Additional Code</em>}</li>
- *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.StackBuilder#getVpcbuilder <em>Vpcbuilder</em>}</li>
+ *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.StackBuilder#getServiceresources <em>Serviceresources</em>}</li>
  * </ul>
  *
  * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getStackBuilder()
@@ -186,15 +186,15 @@ public interface StackBuilder extends EObject {
 	void setAdditionalCode(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Vpcbuilder</b></em>' containment reference list.
-	 * The list contents are of type {@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder}.
+	 * Returns the value of the '<em><b>Serviceresources</b></em>' containment reference list.
+	 * The list contents are of type {@link com.amazon.aws.workbench.model.awsworkbench.ServiceResources}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Vpcbuilder</em>' containment reference list.
-	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getStackBuilder_Vpcbuilder()
+	 * @return the value of the '<em>Serviceresources</em>' containment reference list.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getStackBuilder_Serviceresources()
 	 * @model containment="true"
 	 * @generated
 	 */
-	EList<VpcBuilder> getVpcbuilder();
+	EList<ServiceResources> getServiceresources();
 
 } // StackBuilder

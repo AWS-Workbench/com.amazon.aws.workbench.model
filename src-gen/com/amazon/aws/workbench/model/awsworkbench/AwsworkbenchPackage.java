@@ -250,13 +250,13 @@ public interface AwsworkbenchPackage extends EPackage {
 	int STACK_BUILDER__ADDITIONAL_CODE = 6;
 
 	/**
-	 * The feature id for the '<em><b>Vpcbuilder</b></em>' containment reference list.
+	 * The feature id for the '<em><b>Serviceresources</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int STACK_BUILDER__VPCBUILDER = 7;
+	int STACK_BUILDER__SERVICERESOURCES = 7;
 
 	/**
 	 * The number of structural features of the '<em>Stack Builder</em>' class.
@@ -277,6 +277,43 @@ public interface AwsworkbenchPackage extends EPackage {
 	int STACK_BUILDER_OPERATION_COUNT = 0;
 
 	/**
+	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.ServiceResourcesImpl <em>Service Resources</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.ServiceResourcesImpl
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getServiceResources()
+	 * @generated
+	 */
+	int SERVICE_RESOURCES = 3;
+
+	/**
+	 * The feature id for the '<em><b>Parent Stack</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SERVICE_RESOURCES__PARENT_STACK = 0;
+
+	/**
+	 * The number of structural features of the '<em>Service Resources</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SERVICE_RESOURCES_FEATURE_COUNT = 1;
+
+	/**
+	 * The number of operations of the '<em>Service Resources</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SERVICE_RESOURCES_OPERATION_COUNT = 0;
+
+	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.VpcBuilderImpl <em>Vpc Builder</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -287,13 +324,22 @@ public interface AwsworkbenchPackage extends EPackage {
 	int VPC_BUILDER = 2;
 
 	/**
+	 * The feature id for the '<em><b>Parent Stack</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VPC_BUILDER__PARENT_STACK = SERVICE_RESOURCES__PARENT_STACK;
+
+	/**
 	 * The feature id for the '<em><b>Cidr</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int VPC_BUILDER__CIDR = 0;
+	int VPC_BUILDER__CIDR = SERVICE_RESOURCES_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Enable Dns Hostnames</b></em>' attribute.
@@ -302,7 +348,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VPC_BUILDER__ENABLE_DNS_HOSTNAMES = 1;
+	int VPC_BUILDER__ENABLE_DNS_HOSTNAMES = SERVICE_RESOURCES_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Enable Dns Support</b></em>' attribute.
@@ -311,7 +357,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VPC_BUILDER__ENABLE_DNS_SUPPORT = 2;
+	int VPC_BUILDER__ENABLE_DNS_SUPPORT = SERVICE_RESOURCES_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Max Azs</b></em>' attribute.
@@ -320,7 +366,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VPC_BUILDER__MAX_AZS = 3;
+	int VPC_BUILDER__MAX_AZS = SERVICE_RESOURCES_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Nat Gateways</b></em>' attribute.
@@ -329,7 +375,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VPC_BUILDER__NAT_GATEWAYS = 4;
+	int VPC_BUILDER__NAT_GATEWAYS = SERVICE_RESOURCES_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Vpn Gateway</b></em>' attribute.
@@ -338,7 +384,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VPC_BUILDER__VPN_GATEWAY = 5;
+	int VPC_BUILDER__VPN_GATEWAY = SERVICE_RESOURCES_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Vpn Gateway Asn</b></em>' attribute.
@@ -347,7 +393,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VPC_BUILDER__VPN_GATEWAY_ASN = 6;
+	int VPC_BUILDER__VPN_GATEWAY_ASN = SERVICE_RESOURCES_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Generated Class Name</b></em>' attribute.
@@ -356,7 +402,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VPC_BUILDER__GENERATED_CLASS_NAME = 7;
+	int VPC_BUILDER__GENERATED_CLASS_NAME = SERVICE_RESOURCES_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Var Name</b></em>' attribute.
@@ -365,7 +411,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VPC_BUILDER__VAR_NAME = 8;
+	int VPC_BUILDER__VAR_NAME = SERVICE_RESOURCES_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Identifier</b></em>' attribute.
@@ -374,7 +420,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VPC_BUILDER__IDENTIFIER = 9;
+	int VPC_BUILDER__IDENTIFIER = SERVICE_RESOURCES_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Additional Code</b></em>' attribute.
@@ -383,7 +429,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VPC_BUILDER__ADDITIONAL_CODE = 10;
+	int VPC_BUILDER__ADDITIONAL_CODE = SERVICE_RESOURCES_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Default Instance Tenancy</b></em>' attribute.
@@ -392,7 +438,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VPC_BUILDER__DEFAULT_INSTANCE_TENANCY = 11;
+	int VPC_BUILDER__DEFAULT_INSTANCE_TENANCY = SERVICE_RESOURCES_FEATURE_COUNT + 11;
 
 	/**
 	 * The number of structural features of the '<em>Vpc Builder</em>' class.
@@ -401,7 +447,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VPC_BUILDER_FEATURE_COUNT = 12;
+	int VPC_BUILDER_FEATURE_COUNT = SERVICE_RESOURCES_FEATURE_COUNT + 12;
 
 	/**
 	 * The number of operations of the '<em>Vpc Builder</em>' class.
@@ -410,7 +456,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VPC_BUILDER_OPERATION_COUNT = 0;
+	int VPC_BUILDER_OPERATION_COUNT = SERVICE_RESOURCES_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.DefaultInstanceTenancy <em>Default Instance Tenancy</em>}' enum.
@@ -420,7 +466,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getDefaultInstanceTenancy()
 	 * @generated
 	 */
-	int DEFAULT_INSTANCE_TENANCY = 3;
+	int DEFAULT_INSTANCE_TENANCY = 4;
 
 	/**
 	 * The meta object id for the '<em>Number</em>' data type.
@@ -430,7 +476,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getNumber()
 	 * @generated
 	 */
-	int NUMBER = 4;
+	int NUMBER = 5;
 
 	/**
 	 * Returns the meta object for class '{@link com.amazon.aws.workbench.model.awsworkbench.AppBuilder <em>App Builder</em>}'.
@@ -640,15 +686,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	EAttribute getStackBuilder_AdditionalCode();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link com.amazon.aws.workbench.model.awsworkbench.StackBuilder#getVpcbuilder <em>Vpcbuilder</em>}'.
+	 * Returns the meta object for the containment reference list '{@link com.amazon.aws.workbench.model.awsworkbench.StackBuilder#getServiceresources <em>Serviceresources</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Vpcbuilder</em>'.
-	 * @see com.amazon.aws.workbench.model.awsworkbench.StackBuilder#getVpcbuilder()
+	 * @return the meta object for the containment reference list '<em>Serviceresources</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.StackBuilder#getServiceresources()
 	 * @see #getStackBuilder()
 	 * @generated
 	 */
-	EReference getStackBuilder_Vpcbuilder();
+	EReference getStackBuilder_Serviceresources();
 
 	/**
 	 * Returns the meta object for class '{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder <em>Vpc Builder</em>}'.
@@ -791,6 +837,27 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getVpcBuilder_DefaultInstanceTenancy();
+
+	/**
+	 * Returns the meta object for class '{@link com.amazon.aws.workbench.model.awsworkbench.ServiceResources <em>Service Resources</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Service Resources</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.ServiceResources
+	 * @generated
+	 */
+	EClass getServiceResources();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.ServiceResources#getParentStack <em>Parent Stack</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Parent Stack</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.ServiceResources#getParentStack()
+	 * @see #getServiceResources()
+	 * @generated
+	 */
+	EAttribute getServiceResources_ParentStack();
 
 	/**
 	 * Returns the meta object for enum '{@link com.amazon.aws.workbench.model.awsworkbench.DefaultInstanceTenancy <em>Default Instance Tenancy</em>}'.
@@ -993,12 +1060,12 @@ public interface AwsworkbenchPackage extends EPackage {
 		EAttribute STACK_BUILDER__ADDITIONAL_CODE = eINSTANCE.getStackBuilder_AdditionalCode();
 
 		/**
-		 * The meta object literal for the '<em><b>Vpcbuilder</b></em>' containment reference list feature.
+		 * The meta object literal for the '<em><b>Serviceresources</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference STACK_BUILDER__VPCBUILDER = eINSTANCE.getStackBuilder_Vpcbuilder();
+		EReference STACK_BUILDER__SERVICERESOURCES = eINSTANCE.getStackBuilder_Serviceresources();
 
 		/**
 		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.VpcBuilderImpl <em>Vpc Builder</em>}' class.
@@ -1105,6 +1172,24 @@ public interface AwsworkbenchPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute VPC_BUILDER__DEFAULT_INSTANCE_TENANCY = eINSTANCE.getVpcBuilder_DefaultInstanceTenancy();
+
+		/**
+		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.ServiceResourcesImpl <em>Service Resources</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.ServiceResourcesImpl
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getServiceResources()
+		 * @generated
+		 */
+		EClass SERVICE_RESOURCES = eINSTANCE.getServiceResources();
+
+		/**
+		 * The meta object literal for the '<em><b>Parent Stack</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SERVICE_RESOURCES__PARENT_STACK = eINSTANCE.getServiceResources_ParentStack();
 
 		/**
 		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.DefaultInstanceTenancy <em>Default Instance Tenancy</em>}' enum.

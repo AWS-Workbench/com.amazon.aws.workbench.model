@@ -82,6 +82,11 @@ public class AwsworkbenchAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseServiceResources(ServiceResources object) {
+			return createServiceResourcesAdapter();
+		}
+
+		@Override
 		public Adapter defaultCase(EObject object) {
 			return createEObjectAdapter();
 		}
@@ -139,6 +144,20 @@ public class AwsworkbenchAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createVpcBuilderAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.ServiceResources <em>Service Resources</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.ServiceResources
+	 * @generated
+	 */
+	public Adapter createServiceResourcesAdapter() {
 		return null;
 	}
 

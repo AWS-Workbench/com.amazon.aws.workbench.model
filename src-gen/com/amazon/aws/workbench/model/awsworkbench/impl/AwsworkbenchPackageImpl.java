@@ -478,16 +478,6 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	 * @generated
 	 */
 	@Override
-	public EAttribute getServiceResources_ParentStack() {
-		return (EAttribute) serviceResourcesEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EEnum getDefaultInstanceTenancy() {
 		return defaultInstanceTenancyEEnum;
 	}
@@ -569,7 +559,6 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 		createEAttribute(vpcBuilderEClass, VPC_BUILDER__DEFAULT_INSTANCE_TENANCY);
 
 		serviceResourcesEClass = createEClass(SERVICE_RESOURCES);
-		createEAttribute(serviceResourcesEClass, SERVICE_RESOURCES__PARENT_STACK);
 
 		// Create enums
 		defaultInstanceTenancyEEnum = createEEnum(DEFAULT_INSTANCE_TENANCY);
@@ -705,9 +694,6 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 
 		initEClass(serviceResourcesEClass, ServiceResources.class, "ServiceResources", IS_ABSTRACT, !IS_INTERFACE,
 				IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getServiceResources_ParentStack(), ecorePackage.getEString(), "parentStack", null, 0, 1,
-				ServiceResources.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
-				!IS_DERIVED, IS_ORDERED);
 
 		// Initialize enums and add enum literals
 		initEEnum(defaultInstanceTenancyEEnum, DefaultInstanceTenancy.class, "DefaultInstanceTenancy");

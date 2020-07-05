@@ -51,8 +51,6 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//VpcBuilder/additionalCode"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//VpcBuilder/defaultInstanceTenancy"/>
     </genClasses>
-    <genClasses ecoreClass="awsworkbench.ecore#//ServiceResources">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ServiceResources/parentStack"/>
-    </genClasses>
+    <genClasses ecoreClass="awsworkbench.ecore#//ServiceResources"/>
   </genPackages>
 </genmodel:GenModel>

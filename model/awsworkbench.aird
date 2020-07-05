@@ -5,7 +5,7 @@
     <semanticResources>awsworkbench.genmodel</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_VofkoLm_EeqNlJ9l2PQxgA">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']"/>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_pJFiU7wjEeqJNPEghFFMTw" name="awsworkbench" repPath="#_pJDGELwjEeqJNPEghFFMTw" changeId="caf21b8a-c02f-46ff-be6b-54f6c40cb400">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_pJFiU7wjEeqJNPEghFFMTw" name="awsworkbench" repPath="#_pJDGELwjEeqJNPEghFFMTw" changeId="e1ea1770-150c-49c4-819d-6fa9a2045fef">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']"/>
         <target xmi:type="ecore:EPackage" href="awsworkbench.ecore#/"/>
       </ownedRepresentationDescriptors>
@@ -178,10 +178,6 @@
         <children xmi:type="notation:Node" xmi:id="_pjKzkL1SEeqOVZU0dTli4Q" type="2003" element="_pjGiIL1SEeqOVZU0dTli4Q">
           <children xmi:type="notation:Node" xmi:id="_pjKzk71SEeqOVZU0dTli4Q" type="5007"/>
           <children xmi:type="notation:Node" xmi:id="_pjKzlL1SEeqOVZU0dTli4Q" type="7004">
-            <children xmi:type="notation:Node" xmi:id="_uQsSoL1SEeqOVZU0dTli4Q" type="3010" element="_uQmzEL1SEeqOVZU0dTli4Q">
-              <styles xmi:type="notation:FontStyle" xmi:id="_uQsSob1SEeqOVZU0dTli4Q" fontColor="2697711" fontName=".AppleSystemUIFont" fontHeight="8"/>
-              <layoutConstraint xmi:type="notation:Location" xmi:id="_uQsSor1SEeqOVZU0dTli4Q"/>
-            </children>
             <styles xmi:type="notation:SortingStyle" xmi:id="_pjKzlb1SEeqOVZU0dTli4Q"/>
             <styles xmi:type="notation:FilteringStyle" xmi:id="_pjKzlr1SEeqOVZU0dTli4Q"/>
           </children>
@@ -517,14 +513,6 @@
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@conditionnalStyles.1/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
-      <ownedElements xmi:type="diagram:DNodeListElement" uid="_uQmzEL1SEeqOVZU0dTli4Q" name="parentStack : EString" tooltipText="">
-        <target xmi:type="ecore:EAttribute" href="awsworkbench.ecore#//ServiceResources/parentStack"/>
-        <semanticElements xmi:type="ecore:EAttribute" href="awsworkbench.ecore#//ServiceResources/parentStack"/>
-        <ownedStyle xmi:type="diagram:BundledImage" uid="_xFeufL1SEeqOVZU0dTli4Q" labelAlignment="LEFT">
-          <description xmi:type="style:BundledImageDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']/@style"/>
-        </ownedStyle>
-        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']"/>
-      </ownedElements>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_1BcNtr1SEeqOVZU0dTli4Q" name="[0..*] serviceresources" sourceNode="_0oZHcL1FEeqOVZU0dTli4Q" targetNode="_pjGiIL1SEeqOVZU0dTli4Q">
       <target xmi:type="ecore:EReference" href="awsworkbench.ecore#//StackBuilder/serviceresources"/>

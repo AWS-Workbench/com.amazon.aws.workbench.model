@@ -287,22 +287,13 @@ public interface AwsworkbenchPackage extends EPackage {
 	int SERVICE_RESOURCES = 3;
 
 	/**
-	 * The feature id for the '<em><b>Parent Stack</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SERVICE_RESOURCES__PARENT_STACK = 0;
-
-	/**
 	 * The number of structural features of the '<em>Service Resources</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_RESOURCES_FEATURE_COUNT = 1;
+	int SERVICE_RESOURCES_FEATURE_COUNT = 0;
 
 	/**
 	 * The number of operations of the '<em>Service Resources</em>' class.
@@ -322,15 +313,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @generated
 	 */
 	int VPC_BUILDER = 2;
-
-	/**
-	 * The feature id for the '<em><b>Parent Stack</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int VPC_BUILDER__PARENT_STACK = SERVICE_RESOURCES__PARENT_STACK;
 
 	/**
 	 * The feature id for the '<em><b>Cidr</b></em>' attribute.
@@ -849,17 +831,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	EClass getServiceResources();
 
 	/**
-	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.ServiceResources#getParentStack <em>Parent Stack</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Parent Stack</em>'.
-	 * @see com.amazon.aws.workbench.model.awsworkbench.ServiceResources#getParentStack()
-	 * @see #getServiceResources()
-	 * @generated
-	 */
-	EAttribute getServiceResources_ParentStack();
-
-	/**
 	 * Returns the meta object for enum '{@link com.amazon.aws.workbench.model.awsworkbench.DefaultInstanceTenancy <em>Default Instance Tenancy</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1182,14 +1153,6 @@ public interface AwsworkbenchPackage extends EPackage {
 		 * @generated
 		 */
 		EClass SERVICE_RESOURCES = eINSTANCE.getServiceResources();
-
-		/**
-		 * The meta object literal for the '<em><b>Parent Stack</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute SERVICE_RESOURCES__PARENT_STACK = eINSTANCE.getServiceResources_ParentStack();
 
 		/**
 		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.DefaultInstanceTenancy <em>Default Instance Tenancy</em>}' enum.

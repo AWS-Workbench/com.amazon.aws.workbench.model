@@ -49,7 +49,5 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="defaultInstanceTenancy"
         eType="#//DefaultInstanceTenancy"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ServiceResources" abstract="true">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="parentStack" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ServiceResources" abstract="true"/>
 </ecore:EPackage>

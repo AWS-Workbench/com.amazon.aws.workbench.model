@@ -441,13 +441,13 @@ public interface AwsworkbenchPackage extends EPackage {
 	int VPC_BUILDER__DEFAULT_INSTANCE_TENANCY = SERVICE_RESOURCES_FEATURE_COUNT + 11;
 
 	/**
-	 * The feature id for the '<em><b>Mytype</b></em>' attribute.
+	 * The feature id for the '<em><b>My Maps</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int VPC_BUILDER__MYTYPE = SERVICE_RESOURCES_FEATURE_COUNT + 12;
+	int VPC_BUILDER__MY_MAPS = SERVICE_RESOURCES_FEATURE_COUNT + 12;
 
 	/**
 	 * The number of structural features of the '<em>Vpc Builder</em>' class.
@@ -848,15 +848,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	EAttribute getVpcBuilder_DefaultInstanceTenancy();
 
 	/**
-	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder#getMytype <em>Mytype</em>}'.
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder#getMyMaps <em>My Maps</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Mytype</em>'.
-	 * @see com.amazon.aws.workbench.model.awsworkbench.VpcBuilder#getMytype()
+	 * @return the meta object for the attribute '<em>My Maps</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.VpcBuilder#getMyMaps()
 	 * @see #getVpcBuilder()
 	 * @generated
 	 */
-	EAttribute getVpcBuilder_Mytype();
+	EAttribute getVpcBuilder_MyMaps();
 
 	/**
 	 * Returns the meta object for class '{@link com.amazon.aws.workbench.model.awsworkbench.ServiceResources <em>Service Resources</em>}'.
@@ -1194,12 +1194,12 @@ public interface AwsworkbenchPackage extends EPackage {
 		EAttribute VPC_BUILDER__DEFAULT_INSTANCE_TENANCY = eINSTANCE.getVpcBuilder_DefaultInstanceTenancy();
 
 		/**
-		 * The meta object literal for the '<em><b>Mytype</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>My Maps</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute VPC_BUILDER__MYTYPE = eINSTANCE.getVpcBuilder_Mytype();
+		EAttribute VPC_BUILDER__MY_MAPS = eINSTANCE.getVpcBuilder_MyMaps();
 
 		/**
 		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.ServiceResourcesImpl <em>Service Resources</em>}' class.

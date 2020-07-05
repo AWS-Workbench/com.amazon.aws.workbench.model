@@ -2,7 +2,7 @@
  */
 package com.amazon.aws.workbench.model.awsworkbench;
 
-import org.eclipse.emf.common.util.EList;
+import java.util.Map;
 
 /**
  * <!-- begin-user-doc -->
@@ -25,7 +25,7 @@ import org.eclipse.emf.common.util.EList;
  *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder#getIdentifier <em>Identifier</em>}</li>
  *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder#getAdditionalCode <em>Additional Code</em>}</li>
  *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder#getDefaultInstanceTenancy <em>Default Instance Tenancy</em>}</li>
- *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder#getMytype <em>Mytype</em>}</li>
+ *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder#getMyMaps <em>My Maps</em>}</li>
  * </ul>
  *
  * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getVpcBuilder()
@@ -302,25 +302,25 @@ public interface VpcBuilder extends ServiceResources {
 	void setDefaultInstanceTenancy(DefaultInstanceTenancy value);
 
 	/**
-	 * Returns the value of the '<em><b>Mytype</b></em>' attribute.
+	 * Returns the value of the '<em><b>My Maps</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Mytype</em>' attribute.
-	 * @see #setMytype(EList)
-	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getVpcBuilder_Mytype()
-	 * @model many="false"
+	 * @return the value of the '<em>My Maps</em>' attribute.
+	 * @see #setMyMaps(Map)
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getVpcBuilder_MyMaps()
+	 * @model
 	 * @generated
 	 */
-	EList<String> getMytype();
+	Map<String, String> getMyMaps();
 
 	/**
-	 * Sets the value of the '{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder#getMytype <em>Mytype</em>}' attribute.
+	 * Sets the value of the '{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder#getMyMaps <em>My Maps</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Mytype</em>' attribute.
-	 * @see #getMytype()
+	 * @param value the new value of the '<em>My Maps</em>' attribute.
+	 * @see #getMyMaps()
 	 * @generated
 	 */
-	void setMytype(EList<String> value);
+	void setMyMaps(Map<String, String> value);
 
 } // VpcBuilder

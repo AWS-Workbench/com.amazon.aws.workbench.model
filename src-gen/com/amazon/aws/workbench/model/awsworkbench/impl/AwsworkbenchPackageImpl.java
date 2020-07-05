@@ -469,7 +469,7 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	 * @generated
 	 */
 	@Override
-	public EAttribute getVpcBuilder_Mytype() {
+	public EAttribute getVpcBuilder_MyMaps() {
 		return (EAttribute) vpcBuilderEClass.getEStructuralFeatures().get(12);
 	}
 
@@ -578,7 +578,7 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 		createEAttribute(vpcBuilderEClass, VPC_BUILDER__IDENTIFIER);
 		createEAttribute(vpcBuilderEClass, VPC_BUILDER__ADDITIONAL_CODE);
 		createEAttribute(vpcBuilderEClass, VPC_BUILDER__DEFAULT_INSTANCE_TENANCY);
-		createEAttribute(vpcBuilderEClass, VPC_BUILDER__MYTYPE);
+		createEAttribute(vpcBuilderEClass, VPC_BUILDER__MY_MAPS);
 
 		serviceResourcesEClass = createEClass(SERVICE_RESOURCES);
 		createEAttribute(serviceResourcesEClass, SERVICE_RESOURCES__MAPSTYPE);
@@ -714,10 +714,12 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 		initEAttribute(getVpcBuilder_DefaultInstanceTenancy(), this.getDefaultInstanceTenancy(),
 				"defaultInstanceTenancy", null, 0, 1, VpcBuilder.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
 				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		EGenericType g1 = createEGenericType(ecorePackage.getEEList());
+		EGenericType g1 = createEGenericType(ecorePackage.getEMap());
 		EGenericType g2 = createEGenericType(ecorePackage.getEString());
 		g1.getETypeArguments().add(g2);
-		initEAttribute(getVpcBuilder_Mytype(), g1, "mytype", null, 0, 1, VpcBuilder.class, !IS_TRANSIENT, !IS_VOLATILE,
+		g2 = createEGenericType(ecorePackage.getEString());
+		g1.getETypeArguments().add(g2);
+		initEAttribute(getVpcBuilder_MyMaps(), g1, "myMaps", null, 0, 1, VpcBuilder.class, !IS_TRANSIENT, !IS_VOLATILE,
 				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(serviceResourcesEClass, ServiceResources.class, "ServiceResources", IS_ABSTRACT, !IS_INTERFACE,

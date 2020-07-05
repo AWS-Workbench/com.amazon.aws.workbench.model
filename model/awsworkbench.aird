@@ -5,7 +5,7 @@
     <semanticResources>awsworkbench.genmodel</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_VofkoLm_EeqNlJ9l2PQxgA">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']"/>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_pJFiU7wjEeqJNPEghFFMTw" name="awsworkbench" repPath="#_pJDGELwjEeqJNPEghFFMTw" changeId="fc6b10b6-23fd-413e-a1c3-79fbf869b5ef">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_pJFiU7wjEeqJNPEghFFMTw" name="awsworkbench" repPath="#_pJDGELwjEeqJNPEghFFMTw" changeId="32eb6716-3d73-4228-a814-505d75bf5c03">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']"/>
         <target xmi:type="ecore:EPackage" href="awsworkbench.ecore#/"/>
       </ownedRepresentationDescriptors>
@@ -190,9 +190,9 @@
               <styles xmi:type="notation:FontStyle" xmi:id="_198lIb1FEeqOVZU0dTli4Q" fontName=".AppleSystemUIFont" fontHeight="8"/>
               <layoutConstraint xmi:type="notation:Location" xmi:id="_198lIr1FEeqOVZU0dTli4Q"/>
             </children>
-            <children xmi:type="notation:Node" xmi:id="_7-6hYL6rEeqhR9V2nlqNjQ" type="3010" element="_7-zMo76rEeqhR9V2nlqNjQ">
-              <styles xmi:type="notation:FontStyle" xmi:id="_7-6hYb6rEeqhR9V2nlqNjQ" fontColor="2697711" fontName=".AppleSystemUIFont" fontHeight="8"/>
-              <layoutConstraint xmi:type="notation:Location" xmi:id="_7-6hYr6rEeqhR9V2nlqNjQ"/>
+            <children xmi:type="notation:Node" xmi:id="_i3GucL62EeqhR9V2nlqNjQ" type="3010" element="_i3CdBr62EeqhR9V2nlqNjQ">
+              <styles xmi:type="notation:FontStyle" xmi:id="_i3Gucb62EeqhR9V2nlqNjQ" fontColor="2697711" fontName=".AppleSystemUIFont" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_i3Gucr62EeqhR9V2nlqNjQ"/>
             </children>
             <styles xmi:type="notation:SortingStyle" xmi:id="_196v8b1FEeqOVZU0dTli4Q"/>
             <styles xmi:type="notation:FilteringStyle" xmi:id="_196v8r1FEeqOVZU0dTli4Q"/>
@@ -427,7 +427,7 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC_EReference']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_19uisL1FEeqOVZU0dTli4Q" name="VpcBuilder" tooltipText="&#xA;ERROR : The attribute 'VpcBuilder.mytype' is not transient so it must have a data type that is serializable" outgoingEdges="_3AX_lr1SEeqOVZU0dTli4Q" width="12" height="10">
+    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_19uisL1FEeqOVZU0dTli4Q" name="VpcBuilder" tooltipText="&#xA;ERROR : The attribute 'VpcBuilder.myMaps' is not transient so it must have a data type that is serializable" outgoingEdges="_3AX_lr1SEeqOVZU0dTli4Q" width="12" height="10">
       <target xmi:type="ecore:EClass" href="awsworkbench.ecore#//VpcBuilder"/>
       <semanticElements xmi:type="ecore:EClass" href="awsworkbench.ecore#//VpcBuilder"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -531,10 +531,10 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']"/>
       </ownedElements>
-      <ownedElements xmi:type="diagram:DNodeListElement" uid="_7-zMo76rEeqhR9V2nlqNjQ" name="mytype : EEList" tooltipText="&#xA;ERROR : The attribute 'VpcBuilder.mytype' is not transient so it must have a data type that is serializable">
-        <target xmi:type="ecore:EAttribute" href="awsworkbench.ecore#//VpcBuilder/mytype"/>
-        <semanticElements xmi:type="ecore:EAttribute" href="awsworkbench.ecore#//VpcBuilder/mytype"/>
-        <ownedStyle xmi:type="diagram:BundledImage" uid="_7-zzsb6rEeqhR9V2nlqNjQ" labelColor="239,41,41" labelAlignment="LEFT" description="_7-zzsL6rEeqhR9V2nlqNjQ" borderColor="239,41,41"/>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_i3CdBr62EeqhR9V2nlqNjQ" name="myMaps : EMap" tooltipText="&#xA;ERROR : The attribute 'VpcBuilder.myMaps' is not transient so it must have a data type that is serializable">
+        <target xmi:type="ecore:EAttribute" href="awsworkbench.ecore#//VpcBuilder/myMaps"/>
+        <semanticElements xmi:type="ecore:EAttribute" href="awsworkbench.ecore#//VpcBuilder/myMaps"/>
+        <ownedStyle xmi:type="diagram:BundledImage" uid="_i3DEEL62EeqhR9V2nlqNjQ" labelColor="239,41,41" labelAlignment="LEFT" description="_7-zzsL6rEeqhR9V2nlqNjQ" borderColor="239,41,41"/>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']"/>
       </ownedElements>
     </ownedDiagramElements>

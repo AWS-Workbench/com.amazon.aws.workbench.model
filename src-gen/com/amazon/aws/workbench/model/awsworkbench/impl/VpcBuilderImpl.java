@@ -5,9 +5,8 @@ package com.amazon.aws.workbench.model.awsworkbench.impl;
 import com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage;
 import com.amazon.aws.workbench.model.awsworkbench.DefaultInstanceTenancy;
 import com.amazon.aws.workbench.model.awsworkbench.VpcBuilder;
+import java.util.Map;
 import org.eclipse.emf.common.notify.Notification;
-
-import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
@@ -32,7 +31,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.VpcBuilderImpl#getIdentifier <em>Identifier</em>}</li>
  *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.VpcBuilderImpl#getAdditionalCode <em>Additional Code</em>}</li>
  *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.VpcBuilderImpl#getDefaultInstanceTenancy <em>Default Instance Tenancy</em>}</li>
- *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.VpcBuilderImpl#getMytype <em>Mytype</em>}</li>
+ *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.VpcBuilderImpl#getMyMaps <em>My Maps</em>}</li>
  * </ul>
  *
  * @generated
@@ -279,14 +278,14 @@ public class VpcBuilderImpl extends ServiceResourcesImpl implements VpcBuilder {
 	protected DefaultInstanceTenancy defaultInstanceTenancy = DEFAULT_INSTANCE_TENANCY_EDEFAULT;
 
 	/**
-	 * The cached value of the '{@link #getMytype() <em>Mytype</em>}' attribute.
+	 * The cached value of the '{@link #getMyMaps() <em>My Maps</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getMytype()
+	 * @see #getMyMaps()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<String> mytype;
+	protected Map<String, String> myMaps;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -603,8 +602,8 @@ public class VpcBuilderImpl extends ServiceResourcesImpl implements VpcBuilder {
 	 * @generated
 	 */
 	@Override
-	public EList<String> getMytype() {
-		return mytype;
+	public Map<String, String> getMyMaps() {
+		return myMaps;
 	}
 
 	/**
@@ -613,12 +612,12 @@ public class VpcBuilderImpl extends ServiceResourcesImpl implements VpcBuilder {
 	 * @generated
 	 */
 	@Override
-	public void setMytype(EList<String> newMytype) {
-		EList<String> oldMytype = mytype;
-		mytype = newMytype;
+	public void setMyMaps(Map<String, String> newMyMaps) {
+		Map<String, String> oldMyMaps = myMaps;
+		myMaps = newMyMaps;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, AwsworkbenchPackage.VPC_BUILDER__MYTYPE, oldMytype,
-					mytype));
+			eNotify(new ENotificationImpl(this, Notification.SET, AwsworkbenchPackage.VPC_BUILDER__MY_MAPS, oldMyMaps,
+					myMaps));
 	}
 
 	/**
@@ -653,8 +652,8 @@ public class VpcBuilderImpl extends ServiceResourcesImpl implements VpcBuilder {
 			return getAdditionalCode();
 		case AwsworkbenchPackage.VPC_BUILDER__DEFAULT_INSTANCE_TENANCY:
 			return getDefaultInstanceTenancy();
-		case AwsworkbenchPackage.VPC_BUILDER__MYTYPE:
-			return getMytype();
+		case AwsworkbenchPackage.VPC_BUILDER__MY_MAPS:
+			return getMyMaps();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -704,8 +703,8 @@ public class VpcBuilderImpl extends ServiceResourcesImpl implements VpcBuilder {
 		case AwsworkbenchPackage.VPC_BUILDER__DEFAULT_INSTANCE_TENANCY:
 			setDefaultInstanceTenancy((DefaultInstanceTenancy) newValue);
 			return;
-		case AwsworkbenchPackage.VPC_BUILDER__MYTYPE:
-			setMytype((EList<String>) newValue);
+		case AwsworkbenchPackage.VPC_BUILDER__MY_MAPS:
+			setMyMaps((Map<String, String>) newValue);
 			return;
 		}
 		super.eSet(featureID, newValue);
@@ -755,8 +754,8 @@ public class VpcBuilderImpl extends ServiceResourcesImpl implements VpcBuilder {
 		case AwsworkbenchPackage.VPC_BUILDER__DEFAULT_INSTANCE_TENANCY:
 			setDefaultInstanceTenancy(DEFAULT_INSTANCE_TENANCY_EDEFAULT);
 			return;
-		case AwsworkbenchPackage.VPC_BUILDER__MYTYPE:
-			setMytype((EList<String>) null);
+		case AwsworkbenchPackage.VPC_BUILDER__MY_MAPS:
+			setMyMaps((Map<String, String>) null);
 			return;
 		}
 		super.eUnset(featureID);
@@ -799,8 +798,8 @@ public class VpcBuilderImpl extends ServiceResourcesImpl implements VpcBuilder {
 					: !ADDITIONAL_CODE_EDEFAULT.equals(additionalCode);
 		case AwsworkbenchPackage.VPC_BUILDER__DEFAULT_INSTANCE_TENANCY:
 			return defaultInstanceTenancy != DEFAULT_INSTANCE_TENANCY_EDEFAULT;
-		case AwsworkbenchPackage.VPC_BUILDER__MYTYPE:
-			return mytype != null;
+		case AwsworkbenchPackage.VPC_BUILDER__MY_MAPS:
+			return myMaps != null;
 		}
 		return super.eIsSet(featureID);
 	}
@@ -840,8 +839,8 @@ public class VpcBuilderImpl extends ServiceResourcesImpl implements VpcBuilder {
 		result.append(additionalCode);
 		result.append(", defaultInstanceTenancy: ");
 		result.append(defaultInstanceTenancy);
-		result.append(", mytype: ");
-		result.append(mytype);
+		result.append(", myMaps: ");
+		result.append(myMaps);
 		result.append(')');
 		return result.toString();
 	}

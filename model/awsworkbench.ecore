@@ -48,6 +48,18 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="additionalCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="defaultInstanceTenancy"
         eType="#//DefaultInstanceTenancy"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="mytype">
+      <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EEList">
+        <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eGenericType>
+    </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ServiceResources" abstract="true"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ServiceResources" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="mapstype" transient="true">
+      <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+        <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eGenericType>
+    </eStructuralFeatures>
+  </eClassifiers>
 </ecore:EPackage>

@@ -14,6 +14,7 @@ import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EDataType;
 import org.eclipse.emf.ecore.EEnum;
+import org.eclipse.emf.ecore.EGenericType;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
 
@@ -468,8 +469,28 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	 * @generated
 	 */
 	@Override
+	public EAttribute getVpcBuilder_Mytype() {
+		return (EAttribute) vpcBuilderEClass.getEStructuralFeatures().get(12);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getServiceResources() {
 		return serviceResourcesEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getServiceResources_Mapstype() {
+		return (EAttribute) serviceResourcesEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -557,8 +578,10 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 		createEAttribute(vpcBuilderEClass, VPC_BUILDER__IDENTIFIER);
 		createEAttribute(vpcBuilderEClass, VPC_BUILDER__ADDITIONAL_CODE);
 		createEAttribute(vpcBuilderEClass, VPC_BUILDER__DEFAULT_INSTANCE_TENANCY);
+		createEAttribute(vpcBuilderEClass, VPC_BUILDER__MYTYPE);
 
 		serviceResourcesEClass = createEClass(SERVICE_RESOURCES);
+		createEAttribute(serviceResourcesEClass, SERVICE_RESOURCES__MAPSTYPE);
 
 		// Create enums
 		defaultInstanceTenancyEEnum = createEEnum(DEFAULT_INSTANCE_TENANCY);
@@ -691,9 +714,21 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 		initEAttribute(getVpcBuilder_DefaultInstanceTenancy(), this.getDefaultInstanceTenancy(),
 				"defaultInstanceTenancy", null, 0, 1, VpcBuilder.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
 				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		EGenericType g1 = createEGenericType(ecorePackage.getEEList());
+		EGenericType g2 = createEGenericType(ecorePackage.getEString());
+		g1.getETypeArguments().add(g2);
+		initEAttribute(getVpcBuilder_Mytype(), g1, "mytype", null, 0, 1, VpcBuilder.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(serviceResourcesEClass, ServiceResources.class, "ServiceResources", IS_ABSTRACT, !IS_INTERFACE,
 				IS_GENERATED_INSTANCE_CLASS);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEString());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEString());
+		g1.getETypeArguments().add(g2);
+		initEAttribute(getServiceResources_Mapstype(), g1, "mapstype", null, 0, 1, ServiceResources.class, IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Initialize enums and add enum literals
 		initEEnum(defaultInstanceTenancyEEnum, DefaultInstanceTenancy.class, "DefaultInstanceTenancy");

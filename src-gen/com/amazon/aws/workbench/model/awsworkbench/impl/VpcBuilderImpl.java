@@ -5,9 +5,9 @@ package com.amazon.aws.workbench.model.awsworkbench.impl;
 import com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage;
 import com.amazon.aws.workbench.model.awsworkbench.DefaultInstanceTenancy;
 import com.amazon.aws.workbench.model.awsworkbench.VpcBuilder;
-
 import org.eclipse.emf.common.notify.Notification;
 
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
@@ -32,6 +32,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.VpcBuilderImpl#getIdentifier <em>Identifier</em>}</li>
  *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.VpcBuilderImpl#getAdditionalCode <em>Additional Code</em>}</li>
  *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.VpcBuilderImpl#getDefaultInstanceTenancy <em>Default Instance Tenancy</em>}</li>
+ *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.VpcBuilderImpl#getMytype <em>Mytype</em>}</li>
  * </ul>
  *
  * @generated
@@ -276,6 +277,16 @@ public class VpcBuilderImpl extends ServiceResourcesImpl implements VpcBuilder {
 	 * @ordered
 	 */
 	protected DefaultInstanceTenancy defaultInstanceTenancy = DEFAULT_INSTANCE_TENANCY_EDEFAULT;
+
+	/**
+	 * The cached value of the '{@link #getMytype() <em>Mytype</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getMytype()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<String> mytype;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -592,6 +603,30 @@ public class VpcBuilderImpl extends ServiceResourcesImpl implements VpcBuilder {
 	 * @generated
 	 */
 	@Override
+	public EList<String> getMytype() {
+		return mytype;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setMytype(EList<String> newMytype) {
+		EList<String> oldMytype = mytype;
+		mytype = newMytype;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, AwsworkbenchPackage.VPC_BUILDER__MYTYPE, oldMytype,
+					mytype));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 		case AwsworkbenchPackage.VPC_BUILDER__CIDR:
@@ -618,6 +653,8 @@ public class VpcBuilderImpl extends ServiceResourcesImpl implements VpcBuilder {
 			return getAdditionalCode();
 		case AwsworkbenchPackage.VPC_BUILDER__DEFAULT_INSTANCE_TENANCY:
 			return getDefaultInstanceTenancy();
+		case AwsworkbenchPackage.VPC_BUILDER__MYTYPE:
+			return getMytype();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -627,6 +664,7 @@ public class VpcBuilderImpl extends ServiceResourcesImpl implements VpcBuilder {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@SuppressWarnings("unchecked")
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
@@ -665,6 +703,9 @@ public class VpcBuilderImpl extends ServiceResourcesImpl implements VpcBuilder {
 			return;
 		case AwsworkbenchPackage.VPC_BUILDER__DEFAULT_INSTANCE_TENANCY:
 			setDefaultInstanceTenancy((DefaultInstanceTenancy) newValue);
+			return;
+		case AwsworkbenchPackage.VPC_BUILDER__MYTYPE:
+			setMytype((EList<String>) newValue);
 			return;
 		}
 		super.eSet(featureID, newValue);
@@ -714,6 +755,9 @@ public class VpcBuilderImpl extends ServiceResourcesImpl implements VpcBuilder {
 		case AwsworkbenchPackage.VPC_BUILDER__DEFAULT_INSTANCE_TENANCY:
 			setDefaultInstanceTenancy(DEFAULT_INSTANCE_TENANCY_EDEFAULT);
 			return;
+		case AwsworkbenchPackage.VPC_BUILDER__MYTYPE:
+			setMytype((EList<String>) null);
+			return;
 		}
 		super.eUnset(featureID);
 	}
@@ -755,6 +799,8 @@ public class VpcBuilderImpl extends ServiceResourcesImpl implements VpcBuilder {
 					: !ADDITIONAL_CODE_EDEFAULT.equals(additionalCode);
 		case AwsworkbenchPackage.VPC_BUILDER__DEFAULT_INSTANCE_TENANCY:
 			return defaultInstanceTenancy != DEFAULT_INSTANCE_TENANCY_EDEFAULT;
+		case AwsworkbenchPackage.VPC_BUILDER__MYTYPE:
+			return mytype != null;
 		}
 		return super.eIsSet(featureID);
 	}
@@ -794,6 +840,8 @@ public class VpcBuilderImpl extends ServiceResourcesImpl implements VpcBuilder {
 		result.append(additionalCode);
 		result.append(", defaultInstanceTenancy: ");
 		result.append(defaultInstanceTenancy);
+		result.append(", mytype: ");
+		result.append(mytype);
 		result.append(')');
 		return result.toString();
 	}

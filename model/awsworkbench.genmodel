@@ -50,7 +50,10 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//VpcBuilder/identifier"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//VpcBuilder/additionalCode"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//VpcBuilder/defaultInstanceTenancy"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//VpcBuilder/mytype"/>
     </genClasses>
-    <genClasses ecoreClass="awsworkbench.ecore#//ServiceResources"/>
+    <genClasses ecoreClass="awsworkbench.ecore#//ServiceResources">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ServiceResources/mapstype"/>
+    </genClasses>
   </genPackages>
 </genmodel:GenModel>

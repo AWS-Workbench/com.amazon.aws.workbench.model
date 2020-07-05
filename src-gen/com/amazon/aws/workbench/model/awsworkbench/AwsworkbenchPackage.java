@@ -287,13 +287,22 @@ public interface AwsworkbenchPackage extends EPackage {
 	int SERVICE_RESOURCES = 3;
 
 	/**
+	 * The feature id for the '<em><b>Mapstype</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SERVICE_RESOURCES__MAPSTYPE = 0;
+
+	/**
 	 * The number of structural features of the '<em>Service Resources</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_RESOURCES_FEATURE_COUNT = 0;
+	int SERVICE_RESOURCES_FEATURE_COUNT = 1;
 
 	/**
 	 * The number of operations of the '<em>Service Resources</em>' class.
@@ -313,6 +322,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @generated
 	 */
 	int VPC_BUILDER = 2;
+
+	/**
+	 * The feature id for the '<em><b>Mapstype</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VPC_BUILDER__MAPSTYPE = SERVICE_RESOURCES__MAPSTYPE;
 
 	/**
 	 * The feature id for the '<em><b>Cidr</b></em>' attribute.
@@ -423,13 +441,22 @@ public interface AwsworkbenchPackage extends EPackage {
 	int VPC_BUILDER__DEFAULT_INSTANCE_TENANCY = SERVICE_RESOURCES_FEATURE_COUNT + 11;
 
 	/**
+	 * The feature id for the '<em><b>Mytype</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VPC_BUILDER__MYTYPE = SERVICE_RESOURCES_FEATURE_COUNT + 12;
+
+	/**
 	 * The number of structural features of the '<em>Vpc Builder</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int VPC_BUILDER_FEATURE_COUNT = SERVICE_RESOURCES_FEATURE_COUNT + 12;
+	int VPC_BUILDER_FEATURE_COUNT = SERVICE_RESOURCES_FEATURE_COUNT + 13;
 
 	/**
 	 * The number of operations of the '<em>Vpc Builder</em>' class.
@@ -821,6 +848,17 @@ public interface AwsworkbenchPackage extends EPackage {
 	EAttribute getVpcBuilder_DefaultInstanceTenancy();
 
 	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder#getMytype <em>Mytype</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Mytype</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.VpcBuilder#getMytype()
+	 * @see #getVpcBuilder()
+	 * @generated
+	 */
+	EAttribute getVpcBuilder_Mytype();
+
+	/**
 	 * Returns the meta object for class '{@link com.amazon.aws.workbench.model.awsworkbench.ServiceResources <em>Service Resources</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -829,6 +867,17 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getServiceResources();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.ServiceResources#getMapstype <em>Mapstype</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Mapstype</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.ServiceResources#getMapstype()
+	 * @see #getServiceResources()
+	 * @generated
+	 */
+	EAttribute getServiceResources_Mapstype();
 
 	/**
 	 * Returns the meta object for enum '{@link com.amazon.aws.workbench.model.awsworkbench.DefaultInstanceTenancy <em>Default Instance Tenancy</em>}'.
@@ -1145,6 +1194,14 @@ public interface AwsworkbenchPackage extends EPackage {
 		EAttribute VPC_BUILDER__DEFAULT_INSTANCE_TENANCY = eINSTANCE.getVpcBuilder_DefaultInstanceTenancy();
 
 		/**
+		 * The meta object literal for the '<em><b>Mytype</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute VPC_BUILDER__MYTYPE = eINSTANCE.getVpcBuilder_Mytype();
+
+		/**
 		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.ServiceResourcesImpl <em>Service Resources</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -1153,6 +1210,14 @@ public interface AwsworkbenchPackage extends EPackage {
 		 * @generated
 		 */
 		EClass SERVICE_RESOURCES = eINSTANCE.getServiceResources();
+
+		/**
+		 * The meta object literal for the '<em><b>Mapstype</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SERVICE_RESOURCES__MAPSTYPE = eINSTANCE.getServiceResources_Mapstype();
 
 		/**
 		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.DefaultInstanceTenancy <em>Default Instance Tenancy</em>}' enum.

@@ -22,31 +22,31 @@ public interface AwsworkbenchFactory extends EFactory {
 	AwsworkbenchFactory eINSTANCE = com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchFactoryImpl.init();
 
 	/**
-	 * Returns a new object of class '<em>App Builder</em>'.
+	 * Returns a new object of class '<em>App Builder core</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>App Builder</em>'.
+	 * @return a new object of class '<em>App Builder core</em>'.
 	 * @generated
 	 */
-	AppBuilder createAppBuilder();
+	AppBuilder_core createAppBuilder_core();
 
 	/**
-	 * Returns a new object of class '<em>Stack Builder</em>'.
+	 * Returns a new object of class '<em>Stack Builder core</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Stack Builder</em>'.
+	 * @return a new object of class '<em>Stack Builder core</em>'.
 	 * @generated
 	 */
-	StackBuilder createStackBuilder();
+	StackBuilder_core createStackBuilder_core();
 
 	/**
-	 * Returns a new object of class '<em>Vpc Builder</em>'.
+	 * Returns a new object of class '<em>Vpc Builder ec2</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Vpc Builder</em>'.
+	 * @return a new object of class '<em>Vpc Builder ec2</em>'.
 	 * @generated
 	 */
-	VpcBuilder createVpcBuilder();
+	VpcBuilder_ec2 createVpcBuilder_ec2();
 
 	/**
 	 * Returns the package supported by this factory.

@@ -2,9 +2,9 @@
  */
 package com.amazon.aws.workbench.model.awsworkbench.impl;
 
-import com.amazon.aws.workbench.model.awsworkbench.AppBuilder;
+import com.amazon.aws.workbench.model.awsworkbench.AppBuilder_core;
 import com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage;
-import com.amazon.aws.workbench.model.awsworkbench.StackBuilder;
+import com.amazon.aws.workbench.model.awsworkbench.StackBuilder_core;
 
 import java.util.Collection;
 
@@ -24,27 +24,28 @@ import org.eclipse.emf.ecore.util.InternalEList;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>App Builder</b></em>'.
+ * An implementation of the model object '<em><b>App Builder core</b></em>'.
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.AppBuilderImpl#getAutoSynth <em>Auto Synth</em>}</li>
- *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.AppBuilderImpl#getOutdir <em>Outdir</em>}</li>
- *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.AppBuilderImpl#getRuntimeInfo <em>Runtime Info</em>}</li>
- *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.AppBuilderImpl#getStackTraces <em>Stack Traces</em>}</li>
- *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.AppBuilderImpl#getTreeMetadata <em>Tree Metadata</em>}</li>
- *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.AppBuilderImpl#getGeneratedClassName <em>Generated Class Name</em>}</li>
- *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.AppBuilderImpl#getVarName <em>Var Name</em>}</li>
- *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.AppBuilderImpl#getIdentifier <em>Identifier</em>}</li>
- *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.AppBuilderImpl#getAdditionalCode <em>Additional Code</em>}</li>
- *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.AppBuilderImpl#getStackbuilder <em>Stackbuilder</em>}</li>
+ *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.AppBuilder_coreImpl#getAutoSynth <em>Auto Synth</em>}</li>
+ *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.AppBuilder_coreImpl#getContextAsMap <em>Context As Map</em>}</li>
+ *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.AppBuilder_coreImpl#getOutdir <em>Outdir</em>}</li>
+ *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.AppBuilder_coreImpl#getRuntimeInfo <em>Runtime Info</em>}</li>
+ *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.AppBuilder_coreImpl#getStackTraces <em>Stack Traces</em>}</li>
+ *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.AppBuilder_coreImpl#getTreeMetadata <em>Tree Metadata</em>}</li>
+ *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.AppBuilder_coreImpl#getGeneratedClassName <em>Generated Class Name</em>}</li>
+ *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.AppBuilder_coreImpl#getVarName <em>Var Name</em>}</li>
+ *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.AppBuilder_coreImpl#getIdentifier <em>Identifier</em>}</li>
+ *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.AppBuilder_coreImpl#getAdditionalCode <em>Additional Code</em>}</li>
+ *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.AppBuilder_coreImpl#getStackbuilder_core <em>Stackbuilder core</em>}</li>
  * </ul>
  *
  * @generated
  */
-public class AppBuilderImpl extends MinimalEObjectImpl.Container implements AppBuilder {
+public class AppBuilder_coreImpl extends MinimalEObjectImpl.Container implements AppBuilder_core {
 	/**
 	 * The default value of the '{@link #getAutoSynth() <em>Auto Synth</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -64,6 +65,26 @@ public class AppBuilderImpl extends MinimalEObjectImpl.Container implements AppB
 	 * @ordered
 	 */
 	protected Boolean autoSynth = AUTO_SYNTH_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getContextAsMap() <em>Context As Map</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getContextAsMap()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String CONTEXT_AS_MAP_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getContextAsMap() <em>Context As Map</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getContextAsMap()
+	 * @generated
+	 * @ordered
+	 */
+	protected String contextAsMap = CONTEXT_AS_MAP_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getOutdir() <em>Outdir</em>}' attribute.
@@ -226,21 +247,21 @@ public class AppBuilderImpl extends MinimalEObjectImpl.Container implements AppB
 	protected String additionalCode = ADDITIONAL_CODE_EDEFAULT;
 
 	/**
-	 * The cached value of the '{@link #getStackbuilder() <em>Stackbuilder</em>}' containment reference list.
+	 * The cached value of the '{@link #getStackbuilder_core() <em>Stackbuilder core</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getStackbuilder()
+	 * @see #getStackbuilder_core()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<StackBuilder> stackbuilder;
+	protected EList<StackBuilder_core> stackbuilder_core;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected AppBuilderImpl() {
+	protected AppBuilder_coreImpl() {
 		super();
 	}
 
@@ -251,7 +272,7 @@ public class AppBuilderImpl extends MinimalEObjectImpl.Container implements AppB
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AwsworkbenchPackage.Literals.APP_BUILDER;
+		return AwsworkbenchPackage.Literals.APP_BUILDER_CORE;
 	}
 
 	/**
@@ -274,8 +295,32 @@ public class AppBuilderImpl extends MinimalEObjectImpl.Container implements AppB
 		Boolean oldAutoSynth = autoSynth;
 		autoSynth = newAutoSynth;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, AwsworkbenchPackage.APP_BUILDER__AUTO_SYNTH,
+			eNotify(new ENotificationImpl(this, Notification.SET, AwsworkbenchPackage.APP_BUILDER_CORE__AUTO_SYNTH,
 					oldAutoSynth, autoSynth));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String getContextAsMap() {
+		return contextAsMap;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setContextAsMap(String newContextAsMap) {
+		String oldContextAsMap = contextAsMap;
+		contextAsMap = newContextAsMap;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, AwsworkbenchPackage.APP_BUILDER_CORE__CONTEXT_AS_MAP,
+					oldContextAsMap, contextAsMap));
 	}
 
 	/**
@@ -298,8 +343,8 @@ public class AppBuilderImpl extends MinimalEObjectImpl.Container implements AppB
 		String oldOutdir = outdir;
 		outdir = newOutdir;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, AwsworkbenchPackage.APP_BUILDER__OUTDIR, oldOutdir,
-					outdir));
+			eNotify(new ENotificationImpl(this, Notification.SET, AwsworkbenchPackage.APP_BUILDER_CORE__OUTDIR,
+					oldOutdir, outdir));
 	}
 
 	/**
@@ -322,7 +367,7 @@ public class AppBuilderImpl extends MinimalEObjectImpl.Container implements AppB
 		Boolean oldRuntimeInfo = runtimeInfo;
 		runtimeInfo = newRuntimeInfo;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, AwsworkbenchPackage.APP_BUILDER__RUNTIME_INFO,
+			eNotify(new ENotificationImpl(this, Notification.SET, AwsworkbenchPackage.APP_BUILDER_CORE__RUNTIME_INFO,
 					oldRuntimeInfo, runtimeInfo));
 	}
 
@@ -346,7 +391,7 @@ public class AppBuilderImpl extends MinimalEObjectImpl.Container implements AppB
 		Boolean oldStackTraces = stackTraces;
 		stackTraces = newStackTraces;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, AwsworkbenchPackage.APP_BUILDER__STACK_TRACES,
+			eNotify(new ENotificationImpl(this, Notification.SET, AwsworkbenchPackage.APP_BUILDER_CORE__STACK_TRACES,
 					oldStackTraces, stackTraces));
 	}
 
@@ -370,7 +415,7 @@ public class AppBuilderImpl extends MinimalEObjectImpl.Container implements AppB
 		Boolean oldTreeMetadata = treeMetadata;
 		treeMetadata = newTreeMetadata;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, AwsworkbenchPackage.APP_BUILDER__TREE_METADATA,
+			eNotify(new ENotificationImpl(this, Notification.SET, AwsworkbenchPackage.APP_BUILDER_CORE__TREE_METADATA,
 					oldTreeMetadata, treeMetadata));
 	}
 
@@ -382,20 +427,6 @@ public class AppBuilderImpl extends MinimalEObjectImpl.Container implements AppB
 	@Override
 	public String getGeneratedClassName() {
 		return generatedClassName;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setGeneratedClassName(String newGeneratedClassName) {
-		String oldGeneratedClassName = generatedClassName;
-		generatedClassName = newGeneratedClassName;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, AwsworkbenchPackage.APP_BUILDER__GENERATED_CLASS_NAME,
-					oldGeneratedClassName, generatedClassName));
 	}
 
 	/**
@@ -418,8 +449,8 @@ public class AppBuilderImpl extends MinimalEObjectImpl.Container implements AppB
 		String oldVarName = varName;
 		varName = newVarName;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, AwsworkbenchPackage.APP_BUILDER__VAR_NAME, oldVarName,
-					varName));
+			eNotify(new ENotificationImpl(this, Notification.SET, AwsworkbenchPackage.APP_BUILDER_CORE__VAR_NAME,
+					oldVarName, varName));
 	}
 
 	/**
@@ -442,7 +473,7 @@ public class AppBuilderImpl extends MinimalEObjectImpl.Container implements AppB
 		String oldIdentifier = identifier;
 		identifier = newIdentifier;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, AwsworkbenchPackage.APP_BUILDER__IDENTIFIER,
+			eNotify(new ENotificationImpl(this, Notification.SET, AwsworkbenchPackage.APP_BUILDER_CORE__IDENTIFIER,
 					oldIdentifier, identifier));
 	}
 
@@ -466,7 +497,7 @@ public class AppBuilderImpl extends MinimalEObjectImpl.Container implements AppB
 		String oldAdditionalCode = additionalCode;
 		additionalCode = newAdditionalCode;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, AwsworkbenchPackage.APP_BUILDER__ADDITIONAL_CODE,
+			eNotify(new ENotificationImpl(this, Notification.SET, AwsworkbenchPackage.APP_BUILDER_CORE__ADDITIONAL_CODE,
 					oldAdditionalCode, additionalCode));
 	}
 
@@ -476,12 +507,12 @@ public class AppBuilderImpl extends MinimalEObjectImpl.Container implements AppB
 	 * @generated
 	 */
 	@Override
-	public EList<StackBuilder> getStackbuilder() {
-		if (stackbuilder == null) {
-			stackbuilder = new EObjectContainmentEList<StackBuilder>(StackBuilder.class, this,
-					AwsworkbenchPackage.APP_BUILDER__STACKBUILDER);
+	public EList<StackBuilder_core> getStackbuilder_core() {
+		if (stackbuilder_core == null) {
+			stackbuilder_core = new EObjectContainmentEList<StackBuilder_core>(StackBuilder_core.class, this,
+					AwsworkbenchPackage.APP_BUILDER_CORE__STACKBUILDER_CORE);
 		}
-		return stackbuilder;
+		return stackbuilder_core;
 	}
 
 	/**
@@ -492,8 +523,8 @@ public class AppBuilderImpl extends MinimalEObjectImpl.Container implements AppB
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-		case AwsworkbenchPackage.APP_BUILDER__STACKBUILDER:
-			return ((InternalEList<?>) getStackbuilder()).basicRemove(otherEnd, msgs);
+		case AwsworkbenchPackage.APP_BUILDER_CORE__STACKBUILDER_CORE:
+			return ((InternalEList<?>) getStackbuilder_core()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -506,26 +537,28 @@ public class AppBuilderImpl extends MinimalEObjectImpl.Container implements AppB
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-		case AwsworkbenchPackage.APP_BUILDER__AUTO_SYNTH:
+		case AwsworkbenchPackage.APP_BUILDER_CORE__AUTO_SYNTH:
 			return getAutoSynth();
-		case AwsworkbenchPackage.APP_BUILDER__OUTDIR:
+		case AwsworkbenchPackage.APP_BUILDER_CORE__CONTEXT_AS_MAP:
+			return getContextAsMap();
+		case AwsworkbenchPackage.APP_BUILDER_CORE__OUTDIR:
 			return getOutdir();
-		case AwsworkbenchPackage.APP_BUILDER__RUNTIME_INFO:
+		case AwsworkbenchPackage.APP_BUILDER_CORE__RUNTIME_INFO:
 			return getRuntimeInfo();
-		case AwsworkbenchPackage.APP_BUILDER__STACK_TRACES:
+		case AwsworkbenchPackage.APP_BUILDER_CORE__STACK_TRACES:
 			return getStackTraces();
-		case AwsworkbenchPackage.APP_BUILDER__TREE_METADATA:
+		case AwsworkbenchPackage.APP_BUILDER_CORE__TREE_METADATA:
 			return getTreeMetadata();
-		case AwsworkbenchPackage.APP_BUILDER__GENERATED_CLASS_NAME:
+		case AwsworkbenchPackage.APP_BUILDER_CORE__GENERATED_CLASS_NAME:
 			return getGeneratedClassName();
-		case AwsworkbenchPackage.APP_BUILDER__VAR_NAME:
+		case AwsworkbenchPackage.APP_BUILDER_CORE__VAR_NAME:
 			return getVarName();
-		case AwsworkbenchPackage.APP_BUILDER__IDENTIFIER:
+		case AwsworkbenchPackage.APP_BUILDER_CORE__IDENTIFIER:
 			return getIdentifier();
-		case AwsworkbenchPackage.APP_BUILDER__ADDITIONAL_CODE:
+		case AwsworkbenchPackage.APP_BUILDER_CORE__ADDITIONAL_CODE:
 			return getAdditionalCode();
-		case AwsworkbenchPackage.APP_BUILDER__STACKBUILDER:
-			return getStackbuilder();
+		case AwsworkbenchPackage.APP_BUILDER_CORE__STACKBUILDER_CORE:
+			return getStackbuilder_core();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -539,36 +572,36 @@ public class AppBuilderImpl extends MinimalEObjectImpl.Container implements AppB
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-		case AwsworkbenchPackage.APP_BUILDER__AUTO_SYNTH:
+		case AwsworkbenchPackage.APP_BUILDER_CORE__AUTO_SYNTH:
 			setAutoSynth((Boolean) newValue);
 			return;
-		case AwsworkbenchPackage.APP_BUILDER__OUTDIR:
+		case AwsworkbenchPackage.APP_BUILDER_CORE__CONTEXT_AS_MAP:
+			setContextAsMap((String) newValue);
+			return;
+		case AwsworkbenchPackage.APP_BUILDER_CORE__OUTDIR:
 			setOutdir((String) newValue);
 			return;
-		case AwsworkbenchPackage.APP_BUILDER__RUNTIME_INFO:
+		case AwsworkbenchPackage.APP_BUILDER_CORE__RUNTIME_INFO:
 			setRuntimeInfo((Boolean) newValue);
 			return;
-		case AwsworkbenchPackage.APP_BUILDER__STACK_TRACES:
+		case AwsworkbenchPackage.APP_BUILDER_CORE__STACK_TRACES:
 			setStackTraces((Boolean) newValue);
 			return;
-		case AwsworkbenchPackage.APP_BUILDER__TREE_METADATA:
+		case AwsworkbenchPackage.APP_BUILDER_CORE__TREE_METADATA:
 			setTreeMetadata((Boolean) newValue);
 			return;
-		case AwsworkbenchPackage.APP_BUILDER__GENERATED_CLASS_NAME:
-			setGeneratedClassName((String) newValue);
-			return;
-		case AwsworkbenchPackage.APP_BUILDER__VAR_NAME:
+		case AwsworkbenchPackage.APP_BUILDER_CORE__VAR_NAME:
 			setVarName((String) newValue);
 			return;
-		case AwsworkbenchPackage.APP_BUILDER__IDENTIFIER:
+		case AwsworkbenchPackage.APP_BUILDER_CORE__IDENTIFIER:
 			setIdentifier((String) newValue);
 			return;
-		case AwsworkbenchPackage.APP_BUILDER__ADDITIONAL_CODE:
+		case AwsworkbenchPackage.APP_BUILDER_CORE__ADDITIONAL_CODE:
 			setAdditionalCode((String) newValue);
 			return;
-		case AwsworkbenchPackage.APP_BUILDER__STACKBUILDER:
-			getStackbuilder().clear();
-			getStackbuilder().addAll((Collection<? extends StackBuilder>) newValue);
+		case AwsworkbenchPackage.APP_BUILDER_CORE__STACKBUILDER_CORE:
+			getStackbuilder_core().clear();
+			getStackbuilder_core().addAll((Collection<? extends StackBuilder_core>) newValue);
 			return;
 		}
 		super.eSet(featureID, newValue);
@@ -582,35 +615,35 @@ public class AppBuilderImpl extends MinimalEObjectImpl.Container implements AppB
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-		case AwsworkbenchPackage.APP_BUILDER__AUTO_SYNTH:
+		case AwsworkbenchPackage.APP_BUILDER_CORE__AUTO_SYNTH:
 			setAutoSynth(AUTO_SYNTH_EDEFAULT);
 			return;
-		case AwsworkbenchPackage.APP_BUILDER__OUTDIR:
+		case AwsworkbenchPackage.APP_BUILDER_CORE__CONTEXT_AS_MAP:
+			setContextAsMap(CONTEXT_AS_MAP_EDEFAULT);
+			return;
+		case AwsworkbenchPackage.APP_BUILDER_CORE__OUTDIR:
 			setOutdir(OUTDIR_EDEFAULT);
 			return;
-		case AwsworkbenchPackage.APP_BUILDER__RUNTIME_INFO:
+		case AwsworkbenchPackage.APP_BUILDER_CORE__RUNTIME_INFO:
 			setRuntimeInfo(RUNTIME_INFO_EDEFAULT);
 			return;
-		case AwsworkbenchPackage.APP_BUILDER__STACK_TRACES:
+		case AwsworkbenchPackage.APP_BUILDER_CORE__STACK_TRACES:
 			setStackTraces(STACK_TRACES_EDEFAULT);
 			return;
-		case AwsworkbenchPackage.APP_BUILDER__TREE_METADATA:
+		case AwsworkbenchPackage.APP_BUILDER_CORE__TREE_METADATA:
 			setTreeMetadata(TREE_METADATA_EDEFAULT);
 			return;
-		case AwsworkbenchPackage.APP_BUILDER__GENERATED_CLASS_NAME:
-			setGeneratedClassName(GENERATED_CLASS_NAME_EDEFAULT);
-			return;
-		case AwsworkbenchPackage.APP_BUILDER__VAR_NAME:
+		case AwsworkbenchPackage.APP_BUILDER_CORE__VAR_NAME:
 			setVarName(VAR_NAME_EDEFAULT);
 			return;
-		case AwsworkbenchPackage.APP_BUILDER__IDENTIFIER:
+		case AwsworkbenchPackage.APP_BUILDER_CORE__IDENTIFIER:
 			setIdentifier(IDENTIFIER_EDEFAULT);
 			return;
-		case AwsworkbenchPackage.APP_BUILDER__ADDITIONAL_CODE:
+		case AwsworkbenchPackage.APP_BUILDER_CORE__ADDITIONAL_CODE:
 			setAdditionalCode(ADDITIONAL_CODE_EDEFAULT);
 			return;
-		case AwsworkbenchPackage.APP_BUILDER__STACKBUILDER:
-			getStackbuilder().clear();
+		case AwsworkbenchPackage.APP_BUILDER_CORE__STACKBUILDER_CORE:
+			getStackbuilder_core().clear();
 			return;
 		}
 		super.eUnset(featureID);
@@ -624,28 +657,31 @@ public class AppBuilderImpl extends MinimalEObjectImpl.Container implements AppB
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-		case AwsworkbenchPackage.APP_BUILDER__AUTO_SYNTH:
+		case AwsworkbenchPackage.APP_BUILDER_CORE__AUTO_SYNTH:
 			return AUTO_SYNTH_EDEFAULT == null ? autoSynth != null : !AUTO_SYNTH_EDEFAULT.equals(autoSynth);
-		case AwsworkbenchPackage.APP_BUILDER__OUTDIR:
+		case AwsworkbenchPackage.APP_BUILDER_CORE__CONTEXT_AS_MAP:
+			return CONTEXT_AS_MAP_EDEFAULT == null ? contextAsMap != null
+					: !CONTEXT_AS_MAP_EDEFAULT.equals(contextAsMap);
+		case AwsworkbenchPackage.APP_BUILDER_CORE__OUTDIR:
 			return OUTDIR_EDEFAULT == null ? outdir != null : !OUTDIR_EDEFAULT.equals(outdir);
-		case AwsworkbenchPackage.APP_BUILDER__RUNTIME_INFO:
+		case AwsworkbenchPackage.APP_BUILDER_CORE__RUNTIME_INFO:
 			return RUNTIME_INFO_EDEFAULT == null ? runtimeInfo != null : !RUNTIME_INFO_EDEFAULT.equals(runtimeInfo);
-		case AwsworkbenchPackage.APP_BUILDER__STACK_TRACES:
+		case AwsworkbenchPackage.APP_BUILDER_CORE__STACK_TRACES:
 			return STACK_TRACES_EDEFAULT == null ? stackTraces != null : !STACK_TRACES_EDEFAULT.equals(stackTraces);
-		case AwsworkbenchPackage.APP_BUILDER__TREE_METADATA:
+		case AwsworkbenchPackage.APP_BUILDER_CORE__TREE_METADATA:
 			return TREE_METADATA_EDEFAULT == null ? treeMetadata != null : !TREE_METADATA_EDEFAULT.equals(treeMetadata);
-		case AwsworkbenchPackage.APP_BUILDER__GENERATED_CLASS_NAME:
+		case AwsworkbenchPackage.APP_BUILDER_CORE__GENERATED_CLASS_NAME:
 			return GENERATED_CLASS_NAME_EDEFAULT == null ? generatedClassName != null
 					: !GENERATED_CLASS_NAME_EDEFAULT.equals(generatedClassName);
-		case AwsworkbenchPackage.APP_BUILDER__VAR_NAME:
+		case AwsworkbenchPackage.APP_BUILDER_CORE__VAR_NAME:
 			return VAR_NAME_EDEFAULT == null ? varName != null : !VAR_NAME_EDEFAULT.equals(varName);
-		case AwsworkbenchPackage.APP_BUILDER__IDENTIFIER:
+		case AwsworkbenchPackage.APP_BUILDER_CORE__IDENTIFIER:
 			return IDENTIFIER_EDEFAULT == null ? identifier != null : !IDENTIFIER_EDEFAULT.equals(identifier);
-		case AwsworkbenchPackage.APP_BUILDER__ADDITIONAL_CODE:
+		case AwsworkbenchPackage.APP_BUILDER_CORE__ADDITIONAL_CODE:
 			return ADDITIONAL_CODE_EDEFAULT == null ? additionalCode != null
 					: !ADDITIONAL_CODE_EDEFAULT.equals(additionalCode);
-		case AwsworkbenchPackage.APP_BUILDER__STACKBUILDER:
-			return stackbuilder != null && !stackbuilder.isEmpty();
+		case AwsworkbenchPackage.APP_BUILDER_CORE__STACKBUILDER_CORE:
+			return stackbuilder_core != null && !stackbuilder_core.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}
@@ -663,6 +699,8 @@ public class AppBuilderImpl extends MinimalEObjectImpl.Container implements AppB
 		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (autoSynth: ");
 		result.append(autoSynth);
+		result.append(", contextAsMap: ");
+		result.append(contextAsMap);
 		result.append(", outdir: ");
 		result.append(outdir);
 		result.append(", runtimeInfo: ");
@@ -683,4 +721,4 @@ public class AppBuilderImpl extends MinimalEObjectImpl.Container implements AppB
 		return result.toString();
 	}
 
-} //AppBuilderImpl
+} //AppBuilder_coreImpl

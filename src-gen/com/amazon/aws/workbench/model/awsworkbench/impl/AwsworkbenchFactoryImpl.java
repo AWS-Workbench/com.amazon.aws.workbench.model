@@ -57,12 +57,12 @@ public class AwsworkbenchFactoryImpl extends EFactoryImpl implements Awsworkbenc
 	@Override
 	public EObject create(EClass eClass) {
 		switch (eClass.getClassifierID()) {
-		case AwsworkbenchPackage.APP_BUILDER:
-			return createAppBuilder();
-		case AwsworkbenchPackage.STACK_BUILDER:
-			return createStackBuilder();
-		case AwsworkbenchPackage.VPC_BUILDER:
-			return createVpcBuilder();
+		case AwsworkbenchPackage.APP_BUILDER_CORE:
+			return createAppBuilder_core();
+		case AwsworkbenchPackage.STACK_BUILDER_CORE:
+			return createStackBuilder_core();
+		case AwsworkbenchPackage.VPC_BUILDER_EC2:
+			return createVpcBuilder_ec2();
 		default:
 			throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -78,8 +78,6 @@ public class AwsworkbenchFactoryImpl extends EFactoryImpl implements Awsworkbenc
 		switch (eDataType.getClassifierID()) {
 		case AwsworkbenchPackage.DEFAULT_INSTANCE_TENANCY:
 			return createDefaultInstanceTenancyFromString(eDataType, initialValue);
-		case AwsworkbenchPackage.NUMBER:
-			return createNumberFromString(eDataType, initialValue);
 		default:
 			throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
 		}
@@ -95,8 +93,6 @@ public class AwsworkbenchFactoryImpl extends EFactoryImpl implements Awsworkbenc
 		switch (eDataType.getClassifierID()) {
 		case AwsworkbenchPackage.DEFAULT_INSTANCE_TENANCY:
 			return convertDefaultInstanceTenancyToString(eDataType, instanceValue);
-		case AwsworkbenchPackage.NUMBER:
-			return convertNumberToString(eDataType, instanceValue);
 		default:
 			throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
 		}
@@ -108,9 +104,9 @@ public class AwsworkbenchFactoryImpl extends EFactoryImpl implements Awsworkbenc
 	 * @generated
 	 */
 	@Override
-	public AppBuilder createAppBuilder() {
-		AppBuilderImpl appBuilder = new AppBuilderImpl();
-		return appBuilder;
+	public AppBuilder_core createAppBuilder_core() {
+		AppBuilder_coreImpl appBuilder_core = new AppBuilder_coreImpl();
+		return appBuilder_core;
 	}
 
 	/**
@@ -119,9 +115,9 @@ public class AwsworkbenchFactoryImpl extends EFactoryImpl implements Awsworkbenc
 	 * @generated
 	 */
 	@Override
-	public StackBuilder createStackBuilder() {
-		StackBuilderImpl stackBuilder = new StackBuilderImpl();
-		return stackBuilder;
+	public StackBuilder_core createStackBuilder_core() {
+		StackBuilder_coreImpl stackBuilder_core = new StackBuilder_coreImpl();
+		return stackBuilder_core;
 	}
 
 	/**
@@ -130,9 +126,9 @@ public class AwsworkbenchFactoryImpl extends EFactoryImpl implements Awsworkbenc
 	 * @generated
 	 */
 	@Override
-	public VpcBuilder createVpcBuilder() {
-		VpcBuilderImpl vpcBuilder = new VpcBuilderImpl();
-		return vpcBuilder;
+	public VpcBuilder_ec2 createVpcBuilder_ec2() {
+		VpcBuilder_ec2Impl vpcBuilder_ec2 = new VpcBuilder_ec2Impl();
+		return vpcBuilder_ec2;
 	}
 
 	/**
@@ -155,24 +151,6 @@ public class AwsworkbenchFactoryImpl extends EFactoryImpl implements Awsworkbenc
 	 */
 	public String convertDefaultInstanceTenancyToString(EDataType eDataType, Object instanceValue) {
 		return instanceValue == null ? null : instanceValue.toString();
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Number createNumberFromString(EDataType eDataType, String initialValue) {
-		return (Number) super.createFromString(eDataType, initialValue);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public String convertNumberToString(EDataType eDataType, Object instanceValue) {
-		return super.convertToString(eDataType, instanceValue);
 	}
 
 	/**

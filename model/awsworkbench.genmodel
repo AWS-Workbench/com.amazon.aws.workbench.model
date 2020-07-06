@@ -14,46 +14,53 @@
       <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//DefaultInstanceTenancy/DEFAULT"/>
       <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//DefaultInstanceTenancy/DEDICATED"/>
     </genEnums>
-    <genDataTypes ecoreDataType="awsworkbench.ecore#//Number"/>
-    <genClasses ecoreClass="awsworkbench.ecore#//AppBuilder">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AppBuilder/autoSynth"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AppBuilder/outdir"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AppBuilder/runtimeInfo"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AppBuilder/stackTraces"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AppBuilder/treeMetadata"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AppBuilder/generatedClassName"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AppBuilder/varName"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AppBuilder/identifier"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AppBuilder/additionalCode"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference awsworkbench.ecore#//AppBuilder/stackbuilder"/>
+    <genClasses ecoreClass="awsworkbench.ecore#//AppBuilder_core">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AppBuilder_core/autoSynth"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AppBuilder_core/contextAsMap"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AppBuilder_core/outdir"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AppBuilder_core/runtimeInfo"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AppBuilder_core/stackTraces"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AppBuilder_core/treeMetadata"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AppBuilder_core/generatedClassName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AppBuilder_core/varName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AppBuilder_core/identifier"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AppBuilder_core/additionalCode"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference awsworkbench.ecore#//AppBuilder_core/stackbuilder_core"/>
     </genClasses>
-    <genClasses ecoreClass="awsworkbench.ecore#//StackBuilder">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//StackBuilder/description"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//StackBuilder/stackName"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//StackBuilder/terminationProtection"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//StackBuilder/generatedClassName"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//StackBuilder/varName"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//StackBuilder/identifier"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//StackBuilder/additionalCode"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference awsworkbench.ecore#//StackBuilder/serviceresources"/>
+    <genClasses ecoreClass="awsworkbench.ecore#//StackBuilder_core">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//StackBuilder_core/description"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//StackBuilder_core/envWithEnvironmentAsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//StackBuilder_core/stackName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//StackBuilder_core/synthesizerWithIStackSynthesizerAsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//StackBuilder_core/tagsAsMap"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//StackBuilder_core/terminationProtection"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//StackBuilder_core/generatedClassName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//StackBuilder_core/varName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//StackBuilder_core/identifier"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//StackBuilder_core/additionalCode"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference awsworkbench.ecore#//StackBuilder_core/serviceresources"/>
     </genClasses>
-    <genClasses ecoreClass="awsworkbench.ecore#//VpcBuilder">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//VpcBuilder/cidr"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//VpcBuilder/enableDnsHostnames"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//VpcBuilder/enableDnsSupport"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//VpcBuilder/maxAzs"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//VpcBuilder/natGateways"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//VpcBuilder/vpnGateway"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//VpcBuilder/vpnGatewayAsn"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//VpcBuilder/generatedClassName"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//VpcBuilder/varName"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//VpcBuilder/identifier"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//VpcBuilder/additionalCode"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//VpcBuilder/defaultInstanceTenancy"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//VpcBuilder/myMaps"/>
+    <genClasses ecoreClass="awsworkbench.ecore#//VpcBuilder_ec2">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//VpcBuilder_ec2/cidr"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//VpcBuilder_ec2/defaultInstanceTenancy"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//VpcBuilder_ec2/enableDnsHostnames"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//VpcBuilder_ec2/enableDnsSupport"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//VpcBuilder_ec2/flowLogsAsMap"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//VpcBuilder_ec2/gatewayEndpointsAsMap"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//VpcBuilder_ec2/maxAzs"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//VpcBuilder_ec2/natGatewayProviderWithNatProviderAsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//VpcBuilder_ec2/natGateways"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//VpcBuilder_ec2/natGatewaySubnetsWithSubnetSelectionAsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//VpcBuilder_ec2/subnetConfigurationAsList"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//VpcBuilder_ec2/vpnConnectionsAsMap"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//VpcBuilder_ec2/vpnGateway"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//VpcBuilder_ec2/vpnGatewayAsn"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//VpcBuilder_ec2/vpnRoutePropagationAsList"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//VpcBuilder_ec2/generatedClassName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//VpcBuilder_ec2/varName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//VpcBuilder_ec2/identifier"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//VpcBuilder_ec2/additionalCode"/>
     </genClasses>
-    <genClasses ecoreClass="awsworkbench.ecore#//ServiceResources">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ServiceResources/mapstype"/>
-    </genClasses>
+    <genClasses ecoreClass="awsworkbench.ecore#//ServiceResources"/>
   </genPackages>
 </genmodel:GenModel>

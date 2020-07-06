@@ -66,25 +66,25 @@ public class AwsworkbenchSwitch<T> extends Switch<T> {
 	@Override
 	protected T doSwitch(int classifierID, EObject theEObject) {
 		switch (classifierID) {
-		case AwsworkbenchPackage.APP_BUILDER: {
-			AppBuilder appBuilder = (AppBuilder) theEObject;
-			T result = caseAppBuilder(appBuilder);
+		case AwsworkbenchPackage.APP_BUILDER_CORE: {
+			AppBuilder_core appBuilder_core = (AppBuilder_core) theEObject;
+			T result = caseAppBuilder_core(appBuilder_core);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case AwsworkbenchPackage.STACK_BUILDER: {
-			StackBuilder stackBuilder = (StackBuilder) theEObject;
-			T result = caseStackBuilder(stackBuilder);
+		case AwsworkbenchPackage.STACK_BUILDER_CORE: {
+			StackBuilder_core stackBuilder_core = (StackBuilder_core) theEObject;
+			T result = caseStackBuilder_core(stackBuilder_core);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case AwsworkbenchPackage.VPC_BUILDER: {
-			VpcBuilder vpcBuilder = (VpcBuilder) theEObject;
-			T result = caseVpcBuilder(vpcBuilder);
+		case AwsworkbenchPackage.VPC_BUILDER_EC2: {
+			VpcBuilder_ec2 vpcBuilder_ec2 = (VpcBuilder_ec2) theEObject;
+			T result = caseVpcBuilder_ec2(vpcBuilder_ec2);
 			if (result == null)
-				result = caseServiceResources(vpcBuilder);
+				result = caseServiceResources(vpcBuilder_ec2);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -102,47 +102,47 @@ public class AwsworkbenchSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>App Builder</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>App Builder core</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>App Builder</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>App Builder core</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseAppBuilder(AppBuilder object) {
+	public T caseAppBuilder_core(AppBuilder_core object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Stack Builder</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Stack Builder core</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Stack Builder</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Stack Builder core</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseStackBuilder(StackBuilder object) {
+	public T caseStackBuilder_core(StackBuilder_core object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Vpc Builder</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Vpc Builder ec2</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Vpc Builder</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Vpc Builder ec2</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseVpcBuilder(VpcBuilder object) {
+	public T caseVpcBuilder_ec2(VpcBuilder_ec2 object) {
 		return null;
 	}
 

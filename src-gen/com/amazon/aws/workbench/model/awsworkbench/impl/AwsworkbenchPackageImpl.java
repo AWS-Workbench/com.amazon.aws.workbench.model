@@ -2,19 +2,17 @@
  */
 package com.amazon.aws.workbench.model.awsworkbench.impl;
 
-import com.amazon.aws.workbench.model.awsworkbench.AppBuilder;
+import com.amazon.aws.workbench.model.awsworkbench.AppBuilder_core;
 import com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchFactory;
 import com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage;
 import com.amazon.aws.workbench.model.awsworkbench.DefaultInstanceTenancy;
 import com.amazon.aws.workbench.model.awsworkbench.ServiceResources;
-import com.amazon.aws.workbench.model.awsworkbench.StackBuilder;
-import com.amazon.aws.workbench.model.awsworkbench.VpcBuilder;
+import com.amazon.aws.workbench.model.awsworkbench.StackBuilder_core;
+import com.amazon.aws.workbench.model.awsworkbench.VpcBuilder_ec2;
 
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
-import org.eclipse.emf.ecore.EDataType;
 import org.eclipse.emf.ecore.EEnum;
-import org.eclipse.emf.ecore.EGenericType;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
 
@@ -32,21 +30,21 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass appBuilderEClass = null;
+	private EClass appBuilder_coreEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass stackBuilderEClass = null;
+	private EClass stackBuilder_coreEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass vpcBuilderEClass = null;
+	private EClass vpcBuilder_ec2EClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -61,13 +59,6 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	 * @generated
 	 */
 	private EEnum defaultInstanceTenancyEEnum = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EDataType numberEDataType = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -139,8 +130,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	 * @generated
 	 */
 	@Override
-	public EClass getAppBuilder() {
-		return appBuilderEClass;
+	public EClass getAppBuilder_core() {
+		return appBuilder_coreEClass;
 	}
 
 	/**
@@ -149,8 +140,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	 * @generated
 	 */
 	@Override
-	public EAttribute getAppBuilder_AutoSynth() {
-		return (EAttribute) appBuilderEClass.getEStructuralFeatures().get(0);
+	public EAttribute getAppBuilder_core_AutoSynth() {
+		return (EAttribute) appBuilder_coreEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -159,8 +150,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	 * @generated
 	 */
 	@Override
-	public EAttribute getAppBuilder_Outdir() {
-		return (EAttribute) appBuilderEClass.getEStructuralFeatures().get(1);
+	public EAttribute getAppBuilder_core_ContextAsMap() {
+		return (EAttribute) appBuilder_coreEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -169,8 +160,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	 * @generated
 	 */
 	@Override
-	public EAttribute getAppBuilder_RuntimeInfo() {
-		return (EAttribute) appBuilderEClass.getEStructuralFeatures().get(2);
+	public EAttribute getAppBuilder_core_Outdir() {
+		return (EAttribute) appBuilder_coreEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -179,8 +170,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	 * @generated
 	 */
 	@Override
-	public EAttribute getAppBuilder_StackTraces() {
-		return (EAttribute) appBuilderEClass.getEStructuralFeatures().get(3);
+	public EAttribute getAppBuilder_core_RuntimeInfo() {
+		return (EAttribute) appBuilder_coreEClass.getEStructuralFeatures().get(3);
 	}
 
 	/**
@@ -189,8 +180,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	 * @generated
 	 */
 	@Override
-	public EAttribute getAppBuilder_TreeMetadata() {
-		return (EAttribute) appBuilderEClass.getEStructuralFeatures().get(4);
+	public EAttribute getAppBuilder_core_StackTraces() {
+		return (EAttribute) appBuilder_coreEClass.getEStructuralFeatures().get(4);
 	}
 
 	/**
@@ -199,8 +190,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	 * @generated
 	 */
 	@Override
-	public EAttribute getAppBuilder_GeneratedClassName() {
-		return (EAttribute) appBuilderEClass.getEStructuralFeatures().get(5);
+	public EAttribute getAppBuilder_core_TreeMetadata() {
+		return (EAttribute) appBuilder_coreEClass.getEStructuralFeatures().get(5);
 	}
 
 	/**
@@ -209,8 +200,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	 * @generated
 	 */
 	@Override
-	public EAttribute getAppBuilder_VarName() {
-		return (EAttribute) appBuilderEClass.getEStructuralFeatures().get(6);
+	public EAttribute getAppBuilder_core_GeneratedClassName() {
+		return (EAttribute) appBuilder_coreEClass.getEStructuralFeatures().get(6);
 	}
 
 	/**
@@ -219,8 +210,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	 * @generated
 	 */
 	@Override
-	public EAttribute getAppBuilder_Identifier() {
-		return (EAttribute) appBuilderEClass.getEStructuralFeatures().get(7);
+	public EAttribute getAppBuilder_core_VarName() {
+		return (EAttribute) appBuilder_coreEClass.getEStructuralFeatures().get(7);
 	}
 
 	/**
@@ -229,8 +220,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	 * @generated
 	 */
 	@Override
-	public EAttribute getAppBuilder_AdditionalCode() {
-		return (EAttribute) appBuilderEClass.getEStructuralFeatures().get(8);
+	public EAttribute getAppBuilder_core_Identifier() {
+		return (EAttribute) appBuilder_coreEClass.getEStructuralFeatures().get(8);
 	}
 
 	/**
@@ -239,8 +230,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	 * @generated
 	 */
 	@Override
-	public EReference getAppBuilder_Stackbuilder() {
-		return (EReference) appBuilderEClass.getEStructuralFeatures().get(9);
+	public EAttribute getAppBuilder_core_AdditionalCode() {
+		return (EAttribute) appBuilder_coreEClass.getEStructuralFeatures().get(9);
 	}
 
 	/**
@@ -249,8 +240,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	 * @generated
 	 */
 	@Override
-	public EClass getStackBuilder() {
-		return stackBuilderEClass;
+	public EReference getAppBuilder_core_Stackbuilder_core() {
+		return (EReference) appBuilder_coreEClass.getEStructuralFeatures().get(10);
 	}
 
 	/**
@@ -259,8 +250,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	 * @generated
 	 */
 	@Override
-	public EAttribute getStackBuilder_Description() {
-		return (EAttribute) stackBuilderEClass.getEStructuralFeatures().get(0);
+	public EClass getStackBuilder_core() {
+		return stackBuilder_coreEClass;
 	}
 
 	/**
@@ -269,8 +260,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	 * @generated
 	 */
 	@Override
-	public EAttribute getStackBuilder_StackName() {
-		return (EAttribute) stackBuilderEClass.getEStructuralFeatures().get(1);
+	public EAttribute getStackBuilder_core_Description() {
+		return (EAttribute) stackBuilder_coreEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -279,8 +270,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	 * @generated
 	 */
 	@Override
-	public EAttribute getStackBuilder_TerminationProtection() {
-		return (EAttribute) stackBuilderEClass.getEStructuralFeatures().get(2);
+	public EAttribute getStackBuilder_core_EnvWithEnvironmentAsReference() {
+		return (EAttribute) stackBuilder_coreEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -289,8 +280,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	 * @generated
 	 */
 	@Override
-	public EAttribute getStackBuilder_GeneratedClassName() {
-		return (EAttribute) stackBuilderEClass.getEStructuralFeatures().get(3);
+	public EAttribute getStackBuilder_core_StackName() {
+		return (EAttribute) stackBuilder_coreEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -299,8 +290,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	 * @generated
 	 */
 	@Override
-	public EAttribute getStackBuilder_VarName() {
-		return (EAttribute) stackBuilderEClass.getEStructuralFeatures().get(4);
+	public EAttribute getStackBuilder_core_SynthesizerWithIStackSynthesizerAsReference() {
+		return (EAttribute) stackBuilder_coreEClass.getEStructuralFeatures().get(3);
 	}
 
 	/**
@@ -309,8 +300,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	 * @generated
 	 */
 	@Override
-	public EAttribute getStackBuilder_Identifier() {
-		return (EAttribute) stackBuilderEClass.getEStructuralFeatures().get(5);
+	public EAttribute getStackBuilder_core_TagsAsMap() {
+		return (EAttribute) stackBuilder_coreEClass.getEStructuralFeatures().get(4);
 	}
 
 	/**
@@ -319,8 +310,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	 * @generated
 	 */
 	@Override
-	public EAttribute getStackBuilder_AdditionalCode() {
-		return (EAttribute) stackBuilderEClass.getEStructuralFeatures().get(6);
+	public EAttribute getStackBuilder_core_TerminationProtection() {
+		return (EAttribute) stackBuilder_coreEClass.getEStructuralFeatures().get(5);
 	}
 
 	/**
@@ -329,8 +320,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	 * @generated
 	 */
 	@Override
-	public EReference getStackBuilder_Serviceresources() {
-		return (EReference) stackBuilderEClass.getEStructuralFeatures().get(7);
+	public EAttribute getStackBuilder_core_GeneratedClassName() {
+		return (EAttribute) stackBuilder_coreEClass.getEStructuralFeatures().get(6);
 	}
 
 	/**
@@ -339,8 +330,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	 * @generated
 	 */
 	@Override
-	public EClass getVpcBuilder() {
-		return vpcBuilderEClass;
+	public EAttribute getStackBuilder_core_VarName() {
+		return (EAttribute) stackBuilder_coreEClass.getEStructuralFeatures().get(7);
 	}
 
 	/**
@@ -349,8 +340,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	 * @generated
 	 */
 	@Override
-	public EAttribute getVpcBuilder_Cidr() {
-		return (EAttribute) vpcBuilderEClass.getEStructuralFeatures().get(0);
+	public EAttribute getStackBuilder_core_Identifier() {
+		return (EAttribute) stackBuilder_coreEClass.getEStructuralFeatures().get(8);
 	}
 
 	/**
@@ -359,8 +350,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	 * @generated
 	 */
 	@Override
-	public EAttribute getVpcBuilder_EnableDnsHostnames() {
-		return (EAttribute) vpcBuilderEClass.getEStructuralFeatures().get(1);
+	public EAttribute getStackBuilder_core_AdditionalCode() {
+		return (EAttribute) stackBuilder_coreEClass.getEStructuralFeatures().get(9);
 	}
 
 	/**
@@ -369,8 +360,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	 * @generated
 	 */
 	@Override
-	public EAttribute getVpcBuilder_EnableDnsSupport() {
-		return (EAttribute) vpcBuilderEClass.getEStructuralFeatures().get(2);
+	public EReference getStackBuilder_core_Serviceresources() {
+		return (EReference) stackBuilder_coreEClass.getEStructuralFeatures().get(10);
 	}
 
 	/**
@@ -379,8 +370,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	 * @generated
 	 */
 	@Override
-	public EAttribute getVpcBuilder_MaxAzs() {
-		return (EAttribute) vpcBuilderEClass.getEStructuralFeatures().get(3);
+	public EClass getVpcBuilder_ec2() {
+		return vpcBuilder_ec2EClass;
 	}
 
 	/**
@@ -389,8 +380,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	 * @generated
 	 */
 	@Override
-	public EAttribute getVpcBuilder_NatGateways() {
-		return (EAttribute) vpcBuilderEClass.getEStructuralFeatures().get(4);
+	public EAttribute getVpcBuilder_ec2_Cidr() {
+		return (EAttribute) vpcBuilder_ec2EClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -399,8 +390,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	 * @generated
 	 */
 	@Override
-	public EAttribute getVpcBuilder_VpnGateway() {
-		return (EAttribute) vpcBuilderEClass.getEStructuralFeatures().get(5);
+	public EAttribute getVpcBuilder_ec2_DefaultInstanceTenancy() {
+		return (EAttribute) vpcBuilder_ec2EClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -409,8 +400,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	 * @generated
 	 */
 	@Override
-	public EAttribute getVpcBuilder_VpnGatewayAsn() {
-		return (EAttribute) vpcBuilderEClass.getEStructuralFeatures().get(6);
+	public EAttribute getVpcBuilder_ec2_EnableDnsHostnames() {
+		return (EAttribute) vpcBuilder_ec2EClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -419,8 +410,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	 * @generated
 	 */
 	@Override
-	public EAttribute getVpcBuilder_GeneratedClassName() {
-		return (EAttribute) vpcBuilderEClass.getEStructuralFeatures().get(7);
+	public EAttribute getVpcBuilder_ec2_EnableDnsSupport() {
+		return (EAttribute) vpcBuilder_ec2EClass.getEStructuralFeatures().get(3);
 	}
 
 	/**
@@ -429,8 +420,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	 * @generated
 	 */
 	@Override
-	public EAttribute getVpcBuilder_VarName() {
-		return (EAttribute) vpcBuilderEClass.getEStructuralFeatures().get(8);
+	public EAttribute getVpcBuilder_ec2_FlowLogsAsMap() {
+		return (EAttribute) vpcBuilder_ec2EClass.getEStructuralFeatures().get(4);
 	}
 
 	/**
@@ -439,8 +430,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	 * @generated
 	 */
 	@Override
-	public EAttribute getVpcBuilder_Identifier() {
-		return (EAttribute) vpcBuilderEClass.getEStructuralFeatures().get(9);
+	public EAttribute getVpcBuilder_ec2_GatewayEndpointsAsMap() {
+		return (EAttribute) vpcBuilder_ec2EClass.getEStructuralFeatures().get(5);
 	}
 
 	/**
@@ -449,8 +440,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	 * @generated
 	 */
 	@Override
-	public EAttribute getVpcBuilder_AdditionalCode() {
-		return (EAttribute) vpcBuilderEClass.getEStructuralFeatures().get(10);
+	public EAttribute getVpcBuilder_ec2_MaxAzs() {
+		return (EAttribute) vpcBuilder_ec2EClass.getEStructuralFeatures().get(6);
 	}
 
 	/**
@@ -459,8 +450,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	 * @generated
 	 */
 	@Override
-	public EAttribute getVpcBuilder_DefaultInstanceTenancy() {
-		return (EAttribute) vpcBuilderEClass.getEStructuralFeatures().get(11);
+	public EAttribute getVpcBuilder_ec2_NatGatewayProviderWithNatProviderAsReference() {
+		return (EAttribute) vpcBuilder_ec2EClass.getEStructuralFeatures().get(7);
 	}
 
 	/**
@@ -469,8 +460,108 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	 * @generated
 	 */
 	@Override
-	public EAttribute getVpcBuilder_MyMaps() {
-		return (EAttribute) vpcBuilderEClass.getEStructuralFeatures().get(12);
+	public EAttribute getVpcBuilder_ec2_NatGateways() {
+		return (EAttribute) vpcBuilder_ec2EClass.getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getVpcBuilder_ec2_NatGatewaySubnetsWithSubnetSelectionAsReference() {
+		return (EAttribute) vpcBuilder_ec2EClass.getEStructuralFeatures().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getVpcBuilder_ec2_SubnetConfigurationAsList() {
+		return (EAttribute) vpcBuilder_ec2EClass.getEStructuralFeatures().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getVpcBuilder_ec2_VpnConnectionsAsMap() {
+		return (EAttribute) vpcBuilder_ec2EClass.getEStructuralFeatures().get(11);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getVpcBuilder_ec2_VpnGateway() {
+		return (EAttribute) vpcBuilder_ec2EClass.getEStructuralFeatures().get(12);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getVpcBuilder_ec2_VpnGatewayAsn() {
+		return (EAttribute) vpcBuilder_ec2EClass.getEStructuralFeatures().get(13);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getVpcBuilder_ec2_VpnRoutePropagationAsList() {
+		return (EAttribute) vpcBuilder_ec2EClass.getEStructuralFeatures().get(14);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getVpcBuilder_ec2_GeneratedClassName() {
+		return (EAttribute) vpcBuilder_ec2EClass.getEStructuralFeatures().get(15);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getVpcBuilder_ec2_VarName() {
+		return (EAttribute) vpcBuilder_ec2EClass.getEStructuralFeatures().get(16);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getVpcBuilder_ec2_Identifier() {
+		return (EAttribute) vpcBuilder_ec2EClass.getEStructuralFeatures().get(17);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getVpcBuilder_ec2_AdditionalCode() {
+		return (EAttribute) vpcBuilder_ec2EClass.getEStructuralFeatures().get(18);
 	}
 
 	/**
@@ -489,28 +580,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	 * @generated
 	 */
 	@Override
-	public EAttribute getServiceResources_Mapstype() {
-		return (EAttribute) serviceResourcesEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EEnum getDefaultInstanceTenancy() {
 		return defaultInstanceTenancyEEnum;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EDataType getNumber() {
-		return numberEDataType;
 	}
 
 	/**
@@ -543,51 +614,57 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 		isCreated = true;
 
 		// Create classes and their features
-		appBuilderEClass = createEClass(APP_BUILDER);
-		createEAttribute(appBuilderEClass, APP_BUILDER__AUTO_SYNTH);
-		createEAttribute(appBuilderEClass, APP_BUILDER__OUTDIR);
-		createEAttribute(appBuilderEClass, APP_BUILDER__RUNTIME_INFO);
-		createEAttribute(appBuilderEClass, APP_BUILDER__STACK_TRACES);
-		createEAttribute(appBuilderEClass, APP_BUILDER__TREE_METADATA);
-		createEAttribute(appBuilderEClass, APP_BUILDER__GENERATED_CLASS_NAME);
-		createEAttribute(appBuilderEClass, APP_BUILDER__VAR_NAME);
-		createEAttribute(appBuilderEClass, APP_BUILDER__IDENTIFIER);
-		createEAttribute(appBuilderEClass, APP_BUILDER__ADDITIONAL_CODE);
-		createEReference(appBuilderEClass, APP_BUILDER__STACKBUILDER);
+		appBuilder_coreEClass = createEClass(APP_BUILDER_CORE);
+		createEAttribute(appBuilder_coreEClass, APP_BUILDER_CORE__AUTO_SYNTH);
+		createEAttribute(appBuilder_coreEClass, APP_BUILDER_CORE__CONTEXT_AS_MAP);
+		createEAttribute(appBuilder_coreEClass, APP_BUILDER_CORE__OUTDIR);
+		createEAttribute(appBuilder_coreEClass, APP_BUILDER_CORE__RUNTIME_INFO);
+		createEAttribute(appBuilder_coreEClass, APP_BUILDER_CORE__STACK_TRACES);
+		createEAttribute(appBuilder_coreEClass, APP_BUILDER_CORE__TREE_METADATA);
+		createEAttribute(appBuilder_coreEClass, APP_BUILDER_CORE__GENERATED_CLASS_NAME);
+		createEAttribute(appBuilder_coreEClass, APP_BUILDER_CORE__VAR_NAME);
+		createEAttribute(appBuilder_coreEClass, APP_BUILDER_CORE__IDENTIFIER);
+		createEAttribute(appBuilder_coreEClass, APP_BUILDER_CORE__ADDITIONAL_CODE);
+		createEReference(appBuilder_coreEClass, APP_BUILDER_CORE__STACKBUILDER_CORE);
 
-		stackBuilderEClass = createEClass(STACK_BUILDER);
-		createEAttribute(stackBuilderEClass, STACK_BUILDER__DESCRIPTION);
-		createEAttribute(stackBuilderEClass, STACK_BUILDER__STACK_NAME);
-		createEAttribute(stackBuilderEClass, STACK_BUILDER__TERMINATION_PROTECTION);
-		createEAttribute(stackBuilderEClass, STACK_BUILDER__GENERATED_CLASS_NAME);
-		createEAttribute(stackBuilderEClass, STACK_BUILDER__VAR_NAME);
-		createEAttribute(stackBuilderEClass, STACK_BUILDER__IDENTIFIER);
-		createEAttribute(stackBuilderEClass, STACK_BUILDER__ADDITIONAL_CODE);
-		createEReference(stackBuilderEClass, STACK_BUILDER__SERVICERESOURCES);
+		stackBuilder_coreEClass = createEClass(STACK_BUILDER_CORE);
+		createEAttribute(stackBuilder_coreEClass, STACK_BUILDER_CORE__DESCRIPTION);
+		createEAttribute(stackBuilder_coreEClass, STACK_BUILDER_CORE__ENV_WITH_ENVIRONMENT_AS_REFERENCE);
+		createEAttribute(stackBuilder_coreEClass, STACK_BUILDER_CORE__STACK_NAME);
+		createEAttribute(stackBuilder_coreEClass, STACK_BUILDER_CORE__SYNTHESIZER_WITH_ISTACK_SYNTHESIZER_AS_REFERENCE);
+		createEAttribute(stackBuilder_coreEClass, STACK_BUILDER_CORE__TAGS_AS_MAP);
+		createEAttribute(stackBuilder_coreEClass, STACK_BUILDER_CORE__TERMINATION_PROTECTION);
+		createEAttribute(stackBuilder_coreEClass, STACK_BUILDER_CORE__GENERATED_CLASS_NAME);
+		createEAttribute(stackBuilder_coreEClass, STACK_BUILDER_CORE__VAR_NAME);
+		createEAttribute(stackBuilder_coreEClass, STACK_BUILDER_CORE__IDENTIFIER);
+		createEAttribute(stackBuilder_coreEClass, STACK_BUILDER_CORE__ADDITIONAL_CODE);
+		createEReference(stackBuilder_coreEClass, STACK_BUILDER_CORE__SERVICERESOURCES);
 
-		vpcBuilderEClass = createEClass(VPC_BUILDER);
-		createEAttribute(vpcBuilderEClass, VPC_BUILDER__CIDR);
-		createEAttribute(vpcBuilderEClass, VPC_BUILDER__ENABLE_DNS_HOSTNAMES);
-		createEAttribute(vpcBuilderEClass, VPC_BUILDER__ENABLE_DNS_SUPPORT);
-		createEAttribute(vpcBuilderEClass, VPC_BUILDER__MAX_AZS);
-		createEAttribute(vpcBuilderEClass, VPC_BUILDER__NAT_GATEWAYS);
-		createEAttribute(vpcBuilderEClass, VPC_BUILDER__VPN_GATEWAY);
-		createEAttribute(vpcBuilderEClass, VPC_BUILDER__VPN_GATEWAY_ASN);
-		createEAttribute(vpcBuilderEClass, VPC_BUILDER__GENERATED_CLASS_NAME);
-		createEAttribute(vpcBuilderEClass, VPC_BUILDER__VAR_NAME);
-		createEAttribute(vpcBuilderEClass, VPC_BUILDER__IDENTIFIER);
-		createEAttribute(vpcBuilderEClass, VPC_BUILDER__ADDITIONAL_CODE);
-		createEAttribute(vpcBuilderEClass, VPC_BUILDER__DEFAULT_INSTANCE_TENANCY);
-		createEAttribute(vpcBuilderEClass, VPC_BUILDER__MY_MAPS);
+		vpcBuilder_ec2EClass = createEClass(VPC_BUILDER_EC2);
+		createEAttribute(vpcBuilder_ec2EClass, VPC_BUILDER_EC2__CIDR);
+		createEAttribute(vpcBuilder_ec2EClass, VPC_BUILDER_EC2__DEFAULT_INSTANCE_TENANCY);
+		createEAttribute(vpcBuilder_ec2EClass, VPC_BUILDER_EC2__ENABLE_DNS_HOSTNAMES);
+		createEAttribute(vpcBuilder_ec2EClass, VPC_BUILDER_EC2__ENABLE_DNS_SUPPORT);
+		createEAttribute(vpcBuilder_ec2EClass, VPC_BUILDER_EC2__FLOW_LOGS_AS_MAP);
+		createEAttribute(vpcBuilder_ec2EClass, VPC_BUILDER_EC2__GATEWAY_ENDPOINTS_AS_MAP);
+		createEAttribute(vpcBuilder_ec2EClass, VPC_BUILDER_EC2__MAX_AZS);
+		createEAttribute(vpcBuilder_ec2EClass, VPC_BUILDER_EC2__NAT_GATEWAY_PROVIDER_WITH_NAT_PROVIDER_AS_REFERENCE);
+		createEAttribute(vpcBuilder_ec2EClass, VPC_BUILDER_EC2__NAT_GATEWAYS);
+		createEAttribute(vpcBuilder_ec2EClass, VPC_BUILDER_EC2__NAT_GATEWAY_SUBNETS_WITH_SUBNET_SELECTION_AS_REFERENCE);
+		createEAttribute(vpcBuilder_ec2EClass, VPC_BUILDER_EC2__SUBNET_CONFIGURATION_AS_LIST);
+		createEAttribute(vpcBuilder_ec2EClass, VPC_BUILDER_EC2__VPN_CONNECTIONS_AS_MAP);
+		createEAttribute(vpcBuilder_ec2EClass, VPC_BUILDER_EC2__VPN_GATEWAY);
+		createEAttribute(vpcBuilder_ec2EClass, VPC_BUILDER_EC2__VPN_GATEWAY_ASN);
+		createEAttribute(vpcBuilder_ec2EClass, VPC_BUILDER_EC2__VPN_ROUTE_PROPAGATION_AS_LIST);
+		createEAttribute(vpcBuilder_ec2EClass, VPC_BUILDER_EC2__GENERATED_CLASS_NAME);
+		createEAttribute(vpcBuilder_ec2EClass, VPC_BUILDER_EC2__VAR_NAME);
+		createEAttribute(vpcBuilder_ec2EClass, VPC_BUILDER_EC2__IDENTIFIER);
+		createEAttribute(vpcBuilder_ec2EClass, VPC_BUILDER_EC2__ADDITIONAL_CODE);
 
 		serviceResourcesEClass = createEClass(SERVICE_RESOURCES);
-		createEAttribute(serviceResourcesEClass, SERVICE_RESOURCES__MAPSTYPE);
 
 		// Create enums
 		defaultInstanceTenancyEEnum = createEEnum(DEFAULT_INSTANCE_TENANCY);
-
-		// Create data types
-		numberEDataType = createEDataType(NUMBER);
 	}
 
 	/**
@@ -619,126 +696,146 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
-		vpcBuilderEClass.getESuperTypes().add(this.getServiceResources());
+		vpcBuilder_ec2EClass.getESuperTypes().add(this.getServiceResources());
 
 		// Initialize classes, features, and operations; add parameters
-		initEClass(appBuilderEClass, AppBuilder.class, "AppBuilder", !IS_ABSTRACT, !IS_INTERFACE,
+		initEClass(appBuilder_coreEClass, AppBuilder_core.class, "AppBuilder_core", !IS_ABSTRACT, !IS_INTERFACE,
 				IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getAppBuilder_AutoSynth(), ecorePackage.getEBooleanObject(), "autoSynth", null, 0, 1,
-				AppBuilder.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+		initEAttribute(getAppBuilder_core_AutoSynth(), ecorePackage.getEBooleanObject(), "autoSynth", null, 0, 1,
+				AppBuilder_core.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
 				!IS_DERIVED, IS_ORDERED);
-		initEAttribute(getAppBuilder_Outdir(), ecorePackage.getEString(), "outdir", null, 0, 1, AppBuilder.class,
-				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getAppBuilder_RuntimeInfo(), ecorePackage.getEBooleanObject(), "runtimeInfo", null, 0, 1,
-				AppBuilder.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+		initEAttribute(getAppBuilder_core_ContextAsMap(), ecorePackage.getEString(), "contextAsMap", null, 0, 1,
+				AppBuilder_core.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
 				!IS_DERIVED, IS_ORDERED);
-		initEAttribute(getAppBuilder_StackTraces(), ecorePackage.getEBooleanObject(), "stackTraces", null, 0, 1,
-				AppBuilder.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+		initEAttribute(getAppBuilder_core_Outdir(), ecorePackage.getEString(), "outdir", null, 0, 1,
+				AppBuilder_core.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
 				!IS_DERIVED, IS_ORDERED);
-		initEAttribute(getAppBuilder_TreeMetadata(), ecorePackage.getEBooleanObject(), "treeMetadata", null, 0, 1,
-				AppBuilder.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+		initEAttribute(getAppBuilder_core_RuntimeInfo(), ecorePackage.getEBooleanObject(), "runtimeInfo", null, 0, 1,
+				AppBuilder_core.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
 				!IS_DERIVED, IS_ORDERED);
-		initEAttribute(getAppBuilder_GeneratedClassName(), ecorePackage.getEString(), "generatedClassName",
-				"software.amazon.awscdk.core.App", 0, 1, AppBuilder.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
-				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getAppBuilder_VarName(), ecorePackage.getEString(), "varName", null, 0, 1, AppBuilder.class,
-				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getAppBuilder_Identifier(), ecorePackage.getEString(), "identifier", null, 0, 1,
-				AppBuilder.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+		initEAttribute(getAppBuilder_core_StackTraces(), ecorePackage.getEBooleanObject(), "stackTraces", null, 0, 1,
+				AppBuilder_core.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
 				!IS_DERIVED, IS_ORDERED);
-		initEAttribute(getAppBuilder_AdditionalCode(), ecorePackage.getEString(), "additionalCode", null, 0, 1,
-				AppBuilder.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+		initEAttribute(getAppBuilder_core_TreeMetadata(), ecorePackage.getEBooleanObject(), "treeMetadata", null, 0, 1,
+				AppBuilder_core.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
 				!IS_DERIVED, IS_ORDERED);
-		initEReference(getAppBuilder_Stackbuilder(), this.getStackBuilder(), null, "stackbuilder", null, 0, -1,
-				AppBuilder.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES,
-				!IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(stackBuilderEClass, StackBuilder.class, "StackBuilder", !IS_ABSTRACT, !IS_INTERFACE,
-				IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getStackBuilder_Description(), ecorePackage.getEString(), "description", null, 0, 1,
-				StackBuilder.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+		initEAttribute(getAppBuilder_core_GeneratedClassName(), ecorePackage.getEString(), "generatedClassName",
+				"software.amazon.awscdk.core.App", 0, 1, AppBuilder_core.class, !IS_TRANSIENT, !IS_VOLATILE,
+				!IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAppBuilder_core_VarName(), ecorePackage.getEString(), "varName", null, 0, 1,
+				AppBuilder_core.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
 				!IS_DERIVED, IS_ORDERED);
-		initEAttribute(getStackBuilder_StackName(), ecorePackage.getEString(), "stackName", null, 0, 1,
-				StackBuilder.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+		initEAttribute(getAppBuilder_core_Identifier(), ecorePackage.getEString(), "identifier", null, 0, 1,
+				AppBuilder_core.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
 				!IS_DERIVED, IS_ORDERED);
-		initEAttribute(getStackBuilder_TerminationProtection(), ecorePackage.getEBooleanObject(),
-				"terminationProtection", null, 0, 1, StackBuilder.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
-				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getStackBuilder_GeneratedClassName(), ecorePackage.getEString(), "generatedClassName",
-				"software.amazon.awscdk.core.Stack", 0, 1, StackBuilder.class, !IS_TRANSIENT, !IS_VOLATILE,
-				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getStackBuilder_VarName(), ecorePackage.getEString(), "varName", null, 0, 1, StackBuilder.class,
-				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getStackBuilder_Identifier(), ecorePackage.getEString(), "identifier", null, 0, 1,
-				StackBuilder.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+		initEAttribute(getAppBuilder_core_AdditionalCode(), ecorePackage.getEString(), "additionalCode", null, 0, 1,
+				AppBuilder_core.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
 				!IS_DERIVED, IS_ORDERED);
-		initEAttribute(getStackBuilder_AdditionalCode(), ecorePackage.getEString(), "additionalCode", null, 0, 1,
-				StackBuilder.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
-				!IS_DERIVED, IS_ORDERED);
-		initEReference(getStackBuilder_Serviceresources(), this.getServiceResources(), null, "serviceresources", null,
-				0, -1, StackBuilder.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE,
+		initEReference(getAppBuilder_core_Stackbuilder_core(), this.getStackBuilder_core(), null, "stackbuilder_core",
+				null, 0, -1, AppBuilder_core.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE,
 				!IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		initEClass(vpcBuilderEClass, VpcBuilder.class, "VpcBuilder", !IS_ABSTRACT, !IS_INTERFACE,
+		initEClass(stackBuilder_coreEClass, StackBuilder_core.class, "StackBuilder_core", !IS_ABSTRACT, !IS_INTERFACE,
 				IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getVpcBuilder_Cidr(), ecorePackage.getEString(), "cidr", null, 0, 1, VpcBuilder.class,
-				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getVpcBuilder_EnableDnsHostnames(), ecorePackage.getEBooleanObject(), "enableDnsHostnames", null,
-				0, 1, VpcBuilder.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+		initEAttribute(getStackBuilder_core_Description(), ecorePackage.getEString(), "description", null, 0, 1,
+				StackBuilder_core.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
 				!IS_DERIVED, IS_ORDERED);
-		initEAttribute(getVpcBuilder_EnableDnsSupport(), ecorePackage.getEBooleanObject(), "enableDnsSupport", null, 0,
-				1, VpcBuilder.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
-				!IS_DERIVED, IS_ORDERED);
-		initEAttribute(getVpcBuilder_MaxAzs(), ecorePackage.getEIntegerObject(), "maxAzs", null, 0, 1, VpcBuilder.class,
-				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getVpcBuilder_NatGateways(), ecorePackage.getEIntegerObject(), "natGateways", null, 0, 1,
-				VpcBuilder.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
-				!IS_DERIVED, IS_ORDERED);
-		initEAttribute(getVpcBuilder_VpnGateway(), ecorePackage.getEBooleanObject(), "vpnGateway", null, 0, 1,
-				VpcBuilder.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
-				!IS_DERIVED, IS_ORDERED);
-		initEAttribute(getVpcBuilder_VpnGatewayAsn(), ecorePackage.getEIntegerObject(), "vpnGatewayAsn", null, 0, 1,
-				VpcBuilder.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
-				!IS_DERIVED, IS_ORDERED);
-		initEAttribute(getVpcBuilder_GeneratedClassName(), ecorePackage.getEString(), "generatedClassName",
-				"software.amazon.awscdk.services.ec2.Vpc", 0, 1, VpcBuilder.class, !IS_TRANSIENT, !IS_VOLATILE,
+		initEAttribute(getStackBuilder_core_EnvWithEnvironmentAsReference(), ecorePackage.getEString(),
+				"envWithEnvironmentAsReference", null, 0, 1, StackBuilder_core.class, !IS_TRANSIENT, !IS_VOLATILE,
 				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getVpcBuilder_VarName(), ecorePackage.getEString(), "varName", null, 0, 1, VpcBuilder.class,
+		initEAttribute(getStackBuilder_core_StackName(), ecorePackage.getEString(), "stackName", null, 0, 1,
+				StackBuilder_core.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+				!IS_DERIVED, IS_ORDERED);
+		initEAttribute(getStackBuilder_core_SynthesizerWithIStackSynthesizerAsReference(), ecorePackage.getEString(),
+				"synthesizerWithIStackSynthesizerAsReference", null, 0, 1, StackBuilder_core.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getStackBuilder_core_TagsAsMap(), ecorePackage.getEString(), "tagsAsMap", null, 0, 1,
+				StackBuilder_core.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+				!IS_DERIVED, IS_ORDERED);
+		initEAttribute(getStackBuilder_core_TerminationProtection(), ecorePackage.getEBooleanObject(),
+				"terminationProtection", null, 0, 1, StackBuilder_core.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getStackBuilder_core_GeneratedClassName(), ecorePackage.getEString(), "generatedClassName",
+				"software.amazon.awscdk.core.Stack", 0, 1, StackBuilder_core.class, !IS_TRANSIENT, !IS_VOLATILE,
+				!IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getStackBuilder_core_VarName(), ecorePackage.getEString(), "varName", null, 0, 1,
+				StackBuilder_core.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+				!IS_DERIVED, IS_ORDERED);
+		initEAttribute(getStackBuilder_core_Identifier(), ecorePackage.getEString(), "identifier", null, 0, 1,
+				StackBuilder_core.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+				!IS_DERIVED, IS_ORDERED);
+		initEAttribute(getStackBuilder_core_AdditionalCode(), ecorePackage.getEString(), "additionalCode", null, 0, 1,
+				StackBuilder_core.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+				!IS_DERIVED, IS_ORDERED);
+		initEReference(getStackBuilder_core_Serviceresources(), this.getServiceResources(), null, "serviceresources",
+				null, 0, -1, StackBuilder_core.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE,
+				!IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(vpcBuilder_ec2EClass, VpcBuilder_ec2.class, "VpcBuilder_ec2", !IS_ABSTRACT, !IS_INTERFACE,
+				IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getVpcBuilder_ec2_Cidr(), ecorePackage.getEString(), "cidr", null, 0, 1, VpcBuilder_ec2.class,
 				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getVpcBuilder_Identifier(), ecorePackage.getEString(), "identifier", null, 0, 1,
-				VpcBuilder.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
-				!IS_DERIVED, IS_ORDERED);
-		initEAttribute(getVpcBuilder_AdditionalCode(), ecorePackage.getEString(), "additionalCode", null, 0, 1,
-				VpcBuilder.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
-				!IS_DERIVED, IS_ORDERED);
-		initEAttribute(getVpcBuilder_DefaultInstanceTenancy(), this.getDefaultInstanceTenancy(),
-				"defaultInstanceTenancy", null, 0, 1, VpcBuilder.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+		initEAttribute(getVpcBuilder_ec2_DefaultInstanceTenancy(), this.getDefaultInstanceTenancy(),
+				"defaultInstanceTenancy", null, 0, 1, VpcBuilder_ec2.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
 				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		EGenericType g1 = createEGenericType(ecorePackage.getEMap());
-		EGenericType g2 = createEGenericType(ecorePackage.getEString());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEString());
-		g1.getETypeArguments().add(g2);
-		initEAttribute(getVpcBuilder_MyMaps(), g1, "myMaps", null, 0, 1, VpcBuilder.class, !IS_TRANSIENT, !IS_VOLATILE,
+		initEAttribute(getVpcBuilder_ec2_EnableDnsHostnames(), ecorePackage.getEBooleanObject(), "enableDnsHostnames",
+				null, 0, 1, VpcBuilder_ec2.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getVpcBuilder_ec2_EnableDnsSupport(), ecorePackage.getEBooleanObject(), "enableDnsSupport", null,
+				0, 1, VpcBuilder_ec2.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getVpcBuilder_ec2_FlowLogsAsMap(), ecorePackage.getEString(), "flowLogsAsMap", null, 0, 1,
+				VpcBuilder_ec2.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+				!IS_DERIVED, IS_ORDERED);
+		initEAttribute(getVpcBuilder_ec2_GatewayEndpointsAsMap(), ecorePackage.getEString(), "gatewayEndpointsAsMap",
+				null, 0, 1, VpcBuilder_ec2.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getVpcBuilder_ec2_MaxAzs(), ecorePackage.getEInt(), "maxAzs", null, 0, 1, VpcBuilder_ec2.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getVpcBuilder_ec2_NatGatewayProviderWithNatProviderAsReference(), ecorePackage.getEString(),
+				"natGatewayProviderWithNatProviderAsReference", null, 0, 1, VpcBuilder_ec2.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getVpcBuilder_ec2_NatGateways(), ecorePackage.getEInt(), "natGateways", null, 0, 1,
+				VpcBuilder_ec2.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+				!IS_DERIVED, IS_ORDERED);
+		initEAttribute(getVpcBuilder_ec2_NatGatewaySubnetsWithSubnetSelectionAsReference(), ecorePackage.getEString(),
+				"natGatewaySubnetsWithSubnetSelectionAsReference", null, 0, 1, VpcBuilder_ec2.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getVpcBuilder_ec2_SubnetConfigurationAsList(), ecorePackage.getEString(),
+				"subnetConfigurationAsList", null, 0, 1, VpcBuilder_ec2.class, !IS_TRANSIENT, !IS_VOLATILE,
 				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getVpcBuilder_ec2_VpnConnectionsAsMap(), ecorePackage.getEString(), "vpnConnectionsAsMap", null,
+				0, 1, VpcBuilder_ec2.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getVpcBuilder_ec2_VpnGateway(), ecorePackage.getEBooleanObject(), "vpnGateway", null, 0, 1,
+				VpcBuilder_ec2.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+				!IS_DERIVED, IS_ORDERED);
+		initEAttribute(getVpcBuilder_ec2_VpnGatewayAsn(), ecorePackage.getEInt(), "vpnGatewayAsn", null, 0, 1,
+				VpcBuilder_ec2.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+				!IS_DERIVED, IS_ORDERED);
+		initEAttribute(getVpcBuilder_ec2_VpnRoutePropagationAsList(), ecorePackage.getEString(),
+				"vpnRoutePropagationAsList", null, 0, 1, VpcBuilder_ec2.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getVpcBuilder_ec2_GeneratedClassName(), ecorePackage.getEString(), "generatedClassName",
+				"software.amazon.awscdk.services.ec2.Vpc", 0, 1, VpcBuilder_ec2.class, !IS_TRANSIENT, !IS_VOLATILE,
+				!IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getVpcBuilder_ec2_VarName(), ecorePackage.getEString(), "varName", null, 0, 1,
+				VpcBuilder_ec2.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+				!IS_DERIVED, IS_ORDERED);
+		initEAttribute(getVpcBuilder_ec2_Identifier(), ecorePackage.getEString(), "identifier", null, 0, 1,
+				VpcBuilder_ec2.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+				!IS_DERIVED, IS_ORDERED);
+		initEAttribute(getVpcBuilder_ec2_AdditionalCode(), ecorePackage.getEString(), "additionalCode", null, 0, 1,
+				VpcBuilder_ec2.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+				!IS_DERIVED, IS_ORDERED);
 
 		initEClass(serviceResourcesEClass, ServiceResources.class, "ServiceResources", IS_ABSTRACT, !IS_INTERFACE,
 				IS_GENERATED_INSTANCE_CLASS);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEString());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEString());
-		g1.getETypeArguments().add(g2);
-		initEAttribute(getServiceResources_Mapstype(), g1, "mapstype", null, 0, 1, ServiceResources.class, IS_TRANSIENT,
-				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Initialize enums and add enum literals
 		initEEnum(defaultInstanceTenancyEEnum, DefaultInstanceTenancy.class, "DefaultInstanceTenancy");
 		addEEnumLiteral(defaultInstanceTenancyEEnum, DefaultInstanceTenancy.DEFAULT);
 		addEEnumLiteral(defaultInstanceTenancyEEnum, DefaultInstanceTenancy.DEDICATED);
-
-		// Initialize data types
-		initEDataType(numberEDataType, Number.class, "Number", IS_SERIALIZABLE, !IS_GENERATED_INSTANCE_CLASS);
 
 		// Create resource
 		createResource(eNS_URI);

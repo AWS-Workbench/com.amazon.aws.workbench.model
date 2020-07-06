@@ -4,7 +4,7 @@ package com.amazon.aws.workbench.model.awsworkbench.impl;
 
 import com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage;
 import com.amazon.aws.workbench.model.awsworkbench.ServiceResources;
-import com.amazon.aws.workbench.model.awsworkbench.StackBuilder;
+import com.amazon.aws.workbench.model.awsworkbench.StackBuilder_core;
 
 import java.util.Collection;
 
@@ -24,25 +24,28 @@ import org.eclipse.emf.ecore.util.InternalEList;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Stack Builder</b></em>'.
+ * An implementation of the model object '<em><b>Stack Builder core</b></em>'.
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.StackBuilderImpl#getDescription <em>Description</em>}</li>
- *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.StackBuilderImpl#getStackName <em>Stack Name</em>}</li>
- *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.StackBuilderImpl#getTerminationProtection <em>Termination Protection</em>}</li>
- *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.StackBuilderImpl#getGeneratedClassName <em>Generated Class Name</em>}</li>
- *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.StackBuilderImpl#getVarName <em>Var Name</em>}</li>
- *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.StackBuilderImpl#getIdentifier <em>Identifier</em>}</li>
- *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.StackBuilderImpl#getAdditionalCode <em>Additional Code</em>}</li>
- *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.StackBuilderImpl#getServiceresources <em>Serviceresources</em>}</li>
+ *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.StackBuilder_coreImpl#getDescription <em>Description</em>}</li>
+ *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.StackBuilder_coreImpl#getEnvWithEnvironmentAsReference <em>Env With Environment As Reference</em>}</li>
+ *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.StackBuilder_coreImpl#getStackName <em>Stack Name</em>}</li>
+ *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.StackBuilder_coreImpl#getSynthesizerWithIStackSynthesizerAsReference <em>Synthesizer With IStack Synthesizer As Reference</em>}</li>
+ *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.StackBuilder_coreImpl#getTagsAsMap <em>Tags As Map</em>}</li>
+ *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.StackBuilder_coreImpl#getTerminationProtection <em>Termination Protection</em>}</li>
+ *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.StackBuilder_coreImpl#getGeneratedClassName <em>Generated Class Name</em>}</li>
+ *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.StackBuilder_coreImpl#getVarName <em>Var Name</em>}</li>
+ *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.StackBuilder_coreImpl#getIdentifier <em>Identifier</em>}</li>
+ *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.StackBuilder_coreImpl#getAdditionalCode <em>Additional Code</em>}</li>
+ *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.StackBuilder_coreImpl#getServiceresources <em>Serviceresources</em>}</li>
  * </ul>
  *
  * @generated
  */
-public class StackBuilderImpl extends MinimalEObjectImpl.Container implements StackBuilder {
+public class StackBuilder_coreImpl extends MinimalEObjectImpl.Container implements StackBuilder_core {
 	/**
 	 * The default value of the '{@link #getDescription() <em>Description</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -64,6 +67,26 @@ public class StackBuilderImpl extends MinimalEObjectImpl.Container implements St
 	protected String description = DESCRIPTION_EDEFAULT;
 
 	/**
+	 * The default value of the '{@link #getEnvWithEnvironmentAsReference() <em>Env With Environment As Reference</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getEnvWithEnvironmentAsReference()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String ENV_WITH_ENVIRONMENT_AS_REFERENCE_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getEnvWithEnvironmentAsReference() <em>Env With Environment As Reference</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getEnvWithEnvironmentAsReference()
+	 * @generated
+	 * @ordered
+	 */
+	protected String envWithEnvironmentAsReference = ENV_WITH_ENVIRONMENT_AS_REFERENCE_EDEFAULT;
+
+	/**
 	 * The default value of the '{@link #getStackName() <em>Stack Name</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -82,6 +105,46 @@ public class StackBuilderImpl extends MinimalEObjectImpl.Container implements St
 	 * @ordered
 	 */
 	protected String stackName = STACK_NAME_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getSynthesizerWithIStackSynthesizerAsReference() <em>Synthesizer With IStack Synthesizer As Reference</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getSynthesizerWithIStackSynthesizerAsReference()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String SYNTHESIZER_WITH_ISTACK_SYNTHESIZER_AS_REFERENCE_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getSynthesizerWithIStackSynthesizerAsReference() <em>Synthesizer With IStack Synthesizer As Reference</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getSynthesizerWithIStackSynthesizerAsReference()
+	 * @generated
+	 * @ordered
+	 */
+	protected String synthesizerWithIStackSynthesizerAsReference = SYNTHESIZER_WITH_ISTACK_SYNTHESIZER_AS_REFERENCE_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getTagsAsMap() <em>Tags As Map</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getTagsAsMap()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String TAGS_AS_MAP_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getTagsAsMap() <em>Tags As Map</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getTagsAsMap()
+	 * @generated
+	 * @ordered
+	 */
+	protected String tagsAsMap = TAGS_AS_MAP_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getTerminationProtection() <em>Termination Protection</em>}' attribute.
@@ -198,7 +261,7 @@ public class StackBuilderImpl extends MinimalEObjectImpl.Container implements St
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected StackBuilderImpl() {
+	protected StackBuilder_coreImpl() {
 		super();
 	}
 
@@ -209,7 +272,7 @@ public class StackBuilderImpl extends MinimalEObjectImpl.Container implements St
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AwsworkbenchPackage.Literals.STACK_BUILDER;
+		return AwsworkbenchPackage.Literals.STACK_BUILDER_CORE;
 	}
 
 	/**
@@ -232,8 +295,33 @@ public class StackBuilderImpl extends MinimalEObjectImpl.Container implements St
 		String oldDescription = description;
 		description = newDescription;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, AwsworkbenchPackage.STACK_BUILDER__DESCRIPTION,
+			eNotify(new ENotificationImpl(this, Notification.SET, AwsworkbenchPackage.STACK_BUILDER_CORE__DESCRIPTION,
 					oldDescription, description));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String getEnvWithEnvironmentAsReference() {
+		return envWithEnvironmentAsReference;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setEnvWithEnvironmentAsReference(String newEnvWithEnvironmentAsReference) {
+		String oldEnvWithEnvironmentAsReference = envWithEnvironmentAsReference;
+		envWithEnvironmentAsReference = newEnvWithEnvironmentAsReference;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					AwsworkbenchPackage.STACK_BUILDER_CORE__ENV_WITH_ENVIRONMENT_AS_REFERENCE,
+					oldEnvWithEnvironmentAsReference, envWithEnvironmentAsReference));
 	}
 
 	/**
@@ -256,8 +344,57 @@ public class StackBuilderImpl extends MinimalEObjectImpl.Container implements St
 		String oldStackName = stackName;
 		stackName = newStackName;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, AwsworkbenchPackage.STACK_BUILDER__STACK_NAME,
+			eNotify(new ENotificationImpl(this, Notification.SET, AwsworkbenchPackage.STACK_BUILDER_CORE__STACK_NAME,
 					oldStackName, stackName));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String getSynthesizerWithIStackSynthesizerAsReference() {
+		return synthesizerWithIStackSynthesizerAsReference;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setSynthesizerWithIStackSynthesizerAsReference(String newSynthesizerWithIStackSynthesizerAsReference) {
+		String oldSynthesizerWithIStackSynthesizerAsReference = synthesizerWithIStackSynthesizerAsReference;
+		synthesizerWithIStackSynthesizerAsReference = newSynthesizerWithIStackSynthesizerAsReference;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					AwsworkbenchPackage.STACK_BUILDER_CORE__SYNTHESIZER_WITH_ISTACK_SYNTHESIZER_AS_REFERENCE,
+					oldSynthesizerWithIStackSynthesizerAsReference, synthesizerWithIStackSynthesizerAsReference));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String getTagsAsMap() {
+		return tagsAsMap;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setTagsAsMap(String newTagsAsMap) {
+		String oldTagsAsMap = tagsAsMap;
+		tagsAsMap = newTagsAsMap;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, AwsworkbenchPackage.STACK_BUILDER_CORE__TAGS_AS_MAP,
+					oldTagsAsMap, tagsAsMap));
 	}
 
 	/**
@@ -281,7 +418,7 @@ public class StackBuilderImpl extends MinimalEObjectImpl.Container implements St
 		terminationProtection = newTerminationProtection;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET,
-					AwsworkbenchPackage.STACK_BUILDER__TERMINATION_PROTECTION, oldTerminationProtection,
+					AwsworkbenchPackage.STACK_BUILDER_CORE__TERMINATION_PROTECTION, oldTerminationProtection,
 					terminationProtection));
 	}
 
@@ -293,21 +430,6 @@ public class StackBuilderImpl extends MinimalEObjectImpl.Container implements St
 	@Override
 	public String getGeneratedClassName() {
 		return generatedClassName;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setGeneratedClassName(String newGeneratedClassName) {
-		String oldGeneratedClassName = generatedClassName;
-		generatedClassName = newGeneratedClassName;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET,
-					AwsworkbenchPackage.STACK_BUILDER__GENERATED_CLASS_NAME, oldGeneratedClassName,
-					generatedClassName));
 	}
 
 	/**
@@ -330,7 +452,7 @@ public class StackBuilderImpl extends MinimalEObjectImpl.Container implements St
 		String oldVarName = varName;
 		varName = newVarName;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, AwsworkbenchPackage.STACK_BUILDER__VAR_NAME,
+			eNotify(new ENotificationImpl(this, Notification.SET, AwsworkbenchPackage.STACK_BUILDER_CORE__VAR_NAME,
 					oldVarName, varName));
 	}
 
@@ -354,7 +476,7 @@ public class StackBuilderImpl extends MinimalEObjectImpl.Container implements St
 		String oldIdentifier = identifier;
 		identifier = newIdentifier;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, AwsworkbenchPackage.STACK_BUILDER__IDENTIFIER,
+			eNotify(new ENotificationImpl(this, Notification.SET, AwsworkbenchPackage.STACK_BUILDER_CORE__IDENTIFIER,
 					oldIdentifier, identifier));
 	}
 
@@ -378,8 +500,8 @@ public class StackBuilderImpl extends MinimalEObjectImpl.Container implements St
 		String oldAdditionalCode = additionalCode;
 		additionalCode = newAdditionalCode;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, AwsworkbenchPackage.STACK_BUILDER__ADDITIONAL_CODE,
-					oldAdditionalCode, additionalCode));
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					AwsworkbenchPackage.STACK_BUILDER_CORE__ADDITIONAL_CODE, oldAdditionalCode, additionalCode));
 	}
 
 	/**
@@ -391,7 +513,7 @@ public class StackBuilderImpl extends MinimalEObjectImpl.Container implements St
 	public EList<ServiceResources> getServiceresources() {
 		if (serviceresources == null) {
 			serviceresources = new EObjectContainmentEList<ServiceResources>(ServiceResources.class, this,
-					AwsworkbenchPackage.STACK_BUILDER__SERVICERESOURCES);
+					AwsworkbenchPackage.STACK_BUILDER_CORE__SERVICERESOURCES);
 		}
 		return serviceresources;
 	}
@@ -404,7 +526,7 @@ public class StackBuilderImpl extends MinimalEObjectImpl.Container implements St
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-		case AwsworkbenchPackage.STACK_BUILDER__SERVICERESOURCES:
+		case AwsworkbenchPackage.STACK_BUILDER_CORE__SERVICERESOURCES:
 			return ((InternalEList<?>) getServiceresources()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
@@ -418,21 +540,27 @@ public class StackBuilderImpl extends MinimalEObjectImpl.Container implements St
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-		case AwsworkbenchPackage.STACK_BUILDER__DESCRIPTION:
+		case AwsworkbenchPackage.STACK_BUILDER_CORE__DESCRIPTION:
 			return getDescription();
-		case AwsworkbenchPackage.STACK_BUILDER__STACK_NAME:
+		case AwsworkbenchPackage.STACK_BUILDER_CORE__ENV_WITH_ENVIRONMENT_AS_REFERENCE:
+			return getEnvWithEnvironmentAsReference();
+		case AwsworkbenchPackage.STACK_BUILDER_CORE__STACK_NAME:
 			return getStackName();
-		case AwsworkbenchPackage.STACK_BUILDER__TERMINATION_PROTECTION:
+		case AwsworkbenchPackage.STACK_BUILDER_CORE__SYNTHESIZER_WITH_ISTACK_SYNTHESIZER_AS_REFERENCE:
+			return getSynthesizerWithIStackSynthesizerAsReference();
+		case AwsworkbenchPackage.STACK_BUILDER_CORE__TAGS_AS_MAP:
+			return getTagsAsMap();
+		case AwsworkbenchPackage.STACK_BUILDER_CORE__TERMINATION_PROTECTION:
 			return getTerminationProtection();
-		case AwsworkbenchPackage.STACK_BUILDER__GENERATED_CLASS_NAME:
+		case AwsworkbenchPackage.STACK_BUILDER_CORE__GENERATED_CLASS_NAME:
 			return getGeneratedClassName();
-		case AwsworkbenchPackage.STACK_BUILDER__VAR_NAME:
+		case AwsworkbenchPackage.STACK_BUILDER_CORE__VAR_NAME:
 			return getVarName();
-		case AwsworkbenchPackage.STACK_BUILDER__IDENTIFIER:
+		case AwsworkbenchPackage.STACK_BUILDER_CORE__IDENTIFIER:
 			return getIdentifier();
-		case AwsworkbenchPackage.STACK_BUILDER__ADDITIONAL_CODE:
+		case AwsworkbenchPackage.STACK_BUILDER_CORE__ADDITIONAL_CODE:
 			return getAdditionalCode();
-		case AwsworkbenchPackage.STACK_BUILDER__SERVICERESOURCES:
+		case AwsworkbenchPackage.STACK_BUILDER_CORE__SERVICERESOURCES:
 			return getServiceresources();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -447,28 +575,34 @@ public class StackBuilderImpl extends MinimalEObjectImpl.Container implements St
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-		case AwsworkbenchPackage.STACK_BUILDER__DESCRIPTION:
+		case AwsworkbenchPackage.STACK_BUILDER_CORE__DESCRIPTION:
 			setDescription((String) newValue);
 			return;
-		case AwsworkbenchPackage.STACK_BUILDER__STACK_NAME:
+		case AwsworkbenchPackage.STACK_BUILDER_CORE__ENV_WITH_ENVIRONMENT_AS_REFERENCE:
+			setEnvWithEnvironmentAsReference((String) newValue);
+			return;
+		case AwsworkbenchPackage.STACK_BUILDER_CORE__STACK_NAME:
 			setStackName((String) newValue);
 			return;
-		case AwsworkbenchPackage.STACK_BUILDER__TERMINATION_PROTECTION:
+		case AwsworkbenchPackage.STACK_BUILDER_CORE__SYNTHESIZER_WITH_ISTACK_SYNTHESIZER_AS_REFERENCE:
+			setSynthesizerWithIStackSynthesizerAsReference((String) newValue);
+			return;
+		case AwsworkbenchPackage.STACK_BUILDER_CORE__TAGS_AS_MAP:
+			setTagsAsMap((String) newValue);
+			return;
+		case AwsworkbenchPackage.STACK_BUILDER_CORE__TERMINATION_PROTECTION:
 			setTerminationProtection((Boolean) newValue);
 			return;
-		case AwsworkbenchPackage.STACK_BUILDER__GENERATED_CLASS_NAME:
-			setGeneratedClassName((String) newValue);
-			return;
-		case AwsworkbenchPackage.STACK_BUILDER__VAR_NAME:
+		case AwsworkbenchPackage.STACK_BUILDER_CORE__VAR_NAME:
 			setVarName((String) newValue);
 			return;
-		case AwsworkbenchPackage.STACK_BUILDER__IDENTIFIER:
+		case AwsworkbenchPackage.STACK_BUILDER_CORE__IDENTIFIER:
 			setIdentifier((String) newValue);
 			return;
-		case AwsworkbenchPackage.STACK_BUILDER__ADDITIONAL_CODE:
+		case AwsworkbenchPackage.STACK_BUILDER_CORE__ADDITIONAL_CODE:
 			setAdditionalCode((String) newValue);
 			return;
-		case AwsworkbenchPackage.STACK_BUILDER__SERVICERESOURCES:
+		case AwsworkbenchPackage.STACK_BUILDER_CORE__SERVICERESOURCES:
 			getServiceresources().clear();
 			getServiceresources().addAll((Collection<? extends ServiceResources>) newValue);
 			return;
@@ -484,28 +618,34 @@ public class StackBuilderImpl extends MinimalEObjectImpl.Container implements St
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-		case AwsworkbenchPackage.STACK_BUILDER__DESCRIPTION:
+		case AwsworkbenchPackage.STACK_BUILDER_CORE__DESCRIPTION:
 			setDescription(DESCRIPTION_EDEFAULT);
 			return;
-		case AwsworkbenchPackage.STACK_BUILDER__STACK_NAME:
+		case AwsworkbenchPackage.STACK_BUILDER_CORE__ENV_WITH_ENVIRONMENT_AS_REFERENCE:
+			setEnvWithEnvironmentAsReference(ENV_WITH_ENVIRONMENT_AS_REFERENCE_EDEFAULT);
+			return;
+		case AwsworkbenchPackage.STACK_BUILDER_CORE__STACK_NAME:
 			setStackName(STACK_NAME_EDEFAULT);
 			return;
-		case AwsworkbenchPackage.STACK_BUILDER__TERMINATION_PROTECTION:
+		case AwsworkbenchPackage.STACK_BUILDER_CORE__SYNTHESIZER_WITH_ISTACK_SYNTHESIZER_AS_REFERENCE:
+			setSynthesizerWithIStackSynthesizerAsReference(SYNTHESIZER_WITH_ISTACK_SYNTHESIZER_AS_REFERENCE_EDEFAULT);
+			return;
+		case AwsworkbenchPackage.STACK_BUILDER_CORE__TAGS_AS_MAP:
+			setTagsAsMap(TAGS_AS_MAP_EDEFAULT);
+			return;
+		case AwsworkbenchPackage.STACK_BUILDER_CORE__TERMINATION_PROTECTION:
 			setTerminationProtection(TERMINATION_PROTECTION_EDEFAULT);
 			return;
-		case AwsworkbenchPackage.STACK_BUILDER__GENERATED_CLASS_NAME:
-			setGeneratedClassName(GENERATED_CLASS_NAME_EDEFAULT);
-			return;
-		case AwsworkbenchPackage.STACK_BUILDER__VAR_NAME:
+		case AwsworkbenchPackage.STACK_BUILDER_CORE__VAR_NAME:
 			setVarName(VAR_NAME_EDEFAULT);
 			return;
-		case AwsworkbenchPackage.STACK_BUILDER__IDENTIFIER:
+		case AwsworkbenchPackage.STACK_BUILDER_CORE__IDENTIFIER:
 			setIdentifier(IDENTIFIER_EDEFAULT);
 			return;
-		case AwsworkbenchPackage.STACK_BUILDER__ADDITIONAL_CODE:
+		case AwsworkbenchPackage.STACK_BUILDER_CORE__ADDITIONAL_CODE:
 			setAdditionalCode(ADDITIONAL_CODE_EDEFAULT);
 			return;
-		case AwsworkbenchPackage.STACK_BUILDER__SERVICERESOURCES:
+		case AwsworkbenchPackage.STACK_BUILDER_CORE__SERVICERESOURCES:
 			getServiceresources().clear();
 			return;
 		}
@@ -520,24 +660,34 @@ public class StackBuilderImpl extends MinimalEObjectImpl.Container implements St
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-		case AwsworkbenchPackage.STACK_BUILDER__DESCRIPTION:
+		case AwsworkbenchPackage.STACK_BUILDER_CORE__DESCRIPTION:
 			return DESCRIPTION_EDEFAULT == null ? description != null : !DESCRIPTION_EDEFAULT.equals(description);
-		case AwsworkbenchPackage.STACK_BUILDER__STACK_NAME:
+		case AwsworkbenchPackage.STACK_BUILDER_CORE__ENV_WITH_ENVIRONMENT_AS_REFERENCE:
+			return ENV_WITH_ENVIRONMENT_AS_REFERENCE_EDEFAULT == null ? envWithEnvironmentAsReference != null
+					: !ENV_WITH_ENVIRONMENT_AS_REFERENCE_EDEFAULT.equals(envWithEnvironmentAsReference);
+		case AwsworkbenchPackage.STACK_BUILDER_CORE__STACK_NAME:
 			return STACK_NAME_EDEFAULT == null ? stackName != null : !STACK_NAME_EDEFAULT.equals(stackName);
-		case AwsworkbenchPackage.STACK_BUILDER__TERMINATION_PROTECTION:
+		case AwsworkbenchPackage.STACK_BUILDER_CORE__SYNTHESIZER_WITH_ISTACK_SYNTHESIZER_AS_REFERENCE:
+			return SYNTHESIZER_WITH_ISTACK_SYNTHESIZER_AS_REFERENCE_EDEFAULT == null
+					? synthesizerWithIStackSynthesizerAsReference != null
+					: !SYNTHESIZER_WITH_ISTACK_SYNTHESIZER_AS_REFERENCE_EDEFAULT
+							.equals(synthesizerWithIStackSynthesizerAsReference);
+		case AwsworkbenchPackage.STACK_BUILDER_CORE__TAGS_AS_MAP:
+			return TAGS_AS_MAP_EDEFAULT == null ? tagsAsMap != null : !TAGS_AS_MAP_EDEFAULT.equals(tagsAsMap);
+		case AwsworkbenchPackage.STACK_BUILDER_CORE__TERMINATION_PROTECTION:
 			return TERMINATION_PROTECTION_EDEFAULT == null ? terminationProtection != null
 					: !TERMINATION_PROTECTION_EDEFAULT.equals(terminationProtection);
-		case AwsworkbenchPackage.STACK_BUILDER__GENERATED_CLASS_NAME:
+		case AwsworkbenchPackage.STACK_BUILDER_CORE__GENERATED_CLASS_NAME:
 			return GENERATED_CLASS_NAME_EDEFAULT == null ? generatedClassName != null
 					: !GENERATED_CLASS_NAME_EDEFAULT.equals(generatedClassName);
-		case AwsworkbenchPackage.STACK_BUILDER__VAR_NAME:
+		case AwsworkbenchPackage.STACK_BUILDER_CORE__VAR_NAME:
 			return VAR_NAME_EDEFAULT == null ? varName != null : !VAR_NAME_EDEFAULT.equals(varName);
-		case AwsworkbenchPackage.STACK_BUILDER__IDENTIFIER:
+		case AwsworkbenchPackage.STACK_BUILDER_CORE__IDENTIFIER:
 			return IDENTIFIER_EDEFAULT == null ? identifier != null : !IDENTIFIER_EDEFAULT.equals(identifier);
-		case AwsworkbenchPackage.STACK_BUILDER__ADDITIONAL_CODE:
+		case AwsworkbenchPackage.STACK_BUILDER_CORE__ADDITIONAL_CODE:
 			return ADDITIONAL_CODE_EDEFAULT == null ? additionalCode != null
 					: !ADDITIONAL_CODE_EDEFAULT.equals(additionalCode);
-		case AwsworkbenchPackage.STACK_BUILDER__SERVICERESOURCES:
+		case AwsworkbenchPackage.STACK_BUILDER_CORE__SERVICERESOURCES:
 			return serviceresources != null && !serviceresources.isEmpty();
 		}
 		return super.eIsSet(featureID);
@@ -556,8 +706,14 @@ public class StackBuilderImpl extends MinimalEObjectImpl.Container implements St
 		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (description: ");
 		result.append(description);
+		result.append(", envWithEnvironmentAsReference: ");
+		result.append(envWithEnvironmentAsReference);
 		result.append(", stackName: ");
 		result.append(stackName);
+		result.append(", synthesizerWithIStackSynthesizerAsReference: ");
+		result.append(synthesizerWithIStackSynthesizerAsReference);
+		result.append(", tagsAsMap: ");
+		result.append(tagsAsMap);
 		result.append(", terminationProtection: ");
 		result.append(terminationProtection);
 		result.append(", generatedClassName: ");
@@ -572,4 +728,4 @@ public class StackBuilderImpl extends MinimalEObjectImpl.Container implements St
 		return result.toString();
 	}
 
-} //StackBuilderImpl
+} //StackBuilder_coreImpl

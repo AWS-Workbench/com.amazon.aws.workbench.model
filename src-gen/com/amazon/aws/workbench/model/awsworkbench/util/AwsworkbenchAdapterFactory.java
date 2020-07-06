@@ -67,18 +67,18 @@ public class AwsworkbenchAdapterFactory extends AdapterFactoryImpl {
 	 */
 	protected AwsworkbenchSwitch<Adapter> modelSwitch = new AwsworkbenchSwitch<Adapter>() {
 		@Override
-		public Adapter caseAppBuilder(AppBuilder object) {
-			return createAppBuilderAdapter();
+		public Adapter caseAppBuilder_core(AppBuilder_core object) {
+			return createAppBuilder_coreAdapter();
 		}
 
 		@Override
-		public Adapter caseStackBuilder(StackBuilder object) {
-			return createStackBuilderAdapter();
+		public Adapter caseStackBuilder_core(StackBuilder_core object) {
+			return createStackBuilder_coreAdapter();
 		}
 
 		@Override
-		public Adapter caseVpcBuilder(VpcBuilder object) {
-			return createVpcBuilderAdapter();
+		public Adapter caseVpcBuilder_ec2(VpcBuilder_ec2 object) {
+			return createVpcBuilder_ec2Adapter();
 		}
 
 		@Override
@@ -106,44 +106,44 @@ public class AwsworkbenchAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.AppBuilder <em>App Builder</em>}'.
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.AppBuilder_core <em>App Builder core</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see com.amazon.aws.workbench.model.awsworkbench.AppBuilder
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AppBuilder_core
 	 * @generated
 	 */
-	public Adapter createAppBuilderAdapter() {
+	public Adapter createAppBuilder_coreAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.StackBuilder <em>Stack Builder</em>}'.
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.StackBuilder_core <em>Stack Builder core</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see com.amazon.aws.workbench.model.awsworkbench.StackBuilder
+	 * @see com.amazon.aws.workbench.model.awsworkbench.StackBuilder_core
 	 * @generated
 	 */
-	public Adapter createStackBuilderAdapter() {
+	public Adapter createStackBuilder_coreAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder <em>Vpc Builder</em>}'.
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder_ec2 <em>Vpc Builder ec2</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see com.amazon.aws.workbench.model.awsworkbench.VpcBuilder
+	 * @see com.amazon.aws.workbench.model.awsworkbench.VpcBuilder_ec2
 	 * @generated
 	 */
-	public Adapter createVpcBuilderAdapter() {
+	public Adapter createVpcBuilder_ec2Adapter() {
 		return null;
 	}
 

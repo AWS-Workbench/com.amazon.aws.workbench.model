@@ -12,6 +12,7 @@ Export-Package: com.amazon.aws.workbench.model.awsworkbench,
  com.amazon.aws.workbench.model.awsworkbench.impl,
  com.amazon.aws.workbench.model.awsworkbench.util
 Require-Bundle: org.eclipse.emf.ecore;visibility:=reexport,
+ com.amazon.aws.workbench.model;visibility:=reexport,
  org.eclipse.emf.ecore.xmi;visibility:=reexport,
  org.eclipse.core.runtime
 Bundle-ActivationPolicy: lazy

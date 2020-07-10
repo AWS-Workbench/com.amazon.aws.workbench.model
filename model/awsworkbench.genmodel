@@ -14,6 +14,13 @@
       <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//DefaultInstanceTenancy/DEFAULT"/>
       <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//DefaultInstanceTenancy/DEDICATED"/>
     </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="awsworkbench.ecore#//Protocol">
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//Protocol/ALL"/>
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//Protocol/TCP"/>
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//Protocol/UDP"/>
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//Protocol/ICMP"/>
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//Protocol/ICMPV6"/>
+    </genEnums>
     <genClasses ecoreClass="awsworkbench.ecore#//AppBuilder_core">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AppBuilder_core/autoSynth"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AppBuilder_core/contextAsMap"/>
@@ -60,7 +67,85 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//VpcBuilder_ec2/varName"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//VpcBuilder_ec2/identifier"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//VpcBuilder_ec2/additionalCode"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference awsworkbench.ecore#//VpcBuilder_ec2/subnetbuilder_ec2"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference awsworkbench.ecore#//VpcBuilder_ec2/securitygroupbuilder_ec2"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference awsworkbench.ecore#//VpcBuilder_ec2/privatesubnetbuilder_ec2"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference awsworkbench.ecore#//VpcBuilder_ec2/publicsubnetbuilder_ec2"/>
     </genClasses>
     <genClasses ecoreClass="awsworkbench.ecore#//ServiceResources"/>
+    <genClasses ecoreClass="awsworkbench.ecore#//SubnetBuilder_ec2">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//SubnetBuilder_ec2/availabilityZone"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//SubnetBuilder_ec2/cidrBlock"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//SubnetBuilder_ec2/vpcId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//SubnetBuilder_ec2/mapPublicIpOnLaunch"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//SubnetBuilder_ec2/generatedClassName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//SubnetBuilder_ec2/varName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//SubnetBuilder_ec2/identifier"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//SubnetBuilder_ec2/additionalCode"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference awsworkbench.ecore#//SubnetBuilder_ec2/instancebuilder_ec2"/>
+    </genClasses>
+    <genClasses ecoreClass="awsworkbench.ecore#//InstanceBuilder_ec2">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//InstanceBuilder_ec2/instanceTypeWithInstanceTypeAsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//InstanceBuilder_ec2/machineImageWithIMachineImageAsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//InstanceBuilder_ec2/vpcWithIVpcAsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//InstanceBuilder_ec2/allowAllOutbound"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//InstanceBuilder_ec2/availabilityZone"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//InstanceBuilder_ec2/blockDevicesAsList"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//InstanceBuilder_ec2/instanceName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//InstanceBuilder_ec2/keyName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//InstanceBuilder_ec2/privateIpAddress"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//InstanceBuilder_ec2/resourceSignalTimeoutWithDurationAsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//InstanceBuilder_ec2/roleWithIRoleAsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//InstanceBuilder_ec2/securityGroupWithISecurityGroupAsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//InstanceBuilder_ec2/sourceDestCheck"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//InstanceBuilder_ec2/userDataWithUserDataAsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//InstanceBuilder_ec2/vpcSubnetsWithSubnetSelectionAsReference"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//InstanceBuilder_ec2/generatedClassName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//InstanceBuilder_ec2/varName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//InstanceBuilder_ec2/identifier"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//InstanceBuilder_ec2/additionalCode"/>
+    </genClasses>
+    <genClasses ecoreClass="awsworkbench.ecore#//SecurityGroupBuilder_ec2">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//SecurityGroupBuilder_ec2/vpcWithIVpcAsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//SecurityGroupBuilder_ec2/allowAllOutbound"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//SecurityGroupBuilder_ec2/description"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//SecurityGroupBuilder_ec2/securityGroupName"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//SecurityGroupBuilder_ec2/generatedClassName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//SecurityGroupBuilder_ec2/varName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//SecurityGroupBuilder_ec2/identifier"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//SecurityGroupBuilder_ec2/additionalCode"/>
+    </genClasses>
+    <genClasses ecoreClass="awsworkbench.ecore#//PortBuilder_ec2">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//PortBuilder_ec2/protocol"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//PortBuilder_ec2/stringRepresentation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//PortBuilder_ec2/fromPort"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//PortBuilder_ec2/toPort"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//PortBuilder_ec2/generatedClassName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//PortBuilder_ec2/varName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//PortBuilder_ec2/identifier"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//PortBuilder_ec2/additionalCode"/>
+    </genClasses>
+    <genClasses ecoreClass="awsworkbench.ecore#//PrivateSubnetBuilder_ec2">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//PrivateSubnetBuilder_ec2/availabilityZone"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//PrivateSubnetBuilder_ec2/cidrBlock"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//PrivateSubnetBuilder_ec2/vpcId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//PrivateSubnetBuilder_ec2/mapPublicIpOnLaunch"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//PrivateSubnetBuilder_ec2/generatedClassName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//PrivateSubnetBuilder_ec2/varName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//PrivateSubnetBuilder_ec2/identifier"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//PrivateSubnetBuilder_ec2/additionalCode"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference awsworkbench.ecore#//PrivateSubnetBuilder_ec2/instancebuilder_ec2"/>
+    </genClasses>
+    <genClasses ecoreClass="awsworkbench.ecore#//PublicSubnetBuilder_ec2">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//PublicSubnetBuilder_ec2/availabilityZone"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//PublicSubnetBuilder_ec2/cidrBlock"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//PublicSubnetBuilder_ec2/vpcId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//PublicSubnetBuilder_ec2/mapPublicIpOnLaunch"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//PublicSubnetBuilder_ec2/generatedClassName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//PublicSubnetBuilder_ec2/varName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//PublicSubnetBuilder_ec2/identifier"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//PublicSubnetBuilder_ec2/additionalCode"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference awsworkbench.ecore#//PublicSubnetBuilder_ec2/instancebuilder_ec2"/>
+    </genClasses>
   </genPackages>
 </genmodel:GenModel>

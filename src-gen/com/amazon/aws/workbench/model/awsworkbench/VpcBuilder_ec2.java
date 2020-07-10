@@ -2,6 +2,8 @@
  */
 package com.amazon.aws.workbench.model.awsworkbench;
 
+import org.eclipse.emf.common.util.EList;
+
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Vpc Builder ec2</b></em>'.
@@ -30,6 +32,10 @@ package com.amazon.aws.workbench.model.awsworkbench;
  *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder_ec2#getVarName <em>Var Name</em>}</li>
  *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder_ec2#getIdentifier <em>Identifier</em>}</li>
  *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder_ec2#getAdditionalCode <em>Additional Code</em>}</li>
+ *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder_ec2#getSubnetbuilder_ec2 <em>Subnetbuilder ec2</em>}</li>
+ *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder_ec2#getSecuritygroupbuilder_ec2 <em>Securitygroupbuilder ec2</em>}</li>
+ *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder_ec2#getPrivatesubnetbuilder_ec2 <em>Privatesubnetbuilder ec2</em>}</li>
+ *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder_ec2#getPublicsubnetbuilder_ec2 <em>Publicsubnetbuilder ec2</em>}</li>
  * </ul>
  *
  * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getVpcBuilder_ec2()
@@ -447,5 +453,53 @@ public interface VpcBuilder_ec2 extends ServiceResources {
 	 * @generated
 	 */
 	void setAdditionalCode(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Subnetbuilder ec2</b></em>' containment reference list.
+	 * The list contents are of type {@link com.amazon.aws.workbench.model.awsworkbench.SubnetBuilder_ec2}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Subnetbuilder ec2</em>' containment reference list.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getVpcBuilder_ec2_Subnetbuilder_ec2()
+	 * @model containment="true"
+	 * @generated
+	 */
+	EList<SubnetBuilder_ec2> getSubnetbuilder_ec2();
+
+	/**
+	 * Returns the value of the '<em><b>Securitygroupbuilder ec2</b></em>' containment reference list.
+	 * The list contents are of type {@link com.amazon.aws.workbench.model.awsworkbench.SecurityGroupBuilder_ec2}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Securitygroupbuilder ec2</em>' containment reference list.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getVpcBuilder_ec2_Securitygroupbuilder_ec2()
+	 * @model containment="true"
+	 * @generated
+	 */
+	EList<SecurityGroupBuilder_ec2> getSecuritygroupbuilder_ec2();
+
+	/**
+	 * Returns the value of the '<em><b>Privatesubnetbuilder ec2</b></em>' containment reference list.
+	 * The list contents are of type {@link com.amazon.aws.workbench.model.awsworkbench.PrivateSubnetBuilder_ec2}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Privatesubnetbuilder ec2</em>' containment reference list.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getVpcBuilder_ec2_Privatesubnetbuilder_ec2()
+	 * @model containment="true"
+	 * @generated
+	 */
+	EList<PrivateSubnetBuilder_ec2> getPrivatesubnetbuilder_ec2();
+
+	/**
+	 * Returns the value of the '<em><b>Publicsubnetbuilder ec2</b></em>' containment reference list.
+	 * The list contents are of type {@link com.amazon.aws.workbench.model.awsworkbench.PublicSubnetBuilder_ec2}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Publicsubnetbuilder ec2</em>' containment reference list.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getVpcBuilder_ec2_Publicsubnetbuilder_ec2()
+	 * @model containment="true"
+	 * @generated
+	 */
+	EList<PublicSubnetBuilder_ec2> getPublicsubnetbuilder_ec2();
 
 } // VpcBuilder_ec2

@@ -49,6 +49,60 @@ public interface AwsworkbenchFactory extends EFactory {
 	VpcBuilder_ec2 createVpcBuilder_ec2();
 
 	/**
+	 * Returns a new object of class '<em>Subnet Builder ec2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Subnet Builder ec2</em>'.
+	 * @generated
+	 */
+	SubnetBuilder_ec2 createSubnetBuilder_ec2();
+
+	/**
+	 * Returns a new object of class '<em>Instance Builder ec2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Instance Builder ec2</em>'.
+	 * @generated
+	 */
+	InstanceBuilder_ec2 createInstanceBuilder_ec2();
+
+	/**
+	 * Returns a new object of class '<em>Security Group Builder ec2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Security Group Builder ec2</em>'.
+	 * @generated
+	 */
+	SecurityGroupBuilder_ec2 createSecurityGroupBuilder_ec2();
+
+	/**
+	 * Returns a new object of class '<em>Port Builder ec2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Port Builder ec2</em>'.
+	 * @generated
+	 */
+	PortBuilder_ec2 createPortBuilder_ec2();
+
+	/**
+	 * Returns a new object of class '<em>Private Subnet Builder ec2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Private Subnet Builder ec2</em>'.
+	 * @generated
+	 */
+	PrivateSubnetBuilder_ec2 createPrivateSubnetBuilder_ec2();
+
+	/**
+	 * Returns a new object of class '<em>Public Subnet Builder ec2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Public Subnet Builder ec2</em>'.
+	 * @generated
+	 */
+	PublicSubnetBuilder_ec2 createPublicSubnetBuilder_ec2();
+
+	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

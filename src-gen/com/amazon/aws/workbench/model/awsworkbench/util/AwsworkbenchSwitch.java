@@ -96,6 +96,60 @@ public class AwsworkbenchSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
+		case AwsworkbenchPackage.SUBNET_BUILDER_EC2: {
+			SubnetBuilder_ec2 subnetBuilder_ec2 = (SubnetBuilder_ec2) theEObject;
+			T result = caseSubnetBuilder_ec2(subnetBuilder_ec2);
+			if (result == null)
+				result = caseServiceResources(subnetBuilder_ec2);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.INSTANCE_BUILDER_EC2: {
+			InstanceBuilder_ec2 instanceBuilder_ec2 = (InstanceBuilder_ec2) theEObject;
+			T result = caseInstanceBuilder_ec2(instanceBuilder_ec2);
+			if (result == null)
+				result = caseServiceResources(instanceBuilder_ec2);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.SECURITY_GROUP_BUILDER_EC2: {
+			SecurityGroupBuilder_ec2 securityGroupBuilder_ec2 = (SecurityGroupBuilder_ec2) theEObject;
+			T result = caseSecurityGroupBuilder_ec2(securityGroupBuilder_ec2);
+			if (result == null)
+				result = caseServiceResources(securityGroupBuilder_ec2);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.PORT_BUILDER_EC2: {
+			PortBuilder_ec2 portBuilder_ec2 = (PortBuilder_ec2) theEObject;
+			T result = casePortBuilder_ec2(portBuilder_ec2);
+			if (result == null)
+				result = caseServiceResources(portBuilder_ec2);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.PRIVATE_SUBNET_BUILDER_EC2: {
+			PrivateSubnetBuilder_ec2 privateSubnetBuilder_ec2 = (PrivateSubnetBuilder_ec2) theEObject;
+			T result = casePrivateSubnetBuilder_ec2(privateSubnetBuilder_ec2);
+			if (result == null)
+				result = caseServiceResources(privateSubnetBuilder_ec2);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.PUBLIC_SUBNET_BUILDER_EC2: {
+			PublicSubnetBuilder_ec2 publicSubnetBuilder_ec2 = (PublicSubnetBuilder_ec2) theEObject;
+			T result = casePublicSubnetBuilder_ec2(publicSubnetBuilder_ec2);
+			if (result == null)
+				result = caseServiceResources(publicSubnetBuilder_ec2);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
 		default:
 			return defaultCase(theEObject);
 		}
@@ -158,6 +212,96 @@ public class AwsworkbenchSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseServiceResources(ServiceResources object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Subnet Builder ec2</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Subnet Builder ec2</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseSubnetBuilder_ec2(SubnetBuilder_ec2 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Instance Builder ec2</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Instance Builder ec2</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseInstanceBuilder_ec2(InstanceBuilder_ec2 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Security Group Builder ec2</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Security Group Builder ec2</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseSecurityGroupBuilder_ec2(SecurityGroupBuilder_ec2 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Port Builder ec2</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Port Builder ec2</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T casePortBuilder_ec2(PortBuilder_ec2 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Private Subnet Builder ec2</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Private Subnet Builder ec2</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T casePrivateSubnetBuilder_ec2(PrivateSubnetBuilder_ec2 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Public Subnet Builder ec2</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Public Subnet Builder ec2</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T casePublicSubnetBuilder_ec2(PublicSubnetBuilder_ec2 object) {
 		return null;
 	}
 

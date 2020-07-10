@@ -521,13 +521,49 @@ public interface AwsworkbenchPackage extends EPackage {
 	int VPC_BUILDER_EC2__ADDITIONAL_CODE = SERVICE_RESOURCES_FEATURE_COUNT + 18;
 
 	/**
+	 * The feature id for the '<em><b>Subnetbuilder ec2</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VPC_BUILDER_EC2__SUBNETBUILDER_EC2 = SERVICE_RESOURCES_FEATURE_COUNT + 19;
+
+	/**
+	 * The feature id for the '<em><b>Securitygroupbuilder ec2</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VPC_BUILDER_EC2__SECURITYGROUPBUILDER_EC2 = SERVICE_RESOURCES_FEATURE_COUNT + 20;
+
+	/**
+	 * The feature id for the '<em><b>Privatesubnetbuilder ec2</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VPC_BUILDER_EC2__PRIVATESUBNETBUILDER_EC2 = SERVICE_RESOURCES_FEATURE_COUNT + 21;
+
+	/**
+	 * The feature id for the '<em><b>Publicsubnetbuilder ec2</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VPC_BUILDER_EC2__PUBLICSUBNETBUILDER_EC2 = SERVICE_RESOURCES_FEATURE_COUNT + 22;
+
+	/**
 	 * The number of structural features of the '<em>Vpc Builder ec2</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int VPC_BUILDER_EC2_FEATURE_COUNT = SERVICE_RESOURCES_FEATURE_COUNT + 19;
+	int VPC_BUILDER_EC2_FEATURE_COUNT = SERVICE_RESOURCES_FEATURE_COUNT + 23;
 
 	/**
 	 * The number of operations of the '<em>Vpc Builder ec2</em>' class.
@@ -539,6 +575,732 @@ public interface AwsworkbenchPackage extends EPackage {
 	int VPC_BUILDER_EC2_OPERATION_COUNT = SERVICE_RESOURCES_OPERATION_COUNT + 0;
 
 	/**
+	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.SubnetBuilder_ec2Impl <em>Subnet Builder ec2</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.SubnetBuilder_ec2Impl
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getSubnetBuilder_ec2()
+	 * @generated
+	 */
+	int SUBNET_BUILDER_EC2 = 4;
+
+	/**
+	 * The feature id for the '<em><b>Availability Zone</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUBNET_BUILDER_EC2__AVAILABILITY_ZONE = SERVICE_RESOURCES_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Cidr Block</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUBNET_BUILDER_EC2__CIDR_BLOCK = SERVICE_RESOURCES_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Vpc Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUBNET_BUILDER_EC2__VPC_ID = SERVICE_RESOURCES_FEATURE_COUNT + 2;
+
+	/**
+	 * The feature id for the '<em><b>Map Public Ip On Launch</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUBNET_BUILDER_EC2__MAP_PUBLIC_IP_ON_LAUNCH = SERVICE_RESOURCES_FEATURE_COUNT + 3;
+
+	/**
+	 * The feature id for the '<em><b>Generated Class Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUBNET_BUILDER_EC2__GENERATED_CLASS_NAME = SERVICE_RESOURCES_FEATURE_COUNT + 4;
+
+	/**
+	 * The feature id for the '<em><b>Var Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUBNET_BUILDER_EC2__VAR_NAME = SERVICE_RESOURCES_FEATURE_COUNT + 5;
+
+	/**
+	 * The feature id for the '<em><b>Identifier</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUBNET_BUILDER_EC2__IDENTIFIER = SERVICE_RESOURCES_FEATURE_COUNT + 6;
+
+	/**
+	 * The feature id for the '<em><b>Additional Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUBNET_BUILDER_EC2__ADDITIONAL_CODE = SERVICE_RESOURCES_FEATURE_COUNT + 7;
+
+	/**
+	 * The feature id for the '<em><b>Instancebuilder ec2</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUBNET_BUILDER_EC2__INSTANCEBUILDER_EC2 = SERVICE_RESOURCES_FEATURE_COUNT + 8;
+
+	/**
+	 * The number of structural features of the '<em>Subnet Builder ec2</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUBNET_BUILDER_EC2_FEATURE_COUNT = SERVICE_RESOURCES_FEATURE_COUNT + 9;
+
+	/**
+	 * The number of operations of the '<em>Subnet Builder ec2</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUBNET_BUILDER_EC2_OPERATION_COUNT = SERVICE_RESOURCES_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.InstanceBuilder_ec2Impl <em>Instance Builder ec2</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.InstanceBuilder_ec2Impl
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getInstanceBuilder_ec2()
+	 * @generated
+	 */
+	int INSTANCE_BUILDER_EC2 = 5;
+
+	/**
+	 * The feature id for the '<em><b>Instance Type With Instance Type As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INSTANCE_BUILDER_EC2__INSTANCE_TYPE_WITH_INSTANCE_TYPE_AS_REFERENCE = SERVICE_RESOURCES_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Machine Image With IMachine Image As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INSTANCE_BUILDER_EC2__MACHINE_IMAGE_WITH_IMACHINE_IMAGE_AS_REFERENCE = SERVICE_RESOURCES_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Vpc With IVpc As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INSTANCE_BUILDER_EC2__VPC_WITH_IVPC_AS_REFERENCE = SERVICE_RESOURCES_FEATURE_COUNT + 2;
+
+	/**
+	 * The feature id for the '<em><b>Allow All Outbound</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INSTANCE_BUILDER_EC2__ALLOW_ALL_OUTBOUND = SERVICE_RESOURCES_FEATURE_COUNT + 3;
+
+	/**
+	 * The feature id for the '<em><b>Availability Zone</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INSTANCE_BUILDER_EC2__AVAILABILITY_ZONE = SERVICE_RESOURCES_FEATURE_COUNT + 4;
+
+	/**
+	 * The feature id for the '<em><b>Block Devices As List</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INSTANCE_BUILDER_EC2__BLOCK_DEVICES_AS_LIST = SERVICE_RESOURCES_FEATURE_COUNT + 5;
+
+	/**
+	 * The feature id for the '<em><b>Instance Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INSTANCE_BUILDER_EC2__INSTANCE_NAME = SERVICE_RESOURCES_FEATURE_COUNT + 6;
+
+	/**
+	 * The feature id for the '<em><b>Key Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INSTANCE_BUILDER_EC2__KEY_NAME = SERVICE_RESOURCES_FEATURE_COUNT + 7;
+
+	/**
+	 * The feature id for the '<em><b>Private Ip Address</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INSTANCE_BUILDER_EC2__PRIVATE_IP_ADDRESS = SERVICE_RESOURCES_FEATURE_COUNT + 8;
+
+	/**
+	 * The feature id for the '<em><b>Resource Signal Timeout With Duration As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INSTANCE_BUILDER_EC2__RESOURCE_SIGNAL_TIMEOUT_WITH_DURATION_AS_REFERENCE = SERVICE_RESOURCES_FEATURE_COUNT + 9;
+
+	/**
+	 * The feature id for the '<em><b>Role With IRole As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INSTANCE_BUILDER_EC2__ROLE_WITH_IROLE_AS_REFERENCE = SERVICE_RESOURCES_FEATURE_COUNT + 10;
+
+	/**
+	 * The feature id for the '<em><b>Security Group With ISecurity Group As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INSTANCE_BUILDER_EC2__SECURITY_GROUP_WITH_ISECURITY_GROUP_AS_REFERENCE = SERVICE_RESOURCES_FEATURE_COUNT + 11;
+
+	/**
+	 * The feature id for the '<em><b>Source Dest Check</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INSTANCE_BUILDER_EC2__SOURCE_DEST_CHECK = SERVICE_RESOURCES_FEATURE_COUNT + 12;
+
+	/**
+	 * The feature id for the '<em><b>User Data With User Data As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INSTANCE_BUILDER_EC2__USER_DATA_WITH_USER_DATA_AS_REFERENCE = SERVICE_RESOURCES_FEATURE_COUNT + 13;
+
+	/**
+	 * The feature id for the '<em><b>Vpc Subnets With Subnet Selection As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INSTANCE_BUILDER_EC2__VPC_SUBNETS_WITH_SUBNET_SELECTION_AS_REFERENCE = SERVICE_RESOURCES_FEATURE_COUNT + 14;
+
+	/**
+	 * The feature id for the '<em><b>Generated Class Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INSTANCE_BUILDER_EC2__GENERATED_CLASS_NAME = SERVICE_RESOURCES_FEATURE_COUNT + 15;
+
+	/**
+	 * The feature id for the '<em><b>Var Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INSTANCE_BUILDER_EC2__VAR_NAME = SERVICE_RESOURCES_FEATURE_COUNT + 16;
+
+	/**
+	 * The feature id for the '<em><b>Identifier</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INSTANCE_BUILDER_EC2__IDENTIFIER = SERVICE_RESOURCES_FEATURE_COUNT + 17;
+
+	/**
+	 * The feature id for the '<em><b>Additional Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INSTANCE_BUILDER_EC2__ADDITIONAL_CODE = SERVICE_RESOURCES_FEATURE_COUNT + 18;
+
+	/**
+	 * The number of structural features of the '<em>Instance Builder ec2</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INSTANCE_BUILDER_EC2_FEATURE_COUNT = SERVICE_RESOURCES_FEATURE_COUNT + 19;
+
+	/**
+	 * The number of operations of the '<em>Instance Builder ec2</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INSTANCE_BUILDER_EC2_OPERATION_COUNT = SERVICE_RESOURCES_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.SecurityGroupBuilder_ec2Impl <em>Security Group Builder ec2</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.SecurityGroupBuilder_ec2Impl
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getSecurityGroupBuilder_ec2()
+	 * @generated
+	 */
+	int SECURITY_GROUP_BUILDER_EC2 = 6;
+
+	/**
+	 * The feature id for the '<em><b>Vpc With IVpc As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SECURITY_GROUP_BUILDER_EC2__VPC_WITH_IVPC_AS_REFERENCE = SERVICE_RESOURCES_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Allow All Outbound</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SECURITY_GROUP_BUILDER_EC2__ALLOW_ALL_OUTBOUND = SERVICE_RESOURCES_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Description</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SECURITY_GROUP_BUILDER_EC2__DESCRIPTION = SERVICE_RESOURCES_FEATURE_COUNT + 2;
+
+	/**
+	 * The feature id for the '<em><b>Security Group Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SECURITY_GROUP_BUILDER_EC2__SECURITY_GROUP_NAME = SERVICE_RESOURCES_FEATURE_COUNT + 3;
+
+	/**
+	 * The feature id for the '<em><b>Generated Class Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SECURITY_GROUP_BUILDER_EC2__GENERATED_CLASS_NAME = SERVICE_RESOURCES_FEATURE_COUNT + 4;
+
+	/**
+	 * The feature id for the '<em><b>Var Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SECURITY_GROUP_BUILDER_EC2__VAR_NAME = SERVICE_RESOURCES_FEATURE_COUNT + 5;
+
+	/**
+	 * The feature id for the '<em><b>Identifier</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SECURITY_GROUP_BUILDER_EC2__IDENTIFIER = SERVICE_RESOURCES_FEATURE_COUNT + 6;
+
+	/**
+	 * The feature id for the '<em><b>Additional Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SECURITY_GROUP_BUILDER_EC2__ADDITIONAL_CODE = SERVICE_RESOURCES_FEATURE_COUNT + 7;
+
+	/**
+	 * The number of structural features of the '<em>Security Group Builder ec2</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SECURITY_GROUP_BUILDER_EC2_FEATURE_COUNT = SERVICE_RESOURCES_FEATURE_COUNT + 8;
+
+	/**
+	 * The number of operations of the '<em>Security Group Builder ec2</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SECURITY_GROUP_BUILDER_EC2_OPERATION_COUNT = SERVICE_RESOURCES_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.PortBuilder_ec2Impl <em>Port Builder ec2</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.PortBuilder_ec2Impl
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getPortBuilder_ec2()
+	 * @generated
+	 */
+	int PORT_BUILDER_EC2 = 7;
+
+	/**
+	 * The feature id for the '<em><b>Protocol</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PORT_BUILDER_EC2__PROTOCOL = SERVICE_RESOURCES_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>String Representation</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PORT_BUILDER_EC2__STRING_REPRESENTATION = SERVICE_RESOURCES_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>From Port</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PORT_BUILDER_EC2__FROM_PORT = SERVICE_RESOURCES_FEATURE_COUNT + 2;
+
+	/**
+	 * The feature id for the '<em><b>To Port</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PORT_BUILDER_EC2__TO_PORT = SERVICE_RESOURCES_FEATURE_COUNT + 3;
+
+	/**
+	 * The feature id for the '<em><b>Generated Class Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PORT_BUILDER_EC2__GENERATED_CLASS_NAME = SERVICE_RESOURCES_FEATURE_COUNT + 4;
+
+	/**
+	 * The feature id for the '<em><b>Var Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PORT_BUILDER_EC2__VAR_NAME = SERVICE_RESOURCES_FEATURE_COUNT + 5;
+
+	/**
+	 * The feature id for the '<em><b>Identifier</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PORT_BUILDER_EC2__IDENTIFIER = SERVICE_RESOURCES_FEATURE_COUNT + 6;
+
+	/**
+	 * The feature id for the '<em><b>Additional Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PORT_BUILDER_EC2__ADDITIONAL_CODE = SERVICE_RESOURCES_FEATURE_COUNT + 7;
+
+	/**
+	 * The number of structural features of the '<em>Port Builder ec2</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PORT_BUILDER_EC2_FEATURE_COUNT = SERVICE_RESOURCES_FEATURE_COUNT + 8;
+
+	/**
+	 * The number of operations of the '<em>Port Builder ec2</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PORT_BUILDER_EC2_OPERATION_COUNT = SERVICE_RESOURCES_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.PrivateSubnetBuilder_ec2Impl <em>Private Subnet Builder ec2</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.PrivateSubnetBuilder_ec2Impl
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getPrivateSubnetBuilder_ec2()
+	 * @generated
+	 */
+	int PRIVATE_SUBNET_BUILDER_EC2 = 8;
+
+	/**
+	 * The feature id for the '<em><b>Availability Zone</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRIVATE_SUBNET_BUILDER_EC2__AVAILABILITY_ZONE = SERVICE_RESOURCES_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Cidr Block</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRIVATE_SUBNET_BUILDER_EC2__CIDR_BLOCK = SERVICE_RESOURCES_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Vpc Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRIVATE_SUBNET_BUILDER_EC2__VPC_ID = SERVICE_RESOURCES_FEATURE_COUNT + 2;
+
+	/**
+	 * The feature id for the '<em><b>Map Public Ip On Launch</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRIVATE_SUBNET_BUILDER_EC2__MAP_PUBLIC_IP_ON_LAUNCH = SERVICE_RESOURCES_FEATURE_COUNT + 3;
+
+	/**
+	 * The feature id for the '<em><b>Generated Class Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRIVATE_SUBNET_BUILDER_EC2__GENERATED_CLASS_NAME = SERVICE_RESOURCES_FEATURE_COUNT + 4;
+
+	/**
+	 * The feature id for the '<em><b>Var Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRIVATE_SUBNET_BUILDER_EC2__VAR_NAME = SERVICE_RESOURCES_FEATURE_COUNT + 5;
+
+	/**
+	 * The feature id for the '<em><b>Identifier</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRIVATE_SUBNET_BUILDER_EC2__IDENTIFIER = SERVICE_RESOURCES_FEATURE_COUNT + 6;
+
+	/**
+	 * The feature id for the '<em><b>Additional Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRIVATE_SUBNET_BUILDER_EC2__ADDITIONAL_CODE = SERVICE_RESOURCES_FEATURE_COUNT + 7;
+
+	/**
+	 * The feature id for the '<em><b>Instancebuilder ec2</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRIVATE_SUBNET_BUILDER_EC2__INSTANCEBUILDER_EC2 = SERVICE_RESOURCES_FEATURE_COUNT + 8;
+
+	/**
+	 * The number of structural features of the '<em>Private Subnet Builder ec2</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRIVATE_SUBNET_BUILDER_EC2_FEATURE_COUNT = SERVICE_RESOURCES_FEATURE_COUNT + 9;
+
+	/**
+	 * The number of operations of the '<em>Private Subnet Builder ec2</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRIVATE_SUBNET_BUILDER_EC2_OPERATION_COUNT = SERVICE_RESOURCES_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.PublicSubnetBuilder_ec2Impl <em>Public Subnet Builder ec2</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.PublicSubnetBuilder_ec2Impl
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getPublicSubnetBuilder_ec2()
+	 * @generated
+	 */
+	int PUBLIC_SUBNET_BUILDER_EC2 = 9;
+
+	/**
+	 * The feature id for the '<em><b>Availability Zone</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PUBLIC_SUBNET_BUILDER_EC2__AVAILABILITY_ZONE = SERVICE_RESOURCES_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Cidr Block</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PUBLIC_SUBNET_BUILDER_EC2__CIDR_BLOCK = SERVICE_RESOURCES_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Vpc Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PUBLIC_SUBNET_BUILDER_EC2__VPC_ID = SERVICE_RESOURCES_FEATURE_COUNT + 2;
+
+	/**
+	 * The feature id for the '<em><b>Map Public Ip On Launch</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PUBLIC_SUBNET_BUILDER_EC2__MAP_PUBLIC_IP_ON_LAUNCH = SERVICE_RESOURCES_FEATURE_COUNT + 3;
+
+	/**
+	 * The feature id for the '<em><b>Generated Class Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PUBLIC_SUBNET_BUILDER_EC2__GENERATED_CLASS_NAME = SERVICE_RESOURCES_FEATURE_COUNT + 4;
+
+	/**
+	 * The feature id for the '<em><b>Var Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PUBLIC_SUBNET_BUILDER_EC2__VAR_NAME = SERVICE_RESOURCES_FEATURE_COUNT + 5;
+
+	/**
+	 * The feature id for the '<em><b>Identifier</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PUBLIC_SUBNET_BUILDER_EC2__IDENTIFIER = SERVICE_RESOURCES_FEATURE_COUNT + 6;
+
+	/**
+	 * The feature id for the '<em><b>Additional Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PUBLIC_SUBNET_BUILDER_EC2__ADDITIONAL_CODE = SERVICE_RESOURCES_FEATURE_COUNT + 7;
+
+	/**
+	 * The feature id for the '<em><b>Instancebuilder ec2</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PUBLIC_SUBNET_BUILDER_EC2__INSTANCEBUILDER_EC2 = SERVICE_RESOURCES_FEATURE_COUNT + 8;
+
+	/**
+	 * The number of structural features of the '<em>Public Subnet Builder ec2</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PUBLIC_SUBNET_BUILDER_EC2_FEATURE_COUNT = SERVICE_RESOURCES_FEATURE_COUNT + 9;
+
+	/**
+	 * The number of operations of the '<em>Public Subnet Builder ec2</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PUBLIC_SUBNET_BUILDER_EC2_OPERATION_COUNT = SERVICE_RESOURCES_OPERATION_COUNT + 0;
+
+	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.DefaultInstanceTenancy <em>Default Instance Tenancy</em>}' enum.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -546,7 +1308,17 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getDefaultInstanceTenancy()
 	 * @generated
 	 */
-	int DEFAULT_INSTANCE_TENANCY = 4;
+	int DEFAULT_INSTANCE_TENANCY = 10;
+
+	/**
+	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.Protocol <em>Protocol</em>}' enum.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.amazon.aws.workbench.model.awsworkbench.Protocol
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getProtocol()
+	 * @generated
+	 */
+	int PROTOCOL = 11;
 
 	/**
 	 * Returns the meta object for class '{@link com.amazon.aws.workbench.model.awsworkbench.AppBuilder_core <em>App Builder core</em>}'.
@@ -1030,6 +1802,50 @@ public interface AwsworkbenchPackage extends EPackage {
 	EAttribute getVpcBuilder_ec2_AdditionalCode();
 
 	/**
+	 * Returns the meta object for the containment reference list '{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder_ec2#getSubnetbuilder_ec2 <em>Subnetbuilder ec2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Subnetbuilder ec2</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.VpcBuilder_ec2#getSubnetbuilder_ec2()
+	 * @see #getVpcBuilder_ec2()
+	 * @generated
+	 */
+	EReference getVpcBuilder_ec2_Subnetbuilder_ec2();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder_ec2#getSecuritygroupbuilder_ec2 <em>Securitygroupbuilder ec2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Securitygroupbuilder ec2</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.VpcBuilder_ec2#getSecuritygroupbuilder_ec2()
+	 * @see #getVpcBuilder_ec2()
+	 * @generated
+	 */
+	EReference getVpcBuilder_ec2_Securitygroupbuilder_ec2();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder_ec2#getPrivatesubnetbuilder_ec2 <em>Privatesubnetbuilder ec2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Privatesubnetbuilder ec2</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.VpcBuilder_ec2#getPrivatesubnetbuilder_ec2()
+	 * @see #getVpcBuilder_ec2()
+	 * @generated
+	 */
+	EReference getVpcBuilder_ec2_Privatesubnetbuilder_ec2();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder_ec2#getPublicsubnetbuilder_ec2 <em>Publicsubnetbuilder ec2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Publicsubnetbuilder ec2</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.VpcBuilder_ec2#getPublicsubnetbuilder_ec2()
+	 * @see #getVpcBuilder_ec2()
+	 * @generated
+	 */
+	EReference getVpcBuilder_ec2_Publicsubnetbuilder_ec2();
+
+	/**
 	 * Returns the meta object for class '{@link com.amazon.aws.workbench.model.awsworkbench.ServiceResources <em>Service Resources</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1040,6 +1856,748 @@ public interface AwsworkbenchPackage extends EPackage {
 	EClass getServiceResources();
 
 	/**
+	 * Returns the meta object for class '{@link com.amazon.aws.workbench.model.awsworkbench.SubnetBuilder_ec2 <em>Subnet Builder ec2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Subnet Builder ec2</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.SubnetBuilder_ec2
+	 * @generated
+	 */
+	EClass getSubnetBuilder_ec2();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.SubnetBuilder_ec2#getAvailabilityZone <em>Availability Zone</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Availability Zone</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.SubnetBuilder_ec2#getAvailabilityZone()
+	 * @see #getSubnetBuilder_ec2()
+	 * @generated
+	 */
+	EAttribute getSubnetBuilder_ec2_AvailabilityZone();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.SubnetBuilder_ec2#getCidrBlock <em>Cidr Block</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Cidr Block</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.SubnetBuilder_ec2#getCidrBlock()
+	 * @see #getSubnetBuilder_ec2()
+	 * @generated
+	 */
+	EAttribute getSubnetBuilder_ec2_CidrBlock();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.SubnetBuilder_ec2#getVpcId <em>Vpc Id</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Vpc Id</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.SubnetBuilder_ec2#getVpcId()
+	 * @see #getSubnetBuilder_ec2()
+	 * @generated
+	 */
+	EAttribute getSubnetBuilder_ec2_VpcId();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.SubnetBuilder_ec2#getMapPublicIpOnLaunch <em>Map Public Ip On Launch</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Map Public Ip On Launch</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.SubnetBuilder_ec2#getMapPublicIpOnLaunch()
+	 * @see #getSubnetBuilder_ec2()
+	 * @generated
+	 */
+	EAttribute getSubnetBuilder_ec2_MapPublicIpOnLaunch();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.SubnetBuilder_ec2#getGeneratedClassName <em>Generated Class Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Generated Class Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.SubnetBuilder_ec2#getGeneratedClassName()
+	 * @see #getSubnetBuilder_ec2()
+	 * @generated
+	 */
+	EAttribute getSubnetBuilder_ec2_GeneratedClassName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.SubnetBuilder_ec2#getVarName <em>Var Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Var Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.SubnetBuilder_ec2#getVarName()
+	 * @see #getSubnetBuilder_ec2()
+	 * @generated
+	 */
+	EAttribute getSubnetBuilder_ec2_VarName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.SubnetBuilder_ec2#getIdentifier <em>Identifier</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Identifier</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.SubnetBuilder_ec2#getIdentifier()
+	 * @see #getSubnetBuilder_ec2()
+	 * @generated
+	 */
+	EAttribute getSubnetBuilder_ec2_Identifier();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.SubnetBuilder_ec2#getAdditionalCode <em>Additional Code</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Additional Code</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.SubnetBuilder_ec2#getAdditionalCode()
+	 * @see #getSubnetBuilder_ec2()
+	 * @generated
+	 */
+	EAttribute getSubnetBuilder_ec2_AdditionalCode();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link com.amazon.aws.workbench.model.awsworkbench.SubnetBuilder_ec2#getInstancebuilder_ec2 <em>Instancebuilder ec2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Instancebuilder ec2</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.SubnetBuilder_ec2#getInstancebuilder_ec2()
+	 * @see #getSubnetBuilder_ec2()
+	 * @generated
+	 */
+	EReference getSubnetBuilder_ec2_Instancebuilder_ec2();
+
+	/**
+	 * Returns the meta object for class '{@link com.amazon.aws.workbench.model.awsworkbench.InstanceBuilder_ec2 <em>Instance Builder ec2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Instance Builder ec2</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.InstanceBuilder_ec2
+	 * @generated
+	 */
+	EClass getInstanceBuilder_ec2();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.InstanceBuilder_ec2#getInstanceTypeWithInstanceTypeAsReference <em>Instance Type With Instance Type As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Instance Type With Instance Type As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.InstanceBuilder_ec2#getInstanceTypeWithInstanceTypeAsReference()
+	 * @see #getInstanceBuilder_ec2()
+	 * @generated
+	 */
+	EAttribute getInstanceBuilder_ec2_InstanceTypeWithInstanceTypeAsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.InstanceBuilder_ec2#getMachineImageWithIMachineImageAsReference <em>Machine Image With IMachine Image As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Machine Image With IMachine Image As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.InstanceBuilder_ec2#getMachineImageWithIMachineImageAsReference()
+	 * @see #getInstanceBuilder_ec2()
+	 * @generated
+	 */
+	EAttribute getInstanceBuilder_ec2_MachineImageWithIMachineImageAsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.InstanceBuilder_ec2#getVpcWithIVpcAsReference <em>Vpc With IVpc As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Vpc With IVpc As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.InstanceBuilder_ec2#getVpcWithIVpcAsReference()
+	 * @see #getInstanceBuilder_ec2()
+	 * @generated
+	 */
+	EAttribute getInstanceBuilder_ec2_VpcWithIVpcAsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.InstanceBuilder_ec2#getAllowAllOutbound <em>Allow All Outbound</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Allow All Outbound</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.InstanceBuilder_ec2#getAllowAllOutbound()
+	 * @see #getInstanceBuilder_ec2()
+	 * @generated
+	 */
+	EAttribute getInstanceBuilder_ec2_AllowAllOutbound();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.InstanceBuilder_ec2#getAvailabilityZone <em>Availability Zone</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Availability Zone</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.InstanceBuilder_ec2#getAvailabilityZone()
+	 * @see #getInstanceBuilder_ec2()
+	 * @generated
+	 */
+	EAttribute getInstanceBuilder_ec2_AvailabilityZone();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.InstanceBuilder_ec2#getBlockDevicesAsList <em>Block Devices As List</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Block Devices As List</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.InstanceBuilder_ec2#getBlockDevicesAsList()
+	 * @see #getInstanceBuilder_ec2()
+	 * @generated
+	 */
+	EAttribute getInstanceBuilder_ec2_BlockDevicesAsList();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.InstanceBuilder_ec2#getInstanceName <em>Instance Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Instance Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.InstanceBuilder_ec2#getInstanceName()
+	 * @see #getInstanceBuilder_ec2()
+	 * @generated
+	 */
+	EAttribute getInstanceBuilder_ec2_InstanceName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.InstanceBuilder_ec2#getKeyName <em>Key Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Key Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.InstanceBuilder_ec2#getKeyName()
+	 * @see #getInstanceBuilder_ec2()
+	 * @generated
+	 */
+	EAttribute getInstanceBuilder_ec2_KeyName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.InstanceBuilder_ec2#getPrivateIpAddress <em>Private Ip Address</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Private Ip Address</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.InstanceBuilder_ec2#getPrivateIpAddress()
+	 * @see #getInstanceBuilder_ec2()
+	 * @generated
+	 */
+	EAttribute getInstanceBuilder_ec2_PrivateIpAddress();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.InstanceBuilder_ec2#getResourceSignalTimeoutWithDurationAsReference <em>Resource Signal Timeout With Duration As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Resource Signal Timeout With Duration As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.InstanceBuilder_ec2#getResourceSignalTimeoutWithDurationAsReference()
+	 * @see #getInstanceBuilder_ec2()
+	 * @generated
+	 */
+	EAttribute getInstanceBuilder_ec2_ResourceSignalTimeoutWithDurationAsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.InstanceBuilder_ec2#getRoleWithIRoleAsReference <em>Role With IRole As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Role With IRole As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.InstanceBuilder_ec2#getRoleWithIRoleAsReference()
+	 * @see #getInstanceBuilder_ec2()
+	 * @generated
+	 */
+	EAttribute getInstanceBuilder_ec2_RoleWithIRoleAsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.InstanceBuilder_ec2#getSecurityGroupWithISecurityGroupAsReference <em>Security Group With ISecurity Group As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Security Group With ISecurity Group As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.InstanceBuilder_ec2#getSecurityGroupWithISecurityGroupAsReference()
+	 * @see #getInstanceBuilder_ec2()
+	 * @generated
+	 */
+	EAttribute getInstanceBuilder_ec2_SecurityGroupWithISecurityGroupAsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.InstanceBuilder_ec2#getSourceDestCheck <em>Source Dest Check</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Source Dest Check</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.InstanceBuilder_ec2#getSourceDestCheck()
+	 * @see #getInstanceBuilder_ec2()
+	 * @generated
+	 */
+	EAttribute getInstanceBuilder_ec2_SourceDestCheck();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.InstanceBuilder_ec2#getUserDataWithUserDataAsReference <em>User Data With User Data As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>User Data With User Data As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.InstanceBuilder_ec2#getUserDataWithUserDataAsReference()
+	 * @see #getInstanceBuilder_ec2()
+	 * @generated
+	 */
+	EAttribute getInstanceBuilder_ec2_UserDataWithUserDataAsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.InstanceBuilder_ec2#getVpcSubnetsWithSubnetSelectionAsReference <em>Vpc Subnets With Subnet Selection As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Vpc Subnets With Subnet Selection As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.InstanceBuilder_ec2#getVpcSubnetsWithSubnetSelectionAsReference()
+	 * @see #getInstanceBuilder_ec2()
+	 * @generated
+	 */
+	EAttribute getInstanceBuilder_ec2_VpcSubnetsWithSubnetSelectionAsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.InstanceBuilder_ec2#getGeneratedClassName <em>Generated Class Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Generated Class Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.InstanceBuilder_ec2#getGeneratedClassName()
+	 * @see #getInstanceBuilder_ec2()
+	 * @generated
+	 */
+	EAttribute getInstanceBuilder_ec2_GeneratedClassName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.InstanceBuilder_ec2#getVarName <em>Var Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Var Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.InstanceBuilder_ec2#getVarName()
+	 * @see #getInstanceBuilder_ec2()
+	 * @generated
+	 */
+	EAttribute getInstanceBuilder_ec2_VarName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.InstanceBuilder_ec2#getIdentifier <em>Identifier</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Identifier</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.InstanceBuilder_ec2#getIdentifier()
+	 * @see #getInstanceBuilder_ec2()
+	 * @generated
+	 */
+	EAttribute getInstanceBuilder_ec2_Identifier();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.InstanceBuilder_ec2#getAdditionalCode <em>Additional Code</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Additional Code</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.InstanceBuilder_ec2#getAdditionalCode()
+	 * @see #getInstanceBuilder_ec2()
+	 * @generated
+	 */
+	EAttribute getInstanceBuilder_ec2_AdditionalCode();
+
+	/**
+	 * Returns the meta object for class '{@link com.amazon.aws.workbench.model.awsworkbench.SecurityGroupBuilder_ec2 <em>Security Group Builder ec2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Security Group Builder ec2</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.SecurityGroupBuilder_ec2
+	 * @generated
+	 */
+	EClass getSecurityGroupBuilder_ec2();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.SecurityGroupBuilder_ec2#getVpcWithIVpcAsReference <em>Vpc With IVpc As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Vpc With IVpc As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.SecurityGroupBuilder_ec2#getVpcWithIVpcAsReference()
+	 * @see #getSecurityGroupBuilder_ec2()
+	 * @generated
+	 */
+	EAttribute getSecurityGroupBuilder_ec2_VpcWithIVpcAsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.SecurityGroupBuilder_ec2#getAllowAllOutbound <em>Allow All Outbound</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Allow All Outbound</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.SecurityGroupBuilder_ec2#getAllowAllOutbound()
+	 * @see #getSecurityGroupBuilder_ec2()
+	 * @generated
+	 */
+	EAttribute getSecurityGroupBuilder_ec2_AllowAllOutbound();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.SecurityGroupBuilder_ec2#getDescription <em>Description</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Description</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.SecurityGroupBuilder_ec2#getDescription()
+	 * @see #getSecurityGroupBuilder_ec2()
+	 * @generated
+	 */
+	EAttribute getSecurityGroupBuilder_ec2_Description();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.SecurityGroupBuilder_ec2#getSecurityGroupName <em>Security Group Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Security Group Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.SecurityGroupBuilder_ec2#getSecurityGroupName()
+	 * @see #getSecurityGroupBuilder_ec2()
+	 * @generated
+	 */
+	EAttribute getSecurityGroupBuilder_ec2_SecurityGroupName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.SecurityGroupBuilder_ec2#getGeneratedClassName <em>Generated Class Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Generated Class Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.SecurityGroupBuilder_ec2#getGeneratedClassName()
+	 * @see #getSecurityGroupBuilder_ec2()
+	 * @generated
+	 */
+	EAttribute getSecurityGroupBuilder_ec2_GeneratedClassName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.SecurityGroupBuilder_ec2#getVarName <em>Var Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Var Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.SecurityGroupBuilder_ec2#getVarName()
+	 * @see #getSecurityGroupBuilder_ec2()
+	 * @generated
+	 */
+	EAttribute getSecurityGroupBuilder_ec2_VarName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.SecurityGroupBuilder_ec2#getIdentifier <em>Identifier</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Identifier</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.SecurityGroupBuilder_ec2#getIdentifier()
+	 * @see #getSecurityGroupBuilder_ec2()
+	 * @generated
+	 */
+	EAttribute getSecurityGroupBuilder_ec2_Identifier();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.SecurityGroupBuilder_ec2#getAdditionalCode <em>Additional Code</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Additional Code</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.SecurityGroupBuilder_ec2#getAdditionalCode()
+	 * @see #getSecurityGroupBuilder_ec2()
+	 * @generated
+	 */
+	EAttribute getSecurityGroupBuilder_ec2_AdditionalCode();
+
+	/**
+	 * Returns the meta object for class '{@link com.amazon.aws.workbench.model.awsworkbench.PortBuilder_ec2 <em>Port Builder ec2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Port Builder ec2</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.PortBuilder_ec2
+	 * @generated
+	 */
+	EClass getPortBuilder_ec2();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.PortBuilder_ec2#getProtocol <em>Protocol</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Protocol</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.PortBuilder_ec2#getProtocol()
+	 * @see #getPortBuilder_ec2()
+	 * @generated
+	 */
+	EAttribute getPortBuilder_ec2_Protocol();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.PortBuilder_ec2#getStringRepresentation <em>String Representation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>String Representation</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.PortBuilder_ec2#getStringRepresentation()
+	 * @see #getPortBuilder_ec2()
+	 * @generated
+	 */
+	EAttribute getPortBuilder_ec2_StringRepresentation();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.PortBuilder_ec2#getFromPort <em>From Port</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>From Port</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.PortBuilder_ec2#getFromPort()
+	 * @see #getPortBuilder_ec2()
+	 * @generated
+	 */
+	EAttribute getPortBuilder_ec2_FromPort();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.PortBuilder_ec2#getToPort <em>To Port</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>To Port</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.PortBuilder_ec2#getToPort()
+	 * @see #getPortBuilder_ec2()
+	 * @generated
+	 */
+	EAttribute getPortBuilder_ec2_ToPort();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.PortBuilder_ec2#getGeneratedClassName <em>Generated Class Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Generated Class Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.PortBuilder_ec2#getGeneratedClassName()
+	 * @see #getPortBuilder_ec2()
+	 * @generated
+	 */
+	EAttribute getPortBuilder_ec2_GeneratedClassName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.PortBuilder_ec2#getVarName <em>Var Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Var Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.PortBuilder_ec2#getVarName()
+	 * @see #getPortBuilder_ec2()
+	 * @generated
+	 */
+	EAttribute getPortBuilder_ec2_VarName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.PortBuilder_ec2#getIdentifier <em>Identifier</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Identifier</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.PortBuilder_ec2#getIdentifier()
+	 * @see #getPortBuilder_ec2()
+	 * @generated
+	 */
+	EAttribute getPortBuilder_ec2_Identifier();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.PortBuilder_ec2#getAdditionalCode <em>Additional Code</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Additional Code</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.PortBuilder_ec2#getAdditionalCode()
+	 * @see #getPortBuilder_ec2()
+	 * @generated
+	 */
+	EAttribute getPortBuilder_ec2_AdditionalCode();
+
+	/**
+	 * Returns the meta object for class '{@link com.amazon.aws.workbench.model.awsworkbench.PrivateSubnetBuilder_ec2 <em>Private Subnet Builder ec2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Private Subnet Builder ec2</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.PrivateSubnetBuilder_ec2
+	 * @generated
+	 */
+	EClass getPrivateSubnetBuilder_ec2();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.PrivateSubnetBuilder_ec2#getAvailabilityZone <em>Availability Zone</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Availability Zone</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.PrivateSubnetBuilder_ec2#getAvailabilityZone()
+	 * @see #getPrivateSubnetBuilder_ec2()
+	 * @generated
+	 */
+	EAttribute getPrivateSubnetBuilder_ec2_AvailabilityZone();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.PrivateSubnetBuilder_ec2#getCidrBlock <em>Cidr Block</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Cidr Block</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.PrivateSubnetBuilder_ec2#getCidrBlock()
+	 * @see #getPrivateSubnetBuilder_ec2()
+	 * @generated
+	 */
+	EAttribute getPrivateSubnetBuilder_ec2_CidrBlock();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.PrivateSubnetBuilder_ec2#getVpcId <em>Vpc Id</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Vpc Id</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.PrivateSubnetBuilder_ec2#getVpcId()
+	 * @see #getPrivateSubnetBuilder_ec2()
+	 * @generated
+	 */
+	EAttribute getPrivateSubnetBuilder_ec2_VpcId();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.PrivateSubnetBuilder_ec2#getMapPublicIpOnLaunch <em>Map Public Ip On Launch</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Map Public Ip On Launch</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.PrivateSubnetBuilder_ec2#getMapPublicIpOnLaunch()
+	 * @see #getPrivateSubnetBuilder_ec2()
+	 * @generated
+	 */
+	EAttribute getPrivateSubnetBuilder_ec2_MapPublicIpOnLaunch();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.PrivateSubnetBuilder_ec2#getGeneratedClassName <em>Generated Class Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Generated Class Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.PrivateSubnetBuilder_ec2#getGeneratedClassName()
+	 * @see #getPrivateSubnetBuilder_ec2()
+	 * @generated
+	 */
+	EAttribute getPrivateSubnetBuilder_ec2_GeneratedClassName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.PrivateSubnetBuilder_ec2#getVarName <em>Var Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Var Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.PrivateSubnetBuilder_ec2#getVarName()
+	 * @see #getPrivateSubnetBuilder_ec2()
+	 * @generated
+	 */
+	EAttribute getPrivateSubnetBuilder_ec2_VarName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.PrivateSubnetBuilder_ec2#getIdentifier <em>Identifier</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Identifier</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.PrivateSubnetBuilder_ec2#getIdentifier()
+	 * @see #getPrivateSubnetBuilder_ec2()
+	 * @generated
+	 */
+	EAttribute getPrivateSubnetBuilder_ec2_Identifier();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.PrivateSubnetBuilder_ec2#getAdditionalCode <em>Additional Code</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Additional Code</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.PrivateSubnetBuilder_ec2#getAdditionalCode()
+	 * @see #getPrivateSubnetBuilder_ec2()
+	 * @generated
+	 */
+	EAttribute getPrivateSubnetBuilder_ec2_AdditionalCode();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link com.amazon.aws.workbench.model.awsworkbench.PrivateSubnetBuilder_ec2#getInstancebuilder_ec2 <em>Instancebuilder ec2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Instancebuilder ec2</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.PrivateSubnetBuilder_ec2#getInstancebuilder_ec2()
+	 * @see #getPrivateSubnetBuilder_ec2()
+	 * @generated
+	 */
+	EReference getPrivateSubnetBuilder_ec2_Instancebuilder_ec2();
+
+	/**
+	 * Returns the meta object for class '{@link com.amazon.aws.workbench.model.awsworkbench.PublicSubnetBuilder_ec2 <em>Public Subnet Builder ec2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Public Subnet Builder ec2</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.PublicSubnetBuilder_ec2
+	 * @generated
+	 */
+	EClass getPublicSubnetBuilder_ec2();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.PublicSubnetBuilder_ec2#getAvailabilityZone <em>Availability Zone</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Availability Zone</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.PublicSubnetBuilder_ec2#getAvailabilityZone()
+	 * @see #getPublicSubnetBuilder_ec2()
+	 * @generated
+	 */
+	EAttribute getPublicSubnetBuilder_ec2_AvailabilityZone();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.PublicSubnetBuilder_ec2#getCidrBlock <em>Cidr Block</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Cidr Block</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.PublicSubnetBuilder_ec2#getCidrBlock()
+	 * @see #getPublicSubnetBuilder_ec2()
+	 * @generated
+	 */
+	EAttribute getPublicSubnetBuilder_ec2_CidrBlock();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.PublicSubnetBuilder_ec2#getVpcId <em>Vpc Id</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Vpc Id</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.PublicSubnetBuilder_ec2#getVpcId()
+	 * @see #getPublicSubnetBuilder_ec2()
+	 * @generated
+	 */
+	EAttribute getPublicSubnetBuilder_ec2_VpcId();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.PublicSubnetBuilder_ec2#getMapPublicIpOnLaunch <em>Map Public Ip On Launch</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Map Public Ip On Launch</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.PublicSubnetBuilder_ec2#getMapPublicIpOnLaunch()
+	 * @see #getPublicSubnetBuilder_ec2()
+	 * @generated
+	 */
+	EAttribute getPublicSubnetBuilder_ec2_MapPublicIpOnLaunch();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.PublicSubnetBuilder_ec2#getGeneratedClassName <em>Generated Class Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Generated Class Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.PublicSubnetBuilder_ec2#getGeneratedClassName()
+	 * @see #getPublicSubnetBuilder_ec2()
+	 * @generated
+	 */
+	EAttribute getPublicSubnetBuilder_ec2_GeneratedClassName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.PublicSubnetBuilder_ec2#getVarName <em>Var Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Var Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.PublicSubnetBuilder_ec2#getVarName()
+	 * @see #getPublicSubnetBuilder_ec2()
+	 * @generated
+	 */
+	EAttribute getPublicSubnetBuilder_ec2_VarName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.PublicSubnetBuilder_ec2#getIdentifier <em>Identifier</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Identifier</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.PublicSubnetBuilder_ec2#getIdentifier()
+	 * @see #getPublicSubnetBuilder_ec2()
+	 * @generated
+	 */
+	EAttribute getPublicSubnetBuilder_ec2_Identifier();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.PublicSubnetBuilder_ec2#getAdditionalCode <em>Additional Code</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Additional Code</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.PublicSubnetBuilder_ec2#getAdditionalCode()
+	 * @see #getPublicSubnetBuilder_ec2()
+	 * @generated
+	 */
+	EAttribute getPublicSubnetBuilder_ec2_AdditionalCode();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link com.amazon.aws.workbench.model.awsworkbench.PublicSubnetBuilder_ec2#getInstancebuilder_ec2 <em>Instancebuilder ec2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Instancebuilder ec2</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.PublicSubnetBuilder_ec2#getInstancebuilder_ec2()
+	 * @see #getPublicSubnetBuilder_ec2()
+	 * @generated
+	 */
+	EReference getPublicSubnetBuilder_ec2_Instancebuilder_ec2();
+
+	/**
 	 * Returns the meta object for enum '{@link com.amazon.aws.workbench.model.awsworkbench.DefaultInstanceTenancy <em>Default Instance Tenancy</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1048,6 +2606,16 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @generated
 	 */
 	EEnum getDefaultInstanceTenancy();
+
+	/**
+	 * Returns the meta object for enum '{@link com.amazon.aws.workbench.model.awsworkbench.Protocol <em>Protocol</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for enum '<em>Protocol</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.Protocol
+	 * @generated
+	 */
+	EEnum getProtocol();
 
 	/**
 	 * Returns the factory that creates the instances of the model.
@@ -1437,6 +3005,38 @@ public interface AwsworkbenchPackage extends EPackage {
 		EAttribute VPC_BUILDER_EC2__ADDITIONAL_CODE = eINSTANCE.getVpcBuilder_ec2_AdditionalCode();
 
 		/**
+		 * The meta object literal for the '<em><b>Subnetbuilder ec2</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference VPC_BUILDER_EC2__SUBNETBUILDER_EC2 = eINSTANCE.getVpcBuilder_ec2_Subnetbuilder_ec2();
+
+		/**
+		 * The meta object literal for the '<em><b>Securitygroupbuilder ec2</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference VPC_BUILDER_EC2__SECURITYGROUPBUILDER_EC2 = eINSTANCE.getVpcBuilder_ec2_Securitygroupbuilder_ec2();
+
+		/**
+		 * The meta object literal for the '<em><b>Privatesubnetbuilder ec2</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference VPC_BUILDER_EC2__PRIVATESUBNETBUILDER_EC2 = eINSTANCE.getVpcBuilder_ec2_Privatesubnetbuilder_ec2();
+
+		/**
+		 * The meta object literal for the '<em><b>Publicsubnetbuilder ec2</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference VPC_BUILDER_EC2__PUBLICSUBNETBUILDER_EC2 = eINSTANCE.getVpcBuilder_ec2_Publicsubnetbuilder_ec2();
+
+		/**
 		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.ServiceResourcesImpl <em>Service Resources</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -1447,6 +3047,582 @@ public interface AwsworkbenchPackage extends EPackage {
 		EClass SERVICE_RESOURCES = eINSTANCE.getServiceResources();
 
 		/**
+		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.SubnetBuilder_ec2Impl <em>Subnet Builder ec2</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.SubnetBuilder_ec2Impl
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getSubnetBuilder_ec2()
+		 * @generated
+		 */
+		EClass SUBNET_BUILDER_EC2 = eINSTANCE.getSubnetBuilder_ec2();
+
+		/**
+		 * The meta object literal for the '<em><b>Availability Zone</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SUBNET_BUILDER_EC2__AVAILABILITY_ZONE = eINSTANCE.getSubnetBuilder_ec2_AvailabilityZone();
+
+		/**
+		 * The meta object literal for the '<em><b>Cidr Block</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SUBNET_BUILDER_EC2__CIDR_BLOCK = eINSTANCE.getSubnetBuilder_ec2_CidrBlock();
+
+		/**
+		 * The meta object literal for the '<em><b>Vpc Id</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SUBNET_BUILDER_EC2__VPC_ID = eINSTANCE.getSubnetBuilder_ec2_VpcId();
+
+		/**
+		 * The meta object literal for the '<em><b>Map Public Ip On Launch</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SUBNET_BUILDER_EC2__MAP_PUBLIC_IP_ON_LAUNCH = eINSTANCE.getSubnetBuilder_ec2_MapPublicIpOnLaunch();
+
+		/**
+		 * The meta object literal for the '<em><b>Generated Class Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SUBNET_BUILDER_EC2__GENERATED_CLASS_NAME = eINSTANCE.getSubnetBuilder_ec2_GeneratedClassName();
+
+		/**
+		 * The meta object literal for the '<em><b>Var Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SUBNET_BUILDER_EC2__VAR_NAME = eINSTANCE.getSubnetBuilder_ec2_VarName();
+
+		/**
+		 * The meta object literal for the '<em><b>Identifier</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SUBNET_BUILDER_EC2__IDENTIFIER = eINSTANCE.getSubnetBuilder_ec2_Identifier();
+
+		/**
+		 * The meta object literal for the '<em><b>Additional Code</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SUBNET_BUILDER_EC2__ADDITIONAL_CODE = eINSTANCE.getSubnetBuilder_ec2_AdditionalCode();
+
+		/**
+		 * The meta object literal for the '<em><b>Instancebuilder ec2</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference SUBNET_BUILDER_EC2__INSTANCEBUILDER_EC2 = eINSTANCE.getSubnetBuilder_ec2_Instancebuilder_ec2();
+
+		/**
+		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.InstanceBuilder_ec2Impl <em>Instance Builder ec2</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.InstanceBuilder_ec2Impl
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getInstanceBuilder_ec2()
+		 * @generated
+		 */
+		EClass INSTANCE_BUILDER_EC2 = eINSTANCE.getInstanceBuilder_ec2();
+
+		/**
+		 * The meta object literal for the '<em><b>Instance Type With Instance Type As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute INSTANCE_BUILDER_EC2__INSTANCE_TYPE_WITH_INSTANCE_TYPE_AS_REFERENCE = eINSTANCE
+				.getInstanceBuilder_ec2_InstanceTypeWithInstanceTypeAsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Machine Image With IMachine Image As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute INSTANCE_BUILDER_EC2__MACHINE_IMAGE_WITH_IMACHINE_IMAGE_AS_REFERENCE = eINSTANCE
+				.getInstanceBuilder_ec2_MachineImageWithIMachineImageAsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Vpc With IVpc As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute INSTANCE_BUILDER_EC2__VPC_WITH_IVPC_AS_REFERENCE = eINSTANCE
+				.getInstanceBuilder_ec2_VpcWithIVpcAsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Allow All Outbound</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute INSTANCE_BUILDER_EC2__ALLOW_ALL_OUTBOUND = eINSTANCE.getInstanceBuilder_ec2_AllowAllOutbound();
+
+		/**
+		 * The meta object literal for the '<em><b>Availability Zone</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute INSTANCE_BUILDER_EC2__AVAILABILITY_ZONE = eINSTANCE.getInstanceBuilder_ec2_AvailabilityZone();
+
+		/**
+		 * The meta object literal for the '<em><b>Block Devices As List</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute INSTANCE_BUILDER_EC2__BLOCK_DEVICES_AS_LIST = eINSTANCE.getInstanceBuilder_ec2_BlockDevicesAsList();
+
+		/**
+		 * The meta object literal for the '<em><b>Instance Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute INSTANCE_BUILDER_EC2__INSTANCE_NAME = eINSTANCE.getInstanceBuilder_ec2_InstanceName();
+
+		/**
+		 * The meta object literal for the '<em><b>Key Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute INSTANCE_BUILDER_EC2__KEY_NAME = eINSTANCE.getInstanceBuilder_ec2_KeyName();
+
+		/**
+		 * The meta object literal for the '<em><b>Private Ip Address</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute INSTANCE_BUILDER_EC2__PRIVATE_IP_ADDRESS = eINSTANCE.getInstanceBuilder_ec2_PrivateIpAddress();
+
+		/**
+		 * The meta object literal for the '<em><b>Resource Signal Timeout With Duration As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute INSTANCE_BUILDER_EC2__RESOURCE_SIGNAL_TIMEOUT_WITH_DURATION_AS_REFERENCE = eINSTANCE
+				.getInstanceBuilder_ec2_ResourceSignalTimeoutWithDurationAsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Role With IRole As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute INSTANCE_BUILDER_EC2__ROLE_WITH_IROLE_AS_REFERENCE = eINSTANCE
+				.getInstanceBuilder_ec2_RoleWithIRoleAsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Security Group With ISecurity Group As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute INSTANCE_BUILDER_EC2__SECURITY_GROUP_WITH_ISECURITY_GROUP_AS_REFERENCE = eINSTANCE
+				.getInstanceBuilder_ec2_SecurityGroupWithISecurityGroupAsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Source Dest Check</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute INSTANCE_BUILDER_EC2__SOURCE_DEST_CHECK = eINSTANCE.getInstanceBuilder_ec2_SourceDestCheck();
+
+		/**
+		 * The meta object literal for the '<em><b>User Data With User Data As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute INSTANCE_BUILDER_EC2__USER_DATA_WITH_USER_DATA_AS_REFERENCE = eINSTANCE
+				.getInstanceBuilder_ec2_UserDataWithUserDataAsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Vpc Subnets With Subnet Selection As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute INSTANCE_BUILDER_EC2__VPC_SUBNETS_WITH_SUBNET_SELECTION_AS_REFERENCE = eINSTANCE
+				.getInstanceBuilder_ec2_VpcSubnetsWithSubnetSelectionAsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Generated Class Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute INSTANCE_BUILDER_EC2__GENERATED_CLASS_NAME = eINSTANCE.getInstanceBuilder_ec2_GeneratedClassName();
+
+		/**
+		 * The meta object literal for the '<em><b>Var Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute INSTANCE_BUILDER_EC2__VAR_NAME = eINSTANCE.getInstanceBuilder_ec2_VarName();
+
+		/**
+		 * The meta object literal for the '<em><b>Identifier</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute INSTANCE_BUILDER_EC2__IDENTIFIER = eINSTANCE.getInstanceBuilder_ec2_Identifier();
+
+		/**
+		 * The meta object literal for the '<em><b>Additional Code</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute INSTANCE_BUILDER_EC2__ADDITIONAL_CODE = eINSTANCE.getInstanceBuilder_ec2_AdditionalCode();
+
+		/**
+		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.SecurityGroupBuilder_ec2Impl <em>Security Group Builder ec2</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.SecurityGroupBuilder_ec2Impl
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getSecurityGroupBuilder_ec2()
+		 * @generated
+		 */
+		EClass SECURITY_GROUP_BUILDER_EC2 = eINSTANCE.getSecurityGroupBuilder_ec2();
+
+		/**
+		 * The meta object literal for the '<em><b>Vpc With IVpc As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SECURITY_GROUP_BUILDER_EC2__VPC_WITH_IVPC_AS_REFERENCE = eINSTANCE
+				.getSecurityGroupBuilder_ec2_VpcWithIVpcAsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Allow All Outbound</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SECURITY_GROUP_BUILDER_EC2__ALLOW_ALL_OUTBOUND = eINSTANCE
+				.getSecurityGroupBuilder_ec2_AllowAllOutbound();
+
+		/**
+		 * The meta object literal for the '<em><b>Description</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SECURITY_GROUP_BUILDER_EC2__DESCRIPTION = eINSTANCE.getSecurityGroupBuilder_ec2_Description();
+
+		/**
+		 * The meta object literal for the '<em><b>Security Group Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SECURITY_GROUP_BUILDER_EC2__SECURITY_GROUP_NAME = eINSTANCE
+				.getSecurityGroupBuilder_ec2_SecurityGroupName();
+
+		/**
+		 * The meta object literal for the '<em><b>Generated Class Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SECURITY_GROUP_BUILDER_EC2__GENERATED_CLASS_NAME = eINSTANCE
+				.getSecurityGroupBuilder_ec2_GeneratedClassName();
+
+		/**
+		 * The meta object literal for the '<em><b>Var Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SECURITY_GROUP_BUILDER_EC2__VAR_NAME = eINSTANCE.getSecurityGroupBuilder_ec2_VarName();
+
+		/**
+		 * The meta object literal for the '<em><b>Identifier</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SECURITY_GROUP_BUILDER_EC2__IDENTIFIER = eINSTANCE.getSecurityGroupBuilder_ec2_Identifier();
+
+		/**
+		 * The meta object literal for the '<em><b>Additional Code</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SECURITY_GROUP_BUILDER_EC2__ADDITIONAL_CODE = eINSTANCE.getSecurityGroupBuilder_ec2_AdditionalCode();
+
+		/**
+		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.PortBuilder_ec2Impl <em>Port Builder ec2</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.PortBuilder_ec2Impl
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getPortBuilder_ec2()
+		 * @generated
+		 */
+		EClass PORT_BUILDER_EC2 = eINSTANCE.getPortBuilder_ec2();
+
+		/**
+		 * The meta object literal for the '<em><b>Protocol</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PORT_BUILDER_EC2__PROTOCOL = eINSTANCE.getPortBuilder_ec2_Protocol();
+
+		/**
+		 * The meta object literal for the '<em><b>String Representation</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PORT_BUILDER_EC2__STRING_REPRESENTATION = eINSTANCE.getPortBuilder_ec2_StringRepresentation();
+
+		/**
+		 * The meta object literal for the '<em><b>From Port</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PORT_BUILDER_EC2__FROM_PORT = eINSTANCE.getPortBuilder_ec2_FromPort();
+
+		/**
+		 * The meta object literal for the '<em><b>To Port</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PORT_BUILDER_EC2__TO_PORT = eINSTANCE.getPortBuilder_ec2_ToPort();
+
+		/**
+		 * The meta object literal for the '<em><b>Generated Class Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PORT_BUILDER_EC2__GENERATED_CLASS_NAME = eINSTANCE.getPortBuilder_ec2_GeneratedClassName();
+
+		/**
+		 * The meta object literal for the '<em><b>Var Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PORT_BUILDER_EC2__VAR_NAME = eINSTANCE.getPortBuilder_ec2_VarName();
+
+		/**
+		 * The meta object literal for the '<em><b>Identifier</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PORT_BUILDER_EC2__IDENTIFIER = eINSTANCE.getPortBuilder_ec2_Identifier();
+
+		/**
+		 * The meta object literal for the '<em><b>Additional Code</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PORT_BUILDER_EC2__ADDITIONAL_CODE = eINSTANCE.getPortBuilder_ec2_AdditionalCode();
+
+		/**
+		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.PrivateSubnetBuilder_ec2Impl <em>Private Subnet Builder ec2</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.PrivateSubnetBuilder_ec2Impl
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getPrivateSubnetBuilder_ec2()
+		 * @generated
+		 */
+		EClass PRIVATE_SUBNET_BUILDER_EC2 = eINSTANCE.getPrivateSubnetBuilder_ec2();
+
+		/**
+		 * The meta object literal for the '<em><b>Availability Zone</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PRIVATE_SUBNET_BUILDER_EC2__AVAILABILITY_ZONE = eINSTANCE
+				.getPrivateSubnetBuilder_ec2_AvailabilityZone();
+
+		/**
+		 * The meta object literal for the '<em><b>Cidr Block</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PRIVATE_SUBNET_BUILDER_EC2__CIDR_BLOCK = eINSTANCE.getPrivateSubnetBuilder_ec2_CidrBlock();
+
+		/**
+		 * The meta object literal for the '<em><b>Vpc Id</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PRIVATE_SUBNET_BUILDER_EC2__VPC_ID = eINSTANCE.getPrivateSubnetBuilder_ec2_VpcId();
+
+		/**
+		 * The meta object literal for the '<em><b>Map Public Ip On Launch</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PRIVATE_SUBNET_BUILDER_EC2__MAP_PUBLIC_IP_ON_LAUNCH = eINSTANCE
+				.getPrivateSubnetBuilder_ec2_MapPublicIpOnLaunch();
+
+		/**
+		 * The meta object literal for the '<em><b>Generated Class Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PRIVATE_SUBNET_BUILDER_EC2__GENERATED_CLASS_NAME = eINSTANCE
+				.getPrivateSubnetBuilder_ec2_GeneratedClassName();
+
+		/**
+		 * The meta object literal for the '<em><b>Var Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PRIVATE_SUBNET_BUILDER_EC2__VAR_NAME = eINSTANCE.getPrivateSubnetBuilder_ec2_VarName();
+
+		/**
+		 * The meta object literal for the '<em><b>Identifier</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PRIVATE_SUBNET_BUILDER_EC2__IDENTIFIER = eINSTANCE.getPrivateSubnetBuilder_ec2_Identifier();
+
+		/**
+		 * The meta object literal for the '<em><b>Additional Code</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PRIVATE_SUBNET_BUILDER_EC2__ADDITIONAL_CODE = eINSTANCE.getPrivateSubnetBuilder_ec2_AdditionalCode();
+
+		/**
+		 * The meta object literal for the '<em><b>Instancebuilder ec2</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PRIVATE_SUBNET_BUILDER_EC2__INSTANCEBUILDER_EC2 = eINSTANCE
+				.getPrivateSubnetBuilder_ec2_Instancebuilder_ec2();
+
+		/**
+		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.PublicSubnetBuilder_ec2Impl <em>Public Subnet Builder ec2</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.PublicSubnetBuilder_ec2Impl
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getPublicSubnetBuilder_ec2()
+		 * @generated
+		 */
+		EClass PUBLIC_SUBNET_BUILDER_EC2 = eINSTANCE.getPublicSubnetBuilder_ec2();
+
+		/**
+		 * The meta object literal for the '<em><b>Availability Zone</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PUBLIC_SUBNET_BUILDER_EC2__AVAILABILITY_ZONE = eINSTANCE
+				.getPublicSubnetBuilder_ec2_AvailabilityZone();
+
+		/**
+		 * The meta object literal for the '<em><b>Cidr Block</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PUBLIC_SUBNET_BUILDER_EC2__CIDR_BLOCK = eINSTANCE.getPublicSubnetBuilder_ec2_CidrBlock();
+
+		/**
+		 * The meta object literal for the '<em><b>Vpc Id</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PUBLIC_SUBNET_BUILDER_EC2__VPC_ID = eINSTANCE.getPublicSubnetBuilder_ec2_VpcId();
+
+		/**
+		 * The meta object literal for the '<em><b>Map Public Ip On Launch</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PUBLIC_SUBNET_BUILDER_EC2__MAP_PUBLIC_IP_ON_LAUNCH = eINSTANCE
+				.getPublicSubnetBuilder_ec2_MapPublicIpOnLaunch();
+
+		/**
+		 * The meta object literal for the '<em><b>Generated Class Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PUBLIC_SUBNET_BUILDER_EC2__GENERATED_CLASS_NAME = eINSTANCE
+				.getPublicSubnetBuilder_ec2_GeneratedClassName();
+
+		/**
+		 * The meta object literal for the '<em><b>Var Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PUBLIC_SUBNET_BUILDER_EC2__VAR_NAME = eINSTANCE.getPublicSubnetBuilder_ec2_VarName();
+
+		/**
+		 * The meta object literal for the '<em><b>Identifier</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PUBLIC_SUBNET_BUILDER_EC2__IDENTIFIER = eINSTANCE.getPublicSubnetBuilder_ec2_Identifier();
+
+		/**
+		 * The meta object literal for the '<em><b>Additional Code</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PUBLIC_SUBNET_BUILDER_EC2__ADDITIONAL_CODE = eINSTANCE.getPublicSubnetBuilder_ec2_AdditionalCode();
+
+		/**
+		 * The meta object literal for the '<em><b>Instancebuilder ec2</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PUBLIC_SUBNET_BUILDER_EC2__INSTANCEBUILDER_EC2 = eINSTANCE
+				.getPublicSubnetBuilder_ec2_Instancebuilder_ec2();
+
+		/**
 		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.DefaultInstanceTenancy <em>Default Instance Tenancy</em>}' enum.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -1455,6 +3631,16 @@ public interface AwsworkbenchPackage extends EPackage {
 		 * @generated
 		 */
 		EEnum DEFAULT_INSTANCE_TENANCY = eINSTANCE.getDefaultInstanceTenancy();
+
+		/**
+		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.Protocol <em>Protocol</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.amazon.aws.workbench.model.awsworkbench.Protocol
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getProtocol()
+		 * @generated
+		 */
+		EEnum PROTOCOL = eINSTANCE.getProtocol();
 
 	}
 

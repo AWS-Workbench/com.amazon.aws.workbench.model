@@ -59,22 +59,26 @@ public class AwsworkbenchFactoryImpl extends EFactoryImpl implements Awsworkbenc
 		switch (eClass.getClassifierID()) {
 		case AwsworkbenchPackage.APP_BUILDER_CORE:
 			return createAppBuilder_core();
+		case AwsworkbenchPackage.DEFAULT_STACK_SYNTHESIZER_BUILDER_CORE:
+			return createDefaultStackSynthesizerBuilder_core();
+		case AwsworkbenchPackage.ENVIRONMENT_BUILDER_CORE:
+			return createEnvironmentBuilder_core();
+		case AwsworkbenchPackage.FLOW_LOG_OPTIONS_BUILDER_EC2:
+			return createFlowLogOptionsBuilder_ec2();
 		case AwsworkbenchPackage.STACK_BUILDER_CORE:
 			return createStackBuilder_core();
 		case AwsworkbenchPackage.VPC_BUILDER_EC2:
 			return createVpcBuilder_ec2();
 		case AwsworkbenchPackage.SUBNET_BUILDER_EC2:
 			return createSubnetBuilder_ec2();
-		case AwsworkbenchPackage.INSTANCE_BUILDER_EC2:
-			return createInstanceBuilder_ec2();
-		case AwsworkbenchPackage.SECURITY_GROUP_BUILDER_EC2:
-			return createSecurityGroupBuilder_ec2();
-		case AwsworkbenchPackage.PORT_BUILDER_EC2:
-			return createPortBuilder_ec2();
-		case AwsworkbenchPackage.PRIVATE_SUBNET_BUILDER_EC2:
-			return createPrivateSubnetBuilder_ec2();
-		case AwsworkbenchPackage.PUBLIC_SUBNET_BUILDER_EC2:
-			return createPublicSubnetBuilder_ec2();
+		case AwsworkbenchPackage.SUBNET_SELECTION_BUILDER_EC2:
+			return createSubnetSelectionBuilder_ec2();
+		case AwsworkbenchPackage.SUBNET_CONFIGURATION_BUILDER_EC2:
+			return createSubnetConfigurationBuilder_ec2();
+		case AwsworkbenchPackage.VPN_CONNECTION_OPTIONS_BUILDER_EC2:
+			return createVpnConnectionOptionsBuilder_ec2();
+		case AwsworkbenchPackage.VPN_TUNNEL_OPTION_BUILDER_EC2:
+			return createVpnTunnelOptionBuilder_ec2();
 		default:
 			throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -90,8 +94,8 @@ public class AwsworkbenchFactoryImpl extends EFactoryImpl implements Awsworkbenc
 		switch (eDataType.getClassifierID()) {
 		case AwsworkbenchPackage.DEFAULT_INSTANCE_TENANCY:
 			return createDefaultInstanceTenancyFromString(eDataType, initialValue);
-		case AwsworkbenchPackage.PROTOCOL:
-			return createProtocolFromString(eDataType, initialValue);
+		case AwsworkbenchPackage.SUBNET_TYPE:
+			return createSubnetTypeFromString(eDataType, initialValue);
 		default:
 			throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
 		}
@@ -107,8 +111,8 @@ public class AwsworkbenchFactoryImpl extends EFactoryImpl implements Awsworkbenc
 		switch (eDataType.getClassifierID()) {
 		case AwsworkbenchPackage.DEFAULT_INSTANCE_TENANCY:
 			return convertDefaultInstanceTenancyToString(eDataType, instanceValue);
-		case AwsworkbenchPackage.PROTOCOL:
-			return convertProtocolToString(eDataType, instanceValue);
+		case AwsworkbenchPackage.SUBNET_TYPE:
+			return convertSubnetTypeToString(eDataType, instanceValue);
 		default:
 			throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
 		}
@@ -123,6 +127,39 @@ public class AwsworkbenchFactoryImpl extends EFactoryImpl implements Awsworkbenc
 	public AppBuilder_core createAppBuilder_core() {
 		AppBuilder_coreImpl appBuilder_core = new AppBuilder_coreImpl();
 		return appBuilder_core;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public DefaultStackSynthesizerBuilder_core createDefaultStackSynthesizerBuilder_core() {
+		DefaultStackSynthesizerBuilder_coreImpl defaultStackSynthesizerBuilder_core = new DefaultStackSynthesizerBuilder_coreImpl();
+		return defaultStackSynthesizerBuilder_core;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EnvironmentBuilder_core createEnvironmentBuilder_core() {
+		EnvironmentBuilder_coreImpl environmentBuilder_core = new EnvironmentBuilder_coreImpl();
+		return environmentBuilder_core;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public FlowLogOptionsBuilder_ec2 createFlowLogOptionsBuilder_ec2() {
+		FlowLogOptionsBuilder_ec2Impl flowLogOptionsBuilder_ec2 = new FlowLogOptionsBuilder_ec2Impl();
+		return flowLogOptionsBuilder_ec2;
 	}
 
 	/**
@@ -164,9 +201,9 @@ public class AwsworkbenchFactoryImpl extends EFactoryImpl implements Awsworkbenc
 	 * @generated
 	 */
 	@Override
-	public InstanceBuilder_ec2 createInstanceBuilder_ec2() {
-		InstanceBuilder_ec2Impl instanceBuilder_ec2 = new InstanceBuilder_ec2Impl();
-		return instanceBuilder_ec2;
+	public SubnetSelectionBuilder_ec2 createSubnetSelectionBuilder_ec2() {
+		SubnetSelectionBuilder_ec2Impl subnetSelectionBuilder_ec2 = new SubnetSelectionBuilder_ec2Impl();
+		return subnetSelectionBuilder_ec2;
 	}
 
 	/**
@@ -175,9 +212,9 @@ public class AwsworkbenchFactoryImpl extends EFactoryImpl implements Awsworkbenc
 	 * @generated
 	 */
 	@Override
-	public SecurityGroupBuilder_ec2 createSecurityGroupBuilder_ec2() {
-		SecurityGroupBuilder_ec2Impl securityGroupBuilder_ec2 = new SecurityGroupBuilder_ec2Impl();
-		return securityGroupBuilder_ec2;
+	public SubnetConfigurationBuilder_ec2 createSubnetConfigurationBuilder_ec2() {
+		SubnetConfigurationBuilder_ec2Impl subnetConfigurationBuilder_ec2 = new SubnetConfigurationBuilder_ec2Impl();
+		return subnetConfigurationBuilder_ec2;
 	}
 
 	/**
@@ -186,9 +223,9 @@ public class AwsworkbenchFactoryImpl extends EFactoryImpl implements Awsworkbenc
 	 * @generated
 	 */
 	@Override
-	public PortBuilder_ec2 createPortBuilder_ec2() {
-		PortBuilder_ec2Impl portBuilder_ec2 = new PortBuilder_ec2Impl();
-		return portBuilder_ec2;
+	public VpnConnectionOptionsBuilder_ec2 createVpnConnectionOptionsBuilder_ec2() {
+		VpnConnectionOptionsBuilder_ec2Impl vpnConnectionOptionsBuilder_ec2 = new VpnConnectionOptionsBuilder_ec2Impl();
+		return vpnConnectionOptionsBuilder_ec2;
 	}
 
 	/**
@@ -197,20 +234,9 @@ public class AwsworkbenchFactoryImpl extends EFactoryImpl implements Awsworkbenc
 	 * @generated
 	 */
 	@Override
-	public PrivateSubnetBuilder_ec2 createPrivateSubnetBuilder_ec2() {
-		PrivateSubnetBuilder_ec2Impl privateSubnetBuilder_ec2 = new PrivateSubnetBuilder_ec2Impl();
-		return privateSubnetBuilder_ec2;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public PublicSubnetBuilder_ec2 createPublicSubnetBuilder_ec2() {
-		PublicSubnetBuilder_ec2Impl publicSubnetBuilder_ec2 = new PublicSubnetBuilder_ec2Impl();
-		return publicSubnetBuilder_ec2;
+	public VpnTunnelOptionBuilder_ec2 createVpnTunnelOptionBuilder_ec2() {
+		VpnTunnelOptionBuilder_ec2Impl vpnTunnelOptionBuilder_ec2 = new VpnTunnelOptionBuilder_ec2Impl();
+		return vpnTunnelOptionBuilder_ec2;
 	}
 
 	/**
@@ -240,8 +266,8 @@ public class AwsworkbenchFactoryImpl extends EFactoryImpl implements Awsworkbenc
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Protocol createProtocolFromString(EDataType eDataType, String initialValue) {
-		Protocol result = Protocol.get(initialValue);
+	public SubnetType createSubnetTypeFromString(EDataType eDataType, String initialValue) {
+		SubnetType result = SubnetType.get(initialValue);
 		if (result == null)
 			throw new IllegalArgumentException(
 					"The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
@@ -253,7 +279,7 @@ public class AwsworkbenchFactoryImpl extends EFactoryImpl implements Awsworkbenc
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertProtocolToString(EDataType eDataType, Object instanceValue) {
+	public String convertSubnetTypeToString(EDataType eDataType, Object instanceValue) {
 		return instanceValue == null ? null : instanceValue.toString();
 	}
 

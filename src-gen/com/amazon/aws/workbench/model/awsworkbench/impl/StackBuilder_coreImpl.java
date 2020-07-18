@@ -30,12 +30,12 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.StackBuilder_coreImpl#getDescription <em>Description</em>}</li>
- *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.StackBuilder_coreImpl#getEnvWithEnvironmentAsReference <em>Env With Environment As Reference</em>}</li>
- *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.StackBuilder_coreImpl#getStackName <em>Stack Name</em>}</li>
- *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.StackBuilder_coreImpl#getSynthesizerWithIStackSynthesizerAsReference <em>Synthesizer With IStack Synthesizer As Reference</em>}</li>
- *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.StackBuilder_coreImpl#getTagsAsMap <em>Tags As Map</em>}</li>
- *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.StackBuilder_coreImpl#getTerminationProtection <em>Termination Protection</em>}</li>
+ *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.StackBuilder_coreImpl#getDescription_java_lang_String_ <em>Description java lang String </em>}</li>
+ *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.StackBuilder_coreImpl#getEnvWithEnvironment_software_amazon_awscdk_core_Environment_AsReference <em>Env With Environment software amazon awscdk core Environment As Reference</em>}</li>
+ *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.StackBuilder_coreImpl#getStackName_java_lang_String_ <em>Stack Name java lang String </em>}</li>
+ *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.StackBuilder_coreImpl#getSynthesizerWithIStackSynthesizer_software_amazon_awscdk_core_IStackSynthesizer_AsReference <em>Synthesizer With IStack Synthesizer software amazon awscdk core IStack Synthesizer As Reference</em>}</li>
+ *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.StackBuilder_coreImpl#getTags_java_lang_String__java_lang_String_AsMap <em>Tags java lang String java lang String As Map</em>}</li>
+ *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.StackBuilder_coreImpl#getTerminationProtection_java_lang_Boolean_ <em>Termination Protection java lang Boolean </em>}</li>
  *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.StackBuilder_coreImpl#getGeneratedClassName <em>Generated Class Name</em>}</li>
  *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.StackBuilder_coreImpl#getVarName <em>Var Name</em>}</li>
  *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.StackBuilder_coreImpl#getIdentifier <em>Identifier</em>}</li>
@@ -47,124 +47,124 @@ import org.eclipse.emf.ecore.util.InternalEList;
  */
 public class StackBuilder_coreImpl extends MinimalEObjectImpl.Container implements StackBuilder_core {
 	/**
-	 * The default value of the '{@link #getDescription() <em>Description</em>}' attribute.
+	 * The default value of the '{@link #getDescription_java_lang_String_() <em>Description java lang String </em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getDescription()
+	 * @see #getDescription_java_lang_String_()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String DESCRIPTION_EDEFAULT = null;
+	protected static final String DESCRIPTION_JAVA_LANG_STRING__EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getDescription() <em>Description</em>}' attribute.
+	 * The cached value of the '{@link #getDescription_java_lang_String_() <em>Description java lang String </em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getDescription()
+	 * @see #getDescription_java_lang_String_()
 	 * @generated
 	 * @ordered
 	 */
-	protected String description = DESCRIPTION_EDEFAULT;
+	protected String description_java_lang_String_ = DESCRIPTION_JAVA_LANG_STRING__EDEFAULT;
 
 	/**
-	 * The default value of the '{@link #getEnvWithEnvironmentAsReference() <em>Env With Environment As Reference</em>}' attribute.
+	 * The default value of the '{@link #getEnvWithEnvironment_software_amazon_awscdk_core_Environment_AsReference() <em>Env With Environment software amazon awscdk core Environment As Reference</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getEnvWithEnvironmentAsReference()
+	 * @see #getEnvWithEnvironment_software_amazon_awscdk_core_Environment_AsReference()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String ENV_WITH_ENVIRONMENT_AS_REFERENCE_EDEFAULT = null;
+	protected static final String ENV_WITH_ENVIRONMENT_SOFTWARE_AMAZON_AWSCDK_CORE_ENVIRONMENT_AS_REFERENCE_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getEnvWithEnvironmentAsReference() <em>Env With Environment As Reference</em>}' attribute.
+	 * The cached value of the '{@link #getEnvWithEnvironment_software_amazon_awscdk_core_Environment_AsReference() <em>Env With Environment software amazon awscdk core Environment As Reference</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getEnvWithEnvironmentAsReference()
+	 * @see #getEnvWithEnvironment_software_amazon_awscdk_core_Environment_AsReference()
 	 * @generated
 	 * @ordered
 	 */
-	protected String envWithEnvironmentAsReference = ENV_WITH_ENVIRONMENT_AS_REFERENCE_EDEFAULT;
+	protected String envWithEnvironment_software_amazon_awscdk_core_Environment_AsReference = ENV_WITH_ENVIRONMENT_SOFTWARE_AMAZON_AWSCDK_CORE_ENVIRONMENT_AS_REFERENCE_EDEFAULT;
 
 	/**
-	 * The default value of the '{@link #getStackName() <em>Stack Name</em>}' attribute.
+	 * The default value of the '{@link #getStackName_java_lang_String_() <em>Stack Name java lang String </em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getStackName()
+	 * @see #getStackName_java_lang_String_()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String STACK_NAME_EDEFAULT = null;
+	protected static final String STACK_NAME_JAVA_LANG_STRING__EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getStackName() <em>Stack Name</em>}' attribute.
+	 * The cached value of the '{@link #getStackName_java_lang_String_() <em>Stack Name java lang String </em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getStackName()
+	 * @see #getStackName_java_lang_String_()
 	 * @generated
 	 * @ordered
 	 */
-	protected String stackName = STACK_NAME_EDEFAULT;
+	protected String stackName_java_lang_String_ = STACK_NAME_JAVA_LANG_STRING__EDEFAULT;
 
 	/**
-	 * The default value of the '{@link #getSynthesizerWithIStackSynthesizerAsReference() <em>Synthesizer With IStack Synthesizer As Reference</em>}' attribute.
+	 * The default value of the '{@link #getSynthesizerWithIStackSynthesizer_software_amazon_awscdk_core_IStackSynthesizer_AsReference() <em>Synthesizer With IStack Synthesizer software amazon awscdk core IStack Synthesizer As Reference</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getSynthesizerWithIStackSynthesizerAsReference()
+	 * @see #getSynthesizerWithIStackSynthesizer_software_amazon_awscdk_core_IStackSynthesizer_AsReference()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String SYNTHESIZER_WITH_ISTACK_SYNTHESIZER_AS_REFERENCE_EDEFAULT = null;
+	protected static final String SYNTHESIZER_WITH_ISTACK_SYNTHESIZER_SOFTWARE_AMAZON_AWSCDK_CORE_ISTACK_SYNTHESIZER_AS_REFERENCE_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getSynthesizerWithIStackSynthesizerAsReference() <em>Synthesizer With IStack Synthesizer As Reference</em>}' attribute.
+	 * The cached value of the '{@link #getSynthesizerWithIStackSynthesizer_software_amazon_awscdk_core_IStackSynthesizer_AsReference() <em>Synthesizer With IStack Synthesizer software amazon awscdk core IStack Synthesizer As Reference</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getSynthesizerWithIStackSynthesizerAsReference()
+	 * @see #getSynthesizerWithIStackSynthesizer_software_amazon_awscdk_core_IStackSynthesizer_AsReference()
 	 * @generated
 	 * @ordered
 	 */
-	protected String synthesizerWithIStackSynthesizerAsReference = SYNTHESIZER_WITH_ISTACK_SYNTHESIZER_AS_REFERENCE_EDEFAULT;
+	protected String synthesizerWithIStackSynthesizer_software_amazon_awscdk_core_IStackSynthesizer_AsReference = SYNTHESIZER_WITH_ISTACK_SYNTHESIZER_SOFTWARE_AMAZON_AWSCDK_CORE_ISTACK_SYNTHESIZER_AS_REFERENCE_EDEFAULT;
 
 	/**
-	 * The default value of the '{@link #getTagsAsMap() <em>Tags As Map</em>}' attribute.
+	 * The default value of the '{@link #getTags_java_lang_String__java_lang_String_AsMap() <em>Tags java lang String java lang String As Map</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getTagsAsMap()
+	 * @see #getTags_java_lang_String__java_lang_String_AsMap()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String TAGS_AS_MAP_EDEFAULT = null;
+	protected static final String TAGS_JAVA_LANG_STRING_JAVA_LANG_STRING_AS_MAP_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getTagsAsMap() <em>Tags As Map</em>}' attribute.
+	 * The cached value of the '{@link #getTags_java_lang_String__java_lang_String_AsMap() <em>Tags java lang String java lang String As Map</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getTagsAsMap()
+	 * @see #getTags_java_lang_String__java_lang_String_AsMap()
 	 * @generated
 	 * @ordered
 	 */
-	protected String tagsAsMap = TAGS_AS_MAP_EDEFAULT;
+	protected String tags_java_lang_String__java_lang_String_AsMap = TAGS_JAVA_LANG_STRING_JAVA_LANG_STRING_AS_MAP_EDEFAULT;
 
 	/**
-	 * The default value of the '{@link #getTerminationProtection() <em>Termination Protection</em>}' attribute.
+	 * The default value of the '{@link #getTerminationProtection_java_lang_Boolean_() <em>Termination Protection java lang Boolean </em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getTerminationProtection()
+	 * @see #getTerminationProtection_java_lang_Boolean_()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final Boolean TERMINATION_PROTECTION_EDEFAULT = null;
+	protected static final Boolean TERMINATION_PROTECTION_JAVA_LANG_BOOLEAN__EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getTerminationProtection() <em>Termination Protection</em>}' attribute.
+	 * The cached value of the '{@link #getTerminationProtection_java_lang_Boolean_() <em>Termination Protection java lang Boolean </em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getTerminationProtection()
+	 * @see #getTerminationProtection_java_lang_Boolean_()
 	 * @generated
 	 * @ordered
 	 */
-	protected Boolean terminationProtection = TERMINATION_PROTECTION_EDEFAULT;
+	protected Boolean terminationProtection_java_lang_Boolean_ = TERMINATION_PROTECTION_JAVA_LANG_BOOLEAN__EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getGeneratedClassName() <em>Generated Class Name</em>}' attribute.
@@ -281,8 +281,8 @@ public class StackBuilder_coreImpl extends MinimalEObjectImpl.Container implemen
 	 * @generated
 	 */
 	@Override
-	public String getDescription() {
-		return description;
+	public String getDescription_java_lang_String_() {
+		return description_java_lang_String_;
 	}
 
 	/**
@@ -291,37 +291,13 @@ public class StackBuilder_coreImpl extends MinimalEObjectImpl.Container implemen
 	 * @generated
 	 */
 	@Override
-	public void setDescription(String newDescription) {
-		String oldDescription = description;
-		description = newDescription;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, AwsworkbenchPackage.STACK_BUILDER_CORE__DESCRIPTION,
-					oldDescription, description));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public String getEnvWithEnvironmentAsReference() {
-		return envWithEnvironmentAsReference;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setEnvWithEnvironmentAsReference(String newEnvWithEnvironmentAsReference) {
-		String oldEnvWithEnvironmentAsReference = envWithEnvironmentAsReference;
-		envWithEnvironmentAsReference = newEnvWithEnvironmentAsReference;
+	public void setDescription_java_lang_String_(String newDescription_java_lang_String_) {
+		String oldDescription_java_lang_String_ = description_java_lang_String_;
+		description_java_lang_String_ = newDescription_java_lang_String_;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET,
-					AwsworkbenchPackage.STACK_BUILDER_CORE__ENV_WITH_ENVIRONMENT_AS_REFERENCE,
-					oldEnvWithEnvironmentAsReference, envWithEnvironmentAsReference));
+					AwsworkbenchPackage.STACK_BUILDER_CORE__DESCRIPTION_JAVA_LANG_STRING_,
+					oldDescription_java_lang_String_, description_java_lang_String_));
 	}
 
 	/**
@@ -330,8 +306,8 @@ public class StackBuilder_coreImpl extends MinimalEObjectImpl.Container implemen
 	 * @generated
 	 */
 	@Override
-	public String getStackName() {
-		return stackName;
+	public String getEnvWithEnvironment_software_amazon_awscdk_core_Environment_AsReference() {
+		return envWithEnvironment_software_amazon_awscdk_core_Environment_AsReference;
 	}
 
 	/**
@@ -340,37 +316,15 @@ public class StackBuilder_coreImpl extends MinimalEObjectImpl.Container implemen
 	 * @generated
 	 */
 	@Override
-	public void setStackName(String newStackName) {
-		String oldStackName = stackName;
-		stackName = newStackName;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, AwsworkbenchPackage.STACK_BUILDER_CORE__STACK_NAME,
-					oldStackName, stackName));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public String getSynthesizerWithIStackSynthesizerAsReference() {
-		return synthesizerWithIStackSynthesizerAsReference;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setSynthesizerWithIStackSynthesizerAsReference(String newSynthesizerWithIStackSynthesizerAsReference) {
-		String oldSynthesizerWithIStackSynthesizerAsReference = synthesizerWithIStackSynthesizerAsReference;
-		synthesizerWithIStackSynthesizerAsReference = newSynthesizerWithIStackSynthesizerAsReference;
+	public void setEnvWithEnvironment_software_amazon_awscdk_core_Environment_AsReference(
+			String newEnvWithEnvironment_software_amazon_awscdk_core_Environment_AsReference) {
+		String oldEnvWithEnvironment_software_amazon_awscdk_core_Environment_AsReference = envWithEnvironment_software_amazon_awscdk_core_Environment_AsReference;
+		envWithEnvironment_software_amazon_awscdk_core_Environment_AsReference = newEnvWithEnvironment_software_amazon_awscdk_core_Environment_AsReference;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET,
-					AwsworkbenchPackage.STACK_BUILDER_CORE__SYNTHESIZER_WITH_ISTACK_SYNTHESIZER_AS_REFERENCE,
-					oldSynthesizerWithIStackSynthesizerAsReference, synthesizerWithIStackSynthesizerAsReference));
+					AwsworkbenchPackage.STACK_BUILDER_CORE__ENV_WITH_ENVIRONMENT_SOFTWARE_AMAZON_AWSCDK_CORE_ENVIRONMENT_AS_REFERENCE,
+					oldEnvWithEnvironment_software_amazon_awscdk_core_Environment_AsReference,
+					envWithEnvironment_software_amazon_awscdk_core_Environment_AsReference));
 	}
 
 	/**
@@ -379,8 +333,8 @@ public class StackBuilder_coreImpl extends MinimalEObjectImpl.Container implemen
 	 * @generated
 	 */
 	@Override
-	public String getTagsAsMap() {
-		return tagsAsMap;
+	public String getStackName_java_lang_String_() {
+		return stackName_java_lang_String_;
 	}
 
 	/**
@@ -389,37 +343,91 @@ public class StackBuilder_coreImpl extends MinimalEObjectImpl.Container implemen
 	 * @generated
 	 */
 	@Override
-	public void setTagsAsMap(String newTagsAsMap) {
-		String oldTagsAsMap = tagsAsMap;
-		tagsAsMap = newTagsAsMap;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, AwsworkbenchPackage.STACK_BUILDER_CORE__TAGS_AS_MAP,
-					oldTagsAsMap, tagsAsMap));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Boolean getTerminationProtection() {
-		return terminationProtection;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setTerminationProtection(Boolean newTerminationProtection) {
-		Boolean oldTerminationProtection = terminationProtection;
-		terminationProtection = newTerminationProtection;
+	public void setStackName_java_lang_String_(String newStackName_java_lang_String_) {
+		String oldStackName_java_lang_String_ = stackName_java_lang_String_;
+		stackName_java_lang_String_ = newStackName_java_lang_String_;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET,
-					AwsworkbenchPackage.STACK_BUILDER_CORE__TERMINATION_PROTECTION, oldTerminationProtection,
-					terminationProtection));
+					AwsworkbenchPackage.STACK_BUILDER_CORE__STACK_NAME_JAVA_LANG_STRING_,
+					oldStackName_java_lang_String_, stackName_java_lang_String_));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String getSynthesizerWithIStackSynthesizer_software_amazon_awscdk_core_IStackSynthesizer_AsReference() {
+		return synthesizerWithIStackSynthesizer_software_amazon_awscdk_core_IStackSynthesizer_AsReference;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setSynthesizerWithIStackSynthesizer_software_amazon_awscdk_core_IStackSynthesizer_AsReference(
+			String newSynthesizerWithIStackSynthesizer_software_amazon_awscdk_core_IStackSynthesizer_AsReference) {
+		String oldSynthesizerWithIStackSynthesizer_software_amazon_awscdk_core_IStackSynthesizer_AsReference = synthesizerWithIStackSynthesizer_software_amazon_awscdk_core_IStackSynthesizer_AsReference;
+		synthesizerWithIStackSynthesizer_software_amazon_awscdk_core_IStackSynthesizer_AsReference = newSynthesizerWithIStackSynthesizer_software_amazon_awscdk_core_IStackSynthesizer_AsReference;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					AwsworkbenchPackage.STACK_BUILDER_CORE__SYNTHESIZER_WITH_ISTACK_SYNTHESIZER_SOFTWARE_AMAZON_AWSCDK_CORE_ISTACK_SYNTHESIZER_AS_REFERENCE,
+					oldSynthesizerWithIStackSynthesizer_software_amazon_awscdk_core_IStackSynthesizer_AsReference,
+					synthesizerWithIStackSynthesizer_software_amazon_awscdk_core_IStackSynthesizer_AsReference));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String getTags_java_lang_String__java_lang_String_AsMap() {
+		return tags_java_lang_String__java_lang_String_AsMap;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setTags_java_lang_String__java_lang_String_AsMap(
+			String newTags_java_lang_String__java_lang_String_AsMap) {
+		String oldTags_java_lang_String__java_lang_String_AsMap = tags_java_lang_String__java_lang_String_AsMap;
+		tags_java_lang_String__java_lang_String_AsMap = newTags_java_lang_String__java_lang_String_AsMap;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					AwsworkbenchPackage.STACK_BUILDER_CORE__TAGS_JAVA_LANG_STRING_JAVA_LANG_STRING_AS_MAP,
+					oldTags_java_lang_String__java_lang_String_AsMap, tags_java_lang_String__java_lang_String_AsMap));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Boolean getTerminationProtection_java_lang_Boolean_() {
+		return terminationProtection_java_lang_Boolean_;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setTerminationProtection_java_lang_Boolean_(Boolean newTerminationProtection_java_lang_Boolean_) {
+		Boolean oldTerminationProtection_java_lang_Boolean_ = terminationProtection_java_lang_Boolean_;
+		terminationProtection_java_lang_Boolean_ = newTerminationProtection_java_lang_Boolean_;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					AwsworkbenchPackage.STACK_BUILDER_CORE__TERMINATION_PROTECTION_JAVA_LANG_BOOLEAN_,
+					oldTerminationProtection_java_lang_Boolean_, terminationProtection_java_lang_Boolean_));
 	}
 
 	/**
@@ -540,18 +548,18 @@ public class StackBuilder_coreImpl extends MinimalEObjectImpl.Container implemen
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-		case AwsworkbenchPackage.STACK_BUILDER_CORE__DESCRIPTION:
-			return getDescription();
-		case AwsworkbenchPackage.STACK_BUILDER_CORE__ENV_WITH_ENVIRONMENT_AS_REFERENCE:
-			return getEnvWithEnvironmentAsReference();
-		case AwsworkbenchPackage.STACK_BUILDER_CORE__STACK_NAME:
-			return getStackName();
-		case AwsworkbenchPackage.STACK_BUILDER_CORE__SYNTHESIZER_WITH_ISTACK_SYNTHESIZER_AS_REFERENCE:
-			return getSynthesizerWithIStackSynthesizerAsReference();
-		case AwsworkbenchPackage.STACK_BUILDER_CORE__TAGS_AS_MAP:
-			return getTagsAsMap();
-		case AwsworkbenchPackage.STACK_BUILDER_CORE__TERMINATION_PROTECTION:
-			return getTerminationProtection();
+		case AwsworkbenchPackage.STACK_BUILDER_CORE__DESCRIPTION_JAVA_LANG_STRING_:
+			return getDescription_java_lang_String_();
+		case AwsworkbenchPackage.STACK_BUILDER_CORE__ENV_WITH_ENVIRONMENT_SOFTWARE_AMAZON_AWSCDK_CORE_ENVIRONMENT_AS_REFERENCE:
+			return getEnvWithEnvironment_software_amazon_awscdk_core_Environment_AsReference();
+		case AwsworkbenchPackage.STACK_BUILDER_CORE__STACK_NAME_JAVA_LANG_STRING_:
+			return getStackName_java_lang_String_();
+		case AwsworkbenchPackage.STACK_BUILDER_CORE__SYNTHESIZER_WITH_ISTACK_SYNTHESIZER_SOFTWARE_AMAZON_AWSCDK_CORE_ISTACK_SYNTHESIZER_AS_REFERENCE:
+			return getSynthesizerWithIStackSynthesizer_software_amazon_awscdk_core_IStackSynthesizer_AsReference();
+		case AwsworkbenchPackage.STACK_BUILDER_CORE__TAGS_JAVA_LANG_STRING_JAVA_LANG_STRING_AS_MAP:
+			return getTags_java_lang_String__java_lang_String_AsMap();
+		case AwsworkbenchPackage.STACK_BUILDER_CORE__TERMINATION_PROTECTION_JAVA_LANG_BOOLEAN_:
+			return getTerminationProtection_java_lang_Boolean_();
 		case AwsworkbenchPackage.STACK_BUILDER_CORE__GENERATED_CLASS_NAME:
 			return getGeneratedClassName();
 		case AwsworkbenchPackage.STACK_BUILDER_CORE__VAR_NAME:
@@ -575,23 +583,24 @@ public class StackBuilder_coreImpl extends MinimalEObjectImpl.Container implemen
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-		case AwsworkbenchPackage.STACK_BUILDER_CORE__DESCRIPTION:
-			setDescription((String) newValue);
+		case AwsworkbenchPackage.STACK_BUILDER_CORE__DESCRIPTION_JAVA_LANG_STRING_:
+			setDescription_java_lang_String_((String) newValue);
 			return;
-		case AwsworkbenchPackage.STACK_BUILDER_CORE__ENV_WITH_ENVIRONMENT_AS_REFERENCE:
-			setEnvWithEnvironmentAsReference((String) newValue);
+		case AwsworkbenchPackage.STACK_BUILDER_CORE__ENV_WITH_ENVIRONMENT_SOFTWARE_AMAZON_AWSCDK_CORE_ENVIRONMENT_AS_REFERENCE:
+			setEnvWithEnvironment_software_amazon_awscdk_core_Environment_AsReference((String) newValue);
 			return;
-		case AwsworkbenchPackage.STACK_BUILDER_CORE__STACK_NAME:
-			setStackName((String) newValue);
+		case AwsworkbenchPackage.STACK_BUILDER_CORE__STACK_NAME_JAVA_LANG_STRING_:
+			setStackName_java_lang_String_((String) newValue);
 			return;
-		case AwsworkbenchPackage.STACK_BUILDER_CORE__SYNTHESIZER_WITH_ISTACK_SYNTHESIZER_AS_REFERENCE:
-			setSynthesizerWithIStackSynthesizerAsReference((String) newValue);
+		case AwsworkbenchPackage.STACK_BUILDER_CORE__SYNTHESIZER_WITH_ISTACK_SYNTHESIZER_SOFTWARE_AMAZON_AWSCDK_CORE_ISTACK_SYNTHESIZER_AS_REFERENCE:
+			setSynthesizerWithIStackSynthesizer_software_amazon_awscdk_core_IStackSynthesizer_AsReference(
+					(String) newValue);
 			return;
-		case AwsworkbenchPackage.STACK_BUILDER_CORE__TAGS_AS_MAP:
-			setTagsAsMap((String) newValue);
+		case AwsworkbenchPackage.STACK_BUILDER_CORE__TAGS_JAVA_LANG_STRING_JAVA_LANG_STRING_AS_MAP:
+			setTags_java_lang_String__java_lang_String_AsMap((String) newValue);
 			return;
-		case AwsworkbenchPackage.STACK_BUILDER_CORE__TERMINATION_PROTECTION:
-			setTerminationProtection((Boolean) newValue);
+		case AwsworkbenchPackage.STACK_BUILDER_CORE__TERMINATION_PROTECTION_JAVA_LANG_BOOLEAN_:
+			setTerminationProtection_java_lang_Boolean_((Boolean) newValue);
 			return;
 		case AwsworkbenchPackage.STACK_BUILDER_CORE__VAR_NAME:
 			setVarName((String) newValue);
@@ -618,23 +627,25 @@ public class StackBuilder_coreImpl extends MinimalEObjectImpl.Container implemen
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-		case AwsworkbenchPackage.STACK_BUILDER_CORE__DESCRIPTION:
-			setDescription(DESCRIPTION_EDEFAULT);
+		case AwsworkbenchPackage.STACK_BUILDER_CORE__DESCRIPTION_JAVA_LANG_STRING_:
+			setDescription_java_lang_String_(DESCRIPTION_JAVA_LANG_STRING__EDEFAULT);
 			return;
-		case AwsworkbenchPackage.STACK_BUILDER_CORE__ENV_WITH_ENVIRONMENT_AS_REFERENCE:
-			setEnvWithEnvironmentAsReference(ENV_WITH_ENVIRONMENT_AS_REFERENCE_EDEFAULT);
+		case AwsworkbenchPackage.STACK_BUILDER_CORE__ENV_WITH_ENVIRONMENT_SOFTWARE_AMAZON_AWSCDK_CORE_ENVIRONMENT_AS_REFERENCE:
+			setEnvWithEnvironment_software_amazon_awscdk_core_Environment_AsReference(
+					ENV_WITH_ENVIRONMENT_SOFTWARE_AMAZON_AWSCDK_CORE_ENVIRONMENT_AS_REFERENCE_EDEFAULT);
 			return;
-		case AwsworkbenchPackage.STACK_BUILDER_CORE__STACK_NAME:
-			setStackName(STACK_NAME_EDEFAULT);
+		case AwsworkbenchPackage.STACK_BUILDER_CORE__STACK_NAME_JAVA_LANG_STRING_:
+			setStackName_java_lang_String_(STACK_NAME_JAVA_LANG_STRING__EDEFAULT);
 			return;
-		case AwsworkbenchPackage.STACK_BUILDER_CORE__SYNTHESIZER_WITH_ISTACK_SYNTHESIZER_AS_REFERENCE:
-			setSynthesizerWithIStackSynthesizerAsReference(SYNTHESIZER_WITH_ISTACK_SYNTHESIZER_AS_REFERENCE_EDEFAULT);
+		case AwsworkbenchPackage.STACK_BUILDER_CORE__SYNTHESIZER_WITH_ISTACK_SYNTHESIZER_SOFTWARE_AMAZON_AWSCDK_CORE_ISTACK_SYNTHESIZER_AS_REFERENCE:
+			setSynthesizerWithIStackSynthesizer_software_amazon_awscdk_core_IStackSynthesizer_AsReference(
+					SYNTHESIZER_WITH_ISTACK_SYNTHESIZER_SOFTWARE_AMAZON_AWSCDK_CORE_ISTACK_SYNTHESIZER_AS_REFERENCE_EDEFAULT);
 			return;
-		case AwsworkbenchPackage.STACK_BUILDER_CORE__TAGS_AS_MAP:
-			setTagsAsMap(TAGS_AS_MAP_EDEFAULT);
+		case AwsworkbenchPackage.STACK_BUILDER_CORE__TAGS_JAVA_LANG_STRING_JAVA_LANG_STRING_AS_MAP:
+			setTags_java_lang_String__java_lang_String_AsMap(TAGS_JAVA_LANG_STRING_JAVA_LANG_STRING_AS_MAP_EDEFAULT);
 			return;
-		case AwsworkbenchPackage.STACK_BUILDER_CORE__TERMINATION_PROTECTION:
-			setTerminationProtection(TERMINATION_PROTECTION_EDEFAULT);
+		case AwsworkbenchPackage.STACK_BUILDER_CORE__TERMINATION_PROTECTION_JAVA_LANG_BOOLEAN_:
+			setTerminationProtection_java_lang_Boolean_(TERMINATION_PROTECTION_JAVA_LANG_BOOLEAN__EDEFAULT);
 			return;
 		case AwsworkbenchPackage.STACK_BUILDER_CORE__VAR_NAME:
 			setVarName(VAR_NAME_EDEFAULT);
@@ -660,23 +671,32 @@ public class StackBuilder_coreImpl extends MinimalEObjectImpl.Container implemen
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-		case AwsworkbenchPackage.STACK_BUILDER_CORE__DESCRIPTION:
-			return DESCRIPTION_EDEFAULT == null ? description != null : !DESCRIPTION_EDEFAULT.equals(description);
-		case AwsworkbenchPackage.STACK_BUILDER_CORE__ENV_WITH_ENVIRONMENT_AS_REFERENCE:
-			return ENV_WITH_ENVIRONMENT_AS_REFERENCE_EDEFAULT == null ? envWithEnvironmentAsReference != null
-					: !ENV_WITH_ENVIRONMENT_AS_REFERENCE_EDEFAULT.equals(envWithEnvironmentAsReference);
-		case AwsworkbenchPackage.STACK_BUILDER_CORE__STACK_NAME:
-			return STACK_NAME_EDEFAULT == null ? stackName != null : !STACK_NAME_EDEFAULT.equals(stackName);
-		case AwsworkbenchPackage.STACK_BUILDER_CORE__SYNTHESIZER_WITH_ISTACK_SYNTHESIZER_AS_REFERENCE:
-			return SYNTHESIZER_WITH_ISTACK_SYNTHESIZER_AS_REFERENCE_EDEFAULT == null
-					? synthesizerWithIStackSynthesizerAsReference != null
-					: !SYNTHESIZER_WITH_ISTACK_SYNTHESIZER_AS_REFERENCE_EDEFAULT
-							.equals(synthesizerWithIStackSynthesizerAsReference);
-		case AwsworkbenchPackage.STACK_BUILDER_CORE__TAGS_AS_MAP:
-			return TAGS_AS_MAP_EDEFAULT == null ? tagsAsMap != null : !TAGS_AS_MAP_EDEFAULT.equals(tagsAsMap);
-		case AwsworkbenchPackage.STACK_BUILDER_CORE__TERMINATION_PROTECTION:
-			return TERMINATION_PROTECTION_EDEFAULT == null ? terminationProtection != null
-					: !TERMINATION_PROTECTION_EDEFAULT.equals(terminationProtection);
+		case AwsworkbenchPackage.STACK_BUILDER_CORE__DESCRIPTION_JAVA_LANG_STRING_:
+			return DESCRIPTION_JAVA_LANG_STRING__EDEFAULT == null ? description_java_lang_String_ != null
+					: !DESCRIPTION_JAVA_LANG_STRING__EDEFAULT.equals(description_java_lang_String_);
+		case AwsworkbenchPackage.STACK_BUILDER_CORE__ENV_WITH_ENVIRONMENT_SOFTWARE_AMAZON_AWSCDK_CORE_ENVIRONMENT_AS_REFERENCE:
+			return ENV_WITH_ENVIRONMENT_SOFTWARE_AMAZON_AWSCDK_CORE_ENVIRONMENT_AS_REFERENCE_EDEFAULT == null
+					? envWithEnvironment_software_amazon_awscdk_core_Environment_AsReference != null
+					: !ENV_WITH_ENVIRONMENT_SOFTWARE_AMAZON_AWSCDK_CORE_ENVIRONMENT_AS_REFERENCE_EDEFAULT
+							.equals(envWithEnvironment_software_amazon_awscdk_core_Environment_AsReference);
+		case AwsworkbenchPackage.STACK_BUILDER_CORE__STACK_NAME_JAVA_LANG_STRING_:
+			return STACK_NAME_JAVA_LANG_STRING__EDEFAULT == null ? stackName_java_lang_String_ != null
+					: !STACK_NAME_JAVA_LANG_STRING__EDEFAULT.equals(stackName_java_lang_String_);
+		case AwsworkbenchPackage.STACK_BUILDER_CORE__SYNTHESIZER_WITH_ISTACK_SYNTHESIZER_SOFTWARE_AMAZON_AWSCDK_CORE_ISTACK_SYNTHESIZER_AS_REFERENCE:
+			return SYNTHESIZER_WITH_ISTACK_SYNTHESIZER_SOFTWARE_AMAZON_AWSCDK_CORE_ISTACK_SYNTHESIZER_AS_REFERENCE_EDEFAULT == null
+					? synthesizerWithIStackSynthesizer_software_amazon_awscdk_core_IStackSynthesizer_AsReference != null
+					: !SYNTHESIZER_WITH_ISTACK_SYNTHESIZER_SOFTWARE_AMAZON_AWSCDK_CORE_ISTACK_SYNTHESIZER_AS_REFERENCE_EDEFAULT
+							.equals(synthesizerWithIStackSynthesizer_software_amazon_awscdk_core_IStackSynthesizer_AsReference);
+		case AwsworkbenchPackage.STACK_BUILDER_CORE__TAGS_JAVA_LANG_STRING_JAVA_LANG_STRING_AS_MAP:
+			return TAGS_JAVA_LANG_STRING_JAVA_LANG_STRING_AS_MAP_EDEFAULT == null
+					? tags_java_lang_String__java_lang_String_AsMap != null
+					: !TAGS_JAVA_LANG_STRING_JAVA_LANG_STRING_AS_MAP_EDEFAULT
+							.equals(tags_java_lang_String__java_lang_String_AsMap);
+		case AwsworkbenchPackage.STACK_BUILDER_CORE__TERMINATION_PROTECTION_JAVA_LANG_BOOLEAN_:
+			return TERMINATION_PROTECTION_JAVA_LANG_BOOLEAN__EDEFAULT == null
+					? terminationProtection_java_lang_Boolean_ != null
+					: !TERMINATION_PROTECTION_JAVA_LANG_BOOLEAN__EDEFAULT
+							.equals(terminationProtection_java_lang_Boolean_);
 		case AwsworkbenchPackage.STACK_BUILDER_CORE__GENERATED_CLASS_NAME:
 			return GENERATED_CLASS_NAME_EDEFAULT == null ? generatedClassName != null
 					: !GENERATED_CLASS_NAME_EDEFAULT.equals(generatedClassName);
@@ -704,18 +724,18 @@ public class StackBuilder_coreImpl extends MinimalEObjectImpl.Container implemen
 			return super.toString();
 
 		StringBuilder result = new StringBuilder(super.toString());
-		result.append(" (description: ");
-		result.append(description);
-		result.append(", envWithEnvironmentAsReference: ");
-		result.append(envWithEnvironmentAsReference);
-		result.append(", stackName: ");
-		result.append(stackName);
-		result.append(", synthesizerWithIStackSynthesizerAsReference: ");
-		result.append(synthesizerWithIStackSynthesizerAsReference);
-		result.append(", tagsAsMap: ");
-		result.append(tagsAsMap);
-		result.append(", terminationProtection: ");
-		result.append(terminationProtection);
+		result.append(" (description_java_lang_String_: ");
+		result.append(description_java_lang_String_);
+		result.append(", envWithEnvironment_software_amazon_awscdk_core_Environment_AsReference: ");
+		result.append(envWithEnvironment_software_amazon_awscdk_core_Environment_AsReference);
+		result.append(", stackName_java_lang_String_: ");
+		result.append(stackName_java_lang_String_);
+		result.append(", synthesizerWithIStackSynthesizer_software_amazon_awscdk_core_IStackSynthesizer_AsReference: ");
+		result.append(synthesizerWithIStackSynthesizer_software_amazon_awscdk_core_IStackSynthesizer_AsReference);
+		result.append(", tags_java_lang_String__java_lang_String_AsMap: ");
+		result.append(tags_java_lang_String__java_lang_String_AsMap);
+		result.append(", terminationProtection_java_lang_Boolean_: ");
+		result.append(terminationProtection_java_lang_Boolean_);
 		result.append(", generatedClassName: ");
 		result.append(generatedClassName);
 		result.append(", varName: ");

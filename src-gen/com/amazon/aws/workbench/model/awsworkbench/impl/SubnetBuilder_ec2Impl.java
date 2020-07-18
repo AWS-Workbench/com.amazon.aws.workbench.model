@@ -3,23 +3,13 @@
 package com.amazon.aws.workbench.model.awsworkbench.impl;
 
 import com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage;
-import com.amazon.aws.workbench.model.awsworkbench.InstanceBuilder_ec2;
 import com.amazon.aws.workbench.model.awsworkbench.SubnetBuilder_ec2;
 
-import java.util.Collection;
-
 import org.eclipse.emf.common.notify.Notification;
-import org.eclipse.emf.common.notify.NotificationChain;
-
-import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
-import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-
-import org.eclipse.emf.ecore.util.EObjectContainmentEList;
-import org.eclipse.emf.ecore.util.InternalEList;
 
 /**
  * <!-- begin-user-doc -->
@@ -29,99 +19,98 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.SubnetBuilder_ec2Impl#getAvailabilityZone <em>Availability Zone</em>}</li>
- *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.SubnetBuilder_ec2Impl#getCidrBlock <em>Cidr Block</em>}</li>
- *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.SubnetBuilder_ec2Impl#getVpcId <em>Vpc Id</em>}</li>
- *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.SubnetBuilder_ec2Impl#getMapPublicIpOnLaunch <em>Map Public Ip On Launch</em>}</li>
+ *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.SubnetBuilder_ec2Impl#getAvailabilityZone_java_lang_String_ <em>Availability Zone java lang String </em>}</li>
+ *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.SubnetBuilder_ec2Impl#getCidrBlock_java_lang_String_ <em>Cidr Block java lang String </em>}</li>
+ *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.SubnetBuilder_ec2Impl#getVpcId_java_lang_String_ <em>Vpc Id java lang String </em>}</li>
+ *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.SubnetBuilder_ec2Impl#getMapPublicIpOnLaunch_java_lang_Boolean_ <em>Map Public Ip On Launch java lang Boolean </em>}</li>
  *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.SubnetBuilder_ec2Impl#getGeneratedClassName <em>Generated Class Name</em>}</li>
  *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.SubnetBuilder_ec2Impl#getVarName <em>Var Name</em>}</li>
  *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.SubnetBuilder_ec2Impl#getIdentifier <em>Identifier</em>}</li>
  *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.SubnetBuilder_ec2Impl#getAdditionalCode <em>Additional Code</em>}</li>
- *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.SubnetBuilder_ec2Impl#getInstancebuilder_ec2 <em>Instancebuilder ec2</em>}</li>
  * </ul>
  *
  * @generated
  */
 public class SubnetBuilder_ec2Impl extends ServiceResourcesImpl implements SubnetBuilder_ec2 {
 	/**
-	 * The default value of the '{@link #getAvailabilityZone() <em>Availability Zone</em>}' attribute.
+	 * The default value of the '{@link #getAvailabilityZone_java_lang_String_() <em>Availability Zone java lang String </em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getAvailabilityZone()
+	 * @see #getAvailabilityZone_java_lang_String_()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String AVAILABILITY_ZONE_EDEFAULT = null;
+	protected static final String AVAILABILITY_ZONE_JAVA_LANG_STRING__EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getAvailabilityZone() <em>Availability Zone</em>}' attribute.
+	 * The cached value of the '{@link #getAvailabilityZone_java_lang_String_() <em>Availability Zone java lang String </em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getAvailabilityZone()
+	 * @see #getAvailabilityZone_java_lang_String_()
 	 * @generated
 	 * @ordered
 	 */
-	protected String availabilityZone = AVAILABILITY_ZONE_EDEFAULT;
+	protected String availabilityZone_java_lang_String_ = AVAILABILITY_ZONE_JAVA_LANG_STRING__EDEFAULT;
 
 	/**
-	 * The default value of the '{@link #getCidrBlock() <em>Cidr Block</em>}' attribute.
+	 * The default value of the '{@link #getCidrBlock_java_lang_String_() <em>Cidr Block java lang String </em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getCidrBlock()
+	 * @see #getCidrBlock_java_lang_String_()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String CIDR_BLOCK_EDEFAULT = null;
+	protected static final String CIDR_BLOCK_JAVA_LANG_STRING__EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getCidrBlock() <em>Cidr Block</em>}' attribute.
+	 * The cached value of the '{@link #getCidrBlock_java_lang_String_() <em>Cidr Block java lang String </em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getCidrBlock()
+	 * @see #getCidrBlock_java_lang_String_()
 	 * @generated
 	 * @ordered
 	 */
-	protected String cidrBlock = CIDR_BLOCK_EDEFAULT;
+	protected String cidrBlock_java_lang_String_ = CIDR_BLOCK_JAVA_LANG_STRING__EDEFAULT;
 
 	/**
-	 * The default value of the '{@link #getVpcId() <em>Vpc Id</em>}' attribute.
+	 * The default value of the '{@link #getVpcId_java_lang_String_() <em>Vpc Id java lang String </em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getVpcId()
+	 * @see #getVpcId_java_lang_String_()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VPC_ID_EDEFAULT = null;
+	protected static final String VPC_ID_JAVA_LANG_STRING__EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getVpcId() <em>Vpc Id</em>}' attribute.
+	 * The cached value of the '{@link #getVpcId_java_lang_String_() <em>Vpc Id java lang String </em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getVpcId()
+	 * @see #getVpcId_java_lang_String_()
 	 * @generated
 	 * @ordered
 	 */
-	protected String vpcId = VPC_ID_EDEFAULT;
+	protected String vpcId_java_lang_String_ = VPC_ID_JAVA_LANG_STRING__EDEFAULT;
 
 	/**
-	 * The default value of the '{@link #getMapPublicIpOnLaunch() <em>Map Public Ip On Launch</em>}' attribute.
+	 * The default value of the '{@link #getMapPublicIpOnLaunch_java_lang_Boolean_() <em>Map Public Ip On Launch java lang Boolean </em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getMapPublicIpOnLaunch()
+	 * @see #getMapPublicIpOnLaunch_java_lang_Boolean_()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final Boolean MAP_PUBLIC_IP_ON_LAUNCH_EDEFAULT = null;
+	protected static final Boolean MAP_PUBLIC_IP_ON_LAUNCH_JAVA_LANG_BOOLEAN__EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getMapPublicIpOnLaunch() <em>Map Public Ip On Launch</em>}' attribute.
+	 * The cached value of the '{@link #getMapPublicIpOnLaunch_java_lang_Boolean_() <em>Map Public Ip On Launch java lang Boolean </em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getMapPublicIpOnLaunch()
+	 * @see #getMapPublicIpOnLaunch_java_lang_Boolean_()
 	 * @generated
 	 * @ordered
 	 */
-	protected Boolean mapPublicIpOnLaunch = MAP_PUBLIC_IP_ON_LAUNCH_EDEFAULT;
+	protected Boolean mapPublicIpOnLaunch_java_lang_Boolean_ = MAP_PUBLIC_IP_ON_LAUNCH_JAVA_LANG_BOOLEAN__EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getGeneratedClassName() <em>Generated Class Name</em>}' attribute.
@@ -204,16 +193,6 @@ public class SubnetBuilder_ec2Impl extends ServiceResourcesImpl implements Subne
 	protected String additionalCode = ADDITIONAL_CODE_EDEFAULT;
 
 	/**
-	 * The cached value of the '{@link #getInstancebuilder_ec2() <em>Instancebuilder ec2</em>}' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getInstancebuilder_ec2()
-	 * @generated
-	 * @ordered
-	 */
-	protected EList<InstanceBuilder_ec2> instancebuilder_ec2;
-
-	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -238,8 +217,8 @@ public class SubnetBuilder_ec2Impl extends ServiceResourcesImpl implements Subne
 	 * @generated
 	 */
 	@Override
-	public String getAvailabilityZone() {
-		return availabilityZone;
+	public String getAvailabilityZone_java_lang_String_() {
+		return availabilityZone_java_lang_String_;
 	}
 
 	/**
@@ -248,12 +227,13 @@ public class SubnetBuilder_ec2Impl extends ServiceResourcesImpl implements Subne
 	 * @generated
 	 */
 	@Override
-	public void setAvailabilityZone(String newAvailabilityZone) {
-		String oldAvailabilityZone = availabilityZone;
-		availabilityZone = newAvailabilityZone;
+	public void setAvailabilityZone_java_lang_String_(String newAvailabilityZone_java_lang_String_) {
+		String oldAvailabilityZone_java_lang_String_ = availabilityZone_java_lang_String_;
+		availabilityZone_java_lang_String_ = newAvailabilityZone_java_lang_String_;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET,
-					AwsworkbenchPackage.SUBNET_BUILDER_EC2__AVAILABILITY_ZONE, oldAvailabilityZone, availabilityZone));
+					AwsworkbenchPackage.SUBNET_BUILDER_EC2__AVAILABILITY_ZONE_JAVA_LANG_STRING_,
+					oldAvailabilityZone_java_lang_String_, availabilityZone_java_lang_String_));
 	}
 
 	/**
@@ -262,8 +242,8 @@ public class SubnetBuilder_ec2Impl extends ServiceResourcesImpl implements Subne
 	 * @generated
 	 */
 	@Override
-	public String getCidrBlock() {
-		return cidrBlock;
+	public String getCidrBlock_java_lang_String_() {
+		return cidrBlock_java_lang_String_;
 	}
 
 	/**
@@ -272,61 +252,63 @@ public class SubnetBuilder_ec2Impl extends ServiceResourcesImpl implements Subne
 	 * @generated
 	 */
 	@Override
-	public void setCidrBlock(String newCidrBlock) {
-		String oldCidrBlock = cidrBlock;
-		cidrBlock = newCidrBlock;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, AwsworkbenchPackage.SUBNET_BUILDER_EC2__CIDR_BLOCK,
-					oldCidrBlock, cidrBlock));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public String getVpcId() {
-		return vpcId;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setVpcId(String newVpcId) {
-		String oldVpcId = vpcId;
-		vpcId = newVpcId;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, AwsworkbenchPackage.SUBNET_BUILDER_EC2__VPC_ID,
-					oldVpcId, vpcId));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Boolean getMapPublicIpOnLaunch() {
-		return mapPublicIpOnLaunch;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setMapPublicIpOnLaunch(Boolean newMapPublicIpOnLaunch) {
-		Boolean oldMapPublicIpOnLaunch = mapPublicIpOnLaunch;
-		mapPublicIpOnLaunch = newMapPublicIpOnLaunch;
+	public void setCidrBlock_java_lang_String_(String newCidrBlock_java_lang_String_) {
+		String oldCidrBlock_java_lang_String_ = cidrBlock_java_lang_String_;
+		cidrBlock_java_lang_String_ = newCidrBlock_java_lang_String_;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET,
-					AwsworkbenchPackage.SUBNET_BUILDER_EC2__MAP_PUBLIC_IP_ON_LAUNCH, oldMapPublicIpOnLaunch,
-					mapPublicIpOnLaunch));
+					AwsworkbenchPackage.SUBNET_BUILDER_EC2__CIDR_BLOCK_JAVA_LANG_STRING_,
+					oldCidrBlock_java_lang_String_, cidrBlock_java_lang_String_));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String getVpcId_java_lang_String_() {
+		return vpcId_java_lang_String_;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setVpcId_java_lang_String_(String newVpcId_java_lang_String_) {
+		String oldVpcId_java_lang_String_ = vpcId_java_lang_String_;
+		vpcId_java_lang_String_ = newVpcId_java_lang_String_;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					AwsworkbenchPackage.SUBNET_BUILDER_EC2__VPC_ID_JAVA_LANG_STRING_, oldVpcId_java_lang_String_,
+					vpcId_java_lang_String_));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Boolean getMapPublicIpOnLaunch_java_lang_Boolean_() {
+		return mapPublicIpOnLaunch_java_lang_Boolean_;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setMapPublicIpOnLaunch_java_lang_Boolean_(Boolean newMapPublicIpOnLaunch_java_lang_Boolean_) {
+		Boolean oldMapPublicIpOnLaunch_java_lang_Boolean_ = mapPublicIpOnLaunch_java_lang_Boolean_;
+		mapPublicIpOnLaunch_java_lang_Boolean_ = newMapPublicIpOnLaunch_java_lang_Boolean_;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					AwsworkbenchPackage.SUBNET_BUILDER_EC2__MAP_PUBLIC_IP_ON_LAUNCH_JAVA_LANG_BOOLEAN_,
+					oldMapPublicIpOnLaunch_java_lang_Boolean_, mapPublicIpOnLaunch_java_lang_Boolean_));
 	}
 
 	/**
@@ -417,44 +399,16 @@ public class SubnetBuilder_ec2Impl extends ServiceResourcesImpl implements Subne
 	 * @generated
 	 */
 	@Override
-	public EList<InstanceBuilder_ec2> getInstancebuilder_ec2() {
-		if (instancebuilder_ec2 == null) {
-			instancebuilder_ec2 = new EObjectContainmentEList<InstanceBuilder_ec2>(InstanceBuilder_ec2.class, this,
-					AwsworkbenchPackage.SUBNET_BUILDER_EC2__INSTANCEBUILDER_EC2);
-		}
-		return instancebuilder_ec2;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-		switch (featureID) {
-		case AwsworkbenchPackage.SUBNET_BUILDER_EC2__INSTANCEBUILDER_EC2:
-			return ((InternalEList<?>) getInstancebuilder_ec2()).basicRemove(otherEnd, msgs);
-		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-		case AwsworkbenchPackage.SUBNET_BUILDER_EC2__AVAILABILITY_ZONE:
-			return getAvailabilityZone();
-		case AwsworkbenchPackage.SUBNET_BUILDER_EC2__CIDR_BLOCK:
-			return getCidrBlock();
-		case AwsworkbenchPackage.SUBNET_BUILDER_EC2__VPC_ID:
-			return getVpcId();
-		case AwsworkbenchPackage.SUBNET_BUILDER_EC2__MAP_PUBLIC_IP_ON_LAUNCH:
-			return getMapPublicIpOnLaunch();
+		case AwsworkbenchPackage.SUBNET_BUILDER_EC2__AVAILABILITY_ZONE_JAVA_LANG_STRING_:
+			return getAvailabilityZone_java_lang_String_();
+		case AwsworkbenchPackage.SUBNET_BUILDER_EC2__CIDR_BLOCK_JAVA_LANG_STRING_:
+			return getCidrBlock_java_lang_String_();
+		case AwsworkbenchPackage.SUBNET_BUILDER_EC2__VPC_ID_JAVA_LANG_STRING_:
+			return getVpcId_java_lang_String_();
+		case AwsworkbenchPackage.SUBNET_BUILDER_EC2__MAP_PUBLIC_IP_ON_LAUNCH_JAVA_LANG_BOOLEAN_:
+			return getMapPublicIpOnLaunch_java_lang_Boolean_();
 		case AwsworkbenchPackage.SUBNET_BUILDER_EC2__GENERATED_CLASS_NAME:
 			return getGeneratedClassName();
 		case AwsworkbenchPackage.SUBNET_BUILDER_EC2__VAR_NAME:
@@ -463,8 +417,6 @@ public class SubnetBuilder_ec2Impl extends ServiceResourcesImpl implements Subne
 			return getIdentifier();
 		case AwsworkbenchPackage.SUBNET_BUILDER_EC2__ADDITIONAL_CODE:
 			return getAdditionalCode();
-		case AwsworkbenchPackage.SUBNET_BUILDER_EC2__INSTANCEBUILDER_EC2:
-			return getInstancebuilder_ec2();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -474,21 +426,20 @@ public class SubnetBuilder_ec2Impl extends ServiceResourcesImpl implements Subne
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@SuppressWarnings("unchecked")
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-		case AwsworkbenchPackage.SUBNET_BUILDER_EC2__AVAILABILITY_ZONE:
-			setAvailabilityZone((String) newValue);
+		case AwsworkbenchPackage.SUBNET_BUILDER_EC2__AVAILABILITY_ZONE_JAVA_LANG_STRING_:
+			setAvailabilityZone_java_lang_String_((String) newValue);
 			return;
-		case AwsworkbenchPackage.SUBNET_BUILDER_EC2__CIDR_BLOCK:
-			setCidrBlock((String) newValue);
+		case AwsworkbenchPackage.SUBNET_BUILDER_EC2__CIDR_BLOCK_JAVA_LANG_STRING_:
+			setCidrBlock_java_lang_String_((String) newValue);
 			return;
-		case AwsworkbenchPackage.SUBNET_BUILDER_EC2__VPC_ID:
-			setVpcId((String) newValue);
+		case AwsworkbenchPackage.SUBNET_BUILDER_EC2__VPC_ID_JAVA_LANG_STRING_:
+			setVpcId_java_lang_String_((String) newValue);
 			return;
-		case AwsworkbenchPackage.SUBNET_BUILDER_EC2__MAP_PUBLIC_IP_ON_LAUNCH:
-			setMapPublicIpOnLaunch((Boolean) newValue);
+		case AwsworkbenchPackage.SUBNET_BUILDER_EC2__MAP_PUBLIC_IP_ON_LAUNCH_JAVA_LANG_BOOLEAN_:
+			setMapPublicIpOnLaunch_java_lang_Boolean_((Boolean) newValue);
 			return;
 		case AwsworkbenchPackage.SUBNET_BUILDER_EC2__VAR_NAME:
 			setVarName((String) newValue);
@@ -498,10 +449,6 @@ public class SubnetBuilder_ec2Impl extends ServiceResourcesImpl implements Subne
 			return;
 		case AwsworkbenchPackage.SUBNET_BUILDER_EC2__ADDITIONAL_CODE:
 			setAdditionalCode((String) newValue);
-			return;
-		case AwsworkbenchPackage.SUBNET_BUILDER_EC2__INSTANCEBUILDER_EC2:
-			getInstancebuilder_ec2().clear();
-			getInstancebuilder_ec2().addAll((Collection<? extends InstanceBuilder_ec2>) newValue);
 			return;
 		}
 		super.eSet(featureID, newValue);
@@ -515,17 +462,17 @@ public class SubnetBuilder_ec2Impl extends ServiceResourcesImpl implements Subne
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-		case AwsworkbenchPackage.SUBNET_BUILDER_EC2__AVAILABILITY_ZONE:
-			setAvailabilityZone(AVAILABILITY_ZONE_EDEFAULT);
+		case AwsworkbenchPackage.SUBNET_BUILDER_EC2__AVAILABILITY_ZONE_JAVA_LANG_STRING_:
+			setAvailabilityZone_java_lang_String_(AVAILABILITY_ZONE_JAVA_LANG_STRING__EDEFAULT);
 			return;
-		case AwsworkbenchPackage.SUBNET_BUILDER_EC2__CIDR_BLOCK:
-			setCidrBlock(CIDR_BLOCK_EDEFAULT);
+		case AwsworkbenchPackage.SUBNET_BUILDER_EC2__CIDR_BLOCK_JAVA_LANG_STRING_:
+			setCidrBlock_java_lang_String_(CIDR_BLOCK_JAVA_LANG_STRING__EDEFAULT);
 			return;
-		case AwsworkbenchPackage.SUBNET_BUILDER_EC2__VPC_ID:
-			setVpcId(VPC_ID_EDEFAULT);
+		case AwsworkbenchPackage.SUBNET_BUILDER_EC2__VPC_ID_JAVA_LANG_STRING_:
+			setVpcId_java_lang_String_(VPC_ID_JAVA_LANG_STRING__EDEFAULT);
 			return;
-		case AwsworkbenchPackage.SUBNET_BUILDER_EC2__MAP_PUBLIC_IP_ON_LAUNCH:
-			setMapPublicIpOnLaunch(MAP_PUBLIC_IP_ON_LAUNCH_EDEFAULT);
+		case AwsworkbenchPackage.SUBNET_BUILDER_EC2__MAP_PUBLIC_IP_ON_LAUNCH_JAVA_LANG_BOOLEAN_:
+			setMapPublicIpOnLaunch_java_lang_Boolean_(MAP_PUBLIC_IP_ON_LAUNCH_JAVA_LANG_BOOLEAN__EDEFAULT);
 			return;
 		case AwsworkbenchPackage.SUBNET_BUILDER_EC2__VAR_NAME:
 			setVarName(VAR_NAME_EDEFAULT);
@@ -535,9 +482,6 @@ public class SubnetBuilder_ec2Impl extends ServiceResourcesImpl implements Subne
 			return;
 		case AwsworkbenchPackage.SUBNET_BUILDER_EC2__ADDITIONAL_CODE:
 			setAdditionalCode(ADDITIONAL_CODE_EDEFAULT);
-			return;
-		case AwsworkbenchPackage.SUBNET_BUILDER_EC2__INSTANCEBUILDER_EC2:
-			getInstancebuilder_ec2().clear();
 			return;
 		}
 		super.eUnset(featureID);
@@ -551,16 +495,20 @@ public class SubnetBuilder_ec2Impl extends ServiceResourcesImpl implements Subne
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-		case AwsworkbenchPackage.SUBNET_BUILDER_EC2__AVAILABILITY_ZONE:
-			return AVAILABILITY_ZONE_EDEFAULT == null ? availabilityZone != null
-					: !AVAILABILITY_ZONE_EDEFAULT.equals(availabilityZone);
-		case AwsworkbenchPackage.SUBNET_BUILDER_EC2__CIDR_BLOCK:
-			return CIDR_BLOCK_EDEFAULT == null ? cidrBlock != null : !CIDR_BLOCK_EDEFAULT.equals(cidrBlock);
-		case AwsworkbenchPackage.SUBNET_BUILDER_EC2__VPC_ID:
-			return VPC_ID_EDEFAULT == null ? vpcId != null : !VPC_ID_EDEFAULT.equals(vpcId);
-		case AwsworkbenchPackage.SUBNET_BUILDER_EC2__MAP_PUBLIC_IP_ON_LAUNCH:
-			return MAP_PUBLIC_IP_ON_LAUNCH_EDEFAULT == null ? mapPublicIpOnLaunch != null
-					: !MAP_PUBLIC_IP_ON_LAUNCH_EDEFAULT.equals(mapPublicIpOnLaunch);
+		case AwsworkbenchPackage.SUBNET_BUILDER_EC2__AVAILABILITY_ZONE_JAVA_LANG_STRING_:
+			return AVAILABILITY_ZONE_JAVA_LANG_STRING__EDEFAULT == null ? availabilityZone_java_lang_String_ != null
+					: !AVAILABILITY_ZONE_JAVA_LANG_STRING__EDEFAULT.equals(availabilityZone_java_lang_String_);
+		case AwsworkbenchPackage.SUBNET_BUILDER_EC2__CIDR_BLOCK_JAVA_LANG_STRING_:
+			return CIDR_BLOCK_JAVA_LANG_STRING__EDEFAULT == null ? cidrBlock_java_lang_String_ != null
+					: !CIDR_BLOCK_JAVA_LANG_STRING__EDEFAULT.equals(cidrBlock_java_lang_String_);
+		case AwsworkbenchPackage.SUBNET_BUILDER_EC2__VPC_ID_JAVA_LANG_STRING_:
+			return VPC_ID_JAVA_LANG_STRING__EDEFAULT == null ? vpcId_java_lang_String_ != null
+					: !VPC_ID_JAVA_LANG_STRING__EDEFAULT.equals(vpcId_java_lang_String_);
+		case AwsworkbenchPackage.SUBNET_BUILDER_EC2__MAP_PUBLIC_IP_ON_LAUNCH_JAVA_LANG_BOOLEAN_:
+			return MAP_PUBLIC_IP_ON_LAUNCH_JAVA_LANG_BOOLEAN__EDEFAULT == null
+					? mapPublicIpOnLaunch_java_lang_Boolean_ != null
+					: !MAP_PUBLIC_IP_ON_LAUNCH_JAVA_LANG_BOOLEAN__EDEFAULT
+							.equals(mapPublicIpOnLaunch_java_lang_Boolean_);
 		case AwsworkbenchPackage.SUBNET_BUILDER_EC2__GENERATED_CLASS_NAME:
 			return GENERATED_CLASS_NAME_EDEFAULT == null ? generatedClassName != null
 					: !GENERATED_CLASS_NAME_EDEFAULT.equals(generatedClassName);
@@ -571,8 +519,6 @@ public class SubnetBuilder_ec2Impl extends ServiceResourcesImpl implements Subne
 		case AwsworkbenchPackage.SUBNET_BUILDER_EC2__ADDITIONAL_CODE:
 			return ADDITIONAL_CODE_EDEFAULT == null ? additionalCode != null
 					: !ADDITIONAL_CODE_EDEFAULT.equals(additionalCode);
-		case AwsworkbenchPackage.SUBNET_BUILDER_EC2__INSTANCEBUILDER_EC2:
-			return instancebuilder_ec2 != null && !instancebuilder_ec2.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}
@@ -588,14 +534,14 @@ public class SubnetBuilder_ec2Impl extends ServiceResourcesImpl implements Subne
 			return super.toString();
 
 		StringBuilder result = new StringBuilder(super.toString());
-		result.append(" (availabilityZone: ");
-		result.append(availabilityZone);
-		result.append(", cidrBlock: ");
-		result.append(cidrBlock);
-		result.append(", vpcId: ");
-		result.append(vpcId);
-		result.append(", mapPublicIpOnLaunch: ");
-		result.append(mapPublicIpOnLaunch);
+		result.append(" (availabilityZone_java_lang_String_: ");
+		result.append(availabilityZone_java_lang_String_);
+		result.append(", cidrBlock_java_lang_String_: ");
+		result.append(cidrBlock_java_lang_String_);
+		result.append(", vpcId_java_lang_String_: ");
+		result.append(vpcId_java_lang_String_);
+		result.append(", mapPublicIpOnLaunch_java_lang_Boolean_: ");
+		result.append(mapPublicIpOnLaunch_java_lang_Boolean_);
 		result.append(", generatedClassName: ");
 		result.append(generatedClassName);
 		result.append(", varName: ");

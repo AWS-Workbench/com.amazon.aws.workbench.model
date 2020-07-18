@@ -2,8 +2,6 @@
  */
 package com.amazon.aws.workbench.model.awsworkbench;
 
-import org.eclipse.emf.common.util.EList;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Subnet Builder ec2</b></em>'.
@@ -13,15 +11,14 @@ import org.eclipse.emf.common.util.EList;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.SubnetBuilder_ec2#getAvailabilityZone <em>Availability Zone</em>}</li>
- *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.SubnetBuilder_ec2#getCidrBlock <em>Cidr Block</em>}</li>
- *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.SubnetBuilder_ec2#getVpcId <em>Vpc Id</em>}</li>
- *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.SubnetBuilder_ec2#getMapPublicIpOnLaunch <em>Map Public Ip On Launch</em>}</li>
+ *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.SubnetBuilder_ec2#getAvailabilityZone_java_lang_String_ <em>Availability Zone java lang String </em>}</li>
+ *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.SubnetBuilder_ec2#getCidrBlock_java_lang_String_ <em>Cidr Block java lang String </em>}</li>
+ *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.SubnetBuilder_ec2#getVpcId_java_lang_String_ <em>Vpc Id java lang String </em>}</li>
+ *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.SubnetBuilder_ec2#getMapPublicIpOnLaunch_java_lang_Boolean_ <em>Map Public Ip On Launch java lang Boolean </em>}</li>
  *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.SubnetBuilder_ec2#getGeneratedClassName <em>Generated Class Name</em>}</li>
  *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.SubnetBuilder_ec2#getVarName <em>Var Name</em>}</li>
  *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.SubnetBuilder_ec2#getIdentifier <em>Identifier</em>}</li>
  *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.SubnetBuilder_ec2#getAdditionalCode <em>Additional Code</em>}</li>
- *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.SubnetBuilder_ec2#getInstancebuilder_ec2 <em>Instancebuilder ec2</em>}</li>
  * </ul>
  *
  * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getSubnetBuilder_ec2()
@@ -30,92 +27,92 @@ import org.eclipse.emf.common.util.EList;
  */
 public interface SubnetBuilder_ec2 extends ServiceResources {
 	/**
-	 * Returns the value of the '<em><b>Availability Zone</b></em>' attribute.
+	 * Returns the value of the '<em><b>Availability Zone java lang String </b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Availability Zone</em>' attribute.
-	 * @see #setAvailabilityZone(String)
-	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getSubnetBuilder_ec2_AvailabilityZone()
+	 * @return the value of the '<em>Availability Zone java lang String </em>' attribute.
+	 * @see #setAvailabilityZone_java_lang_String_(String)
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getSubnetBuilder_ec2_AvailabilityZone_java_lang_String_()
 	 * @model
 	 * @generated
 	 */
-	String getAvailabilityZone();
+	String getAvailabilityZone_java_lang_String_();
 
 	/**
-	 * Sets the value of the '{@link com.amazon.aws.workbench.model.awsworkbench.SubnetBuilder_ec2#getAvailabilityZone <em>Availability Zone</em>}' attribute.
+	 * Sets the value of the '{@link com.amazon.aws.workbench.model.awsworkbench.SubnetBuilder_ec2#getAvailabilityZone_java_lang_String_ <em>Availability Zone java lang String </em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Availability Zone</em>' attribute.
-	 * @see #getAvailabilityZone()
+	 * @param value the new value of the '<em>Availability Zone java lang String </em>' attribute.
+	 * @see #getAvailabilityZone_java_lang_String_()
 	 * @generated
 	 */
-	void setAvailabilityZone(String value);
+	void setAvailabilityZone_java_lang_String_(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Cidr Block</b></em>' attribute.
+	 * Returns the value of the '<em><b>Cidr Block java lang String </b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Cidr Block</em>' attribute.
-	 * @see #setCidrBlock(String)
-	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getSubnetBuilder_ec2_CidrBlock()
+	 * @return the value of the '<em>Cidr Block java lang String </em>' attribute.
+	 * @see #setCidrBlock_java_lang_String_(String)
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getSubnetBuilder_ec2_CidrBlock_java_lang_String_()
 	 * @model
 	 * @generated
 	 */
-	String getCidrBlock();
+	String getCidrBlock_java_lang_String_();
 
 	/**
-	 * Sets the value of the '{@link com.amazon.aws.workbench.model.awsworkbench.SubnetBuilder_ec2#getCidrBlock <em>Cidr Block</em>}' attribute.
+	 * Sets the value of the '{@link com.amazon.aws.workbench.model.awsworkbench.SubnetBuilder_ec2#getCidrBlock_java_lang_String_ <em>Cidr Block java lang String </em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Cidr Block</em>' attribute.
-	 * @see #getCidrBlock()
+	 * @param value the new value of the '<em>Cidr Block java lang String </em>' attribute.
+	 * @see #getCidrBlock_java_lang_String_()
 	 * @generated
 	 */
-	void setCidrBlock(String value);
+	void setCidrBlock_java_lang_String_(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Vpc Id</b></em>' attribute.
+	 * Returns the value of the '<em><b>Vpc Id java lang String </b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Vpc Id</em>' attribute.
-	 * @see #setVpcId(String)
-	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getSubnetBuilder_ec2_VpcId()
+	 * @return the value of the '<em>Vpc Id java lang String </em>' attribute.
+	 * @see #setVpcId_java_lang_String_(String)
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getSubnetBuilder_ec2_VpcId_java_lang_String_()
 	 * @model
 	 * @generated
 	 */
-	String getVpcId();
+	String getVpcId_java_lang_String_();
 
 	/**
-	 * Sets the value of the '{@link com.amazon.aws.workbench.model.awsworkbench.SubnetBuilder_ec2#getVpcId <em>Vpc Id</em>}' attribute.
+	 * Sets the value of the '{@link com.amazon.aws.workbench.model.awsworkbench.SubnetBuilder_ec2#getVpcId_java_lang_String_ <em>Vpc Id java lang String </em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Vpc Id</em>' attribute.
-	 * @see #getVpcId()
+	 * @param value the new value of the '<em>Vpc Id java lang String </em>' attribute.
+	 * @see #getVpcId_java_lang_String_()
 	 * @generated
 	 */
-	void setVpcId(String value);
+	void setVpcId_java_lang_String_(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Map Public Ip On Launch</b></em>' attribute.
+	 * Returns the value of the '<em><b>Map Public Ip On Launch java lang Boolean </b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Map Public Ip On Launch</em>' attribute.
-	 * @see #setMapPublicIpOnLaunch(Boolean)
-	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getSubnetBuilder_ec2_MapPublicIpOnLaunch()
+	 * @return the value of the '<em>Map Public Ip On Launch java lang Boolean </em>' attribute.
+	 * @see #setMapPublicIpOnLaunch_java_lang_Boolean_(Boolean)
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getSubnetBuilder_ec2_MapPublicIpOnLaunch_java_lang_Boolean_()
 	 * @model
 	 * @generated
 	 */
-	Boolean getMapPublicIpOnLaunch();
+	Boolean getMapPublicIpOnLaunch_java_lang_Boolean_();
 
 	/**
-	 * Sets the value of the '{@link com.amazon.aws.workbench.model.awsworkbench.SubnetBuilder_ec2#getMapPublicIpOnLaunch <em>Map Public Ip On Launch</em>}' attribute.
+	 * Sets the value of the '{@link com.amazon.aws.workbench.model.awsworkbench.SubnetBuilder_ec2#getMapPublicIpOnLaunch_java_lang_Boolean_ <em>Map Public Ip On Launch java lang Boolean </em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Map Public Ip On Launch</em>' attribute.
-	 * @see #getMapPublicIpOnLaunch()
+	 * @param value the new value of the '<em>Map Public Ip On Launch java lang Boolean </em>' attribute.
+	 * @see #getMapPublicIpOnLaunch_java_lang_Boolean_()
 	 * @generated
 	 */
-	void setMapPublicIpOnLaunch(Boolean value);
+	void setMapPublicIpOnLaunch_java_lang_Boolean_(Boolean value);
 
 	/**
 	 * Returns the value of the '<em><b>Generated Class Name</b></em>' attribute.
@@ -194,17 +191,5 @@ public interface SubnetBuilder_ec2 extends ServiceResources {
 	 * @generated
 	 */
 	void setAdditionalCode(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Instancebuilder ec2</b></em>' containment reference list.
-	 * The list contents are of type {@link com.amazon.aws.workbench.model.awsworkbench.InstanceBuilder_ec2}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Instancebuilder ec2</em>' containment reference list.
-	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getSubnetBuilder_ec2_Instancebuilder_ec2()
-	 * @model containment="true"
-	 * @generated
-	 */
-	EList<InstanceBuilder_ec2> getInstancebuilder_ec2();
 
 } // SubnetBuilder_ec2

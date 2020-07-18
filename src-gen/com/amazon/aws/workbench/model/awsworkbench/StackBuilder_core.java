@@ -15,12 +15,12 @@ import org.eclipse.emf.ecore.EObject;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.StackBuilder_core#getDescription <em>Description</em>}</li>
- *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.StackBuilder_core#getEnvWithEnvironmentAsReference <em>Env With Environment As Reference</em>}</li>
- *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.StackBuilder_core#getStackName <em>Stack Name</em>}</li>
- *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.StackBuilder_core#getSynthesizerWithIStackSynthesizerAsReference <em>Synthesizer With IStack Synthesizer As Reference</em>}</li>
- *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.StackBuilder_core#getTagsAsMap <em>Tags As Map</em>}</li>
- *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.StackBuilder_core#getTerminationProtection <em>Termination Protection</em>}</li>
+ *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.StackBuilder_core#getDescription_java_lang_String_ <em>Description java lang String </em>}</li>
+ *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.StackBuilder_core#getEnvWithEnvironment_software_amazon_awscdk_core_Environment_AsReference <em>Env With Environment software amazon awscdk core Environment As Reference</em>}</li>
+ *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.StackBuilder_core#getStackName_java_lang_String_ <em>Stack Name java lang String </em>}</li>
+ *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.StackBuilder_core#getSynthesizerWithIStackSynthesizer_software_amazon_awscdk_core_IStackSynthesizer_AsReference <em>Synthesizer With IStack Synthesizer software amazon awscdk core IStack Synthesizer As Reference</em>}</li>
+ *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.StackBuilder_core#getTags_java_lang_String__java_lang_String_AsMap <em>Tags java lang String java lang String As Map</em>}</li>
+ *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.StackBuilder_core#getTerminationProtection_java_lang_Boolean_ <em>Termination Protection java lang Boolean </em>}</li>
  *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.StackBuilder_core#getGeneratedClassName <em>Generated Class Name</em>}</li>
  *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.StackBuilder_core#getVarName <em>Var Name</em>}</li>
  *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.StackBuilder_core#getIdentifier <em>Identifier</em>}</li>
@@ -34,136 +34,136 @@ import org.eclipse.emf.ecore.EObject;
  */
 public interface StackBuilder_core extends EObject {
 	/**
-	 * Returns the value of the '<em><b>Description</b></em>' attribute.
+	 * Returns the value of the '<em><b>Description java lang String </b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Description</em>' attribute.
-	 * @see #setDescription(String)
-	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getStackBuilder_core_Description()
+	 * @return the value of the '<em>Description java lang String </em>' attribute.
+	 * @see #setDescription_java_lang_String_(String)
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getStackBuilder_core_Description_java_lang_String_()
 	 * @model
 	 * @generated
 	 */
-	String getDescription();
+	String getDescription_java_lang_String_();
 
 	/**
-	 * Sets the value of the '{@link com.amazon.aws.workbench.model.awsworkbench.StackBuilder_core#getDescription <em>Description</em>}' attribute.
+	 * Sets the value of the '{@link com.amazon.aws.workbench.model.awsworkbench.StackBuilder_core#getDescription_java_lang_String_ <em>Description java lang String </em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Description</em>' attribute.
-	 * @see #getDescription()
+	 * @param value the new value of the '<em>Description java lang String </em>' attribute.
+	 * @see #getDescription_java_lang_String_()
 	 * @generated
 	 */
-	void setDescription(String value);
+	void setDescription_java_lang_String_(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Env With Environment As Reference</b></em>' attribute.
+	 * Returns the value of the '<em><b>Env With Environment software amazon awscdk core Environment As Reference</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Env With Environment As Reference</em>' attribute.
-	 * @see #setEnvWithEnvironmentAsReference(String)
-	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getStackBuilder_core_EnvWithEnvironmentAsReference()
+	 * @return the value of the '<em>Env With Environment software amazon awscdk core Environment As Reference</em>' attribute.
+	 * @see #setEnvWithEnvironment_software_amazon_awscdk_core_Environment_AsReference(String)
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getStackBuilder_core_EnvWithEnvironment_software_amazon_awscdk_core_Environment_AsReference()
 	 * @model
 	 * @generated
 	 */
-	String getEnvWithEnvironmentAsReference();
+	String getEnvWithEnvironment_software_amazon_awscdk_core_Environment_AsReference();
 
 	/**
-	 * Sets the value of the '{@link com.amazon.aws.workbench.model.awsworkbench.StackBuilder_core#getEnvWithEnvironmentAsReference <em>Env With Environment As Reference</em>}' attribute.
+	 * Sets the value of the '{@link com.amazon.aws.workbench.model.awsworkbench.StackBuilder_core#getEnvWithEnvironment_software_amazon_awscdk_core_Environment_AsReference <em>Env With Environment software amazon awscdk core Environment As Reference</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Env With Environment As Reference</em>' attribute.
-	 * @see #getEnvWithEnvironmentAsReference()
+	 * @param value the new value of the '<em>Env With Environment software amazon awscdk core Environment As Reference</em>' attribute.
+	 * @see #getEnvWithEnvironment_software_amazon_awscdk_core_Environment_AsReference()
 	 * @generated
 	 */
-	void setEnvWithEnvironmentAsReference(String value);
+	void setEnvWithEnvironment_software_amazon_awscdk_core_Environment_AsReference(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Stack Name</b></em>' attribute.
+	 * Returns the value of the '<em><b>Stack Name java lang String </b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Stack Name</em>' attribute.
-	 * @see #setStackName(String)
-	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getStackBuilder_core_StackName()
+	 * @return the value of the '<em>Stack Name java lang String </em>' attribute.
+	 * @see #setStackName_java_lang_String_(String)
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getStackBuilder_core_StackName_java_lang_String_()
 	 * @model
 	 * @generated
 	 */
-	String getStackName();
+	String getStackName_java_lang_String_();
 
 	/**
-	 * Sets the value of the '{@link com.amazon.aws.workbench.model.awsworkbench.StackBuilder_core#getStackName <em>Stack Name</em>}' attribute.
+	 * Sets the value of the '{@link com.amazon.aws.workbench.model.awsworkbench.StackBuilder_core#getStackName_java_lang_String_ <em>Stack Name java lang String </em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Stack Name</em>' attribute.
-	 * @see #getStackName()
+	 * @param value the new value of the '<em>Stack Name java lang String </em>' attribute.
+	 * @see #getStackName_java_lang_String_()
 	 * @generated
 	 */
-	void setStackName(String value);
+	void setStackName_java_lang_String_(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Synthesizer With IStack Synthesizer As Reference</b></em>' attribute.
+	 * Returns the value of the '<em><b>Synthesizer With IStack Synthesizer software amazon awscdk core IStack Synthesizer As Reference</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Synthesizer With IStack Synthesizer As Reference</em>' attribute.
-	 * @see #setSynthesizerWithIStackSynthesizerAsReference(String)
-	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getStackBuilder_core_SynthesizerWithIStackSynthesizerAsReference()
+	 * @return the value of the '<em>Synthesizer With IStack Synthesizer software amazon awscdk core IStack Synthesizer As Reference</em>' attribute.
+	 * @see #setSynthesizerWithIStackSynthesizer_software_amazon_awscdk_core_IStackSynthesizer_AsReference(String)
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getStackBuilder_core_SynthesizerWithIStackSynthesizer_software_amazon_awscdk_core_IStackSynthesizer_AsReference()
 	 * @model
 	 * @generated
 	 */
-	String getSynthesizerWithIStackSynthesizerAsReference();
+	String getSynthesizerWithIStackSynthesizer_software_amazon_awscdk_core_IStackSynthesizer_AsReference();
 
 	/**
-	 * Sets the value of the '{@link com.amazon.aws.workbench.model.awsworkbench.StackBuilder_core#getSynthesizerWithIStackSynthesizerAsReference <em>Synthesizer With IStack Synthesizer As Reference</em>}' attribute.
+	 * Sets the value of the '{@link com.amazon.aws.workbench.model.awsworkbench.StackBuilder_core#getSynthesizerWithIStackSynthesizer_software_amazon_awscdk_core_IStackSynthesizer_AsReference <em>Synthesizer With IStack Synthesizer software amazon awscdk core IStack Synthesizer As Reference</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Synthesizer With IStack Synthesizer As Reference</em>' attribute.
-	 * @see #getSynthesizerWithIStackSynthesizerAsReference()
+	 * @param value the new value of the '<em>Synthesizer With IStack Synthesizer software amazon awscdk core IStack Synthesizer As Reference</em>' attribute.
+	 * @see #getSynthesizerWithIStackSynthesizer_software_amazon_awscdk_core_IStackSynthesizer_AsReference()
 	 * @generated
 	 */
-	void setSynthesizerWithIStackSynthesizerAsReference(String value);
+	void setSynthesizerWithIStackSynthesizer_software_amazon_awscdk_core_IStackSynthesizer_AsReference(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Tags As Map</b></em>' attribute.
+	 * Returns the value of the '<em><b>Tags java lang String java lang String As Map</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Tags As Map</em>' attribute.
-	 * @see #setTagsAsMap(String)
-	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getStackBuilder_core_TagsAsMap()
+	 * @return the value of the '<em>Tags java lang String java lang String As Map</em>' attribute.
+	 * @see #setTags_java_lang_String__java_lang_String_AsMap(String)
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getStackBuilder_core_Tags_java_lang_String__java_lang_String_AsMap()
 	 * @model
 	 * @generated
 	 */
-	String getTagsAsMap();
+	String getTags_java_lang_String__java_lang_String_AsMap();
 
 	/**
-	 * Sets the value of the '{@link com.amazon.aws.workbench.model.awsworkbench.StackBuilder_core#getTagsAsMap <em>Tags As Map</em>}' attribute.
+	 * Sets the value of the '{@link com.amazon.aws.workbench.model.awsworkbench.StackBuilder_core#getTags_java_lang_String__java_lang_String_AsMap <em>Tags java lang String java lang String As Map</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Tags As Map</em>' attribute.
-	 * @see #getTagsAsMap()
+	 * @param value the new value of the '<em>Tags java lang String java lang String As Map</em>' attribute.
+	 * @see #getTags_java_lang_String__java_lang_String_AsMap()
 	 * @generated
 	 */
-	void setTagsAsMap(String value);
+	void setTags_java_lang_String__java_lang_String_AsMap(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Termination Protection</b></em>' attribute.
+	 * Returns the value of the '<em><b>Termination Protection java lang Boolean </b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Termination Protection</em>' attribute.
-	 * @see #setTerminationProtection(Boolean)
-	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getStackBuilder_core_TerminationProtection()
+	 * @return the value of the '<em>Termination Protection java lang Boolean </em>' attribute.
+	 * @see #setTerminationProtection_java_lang_Boolean_(Boolean)
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getStackBuilder_core_TerminationProtection_java_lang_Boolean_()
 	 * @model
 	 * @generated
 	 */
-	Boolean getTerminationProtection();
+	Boolean getTerminationProtection_java_lang_Boolean_();
 
 	/**
-	 * Sets the value of the '{@link com.amazon.aws.workbench.model.awsworkbench.StackBuilder_core#getTerminationProtection <em>Termination Protection</em>}' attribute.
+	 * Sets the value of the '{@link com.amazon.aws.workbench.model.awsworkbench.StackBuilder_core#getTerminationProtection_java_lang_Boolean_ <em>Termination Protection java lang Boolean </em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Termination Protection</em>' attribute.
-	 * @see #getTerminationProtection()
+	 * @param value the new value of the '<em>Termination Protection java lang Boolean </em>' attribute.
+	 * @see #getTerminationProtection_java_lang_Boolean_()
 	 * @generated
 	 */
-	void setTerminationProtection(Boolean value);
+	void setTerminationProtection_java_lang_Boolean_(Boolean value);
 
 	/**
 	 * Returns the value of the '<em><b>Generated Class Name</b></em>' attribute.

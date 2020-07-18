@@ -66,9 +66,37 @@ public class AwsworkbenchSwitch<T> extends Switch<T> {
 	@Override
 	protected T doSwitch(int classifierID, EObject theEObject) {
 		switch (classifierID) {
+		case AwsworkbenchPackage.SERVICE_RESOURCES: {
+			ServiceResources serviceResources = (ServiceResources) theEObject;
+			T result = caseServiceResources(serviceResources);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
 		case AwsworkbenchPackage.APP_BUILDER_CORE: {
 			AppBuilder_core appBuilder_core = (AppBuilder_core) theEObject;
 			T result = caseAppBuilder_core(appBuilder_core);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.DEFAULT_STACK_SYNTHESIZER_BUILDER_CORE: {
+			DefaultStackSynthesizerBuilder_core defaultStackSynthesizerBuilder_core = (DefaultStackSynthesizerBuilder_core) theEObject;
+			T result = caseDefaultStackSynthesizerBuilder_core(defaultStackSynthesizerBuilder_core);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.ENVIRONMENT_BUILDER_CORE: {
+			EnvironmentBuilder_core environmentBuilder_core = (EnvironmentBuilder_core) theEObject;
+			T result = caseEnvironmentBuilder_core(environmentBuilder_core);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.FLOW_LOG_OPTIONS_BUILDER_EC2: {
+			FlowLogOptionsBuilder_ec2 flowLogOptionsBuilder_ec2 = (FlowLogOptionsBuilder_ec2) theEObject;
+			T result = caseFlowLogOptionsBuilder_ec2(flowLogOptionsBuilder_ec2);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -89,13 +117,6 @@ public class AwsworkbenchSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case AwsworkbenchPackage.SERVICE_RESOURCES: {
-			ServiceResources serviceResources = (ServiceResources) theEObject;
-			T result = caseServiceResources(serviceResources);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
 		case AwsworkbenchPackage.SUBNET_BUILDER_EC2: {
 			SubnetBuilder_ec2 subnetBuilder_ec2 = (SubnetBuilder_ec2) theEObject;
 			T result = caseSubnetBuilder_ec2(subnetBuilder_ec2);
@@ -105,47 +126,38 @@ public class AwsworkbenchSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case AwsworkbenchPackage.INSTANCE_BUILDER_EC2: {
-			InstanceBuilder_ec2 instanceBuilder_ec2 = (InstanceBuilder_ec2) theEObject;
-			T result = caseInstanceBuilder_ec2(instanceBuilder_ec2);
+		case AwsworkbenchPackage.SUBNET_SELECTION_BUILDER_EC2: {
+			SubnetSelectionBuilder_ec2 subnetSelectionBuilder_ec2 = (SubnetSelectionBuilder_ec2) theEObject;
+			T result = caseSubnetSelectionBuilder_ec2(subnetSelectionBuilder_ec2);
 			if (result == null)
-				result = caseServiceResources(instanceBuilder_ec2);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
-		case AwsworkbenchPackage.SECURITY_GROUP_BUILDER_EC2: {
-			SecurityGroupBuilder_ec2 securityGroupBuilder_ec2 = (SecurityGroupBuilder_ec2) theEObject;
-			T result = caseSecurityGroupBuilder_ec2(securityGroupBuilder_ec2);
-			if (result == null)
-				result = caseServiceResources(securityGroupBuilder_ec2);
+				result = caseServiceResources(subnetSelectionBuilder_ec2);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case AwsworkbenchPackage.PORT_BUILDER_EC2: {
-			PortBuilder_ec2 portBuilder_ec2 = (PortBuilder_ec2) theEObject;
-			T result = casePortBuilder_ec2(portBuilder_ec2);
+		case AwsworkbenchPackage.SUBNET_CONFIGURATION_BUILDER_EC2: {
+			SubnetConfigurationBuilder_ec2 subnetConfigurationBuilder_ec2 = (SubnetConfigurationBuilder_ec2) theEObject;
+			T result = caseSubnetConfigurationBuilder_ec2(subnetConfigurationBuilder_ec2);
 			if (result == null)
-				result = caseServiceResources(portBuilder_ec2);
-			if (result == null)
-				result = defaultCase(theEObject);
-			return result;
-		}
-		case AwsworkbenchPackage.PRIVATE_SUBNET_BUILDER_EC2: {
-			PrivateSubnetBuilder_ec2 privateSubnetBuilder_ec2 = (PrivateSubnetBuilder_ec2) theEObject;
-			T result = casePrivateSubnetBuilder_ec2(privateSubnetBuilder_ec2);
-			if (result == null)
-				result = caseServiceResources(privateSubnetBuilder_ec2);
+				result = caseServiceResources(subnetConfigurationBuilder_ec2);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
 		}
-		case AwsworkbenchPackage.PUBLIC_SUBNET_BUILDER_EC2: {
-			PublicSubnetBuilder_ec2 publicSubnetBuilder_ec2 = (PublicSubnetBuilder_ec2) theEObject;
-			T result = casePublicSubnetBuilder_ec2(publicSubnetBuilder_ec2);
+		case AwsworkbenchPackage.VPN_CONNECTION_OPTIONS_BUILDER_EC2: {
+			VpnConnectionOptionsBuilder_ec2 vpnConnectionOptionsBuilder_ec2 = (VpnConnectionOptionsBuilder_ec2) theEObject;
+			T result = caseVpnConnectionOptionsBuilder_ec2(vpnConnectionOptionsBuilder_ec2);
 			if (result == null)
-				result = caseServiceResources(publicSubnetBuilder_ec2);
+				result = caseServiceResources(vpnConnectionOptionsBuilder_ec2);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.VPN_TUNNEL_OPTION_BUILDER_EC2: {
+			VpnTunnelOptionBuilder_ec2 vpnTunnelOptionBuilder_ec2 = (VpnTunnelOptionBuilder_ec2) theEObject;
+			T result = caseVpnTunnelOptionBuilder_ec2(vpnTunnelOptionBuilder_ec2);
+			if (result == null)
+				result = caseServiceResources(vpnTunnelOptionBuilder_ec2);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -153,6 +165,21 @@ public class AwsworkbenchSwitch<T> extends Switch<T> {
 		default:
 			return defaultCase(theEObject);
 		}
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Service Resources</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Service Resources</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseServiceResources(ServiceResources object) {
+		return null;
 	}
 
 	/**
@@ -167,6 +194,51 @@ public class AwsworkbenchSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseAppBuilder_core(AppBuilder_core object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Default Stack Synthesizer Builder core</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Default Stack Synthesizer Builder core</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseDefaultStackSynthesizerBuilder_core(DefaultStackSynthesizerBuilder_core object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Environment Builder core</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Environment Builder core</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseEnvironmentBuilder_core(EnvironmentBuilder_core object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Flow Log Options Builder ec2</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Flow Log Options Builder ec2</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseFlowLogOptionsBuilder_ec2(FlowLogOptionsBuilder_ec2 object) {
 		return null;
 	}
 
@@ -201,21 +273,6 @@ public class AwsworkbenchSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Service Resources</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Service Resources</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseServiceResources(ServiceResources object) {
-		return null;
-	}
-
-	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Subnet Builder ec2</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -231,77 +288,62 @@ public class AwsworkbenchSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Instance Builder ec2</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Subnet Selection Builder ec2</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Instance Builder ec2</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Subnet Selection Builder ec2</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseInstanceBuilder_ec2(InstanceBuilder_ec2 object) {
+	public T caseSubnetSelectionBuilder_ec2(SubnetSelectionBuilder_ec2 object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Security Group Builder ec2</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Subnet Configuration Builder ec2</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Security Group Builder ec2</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Subnet Configuration Builder ec2</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseSecurityGroupBuilder_ec2(SecurityGroupBuilder_ec2 object) {
+	public T caseSubnetConfigurationBuilder_ec2(SubnetConfigurationBuilder_ec2 object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Port Builder ec2</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Vpn Connection Options Builder ec2</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Port Builder ec2</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Vpn Connection Options Builder ec2</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T casePortBuilder_ec2(PortBuilder_ec2 object) {
+	public T caseVpnConnectionOptionsBuilder_ec2(VpnConnectionOptionsBuilder_ec2 object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Private Subnet Builder ec2</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Vpn Tunnel Option Builder ec2</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Private Subnet Builder ec2</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Vpn Tunnel Option Builder ec2</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T casePrivateSubnetBuilder_ec2(PrivateSubnetBuilder_ec2 object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Public Subnet Builder ec2</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Public Subnet Builder ec2</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T casePublicSubnetBuilder_ec2(PublicSubnetBuilder_ec2 object) {
+	public T caseVpnTunnelOptionBuilder_ec2(VpnTunnelOptionBuilder_ec2 object) {
 		return null;
 	}
 

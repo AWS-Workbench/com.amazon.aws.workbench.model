@@ -13,29 +13,30 @@ import org.eclipse.emf.common.util.EList;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder_ec2#getCidr <em>Cidr</em>}</li>
- *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder_ec2#getDefaultInstanceTenancy <em>Default Instance Tenancy</em>}</li>
- *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder_ec2#getEnableDnsHostnames <em>Enable Dns Hostnames</em>}</li>
- *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder_ec2#getEnableDnsSupport <em>Enable Dns Support</em>}</li>
- *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder_ec2#getFlowLogsAsMap <em>Flow Logs As Map</em>}</li>
- *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder_ec2#getGatewayEndpointsAsMap <em>Gateway Endpoints As Map</em>}</li>
- *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder_ec2#getMaxAzs <em>Max Azs</em>}</li>
- *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder_ec2#getNatGatewayProviderWithNatProviderAsReference <em>Nat Gateway Provider With Nat Provider As Reference</em>}</li>
- *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder_ec2#getNatGateways <em>Nat Gateways</em>}</li>
- *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder_ec2#getNatGatewaySubnetsWithSubnetSelectionAsReference <em>Nat Gateway Subnets With Subnet Selection As Reference</em>}</li>
- *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder_ec2#getSubnetConfigurationAsList <em>Subnet Configuration As List</em>}</li>
- *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder_ec2#getVpnConnectionsAsMap <em>Vpn Connections As Map</em>}</li>
- *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder_ec2#getVpnGateway <em>Vpn Gateway</em>}</li>
- *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder_ec2#getVpnGatewayAsn <em>Vpn Gateway Asn</em>}</li>
- *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder_ec2#getVpnRoutePropagationAsList <em>Vpn Route Propagation As List</em>}</li>
+ *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder_ec2#getCidr_java_lang_String_ <em>Cidr java lang String </em>}</li>
+ *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder_ec2#getDefaultInstanceTenancy_software_amazon_awscdk_services_ec2_DefaultInstanceTenancy_ <em>Default Instance Tenancy software amazon awscdk services ec2 Default Instance Tenancy </em>}</li>
+ *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder_ec2#getEnableDnsHostnames_java_lang_Boolean_ <em>Enable Dns Hostnames java lang Boolean </em>}</li>
+ *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder_ec2#getEnableDnsSupport_java_lang_Boolean_ <em>Enable Dns Support java lang Boolean </em>}</li>
+ *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder_ec2#getFlowLogs_java_lang_String__software_amazon_awscdk_services_ec2_FlowLogOptions_AsMap <em>Flow Logs java lang String software amazon awscdk services ec2 Flow Log Options As Map</em>}</li>
+ *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder_ec2#getGatewayEndpoints_java_lang_String__software_amazon_awscdk_services_ec2_GatewayVpcEndpointOptions_AsMap <em>Gateway Endpoints java lang String software amazon awscdk services ec2 Gateway Vpc Endpoint Options As Map</em>}</li>
+ *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder_ec2#getMaxAzs_java_lang_Number_ <em>Max Azs java lang Number </em>}</li>
+ *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder_ec2#getNatGatewayProviderWithNatProvider_software_amazon_awscdk_services_ec2_NatProvider_AsReference <em>Nat Gateway Provider With Nat Provider software amazon awscdk services ec2 Nat Provider As Reference</em>}</li>
+ *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder_ec2#getNatGateways_java_lang_Number_ <em>Nat Gateways java lang Number </em>}</li>
+ *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder_ec2#getNatGatewaySubnetsWithSubnetSelection_software_amazon_awscdk_services_ec2_SubnetSelection_AsReference <em>Nat Gateway Subnets With Subnet Selection software amazon awscdk services ec2 Subnet Selection As Reference</em>}</li>
+ *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder_ec2#getSubnetConfiguration_software_amazon_awscdk_services_ec2_SubnetConfiguration_AsList <em>Subnet Configuration software amazon awscdk services ec2 Subnet Configuration As List</em>}</li>
+ *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder_ec2#getVpnConnections_java_lang_String__software_amazon_awscdk_services_ec2_VpnConnectionOptions_AsMap <em>Vpn Connections java lang String software amazon awscdk services ec2 Vpn Connection Options As Map</em>}</li>
+ *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder_ec2#getVpnGateway_java_lang_Boolean_ <em>Vpn Gateway java lang Boolean </em>}</li>
+ *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder_ec2#getVpnGatewayAsn_java_lang_Number_ <em>Vpn Gateway Asn java lang Number </em>}</li>
+ *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder_ec2#getVpnRoutePropagation_software_amazon_awscdk_services_ec2_SubnetSelection_AsList <em>Vpn Route Propagation software amazon awscdk services ec2 Subnet Selection As List</em>}</li>
  *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder_ec2#getGeneratedClassName <em>Generated Class Name</em>}</li>
  *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder_ec2#getVarName <em>Var Name</em>}</li>
  *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder_ec2#getIdentifier <em>Identifier</em>}</li>
  *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder_ec2#getAdditionalCode <em>Additional Code</em>}</li>
  *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder_ec2#getSubnetbuilder_ec2 <em>Subnetbuilder ec2</em>}</li>
- *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder_ec2#getSecuritygroupbuilder_ec2 <em>Securitygroupbuilder ec2</em>}</li>
- *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder_ec2#getPrivatesubnetbuilder_ec2 <em>Privatesubnetbuilder ec2</em>}</li>
- *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder_ec2#getPublicsubnetbuilder_ec2 <em>Publicsubnetbuilder ec2</em>}</li>
+ *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder_ec2#getSubnetselectionbuilder_ec2 <em>Subnetselectionbuilder ec2</em>}</li>
+ *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder_ec2#getSubnetconfigurationbuilder_ec2 <em>Subnetconfigurationbuilder ec2</em>}</li>
+ *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder_ec2#getVpntunneloptionbuilder_ec2 <em>Vpntunneloptionbuilder ec2</em>}</li>
+ *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder_ec2#getVpnconnectionoptionsbuilder_ec2 <em>Vpnconnectionoptionsbuilder ec2</em>}</li>
  * </ul>
  *
  * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getVpcBuilder_ec2()
@@ -44,337 +45,341 @@ import org.eclipse.emf.common.util.EList;
  */
 public interface VpcBuilder_ec2 extends ServiceResources {
 	/**
-	 * Returns the value of the '<em><b>Cidr</b></em>' attribute.
+	 * Returns the value of the '<em><b>Cidr java lang String </b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Cidr</em>' attribute.
-	 * @see #setCidr(String)
-	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getVpcBuilder_ec2_Cidr()
+	 * @return the value of the '<em>Cidr java lang String </em>' attribute.
+	 * @see #setCidr_java_lang_String_(String)
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getVpcBuilder_ec2_Cidr_java_lang_String_()
 	 * @model
 	 * @generated
 	 */
-	String getCidr();
+	String getCidr_java_lang_String_();
 
 	/**
-	 * Sets the value of the '{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder_ec2#getCidr <em>Cidr</em>}' attribute.
+	 * Sets the value of the '{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder_ec2#getCidr_java_lang_String_ <em>Cidr java lang String </em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Cidr</em>' attribute.
-	 * @see #getCidr()
+	 * @param value the new value of the '<em>Cidr java lang String </em>' attribute.
+	 * @see #getCidr_java_lang_String_()
 	 * @generated
 	 */
-	void setCidr(String value);
+	void setCidr_java_lang_String_(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Default Instance Tenancy</b></em>' attribute.
+	 * Returns the value of the '<em><b>Default Instance Tenancy software amazon awscdk services ec2 Default Instance Tenancy </b></em>' attribute.
 	 * The literals are from the enumeration {@link com.amazon.aws.workbench.model.awsworkbench.DefaultInstanceTenancy}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Default Instance Tenancy</em>' attribute.
+	 * @return the value of the '<em>Default Instance Tenancy software amazon awscdk services ec2 Default Instance Tenancy </em>' attribute.
 	 * @see com.amazon.aws.workbench.model.awsworkbench.DefaultInstanceTenancy
-	 * @see #setDefaultInstanceTenancy(DefaultInstanceTenancy)
-	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getVpcBuilder_ec2_DefaultInstanceTenancy()
+	 * @see #setDefaultInstanceTenancy_software_amazon_awscdk_services_ec2_DefaultInstanceTenancy_(com.amazon.aws.workbench.model.awsworkbench.DefaultInstanceTenancy)
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getVpcBuilder_ec2_DefaultInstanceTenancy_software_amazon_awscdk_services_ec2_DefaultInstanceTenancy_()
 	 * @model dataType="com.amazon.aws.workbench.model.awsworkbench.DefaultInstanceTenancy"
 	 * @generated
 	 */
-	DefaultInstanceTenancy getDefaultInstanceTenancy();
+	com.amazon.aws.workbench.model.awsworkbench.DefaultInstanceTenancy getDefaultInstanceTenancy_software_amazon_awscdk_services_ec2_DefaultInstanceTenancy_();
 
 	/**
-	 * Sets the value of the '{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder_ec2#getDefaultInstanceTenancy <em>Default Instance Tenancy</em>}' attribute.
+	 * Sets the value of the '{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder_ec2#getDefaultInstanceTenancy_software_amazon_awscdk_services_ec2_DefaultInstanceTenancy_ <em>Default Instance Tenancy software amazon awscdk services ec2 Default Instance Tenancy </em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Default Instance Tenancy</em>' attribute.
+	 * @param value the new value of the '<em>Default Instance Tenancy software amazon awscdk services ec2 Default Instance Tenancy </em>' attribute.
 	 * @see com.amazon.aws.workbench.model.awsworkbench.DefaultInstanceTenancy
-	 * @see #getDefaultInstanceTenancy()
+	 * @see #getDefaultInstanceTenancy_software_amazon_awscdk_services_ec2_DefaultInstanceTenancy_()
 	 * @generated
 	 */
-	void setDefaultInstanceTenancy(DefaultInstanceTenancy value);
+	void setDefaultInstanceTenancy_software_amazon_awscdk_services_ec2_DefaultInstanceTenancy_(
+			com.amazon.aws.workbench.model.awsworkbench.DefaultInstanceTenancy value);
 
 	/**
-	 * Returns the value of the '<em><b>Enable Dns Hostnames</b></em>' attribute.
+	 * Returns the value of the '<em><b>Enable Dns Hostnames java lang Boolean </b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Enable Dns Hostnames</em>' attribute.
-	 * @see #setEnableDnsHostnames(Boolean)
-	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getVpcBuilder_ec2_EnableDnsHostnames()
+	 * @return the value of the '<em>Enable Dns Hostnames java lang Boolean </em>' attribute.
+	 * @see #setEnableDnsHostnames_java_lang_Boolean_(Boolean)
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getVpcBuilder_ec2_EnableDnsHostnames_java_lang_Boolean_()
 	 * @model
 	 * @generated
 	 */
-	Boolean getEnableDnsHostnames();
+	Boolean getEnableDnsHostnames_java_lang_Boolean_();
 
 	/**
-	 * Sets the value of the '{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder_ec2#getEnableDnsHostnames <em>Enable Dns Hostnames</em>}' attribute.
+	 * Sets the value of the '{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder_ec2#getEnableDnsHostnames_java_lang_Boolean_ <em>Enable Dns Hostnames java lang Boolean </em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Enable Dns Hostnames</em>' attribute.
-	 * @see #getEnableDnsHostnames()
+	 * @param value the new value of the '<em>Enable Dns Hostnames java lang Boolean </em>' attribute.
+	 * @see #getEnableDnsHostnames_java_lang_Boolean_()
 	 * @generated
 	 */
-	void setEnableDnsHostnames(Boolean value);
+	void setEnableDnsHostnames_java_lang_Boolean_(Boolean value);
 
 	/**
-	 * Returns the value of the '<em><b>Enable Dns Support</b></em>' attribute.
+	 * Returns the value of the '<em><b>Enable Dns Support java lang Boolean </b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Enable Dns Support</em>' attribute.
-	 * @see #setEnableDnsSupport(Boolean)
-	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getVpcBuilder_ec2_EnableDnsSupport()
+	 * @return the value of the '<em>Enable Dns Support java lang Boolean </em>' attribute.
+	 * @see #setEnableDnsSupport_java_lang_Boolean_(Boolean)
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getVpcBuilder_ec2_EnableDnsSupport_java_lang_Boolean_()
 	 * @model
 	 * @generated
 	 */
-	Boolean getEnableDnsSupport();
+	Boolean getEnableDnsSupport_java_lang_Boolean_();
 
 	/**
-	 * Sets the value of the '{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder_ec2#getEnableDnsSupport <em>Enable Dns Support</em>}' attribute.
+	 * Sets the value of the '{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder_ec2#getEnableDnsSupport_java_lang_Boolean_ <em>Enable Dns Support java lang Boolean </em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Enable Dns Support</em>' attribute.
-	 * @see #getEnableDnsSupport()
+	 * @param value the new value of the '<em>Enable Dns Support java lang Boolean </em>' attribute.
+	 * @see #getEnableDnsSupport_java_lang_Boolean_()
 	 * @generated
 	 */
-	void setEnableDnsSupport(Boolean value);
+	void setEnableDnsSupport_java_lang_Boolean_(Boolean value);
 
 	/**
-	 * Returns the value of the '<em><b>Flow Logs As Map</b></em>' attribute.
+	 * Returns the value of the '<em><b>Flow Logs java lang String software amazon awscdk services ec2 Flow Log Options As Map</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Flow Logs As Map</em>' attribute.
-	 * @see #setFlowLogsAsMap(String)
-	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getVpcBuilder_ec2_FlowLogsAsMap()
+	 * @return the value of the '<em>Flow Logs java lang String software amazon awscdk services ec2 Flow Log Options As Map</em>' attribute.
+	 * @see #setFlowLogs_java_lang_String__software_amazon_awscdk_services_ec2_FlowLogOptions_AsMap(String)
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getVpcBuilder_ec2_FlowLogs_java_lang_String__software_amazon_awscdk_services_ec2_FlowLogOptions_AsMap()
 	 * @model
 	 * @generated
 	 */
-	String getFlowLogsAsMap();
+	String getFlowLogs_java_lang_String__software_amazon_awscdk_services_ec2_FlowLogOptions_AsMap();
 
 	/**
-	 * Sets the value of the '{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder_ec2#getFlowLogsAsMap <em>Flow Logs As Map</em>}' attribute.
+	 * Sets the value of the '{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder_ec2#getFlowLogs_java_lang_String__software_amazon_awscdk_services_ec2_FlowLogOptions_AsMap <em>Flow Logs java lang String software amazon awscdk services ec2 Flow Log Options As Map</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Flow Logs As Map</em>' attribute.
-	 * @see #getFlowLogsAsMap()
+	 * @param value the new value of the '<em>Flow Logs java lang String software amazon awscdk services ec2 Flow Log Options As Map</em>' attribute.
+	 * @see #getFlowLogs_java_lang_String__software_amazon_awscdk_services_ec2_FlowLogOptions_AsMap()
 	 * @generated
 	 */
-	void setFlowLogsAsMap(String value);
+	void setFlowLogs_java_lang_String__software_amazon_awscdk_services_ec2_FlowLogOptions_AsMap(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Gateway Endpoints As Map</b></em>' attribute.
+	 * Returns the value of the '<em><b>Gateway Endpoints java lang String software amazon awscdk services ec2 Gateway Vpc Endpoint Options As Map</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Gateway Endpoints As Map</em>' attribute.
-	 * @see #setGatewayEndpointsAsMap(String)
-	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getVpcBuilder_ec2_GatewayEndpointsAsMap()
+	 * @return the value of the '<em>Gateway Endpoints java lang String software amazon awscdk services ec2 Gateway Vpc Endpoint Options As Map</em>' attribute.
+	 * @see #setGatewayEndpoints_java_lang_String__software_amazon_awscdk_services_ec2_GatewayVpcEndpointOptions_AsMap(String)
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getVpcBuilder_ec2_GatewayEndpoints_java_lang_String__software_amazon_awscdk_services_ec2_GatewayVpcEndpointOptions_AsMap()
 	 * @model
 	 * @generated
 	 */
-	String getGatewayEndpointsAsMap();
+	String getGatewayEndpoints_java_lang_String__software_amazon_awscdk_services_ec2_GatewayVpcEndpointOptions_AsMap();
 
 	/**
-	 * Sets the value of the '{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder_ec2#getGatewayEndpointsAsMap <em>Gateway Endpoints As Map</em>}' attribute.
+	 * Sets the value of the '{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder_ec2#getGatewayEndpoints_java_lang_String__software_amazon_awscdk_services_ec2_GatewayVpcEndpointOptions_AsMap <em>Gateway Endpoints java lang String software amazon awscdk services ec2 Gateway Vpc Endpoint Options As Map</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Gateway Endpoints As Map</em>' attribute.
-	 * @see #getGatewayEndpointsAsMap()
+	 * @param value the new value of the '<em>Gateway Endpoints java lang String software amazon awscdk services ec2 Gateway Vpc Endpoint Options As Map</em>' attribute.
+	 * @see #getGatewayEndpoints_java_lang_String__software_amazon_awscdk_services_ec2_GatewayVpcEndpointOptions_AsMap()
 	 * @generated
 	 */
-	void setGatewayEndpointsAsMap(String value);
+	void setGatewayEndpoints_java_lang_String__software_amazon_awscdk_services_ec2_GatewayVpcEndpointOptions_AsMap(
+			String value);
 
 	/**
-	 * Returns the value of the '<em><b>Max Azs</b></em>' attribute.
+	 * Returns the value of the '<em><b>Max Azs java lang Number </b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Max Azs</em>' attribute.
-	 * @see #setMaxAzs(int)
-	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getVpcBuilder_ec2_MaxAzs()
+	 * @return the value of the '<em>Max Azs java lang Number </em>' attribute.
+	 * @see #setMaxAzs_java_lang_Number_(int)
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getVpcBuilder_ec2_MaxAzs_java_lang_Number_()
 	 * @model
 	 * @generated
 	 */
-	int getMaxAzs();
+	int getMaxAzs_java_lang_Number_();
 
 	/**
-	 * Sets the value of the '{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder_ec2#getMaxAzs <em>Max Azs</em>}' attribute.
+	 * Sets the value of the '{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder_ec2#getMaxAzs_java_lang_Number_ <em>Max Azs java lang Number </em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Max Azs</em>' attribute.
-	 * @see #getMaxAzs()
+	 * @param value the new value of the '<em>Max Azs java lang Number </em>' attribute.
+	 * @see #getMaxAzs_java_lang_Number_()
 	 * @generated
 	 */
-	void setMaxAzs(int value);
+	void setMaxAzs_java_lang_Number_(int value);
 
 	/**
-	 * Returns the value of the '<em><b>Nat Gateway Provider With Nat Provider As Reference</b></em>' attribute.
+	 * Returns the value of the '<em><b>Nat Gateway Provider With Nat Provider software amazon awscdk services ec2 Nat Provider As Reference</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Nat Gateway Provider With Nat Provider As Reference</em>' attribute.
-	 * @see #setNatGatewayProviderWithNatProviderAsReference(String)
-	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getVpcBuilder_ec2_NatGatewayProviderWithNatProviderAsReference()
+	 * @return the value of the '<em>Nat Gateway Provider With Nat Provider software amazon awscdk services ec2 Nat Provider As Reference</em>' attribute.
+	 * @see #setNatGatewayProviderWithNatProvider_software_amazon_awscdk_services_ec2_NatProvider_AsReference(String)
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getVpcBuilder_ec2_NatGatewayProviderWithNatProvider_software_amazon_awscdk_services_ec2_NatProvider_AsReference()
 	 * @model
 	 * @generated
 	 */
-	String getNatGatewayProviderWithNatProviderAsReference();
+	String getNatGatewayProviderWithNatProvider_software_amazon_awscdk_services_ec2_NatProvider_AsReference();
 
 	/**
-	 * Sets the value of the '{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder_ec2#getNatGatewayProviderWithNatProviderAsReference <em>Nat Gateway Provider With Nat Provider As Reference</em>}' attribute.
+	 * Sets the value of the '{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder_ec2#getNatGatewayProviderWithNatProvider_software_amazon_awscdk_services_ec2_NatProvider_AsReference <em>Nat Gateway Provider With Nat Provider software amazon awscdk services ec2 Nat Provider As Reference</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Nat Gateway Provider With Nat Provider As Reference</em>' attribute.
-	 * @see #getNatGatewayProviderWithNatProviderAsReference()
+	 * @param value the new value of the '<em>Nat Gateway Provider With Nat Provider software amazon awscdk services ec2 Nat Provider As Reference</em>' attribute.
+	 * @see #getNatGatewayProviderWithNatProvider_software_amazon_awscdk_services_ec2_NatProvider_AsReference()
 	 * @generated
 	 */
-	void setNatGatewayProviderWithNatProviderAsReference(String value);
+	void setNatGatewayProviderWithNatProvider_software_amazon_awscdk_services_ec2_NatProvider_AsReference(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Nat Gateways</b></em>' attribute.
+	 * Returns the value of the '<em><b>Nat Gateways java lang Number </b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Nat Gateways</em>' attribute.
-	 * @see #setNatGateways(int)
-	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getVpcBuilder_ec2_NatGateways()
+	 * @return the value of the '<em>Nat Gateways java lang Number </em>' attribute.
+	 * @see #setNatGateways_java_lang_Number_(int)
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getVpcBuilder_ec2_NatGateways_java_lang_Number_()
 	 * @model
 	 * @generated
 	 */
-	int getNatGateways();
+	int getNatGateways_java_lang_Number_();
 
 	/**
-	 * Sets the value of the '{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder_ec2#getNatGateways <em>Nat Gateways</em>}' attribute.
+	 * Sets the value of the '{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder_ec2#getNatGateways_java_lang_Number_ <em>Nat Gateways java lang Number </em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Nat Gateways</em>' attribute.
-	 * @see #getNatGateways()
+	 * @param value the new value of the '<em>Nat Gateways java lang Number </em>' attribute.
+	 * @see #getNatGateways_java_lang_Number_()
 	 * @generated
 	 */
-	void setNatGateways(int value);
+	void setNatGateways_java_lang_Number_(int value);
 
 	/**
-	 * Returns the value of the '<em><b>Nat Gateway Subnets With Subnet Selection As Reference</b></em>' attribute.
+	 * Returns the value of the '<em><b>Nat Gateway Subnets With Subnet Selection software amazon awscdk services ec2 Subnet Selection As Reference</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Nat Gateway Subnets With Subnet Selection As Reference</em>' attribute.
-	 * @see #setNatGatewaySubnetsWithSubnetSelectionAsReference(String)
-	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getVpcBuilder_ec2_NatGatewaySubnetsWithSubnetSelectionAsReference()
+	 * @return the value of the '<em>Nat Gateway Subnets With Subnet Selection software amazon awscdk services ec2 Subnet Selection As Reference</em>' attribute.
+	 * @see #setNatGatewaySubnetsWithSubnetSelection_software_amazon_awscdk_services_ec2_SubnetSelection_AsReference(String)
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getVpcBuilder_ec2_NatGatewaySubnetsWithSubnetSelection_software_amazon_awscdk_services_ec2_SubnetSelection_AsReference()
 	 * @model
 	 * @generated
 	 */
-	String getNatGatewaySubnetsWithSubnetSelectionAsReference();
+	String getNatGatewaySubnetsWithSubnetSelection_software_amazon_awscdk_services_ec2_SubnetSelection_AsReference();
 
 	/**
-	 * Sets the value of the '{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder_ec2#getNatGatewaySubnetsWithSubnetSelectionAsReference <em>Nat Gateway Subnets With Subnet Selection As Reference</em>}' attribute.
+	 * Sets the value of the '{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder_ec2#getNatGatewaySubnetsWithSubnetSelection_software_amazon_awscdk_services_ec2_SubnetSelection_AsReference <em>Nat Gateway Subnets With Subnet Selection software amazon awscdk services ec2 Subnet Selection As Reference</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Nat Gateway Subnets With Subnet Selection As Reference</em>' attribute.
-	 * @see #getNatGatewaySubnetsWithSubnetSelectionAsReference()
+	 * @param value the new value of the '<em>Nat Gateway Subnets With Subnet Selection software amazon awscdk services ec2 Subnet Selection As Reference</em>' attribute.
+	 * @see #getNatGatewaySubnetsWithSubnetSelection_software_amazon_awscdk_services_ec2_SubnetSelection_AsReference()
 	 * @generated
 	 */
-	void setNatGatewaySubnetsWithSubnetSelectionAsReference(String value);
+	void setNatGatewaySubnetsWithSubnetSelection_software_amazon_awscdk_services_ec2_SubnetSelection_AsReference(
+			String value);
 
 	/**
-	 * Returns the value of the '<em><b>Subnet Configuration As List</b></em>' attribute.
+	 * Returns the value of the '<em><b>Subnet Configuration software amazon awscdk services ec2 Subnet Configuration As List</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Subnet Configuration As List</em>' attribute.
-	 * @see #setSubnetConfigurationAsList(String)
-	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getVpcBuilder_ec2_SubnetConfigurationAsList()
+	 * @return the value of the '<em>Subnet Configuration software amazon awscdk services ec2 Subnet Configuration As List</em>' attribute.
+	 * @see #setSubnetConfiguration_software_amazon_awscdk_services_ec2_SubnetConfiguration_AsList(String)
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getVpcBuilder_ec2_SubnetConfiguration_software_amazon_awscdk_services_ec2_SubnetConfiguration_AsList()
 	 * @model
 	 * @generated
 	 */
-	String getSubnetConfigurationAsList();
+	String getSubnetConfiguration_software_amazon_awscdk_services_ec2_SubnetConfiguration_AsList();
 
 	/**
-	 * Sets the value of the '{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder_ec2#getSubnetConfigurationAsList <em>Subnet Configuration As List</em>}' attribute.
+	 * Sets the value of the '{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder_ec2#getSubnetConfiguration_software_amazon_awscdk_services_ec2_SubnetConfiguration_AsList <em>Subnet Configuration software amazon awscdk services ec2 Subnet Configuration As List</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Subnet Configuration As List</em>' attribute.
-	 * @see #getSubnetConfigurationAsList()
+	 * @param value the new value of the '<em>Subnet Configuration software amazon awscdk services ec2 Subnet Configuration As List</em>' attribute.
+	 * @see #getSubnetConfiguration_software_amazon_awscdk_services_ec2_SubnetConfiguration_AsList()
 	 * @generated
 	 */
-	void setSubnetConfigurationAsList(String value);
+	void setSubnetConfiguration_software_amazon_awscdk_services_ec2_SubnetConfiguration_AsList(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Vpn Connections As Map</b></em>' attribute.
+	 * Returns the value of the '<em><b>Vpn Connections java lang String software amazon awscdk services ec2 Vpn Connection Options As Map</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Vpn Connections As Map</em>' attribute.
-	 * @see #setVpnConnectionsAsMap(String)
-	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getVpcBuilder_ec2_VpnConnectionsAsMap()
+	 * @return the value of the '<em>Vpn Connections java lang String software amazon awscdk services ec2 Vpn Connection Options As Map</em>' attribute.
+	 * @see #setVpnConnections_java_lang_String__software_amazon_awscdk_services_ec2_VpnConnectionOptions_AsMap(String)
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getVpcBuilder_ec2_VpnConnections_java_lang_String__software_amazon_awscdk_services_ec2_VpnConnectionOptions_AsMap()
 	 * @model
 	 * @generated
 	 */
-	String getVpnConnectionsAsMap();
+	String getVpnConnections_java_lang_String__software_amazon_awscdk_services_ec2_VpnConnectionOptions_AsMap();
 
 	/**
-	 * Sets the value of the '{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder_ec2#getVpnConnectionsAsMap <em>Vpn Connections As Map</em>}' attribute.
+	 * Sets the value of the '{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder_ec2#getVpnConnections_java_lang_String__software_amazon_awscdk_services_ec2_VpnConnectionOptions_AsMap <em>Vpn Connections java lang String software amazon awscdk services ec2 Vpn Connection Options As Map</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Vpn Connections As Map</em>' attribute.
-	 * @see #getVpnConnectionsAsMap()
+	 * @param value the new value of the '<em>Vpn Connections java lang String software amazon awscdk services ec2 Vpn Connection Options As Map</em>' attribute.
+	 * @see #getVpnConnections_java_lang_String__software_amazon_awscdk_services_ec2_VpnConnectionOptions_AsMap()
 	 * @generated
 	 */
-	void setVpnConnectionsAsMap(String value);
+	void setVpnConnections_java_lang_String__software_amazon_awscdk_services_ec2_VpnConnectionOptions_AsMap(
+			String value);
 
 	/**
-	 * Returns the value of the '<em><b>Vpn Gateway</b></em>' attribute.
+	 * Returns the value of the '<em><b>Vpn Gateway java lang Boolean </b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Vpn Gateway</em>' attribute.
-	 * @see #setVpnGateway(Boolean)
-	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getVpcBuilder_ec2_VpnGateway()
+	 * @return the value of the '<em>Vpn Gateway java lang Boolean </em>' attribute.
+	 * @see #setVpnGateway_java_lang_Boolean_(Boolean)
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getVpcBuilder_ec2_VpnGateway_java_lang_Boolean_()
 	 * @model
 	 * @generated
 	 */
-	Boolean getVpnGateway();
+	Boolean getVpnGateway_java_lang_Boolean_();
 
 	/**
-	 * Sets the value of the '{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder_ec2#getVpnGateway <em>Vpn Gateway</em>}' attribute.
+	 * Sets the value of the '{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder_ec2#getVpnGateway_java_lang_Boolean_ <em>Vpn Gateway java lang Boolean </em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Vpn Gateway</em>' attribute.
-	 * @see #getVpnGateway()
+	 * @param value the new value of the '<em>Vpn Gateway java lang Boolean </em>' attribute.
+	 * @see #getVpnGateway_java_lang_Boolean_()
 	 * @generated
 	 */
-	void setVpnGateway(Boolean value);
+	void setVpnGateway_java_lang_Boolean_(Boolean value);
 
 	/**
-	 * Returns the value of the '<em><b>Vpn Gateway Asn</b></em>' attribute.
+	 * Returns the value of the '<em><b>Vpn Gateway Asn java lang Number </b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Vpn Gateway Asn</em>' attribute.
-	 * @see #setVpnGatewayAsn(int)
-	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getVpcBuilder_ec2_VpnGatewayAsn()
+	 * @return the value of the '<em>Vpn Gateway Asn java lang Number </em>' attribute.
+	 * @see #setVpnGatewayAsn_java_lang_Number_(int)
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getVpcBuilder_ec2_VpnGatewayAsn_java_lang_Number_()
 	 * @model
 	 * @generated
 	 */
-	int getVpnGatewayAsn();
+	int getVpnGatewayAsn_java_lang_Number_();
 
 	/**
-	 * Sets the value of the '{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder_ec2#getVpnGatewayAsn <em>Vpn Gateway Asn</em>}' attribute.
+	 * Sets the value of the '{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder_ec2#getVpnGatewayAsn_java_lang_Number_ <em>Vpn Gateway Asn java lang Number </em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Vpn Gateway Asn</em>' attribute.
-	 * @see #getVpnGatewayAsn()
+	 * @param value the new value of the '<em>Vpn Gateway Asn java lang Number </em>' attribute.
+	 * @see #getVpnGatewayAsn_java_lang_Number_()
 	 * @generated
 	 */
-	void setVpnGatewayAsn(int value);
+	void setVpnGatewayAsn_java_lang_Number_(int value);
 
 	/**
-	 * Returns the value of the '<em><b>Vpn Route Propagation As List</b></em>' attribute.
+	 * Returns the value of the '<em><b>Vpn Route Propagation software amazon awscdk services ec2 Subnet Selection As List</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Vpn Route Propagation As List</em>' attribute.
-	 * @see #setVpnRoutePropagationAsList(String)
-	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getVpcBuilder_ec2_VpnRoutePropagationAsList()
+	 * @return the value of the '<em>Vpn Route Propagation software amazon awscdk services ec2 Subnet Selection As List</em>' attribute.
+	 * @see #setVpnRoutePropagation_software_amazon_awscdk_services_ec2_SubnetSelection_AsList(String)
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getVpcBuilder_ec2_VpnRoutePropagation_software_amazon_awscdk_services_ec2_SubnetSelection_AsList()
 	 * @model
 	 * @generated
 	 */
-	String getVpnRoutePropagationAsList();
+	String getVpnRoutePropagation_software_amazon_awscdk_services_ec2_SubnetSelection_AsList();
 
 	/**
-	 * Sets the value of the '{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder_ec2#getVpnRoutePropagationAsList <em>Vpn Route Propagation As List</em>}' attribute.
+	 * Sets the value of the '{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder_ec2#getVpnRoutePropagation_software_amazon_awscdk_services_ec2_SubnetSelection_AsList <em>Vpn Route Propagation software amazon awscdk services ec2 Subnet Selection As List</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Vpn Route Propagation As List</em>' attribute.
-	 * @see #getVpnRoutePropagationAsList()
+	 * @param value the new value of the '<em>Vpn Route Propagation software amazon awscdk services ec2 Subnet Selection As List</em>' attribute.
+	 * @see #getVpnRoutePropagation_software_amazon_awscdk_services_ec2_SubnetSelection_AsList()
 	 * @generated
 	 */
-	void setVpnRoutePropagationAsList(String value);
+	void setVpnRoutePropagation_software_amazon_awscdk_services_ec2_SubnetSelection_AsList(String value);
 
 	/**
 	 * Returns the value of the '<em><b>Generated Class Name</b></em>' attribute.
@@ -467,39 +472,51 @@ public interface VpcBuilder_ec2 extends ServiceResources {
 	EList<SubnetBuilder_ec2> getSubnetbuilder_ec2();
 
 	/**
-	 * Returns the value of the '<em><b>Securitygroupbuilder ec2</b></em>' containment reference list.
-	 * The list contents are of type {@link com.amazon.aws.workbench.model.awsworkbench.SecurityGroupBuilder_ec2}.
+	 * Returns the value of the '<em><b>Subnetselectionbuilder ec2</b></em>' containment reference list.
+	 * The list contents are of type {@link com.amazon.aws.workbench.model.awsworkbench.SubnetSelectionBuilder_ec2}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Securitygroupbuilder ec2</em>' containment reference list.
-	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getVpcBuilder_ec2_Securitygroupbuilder_ec2()
+	 * @return the value of the '<em>Subnetselectionbuilder ec2</em>' containment reference list.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getVpcBuilder_ec2_Subnetselectionbuilder_ec2()
 	 * @model containment="true"
 	 * @generated
 	 */
-	EList<SecurityGroupBuilder_ec2> getSecuritygroupbuilder_ec2();
+	EList<SubnetSelectionBuilder_ec2> getSubnetselectionbuilder_ec2();
 
 	/**
-	 * Returns the value of the '<em><b>Privatesubnetbuilder ec2</b></em>' containment reference list.
-	 * The list contents are of type {@link com.amazon.aws.workbench.model.awsworkbench.PrivateSubnetBuilder_ec2}.
+	 * Returns the value of the '<em><b>Subnetconfigurationbuilder ec2</b></em>' containment reference list.
+	 * The list contents are of type {@link com.amazon.aws.workbench.model.awsworkbench.SubnetConfigurationBuilder_ec2}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Privatesubnetbuilder ec2</em>' containment reference list.
-	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getVpcBuilder_ec2_Privatesubnetbuilder_ec2()
+	 * @return the value of the '<em>Subnetconfigurationbuilder ec2</em>' containment reference list.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getVpcBuilder_ec2_Subnetconfigurationbuilder_ec2()
 	 * @model containment="true"
 	 * @generated
 	 */
-	EList<PrivateSubnetBuilder_ec2> getPrivatesubnetbuilder_ec2();
+	EList<SubnetConfigurationBuilder_ec2> getSubnetconfigurationbuilder_ec2();
 
 	/**
-	 * Returns the value of the '<em><b>Publicsubnetbuilder ec2</b></em>' containment reference list.
-	 * The list contents are of type {@link com.amazon.aws.workbench.model.awsworkbench.PublicSubnetBuilder_ec2}.
+	 * Returns the value of the '<em><b>Vpntunneloptionbuilder ec2</b></em>' containment reference list.
+	 * The list contents are of type {@link com.amazon.aws.workbench.model.awsworkbench.VpnTunnelOptionBuilder_ec2}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Publicsubnetbuilder ec2</em>' containment reference list.
-	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getVpcBuilder_ec2_Publicsubnetbuilder_ec2()
+	 * @return the value of the '<em>Vpntunneloptionbuilder ec2</em>' containment reference list.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getVpcBuilder_ec2_Vpntunneloptionbuilder_ec2()
 	 * @model containment="true"
 	 * @generated
 	 */
-	EList<PublicSubnetBuilder_ec2> getPublicsubnetbuilder_ec2();
+	EList<VpnTunnelOptionBuilder_ec2> getVpntunneloptionbuilder_ec2();
+
+	/**
+	 * Returns the value of the '<em><b>Vpnconnectionoptionsbuilder ec2</b></em>' containment reference list.
+	 * The list contents are of type {@link com.amazon.aws.workbench.model.awsworkbench.VpnConnectionOptionsBuilder_ec2}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Vpnconnectionoptionsbuilder ec2</em>' containment reference list.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getVpcBuilder_ec2_Vpnconnectionoptionsbuilder_ec2()
+	 * @model containment="true"
+	 * @generated
+	 */
+	EList<VpnConnectionOptionsBuilder_ec2> getVpnconnectionoptionsbuilder_ec2();
 
 } // VpcBuilder_ec2

@@ -67,8 +67,28 @@ public class AwsworkbenchAdapterFactory extends AdapterFactoryImpl {
 	 */
 	protected AwsworkbenchSwitch<Adapter> modelSwitch = new AwsworkbenchSwitch<Adapter>() {
 		@Override
+		public Adapter caseServiceResources(ServiceResources object) {
+			return createServiceResourcesAdapter();
+		}
+
+		@Override
 		public Adapter caseAppBuilder_core(AppBuilder_core object) {
 			return createAppBuilder_coreAdapter();
+		}
+
+		@Override
+		public Adapter caseDefaultStackSynthesizerBuilder_core(DefaultStackSynthesizerBuilder_core object) {
+			return createDefaultStackSynthesizerBuilder_coreAdapter();
+		}
+
+		@Override
+		public Adapter caseEnvironmentBuilder_core(EnvironmentBuilder_core object) {
+			return createEnvironmentBuilder_coreAdapter();
+		}
+
+		@Override
+		public Adapter caseFlowLogOptionsBuilder_ec2(FlowLogOptionsBuilder_ec2 object) {
+			return createFlowLogOptionsBuilder_ec2Adapter();
 		}
 
 		@Override
@@ -82,38 +102,28 @@ public class AwsworkbenchAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseServiceResources(ServiceResources object) {
-			return createServiceResourcesAdapter();
-		}
-
-		@Override
 		public Adapter caseSubnetBuilder_ec2(SubnetBuilder_ec2 object) {
 			return createSubnetBuilder_ec2Adapter();
 		}
 
 		@Override
-		public Adapter caseInstanceBuilder_ec2(InstanceBuilder_ec2 object) {
-			return createInstanceBuilder_ec2Adapter();
+		public Adapter caseSubnetSelectionBuilder_ec2(SubnetSelectionBuilder_ec2 object) {
+			return createSubnetSelectionBuilder_ec2Adapter();
 		}
 
 		@Override
-		public Adapter caseSecurityGroupBuilder_ec2(SecurityGroupBuilder_ec2 object) {
-			return createSecurityGroupBuilder_ec2Adapter();
+		public Adapter caseSubnetConfigurationBuilder_ec2(SubnetConfigurationBuilder_ec2 object) {
+			return createSubnetConfigurationBuilder_ec2Adapter();
 		}
 
 		@Override
-		public Adapter casePortBuilder_ec2(PortBuilder_ec2 object) {
-			return createPortBuilder_ec2Adapter();
+		public Adapter caseVpnConnectionOptionsBuilder_ec2(VpnConnectionOptionsBuilder_ec2 object) {
+			return createVpnConnectionOptionsBuilder_ec2Adapter();
 		}
 
 		@Override
-		public Adapter casePrivateSubnetBuilder_ec2(PrivateSubnetBuilder_ec2 object) {
-			return createPrivateSubnetBuilder_ec2Adapter();
-		}
-
-		@Override
-		public Adapter casePublicSubnetBuilder_ec2(PublicSubnetBuilder_ec2 object) {
-			return createPublicSubnetBuilder_ec2Adapter();
+		public Adapter caseVpnTunnelOptionBuilder_ec2(VpnTunnelOptionBuilder_ec2 object) {
+			return createVpnTunnelOptionBuilder_ec2Adapter();
 		}
 
 		@Override
@@ -136,6 +146,20 @@ public class AwsworkbenchAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.ServiceResources <em>Service Resources</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.ServiceResources
+	 * @generated
+	 */
+	public Adapter createServiceResourcesAdapter() {
+		return null;
+	}
+
+	/**
 	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.AppBuilder_core <em>App Builder core</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -146,6 +170,48 @@ public class AwsworkbenchAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createAppBuilder_coreAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.DefaultStackSynthesizerBuilder_core <em>Default Stack Synthesizer Builder core</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.DefaultStackSynthesizerBuilder_core
+	 * @generated
+	 */
+	public Adapter createDefaultStackSynthesizerBuilder_coreAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.EnvironmentBuilder_core <em>Environment Builder core</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.EnvironmentBuilder_core
+	 * @generated
+	 */
+	public Adapter createEnvironmentBuilder_coreAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.FlowLogOptionsBuilder_ec2 <em>Flow Log Options Builder ec2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.FlowLogOptionsBuilder_ec2
+	 * @generated
+	 */
+	public Adapter createFlowLogOptionsBuilder_ec2Adapter() {
 		return null;
 	}
 
@@ -178,20 +244,6 @@ public class AwsworkbenchAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.ServiceResources <em>Service Resources</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see com.amazon.aws.workbench.model.awsworkbench.ServiceResources
-	 * @generated
-	 */
-	public Adapter createServiceResourcesAdapter() {
-		return null;
-	}
-
-	/**
 	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.SubnetBuilder_ec2 <em>Subnet Builder ec2</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -206,72 +258,58 @@ public class AwsworkbenchAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.InstanceBuilder_ec2 <em>Instance Builder ec2</em>}'.
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.SubnetSelectionBuilder_ec2 <em>Subnet Selection Builder ec2</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see com.amazon.aws.workbench.model.awsworkbench.InstanceBuilder_ec2
+	 * @see com.amazon.aws.workbench.model.awsworkbench.SubnetSelectionBuilder_ec2
 	 * @generated
 	 */
-	public Adapter createInstanceBuilder_ec2Adapter() {
+	public Adapter createSubnetSelectionBuilder_ec2Adapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.SecurityGroupBuilder_ec2 <em>Security Group Builder ec2</em>}'.
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.SubnetConfigurationBuilder_ec2 <em>Subnet Configuration Builder ec2</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see com.amazon.aws.workbench.model.awsworkbench.SecurityGroupBuilder_ec2
+	 * @see com.amazon.aws.workbench.model.awsworkbench.SubnetConfigurationBuilder_ec2
 	 * @generated
 	 */
-	public Adapter createSecurityGroupBuilder_ec2Adapter() {
+	public Adapter createSubnetConfigurationBuilder_ec2Adapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.PortBuilder_ec2 <em>Port Builder ec2</em>}'.
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.VpnConnectionOptionsBuilder_ec2 <em>Vpn Connection Options Builder ec2</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see com.amazon.aws.workbench.model.awsworkbench.PortBuilder_ec2
+	 * @see com.amazon.aws.workbench.model.awsworkbench.VpnConnectionOptionsBuilder_ec2
 	 * @generated
 	 */
-	public Adapter createPortBuilder_ec2Adapter() {
+	public Adapter createVpnConnectionOptionsBuilder_ec2Adapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.PrivateSubnetBuilder_ec2 <em>Private Subnet Builder ec2</em>}'.
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.VpnTunnelOptionBuilder_ec2 <em>Vpn Tunnel Option Builder ec2</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see com.amazon.aws.workbench.model.awsworkbench.PrivateSubnetBuilder_ec2
+	 * @see com.amazon.aws.workbench.model.awsworkbench.VpnTunnelOptionBuilder_ec2
 	 * @generated
 	 */
-	public Adapter createPrivateSubnetBuilder_ec2Adapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.PublicSubnetBuilder_ec2 <em>Public Subnet Builder ec2</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see com.amazon.aws.workbench.model.awsworkbench.PublicSubnetBuilder_ec2
-	 * @generated
-	 */
-	public Adapter createPublicSubnetBuilder_ec2Adapter() {
+	public Adapter createVpnTunnelOptionBuilder_ec2Adapter() {
 		return null;
 	}
 

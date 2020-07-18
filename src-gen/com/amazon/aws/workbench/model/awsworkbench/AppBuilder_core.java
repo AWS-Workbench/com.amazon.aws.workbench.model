@@ -15,16 +15,18 @@ import org.eclipse.emf.ecore.EObject;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.AppBuilder_core#getAutoSynth <em>Auto Synth</em>}</li>
- *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.AppBuilder_core#getContextAsMap <em>Context As Map</em>}</li>
- *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.AppBuilder_core#getOutdir <em>Outdir</em>}</li>
- *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.AppBuilder_core#getRuntimeInfo <em>Runtime Info</em>}</li>
- *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.AppBuilder_core#getStackTraces <em>Stack Traces</em>}</li>
- *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.AppBuilder_core#getTreeMetadata <em>Tree Metadata</em>}</li>
+ *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.AppBuilder_core#getAutoSynth_java_lang_Boolean_ <em>Auto Synth java lang Boolean </em>}</li>
+ *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.AppBuilder_core#getContext_java_lang_String__java_lang_String_AsMap <em>Context java lang String java lang String As Map</em>}</li>
+ *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.AppBuilder_core#getOutdir_java_lang_String_ <em>Outdir java lang String </em>}</li>
+ *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.AppBuilder_core#getRuntimeInfo_java_lang_Boolean_ <em>Runtime Info java lang Boolean </em>}</li>
+ *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.AppBuilder_core#getStackTraces_java_lang_Boolean_ <em>Stack Traces java lang Boolean </em>}</li>
+ *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.AppBuilder_core#getTreeMetadata_java_lang_Boolean_ <em>Tree Metadata java lang Boolean </em>}</li>
  *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.AppBuilder_core#getGeneratedClassName <em>Generated Class Name</em>}</li>
  *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.AppBuilder_core#getVarName <em>Var Name</em>}</li>
  *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.AppBuilder_core#getIdentifier <em>Identifier</em>}</li>
  *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.AppBuilder_core#getAdditionalCode <em>Additional Code</em>}</li>
+ *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.AppBuilder_core#getEnvironmentbuilder_core <em>Environmentbuilder core</em>}</li>
+ *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.AppBuilder_core#getDefaultstacksynthesizerbuilder_core <em>Defaultstacksynthesizerbuilder core</em>}</li>
  *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.AppBuilder_core#getStackbuilder_core <em>Stackbuilder core</em>}</li>
  * </ul>
  *
@@ -34,136 +36,136 @@ import org.eclipse.emf.ecore.EObject;
  */
 public interface AppBuilder_core extends EObject {
 	/**
-	 * Returns the value of the '<em><b>Auto Synth</b></em>' attribute.
+	 * Returns the value of the '<em><b>Auto Synth java lang Boolean </b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Auto Synth</em>' attribute.
-	 * @see #setAutoSynth(Boolean)
-	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getAppBuilder_core_AutoSynth()
+	 * @return the value of the '<em>Auto Synth java lang Boolean </em>' attribute.
+	 * @see #setAutoSynth_java_lang_Boolean_(Boolean)
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getAppBuilder_core_AutoSynth_java_lang_Boolean_()
 	 * @model
 	 * @generated
 	 */
-	Boolean getAutoSynth();
+	Boolean getAutoSynth_java_lang_Boolean_();
 
 	/**
-	 * Sets the value of the '{@link com.amazon.aws.workbench.model.awsworkbench.AppBuilder_core#getAutoSynth <em>Auto Synth</em>}' attribute.
+	 * Sets the value of the '{@link com.amazon.aws.workbench.model.awsworkbench.AppBuilder_core#getAutoSynth_java_lang_Boolean_ <em>Auto Synth java lang Boolean </em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Auto Synth</em>' attribute.
-	 * @see #getAutoSynth()
+	 * @param value the new value of the '<em>Auto Synth java lang Boolean </em>' attribute.
+	 * @see #getAutoSynth_java_lang_Boolean_()
 	 * @generated
 	 */
-	void setAutoSynth(Boolean value);
+	void setAutoSynth_java_lang_Boolean_(Boolean value);
 
 	/**
-	 * Returns the value of the '<em><b>Context As Map</b></em>' attribute.
+	 * Returns the value of the '<em><b>Context java lang String java lang String As Map</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Context As Map</em>' attribute.
-	 * @see #setContextAsMap(String)
-	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getAppBuilder_core_ContextAsMap()
+	 * @return the value of the '<em>Context java lang String java lang String As Map</em>' attribute.
+	 * @see #setContext_java_lang_String__java_lang_String_AsMap(String)
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getAppBuilder_core_Context_java_lang_String__java_lang_String_AsMap()
 	 * @model
 	 * @generated
 	 */
-	String getContextAsMap();
+	String getContext_java_lang_String__java_lang_String_AsMap();
 
 	/**
-	 * Sets the value of the '{@link com.amazon.aws.workbench.model.awsworkbench.AppBuilder_core#getContextAsMap <em>Context As Map</em>}' attribute.
+	 * Sets the value of the '{@link com.amazon.aws.workbench.model.awsworkbench.AppBuilder_core#getContext_java_lang_String__java_lang_String_AsMap <em>Context java lang String java lang String As Map</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Context As Map</em>' attribute.
-	 * @see #getContextAsMap()
+	 * @param value the new value of the '<em>Context java lang String java lang String As Map</em>' attribute.
+	 * @see #getContext_java_lang_String__java_lang_String_AsMap()
 	 * @generated
 	 */
-	void setContextAsMap(String value);
+	void setContext_java_lang_String__java_lang_String_AsMap(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Outdir</b></em>' attribute.
+	 * Returns the value of the '<em><b>Outdir java lang String </b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Outdir</em>' attribute.
-	 * @see #setOutdir(String)
-	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getAppBuilder_core_Outdir()
+	 * @return the value of the '<em>Outdir java lang String </em>' attribute.
+	 * @see #setOutdir_java_lang_String_(String)
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getAppBuilder_core_Outdir_java_lang_String_()
 	 * @model
 	 * @generated
 	 */
-	String getOutdir();
+	String getOutdir_java_lang_String_();
 
 	/**
-	 * Sets the value of the '{@link com.amazon.aws.workbench.model.awsworkbench.AppBuilder_core#getOutdir <em>Outdir</em>}' attribute.
+	 * Sets the value of the '{@link com.amazon.aws.workbench.model.awsworkbench.AppBuilder_core#getOutdir_java_lang_String_ <em>Outdir java lang String </em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Outdir</em>' attribute.
-	 * @see #getOutdir()
+	 * @param value the new value of the '<em>Outdir java lang String </em>' attribute.
+	 * @see #getOutdir_java_lang_String_()
 	 * @generated
 	 */
-	void setOutdir(String value);
+	void setOutdir_java_lang_String_(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Runtime Info</b></em>' attribute.
+	 * Returns the value of the '<em><b>Runtime Info java lang Boolean </b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Runtime Info</em>' attribute.
-	 * @see #setRuntimeInfo(Boolean)
-	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getAppBuilder_core_RuntimeInfo()
+	 * @return the value of the '<em>Runtime Info java lang Boolean </em>' attribute.
+	 * @see #setRuntimeInfo_java_lang_Boolean_(Boolean)
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getAppBuilder_core_RuntimeInfo_java_lang_Boolean_()
 	 * @model
 	 * @generated
 	 */
-	Boolean getRuntimeInfo();
+	Boolean getRuntimeInfo_java_lang_Boolean_();
 
 	/**
-	 * Sets the value of the '{@link com.amazon.aws.workbench.model.awsworkbench.AppBuilder_core#getRuntimeInfo <em>Runtime Info</em>}' attribute.
+	 * Sets the value of the '{@link com.amazon.aws.workbench.model.awsworkbench.AppBuilder_core#getRuntimeInfo_java_lang_Boolean_ <em>Runtime Info java lang Boolean </em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Runtime Info</em>' attribute.
-	 * @see #getRuntimeInfo()
+	 * @param value the new value of the '<em>Runtime Info java lang Boolean </em>' attribute.
+	 * @see #getRuntimeInfo_java_lang_Boolean_()
 	 * @generated
 	 */
-	void setRuntimeInfo(Boolean value);
+	void setRuntimeInfo_java_lang_Boolean_(Boolean value);
 
 	/**
-	 * Returns the value of the '<em><b>Stack Traces</b></em>' attribute.
+	 * Returns the value of the '<em><b>Stack Traces java lang Boolean </b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Stack Traces</em>' attribute.
-	 * @see #setStackTraces(Boolean)
-	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getAppBuilder_core_StackTraces()
+	 * @return the value of the '<em>Stack Traces java lang Boolean </em>' attribute.
+	 * @see #setStackTraces_java_lang_Boolean_(Boolean)
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getAppBuilder_core_StackTraces_java_lang_Boolean_()
 	 * @model
 	 * @generated
 	 */
-	Boolean getStackTraces();
+	Boolean getStackTraces_java_lang_Boolean_();
 
 	/**
-	 * Sets the value of the '{@link com.amazon.aws.workbench.model.awsworkbench.AppBuilder_core#getStackTraces <em>Stack Traces</em>}' attribute.
+	 * Sets the value of the '{@link com.amazon.aws.workbench.model.awsworkbench.AppBuilder_core#getStackTraces_java_lang_Boolean_ <em>Stack Traces java lang Boolean </em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Stack Traces</em>' attribute.
-	 * @see #getStackTraces()
+	 * @param value the new value of the '<em>Stack Traces java lang Boolean </em>' attribute.
+	 * @see #getStackTraces_java_lang_Boolean_()
 	 * @generated
 	 */
-	void setStackTraces(Boolean value);
+	void setStackTraces_java_lang_Boolean_(Boolean value);
 
 	/**
-	 * Returns the value of the '<em><b>Tree Metadata</b></em>' attribute.
+	 * Returns the value of the '<em><b>Tree Metadata java lang Boolean </b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Tree Metadata</em>' attribute.
-	 * @see #setTreeMetadata(Boolean)
-	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getAppBuilder_core_TreeMetadata()
+	 * @return the value of the '<em>Tree Metadata java lang Boolean </em>' attribute.
+	 * @see #setTreeMetadata_java_lang_Boolean_(Boolean)
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getAppBuilder_core_TreeMetadata_java_lang_Boolean_()
 	 * @model
 	 * @generated
 	 */
-	Boolean getTreeMetadata();
+	Boolean getTreeMetadata_java_lang_Boolean_();
 
 	/**
-	 * Sets the value of the '{@link com.amazon.aws.workbench.model.awsworkbench.AppBuilder_core#getTreeMetadata <em>Tree Metadata</em>}' attribute.
+	 * Sets the value of the '{@link com.amazon.aws.workbench.model.awsworkbench.AppBuilder_core#getTreeMetadata_java_lang_Boolean_ <em>Tree Metadata java lang Boolean </em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Tree Metadata</em>' attribute.
-	 * @see #getTreeMetadata()
+	 * @param value the new value of the '<em>Tree Metadata java lang Boolean </em>' attribute.
+	 * @see #getTreeMetadata_java_lang_Boolean_()
 	 * @generated
 	 */
-	void setTreeMetadata(Boolean value);
+	void setTreeMetadata_java_lang_Boolean_(Boolean value);
 
 	/**
 	 * Returns the value of the '<em><b>Generated Class Name</b></em>' attribute.
@@ -242,6 +244,30 @@ public interface AppBuilder_core extends EObject {
 	 * @generated
 	 */
 	void setAdditionalCode(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Environmentbuilder core</b></em>' containment reference list.
+	 * The list contents are of type {@link com.amazon.aws.workbench.model.awsworkbench.EnvironmentBuilder_core}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Environmentbuilder core</em>' containment reference list.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getAppBuilder_core_Environmentbuilder_core()
+	 * @model containment="true"
+	 * @generated
+	 */
+	EList<EnvironmentBuilder_core> getEnvironmentbuilder_core();
+
+	/**
+	 * Returns the value of the '<em><b>Defaultstacksynthesizerbuilder core</b></em>' containment reference list.
+	 * The list contents are of type {@link com.amazon.aws.workbench.model.awsworkbench.DefaultStackSynthesizerBuilder_core}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Defaultstacksynthesizerbuilder core</em>' containment reference list.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getAppBuilder_core_Defaultstacksynthesizerbuilder_core()
+	 * @model containment="true"
+	 * @generated
+	 */
+	EList<DefaultStackSynthesizerBuilder_core> getDefaultstacksynthesizerbuilder_core();
 
 	/**
 	 * Returns the value of the '<em><b>Stackbuilder core</b></em>' containment reference list.

@@ -31,6 +31,33 @@ public interface AwsworkbenchFactory extends EFactory {
 	AppBuilder_core createAppBuilder_core();
 
 	/**
+	 * Returns a new object of class '<em>Default Stack Synthesizer Builder core</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Default Stack Synthesizer Builder core</em>'.
+	 * @generated
+	 */
+	DefaultStackSynthesizerBuilder_core createDefaultStackSynthesizerBuilder_core();
+
+	/**
+	 * Returns a new object of class '<em>Environment Builder core</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Environment Builder core</em>'.
+	 * @generated
+	 */
+	EnvironmentBuilder_core createEnvironmentBuilder_core();
+
+	/**
+	 * Returns a new object of class '<em>Flow Log Options Builder ec2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Flow Log Options Builder ec2</em>'.
+	 * @generated
+	 */
+	FlowLogOptionsBuilder_ec2 createFlowLogOptionsBuilder_ec2();
+
+	/**
 	 * Returns a new object of class '<em>Stack Builder core</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -58,49 +85,40 @@ public interface AwsworkbenchFactory extends EFactory {
 	SubnetBuilder_ec2 createSubnetBuilder_ec2();
 
 	/**
-	 * Returns a new object of class '<em>Instance Builder ec2</em>'.
+	 * Returns a new object of class '<em>Subnet Selection Builder ec2</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Instance Builder ec2</em>'.
+	 * @return a new object of class '<em>Subnet Selection Builder ec2</em>'.
 	 * @generated
 	 */
-	InstanceBuilder_ec2 createInstanceBuilder_ec2();
+	SubnetSelectionBuilder_ec2 createSubnetSelectionBuilder_ec2();
 
 	/**
-	 * Returns a new object of class '<em>Security Group Builder ec2</em>'.
+	 * Returns a new object of class '<em>Subnet Configuration Builder ec2</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Security Group Builder ec2</em>'.
+	 * @return a new object of class '<em>Subnet Configuration Builder ec2</em>'.
 	 * @generated
 	 */
-	SecurityGroupBuilder_ec2 createSecurityGroupBuilder_ec2();
+	SubnetConfigurationBuilder_ec2 createSubnetConfigurationBuilder_ec2();
 
 	/**
-	 * Returns a new object of class '<em>Port Builder ec2</em>'.
+	 * Returns a new object of class '<em>Vpn Connection Options Builder ec2</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Port Builder ec2</em>'.
+	 * @return a new object of class '<em>Vpn Connection Options Builder ec2</em>'.
 	 * @generated
 	 */
-	PortBuilder_ec2 createPortBuilder_ec2();
+	VpnConnectionOptionsBuilder_ec2 createVpnConnectionOptionsBuilder_ec2();
 
 	/**
-	 * Returns a new object of class '<em>Private Subnet Builder ec2</em>'.
+	 * Returns a new object of class '<em>Vpn Tunnel Option Builder ec2</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Private Subnet Builder ec2</em>'.
+	 * @return a new object of class '<em>Vpn Tunnel Option Builder ec2</em>'.
 	 * @generated
 	 */
-	PrivateSubnetBuilder_ec2 createPrivateSubnetBuilder_ec2();
-
-	/**
-	 * Returns a new object of class '<em>Public Subnet Builder ec2</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Public Subnet Builder ec2</em>'.
-	 * @generated
-	 */
-	PublicSubnetBuilder_ec2 createPublicSubnetBuilder_ec2();
+	VpnTunnelOptionBuilder_ec2 createVpnTunnelOptionBuilder_ec2();
 
 	/**
 	 * Returns the package supported by this factory.

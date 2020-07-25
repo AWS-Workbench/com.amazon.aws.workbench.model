@@ -3,12 +3,14 @@
 package com.amazon.aws.workbench.model.awsworkbench.impl;
 
 import com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage;
+import com.amazon.aws.workbench.model.awsworkbench.DefaultInstanceTenancy;
 import com.amazon.aws.workbench.model.awsworkbench.SubnetBuilder_ec2;
 import com.amazon.aws.workbench.model.awsworkbench.SubnetConfigurationBuilder_ec2;
 import com.amazon.aws.workbench.model.awsworkbench.SubnetSelectionBuilder_ec2;
 import com.amazon.aws.workbench.model.awsworkbench.VpcBuilder_ec2;
 import com.amazon.aws.workbench.model.awsworkbench.VpnConnectionOptionsBuilder_ec2;
 import com.amazon.aws.workbench.model.awsworkbench.VpnTunnelOptionBuilder_ec2;
+
 import java.util.Collection;
 
 import org.eclipse.emf.common.notify.Notification;
@@ -89,7 +91,7 @@ public class VpcBuilder_ec2Impl extends ServiceResourcesImpl implements VpcBuild
 	 * @generated
 	 * @ordered
 	 */
-	protected static final com.amazon.aws.workbench.model.awsworkbench.DefaultInstanceTenancy DEFAULT_INSTANCE_TENANCY_SOFTWARE_AMAZON_AWSCDK_SERVICES_EC2_DEFAULT_INSTANCE_TENANCY__EDEFAULT = com.amazon.aws.workbench.model.awsworkbench.DefaultInstanceTenancy.DEFAULT;
+	protected static final DefaultInstanceTenancy DEFAULT_INSTANCE_TENANCY_SOFTWARE_AMAZON_AWSCDK_SERVICES_EC2_DEFAULT_INSTANCE_TENANCY__EDEFAULT = DefaultInstanceTenancy.DEFAULT;
 
 	/**
 	 * The cached value of the '{@link #getDefaultInstanceTenancy_software_amazon_awscdk_services_ec2_DefaultInstanceTenancy_() <em>Default Instance Tenancy software amazon awscdk services ec2 Default Instance Tenancy </em>}' attribute.
@@ -99,7 +101,7 @@ public class VpcBuilder_ec2Impl extends ServiceResourcesImpl implements VpcBuild
 	 * @generated
 	 * @ordered
 	 */
-	protected com.amazon.aws.workbench.model.awsworkbench.DefaultInstanceTenancy defaultInstanceTenancy_software_amazon_awscdk_services_ec2_DefaultInstanceTenancy_ = DEFAULT_INSTANCE_TENANCY_SOFTWARE_AMAZON_AWSCDK_SERVICES_EC2_DEFAULT_INSTANCE_TENANCY__EDEFAULT;
+	protected DefaultInstanceTenancy defaultInstanceTenancy_software_amazon_awscdk_services_ec2_DefaultInstanceTenancy_ = DEFAULT_INSTANCE_TENANCY_SOFTWARE_AMAZON_AWSCDK_SERVICES_EC2_DEFAULT_INSTANCE_TENANCY__EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getEnableDnsHostnames_java_lang_Boolean_() <em>Enable Dns Hostnames java lang Boolean </em>}' attribute.
@@ -541,7 +543,7 @@ public class VpcBuilder_ec2Impl extends ServiceResourcesImpl implements VpcBuild
 	 * @generated
 	 */
 	@Override
-	public com.amazon.aws.workbench.model.awsworkbench.DefaultInstanceTenancy getDefaultInstanceTenancy_software_amazon_awscdk_services_ec2_DefaultInstanceTenancy_() {
+	public DefaultInstanceTenancy getDefaultInstanceTenancy_software_amazon_awscdk_services_ec2_DefaultInstanceTenancy_() {
 		return defaultInstanceTenancy_software_amazon_awscdk_services_ec2_DefaultInstanceTenancy_;
 	}
 
@@ -552,8 +554,8 @@ public class VpcBuilder_ec2Impl extends ServiceResourcesImpl implements VpcBuild
 	 */
 	@Override
 	public void setDefaultInstanceTenancy_software_amazon_awscdk_services_ec2_DefaultInstanceTenancy_(
-			com.amazon.aws.workbench.model.awsworkbench.DefaultInstanceTenancy newDefaultInstanceTenancy_software_amazon_awscdk_services_ec2_DefaultInstanceTenancy_) {
-		com.amazon.aws.workbench.model.awsworkbench.DefaultInstanceTenancy oldDefaultInstanceTenancy_software_amazon_awscdk_services_ec2_DefaultInstanceTenancy_ = defaultInstanceTenancy_software_amazon_awscdk_services_ec2_DefaultInstanceTenancy_;
+			DefaultInstanceTenancy newDefaultInstanceTenancy_software_amazon_awscdk_services_ec2_DefaultInstanceTenancy_) {
+		DefaultInstanceTenancy oldDefaultInstanceTenancy_software_amazon_awscdk_services_ec2_DefaultInstanceTenancy_ = defaultInstanceTenancy_software_amazon_awscdk_services_ec2_DefaultInstanceTenancy_;
 		defaultInstanceTenancy_software_amazon_awscdk_services_ec2_DefaultInstanceTenancy_ = newDefaultInstanceTenancy_software_amazon_awscdk_services_ec2_DefaultInstanceTenancy_ == null
 				? DEFAULT_INSTANCE_TENANCY_SOFTWARE_AMAZON_AWSCDK_SERVICES_EC2_DEFAULT_INSTANCE_TENANCY__EDEFAULT
 				: newDefaultInstanceTenancy_software_amazon_awscdk_services_ec2_DefaultInstanceTenancy_;
@@ -1155,7 +1157,7 @@ public class VpcBuilder_ec2Impl extends ServiceResourcesImpl implements VpcBuild
 			return;
 		case AwsworkbenchPackage.VPC_BUILDER_EC2__DEFAULT_INSTANCE_TENANCY_SOFTWARE_AMAZON_AWSCDK_SERVICES_EC2_DEFAULT_INSTANCE_TENANCY_:
 			setDefaultInstanceTenancy_software_amazon_awscdk_services_ec2_DefaultInstanceTenancy_(
-					(com.amazon.aws.workbench.model.awsworkbench.DefaultInstanceTenancy) newValue);
+					(DefaultInstanceTenancy) newValue);
 			return;
 		case AwsworkbenchPackage.VPC_BUILDER_EC2__ENABLE_DNS_HOSTNAMES_JAVA_LANG_BOOLEAN_:
 			setEnableDnsHostnames_java_lang_Boolean_((Boolean) newValue);

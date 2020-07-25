@@ -73,12 +73,12 @@ public interface VpcBuilder_ec2 extends ServiceResources {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Default Instance Tenancy software amazon awscdk services ec2 Default Instance Tenancy </em>' attribute.
 	 * @see com.amazon.aws.workbench.model.awsworkbench.DefaultInstanceTenancy
-	 * @see #setDefaultInstanceTenancy_software_amazon_awscdk_services_ec2_DefaultInstanceTenancy_(com.amazon.aws.workbench.model.awsworkbench.DefaultInstanceTenancy)
+	 * @see #setDefaultInstanceTenancy_software_amazon_awscdk_services_ec2_DefaultInstanceTenancy_(DefaultInstanceTenancy)
 	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getVpcBuilder_ec2_DefaultInstanceTenancy_software_amazon_awscdk_services_ec2_DefaultInstanceTenancy_()
 	 * @model dataType="com.amazon.aws.workbench.model.awsworkbench.DefaultInstanceTenancy"
 	 * @generated
 	 */
-	com.amazon.aws.workbench.model.awsworkbench.DefaultInstanceTenancy getDefaultInstanceTenancy_software_amazon_awscdk_services_ec2_DefaultInstanceTenancy_();
+	DefaultInstanceTenancy getDefaultInstanceTenancy_software_amazon_awscdk_services_ec2_DefaultInstanceTenancy_();
 
 	/**
 	 * Sets the value of the '{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder_ec2#getDefaultInstanceTenancy_software_amazon_awscdk_services_ec2_DefaultInstanceTenancy_ <em>Default Instance Tenancy software amazon awscdk services ec2 Default Instance Tenancy </em>}' attribute.
@@ -90,7 +90,7 @@ public interface VpcBuilder_ec2 extends ServiceResources {
 	 * @generated
 	 */
 	void setDefaultInstanceTenancy_software_amazon_awscdk_services_ec2_DefaultInstanceTenancy_(
-			com.amazon.aws.workbench.model.awsworkbench.DefaultInstanceTenancy value);
+			DefaultInstanceTenancy value);
 
 	/**
 	 * Returns the value of the '<em><b>Enable Dns Hostnames java lang Boolean </b></em>' attribute.

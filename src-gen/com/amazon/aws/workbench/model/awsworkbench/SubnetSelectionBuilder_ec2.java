@@ -2,7 +2,7 @@
  */
 package com.amazon.aws.workbench.model.awsworkbench;
 
-import ec2.SubnetType;
+import org.eclipse.emf.ecore.EObject;
 
 /**
  * <!-- begin-user-doc -->
@@ -29,7 +29,7 @@ import ec2.SubnetType;
  * @model
  * @generated
  */
-public interface SubnetSelectionBuilder_ec2 extends ServiceResources {
+public interface SubnetSelectionBuilder_ec2 extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Availability Zones java lang String As List</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -142,14 +142,14 @@ public interface SubnetSelectionBuilder_ec2 extends ServiceResources {
 
 	/**
 	 * Returns the value of the '<em><b>Subnet Type software amazon awscdk services ec2 Subnet Type </b></em>' attribute.
-	 * The literals are from the enumeration {@link ec2.SubnetType}.
+	 * The literals are from the enumeration {@link com.amazon.aws.workbench.model.awsworkbench.SubnetType}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Subnet Type software amazon awscdk services ec2 Subnet Type </em>' attribute.
-	 * @see ec2.SubnetType
+	 * @see com.amazon.aws.workbench.model.awsworkbench.SubnetType
 	 * @see #setSubnetType_software_amazon_awscdk_services_ec2_SubnetType_(SubnetType)
 	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getSubnetSelectionBuilder_ec2_SubnetType_software_amazon_awscdk_services_ec2_SubnetType_()
-	 * @model dataType="ec2.SubnetType"
+	 * @model dataType="com.amazon.aws.workbench.model.awsworkbench.SubnetType"
 	 * @generated
 	 */
 	SubnetType getSubnetType_software_amazon_awscdk_services_ec2_SubnetType_();
@@ -159,7 +159,7 @@ public interface SubnetSelectionBuilder_ec2 extends ServiceResources {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Subnet Type software amazon awscdk services ec2 Subnet Type </em>' attribute.
-	 * @see ec2.SubnetType
+	 * @see com.amazon.aws.workbench.model.awsworkbench.SubnetType
 	 * @see #getSubnetType_software_amazon_awscdk_services_ec2_SubnetType_()
 	 * @generated
 	 */

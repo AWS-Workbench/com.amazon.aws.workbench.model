@@ -22,6 +22,46 @@
             genModel="model/awsworkbench.genmodel"/>
    </extension>
 
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated awsworkbench -->
+      <package
+            uri="AWSWorkbenchSources/default.software.amazon.awscdk.services.apigateway"
+            class="apigateway.ApigatewayPackage"
+            genModel="model/awsworkbench.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated awsworkbench -->
+      <package
+            uri="AWSWorkbenchSources/default.software.amazon.awscdk.services.certificatemanager"
+            class="certificatemanager.CertificatemanagerPackage"
+            genModel="model/awsworkbench.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated awsworkbench -->
+      <package
+            uri="AWSWorkbenchSources/default.software.amazon.awscdk.services.iam"
+            class="iam.IamPackage"
+            genModel="model/awsworkbench.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated awsworkbench -->
+      <package
+            uri="AWSWorkbenchSources/default.software.amazon.awscdk.core"
+            class="core.CorePackage"
+            genModel="model/awsworkbench.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated awsworkbench -->
+      <package
+            uri="AWSWorkbenchSources/default.software.amazon.awscdk.services.dynamodb"
+            class="dynamodb.DynamodbPackage"
+            genModel="model/awsworkbench.genmodel"/>
+   </extension>
+
 
    
 

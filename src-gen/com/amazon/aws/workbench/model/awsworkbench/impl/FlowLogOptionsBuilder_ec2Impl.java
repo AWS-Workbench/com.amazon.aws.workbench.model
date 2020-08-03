@@ -4,8 +4,7 @@ package com.amazon.aws.workbench.model.awsworkbench.impl;
 
 import com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage;
 import com.amazon.aws.workbench.model.awsworkbench.FlowLogOptionsBuilder_ec2;
-
-import ec2.FlowLogTrafficType;
+import com.amazon.aws.workbench.model.awsworkbench.FlowLogTrafficType;
 
 import org.eclipse.emf.common.notify.Notification;
 

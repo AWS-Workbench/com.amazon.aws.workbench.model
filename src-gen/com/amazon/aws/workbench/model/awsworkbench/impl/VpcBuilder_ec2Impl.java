@@ -4,27 +4,13 @@ package com.amazon.aws.workbench.model.awsworkbench.impl;
 
 import com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage;
 import com.amazon.aws.workbench.model.awsworkbench.DefaultInstanceTenancy;
-import com.amazon.aws.workbench.model.awsworkbench.SubnetBuilder_ec2;
-import com.amazon.aws.workbench.model.awsworkbench.SubnetConfigurationBuilder_ec2;
-import com.amazon.aws.workbench.model.awsworkbench.SubnetSelectionBuilder_ec2;
 import com.amazon.aws.workbench.model.awsworkbench.VpcBuilder_ec2;
-import com.amazon.aws.workbench.model.awsworkbench.VpnConnectionOptionsBuilder_ec2;
-import com.amazon.aws.workbench.model.awsworkbench.VpnTunnelOptionBuilder_ec2;
-
-import java.util.Collection;
 
 import org.eclipse.emf.common.notify.Notification;
-import org.eclipse.emf.common.notify.NotificationChain;
-
-import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
-import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-
-import org.eclipse.emf.ecore.util.EObjectContainmentEList;
-import org.eclipse.emf.ecore.util.InternalEList;
 
 /**
  * <!-- begin-user-doc -->
@@ -53,11 +39,6 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.VpcBuilder_ec2Impl#getVarName <em>Var Name</em>}</li>
  *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.VpcBuilder_ec2Impl#getIdentifier <em>Identifier</em>}</li>
  *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.VpcBuilder_ec2Impl#getAdditionalCode <em>Additional Code</em>}</li>
- *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.VpcBuilder_ec2Impl#getSubnetbuilder_ec2 <em>Subnetbuilder ec2</em>}</li>
- *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.VpcBuilder_ec2Impl#getSubnetselectionbuilder_ec2 <em>Subnetselectionbuilder ec2</em>}</li>
- *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.VpcBuilder_ec2Impl#getSubnetconfigurationbuilder_ec2 <em>Subnetconfigurationbuilder ec2</em>}</li>
- *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.VpcBuilder_ec2Impl#getVpntunneloptionbuilder_ec2 <em>Vpntunneloptionbuilder ec2</em>}</li>
- *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.VpcBuilder_ec2Impl#getVpnconnectionoptionsbuilder_ec2 <em>Vpnconnectionoptionsbuilder ec2</em>}</li>
  * </ul>
  *
  * @generated
@@ -442,56 +423,6 @@ public class VpcBuilder_ec2Impl extends ServiceResourcesImpl implements VpcBuild
 	 * @ordered
 	 */
 	protected String additionalCode = ADDITIONAL_CODE_EDEFAULT;
-
-	/**
-	 * The cached value of the '{@link #getSubnetbuilder_ec2() <em>Subnetbuilder ec2</em>}' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getSubnetbuilder_ec2()
-	 * @generated
-	 * @ordered
-	 */
-	protected EList<SubnetBuilder_ec2> subnetbuilder_ec2;
-
-	/**
-	 * The cached value of the '{@link #getSubnetselectionbuilder_ec2() <em>Subnetselectionbuilder ec2</em>}' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getSubnetselectionbuilder_ec2()
-	 * @generated
-	 * @ordered
-	 */
-	protected EList<SubnetSelectionBuilder_ec2> subnetselectionbuilder_ec2;
-
-	/**
-	 * The cached value of the '{@link #getSubnetconfigurationbuilder_ec2() <em>Subnetconfigurationbuilder ec2</em>}' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getSubnetconfigurationbuilder_ec2()
-	 * @generated
-	 * @ordered
-	 */
-	protected EList<SubnetConfigurationBuilder_ec2> subnetconfigurationbuilder_ec2;
-
-	/**
-	 * The cached value of the '{@link #getVpntunneloptionbuilder_ec2() <em>Vpntunneloptionbuilder ec2</em>}' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getVpntunneloptionbuilder_ec2()
-	 * @generated
-	 * @ordered
-	 */
-	protected EList<VpnTunnelOptionBuilder_ec2> vpntunneloptionbuilder_ec2;
-
-	/**
-	 * The cached value of the '{@link #getVpnconnectionoptionsbuilder_ec2() <em>Vpnconnectionoptionsbuilder ec2</em>}' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getVpnconnectionoptionsbuilder_ec2()
-	 * @generated
-	 * @ordered
-	 */
-	protected EList<VpnConnectionOptionsBuilder_ec2> vpnconnectionoptionsbuilder_ec2;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -993,102 +924,6 @@ public class VpcBuilder_ec2Impl extends ServiceResourcesImpl implements VpcBuild
 	 * @generated
 	 */
 	@Override
-	public EList<SubnetBuilder_ec2> getSubnetbuilder_ec2() {
-		if (subnetbuilder_ec2 == null) {
-			subnetbuilder_ec2 = new EObjectContainmentEList<SubnetBuilder_ec2>(SubnetBuilder_ec2.class, this,
-					AwsworkbenchPackage.VPC_BUILDER_EC2__SUBNETBUILDER_EC2);
-		}
-		return subnetbuilder_ec2;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EList<SubnetSelectionBuilder_ec2> getSubnetselectionbuilder_ec2() {
-		if (subnetselectionbuilder_ec2 == null) {
-			subnetselectionbuilder_ec2 = new EObjectContainmentEList<SubnetSelectionBuilder_ec2>(
-					SubnetSelectionBuilder_ec2.class, this,
-					AwsworkbenchPackage.VPC_BUILDER_EC2__SUBNETSELECTIONBUILDER_EC2);
-		}
-		return subnetselectionbuilder_ec2;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EList<SubnetConfigurationBuilder_ec2> getSubnetconfigurationbuilder_ec2() {
-		if (subnetconfigurationbuilder_ec2 == null) {
-			subnetconfigurationbuilder_ec2 = new EObjectContainmentEList<SubnetConfigurationBuilder_ec2>(
-					SubnetConfigurationBuilder_ec2.class, this,
-					AwsworkbenchPackage.VPC_BUILDER_EC2__SUBNETCONFIGURATIONBUILDER_EC2);
-		}
-		return subnetconfigurationbuilder_ec2;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EList<VpnTunnelOptionBuilder_ec2> getVpntunneloptionbuilder_ec2() {
-		if (vpntunneloptionbuilder_ec2 == null) {
-			vpntunneloptionbuilder_ec2 = new EObjectContainmentEList<VpnTunnelOptionBuilder_ec2>(
-					VpnTunnelOptionBuilder_ec2.class, this,
-					AwsworkbenchPackage.VPC_BUILDER_EC2__VPNTUNNELOPTIONBUILDER_EC2);
-		}
-		return vpntunneloptionbuilder_ec2;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EList<VpnConnectionOptionsBuilder_ec2> getVpnconnectionoptionsbuilder_ec2() {
-		if (vpnconnectionoptionsbuilder_ec2 == null) {
-			vpnconnectionoptionsbuilder_ec2 = new EObjectContainmentEList<VpnConnectionOptionsBuilder_ec2>(
-					VpnConnectionOptionsBuilder_ec2.class, this,
-					AwsworkbenchPackage.VPC_BUILDER_EC2__VPNCONNECTIONOPTIONSBUILDER_EC2);
-		}
-		return vpnconnectionoptionsbuilder_ec2;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-		switch (featureID) {
-		case AwsworkbenchPackage.VPC_BUILDER_EC2__SUBNETBUILDER_EC2:
-			return ((InternalEList<?>) getSubnetbuilder_ec2()).basicRemove(otherEnd, msgs);
-		case AwsworkbenchPackage.VPC_BUILDER_EC2__SUBNETSELECTIONBUILDER_EC2:
-			return ((InternalEList<?>) getSubnetselectionbuilder_ec2()).basicRemove(otherEnd, msgs);
-		case AwsworkbenchPackage.VPC_BUILDER_EC2__SUBNETCONFIGURATIONBUILDER_EC2:
-			return ((InternalEList<?>) getSubnetconfigurationbuilder_ec2()).basicRemove(otherEnd, msgs);
-		case AwsworkbenchPackage.VPC_BUILDER_EC2__VPNTUNNELOPTIONBUILDER_EC2:
-			return ((InternalEList<?>) getVpntunneloptionbuilder_ec2()).basicRemove(otherEnd, msgs);
-		case AwsworkbenchPackage.VPC_BUILDER_EC2__VPNCONNECTIONOPTIONSBUILDER_EC2:
-			return ((InternalEList<?>) getVpnconnectionoptionsbuilder_ec2()).basicRemove(otherEnd, msgs);
-		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 		case AwsworkbenchPackage.VPC_BUILDER_EC2__CIDR_JAVA_LANG_STRING_:
@@ -1129,16 +964,6 @@ public class VpcBuilder_ec2Impl extends ServiceResourcesImpl implements VpcBuild
 			return getIdentifier();
 		case AwsworkbenchPackage.VPC_BUILDER_EC2__ADDITIONAL_CODE:
 			return getAdditionalCode();
-		case AwsworkbenchPackage.VPC_BUILDER_EC2__SUBNETBUILDER_EC2:
-			return getSubnetbuilder_ec2();
-		case AwsworkbenchPackage.VPC_BUILDER_EC2__SUBNETSELECTIONBUILDER_EC2:
-			return getSubnetselectionbuilder_ec2();
-		case AwsworkbenchPackage.VPC_BUILDER_EC2__SUBNETCONFIGURATIONBUILDER_EC2:
-			return getSubnetconfigurationbuilder_ec2();
-		case AwsworkbenchPackage.VPC_BUILDER_EC2__VPNTUNNELOPTIONBUILDER_EC2:
-			return getVpntunneloptionbuilder_ec2();
-		case AwsworkbenchPackage.VPC_BUILDER_EC2__VPNCONNECTIONOPTIONSBUILDER_EC2:
-			return getVpnconnectionoptionsbuilder_ec2();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -1148,7 +973,6 @@ public class VpcBuilder_ec2Impl extends ServiceResourcesImpl implements VpcBuild
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@SuppressWarnings("unchecked")
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
@@ -1210,27 +1034,6 @@ public class VpcBuilder_ec2Impl extends ServiceResourcesImpl implements VpcBuild
 			return;
 		case AwsworkbenchPackage.VPC_BUILDER_EC2__ADDITIONAL_CODE:
 			setAdditionalCode((String) newValue);
-			return;
-		case AwsworkbenchPackage.VPC_BUILDER_EC2__SUBNETBUILDER_EC2:
-			getSubnetbuilder_ec2().clear();
-			getSubnetbuilder_ec2().addAll((Collection<? extends SubnetBuilder_ec2>) newValue);
-			return;
-		case AwsworkbenchPackage.VPC_BUILDER_EC2__SUBNETSELECTIONBUILDER_EC2:
-			getSubnetselectionbuilder_ec2().clear();
-			getSubnetselectionbuilder_ec2().addAll((Collection<? extends SubnetSelectionBuilder_ec2>) newValue);
-			return;
-		case AwsworkbenchPackage.VPC_BUILDER_EC2__SUBNETCONFIGURATIONBUILDER_EC2:
-			getSubnetconfigurationbuilder_ec2().clear();
-			getSubnetconfigurationbuilder_ec2().addAll((Collection<? extends SubnetConfigurationBuilder_ec2>) newValue);
-			return;
-		case AwsworkbenchPackage.VPC_BUILDER_EC2__VPNTUNNELOPTIONBUILDER_EC2:
-			getVpntunneloptionbuilder_ec2().clear();
-			getVpntunneloptionbuilder_ec2().addAll((Collection<? extends VpnTunnelOptionBuilder_ec2>) newValue);
-			return;
-		case AwsworkbenchPackage.VPC_BUILDER_EC2__VPNCONNECTIONOPTIONSBUILDER_EC2:
-			getVpnconnectionoptionsbuilder_ec2().clear();
-			getVpnconnectionoptionsbuilder_ec2()
-					.addAll((Collection<? extends VpnConnectionOptionsBuilder_ec2>) newValue);
 			return;
 		}
 		super.eSet(featureID, newValue);
@@ -1305,21 +1108,6 @@ public class VpcBuilder_ec2Impl extends ServiceResourcesImpl implements VpcBuild
 			return;
 		case AwsworkbenchPackage.VPC_BUILDER_EC2__ADDITIONAL_CODE:
 			setAdditionalCode(ADDITIONAL_CODE_EDEFAULT);
-			return;
-		case AwsworkbenchPackage.VPC_BUILDER_EC2__SUBNETBUILDER_EC2:
-			getSubnetbuilder_ec2().clear();
-			return;
-		case AwsworkbenchPackage.VPC_BUILDER_EC2__SUBNETSELECTIONBUILDER_EC2:
-			getSubnetselectionbuilder_ec2().clear();
-			return;
-		case AwsworkbenchPackage.VPC_BUILDER_EC2__SUBNETCONFIGURATIONBUILDER_EC2:
-			getSubnetconfigurationbuilder_ec2().clear();
-			return;
-		case AwsworkbenchPackage.VPC_BUILDER_EC2__VPNTUNNELOPTIONBUILDER_EC2:
-			getVpntunneloptionbuilder_ec2().clear();
-			return;
-		case AwsworkbenchPackage.VPC_BUILDER_EC2__VPNCONNECTIONOPTIONSBUILDER_EC2:
-			getVpnconnectionoptionsbuilder_ec2().clear();
 			return;
 		}
 		super.eUnset(featureID);
@@ -1399,16 +1187,6 @@ public class VpcBuilder_ec2Impl extends ServiceResourcesImpl implements VpcBuild
 		case AwsworkbenchPackage.VPC_BUILDER_EC2__ADDITIONAL_CODE:
 			return ADDITIONAL_CODE_EDEFAULT == null ? additionalCode != null
 					: !ADDITIONAL_CODE_EDEFAULT.equals(additionalCode);
-		case AwsworkbenchPackage.VPC_BUILDER_EC2__SUBNETBUILDER_EC2:
-			return subnetbuilder_ec2 != null && !subnetbuilder_ec2.isEmpty();
-		case AwsworkbenchPackage.VPC_BUILDER_EC2__SUBNETSELECTIONBUILDER_EC2:
-			return subnetselectionbuilder_ec2 != null && !subnetselectionbuilder_ec2.isEmpty();
-		case AwsworkbenchPackage.VPC_BUILDER_EC2__SUBNETCONFIGURATIONBUILDER_EC2:
-			return subnetconfigurationbuilder_ec2 != null && !subnetconfigurationbuilder_ec2.isEmpty();
-		case AwsworkbenchPackage.VPC_BUILDER_EC2__VPNTUNNELOPTIONBUILDER_EC2:
-			return vpntunneloptionbuilder_ec2 != null && !vpntunneloptionbuilder_ec2.isEmpty();
-		case AwsworkbenchPackage.VPC_BUILDER_EC2__VPNCONNECTIONOPTIONSBUILDER_EC2:
-			return vpnconnectionoptionsbuilder_ec2 != null && !vpnconnectionoptionsbuilder_ec2.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}

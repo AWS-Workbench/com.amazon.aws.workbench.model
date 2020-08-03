@@ -2,8 +2,6 @@
  */
 package com.amazon.aws.workbench.model.awsworkbench;
 
-import org.eclipse.emf.common.util.EList;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Vpc Builder ec2</b></em>'.
@@ -32,11 +30,6 @@ import org.eclipse.emf.common.util.EList;
  *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder_ec2#getVarName <em>Var Name</em>}</li>
  *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder_ec2#getIdentifier <em>Identifier</em>}</li>
  *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder_ec2#getAdditionalCode <em>Additional Code</em>}</li>
- *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder_ec2#getSubnetbuilder_ec2 <em>Subnetbuilder ec2</em>}</li>
- *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder_ec2#getSubnetselectionbuilder_ec2 <em>Subnetselectionbuilder ec2</em>}</li>
- *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder_ec2#getSubnetconfigurationbuilder_ec2 <em>Subnetconfigurationbuilder ec2</em>}</li>
- *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder_ec2#getVpntunneloptionbuilder_ec2 <em>Vpntunneloptionbuilder ec2</em>}</li>
- *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder_ec2#getVpnconnectionoptionsbuilder_ec2 <em>Vpnconnectionoptionsbuilder ec2</em>}</li>
  * </ul>
  *
  * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getVpcBuilder_ec2()
@@ -458,65 +451,5 @@ public interface VpcBuilder_ec2 extends ServiceResources {
 	 * @generated
 	 */
 	void setAdditionalCode(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Subnetbuilder ec2</b></em>' containment reference list.
-	 * The list contents are of type {@link com.amazon.aws.workbench.model.awsworkbench.SubnetBuilder_ec2}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Subnetbuilder ec2</em>' containment reference list.
-	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getVpcBuilder_ec2_Subnetbuilder_ec2()
-	 * @model containment="true"
-	 * @generated
-	 */
-	EList<SubnetBuilder_ec2> getSubnetbuilder_ec2();
-
-	/**
-	 * Returns the value of the '<em><b>Subnetselectionbuilder ec2</b></em>' containment reference list.
-	 * The list contents are of type {@link com.amazon.aws.workbench.model.awsworkbench.SubnetSelectionBuilder_ec2}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Subnetselectionbuilder ec2</em>' containment reference list.
-	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getVpcBuilder_ec2_Subnetselectionbuilder_ec2()
-	 * @model containment="true"
-	 * @generated
-	 */
-	EList<SubnetSelectionBuilder_ec2> getSubnetselectionbuilder_ec2();
-
-	/**
-	 * Returns the value of the '<em><b>Subnetconfigurationbuilder ec2</b></em>' containment reference list.
-	 * The list contents are of type {@link com.amazon.aws.workbench.model.awsworkbench.SubnetConfigurationBuilder_ec2}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Subnetconfigurationbuilder ec2</em>' containment reference list.
-	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getVpcBuilder_ec2_Subnetconfigurationbuilder_ec2()
-	 * @model containment="true"
-	 * @generated
-	 */
-	EList<SubnetConfigurationBuilder_ec2> getSubnetconfigurationbuilder_ec2();
-
-	/**
-	 * Returns the value of the '<em><b>Vpntunneloptionbuilder ec2</b></em>' containment reference list.
-	 * The list contents are of type {@link com.amazon.aws.workbench.model.awsworkbench.VpnTunnelOptionBuilder_ec2}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Vpntunneloptionbuilder ec2</em>' containment reference list.
-	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getVpcBuilder_ec2_Vpntunneloptionbuilder_ec2()
-	 * @model containment="true"
-	 * @generated
-	 */
-	EList<VpnTunnelOptionBuilder_ec2> getVpntunneloptionbuilder_ec2();
-
-	/**
-	 * Returns the value of the '<em><b>Vpnconnectionoptionsbuilder ec2</b></em>' containment reference list.
-	 * The list contents are of type {@link com.amazon.aws.workbench.model.awsworkbench.VpnConnectionOptionsBuilder_ec2}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Vpnconnectionoptionsbuilder ec2</em>' containment reference list.
-	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getVpcBuilder_ec2_Vpnconnectionoptionsbuilder_ec2()
-	 * @model containment="true"
-	 * @generated
-	 */
-	EList<VpnConnectionOptionsBuilder_ec2> getVpnconnectionoptionsbuilder_ec2();
 
 } // VpcBuilder_ec2

@@ -4,14 +4,14 @@ package com.amazon.aws.workbench.model.awsworkbench.impl;
 
 import com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage;
 import com.amazon.aws.workbench.model.awsworkbench.SubnetSelectionBuilder_ec2;
-
-import ec2.SubnetType;
+import com.amazon.aws.workbench.model.awsworkbench.SubnetType;
 
 import org.eclipse.emf.common.notify.Notification;
 
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
+import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -35,7 +35,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *
  * @generated
  */
-public class SubnetSelectionBuilder_ec2Impl extends ServiceResourcesImpl implements SubnetSelectionBuilder_ec2 {
+public class SubnetSelectionBuilder_ec2Impl extends MinimalEObjectImpl.Container implements SubnetSelectionBuilder_ec2 {
 	/**
 	 * The default value of the '{@link #getAvailabilityZones_java_lang_String_AsList() <em>Availability Zones java lang String As List</em>}' attribute.
 	 * <!-- begin-user-doc -->

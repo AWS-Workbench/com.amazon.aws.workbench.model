@@ -2,9 +2,25 @@
  */
 package ec2.impl;
 
+import apigateway.ApigatewayPackage;
+
+import apigateway.impl.ApigatewayPackageImpl;
+
+import certificatemanager.CertificatemanagerPackage;
+
+import certificatemanager.impl.CertificatemanagerPackageImpl;
+
 import com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage;
 
 import com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl;
+
+import core.CorePackage;
+
+import core.impl.CorePackageImpl;
+
+import dynamodb.DynamodbPackage;
+
+import dynamodb.impl.DynamodbPackageImpl;
 
 import ec2.AclCidrConfigBuilder_ec2;
 import ec2.AclIcmpBuilder_ec2;
@@ -110,6 +126,10 @@ import ec2.VpnTunnelOptionBuilder_ec2;
 import ec2.WindowsImageBuilder_ec2;
 import ec2.WindowsImagePropsBuilder_ec2;
 import ec2.WindowsVersion;
+
+import iam.IamPackage;
+
+import iam.impl.IamPackageImpl;
 
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
@@ -894,14 +914,43 @@ public class Ec2PackageImpl extends EPackageImpl implements Ec2Package {
 		AwsworkbenchPackageImpl theAwsworkbenchPackage = (AwsworkbenchPackageImpl) (registeredPackage instanceof AwsworkbenchPackageImpl
 				? registeredPackage
 				: AwsworkbenchPackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(ApigatewayPackage.eNS_URI);
+		ApigatewayPackageImpl theApigatewayPackage = (ApigatewayPackageImpl) (registeredPackage instanceof ApigatewayPackageImpl
+				? registeredPackage
+				: ApigatewayPackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(CertificatemanagerPackage.eNS_URI);
+		CertificatemanagerPackageImpl theCertificatemanagerPackage = (CertificatemanagerPackageImpl) (registeredPackage instanceof CertificatemanagerPackageImpl
+				? registeredPackage
+				: CertificatemanagerPackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(IamPackage.eNS_URI);
+		IamPackageImpl theIamPackage = (IamPackageImpl) (registeredPackage instanceof IamPackageImpl ? registeredPackage
+				: IamPackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(CorePackage.eNS_URI);
+		CorePackageImpl theCorePackage = (CorePackageImpl) (registeredPackage instanceof CorePackageImpl
+				? registeredPackage
+				: CorePackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(DynamodbPackage.eNS_URI);
+		DynamodbPackageImpl theDynamodbPackage = (DynamodbPackageImpl) (registeredPackage instanceof DynamodbPackageImpl
+				? registeredPackage
+				: DynamodbPackage.eINSTANCE);
 
 		// Create package meta-data objects
 		theEc2Package.createPackageContents();
 		theAwsworkbenchPackage.createPackageContents();
+		theApigatewayPackage.createPackageContents();
+		theCertificatemanagerPackage.createPackageContents();
+		theIamPackage.createPackageContents();
+		theCorePackage.createPackageContents();
+		theDynamodbPackage.createPackageContents();
 
 		// Initialize created meta-data
 		theEc2Package.initializePackageContents();
 		theAwsworkbenchPackage.initializePackageContents();
+		theApigatewayPackage.initializePackageContents();
+		theCertificatemanagerPackage.initializePackageContents();
+		theIamPackage.initializePackageContents();
+		theCorePackage.initializePackageContents();
+		theDynamodbPackage.initializePackageContents();
 
 		// Mark meta-data to indicate it can't be changed
 		theEc2Package.freeze();

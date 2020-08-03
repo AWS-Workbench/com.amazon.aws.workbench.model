@@ -2,8 +2,6 @@
  */
 package com.amazon.aws.workbench.model.awsworkbench;
 
-import ec2.FlowLogTrafficType;
-
 import org.eclipse.emf.ecore.EObject;
 
 /**
@@ -53,14 +51,14 @@ public interface FlowLogOptionsBuilder_ec2 extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Traffic Type software amazon awscdk services ec2 Flow Log Traffic Type </b></em>' attribute.
-	 * The literals are from the enumeration {@link ec2.FlowLogTrafficType}.
+	 * The literals are from the enumeration {@link com.amazon.aws.workbench.model.awsworkbench.FlowLogTrafficType}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Traffic Type software amazon awscdk services ec2 Flow Log Traffic Type </em>' attribute.
-	 * @see ec2.FlowLogTrafficType
+	 * @see com.amazon.aws.workbench.model.awsworkbench.FlowLogTrafficType
 	 * @see #setTrafficType_software_amazon_awscdk_services_ec2_FlowLogTrafficType_(FlowLogTrafficType)
 	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getFlowLogOptionsBuilder_ec2_TrafficType_software_amazon_awscdk_services_ec2_FlowLogTrafficType_()
-	 * @model dataType="ec2.FlowLogTrafficType"
+	 * @model dataType="com.amazon.aws.workbench.model.awsworkbench.FlowLogTrafficType"
 	 * @generated
 	 */
 	FlowLogTrafficType getTrafficType_software_amazon_awscdk_services_ec2_FlowLogTrafficType_();
@@ -70,7 +68,7 @@ public interface FlowLogOptionsBuilder_ec2 extends EObject {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Traffic Type software amazon awscdk services ec2 Flow Log Traffic Type </em>' attribute.
-	 * @see ec2.FlowLogTrafficType
+	 * @see com.amazon.aws.workbench.model.awsworkbench.FlowLogTrafficType
 	 * @see #getTrafficType_software_amazon_awscdk_services_ec2_FlowLogTrafficType_()
 	 * @generated
 	 */

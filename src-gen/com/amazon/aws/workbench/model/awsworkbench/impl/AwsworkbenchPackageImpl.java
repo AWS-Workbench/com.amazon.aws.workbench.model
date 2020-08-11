@@ -10,6 +10,7 @@ import certificatemanager.CertificatemanagerPackage;
 
 import certificatemanager.impl.CertificatemanagerPackageImpl;
 
+import com.amazon.aws.workbench.model.awsworkbench.AliasConfigurationBuilder_cloudfront;
 import com.amazon.aws.workbench.model.awsworkbench.ApiGatewayToDynamoDBBuilder_apigatewaydynamodb;
 import com.amazon.aws.workbench.model.awsworkbench.ApiGatewayToLambdaBuilder_apigatewaylambda;
 import com.amazon.aws.workbench.model.awsworkbench.ApiGatewayToSqsBuilder_apigatewaysqs;
@@ -17,10 +18,19 @@ import com.amazon.aws.workbench.model.awsworkbench.ApiKeySourceType;
 import com.amazon.aws.workbench.model.awsworkbench.AppBuilder_core;
 import com.amazon.aws.workbench.model.awsworkbench.AttributeBuilder_dynamodb;
 import com.amazon.aws.workbench.model.awsworkbench.AttributeType;
+import com.amazon.aws.workbench.model.awsworkbench.AuthFlowBuilder_cognito;
 import com.amazon.aws.workbench.model.awsworkbench.AuthorizationType;
+import com.amazon.aws.workbench.model.awsworkbench.AutoVerifiedAttrsBuilder_cognito;
 import com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchFactory;
 import com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage;
+import com.amazon.aws.workbench.model.awsworkbench.BehaviorBuilder_cloudfront;
 import com.amazon.aws.workbench.model.awsworkbench.BillingMode;
+import com.amazon.aws.workbench.model.awsworkbench.BlockPublicAccessBuilder_s3;
+import com.amazon.aws.workbench.model.awsworkbench.BucketAccessControl;
+import com.amazon.aws.workbench.model.awsworkbench.BucketBuilder_s3;
+import com.amazon.aws.workbench.model.awsworkbench.BucketEncryption;
+import com.amazon.aws.workbench.model.awsworkbench.BucketMetricsBuilder_s3;
+import com.amazon.aws.workbench.model.awsworkbench.BucketPropsBuilder_s3;
 import com.amazon.aws.workbench.model.awsworkbench.BuildDeadLetterQueuePropsBuilder_core;
 import com.amazon.aws.workbench.model.awsworkbench.BuildDynamoDBTablePropsBuilder_core;
 import com.amazon.aws.workbench.model.awsworkbench.BuildEncryptionKeyPropsBuilder_core;
@@ -31,14 +41,19 @@ import com.amazon.aws.workbench.model.awsworkbench.BuildQueuePropsBuilder_core;
 import com.amazon.aws.workbench.model.awsworkbench.BuildS3BucketPropsBuilder_core;
 import com.amazon.aws.workbench.model.awsworkbench.BuildTopicPropsBuilder_core;
 import com.amazon.aws.workbench.model.awsworkbench.CertificateBuilder_certificatemanager;
+import com.amazon.aws.workbench.model.awsworkbench.CloudFrontAllowedCachedMethods;
+import com.amazon.aws.workbench.model.awsworkbench.CloudFrontAllowedMethods;
 import com.amazon.aws.workbench.model.awsworkbench.CloudFrontToApiGatewayBuilder_cloudfrontapigateway;
 import com.amazon.aws.workbench.model.awsworkbench.CloudFrontToApiGatewayToLambdaBuilder_cloudfrontapigatewaylambda;
 import com.amazon.aws.workbench.model.awsworkbench.CloudFrontToS3Builder_cloudfronts3;
+import com.amazon.aws.workbench.model.awsworkbench.CloudFrontWebDistributionPropsBuilder_cloudfront;
 import com.amazon.aws.workbench.model.awsworkbench.CognitoOptionsBuilder_core;
 import com.amazon.aws.workbench.model.awsworkbench.CognitoToApiGatewayToLambdaBuilder_cognitoapigatewaylambda;
 import com.amazon.aws.workbench.model.awsworkbench.ConnectionType;
 import com.amazon.aws.workbench.model.awsworkbench.ContentHandling;
 import com.amazon.aws.workbench.model.awsworkbench.CorsOptionsBuilder_apigateway;
+import com.amazon.aws.workbench.model.awsworkbench.CorsRuleBuilder_s3;
+import com.amazon.aws.workbench.model.awsworkbench.CustomOriginConfigBuilder_cloudfront;
 import com.amazon.aws.workbench.model.awsworkbench.DeadLetterQueueBuilder_sqs;
 import com.amazon.aws.workbench.model.awsworkbench.DefaultInstanceTenancy;
 import com.amazon.aws.workbench.model.awsworkbench.DefaultStackSynthesizerBuilder_core;
@@ -47,6 +62,7 @@ import com.amazon.aws.workbench.model.awsworkbench.DomainNameOptionsBuilder_apig
 import com.amazon.aws.workbench.model.awsworkbench.DynamoDBStreamToLambdaBuilder_dynamodbstreamlambda;
 import com.amazon.aws.workbench.model.awsworkbench.DynamoDBStreamToLambdaToElasticSearchAndKibanaBuilder_dynamodbstreamlambdaelasticsearchkibana;
 import com.amazon.aws.workbench.model.awsworkbench.Effect;
+import com.amazon.aws.workbench.model.awsworkbench.EmailSettingsBuilder_cognito;
 import com.amazon.aws.workbench.model.awsworkbench.EndpointConfigurationBuilder_apigateway;
 import com.amazon.aws.workbench.model.awsworkbench.EndpointType;
 import com.amazon.aws.workbench.model.awsworkbench.EnvironmentBuilder_core;
@@ -55,9 +71,12 @@ import com.amazon.aws.workbench.model.awsworkbench.EventsRuleToStepFunctionBuild
 import com.amazon.aws.workbench.model.awsworkbench.FlowLogOptionsBuilder_ec2;
 import com.amazon.aws.workbench.model.awsworkbench.FlowLogTrafficType;
 import com.amazon.aws.workbench.model.awsworkbench.FunctionBuilder_lambda;
+import com.amazon.aws.workbench.model.awsworkbench.FunctionPropsBuilder_lambda;
 import com.amazon.aws.workbench.model.awsworkbench.GatewayVpcEndpointBuilder_ec2;
 import com.amazon.aws.workbench.model.awsworkbench.GroupBuilder_iam;
 import com.amazon.aws.workbench.model.awsworkbench.HostedZoneBuilder_route53;
+import com.amazon.aws.workbench.model.awsworkbench.HttpMethods;
+import com.amazon.aws.workbench.model.awsworkbench.HttpVersion;
 import com.amazon.aws.workbench.model.awsworkbench.IntegrationBuilder_apigateway;
 import com.amazon.aws.workbench.model.awsworkbench.IntegrationOptionsBuilder_apigateway;
 import com.amazon.aws.workbench.model.awsworkbench.IntegrationResponseBuilder_apigateway;
@@ -72,6 +91,10 @@ import com.amazon.aws.workbench.model.awsworkbench.KeyBuilder_kms;
 import com.amazon.aws.workbench.model.awsworkbench.KinesisFirehoseToAnalyticsAndS3Builder_kinesisfirehoses3kinesisanalytics;
 import com.amazon.aws.workbench.model.awsworkbench.KinesisFirehoseToS3Builder_kinesisfirehoses3;
 import com.amazon.aws.workbench.model.awsworkbench.KinesisStreamsToLambdaBuilder_kinesisstreamslambda;
+import com.amazon.aws.workbench.model.awsworkbench.LambdaEdgeEventType;
+import com.amazon.aws.workbench.model.awsworkbench.LambdaFunctionAssociationBuilder_cloudfront;
+import com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiBuilder_apigateway;
+import com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiPropsBuilder_apigateway;
 import com.amazon.aws.workbench.model.awsworkbench.LambdaToDynamoDBBuilder_lambdadynamodb;
 import com.amazon.aws.workbench.model.awsworkbench.LambdaToElasticSearchAndKibanaBuilder_lambdaelasticsearchkibana;
 import com.amazon.aws.workbench.model.awsworkbench.LambdaToS3Builder_lambdas3;
@@ -79,31 +102,54 @@ import com.amazon.aws.workbench.model.awsworkbench.LambdaToSnsBuilder_lambdasns;
 import com.amazon.aws.workbench.model.awsworkbench.LambdaToSqsBuilder_lambdasqs;
 import com.amazon.aws.workbench.model.awsworkbench.LambdaToStepFunctionBuilder_lambdastepfunction;
 import com.amazon.aws.workbench.model.awsworkbench.LayerVersionBuilder_lambda;
+import com.amazon.aws.workbench.model.awsworkbench.LifecycleRuleBuilder_s3;
+import com.amazon.aws.workbench.model.awsworkbench.LoggingConfigurationBuilder_cloudfront;
 import com.amazon.aws.workbench.model.awsworkbench.ManagedPolicyBuilder_iam;
 import com.amazon.aws.workbench.model.awsworkbench.MethodDeploymentOptionsBuilder_apigateway;
 import com.amazon.aws.workbench.model.awsworkbench.MethodLoggingLevel;
 import com.amazon.aws.workbench.model.awsworkbench.MethodOptionsBuilder_apigateway;
 import com.amazon.aws.workbench.model.awsworkbench.MethodResponseBuilder_apigateway;
+import com.amazon.aws.workbench.model.awsworkbench.Mfa;
+import com.amazon.aws.workbench.model.awsworkbench.MfaSecondFactorBuilder_cognito;
 import com.amazon.aws.workbench.model.awsworkbench.ModelBuilder_apigateway;
 import com.amazon.aws.workbench.model.awsworkbench.NetworkLoadBalancerBuilder_elasticloadbalancingv2;
+import com.amazon.aws.workbench.model.awsworkbench.NoncurrentVersionTransitionBuilder_s3;
+import com.amazon.aws.workbench.model.awsworkbench.OAuthFlowsBuilder_cognito;
+import com.amazon.aws.workbench.model.awsworkbench.OAuthSettingsBuilder_cognito;
+import com.amazon.aws.workbench.model.awsworkbench.OriginAccessIdentityBuilder_cloudfront;
+import com.amazon.aws.workbench.model.awsworkbench.OriginProtocolPolicy;
+import com.amazon.aws.workbench.model.awsworkbench.OriginSslPolicy;
 import com.amazon.aws.workbench.model.awsworkbench.PassthroughBehavior;
+import com.amazon.aws.workbench.model.awsworkbench.PasswordPolicyBuilder_cognito;
 import com.amazon.aws.workbench.model.awsworkbench.PolicyDocumentBuilder_iam;
 import com.amazon.aws.workbench.model.awsworkbench.PolicyStatementBuilder_iam;
+import com.amazon.aws.workbench.model.awsworkbench.PriceClass;
 import com.amazon.aws.workbench.model.awsworkbench.QueueBuilder_sqs;
 import com.amazon.aws.workbench.model.awsworkbench.QueueEncryption;
+import com.amazon.aws.workbench.model.awsworkbench.QueuePropsBuilder_sqs;
+import com.amazon.aws.workbench.model.awsworkbench.RedirectProtocol;
+import com.amazon.aws.workbench.model.awsworkbench.RedirectTargetBuilder_s3;
 import com.amazon.aws.workbench.model.awsworkbench.RemovalPolicy;
 import com.amazon.aws.workbench.model.awsworkbench.RequestAuthorizerBuilder_apigateway;
 import com.amazon.aws.workbench.model.awsworkbench.RequestValidatorBuilder_apigateway;
 import com.amazon.aws.workbench.model.awsworkbench.RequestValidatorOptionsBuilder_apigateway;
+import com.amazon.aws.workbench.model.awsworkbench.RequiredAttributesBuilder_cognito;
 import com.amazon.aws.workbench.model.awsworkbench.RestApiPropsBuilder_apigateway;
 import com.amazon.aws.workbench.model.awsworkbench.RetentionDays;
 import com.amazon.aws.workbench.model.awsworkbench.RoleBuilder_iam;
+import com.amazon.aws.workbench.model.awsworkbench.RoutingRuleBuilder_s3;
+import com.amazon.aws.workbench.model.awsworkbench.RoutingRuleConditionBuilder_s3;
+import com.amazon.aws.workbench.model.awsworkbench.S3OriginConfigBuilder_cloudfront;
 import com.amazon.aws.workbench.model.awsworkbench.S3ToLambdaBuilder_s3lambda;
 import com.amazon.aws.workbench.model.awsworkbench.S3ToStepFunctionBuilder_s3stepfunction;
+import com.amazon.aws.workbench.model.awsworkbench.SSLMethod;
 import com.amazon.aws.workbench.model.awsworkbench.SecurityGroupBuilder_ec2;
 import com.amazon.aws.workbench.model.awsworkbench.SecurityPolicy;
+import com.amazon.aws.workbench.model.awsworkbench.SecurityPolicyProtocol;
 import com.amazon.aws.workbench.model.awsworkbench.ServiceResources;
+import com.amazon.aws.workbench.model.awsworkbench.SignInAliasesBuilder_cognito;
 import com.amazon.aws.workbench.model.awsworkbench.SnsToLambdaBuilder_snslambda;
+import com.amazon.aws.workbench.model.awsworkbench.SourceConfigurationBuilder_cloudfront;
 import com.amazon.aws.workbench.model.awsworkbench.SqsToLambdaBuilder_sqslambda;
 import com.amazon.aws.workbench.model.awsworkbench.StackBuilder_core;
 import com.amazon.aws.workbench.model.awsworkbench.StageOptionsBuilder_apigateway;
@@ -115,9 +161,19 @@ import com.amazon.aws.workbench.model.awsworkbench.TableEncryption;
 import com.amazon.aws.workbench.model.awsworkbench.TablePropsBuilder_dynamodb;
 import com.amazon.aws.workbench.model.awsworkbench.TokenAuthorizerBuilder_apigateway;
 import com.amazon.aws.workbench.model.awsworkbench.Tracing;
+import com.amazon.aws.workbench.model.awsworkbench.TransitionBuilder_s3;
 import com.amazon.aws.workbench.model.awsworkbench.UserBuilder_iam;
+import com.amazon.aws.workbench.model.awsworkbench.UserInvitationConfigBuilder_cognito;
+import com.amazon.aws.workbench.model.awsworkbench.UserPoolBuilder_cognito;
+import com.amazon.aws.workbench.model.awsworkbench.UserPoolClientPropsBuilder_cognito;
+import com.amazon.aws.workbench.model.awsworkbench.UserPoolPropsBuilder_cognito;
+import com.amazon.aws.workbench.model.awsworkbench.UserPoolTriggersBuilder_cognito;
+import com.amazon.aws.workbench.model.awsworkbench.UserVerificationConfigBuilder_cognito;
 import com.amazon.aws.workbench.model.awsworkbench.ValidationMethod;
+import com.amazon.aws.workbench.model.awsworkbench.VerificationEmailStyle;
+import com.amazon.aws.workbench.model.awsworkbench.VersionBuilder_lambda;
 import com.amazon.aws.workbench.model.awsworkbench.VersionOptionsBuilder_lambda;
+import com.amazon.aws.workbench.model.awsworkbench.ViewerProtocolPolicy;
 import com.amazon.aws.workbench.model.awsworkbench.VpcBuilder_ec2;
 import com.amazon.aws.workbench.model.awsworkbench.VpcLinkBuilder_apigateway;
 
@@ -360,6 +416,13 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EClass functionPropsBuilder_lambdaEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EClass functionBuilder_lambdaEClass = null;
 
 	/**
@@ -437,6 +500,20 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EClass lambdaRestApiPropsBuilder_apigatewayEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass lambdaRestApiBuilder_apigatewayEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EClass apiGatewayToLambdaBuilder_apigatewaylambdaEClass = null;
 
 	/**
@@ -444,7 +521,161 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EClass queuePropsBuilder_sqsEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EClass apiGatewayToSqsBuilder_apigatewaysqsEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass versionBuilder_lambdaEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass lambdaFunctionAssociationBuilder_cloudfrontEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass behaviorBuilder_cloudfrontEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass customOriginConfigBuilder_cloudfrontEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass blockPublicAccessBuilder_s3EClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass corsRuleBuilder_s3EClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass noncurrentVersionTransitionBuilder_s3EClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass transitionBuilder_s3EClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass lifecycleRuleBuilder_s3EClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass bucketMetricsBuilder_s3EClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass redirectTargetBuilder_s3EClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass routingRuleConditionBuilder_s3EClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass routingRuleBuilder_s3EClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass bucketBuilder_s3EClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass bucketPropsBuilder_s3EClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass originAccessIdentityBuilder_cloudfrontEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass s3OriginConfigBuilder_cloudfrontEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass sourceConfigurationBuilder_cloudfrontEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass aliasConfigurationBuilder_cloudfrontEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass loggingConfigurationBuilder_cloudfrontEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass cloudFrontWebDistributionPropsBuilder_cloudfrontEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -466,6 +697,111 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	 * @generated
 	 */
 	private EClass cloudFrontToS3Builder_cloudfronts3EClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass autoVerifiedAttrsBuilder_cognitoEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass userPoolTriggersBuilder_cognitoEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass emailSettingsBuilder_cognitoEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass passwordPolicyBuilder_cognitoEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass mfaSecondFactorBuilder_cognitoEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass requiredAttributesBuilder_cognitoEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass signInAliasesBuilder_cognitoEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass userInvitationConfigBuilder_cognitoEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass userVerificationConfigBuilder_cognitoEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass userPoolPropsBuilder_cognitoEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass userPoolBuilder_cognitoEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass authFlowBuilder_cognitoEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass oAuthFlowsBuilder_cognitoEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass oAuthSettingsBuilder_cognitoEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass userPoolClientPropsBuilder_cognitoEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -865,6 +1201,118 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	 * @generated
 	 */
 	private EEnum jsonSchemaTypeEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum cloudFrontAllowedCachedMethodsEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum cloudFrontAllowedMethodsEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum lambdaEdgeEventTypeEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum originSslPolicyEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum originProtocolPolicyEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum bucketAccessControlEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum httpMethodsEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum bucketEncryptionEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum redirectProtocolEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum httpVersionEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum priceClassEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum viewerProtocolPolicyEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum securityPolicyProtocolEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum sslMethodEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum mfaEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum verificationEmailStyleEEnum = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -4214,6 +4662,336 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	 * @generated
 	 */
 	@Override
+	public EClass getFunctionPropsBuilder_lambda() {
+		return functionPropsBuilder_lambdaEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getFunctionPropsBuilder_lambda_CodeWithCode_software_amazon_awscdk_services_lambda_Code_AsReference() {
+		return (EAttribute) functionPropsBuilder_lambdaEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getFunctionPropsBuilder_lambda_Handler_java_lang_String_() {
+		return (EAttribute) functionPropsBuilder_lambdaEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getFunctionPropsBuilder_lambda_RuntimeWithRuntime_software_amazon_awscdk_services_lambda_Runtime_AsReference() {
+		return (EAttribute) functionPropsBuilder_lambdaEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getFunctionPropsBuilder_lambda_AllowAllOutbound_java_lang_Boolean_() {
+		return (EAttribute) functionPropsBuilder_lambdaEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getFunctionPropsBuilder_lambda_CurrentVersionOptionsWithVersionOptions_software_amazon_awscdk_services_lambda_VersionOptions_AsReference() {
+		return (EAttribute) functionPropsBuilder_lambdaEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getFunctionPropsBuilder_lambda_DeadLetterQueueWithIQueue_software_amazon_awscdk_services_sqs_IQueue_AsReference() {
+		return (EAttribute) functionPropsBuilder_lambdaEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getFunctionPropsBuilder_lambda_DeadLetterQueueEnabled_java_lang_Boolean_() {
+		return (EAttribute) functionPropsBuilder_lambdaEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getFunctionPropsBuilder_lambda_Description_java_lang_String_() {
+		return (EAttribute) functionPropsBuilder_lambdaEClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getFunctionPropsBuilder_lambda_Environment_java_lang_String__java_lang_String_AsMap() {
+		return (EAttribute) functionPropsBuilder_lambdaEClass.getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getFunctionPropsBuilder_lambda_Events_software_amazon_awscdk_services_lambda_IEventSource_AsList() {
+		return (EAttribute) functionPropsBuilder_lambdaEClass.getEStructuralFeatures().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getFunctionPropsBuilder_lambda_FunctionName_java_lang_String_() {
+		return (EAttribute) functionPropsBuilder_lambdaEClass.getEStructuralFeatures().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getFunctionPropsBuilder_lambda_InitialPolicy_software_amazon_awscdk_services_iam_PolicyStatement_AsList() {
+		return (EAttribute) functionPropsBuilder_lambdaEClass.getEStructuralFeatures().get(11);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getFunctionPropsBuilder_lambda_Layers_software_amazon_awscdk_services_lambda_ILayerVersion_AsList() {
+		return (EAttribute) functionPropsBuilder_lambdaEClass.getEStructuralFeatures().get(12);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getFunctionPropsBuilder_lambda_LogRetention_software_amazon_awscdk_services_logs_RetentionDays_() {
+		return (EAttribute) functionPropsBuilder_lambdaEClass.getEStructuralFeatures().get(13);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getFunctionPropsBuilder_lambda_LogRetentionRoleWithIRole_software_amazon_awscdk_services_iam_IRole_AsReference() {
+		return (EAttribute) functionPropsBuilder_lambdaEClass.getEStructuralFeatures().get(14);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getFunctionPropsBuilder_lambda_MemorySize_java_lang_Number_() {
+		return (EAttribute) functionPropsBuilder_lambdaEClass.getEStructuralFeatures().get(15);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getFunctionPropsBuilder_lambda_ReservedConcurrentExecutions_java_lang_Number_() {
+		return (EAttribute) functionPropsBuilder_lambdaEClass.getEStructuralFeatures().get(16);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getFunctionPropsBuilder_lambda_RoleWithIRole_software_amazon_awscdk_services_iam_IRole_AsReference() {
+		return (EAttribute) functionPropsBuilder_lambdaEClass.getEStructuralFeatures().get(17);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getFunctionPropsBuilder_lambda_SecurityGroupWithISecurityGroup_software_amazon_awscdk_services_ec2_ISecurityGroup_AsReference() {
+		return (EAttribute) functionPropsBuilder_lambdaEClass.getEStructuralFeatures().get(18);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getFunctionPropsBuilder_lambda_SecurityGroups_software_amazon_awscdk_services_ec2_ISecurityGroup_AsList() {
+		return (EAttribute) functionPropsBuilder_lambdaEClass.getEStructuralFeatures().get(19);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getFunctionPropsBuilder_lambda_TimeoutWithDuration_software_amazon_awscdk_core_Duration_AsReference() {
+		return (EAttribute) functionPropsBuilder_lambdaEClass.getEStructuralFeatures().get(20);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getFunctionPropsBuilder_lambda_Tracing_software_amazon_awscdk_services_lambda_Tracing_() {
+		return (EAttribute) functionPropsBuilder_lambdaEClass.getEStructuralFeatures().get(21);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getFunctionPropsBuilder_lambda_VpcWithIVpc_software_amazon_awscdk_services_ec2_IVpc_AsReference() {
+		return (EAttribute) functionPropsBuilder_lambdaEClass.getEStructuralFeatures().get(22);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getFunctionPropsBuilder_lambda_VpcSubnetsWithSubnetSelection_software_amazon_awscdk_services_ec2_SubnetSelection_AsReference() {
+		return (EAttribute) functionPropsBuilder_lambdaEClass.getEStructuralFeatures().get(23);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getFunctionPropsBuilder_lambda_MaxEventAgeWithDuration_software_amazon_awscdk_core_Duration_AsReference() {
+		return (EAttribute) functionPropsBuilder_lambdaEClass.getEStructuralFeatures().get(24);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getFunctionPropsBuilder_lambda_OnFailureWithIDestination_software_amazon_awscdk_services_lambda_IDestination_AsReference() {
+		return (EAttribute) functionPropsBuilder_lambdaEClass.getEStructuralFeatures().get(25);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getFunctionPropsBuilder_lambda_OnSuccessWithIDestination_software_amazon_awscdk_services_lambda_IDestination_AsReference() {
+		return (EAttribute) functionPropsBuilder_lambdaEClass.getEStructuralFeatures().get(26);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getFunctionPropsBuilder_lambda_RetryAttempts_java_lang_Number_() {
+		return (EAttribute) functionPropsBuilder_lambdaEClass.getEStructuralFeatures().get(27);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getFunctionPropsBuilder_lambda_GeneratedClassName() {
+		return (EAttribute) functionPropsBuilder_lambdaEClass.getEStructuralFeatures().get(28);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getFunctionPropsBuilder_lambda_VarName() {
+		return (EAttribute) functionPropsBuilder_lambdaEClass.getEStructuralFeatures().get(29);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getFunctionPropsBuilder_lambda_Identifier() {
+		return (EAttribute) functionPropsBuilder_lambdaEClass.getEStructuralFeatures().get(30);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getFunctionPropsBuilder_lambda_AdditionalCode() {
+		return (EAttribute) functionPropsBuilder_lambdaEClass.getEStructuralFeatures().get(31);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getFunctionBuilder_lambda() {
 		return functionBuilder_lambdaEClass;
 	}
@@ -6064,6 +6842,566 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	 * @generated
 	 */
 	@Override
+	public EClass getLambdaRestApiPropsBuilder_apigateway() {
+		return lambdaRestApiPropsBuilder_apigatewayEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLambdaRestApiPropsBuilder_apigateway_HandlerWithIFunction_software_amazon_awscdk_services_lambda_IFunction_AsReference() {
+		return (EAttribute) lambdaRestApiPropsBuilder_apigatewayEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLambdaRestApiPropsBuilder_apigateway_OptionsWithRestApiProps_software_amazon_awscdk_services_apigateway_RestApiProps_AsReference() {
+		return (EAttribute) lambdaRestApiPropsBuilder_apigatewayEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLambdaRestApiPropsBuilder_apigateway_Proxy_java_lang_Boolean_() {
+		return (EAttribute) lambdaRestApiPropsBuilder_apigatewayEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLambdaRestApiPropsBuilder_apigateway_ApiKeySourceType_software_amazon_awscdk_services_apigateway_ApiKeySourceType_() {
+		return (EAttribute) lambdaRestApiPropsBuilder_apigatewayEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLambdaRestApiPropsBuilder_apigateway_BinaryMediaTypes_java_lang_String_AsList() {
+		return (EAttribute) lambdaRestApiPropsBuilder_apigatewayEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLambdaRestApiPropsBuilder_apigateway_CloneFromWithIRestApi_software_amazon_awscdk_services_apigateway_IRestApi_AsReference() {
+		return (EAttribute) lambdaRestApiPropsBuilder_apigatewayEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLambdaRestApiPropsBuilder_apigateway_Description_java_lang_String_() {
+		return (EAttribute) lambdaRestApiPropsBuilder_apigatewayEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLambdaRestApiPropsBuilder_apigateway_EndpointConfigurationWithEndpointConfiguration_software_amazon_awscdk_services_apigateway_EndpointConfiguration_AsReference() {
+		return (EAttribute) lambdaRestApiPropsBuilder_apigatewayEClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLambdaRestApiPropsBuilder_apigateway_EndpointTypes_software_amazon_awscdk_services_apigateway_EndpointType_AsList() {
+		return (EAttribute) lambdaRestApiPropsBuilder_apigatewayEClass.getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLambdaRestApiPropsBuilder_apigateway_MinimumCompressionSize_java_lang_Number_() {
+		return (EAttribute) lambdaRestApiPropsBuilder_apigatewayEClass.getEStructuralFeatures().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLambdaRestApiPropsBuilder_apigateway_CloudWatchRole_java_lang_Boolean_() {
+		return (EAttribute) lambdaRestApiPropsBuilder_apigatewayEClass.getEStructuralFeatures().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLambdaRestApiPropsBuilder_apigateway_Deploy_java_lang_Boolean_() {
+		return (EAttribute) lambdaRestApiPropsBuilder_apigatewayEClass.getEStructuralFeatures().get(11);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLambdaRestApiPropsBuilder_apigateway_DeployOptionsWithStageOptions_software_amazon_awscdk_services_apigateway_StageOptions_AsReference() {
+		return (EAttribute) lambdaRestApiPropsBuilder_apigatewayEClass.getEStructuralFeatures().get(12);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLambdaRestApiPropsBuilder_apigateway_DomainNameWithDomainNameOptions_software_amazon_awscdk_services_apigateway_DomainNameOptions_AsReference() {
+		return (EAttribute) lambdaRestApiPropsBuilder_apigatewayEClass.getEStructuralFeatures().get(13);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLambdaRestApiPropsBuilder_apigateway_EndpointExportName_java_lang_String_() {
+		return (EAttribute) lambdaRestApiPropsBuilder_apigatewayEClass.getEStructuralFeatures().get(14);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLambdaRestApiPropsBuilder_apigateway_FailOnWarnings_java_lang_Boolean_() {
+		return (EAttribute) lambdaRestApiPropsBuilder_apigatewayEClass.getEStructuralFeatures().get(15);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLambdaRestApiPropsBuilder_apigateway_Parameters_java_lang_String__java_lang_String_AsMap() {
+		return (EAttribute) lambdaRestApiPropsBuilder_apigatewayEClass.getEStructuralFeatures().get(16);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLambdaRestApiPropsBuilder_apigateway_PolicyWithPolicyDocument_software_amazon_awscdk_services_iam_PolicyDocument_AsReference() {
+		return (EAttribute) lambdaRestApiPropsBuilder_apigatewayEClass.getEStructuralFeatures().get(17);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLambdaRestApiPropsBuilder_apigateway_RestApiName_java_lang_String_() {
+		return (EAttribute) lambdaRestApiPropsBuilder_apigatewayEClass.getEStructuralFeatures().get(18);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLambdaRestApiPropsBuilder_apigateway_RetainDeployments_java_lang_Boolean_() {
+		return (EAttribute) lambdaRestApiPropsBuilder_apigatewayEClass.getEStructuralFeatures().get(19);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLambdaRestApiPropsBuilder_apigateway_DefaultCorsPreflightOptionsWithCorsOptions_software_amazon_awscdk_services_apigateway_CorsOptions_AsReference() {
+		return (EAttribute) lambdaRestApiPropsBuilder_apigatewayEClass.getEStructuralFeatures().get(20);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLambdaRestApiPropsBuilder_apigateway_DefaultIntegrationWithIntegration_software_amazon_awscdk_services_apigateway_Integration_AsReference() {
+		return (EAttribute) lambdaRestApiPropsBuilder_apigatewayEClass.getEStructuralFeatures().get(21);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLambdaRestApiPropsBuilder_apigateway_DefaultMethodOptionsWithMethodOptions_software_amazon_awscdk_services_apigateway_MethodOptions_AsReference() {
+		return (EAttribute) lambdaRestApiPropsBuilder_apigatewayEClass.getEStructuralFeatures().get(22);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLambdaRestApiPropsBuilder_apigateway_GeneratedClassName() {
+		return (EAttribute) lambdaRestApiPropsBuilder_apigatewayEClass.getEStructuralFeatures().get(23);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLambdaRestApiPropsBuilder_apigateway_VarName() {
+		return (EAttribute) lambdaRestApiPropsBuilder_apigatewayEClass.getEStructuralFeatures().get(24);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLambdaRestApiPropsBuilder_apigateway_Identifier() {
+		return (EAttribute) lambdaRestApiPropsBuilder_apigatewayEClass.getEStructuralFeatures().get(25);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLambdaRestApiPropsBuilder_apigateway_AdditionalCode() {
+		return (EAttribute) lambdaRestApiPropsBuilder_apigatewayEClass.getEStructuralFeatures().get(26);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getLambdaRestApiBuilder_apigateway() {
+		return lambdaRestApiBuilder_apigatewayEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLambdaRestApiBuilder_apigateway_DefaultCorsPreflightOptionsWithCorsOptions_software_amazon_awscdk_services_apigateway_CorsOptions_AsReference() {
+		return (EAttribute) lambdaRestApiBuilder_apigatewayEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLambdaRestApiBuilder_apigateway_DefaultIntegrationWithIntegration_software_amazon_awscdk_services_apigateway_Integration_AsReference() {
+		return (EAttribute) lambdaRestApiBuilder_apigatewayEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLambdaRestApiBuilder_apigateway_DefaultMethodOptionsWithMethodOptions_software_amazon_awscdk_services_apigateway_MethodOptions_AsReference() {
+		return (EAttribute) lambdaRestApiBuilder_apigatewayEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLambdaRestApiBuilder_apigateway_CloudWatchRole_java_lang_Boolean_() {
+		return (EAttribute) lambdaRestApiBuilder_apigatewayEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLambdaRestApiBuilder_apigateway_Deploy_java_lang_Boolean_() {
+		return (EAttribute) lambdaRestApiBuilder_apigatewayEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLambdaRestApiBuilder_apigateway_DeployOptionsWithStageOptions_software_amazon_awscdk_services_apigateway_StageOptions_AsReference() {
+		return (EAttribute) lambdaRestApiBuilder_apigatewayEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLambdaRestApiBuilder_apigateway_DomainNameWithDomainNameOptions_software_amazon_awscdk_services_apigateway_DomainNameOptions_AsReference() {
+		return (EAttribute) lambdaRestApiBuilder_apigatewayEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLambdaRestApiBuilder_apigateway_EndpointExportName_java_lang_String_() {
+		return (EAttribute) lambdaRestApiBuilder_apigatewayEClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLambdaRestApiBuilder_apigateway_FailOnWarnings_java_lang_Boolean_() {
+		return (EAttribute) lambdaRestApiBuilder_apigatewayEClass.getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLambdaRestApiBuilder_apigateway_Parameters_java_lang_String__java_lang_String_AsMap() {
+		return (EAttribute) lambdaRestApiBuilder_apigatewayEClass.getEStructuralFeatures().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLambdaRestApiBuilder_apigateway_PolicyWithPolicyDocument_software_amazon_awscdk_services_iam_PolicyDocument_AsReference() {
+		return (EAttribute) lambdaRestApiBuilder_apigatewayEClass.getEStructuralFeatures().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLambdaRestApiBuilder_apigateway_RestApiName_java_lang_String_() {
+		return (EAttribute) lambdaRestApiBuilder_apigatewayEClass.getEStructuralFeatures().get(11);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLambdaRestApiBuilder_apigateway_RetainDeployments_java_lang_Boolean_() {
+		return (EAttribute) lambdaRestApiBuilder_apigatewayEClass.getEStructuralFeatures().get(12);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLambdaRestApiBuilder_apigateway_ApiKeySourceType_software_amazon_awscdk_services_apigateway_ApiKeySourceType_() {
+		return (EAttribute) lambdaRestApiBuilder_apigatewayEClass.getEStructuralFeatures().get(13);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLambdaRestApiBuilder_apigateway_BinaryMediaTypes_java_lang_String_AsList() {
+		return (EAttribute) lambdaRestApiBuilder_apigatewayEClass.getEStructuralFeatures().get(14);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLambdaRestApiBuilder_apigateway_CloneFromWithIRestApi_software_amazon_awscdk_services_apigateway_IRestApi_AsReference() {
+		return (EAttribute) lambdaRestApiBuilder_apigatewayEClass.getEStructuralFeatures().get(15);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLambdaRestApiBuilder_apigateway_Description_java_lang_String_() {
+		return (EAttribute) lambdaRestApiBuilder_apigatewayEClass.getEStructuralFeatures().get(16);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLambdaRestApiBuilder_apigateway_EndpointConfigurationWithEndpointConfiguration_software_amazon_awscdk_services_apigateway_EndpointConfiguration_AsReference() {
+		return (EAttribute) lambdaRestApiBuilder_apigatewayEClass.getEStructuralFeatures().get(17);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLambdaRestApiBuilder_apigateway_EndpointTypes_software_amazon_awscdk_services_apigateway_EndpointType_AsList() {
+		return (EAttribute) lambdaRestApiBuilder_apigatewayEClass.getEStructuralFeatures().get(18);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLambdaRestApiBuilder_apigateway_MinimumCompressionSize_java_lang_Number_() {
+		return (EAttribute) lambdaRestApiBuilder_apigatewayEClass.getEStructuralFeatures().get(19);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLambdaRestApiBuilder_apigateway_HandlerWithIFunction_software_amazon_awscdk_services_lambda_IFunction_AsReference() {
+		return (EAttribute) lambdaRestApiBuilder_apigatewayEClass.getEStructuralFeatures().get(20);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLambdaRestApiBuilder_apigateway_OptionsWithRestApiProps_software_amazon_awscdk_services_apigateway_RestApiProps_AsReference() {
+		return (EAttribute) lambdaRestApiBuilder_apigatewayEClass.getEStructuralFeatures().get(21);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLambdaRestApiBuilder_apigateway_Proxy_java_lang_Boolean_() {
+		return (EAttribute) lambdaRestApiBuilder_apigatewayEClass.getEStructuralFeatures().get(22);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLambdaRestApiBuilder_apigateway_GeneratedClassName() {
+		return (EAttribute) lambdaRestApiBuilder_apigatewayEClass.getEStructuralFeatures().get(23);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLambdaRestApiBuilder_apigateway_VarName() {
+		return (EAttribute) lambdaRestApiBuilder_apigatewayEClass.getEStructuralFeatures().get(24);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLambdaRestApiBuilder_apigateway_Identifier() {
+		return (EAttribute) lambdaRestApiBuilder_apigatewayEClass.getEStructuralFeatures().get(25);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLambdaRestApiBuilder_apigateway_AdditionalCode() {
+		return (EAttribute) lambdaRestApiBuilder_apigatewayEClass.getEStructuralFeatures().get(26);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getApiGatewayToLambdaBuilder_apigatewaylambda() {
 		return apiGatewayToLambdaBuilder_apigatewaylambdaEClass;
 	}
@@ -6136,6 +7474,176 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	@Override
 	public EAttribute getApiGatewayToLambdaBuilder_apigatewaylambda_AdditionalCode() {
 		return (EAttribute) apiGatewayToLambdaBuilder_apigatewaylambdaEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getQueuePropsBuilder_sqs() {
+		return queuePropsBuilder_sqsEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getQueuePropsBuilder_sqs_ContentBasedDeduplication_java_lang_Boolean_() {
+		return (EAttribute) queuePropsBuilder_sqsEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getQueuePropsBuilder_sqs_DataKeyReuseWithDuration_software_amazon_awscdk_core_Duration_AsReference() {
+		return (EAttribute) queuePropsBuilder_sqsEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getQueuePropsBuilder_sqs_DeadLetterQueueWithDeadLetterQueue_software_amazon_awscdk_services_sqs_DeadLetterQueue_AsReference() {
+		return (EAttribute) queuePropsBuilder_sqsEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getQueuePropsBuilder_sqs_DeliveryDelayWithDuration_software_amazon_awscdk_core_Duration_AsReference() {
+		return (EAttribute) queuePropsBuilder_sqsEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getQueuePropsBuilder_sqs_Encryption_software_amazon_awscdk_services_sqs_QueueEncryption_() {
+		return (EAttribute) queuePropsBuilder_sqsEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getQueuePropsBuilder_sqs_EncryptionMasterKeyWithIKey_software_amazon_awscdk_services_kms_IKey_AsReference() {
+		return (EAttribute) queuePropsBuilder_sqsEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getQueuePropsBuilder_sqs_Fifo_java_lang_Boolean_() {
+		return (EAttribute) queuePropsBuilder_sqsEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getQueuePropsBuilder_sqs_MaxMessageSizeBytes_java_lang_Number_() {
+		return (EAttribute) queuePropsBuilder_sqsEClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getQueuePropsBuilder_sqs_QueueName_java_lang_String_() {
+		return (EAttribute) queuePropsBuilder_sqsEClass.getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getQueuePropsBuilder_sqs_ReceiveMessageWaitTimeWithDuration_software_amazon_awscdk_core_Duration_AsReference() {
+		return (EAttribute) queuePropsBuilder_sqsEClass.getEStructuralFeatures().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getQueuePropsBuilder_sqs_RetentionPeriodWithDuration_software_amazon_awscdk_core_Duration_AsReference() {
+		return (EAttribute) queuePropsBuilder_sqsEClass.getEStructuralFeatures().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getQueuePropsBuilder_sqs_VisibilityTimeoutWithDuration_software_amazon_awscdk_core_Duration_AsReference() {
+		return (EAttribute) queuePropsBuilder_sqsEClass.getEStructuralFeatures().get(11);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getQueuePropsBuilder_sqs_GeneratedClassName() {
+		return (EAttribute) queuePropsBuilder_sqsEClass.getEStructuralFeatures().get(12);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getQueuePropsBuilder_sqs_VarName() {
+		return (EAttribute) queuePropsBuilder_sqsEClass.getEStructuralFeatures().get(13);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getQueuePropsBuilder_sqs_Identifier() {
+		return (EAttribute) queuePropsBuilder_sqsEClass.getEStructuralFeatures().get(14);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getQueuePropsBuilder_sqs_AdditionalCode() {
+		return (EAttribute) queuePropsBuilder_sqsEClass.getEStructuralFeatures().get(15);
 	}
 
 	/**
@@ -6266,6 +7774,2336 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	@Override
 	public EAttribute getApiGatewayToSqsBuilder_apigatewaysqs_AdditionalCode() {
 		return (EAttribute) apiGatewayToSqsBuilder_apigatewaysqsEClass.getEStructuralFeatures().get(11);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getVersionBuilder_lambda() {
+		return versionBuilder_lambdaEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getVersionBuilder_lambda_MaxEventAgeWithDuration_software_amazon_awscdk_core_Duration_AsReference() {
+		return (EAttribute) versionBuilder_lambdaEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getVersionBuilder_lambda_OnFailureWithIDestination_software_amazon_awscdk_services_lambda_IDestination_AsReference() {
+		return (EAttribute) versionBuilder_lambdaEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getVersionBuilder_lambda_OnSuccessWithIDestination_software_amazon_awscdk_services_lambda_IDestination_AsReference() {
+		return (EAttribute) versionBuilder_lambdaEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getVersionBuilder_lambda_RetryAttempts_java_lang_Number_() {
+		return (EAttribute) versionBuilder_lambdaEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getVersionBuilder_lambda_CodeSha256_java_lang_String_() {
+		return (EAttribute) versionBuilder_lambdaEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getVersionBuilder_lambda_Description_java_lang_String_() {
+		return (EAttribute) versionBuilder_lambdaEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getVersionBuilder_lambda_ProvisionedConcurrentExecutions_java_lang_Number_() {
+		return (EAttribute) versionBuilder_lambdaEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getVersionBuilder_lambda_RemovalPolicy_software_amazon_awscdk_core_RemovalPolicy_() {
+		return (EAttribute) versionBuilder_lambdaEClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getVersionBuilder_lambda_LambdaWithIFunction_software_amazon_awscdk_services_lambda_IFunction_AsReference() {
+		return (EAttribute) versionBuilder_lambdaEClass.getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getVersionBuilder_lambda_GeneratedClassName() {
+		return (EAttribute) versionBuilder_lambdaEClass.getEStructuralFeatures().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getVersionBuilder_lambda_VarName() {
+		return (EAttribute) versionBuilder_lambdaEClass.getEStructuralFeatures().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getVersionBuilder_lambda_Identifier() {
+		return (EAttribute) versionBuilder_lambdaEClass.getEStructuralFeatures().get(11);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getVersionBuilder_lambda_AdditionalCode() {
+		return (EAttribute) versionBuilder_lambdaEClass.getEStructuralFeatures().get(12);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getLambdaFunctionAssociationBuilder_cloudfront() {
+		return lambdaFunctionAssociationBuilder_cloudfrontEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLambdaFunctionAssociationBuilder_cloudfront_EventType_software_amazon_awscdk_services_cloudfront_LambdaEdgeEventType_() {
+		return (EAttribute) lambdaFunctionAssociationBuilder_cloudfrontEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLambdaFunctionAssociationBuilder_cloudfront_LambdaFunctionWithIVersion_software_amazon_awscdk_services_lambda_IVersion_AsReference() {
+		return (EAttribute) lambdaFunctionAssociationBuilder_cloudfrontEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLambdaFunctionAssociationBuilder_cloudfront_GeneratedClassName() {
+		return (EAttribute) lambdaFunctionAssociationBuilder_cloudfrontEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLambdaFunctionAssociationBuilder_cloudfront_VarName() {
+		return (EAttribute) lambdaFunctionAssociationBuilder_cloudfrontEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLambdaFunctionAssociationBuilder_cloudfront_Identifier() {
+		return (EAttribute) lambdaFunctionAssociationBuilder_cloudfrontEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLambdaFunctionAssociationBuilder_cloudfront_AdditionalCode() {
+		return (EAttribute) lambdaFunctionAssociationBuilder_cloudfrontEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getBehaviorBuilder_cloudfront() {
+		return behaviorBuilder_cloudfrontEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getBehaviorBuilder_cloudfront_AllowedMethods_software_amazon_awscdk_services_cloudfront_CloudFrontAllowedMethods_() {
+		return (EAttribute) behaviorBuilder_cloudfrontEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getBehaviorBuilder_cloudfront_CachedMethods_software_amazon_awscdk_services_cloudfront_CloudFrontAllowedCachedMethods_() {
+		return (EAttribute) behaviorBuilder_cloudfrontEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getBehaviorBuilder_cloudfront_Compress_java_lang_Boolean_() {
+		return (EAttribute) behaviorBuilder_cloudfrontEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getBehaviorBuilder_cloudfront_DefaultTtlWithDuration_software_amazon_awscdk_core_Duration_AsReference() {
+		return (EAttribute) behaviorBuilder_cloudfrontEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getBehaviorBuilder_cloudfront_ForwardedValuesWithForwardedValuesProperty_software_amazon_awscdk_services_cloudfront_CfnDistribution_ForwardedValuesProperty_AsReference() {
+		return (EAttribute) behaviorBuilder_cloudfrontEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getBehaviorBuilder_cloudfront_IsDefaultBehavior_java_lang_Boolean_() {
+		return (EAttribute) behaviorBuilder_cloudfrontEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getBehaviorBuilder_cloudfront_LambdaFunctionAssociations_software_amazon_awscdk_services_cloudfront_LambdaFunctionAssociation_AsList() {
+		return (EAttribute) behaviorBuilder_cloudfrontEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getBehaviorBuilder_cloudfront_MaxTtlWithDuration_software_amazon_awscdk_core_Duration_AsReference() {
+		return (EAttribute) behaviorBuilder_cloudfrontEClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getBehaviorBuilder_cloudfront_MinTtlWithDuration_software_amazon_awscdk_core_Duration_AsReference() {
+		return (EAttribute) behaviorBuilder_cloudfrontEClass.getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getBehaviorBuilder_cloudfront_PathPattern_java_lang_String_() {
+		return (EAttribute) behaviorBuilder_cloudfrontEClass.getEStructuralFeatures().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getBehaviorBuilder_cloudfront_TrustedSigners_java_lang_String_AsList() {
+		return (EAttribute) behaviorBuilder_cloudfrontEClass.getEStructuralFeatures().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getBehaviorBuilder_cloudfront_GeneratedClassName() {
+		return (EAttribute) behaviorBuilder_cloudfrontEClass.getEStructuralFeatures().get(11);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getBehaviorBuilder_cloudfront_VarName() {
+		return (EAttribute) behaviorBuilder_cloudfrontEClass.getEStructuralFeatures().get(12);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getBehaviorBuilder_cloudfront_Identifier() {
+		return (EAttribute) behaviorBuilder_cloudfrontEClass.getEStructuralFeatures().get(13);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getBehaviorBuilder_cloudfront_AdditionalCode() {
+		return (EAttribute) behaviorBuilder_cloudfrontEClass.getEStructuralFeatures().get(14);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getCustomOriginConfigBuilder_cloudfront() {
+		return customOriginConfigBuilder_cloudfrontEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCustomOriginConfigBuilder_cloudfront_DomainName_java_lang_String_() {
+		return (EAttribute) customOriginConfigBuilder_cloudfrontEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCustomOriginConfigBuilder_cloudfront_AllowedOriginSslVersions_software_amazon_awscdk_services_cloudfront_OriginSslPolicy_AsList() {
+		return (EAttribute) customOriginConfigBuilder_cloudfrontEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCustomOriginConfigBuilder_cloudfront_HttpPort_java_lang_Number_() {
+		return (EAttribute) customOriginConfigBuilder_cloudfrontEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCustomOriginConfigBuilder_cloudfront_HttpsPort_java_lang_Number_() {
+		return (EAttribute) customOriginConfigBuilder_cloudfrontEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCustomOriginConfigBuilder_cloudfront_OriginKeepaliveTimeoutWithDuration_software_amazon_awscdk_core_Duration_AsReference() {
+		return (EAttribute) customOriginConfigBuilder_cloudfrontEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCustomOriginConfigBuilder_cloudfront_OriginProtocolPolicy_software_amazon_awscdk_services_cloudfront_OriginProtocolPolicy_() {
+		return (EAttribute) customOriginConfigBuilder_cloudfrontEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCustomOriginConfigBuilder_cloudfront_OriginReadTimeoutWithDuration_software_amazon_awscdk_core_Duration_AsReference() {
+		return (EAttribute) customOriginConfigBuilder_cloudfrontEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCustomOriginConfigBuilder_cloudfront_GeneratedClassName() {
+		return (EAttribute) customOriginConfigBuilder_cloudfrontEClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCustomOriginConfigBuilder_cloudfront_VarName() {
+		return (EAttribute) customOriginConfigBuilder_cloudfrontEClass.getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCustomOriginConfigBuilder_cloudfront_Identifier() {
+		return (EAttribute) customOriginConfigBuilder_cloudfrontEClass.getEStructuralFeatures().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCustomOriginConfigBuilder_cloudfront_AdditionalCode() {
+		return (EAttribute) customOriginConfigBuilder_cloudfrontEClass.getEStructuralFeatures().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getBlockPublicAccessBuilder_s3() {
+		return blockPublicAccessBuilder_s3EClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getBlockPublicAccessBuilder_s3_BlockPublicAcls_java_lang_Boolean_() {
+		return (EAttribute) blockPublicAccessBuilder_s3EClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getBlockPublicAccessBuilder_s3_BlockPublicPolicy_java_lang_Boolean_() {
+		return (EAttribute) blockPublicAccessBuilder_s3EClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getBlockPublicAccessBuilder_s3_IgnorePublicAcls_java_lang_Boolean_() {
+		return (EAttribute) blockPublicAccessBuilder_s3EClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getBlockPublicAccessBuilder_s3_RestrictPublicBuckets_java_lang_Boolean_() {
+		return (EAttribute) blockPublicAccessBuilder_s3EClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getBlockPublicAccessBuilder_s3_GeneratedClassName() {
+		return (EAttribute) blockPublicAccessBuilder_s3EClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getBlockPublicAccessBuilder_s3_VarName() {
+		return (EAttribute) blockPublicAccessBuilder_s3EClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getBlockPublicAccessBuilder_s3_Identifier() {
+		return (EAttribute) blockPublicAccessBuilder_s3EClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getBlockPublicAccessBuilder_s3_AdditionalCode() {
+		return (EAttribute) blockPublicAccessBuilder_s3EClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getCorsRuleBuilder_s3() {
+		return corsRuleBuilder_s3EClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCorsRuleBuilder_s3_AllowedMethods_software_amazon_awscdk_services_s3_HttpMethods_AsList() {
+		return (EAttribute) corsRuleBuilder_s3EClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCorsRuleBuilder_s3_AllowedOrigins_java_lang_String_AsList() {
+		return (EAttribute) corsRuleBuilder_s3EClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCorsRuleBuilder_s3_AllowedHeaders_java_lang_String_AsList() {
+		return (EAttribute) corsRuleBuilder_s3EClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCorsRuleBuilder_s3_ExposedHeaders_java_lang_String_AsList() {
+		return (EAttribute) corsRuleBuilder_s3EClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCorsRuleBuilder_s3_Id_java_lang_String_() {
+		return (EAttribute) corsRuleBuilder_s3EClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCorsRuleBuilder_s3_MaxAge_java_lang_Number_() {
+		return (EAttribute) corsRuleBuilder_s3EClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCorsRuleBuilder_s3_GeneratedClassName() {
+		return (EAttribute) corsRuleBuilder_s3EClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCorsRuleBuilder_s3_VarName() {
+		return (EAttribute) corsRuleBuilder_s3EClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCorsRuleBuilder_s3_Identifier() {
+		return (EAttribute) corsRuleBuilder_s3EClass.getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCorsRuleBuilder_s3_AdditionalCode() {
+		return (EAttribute) corsRuleBuilder_s3EClass.getEStructuralFeatures().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getNoncurrentVersionTransitionBuilder_s3() {
+		return noncurrentVersionTransitionBuilder_s3EClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNoncurrentVersionTransitionBuilder_s3_StorageClassWithStorageClass_software_amazon_awscdk_services_s3_StorageClass_AsReference() {
+		return (EAttribute) noncurrentVersionTransitionBuilder_s3EClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNoncurrentVersionTransitionBuilder_s3_TransitionAfterWithDuration_software_amazon_awscdk_core_Duration_AsReference() {
+		return (EAttribute) noncurrentVersionTransitionBuilder_s3EClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNoncurrentVersionTransitionBuilder_s3_GeneratedClassName() {
+		return (EAttribute) noncurrentVersionTransitionBuilder_s3EClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNoncurrentVersionTransitionBuilder_s3_VarName() {
+		return (EAttribute) noncurrentVersionTransitionBuilder_s3EClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNoncurrentVersionTransitionBuilder_s3_Identifier() {
+		return (EAttribute) noncurrentVersionTransitionBuilder_s3EClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNoncurrentVersionTransitionBuilder_s3_AdditionalCode() {
+		return (EAttribute) noncurrentVersionTransitionBuilder_s3EClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getTransitionBuilder_s3() {
+		return transitionBuilder_s3EClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getTransitionBuilder_s3_StorageClassWithStorageClass_software_amazon_awscdk_services_s3_StorageClass_AsReference() {
+		return (EAttribute) transitionBuilder_s3EClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getTransitionBuilder_s3_TransitionAfterWithDuration_software_amazon_awscdk_core_Duration_AsReference() {
+		return (EAttribute) transitionBuilder_s3EClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getTransitionBuilder_s3_TransitionDateWithInstant_java_time_Instant_AsReference() {
+		return (EAttribute) transitionBuilder_s3EClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getTransitionBuilder_s3_GeneratedClassName() {
+		return (EAttribute) transitionBuilder_s3EClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getTransitionBuilder_s3_VarName() {
+		return (EAttribute) transitionBuilder_s3EClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getTransitionBuilder_s3_Identifier() {
+		return (EAttribute) transitionBuilder_s3EClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getTransitionBuilder_s3_AdditionalCode() {
+		return (EAttribute) transitionBuilder_s3EClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getLifecycleRuleBuilder_s3() {
+		return lifecycleRuleBuilder_s3EClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLifecycleRuleBuilder_s3_AbortIncompleteMultipartUploadAfterWithDuration_software_amazon_awscdk_core_Duration_AsReference() {
+		return (EAttribute) lifecycleRuleBuilder_s3EClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLifecycleRuleBuilder_s3_Enabled_java_lang_Boolean_() {
+		return (EAttribute) lifecycleRuleBuilder_s3EClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLifecycleRuleBuilder_s3_ExpirationWithDuration_software_amazon_awscdk_core_Duration_AsReference() {
+		return (EAttribute) lifecycleRuleBuilder_s3EClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLifecycleRuleBuilder_s3_ExpirationDateWithInstant_java_time_Instant_AsReference() {
+		return (EAttribute) lifecycleRuleBuilder_s3EClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLifecycleRuleBuilder_s3_Id_java_lang_String_() {
+		return (EAttribute) lifecycleRuleBuilder_s3EClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLifecycleRuleBuilder_s3_NoncurrentVersionExpirationWithDuration_software_amazon_awscdk_core_Duration_AsReference() {
+		return (EAttribute) lifecycleRuleBuilder_s3EClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLifecycleRuleBuilder_s3_NoncurrentVersionTransitions_software_amazon_awscdk_services_s3_NoncurrentVersionTransition_AsList() {
+		return (EAttribute) lifecycleRuleBuilder_s3EClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLifecycleRuleBuilder_s3_Prefix_java_lang_String_() {
+		return (EAttribute) lifecycleRuleBuilder_s3EClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLifecycleRuleBuilder_s3_TagFilters_java_lang_String__java_lang_Object_AsMap() {
+		return (EAttribute) lifecycleRuleBuilder_s3EClass.getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLifecycleRuleBuilder_s3_Transitions_software_amazon_awscdk_services_s3_Transition_AsList() {
+		return (EAttribute) lifecycleRuleBuilder_s3EClass.getEStructuralFeatures().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLifecycleRuleBuilder_s3_GeneratedClassName() {
+		return (EAttribute) lifecycleRuleBuilder_s3EClass.getEStructuralFeatures().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLifecycleRuleBuilder_s3_VarName() {
+		return (EAttribute) lifecycleRuleBuilder_s3EClass.getEStructuralFeatures().get(11);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLifecycleRuleBuilder_s3_Identifier() {
+		return (EAttribute) lifecycleRuleBuilder_s3EClass.getEStructuralFeatures().get(12);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLifecycleRuleBuilder_s3_AdditionalCode() {
+		return (EAttribute) lifecycleRuleBuilder_s3EClass.getEStructuralFeatures().get(13);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getBucketMetricsBuilder_s3() {
+		return bucketMetricsBuilder_s3EClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getBucketMetricsBuilder_s3_Id_java_lang_String_() {
+		return (EAttribute) bucketMetricsBuilder_s3EClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getBucketMetricsBuilder_s3_Prefix_java_lang_String_() {
+		return (EAttribute) bucketMetricsBuilder_s3EClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getBucketMetricsBuilder_s3_TagFilters_java_lang_String__java_lang_Object_AsMap() {
+		return (EAttribute) bucketMetricsBuilder_s3EClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getBucketMetricsBuilder_s3_GeneratedClassName() {
+		return (EAttribute) bucketMetricsBuilder_s3EClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getBucketMetricsBuilder_s3_VarName() {
+		return (EAttribute) bucketMetricsBuilder_s3EClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getBucketMetricsBuilder_s3_Identifier() {
+		return (EAttribute) bucketMetricsBuilder_s3EClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getBucketMetricsBuilder_s3_AdditionalCode() {
+		return (EAttribute) bucketMetricsBuilder_s3EClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getRedirectTargetBuilder_s3() {
+		return redirectTargetBuilder_s3EClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getRedirectTargetBuilder_s3_HostName_java_lang_String_() {
+		return (EAttribute) redirectTargetBuilder_s3EClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getRedirectTargetBuilder_s3_Protocol_software_amazon_awscdk_services_s3_RedirectProtocol_() {
+		return (EAttribute) redirectTargetBuilder_s3EClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getRedirectTargetBuilder_s3_GeneratedClassName() {
+		return (EAttribute) redirectTargetBuilder_s3EClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getRedirectTargetBuilder_s3_VarName() {
+		return (EAttribute) redirectTargetBuilder_s3EClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getRedirectTargetBuilder_s3_Identifier() {
+		return (EAttribute) redirectTargetBuilder_s3EClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getRedirectTargetBuilder_s3_AdditionalCode() {
+		return (EAttribute) redirectTargetBuilder_s3EClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getRoutingRuleConditionBuilder_s3() {
+		return routingRuleConditionBuilder_s3EClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getRoutingRuleConditionBuilder_s3_HttpErrorCodeReturnedEquals_java_lang_String_() {
+		return (EAttribute) routingRuleConditionBuilder_s3EClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getRoutingRuleConditionBuilder_s3_KeyPrefixEquals_java_lang_String_() {
+		return (EAttribute) routingRuleConditionBuilder_s3EClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getRoutingRuleConditionBuilder_s3_GeneratedClassName() {
+		return (EAttribute) routingRuleConditionBuilder_s3EClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getRoutingRuleConditionBuilder_s3_VarName() {
+		return (EAttribute) routingRuleConditionBuilder_s3EClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getRoutingRuleConditionBuilder_s3_Identifier() {
+		return (EAttribute) routingRuleConditionBuilder_s3EClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getRoutingRuleConditionBuilder_s3_AdditionalCode() {
+		return (EAttribute) routingRuleConditionBuilder_s3EClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getRoutingRuleBuilder_s3() {
+		return routingRuleBuilder_s3EClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getRoutingRuleBuilder_s3_ConditionWithRoutingRuleCondition_software_amazon_awscdk_services_s3_RoutingRuleCondition_AsReference() {
+		return (EAttribute) routingRuleBuilder_s3EClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getRoutingRuleBuilder_s3_HostName_java_lang_String_() {
+		return (EAttribute) routingRuleBuilder_s3EClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getRoutingRuleBuilder_s3_HttpRedirectCode_java_lang_String_() {
+		return (EAttribute) routingRuleBuilder_s3EClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getRoutingRuleBuilder_s3_Protocol_software_amazon_awscdk_services_s3_RedirectProtocol_() {
+		return (EAttribute) routingRuleBuilder_s3EClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getRoutingRuleBuilder_s3_ReplaceKeyWithReplaceKey_software_amazon_awscdk_services_s3_ReplaceKey_AsReference() {
+		return (EAttribute) routingRuleBuilder_s3EClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getRoutingRuleBuilder_s3_GeneratedClassName() {
+		return (EAttribute) routingRuleBuilder_s3EClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getRoutingRuleBuilder_s3_VarName() {
+		return (EAttribute) routingRuleBuilder_s3EClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getRoutingRuleBuilder_s3_Identifier() {
+		return (EAttribute) routingRuleBuilder_s3EClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getRoutingRuleBuilder_s3_AdditionalCode() {
+		return (EAttribute) routingRuleBuilder_s3EClass.getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getBucketBuilder_s3() {
+		return bucketBuilder_s3EClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getBucketBuilder_s3_AccessControl_software_amazon_awscdk_services_s3_BucketAccessControl_() {
+		return (EAttribute) bucketBuilder_s3EClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getBucketBuilder_s3_BlockPublicAccessWithBlockPublicAccess_software_amazon_awscdk_services_s3_BlockPublicAccess_AsReference() {
+		return (EAttribute) bucketBuilder_s3EClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getBucketBuilder_s3_BucketName_java_lang_String_() {
+		return (EAttribute) bucketBuilder_s3EClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getBucketBuilder_s3_Cors_software_amazon_awscdk_services_s3_CorsRule_AsList() {
+		return (EAttribute) bucketBuilder_s3EClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getBucketBuilder_s3_Encryption_software_amazon_awscdk_services_s3_BucketEncryption_() {
+		return (EAttribute) bucketBuilder_s3EClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getBucketBuilder_s3_EncryptionKeyWithIKey_software_amazon_awscdk_services_kms_IKey_AsReference() {
+		return (EAttribute) bucketBuilder_s3EClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getBucketBuilder_s3_LifecycleRules_software_amazon_awscdk_services_s3_LifecycleRule_AsList() {
+		return (EAttribute) bucketBuilder_s3EClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getBucketBuilder_s3_Metrics_software_amazon_awscdk_services_s3_BucketMetrics_AsList() {
+		return (EAttribute) bucketBuilder_s3EClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getBucketBuilder_s3_PublicReadAccess_java_lang_Boolean_() {
+		return (EAttribute) bucketBuilder_s3EClass.getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getBucketBuilder_s3_RemovalPolicy_software_amazon_awscdk_core_RemovalPolicy_() {
+		return (EAttribute) bucketBuilder_s3EClass.getEStructuralFeatures().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getBucketBuilder_s3_ServerAccessLogsBucketWithIBucket_software_amazon_awscdk_services_s3_IBucket_AsReference() {
+		return (EAttribute) bucketBuilder_s3EClass.getEStructuralFeatures().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getBucketBuilder_s3_ServerAccessLogsPrefix_java_lang_String_() {
+		return (EAttribute) bucketBuilder_s3EClass.getEStructuralFeatures().get(11);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getBucketBuilder_s3_Versioned_java_lang_Boolean_() {
+		return (EAttribute) bucketBuilder_s3EClass.getEStructuralFeatures().get(12);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getBucketBuilder_s3_WebsiteErrorDocument_java_lang_String_() {
+		return (EAttribute) bucketBuilder_s3EClass.getEStructuralFeatures().get(13);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getBucketBuilder_s3_WebsiteIndexDocument_java_lang_String_() {
+		return (EAttribute) bucketBuilder_s3EClass.getEStructuralFeatures().get(14);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getBucketBuilder_s3_WebsiteRedirectWithRedirectTarget_software_amazon_awscdk_services_s3_RedirectTarget_AsReference() {
+		return (EAttribute) bucketBuilder_s3EClass.getEStructuralFeatures().get(15);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getBucketBuilder_s3_WebsiteRoutingRules_software_amazon_awscdk_services_s3_RoutingRule_AsList() {
+		return (EAttribute) bucketBuilder_s3EClass.getEStructuralFeatures().get(16);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getBucketBuilder_s3_GeneratedClassName() {
+		return (EAttribute) bucketBuilder_s3EClass.getEStructuralFeatures().get(17);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getBucketBuilder_s3_VarName() {
+		return (EAttribute) bucketBuilder_s3EClass.getEStructuralFeatures().get(18);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getBucketBuilder_s3_Identifier() {
+		return (EAttribute) bucketBuilder_s3EClass.getEStructuralFeatures().get(19);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getBucketBuilder_s3_AdditionalCode() {
+		return (EAttribute) bucketBuilder_s3EClass.getEStructuralFeatures().get(20);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getBucketPropsBuilder_s3() {
+		return bucketPropsBuilder_s3EClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getBucketPropsBuilder_s3_AccessControl_software_amazon_awscdk_services_s3_BucketAccessControl_() {
+		return (EAttribute) bucketPropsBuilder_s3EClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getBucketPropsBuilder_s3_BlockPublicAccessWithBlockPublicAccess_software_amazon_awscdk_services_s3_BlockPublicAccess_AsReference() {
+		return (EAttribute) bucketPropsBuilder_s3EClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getBucketPropsBuilder_s3_BucketName_java_lang_String_() {
+		return (EAttribute) bucketPropsBuilder_s3EClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getBucketPropsBuilder_s3_Cors_software_amazon_awscdk_services_s3_CorsRule_AsList() {
+		return (EAttribute) bucketPropsBuilder_s3EClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getBucketPropsBuilder_s3_Encryption_software_amazon_awscdk_services_s3_BucketEncryption_() {
+		return (EAttribute) bucketPropsBuilder_s3EClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getBucketPropsBuilder_s3_EncryptionKeyWithIKey_software_amazon_awscdk_services_kms_IKey_AsReference() {
+		return (EAttribute) bucketPropsBuilder_s3EClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getBucketPropsBuilder_s3_LifecycleRules_software_amazon_awscdk_services_s3_LifecycleRule_AsList() {
+		return (EAttribute) bucketPropsBuilder_s3EClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getBucketPropsBuilder_s3_Metrics_software_amazon_awscdk_services_s3_BucketMetrics_AsList() {
+		return (EAttribute) bucketPropsBuilder_s3EClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getBucketPropsBuilder_s3_PublicReadAccess_java_lang_Boolean_() {
+		return (EAttribute) bucketPropsBuilder_s3EClass.getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getBucketPropsBuilder_s3_RemovalPolicy_software_amazon_awscdk_core_RemovalPolicy_() {
+		return (EAttribute) bucketPropsBuilder_s3EClass.getEStructuralFeatures().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getBucketPropsBuilder_s3_ServerAccessLogsBucketWithIBucket_software_amazon_awscdk_services_s3_IBucket_AsReference() {
+		return (EAttribute) bucketPropsBuilder_s3EClass.getEStructuralFeatures().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getBucketPropsBuilder_s3_ServerAccessLogsPrefix_java_lang_String_() {
+		return (EAttribute) bucketPropsBuilder_s3EClass.getEStructuralFeatures().get(11);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getBucketPropsBuilder_s3_Versioned_java_lang_Boolean_() {
+		return (EAttribute) bucketPropsBuilder_s3EClass.getEStructuralFeatures().get(12);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getBucketPropsBuilder_s3_WebsiteErrorDocument_java_lang_String_() {
+		return (EAttribute) bucketPropsBuilder_s3EClass.getEStructuralFeatures().get(13);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getBucketPropsBuilder_s3_WebsiteIndexDocument_java_lang_String_() {
+		return (EAttribute) bucketPropsBuilder_s3EClass.getEStructuralFeatures().get(14);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getBucketPropsBuilder_s3_WebsiteRedirectWithRedirectTarget_software_amazon_awscdk_services_s3_RedirectTarget_AsReference() {
+		return (EAttribute) bucketPropsBuilder_s3EClass.getEStructuralFeatures().get(15);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getBucketPropsBuilder_s3_WebsiteRoutingRules_software_amazon_awscdk_services_s3_RoutingRule_AsList() {
+		return (EAttribute) bucketPropsBuilder_s3EClass.getEStructuralFeatures().get(16);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getBucketPropsBuilder_s3_GeneratedClassName() {
+		return (EAttribute) bucketPropsBuilder_s3EClass.getEStructuralFeatures().get(17);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getBucketPropsBuilder_s3_VarName() {
+		return (EAttribute) bucketPropsBuilder_s3EClass.getEStructuralFeatures().get(18);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getBucketPropsBuilder_s3_Identifier() {
+		return (EAttribute) bucketPropsBuilder_s3EClass.getEStructuralFeatures().get(19);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getBucketPropsBuilder_s3_AdditionalCode() {
+		return (EAttribute) bucketPropsBuilder_s3EClass.getEStructuralFeatures().get(20);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getOriginAccessIdentityBuilder_cloudfront() {
+		return originAccessIdentityBuilder_cloudfrontEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getOriginAccessIdentityBuilder_cloudfront_Comment_java_lang_String_() {
+		return (EAttribute) originAccessIdentityBuilder_cloudfrontEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getOriginAccessIdentityBuilder_cloudfront_GeneratedClassName() {
+		return (EAttribute) originAccessIdentityBuilder_cloudfrontEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getOriginAccessIdentityBuilder_cloudfront_VarName() {
+		return (EAttribute) originAccessIdentityBuilder_cloudfrontEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getOriginAccessIdentityBuilder_cloudfront_Identifier() {
+		return (EAttribute) originAccessIdentityBuilder_cloudfrontEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getOriginAccessIdentityBuilder_cloudfront_AdditionalCode() {
+		return (EAttribute) originAccessIdentityBuilder_cloudfrontEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getS3OriginConfigBuilder_cloudfront() {
+		return s3OriginConfigBuilder_cloudfrontEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getS3OriginConfigBuilder_cloudfront_S3BucketSourceWithIBucket_software_amazon_awscdk_services_s3_IBucket_AsReference() {
+		return (EAttribute) s3OriginConfigBuilder_cloudfrontEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getS3OriginConfigBuilder_cloudfront_OriginAccessIdentityWithIOriginAccessIdentity_software_amazon_awscdk_services_cloudfront_IOriginAccessIdentity_AsReference() {
+		return (EAttribute) s3OriginConfigBuilder_cloudfrontEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getS3OriginConfigBuilder_cloudfront_GeneratedClassName() {
+		return (EAttribute) s3OriginConfigBuilder_cloudfrontEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getS3OriginConfigBuilder_cloudfront_VarName() {
+		return (EAttribute) s3OriginConfigBuilder_cloudfrontEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getS3OriginConfigBuilder_cloudfront_Identifier() {
+		return (EAttribute) s3OriginConfigBuilder_cloudfrontEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getS3OriginConfigBuilder_cloudfront_AdditionalCode() {
+		return (EAttribute) s3OriginConfigBuilder_cloudfrontEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getSourceConfigurationBuilder_cloudfront() {
+		return sourceConfigurationBuilder_cloudfrontEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getSourceConfigurationBuilder_cloudfront_Behaviors_software_amazon_awscdk_services_cloudfront_Behavior_AsList() {
+		return (EAttribute) sourceConfigurationBuilder_cloudfrontEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getSourceConfigurationBuilder_cloudfront_CustomOriginSourceWithCustomOriginConfig_software_amazon_awscdk_services_cloudfront_CustomOriginConfig_AsReference() {
+		return (EAttribute) sourceConfigurationBuilder_cloudfrontEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getSourceConfigurationBuilder_cloudfront_OriginHeaders_java_lang_String__java_lang_String_AsMap() {
+		return (EAttribute) sourceConfigurationBuilder_cloudfrontEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getSourceConfigurationBuilder_cloudfront_OriginPath_java_lang_String_() {
+		return (EAttribute) sourceConfigurationBuilder_cloudfrontEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getSourceConfigurationBuilder_cloudfront_S3OriginSourceWithS3OriginConfig_software_amazon_awscdk_services_cloudfront_S3OriginConfig_AsReference() {
+		return (EAttribute) sourceConfigurationBuilder_cloudfrontEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getSourceConfigurationBuilder_cloudfront_GeneratedClassName() {
+		return (EAttribute) sourceConfigurationBuilder_cloudfrontEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getSourceConfigurationBuilder_cloudfront_VarName() {
+		return (EAttribute) sourceConfigurationBuilder_cloudfrontEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getSourceConfigurationBuilder_cloudfront_Identifier() {
+		return (EAttribute) sourceConfigurationBuilder_cloudfrontEClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getSourceConfigurationBuilder_cloudfront_AdditionalCode() {
+		return (EAttribute) sourceConfigurationBuilder_cloudfrontEClass.getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getAliasConfigurationBuilder_cloudfront() {
+		return aliasConfigurationBuilder_cloudfrontEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAliasConfigurationBuilder_cloudfront_AcmCertRef_java_lang_String_() {
+		return (EAttribute) aliasConfigurationBuilder_cloudfrontEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAliasConfigurationBuilder_cloudfront_Names_java_lang_String_AsList() {
+		return (EAttribute) aliasConfigurationBuilder_cloudfrontEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAliasConfigurationBuilder_cloudfront_SecurityPolicy_software_amazon_awscdk_services_cloudfront_SecurityPolicyProtocol_() {
+		return (EAttribute) aliasConfigurationBuilder_cloudfrontEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAliasConfigurationBuilder_cloudfront_SslMethod_software_amazon_awscdk_services_cloudfront_SSLMethod_() {
+		return (EAttribute) aliasConfigurationBuilder_cloudfrontEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAliasConfigurationBuilder_cloudfront_GeneratedClassName() {
+		return (EAttribute) aliasConfigurationBuilder_cloudfrontEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAliasConfigurationBuilder_cloudfront_VarName() {
+		return (EAttribute) aliasConfigurationBuilder_cloudfrontEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAliasConfigurationBuilder_cloudfront_Identifier() {
+		return (EAttribute) aliasConfigurationBuilder_cloudfrontEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAliasConfigurationBuilder_cloudfront_AdditionalCode() {
+		return (EAttribute) aliasConfigurationBuilder_cloudfrontEClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getLoggingConfigurationBuilder_cloudfront() {
+		return loggingConfigurationBuilder_cloudfrontEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLoggingConfigurationBuilder_cloudfront_BucketWithIBucket_software_amazon_awscdk_services_s3_IBucket_AsReference() {
+		return (EAttribute) loggingConfigurationBuilder_cloudfrontEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLoggingConfigurationBuilder_cloudfront_IncludeCookies_java_lang_Boolean_() {
+		return (EAttribute) loggingConfigurationBuilder_cloudfrontEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLoggingConfigurationBuilder_cloudfront_Prefix_java_lang_String_() {
+		return (EAttribute) loggingConfigurationBuilder_cloudfrontEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLoggingConfigurationBuilder_cloudfront_GeneratedClassName() {
+		return (EAttribute) loggingConfigurationBuilder_cloudfrontEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLoggingConfigurationBuilder_cloudfront_VarName() {
+		return (EAttribute) loggingConfigurationBuilder_cloudfrontEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLoggingConfigurationBuilder_cloudfront_Identifier() {
+		return (EAttribute) loggingConfigurationBuilder_cloudfrontEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLoggingConfigurationBuilder_cloudfront_AdditionalCode() {
+		return (EAttribute) loggingConfigurationBuilder_cloudfrontEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getCloudFrontWebDistributionPropsBuilder_cloudfront() {
+		return cloudFrontWebDistributionPropsBuilder_cloudfrontEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCloudFrontWebDistributionPropsBuilder_cloudfront_OriginConfigs_software_amazon_awscdk_services_cloudfront_SourceConfiguration_AsList() {
+		return (EAttribute) cloudFrontWebDistributionPropsBuilder_cloudfrontEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCloudFrontWebDistributionPropsBuilder_cloudfront_AliasConfigurationWithAliasConfiguration_software_amazon_awscdk_services_cloudfront_AliasConfiguration_AsReference() {
+		return (EAttribute) cloudFrontWebDistributionPropsBuilder_cloudfrontEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCloudFrontWebDistributionPropsBuilder_cloudfront_Comment_java_lang_String_() {
+		return (EAttribute) cloudFrontWebDistributionPropsBuilder_cloudfrontEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCloudFrontWebDistributionPropsBuilder_cloudfront_DefaultRootObject_java_lang_String_() {
+		return (EAttribute) cloudFrontWebDistributionPropsBuilder_cloudfrontEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCloudFrontWebDistributionPropsBuilder_cloudfront_EnableIpV6_java_lang_Boolean_() {
+		return (EAttribute) cloudFrontWebDistributionPropsBuilder_cloudfrontEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCloudFrontWebDistributionPropsBuilder_cloudfront_ErrorConfigurations_software_amazon_awscdk_services_cloudfront_CfnDistribution_CustomErrorResponseProperty_AsList() {
+		return (EAttribute) cloudFrontWebDistributionPropsBuilder_cloudfrontEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCloudFrontWebDistributionPropsBuilder_cloudfront_GeoRestrictionWithGeoRestriction_software_amazon_awscdk_services_cloudfront_GeoRestriction_AsReference() {
+		return (EAttribute) cloudFrontWebDistributionPropsBuilder_cloudfrontEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCloudFrontWebDistributionPropsBuilder_cloudfront_HttpVersion_software_amazon_awscdk_services_cloudfront_HttpVersion_() {
+		return (EAttribute) cloudFrontWebDistributionPropsBuilder_cloudfrontEClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCloudFrontWebDistributionPropsBuilder_cloudfront_LoggingConfigWithLoggingConfiguration_software_amazon_awscdk_services_cloudfront_LoggingConfiguration_AsReference() {
+		return (EAttribute) cloudFrontWebDistributionPropsBuilder_cloudfrontEClass.getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCloudFrontWebDistributionPropsBuilder_cloudfront_PriceClass_software_amazon_awscdk_services_cloudfront_PriceClass_() {
+		return (EAttribute) cloudFrontWebDistributionPropsBuilder_cloudfrontEClass.getEStructuralFeatures().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCloudFrontWebDistributionPropsBuilder_cloudfront_ViewerCertificateWithViewerCertificate_software_amazon_awscdk_services_cloudfront_ViewerCertificate_AsReference() {
+		return (EAttribute) cloudFrontWebDistributionPropsBuilder_cloudfrontEClass.getEStructuralFeatures().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCloudFrontWebDistributionPropsBuilder_cloudfront_ViewerProtocolPolicy_software_amazon_awscdk_services_cloudfront_ViewerProtocolPolicy_() {
+		return (EAttribute) cloudFrontWebDistributionPropsBuilder_cloudfrontEClass.getEStructuralFeatures().get(11);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCloudFrontWebDistributionPropsBuilder_cloudfront_WebAclId_java_lang_String_() {
+		return (EAttribute) cloudFrontWebDistributionPropsBuilder_cloudfrontEClass.getEStructuralFeatures().get(12);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCloudFrontWebDistributionPropsBuilder_cloudfront_GeneratedClassName() {
+		return (EAttribute) cloudFrontWebDistributionPropsBuilder_cloudfrontEClass.getEStructuralFeatures().get(13);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCloudFrontWebDistributionPropsBuilder_cloudfront_VarName() {
+		return (EAttribute) cloudFrontWebDistributionPropsBuilder_cloudfrontEClass.getEStructuralFeatures().get(14);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCloudFrontWebDistributionPropsBuilder_cloudfront_Identifier() {
+		return (EAttribute) cloudFrontWebDistributionPropsBuilder_cloudfrontEClass.getEStructuralFeatures().get(15);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCloudFrontWebDistributionPropsBuilder_cloudfront_AdditionalCode() {
+		return (EAttribute) cloudFrontWebDistributionPropsBuilder_cloudfrontEClass.getEStructuralFeatures().get(16);
 	}
 
 	/**
@@ -6545,6 +10383,1746 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	@Override
 	public EAttribute getCloudFrontToS3Builder_cloudfronts3_AdditionalCode() {
 		return (EAttribute) cloudFrontToS3Builder_cloudfronts3EClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getAutoVerifiedAttrsBuilder_cognito() {
+		return autoVerifiedAttrsBuilder_cognitoEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAutoVerifiedAttrsBuilder_cognito_Email_java_lang_Boolean_() {
+		return (EAttribute) autoVerifiedAttrsBuilder_cognitoEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAutoVerifiedAttrsBuilder_cognito_Phone_java_lang_Boolean_() {
+		return (EAttribute) autoVerifiedAttrsBuilder_cognitoEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAutoVerifiedAttrsBuilder_cognito_GeneratedClassName() {
+		return (EAttribute) autoVerifiedAttrsBuilder_cognitoEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAutoVerifiedAttrsBuilder_cognito_VarName() {
+		return (EAttribute) autoVerifiedAttrsBuilder_cognitoEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAutoVerifiedAttrsBuilder_cognito_Identifier() {
+		return (EAttribute) autoVerifiedAttrsBuilder_cognitoEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAutoVerifiedAttrsBuilder_cognito_AdditionalCode() {
+		return (EAttribute) autoVerifiedAttrsBuilder_cognitoEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getUserPoolTriggersBuilder_cognito() {
+		return userPoolTriggersBuilder_cognitoEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getUserPoolTriggersBuilder_cognito_CreateAuthChallengeWithIFunction_software_amazon_awscdk_services_lambda_IFunction_AsReference() {
+		return (EAttribute) userPoolTriggersBuilder_cognitoEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getUserPoolTriggersBuilder_cognito_CustomMessageWithIFunction_software_amazon_awscdk_services_lambda_IFunction_AsReference() {
+		return (EAttribute) userPoolTriggersBuilder_cognitoEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getUserPoolTriggersBuilder_cognito_DefineAuthChallengeWithIFunction_software_amazon_awscdk_services_lambda_IFunction_AsReference() {
+		return (EAttribute) userPoolTriggersBuilder_cognitoEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getUserPoolTriggersBuilder_cognito_PostAuthenticationWithIFunction_software_amazon_awscdk_services_lambda_IFunction_AsReference() {
+		return (EAttribute) userPoolTriggersBuilder_cognitoEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getUserPoolTriggersBuilder_cognito_PostConfirmationWithIFunction_software_amazon_awscdk_services_lambda_IFunction_AsReference() {
+		return (EAttribute) userPoolTriggersBuilder_cognitoEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getUserPoolTriggersBuilder_cognito_PreAuthenticationWithIFunction_software_amazon_awscdk_services_lambda_IFunction_AsReference() {
+		return (EAttribute) userPoolTriggersBuilder_cognitoEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getUserPoolTriggersBuilder_cognito_PreSignUpWithIFunction_software_amazon_awscdk_services_lambda_IFunction_AsReference() {
+		return (EAttribute) userPoolTriggersBuilder_cognitoEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getUserPoolTriggersBuilder_cognito_PreTokenGenerationWithIFunction_software_amazon_awscdk_services_lambda_IFunction_AsReference() {
+		return (EAttribute) userPoolTriggersBuilder_cognitoEClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getUserPoolTriggersBuilder_cognito_UserMigrationWithIFunction_software_amazon_awscdk_services_lambda_IFunction_AsReference() {
+		return (EAttribute) userPoolTriggersBuilder_cognitoEClass.getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getUserPoolTriggersBuilder_cognito_VerifyAuthChallengeResponseWithIFunction_software_amazon_awscdk_services_lambda_IFunction_AsReference() {
+		return (EAttribute) userPoolTriggersBuilder_cognitoEClass.getEStructuralFeatures().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getUserPoolTriggersBuilder_cognito_GeneratedClassName() {
+		return (EAttribute) userPoolTriggersBuilder_cognitoEClass.getEStructuralFeatures().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getUserPoolTriggersBuilder_cognito_VarName() {
+		return (EAttribute) userPoolTriggersBuilder_cognitoEClass.getEStructuralFeatures().get(11);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getUserPoolTriggersBuilder_cognito_Identifier() {
+		return (EAttribute) userPoolTriggersBuilder_cognitoEClass.getEStructuralFeatures().get(12);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getUserPoolTriggersBuilder_cognito_AdditionalCode() {
+		return (EAttribute) userPoolTriggersBuilder_cognitoEClass.getEStructuralFeatures().get(13);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getEmailSettingsBuilder_cognito() {
+		return emailSettingsBuilder_cognitoEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getEmailSettingsBuilder_cognito_From_java_lang_String_() {
+		return (EAttribute) emailSettingsBuilder_cognitoEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getEmailSettingsBuilder_cognito_ReplyTo_java_lang_String_() {
+		return (EAttribute) emailSettingsBuilder_cognitoEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getEmailSettingsBuilder_cognito_GeneratedClassName() {
+		return (EAttribute) emailSettingsBuilder_cognitoEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getEmailSettingsBuilder_cognito_VarName() {
+		return (EAttribute) emailSettingsBuilder_cognitoEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getEmailSettingsBuilder_cognito_Identifier() {
+		return (EAttribute) emailSettingsBuilder_cognitoEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getEmailSettingsBuilder_cognito_AdditionalCode() {
+		return (EAttribute) emailSettingsBuilder_cognitoEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getPasswordPolicyBuilder_cognito() {
+		return passwordPolicyBuilder_cognitoEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getPasswordPolicyBuilder_cognito_MinLength_java_lang_Number_() {
+		return (EAttribute) passwordPolicyBuilder_cognitoEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getPasswordPolicyBuilder_cognito_RequireDigits_java_lang_Boolean_() {
+		return (EAttribute) passwordPolicyBuilder_cognitoEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getPasswordPolicyBuilder_cognito_RequireLowercase_java_lang_Boolean_() {
+		return (EAttribute) passwordPolicyBuilder_cognitoEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getPasswordPolicyBuilder_cognito_RequireSymbols_java_lang_Boolean_() {
+		return (EAttribute) passwordPolicyBuilder_cognitoEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getPasswordPolicyBuilder_cognito_RequireUppercase_java_lang_Boolean_() {
+		return (EAttribute) passwordPolicyBuilder_cognitoEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getPasswordPolicyBuilder_cognito_TempPasswordValidityWithDuration_software_amazon_awscdk_core_Duration_AsReference() {
+		return (EAttribute) passwordPolicyBuilder_cognitoEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getPasswordPolicyBuilder_cognito_GeneratedClassName() {
+		return (EAttribute) passwordPolicyBuilder_cognitoEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getPasswordPolicyBuilder_cognito_VarName() {
+		return (EAttribute) passwordPolicyBuilder_cognitoEClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getPasswordPolicyBuilder_cognito_Identifier() {
+		return (EAttribute) passwordPolicyBuilder_cognitoEClass.getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getPasswordPolicyBuilder_cognito_AdditionalCode() {
+		return (EAttribute) passwordPolicyBuilder_cognitoEClass.getEStructuralFeatures().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getMfaSecondFactorBuilder_cognito() {
+		return mfaSecondFactorBuilder_cognitoEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getMfaSecondFactorBuilder_cognito_Otp_java_lang_Boolean_() {
+		return (EAttribute) mfaSecondFactorBuilder_cognitoEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getMfaSecondFactorBuilder_cognito_Sms_java_lang_Boolean_() {
+		return (EAttribute) mfaSecondFactorBuilder_cognitoEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getMfaSecondFactorBuilder_cognito_GeneratedClassName() {
+		return (EAttribute) mfaSecondFactorBuilder_cognitoEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getMfaSecondFactorBuilder_cognito_VarName() {
+		return (EAttribute) mfaSecondFactorBuilder_cognitoEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getMfaSecondFactorBuilder_cognito_Identifier() {
+		return (EAttribute) mfaSecondFactorBuilder_cognitoEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getMfaSecondFactorBuilder_cognito_AdditionalCode() {
+		return (EAttribute) mfaSecondFactorBuilder_cognitoEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getRequiredAttributesBuilder_cognito() {
+		return requiredAttributesBuilder_cognitoEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getRequiredAttributesBuilder_cognito_Address_java_lang_Boolean_() {
+		return (EAttribute) requiredAttributesBuilder_cognitoEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getRequiredAttributesBuilder_cognito_Birthdate_java_lang_Boolean_() {
+		return (EAttribute) requiredAttributesBuilder_cognitoEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getRequiredAttributesBuilder_cognito_Email_java_lang_Boolean_() {
+		return (EAttribute) requiredAttributesBuilder_cognitoEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getRequiredAttributesBuilder_cognito_FamilyName_java_lang_Boolean_() {
+		return (EAttribute) requiredAttributesBuilder_cognitoEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getRequiredAttributesBuilder_cognito_Fullname_java_lang_Boolean_() {
+		return (EAttribute) requiredAttributesBuilder_cognitoEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getRequiredAttributesBuilder_cognito_Gender_java_lang_Boolean_() {
+		return (EAttribute) requiredAttributesBuilder_cognitoEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getRequiredAttributesBuilder_cognito_GivenName_java_lang_Boolean_() {
+		return (EAttribute) requiredAttributesBuilder_cognitoEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getRequiredAttributesBuilder_cognito_LastUpdateTime_java_lang_Boolean_() {
+		return (EAttribute) requiredAttributesBuilder_cognitoEClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getRequiredAttributesBuilder_cognito_Locale_java_lang_Boolean_() {
+		return (EAttribute) requiredAttributesBuilder_cognitoEClass.getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getRequiredAttributesBuilder_cognito_MiddleName_java_lang_Boolean_() {
+		return (EAttribute) requiredAttributesBuilder_cognitoEClass.getEStructuralFeatures().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getRequiredAttributesBuilder_cognito_Nickname_java_lang_Boolean_() {
+		return (EAttribute) requiredAttributesBuilder_cognitoEClass.getEStructuralFeatures().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getRequiredAttributesBuilder_cognito_PhoneNumber_java_lang_Boolean_() {
+		return (EAttribute) requiredAttributesBuilder_cognitoEClass.getEStructuralFeatures().get(11);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getRequiredAttributesBuilder_cognito_PreferredUsername_java_lang_Boolean_() {
+		return (EAttribute) requiredAttributesBuilder_cognitoEClass.getEStructuralFeatures().get(12);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getRequiredAttributesBuilder_cognito_ProfilePage_java_lang_Boolean_() {
+		return (EAttribute) requiredAttributesBuilder_cognitoEClass.getEStructuralFeatures().get(13);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getRequiredAttributesBuilder_cognito_ProfilePicture_java_lang_Boolean_() {
+		return (EAttribute) requiredAttributesBuilder_cognitoEClass.getEStructuralFeatures().get(14);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getRequiredAttributesBuilder_cognito_Timezone_java_lang_Boolean_() {
+		return (EAttribute) requiredAttributesBuilder_cognitoEClass.getEStructuralFeatures().get(15);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getRequiredAttributesBuilder_cognito_Website_java_lang_Boolean_() {
+		return (EAttribute) requiredAttributesBuilder_cognitoEClass.getEStructuralFeatures().get(16);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getRequiredAttributesBuilder_cognito_GeneratedClassName() {
+		return (EAttribute) requiredAttributesBuilder_cognitoEClass.getEStructuralFeatures().get(17);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getRequiredAttributesBuilder_cognito_VarName() {
+		return (EAttribute) requiredAttributesBuilder_cognitoEClass.getEStructuralFeatures().get(18);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getRequiredAttributesBuilder_cognito_Identifier() {
+		return (EAttribute) requiredAttributesBuilder_cognitoEClass.getEStructuralFeatures().get(19);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getRequiredAttributesBuilder_cognito_AdditionalCode() {
+		return (EAttribute) requiredAttributesBuilder_cognitoEClass.getEStructuralFeatures().get(20);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getSignInAliasesBuilder_cognito() {
+		return signInAliasesBuilder_cognitoEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getSignInAliasesBuilder_cognito_Email_java_lang_Boolean_() {
+		return (EAttribute) signInAliasesBuilder_cognitoEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getSignInAliasesBuilder_cognito_Phone_java_lang_Boolean_() {
+		return (EAttribute) signInAliasesBuilder_cognitoEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getSignInAliasesBuilder_cognito_PreferredUsername_java_lang_Boolean_() {
+		return (EAttribute) signInAliasesBuilder_cognitoEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getSignInAliasesBuilder_cognito_Username_java_lang_Boolean_() {
+		return (EAttribute) signInAliasesBuilder_cognitoEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getSignInAliasesBuilder_cognito_GeneratedClassName() {
+		return (EAttribute) signInAliasesBuilder_cognitoEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getSignInAliasesBuilder_cognito_VarName() {
+		return (EAttribute) signInAliasesBuilder_cognitoEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getSignInAliasesBuilder_cognito_Identifier() {
+		return (EAttribute) signInAliasesBuilder_cognitoEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getSignInAliasesBuilder_cognito_AdditionalCode() {
+		return (EAttribute) signInAliasesBuilder_cognitoEClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getUserInvitationConfigBuilder_cognito() {
+		return userInvitationConfigBuilder_cognitoEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getUserInvitationConfigBuilder_cognito_EmailBody_java_lang_String_() {
+		return (EAttribute) userInvitationConfigBuilder_cognitoEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getUserInvitationConfigBuilder_cognito_EmailSubject_java_lang_String_() {
+		return (EAttribute) userInvitationConfigBuilder_cognitoEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getUserInvitationConfigBuilder_cognito_SmsMessage_java_lang_String_() {
+		return (EAttribute) userInvitationConfigBuilder_cognitoEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getUserInvitationConfigBuilder_cognito_GeneratedClassName() {
+		return (EAttribute) userInvitationConfigBuilder_cognitoEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getUserInvitationConfigBuilder_cognito_VarName() {
+		return (EAttribute) userInvitationConfigBuilder_cognitoEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getUserInvitationConfigBuilder_cognito_Identifier() {
+		return (EAttribute) userInvitationConfigBuilder_cognitoEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getUserInvitationConfigBuilder_cognito_AdditionalCode() {
+		return (EAttribute) userInvitationConfigBuilder_cognitoEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getUserVerificationConfigBuilder_cognito() {
+		return userVerificationConfigBuilder_cognitoEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getUserVerificationConfigBuilder_cognito_EmailBody_java_lang_String_() {
+		return (EAttribute) userVerificationConfigBuilder_cognitoEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getUserVerificationConfigBuilder_cognito_EmailStyle_software_amazon_awscdk_services_cognito_VerificationEmailStyle_() {
+		return (EAttribute) userVerificationConfigBuilder_cognitoEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getUserVerificationConfigBuilder_cognito_EmailSubject_java_lang_String_() {
+		return (EAttribute) userVerificationConfigBuilder_cognitoEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getUserVerificationConfigBuilder_cognito_SmsMessage_java_lang_String_() {
+		return (EAttribute) userVerificationConfigBuilder_cognitoEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getUserVerificationConfigBuilder_cognito_GeneratedClassName() {
+		return (EAttribute) userVerificationConfigBuilder_cognitoEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getUserVerificationConfigBuilder_cognito_VarName() {
+		return (EAttribute) userVerificationConfigBuilder_cognitoEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getUserVerificationConfigBuilder_cognito_Identifier() {
+		return (EAttribute) userVerificationConfigBuilder_cognitoEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getUserVerificationConfigBuilder_cognito_AdditionalCode() {
+		return (EAttribute) userVerificationConfigBuilder_cognitoEClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getUserPoolPropsBuilder_cognito() {
+		return userPoolPropsBuilder_cognitoEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getUserPoolPropsBuilder_cognito_AutoVerifyWithAutoVerifiedAttrs_software_amazon_awscdk_services_cognito_AutoVerifiedAttrs_AsReference() {
+		return (EAttribute) userPoolPropsBuilder_cognitoEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getUserPoolPropsBuilder_cognito_CustomAttributes_java_lang_String__software_amazon_awscdk_services_cognito_ICustomAttribute_AsMap() {
+		return (EAttribute) userPoolPropsBuilder_cognitoEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getUserPoolPropsBuilder_cognito_EmailSettingsWithEmailSettings_software_amazon_awscdk_services_cognito_EmailSettings_AsReference() {
+		return (EAttribute) userPoolPropsBuilder_cognitoEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getUserPoolPropsBuilder_cognito_LambdaTriggersWithUserPoolTriggers_software_amazon_awscdk_services_cognito_UserPoolTriggers_AsReference() {
+		return (EAttribute) userPoolPropsBuilder_cognitoEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getUserPoolPropsBuilder_cognito_Mfa_software_amazon_awscdk_services_cognito_Mfa_() {
+		return (EAttribute) userPoolPropsBuilder_cognitoEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getUserPoolPropsBuilder_cognito_MfaSecondFactorWithMfaSecondFactor_software_amazon_awscdk_services_cognito_MfaSecondFactor_AsReference() {
+		return (EAttribute) userPoolPropsBuilder_cognitoEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getUserPoolPropsBuilder_cognito_PasswordPolicyWithPasswordPolicy_software_amazon_awscdk_services_cognito_PasswordPolicy_AsReference() {
+		return (EAttribute) userPoolPropsBuilder_cognitoEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getUserPoolPropsBuilder_cognito_RequiredAttributesWithRequiredAttributes_software_amazon_awscdk_services_cognito_RequiredAttributes_AsReference() {
+		return (EAttribute) userPoolPropsBuilder_cognitoEClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getUserPoolPropsBuilder_cognito_SelfSignUpEnabled_java_lang_Boolean_() {
+		return (EAttribute) userPoolPropsBuilder_cognitoEClass.getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getUserPoolPropsBuilder_cognito_SignInAliasesWithSignInAliases_software_amazon_awscdk_services_cognito_SignInAliases_AsReference() {
+		return (EAttribute) userPoolPropsBuilder_cognitoEClass.getEStructuralFeatures().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getUserPoolPropsBuilder_cognito_SignInCaseSensitive_java_lang_Boolean_() {
+		return (EAttribute) userPoolPropsBuilder_cognitoEClass.getEStructuralFeatures().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getUserPoolPropsBuilder_cognito_SmsRoleWithIRole_software_amazon_awscdk_services_iam_IRole_AsReference() {
+		return (EAttribute) userPoolPropsBuilder_cognitoEClass.getEStructuralFeatures().get(11);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getUserPoolPropsBuilder_cognito_SmsRoleExternalId_java_lang_String_() {
+		return (EAttribute) userPoolPropsBuilder_cognitoEClass.getEStructuralFeatures().get(12);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getUserPoolPropsBuilder_cognito_UserInvitationWithUserInvitationConfig_software_amazon_awscdk_services_cognito_UserInvitationConfig_AsReference() {
+		return (EAttribute) userPoolPropsBuilder_cognitoEClass.getEStructuralFeatures().get(13);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getUserPoolPropsBuilder_cognito_UserPoolName_java_lang_String_() {
+		return (EAttribute) userPoolPropsBuilder_cognitoEClass.getEStructuralFeatures().get(14);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getUserPoolPropsBuilder_cognito_UserVerificationWithUserVerificationConfig_software_amazon_awscdk_services_cognito_UserVerificationConfig_AsReference() {
+		return (EAttribute) userPoolPropsBuilder_cognitoEClass.getEStructuralFeatures().get(15);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getUserPoolPropsBuilder_cognito_GeneratedClassName() {
+		return (EAttribute) userPoolPropsBuilder_cognitoEClass.getEStructuralFeatures().get(16);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getUserPoolPropsBuilder_cognito_VarName() {
+		return (EAttribute) userPoolPropsBuilder_cognitoEClass.getEStructuralFeatures().get(17);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getUserPoolPropsBuilder_cognito_Identifier() {
+		return (EAttribute) userPoolPropsBuilder_cognitoEClass.getEStructuralFeatures().get(18);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getUserPoolPropsBuilder_cognito_AdditionalCode() {
+		return (EAttribute) userPoolPropsBuilder_cognitoEClass.getEStructuralFeatures().get(19);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getUserPoolBuilder_cognito() {
+		return userPoolBuilder_cognitoEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getUserPoolBuilder_cognito_AutoVerifyWithAutoVerifiedAttrs_software_amazon_awscdk_services_cognito_AutoVerifiedAttrs_AsReference() {
+		return (EAttribute) userPoolBuilder_cognitoEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getUserPoolBuilder_cognito_CustomAttributes_java_lang_String__software_amazon_awscdk_services_cognito_ICustomAttribute_AsMap() {
+		return (EAttribute) userPoolBuilder_cognitoEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getUserPoolBuilder_cognito_EmailSettingsWithEmailSettings_software_amazon_awscdk_services_cognito_EmailSettings_AsReference() {
+		return (EAttribute) userPoolBuilder_cognitoEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getUserPoolBuilder_cognito_LambdaTriggersWithUserPoolTriggers_software_amazon_awscdk_services_cognito_UserPoolTriggers_AsReference() {
+		return (EAttribute) userPoolBuilder_cognitoEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getUserPoolBuilder_cognito_Mfa_software_amazon_awscdk_services_cognito_Mfa_() {
+		return (EAttribute) userPoolBuilder_cognitoEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getUserPoolBuilder_cognito_MfaSecondFactorWithMfaSecondFactor_software_amazon_awscdk_services_cognito_MfaSecondFactor_AsReference() {
+		return (EAttribute) userPoolBuilder_cognitoEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getUserPoolBuilder_cognito_PasswordPolicyWithPasswordPolicy_software_amazon_awscdk_services_cognito_PasswordPolicy_AsReference() {
+		return (EAttribute) userPoolBuilder_cognitoEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getUserPoolBuilder_cognito_RequiredAttributesWithRequiredAttributes_software_amazon_awscdk_services_cognito_RequiredAttributes_AsReference() {
+		return (EAttribute) userPoolBuilder_cognitoEClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getUserPoolBuilder_cognito_SelfSignUpEnabled_java_lang_Boolean_() {
+		return (EAttribute) userPoolBuilder_cognitoEClass.getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getUserPoolBuilder_cognito_SignInAliasesWithSignInAliases_software_amazon_awscdk_services_cognito_SignInAliases_AsReference() {
+		return (EAttribute) userPoolBuilder_cognitoEClass.getEStructuralFeatures().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getUserPoolBuilder_cognito_SignInCaseSensitive_java_lang_Boolean_() {
+		return (EAttribute) userPoolBuilder_cognitoEClass.getEStructuralFeatures().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getUserPoolBuilder_cognito_SmsRoleWithIRole_software_amazon_awscdk_services_iam_IRole_AsReference() {
+		return (EAttribute) userPoolBuilder_cognitoEClass.getEStructuralFeatures().get(11);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getUserPoolBuilder_cognito_SmsRoleExternalId_java_lang_String_() {
+		return (EAttribute) userPoolBuilder_cognitoEClass.getEStructuralFeatures().get(12);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getUserPoolBuilder_cognito_UserInvitationWithUserInvitationConfig_software_amazon_awscdk_services_cognito_UserInvitationConfig_AsReference() {
+		return (EAttribute) userPoolBuilder_cognitoEClass.getEStructuralFeatures().get(13);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getUserPoolBuilder_cognito_UserPoolName_java_lang_String_() {
+		return (EAttribute) userPoolBuilder_cognitoEClass.getEStructuralFeatures().get(14);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getUserPoolBuilder_cognito_UserVerificationWithUserVerificationConfig_software_amazon_awscdk_services_cognito_UserVerificationConfig_AsReference() {
+		return (EAttribute) userPoolBuilder_cognitoEClass.getEStructuralFeatures().get(15);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getUserPoolBuilder_cognito_GeneratedClassName() {
+		return (EAttribute) userPoolBuilder_cognitoEClass.getEStructuralFeatures().get(16);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getUserPoolBuilder_cognito_VarName() {
+		return (EAttribute) userPoolBuilder_cognitoEClass.getEStructuralFeatures().get(17);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getUserPoolBuilder_cognito_Identifier() {
+		return (EAttribute) userPoolBuilder_cognitoEClass.getEStructuralFeatures().get(18);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getUserPoolBuilder_cognito_AdditionalCode() {
+		return (EAttribute) userPoolBuilder_cognitoEClass.getEStructuralFeatures().get(19);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getAuthFlowBuilder_cognito() {
+		return authFlowBuilder_cognitoEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAuthFlowBuilder_cognito_AdminUserPassword_java_lang_Boolean_() {
+		return (EAttribute) authFlowBuilder_cognitoEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAuthFlowBuilder_cognito_Custom_java_lang_Boolean_() {
+		return (EAttribute) authFlowBuilder_cognitoEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAuthFlowBuilder_cognito_RefreshToken_java_lang_Boolean_() {
+		return (EAttribute) authFlowBuilder_cognitoEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAuthFlowBuilder_cognito_UserPassword_java_lang_Boolean_() {
+		return (EAttribute) authFlowBuilder_cognitoEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAuthFlowBuilder_cognito_UserSrp_java_lang_Boolean_() {
+		return (EAttribute) authFlowBuilder_cognitoEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAuthFlowBuilder_cognito_GeneratedClassName() {
+		return (EAttribute) authFlowBuilder_cognitoEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAuthFlowBuilder_cognito_VarName() {
+		return (EAttribute) authFlowBuilder_cognitoEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAuthFlowBuilder_cognito_Identifier() {
+		return (EAttribute) authFlowBuilder_cognitoEClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAuthFlowBuilder_cognito_AdditionalCode() {
+		return (EAttribute) authFlowBuilder_cognitoEClass.getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getOAuthFlowsBuilder_cognito() {
+		return oAuthFlowsBuilder_cognitoEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getOAuthFlowsBuilder_cognito_AuthorizationCodeGrant_java_lang_Boolean_() {
+		return (EAttribute) oAuthFlowsBuilder_cognitoEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getOAuthFlowsBuilder_cognito_ClientCredentials_java_lang_Boolean_() {
+		return (EAttribute) oAuthFlowsBuilder_cognitoEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getOAuthFlowsBuilder_cognito_ImplicitCodeGrant_java_lang_Boolean_() {
+		return (EAttribute) oAuthFlowsBuilder_cognitoEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getOAuthFlowsBuilder_cognito_GeneratedClassName() {
+		return (EAttribute) oAuthFlowsBuilder_cognitoEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getOAuthFlowsBuilder_cognito_VarName() {
+		return (EAttribute) oAuthFlowsBuilder_cognitoEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getOAuthFlowsBuilder_cognito_Identifier() {
+		return (EAttribute) oAuthFlowsBuilder_cognitoEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getOAuthFlowsBuilder_cognito_AdditionalCode() {
+		return (EAttribute) oAuthFlowsBuilder_cognitoEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getOAuthSettingsBuilder_cognito() {
+		return oAuthSettingsBuilder_cognitoEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getOAuthSettingsBuilder_cognito_CallbackUrls_java_lang_String_AsList() {
+		return (EAttribute) oAuthSettingsBuilder_cognitoEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getOAuthSettingsBuilder_cognito_FlowsWithOAuthFlows_software_amazon_awscdk_services_cognito_OAuthFlows_AsReference() {
+		return (EAttribute) oAuthSettingsBuilder_cognitoEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getOAuthSettingsBuilder_cognito_Scopes_software_amazon_awscdk_services_cognito_OAuthScope_AsList() {
+		return (EAttribute) oAuthSettingsBuilder_cognitoEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getOAuthSettingsBuilder_cognito_GeneratedClassName() {
+		return (EAttribute) oAuthSettingsBuilder_cognitoEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getOAuthSettingsBuilder_cognito_VarName() {
+		return (EAttribute) oAuthSettingsBuilder_cognitoEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getOAuthSettingsBuilder_cognito_Identifier() {
+		return (EAttribute) oAuthSettingsBuilder_cognitoEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getOAuthSettingsBuilder_cognito_AdditionalCode() {
+		return (EAttribute) oAuthSettingsBuilder_cognitoEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getUserPoolClientPropsBuilder_cognito() {
+		return userPoolClientPropsBuilder_cognitoEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getUserPoolClientPropsBuilder_cognito_UserPoolWithIUserPool_software_amazon_awscdk_services_cognito_IUserPool_AsReference() {
+		return (EAttribute) userPoolClientPropsBuilder_cognitoEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getUserPoolClientPropsBuilder_cognito_AuthFlowsWithAuthFlow_software_amazon_awscdk_services_cognito_AuthFlow_AsReference() {
+		return (EAttribute) userPoolClientPropsBuilder_cognitoEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getUserPoolClientPropsBuilder_cognito_GenerateSecret_java_lang_Boolean_() {
+		return (EAttribute) userPoolClientPropsBuilder_cognitoEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getUserPoolClientPropsBuilder_cognito_OAuthWithOAuthSettings_software_amazon_awscdk_services_cognito_OAuthSettings_AsReference() {
+		return (EAttribute) userPoolClientPropsBuilder_cognitoEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getUserPoolClientPropsBuilder_cognito_PreventUserExistenceErrors_java_lang_Boolean_() {
+		return (EAttribute) userPoolClientPropsBuilder_cognitoEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getUserPoolClientPropsBuilder_cognito_UserPoolClientName_java_lang_String_() {
+		return (EAttribute) userPoolClientPropsBuilder_cognitoEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getUserPoolClientPropsBuilder_cognito_GeneratedClassName() {
+		return (EAttribute) userPoolClientPropsBuilder_cognitoEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getUserPoolClientPropsBuilder_cognito_VarName() {
+		return (EAttribute) userPoolClientPropsBuilder_cognitoEClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getUserPoolClientPropsBuilder_cognito_Identifier() {
+		return (EAttribute) userPoolClientPropsBuilder_cognitoEClass.getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getUserPoolClientPropsBuilder_cognito_AdditionalCode() {
+		return (EAttribute) userPoolClientPropsBuilder_cognitoEClass.getEStructuralFeatures().get(9);
 	}
 
 	/**
@@ -10424,6 +16002,166 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	 * @generated
 	 */
 	@Override
+	public EEnum getCloudFrontAllowedCachedMethods() {
+		return cloudFrontAllowedCachedMethodsEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EEnum getCloudFrontAllowedMethods() {
+		return cloudFrontAllowedMethodsEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EEnum getLambdaEdgeEventType() {
+		return lambdaEdgeEventTypeEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EEnum getOriginSslPolicy() {
+		return originSslPolicyEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EEnum getOriginProtocolPolicy() {
+		return originProtocolPolicyEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EEnum getBucketAccessControl() {
+		return bucketAccessControlEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EEnum getHttpMethods() {
+		return httpMethodsEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EEnum getBucketEncryption() {
+		return bucketEncryptionEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EEnum getRedirectProtocol() {
+		return redirectProtocolEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EEnum getHttpVersion() {
+		return httpVersionEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EEnum getPriceClass() {
+		return priceClassEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EEnum getViewerProtocolPolicy() {
+		return viewerProtocolPolicyEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EEnum getSecurityPolicyProtocol() {
+		return securityPolicyProtocolEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EEnum getSSLMethod() {
+		return sslMethodEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EEnum getMfa() {
+		return mfaEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EEnum getVerificationEmailStyle() {
+		return verificationEmailStyleEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EEnum getEffect() {
 		return effectEEnum;
 	}
@@ -11022,6 +16760,67 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 		createEAttribute(securityGroupBuilder_ec2EClass, SECURITY_GROUP_BUILDER_EC2__IDENTIFIER);
 		createEAttribute(securityGroupBuilder_ec2EClass, SECURITY_GROUP_BUILDER_EC2__ADDITIONAL_CODE);
 
+		functionPropsBuilder_lambdaEClass = createEClass(FUNCTION_PROPS_BUILDER_LAMBDA);
+		createEAttribute(functionPropsBuilder_lambdaEClass,
+				FUNCTION_PROPS_BUILDER_LAMBDA__CODE_WITH_CODE_SOFTWARE_AMAZON_AWSCDK_SERVICES_LAMBDA_CODE_AS_REFERENCE);
+		createEAttribute(functionPropsBuilder_lambdaEClass, FUNCTION_PROPS_BUILDER_LAMBDA__HANDLER_JAVA_LANG_STRING_);
+		createEAttribute(functionPropsBuilder_lambdaEClass,
+				FUNCTION_PROPS_BUILDER_LAMBDA__RUNTIME_WITH_RUNTIME_SOFTWARE_AMAZON_AWSCDK_SERVICES_LAMBDA_RUNTIME_AS_REFERENCE);
+		createEAttribute(functionPropsBuilder_lambdaEClass,
+				FUNCTION_PROPS_BUILDER_LAMBDA__ALLOW_ALL_OUTBOUND_JAVA_LANG_BOOLEAN_);
+		createEAttribute(functionPropsBuilder_lambdaEClass,
+				FUNCTION_PROPS_BUILDER_LAMBDA__CURRENT_VERSION_OPTIONS_WITH_VERSION_OPTIONS_SOFTWARE_AMAZON_AWSCDK_SERVICES_LAMBDA_VERSION_OPTIONS_AS_REFERENCE);
+		createEAttribute(functionPropsBuilder_lambdaEClass,
+				FUNCTION_PROPS_BUILDER_LAMBDA__DEAD_LETTER_QUEUE_WITH_IQUEUE_SOFTWARE_AMAZON_AWSCDK_SERVICES_SQS_IQUEUE_AS_REFERENCE);
+		createEAttribute(functionPropsBuilder_lambdaEClass,
+				FUNCTION_PROPS_BUILDER_LAMBDA__DEAD_LETTER_QUEUE_ENABLED_JAVA_LANG_BOOLEAN_);
+		createEAttribute(functionPropsBuilder_lambdaEClass,
+				FUNCTION_PROPS_BUILDER_LAMBDA__DESCRIPTION_JAVA_LANG_STRING_);
+		createEAttribute(functionPropsBuilder_lambdaEClass,
+				FUNCTION_PROPS_BUILDER_LAMBDA__ENVIRONMENT_JAVA_LANG_STRING_JAVA_LANG_STRING_AS_MAP);
+		createEAttribute(functionPropsBuilder_lambdaEClass,
+				FUNCTION_PROPS_BUILDER_LAMBDA__EVENTS_SOFTWARE_AMAZON_AWSCDK_SERVICES_LAMBDA_IEVENT_SOURCE_AS_LIST);
+		createEAttribute(functionPropsBuilder_lambdaEClass,
+				FUNCTION_PROPS_BUILDER_LAMBDA__FUNCTION_NAME_JAVA_LANG_STRING_);
+		createEAttribute(functionPropsBuilder_lambdaEClass,
+				FUNCTION_PROPS_BUILDER_LAMBDA__INITIAL_POLICY_SOFTWARE_AMAZON_AWSCDK_SERVICES_IAM_POLICY_STATEMENT_AS_LIST);
+		createEAttribute(functionPropsBuilder_lambdaEClass,
+				FUNCTION_PROPS_BUILDER_LAMBDA__LAYERS_SOFTWARE_AMAZON_AWSCDK_SERVICES_LAMBDA_ILAYER_VERSION_AS_LIST);
+		createEAttribute(functionPropsBuilder_lambdaEClass,
+				FUNCTION_PROPS_BUILDER_LAMBDA__LOG_RETENTION_SOFTWARE_AMAZON_AWSCDK_SERVICES_LOGS_RETENTION_DAYS_);
+		createEAttribute(functionPropsBuilder_lambdaEClass,
+				FUNCTION_PROPS_BUILDER_LAMBDA__LOG_RETENTION_ROLE_WITH_IROLE_SOFTWARE_AMAZON_AWSCDK_SERVICES_IAM_IROLE_AS_REFERENCE);
+		createEAttribute(functionPropsBuilder_lambdaEClass,
+				FUNCTION_PROPS_BUILDER_LAMBDA__MEMORY_SIZE_JAVA_LANG_NUMBER_);
+		createEAttribute(functionPropsBuilder_lambdaEClass,
+				FUNCTION_PROPS_BUILDER_LAMBDA__RESERVED_CONCURRENT_EXECUTIONS_JAVA_LANG_NUMBER_);
+		createEAttribute(functionPropsBuilder_lambdaEClass,
+				FUNCTION_PROPS_BUILDER_LAMBDA__ROLE_WITH_IROLE_SOFTWARE_AMAZON_AWSCDK_SERVICES_IAM_IROLE_AS_REFERENCE);
+		createEAttribute(functionPropsBuilder_lambdaEClass,
+				FUNCTION_PROPS_BUILDER_LAMBDA__SECURITY_GROUP_WITH_ISECURITY_GROUP_SOFTWARE_AMAZON_AWSCDK_SERVICES_EC2_ISECURITY_GROUP_AS_REFERENCE);
+		createEAttribute(functionPropsBuilder_lambdaEClass,
+				FUNCTION_PROPS_BUILDER_LAMBDA__SECURITY_GROUPS_SOFTWARE_AMAZON_AWSCDK_SERVICES_EC2_ISECURITY_GROUP_AS_LIST);
+		createEAttribute(functionPropsBuilder_lambdaEClass,
+				FUNCTION_PROPS_BUILDER_LAMBDA__TIMEOUT_WITH_DURATION_SOFTWARE_AMAZON_AWSCDK_CORE_DURATION_AS_REFERENCE);
+		createEAttribute(functionPropsBuilder_lambdaEClass,
+				FUNCTION_PROPS_BUILDER_LAMBDA__TRACING_SOFTWARE_AMAZON_AWSCDK_SERVICES_LAMBDA_TRACING_);
+		createEAttribute(functionPropsBuilder_lambdaEClass,
+				FUNCTION_PROPS_BUILDER_LAMBDA__VPC_WITH_IVPC_SOFTWARE_AMAZON_AWSCDK_SERVICES_EC2_IVPC_AS_REFERENCE);
+		createEAttribute(functionPropsBuilder_lambdaEClass,
+				FUNCTION_PROPS_BUILDER_LAMBDA__VPC_SUBNETS_WITH_SUBNET_SELECTION_SOFTWARE_AMAZON_AWSCDK_SERVICES_EC2_SUBNET_SELECTION_AS_REFERENCE);
+		createEAttribute(functionPropsBuilder_lambdaEClass,
+				FUNCTION_PROPS_BUILDER_LAMBDA__MAX_EVENT_AGE_WITH_DURATION_SOFTWARE_AMAZON_AWSCDK_CORE_DURATION_AS_REFERENCE);
+		createEAttribute(functionPropsBuilder_lambdaEClass,
+				FUNCTION_PROPS_BUILDER_LAMBDA__ON_FAILURE_WITH_IDESTINATION_SOFTWARE_AMAZON_AWSCDK_SERVICES_LAMBDA_IDESTINATION_AS_REFERENCE);
+		createEAttribute(functionPropsBuilder_lambdaEClass,
+				FUNCTION_PROPS_BUILDER_LAMBDA__ON_SUCCESS_WITH_IDESTINATION_SOFTWARE_AMAZON_AWSCDK_SERVICES_LAMBDA_IDESTINATION_AS_REFERENCE);
+		createEAttribute(functionPropsBuilder_lambdaEClass,
+				FUNCTION_PROPS_BUILDER_LAMBDA__RETRY_ATTEMPTS_JAVA_LANG_NUMBER_);
+		createEAttribute(functionPropsBuilder_lambdaEClass, FUNCTION_PROPS_BUILDER_LAMBDA__GENERATED_CLASS_NAME);
+		createEAttribute(functionPropsBuilder_lambdaEClass, FUNCTION_PROPS_BUILDER_LAMBDA__VAR_NAME);
+		createEAttribute(functionPropsBuilder_lambdaEClass, FUNCTION_PROPS_BUILDER_LAMBDA__IDENTIFIER);
+		createEAttribute(functionPropsBuilder_lambdaEClass, FUNCTION_PROPS_BUILDER_LAMBDA__ADDITIONAL_CODE);
+
 		functionBuilder_lambdaEClass = createEClass(FUNCTION_BUILDER_LAMBDA);
 		createEAttribute(functionBuilder_lambdaEClass,
 				FUNCTION_BUILDER_LAMBDA__MAX_EVENT_AGE_WITH_DURATION_SOFTWARE_AMAZON_AWSCDK_CORE_DURATION_AS_REFERENCE);
@@ -11348,6 +17147,115 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 		createEAttribute(apiGatewayToDynamoDBBuilder_apigatewaydynamodbEClass,
 				API_GATEWAY_TO_DYNAMO_DB_BUILDER_APIGATEWAYDYNAMODB__ADDITIONAL_CODE);
 
+		lambdaRestApiPropsBuilder_apigatewayEClass = createEClass(LAMBDA_REST_API_PROPS_BUILDER_APIGATEWAY);
+		createEAttribute(lambdaRestApiPropsBuilder_apigatewayEClass,
+				LAMBDA_REST_API_PROPS_BUILDER_APIGATEWAY__HANDLER_WITH_IFUNCTION_SOFTWARE_AMAZON_AWSCDK_SERVICES_LAMBDA_IFUNCTION_AS_REFERENCE);
+		createEAttribute(lambdaRestApiPropsBuilder_apigatewayEClass,
+				LAMBDA_REST_API_PROPS_BUILDER_APIGATEWAY__OPTIONS_WITH_REST_API_PROPS_SOFTWARE_AMAZON_AWSCDK_SERVICES_APIGATEWAY_REST_API_PROPS_AS_REFERENCE);
+		createEAttribute(lambdaRestApiPropsBuilder_apigatewayEClass,
+				LAMBDA_REST_API_PROPS_BUILDER_APIGATEWAY__PROXY_JAVA_LANG_BOOLEAN_);
+		createEAttribute(lambdaRestApiPropsBuilder_apigatewayEClass,
+				LAMBDA_REST_API_PROPS_BUILDER_APIGATEWAY__API_KEY_SOURCE_TYPE_SOFTWARE_AMAZON_AWSCDK_SERVICES_APIGATEWAY_API_KEY_SOURCE_TYPE_);
+		createEAttribute(lambdaRestApiPropsBuilder_apigatewayEClass,
+				LAMBDA_REST_API_PROPS_BUILDER_APIGATEWAY__BINARY_MEDIA_TYPES_JAVA_LANG_STRING_AS_LIST);
+		createEAttribute(lambdaRestApiPropsBuilder_apigatewayEClass,
+				LAMBDA_REST_API_PROPS_BUILDER_APIGATEWAY__CLONE_FROM_WITH_IREST_API_SOFTWARE_AMAZON_AWSCDK_SERVICES_APIGATEWAY_IREST_API_AS_REFERENCE);
+		createEAttribute(lambdaRestApiPropsBuilder_apigatewayEClass,
+				LAMBDA_REST_API_PROPS_BUILDER_APIGATEWAY__DESCRIPTION_JAVA_LANG_STRING_);
+		createEAttribute(lambdaRestApiPropsBuilder_apigatewayEClass,
+				LAMBDA_REST_API_PROPS_BUILDER_APIGATEWAY__ENDPOINT_CONFIGURATION_WITH_ENDPOINT_CONFIGURATION_SOFTWARE_AMAZON_AWSCDK_SERVICES_APIGATEWAY_ENDPOINT_CONFIGURATION_AS_REFERENCE);
+		createEAttribute(lambdaRestApiPropsBuilder_apigatewayEClass,
+				LAMBDA_REST_API_PROPS_BUILDER_APIGATEWAY__ENDPOINT_TYPES_SOFTWARE_AMAZON_AWSCDK_SERVICES_APIGATEWAY_ENDPOINT_TYPE_AS_LIST);
+		createEAttribute(lambdaRestApiPropsBuilder_apigatewayEClass,
+				LAMBDA_REST_API_PROPS_BUILDER_APIGATEWAY__MINIMUM_COMPRESSION_SIZE_JAVA_LANG_NUMBER_);
+		createEAttribute(lambdaRestApiPropsBuilder_apigatewayEClass,
+				LAMBDA_REST_API_PROPS_BUILDER_APIGATEWAY__CLOUD_WATCH_ROLE_JAVA_LANG_BOOLEAN_);
+		createEAttribute(lambdaRestApiPropsBuilder_apigatewayEClass,
+				LAMBDA_REST_API_PROPS_BUILDER_APIGATEWAY__DEPLOY_JAVA_LANG_BOOLEAN_);
+		createEAttribute(lambdaRestApiPropsBuilder_apigatewayEClass,
+				LAMBDA_REST_API_PROPS_BUILDER_APIGATEWAY__DEPLOY_OPTIONS_WITH_STAGE_OPTIONS_SOFTWARE_AMAZON_AWSCDK_SERVICES_APIGATEWAY_STAGE_OPTIONS_AS_REFERENCE);
+		createEAttribute(lambdaRestApiPropsBuilder_apigatewayEClass,
+				LAMBDA_REST_API_PROPS_BUILDER_APIGATEWAY__DOMAIN_NAME_WITH_DOMAIN_NAME_OPTIONS_SOFTWARE_AMAZON_AWSCDK_SERVICES_APIGATEWAY_DOMAIN_NAME_OPTIONS_AS_REFERENCE);
+		createEAttribute(lambdaRestApiPropsBuilder_apigatewayEClass,
+				LAMBDA_REST_API_PROPS_BUILDER_APIGATEWAY__ENDPOINT_EXPORT_NAME_JAVA_LANG_STRING_);
+		createEAttribute(lambdaRestApiPropsBuilder_apigatewayEClass,
+				LAMBDA_REST_API_PROPS_BUILDER_APIGATEWAY__FAIL_ON_WARNINGS_JAVA_LANG_BOOLEAN_);
+		createEAttribute(lambdaRestApiPropsBuilder_apigatewayEClass,
+				LAMBDA_REST_API_PROPS_BUILDER_APIGATEWAY__PARAMETERS_JAVA_LANG_STRING_JAVA_LANG_STRING_AS_MAP);
+		createEAttribute(lambdaRestApiPropsBuilder_apigatewayEClass,
+				LAMBDA_REST_API_PROPS_BUILDER_APIGATEWAY__POLICY_WITH_POLICY_DOCUMENT_SOFTWARE_AMAZON_AWSCDK_SERVICES_IAM_POLICY_DOCUMENT_AS_REFERENCE);
+		createEAttribute(lambdaRestApiPropsBuilder_apigatewayEClass,
+				LAMBDA_REST_API_PROPS_BUILDER_APIGATEWAY__REST_API_NAME_JAVA_LANG_STRING_);
+		createEAttribute(lambdaRestApiPropsBuilder_apigatewayEClass,
+				LAMBDA_REST_API_PROPS_BUILDER_APIGATEWAY__RETAIN_DEPLOYMENTS_JAVA_LANG_BOOLEAN_);
+		createEAttribute(lambdaRestApiPropsBuilder_apigatewayEClass,
+				LAMBDA_REST_API_PROPS_BUILDER_APIGATEWAY__DEFAULT_CORS_PREFLIGHT_OPTIONS_WITH_CORS_OPTIONS_SOFTWARE_AMAZON_AWSCDK_SERVICES_APIGATEWAY_CORS_OPTIONS_AS_REFERENCE);
+		createEAttribute(lambdaRestApiPropsBuilder_apigatewayEClass,
+				LAMBDA_REST_API_PROPS_BUILDER_APIGATEWAY__DEFAULT_INTEGRATION_WITH_INTEGRATION_SOFTWARE_AMAZON_AWSCDK_SERVICES_APIGATEWAY_INTEGRATION_AS_REFERENCE);
+		createEAttribute(lambdaRestApiPropsBuilder_apigatewayEClass,
+				LAMBDA_REST_API_PROPS_BUILDER_APIGATEWAY__DEFAULT_METHOD_OPTIONS_WITH_METHOD_OPTIONS_SOFTWARE_AMAZON_AWSCDK_SERVICES_APIGATEWAY_METHOD_OPTIONS_AS_REFERENCE);
+		createEAttribute(lambdaRestApiPropsBuilder_apigatewayEClass,
+				LAMBDA_REST_API_PROPS_BUILDER_APIGATEWAY__GENERATED_CLASS_NAME);
+		createEAttribute(lambdaRestApiPropsBuilder_apigatewayEClass,
+				LAMBDA_REST_API_PROPS_BUILDER_APIGATEWAY__VAR_NAME);
+		createEAttribute(lambdaRestApiPropsBuilder_apigatewayEClass,
+				LAMBDA_REST_API_PROPS_BUILDER_APIGATEWAY__IDENTIFIER);
+		createEAttribute(lambdaRestApiPropsBuilder_apigatewayEClass,
+				LAMBDA_REST_API_PROPS_BUILDER_APIGATEWAY__ADDITIONAL_CODE);
+
+		lambdaRestApiBuilder_apigatewayEClass = createEClass(LAMBDA_REST_API_BUILDER_APIGATEWAY);
+		createEAttribute(lambdaRestApiBuilder_apigatewayEClass,
+				LAMBDA_REST_API_BUILDER_APIGATEWAY__DEFAULT_CORS_PREFLIGHT_OPTIONS_WITH_CORS_OPTIONS_SOFTWARE_AMAZON_AWSCDK_SERVICES_APIGATEWAY_CORS_OPTIONS_AS_REFERENCE);
+		createEAttribute(lambdaRestApiBuilder_apigatewayEClass,
+				LAMBDA_REST_API_BUILDER_APIGATEWAY__DEFAULT_INTEGRATION_WITH_INTEGRATION_SOFTWARE_AMAZON_AWSCDK_SERVICES_APIGATEWAY_INTEGRATION_AS_REFERENCE);
+		createEAttribute(lambdaRestApiBuilder_apigatewayEClass,
+				LAMBDA_REST_API_BUILDER_APIGATEWAY__DEFAULT_METHOD_OPTIONS_WITH_METHOD_OPTIONS_SOFTWARE_AMAZON_AWSCDK_SERVICES_APIGATEWAY_METHOD_OPTIONS_AS_REFERENCE);
+		createEAttribute(lambdaRestApiBuilder_apigatewayEClass,
+				LAMBDA_REST_API_BUILDER_APIGATEWAY__CLOUD_WATCH_ROLE_JAVA_LANG_BOOLEAN_);
+		createEAttribute(lambdaRestApiBuilder_apigatewayEClass,
+				LAMBDA_REST_API_BUILDER_APIGATEWAY__DEPLOY_JAVA_LANG_BOOLEAN_);
+		createEAttribute(lambdaRestApiBuilder_apigatewayEClass,
+				LAMBDA_REST_API_BUILDER_APIGATEWAY__DEPLOY_OPTIONS_WITH_STAGE_OPTIONS_SOFTWARE_AMAZON_AWSCDK_SERVICES_APIGATEWAY_STAGE_OPTIONS_AS_REFERENCE);
+		createEAttribute(lambdaRestApiBuilder_apigatewayEClass,
+				LAMBDA_REST_API_BUILDER_APIGATEWAY__DOMAIN_NAME_WITH_DOMAIN_NAME_OPTIONS_SOFTWARE_AMAZON_AWSCDK_SERVICES_APIGATEWAY_DOMAIN_NAME_OPTIONS_AS_REFERENCE);
+		createEAttribute(lambdaRestApiBuilder_apigatewayEClass,
+				LAMBDA_REST_API_BUILDER_APIGATEWAY__ENDPOINT_EXPORT_NAME_JAVA_LANG_STRING_);
+		createEAttribute(lambdaRestApiBuilder_apigatewayEClass,
+				LAMBDA_REST_API_BUILDER_APIGATEWAY__FAIL_ON_WARNINGS_JAVA_LANG_BOOLEAN_);
+		createEAttribute(lambdaRestApiBuilder_apigatewayEClass,
+				LAMBDA_REST_API_BUILDER_APIGATEWAY__PARAMETERS_JAVA_LANG_STRING_JAVA_LANG_STRING_AS_MAP);
+		createEAttribute(lambdaRestApiBuilder_apigatewayEClass,
+				LAMBDA_REST_API_BUILDER_APIGATEWAY__POLICY_WITH_POLICY_DOCUMENT_SOFTWARE_AMAZON_AWSCDK_SERVICES_IAM_POLICY_DOCUMENT_AS_REFERENCE);
+		createEAttribute(lambdaRestApiBuilder_apigatewayEClass,
+				LAMBDA_REST_API_BUILDER_APIGATEWAY__REST_API_NAME_JAVA_LANG_STRING_);
+		createEAttribute(lambdaRestApiBuilder_apigatewayEClass,
+				LAMBDA_REST_API_BUILDER_APIGATEWAY__RETAIN_DEPLOYMENTS_JAVA_LANG_BOOLEAN_);
+		createEAttribute(lambdaRestApiBuilder_apigatewayEClass,
+				LAMBDA_REST_API_BUILDER_APIGATEWAY__API_KEY_SOURCE_TYPE_SOFTWARE_AMAZON_AWSCDK_SERVICES_APIGATEWAY_API_KEY_SOURCE_TYPE_);
+		createEAttribute(lambdaRestApiBuilder_apigatewayEClass,
+				LAMBDA_REST_API_BUILDER_APIGATEWAY__BINARY_MEDIA_TYPES_JAVA_LANG_STRING_AS_LIST);
+		createEAttribute(lambdaRestApiBuilder_apigatewayEClass,
+				LAMBDA_REST_API_BUILDER_APIGATEWAY__CLONE_FROM_WITH_IREST_API_SOFTWARE_AMAZON_AWSCDK_SERVICES_APIGATEWAY_IREST_API_AS_REFERENCE);
+		createEAttribute(lambdaRestApiBuilder_apigatewayEClass,
+				LAMBDA_REST_API_BUILDER_APIGATEWAY__DESCRIPTION_JAVA_LANG_STRING_);
+		createEAttribute(lambdaRestApiBuilder_apigatewayEClass,
+				LAMBDA_REST_API_BUILDER_APIGATEWAY__ENDPOINT_CONFIGURATION_WITH_ENDPOINT_CONFIGURATION_SOFTWARE_AMAZON_AWSCDK_SERVICES_APIGATEWAY_ENDPOINT_CONFIGURATION_AS_REFERENCE);
+		createEAttribute(lambdaRestApiBuilder_apigatewayEClass,
+				LAMBDA_REST_API_BUILDER_APIGATEWAY__ENDPOINT_TYPES_SOFTWARE_AMAZON_AWSCDK_SERVICES_APIGATEWAY_ENDPOINT_TYPE_AS_LIST);
+		createEAttribute(lambdaRestApiBuilder_apigatewayEClass,
+				LAMBDA_REST_API_BUILDER_APIGATEWAY__MINIMUM_COMPRESSION_SIZE_JAVA_LANG_NUMBER_);
+		createEAttribute(lambdaRestApiBuilder_apigatewayEClass,
+				LAMBDA_REST_API_BUILDER_APIGATEWAY__HANDLER_WITH_IFUNCTION_SOFTWARE_AMAZON_AWSCDK_SERVICES_LAMBDA_IFUNCTION_AS_REFERENCE);
+		createEAttribute(lambdaRestApiBuilder_apigatewayEClass,
+				LAMBDA_REST_API_BUILDER_APIGATEWAY__OPTIONS_WITH_REST_API_PROPS_SOFTWARE_AMAZON_AWSCDK_SERVICES_APIGATEWAY_REST_API_PROPS_AS_REFERENCE);
+		createEAttribute(lambdaRestApiBuilder_apigatewayEClass,
+				LAMBDA_REST_API_BUILDER_APIGATEWAY__PROXY_JAVA_LANG_BOOLEAN_);
+		createEAttribute(lambdaRestApiBuilder_apigatewayEClass,
+				LAMBDA_REST_API_BUILDER_APIGATEWAY__GENERATED_CLASS_NAME);
+		createEAttribute(lambdaRestApiBuilder_apigatewayEClass, LAMBDA_REST_API_BUILDER_APIGATEWAY__VAR_NAME);
+		createEAttribute(lambdaRestApiBuilder_apigatewayEClass, LAMBDA_REST_API_BUILDER_APIGATEWAY__IDENTIFIER);
+		createEAttribute(lambdaRestApiBuilder_apigatewayEClass, LAMBDA_REST_API_BUILDER_APIGATEWAY__ADDITIONAL_CODE);
+
 		apiGatewayToLambdaBuilder_apigatewaylambdaEClass = createEClass(API_GATEWAY_TO_LAMBDA_BUILDER_APIGATEWAYLAMBDA);
 		createEAttribute(apiGatewayToLambdaBuilder_apigatewaylambdaEClass,
 				API_GATEWAY_TO_LAMBDA_BUILDER_APIGATEWAYLAMBDA__API_GATEWAY_PROPS_JAVA_LANG_OBJECT_);
@@ -11363,6 +17271,34 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 				API_GATEWAY_TO_LAMBDA_BUILDER_APIGATEWAYLAMBDA__IDENTIFIER);
 		createEAttribute(apiGatewayToLambdaBuilder_apigatewaylambdaEClass,
 				API_GATEWAY_TO_LAMBDA_BUILDER_APIGATEWAYLAMBDA__ADDITIONAL_CODE);
+
+		queuePropsBuilder_sqsEClass = createEClass(QUEUE_PROPS_BUILDER_SQS);
+		createEAttribute(queuePropsBuilder_sqsEClass,
+				QUEUE_PROPS_BUILDER_SQS__CONTENT_BASED_DEDUPLICATION_JAVA_LANG_BOOLEAN_);
+		createEAttribute(queuePropsBuilder_sqsEClass,
+				QUEUE_PROPS_BUILDER_SQS__DATA_KEY_REUSE_WITH_DURATION_SOFTWARE_AMAZON_AWSCDK_CORE_DURATION_AS_REFERENCE);
+		createEAttribute(queuePropsBuilder_sqsEClass,
+				QUEUE_PROPS_BUILDER_SQS__DEAD_LETTER_QUEUE_WITH_DEAD_LETTER_QUEUE_SOFTWARE_AMAZON_AWSCDK_SERVICES_SQS_DEAD_LETTER_QUEUE_AS_REFERENCE);
+		createEAttribute(queuePropsBuilder_sqsEClass,
+				QUEUE_PROPS_BUILDER_SQS__DELIVERY_DELAY_WITH_DURATION_SOFTWARE_AMAZON_AWSCDK_CORE_DURATION_AS_REFERENCE);
+		createEAttribute(queuePropsBuilder_sqsEClass,
+				QUEUE_PROPS_BUILDER_SQS__ENCRYPTION_SOFTWARE_AMAZON_AWSCDK_SERVICES_SQS_QUEUE_ENCRYPTION_);
+		createEAttribute(queuePropsBuilder_sqsEClass,
+				QUEUE_PROPS_BUILDER_SQS__ENCRYPTION_MASTER_KEY_WITH_IKEY_SOFTWARE_AMAZON_AWSCDK_SERVICES_KMS_IKEY_AS_REFERENCE);
+		createEAttribute(queuePropsBuilder_sqsEClass, QUEUE_PROPS_BUILDER_SQS__FIFO_JAVA_LANG_BOOLEAN_);
+		createEAttribute(queuePropsBuilder_sqsEClass,
+				QUEUE_PROPS_BUILDER_SQS__MAX_MESSAGE_SIZE_BYTES_JAVA_LANG_NUMBER_);
+		createEAttribute(queuePropsBuilder_sqsEClass, QUEUE_PROPS_BUILDER_SQS__QUEUE_NAME_JAVA_LANG_STRING_);
+		createEAttribute(queuePropsBuilder_sqsEClass,
+				QUEUE_PROPS_BUILDER_SQS__RECEIVE_MESSAGE_WAIT_TIME_WITH_DURATION_SOFTWARE_AMAZON_AWSCDK_CORE_DURATION_AS_REFERENCE);
+		createEAttribute(queuePropsBuilder_sqsEClass,
+				QUEUE_PROPS_BUILDER_SQS__RETENTION_PERIOD_WITH_DURATION_SOFTWARE_AMAZON_AWSCDK_CORE_DURATION_AS_REFERENCE);
+		createEAttribute(queuePropsBuilder_sqsEClass,
+				QUEUE_PROPS_BUILDER_SQS__VISIBILITY_TIMEOUT_WITH_DURATION_SOFTWARE_AMAZON_AWSCDK_CORE_DURATION_AS_REFERENCE);
+		createEAttribute(queuePropsBuilder_sqsEClass, QUEUE_PROPS_BUILDER_SQS__GENERATED_CLASS_NAME);
+		createEAttribute(queuePropsBuilder_sqsEClass, QUEUE_PROPS_BUILDER_SQS__VAR_NAME);
+		createEAttribute(queuePropsBuilder_sqsEClass, QUEUE_PROPS_BUILDER_SQS__IDENTIFIER);
+		createEAttribute(queuePropsBuilder_sqsEClass, QUEUE_PROPS_BUILDER_SQS__ADDITIONAL_CODE);
 
 		apiGatewayToSqsBuilder_apigatewaysqsEClass = createEClass(API_GATEWAY_TO_SQS_BUILDER_APIGATEWAYSQS);
 		createEAttribute(apiGatewayToSqsBuilder_apigatewaysqsEClass,
@@ -11389,6 +17325,394 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 				API_GATEWAY_TO_SQS_BUILDER_APIGATEWAYSQS__IDENTIFIER);
 		createEAttribute(apiGatewayToSqsBuilder_apigatewaysqsEClass,
 				API_GATEWAY_TO_SQS_BUILDER_APIGATEWAYSQS__ADDITIONAL_CODE);
+
+		versionBuilder_lambdaEClass = createEClass(VERSION_BUILDER_LAMBDA);
+		createEAttribute(versionBuilder_lambdaEClass,
+				VERSION_BUILDER_LAMBDA__MAX_EVENT_AGE_WITH_DURATION_SOFTWARE_AMAZON_AWSCDK_CORE_DURATION_AS_REFERENCE);
+		createEAttribute(versionBuilder_lambdaEClass,
+				VERSION_BUILDER_LAMBDA__ON_FAILURE_WITH_IDESTINATION_SOFTWARE_AMAZON_AWSCDK_SERVICES_LAMBDA_IDESTINATION_AS_REFERENCE);
+		createEAttribute(versionBuilder_lambdaEClass,
+				VERSION_BUILDER_LAMBDA__ON_SUCCESS_WITH_IDESTINATION_SOFTWARE_AMAZON_AWSCDK_SERVICES_LAMBDA_IDESTINATION_AS_REFERENCE);
+		createEAttribute(versionBuilder_lambdaEClass, VERSION_BUILDER_LAMBDA__RETRY_ATTEMPTS_JAVA_LANG_NUMBER_);
+		createEAttribute(versionBuilder_lambdaEClass, VERSION_BUILDER_LAMBDA__CODE_SHA256_JAVA_LANG_STRING_);
+		createEAttribute(versionBuilder_lambdaEClass, VERSION_BUILDER_LAMBDA__DESCRIPTION_JAVA_LANG_STRING_);
+		createEAttribute(versionBuilder_lambdaEClass,
+				VERSION_BUILDER_LAMBDA__PROVISIONED_CONCURRENT_EXECUTIONS_JAVA_LANG_NUMBER_);
+		createEAttribute(versionBuilder_lambdaEClass,
+				VERSION_BUILDER_LAMBDA__REMOVAL_POLICY_SOFTWARE_AMAZON_AWSCDK_CORE_REMOVAL_POLICY_);
+		createEAttribute(versionBuilder_lambdaEClass,
+				VERSION_BUILDER_LAMBDA__LAMBDA_WITH_IFUNCTION_SOFTWARE_AMAZON_AWSCDK_SERVICES_LAMBDA_IFUNCTION_AS_REFERENCE);
+		createEAttribute(versionBuilder_lambdaEClass, VERSION_BUILDER_LAMBDA__GENERATED_CLASS_NAME);
+		createEAttribute(versionBuilder_lambdaEClass, VERSION_BUILDER_LAMBDA__VAR_NAME);
+		createEAttribute(versionBuilder_lambdaEClass, VERSION_BUILDER_LAMBDA__IDENTIFIER);
+		createEAttribute(versionBuilder_lambdaEClass, VERSION_BUILDER_LAMBDA__ADDITIONAL_CODE);
+
+		lambdaFunctionAssociationBuilder_cloudfrontEClass = createEClass(
+				LAMBDA_FUNCTION_ASSOCIATION_BUILDER_CLOUDFRONT);
+		createEAttribute(lambdaFunctionAssociationBuilder_cloudfrontEClass,
+				LAMBDA_FUNCTION_ASSOCIATION_BUILDER_CLOUDFRONT__EVENT_TYPE_SOFTWARE_AMAZON_AWSCDK_SERVICES_CLOUDFRONT_LAMBDA_EDGE_EVENT_TYPE_);
+		createEAttribute(lambdaFunctionAssociationBuilder_cloudfrontEClass,
+				LAMBDA_FUNCTION_ASSOCIATION_BUILDER_CLOUDFRONT__LAMBDA_FUNCTION_WITH_IVERSION_SOFTWARE_AMAZON_AWSCDK_SERVICES_LAMBDA_IVERSION_AS_REFERENCE);
+		createEAttribute(lambdaFunctionAssociationBuilder_cloudfrontEClass,
+				LAMBDA_FUNCTION_ASSOCIATION_BUILDER_CLOUDFRONT__GENERATED_CLASS_NAME);
+		createEAttribute(lambdaFunctionAssociationBuilder_cloudfrontEClass,
+				LAMBDA_FUNCTION_ASSOCIATION_BUILDER_CLOUDFRONT__VAR_NAME);
+		createEAttribute(lambdaFunctionAssociationBuilder_cloudfrontEClass,
+				LAMBDA_FUNCTION_ASSOCIATION_BUILDER_CLOUDFRONT__IDENTIFIER);
+		createEAttribute(lambdaFunctionAssociationBuilder_cloudfrontEClass,
+				LAMBDA_FUNCTION_ASSOCIATION_BUILDER_CLOUDFRONT__ADDITIONAL_CODE);
+
+		behaviorBuilder_cloudfrontEClass = createEClass(BEHAVIOR_BUILDER_CLOUDFRONT);
+		createEAttribute(behaviorBuilder_cloudfrontEClass,
+				BEHAVIOR_BUILDER_CLOUDFRONT__ALLOWED_METHODS_SOFTWARE_AMAZON_AWSCDK_SERVICES_CLOUDFRONT_CLOUD_FRONT_ALLOWED_METHODS_);
+		createEAttribute(behaviorBuilder_cloudfrontEClass,
+				BEHAVIOR_BUILDER_CLOUDFRONT__CACHED_METHODS_SOFTWARE_AMAZON_AWSCDK_SERVICES_CLOUDFRONT_CLOUD_FRONT_ALLOWED_CACHED_METHODS_);
+		createEAttribute(behaviorBuilder_cloudfrontEClass, BEHAVIOR_BUILDER_CLOUDFRONT__COMPRESS_JAVA_LANG_BOOLEAN_);
+		createEAttribute(behaviorBuilder_cloudfrontEClass,
+				BEHAVIOR_BUILDER_CLOUDFRONT__DEFAULT_TTL_WITH_DURATION_SOFTWARE_AMAZON_AWSCDK_CORE_DURATION_AS_REFERENCE);
+		createEAttribute(behaviorBuilder_cloudfrontEClass,
+				BEHAVIOR_BUILDER_CLOUDFRONT__FORWARDED_VALUES_WITH_FORWARDED_VALUES_PROPERTY_SOFTWARE_AMAZON_AWSCDK_SERVICES_CLOUDFRONT_CFN_DISTRIBUTION_FORWARDED_VALUES_PROPERTY_AS_REFERENCE);
+		createEAttribute(behaviorBuilder_cloudfrontEClass,
+				BEHAVIOR_BUILDER_CLOUDFRONT__IS_DEFAULT_BEHAVIOR_JAVA_LANG_BOOLEAN_);
+		createEAttribute(behaviorBuilder_cloudfrontEClass,
+				BEHAVIOR_BUILDER_CLOUDFRONT__LAMBDA_FUNCTION_ASSOCIATIONS_SOFTWARE_AMAZON_AWSCDK_SERVICES_CLOUDFRONT_LAMBDA_FUNCTION_ASSOCIATION_AS_LIST);
+		createEAttribute(behaviorBuilder_cloudfrontEClass,
+				BEHAVIOR_BUILDER_CLOUDFRONT__MAX_TTL_WITH_DURATION_SOFTWARE_AMAZON_AWSCDK_CORE_DURATION_AS_REFERENCE);
+		createEAttribute(behaviorBuilder_cloudfrontEClass,
+				BEHAVIOR_BUILDER_CLOUDFRONT__MIN_TTL_WITH_DURATION_SOFTWARE_AMAZON_AWSCDK_CORE_DURATION_AS_REFERENCE);
+		createEAttribute(behaviorBuilder_cloudfrontEClass, BEHAVIOR_BUILDER_CLOUDFRONT__PATH_PATTERN_JAVA_LANG_STRING_);
+		createEAttribute(behaviorBuilder_cloudfrontEClass,
+				BEHAVIOR_BUILDER_CLOUDFRONT__TRUSTED_SIGNERS_JAVA_LANG_STRING_AS_LIST);
+		createEAttribute(behaviorBuilder_cloudfrontEClass, BEHAVIOR_BUILDER_CLOUDFRONT__GENERATED_CLASS_NAME);
+		createEAttribute(behaviorBuilder_cloudfrontEClass, BEHAVIOR_BUILDER_CLOUDFRONT__VAR_NAME);
+		createEAttribute(behaviorBuilder_cloudfrontEClass, BEHAVIOR_BUILDER_CLOUDFRONT__IDENTIFIER);
+		createEAttribute(behaviorBuilder_cloudfrontEClass, BEHAVIOR_BUILDER_CLOUDFRONT__ADDITIONAL_CODE);
+
+		customOriginConfigBuilder_cloudfrontEClass = createEClass(CUSTOM_ORIGIN_CONFIG_BUILDER_CLOUDFRONT);
+		createEAttribute(customOriginConfigBuilder_cloudfrontEClass,
+				CUSTOM_ORIGIN_CONFIG_BUILDER_CLOUDFRONT__DOMAIN_NAME_JAVA_LANG_STRING_);
+		createEAttribute(customOriginConfigBuilder_cloudfrontEClass,
+				CUSTOM_ORIGIN_CONFIG_BUILDER_CLOUDFRONT__ALLOWED_ORIGIN_SSL_VERSIONS_SOFTWARE_AMAZON_AWSCDK_SERVICES_CLOUDFRONT_ORIGIN_SSL_POLICY_AS_LIST);
+		createEAttribute(customOriginConfigBuilder_cloudfrontEClass,
+				CUSTOM_ORIGIN_CONFIG_BUILDER_CLOUDFRONT__HTTP_PORT_JAVA_LANG_NUMBER_);
+		createEAttribute(customOriginConfigBuilder_cloudfrontEClass,
+				CUSTOM_ORIGIN_CONFIG_BUILDER_CLOUDFRONT__HTTPS_PORT_JAVA_LANG_NUMBER_);
+		createEAttribute(customOriginConfigBuilder_cloudfrontEClass,
+				CUSTOM_ORIGIN_CONFIG_BUILDER_CLOUDFRONT__ORIGIN_KEEPALIVE_TIMEOUT_WITH_DURATION_SOFTWARE_AMAZON_AWSCDK_CORE_DURATION_AS_REFERENCE);
+		createEAttribute(customOriginConfigBuilder_cloudfrontEClass,
+				CUSTOM_ORIGIN_CONFIG_BUILDER_CLOUDFRONT__ORIGIN_PROTOCOL_POLICY_SOFTWARE_AMAZON_AWSCDK_SERVICES_CLOUDFRONT_ORIGIN_PROTOCOL_POLICY_);
+		createEAttribute(customOriginConfigBuilder_cloudfrontEClass,
+				CUSTOM_ORIGIN_CONFIG_BUILDER_CLOUDFRONT__ORIGIN_READ_TIMEOUT_WITH_DURATION_SOFTWARE_AMAZON_AWSCDK_CORE_DURATION_AS_REFERENCE);
+		createEAttribute(customOriginConfigBuilder_cloudfrontEClass,
+				CUSTOM_ORIGIN_CONFIG_BUILDER_CLOUDFRONT__GENERATED_CLASS_NAME);
+		createEAttribute(customOriginConfigBuilder_cloudfrontEClass, CUSTOM_ORIGIN_CONFIG_BUILDER_CLOUDFRONT__VAR_NAME);
+		createEAttribute(customOriginConfigBuilder_cloudfrontEClass,
+				CUSTOM_ORIGIN_CONFIG_BUILDER_CLOUDFRONT__IDENTIFIER);
+		createEAttribute(customOriginConfigBuilder_cloudfrontEClass,
+				CUSTOM_ORIGIN_CONFIG_BUILDER_CLOUDFRONT__ADDITIONAL_CODE);
+
+		blockPublicAccessBuilder_s3EClass = createEClass(BLOCK_PUBLIC_ACCESS_BUILDER_S3);
+		createEAttribute(blockPublicAccessBuilder_s3EClass,
+				BLOCK_PUBLIC_ACCESS_BUILDER_S3__BLOCK_PUBLIC_ACLS_JAVA_LANG_BOOLEAN_);
+		createEAttribute(blockPublicAccessBuilder_s3EClass,
+				BLOCK_PUBLIC_ACCESS_BUILDER_S3__BLOCK_PUBLIC_POLICY_JAVA_LANG_BOOLEAN_);
+		createEAttribute(blockPublicAccessBuilder_s3EClass,
+				BLOCK_PUBLIC_ACCESS_BUILDER_S3__IGNORE_PUBLIC_ACLS_JAVA_LANG_BOOLEAN_);
+		createEAttribute(blockPublicAccessBuilder_s3EClass,
+				BLOCK_PUBLIC_ACCESS_BUILDER_S3__RESTRICT_PUBLIC_BUCKETS_JAVA_LANG_BOOLEAN_);
+		createEAttribute(blockPublicAccessBuilder_s3EClass, BLOCK_PUBLIC_ACCESS_BUILDER_S3__GENERATED_CLASS_NAME);
+		createEAttribute(blockPublicAccessBuilder_s3EClass, BLOCK_PUBLIC_ACCESS_BUILDER_S3__VAR_NAME);
+		createEAttribute(blockPublicAccessBuilder_s3EClass, BLOCK_PUBLIC_ACCESS_BUILDER_S3__IDENTIFIER);
+		createEAttribute(blockPublicAccessBuilder_s3EClass, BLOCK_PUBLIC_ACCESS_BUILDER_S3__ADDITIONAL_CODE);
+
+		corsRuleBuilder_s3EClass = createEClass(CORS_RULE_BUILDER_S3);
+		createEAttribute(corsRuleBuilder_s3EClass,
+				CORS_RULE_BUILDER_S3__ALLOWED_METHODS_SOFTWARE_AMAZON_AWSCDK_SERVICES_S3_HTTP_METHODS_AS_LIST);
+		createEAttribute(corsRuleBuilder_s3EClass, CORS_RULE_BUILDER_S3__ALLOWED_ORIGINS_JAVA_LANG_STRING_AS_LIST);
+		createEAttribute(corsRuleBuilder_s3EClass, CORS_RULE_BUILDER_S3__ALLOWED_HEADERS_JAVA_LANG_STRING_AS_LIST);
+		createEAttribute(corsRuleBuilder_s3EClass, CORS_RULE_BUILDER_S3__EXPOSED_HEADERS_JAVA_LANG_STRING_AS_LIST);
+		createEAttribute(corsRuleBuilder_s3EClass, CORS_RULE_BUILDER_S3__ID_JAVA_LANG_STRING_);
+		createEAttribute(corsRuleBuilder_s3EClass, CORS_RULE_BUILDER_S3__MAX_AGE_JAVA_LANG_NUMBER_);
+		createEAttribute(corsRuleBuilder_s3EClass, CORS_RULE_BUILDER_S3__GENERATED_CLASS_NAME);
+		createEAttribute(corsRuleBuilder_s3EClass, CORS_RULE_BUILDER_S3__VAR_NAME);
+		createEAttribute(corsRuleBuilder_s3EClass, CORS_RULE_BUILDER_S3__IDENTIFIER);
+		createEAttribute(corsRuleBuilder_s3EClass, CORS_RULE_BUILDER_S3__ADDITIONAL_CODE);
+
+		noncurrentVersionTransitionBuilder_s3EClass = createEClass(NONCURRENT_VERSION_TRANSITION_BUILDER_S3);
+		createEAttribute(noncurrentVersionTransitionBuilder_s3EClass,
+				NONCURRENT_VERSION_TRANSITION_BUILDER_S3__STORAGE_CLASS_WITH_STORAGE_CLASS_SOFTWARE_AMAZON_AWSCDK_SERVICES_S3_STORAGE_CLASS_AS_REFERENCE);
+		createEAttribute(noncurrentVersionTransitionBuilder_s3EClass,
+				NONCURRENT_VERSION_TRANSITION_BUILDER_S3__TRANSITION_AFTER_WITH_DURATION_SOFTWARE_AMAZON_AWSCDK_CORE_DURATION_AS_REFERENCE);
+		createEAttribute(noncurrentVersionTransitionBuilder_s3EClass,
+				NONCURRENT_VERSION_TRANSITION_BUILDER_S3__GENERATED_CLASS_NAME);
+		createEAttribute(noncurrentVersionTransitionBuilder_s3EClass,
+				NONCURRENT_VERSION_TRANSITION_BUILDER_S3__VAR_NAME);
+		createEAttribute(noncurrentVersionTransitionBuilder_s3EClass,
+				NONCURRENT_VERSION_TRANSITION_BUILDER_S3__IDENTIFIER);
+		createEAttribute(noncurrentVersionTransitionBuilder_s3EClass,
+				NONCURRENT_VERSION_TRANSITION_BUILDER_S3__ADDITIONAL_CODE);
+
+		transitionBuilder_s3EClass = createEClass(TRANSITION_BUILDER_S3);
+		createEAttribute(transitionBuilder_s3EClass,
+				TRANSITION_BUILDER_S3__STORAGE_CLASS_WITH_STORAGE_CLASS_SOFTWARE_AMAZON_AWSCDK_SERVICES_S3_STORAGE_CLASS_AS_REFERENCE);
+		createEAttribute(transitionBuilder_s3EClass,
+				TRANSITION_BUILDER_S3__TRANSITION_AFTER_WITH_DURATION_SOFTWARE_AMAZON_AWSCDK_CORE_DURATION_AS_REFERENCE);
+		createEAttribute(transitionBuilder_s3EClass,
+				TRANSITION_BUILDER_S3__TRANSITION_DATE_WITH_INSTANT_JAVA_TIME_INSTANT_AS_REFERENCE);
+		createEAttribute(transitionBuilder_s3EClass, TRANSITION_BUILDER_S3__GENERATED_CLASS_NAME);
+		createEAttribute(transitionBuilder_s3EClass, TRANSITION_BUILDER_S3__VAR_NAME);
+		createEAttribute(transitionBuilder_s3EClass, TRANSITION_BUILDER_S3__IDENTIFIER);
+		createEAttribute(transitionBuilder_s3EClass, TRANSITION_BUILDER_S3__ADDITIONAL_CODE);
+
+		lifecycleRuleBuilder_s3EClass = createEClass(LIFECYCLE_RULE_BUILDER_S3);
+		createEAttribute(lifecycleRuleBuilder_s3EClass,
+				LIFECYCLE_RULE_BUILDER_S3__ABORT_INCOMPLETE_MULTIPART_UPLOAD_AFTER_WITH_DURATION_SOFTWARE_AMAZON_AWSCDK_CORE_DURATION_AS_REFERENCE);
+		createEAttribute(lifecycleRuleBuilder_s3EClass, LIFECYCLE_RULE_BUILDER_S3__ENABLED_JAVA_LANG_BOOLEAN_);
+		createEAttribute(lifecycleRuleBuilder_s3EClass,
+				LIFECYCLE_RULE_BUILDER_S3__EXPIRATION_WITH_DURATION_SOFTWARE_AMAZON_AWSCDK_CORE_DURATION_AS_REFERENCE);
+		createEAttribute(lifecycleRuleBuilder_s3EClass,
+				LIFECYCLE_RULE_BUILDER_S3__EXPIRATION_DATE_WITH_INSTANT_JAVA_TIME_INSTANT_AS_REFERENCE);
+		createEAttribute(lifecycleRuleBuilder_s3EClass, LIFECYCLE_RULE_BUILDER_S3__ID_JAVA_LANG_STRING_);
+		createEAttribute(lifecycleRuleBuilder_s3EClass,
+				LIFECYCLE_RULE_BUILDER_S3__NONCURRENT_VERSION_EXPIRATION_WITH_DURATION_SOFTWARE_AMAZON_AWSCDK_CORE_DURATION_AS_REFERENCE);
+		createEAttribute(lifecycleRuleBuilder_s3EClass,
+				LIFECYCLE_RULE_BUILDER_S3__NONCURRENT_VERSION_TRANSITIONS_SOFTWARE_AMAZON_AWSCDK_SERVICES_S3_NONCURRENT_VERSION_TRANSITION_AS_LIST);
+		createEAttribute(lifecycleRuleBuilder_s3EClass, LIFECYCLE_RULE_BUILDER_S3__PREFIX_JAVA_LANG_STRING_);
+		createEAttribute(lifecycleRuleBuilder_s3EClass,
+				LIFECYCLE_RULE_BUILDER_S3__TAG_FILTERS_JAVA_LANG_STRING_JAVA_LANG_OBJECT_AS_MAP);
+		createEAttribute(lifecycleRuleBuilder_s3EClass,
+				LIFECYCLE_RULE_BUILDER_S3__TRANSITIONS_SOFTWARE_AMAZON_AWSCDK_SERVICES_S3_TRANSITION_AS_LIST);
+		createEAttribute(lifecycleRuleBuilder_s3EClass, LIFECYCLE_RULE_BUILDER_S3__GENERATED_CLASS_NAME);
+		createEAttribute(lifecycleRuleBuilder_s3EClass, LIFECYCLE_RULE_BUILDER_S3__VAR_NAME);
+		createEAttribute(lifecycleRuleBuilder_s3EClass, LIFECYCLE_RULE_BUILDER_S3__IDENTIFIER);
+		createEAttribute(lifecycleRuleBuilder_s3EClass, LIFECYCLE_RULE_BUILDER_S3__ADDITIONAL_CODE);
+
+		bucketMetricsBuilder_s3EClass = createEClass(BUCKET_METRICS_BUILDER_S3);
+		createEAttribute(bucketMetricsBuilder_s3EClass, BUCKET_METRICS_BUILDER_S3__ID_JAVA_LANG_STRING_);
+		createEAttribute(bucketMetricsBuilder_s3EClass, BUCKET_METRICS_BUILDER_S3__PREFIX_JAVA_LANG_STRING_);
+		createEAttribute(bucketMetricsBuilder_s3EClass,
+				BUCKET_METRICS_BUILDER_S3__TAG_FILTERS_JAVA_LANG_STRING_JAVA_LANG_OBJECT_AS_MAP);
+		createEAttribute(bucketMetricsBuilder_s3EClass, BUCKET_METRICS_BUILDER_S3__GENERATED_CLASS_NAME);
+		createEAttribute(bucketMetricsBuilder_s3EClass, BUCKET_METRICS_BUILDER_S3__VAR_NAME);
+		createEAttribute(bucketMetricsBuilder_s3EClass, BUCKET_METRICS_BUILDER_S3__IDENTIFIER);
+		createEAttribute(bucketMetricsBuilder_s3EClass, BUCKET_METRICS_BUILDER_S3__ADDITIONAL_CODE);
+
+		redirectTargetBuilder_s3EClass = createEClass(REDIRECT_TARGET_BUILDER_S3);
+		createEAttribute(redirectTargetBuilder_s3EClass, REDIRECT_TARGET_BUILDER_S3__HOST_NAME_JAVA_LANG_STRING_);
+		createEAttribute(redirectTargetBuilder_s3EClass,
+				REDIRECT_TARGET_BUILDER_S3__PROTOCOL_SOFTWARE_AMAZON_AWSCDK_SERVICES_S3_REDIRECT_PROTOCOL_);
+		createEAttribute(redirectTargetBuilder_s3EClass, REDIRECT_TARGET_BUILDER_S3__GENERATED_CLASS_NAME);
+		createEAttribute(redirectTargetBuilder_s3EClass, REDIRECT_TARGET_BUILDER_S3__VAR_NAME);
+		createEAttribute(redirectTargetBuilder_s3EClass, REDIRECT_TARGET_BUILDER_S3__IDENTIFIER);
+		createEAttribute(redirectTargetBuilder_s3EClass, REDIRECT_TARGET_BUILDER_S3__ADDITIONAL_CODE);
+
+		routingRuleConditionBuilder_s3EClass = createEClass(ROUTING_RULE_CONDITION_BUILDER_S3);
+		createEAttribute(routingRuleConditionBuilder_s3EClass,
+				ROUTING_RULE_CONDITION_BUILDER_S3__HTTP_ERROR_CODE_RETURNED_EQUALS_JAVA_LANG_STRING_);
+		createEAttribute(routingRuleConditionBuilder_s3EClass,
+				ROUTING_RULE_CONDITION_BUILDER_S3__KEY_PREFIX_EQUALS_JAVA_LANG_STRING_);
+		createEAttribute(routingRuleConditionBuilder_s3EClass, ROUTING_RULE_CONDITION_BUILDER_S3__GENERATED_CLASS_NAME);
+		createEAttribute(routingRuleConditionBuilder_s3EClass, ROUTING_RULE_CONDITION_BUILDER_S3__VAR_NAME);
+		createEAttribute(routingRuleConditionBuilder_s3EClass, ROUTING_RULE_CONDITION_BUILDER_S3__IDENTIFIER);
+		createEAttribute(routingRuleConditionBuilder_s3EClass, ROUTING_RULE_CONDITION_BUILDER_S3__ADDITIONAL_CODE);
+
+		routingRuleBuilder_s3EClass = createEClass(ROUTING_RULE_BUILDER_S3);
+		createEAttribute(routingRuleBuilder_s3EClass,
+				ROUTING_RULE_BUILDER_S3__CONDITION_WITH_ROUTING_RULE_CONDITION_SOFTWARE_AMAZON_AWSCDK_SERVICES_S3_ROUTING_RULE_CONDITION_AS_REFERENCE);
+		createEAttribute(routingRuleBuilder_s3EClass, ROUTING_RULE_BUILDER_S3__HOST_NAME_JAVA_LANG_STRING_);
+		createEAttribute(routingRuleBuilder_s3EClass, ROUTING_RULE_BUILDER_S3__HTTP_REDIRECT_CODE_JAVA_LANG_STRING_);
+		createEAttribute(routingRuleBuilder_s3EClass,
+				ROUTING_RULE_BUILDER_S3__PROTOCOL_SOFTWARE_AMAZON_AWSCDK_SERVICES_S3_REDIRECT_PROTOCOL_);
+		createEAttribute(routingRuleBuilder_s3EClass,
+				ROUTING_RULE_BUILDER_S3__REPLACE_KEY_WITH_REPLACE_KEY_SOFTWARE_AMAZON_AWSCDK_SERVICES_S3_REPLACE_KEY_AS_REFERENCE);
+		createEAttribute(routingRuleBuilder_s3EClass, ROUTING_RULE_BUILDER_S3__GENERATED_CLASS_NAME);
+		createEAttribute(routingRuleBuilder_s3EClass, ROUTING_RULE_BUILDER_S3__VAR_NAME);
+		createEAttribute(routingRuleBuilder_s3EClass, ROUTING_RULE_BUILDER_S3__IDENTIFIER);
+		createEAttribute(routingRuleBuilder_s3EClass, ROUTING_RULE_BUILDER_S3__ADDITIONAL_CODE);
+
+		bucketBuilder_s3EClass = createEClass(BUCKET_BUILDER_S3);
+		createEAttribute(bucketBuilder_s3EClass,
+				BUCKET_BUILDER_S3__ACCESS_CONTROL_SOFTWARE_AMAZON_AWSCDK_SERVICES_S3_BUCKET_ACCESS_CONTROL_);
+		createEAttribute(bucketBuilder_s3EClass,
+				BUCKET_BUILDER_S3__BLOCK_PUBLIC_ACCESS_WITH_BLOCK_PUBLIC_ACCESS_SOFTWARE_AMAZON_AWSCDK_SERVICES_S3_BLOCK_PUBLIC_ACCESS_AS_REFERENCE);
+		createEAttribute(bucketBuilder_s3EClass, BUCKET_BUILDER_S3__BUCKET_NAME_JAVA_LANG_STRING_);
+		createEAttribute(bucketBuilder_s3EClass,
+				BUCKET_BUILDER_S3__CORS_SOFTWARE_AMAZON_AWSCDK_SERVICES_S3_CORS_RULE_AS_LIST);
+		createEAttribute(bucketBuilder_s3EClass,
+				BUCKET_BUILDER_S3__ENCRYPTION_SOFTWARE_AMAZON_AWSCDK_SERVICES_S3_BUCKET_ENCRYPTION_);
+		createEAttribute(bucketBuilder_s3EClass,
+				BUCKET_BUILDER_S3__ENCRYPTION_KEY_WITH_IKEY_SOFTWARE_AMAZON_AWSCDK_SERVICES_KMS_IKEY_AS_REFERENCE);
+		createEAttribute(bucketBuilder_s3EClass,
+				BUCKET_BUILDER_S3__LIFECYCLE_RULES_SOFTWARE_AMAZON_AWSCDK_SERVICES_S3_LIFECYCLE_RULE_AS_LIST);
+		createEAttribute(bucketBuilder_s3EClass,
+				BUCKET_BUILDER_S3__METRICS_SOFTWARE_AMAZON_AWSCDK_SERVICES_S3_BUCKET_METRICS_AS_LIST);
+		createEAttribute(bucketBuilder_s3EClass, BUCKET_BUILDER_S3__PUBLIC_READ_ACCESS_JAVA_LANG_BOOLEAN_);
+		createEAttribute(bucketBuilder_s3EClass,
+				BUCKET_BUILDER_S3__REMOVAL_POLICY_SOFTWARE_AMAZON_AWSCDK_CORE_REMOVAL_POLICY_);
+		createEAttribute(bucketBuilder_s3EClass,
+				BUCKET_BUILDER_S3__SERVER_ACCESS_LOGS_BUCKET_WITH_IBUCKET_SOFTWARE_AMAZON_AWSCDK_SERVICES_S3_IBUCKET_AS_REFERENCE);
+		createEAttribute(bucketBuilder_s3EClass, BUCKET_BUILDER_S3__SERVER_ACCESS_LOGS_PREFIX_JAVA_LANG_STRING_);
+		createEAttribute(bucketBuilder_s3EClass, BUCKET_BUILDER_S3__VERSIONED_JAVA_LANG_BOOLEAN_);
+		createEAttribute(bucketBuilder_s3EClass, BUCKET_BUILDER_S3__WEBSITE_ERROR_DOCUMENT_JAVA_LANG_STRING_);
+		createEAttribute(bucketBuilder_s3EClass, BUCKET_BUILDER_S3__WEBSITE_INDEX_DOCUMENT_JAVA_LANG_STRING_);
+		createEAttribute(bucketBuilder_s3EClass,
+				BUCKET_BUILDER_S3__WEBSITE_REDIRECT_WITH_REDIRECT_TARGET_SOFTWARE_AMAZON_AWSCDK_SERVICES_S3_REDIRECT_TARGET_AS_REFERENCE);
+		createEAttribute(bucketBuilder_s3EClass,
+				BUCKET_BUILDER_S3__WEBSITE_ROUTING_RULES_SOFTWARE_AMAZON_AWSCDK_SERVICES_S3_ROUTING_RULE_AS_LIST);
+		createEAttribute(bucketBuilder_s3EClass, BUCKET_BUILDER_S3__GENERATED_CLASS_NAME);
+		createEAttribute(bucketBuilder_s3EClass, BUCKET_BUILDER_S3__VAR_NAME);
+		createEAttribute(bucketBuilder_s3EClass, BUCKET_BUILDER_S3__IDENTIFIER);
+		createEAttribute(bucketBuilder_s3EClass, BUCKET_BUILDER_S3__ADDITIONAL_CODE);
+
+		bucketPropsBuilder_s3EClass = createEClass(BUCKET_PROPS_BUILDER_S3);
+		createEAttribute(bucketPropsBuilder_s3EClass,
+				BUCKET_PROPS_BUILDER_S3__ACCESS_CONTROL_SOFTWARE_AMAZON_AWSCDK_SERVICES_S3_BUCKET_ACCESS_CONTROL_);
+		createEAttribute(bucketPropsBuilder_s3EClass,
+				BUCKET_PROPS_BUILDER_S3__BLOCK_PUBLIC_ACCESS_WITH_BLOCK_PUBLIC_ACCESS_SOFTWARE_AMAZON_AWSCDK_SERVICES_S3_BLOCK_PUBLIC_ACCESS_AS_REFERENCE);
+		createEAttribute(bucketPropsBuilder_s3EClass, BUCKET_PROPS_BUILDER_S3__BUCKET_NAME_JAVA_LANG_STRING_);
+		createEAttribute(bucketPropsBuilder_s3EClass,
+				BUCKET_PROPS_BUILDER_S3__CORS_SOFTWARE_AMAZON_AWSCDK_SERVICES_S3_CORS_RULE_AS_LIST);
+		createEAttribute(bucketPropsBuilder_s3EClass,
+				BUCKET_PROPS_BUILDER_S3__ENCRYPTION_SOFTWARE_AMAZON_AWSCDK_SERVICES_S3_BUCKET_ENCRYPTION_);
+		createEAttribute(bucketPropsBuilder_s3EClass,
+				BUCKET_PROPS_BUILDER_S3__ENCRYPTION_KEY_WITH_IKEY_SOFTWARE_AMAZON_AWSCDK_SERVICES_KMS_IKEY_AS_REFERENCE);
+		createEAttribute(bucketPropsBuilder_s3EClass,
+				BUCKET_PROPS_BUILDER_S3__LIFECYCLE_RULES_SOFTWARE_AMAZON_AWSCDK_SERVICES_S3_LIFECYCLE_RULE_AS_LIST);
+		createEAttribute(bucketPropsBuilder_s3EClass,
+				BUCKET_PROPS_BUILDER_S3__METRICS_SOFTWARE_AMAZON_AWSCDK_SERVICES_S3_BUCKET_METRICS_AS_LIST);
+		createEAttribute(bucketPropsBuilder_s3EClass, BUCKET_PROPS_BUILDER_S3__PUBLIC_READ_ACCESS_JAVA_LANG_BOOLEAN_);
+		createEAttribute(bucketPropsBuilder_s3EClass,
+				BUCKET_PROPS_BUILDER_S3__REMOVAL_POLICY_SOFTWARE_AMAZON_AWSCDK_CORE_REMOVAL_POLICY_);
+		createEAttribute(bucketPropsBuilder_s3EClass,
+				BUCKET_PROPS_BUILDER_S3__SERVER_ACCESS_LOGS_BUCKET_WITH_IBUCKET_SOFTWARE_AMAZON_AWSCDK_SERVICES_S3_IBUCKET_AS_REFERENCE);
+		createEAttribute(bucketPropsBuilder_s3EClass,
+				BUCKET_PROPS_BUILDER_S3__SERVER_ACCESS_LOGS_PREFIX_JAVA_LANG_STRING_);
+		createEAttribute(bucketPropsBuilder_s3EClass, BUCKET_PROPS_BUILDER_S3__VERSIONED_JAVA_LANG_BOOLEAN_);
+		createEAttribute(bucketPropsBuilder_s3EClass,
+				BUCKET_PROPS_BUILDER_S3__WEBSITE_ERROR_DOCUMENT_JAVA_LANG_STRING_);
+		createEAttribute(bucketPropsBuilder_s3EClass,
+				BUCKET_PROPS_BUILDER_S3__WEBSITE_INDEX_DOCUMENT_JAVA_LANG_STRING_);
+		createEAttribute(bucketPropsBuilder_s3EClass,
+				BUCKET_PROPS_BUILDER_S3__WEBSITE_REDIRECT_WITH_REDIRECT_TARGET_SOFTWARE_AMAZON_AWSCDK_SERVICES_S3_REDIRECT_TARGET_AS_REFERENCE);
+		createEAttribute(bucketPropsBuilder_s3EClass,
+				BUCKET_PROPS_BUILDER_S3__WEBSITE_ROUTING_RULES_SOFTWARE_AMAZON_AWSCDK_SERVICES_S3_ROUTING_RULE_AS_LIST);
+		createEAttribute(bucketPropsBuilder_s3EClass, BUCKET_PROPS_BUILDER_S3__GENERATED_CLASS_NAME);
+		createEAttribute(bucketPropsBuilder_s3EClass, BUCKET_PROPS_BUILDER_S3__VAR_NAME);
+		createEAttribute(bucketPropsBuilder_s3EClass, BUCKET_PROPS_BUILDER_S3__IDENTIFIER);
+		createEAttribute(bucketPropsBuilder_s3EClass, BUCKET_PROPS_BUILDER_S3__ADDITIONAL_CODE);
+
+		originAccessIdentityBuilder_cloudfrontEClass = createEClass(ORIGIN_ACCESS_IDENTITY_BUILDER_CLOUDFRONT);
+		createEAttribute(originAccessIdentityBuilder_cloudfrontEClass,
+				ORIGIN_ACCESS_IDENTITY_BUILDER_CLOUDFRONT__COMMENT_JAVA_LANG_STRING_);
+		createEAttribute(originAccessIdentityBuilder_cloudfrontEClass,
+				ORIGIN_ACCESS_IDENTITY_BUILDER_CLOUDFRONT__GENERATED_CLASS_NAME);
+		createEAttribute(originAccessIdentityBuilder_cloudfrontEClass,
+				ORIGIN_ACCESS_IDENTITY_BUILDER_CLOUDFRONT__VAR_NAME);
+		createEAttribute(originAccessIdentityBuilder_cloudfrontEClass,
+				ORIGIN_ACCESS_IDENTITY_BUILDER_CLOUDFRONT__IDENTIFIER);
+		createEAttribute(originAccessIdentityBuilder_cloudfrontEClass,
+				ORIGIN_ACCESS_IDENTITY_BUILDER_CLOUDFRONT__ADDITIONAL_CODE);
+
+		s3OriginConfigBuilder_cloudfrontEClass = createEClass(S3_ORIGIN_CONFIG_BUILDER_CLOUDFRONT);
+		createEAttribute(s3OriginConfigBuilder_cloudfrontEClass,
+				S3_ORIGIN_CONFIG_BUILDER_CLOUDFRONT__S3_BUCKET_SOURCE_WITH_IBUCKET_SOFTWARE_AMAZON_AWSCDK_SERVICES_S3_IBUCKET_AS_REFERENCE);
+		createEAttribute(s3OriginConfigBuilder_cloudfrontEClass,
+				S3_ORIGIN_CONFIG_BUILDER_CLOUDFRONT__ORIGIN_ACCESS_IDENTITY_WITH_IORIGIN_ACCESS_IDENTITY_SOFTWARE_AMAZON_AWSCDK_SERVICES_CLOUDFRONT_IORIGIN_ACCESS_IDENTITY_AS_REFERENCE);
+		createEAttribute(s3OriginConfigBuilder_cloudfrontEClass,
+				S3_ORIGIN_CONFIG_BUILDER_CLOUDFRONT__GENERATED_CLASS_NAME);
+		createEAttribute(s3OriginConfigBuilder_cloudfrontEClass, S3_ORIGIN_CONFIG_BUILDER_CLOUDFRONT__VAR_NAME);
+		createEAttribute(s3OriginConfigBuilder_cloudfrontEClass, S3_ORIGIN_CONFIG_BUILDER_CLOUDFRONT__IDENTIFIER);
+		createEAttribute(s3OriginConfigBuilder_cloudfrontEClass, S3_ORIGIN_CONFIG_BUILDER_CLOUDFRONT__ADDITIONAL_CODE);
+
+		sourceConfigurationBuilder_cloudfrontEClass = createEClass(SOURCE_CONFIGURATION_BUILDER_CLOUDFRONT);
+		createEAttribute(sourceConfigurationBuilder_cloudfrontEClass,
+				SOURCE_CONFIGURATION_BUILDER_CLOUDFRONT__BEHAVIORS_SOFTWARE_AMAZON_AWSCDK_SERVICES_CLOUDFRONT_BEHAVIOR_AS_LIST);
+		createEAttribute(sourceConfigurationBuilder_cloudfrontEClass,
+				SOURCE_CONFIGURATION_BUILDER_CLOUDFRONT__CUSTOM_ORIGIN_SOURCE_WITH_CUSTOM_ORIGIN_CONFIG_SOFTWARE_AMAZON_AWSCDK_SERVICES_CLOUDFRONT_CUSTOM_ORIGIN_CONFIG_AS_REFERENCE);
+		createEAttribute(sourceConfigurationBuilder_cloudfrontEClass,
+				SOURCE_CONFIGURATION_BUILDER_CLOUDFRONT__ORIGIN_HEADERS_JAVA_LANG_STRING_JAVA_LANG_STRING_AS_MAP);
+		createEAttribute(sourceConfigurationBuilder_cloudfrontEClass,
+				SOURCE_CONFIGURATION_BUILDER_CLOUDFRONT__ORIGIN_PATH_JAVA_LANG_STRING_);
+		createEAttribute(sourceConfigurationBuilder_cloudfrontEClass,
+				SOURCE_CONFIGURATION_BUILDER_CLOUDFRONT__S3_ORIGIN_SOURCE_WITH_S3_ORIGIN_CONFIG_SOFTWARE_AMAZON_AWSCDK_SERVICES_CLOUDFRONT_S3_ORIGIN_CONFIG_AS_REFERENCE);
+		createEAttribute(sourceConfigurationBuilder_cloudfrontEClass,
+				SOURCE_CONFIGURATION_BUILDER_CLOUDFRONT__GENERATED_CLASS_NAME);
+		createEAttribute(sourceConfigurationBuilder_cloudfrontEClass,
+				SOURCE_CONFIGURATION_BUILDER_CLOUDFRONT__VAR_NAME);
+		createEAttribute(sourceConfigurationBuilder_cloudfrontEClass,
+				SOURCE_CONFIGURATION_BUILDER_CLOUDFRONT__IDENTIFIER);
+		createEAttribute(sourceConfigurationBuilder_cloudfrontEClass,
+				SOURCE_CONFIGURATION_BUILDER_CLOUDFRONT__ADDITIONAL_CODE);
+
+		aliasConfigurationBuilder_cloudfrontEClass = createEClass(ALIAS_CONFIGURATION_BUILDER_CLOUDFRONT);
+		createEAttribute(aliasConfigurationBuilder_cloudfrontEClass,
+				ALIAS_CONFIGURATION_BUILDER_CLOUDFRONT__ACM_CERT_REF_JAVA_LANG_STRING_);
+		createEAttribute(aliasConfigurationBuilder_cloudfrontEClass,
+				ALIAS_CONFIGURATION_BUILDER_CLOUDFRONT__NAMES_JAVA_LANG_STRING_AS_LIST);
+		createEAttribute(aliasConfigurationBuilder_cloudfrontEClass,
+				ALIAS_CONFIGURATION_BUILDER_CLOUDFRONT__SECURITY_POLICY_SOFTWARE_AMAZON_AWSCDK_SERVICES_CLOUDFRONT_SECURITY_POLICY_PROTOCOL_);
+		createEAttribute(aliasConfigurationBuilder_cloudfrontEClass,
+				ALIAS_CONFIGURATION_BUILDER_CLOUDFRONT__SSL_METHOD_SOFTWARE_AMAZON_AWSCDK_SERVICES_CLOUDFRONT_SSL_METHOD_);
+		createEAttribute(aliasConfigurationBuilder_cloudfrontEClass,
+				ALIAS_CONFIGURATION_BUILDER_CLOUDFRONT__GENERATED_CLASS_NAME);
+		createEAttribute(aliasConfigurationBuilder_cloudfrontEClass, ALIAS_CONFIGURATION_BUILDER_CLOUDFRONT__VAR_NAME);
+		createEAttribute(aliasConfigurationBuilder_cloudfrontEClass,
+				ALIAS_CONFIGURATION_BUILDER_CLOUDFRONT__IDENTIFIER);
+		createEAttribute(aliasConfigurationBuilder_cloudfrontEClass,
+				ALIAS_CONFIGURATION_BUILDER_CLOUDFRONT__ADDITIONAL_CODE);
+
+		loggingConfigurationBuilder_cloudfrontEClass = createEClass(LOGGING_CONFIGURATION_BUILDER_CLOUDFRONT);
+		createEAttribute(loggingConfigurationBuilder_cloudfrontEClass,
+				LOGGING_CONFIGURATION_BUILDER_CLOUDFRONT__BUCKET_WITH_IBUCKET_SOFTWARE_AMAZON_AWSCDK_SERVICES_S3_IBUCKET_AS_REFERENCE);
+		createEAttribute(loggingConfigurationBuilder_cloudfrontEClass,
+				LOGGING_CONFIGURATION_BUILDER_CLOUDFRONT__INCLUDE_COOKIES_JAVA_LANG_BOOLEAN_);
+		createEAttribute(loggingConfigurationBuilder_cloudfrontEClass,
+				LOGGING_CONFIGURATION_BUILDER_CLOUDFRONT__PREFIX_JAVA_LANG_STRING_);
+		createEAttribute(loggingConfigurationBuilder_cloudfrontEClass,
+				LOGGING_CONFIGURATION_BUILDER_CLOUDFRONT__GENERATED_CLASS_NAME);
+		createEAttribute(loggingConfigurationBuilder_cloudfrontEClass,
+				LOGGING_CONFIGURATION_BUILDER_CLOUDFRONT__VAR_NAME);
+		createEAttribute(loggingConfigurationBuilder_cloudfrontEClass,
+				LOGGING_CONFIGURATION_BUILDER_CLOUDFRONT__IDENTIFIER);
+		createEAttribute(loggingConfigurationBuilder_cloudfrontEClass,
+				LOGGING_CONFIGURATION_BUILDER_CLOUDFRONT__ADDITIONAL_CODE);
+
+		cloudFrontWebDistributionPropsBuilder_cloudfrontEClass = createEClass(
+				CLOUD_FRONT_WEB_DISTRIBUTION_PROPS_BUILDER_CLOUDFRONT);
+		createEAttribute(cloudFrontWebDistributionPropsBuilder_cloudfrontEClass,
+				CLOUD_FRONT_WEB_DISTRIBUTION_PROPS_BUILDER_CLOUDFRONT__ORIGIN_CONFIGS_SOFTWARE_AMAZON_AWSCDK_SERVICES_CLOUDFRONT_SOURCE_CONFIGURATION_AS_LIST);
+		createEAttribute(cloudFrontWebDistributionPropsBuilder_cloudfrontEClass,
+				CLOUD_FRONT_WEB_DISTRIBUTION_PROPS_BUILDER_CLOUDFRONT__ALIAS_CONFIGURATION_WITH_ALIAS_CONFIGURATION_SOFTWARE_AMAZON_AWSCDK_SERVICES_CLOUDFRONT_ALIAS_CONFIGURATION_AS_REFERENCE);
+		createEAttribute(cloudFrontWebDistributionPropsBuilder_cloudfrontEClass,
+				CLOUD_FRONT_WEB_DISTRIBUTION_PROPS_BUILDER_CLOUDFRONT__COMMENT_JAVA_LANG_STRING_);
+		createEAttribute(cloudFrontWebDistributionPropsBuilder_cloudfrontEClass,
+				CLOUD_FRONT_WEB_DISTRIBUTION_PROPS_BUILDER_CLOUDFRONT__DEFAULT_ROOT_OBJECT_JAVA_LANG_STRING_);
+		createEAttribute(cloudFrontWebDistributionPropsBuilder_cloudfrontEClass,
+				CLOUD_FRONT_WEB_DISTRIBUTION_PROPS_BUILDER_CLOUDFRONT__ENABLE_IP_V6_JAVA_LANG_BOOLEAN_);
+		createEAttribute(cloudFrontWebDistributionPropsBuilder_cloudfrontEClass,
+				CLOUD_FRONT_WEB_DISTRIBUTION_PROPS_BUILDER_CLOUDFRONT__ERROR_CONFIGURATIONS_SOFTWARE_AMAZON_AWSCDK_SERVICES_CLOUDFRONT_CFN_DISTRIBUTION_CUSTOM_ERROR_RESPONSE_PROPERTY_AS_LIST);
+		createEAttribute(cloudFrontWebDistributionPropsBuilder_cloudfrontEClass,
+				CLOUD_FRONT_WEB_DISTRIBUTION_PROPS_BUILDER_CLOUDFRONT__GEO_RESTRICTION_WITH_GEO_RESTRICTION_SOFTWARE_AMAZON_AWSCDK_SERVICES_CLOUDFRONT_GEO_RESTRICTION_AS_REFERENCE);
+		createEAttribute(cloudFrontWebDistributionPropsBuilder_cloudfrontEClass,
+				CLOUD_FRONT_WEB_DISTRIBUTION_PROPS_BUILDER_CLOUDFRONT__HTTP_VERSION_SOFTWARE_AMAZON_AWSCDK_SERVICES_CLOUDFRONT_HTTP_VERSION_);
+		createEAttribute(cloudFrontWebDistributionPropsBuilder_cloudfrontEClass,
+				CLOUD_FRONT_WEB_DISTRIBUTION_PROPS_BUILDER_CLOUDFRONT__LOGGING_CONFIG_WITH_LOGGING_CONFIGURATION_SOFTWARE_AMAZON_AWSCDK_SERVICES_CLOUDFRONT_LOGGING_CONFIGURATION_AS_REFERENCE);
+		createEAttribute(cloudFrontWebDistributionPropsBuilder_cloudfrontEClass,
+				CLOUD_FRONT_WEB_DISTRIBUTION_PROPS_BUILDER_CLOUDFRONT__PRICE_CLASS_SOFTWARE_AMAZON_AWSCDK_SERVICES_CLOUDFRONT_PRICE_CLASS_);
+		createEAttribute(cloudFrontWebDistributionPropsBuilder_cloudfrontEClass,
+				CLOUD_FRONT_WEB_DISTRIBUTION_PROPS_BUILDER_CLOUDFRONT__VIEWER_CERTIFICATE_WITH_VIEWER_CERTIFICATE_SOFTWARE_AMAZON_AWSCDK_SERVICES_CLOUDFRONT_VIEWER_CERTIFICATE_AS_REFERENCE);
+		createEAttribute(cloudFrontWebDistributionPropsBuilder_cloudfrontEClass,
+				CLOUD_FRONT_WEB_DISTRIBUTION_PROPS_BUILDER_CLOUDFRONT__VIEWER_PROTOCOL_POLICY_SOFTWARE_AMAZON_AWSCDK_SERVICES_CLOUDFRONT_VIEWER_PROTOCOL_POLICY_);
+		createEAttribute(cloudFrontWebDistributionPropsBuilder_cloudfrontEClass,
+				CLOUD_FRONT_WEB_DISTRIBUTION_PROPS_BUILDER_CLOUDFRONT__WEB_ACL_ID_JAVA_LANG_STRING_);
+		createEAttribute(cloudFrontWebDistributionPropsBuilder_cloudfrontEClass,
+				CLOUD_FRONT_WEB_DISTRIBUTION_PROPS_BUILDER_CLOUDFRONT__GENERATED_CLASS_NAME);
+		createEAttribute(cloudFrontWebDistributionPropsBuilder_cloudfrontEClass,
+				CLOUD_FRONT_WEB_DISTRIBUTION_PROPS_BUILDER_CLOUDFRONT__VAR_NAME);
+		createEAttribute(cloudFrontWebDistributionPropsBuilder_cloudfrontEClass,
+				CLOUD_FRONT_WEB_DISTRIBUTION_PROPS_BUILDER_CLOUDFRONT__IDENTIFIER);
+		createEAttribute(cloudFrontWebDistributionPropsBuilder_cloudfrontEClass,
+				CLOUD_FRONT_WEB_DISTRIBUTION_PROPS_BUILDER_CLOUDFRONT__ADDITIONAL_CODE);
 
 		cloudFrontToApiGatewayBuilder_cloudfrontapigatewayEClass = createEClass(
 				CLOUD_FRONT_TO_API_GATEWAY_BUILDER_CLOUDFRONTAPIGATEWAY);
@@ -11443,6 +17767,297 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 		createEAttribute(cloudFrontToS3Builder_cloudfronts3EClass, CLOUD_FRONT_TO_S3_BUILDER_CLOUDFRONTS3__IDENTIFIER);
 		createEAttribute(cloudFrontToS3Builder_cloudfronts3EClass,
 				CLOUD_FRONT_TO_S3_BUILDER_CLOUDFRONTS3__ADDITIONAL_CODE);
+
+		autoVerifiedAttrsBuilder_cognitoEClass = createEClass(AUTO_VERIFIED_ATTRS_BUILDER_COGNITO);
+		createEAttribute(autoVerifiedAttrsBuilder_cognitoEClass,
+				AUTO_VERIFIED_ATTRS_BUILDER_COGNITO__EMAIL_JAVA_LANG_BOOLEAN_);
+		createEAttribute(autoVerifiedAttrsBuilder_cognitoEClass,
+				AUTO_VERIFIED_ATTRS_BUILDER_COGNITO__PHONE_JAVA_LANG_BOOLEAN_);
+		createEAttribute(autoVerifiedAttrsBuilder_cognitoEClass,
+				AUTO_VERIFIED_ATTRS_BUILDER_COGNITO__GENERATED_CLASS_NAME);
+		createEAttribute(autoVerifiedAttrsBuilder_cognitoEClass, AUTO_VERIFIED_ATTRS_BUILDER_COGNITO__VAR_NAME);
+		createEAttribute(autoVerifiedAttrsBuilder_cognitoEClass, AUTO_VERIFIED_ATTRS_BUILDER_COGNITO__IDENTIFIER);
+		createEAttribute(autoVerifiedAttrsBuilder_cognitoEClass, AUTO_VERIFIED_ATTRS_BUILDER_COGNITO__ADDITIONAL_CODE);
+
+		userPoolTriggersBuilder_cognitoEClass = createEClass(USER_POOL_TRIGGERS_BUILDER_COGNITO);
+		createEAttribute(userPoolTriggersBuilder_cognitoEClass,
+				USER_POOL_TRIGGERS_BUILDER_COGNITO__CREATE_AUTH_CHALLENGE_WITH_IFUNCTION_SOFTWARE_AMAZON_AWSCDK_SERVICES_LAMBDA_IFUNCTION_AS_REFERENCE);
+		createEAttribute(userPoolTriggersBuilder_cognitoEClass,
+				USER_POOL_TRIGGERS_BUILDER_COGNITO__CUSTOM_MESSAGE_WITH_IFUNCTION_SOFTWARE_AMAZON_AWSCDK_SERVICES_LAMBDA_IFUNCTION_AS_REFERENCE);
+		createEAttribute(userPoolTriggersBuilder_cognitoEClass,
+				USER_POOL_TRIGGERS_BUILDER_COGNITO__DEFINE_AUTH_CHALLENGE_WITH_IFUNCTION_SOFTWARE_AMAZON_AWSCDK_SERVICES_LAMBDA_IFUNCTION_AS_REFERENCE);
+		createEAttribute(userPoolTriggersBuilder_cognitoEClass,
+				USER_POOL_TRIGGERS_BUILDER_COGNITO__POST_AUTHENTICATION_WITH_IFUNCTION_SOFTWARE_AMAZON_AWSCDK_SERVICES_LAMBDA_IFUNCTION_AS_REFERENCE);
+		createEAttribute(userPoolTriggersBuilder_cognitoEClass,
+				USER_POOL_TRIGGERS_BUILDER_COGNITO__POST_CONFIRMATION_WITH_IFUNCTION_SOFTWARE_AMAZON_AWSCDK_SERVICES_LAMBDA_IFUNCTION_AS_REFERENCE);
+		createEAttribute(userPoolTriggersBuilder_cognitoEClass,
+				USER_POOL_TRIGGERS_BUILDER_COGNITO__PRE_AUTHENTICATION_WITH_IFUNCTION_SOFTWARE_AMAZON_AWSCDK_SERVICES_LAMBDA_IFUNCTION_AS_REFERENCE);
+		createEAttribute(userPoolTriggersBuilder_cognitoEClass,
+				USER_POOL_TRIGGERS_BUILDER_COGNITO__PRE_SIGN_UP_WITH_IFUNCTION_SOFTWARE_AMAZON_AWSCDK_SERVICES_LAMBDA_IFUNCTION_AS_REFERENCE);
+		createEAttribute(userPoolTriggersBuilder_cognitoEClass,
+				USER_POOL_TRIGGERS_BUILDER_COGNITO__PRE_TOKEN_GENERATION_WITH_IFUNCTION_SOFTWARE_AMAZON_AWSCDK_SERVICES_LAMBDA_IFUNCTION_AS_REFERENCE);
+		createEAttribute(userPoolTriggersBuilder_cognitoEClass,
+				USER_POOL_TRIGGERS_BUILDER_COGNITO__USER_MIGRATION_WITH_IFUNCTION_SOFTWARE_AMAZON_AWSCDK_SERVICES_LAMBDA_IFUNCTION_AS_REFERENCE);
+		createEAttribute(userPoolTriggersBuilder_cognitoEClass,
+				USER_POOL_TRIGGERS_BUILDER_COGNITO__VERIFY_AUTH_CHALLENGE_RESPONSE_WITH_IFUNCTION_SOFTWARE_AMAZON_AWSCDK_SERVICES_LAMBDA_IFUNCTION_AS_REFERENCE);
+		createEAttribute(userPoolTriggersBuilder_cognitoEClass,
+				USER_POOL_TRIGGERS_BUILDER_COGNITO__GENERATED_CLASS_NAME);
+		createEAttribute(userPoolTriggersBuilder_cognitoEClass, USER_POOL_TRIGGERS_BUILDER_COGNITO__VAR_NAME);
+		createEAttribute(userPoolTriggersBuilder_cognitoEClass, USER_POOL_TRIGGERS_BUILDER_COGNITO__IDENTIFIER);
+		createEAttribute(userPoolTriggersBuilder_cognitoEClass, USER_POOL_TRIGGERS_BUILDER_COGNITO__ADDITIONAL_CODE);
+
+		emailSettingsBuilder_cognitoEClass = createEClass(EMAIL_SETTINGS_BUILDER_COGNITO);
+		createEAttribute(emailSettingsBuilder_cognitoEClass, EMAIL_SETTINGS_BUILDER_COGNITO__FROM_JAVA_LANG_STRING_);
+		createEAttribute(emailSettingsBuilder_cognitoEClass,
+				EMAIL_SETTINGS_BUILDER_COGNITO__REPLY_TO_JAVA_LANG_STRING_);
+		createEAttribute(emailSettingsBuilder_cognitoEClass, EMAIL_SETTINGS_BUILDER_COGNITO__GENERATED_CLASS_NAME);
+		createEAttribute(emailSettingsBuilder_cognitoEClass, EMAIL_SETTINGS_BUILDER_COGNITO__VAR_NAME);
+		createEAttribute(emailSettingsBuilder_cognitoEClass, EMAIL_SETTINGS_BUILDER_COGNITO__IDENTIFIER);
+		createEAttribute(emailSettingsBuilder_cognitoEClass, EMAIL_SETTINGS_BUILDER_COGNITO__ADDITIONAL_CODE);
+
+		passwordPolicyBuilder_cognitoEClass = createEClass(PASSWORD_POLICY_BUILDER_COGNITO);
+		createEAttribute(passwordPolicyBuilder_cognitoEClass,
+				PASSWORD_POLICY_BUILDER_COGNITO__MIN_LENGTH_JAVA_LANG_NUMBER_);
+		createEAttribute(passwordPolicyBuilder_cognitoEClass,
+				PASSWORD_POLICY_BUILDER_COGNITO__REQUIRE_DIGITS_JAVA_LANG_BOOLEAN_);
+		createEAttribute(passwordPolicyBuilder_cognitoEClass,
+				PASSWORD_POLICY_BUILDER_COGNITO__REQUIRE_LOWERCASE_JAVA_LANG_BOOLEAN_);
+		createEAttribute(passwordPolicyBuilder_cognitoEClass,
+				PASSWORD_POLICY_BUILDER_COGNITO__REQUIRE_SYMBOLS_JAVA_LANG_BOOLEAN_);
+		createEAttribute(passwordPolicyBuilder_cognitoEClass,
+				PASSWORD_POLICY_BUILDER_COGNITO__REQUIRE_UPPERCASE_JAVA_LANG_BOOLEAN_);
+		createEAttribute(passwordPolicyBuilder_cognitoEClass,
+				PASSWORD_POLICY_BUILDER_COGNITO__TEMP_PASSWORD_VALIDITY_WITH_DURATION_SOFTWARE_AMAZON_AWSCDK_CORE_DURATION_AS_REFERENCE);
+		createEAttribute(passwordPolicyBuilder_cognitoEClass, PASSWORD_POLICY_BUILDER_COGNITO__GENERATED_CLASS_NAME);
+		createEAttribute(passwordPolicyBuilder_cognitoEClass, PASSWORD_POLICY_BUILDER_COGNITO__VAR_NAME);
+		createEAttribute(passwordPolicyBuilder_cognitoEClass, PASSWORD_POLICY_BUILDER_COGNITO__IDENTIFIER);
+		createEAttribute(passwordPolicyBuilder_cognitoEClass, PASSWORD_POLICY_BUILDER_COGNITO__ADDITIONAL_CODE);
+
+		mfaSecondFactorBuilder_cognitoEClass = createEClass(MFA_SECOND_FACTOR_BUILDER_COGNITO);
+		createEAttribute(mfaSecondFactorBuilder_cognitoEClass,
+				MFA_SECOND_FACTOR_BUILDER_COGNITO__OTP_JAVA_LANG_BOOLEAN_);
+		createEAttribute(mfaSecondFactorBuilder_cognitoEClass,
+				MFA_SECOND_FACTOR_BUILDER_COGNITO__SMS_JAVA_LANG_BOOLEAN_);
+		createEAttribute(mfaSecondFactorBuilder_cognitoEClass, MFA_SECOND_FACTOR_BUILDER_COGNITO__GENERATED_CLASS_NAME);
+		createEAttribute(mfaSecondFactorBuilder_cognitoEClass, MFA_SECOND_FACTOR_BUILDER_COGNITO__VAR_NAME);
+		createEAttribute(mfaSecondFactorBuilder_cognitoEClass, MFA_SECOND_FACTOR_BUILDER_COGNITO__IDENTIFIER);
+		createEAttribute(mfaSecondFactorBuilder_cognitoEClass, MFA_SECOND_FACTOR_BUILDER_COGNITO__ADDITIONAL_CODE);
+
+		requiredAttributesBuilder_cognitoEClass = createEClass(REQUIRED_ATTRIBUTES_BUILDER_COGNITO);
+		createEAttribute(requiredAttributesBuilder_cognitoEClass,
+				REQUIRED_ATTRIBUTES_BUILDER_COGNITO__ADDRESS_JAVA_LANG_BOOLEAN_);
+		createEAttribute(requiredAttributesBuilder_cognitoEClass,
+				REQUIRED_ATTRIBUTES_BUILDER_COGNITO__BIRTHDATE_JAVA_LANG_BOOLEAN_);
+		createEAttribute(requiredAttributesBuilder_cognitoEClass,
+				REQUIRED_ATTRIBUTES_BUILDER_COGNITO__EMAIL_JAVA_LANG_BOOLEAN_);
+		createEAttribute(requiredAttributesBuilder_cognitoEClass,
+				REQUIRED_ATTRIBUTES_BUILDER_COGNITO__FAMILY_NAME_JAVA_LANG_BOOLEAN_);
+		createEAttribute(requiredAttributesBuilder_cognitoEClass,
+				REQUIRED_ATTRIBUTES_BUILDER_COGNITO__FULLNAME_JAVA_LANG_BOOLEAN_);
+		createEAttribute(requiredAttributesBuilder_cognitoEClass,
+				REQUIRED_ATTRIBUTES_BUILDER_COGNITO__GENDER_JAVA_LANG_BOOLEAN_);
+		createEAttribute(requiredAttributesBuilder_cognitoEClass,
+				REQUIRED_ATTRIBUTES_BUILDER_COGNITO__GIVEN_NAME_JAVA_LANG_BOOLEAN_);
+		createEAttribute(requiredAttributesBuilder_cognitoEClass,
+				REQUIRED_ATTRIBUTES_BUILDER_COGNITO__LAST_UPDATE_TIME_JAVA_LANG_BOOLEAN_);
+		createEAttribute(requiredAttributesBuilder_cognitoEClass,
+				REQUIRED_ATTRIBUTES_BUILDER_COGNITO__LOCALE_JAVA_LANG_BOOLEAN_);
+		createEAttribute(requiredAttributesBuilder_cognitoEClass,
+				REQUIRED_ATTRIBUTES_BUILDER_COGNITO__MIDDLE_NAME_JAVA_LANG_BOOLEAN_);
+		createEAttribute(requiredAttributesBuilder_cognitoEClass,
+				REQUIRED_ATTRIBUTES_BUILDER_COGNITO__NICKNAME_JAVA_LANG_BOOLEAN_);
+		createEAttribute(requiredAttributesBuilder_cognitoEClass,
+				REQUIRED_ATTRIBUTES_BUILDER_COGNITO__PHONE_NUMBER_JAVA_LANG_BOOLEAN_);
+		createEAttribute(requiredAttributesBuilder_cognitoEClass,
+				REQUIRED_ATTRIBUTES_BUILDER_COGNITO__PREFERRED_USERNAME_JAVA_LANG_BOOLEAN_);
+		createEAttribute(requiredAttributesBuilder_cognitoEClass,
+				REQUIRED_ATTRIBUTES_BUILDER_COGNITO__PROFILE_PAGE_JAVA_LANG_BOOLEAN_);
+		createEAttribute(requiredAttributesBuilder_cognitoEClass,
+				REQUIRED_ATTRIBUTES_BUILDER_COGNITO__PROFILE_PICTURE_JAVA_LANG_BOOLEAN_);
+		createEAttribute(requiredAttributesBuilder_cognitoEClass,
+				REQUIRED_ATTRIBUTES_BUILDER_COGNITO__TIMEZONE_JAVA_LANG_BOOLEAN_);
+		createEAttribute(requiredAttributesBuilder_cognitoEClass,
+				REQUIRED_ATTRIBUTES_BUILDER_COGNITO__WEBSITE_JAVA_LANG_BOOLEAN_);
+		createEAttribute(requiredAttributesBuilder_cognitoEClass,
+				REQUIRED_ATTRIBUTES_BUILDER_COGNITO__GENERATED_CLASS_NAME);
+		createEAttribute(requiredAttributesBuilder_cognitoEClass, REQUIRED_ATTRIBUTES_BUILDER_COGNITO__VAR_NAME);
+		createEAttribute(requiredAttributesBuilder_cognitoEClass, REQUIRED_ATTRIBUTES_BUILDER_COGNITO__IDENTIFIER);
+		createEAttribute(requiredAttributesBuilder_cognitoEClass, REQUIRED_ATTRIBUTES_BUILDER_COGNITO__ADDITIONAL_CODE);
+
+		signInAliasesBuilder_cognitoEClass = createEClass(SIGN_IN_ALIASES_BUILDER_COGNITO);
+		createEAttribute(signInAliasesBuilder_cognitoEClass, SIGN_IN_ALIASES_BUILDER_COGNITO__EMAIL_JAVA_LANG_BOOLEAN_);
+		createEAttribute(signInAliasesBuilder_cognitoEClass, SIGN_IN_ALIASES_BUILDER_COGNITO__PHONE_JAVA_LANG_BOOLEAN_);
+		createEAttribute(signInAliasesBuilder_cognitoEClass,
+				SIGN_IN_ALIASES_BUILDER_COGNITO__PREFERRED_USERNAME_JAVA_LANG_BOOLEAN_);
+		createEAttribute(signInAliasesBuilder_cognitoEClass,
+				SIGN_IN_ALIASES_BUILDER_COGNITO__USERNAME_JAVA_LANG_BOOLEAN_);
+		createEAttribute(signInAliasesBuilder_cognitoEClass, SIGN_IN_ALIASES_BUILDER_COGNITO__GENERATED_CLASS_NAME);
+		createEAttribute(signInAliasesBuilder_cognitoEClass, SIGN_IN_ALIASES_BUILDER_COGNITO__VAR_NAME);
+		createEAttribute(signInAliasesBuilder_cognitoEClass, SIGN_IN_ALIASES_BUILDER_COGNITO__IDENTIFIER);
+		createEAttribute(signInAliasesBuilder_cognitoEClass, SIGN_IN_ALIASES_BUILDER_COGNITO__ADDITIONAL_CODE);
+
+		userInvitationConfigBuilder_cognitoEClass = createEClass(USER_INVITATION_CONFIG_BUILDER_COGNITO);
+		createEAttribute(userInvitationConfigBuilder_cognitoEClass,
+				USER_INVITATION_CONFIG_BUILDER_COGNITO__EMAIL_BODY_JAVA_LANG_STRING_);
+		createEAttribute(userInvitationConfigBuilder_cognitoEClass,
+				USER_INVITATION_CONFIG_BUILDER_COGNITO__EMAIL_SUBJECT_JAVA_LANG_STRING_);
+		createEAttribute(userInvitationConfigBuilder_cognitoEClass,
+				USER_INVITATION_CONFIG_BUILDER_COGNITO__SMS_MESSAGE_JAVA_LANG_STRING_);
+		createEAttribute(userInvitationConfigBuilder_cognitoEClass,
+				USER_INVITATION_CONFIG_BUILDER_COGNITO__GENERATED_CLASS_NAME);
+		createEAttribute(userInvitationConfigBuilder_cognitoEClass, USER_INVITATION_CONFIG_BUILDER_COGNITO__VAR_NAME);
+		createEAttribute(userInvitationConfigBuilder_cognitoEClass, USER_INVITATION_CONFIG_BUILDER_COGNITO__IDENTIFIER);
+		createEAttribute(userInvitationConfigBuilder_cognitoEClass,
+				USER_INVITATION_CONFIG_BUILDER_COGNITO__ADDITIONAL_CODE);
+
+		userVerificationConfigBuilder_cognitoEClass = createEClass(USER_VERIFICATION_CONFIG_BUILDER_COGNITO);
+		createEAttribute(userVerificationConfigBuilder_cognitoEClass,
+				USER_VERIFICATION_CONFIG_BUILDER_COGNITO__EMAIL_BODY_JAVA_LANG_STRING_);
+		createEAttribute(userVerificationConfigBuilder_cognitoEClass,
+				USER_VERIFICATION_CONFIG_BUILDER_COGNITO__EMAIL_STYLE_SOFTWARE_AMAZON_AWSCDK_SERVICES_COGNITO_VERIFICATION_EMAIL_STYLE_);
+		createEAttribute(userVerificationConfigBuilder_cognitoEClass,
+				USER_VERIFICATION_CONFIG_BUILDER_COGNITO__EMAIL_SUBJECT_JAVA_LANG_STRING_);
+		createEAttribute(userVerificationConfigBuilder_cognitoEClass,
+				USER_VERIFICATION_CONFIG_BUILDER_COGNITO__SMS_MESSAGE_JAVA_LANG_STRING_);
+		createEAttribute(userVerificationConfigBuilder_cognitoEClass,
+				USER_VERIFICATION_CONFIG_BUILDER_COGNITO__GENERATED_CLASS_NAME);
+		createEAttribute(userVerificationConfigBuilder_cognitoEClass,
+				USER_VERIFICATION_CONFIG_BUILDER_COGNITO__VAR_NAME);
+		createEAttribute(userVerificationConfigBuilder_cognitoEClass,
+				USER_VERIFICATION_CONFIG_BUILDER_COGNITO__IDENTIFIER);
+		createEAttribute(userVerificationConfigBuilder_cognitoEClass,
+				USER_VERIFICATION_CONFIG_BUILDER_COGNITO__ADDITIONAL_CODE);
+
+		userPoolPropsBuilder_cognitoEClass = createEClass(USER_POOL_PROPS_BUILDER_COGNITO);
+		createEAttribute(userPoolPropsBuilder_cognitoEClass,
+				USER_POOL_PROPS_BUILDER_COGNITO__AUTO_VERIFY_WITH_AUTO_VERIFIED_ATTRS_SOFTWARE_AMAZON_AWSCDK_SERVICES_COGNITO_AUTO_VERIFIED_ATTRS_AS_REFERENCE);
+		createEAttribute(userPoolPropsBuilder_cognitoEClass,
+				USER_POOL_PROPS_BUILDER_COGNITO__CUSTOM_ATTRIBUTES_JAVA_LANG_STRING_SOFTWARE_AMAZON_AWSCDK_SERVICES_COGNITO_ICUSTOM_ATTRIBUTE_AS_MAP);
+		createEAttribute(userPoolPropsBuilder_cognitoEClass,
+				USER_POOL_PROPS_BUILDER_COGNITO__EMAIL_SETTINGS_WITH_EMAIL_SETTINGS_SOFTWARE_AMAZON_AWSCDK_SERVICES_COGNITO_EMAIL_SETTINGS_AS_REFERENCE);
+		createEAttribute(userPoolPropsBuilder_cognitoEClass,
+				USER_POOL_PROPS_BUILDER_COGNITO__LAMBDA_TRIGGERS_WITH_USER_POOL_TRIGGERS_SOFTWARE_AMAZON_AWSCDK_SERVICES_COGNITO_USER_POOL_TRIGGERS_AS_REFERENCE);
+		createEAttribute(userPoolPropsBuilder_cognitoEClass,
+				USER_POOL_PROPS_BUILDER_COGNITO__MFA_SOFTWARE_AMAZON_AWSCDK_SERVICES_COGNITO_MFA_);
+		createEAttribute(userPoolPropsBuilder_cognitoEClass,
+				USER_POOL_PROPS_BUILDER_COGNITO__MFA_SECOND_FACTOR_WITH_MFA_SECOND_FACTOR_SOFTWARE_AMAZON_AWSCDK_SERVICES_COGNITO_MFA_SECOND_FACTOR_AS_REFERENCE);
+		createEAttribute(userPoolPropsBuilder_cognitoEClass,
+				USER_POOL_PROPS_BUILDER_COGNITO__PASSWORD_POLICY_WITH_PASSWORD_POLICY_SOFTWARE_AMAZON_AWSCDK_SERVICES_COGNITO_PASSWORD_POLICY_AS_REFERENCE);
+		createEAttribute(userPoolPropsBuilder_cognitoEClass,
+				USER_POOL_PROPS_BUILDER_COGNITO__REQUIRED_ATTRIBUTES_WITH_REQUIRED_ATTRIBUTES_SOFTWARE_AMAZON_AWSCDK_SERVICES_COGNITO_REQUIRED_ATTRIBUTES_AS_REFERENCE);
+		createEAttribute(userPoolPropsBuilder_cognitoEClass,
+				USER_POOL_PROPS_BUILDER_COGNITO__SELF_SIGN_UP_ENABLED_JAVA_LANG_BOOLEAN_);
+		createEAttribute(userPoolPropsBuilder_cognitoEClass,
+				USER_POOL_PROPS_BUILDER_COGNITO__SIGN_IN_ALIASES_WITH_SIGN_IN_ALIASES_SOFTWARE_AMAZON_AWSCDK_SERVICES_COGNITO_SIGN_IN_ALIASES_AS_REFERENCE);
+		createEAttribute(userPoolPropsBuilder_cognitoEClass,
+				USER_POOL_PROPS_BUILDER_COGNITO__SIGN_IN_CASE_SENSITIVE_JAVA_LANG_BOOLEAN_);
+		createEAttribute(userPoolPropsBuilder_cognitoEClass,
+				USER_POOL_PROPS_BUILDER_COGNITO__SMS_ROLE_WITH_IROLE_SOFTWARE_AMAZON_AWSCDK_SERVICES_IAM_IROLE_AS_REFERENCE);
+		createEAttribute(userPoolPropsBuilder_cognitoEClass,
+				USER_POOL_PROPS_BUILDER_COGNITO__SMS_ROLE_EXTERNAL_ID_JAVA_LANG_STRING_);
+		createEAttribute(userPoolPropsBuilder_cognitoEClass,
+				USER_POOL_PROPS_BUILDER_COGNITO__USER_INVITATION_WITH_USER_INVITATION_CONFIG_SOFTWARE_AMAZON_AWSCDK_SERVICES_COGNITO_USER_INVITATION_CONFIG_AS_REFERENCE);
+		createEAttribute(userPoolPropsBuilder_cognitoEClass,
+				USER_POOL_PROPS_BUILDER_COGNITO__USER_POOL_NAME_JAVA_LANG_STRING_);
+		createEAttribute(userPoolPropsBuilder_cognitoEClass,
+				USER_POOL_PROPS_BUILDER_COGNITO__USER_VERIFICATION_WITH_USER_VERIFICATION_CONFIG_SOFTWARE_AMAZON_AWSCDK_SERVICES_COGNITO_USER_VERIFICATION_CONFIG_AS_REFERENCE);
+		createEAttribute(userPoolPropsBuilder_cognitoEClass, USER_POOL_PROPS_BUILDER_COGNITO__GENERATED_CLASS_NAME);
+		createEAttribute(userPoolPropsBuilder_cognitoEClass, USER_POOL_PROPS_BUILDER_COGNITO__VAR_NAME);
+		createEAttribute(userPoolPropsBuilder_cognitoEClass, USER_POOL_PROPS_BUILDER_COGNITO__IDENTIFIER);
+		createEAttribute(userPoolPropsBuilder_cognitoEClass, USER_POOL_PROPS_BUILDER_COGNITO__ADDITIONAL_CODE);
+
+		userPoolBuilder_cognitoEClass = createEClass(USER_POOL_BUILDER_COGNITO);
+		createEAttribute(userPoolBuilder_cognitoEClass,
+				USER_POOL_BUILDER_COGNITO__AUTO_VERIFY_WITH_AUTO_VERIFIED_ATTRS_SOFTWARE_AMAZON_AWSCDK_SERVICES_COGNITO_AUTO_VERIFIED_ATTRS_AS_REFERENCE);
+		createEAttribute(userPoolBuilder_cognitoEClass,
+				USER_POOL_BUILDER_COGNITO__CUSTOM_ATTRIBUTES_JAVA_LANG_STRING_SOFTWARE_AMAZON_AWSCDK_SERVICES_COGNITO_ICUSTOM_ATTRIBUTE_AS_MAP);
+		createEAttribute(userPoolBuilder_cognitoEClass,
+				USER_POOL_BUILDER_COGNITO__EMAIL_SETTINGS_WITH_EMAIL_SETTINGS_SOFTWARE_AMAZON_AWSCDK_SERVICES_COGNITO_EMAIL_SETTINGS_AS_REFERENCE);
+		createEAttribute(userPoolBuilder_cognitoEClass,
+				USER_POOL_BUILDER_COGNITO__LAMBDA_TRIGGERS_WITH_USER_POOL_TRIGGERS_SOFTWARE_AMAZON_AWSCDK_SERVICES_COGNITO_USER_POOL_TRIGGERS_AS_REFERENCE);
+		createEAttribute(userPoolBuilder_cognitoEClass,
+				USER_POOL_BUILDER_COGNITO__MFA_SOFTWARE_AMAZON_AWSCDK_SERVICES_COGNITO_MFA_);
+		createEAttribute(userPoolBuilder_cognitoEClass,
+				USER_POOL_BUILDER_COGNITO__MFA_SECOND_FACTOR_WITH_MFA_SECOND_FACTOR_SOFTWARE_AMAZON_AWSCDK_SERVICES_COGNITO_MFA_SECOND_FACTOR_AS_REFERENCE);
+		createEAttribute(userPoolBuilder_cognitoEClass,
+				USER_POOL_BUILDER_COGNITO__PASSWORD_POLICY_WITH_PASSWORD_POLICY_SOFTWARE_AMAZON_AWSCDK_SERVICES_COGNITO_PASSWORD_POLICY_AS_REFERENCE);
+		createEAttribute(userPoolBuilder_cognitoEClass,
+				USER_POOL_BUILDER_COGNITO__REQUIRED_ATTRIBUTES_WITH_REQUIRED_ATTRIBUTES_SOFTWARE_AMAZON_AWSCDK_SERVICES_COGNITO_REQUIRED_ATTRIBUTES_AS_REFERENCE);
+		createEAttribute(userPoolBuilder_cognitoEClass,
+				USER_POOL_BUILDER_COGNITO__SELF_SIGN_UP_ENABLED_JAVA_LANG_BOOLEAN_);
+		createEAttribute(userPoolBuilder_cognitoEClass,
+				USER_POOL_BUILDER_COGNITO__SIGN_IN_ALIASES_WITH_SIGN_IN_ALIASES_SOFTWARE_AMAZON_AWSCDK_SERVICES_COGNITO_SIGN_IN_ALIASES_AS_REFERENCE);
+		createEAttribute(userPoolBuilder_cognitoEClass,
+				USER_POOL_BUILDER_COGNITO__SIGN_IN_CASE_SENSITIVE_JAVA_LANG_BOOLEAN_);
+		createEAttribute(userPoolBuilder_cognitoEClass,
+				USER_POOL_BUILDER_COGNITO__SMS_ROLE_WITH_IROLE_SOFTWARE_AMAZON_AWSCDK_SERVICES_IAM_IROLE_AS_REFERENCE);
+		createEAttribute(userPoolBuilder_cognitoEClass,
+				USER_POOL_BUILDER_COGNITO__SMS_ROLE_EXTERNAL_ID_JAVA_LANG_STRING_);
+		createEAttribute(userPoolBuilder_cognitoEClass,
+				USER_POOL_BUILDER_COGNITO__USER_INVITATION_WITH_USER_INVITATION_CONFIG_SOFTWARE_AMAZON_AWSCDK_SERVICES_COGNITO_USER_INVITATION_CONFIG_AS_REFERENCE);
+		createEAttribute(userPoolBuilder_cognitoEClass, USER_POOL_BUILDER_COGNITO__USER_POOL_NAME_JAVA_LANG_STRING_);
+		createEAttribute(userPoolBuilder_cognitoEClass,
+				USER_POOL_BUILDER_COGNITO__USER_VERIFICATION_WITH_USER_VERIFICATION_CONFIG_SOFTWARE_AMAZON_AWSCDK_SERVICES_COGNITO_USER_VERIFICATION_CONFIG_AS_REFERENCE);
+		createEAttribute(userPoolBuilder_cognitoEClass, USER_POOL_BUILDER_COGNITO__GENERATED_CLASS_NAME);
+		createEAttribute(userPoolBuilder_cognitoEClass, USER_POOL_BUILDER_COGNITO__VAR_NAME);
+		createEAttribute(userPoolBuilder_cognitoEClass, USER_POOL_BUILDER_COGNITO__IDENTIFIER);
+		createEAttribute(userPoolBuilder_cognitoEClass, USER_POOL_BUILDER_COGNITO__ADDITIONAL_CODE);
+
+		authFlowBuilder_cognitoEClass = createEClass(AUTH_FLOW_BUILDER_COGNITO);
+		createEAttribute(authFlowBuilder_cognitoEClass,
+				AUTH_FLOW_BUILDER_COGNITO__ADMIN_USER_PASSWORD_JAVA_LANG_BOOLEAN_);
+		createEAttribute(authFlowBuilder_cognitoEClass, AUTH_FLOW_BUILDER_COGNITO__CUSTOM_JAVA_LANG_BOOLEAN_);
+		createEAttribute(authFlowBuilder_cognitoEClass, AUTH_FLOW_BUILDER_COGNITO__REFRESH_TOKEN_JAVA_LANG_BOOLEAN_);
+		createEAttribute(authFlowBuilder_cognitoEClass, AUTH_FLOW_BUILDER_COGNITO__USER_PASSWORD_JAVA_LANG_BOOLEAN_);
+		createEAttribute(authFlowBuilder_cognitoEClass, AUTH_FLOW_BUILDER_COGNITO__USER_SRP_JAVA_LANG_BOOLEAN_);
+		createEAttribute(authFlowBuilder_cognitoEClass, AUTH_FLOW_BUILDER_COGNITO__GENERATED_CLASS_NAME);
+		createEAttribute(authFlowBuilder_cognitoEClass, AUTH_FLOW_BUILDER_COGNITO__VAR_NAME);
+		createEAttribute(authFlowBuilder_cognitoEClass, AUTH_FLOW_BUILDER_COGNITO__IDENTIFIER);
+		createEAttribute(authFlowBuilder_cognitoEClass, AUTH_FLOW_BUILDER_COGNITO__ADDITIONAL_CODE);
+
+		oAuthFlowsBuilder_cognitoEClass = createEClass(OAUTH_FLOWS_BUILDER_COGNITO);
+		createEAttribute(oAuthFlowsBuilder_cognitoEClass,
+				OAUTH_FLOWS_BUILDER_COGNITO__AUTHORIZATION_CODE_GRANT_JAVA_LANG_BOOLEAN_);
+		createEAttribute(oAuthFlowsBuilder_cognitoEClass,
+				OAUTH_FLOWS_BUILDER_COGNITO__CLIENT_CREDENTIALS_JAVA_LANG_BOOLEAN_);
+		createEAttribute(oAuthFlowsBuilder_cognitoEClass,
+				OAUTH_FLOWS_BUILDER_COGNITO__IMPLICIT_CODE_GRANT_JAVA_LANG_BOOLEAN_);
+		createEAttribute(oAuthFlowsBuilder_cognitoEClass, OAUTH_FLOWS_BUILDER_COGNITO__GENERATED_CLASS_NAME);
+		createEAttribute(oAuthFlowsBuilder_cognitoEClass, OAUTH_FLOWS_BUILDER_COGNITO__VAR_NAME);
+		createEAttribute(oAuthFlowsBuilder_cognitoEClass, OAUTH_FLOWS_BUILDER_COGNITO__IDENTIFIER);
+		createEAttribute(oAuthFlowsBuilder_cognitoEClass, OAUTH_FLOWS_BUILDER_COGNITO__ADDITIONAL_CODE);
+
+		oAuthSettingsBuilder_cognitoEClass = createEClass(OAUTH_SETTINGS_BUILDER_COGNITO);
+		createEAttribute(oAuthSettingsBuilder_cognitoEClass,
+				OAUTH_SETTINGS_BUILDER_COGNITO__CALLBACK_URLS_JAVA_LANG_STRING_AS_LIST);
+		createEAttribute(oAuthSettingsBuilder_cognitoEClass,
+				OAUTH_SETTINGS_BUILDER_COGNITO__FLOWS_WITH_OAUTH_FLOWS_SOFTWARE_AMAZON_AWSCDK_SERVICES_COGNITO_OAUTH_FLOWS_AS_REFERENCE);
+		createEAttribute(oAuthSettingsBuilder_cognitoEClass,
+				OAUTH_SETTINGS_BUILDER_COGNITO__SCOPES_SOFTWARE_AMAZON_AWSCDK_SERVICES_COGNITO_OAUTH_SCOPE_AS_LIST);
+		createEAttribute(oAuthSettingsBuilder_cognitoEClass, OAUTH_SETTINGS_BUILDER_COGNITO__GENERATED_CLASS_NAME);
+		createEAttribute(oAuthSettingsBuilder_cognitoEClass, OAUTH_SETTINGS_BUILDER_COGNITO__VAR_NAME);
+		createEAttribute(oAuthSettingsBuilder_cognitoEClass, OAUTH_SETTINGS_BUILDER_COGNITO__IDENTIFIER);
+		createEAttribute(oAuthSettingsBuilder_cognitoEClass, OAUTH_SETTINGS_BUILDER_COGNITO__ADDITIONAL_CODE);
+
+		userPoolClientPropsBuilder_cognitoEClass = createEClass(USER_POOL_CLIENT_PROPS_BUILDER_COGNITO);
+		createEAttribute(userPoolClientPropsBuilder_cognitoEClass,
+				USER_POOL_CLIENT_PROPS_BUILDER_COGNITO__USER_POOL_WITH_IUSER_POOL_SOFTWARE_AMAZON_AWSCDK_SERVICES_COGNITO_IUSER_POOL_AS_REFERENCE);
+		createEAttribute(userPoolClientPropsBuilder_cognitoEClass,
+				USER_POOL_CLIENT_PROPS_BUILDER_COGNITO__AUTH_FLOWS_WITH_AUTH_FLOW_SOFTWARE_AMAZON_AWSCDK_SERVICES_COGNITO_AUTH_FLOW_AS_REFERENCE);
+		createEAttribute(userPoolClientPropsBuilder_cognitoEClass,
+				USER_POOL_CLIENT_PROPS_BUILDER_COGNITO__GENERATE_SECRET_JAVA_LANG_BOOLEAN_);
+		createEAttribute(userPoolClientPropsBuilder_cognitoEClass,
+				USER_POOL_CLIENT_PROPS_BUILDER_COGNITO__OAUTH_WITH_OAUTH_SETTINGS_SOFTWARE_AMAZON_AWSCDK_SERVICES_COGNITO_OAUTH_SETTINGS_AS_REFERENCE);
+		createEAttribute(userPoolClientPropsBuilder_cognitoEClass,
+				USER_POOL_CLIENT_PROPS_BUILDER_COGNITO__PREVENT_USER_EXISTENCE_ERRORS_JAVA_LANG_BOOLEAN_);
+		createEAttribute(userPoolClientPropsBuilder_cognitoEClass,
+				USER_POOL_CLIENT_PROPS_BUILDER_COGNITO__USER_POOL_CLIENT_NAME_JAVA_LANG_STRING_);
+		createEAttribute(userPoolClientPropsBuilder_cognitoEClass,
+				USER_POOL_CLIENT_PROPS_BUILDER_COGNITO__GENERATED_CLASS_NAME);
+		createEAttribute(userPoolClientPropsBuilder_cognitoEClass, USER_POOL_CLIENT_PROPS_BUILDER_COGNITO__VAR_NAME);
+		createEAttribute(userPoolClientPropsBuilder_cognitoEClass, USER_POOL_CLIENT_PROPS_BUILDER_COGNITO__IDENTIFIER);
+		createEAttribute(userPoolClientPropsBuilder_cognitoEClass,
+				USER_POOL_CLIENT_PROPS_BUILDER_COGNITO__ADDITIONAL_CODE);
 
 		cognitoToApiGatewayToLambdaBuilder_cognitoapigatewaylambdaEClass = createEClass(
 				COGNITO_TO_API_GATEWAY_TO_LAMBDA_BUILDER_COGNITOAPIGATEWAYLAMBDA);
@@ -12120,6 +18735,22 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 		authorizationTypeEEnum = createEEnum(AUTHORIZATION_TYPE);
 		jsonSchemaVersionEEnum = createEEnum(JSON_SCHEMA_VERSION);
 		jsonSchemaTypeEEnum = createEEnum(JSON_SCHEMA_TYPE);
+		cloudFrontAllowedCachedMethodsEEnum = createEEnum(CLOUD_FRONT_ALLOWED_CACHED_METHODS);
+		cloudFrontAllowedMethodsEEnum = createEEnum(CLOUD_FRONT_ALLOWED_METHODS);
+		lambdaEdgeEventTypeEEnum = createEEnum(LAMBDA_EDGE_EVENT_TYPE);
+		originSslPolicyEEnum = createEEnum(ORIGIN_SSL_POLICY);
+		originProtocolPolicyEEnum = createEEnum(ORIGIN_PROTOCOL_POLICY);
+		bucketAccessControlEEnum = createEEnum(BUCKET_ACCESS_CONTROL);
+		httpMethodsEEnum = createEEnum(HTTP_METHODS);
+		bucketEncryptionEEnum = createEEnum(BUCKET_ENCRYPTION);
+		redirectProtocolEEnum = createEEnum(REDIRECT_PROTOCOL);
+		httpVersionEEnum = createEEnum(HTTP_VERSION);
+		priceClassEEnum = createEEnum(PRICE_CLASS);
+		viewerProtocolPolicyEEnum = createEEnum(VIEWER_PROTOCOL_POLICY);
+		securityPolicyProtocolEEnum = createEEnum(SECURITY_POLICY_PROTOCOL);
+		sslMethodEEnum = createEEnum(SSL_METHOD);
+		mfaEEnum = createEEnum(MFA);
+		verificationEmailStyleEEnum = createEEnum(VERIFICATION_EMAIL_STYLE);
 		effectEEnum = createEEnum(EFFECT);
 		attributeTypeEEnum = createEEnum(ATTRIBUTE_TYPE);
 		streamViewTypeEEnum = createEEnum(STREAM_VIEW_TYPE);
@@ -13370,6 +20001,155 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 				0, 1, SecurityGroupBuilder_ec2.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
 				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
+		initEClass(functionPropsBuilder_lambdaEClass, FunctionPropsBuilder_lambda.class, "FunctionPropsBuilder_lambda",
+				!IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(
+				getFunctionPropsBuilder_lambda_CodeWithCode_software_amazon_awscdk_services_lambda_Code_AsReference(),
+				ecorePackage.getEString(), "codeWithCode_software_amazon_awscdk_services_lambda_Code_AsReference", null,
+				0, 1, FunctionPropsBuilder_lambda.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getFunctionPropsBuilder_lambda_Handler_java_lang_String_(), ecorePackage.getEString(),
+				"handler_java_lang_String_", null, 0, 1, FunctionPropsBuilder_lambda.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getFunctionPropsBuilder_lambda_RuntimeWithRuntime_software_amazon_awscdk_services_lambda_Runtime_AsReference(),
+				ecorePackage.getEString(),
+				"runtimeWithRuntime_software_amazon_awscdk_services_lambda_Runtime_AsReference", null, 0, 1,
+				FunctionPropsBuilder_lambda.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getFunctionPropsBuilder_lambda_AllowAllOutbound_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "allowAllOutbound_java_lang_Boolean_", null, 0, 1,
+				FunctionPropsBuilder_lambda.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getFunctionPropsBuilder_lambda_CurrentVersionOptionsWithVersionOptions_software_amazon_awscdk_services_lambda_VersionOptions_AsReference(),
+				ecorePackage.getEString(),
+				"currentVersionOptionsWithVersionOptions_software_amazon_awscdk_services_lambda_VersionOptions_AsReference",
+				null, 0, 1, FunctionPropsBuilder_lambda.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getFunctionPropsBuilder_lambda_DeadLetterQueueWithIQueue_software_amazon_awscdk_services_sqs_IQueue_AsReference(),
+				ecorePackage.getEString(),
+				"deadLetterQueueWithIQueue_software_amazon_awscdk_services_sqs_IQueue_AsReference", null, 0, 1,
+				FunctionPropsBuilder_lambda.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getFunctionPropsBuilder_lambda_DeadLetterQueueEnabled_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "deadLetterQueueEnabled_java_lang_Boolean_", null, 0, 1,
+				FunctionPropsBuilder_lambda.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getFunctionPropsBuilder_lambda_Description_java_lang_String_(), ecorePackage.getEString(),
+				"description_java_lang_String_", null, 0, 1, FunctionPropsBuilder_lambda.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getFunctionPropsBuilder_lambda_Environment_java_lang_String__java_lang_String_AsMap(),
+				ecorePackage.getEString(), "environment_java_lang_String__java_lang_String_AsMap", null, 0, 1,
+				FunctionPropsBuilder_lambda.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getFunctionPropsBuilder_lambda_Events_software_amazon_awscdk_services_lambda_IEventSource_AsList(),
+				ecorePackage.getEString(), "events_software_amazon_awscdk_services_lambda_IEventSource_AsList", null, 0,
+				1, FunctionPropsBuilder_lambda.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getFunctionPropsBuilder_lambda_FunctionName_java_lang_String_(), ecorePackage.getEString(),
+				"functionName_java_lang_String_", null, 0, 1, FunctionPropsBuilder_lambda.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getFunctionPropsBuilder_lambda_InitialPolicy_software_amazon_awscdk_services_iam_PolicyStatement_AsList(),
+				ecorePackage.getEString(), "initialPolicy_software_amazon_awscdk_services_iam_PolicyStatement_AsList",
+				null, 0, 1, FunctionPropsBuilder_lambda.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getFunctionPropsBuilder_lambda_Layers_software_amazon_awscdk_services_lambda_ILayerVersion_AsList(),
+				ecorePackage.getEString(), "layers_software_amazon_awscdk_services_lambda_ILayerVersion_AsList", null,
+				0, 1, FunctionPropsBuilder_lambda.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getFunctionPropsBuilder_lambda_LogRetention_software_amazon_awscdk_services_logs_RetentionDays_(),
+				this.getRetentionDays(), "logRetention_software_amazon_awscdk_services_logs_RetentionDays_", null, 0, 1,
+				FunctionPropsBuilder_lambda.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getFunctionPropsBuilder_lambda_LogRetentionRoleWithIRole_software_amazon_awscdk_services_iam_IRole_AsReference(),
+				ecorePackage.getEString(),
+				"logRetentionRoleWithIRole_software_amazon_awscdk_services_iam_IRole_AsReference", null, 0, 1,
+				FunctionPropsBuilder_lambda.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getFunctionPropsBuilder_lambda_MemorySize_java_lang_Number_(), ecorePackage.getEInt(),
+				"memorySize_java_lang_Number_", null, 0, 1, FunctionPropsBuilder_lambda.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getFunctionPropsBuilder_lambda_ReservedConcurrentExecutions_java_lang_Number_(),
+				ecorePackage.getEInt(), "reservedConcurrentExecutions_java_lang_Number_", null, 0, 1,
+				FunctionPropsBuilder_lambda.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getFunctionPropsBuilder_lambda_RoleWithIRole_software_amazon_awscdk_services_iam_IRole_AsReference(),
+				ecorePackage.getEString(), "roleWithIRole_software_amazon_awscdk_services_iam_IRole_AsReference", null,
+				0, 1, FunctionPropsBuilder_lambda.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getFunctionPropsBuilder_lambda_SecurityGroupWithISecurityGroup_software_amazon_awscdk_services_ec2_ISecurityGroup_AsReference(),
+				ecorePackage.getEString(),
+				"securityGroupWithISecurityGroup_software_amazon_awscdk_services_ec2_ISecurityGroup_AsReference", null,
+				0, 1, FunctionPropsBuilder_lambda.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getFunctionPropsBuilder_lambda_SecurityGroups_software_amazon_awscdk_services_ec2_ISecurityGroup_AsList(),
+				ecorePackage.getEString(), "securityGroups_software_amazon_awscdk_services_ec2_ISecurityGroup_AsList",
+				null, 0, 1, FunctionPropsBuilder_lambda.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getFunctionPropsBuilder_lambda_TimeoutWithDuration_software_amazon_awscdk_core_Duration_AsReference(),
+				ecorePackage.getEString(), "timeoutWithDuration_software_amazon_awscdk_core_Duration_AsReference", null,
+				0, 1, FunctionPropsBuilder_lambda.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getFunctionPropsBuilder_lambda_Tracing_software_amazon_awscdk_services_lambda_Tracing_(),
+				this.getTracing(), "tracing_software_amazon_awscdk_services_lambda_Tracing_", null, 0, 1,
+				FunctionPropsBuilder_lambda.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getFunctionPropsBuilder_lambda_VpcWithIVpc_software_amazon_awscdk_services_ec2_IVpc_AsReference(),
+				ecorePackage.getEString(), "vpcWithIVpc_software_amazon_awscdk_services_ec2_IVpc_AsReference", null, 0,
+				1, FunctionPropsBuilder_lambda.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getFunctionPropsBuilder_lambda_VpcSubnetsWithSubnetSelection_software_amazon_awscdk_services_ec2_SubnetSelection_AsReference(),
+				ecorePackage.getEString(),
+				"vpcSubnetsWithSubnetSelection_software_amazon_awscdk_services_ec2_SubnetSelection_AsReference", null,
+				0, 1, FunctionPropsBuilder_lambda.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getFunctionPropsBuilder_lambda_MaxEventAgeWithDuration_software_amazon_awscdk_core_Duration_AsReference(),
+				ecorePackage.getEString(), "maxEventAgeWithDuration_software_amazon_awscdk_core_Duration_AsReference",
+				null, 0, 1, FunctionPropsBuilder_lambda.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getFunctionPropsBuilder_lambda_OnFailureWithIDestination_software_amazon_awscdk_services_lambda_IDestination_AsReference(),
+				ecorePackage.getEString(),
+				"onFailureWithIDestination_software_amazon_awscdk_services_lambda_IDestination_AsReference", null, 0, 1,
+				FunctionPropsBuilder_lambda.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getFunctionPropsBuilder_lambda_OnSuccessWithIDestination_software_amazon_awscdk_services_lambda_IDestination_AsReference(),
+				ecorePackage.getEString(),
+				"onSuccessWithIDestination_software_amazon_awscdk_services_lambda_IDestination_AsReference", null, 0, 1,
+				FunctionPropsBuilder_lambda.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getFunctionPropsBuilder_lambda_RetryAttempts_java_lang_Number_(), ecorePackage.getEInt(),
+				"retryAttempts_java_lang_Number_", null, 0, 1, FunctionPropsBuilder_lambda.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getFunctionPropsBuilder_lambda_GeneratedClassName(), ecorePackage.getEString(),
+				"generatedClassName", "software.amazon.awscdk.services.lambda.FunctionProps", 0, 1,
+				FunctionPropsBuilder_lambda.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getFunctionPropsBuilder_lambda_VarName(), ecorePackage.getEString(), "varName", null, 0, 1,
+				FunctionPropsBuilder_lambda.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getFunctionPropsBuilder_lambda_Identifier(), ecorePackage.getEString(), "identifier", null, 0, 1,
+				FunctionPropsBuilder_lambda.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getFunctionPropsBuilder_lambda_AdditionalCode(), ecorePackage.getEString(), "additionalCode",
+				null, 0, 1, FunctionPropsBuilder_lambda.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
 		initEClass(functionBuilder_lambdaEClass, FunctionBuilder_lambda.class, "FunctionBuilder_lambda", !IS_ABSTRACT,
 				!IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(
@@ -14132,6 +20912,266 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 				"additionalCode", null, 0, 1, ApiGatewayToDynamoDBBuilder_apigatewaydynamodb.class, !IS_TRANSIENT,
 				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
+		initEClass(lambdaRestApiPropsBuilder_apigatewayEClass, LambdaRestApiPropsBuilder_apigateway.class,
+				"LambdaRestApiPropsBuilder_apigateway", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(
+				getLambdaRestApiPropsBuilder_apigateway_HandlerWithIFunction_software_amazon_awscdk_services_lambda_IFunction_AsReference(),
+				ecorePackage.getEString(),
+				"handlerWithIFunction_software_amazon_awscdk_services_lambda_IFunction_AsReference", null, 0, 1,
+				LambdaRestApiPropsBuilder_apigateway.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getLambdaRestApiPropsBuilder_apigateway_OptionsWithRestApiProps_software_amazon_awscdk_services_apigateway_RestApiProps_AsReference(),
+				ecorePackage.getEString(),
+				"optionsWithRestApiProps_software_amazon_awscdk_services_apigateway_RestApiProps_AsReference", null, 0,
+				1, LambdaRestApiPropsBuilder_apigateway.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getLambdaRestApiPropsBuilder_apigateway_Proxy_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "proxy_java_lang_Boolean_", null, 0, 1,
+				LambdaRestApiPropsBuilder_apigateway.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getLambdaRestApiPropsBuilder_apigateway_ApiKeySourceType_software_amazon_awscdk_services_apigateway_ApiKeySourceType_(),
+				this.getApiKeySourceType(),
+				"apiKeySourceType_software_amazon_awscdk_services_apigateway_ApiKeySourceType_", null, 0, 1,
+				LambdaRestApiPropsBuilder_apigateway.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getLambdaRestApiPropsBuilder_apigateway_BinaryMediaTypes_java_lang_String_AsList(),
+				ecorePackage.getEString(), "binaryMediaTypes_java_lang_String_AsList", null, 0, 1,
+				LambdaRestApiPropsBuilder_apigateway.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getLambdaRestApiPropsBuilder_apigateway_CloneFromWithIRestApi_software_amazon_awscdk_services_apigateway_IRestApi_AsReference(),
+				ecorePackage.getEString(),
+				"cloneFromWithIRestApi_software_amazon_awscdk_services_apigateway_IRestApi_AsReference", null, 0, 1,
+				LambdaRestApiPropsBuilder_apigateway.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getLambdaRestApiPropsBuilder_apigateway_Description_java_lang_String_(),
+				ecorePackage.getEString(), "description_java_lang_String_", null, 0, 1,
+				LambdaRestApiPropsBuilder_apigateway.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getLambdaRestApiPropsBuilder_apigateway_EndpointConfigurationWithEndpointConfiguration_software_amazon_awscdk_services_apigateway_EndpointConfiguration_AsReference(),
+				ecorePackage.getEString(),
+				"endpointConfigurationWithEndpointConfiguration_software_amazon_awscdk_services_apigateway_EndpointConfiguration_AsReference",
+				null, 0, 1, LambdaRestApiPropsBuilder_apigateway.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getLambdaRestApiPropsBuilder_apigateway_EndpointTypes_software_amazon_awscdk_services_apigateway_EndpointType_AsList(),
+				ecorePackage.getEString(),
+				"endpointTypes_software_amazon_awscdk_services_apigateway_EndpointType_AsList", null, 0, 1,
+				LambdaRestApiPropsBuilder_apigateway.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getLambdaRestApiPropsBuilder_apigateway_MinimumCompressionSize_java_lang_Number_(),
+				ecorePackage.getEInt(), "minimumCompressionSize_java_lang_Number_", null, 0, 1,
+				LambdaRestApiPropsBuilder_apigateway.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getLambdaRestApiPropsBuilder_apigateway_CloudWatchRole_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "cloudWatchRole_java_lang_Boolean_", null, 0, 1,
+				LambdaRestApiPropsBuilder_apigateway.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getLambdaRestApiPropsBuilder_apigateway_Deploy_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "deploy_java_lang_Boolean_", null, 0, 1,
+				LambdaRestApiPropsBuilder_apigateway.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getLambdaRestApiPropsBuilder_apigateway_DeployOptionsWithStageOptions_software_amazon_awscdk_services_apigateway_StageOptions_AsReference(),
+				ecorePackage.getEString(),
+				"deployOptionsWithStageOptions_software_amazon_awscdk_services_apigateway_StageOptions_AsReference",
+				null, 0, 1, LambdaRestApiPropsBuilder_apigateway.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getLambdaRestApiPropsBuilder_apigateway_DomainNameWithDomainNameOptions_software_amazon_awscdk_services_apigateway_DomainNameOptions_AsReference(),
+				ecorePackage.getEString(),
+				"domainNameWithDomainNameOptions_software_amazon_awscdk_services_apigateway_DomainNameOptions_AsReference",
+				null, 0, 1, LambdaRestApiPropsBuilder_apigateway.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getLambdaRestApiPropsBuilder_apigateway_EndpointExportName_java_lang_String_(),
+				ecorePackage.getEString(), "endpointExportName_java_lang_String_", null, 0, 1,
+				LambdaRestApiPropsBuilder_apigateway.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getLambdaRestApiPropsBuilder_apigateway_FailOnWarnings_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "failOnWarnings_java_lang_Boolean_", null, 0, 1,
+				LambdaRestApiPropsBuilder_apigateway.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getLambdaRestApiPropsBuilder_apigateway_Parameters_java_lang_String__java_lang_String_AsMap(),
+				ecorePackage.getEString(), "parameters_java_lang_String__java_lang_String_AsMap", null, 0, 1,
+				LambdaRestApiPropsBuilder_apigateway.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getLambdaRestApiPropsBuilder_apigateway_PolicyWithPolicyDocument_software_amazon_awscdk_services_iam_PolicyDocument_AsReference(),
+				ecorePackage.getEString(),
+				"policyWithPolicyDocument_software_amazon_awscdk_services_iam_PolicyDocument_AsReference", null, 0, 1,
+				LambdaRestApiPropsBuilder_apigateway.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getLambdaRestApiPropsBuilder_apigateway_RestApiName_java_lang_String_(),
+				ecorePackage.getEString(), "restApiName_java_lang_String_", null, 0, 1,
+				LambdaRestApiPropsBuilder_apigateway.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getLambdaRestApiPropsBuilder_apigateway_RetainDeployments_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "retainDeployments_java_lang_Boolean_", null, 0, 1,
+				LambdaRestApiPropsBuilder_apigateway.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getLambdaRestApiPropsBuilder_apigateway_DefaultCorsPreflightOptionsWithCorsOptions_software_amazon_awscdk_services_apigateway_CorsOptions_AsReference(),
+				ecorePackage.getEString(),
+				"defaultCorsPreflightOptionsWithCorsOptions_software_amazon_awscdk_services_apigateway_CorsOptions_AsReference",
+				null, 0, 1, LambdaRestApiPropsBuilder_apigateway.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getLambdaRestApiPropsBuilder_apigateway_DefaultIntegrationWithIntegration_software_amazon_awscdk_services_apigateway_Integration_AsReference(),
+				ecorePackage.getEString(),
+				"defaultIntegrationWithIntegration_software_amazon_awscdk_services_apigateway_Integration_AsReference",
+				null, 0, 1, LambdaRestApiPropsBuilder_apigateway.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getLambdaRestApiPropsBuilder_apigateway_DefaultMethodOptionsWithMethodOptions_software_amazon_awscdk_services_apigateway_MethodOptions_AsReference(),
+				ecorePackage.getEString(),
+				"defaultMethodOptionsWithMethodOptions_software_amazon_awscdk_services_apigateway_MethodOptions_AsReference",
+				null, 0, 1, LambdaRestApiPropsBuilder_apigateway.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getLambdaRestApiPropsBuilder_apigateway_GeneratedClassName(), ecorePackage.getEString(),
+				"generatedClassName", "software.amazon.awscdk.services.apigateway.LambdaRestApiProps", 0, 1,
+				LambdaRestApiPropsBuilder_apigateway.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getLambdaRestApiPropsBuilder_apigateway_VarName(), ecorePackage.getEString(), "varName", null, 0,
+				1, LambdaRestApiPropsBuilder_apigateway.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getLambdaRestApiPropsBuilder_apigateway_Identifier(), ecorePackage.getEString(), "identifier",
+				null, 0, 1, LambdaRestApiPropsBuilder_apigateway.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getLambdaRestApiPropsBuilder_apigateway_AdditionalCode(), ecorePackage.getEString(),
+				"additionalCode", null, 0, 1, LambdaRestApiPropsBuilder_apigateway.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(lambdaRestApiBuilder_apigatewayEClass, LambdaRestApiBuilder_apigateway.class,
+				"LambdaRestApiBuilder_apigateway", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(
+				getLambdaRestApiBuilder_apigateway_DefaultCorsPreflightOptionsWithCorsOptions_software_amazon_awscdk_services_apigateway_CorsOptions_AsReference(),
+				ecorePackage.getEString(),
+				"defaultCorsPreflightOptionsWithCorsOptions_software_amazon_awscdk_services_apigateway_CorsOptions_AsReference",
+				null, 0, 1, LambdaRestApiBuilder_apigateway.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getLambdaRestApiBuilder_apigateway_DefaultIntegrationWithIntegration_software_amazon_awscdk_services_apigateway_Integration_AsReference(),
+				ecorePackage.getEString(),
+				"defaultIntegrationWithIntegration_software_amazon_awscdk_services_apigateway_Integration_AsReference",
+				null, 0, 1, LambdaRestApiBuilder_apigateway.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getLambdaRestApiBuilder_apigateway_DefaultMethodOptionsWithMethodOptions_software_amazon_awscdk_services_apigateway_MethodOptions_AsReference(),
+				ecorePackage.getEString(),
+				"defaultMethodOptionsWithMethodOptions_software_amazon_awscdk_services_apigateway_MethodOptions_AsReference",
+				null, 0, 1, LambdaRestApiBuilder_apigateway.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getLambdaRestApiBuilder_apigateway_CloudWatchRole_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "cloudWatchRole_java_lang_Boolean_", null, 0, 1,
+				LambdaRestApiBuilder_apigateway.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getLambdaRestApiBuilder_apigateway_Deploy_java_lang_Boolean_(), ecorePackage.getEBooleanObject(),
+				"deploy_java_lang_Boolean_", null, 0, 1, LambdaRestApiBuilder_apigateway.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getLambdaRestApiBuilder_apigateway_DeployOptionsWithStageOptions_software_amazon_awscdk_services_apigateway_StageOptions_AsReference(),
+				ecorePackage.getEString(),
+				"deployOptionsWithStageOptions_software_amazon_awscdk_services_apigateway_StageOptions_AsReference",
+				null, 0, 1, LambdaRestApiBuilder_apigateway.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getLambdaRestApiBuilder_apigateway_DomainNameWithDomainNameOptions_software_amazon_awscdk_services_apigateway_DomainNameOptions_AsReference(),
+				ecorePackage.getEString(),
+				"domainNameWithDomainNameOptions_software_amazon_awscdk_services_apigateway_DomainNameOptions_AsReference",
+				null, 0, 1, LambdaRestApiBuilder_apigateway.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getLambdaRestApiBuilder_apigateway_EndpointExportName_java_lang_String_(),
+				ecorePackage.getEString(), "endpointExportName_java_lang_String_", null, 0, 1,
+				LambdaRestApiBuilder_apigateway.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getLambdaRestApiBuilder_apigateway_FailOnWarnings_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "failOnWarnings_java_lang_Boolean_", null, 0, 1,
+				LambdaRestApiBuilder_apigateway.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getLambdaRestApiBuilder_apigateway_Parameters_java_lang_String__java_lang_String_AsMap(),
+				ecorePackage.getEString(), "parameters_java_lang_String__java_lang_String_AsMap", null, 0, 1,
+				LambdaRestApiBuilder_apigateway.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getLambdaRestApiBuilder_apigateway_PolicyWithPolicyDocument_software_amazon_awscdk_services_iam_PolicyDocument_AsReference(),
+				ecorePackage.getEString(),
+				"policyWithPolicyDocument_software_amazon_awscdk_services_iam_PolicyDocument_AsReference", null, 0, 1,
+				LambdaRestApiBuilder_apigateway.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getLambdaRestApiBuilder_apigateway_RestApiName_java_lang_String_(), ecorePackage.getEString(),
+				"restApiName_java_lang_String_", null, 0, 1, LambdaRestApiBuilder_apigateway.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getLambdaRestApiBuilder_apigateway_RetainDeployments_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "retainDeployments_java_lang_Boolean_", null, 0, 1,
+				LambdaRestApiBuilder_apigateway.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getLambdaRestApiBuilder_apigateway_ApiKeySourceType_software_amazon_awscdk_services_apigateway_ApiKeySourceType_(),
+				this.getApiKeySourceType(),
+				"apiKeySourceType_software_amazon_awscdk_services_apigateway_ApiKeySourceType_", null, 0, 1,
+				LambdaRestApiBuilder_apigateway.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getLambdaRestApiBuilder_apigateway_BinaryMediaTypes_java_lang_String_AsList(),
+				ecorePackage.getEString(), "binaryMediaTypes_java_lang_String_AsList", null, 0, 1,
+				LambdaRestApiBuilder_apigateway.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getLambdaRestApiBuilder_apigateway_CloneFromWithIRestApi_software_amazon_awscdk_services_apigateway_IRestApi_AsReference(),
+				ecorePackage.getEString(),
+				"cloneFromWithIRestApi_software_amazon_awscdk_services_apigateway_IRestApi_AsReference", null, 0, 1,
+				LambdaRestApiBuilder_apigateway.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getLambdaRestApiBuilder_apigateway_Description_java_lang_String_(), ecorePackage.getEString(),
+				"description_java_lang_String_", null, 0, 1, LambdaRestApiBuilder_apigateway.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getLambdaRestApiBuilder_apigateway_EndpointConfigurationWithEndpointConfiguration_software_amazon_awscdk_services_apigateway_EndpointConfiguration_AsReference(),
+				ecorePackage.getEString(),
+				"endpointConfigurationWithEndpointConfiguration_software_amazon_awscdk_services_apigateway_EndpointConfiguration_AsReference",
+				null, 0, 1, LambdaRestApiBuilder_apigateway.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getLambdaRestApiBuilder_apigateway_EndpointTypes_software_amazon_awscdk_services_apigateway_EndpointType_AsList(),
+				ecorePackage.getEString(),
+				"endpointTypes_software_amazon_awscdk_services_apigateway_EndpointType_AsList", null, 0, 1,
+				LambdaRestApiBuilder_apigateway.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getLambdaRestApiBuilder_apigateway_MinimumCompressionSize_java_lang_Number_(),
+				ecorePackage.getEInt(), "minimumCompressionSize_java_lang_Number_", null, 0, 1,
+				LambdaRestApiBuilder_apigateway.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getLambdaRestApiBuilder_apigateway_HandlerWithIFunction_software_amazon_awscdk_services_lambda_IFunction_AsReference(),
+				ecorePackage.getEString(),
+				"handlerWithIFunction_software_amazon_awscdk_services_lambda_IFunction_AsReference", null, 0, 1,
+				LambdaRestApiBuilder_apigateway.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getLambdaRestApiBuilder_apigateway_OptionsWithRestApiProps_software_amazon_awscdk_services_apigateway_RestApiProps_AsReference(),
+				ecorePackage.getEString(),
+				"optionsWithRestApiProps_software_amazon_awscdk_services_apigateway_RestApiProps_AsReference", null, 0,
+				1, LambdaRestApiBuilder_apigateway.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getLambdaRestApiBuilder_apigateway_Proxy_java_lang_Boolean_(), ecorePackage.getEBooleanObject(),
+				"proxy_java_lang_Boolean_", null, 0, 1, LambdaRestApiBuilder_apigateway.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getLambdaRestApiBuilder_apigateway_GeneratedClassName(), ecorePackage.getEString(),
+				"generatedClassName", "software.amazon.awscdk.services.apigateway.LambdaRestApi", 0, 1,
+				LambdaRestApiBuilder_apigateway.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getLambdaRestApiBuilder_apigateway_VarName(), ecorePackage.getEString(), "varName", null, 0, 1,
+				LambdaRestApiBuilder_apigateway.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getLambdaRestApiBuilder_apigateway_Identifier(), ecorePackage.getEString(), "identifier", null,
+				0, 1, LambdaRestApiBuilder_apigateway.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getLambdaRestApiBuilder_apigateway_AdditionalCode(), ecorePackage.getEString(), "additionalCode",
+				null, 0, 1, LambdaRestApiBuilder_apigateway.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
 		initEClass(apiGatewayToLambdaBuilder_apigatewaylambdaEClass, ApiGatewayToLambdaBuilder_apigatewaylambda.class,
 				"ApiGatewayToLambdaBuilder_apigatewaylambda", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getApiGatewayToLambdaBuilder_apigatewaylambda_ApiGatewayProps_java_lang_Object_(),
@@ -14162,6 +21202,78 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 		initEAttribute(getApiGatewayToLambdaBuilder_apigatewaylambda_AdditionalCode(), ecorePackage.getEString(),
 				"additionalCode", null, 0, 1, ApiGatewayToLambdaBuilder_apigatewaylambda.class, !IS_TRANSIENT,
 				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(queuePropsBuilder_sqsEClass, QueuePropsBuilder_sqs.class, "QueuePropsBuilder_sqs", !IS_ABSTRACT,
+				!IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getQueuePropsBuilder_sqs_ContentBasedDeduplication_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "contentBasedDeduplication_java_lang_Boolean_", null, 0, 1,
+				QueuePropsBuilder_sqs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getQueuePropsBuilder_sqs_DataKeyReuseWithDuration_software_amazon_awscdk_core_Duration_AsReference(),
+				ecorePackage.getEString(), "dataKeyReuseWithDuration_software_amazon_awscdk_core_Duration_AsReference",
+				null, 0, 1, QueuePropsBuilder_sqs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getQueuePropsBuilder_sqs_DeadLetterQueueWithDeadLetterQueue_software_amazon_awscdk_services_sqs_DeadLetterQueue_AsReference(),
+				ecorePackage.getEString(),
+				"deadLetterQueueWithDeadLetterQueue_software_amazon_awscdk_services_sqs_DeadLetterQueue_AsReference",
+				null, 0, 1, QueuePropsBuilder_sqs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getQueuePropsBuilder_sqs_DeliveryDelayWithDuration_software_amazon_awscdk_core_Duration_AsReference(),
+				ecorePackage.getEString(), "deliveryDelayWithDuration_software_amazon_awscdk_core_Duration_AsReference",
+				null, 0, 1, QueuePropsBuilder_sqs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getQueuePropsBuilder_sqs_Encryption_software_amazon_awscdk_services_sqs_QueueEncryption_(),
+				this.getQueueEncryption(), "encryption_software_amazon_awscdk_services_sqs_QueueEncryption_", null, 0,
+				1, QueuePropsBuilder_sqs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getQueuePropsBuilder_sqs_EncryptionMasterKeyWithIKey_software_amazon_awscdk_services_kms_IKey_AsReference(),
+				ecorePackage.getEString(),
+				"encryptionMasterKeyWithIKey_software_amazon_awscdk_services_kms_IKey_AsReference", null, 0, 1,
+				QueuePropsBuilder_sqs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getQueuePropsBuilder_sqs_Fifo_java_lang_Boolean_(), ecorePackage.getEBooleanObject(),
+				"fifo_java_lang_Boolean_", null, 0, 1, QueuePropsBuilder_sqs.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getQueuePropsBuilder_sqs_MaxMessageSizeBytes_java_lang_Number_(), ecorePackage.getEInt(),
+				"maxMessageSizeBytes_java_lang_Number_", null, 0, 1, QueuePropsBuilder_sqs.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getQueuePropsBuilder_sqs_QueueName_java_lang_String_(), ecorePackage.getEString(),
+				"queueName_java_lang_String_", null, 0, 1, QueuePropsBuilder_sqs.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getQueuePropsBuilder_sqs_ReceiveMessageWaitTimeWithDuration_software_amazon_awscdk_core_Duration_AsReference(),
+				ecorePackage.getEString(),
+				"receiveMessageWaitTimeWithDuration_software_amazon_awscdk_core_Duration_AsReference", null, 0, 1,
+				QueuePropsBuilder_sqs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getQueuePropsBuilder_sqs_RetentionPeriodWithDuration_software_amazon_awscdk_core_Duration_AsReference(),
+				ecorePackage.getEString(),
+				"retentionPeriodWithDuration_software_amazon_awscdk_core_Duration_AsReference", null, 0, 1,
+				QueuePropsBuilder_sqs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getQueuePropsBuilder_sqs_VisibilityTimeoutWithDuration_software_amazon_awscdk_core_Duration_AsReference(),
+				ecorePackage.getEString(),
+				"visibilityTimeoutWithDuration_software_amazon_awscdk_core_Duration_AsReference", null, 0, 1,
+				QueuePropsBuilder_sqs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getQueuePropsBuilder_sqs_GeneratedClassName(), ecorePackage.getEString(), "generatedClassName",
+				"software.amazon.awscdk.services.sqs.QueueProps", 0, 1, QueuePropsBuilder_sqs.class, !IS_TRANSIENT,
+				!IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getQueuePropsBuilder_sqs_VarName(), ecorePackage.getEString(), "varName", null, 0, 1,
+				QueuePropsBuilder_sqs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getQueuePropsBuilder_sqs_Identifier(), ecorePackage.getEString(), "identifier", null, 0, 1,
+				QueuePropsBuilder_sqs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getQueuePropsBuilder_sqs_AdditionalCode(), ecorePackage.getEString(), "additionalCode", null, 0,
+				1, QueuePropsBuilder_sqs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(apiGatewayToSqsBuilder_apigatewaysqsEClass, ApiGatewayToSqsBuilder_apigatewaysqs.class,
 				"ApiGatewayToSqsBuilder_apigatewaysqs", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -14210,6 +21322,909 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 		initEAttribute(getApiGatewayToSqsBuilder_apigatewaysqs_AdditionalCode(), ecorePackage.getEString(),
 				"additionalCode", null, 0, 1, ApiGatewayToSqsBuilder_apigatewaysqs.class, !IS_TRANSIENT, !IS_VOLATILE,
 				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(versionBuilder_lambdaEClass, VersionBuilder_lambda.class, "VersionBuilder_lambda", !IS_ABSTRACT,
+				!IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(
+				getVersionBuilder_lambda_MaxEventAgeWithDuration_software_amazon_awscdk_core_Duration_AsReference(),
+				ecorePackage.getEString(), "maxEventAgeWithDuration_software_amazon_awscdk_core_Duration_AsReference",
+				null, 0, 1, VersionBuilder_lambda.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getVersionBuilder_lambda_OnFailureWithIDestination_software_amazon_awscdk_services_lambda_IDestination_AsReference(),
+				ecorePackage.getEString(),
+				"onFailureWithIDestination_software_amazon_awscdk_services_lambda_IDestination_AsReference", null, 0, 1,
+				VersionBuilder_lambda.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getVersionBuilder_lambda_OnSuccessWithIDestination_software_amazon_awscdk_services_lambda_IDestination_AsReference(),
+				ecorePackage.getEString(),
+				"onSuccessWithIDestination_software_amazon_awscdk_services_lambda_IDestination_AsReference", null, 0, 1,
+				VersionBuilder_lambda.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getVersionBuilder_lambda_RetryAttempts_java_lang_Number_(), ecorePackage.getEInt(),
+				"retryAttempts_java_lang_Number_", null, 0, 1, VersionBuilder_lambda.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getVersionBuilder_lambda_CodeSha256_java_lang_String_(), ecorePackage.getEString(),
+				"codeSha256_java_lang_String_", null, 0, 1, VersionBuilder_lambda.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getVersionBuilder_lambda_Description_java_lang_String_(), ecorePackage.getEString(),
+				"description_java_lang_String_", null, 0, 1, VersionBuilder_lambda.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getVersionBuilder_lambda_ProvisionedConcurrentExecutions_java_lang_Number_(),
+				ecorePackage.getEInt(), "provisionedConcurrentExecutions_java_lang_Number_", null, 0, 1,
+				VersionBuilder_lambda.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getVersionBuilder_lambda_RemovalPolicy_software_amazon_awscdk_core_RemovalPolicy_(),
+				this.getRemovalPolicy(), "removalPolicy_software_amazon_awscdk_core_RemovalPolicy_", null, 0, 1,
+				VersionBuilder_lambda.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getVersionBuilder_lambda_LambdaWithIFunction_software_amazon_awscdk_services_lambda_IFunction_AsReference(),
+				ecorePackage.getEString(),
+				"lambdaWithIFunction_software_amazon_awscdk_services_lambda_IFunction_AsReference", null, 0, 1,
+				VersionBuilder_lambda.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getVersionBuilder_lambda_GeneratedClassName(), ecorePackage.getEString(), "generatedClassName",
+				"software.amazon.awscdk.services.lambda.Version", 0, 1, VersionBuilder_lambda.class, !IS_TRANSIENT,
+				!IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getVersionBuilder_lambda_VarName(), ecorePackage.getEString(), "varName", null, 0, 1,
+				VersionBuilder_lambda.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getVersionBuilder_lambda_Identifier(), ecorePackage.getEString(), "identifier", null, 0, 1,
+				VersionBuilder_lambda.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getVersionBuilder_lambda_AdditionalCode(), ecorePackage.getEString(), "additionalCode", null, 0,
+				1, VersionBuilder_lambda.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(lambdaFunctionAssociationBuilder_cloudfrontEClass, LambdaFunctionAssociationBuilder_cloudfront.class,
+				"LambdaFunctionAssociationBuilder_cloudfront", !IS_ABSTRACT, !IS_INTERFACE,
+				IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(
+				getLambdaFunctionAssociationBuilder_cloudfront_EventType_software_amazon_awscdk_services_cloudfront_LambdaEdgeEventType_(),
+				this.getLambdaEdgeEventType(),
+				"eventType_software_amazon_awscdk_services_cloudfront_LambdaEdgeEventType_", null, 0, 1,
+				LambdaFunctionAssociationBuilder_cloudfront.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getLambdaFunctionAssociationBuilder_cloudfront_LambdaFunctionWithIVersion_software_amazon_awscdk_services_lambda_IVersion_AsReference(),
+				ecorePackage.getEString(),
+				"lambdaFunctionWithIVersion_software_amazon_awscdk_services_lambda_IVersion_AsReference", null, 0, 1,
+				LambdaFunctionAssociationBuilder_cloudfront.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getLambdaFunctionAssociationBuilder_cloudfront_GeneratedClassName(), ecorePackage.getEString(),
+				"generatedClassName", "software.amazon.awscdk.services.cloudfront.LambdaFunctionAssociation", 0, 1,
+				LambdaFunctionAssociationBuilder_cloudfront.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getLambdaFunctionAssociationBuilder_cloudfront_VarName(), ecorePackage.getEString(), "varName",
+				null, 0, 1, LambdaFunctionAssociationBuilder_cloudfront.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getLambdaFunctionAssociationBuilder_cloudfront_Identifier(), ecorePackage.getEString(),
+				"identifier", null, 0, 1, LambdaFunctionAssociationBuilder_cloudfront.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getLambdaFunctionAssociationBuilder_cloudfront_AdditionalCode(), ecorePackage.getEString(),
+				"additionalCode", null, 0, 1, LambdaFunctionAssociationBuilder_cloudfront.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(behaviorBuilder_cloudfrontEClass, BehaviorBuilder_cloudfront.class, "BehaviorBuilder_cloudfront",
+				!IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(
+				getBehaviorBuilder_cloudfront_AllowedMethods_software_amazon_awscdk_services_cloudfront_CloudFrontAllowedMethods_(),
+				this.getCloudFrontAllowedMethods(),
+				"allowedMethods_software_amazon_awscdk_services_cloudfront_CloudFrontAllowedMethods_", null, 0, 1,
+				BehaviorBuilder_cloudfront.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getBehaviorBuilder_cloudfront_CachedMethods_software_amazon_awscdk_services_cloudfront_CloudFrontAllowedCachedMethods_(),
+				this.getCloudFrontAllowedCachedMethods(),
+				"cachedMethods_software_amazon_awscdk_services_cloudfront_CloudFrontAllowedCachedMethods_", null, 0, 1,
+				BehaviorBuilder_cloudfront.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getBehaviorBuilder_cloudfront_Compress_java_lang_Boolean_(), ecorePackage.getEBooleanObject(),
+				"compress_java_lang_Boolean_", null, 0, 1, BehaviorBuilder_cloudfront.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getBehaviorBuilder_cloudfront_DefaultTtlWithDuration_software_amazon_awscdk_core_Duration_AsReference(),
+				ecorePackage.getEString(), "defaultTtlWithDuration_software_amazon_awscdk_core_Duration_AsReference",
+				null, 0, 1, BehaviorBuilder_cloudfront.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getBehaviorBuilder_cloudfront_ForwardedValuesWithForwardedValuesProperty_software_amazon_awscdk_services_cloudfront_CfnDistribution_ForwardedValuesProperty_AsReference(),
+				ecorePackage.getEString(),
+				"forwardedValuesWithForwardedValuesProperty_software_amazon_awscdk_services_cloudfront_CfnDistribution_ForwardedValuesProperty_AsReference",
+				null, 0, 1, BehaviorBuilder_cloudfront.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getBehaviorBuilder_cloudfront_IsDefaultBehavior_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "isDefaultBehavior_java_lang_Boolean_", null, 0, 1,
+				BehaviorBuilder_cloudfront.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getBehaviorBuilder_cloudfront_LambdaFunctionAssociations_software_amazon_awscdk_services_cloudfront_LambdaFunctionAssociation_AsList(),
+				ecorePackage.getEString(),
+				"lambdaFunctionAssociations_software_amazon_awscdk_services_cloudfront_LambdaFunctionAssociation_AsList",
+				null, 0, 1, BehaviorBuilder_cloudfront.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getBehaviorBuilder_cloudfront_MaxTtlWithDuration_software_amazon_awscdk_core_Duration_AsReference(),
+				ecorePackage.getEString(), "maxTtlWithDuration_software_amazon_awscdk_core_Duration_AsReference", null,
+				0, 1, BehaviorBuilder_cloudfront.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getBehaviorBuilder_cloudfront_MinTtlWithDuration_software_amazon_awscdk_core_Duration_AsReference(),
+				ecorePackage.getEString(), "minTtlWithDuration_software_amazon_awscdk_core_Duration_AsReference", null,
+				0, 1, BehaviorBuilder_cloudfront.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getBehaviorBuilder_cloudfront_PathPattern_java_lang_String_(), ecorePackage.getEString(),
+				"pathPattern_java_lang_String_", null, 0, 1, BehaviorBuilder_cloudfront.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getBehaviorBuilder_cloudfront_TrustedSigners_java_lang_String_AsList(),
+				ecorePackage.getEString(), "trustedSigners_java_lang_String_AsList", null, 0, 1,
+				BehaviorBuilder_cloudfront.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getBehaviorBuilder_cloudfront_GeneratedClassName(), ecorePackage.getEString(),
+				"generatedClassName", "software.amazon.awscdk.services.cloudfront.Behavior", 0, 1,
+				BehaviorBuilder_cloudfront.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getBehaviorBuilder_cloudfront_VarName(), ecorePackage.getEString(), "varName", null, 0, 1,
+				BehaviorBuilder_cloudfront.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getBehaviorBuilder_cloudfront_Identifier(), ecorePackage.getEString(), "identifier", null, 0, 1,
+				BehaviorBuilder_cloudfront.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getBehaviorBuilder_cloudfront_AdditionalCode(), ecorePackage.getEString(), "additionalCode",
+				null, 0, 1, BehaviorBuilder_cloudfront.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(customOriginConfigBuilder_cloudfrontEClass, CustomOriginConfigBuilder_cloudfront.class,
+				"CustomOriginConfigBuilder_cloudfront", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getCustomOriginConfigBuilder_cloudfront_DomainName_java_lang_String_(),
+				ecorePackage.getEString(), "domainName_java_lang_String_", null, 0, 1,
+				CustomOriginConfigBuilder_cloudfront.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getCustomOriginConfigBuilder_cloudfront_AllowedOriginSslVersions_software_amazon_awscdk_services_cloudfront_OriginSslPolicy_AsList(),
+				ecorePackage.getEString(),
+				"allowedOriginSslVersions_software_amazon_awscdk_services_cloudfront_OriginSslPolicy_AsList", null, 0,
+				1, CustomOriginConfigBuilder_cloudfront.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCustomOriginConfigBuilder_cloudfront_HttpPort_java_lang_Number_(), ecorePackage.getEInt(),
+				"httpPort_java_lang_Number_", null, 0, 1, CustomOriginConfigBuilder_cloudfront.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCustomOriginConfigBuilder_cloudfront_HttpsPort_java_lang_Number_(), ecorePackage.getEInt(),
+				"httpsPort_java_lang_Number_", null, 0, 1, CustomOriginConfigBuilder_cloudfront.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getCustomOriginConfigBuilder_cloudfront_OriginKeepaliveTimeoutWithDuration_software_amazon_awscdk_core_Duration_AsReference(),
+				ecorePackage.getEString(),
+				"originKeepaliveTimeoutWithDuration_software_amazon_awscdk_core_Duration_AsReference", null, 0, 1,
+				CustomOriginConfigBuilder_cloudfront.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getCustomOriginConfigBuilder_cloudfront_OriginProtocolPolicy_software_amazon_awscdk_services_cloudfront_OriginProtocolPolicy_(),
+				this.getOriginProtocolPolicy(),
+				"originProtocolPolicy_software_amazon_awscdk_services_cloudfront_OriginProtocolPolicy_", null, 0, 1,
+				CustomOriginConfigBuilder_cloudfront.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getCustomOriginConfigBuilder_cloudfront_OriginReadTimeoutWithDuration_software_amazon_awscdk_core_Duration_AsReference(),
+				ecorePackage.getEString(),
+				"originReadTimeoutWithDuration_software_amazon_awscdk_core_Duration_AsReference", null, 0, 1,
+				CustomOriginConfigBuilder_cloudfront.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCustomOriginConfigBuilder_cloudfront_GeneratedClassName(), ecorePackage.getEString(),
+				"generatedClassName", "software.amazon.awscdk.services.cloudfront.CustomOriginConfig", 0, 1,
+				CustomOriginConfigBuilder_cloudfront.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCustomOriginConfigBuilder_cloudfront_VarName(), ecorePackage.getEString(), "varName", null, 0,
+				1, CustomOriginConfigBuilder_cloudfront.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCustomOriginConfigBuilder_cloudfront_Identifier(), ecorePackage.getEString(), "identifier",
+				null, 0, 1, CustomOriginConfigBuilder_cloudfront.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCustomOriginConfigBuilder_cloudfront_AdditionalCode(), ecorePackage.getEString(),
+				"additionalCode", null, 0, 1, CustomOriginConfigBuilder_cloudfront.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(blockPublicAccessBuilder_s3EClass, BlockPublicAccessBuilder_s3.class, "BlockPublicAccessBuilder_s3",
+				!IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getBlockPublicAccessBuilder_s3_BlockPublicAcls_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "blockPublicAcls_java_lang_Boolean_", null, 0, 1,
+				BlockPublicAccessBuilder_s3.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getBlockPublicAccessBuilder_s3_BlockPublicPolicy_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "blockPublicPolicy_java_lang_Boolean_", null, 0, 1,
+				BlockPublicAccessBuilder_s3.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getBlockPublicAccessBuilder_s3_IgnorePublicAcls_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "ignorePublicAcls_java_lang_Boolean_", null, 0, 1,
+				BlockPublicAccessBuilder_s3.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getBlockPublicAccessBuilder_s3_RestrictPublicBuckets_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "restrictPublicBuckets_java_lang_Boolean_", null, 0, 1,
+				BlockPublicAccessBuilder_s3.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getBlockPublicAccessBuilder_s3_GeneratedClassName(), ecorePackage.getEString(),
+				"generatedClassName", "software.amazon.awscdk.services.s3.BlockPublicAccess", 0, 1,
+				BlockPublicAccessBuilder_s3.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getBlockPublicAccessBuilder_s3_VarName(), ecorePackage.getEString(), "varName", null, 0, 1,
+				BlockPublicAccessBuilder_s3.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getBlockPublicAccessBuilder_s3_Identifier(), ecorePackage.getEString(), "identifier", null, 0, 1,
+				BlockPublicAccessBuilder_s3.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getBlockPublicAccessBuilder_s3_AdditionalCode(), ecorePackage.getEString(), "additionalCode",
+				null, 0, 1, BlockPublicAccessBuilder_s3.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(corsRuleBuilder_s3EClass, CorsRuleBuilder_s3.class, "CorsRuleBuilder_s3", !IS_ABSTRACT,
+				!IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getCorsRuleBuilder_s3_AllowedMethods_software_amazon_awscdk_services_s3_HttpMethods_AsList(),
+				ecorePackage.getEString(), "allowedMethods_software_amazon_awscdk_services_s3_HttpMethods_AsList", null,
+				0, 1, CorsRuleBuilder_s3.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCorsRuleBuilder_s3_AllowedOrigins_java_lang_String_AsList(), ecorePackage.getEString(),
+				"allowedOrigins_java_lang_String_AsList", null, 0, 1, CorsRuleBuilder_s3.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCorsRuleBuilder_s3_AllowedHeaders_java_lang_String_AsList(), ecorePackage.getEString(),
+				"allowedHeaders_java_lang_String_AsList", null, 0, 1, CorsRuleBuilder_s3.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCorsRuleBuilder_s3_ExposedHeaders_java_lang_String_AsList(), ecorePackage.getEString(),
+				"exposedHeaders_java_lang_String_AsList", null, 0, 1, CorsRuleBuilder_s3.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCorsRuleBuilder_s3_Id_java_lang_String_(), ecorePackage.getEString(), "id_java_lang_String_",
+				null, 0, 1, CorsRuleBuilder_s3.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCorsRuleBuilder_s3_MaxAge_java_lang_Number_(), ecorePackage.getEInt(),
+				"maxAge_java_lang_Number_", null, 0, 1, CorsRuleBuilder_s3.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCorsRuleBuilder_s3_GeneratedClassName(), ecorePackage.getEString(), "generatedClassName",
+				"software.amazon.awscdk.services.s3.CorsRule", 0, 1, CorsRuleBuilder_s3.class, !IS_TRANSIENT,
+				!IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCorsRuleBuilder_s3_VarName(), ecorePackage.getEString(), "varName", null, 0, 1,
+				CorsRuleBuilder_s3.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+				!IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCorsRuleBuilder_s3_Identifier(), ecorePackage.getEString(), "identifier", null, 0, 1,
+				CorsRuleBuilder_s3.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+				!IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCorsRuleBuilder_s3_AdditionalCode(), ecorePackage.getEString(), "additionalCode", null, 0, 1,
+				CorsRuleBuilder_s3.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+				!IS_DERIVED, IS_ORDERED);
+
+		initEClass(noncurrentVersionTransitionBuilder_s3EClass, NoncurrentVersionTransitionBuilder_s3.class,
+				"NoncurrentVersionTransitionBuilder_s3", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(
+				getNoncurrentVersionTransitionBuilder_s3_StorageClassWithStorageClass_software_amazon_awscdk_services_s3_StorageClass_AsReference(),
+				ecorePackage.getEString(),
+				"storageClassWithStorageClass_software_amazon_awscdk_services_s3_StorageClass_AsReference", null, 0, 1,
+				NoncurrentVersionTransitionBuilder_s3.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getNoncurrentVersionTransitionBuilder_s3_TransitionAfterWithDuration_software_amazon_awscdk_core_Duration_AsReference(),
+				ecorePackage.getEString(),
+				"transitionAfterWithDuration_software_amazon_awscdk_core_Duration_AsReference", null, 0, 1,
+				NoncurrentVersionTransitionBuilder_s3.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getNoncurrentVersionTransitionBuilder_s3_GeneratedClassName(), ecorePackage.getEString(),
+				"generatedClassName", "software.amazon.awscdk.services.s3.NoncurrentVersionTransition", 0, 1,
+				NoncurrentVersionTransitionBuilder_s3.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getNoncurrentVersionTransitionBuilder_s3_VarName(), ecorePackage.getEString(), "varName", null,
+				0, 1, NoncurrentVersionTransitionBuilder_s3.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getNoncurrentVersionTransitionBuilder_s3_Identifier(), ecorePackage.getEString(), "identifier",
+				null, 0, 1, NoncurrentVersionTransitionBuilder_s3.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getNoncurrentVersionTransitionBuilder_s3_AdditionalCode(), ecorePackage.getEString(),
+				"additionalCode", null, 0, 1, NoncurrentVersionTransitionBuilder_s3.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(transitionBuilder_s3EClass, TransitionBuilder_s3.class, "TransitionBuilder_s3", !IS_ABSTRACT,
+				!IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(
+				getTransitionBuilder_s3_StorageClassWithStorageClass_software_amazon_awscdk_services_s3_StorageClass_AsReference(),
+				ecorePackage.getEString(),
+				"storageClassWithStorageClass_software_amazon_awscdk_services_s3_StorageClass_AsReference", null, 0, 1,
+				TransitionBuilder_s3.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getTransitionBuilder_s3_TransitionAfterWithDuration_software_amazon_awscdk_core_Duration_AsReference(),
+				ecorePackage.getEString(),
+				"transitionAfterWithDuration_software_amazon_awscdk_core_Duration_AsReference", null, 0, 1,
+				TransitionBuilder_s3.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getTransitionBuilder_s3_TransitionDateWithInstant_java_time_Instant_AsReference(),
+				ecorePackage.getEString(), "transitionDateWithInstant_java_time_Instant_AsReference", null, 0, 1,
+				TransitionBuilder_s3.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getTransitionBuilder_s3_GeneratedClassName(), ecorePackage.getEString(), "generatedClassName",
+				"software.amazon.awscdk.services.s3.Transition", 0, 1, TransitionBuilder_s3.class, !IS_TRANSIENT,
+				!IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getTransitionBuilder_s3_VarName(), ecorePackage.getEString(), "varName", null, 0, 1,
+				TransitionBuilder_s3.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getTransitionBuilder_s3_Identifier(), ecorePackage.getEString(), "identifier", null, 0, 1,
+				TransitionBuilder_s3.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getTransitionBuilder_s3_AdditionalCode(), ecorePackage.getEString(), "additionalCode", null, 0,
+				1, TransitionBuilder_s3.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(lifecycleRuleBuilder_s3EClass, LifecycleRuleBuilder_s3.class, "LifecycleRuleBuilder_s3",
+				!IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(
+				getLifecycleRuleBuilder_s3_AbortIncompleteMultipartUploadAfterWithDuration_software_amazon_awscdk_core_Duration_AsReference(),
+				ecorePackage.getEString(),
+				"abortIncompleteMultipartUploadAfterWithDuration_software_amazon_awscdk_core_Duration_AsReference",
+				null, 0, 1, LifecycleRuleBuilder_s3.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getLifecycleRuleBuilder_s3_Enabled_java_lang_Boolean_(), ecorePackage.getEBooleanObject(),
+				"enabled_java_lang_Boolean_", null, 0, 1, LifecycleRuleBuilder_s3.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getLifecycleRuleBuilder_s3_ExpirationWithDuration_software_amazon_awscdk_core_Duration_AsReference(),
+				ecorePackage.getEString(), "expirationWithDuration_software_amazon_awscdk_core_Duration_AsReference",
+				null, 0, 1, LifecycleRuleBuilder_s3.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getLifecycleRuleBuilder_s3_ExpirationDateWithInstant_java_time_Instant_AsReference(),
+				ecorePackage.getEString(), "expirationDateWithInstant_java_time_Instant_AsReference", null, 0, 1,
+				LifecycleRuleBuilder_s3.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getLifecycleRuleBuilder_s3_Id_java_lang_String_(), ecorePackage.getEString(),
+				"id_java_lang_String_", null, 0, 1, LifecycleRuleBuilder_s3.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getLifecycleRuleBuilder_s3_NoncurrentVersionExpirationWithDuration_software_amazon_awscdk_core_Duration_AsReference(),
+				ecorePackage.getEString(),
+				"noncurrentVersionExpirationWithDuration_software_amazon_awscdk_core_Duration_AsReference", null, 0, 1,
+				LifecycleRuleBuilder_s3.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getLifecycleRuleBuilder_s3_NoncurrentVersionTransitions_software_amazon_awscdk_services_s3_NoncurrentVersionTransition_AsList(),
+				ecorePackage.getEString(),
+				"noncurrentVersionTransitions_software_amazon_awscdk_services_s3_NoncurrentVersionTransition_AsList",
+				null, 0, 1, LifecycleRuleBuilder_s3.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getLifecycleRuleBuilder_s3_Prefix_java_lang_String_(), ecorePackage.getEString(),
+				"prefix_java_lang_String_", null, 0, 1, LifecycleRuleBuilder_s3.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getLifecycleRuleBuilder_s3_TagFilters_java_lang_String__java_lang_Object_AsMap(),
+				ecorePackage.getEString(), "tagFilters_java_lang_String__java_lang_Object_AsMap", null, 0, 1,
+				LifecycleRuleBuilder_s3.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getLifecycleRuleBuilder_s3_Transitions_software_amazon_awscdk_services_s3_Transition_AsList(),
+				ecorePackage.getEString(), "transitions_software_amazon_awscdk_services_s3_Transition_AsList", null, 0,
+				1, LifecycleRuleBuilder_s3.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getLifecycleRuleBuilder_s3_GeneratedClassName(), ecorePackage.getEString(), "generatedClassName",
+				"software.amazon.awscdk.services.s3.LifecycleRule", 0, 1, LifecycleRuleBuilder_s3.class, !IS_TRANSIENT,
+				!IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getLifecycleRuleBuilder_s3_VarName(), ecorePackage.getEString(), "varName", null, 0, 1,
+				LifecycleRuleBuilder_s3.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getLifecycleRuleBuilder_s3_Identifier(), ecorePackage.getEString(), "identifier", null, 0, 1,
+				LifecycleRuleBuilder_s3.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getLifecycleRuleBuilder_s3_AdditionalCode(), ecorePackage.getEString(), "additionalCode", null,
+				0, 1, LifecycleRuleBuilder_s3.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(bucketMetricsBuilder_s3EClass, BucketMetricsBuilder_s3.class, "BucketMetricsBuilder_s3",
+				!IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getBucketMetricsBuilder_s3_Id_java_lang_String_(), ecorePackage.getEString(),
+				"id_java_lang_String_", null, 0, 1, BucketMetricsBuilder_s3.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getBucketMetricsBuilder_s3_Prefix_java_lang_String_(), ecorePackage.getEString(),
+				"prefix_java_lang_String_", null, 0, 1, BucketMetricsBuilder_s3.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getBucketMetricsBuilder_s3_TagFilters_java_lang_String__java_lang_Object_AsMap(),
+				ecorePackage.getEString(), "tagFilters_java_lang_String__java_lang_Object_AsMap", null, 0, 1,
+				BucketMetricsBuilder_s3.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getBucketMetricsBuilder_s3_GeneratedClassName(), ecorePackage.getEString(), "generatedClassName",
+				"software.amazon.awscdk.services.s3.BucketMetrics", 0, 1, BucketMetricsBuilder_s3.class, !IS_TRANSIENT,
+				!IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getBucketMetricsBuilder_s3_VarName(), ecorePackage.getEString(), "varName", null, 0, 1,
+				BucketMetricsBuilder_s3.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getBucketMetricsBuilder_s3_Identifier(), ecorePackage.getEString(), "identifier", null, 0, 1,
+				BucketMetricsBuilder_s3.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getBucketMetricsBuilder_s3_AdditionalCode(), ecorePackage.getEString(), "additionalCode", null,
+				0, 1, BucketMetricsBuilder_s3.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(redirectTargetBuilder_s3EClass, RedirectTargetBuilder_s3.class, "RedirectTargetBuilder_s3",
+				!IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getRedirectTargetBuilder_s3_HostName_java_lang_String_(), ecorePackage.getEString(),
+				"hostName_java_lang_String_", null, 0, 1, RedirectTargetBuilder_s3.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getRedirectTargetBuilder_s3_Protocol_software_amazon_awscdk_services_s3_RedirectProtocol_(),
+				this.getRedirectProtocol(), "protocol_software_amazon_awscdk_services_s3_RedirectProtocol_", null, 0, 1,
+				RedirectTargetBuilder_s3.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getRedirectTargetBuilder_s3_GeneratedClassName(), ecorePackage.getEString(),
+				"generatedClassName", "software.amazon.awscdk.services.s3.RedirectTarget", 0, 1,
+				RedirectTargetBuilder_s3.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getRedirectTargetBuilder_s3_VarName(), ecorePackage.getEString(), "varName", null, 0, 1,
+				RedirectTargetBuilder_s3.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getRedirectTargetBuilder_s3_Identifier(), ecorePackage.getEString(), "identifier", null, 0, 1,
+				RedirectTargetBuilder_s3.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getRedirectTargetBuilder_s3_AdditionalCode(), ecorePackage.getEString(), "additionalCode", null,
+				0, 1, RedirectTargetBuilder_s3.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(routingRuleConditionBuilder_s3EClass, RoutingRuleConditionBuilder_s3.class,
+				"RoutingRuleConditionBuilder_s3", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getRoutingRuleConditionBuilder_s3_HttpErrorCodeReturnedEquals_java_lang_String_(),
+				ecorePackage.getEString(), "httpErrorCodeReturnedEquals_java_lang_String_", null, 0, 1,
+				RoutingRuleConditionBuilder_s3.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getRoutingRuleConditionBuilder_s3_KeyPrefixEquals_java_lang_String_(), ecorePackage.getEString(),
+				"keyPrefixEquals_java_lang_String_", null, 0, 1, RoutingRuleConditionBuilder_s3.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getRoutingRuleConditionBuilder_s3_GeneratedClassName(), ecorePackage.getEString(),
+				"generatedClassName", "software.amazon.awscdk.services.s3.RoutingRuleCondition", 0, 1,
+				RoutingRuleConditionBuilder_s3.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getRoutingRuleConditionBuilder_s3_VarName(), ecorePackage.getEString(), "varName", null, 0, 1,
+				RoutingRuleConditionBuilder_s3.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getRoutingRuleConditionBuilder_s3_Identifier(), ecorePackage.getEString(), "identifier", null, 0,
+				1, RoutingRuleConditionBuilder_s3.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getRoutingRuleConditionBuilder_s3_AdditionalCode(), ecorePackage.getEString(), "additionalCode",
+				null, 0, 1, RoutingRuleConditionBuilder_s3.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(routingRuleBuilder_s3EClass, RoutingRuleBuilder_s3.class, "RoutingRuleBuilder_s3", !IS_ABSTRACT,
+				!IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(
+				getRoutingRuleBuilder_s3_ConditionWithRoutingRuleCondition_software_amazon_awscdk_services_s3_RoutingRuleCondition_AsReference(),
+				ecorePackage.getEString(),
+				"conditionWithRoutingRuleCondition_software_amazon_awscdk_services_s3_RoutingRuleCondition_AsReference",
+				null, 0, 1, RoutingRuleBuilder_s3.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getRoutingRuleBuilder_s3_HostName_java_lang_String_(), ecorePackage.getEString(),
+				"hostName_java_lang_String_", null, 0, 1, RoutingRuleBuilder_s3.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getRoutingRuleBuilder_s3_HttpRedirectCode_java_lang_String_(), ecorePackage.getEString(),
+				"httpRedirectCode_java_lang_String_", null, 0, 1, RoutingRuleBuilder_s3.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getRoutingRuleBuilder_s3_Protocol_software_amazon_awscdk_services_s3_RedirectProtocol_(),
+				this.getRedirectProtocol(), "protocol_software_amazon_awscdk_services_s3_RedirectProtocol_", null, 0, 1,
+				RoutingRuleBuilder_s3.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getRoutingRuleBuilder_s3_ReplaceKeyWithReplaceKey_software_amazon_awscdk_services_s3_ReplaceKey_AsReference(),
+				ecorePackage.getEString(),
+				"replaceKeyWithReplaceKey_software_amazon_awscdk_services_s3_ReplaceKey_AsReference", null, 0, 1,
+				RoutingRuleBuilder_s3.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getRoutingRuleBuilder_s3_GeneratedClassName(), ecorePackage.getEString(), "generatedClassName",
+				"software.amazon.awscdk.services.s3.RoutingRule", 0, 1, RoutingRuleBuilder_s3.class, !IS_TRANSIENT,
+				!IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getRoutingRuleBuilder_s3_VarName(), ecorePackage.getEString(), "varName", null, 0, 1,
+				RoutingRuleBuilder_s3.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getRoutingRuleBuilder_s3_Identifier(), ecorePackage.getEString(), "identifier", null, 0, 1,
+				RoutingRuleBuilder_s3.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getRoutingRuleBuilder_s3_AdditionalCode(), ecorePackage.getEString(), "additionalCode", null, 0,
+				1, RoutingRuleBuilder_s3.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(bucketBuilder_s3EClass, BucketBuilder_s3.class, "BucketBuilder_s3", !IS_ABSTRACT, !IS_INTERFACE,
+				IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getBucketBuilder_s3_AccessControl_software_amazon_awscdk_services_s3_BucketAccessControl_(),
+				this.getBucketAccessControl(), "accessControl_software_amazon_awscdk_services_s3_BucketAccessControl_",
+				null, 0, 1, BucketBuilder_s3.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getBucketBuilder_s3_BlockPublicAccessWithBlockPublicAccess_software_amazon_awscdk_services_s3_BlockPublicAccess_AsReference(),
+				ecorePackage.getEString(),
+				"blockPublicAccessWithBlockPublicAccess_software_amazon_awscdk_services_s3_BlockPublicAccess_AsReference",
+				null, 0, 1, BucketBuilder_s3.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getBucketBuilder_s3_BucketName_java_lang_String_(), ecorePackage.getEString(),
+				"bucketName_java_lang_String_", null, 0, 1, BucketBuilder_s3.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getBucketBuilder_s3_Cors_software_amazon_awscdk_services_s3_CorsRule_AsList(),
+				ecorePackage.getEString(), "cors_software_amazon_awscdk_services_s3_CorsRule_AsList", null, 0, 1,
+				BucketBuilder_s3.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+				!IS_DERIVED, IS_ORDERED);
+		initEAttribute(getBucketBuilder_s3_Encryption_software_amazon_awscdk_services_s3_BucketEncryption_(),
+				this.getBucketEncryption(), "encryption_software_amazon_awscdk_services_s3_BucketEncryption_", null, 0,
+				1, BucketBuilder_s3.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getBucketBuilder_s3_EncryptionKeyWithIKey_software_amazon_awscdk_services_kms_IKey_AsReference(),
+				ecorePackage.getEString(), "encryptionKeyWithIKey_software_amazon_awscdk_services_kms_IKey_AsReference",
+				null, 0, 1, BucketBuilder_s3.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getBucketBuilder_s3_LifecycleRules_software_amazon_awscdk_services_s3_LifecycleRule_AsList(),
+				ecorePackage.getEString(), "lifecycleRules_software_amazon_awscdk_services_s3_LifecycleRule_AsList",
+				null, 0, 1, BucketBuilder_s3.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getBucketBuilder_s3_Metrics_software_amazon_awscdk_services_s3_BucketMetrics_AsList(),
+				ecorePackage.getEString(), "metrics_software_amazon_awscdk_services_s3_BucketMetrics_AsList", null, 0,
+				1, BucketBuilder_s3.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getBucketBuilder_s3_PublicReadAccess_java_lang_Boolean_(), ecorePackage.getEBooleanObject(),
+				"publicReadAccess_java_lang_Boolean_", null, 0, 1, BucketBuilder_s3.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getBucketBuilder_s3_RemovalPolicy_software_amazon_awscdk_core_RemovalPolicy_(),
+				this.getRemovalPolicy(), "removalPolicy_software_amazon_awscdk_core_RemovalPolicy_", null, 0, 1,
+				BucketBuilder_s3.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+				!IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getBucketBuilder_s3_ServerAccessLogsBucketWithIBucket_software_amazon_awscdk_services_s3_IBucket_AsReference(),
+				ecorePackage.getEString(),
+				"serverAccessLogsBucketWithIBucket_software_amazon_awscdk_services_s3_IBucket_AsReference", null, 0, 1,
+				BucketBuilder_s3.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+				!IS_DERIVED, IS_ORDERED);
+		initEAttribute(getBucketBuilder_s3_ServerAccessLogsPrefix_java_lang_String_(), ecorePackage.getEString(),
+				"serverAccessLogsPrefix_java_lang_String_", null, 0, 1, BucketBuilder_s3.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getBucketBuilder_s3_Versioned_java_lang_Boolean_(), ecorePackage.getEBooleanObject(),
+				"versioned_java_lang_Boolean_", null, 0, 1, BucketBuilder_s3.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getBucketBuilder_s3_WebsiteErrorDocument_java_lang_String_(), ecorePackage.getEString(),
+				"websiteErrorDocument_java_lang_String_", null, 0, 1, BucketBuilder_s3.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getBucketBuilder_s3_WebsiteIndexDocument_java_lang_String_(), ecorePackage.getEString(),
+				"websiteIndexDocument_java_lang_String_", null, 0, 1, BucketBuilder_s3.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getBucketBuilder_s3_WebsiteRedirectWithRedirectTarget_software_amazon_awscdk_services_s3_RedirectTarget_AsReference(),
+				ecorePackage.getEString(),
+				"websiteRedirectWithRedirectTarget_software_amazon_awscdk_services_s3_RedirectTarget_AsReference", null,
+				0, 1, BucketBuilder_s3.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getBucketBuilder_s3_WebsiteRoutingRules_software_amazon_awscdk_services_s3_RoutingRule_AsList(),
+				ecorePackage.getEString(), "websiteRoutingRules_software_amazon_awscdk_services_s3_RoutingRule_AsList",
+				null, 0, 1, BucketBuilder_s3.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getBucketBuilder_s3_GeneratedClassName(), ecorePackage.getEString(), "generatedClassName",
+				"software.amazon.awscdk.services.s3.Bucket", 0, 1, BucketBuilder_s3.class, !IS_TRANSIENT, !IS_VOLATILE,
+				!IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getBucketBuilder_s3_VarName(), ecorePackage.getEString(), "varName", null, 0, 1,
+				BucketBuilder_s3.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+				!IS_DERIVED, IS_ORDERED);
+		initEAttribute(getBucketBuilder_s3_Identifier(), ecorePackage.getEString(), "identifier", null, 0, 1,
+				BucketBuilder_s3.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+				!IS_DERIVED, IS_ORDERED);
+		initEAttribute(getBucketBuilder_s3_AdditionalCode(), ecorePackage.getEString(), "additionalCode", null, 0, 1,
+				BucketBuilder_s3.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+				!IS_DERIVED, IS_ORDERED);
+
+		initEClass(bucketPropsBuilder_s3EClass, BucketPropsBuilder_s3.class, "BucketPropsBuilder_s3", !IS_ABSTRACT,
+				!IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getBucketPropsBuilder_s3_AccessControl_software_amazon_awscdk_services_s3_BucketAccessControl_(),
+				this.getBucketAccessControl(), "accessControl_software_amazon_awscdk_services_s3_BucketAccessControl_",
+				null, 0, 1, BucketPropsBuilder_s3.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getBucketPropsBuilder_s3_BlockPublicAccessWithBlockPublicAccess_software_amazon_awscdk_services_s3_BlockPublicAccess_AsReference(),
+				ecorePackage.getEString(),
+				"blockPublicAccessWithBlockPublicAccess_software_amazon_awscdk_services_s3_BlockPublicAccess_AsReference",
+				null, 0, 1, BucketPropsBuilder_s3.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getBucketPropsBuilder_s3_BucketName_java_lang_String_(), ecorePackage.getEString(),
+				"bucketName_java_lang_String_", null, 0, 1, BucketPropsBuilder_s3.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getBucketPropsBuilder_s3_Cors_software_amazon_awscdk_services_s3_CorsRule_AsList(),
+				ecorePackage.getEString(), "cors_software_amazon_awscdk_services_s3_CorsRule_AsList", null, 0, 1,
+				BucketPropsBuilder_s3.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getBucketPropsBuilder_s3_Encryption_software_amazon_awscdk_services_s3_BucketEncryption_(),
+				this.getBucketEncryption(), "encryption_software_amazon_awscdk_services_s3_BucketEncryption_", null, 0,
+				1, BucketPropsBuilder_s3.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getBucketPropsBuilder_s3_EncryptionKeyWithIKey_software_amazon_awscdk_services_kms_IKey_AsReference(),
+				ecorePackage.getEString(), "encryptionKeyWithIKey_software_amazon_awscdk_services_kms_IKey_AsReference",
+				null, 0, 1, BucketPropsBuilder_s3.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getBucketPropsBuilder_s3_LifecycleRules_software_amazon_awscdk_services_s3_LifecycleRule_AsList(),
+				ecorePackage.getEString(), "lifecycleRules_software_amazon_awscdk_services_s3_LifecycleRule_AsList",
+				null, 0, 1, BucketPropsBuilder_s3.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getBucketPropsBuilder_s3_Metrics_software_amazon_awscdk_services_s3_BucketMetrics_AsList(),
+				ecorePackage.getEString(), "metrics_software_amazon_awscdk_services_s3_BucketMetrics_AsList", null, 0,
+				1, BucketPropsBuilder_s3.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getBucketPropsBuilder_s3_PublicReadAccess_java_lang_Boolean_(), ecorePackage.getEBooleanObject(),
+				"publicReadAccess_java_lang_Boolean_", null, 0, 1, BucketPropsBuilder_s3.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getBucketPropsBuilder_s3_RemovalPolicy_software_amazon_awscdk_core_RemovalPolicy_(),
+				this.getRemovalPolicy(), "removalPolicy_software_amazon_awscdk_core_RemovalPolicy_", null, 0, 1,
+				BucketPropsBuilder_s3.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getBucketPropsBuilder_s3_ServerAccessLogsBucketWithIBucket_software_amazon_awscdk_services_s3_IBucket_AsReference(),
+				ecorePackage.getEString(),
+				"serverAccessLogsBucketWithIBucket_software_amazon_awscdk_services_s3_IBucket_AsReference", null, 0, 1,
+				BucketPropsBuilder_s3.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getBucketPropsBuilder_s3_ServerAccessLogsPrefix_java_lang_String_(), ecorePackage.getEString(),
+				"serverAccessLogsPrefix_java_lang_String_", null, 0, 1, BucketPropsBuilder_s3.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getBucketPropsBuilder_s3_Versioned_java_lang_Boolean_(), ecorePackage.getEBooleanObject(),
+				"versioned_java_lang_Boolean_", null, 0, 1, BucketPropsBuilder_s3.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getBucketPropsBuilder_s3_WebsiteErrorDocument_java_lang_String_(), ecorePackage.getEString(),
+				"websiteErrorDocument_java_lang_String_", null, 0, 1, BucketPropsBuilder_s3.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getBucketPropsBuilder_s3_WebsiteIndexDocument_java_lang_String_(), ecorePackage.getEString(),
+				"websiteIndexDocument_java_lang_String_", null, 0, 1, BucketPropsBuilder_s3.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getBucketPropsBuilder_s3_WebsiteRedirectWithRedirectTarget_software_amazon_awscdk_services_s3_RedirectTarget_AsReference(),
+				ecorePackage.getEString(),
+				"websiteRedirectWithRedirectTarget_software_amazon_awscdk_services_s3_RedirectTarget_AsReference", null,
+				0, 1, BucketPropsBuilder_s3.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getBucketPropsBuilder_s3_WebsiteRoutingRules_software_amazon_awscdk_services_s3_RoutingRule_AsList(),
+				ecorePackage.getEString(), "websiteRoutingRules_software_amazon_awscdk_services_s3_RoutingRule_AsList",
+				null, 0, 1, BucketPropsBuilder_s3.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getBucketPropsBuilder_s3_GeneratedClassName(), ecorePackage.getEString(), "generatedClassName",
+				"software.amazon.awscdk.services.s3.BucketProps", 0, 1, BucketPropsBuilder_s3.class, !IS_TRANSIENT,
+				!IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getBucketPropsBuilder_s3_VarName(), ecorePackage.getEString(), "varName", null, 0, 1,
+				BucketPropsBuilder_s3.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getBucketPropsBuilder_s3_Identifier(), ecorePackage.getEString(), "identifier", null, 0, 1,
+				BucketPropsBuilder_s3.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getBucketPropsBuilder_s3_AdditionalCode(), ecorePackage.getEString(), "additionalCode", null, 0,
+				1, BucketPropsBuilder_s3.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(originAccessIdentityBuilder_cloudfrontEClass, OriginAccessIdentityBuilder_cloudfront.class,
+				"OriginAccessIdentityBuilder_cloudfront", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getOriginAccessIdentityBuilder_cloudfront_Comment_java_lang_String_(), ecorePackage.getEString(),
+				"comment_java_lang_String_", null, 0, 1, OriginAccessIdentityBuilder_cloudfront.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getOriginAccessIdentityBuilder_cloudfront_GeneratedClassName(), ecorePackage.getEString(),
+				"generatedClassName", "software.amazon.awscdk.services.cloudfront.OriginAccessIdentity", 0, 1,
+				OriginAccessIdentityBuilder_cloudfront.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getOriginAccessIdentityBuilder_cloudfront_VarName(), ecorePackage.getEString(), "varName", null,
+				0, 1, OriginAccessIdentityBuilder_cloudfront.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getOriginAccessIdentityBuilder_cloudfront_Identifier(), ecorePackage.getEString(), "identifier",
+				null, 0, 1, OriginAccessIdentityBuilder_cloudfront.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getOriginAccessIdentityBuilder_cloudfront_AdditionalCode(), ecorePackage.getEString(),
+				"additionalCode", null, 0, 1, OriginAccessIdentityBuilder_cloudfront.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(s3OriginConfigBuilder_cloudfrontEClass, S3OriginConfigBuilder_cloudfront.class,
+				"S3OriginConfigBuilder_cloudfront", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(
+				getS3OriginConfigBuilder_cloudfront_S3BucketSourceWithIBucket_software_amazon_awscdk_services_s3_IBucket_AsReference(),
+				ecorePackage.getEString(),
+				"s3BucketSourceWithIBucket_software_amazon_awscdk_services_s3_IBucket_AsReference", null, 0, 1,
+				S3OriginConfigBuilder_cloudfront.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getS3OriginConfigBuilder_cloudfront_OriginAccessIdentityWithIOriginAccessIdentity_software_amazon_awscdk_services_cloudfront_IOriginAccessIdentity_AsReference(),
+				ecorePackage.getEString(),
+				"originAccessIdentityWithIOriginAccessIdentity_software_amazon_awscdk_services_cloudfront_IOriginAccessIdentity_AsReference",
+				null, 0, 1, S3OriginConfigBuilder_cloudfront.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getS3OriginConfigBuilder_cloudfront_GeneratedClassName(), ecorePackage.getEString(),
+				"generatedClassName", "software.amazon.awscdk.services.cloudfront.S3OriginConfig", 0, 1,
+				S3OriginConfigBuilder_cloudfront.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getS3OriginConfigBuilder_cloudfront_VarName(), ecorePackage.getEString(), "varName", null, 0, 1,
+				S3OriginConfigBuilder_cloudfront.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getS3OriginConfigBuilder_cloudfront_Identifier(), ecorePackage.getEString(), "identifier", null,
+				0, 1, S3OriginConfigBuilder_cloudfront.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getS3OriginConfigBuilder_cloudfront_AdditionalCode(), ecorePackage.getEString(),
+				"additionalCode", null, 0, 1, S3OriginConfigBuilder_cloudfront.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(sourceConfigurationBuilder_cloudfrontEClass, SourceConfigurationBuilder_cloudfront.class,
+				"SourceConfigurationBuilder_cloudfront", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(
+				getSourceConfigurationBuilder_cloudfront_Behaviors_software_amazon_awscdk_services_cloudfront_Behavior_AsList(),
+				ecorePackage.getEString(), "behaviors_software_amazon_awscdk_services_cloudfront_Behavior_AsList", null,
+				0, 1, SourceConfigurationBuilder_cloudfront.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getSourceConfigurationBuilder_cloudfront_CustomOriginSourceWithCustomOriginConfig_software_amazon_awscdk_services_cloudfront_CustomOriginConfig_AsReference(),
+				ecorePackage.getEString(),
+				"customOriginSourceWithCustomOriginConfig_software_amazon_awscdk_services_cloudfront_CustomOriginConfig_AsReference",
+				null, 0, 1, SourceConfigurationBuilder_cloudfront.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getSourceConfigurationBuilder_cloudfront_OriginHeaders_java_lang_String__java_lang_String_AsMap(),
+				ecorePackage.getEString(), "originHeaders_java_lang_String__java_lang_String_AsMap", null, 0, 1,
+				SourceConfigurationBuilder_cloudfront.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getSourceConfigurationBuilder_cloudfront_OriginPath_java_lang_String_(),
+				ecorePackage.getEString(), "originPath_java_lang_String_", null, 0, 1,
+				SourceConfigurationBuilder_cloudfront.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getSourceConfigurationBuilder_cloudfront_S3OriginSourceWithS3OriginConfig_software_amazon_awscdk_services_cloudfront_S3OriginConfig_AsReference(),
+				ecorePackage.getEString(),
+				"s3OriginSourceWithS3OriginConfig_software_amazon_awscdk_services_cloudfront_S3OriginConfig_AsReference",
+				null, 0, 1, SourceConfigurationBuilder_cloudfront.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getSourceConfigurationBuilder_cloudfront_GeneratedClassName(), ecorePackage.getEString(),
+				"generatedClassName", "software.amazon.awscdk.services.cloudfront.SourceConfiguration", 0, 1,
+				SourceConfigurationBuilder_cloudfront.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getSourceConfigurationBuilder_cloudfront_VarName(), ecorePackage.getEString(), "varName", null,
+				0, 1, SourceConfigurationBuilder_cloudfront.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getSourceConfigurationBuilder_cloudfront_Identifier(), ecorePackage.getEString(), "identifier",
+				null, 0, 1, SourceConfigurationBuilder_cloudfront.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getSourceConfigurationBuilder_cloudfront_AdditionalCode(), ecorePackage.getEString(),
+				"additionalCode", null, 0, 1, SourceConfigurationBuilder_cloudfront.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(aliasConfigurationBuilder_cloudfrontEClass, AliasConfigurationBuilder_cloudfront.class,
+				"AliasConfigurationBuilder_cloudfront", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getAliasConfigurationBuilder_cloudfront_AcmCertRef_java_lang_String_(),
+				ecorePackage.getEString(), "acmCertRef_java_lang_String_", null, 0, 1,
+				AliasConfigurationBuilder_cloudfront.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAliasConfigurationBuilder_cloudfront_Names_java_lang_String_AsList(),
+				ecorePackage.getEString(), "names_java_lang_String_AsList", null, 0, 1,
+				AliasConfigurationBuilder_cloudfront.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getAliasConfigurationBuilder_cloudfront_SecurityPolicy_software_amazon_awscdk_services_cloudfront_SecurityPolicyProtocol_(),
+				this.getSecurityPolicyProtocol(),
+				"securityPolicy_software_amazon_awscdk_services_cloudfront_SecurityPolicyProtocol_", null, 0, 1,
+				AliasConfigurationBuilder_cloudfront.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getAliasConfigurationBuilder_cloudfront_SslMethod_software_amazon_awscdk_services_cloudfront_SSLMethod_(),
+				this.getSSLMethod(), "sslMethod_software_amazon_awscdk_services_cloudfront_SSLMethod_", null, 0, 1,
+				AliasConfigurationBuilder_cloudfront.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAliasConfigurationBuilder_cloudfront_GeneratedClassName(), ecorePackage.getEString(),
+				"generatedClassName", "software.amazon.awscdk.services.cloudfront.AliasConfiguration", 0, 1,
+				AliasConfigurationBuilder_cloudfront.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAliasConfigurationBuilder_cloudfront_VarName(), ecorePackage.getEString(), "varName", null, 0,
+				1, AliasConfigurationBuilder_cloudfront.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAliasConfigurationBuilder_cloudfront_Identifier(), ecorePackage.getEString(), "identifier",
+				null, 0, 1, AliasConfigurationBuilder_cloudfront.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAliasConfigurationBuilder_cloudfront_AdditionalCode(), ecorePackage.getEString(),
+				"additionalCode", null, 0, 1, AliasConfigurationBuilder_cloudfront.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(loggingConfigurationBuilder_cloudfrontEClass, LoggingConfigurationBuilder_cloudfront.class,
+				"LoggingConfigurationBuilder_cloudfront", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(
+				getLoggingConfigurationBuilder_cloudfront_BucketWithIBucket_software_amazon_awscdk_services_s3_IBucket_AsReference(),
+				ecorePackage.getEString(), "bucketWithIBucket_software_amazon_awscdk_services_s3_IBucket_AsReference",
+				null, 0, 1, LoggingConfigurationBuilder_cloudfront.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getLoggingConfigurationBuilder_cloudfront_IncludeCookies_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "includeCookies_java_lang_Boolean_", null, 0, 1,
+				LoggingConfigurationBuilder_cloudfront.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getLoggingConfigurationBuilder_cloudfront_Prefix_java_lang_String_(), ecorePackage.getEString(),
+				"prefix_java_lang_String_", null, 0, 1, LoggingConfigurationBuilder_cloudfront.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getLoggingConfigurationBuilder_cloudfront_GeneratedClassName(), ecorePackage.getEString(),
+				"generatedClassName", "software.amazon.awscdk.services.cloudfront.LoggingConfiguration", 0, 1,
+				LoggingConfigurationBuilder_cloudfront.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getLoggingConfigurationBuilder_cloudfront_VarName(), ecorePackage.getEString(), "varName", null,
+				0, 1, LoggingConfigurationBuilder_cloudfront.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getLoggingConfigurationBuilder_cloudfront_Identifier(), ecorePackage.getEString(), "identifier",
+				null, 0, 1, LoggingConfigurationBuilder_cloudfront.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getLoggingConfigurationBuilder_cloudfront_AdditionalCode(), ecorePackage.getEString(),
+				"additionalCode", null, 0, 1, LoggingConfigurationBuilder_cloudfront.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(cloudFrontWebDistributionPropsBuilder_cloudfrontEClass,
+				CloudFrontWebDistributionPropsBuilder_cloudfront.class,
+				"CloudFrontWebDistributionPropsBuilder_cloudfront", !IS_ABSTRACT, !IS_INTERFACE,
+				IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(
+				getCloudFrontWebDistributionPropsBuilder_cloudfront_OriginConfigs_software_amazon_awscdk_services_cloudfront_SourceConfiguration_AsList(),
+				ecorePackage.getEString(),
+				"originConfigs_software_amazon_awscdk_services_cloudfront_SourceConfiguration_AsList", null, 0, 1,
+				CloudFrontWebDistributionPropsBuilder_cloudfront.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getCloudFrontWebDistributionPropsBuilder_cloudfront_AliasConfigurationWithAliasConfiguration_software_amazon_awscdk_services_cloudfront_AliasConfiguration_AsReference(),
+				ecorePackage.getEString(),
+				"aliasConfigurationWithAliasConfiguration_software_amazon_awscdk_services_cloudfront_AliasConfiguration_AsReference",
+				null, 0, 1, CloudFrontWebDistributionPropsBuilder_cloudfront.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCloudFrontWebDistributionPropsBuilder_cloudfront_Comment_java_lang_String_(),
+				ecorePackage.getEString(), "comment_java_lang_String_", null, 0, 1,
+				CloudFrontWebDistributionPropsBuilder_cloudfront.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCloudFrontWebDistributionPropsBuilder_cloudfront_DefaultRootObject_java_lang_String_(),
+				ecorePackage.getEString(), "defaultRootObject_java_lang_String_", null, 0, 1,
+				CloudFrontWebDistributionPropsBuilder_cloudfront.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCloudFrontWebDistributionPropsBuilder_cloudfront_EnableIpV6_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "enableIpV6_java_lang_Boolean_", null, 0, 1,
+				CloudFrontWebDistributionPropsBuilder_cloudfront.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getCloudFrontWebDistributionPropsBuilder_cloudfront_ErrorConfigurations_software_amazon_awscdk_services_cloudfront_CfnDistribution_CustomErrorResponseProperty_AsList(),
+				ecorePackage.getEString(),
+				"errorConfigurations_software_amazon_awscdk_services_cloudfront_CfnDistribution_CustomErrorResponseProperty_AsList",
+				null, 0, 1, CloudFrontWebDistributionPropsBuilder_cloudfront.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getCloudFrontWebDistributionPropsBuilder_cloudfront_GeoRestrictionWithGeoRestriction_software_amazon_awscdk_services_cloudfront_GeoRestriction_AsReference(),
+				ecorePackage.getEString(),
+				"geoRestrictionWithGeoRestriction_software_amazon_awscdk_services_cloudfront_GeoRestriction_AsReference",
+				null, 0, 1, CloudFrontWebDistributionPropsBuilder_cloudfront.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getCloudFrontWebDistributionPropsBuilder_cloudfront_HttpVersion_software_amazon_awscdk_services_cloudfront_HttpVersion_(),
+				this.getHttpVersion(), "httpVersion_software_amazon_awscdk_services_cloudfront_HttpVersion_", null, 0,
+				1, CloudFrontWebDistributionPropsBuilder_cloudfront.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getCloudFrontWebDistributionPropsBuilder_cloudfront_LoggingConfigWithLoggingConfiguration_software_amazon_awscdk_services_cloudfront_LoggingConfiguration_AsReference(),
+				ecorePackage.getEString(),
+				"loggingConfigWithLoggingConfiguration_software_amazon_awscdk_services_cloudfront_LoggingConfiguration_AsReference",
+				null, 0, 1, CloudFrontWebDistributionPropsBuilder_cloudfront.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getCloudFrontWebDistributionPropsBuilder_cloudfront_PriceClass_software_amazon_awscdk_services_cloudfront_PriceClass_(),
+				this.getPriceClass(), "priceClass_software_amazon_awscdk_services_cloudfront_PriceClass_", null, 0, 1,
+				CloudFrontWebDistributionPropsBuilder_cloudfront.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getCloudFrontWebDistributionPropsBuilder_cloudfront_ViewerCertificateWithViewerCertificate_software_amazon_awscdk_services_cloudfront_ViewerCertificate_AsReference(),
+				ecorePackage.getEString(),
+				"viewerCertificateWithViewerCertificate_software_amazon_awscdk_services_cloudfront_ViewerCertificate_AsReference",
+				null, 0, 1, CloudFrontWebDistributionPropsBuilder_cloudfront.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getCloudFrontWebDistributionPropsBuilder_cloudfront_ViewerProtocolPolicy_software_amazon_awscdk_services_cloudfront_ViewerProtocolPolicy_(),
+				this.getViewerProtocolPolicy(),
+				"viewerProtocolPolicy_software_amazon_awscdk_services_cloudfront_ViewerProtocolPolicy_", null, 0, 1,
+				CloudFrontWebDistributionPropsBuilder_cloudfront.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCloudFrontWebDistributionPropsBuilder_cloudfront_WebAclId_java_lang_String_(),
+				ecorePackage.getEString(), "webAclId_java_lang_String_", null, 0, 1,
+				CloudFrontWebDistributionPropsBuilder_cloudfront.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCloudFrontWebDistributionPropsBuilder_cloudfront_GeneratedClassName(),
+				ecorePackage.getEString(), "generatedClassName",
+				"software.amazon.awscdk.services.cloudfront.CloudFrontWebDistributionProps", 0, 1,
+				CloudFrontWebDistributionPropsBuilder_cloudfront.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCloudFrontWebDistributionPropsBuilder_cloudfront_VarName(), ecorePackage.getEString(),
+				"varName", null, 0, 1, CloudFrontWebDistributionPropsBuilder_cloudfront.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCloudFrontWebDistributionPropsBuilder_cloudfront_Identifier(), ecorePackage.getEString(),
+				"identifier", null, 0, 1, CloudFrontWebDistributionPropsBuilder_cloudfront.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCloudFrontWebDistributionPropsBuilder_cloudfront_AdditionalCode(), ecorePackage.getEString(),
+				"additionalCode", null, 0, 1, CloudFrontWebDistributionPropsBuilder_cloudfront.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(cloudFrontToApiGatewayBuilder_cloudfrontapigatewayEClass,
 				CloudFrontToApiGatewayBuilder_cloudfrontapigateway.class,
@@ -14331,6 +22346,694 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCloudFrontToS3Builder_cloudfronts3_AdditionalCode(), ecorePackage.getEString(),
 				"additionalCode", null, 0, 1, CloudFrontToS3Builder_cloudfronts3.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(autoVerifiedAttrsBuilder_cognitoEClass, AutoVerifiedAttrsBuilder_cognito.class,
+				"AutoVerifiedAttrsBuilder_cognito", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getAutoVerifiedAttrsBuilder_cognito_Email_java_lang_Boolean_(), ecorePackage.getEBooleanObject(),
+				"email_java_lang_Boolean_", null, 0, 1, AutoVerifiedAttrsBuilder_cognito.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAutoVerifiedAttrsBuilder_cognito_Phone_java_lang_Boolean_(), ecorePackage.getEBooleanObject(),
+				"phone_java_lang_Boolean_", null, 0, 1, AutoVerifiedAttrsBuilder_cognito.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAutoVerifiedAttrsBuilder_cognito_GeneratedClassName(), ecorePackage.getEString(),
+				"generatedClassName", "software.amazon.awscdk.services.cognito.AutoVerifiedAttrs", 0, 1,
+				AutoVerifiedAttrsBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAutoVerifiedAttrsBuilder_cognito_VarName(), ecorePackage.getEString(), "varName", null, 0, 1,
+				AutoVerifiedAttrsBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAutoVerifiedAttrsBuilder_cognito_Identifier(), ecorePackage.getEString(), "identifier", null,
+				0, 1, AutoVerifiedAttrsBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAutoVerifiedAttrsBuilder_cognito_AdditionalCode(), ecorePackage.getEString(),
+				"additionalCode", null, 0, 1, AutoVerifiedAttrsBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(userPoolTriggersBuilder_cognitoEClass, UserPoolTriggersBuilder_cognito.class,
+				"UserPoolTriggersBuilder_cognito", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(
+				getUserPoolTriggersBuilder_cognito_CreateAuthChallengeWithIFunction_software_amazon_awscdk_services_lambda_IFunction_AsReference(),
+				ecorePackage.getEString(),
+				"createAuthChallengeWithIFunction_software_amazon_awscdk_services_lambda_IFunction_AsReference", null,
+				0, 1, UserPoolTriggersBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getUserPoolTriggersBuilder_cognito_CustomMessageWithIFunction_software_amazon_awscdk_services_lambda_IFunction_AsReference(),
+				ecorePackage.getEString(),
+				"customMessageWithIFunction_software_amazon_awscdk_services_lambda_IFunction_AsReference", null, 0, 1,
+				UserPoolTriggersBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getUserPoolTriggersBuilder_cognito_DefineAuthChallengeWithIFunction_software_amazon_awscdk_services_lambda_IFunction_AsReference(),
+				ecorePackage.getEString(),
+				"defineAuthChallengeWithIFunction_software_amazon_awscdk_services_lambda_IFunction_AsReference", null,
+				0, 1, UserPoolTriggersBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getUserPoolTriggersBuilder_cognito_PostAuthenticationWithIFunction_software_amazon_awscdk_services_lambda_IFunction_AsReference(),
+				ecorePackage.getEString(),
+				"postAuthenticationWithIFunction_software_amazon_awscdk_services_lambda_IFunction_AsReference", null, 0,
+				1, UserPoolTriggersBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getUserPoolTriggersBuilder_cognito_PostConfirmationWithIFunction_software_amazon_awscdk_services_lambda_IFunction_AsReference(),
+				ecorePackage.getEString(),
+				"postConfirmationWithIFunction_software_amazon_awscdk_services_lambda_IFunction_AsReference", null, 0,
+				1, UserPoolTriggersBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getUserPoolTriggersBuilder_cognito_PreAuthenticationWithIFunction_software_amazon_awscdk_services_lambda_IFunction_AsReference(),
+				ecorePackage.getEString(),
+				"preAuthenticationWithIFunction_software_amazon_awscdk_services_lambda_IFunction_AsReference", null, 0,
+				1, UserPoolTriggersBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getUserPoolTriggersBuilder_cognito_PreSignUpWithIFunction_software_amazon_awscdk_services_lambda_IFunction_AsReference(),
+				ecorePackage.getEString(),
+				"preSignUpWithIFunction_software_amazon_awscdk_services_lambda_IFunction_AsReference", null, 0, 1,
+				UserPoolTriggersBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getUserPoolTriggersBuilder_cognito_PreTokenGenerationWithIFunction_software_amazon_awscdk_services_lambda_IFunction_AsReference(),
+				ecorePackage.getEString(),
+				"preTokenGenerationWithIFunction_software_amazon_awscdk_services_lambda_IFunction_AsReference", null, 0,
+				1, UserPoolTriggersBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getUserPoolTriggersBuilder_cognito_UserMigrationWithIFunction_software_amazon_awscdk_services_lambda_IFunction_AsReference(),
+				ecorePackage.getEString(),
+				"userMigrationWithIFunction_software_amazon_awscdk_services_lambda_IFunction_AsReference", null, 0, 1,
+				UserPoolTriggersBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getUserPoolTriggersBuilder_cognito_VerifyAuthChallengeResponseWithIFunction_software_amazon_awscdk_services_lambda_IFunction_AsReference(),
+				ecorePackage.getEString(),
+				"verifyAuthChallengeResponseWithIFunction_software_amazon_awscdk_services_lambda_IFunction_AsReference",
+				null, 0, 1, UserPoolTriggersBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getUserPoolTriggersBuilder_cognito_GeneratedClassName(), ecorePackage.getEString(),
+				"generatedClassName", "software.amazon.awscdk.services.cognito.UserPoolTriggers", 0, 1,
+				UserPoolTriggersBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getUserPoolTriggersBuilder_cognito_VarName(), ecorePackage.getEString(), "varName", null, 0, 1,
+				UserPoolTriggersBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getUserPoolTriggersBuilder_cognito_Identifier(), ecorePackage.getEString(), "identifier", null,
+				0, 1, UserPoolTriggersBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getUserPoolTriggersBuilder_cognito_AdditionalCode(), ecorePackage.getEString(), "additionalCode",
+				null, 0, 1, UserPoolTriggersBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(emailSettingsBuilder_cognitoEClass, EmailSettingsBuilder_cognito.class,
+				"EmailSettingsBuilder_cognito", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getEmailSettingsBuilder_cognito_From_java_lang_String_(), ecorePackage.getEString(),
+				"from_java_lang_String_", null, 0, 1, EmailSettingsBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getEmailSettingsBuilder_cognito_ReplyTo_java_lang_String_(), ecorePackage.getEString(),
+				"replyTo_java_lang_String_", null, 0, 1, EmailSettingsBuilder_cognito.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getEmailSettingsBuilder_cognito_GeneratedClassName(), ecorePackage.getEString(),
+				"generatedClassName", "software.amazon.awscdk.services.cognito.EmailSettings", 0, 1,
+				EmailSettingsBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getEmailSettingsBuilder_cognito_VarName(), ecorePackage.getEString(), "varName", null, 0, 1,
+				EmailSettingsBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getEmailSettingsBuilder_cognito_Identifier(), ecorePackage.getEString(), "identifier", null, 0,
+				1, EmailSettingsBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getEmailSettingsBuilder_cognito_AdditionalCode(), ecorePackage.getEString(), "additionalCode",
+				null, 0, 1, EmailSettingsBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(passwordPolicyBuilder_cognitoEClass, PasswordPolicyBuilder_cognito.class,
+				"PasswordPolicyBuilder_cognito", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getPasswordPolicyBuilder_cognito_MinLength_java_lang_Number_(), ecorePackage.getEInt(),
+				"minLength_java_lang_Number_", null, 0, 1, PasswordPolicyBuilder_cognito.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPasswordPolicyBuilder_cognito_RequireDigits_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "requireDigits_java_lang_Boolean_", null, 0, 1,
+				PasswordPolicyBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPasswordPolicyBuilder_cognito_RequireLowercase_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "requireLowercase_java_lang_Boolean_", null, 0, 1,
+				PasswordPolicyBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPasswordPolicyBuilder_cognito_RequireSymbols_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "requireSymbols_java_lang_Boolean_", null, 0, 1,
+				PasswordPolicyBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPasswordPolicyBuilder_cognito_RequireUppercase_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "requireUppercase_java_lang_Boolean_", null, 0, 1,
+				PasswordPolicyBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getPasswordPolicyBuilder_cognito_TempPasswordValidityWithDuration_software_amazon_awscdk_core_Duration_AsReference(),
+				ecorePackage.getEString(),
+				"tempPasswordValidityWithDuration_software_amazon_awscdk_core_Duration_AsReference", null, 0, 1,
+				PasswordPolicyBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPasswordPolicyBuilder_cognito_GeneratedClassName(), ecorePackage.getEString(),
+				"generatedClassName", "software.amazon.awscdk.services.cognito.PasswordPolicy", 0, 1,
+				PasswordPolicyBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPasswordPolicyBuilder_cognito_VarName(), ecorePackage.getEString(), "varName", null, 0, 1,
+				PasswordPolicyBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPasswordPolicyBuilder_cognito_Identifier(), ecorePackage.getEString(), "identifier", null, 0,
+				1, PasswordPolicyBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPasswordPolicyBuilder_cognito_AdditionalCode(), ecorePackage.getEString(), "additionalCode",
+				null, 0, 1, PasswordPolicyBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(mfaSecondFactorBuilder_cognitoEClass, MfaSecondFactorBuilder_cognito.class,
+				"MfaSecondFactorBuilder_cognito", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getMfaSecondFactorBuilder_cognito_Otp_java_lang_Boolean_(), ecorePackage.getEBooleanObject(),
+				"otp_java_lang_Boolean_", null, 0, 1, MfaSecondFactorBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getMfaSecondFactorBuilder_cognito_Sms_java_lang_Boolean_(), ecorePackage.getEBooleanObject(),
+				"sms_java_lang_Boolean_", null, 0, 1, MfaSecondFactorBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getMfaSecondFactorBuilder_cognito_GeneratedClassName(), ecorePackage.getEString(),
+				"generatedClassName", "software.amazon.awscdk.services.cognito.MfaSecondFactor", 0, 1,
+				MfaSecondFactorBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getMfaSecondFactorBuilder_cognito_VarName(), ecorePackage.getEString(), "varName", null, 0, 1,
+				MfaSecondFactorBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getMfaSecondFactorBuilder_cognito_Identifier(), ecorePackage.getEString(), "identifier", null, 0,
+				1, MfaSecondFactorBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getMfaSecondFactorBuilder_cognito_AdditionalCode(), ecorePackage.getEString(), "additionalCode",
+				null, 0, 1, MfaSecondFactorBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(requiredAttributesBuilder_cognitoEClass, RequiredAttributesBuilder_cognito.class,
+				"RequiredAttributesBuilder_cognito", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getRequiredAttributesBuilder_cognito_Address_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "address_java_lang_Boolean_", null, 0, 1,
+				RequiredAttributesBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getRequiredAttributesBuilder_cognito_Birthdate_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "birthdate_java_lang_Boolean_", null, 0, 1,
+				RequiredAttributesBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getRequiredAttributesBuilder_cognito_Email_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "email_java_lang_Boolean_", null, 0, 1,
+				RequiredAttributesBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getRequiredAttributesBuilder_cognito_FamilyName_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "familyName_java_lang_Boolean_", null, 0, 1,
+				RequiredAttributesBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getRequiredAttributesBuilder_cognito_Fullname_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "fullname_java_lang_Boolean_", null, 0, 1,
+				RequiredAttributesBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getRequiredAttributesBuilder_cognito_Gender_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "gender_java_lang_Boolean_", null, 0, 1,
+				RequiredAttributesBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getRequiredAttributesBuilder_cognito_GivenName_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "givenName_java_lang_Boolean_", null, 0, 1,
+				RequiredAttributesBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getRequiredAttributesBuilder_cognito_LastUpdateTime_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "lastUpdateTime_java_lang_Boolean_", null, 0, 1,
+				RequiredAttributesBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getRequiredAttributesBuilder_cognito_Locale_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "locale_java_lang_Boolean_", null, 0, 1,
+				RequiredAttributesBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getRequiredAttributesBuilder_cognito_MiddleName_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "middleName_java_lang_Boolean_", null, 0, 1,
+				RequiredAttributesBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getRequiredAttributesBuilder_cognito_Nickname_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "nickname_java_lang_Boolean_", null, 0, 1,
+				RequiredAttributesBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getRequiredAttributesBuilder_cognito_PhoneNumber_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "phoneNumber_java_lang_Boolean_", null, 0, 1,
+				RequiredAttributesBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getRequiredAttributesBuilder_cognito_PreferredUsername_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "preferredUsername_java_lang_Boolean_", null, 0, 1,
+				RequiredAttributesBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getRequiredAttributesBuilder_cognito_ProfilePage_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "profilePage_java_lang_Boolean_", null, 0, 1,
+				RequiredAttributesBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getRequiredAttributesBuilder_cognito_ProfilePicture_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "profilePicture_java_lang_Boolean_", null, 0, 1,
+				RequiredAttributesBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getRequiredAttributesBuilder_cognito_Timezone_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "timezone_java_lang_Boolean_", null, 0, 1,
+				RequiredAttributesBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getRequiredAttributesBuilder_cognito_Website_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "website_java_lang_Boolean_", null, 0, 1,
+				RequiredAttributesBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getRequiredAttributesBuilder_cognito_GeneratedClassName(), ecorePackage.getEString(),
+				"generatedClassName", "software.amazon.awscdk.services.cognito.RequiredAttributes", 0, 1,
+				RequiredAttributesBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getRequiredAttributesBuilder_cognito_VarName(), ecorePackage.getEString(), "varName", null, 0, 1,
+				RequiredAttributesBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getRequiredAttributesBuilder_cognito_Identifier(), ecorePackage.getEString(), "identifier", null,
+				0, 1, RequiredAttributesBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getRequiredAttributesBuilder_cognito_AdditionalCode(), ecorePackage.getEString(),
+				"additionalCode", null, 0, 1, RequiredAttributesBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(signInAliasesBuilder_cognitoEClass, SignInAliasesBuilder_cognito.class,
+				"SignInAliasesBuilder_cognito", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getSignInAliasesBuilder_cognito_Email_java_lang_Boolean_(), ecorePackage.getEBooleanObject(),
+				"email_java_lang_Boolean_", null, 0, 1, SignInAliasesBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getSignInAliasesBuilder_cognito_Phone_java_lang_Boolean_(), ecorePackage.getEBooleanObject(),
+				"phone_java_lang_Boolean_", null, 0, 1, SignInAliasesBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getSignInAliasesBuilder_cognito_PreferredUsername_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "preferredUsername_java_lang_Boolean_", null, 0, 1,
+				SignInAliasesBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getSignInAliasesBuilder_cognito_Username_java_lang_Boolean_(), ecorePackage.getEBooleanObject(),
+				"username_java_lang_Boolean_", null, 0, 1, SignInAliasesBuilder_cognito.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getSignInAliasesBuilder_cognito_GeneratedClassName(), ecorePackage.getEString(),
+				"generatedClassName", "software.amazon.awscdk.services.cognito.SignInAliases", 0, 1,
+				SignInAliasesBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getSignInAliasesBuilder_cognito_VarName(), ecorePackage.getEString(), "varName", null, 0, 1,
+				SignInAliasesBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getSignInAliasesBuilder_cognito_Identifier(), ecorePackage.getEString(), "identifier", null, 0,
+				1, SignInAliasesBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getSignInAliasesBuilder_cognito_AdditionalCode(), ecorePackage.getEString(), "additionalCode",
+				null, 0, 1, SignInAliasesBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(userInvitationConfigBuilder_cognitoEClass, UserInvitationConfigBuilder_cognito.class,
+				"UserInvitationConfigBuilder_cognito", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getUserInvitationConfigBuilder_cognito_EmailBody_java_lang_String_(), ecorePackage.getEString(),
+				"emailBody_java_lang_String_", null, 0, 1, UserInvitationConfigBuilder_cognito.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getUserInvitationConfigBuilder_cognito_EmailSubject_java_lang_String_(),
+				ecorePackage.getEString(), "emailSubject_java_lang_String_", null, 0, 1,
+				UserInvitationConfigBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getUserInvitationConfigBuilder_cognito_SmsMessage_java_lang_String_(), ecorePackage.getEString(),
+				"smsMessage_java_lang_String_", null, 0, 1, UserInvitationConfigBuilder_cognito.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getUserInvitationConfigBuilder_cognito_GeneratedClassName(), ecorePackage.getEString(),
+				"generatedClassName", "software.amazon.awscdk.services.cognito.UserInvitationConfig", 0, 1,
+				UserInvitationConfigBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getUserInvitationConfigBuilder_cognito_VarName(), ecorePackage.getEString(), "varName", null, 0,
+				1, UserInvitationConfigBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getUserInvitationConfigBuilder_cognito_Identifier(), ecorePackage.getEString(), "identifier",
+				null, 0, 1, UserInvitationConfigBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getUserInvitationConfigBuilder_cognito_AdditionalCode(), ecorePackage.getEString(),
+				"additionalCode", null, 0, 1, UserInvitationConfigBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(userVerificationConfigBuilder_cognitoEClass, UserVerificationConfigBuilder_cognito.class,
+				"UserVerificationConfigBuilder_cognito", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getUserVerificationConfigBuilder_cognito_EmailBody_java_lang_String_(),
+				ecorePackage.getEString(), "emailBody_java_lang_String_", null, 0, 1,
+				UserVerificationConfigBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getUserVerificationConfigBuilder_cognito_EmailStyle_software_amazon_awscdk_services_cognito_VerificationEmailStyle_(),
+				this.getVerificationEmailStyle(),
+				"emailStyle_software_amazon_awscdk_services_cognito_VerificationEmailStyle_", null, 0, 1,
+				UserVerificationConfigBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getUserVerificationConfigBuilder_cognito_EmailSubject_java_lang_String_(),
+				ecorePackage.getEString(), "emailSubject_java_lang_String_", null, 0, 1,
+				UserVerificationConfigBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getUserVerificationConfigBuilder_cognito_SmsMessage_java_lang_String_(),
+				ecorePackage.getEString(), "smsMessage_java_lang_String_", null, 0, 1,
+				UserVerificationConfigBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getUserVerificationConfigBuilder_cognito_GeneratedClassName(), ecorePackage.getEString(),
+				"generatedClassName", "software.amazon.awscdk.services.cognito.UserVerificationConfig", 0, 1,
+				UserVerificationConfigBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getUserVerificationConfigBuilder_cognito_VarName(), ecorePackage.getEString(), "varName", null,
+				0, 1, UserVerificationConfigBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getUserVerificationConfigBuilder_cognito_Identifier(), ecorePackage.getEString(), "identifier",
+				null, 0, 1, UserVerificationConfigBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getUserVerificationConfigBuilder_cognito_AdditionalCode(), ecorePackage.getEString(),
+				"additionalCode", null, 0, 1, UserVerificationConfigBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(userPoolPropsBuilder_cognitoEClass, UserPoolPropsBuilder_cognito.class,
+				"UserPoolPropsBuilder_cognito", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(
+				getUserPoolPropsBuilder_cognito_AutoVerifyWithAutoVerifiedAttrs_software_amazon_awscdk_services_cognito_AutoVerifiedAttrs_AsReference(),
+				ecorePackage.getEString(),
+				"autoVerifyWithAutoVerifiedAttrs_software_amazon_awscdk_services_cognito_AutoVerifiedAttrs_AsReference",
+				null, 0, 1, UserPoolPropsBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getUserPoolPropsBuilder_cognito_CustomAttributes_java_lang_String__software_amazon_awscdk_services_cognito_ICustomAttribute_AsMap(),
+				ecorePackage.getEString(),
+				"customAttributes_java_lang_String__software_amazon_awscdk_services_cognito_ICustomAttribute_AsMap",
+				null, 0, 1, UserPoolPropsBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getUserPoolPropsBuilder_cognito_EmailSettingsWithEmailSettings_software_amazon_awscdk_services_cognito_EmailSettings_AsReference(),
+				ecorePackage.getEString(),
+				"emailSettingsWithEmailSettings_software_amazon_awscdk_services_cognito_EmailSettings_AsReference",
+				null, 0, 1, UserPoolPropsBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getUserPoolPropsBuilder_cognito_LambdaTriggersWithUserPoolTriggers_software_amazon_awscdk_services_cognito_UserPoolTriggers_AsReference(),
+				ecorePackage.getEString(),
+				"lambdaTriggersWithUserPoolTriggers_software_amazon_awscdk_services_cognito_UserPoolTriggers_AsReference",
+				null, 0, 1, UserPoolPropsBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getUserPoolPropsBuilder_cognito_Mfa_software_amazon_awscdk_services_cognito_Mfa_(),
+				this.getMfa(), "mfa_software_amazon_awscdk_services_cognito_Mfa_", null, 0, 1,
+				UserPoolPropsBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getUserPoolPropsBuilder_cognito_MfaSecondFactorWithMfaSecondFactor_software_amazon_awscdk_services_cognito_MfaSecondFactor_AsReference(),
+				ecorePackage.getEString(),
+				"mfaSecondFactorWithMfaSecondFactor_software_amazon_awscdk_services_cognito_MfaSecondFactor_AsReference",
+				null, 0, 1, UserPoolPropsBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getUserPoolPropsBuilder_cognito_PasswordPolicyWithPasswordPolicy_software_amazon_awscdk_services_cognito_PasswordPolicy_AsReference(),
+				ecorePackage.getEString(),
+				"passwordPolicyWithPasswordPolicy_software_amazon_awscdk_services_cognito_PasswordPolicy_AsReference",
+				null, 0, 1, UserPoolPropsBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getUserPoolPropsBuilder_cognito_RequiredAttributesWithRequiredAttributes_software_amazon_awscdk_services_cognito_RequiredAttributes_AsReference(),
+				ecorePackage.getEString(),
+				"requiredAttributesWithRequiredAttributes_software_amazon_awscdk_services_cognito_RequiredAttributes_AsReference",
+				null, 0, 1, UserPoolPropsBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getUserPoolPropsBuilder_cognito_SelfSignUpEnabled_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "selfSignUpEnabled_java_lang_Boolean_", null, 0, 1,
+				UserPoolPropsBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getUserPoolPropsBuilder_cognito_SignInAliasesWithSignInAliases_software_amazon_awscdk_services_cognito_SignInAliases_AsReference(),
+				ecorePackage.getEString(),
+				"signInAliasesWithSignInAliases_software_amazon_awscdk_services_cognito_SignInAliases_AsReference",
+				null, 0, 1, UserPoolPropsBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getUserPoolPropsBuilder_cognito_SignInCaseSensitive_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "signInCaseSensitive_java_lang_Boolean_", null, 0, 1,
+				UserPoolPropsBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getUserPoolPropsBuilder_cognito_SmsRoleWithIRole_software_amazon_awscdk_services_iam_IRole_AsReference(),
+				ecorePackage.getEString(), "smsRoleWithIRole_software_amazon_awscdk_services_iam_IRole_AsReference",
+				null, 0, 1, UserPoolPropsBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getUserPoolPropsBuilder_cognito_SmsRoleExternalId_java_lang_String_(), ecorePackage.getEString(),
+				"smsRoleExternalId_java_lang_String_", null, 0, 1, UserPoolPropsBuilder_cognito.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getUserPoolPropsBuilder_cognito_UserInvitationWithUserInvitationConfig_software_amazon_awscdk_services_cognito_UserInvitationConfig_AsReference(),
+				ecorePackage.getEString(),
+				"userInvitationWithUserInvitationConfig_software_amazon_awscdk_services_cognito_UserInvitationConfig_AsReference",
+				null, 0, 1, UserPoolPropsBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getUserPoolPropsBuilder_cognito_UserPoolName_java_lang_String_(), ecorePackage.getEString(),
+				"userPoolName_java_lang_String_", null, 0, 1, UserPoolPropsBuilder_cognito.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getUserPoolPropsBuilder_cognito_UserVerificationWithUserVerificationConfig_software_amazon_awscdk_services_cognito_UserVerificationConfig_AsReference(),
+				ecorePackage.getEString(),
+				"userVerificationWithUserVerificationConfig_software_amazon_awscdk_services_cognito_UserVerificationConfig_AsReference",
+				null, 0, 1, UserPoolPropsBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getUserPoolPropsBuilder_cognito_GeneratedClassName(), ecorePackage.getEString(),
+				"generatedClassName", "software.amazon.awscdk.services.cognito.UserPoolProps", 0, 1,
+				UserPoolPropsBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getUserPoolPropsBuilder_cognito_VarName(), ecorePackage.getEString(), "varName", null, 0, 1,
+				UserPoolPropsBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getUserPoolPropsBuilder_cognito_Identifier(), ecorePackage.getEString(), "identifier", null, 0,
+				1, UserPoolPropsBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getUserPoolPropsBuilder_cognito_AdditionalCode(), ecorePackage.getEString(), "additionalCode",
+				null, 0, 1, UserPoolPropsBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(userPoolBuilder_cognitoEClass, UserPoolBuilder_cognito.class, "UserPoolBuilder_cognito",
+				!IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(
+				getUserPoolBuilder_cognito_AutoVerifyWithAutoVerifiedAttrs_software_amazon_awscdk_services_cognito_AutoVerifiedAttrs_AsReference(),
+				ecorePackage.getEString(),
+				"autoVerifyWithAutoVerifiedAttrs_software_amazon_awscdk_services_cognito_AutoVerifiedAttrs_AsReference",
+				null, 0, 1, UserPoolBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getUserPoolBuilder_cognito_CustomAttributes_java_lang_String__software_amazon_awscdk_services_cognito_ICustomAttribute_AsMap(),
+				ecorePackage.getEString(),
+				"customAttributes_java_lang_String__software_amazon_awscdk_services_cognito_ICustomAttribute_AsMap",
+				null, 0, 1, UserPoolBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getUserPoolBuilder_cognito_EmailSettingsWithEmailSettings_software_amazon_awscdk_services_cognito_EmailSettings_AsReference(),
+				ecorePackage.getEString(),
+				"emailSettingsWithEmailSettings_software_amazon_awscdk_services_cognito_EmailSettings_AsReference",
+				null, 0, 1, UserPoolBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getUserPoolBuilder_cognito_LambdaTriggersWithUserPoolTriggers_software_amazon_awscdk_services_cognito_UserPoolTriggers_AsReference(),
+				ecorePackage.getEString(),
+				"lambdaTriggersWithUserPoolTriggers_software_amazon_awscdk_services_cognito_UserPoolTriggers_AsReference",
+				null, 0, 1, UserPoolBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getUserPoolBuilder_cognito_Mfa_software_amazon_awscdk_services_cognito_Mfa_(), this.getMfa(),
+				"mfa_software_amazon_awscdk_services_cognito_Mfa_", null, 0, 1, UserPoolBuilder_cognito.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getUserPoolBuilder_cognito_MfaSecondFactorWithMfaSecondFactor_software_amazon_awscdk_services_cognito_MfaSecondFactor_AsReference(),
+				ecorePackage.getEString(),
+				"mfaSecondFactorWithMfaSecondFactor_software_amazon_awscdk_services_cognito_MfaSecondFactor_AsReference",
+				null, 0, 1, UserPoolBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getUserPoolBuilder_cognito_PasswordPolicyWithPasswordPolicy_software_amazon_awscdk_services_cognito_PasswordPolicy_AsReference(),
+				ecorePackage.getEString(),
+				"passwordPolicyWithPasswordPolicy_software_amazon_awscdk_services_cognito_PasswordPolicy_AsReference",
+				null, 0, 1, UserPoolBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getUserPoolBuilder_cognito_RequiredAttributesWithRequiredAttributes_software_amazon_awscdk_services_cognito_RequiredAttributes_AsReference(),
+				ecorePackage.getEString(),
+				"requiredAttributesWithRequiredAttributes_software_amazon_awscdk_services_cognito_RequiredAttributes_AsReference",
+				null, 0, 1, UserPoolBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getUserPoolBuilder_cognito_SelfSignUpEnabled_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "selfSignUpEnabled_java_lang_Boolean_", null, 0, 1,
+				UserPoolBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getUserPoolBuilder_cognito_SignInAliasesWithSignInAliases_software_amazon_awscdk_services_cognito_SignInAliases_AsReference(),
+				ecorePackage.getEString(),
+				"signInAliasesWithSignInAliases_software_amazon_awscdk_services_cognito_SignInAliases_AsReference",
+				null, 0, 1, UserPoolBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getUserPoolBuilder_cognito_SignInCaseSensitive_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "signInCaseSensitive_java_lang_Boolean_", null, 0, 1,
+				UserPoolBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getUserPoolBuilder_cognito_SmsRoleWithIRole_software_amazon_awscdk_services_iam_IRole_AsReference(),
+				ecorePackage.getEString(), "smsRoleWithIRole_software_amazon_awscdk_services_iam_IRole_AsReference",
+				null, 0, 1, UserPoolBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getUserPoolBuilder_cognito_SmsRoleExternalId_java_lang_String_(), ecorePackage.getEString(),
+				"smsRoleExternalId_java_lang_String_", null, 0, 1, UserPoolBuilder_cognito.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getUserPoolBuilder_cognito_UserInvitationWithUserInvitationConfig_software_amazon_awscdk_services_cognito_UserInvitationConfig_AsReference(),
+				ecorePackage.getEString(),
+				"userInvitationWithUserInvitationConfig_software_amazon_awscdk_services_cognito_UserInvitationConfig_AsReference",
+				null, 0, 1, UserPoolBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getUserPoolBuilder_cognito_UserPoolName_java_lang_String_(), ecorePackage.getEString(),
+				"userPoolName_java_lang_String_", null, 0, 1, UserPoolBuilder_cognito.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getUserPoolBuilder_cognito_UserVerificationWithUserVerificationConfig_software_amazon_awscdk_services_cognito_UserVerificationConfig_AsReference(),
+				ecorePackage.getEString(),
+				"userVerificationWithUserVerificationConfig_software_amazon_awscdk_services_cognito_UserVerificationConfig_AsReference",
+				null, 0, 1, UserPoolBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getUserPoolBuilder_cognito_GeneratedClassName(), ecorePackage.getEString(), "generatedClassName",
+				"software.amazon.awscdk.services.cognito.UserPool", 0, 1, UserPoolBuilder_cognito.class, !IS_TRANSIENT,
+				!IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getUserPoolBuilder_cognito_VarName(), ecorePackage.getEString(), "varName", null, 0, 1,
+				UserPoolBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getUserPoolBuilder_cognito_Identifier(), ecorePackage.getEString(), "identifier", null, 0, 1,
+				UserPoolBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getUserPoolBuilder_cognito_AdditionalCode(), ecorePackage.getEString(), "additionalCode", null,
+				0, 1, UserPoolBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(authFlowBuilder_cognitoEClass, AuthFlowBuilder_cognito.class, "AuthFlowBuilder_cognito",
+				!IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getAuthFlowBuilder_cognito_AdminUserPassword_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "adminUserPassword_java_lang_Boolean_", null, 0, 1,
+				AuthFlowBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAuthFlowBuilder_cognito_Custom_java_lang_Boolean_(), ecorePackage.getEBooleanObject(),
+				"custom_java_lang_Boolean_", null, 0, 1, AuthFlowBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAuthFlowBuilder_cognito_RefreshToken_java_lang_Boolean_(), ecorePackage.getEBooleanObject(),
+				"refreshToken_java_lang_Boolean_", null, 0, 1, AuthFlowBuilder_cognito.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAuthFlowBuilder_cognito_UserPassword_java_lang_Boolean_(), ecorePackage.getEBooleanObject(),
+				"userPassword_java_lang_Boolean_", null, 0, 1, AuthFlowBuilder_cognito.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAuthFlowBuilder_cognito_UserSrp_java_lang_Boolean_(), ecorePackage.getEBooleanObject(),
+				"userSrp_java_lang_Boolean_", null, 0, 1, AuthFlowBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAuthFlowBuilder_cognito_GeneratedClassName(), ecorePackage.getEString(), "generatedClassName",
+				"software.amazon.awscdk.services.cognito.AuthFlow", 0, 1, AuthFlowBuilder_cognito.class, !IS_TRANSIENT,
+				!IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAuthFlowBuilder_cognito_VarName(), ecorePackage.getEString(), "varName", null, 0, 1,
+				AuthFlowBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAuthFlowBuilder_cognito_Identifier(), ecorePackage.getEString(), "identifier", null, 0, 1,
+				AuthFlowBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAuthFlowBuilder_cognito_AdditionalCode(), ecorePackage.getEString(), "additionalCode", null,
+				0, 1, AuthFlowBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(oAuthFlowsBuilder_cognitoEClass, OAuthFlowsBuilder_cognito.class, "OAuthFlowsBuilder_cognito",
+				!IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getOAuthFlowsBuilder_cognito_AuthorizationCodeGrant_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "authorizationCodeGrant_java_lang_Boolean_", null, 0, 1,
+				OAuthFlowsBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getOAuthFlowsBuilder_cognito_ClientCredentials_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "clientCredentials_java_lang_Boolean_", null, 0, 1,
+				OAuthFlowsBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getOAuthFlowsBuilder_cognito_ImplicitCodeGrant_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "implicitCodeGrant_java_lang_Boolean_", null, 0, 1,
+				OAuthFlowsBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getOAuthFlowsBuilder_cognito_GeneratedClassName(), ecorePackage.getEString(),
+				"generatedClassName", "software.amazon.awscdk.services.cognito.OAuthFlows", 0, 1,
+				OAuthFlowsBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getOAuthFlowsBuilder_cognito_VarName(), ecorePackage.getEString(), "varName", null, 0, 1,
+				OAuthFlowsBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getOAuthFlowsBuilder_cognito_Identifier(), ecorePackage.getEString(), "identifier", null, 0, 1,
+				OAuthFlowsBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getOAuthFlowsBuilder_cognito_AdditionalCode(), ecorePackage.getEString(), "additionalCode", null,
+				0, 1, OAuthFlowsBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(oAuthSettingsBuilder_cognitoEClass, OAuthSettingsBuilder_cognito.class,
+				"OAuthSettingsBuilder_cognito", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getOAuthSettingsBuilder_cognito_CallbackUrls_java_lang_String_AsList(),
+				ecorePackage.getEString(), "callbackUrls_java_lang_String_AsList", null, 0, 1,
+				OAuthSettingsBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getOAuthSettingsBuilder_cognito_FlowsWithOAuthFlows_software_amazon_awscdk_services_cognito_OAuthFlows_AsReference(),
+				ecorePackage.getEString(),
+				"flowsWithOAuthFlows_software_amazon_awscdk_services_cognito_OAuthFlows_AsReference", null, 0, 1,
+				OAuthSettingsBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getOAuthSettingsBuilder_cognito_Scopes_software_amazon_awscdk_services_cognito_OAuthScope_AsList(),
+				ecorePackage.getEString(), "scopes_software_amazon_awscdk_services_cognito_OAuthScope_AsList", null, 0,
+				1, OAuthSettingsBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getOAuthSettingsBuilder_cognito_GeneratedClassName(), ecorePackage.getEString(),
+				"generatedClassName", "software.amazon.awscdk.services.cognito.OAuthSettings", 0, 1,
+				OAuthSettingsBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getOAuthSettingsBuilder_cognito_VarName(), ecorePackage.getEString(), "varName", null, 0, 1,
+				OAuthSettingsBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getOAuthSettingsBuilder_cognito_Identifier(), ecorePackage.getEString(), "identifier", null, 0,
+				1, OAuthSettingsBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getOAuthSettingsBuilder_cognito_AdditionalCode(), ecorePackage.getEString(), "additionalCode",
+				null, 0, 1, OAuthSettingsBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(userPoolClientPropsBuilder_cognitoEClass, UserPoolClientPropsBuilder_cognito.class,
+				"UserPoolClientPropsBuilder_cognito", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(
+				getUserPoolClientPropsBuilder_cognito_UserPoolWithIUserPool_software_amazon_awscdk_services_cognito_IUserPool_AsReference(),
+				ecorePackage.getEString(),
+				"userPoolWithIUserPool_software_amazon_awscdk_services_cognito_IUserPool_AsReference", null, 0, 1,
+				UserPoolClientPropsBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getUserPoolClientPropsBuilder_cognito_AuthFlowsWithAuthFlow_software_amazon_awscdk_services_cognito_AuthFlow_AsReference(),
+				ecorePackage.getEString(),
+				"authFlowsWithAuthFlow_software_amazon_awscdk_services_cognito_AuthFlow_AsReference", null, 0, 1,
+				UserPoolClientPropsBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getUserPoolClientPropsBuilder_cognito_GenerateSecret_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "generateSecret_java_lang_Boolean_", null, 0, 1,
+				UserPoolClientPropsBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getUserPoolClientPropsBuilder_cognito_OAuthWithOAuthSettings_software_amazon_awscdk_services_cognito_OAuthSettings_AsReference(),
+				ecorePackage.getEString(),
+				"oAuthWithOAuthSettings_software_amazon_awscdk_services_cognito_OAuthSettings_AsReference", null, 0, 1,
+				UserPoolClientPropsBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getUserPoolClientPropsBuilder_cognito_PreventUserExistenceErrors_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "preventUserExistenceErrors_java_lang_Boolean_", null, 0, 1,
+				UserPoolClientPropsBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getUserPoolClientPropsBuilder_cognito_UserPoolClientName_java_lang_String_(),
+				ecorePackage.getEString(), "userPoolClientName_java_lang_String_", null, 0, 1,
+				UserPoolClientPropsBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getUserPoolClientPropsBuilder_cognito_GeneratedClassName(), ecorePackage.getEString(),
+				"generatedClassName", "software.amazon.awscdk.services.cognito.UserPoolClientProps", 0, 1,
+				UserPoolClientPropsBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getUserPoolClientPropsBuilder_cognito_VarName(), ecorePackage.getEString(), "varName", null, 0,
+				1, UserPoolClientPropsBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getUserPoolClientPropsBuilder_cognito_Identifier(), ecorePackage.getEString(), "identifier",
+				null, 0, 1, UserPoolClientPropsBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getUserPoolClientPropsBuilder_cognito_AdditionalCode(), ecorePackage.getEString(),
+				"additionalCode", null, 0, 1, UserPoolClientPropsBuilder_cognito.class, !IS_TRANSIENT, !IS_VOLATILE,
 				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(cognitoToApiGatewayToLambdaBuilder_cognitoapigatewaylambdaEClass,
@@ -15961,6 +24664,94 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 		addEEnumLiteral(jsonSchemaTypeEEnum, JsonSchemaType.NUMBER);
 		addEEnumLiteral(jsonSchemaTypeEEnum, JsonSchemaType.INTEGER);
 		addEEnumLiteral(jsonSchemaTypeEEnum, JsonSchemaType.STRING);
+
+		initEEnum(cloudFrontAllowedCachedMethodsEEnum, CloudFrontAllowedCachedMethods.class,
+				"CloudFrontAllowedCachedMethods");
+		addEEnumLiteral(cloudFrontAllowedCachedMethodsEEnum, CloudFrontAllowedCachedMethods.GET_HEAD);
+		addEEnumLiteral(cloudFrontAllowedCachedMethodsEEnum, CloudFrontAllowedCachedMethods.GET_HEAD_OPTIONS);
+
+		initEEnum(cloudFrontAllowedMethodsEEnum, CloudFrontAllowedMethods.class, "CloudFrontAllowedMethods");
+		addEEnumLiteral(cloudFrontAllowedMethodsEEnum, CloudFrontAllowedMethods.GET_HEAD);
+		addEEnumLiteral(cloudFrontAllowedMethodsEEnum, CloudFrontAllowedMethods.GET_HEAD_OPTIONS);
+		addEEnumLiteral(cloudFrontAllowedMethodsEEnum, CloudFrontAllowedMethods.ALL);
+
+		initEEnum(lambdaEdgeEventTypeEEnum, LambdaEdgeEventType.class, "LambdaEdgeEventType");
+		addEEnumLiteral(lambdaEdgeEventTypeEEnum, LambdaEdgeEventType.ORIGIN_REQUEST);
+		addEEnumLiteral(lambdaEdgeEventTypeEEnum, LambdaEdgeEventType.ORIGIN_RESPONSE);
+		addEEnumLiteral(lambdaEdgeEventTypeEEnum, LambdaEdgeEventType.VIEWER_REQUEST);
+		addEEnumLiteral(lambdaEdgeEventTypeEEnum, LambdaEdgeEventType.VIEWER_RESPONSE);
+
+		initEEnum(originSslPolicyEEnum, OriginSslPolicy.class, "OriginSslPolicy");
+		addEEnumLiteral(originSslPolicyEEnum, OriginSslPolicy.SSL_V3);
+		addEEnumLiteral(originSslPolicyEEnum, OriginSslPolicy.TLS_V1);
+		addEEnumLiteral(originSslPolicyEEnum, OriginSslPolicy.TLS_V1_1);
+		addEEnumLiteral(originSslPolicyEEnum, OriginSslPolicy.TLS_V1_2);
+
+		initEEnum(originProtocolPolicyEEnum, OriginProtocolPolicy.class, "OriginProtocolPolicy");
+		addEEnumLiteral(originProtocolPolicyEEnum, OriginProtocolPolicy.HTTP_ONLY);
+		addEEnumLiteral(originProtocolPolicyEEnum, OriginProtocolPolicy.MATCH_VIEWER);
+		addEEnumLiteral(originProtocolPolicyEEnum, OriginProtocolPolicy.HTTPS_ONLY);
+
+		initEEnum(bucketAccessControlEEnum, BucketAccessControl.class, "BucketAccessControl");
+		addEEnumLiteral(bucketAccessControlEEnum, BucketAccessControl.PRIVATE);
+		addEEnumLiteral(bucketAccessControlEEnum, BucketAccessControl.PUBLIC_READ);
+		addEEnumLiteral(bucketAccessControlEEnum, BucketAccessControl.PUBLIC_READ_WRITE);
+		addEEnumLiteral(bucketAccessControlEEnum, BucketAccessControl.AUTHENTICATED_READ);
+		addEEnumLiteral(bucketAccessControlEEnum, BucketAccessControl.LOG_DELIVERY_WRITE);
+		addEEnumLiteral(bucketAccessControlEEnum, BucketAccessControl.BUCKET_OWNER_READ);
+		addEEnumLiteral(bucketAccessControlEEnum, BucketAccessControl.BUCKET_OWNER_FULL_CONTROL);
+		addEEnumLiteral(bucketAccessControlEEnum, BucketAccessControl.AWS_EXEC_READ);
+
+		initEEnum(httpMethodsEEnum, HttpMethods.class, "HttpMethods");
+		addEEnumLiteral(httpMethodsEEnum, HttpMethods.GET);
+		addEEnumLiteral(httpMethodsEEnum, HttpMethods.PUT);
+		addEEnumLiteral(httpMethodsEEnum, HttpMethods.HEAD);
+		addEEnumLiteral(httpMethodsEEnum, HttpMethods.POST);
+		addEEnumLiteral(httpMethodsEEnum, HttpMethods.DELETE);
+
+		initEEnum(bucketEncryptionEEnum, BucketEncryption.class, "BucketEncryption");
+		addEEnumLiteral(bucketEncryptionEEnum, BucketEncryption.UNENCRYPTED);
+		addEEnumLiteral(bucketEncryptionEEnum, BucketEncryption.KMS_MANAGED);
+		addEEnumLiteral(bucketEncryptionEEnum, BucketEncryption.S3_MANAGED);
+		addEEnumLiteral(bucketEncryptionEEnum, BucketEncryption.KMS);
+
+		initEEnum(redirectProtocolEEnum, RedirectProtocol.class, "RedirectProtocol");
+		addEEnumLiteral(redirectProtocolEEnum, RedirectProtocol.HTTP);
+		addEEnumLiteral(redirectProtocolEEnum, RedirectProtocol.HTTPS);
+
+		initEEnum(httpVersionEEnum, HttpVersion.class, "HttpVersion");
+		addEEnumLiteral(httpVersionEEnum, HttpVersion.HTTP1_1);
+		addEEnumLiteral(httpVersionEEnum, HttpVersion.HTTP2);
+
+		initEEnum(priceClassEEnum, PriceClass.class, "PriceClass");
+		addEEnumLiteral(priceClassEEnum, PriceClass.PRICE_CLASS_100);
+		addEEnumLiteral(priceClassEEnum, PriceClass.PRICE_CLASS_200);
+		addEEnumLiteral(priceClassEEnum, PriceClass.PRICE_CLASS_ALL);
+
+		initEEnum(viewerProtocolPolicyEEnum, ViewerProtocolPolicy.class, "ViewerProtocolPolicy");
+		addEEnumLiteral(viewerProtocolPolicyEEnum, ViewerProtocolPolicy.HTTPS_ONLY);
+		addEEnumLiteral(viewerProtocolPolicyEEnum, ViewerProtocolPolicy.REDIRECT_TO_HTTPS);
+		addEEnumLiteral(viewerProtocolPolicyEEnum, ViewerProtocolPolicy.ALLOW_ALL);
+
+		initEEnum(securityPolicyProtocolEEnum, SecurityPolicyProtocol.class, "SecurityPolicyProtocol");
+		addEEnumLiteral(securityPolicyProtocolEEnum, SecurityPolicyProtocol.SSL_V3);
+		addEEnumLiteral(securityPolicyProtocolEEnum, SecurityPolicyProtocol.TLS_V1);
+		addEEnumLiteral(securityPolicyProtocolEEnum, SecurityPolicyProtocol.TLS_V1_2016);
+		addEEnumLiteral(securityPolicyProtocolEEnum, SecurityPolicyProtocol.TLS_V1_12016);
+		addEEnumLiteral(securityPolicyProtocolEEnum, SecurityPolicyProtocol.TLS_V1_22018);
+
+		initEEnum(sslMethodEEnum, SSLMethod.class, "SSLMethod");
+		addEEnumLiteral(sslMethodEEnum, SSLMethod.SNI);
+		addEEnumLiteral(sslMethodEEnum, SSLMethod.VIP);
+
+		initEEnum(mfaEEnum, Mfa.class, "Mfa");
+		addEEnumLiteral(mfaEEnum, Mfa.OFF);
+		addEEnumLiteral(mfaEEnum, Mfa.OPTIONAL);
+		addEEnumLiteral(mfaEEnum, Mfa.REQUIRED);
+
+		initEEnum(verificationEmailStyleEEnum, VerificationEmailStyle.class, "VerificationEmailStyle");
+		addEEnumLiteral(verificationEmailStyleEEnum, VerificationEmailStyle.CODE);
+		addEEnumLiteral(verificationEmailStyleEEnum, VerificationEmailStyle.LINK);
 
 		initEEnum(effectEEnum, Effect.class, "Effect");
 		addEEnumLiteral(effectEEnum, Effect.ALLOW);

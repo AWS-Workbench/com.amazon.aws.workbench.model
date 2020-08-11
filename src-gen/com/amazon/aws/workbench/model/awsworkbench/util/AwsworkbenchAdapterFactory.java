@@ -214,6 +214,11 @@ public class AwsworkbenchAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseFunctionPropsBuilder_lambda(FunctionPropsBuilder_lambda object) {
+			return createFunctionPropsBuilder_lambdaAdapter();
+		}
+
+		@Override
 		public Adapter caseFunctionBuilder_lambda(FunctionBuilder_lambda object) {
 			return createFunctionBuilder_lambdaAdapter();
 		}
@@ -270,14 +275,136 @@ public class AwsworkbenchAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseLambdaRestApiPropsBuilder_apigateway(LambdaRestApiPropsBuilder_apigateway object) {
+			return createLambdaRestApiPropsBuilder_apigatewayAdapter();
+		}
+
+		@Override
+		public Adapter caseLambdaRestApiBuilder_apigateway(LambdaRestApiBuilder_apigateway object) {
+			return createLambdaRestApiBuilder_apigatewayAdapter();
+		}
+
+		@Override
 		public Adapter caseApiGatewayToLambdaBuilder_apigatewaylambda(
 				ApiGatewayToLambdaBuilder_apigatewaylambda object) {
 			return createApiGatewayToLambdaBuilder_apigatewaylambdaAdapter();
 		}
 
 		@Override
+		public Adapter caseQueuePropsBuilder_sqs(QueuePropsBuilder_sqs object) {
+			return createQueuePropsBuilder_sqsAdapter();
+		}
+
+		@Override
 		public Adapter caseApiGatewayToSqsBuilder_apigatewaysqs(ApiGatewayToSqsBuilder_apigatewaysqs object) {
 			return createApiGatewayToSqsBuilder_apigatewaysqsAdapter();
+		}
+
+		@Override
+		public Adapter caseVersionBuilder_lambda(VersionBuilder_lambda object) {
+			return createVersionBuilder_lambdaAdapter();
+		}
+
+		@Override
+		public Adapter caseLambdaFunctionAssociationBuilder_cloudfront(
+				LambdaFunctionAssociationBuilder_cloudfront object) {
+			return createLambdaFunctionAssociationBuilder_cloudfrontAdapter();
+		}
+
+		@Override
+		public Adapter caseBehaviorBuilder_cloudfront(BehaviorBuilder_cloudfront object) {
+			return createBehaviorBuilder_cloudfrontAdapter();
+		}
+
+		@Override
+		public Adapter caseCustomOriginConfigBuilder_cloudfront(CustomOriginConfigBuilder_cloudfront object) {
+			return createCustomOriginConfigBuilder_cloudfrontAdapter();
+		}
+
+		@Override
+		public Adapter caseBlockPublicAccessBuilder_s3(BlockPublicAccessBuilder_s3 object) {
+			return createBlockPublicAccessBuilder_s3Adapter();
+		}
+
+		@Override
+		public Adapter caseCorsRuleBuilder_s3(CorsRuleBuilder_s3 object) {
+			return createCorsRuleBuilder_s3Adapter();
+		}
+
+		@Override
+		public Adapter caseNoncurrentVersionTransitionBuilder_s3(NoncurrentVersionTransitionBuilder_s3 object) {
+			return createNoncurrentVersionTransitionBuilder_s3Adapter();
+		}
+
+		@Override
+		public Adapter caseTransitionBuilder_s3(TransitionBuilder_s3 object) {
+			return createTransitionBuilder_s3Adapter();
+		}
+
+		@Override
+		public Adapter caseLifecycleRuleBuilder_s3(LifecycleRuleBuilder_s3 object) {
+			return createLifecycleRuleBuilder_s3Adapter();
+		}
+
+		@Override
+		public Adapter caseBucketMetricsBuilder_s3(BucketMetricsBuilder_s3 object) {
+			return createBucketMetricsBuilder_s3Adapter();
+		}
+
+		@Override
+		public Adapter caseRedirectTargetBuilder_s3(RedirectTargetBuilder_s3 object) {
+			return createRedirectTargetBuilder_s3Adapter();
+		}
+
+		@Override
+		public Adapter caseRoutingRuleConditionBuilder_s3(RoutingRuleConditionBuilder_s3 object) {
+			return createRoutingRuleConditionBuilder_s3Adapter();
+		}
+
+		@Override
+		public Adapter caseRoutingRuleBuilder_s3(RoutingRuleBuilder_s3 object) {
+			return createRoutingRuleBuilder_s3Adapter();
+		}
+
+		@Override
+		public Adapter caseBucketBuilder_s3(BucketBuilder_s3 object) {
+			return createBucketBuilder_s3Adapter();
+		}
+
+		@Override
+		public Adapter caseBucketPropsBuilder_s3(BucketPropsBuilder_s3 object) {
+			return createBucketPropsBuilder_s3Adapter();
+		}
+
+		@Override
+		public Adapter caseOriginAccessIdentityBuilder_cloudfront(OriginAccessIdentityBuilder_cloudfront object) {
+			return createOriginAccessIdentityBuilder_cloudfrontAdapter();
+		}
+
+		@Override
+		public Adapter caseS3OriginConfigBuilder_cloudfront(S3OriginConfigBuilder_cloudfront object) {
+			return createS3OriginConfigBuilder_cloudfrontAdapter();
+		}
+
+		@Override
+		public Adapter caseSourceConfigurationBuilder_cloudfront(SourceConfigurationBuilder_cloudfront object) {
+			return createSourceConfigurationBuilder_cloudfrontAdapter();
+		}
+
+		@Override
+		public Adapter caseAliasConfigurationBuilder_cloudfront(AliasConfigurationBuilder_cloudfront object) {
+			return createAliasConfigurationBuilder_cloudfrontAdapter();
+		}
+
+		@Override
+		public Adapter caseLoggingConfigurationBuilder_cloudfront(LoggingConfigurationBuilder_cloudfront object) {
+			return createLoggingConfigurationBuilder_cloudfrontAdapter();
+		}
+
+		@Override
+		public Adapter caseCloudFrontWebDistributionPropsBuilder_cloudfront(
+				CloudFrontWebDistributionPropsBuilder_cloudfront object) {
+			return createCloudFrontWebDistributionPropsBuilder_cloudfrontAdapter();
 		}
 
 		@Override
@@ -295,6 +422,81 @@ public class AwsworkbenchAdapterFactory extends AdapterFactoryImpl {
 		@Override
 		public Adapter caseCloudFrontToS3Builder_cloudfronts3(CloudFrontToS3Builder_cloudfronts3 object) {
 			return createCloudFrontToS3Builder_cloudfronts3Adapter();
+		}
+
+		@Override
+		public Adapter caseAutoVerifiedAttrsBuilder_cognito(AutoVerifiedAttrsBuilder_cognito object) {
+			return createAutoVerifiedAttrsBuilder_cognitoAdapter();
+		}
+
+		@Override
+		public Adapter caseUserPoolTriggersBuilder_cognito(UserPoolTriggersBuilder_cognito object) {
+			return createUserPoolTriggersBuilder_cognitoAdapter();
+		}
+
+		@Override
+		public Adapter caseEmailSettingsBuilder_cognito(EmailSettingsBuilder_cognito object) {
+			return createEmailSettingsBuilder_cognitoAdapter();
+		}
+
+		@Override
+		public Adapter casePasswordPolicyBuilder_cognito(PasswordPolicyBuilder_cognito object) {
+			return createPasswordPolicyBuilder_cognitoAdapter();
+		}
+
+		@Override
+		public Adapter caseMfaSecondFactorBuilder_cognito(MfaSecondFactorBuilder_cognito object) {
+			return createMfaSecondFactorBuilder_cognitoAdapter();
+		}
+
+		@Override
+		public Adapter caseRequiredAttributesBuilder_cognito(RequiredAttributesBuilder_cognito object) {
+			return createRequiredAttributesBuilder_cognitoAdapter();
+		}
+
+		@Override
+		public Adapter caseSignInAliasesBuilder_cognito(SignInAliasesBuilder_cognito object) {
+			return createSignInAliasesBuilder_cognitoAdapter();
+		}
+
+		@Override
+		public Adapter caseUserInvitationConfigBuilder_cognito(UserInvitationConfigBuilder_cognito object) {
+			return createUserInvitationConfigBuilder_cognitoAdapter();
+		}
+
+		@Override
+		public Adapter caseUserVerificationConfigBuilder_cognito(UserVerificationConfigBuilder_cognito object) {
+			return createUserVerificationConfigBuilder_cognitoAdapter();
+		}
+
+		@Override
+		public Adapter caseUserPoolPropsBuilder_cognito(UserPoolPropsBuilder_cognito object) {
+			return createUserPoolPropsBuilder_cognitoAdapter();
+		}
+
+		@Override
+		public Adapter caseUserPoolBuilder_cognito(UserPoolBuilder_cognito object) {
+			return createUserPoolBuilder_cognitoAdapter();
+		}
+
+		@Override
+		public Adapter caseAuthFlowBuilder_cognito(AuthFlowBuilder_cognito object) {
+			return createAuthFlowBuilder_cognitoAdapter();
+		}
+
+		@Override
+		public Adapter caseOAuthFlowsBuilder_cognito(OAuthFlowsBuilder_cognito object) {
+			return createOAuthFlowsBuilder_cognitoAdapter();
+		}
+
+		@Override
+		public Adapter caseOAuthSettingsBuilder_cognito(OAuthSettingsBuilder_cognito object) {
+			return createOAuthSettingsBuilder_cognitoAdapter();
+		}
+
+		@Override
+		public Adapter caseUserPoolClientPropsBuilder_cognito(UserPoolClientPropsBuilder_cognito object) {
+			return createUserPoolClientPropsBuilder_cognitoAdapter();
 		}
 
 		@Override
@@ -930,6 +1132,20 @@ public class AwsworkbenchAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.FunctionPropsBuilder_lambda <em>Function Props Builder lambda</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.FunctionPropsBuilder_lambda
+	 * @generated
+	 */
+	public Adapter createFunctionPropsBuilder_lambdaAdapter() {
+		return null;
+	}
+
+	/**
 	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.FunctionBuilder_lambda <em>Function Builder lambda</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -1084,6 +1300,34 @@ public class AwsworkbenchAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiPropsBuilder_apigateway <em>Lambda Rest Api Props Builder apigateway</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiPropsBuilder_apigateway
+	 * @generated
+	 */
+	public Adapter createLambdaRestApiPropsBuilder_apigatewayAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiBuilder_apigateway <em>Lambda Rest Api Builder apigateway</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiBuilder_apigateway
+	 * @generated
+	 */
+	public Adapter createLambdaRestApiBuilder_apigatewayAdapter() {
+		return null;
+	}
+
+	/**
 	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.ApiGatewayToLambdaBuilder_apigatewaylambda <em>Api Gateway To Lambda Builder apigatewaylambda</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -1098,6 +1342,20 @@ public class AwsworkbenchAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.QueuePropsBuilder_sqs <em>Queue Props Builder sqs</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.QueuePropsBuilder_sqs
+	 * @generated
+	 */
+	public Adapter createQueuePropsBuilder_sqsAdapter() {
+		return null;
+	}
+
+	/**
 	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.ApiGatewayToSqsBuilder_apigatewaysqs <em>Api Gateway To Sqs Builder apigatewaysqs</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -1108,6 +1366,300 @@ public class AwsworkbenchAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createApiGatewayToSqsBuilder_apigatewaysqsAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.VersionBuilder_lambda <em>Version Builder lambda</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.VersionBuilder_lambda
+	 * @generated
+	 */
+	public Adapter createVersionBuilder_lambdaAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.LambdaFunctionAssociationBuilder_cloudfront <em>Lambda Function Association Builder cloudfront</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.LambdaFunctionAssociationBuilder_cloudfront
+	 * @generated
+	 */
+	public Adapter createLambdaFunctionAssociationBuilder_cloudfrontAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.BehaviorBuilder_cloudfront <em>Behavior Builder cloudfront</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.BehaviorBuilder_cloudfront
+	 * @generated
+	 */
+	public Adapter createBehaviorBuilder_cloudfrontAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.CustomOriginConfigBuilder_cloudfront <em>Custom Origin Config Builder cloudfront</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.CustomOriginConfigBuilder_cloudfront
+	 * @generated
+	 */
+	public Adapter createCustomOriginConfigBuilder_cloudfrontAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.BlockPublicAccessBuilder_s3 <em>Block Public Access Builder s3</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.BlockPublicAccessBuilder_s3
+	 * @generated
+	 */
+	public Adapter createBlockPublicAccessBuilder_s3Adapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.CorsRuleBuilder_s3 <em>Cors Rule Builder s3</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.CorsRuleBuilder_s3
+	 * @generated
+	 */
+	public Adapter createCorsRuleBuilder_s3Adapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.NoncurrentVersionTransitionBuilder_s3 <em>Noncurrent Version Transition Builder s3</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.NoncurrentVersionTransitionBuilder_s3
+	 * @generated
+	 */
+	public Adapter createNoncurrentVersionTransitionBuilder_s3Adapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.TransitionBuilder_s3 <em>Transition Builder s3</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.TransitionBuilder_s3
+	 * @generated
+	 */
+	public Adapter createTransitionBuilder_s3Adapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.LifecycleRuleBuilder_s3 <em>Lifecycle Rule Builder s3</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.LifecycleRuleBuilder_s3
+	 * @generated
+	 */
+	public Adapter createLifecycleRuleBuilder_s3Adapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.BucketMetricsBuilder_s3 <em>Bucket Metrics Builder s3</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.BucketMetricsBuilder_s3
+	 * @generated
+	 */
+	public Adapter createBucketMetricsBuilder_s3Adapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.RedirectTargetBuilder_s3 <em>Redirect Target Builder s3</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.RedirectTargetBuilder_s3
+	 * @generated
+	 */
+	public Adapter createRedirectTargetBuilder_s3Adapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.RoutingRuleConditionBuilder_s3 <em>Routing Rule Condition Builder s3</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.RoutingRuleConditionBuilder_s3
+	 * @generated
+	 */
+	public Adapter createRoutingRuleConditionBuilder_s3Adapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.RoutingRuleBuilder_s3 <em>Routing Rule Builder s3</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.RoutingRuleBuilder_s3
+	 * @generated
+	 */
+	public Adapter createRoutingRuleBuilder_s3Adapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.BucketBuilder_s3 <em>Bucket Builder s3</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.BucketBuilder_s3
+	 * @generated
+	 */
+	public Adapter createBucketBuilder_s3Adapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.BucketPropsBuilder_s3 <em>Bucket Props Builder s3</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.BucketPropsBuilder_s3
+	 * @generated
+	 */
+	public Adapter createBucketPropsBuilder_s3Adapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.OriginAccessIdentityBuilder_cloudfront <em>Origin Access Identity Builder cloudfront</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.OriginAccessIdentityBuilder_cloudfront
+	 * @generated
+	 */
+	public Adapter createOriginAccessIdentityBuilder_cloudfrontAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.S3OriginConfigBuilder_cloudfront <em>S3 Origin Config Builder cloudfront</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.S3OriginConfigBuilder_cloudfront
+	 * @generated
+	 */
+	public Adapter createS3OriginConfigBuilder_cloudfrontAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.SourceConfigurationBuilder_cloudfront <em>Source Configuration Builder cloudfront</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.SourceConfigurationBuilder_cloudfront
+	 * @generated
+	 */
+	public Adapter createSourceConfigurationBuilder_cloudfrontAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.AliasConfigurationBuilder_cloudfront <em>Alias Configuration Builder cloudfront</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AliasConfigurationBuilder_cloudfront
+	 * @generated
+	 */
+	public Adapter createAliasConfigurationBuilder_cloudfrontAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.LoggingConfigurationBuilder_cloudfront <em>Logging Configuration Builder cloudfront</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.LoggingConfigurationBuilder_cloudfront
+	 * @generated
+	 */
+	public Adapter createLoggingConfigurationBuilder_cloudfrontAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.CloudFrontWebDistributionPropsBuilder_cloudfront <em>Cloud Front Web Distribution Props Builder cloudfront</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.CloudFrontWebDistributionPropsBuilder_cloudfront
+	 * @generated
+	 */
+	public Adapter createCloudFrontWebDistributionPropsBuilder_cloudfrontAdapter() {
 		return null;
 	}
 
@@ -1150,6 +1702,216 @@ public class AwsworkbenchAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createCloudFrontToS3Builder_cloudfronts3Adapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.AutoVerifiedAttrsBuilder_cognito <em>Auto Verified Attrs Builder cognito</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AutoVerifiedAttrsBuilder_cognito
+	 * @generated
+	 */
+	public Adapter createAutoVerifiedAttrsBuilder_cognitoAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.UserPoolTriggersBuilder_cognito <em>User Pool Triggers Builder cognito</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.UserPoolTriggersBuilder_cognito
+	 * @generated
+	 */
+	public Adapter createUserPoolTriggersBuilder_cognitoAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.EmailSettingsBuilder_cognito <em>Email Settings Builder cognito</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.EmailSettingsBuilder_cognito
+	 * @generated
+	 */
+	public Adapter createEmailSettingsBuilder_cognitoAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.PasswordPolicyBuilder_cognito <em>Password Policy Builder cognito</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.PasswordPolicyBuilder_cognito
+	 * @generated
+	 */
+	public Adapter createPasswordPolicyBuilder_cognitoAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.MfaSecondFactorBuilder_cognito <em>Mfa Second Factor Builder cognito</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.MfaSecondFactorBuilder_cognito
+	 * @generated
+	 */
+	public Adapter createMfaSecondFactorBuilder_cognitoAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.RequiredAttributesBuilder_cognito <em>Required Attributes Builder cognito</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.RequiredAttributesBuilder_cognito
+	 * @generated
+	 */
+	public Adapter createRequiredAttributesBuilder_cognitoAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.SignInAliasesBuilder_cognito <em>Sign In Aliases Builder cognito</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.SignInAliasesBuilder_cognito
+	 * @generated
+	 */
+	public Adapter createSignInAliasesBuilder_cognitoAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.UserInvitationConfigBuilder_cognito <em>User Invitation Config Builder cognito</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.UserInvitationConfigBuilder_cognito
+	 * @generated
+	 */
+	public Adapter createUserInvitationConfigBuilder_cognitoAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.UserVerificationConfigBuilder_cognito <em>User Verification Config Builder cognito</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.UserVerificationConfigBuilder_cognito
+	 * @generated
+	 */
+	public Adapter createUserVerificationConfigBuilder_cognitoAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.UserPoolPropsBuilder_cognito <em>User Pool Props Builder cognito</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.UserPoolPropsBuilder_cognito
+	 * @generated
+	 */
+	public Adapter createUserPoolPropsBuilder_cognitoAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.UserPoolBuilder_cognito <em>User Pool Builder cognito</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.UserPoolBuilder_cognito
+	 * @generated
+	 */
+	public Adapter createUserPoolBuilder_cognitoAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.AuthFlowBuilder_cognito <em>Auth Flow Builder cognito</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AuthFlowBuilder_cognito
+	 * @generated
+	 */
+	public Adapter createAuthFlowBuilder_cognitoAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.OAuthFlowsBuilder_cognito <em>OAuth Flows Builder cognito</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.OAuthFlowsBuilder_cognito
+	 * @generated
+	 */
+	public Adapter createOAuthFlowsBuilder_cognitoAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.OAuthSettingsBuilder_cognito <em>OAuth Settings Builder cognito</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.OAuthSettingsBuilder_cognito
+	 * @generated
+	 */
+	public Adapter createOAuthSettingsBuilder_cognitoAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.UserPoolClientPropsBuilder_cognito <em>User Pool Client Props Builder cognito</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.UserPoolClientPropsBuilder_cognito
+	 * @generated
+	 */
+	public Adapter createUserPoolClientPropsBuilder_cognitoAdapter() {
 		return null;
 	}
 

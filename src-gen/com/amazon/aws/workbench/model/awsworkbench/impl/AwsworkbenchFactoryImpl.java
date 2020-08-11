@@ -113,6 +113,8 @@ public class AwsworkbenchFactoryImpl extends EFactoryImpl implements Awsworkbenc
 			return createLayerVersionBuilder_lambda();
 		case AwsworkbenchPackage.SECURITY_GROUP_BUILDER_EC2:
 			return createSecurityGroupBuilder_ec2();
+		case AwsworkbenchPackage.FUNCTION_PROPS_BUILDER_LAMBDA:
+			return createFunctionPropsBuilder_lambda();
 		case AwsworkbenchPackage.FUNCTION_BUILDER_LAMBDA:
 			return createFunctionBuilder_lambda();
 		case AwsworkbenchPackage.REQUEST_AUTHORIZER_BUILDER_APIGATEWAY:
@@ -135,16 +137,94 @@ public class AwsworkbenchFactoryImpl extends EFactoryImpl implements Awsworkbenc
 			return createRestApiPropsBuilder_apigateway();
 		case AwsworkbenchPackage.API_GATEWAY_TO_DYNAMO_DB_BUILDER_APIGATEWAYDYNAMODB:
 			return createApiGatewayToDynamoDBBuilder_apigatewaydynamodb();
+		case AwsworkbenchPackage.LAMBDA_REST_API_PROPS_BUILDER_APIGATEWAY:
+			return createLambdaRestApiPropsBuilder_apigateway();
+		case AwsworkbenchPackage.LAMBDA_REST_API_BUILDER_APIGATEWAY:
+			return createLambdaRestApiBuilder_apigateway();
 		case AwsworkbenchPackage.API_GATEWAY_TO_LAMBDA_BUILDER_APIGATEWAYLAMBDA:
 			return createApiGatewayToLambdaBuilder_apigatewaylambda();
+		case AwsworkbenchPackage.QUEUE_PROPS_BUILDER_SQS:
+			return createQueuePropsBuilder_sqs();
 		case AwsworkbenchPackage.API_GATEWAY_TO_SQS_BUILDER_APIGATEWAYSQS:
 			return createApiGatewayToSqsBuilder_apigatewaysqs();
+		case AwsworkbenchPackage.VERSION_BUILDER_LAMBDA:
+			return createVersionBuilder_lambda();
+		case AwsworkbenchPackage.LAMBDA_FUNCTION_ASSOCIATION_BUILDER_CLOUDFRONT:
+			return createLambdaFunctionAssociationBuilder_cloudfront();
+		case AwsworkbenchPackage.BEHAVIOR_BUILDER_CLOUDFRONT:
+			return createBehaviorBuilder_cloudfront();
+		case AwsworkbenchPackage.CUSTOM_ORIGIN_CONFIG_BUILDER_CLOUDFRONT:
+			return createCustomOriginConfigBuilder_cloudfront();
+		case AwsworkbenchPackage.BLOCK_PUBLIC_ACCESS_BUILDER_S3:
+			return createBlockPublicAccessBuilder_s3();
+		case AwsworkbenchPackage.CORS_RULE_BUILDER_S3:
+			return createCorsRuleBuilder_s3();
+		case AwsworkbenchPackage.NONCURRENT_VERSION_TRANSITION_BUILDER_S3:
+			return createNoncurrentVersionTransitionBuilder_s3();
+		case AwsworkbenchPackage.TRANSITION_BUILDER_S3:
+			return createTransitionBuilder_s3();
+		case AwsworkbenchPackage.LIFECYCLE_RULE_BUILDER_S3:
+			return createLifecycleRuleBuilder_s3();
+		case AwsworkbenchPackage.BUCKET_METRICS_BUILDER_S3:
+			return createBucketMetricsBuilder_s3();
+		case AwsworkbenchPackage.REDIRECT_TARGET_BUILDER_S3:
+			return createRedirectTargetBuilder_s3();
+		case AwsworkbenchPackage.ROUTING_RULE_CONDITION_BUILDER_S3:
+			return createRoutingRuleConditionBuilder_s3();
+		case AwsworkbenchPackage.ROUTING_RULE_BUILDER_S3:
+			return createRoutingRuleBuilder_s3();
+		case AwsworkbenchPackage.BUCKET_BUILDER_S3:
+			return createBucketBuilder_s3();
+		case AwsworkbenchPackage.BUCKET_PROPS_BUILDER_S3:
+			return createBucketPropsBuilder_s3();
+		case AwsworkbenchPackage.ORIGIN_ACCESS_IDENTITY_BUILDER_CLOUDFRONT:
+			return createOriginAccessIdentityBuilder_cloudfront();
+		case AwsworkbenchPackage.S3_ORIGIN_CONFIG_BUILDER_CLOUDFRONT:
+			return createS3OriginConfigBuilder_cloudfront();
+		case AwsworkbenchPackage.SOURCE_CONFIGURATION_BUILDER_CLOUDFRONT:
+			return createSourceConfigurationBuilder_cloudfront();
+		case AwsworkbenchPackage.ALIAS_CONFIGURATION_BUILDER_CLOUDFRONT:
+			return createAliasConfigurationBuilder_cloudfront();
+		case AwsworkbenchPackage.LOGGING_CONFIGURATION_BUILDER_CLOUDFRONT:
+			return createLoggingConfigurationBuilder_cloudfront();
+		case AwsworkbenchPackage.CLOUD_FRONT_WEB_DISTRIBUTION_PROPS_BUILDER_CLOUDFRONT:
+			return createCloudFrontWebDistributionPropsBuilder_cloudfront();
 		case AwsworkbenchPackage.CLOUD_FRONT_TO_API_GATEWAY_BUILDER_CLOUDFRONTAPIGATEWAY:
 			return createCloudFrontToApiGatewayBuilder_cloudfrontapigateway();
 		case AwsworkbenchPackage.CLOUD_FRONT_TO_API_GATEWAY_TO_LAMBDA_BUILDER_CLOUDFRONTAPIGATEWAYLAMBDA:
 			return createCloudFrontToApiGatewayToLambdaBuilder_cloudfrontapigatewaylambda();
 		case AwsworkbenchPackage.CLOUD_FRONT_TO_S3_BUILDER_CLOUDFRONTS3:
 			return createCloudFrontToS3Builder_cloudfronts3();
+		case AwsworkbenchPackage.AUTO_VERIFIED_ATTRS_BUILDER_COGNITO:
+			return createAutoVerifiedAttrsBuilder_cognito();
+		case AwsworkbenchPackage.USER_POOL_TRIGGERS_BUILDER_COGNITO:
+			return createUserPoolTriggersBuilder_cognito();
+		case AwsworkbenchPackage.EMAIL_SETTINGS_BUILDER_COGNITO:
+			return createEmailSettingsBuilder_cognito();
+		case AwsworkbenchPackage.PASSWORD_POLICY_BUILDER_COGNITO:
+			return createPasswordPolicyBuilder_cognito();
+		case AwsworkbenchPackage.MFA_SECOND_FACTOR_BUILDER_COGNITO:
+			return createMfaSecondFactorBuilder_cognito();
+		case AwsworkbenchPackage.REQUIRED_ATTRIBUTES_BUILDER_COGNITO:
+			return createRequiredAttributesBuilder_cognito();
+		case AwsworkbenchPackage.SIGN_IN_ALIASES_BUILDER_COGNITO:
+			return createSignInAliasesBuilder_cognito();
+		case AwsworkbenchPackage.USER_INVITATION_CONFIG_BUILDER_COGNITO:
+			return createUserInvitationConfigBuilder_cognito();
+		case AwsworkbenchPackage.USER_VERIFICATION_CONFIG_BUILDER_COGNITO:
+			return createUserVerificationConfigBuilder_cognito();
+		case AwsworkbenchPackage.USER_POOL_PROPS_BUILDER_COGNITO:
+			return createUserPoolPropsBuilder_cognito();
+		case AwsworkbenchPackage.USER_POOL_BUILDER_COGNITO:
+			return createUserPoolBuilder_cognito();
+		case AwsworkbenchPackage.AUTH_FLOW_BUILDER_COGNITO:
+			return createAuthFlowBuilder_cognito();
+		case AwsworkbenchPackage.OAUTH_FLOWS_BUILDER_COGNITO:
+			return createOAuthFlowsBuilder_cognito();
+		case AwsworkbenchPackage.OAUTH_SETTINGS_BUILDER_COGNITO:
+			return createOAuthSettingsBuilder_cognito();
+		case AwsworkbenchPackage.USER_POOL_CLIENT_PROPS_BUILDER_COGNITO:
+			return createUserPoolClientPropsBuilder_cognito();
 		case AwsworkbenchPackage.COGNITO_TO_API_GATEWAY_TO_LAMBDA_BUILDER_COGNITOAPIGATEWAYLAMBDA:
 			return createCognitoToApiGatewayToLambdaBuilder_cognitoapigatewaylambda();
 		case AwsworkbenchPackage.BUILD_DEAD_LETTER_QUEUE_PROPS_BUILDER_CORE:
@@ -272,6 +352,38 @@ public class AwsworkbenchFactoryImpl extends EFactoryImpl implements Awsworkbenc
 			return createJsonSchemaVersionFromString(eDataType, initialValue);
 		case AwsworkbenchPackage.JSON_SCHEMA_TYPE:
 			return createJsonSchemaTypeFromString(eDataType, initialValue);
+		case AwsworkbenchPackage.CLOUD_FRONT_ALLOWED_CACHED_METHODS:
+			return createCloudFrontAllowedCachedMethodsFromString(eDataType, initialValue);
+		case AwsworkbenchPackage.CLOUD_FRONT_ALLOWED_METHODS:
+			return createCloudFrontAllowedMethodsFromString(eDataType, initialValue);
+		case AwsworkbenchPackage.LAMBDA_EDGE_EVENT_TYPE:
+			return createLambdaEdgeEventTypeFromString(eDataType, initialValue);
+		case AwsworkbenchPackage.ORIGIN_SSL_POLICY:
+			return createOriginSslPolicyFromString(eDataType, initialValue);
+		case AwsworkbenchPackage.ORIGIN_PROTOCOL_POLICY:
+			return createOriginProtocolPolicyFromString(eDataType, initialValue);
+		case AwsworkbenchPackage.BUCKET_ACCESS_CONTROL:
+			return createBucketAccessControlFromString(eDataType, initialValue);
+		case AwsworkbenchPackage.HTTP_METHODS:
+			return createHttpMethodsFromString(eDataType, initialValue);
+		case AwsworkbenchPackage.BUCKET_ENCRYPTION:
+			return createBucketEncryptionFromString(eDataType, initialValue);
+		case AwsworkbenchPackage.REDIRECT_PROTOCOL:
+			return createRedirectProtocolFromString(eDataType, initialValue);
+		case AwsworkbenchPackage.HTTP_VERSION:
+			return createHttpVersionFromString(eDataType, initialValue);
+		case AwsworkbenchPackage.PRICE_CLASS:
+			return createPriceClassFromString(eDataType, initialValue);
+		case AwsworkbenchPackage.VIEWER_PROTOCOL_POLICY:
+			return createViewerProtocolPolicyFromString(eDataType, initialValue);
+		case AwsworkbenchPackage.SECURITY_POLICY_PROTOCOL:
+			return createSecurityPolicyProtocolFromString(eDataType, initialValue);
+		case AwsworkbenchPackage.SSL_METHOD:
+			return createSSLMethodFromString(eDataType, initialValue);
+		case AwsworkbenchPackage.MFA:
+			return createMfaFromString(eDataType, initialValue);
+		case AwsworkbenchPackage.VERIFICATION_EMAIL_STYLE:
+			return createVerificationEmailStyleFromString(eDataType, initialValue);
 		case AwsworkbenchPackage.EFFECT:
 			return createEffectFromString(eDataType, initialValue);
 		case AwsworkbenchPackage.ATTRIBUTE_TYPE:
@@ -333,6 +445,38 @@ public class AwsworkbenchFactoryImpl extends EFactoryImpl implements Awsworkbenc
 			return convertJsonSchemaVersionToString(eDataType, instanceValue);
 		case AwsworkbenchPackage.JSON_SCHEMA_TYPE:
 			return convertJsonSchemaTypeToString(eDataType, instanceValue);
+		case AwsworkbenchPackage.CLOUD_FRONT_ALLOWED_CACHED_METHODS:
+			return convertCloudFrontAllowedCachedMethodsToString(eDataType, instanceValue);
+		case AwsworkbenchPackage.CLOUD_FRONT_ALLOWED_METHODS:
+			return convertCloudFrontAllowedMethodsToString(eDataType, instanceValue);
+		case AwsworkbenchPackage.LAMBDA_EDGE_EVENT_TYPE:
+			return convertLambdaEdgeEventTypeToString(eDataType, instanceValue);
+		case AwsworkbenchPackage.ORIGIN_SSL_POLICY:
+			return convertOriginSslPolicyToString(eDataType, instanceValue);
+		case AwsworkbenchPackage.ORIGIN_PROTOCOL_POLICY:
+			return convertOriginProtocolPolicyToString(eDataType, instanceValue);
+		case AwsworkbenchPackage.BUCKET_ACCESS_CONTROL:
+			return convertBucketAccessControlToString(eDataType, instanceValue);
+		case AwsworkbenchPackage.HTTP_METHODS:
+			return convertHttpMethodsToString(eDataType, instanceValue);
+		case AwsworkbenchPackage.BUCKET_ENCRYPTION:
+			return convertBucketEncryptionToString(eDataType, instanceValue);
+		case AwsworkbenchPackage.REDIRECT_PROTOCOL:
+			return convertRedirectProtocolToString(eDataType, instanceValue);
+		case AwsworkbenchPackage.HTTP_VERSION:
+			return convertHttpVersionToString(eDataType, instanceValue);
+		case AwsworkbenchPackage.PRICE_CLASS:
+			return convertPriceClassToString(eDataType, instanceValue);
+		case AwsworkbenchPackage.VIEWER_PROTOCOL_POLICY:
+			return convertViewerProtocolPolicyToString(eDataType, instanceValue);
+		case AwsworkbenchPackage.SECURITY_POLICY_PROTOCOL:
+			return convertSecurityPolicyProtocolToString(eDataType, instanceValue);
+		case AwsworkbenchPackage.SSL_METHOD:
+			return convertSSLMethodToString(eDataType, instanceValue);
+		case AwsworkbenchPackage.MFA:
+			return convertMfaToString(eDataType, instanceValue);
+		case AwsworkbenchPackage.VERIFICATION_EMAIL_STYLE:
+			return convertVerificationEmailStyleToString(eDataType, instanceValue);
 		case AwsworkbenchPackage.EFFECT:
 			return convertEffectToString(eDataType, instanceValue);
 		case AwsworkbenchPackage.ATTRIBUTE_TYPE:
@@ -664,6 +808,17 @@ public class AwsworkbenchFactoryImpl extends EFactoryImpl implements Awsworkbenc
 	 * @generated
 	 */
 	@Override
+	public FunctionPropsBuilder_lambda createFunctionPropsBuilder_lambda() {
+		FunctionPropsBuilder_lambdaImpl functionPropsBuilder_lambda = new FunctionPropsBuilder_lambdaImpl();
+		return functionPropsBuilder_lambda;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public FunctionBuilder_lambda createFunctionBuilder_lambda() {
 		FunctionBuilder_lambdaImpl functionBuilder_lambda = new FunctionBuilder_lambdaImpl();
 		return functionBuilder_lambda;
@@ -785,6 +940,28 @@ public class AwsworkbenchFactoryImpl extends EFactoryImpl implements Awsworkbenc
 	 * @generated
 	 */
 	@Override
+	public LambdaRestApiPropsBuilder_apigateway createLambdaRestApiPropsBuilder_apigateway() {
+		LambdaRestApiPropsBuilder_apigatewayImpl lambdaRestApiPropsBuilder_apigateway = new LambdaRestApiPropsBuilder_apigatewayImpl();
+		return lambdaRestApiPropsBuilder_apigateway;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public LambdaRestApiBuilder_apigateway createLambdaRestApiBuilder_apigateway() {
+		LambdaRestApiBuilder_apigatewayImpl lambdaRestApiBuilder_apigateway = new LambdaRestApiBuilder_apigatewayImpl();
+		return lambdaRestApiBuilder_apigateway;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public ApiGatewayToLambdaBuilder_apigatewaylambda createApiGatewayToLambdaBuilder_apigatewaylambda() {
 		ApiGatewayToLambdaBuilder_apigatewaylambdaImpl apiGatewayToLambdaBuilder_apigatewaylambda = new ApiGatewayToLambdaBuilder_apigatewaylambdaImpl();
 		return apiGatewayToLambdaBuilder_apigatewaylambda;
@@ -796,9 +973,251 @@ public class AwsworkbenchFactoryImpl extends EFactoryImpl implements Awsworkbenc
 	 * @generated
 	 */
 	@Override
+	public QueuePropsBuilder_sqs createQueuePropsBuilder_sqs() {
+		QueuePropsBuilder_sqsImpl queuePropsBuilder_sqs = new QueuePropsBuilder_sqsImpl();
+		return queuePropsBuilder_sqs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public ApiGatewayToSqsBuilder_apigatewaysqs createApiGatewayToSqsBuilder_apigatewaysqs() {
 		ApiGatewayToSqsBuilder_apigatewaysqsImpl apiGatewayToSqsBuilder_apigatewaysqs = new ApiGatewayToSqsBuilder_apigatewaysqsImpl();
 		return apiGatewayToSqsBuilder_apigatewaysqs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public VersionBuilder_lambda createVersionBuilder_lambda() {
+		VersionBuilder_lambdaImpl versionBuilder_lambda = new VersionBuilder_lambdaImpl();
+		return versionBuilder_lambda;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public LambdaFunctionAssociationBuilder_cloudfront createLambdaFunctionAssociationBuilder_cloudfront() {
+		LambdaFunctionAssociationBuilder_cloudfrontImpl lambdaFunctionAssociationBuilder_cloudfront = new LambdaFunctionAssociationBuilder_cloudfrontImpl();
+		return lambdaFunctionAssociationBuilder_cloudfront;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public BehaviorBuilder_cloudfront createBehaviorBuilder_cloudfront() {
+		BehaviorBuilder_cloudfrontImpl behaviorBuilder_cloudfront = new BehaviorBuilder_cloudfrontImpl();
+		return behaviorBuilder_cloudfront;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public CustomOriginConfigBuilder_cloudfront createCustomOriginConfigBuilder_cloudfront() {
+		CustomOriginConfigBuilder_cloudfrontImpl customOriginConfigBuilder_cloudfront = new CustomOriginConfigBuilder_cloudfrontImpl();
+		return customOriginConfigBuilder_cloudfront;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public BlockPublicAccessBuilder_s3 createBlockPublicAccessBuilder_s3() {
+		BlockPublicAccessBuilder_s3Impl blockPublicAccessBuilder_s3 = new BlockPublicAccessBuilder_s3Impl();
+		return blockPublicAccessBuilder_s3;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public CorsRuleBuilder_s3 createCorsRuleBuilder_s3() {
+		CorsRuleBuilder_s3Impl corsRuleBuilder_s3 = new CorsRuleBuilder_s3Impl();
+		return corsRuleBuilder_s3;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public NoncurrentVersionTransitionBuilder_s3 createNoncurrentVersionTransitionBuilder_s3() {
+		NoncurrentVersionTransitionBuilder_s3Impl noncurrentVersionTransitionBuilder_s3 = new NoncurrentVersionTransitionBuilder_s3Impl();
+		return noncurrentVersionTransitionBuilder_s3;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public TransitionBuilder_s3 createTransitionBuilder_s3() {
+		TransitionBuilder_s3Impl transitionBuilder_s3 = new TransitionBuilder_s3Impl();
+		return transitionBuilder_s3;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public LifecycleRuleBuilder_s3 createLifecycleRuleBuilder_s3() {
+		LifecycleRuleBuilder_s3Impl lifecycleRuleBuilder_s3 = new LifecycleRuleBuilder_s3Impl();
+		return lifecycleRuleBuilder_s3;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public BucketMetricsBuilder_s3 createBucketMetricsBuilder_s3() {
+		BucketMetricsBuilder_s3Impl bucketMetricsBuilder_s3 = new BucketMetricsBuilder_s3Impl();
+		return bucketMetricsBuilder_s3;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public RedirectTargetBuilder_s3 createRedirectTargetBuilder_s3() {
+		RedirectTargetBuilder_s3Impl redirectTargetBuilder_s3 = new RedirectTargetBuilder_s3Impl();
+		return redirectTargetBuilder_s3;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public RoutingRuleConditionBuilder_s3 createRoutingRuleConditionBuilder_s3() {
+		RoutingRuleConditionBuilder_s3Impl routingRuleConditionBuilder_s3 = new RoutingRuleConditionBuilder_s3Impl();
+		return routingRuleConditionBuilder_s3;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public RoutingRuleBuilder_s3 createRoutingRuleBuilder_s3() {
+		RoutingRuleBuilder_s3Impl routingRuleBuilder_s3 = new RoutingRuleBuilder_s3Impl();
+		return routingRuleBuilder_s3;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public BucketBuilder_s3 createBucketBuilder_s3() {
+		BucketBuilder_s3Impl bucketBuilder_s3 = new BucketBuilder_s3Impl();
+		return bucketBuilder_s3;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public BucketPropsBuilder_s3 createBucketPropsBuilder_s3() {
+		BucketPropsBuilder_s3Impl bucketPropsBuilder_s3 = new BucketPropsBuilder_s3Impl();
+		return bucketPropsBuilder_s3;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public OriginAccessIdentityBuilder_cloudfront createOriginAccessIdentityBuilder_cloudfront() {
+		OriginAccessIdentityBuilder_cloudfrontImpl originAccessIdentityBuilder_cloudfront = new OriginAccessIdentityBuilder_cloudfrontImpl();
+		return originAccessIdentityBuilder_cloudfront;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public S3OriginConfigBuilder_cloudfront createS3OriginConfigBuilder_cloudfront() {
+		S3OriginConfigBuilder_cloudfrontImpl s3OriginConfigBuilder_cloudfront = new S3OriginConfigBuilder_cloudfrontImpl();
+		return s3OriginConfigBuilder_cloudfront;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public SourceConfigurationBuilder_cloudfront createSourceConfigurationBuilder_cloudfront() {
+		SourceConfigurationBuilder_cloudfrontImpl sourceConfigurationBuilder_cloudfront = new SourceConfigurationBuilder_cloudfrontImpl();
+		return sourceConfigurationBuilder_cloudfront;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public AliasConfigurationBuilder_cloudfront createAliasConfigurationBuilder_cloudfront() {
+		AliasConfigurationBuilder_cloudfrontImpl aliasConfigurationBuilder_cloudfront = new AliasConfigurationBuilder_cloudfrontImpl();
+		return aliasConfigurationBuilder_cloudfront;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public LoggingConfigurationBuilder_cloudfront createLoggingConfigurationBuilder_cloudfront() {
+		LoggingConfigurationBuilder_cloudfrontImpl loggingConfigurationBuilder_cloudfront = new LoggingConfigurationBuilder_cloudfrontImpl();
+		return loggingConfigurationBuilder_cloudfront;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public CloudFrontWebDistributionPropsBuilder_cloudfront createCloudFrontWebDistributionPropsBuilder_cloudfront() {
+		CloudFrontWebDistributionPropsBuilder_cloudfrontImpl cloudFrontWebDistributionPropsBuilder_cloudfront = new CloudFrontWebDistributionPropsBuilder_cloudfrontImpl();
+		return cloudFrontWebDistributionPropsBuilder_cloudfront;
 	}
 
 	/**
@@ -832,6 +1251,171 @@ public class AwsworkbenchFactoryImpl extends EFactoryImpl implements Awsworkbenc
 	public CloudFrontToS3Builder_cloudfronts3 createCloudFrontToS3Builder_cloudfronts3() {
 		CloudFrontToS3Builder_cloudfronts3Impl cloudFrontToS3Builder_cloudfronts3 = new CloudFrontToS3Builder_cloudfronts3Impl();
 		return cloudFrontToS3Builder_cloudfronts3;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public AutoVerifiedAttrsBuilder_cognito createAutoVerifiedAttrsBuilder_cognito() {
+		AutoVerifiedAttrsBuilder_cognitoImpl autoVerifiedAttrsBuilder_cognito = new AutoVerifiedAttrsBuilder_cognitoImpl();
+		return autoVerifiedAttrsBuilder_cognito;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public UserPoolTriggersBuilder_cognito createUserPoolTriggersBuilder_cognito() {
+		UserPoolTriggersBuilder_cognitoImpl userPoolTriggersBuilder_cognito = new UserPoolTriggersBuilder_cognitoImpl();
+		return userPoolTriggersBuilder_cognito;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EmailSettingsBuilder_cognito createEmailSettingsBuilder_cognito() {
+		EmailSettingsBuilder_cognitoImpl emailSettingsBuilder_cognito = new EmailSettingsBuilder_cognitoImpl();
+		return emailSettingsBuilder_cognito;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public PasswordPolicyBuilder_cognito createPasswordPolicyBuilder_cognito() {
+		PasswordPolicyBuilder_cognitoImpl passwordPolicyBuilder_cognito = new PasswordPolicyBuilder_cognitoImpl();
+		return passwordPolicyBuilder_cognito;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public MfaSecondFactorBuilder_cognito createMfaSecondFactorBuilder_cognito() {
+		MfaSecondFactorBuilder_cognitoImpl mfaSecondFactorBuilder_cognito = new MfaSecondFactorBuilder_cognitoImpl();
+		return mfaSecondFactorBuilder_cognito;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public RequiredAttributesBuilder_cognito createRequiredAttributesBuilder_cognito() {
+		RequiredAttributesBuilder_cognitoImpl requiredAttributesBuilder_cognito = new RequiredAttributesBuilder_cognitoImpl();
+		return requiredAttributesBuilder_cognito;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public SignInAliasesBuilder_cognito createSignInAliasesBuilder_cognito() {
+		SignInAliasesBuilder_cognitoImpl signInAliasesBuilder_cognito = new SignInAliasesBuilder_cognitoImpl();
+		return signInAliasesBuilder_cognito;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public UserInvitationConfigBuilder_cognito createUserInvitationConfigBuilder_cognito() {
+		UserInvitationConfigBuilder_cognitoImpl userInvitationConfigBuilder_cognito = new UserInvitationConfigBuilder_cognitoImpl();
+		return userInvitationConfigBuilder_cognito;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public UserVerificationConfigBuilder_cognito createUserVerificationConfigBuilder_cognito() {
+		UserVerificationConfigBuilder_cognitoImpl userVerificationConfigBuilder_cognito = new UserVerificationConfigBuilder_cognitoImpl();
+		return userVerificationConfigBuilder_cognito;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public UserPoolPropsBuilder_cognito createUserPoolPropsBuilder_cognito() {
+		UserPoolPropsBuilder_cognitoImpl userPoolPropsBuilder_cognito = new UserPoolPropsBuilder_cognitoImpl();
+		return userPoolPropsBuilder_cognito;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public UserPoolBuilder_cognito createUserPoolBuilder_cognito() {
+		UserPoolBuilder_cognitoImpl userPoolBuilder_cognito = new UserPoolBuilder_cognitoImpl();
+		return userPoolBuilder_cognito;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public AuthFlowBuilder_cognito createAuthFlowBuilder_cognito() {
+		AuthFlowBuilder_cognitoImpl authFlowBuilder_cognito = new AuthFlowBuilder_cognitoImpl();
+		return authFlowBuilder_cognito;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public OAuthFlowsBuilder_cognito createOAuthFlowsBuilder_cognito() {
+		OAuthFlowsBuilder_cognitoImpl oAuthFlowsBuilder_cognito = new OAuthFlowsBuilder_cognitoImpl();
+		return oAuthFlowsBuilder_cognito;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public OAuthSettingsBuilder_cognito createOAuthSettingsBuilder_cognito() {
+		OAuthSettingsBuilder_cognitoImpl oAuthSettingsBuilder_cognito = new OAuthSettingsBuilder_cognitoImpl();
+		return oAuthSettingsBuilder_cognito;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public UserPoolClientPropsBuilder_cognito createUserPoolClientPropsBuilder_cognito() {
+		UserPoolClientPropsBuilder_cognitoImpl userPoolClientPropsBuilder_cognito = new UserPoolClientPropsBuilder_cognitoImpl();
+		return userPoolClientPropsBuilder_cognito;
 	}
 
 	/**
@@ -1656,6 +2240,359 @@ public class AwsworkbenchFactoryImpl extends EFactoryImpl implements Awsworkbenc
 	 * @generated
 	 */
 	public String convertJsonSchemaTypeToString(EDataType eDataType, Object instanceValue) {
+		return instanceValue == null ? null : instanceValue.toString();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public CloudFrontAllowedCachedMethods createCloudFrontAllowedCachedMethodsFromString(EDataType eDataType,
+			String initialValue) {
+		CloudFrontAllowedCachedMethods result = CloudFrontAllowedCachedMethods.get(initialValue);
+		if (result == null)
+			throw new IllegalArgumentException(
+					"The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+		return result;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String convertCloudFrontAllowedCachedMethodsToString(EDataType eDataType, Object instanceValue) {
+		return instanceValue == null ? null : instanceValue.toString();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public CloudFrontAllowedMethods createCloudFrontAllowedMethodsFromString(EDataType eDataType, String initialValue) {
+		CloudFrontAllowedMethods result = CloudFrontAllowedMethods.get(initialValue);
+		if (result == null)
+			throw new IllegalArgumentException(
+					"The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+		return result;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String convertCloudFrontAllowedMethodsToString(EDataType eDataType, Object instanceValue) {
+		return instanceValue == null ? null : instanceValue.toString();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public LambdaEdgeEventType createLambdaEdgeEventTypeFromString(EDataType eDataType, String initialValue) {
+		LambdaEdgeEventType result = LambdaEdgeEventType.get(initialValue);
+		if (result == null)
+			throw new IllegalArgumentException(
+					"The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+		return result;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String convertLambdaEdgeEventTypeToString(EDataType eDataType, Object instanceValue) {
+		return instanceValue == null ? null : instanceValue.toString();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public OriginSslPolicy createOriginSslPolicyFromString(EDataType eDataType, String initialValue) {
+		OriginSslPolicy result = OriginSslPolicy.get(initialValue);
+		if (result == null)
+			throw new IllegalArgumentException(
+					"The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+		return result;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String convertOriginSslPolicyToString(EDataType eDataType, Object instanceValue) {
+		return instanceValue == null ? null : instanceValue.toString();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public OriginProtocolPolicy createOriginProtocolPolicyFromString(EDataType eDataType, String initialValue) {
+		OriginProtocolPolicy result = OriginProtocolPolicy.get(initialValue);
+		if (result == null)
+			throw new IllegalArgumentException(
+					"The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+		return result;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String convertOriginProtocolPolicyToString(EDataType eDataType, Object instanceValue) {
+		return instanceValue == null ? null : instanceValue.toString();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public BucketAccessControl createBucketAccessControlFromString(EDataType eDataType, String initialValue) {
+		BucketAccessControl result = BucketAccessControl.get(initialValue);
+		if (result == null)
+			throw new IllegalArgumentException(
+					"The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+		return result;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String convertBucketAccessControlToString(EDataType eDataType, Object instanceValue) {
+		return instanceValue == null ? null : instanceValue.toString();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public HttpMethods createHttpMethodsFromString(EDataType eDataType, String initialValue) {
+		HttpMethods result = HttpMethods.get(initialValue);
+		if (result == null)
+			throw new IllegalArgumentException(
+					"The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+		return result;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String convertHttpMethodsToString(EDataType eDataType, Object instanceValue) {
+		return instanceValue == null ? null : instanceValue.toString();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public BucketEncryption createBucketEncryptionFromString(EDataType eDataType, String initialValue) {
+		BucketEncryption result = BucketEncryption.get(initialValue);
+		if (result == null)
+			throw new IllegalArgumentException(
+					"The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+		return result;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String convertBucketEncryptionToString(EDataType eDataType, Object instanceValue) {
+		return instanceValue == null ? null : instanceValue.toString();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public RedirectProtocol createRedirectProtocolFromString(EDataType eDataType, String initialValue) {
+		RedirectProtocol result = RedirectProtocol.get(initialValue);
+		if (result == null)
+			throw new IllegalArgumentException(
+					"The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+		return result;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String convertRedirectProtocolToString(EDataType eDataType, Object instanceValue) {
+		return instanceValue == null ? null : instanceValue.toString();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public HttpVersion createHttpVersionFromString(EDataType eDataType, String initialValue) {
+		HttpVersion result = HttpVersion.get(initialValue);
+		if (result == null)
+			throw new IllegalArgumentException(
+					"The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+		return result;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String convertHttpVersionToString(EDataType eDataType, Object instanceValue) {
+		return instanceValue == null ? null : instanceValue.toString();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PriceClass createPriceClassFromString(EDataType eDataType, String initialValue) {
+		PriceClass result = PriceClass.get(initialValue);
+		if (result == null)
+			throw new IllegalArgumentException(
+					"The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+		return result;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String convertPriceClassToString(EDataType eDataType, Object instanceValue) {
+		return instanceValue == null ? null : instanceValue.toString();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ViewerProtocolPolicy createViewerProtocolPolicyFromString(EDataType eDataType, String initialValue) {
+		ViewerProtocolPolicy result = ViewerProtocolPolicy.get(initialValue);
+		if (result == null)
+			throw new IllegalArgumentException(
+					"The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+		return result;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String convertViewerProtocolPolicyToString(EDataType eDataType, Object instanceValue) {
+		return instanceValue == null ? null : instanceValue.toString();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public SecurityPolicyProtocol createSecurityPolicyProtocolFromString(EDataType eDataType, String initialValue) {
+		SecurityPolicyProtocol result = SecurityPolicyProtocol.get(initialValue);
+		if (result == null)
+			throw new IllegalArgumentException(
+					"The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+		return result;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String convertSecurityPolicyProtocolToString(EDataType eDataType, Object instanceValue) {
+		return instanceValue == null ? null : instanceValue.toString();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public SSLMethod createSSLMethodFromString(EDataType eDataType, String initialValue) {
+		SSLMethod result = SSLMethod.get(initialValue);
+		if (result == null)
+			throw new IllegalArgumentException(
+					"The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+		return result;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String convertSSLMethodToString(EDataType eDataType, Object instanceValue) {
+		return instanceValue == null ? null : instanceValue.toString();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Mfa createMfaFromString(EDataType eDataType, String initialValue) {
+		Mfa result = Mfa.get(initialValue);
+		if (result == null)
+			throw new IllegalArgumentException(
+					"The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+		return result;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String convertMfaToString(EDataType eDataType, Object instanceValue) {
+		return instanceValue == null ? null : instanceValue.toString();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public VerificationEmailStyle createVerificationEmailStyleFromString(EDataType eDataType, String initialValue) {
+		VerificationEmailStyle result = VerificationEmailStyle.get(initialValue);
+		if (result == null)
+			throw new IllegalArgumentException(
+					"The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+		return result;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String convertVerificationEmailStyleToString(EDataType eDataType, Object instanceValue) {
 		return instanceValue == null ? null : instanceValue.toString();
 	}
 

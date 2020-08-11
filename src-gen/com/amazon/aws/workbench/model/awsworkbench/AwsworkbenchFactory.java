@@ -274,6 +274,15 @@ public interface AwsworkbenchFactory extends EFactory {
 	SecurityGroupBuilder_ec2 createSecurityGroupBuilder_ec2();
 
 	/**
+	 * Returns a new object of class '<em>Function Props Builder lambda</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Function Props Builder lambda</em>'.
+	 * @generated
+	 */
+	FunctionPropsBuilder_lambda createFunctionPropsBuilder_lambda();
+
+	/**
 	 * Returns a new object of class '<em>Function Builder lambda</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -373,6 +382,24 @@ public interface AwsworkbenchFactory extends EFactory {
 	ApiGatewayToDynamoDBBuilder_apigatewaydynamodb createApiGatewayToDynamoDBBuilder_apigatewaydynamodb();
 
 	/**
+	 * Returns a new object of class '<em>Lambda Rest Api Props Builder apigateway</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Lambda Rest Api Props Builder apigateway</em>'.
+	 * @generated
+	 */
+	LambdaRestApiPropsBuilder_apigateway createLambdaRestApiPropsBuilder_apigateway();
+
+	/**
+	 * Returns a new object of class '<em>Lambda Rest Api Builder apigateway</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Lambda Rest Api Builder apigateway</em>'.
+	 * @generated
+	 */
+	LambdaRestApiBuilder_apigateway createLambdaRestApiBuilder_apigateway();
+
+	/**
 	 * Returns a new object of class '<em>Api Gateway To Lambda Builder apigatewaylambda</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -382,6 +409,15 @@ public interface AwsworkbenchFactory extends EFactory {
 	ApiGatewayToLambdaBuilder_apigatewaylambda createApiGatewayToLambdaBuilder_apigatewaylambda();
 
 	/**
+	 * Returns a new object of class '<em>Queue Props Builder sqs</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Queue Props Builder sqs</em>'.
+	 * @generated
+	 */
+	QueuePropsBuilder_sqs createQueuePropsBuilder_sqs();
+
+	/**
 	 * Returns a new object of class '<em>Api Gateway To Sqs Builder apigatewaysqs</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -389,6 +425,195 @@ public interface AwsworkbenchFactory extends EFactory {
 	 * @generated
 	 */
 	ApiGatewayToSqsBuilder_apigatewaysqs createApiGatewayToSqsBuilder_apigatewaysqs();
+
+	/**
+	 * Returns a new object of class '<em>Version Builder lambda</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Version Builder lambda</em>'.
+	 * @generated
+	 */
+	VersionBuilder_lambda createVersionBuilder_lambda();
+
+	/**
+	 * Returns a new object of class '<em>Lambda Function Association Builder cloudfront</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Lambda Function Association Builder cloudfront</em>'.
+	 * @generated
+	 */
+	LambdaFunctionAssociationBuilder_cloudfront createLambdaFunctionAssociationBuilder_cloudfront();
+
+	/**
+	 * Returns a new object of class '<em>Behavior Builder cloudfront</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Behavior Builder cloudfront</em>'.
+	 * @generated
+	 */
+	BehaviorBuilder_cloudfront createBehaviorBuilder_cloudfront();
+
+	/**
+	 * Returns a new object of class '<em>Custom Origin Config Builder cloudfront</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Custom Origin Config Builder cloudfront</em>'.
+	 * @generated
+	 */
+	CustomOriginConfigBuilder_cloudfront createCustomOriginConfigBuilder_cloudfront();
+
+	/**
+	 * Returns a new object of class '<em>Block Public Access Builder s3</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Block Public Access Builder s3</em>'.
+	 * @generated
+	 */
+	BlockPublicAccessBuilder_s3 createBlockPublicAccessBuilder_s3();
+
+	/**
+	 * Returns a new object of class '<em>Cors Rule Builder s3</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Cors Rule Builder s3</em>'.
+	 * @generated
+	 */
+	CorsRuleBuilder_s3 createCorsRuleBuilder_s3();
+
+	/**
+	 * Returns a new object of class '<em>Noncurrent Version Transition Builder s3</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Noncurrent Version Transition Builder s3</em>'.
+	 * @generated
+	 */
+	NoncurrentVersionTransitionBuilder_s3 createNoncurrentVersionTransitionBuilder_s3();
+
+	/**
+	 * Returns a new object of class '<em>Transition Builder s3</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Transition Builder s3</em>'.
+	 * @generated
+	 */
+	TransitionBuilder_s3 createTransitionBuilder_s3();
+
+	/**
+	 * Returns a new object of class '<em>Lifecycle Rule Builder s3</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Lifecycle Rule Builder s3</em>'.
+	 * @generated
+	 */
+	LifecycleRuleBuilder_s3 createLifecycleRuleBuilder_s3();
+
+	/**
+	 * Returns a new object of class '<em>Bucket Metrics Builder s3</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Bucket Metrics Builder s3</em>'.
+	 * @generated
+	 */
+	BucketMetricsBuilder_s3 createBucketMetricsBuilder_s3();
+
+	/**
+	 * Returns a new object of class '<em>Redirect Target Builder s3</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Redirect Target Builder s3</em>'.
+	 * @generated
+	 */
+	RedirectTargetBuilder_s3 createRedirectTargetBuilder_s3();
+
+	/**
+	 * Returns a new object of class '<em>Routing Rule Condition Builder s3</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Routing Rule Condition Builder s3</em>'.
+	 * @generated
+	 */
+	RoutingRuleConditionBuilder_s3 createRoutingRuleConditionBuilder_s3();
+
+	/**
+	 * Returns a new object of class '<em>Routing Rule Builder s3</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Routing Rule Builder s3</em>'.
+	 * @generated
+	 */
+	RoutingRuleBuilder_s3 createRoutingRuleBuilder_s3();
+
+	/**
+	 * Returns a new object of class '<em>Bucket Builder s3</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Bucket Builder s3</em>'.
+	 * @generated
+	 */
+	BucketBuilder_s3 createBucketBuilder_s3();
+
+	/**
+	 * Returns a new object of class '<em>Bucket Props Builder s3</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Bucket Props Builder s3</em>'.
+	 * @generated
+	 */
+	BucketPropsBuilder_s3 createBucketPropsBuilder_s3();
+
+	/**
+	 * Returns a new object of class '<em>Origin Access Identity Builder cloudfront</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Origin Access Identity Builder cloudfront</em>'.
+	 * @generated
+	 */
+	OriginAccessIdentityBuilder_cloudfront createOriginAccessIdentityBuilder_cloudfront();
+
+	/**
+	 * Returns a new object of class '<em>S3 Origin Config Builder cloudfront</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>S3 Origin Config Builder cloudfront</em>'.
+	 * @generated
+	 */
+	S3OriginConfigBuilder_cloudfront createS3OriginConfigBuilder_cloudfront();
+
+	/**
+	 * Returns a new object of class '<em>Source Configuration Builder cloudfront</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Source Configuration Builder cloudfront</em>'.
+	 * @generated
+	 */
+	SourceConfigurationBuilder_cloudfront createSourceConfigurationBuilder_cloudfront();
+
+	/**
+	 * Returns a new object of class '<em>Alias Configuration Builder cloudfront</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Alias Configuration Builder cloudfront</em>'.
+	 * @generated
+	 */
+	AliasConfigurationBuilder_cloudfront createAliasConfigurationBuilder_cloudfront();
+
+	/**
+	 * Returns a new object of class '<em>Logging Configuration Builder cloudfront</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Logging Configuration Builder cloudfront</em>'.
+	 * @generated
+	 */
+	LoggingConfigurationBuilder_cloudfront createLoggingConfigurationBuilder_cloudfront();
+
+	/**
+	 * Returns a new object of class '<em>Cloud Front Web Distribution Props Builder cloudfront</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Cloud Front Web Distribution Props Builder cloudfront</em>'.
+	 * @generated
+	 */
+	CloudFrontWebDistributionPropsBuilder_cloudfront createCloudFrontWebDistributionPropsBuilder_cloudfront();
 
 	/**
 	 * Returns a new object of class '<em>Cloud Front To Api Gateway Builder cloudfrontapigateway</em>'.
@@ -416,6 +641,141 @@ public interface AwsworkbenchFactory extends EFactory {
 	 * @generated
 	 */
 	CloudFrontToS3Builder_cloudfronts3 createCloudFrontToS3Builder_cloudfronts3();
+
+	/**
+	 * Returns a new object of class '<em>Auto Verified Attrs Builder cognito</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Auto Verified Attrs Builder cognito</em>'.
+	 * @generated
+	 */
+	AutoVerifiedAttrsBuilder_cognito createAutoVerifiedAttrsBuilder_cognito();
+
+	/**
+	 * Returns a new object of class '<em>User Pool Triggers Builder cognito</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>User Pool Triggers Builder cognito</em>'.
+	 * @generated
+	 */
+	UserPoolTriggersBuilder_cognito createUserPoolTriggersBuilder_cognito();
+
+	/**
+	 * Returns a new object of class '<em>Email Settings Builder cognito</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Email Settings Builder cognito</em>'.
+	 * @generated
+	 */
+	EmailSettingsBuilder_cognito createEmailSettingsBuilder_cognito();
+
+	/**
+	 * Returns a new object of class '<em>Password Policy Builder cognito</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Password Policy Builder cognito</em>'.
+	 * @generated
+	 */
+	PasswordPolicyBuilder_cognito createPasswordPolicyBuilder_cognito();
+
+	/**
+	 * Returns a new object of class '<em>Mfa Second Factor Builder cognito</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Mfa Second Factor Builder cognito</em>'.
+	 * @generated
+	 */
+	MfaSecondFactorBuilder_cognito createMfaSecondFactorBuilder_cognito();
+
+	/**
+	 * Returns a new object of class '<em>Required Attributes Builder cognito</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Required Attributes Builder cognito</em>'.
+	 * @generated
+	 */
+	RequiredAttributesBuilder_cognito createRequiredAttributesBuilder_cognito();
+
+	/**
+	 * Returns a new object of class '<em>Sign In Aliases Builder cognito</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Sign In Aliases Builder cognito</em>'.
+	 * @generated
+	 */
+	SignInAliasesBuilder_cognito createSignInAliasesBuilder_cognito();
+
+	/**
+	 * Returns a new object of class '<em>User Invitation Config Builder cognito</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>User Invitation Config Builder cognito</em>'.
+	 * @generated
+	 */
+	UserInvitationConfigBuilder_cognito createUserInvitationConfigBuilder_cognito();
+
+	/**
+	 * Returns a new object of class '<em>User Verification Config Builder cognito</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>User Verification Config Builder cognito</em>'.
+	 * @generated
+	 */
+	UserVerificationConfigBuilder_cognito createUserVerificationConfigBuilder_cognito();
+
+	/**
+	 * Returns a new object of class '<em>User Pool Props Builder cognito</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>User Pool Props Builder cognito</em>'.
+	 * @generated
+	 */
+	UserPoolPropsBuilder_cognito createUserPoolPropsBuilder_cognito();
+
+	/**
+	 * Returns a new object of class '<em>User Pool Builder cognito</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>User Pool Builder cognito</em>'.
+	 * @generated
+	 */
+	UserPoolBuilder_cognito createUserPoolBuilder_cognito();
+
+	/**
+	 * Returns a new object of class '<em>Auth Flow Builder cognito</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Auth Flow Builder cognito</em>'.
+	 * @generated
+	 */
+	AuthFlowBuilder_cognito createAuthFlowBuilder_cognito();
+
+	/**
+	 * Returns a new object of class '<em>OAuth Flows Builder cognito</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>OAuth Flows Builder cognito</em>'.
+	 * @generated
+	 */
+	OAuthFlowsBuilder_cognito createOAuthFlowsBuilder_cognito();
+
+	/**
+	 * Returns a new object of class '<em>OAuth Settings Builder cognito</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>OAuth Settings Builder cognito</em>'.
+	 * @generated
+	 */
+	OAuthSettingsBuilder_cognito createOAuthSettingsBuilder_cognito();
+
+	/**
+	 * Returns a new object of class '<em>User Pool Client Props Builder cognito</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>User Pool Client Props Builder cognito</em>'.
+	 * @generated
+	 */
+	UserPoolClientPropsBuilder_cognito createUserPoolClientPropsBuilder_cognito();
 
 	/**
 	 * Returns a new object of class '<em>Cognito To Api Gateway To Lambda Builder cognitoapigatewaylambda</em>'.

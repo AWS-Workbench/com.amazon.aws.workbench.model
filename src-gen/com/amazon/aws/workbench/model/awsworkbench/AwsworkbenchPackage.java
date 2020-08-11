@@ -3497,6 +3497,322 @@ public interface AwsworkbenchPackage extends EPackage {
 	int SECURITY_GROUP_BUILDER_EC2_OPERATION_COUNT = 0;
 
 	/**
+	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.FunctionPropsBuilder_lambdaImpl <em>Function Props Builder lambda</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.FunctionPropsBuilder_lambdaImpl
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getFunctionPropsBuilder_lambda()
+	 * @generated
+	 */
+	int FUNCTION_PROPS_BUILDER_LAMBDA = 29;
+
+	/**
+	 * The feature id for the '<em><b>Code With Code software amazon awscdk services lambda Code As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FUNCTION_PROPS_BUILDER_LAMBDA__CODE_WITH_CODE_SOFTWARE_AMAZON_AWSCDK_SERVICES_LAMBDA_CODE_AS_REFERENCE = 0;
+
+	/**
+	 * The feature id for the '<em><b>Handler java lang String </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FUNCTION_PROPS_BUILDER_LAMBDA__HANDLER_JAVA_LANG_STRING_ = 1;
+
+	/**
+	 * The feature id for the '<em><b>Runtime With Runtime software amazon awscdk services lambda Runtime As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FUNCTION_PROPS_BUILDER_LAMBDA__RUNTIME_WITH_RUNTIME_SOFTWARE_AMAZON_AWSCDK_SERVICES_LAMBDA_RUNTIME_AS_REFERENCE = 2;
+
+	/**
+	 * The feature id for the '<em><b>Allow All Outbound java lang Boolean </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FUNCTION_PROPS_BUILDER_LAMBDA__ALLOW_ALL_OUTBOUND_JAVA_LANG_BOOLEAN_ = 3;
+
+	/**
+	 * The feature id for the '<em><b>Current Version Options With Version Options software amazon awscdk services lambda Version Options As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FUNCTION_PROPS_BUILDER_LAMBDA__CURRENT_VERSION_OPTIONS_WITH_VERSION_OPTIONS_SOFTWARE_AMAZON_AWSCDK_SERVICES_LAMBDA_VERSION_OPTIONS_AS_REFERENCE = 4;
+
+	/**
+	 * The feature id for the '<em><b>Dead Letter Queue With IQueue software amazon awscdk services sqs IQueue As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FUNCTION_PROPS_BUILDER_LAMBDA__DEAD_LETTER_QUEUE_WITH_IQUEUE_SOFTWARE_AMAZON_AWSCDK_SERVICES_SQS_IQUEUE_AS_REFERENCE = 5;
+
+	/**
+	 * The feature id for the '<em><b>Dead Letter Queue Enabled java lang Boolean </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FUNCTION_PROPS_BUILDER_LAMBDA__DEAD_LETTER_QUEUE_ENABLED_JAVA_LANG_BOOLEAN_ = 6;
+
+	/**
+	 * The feature id for the '<em><b>Description java lang String </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FUNCTION_PROPS_BUILDER_LAMBDA__DESCRIPTION_JAVA_LANG_STRING_ = 7;
+
+	/**
+	 * The feature id for the '<em><b>Environment java lang String java lang String As Map</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FUNCTION_PROPS_BUILDER_LAMBDA__ENVIRONMENT_JAVA_LANG_STRING_JAVA_LANG_STRING_AS_MAP = 8;
+
+	/**
+	 * The feature id for the '<em><b>Events software amazon awscdk services lambda IEvent Source As List</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FUNCTION_PROPS_BUILDER_LAMBDA__EVENTS_SOFTWARE_AMAZON_AWSCDK_SERVICES_LAMBDA_IEVENT_SOURCE_AS_LIST = 9;
+
+	/**
+	 * The feature id for the '<em><b>Function Name java lang String </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FUNCTION_PROPS_BUILDER_LAMBDA__FUNCTION_NAME_JAVA_LANG_STRING_ = 10;
+
+	/**
+	 * The feature id for the '<em><b>Initial Policy software amazon awscdk services iam Policy Statement As List</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FUNCTION_PROPS_BUILDER_LAMBDA__INITIAL_POLICY_SOFTWARE_AMAZON_AWSCDK_SERVICES_IAM_POLICY_STATEMENT_AS_LIST = 11;
+
+	/**
+	 * The feature id for the '<em><b>Layers software amazon awscdk services lambda ILayer Version As List</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FUNCTION_PROPS_BUILDER_LAMBDA__LAYERS_SOFTWARE_AMAZON_AWSCDK_SERVICES_LAMBDA_ILAYER_VERSION_AS_LIST = 12;
+
+	/**
+	 * The feature id for the '<em><b>Log Retention software amazon awscdk services logs Retention Days </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FUNCTION_PROPS_BUILDER_LAMBDA__LOG_RETENTION_SOFTWARE_AMAZON_AWSCDK_SERVICES_LOGS_RETENTION_DAYS_ = 13;
+
+	/**
+	 * The feature id for the '<em><b>Log Retention Role With IRole software amazon awscdk services iam IRole As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FUNCTION_PROPS_BUILDER_LAMBDA__LOG_RETENTION_ROLE_WITH_IROLE_SOFTWARE_AMAZON_AWSCDK_SERVICES_IAM_IROLE_AS_REFERENCE = 14;
+
+	/**
+	 * The feature id for the '<em><b>Memory Size java lang Number </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FUNCTION_PROPS_BUILDER_LAMBDA__MEMORY_SIZE_JAVA_LANG_NUMBER_ = 15;
+
+	/**
+	 * The feature id for the '<em><b>Reserved Concurrent Executions java lang Number </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FUNCTION_PROPS_BUILDER_LAMBDA__RESERVED_CONCURRENT_EXECUTIONS_JAVA_LANG_NUMBER_ = 16;
+
+	/**
+	 * The feature id for the '<em><b>Role With IRole software amazon awscdk services iam IRole As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FUNCTION_PROPS_BUILDER_LAMBDA__ROLE_WITH_IROLE_SOFTWARE_AMAZON_AWSCDK_SERVICES_IAM_IROLE_AS_REFERENCE = 17;
+
+	/**
+	 * The feature id for the '<em><b>Security Group With ISecurity Group software amazon awscdk services ec2 ISecurity Group As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FUNCTION_PROPS_BUILDER_LAMBDA__SECURITY_GROUP_WITH_ISECURITY_GROUP_SOFTWARE_AMAZON_AWSCDK_SERVICES_EC2_ISECURITY_GROUP_AS_REFERENCE = 18;
+
+	/**
+	 * The feature id for the '<em><b>Security Groups software amazon awscdk services ec2 ISecurity Group As List</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FUNCTION_PROPS_BUILDER_LAMBDA__SECURITY_GROUPS_SOFTWARE_AMAZON_AWSCDK_SERVICES_EC2_ISECURITY_GROUP_AS_LIST = 19;
+
+	/**
+	 * The feature id for the '<em><b>Timeout With Duration software amazon awscdk core Duration As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FUNCTION_PROPS_BUILDER_LAMBDA__TIMEOUT_WITH_DURATION_SOFTWARE_AMAZON_AWSCDK_CORE_DURATION_AS_REFERENCE = 20;
+
+	/**
+	 * The feature id for the '<em><b>Tracing software amazon awscdk services lambda Tracing </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FUNCTION_PROPS_BUILDER_LAMBDA__TRACING_SOFTWARE_AMAZON_AWSCDK_SERVICES_LAMBDA_TRACING_ = 21;
+
+	/**
+	 * The feature id for the '<em><b>Vpc With IVpc software amazon awscdk services ec2 IVpc As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FUNCTION_PROPS_BUILDER_LAMBDA__VPC_WITH_IVPC_SOFTWARE_AMAZON_AWSCDK_SERVICES_EC2_IVPC_AS_REFERENCE = 22;
+
+	/**
+	 * The feature id for the '<em><b>Vpc Subnets With Subnet Selection software amazon awscdk services ec2 Subnet Selection As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FUNCTION_PROPS_BUILDER_LAMBDA__VPC_SUBNETS_WITH_SUBNET_SELECTION_SOFTWARE_AMAZON_AWSCDK_SERVICES_EC2_SUBNET_SELECTION_AS_REFERENCE = 23;
+
+	/**
+	 * The feature id for the '<em><b>Max Event Age With Duration software amazon awscdk core Duration As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FUNCTION_PROPS_BUILDER_LAMBDA__MAX_EVENT_AGE_WITH_DURATION_SOFTWARE_AMAZON_AWSCDK_CORE_DURATION_AS_REFERENCE = 24;
+
+	/**
+	 * The feature id for the '<em><b>On Failure With IDestination software amazon awscdk services lambda IDestination As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FUNCTION_PROPS_BUILDER_LAMBDA__ON_FAILURE_WITH_IDESTINATION_SOFTWARE_AMAZON_AWSCDK_SERVICES_LAMBDA_IDESTINATION_AS_REFERENCE = 25;
+
+	/**
+	 * The feature id for the '<em><b>On Success With IDestination software amazon awscdk services lambda IDestination As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FUNCTION_PROPS_BUILDER_LAMBDA__ON_SUCCESS_WITH_IDESTINATION_SOFTWARE_AMAZON_AWSCDK_SERVICES_LAMBDA_IDESTINATION_AS_REFERENCE = 26;
+
+	/**
+	 * The feature id for the '<em><b>Retry Attempts java lang Number </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FUNCTION_PROPS_BUILDER_LAMBDA__RETRY_ATTEMPTS_JAVA_LANG_NUMBER_ = 27;
+
+	/**
+	 * The feature id for the '<em><b>Generated Class Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FUNCTION_PROPS_BUILDER_LAMBDA__GENERATED_CLASS_NAME = 28;
+
+	/**
+	 * The feature id for the '<em><b>Var Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FUNCTION_PROPS_BUILDER_LAMBDA__VAR_NAME = 29;
+
+	/**
+	 * The feature id for the '<em><b>Identifier</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FUNCTION_PROPS_BUILDER_LAMBDA__IDENTIFIER = 30;
+
+	/**
+	 * The feature id for the '<em><b>Additional Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FUNCTION_PROPS_BUILDER_LAMBDA__ADDITIONAL_CODE = 31;
+
+	/**
+	 * The number of structural features of the '<em>Function Props Builder lambda</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FUNCTION_PROPS_BUILDER_LAMBDA_FEATURE_COUNT = 32;
+
+	/**
+	 * The number of operations of the '<em>Function Props Builder lambda</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FUNCTION_PROPS_BUILDER_LAMBDA_OPERATION_COUNT = 0;
+
+	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.FunctionBuilder_lambdaImpl <em>Function Builder lambda</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3504,7 +3820,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getFunctionBuilder_lambda()
 	 * @generated
 	 */
-	int FUNCTION_BUILDER_LAMBDA = 29;
+	int FUNCTION_BUILDER_LAMBDA = 30;
 
 	/**
 	 * The feature id for the '<em><b>Max Event Age With Duration software amazon awscdk core Duration As Reference</b></em>' attribute.
@@ -3820,7 +4136,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getRequestAuthorizerBuilder_apigateway()
 	 * @generated
 	 */
-	int REQUEST_AUTHORIZER_BUILDER_APIGATEWAY = 30;
+	int REQUEST_AUTHORIZER_BUILDER_APIGATEWAY = 31;
 
 	/**
 	 * The feature id for the '<em><b>Handler With IFunction software amazon awscdk services lambda IFunction As Reference</b></em>' attribute.
@@ -3929,7 +4245,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getTokenAuthorizerBuilder_apigateway()
 	 * @generated
 	 */
-	int TOKEN_AUTHORIZER_BUILDER_APIGATEWAY = 31;
+	int TOKEN_AUTHORIZER_BUILDER_APIGATEWAY = 32;
 
 	/**
 	 * The feature id for the '<em><b>Handler With IFunction software amazon awscdk services lambda IFunction As Reference</b></em>' attribute.
@@ -4047,7 +4363,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getJsonSchemaBuilder_apigateway()
 	 * @generated
 	 */
-	int JSON_SCHEMA_BUILDER_APIGATEWAY = 32;
+	int JSON_SCHEMA_BUILDER_APIGATEWAY = 33;
 
 	/**
 	 * The feature id for the '<em><b>Additional Items software amazon awscdk services apigateway Json Schema As List</b></em>' attribute.
@@ -4453,7 +4769,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getModelBuilder_apigateway()
 	 * @generated
 	 */
-	int MODEL_BUILDER_APIGATEWAY = 33;
+	int MODEL_BUILDER_APIGATEWAY = 34;
 
 	/**
 	 * The feature id for the '<em><b>Schema With Json Schema software amazon awscdk services apigateway Json Schema As Reference</b></em>' attribute.
@@ -4562,7 +4878,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getRequestValidatorOptionsBuilder_apigateway()
 	 * @generated
 	 */
-	int REQUEST_VALIDATOR_OPTIONS_BUILDER_APIGATEWAY = 34;
+	int REQUEST_VALIDATOR_OPTIONS_BUILDER_APIGATEWAY = 35;
 
 	/**
 	 * The feature id for the '<em><b>Request Validator Name java lang String </b></em>' attribute.
@@ -4653,7 +4969,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getRequestValidatorBuilder_apigateway()
 	 * @generated
 	 */
-	int REQUEST_VALIDATOR_BUILDER_APIGATEWAY = 35;
+	int REQUEST_VALIDATOR_BUILDER_APIGATEWAY = 36;
 
 	/**
 	 * The feature id for the '<em><b>Request Validator Name java lang String </b></em>' attribute.
@@ -4753,7 +5069,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getMethodResponseBuilder_apigateway()
 	 * @generated
 	 */
-	int METHOD_RESPONSE_BUILDER_APIGATEWAY = 36;
+	int METHOD_RESPONSE_BUILDER_APIGATEWAY = 37;
 
 	/**
 	 * The feature id for the '<em><b>Status Code java lang String </b></em>' attribute.
@@ -4844,7 +5160,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getMethodOptionsBuilder_apigateway()
 	 * @generated
 	 */
-	int METHOD_OPTIONS_BUILDER_APIGATEWAY = 37;
+	int METHOD_OPTIONS_BUILDER_APIGATEWAY = 38;
 
 	/**
 	 * The feature id for the '<em><b>Api Key Required java lang Boolean </b></em>' attribute.
@@ -4998,7 +5314,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getRestApiPropsBuilder_apigateway()
 	 * @generated
 	 */
-	int REST_API_PROPS_BUILDER_APIGATEWAY = 38;
+	int REST_API_PROPS_BUILDER_APIGATEWAY = 39;
 
 	/**
 	 * The feature id for the '<em><b>Api Key Source Type software amazon awscdk services apigateway Api Key Source Type </b></em>' attribute.
@@ -5242,7 +5558,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getApiGatewayToDynamoDBBuilder_apigatewaydynamodb()
 	 * @generated
 	 */
-	int API_GATEWAY_TO_DYNAMO_DB_BUILDER_APIGATEWAYDYNAMODB = 39;
+	int API_GATEWAY_TO_DYNAMO_DB_BUILDER_APIGATEWAYDYNAMODB = 40;
 
 	/**
 	 * The feature id for the '<em><b>Allow Create Operation java lang Boolean </b></em>' attribute.
@@ -5371,6 +5687,548 @@ public interface AwsworkbenchPackage extends EPackage {
 	int API_GATEWAY_TO_DYNAMO_DB_BUILDER_APIGATEWAYDYNAMODB_OPERATION_COUNT = 0;
 
 	/**
+	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.LambdaRestApiPropsBuilder_apigatewayImpl <em>Lambda Rest Api Props Builder apigateway</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.LambdaRestApiPropsBuilder_apigatewayImpl
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getLambdaRestApiPropsBuilder_apigateway()
+	 * @generated
+	 */
+	int LAMBDA_REST_API_PROPS_BUILDER_APIGATEWAY = 41;
+
+	/**
+	 * The feature id for the '<em><b>Handler With IFunction software amazon awscdk services lambda IFunction As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LAMBDA_REST_API_PROPS_BUILDER_APIGATEWAY__HANDLER_WITH_IFUNCTION_SOFTWARE_AMAZON_AWSCDK_SERVICES_LAMBDA_IFUNCTION_AS_REFERENCE = 0;
+
+	/**
+	 * The feature id for the '<em><b>Options With Rest Api Props software amazon awscdk services apigateway Rest Api Props As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LAMBDA_REST_API_PROPS_BUILDER_APIGATEWAY__OPTIONS_WITH_REST_API_PROPS_SOFTWARE_AMAZON_AWSCDK_SERVICES_APIGATEWAY_REST_API_PROPS_AS_REFERENCE = 1;
+
+	/**
+	 * The feature id for the '<em><b>Proxy java lang Boolean </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LAMBDA_REST_API_PROPS_BUILDER_APIGATEWAY__PROXY_JAVA_LANG_BOOLEAN_ = 2;
+
+	/**
+	 * The feature id for the '<em><b>Api Key Source Type software amazon awscdk services apigateway Api Key Source Type </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LAMBDA_REST_API_PROPS_BUILDER_APIGATEWAY__API_KEY_SOURCE_TYPE_SOFTWARE_AMAZON_AWSCDK_SERVICES_APIGATEWAY_API_KEY_SOURCE_TYPE_ = 3;
+
+	/**
+	 * The feature id for the '<em><b>Binary Media Types java lang String As List</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LAMBDA_REST_API_PROPS_BUILDER_APIGATEWAY__BINARY_MEDIA_TYPES_JAVA_LANG_STRING_AS_LIST = 4;
+
+	/**
+	 * The feature id for the '<em><b>Clone From With IRest Api software amazon awscdk services apigateway IRest Api As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LAMBDA_REST_API_PROPS_BUILDER_APIGATEWAY__CLONE_FROM_WITH_IREST_API_SOFTWARE_AMAZON_AWSCDK_SERVICES_APIGATEWAY_IREST_API_AS_REFERENCE = 5;
+
+	/**
+	 * The feature id for the '<em><b>Description java lang String </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LAMBDA_REST_API_PROPS_BUILDER_APIGATEWAY__DESCRIPTION_JAVA_LANG_STRING_ = 6;
+
+	/**
+	 * The feature id for the '<em><b>Endpoint Configuration With Endpoint Configuration software amazon awscdk services apigateway Endpoint Configuration As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LAMBDA_REST_API_PROPS_BUILDER_APIGATEWAY__ENDPOINT_CONFIGURATION_WITH_ENDPOINT_CONFIGURATION_SOFTWARE_AMAZON_AWSCDK_SERVICES_APIGATEWAY_ENDPOINT_CONFIGURATION_AS_REFERENCE = 7;
+
+	/**
+	 * The feature id for the '<em><b>Endpoint Types software amazon awscdk services apigateway Endpoint Type As List</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LAMBDA_REST_API_PROPS_BUILDER_APIGATEWAY__ENDPOINT_TYPES_SOFTWARE_AMAZON_AWSCDK_SERVICES_APIGATEWAY_ENDPOINT_TYPE_AS_LIST = 8;
+
+	/**
+	 * The feature id for the '<em><b>Minimum Compression Size java lang Number </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LAMBDA_REST_API_PROPS_BUILDER_APIGATEWAY__MINIMUM_COMPRESSION_SIZE_JAVA_LANG_NUMBER_ = 9;
+
+	/**
+	 * The feature id for the '<em><b>Cloud Watch Role java lang Boolean </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LAMBDA_REST_API_PROPS_BUILDER_APIGATEWAY__CLOUD_WATCH_ROLE_JAVA_LANG_BOOLEAN_ = 10;
+
+	/**
+	 * The feature id for the '<em><b>Deploy java lang Boolean </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LAMBDA_REST_API_PROPS_BUILDER_APIGATEWAY__DEPLOY_JAVA_LANG_BOOLEAN_ = 11;
+
+	/**
+	 * The feature id for the '<em><b>Deploy Options With Stage Options software amazon awscdk services apigateway Stage Options As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LAMBDA_REST_API_PROPS_BUILDER_APIGATEWAY__DEPLOY_OPTIONS_WITH_STAGE_OPTIONS_SOFTWARE_AMAZON_AWSCDK_SERVICES_APIGATEWAY_STAGE_OPTIONS_AS_REFERENCE = 12;
+
+	/**
+	 * The feature id for the '<em><b>Domain Name With Domain Name Options software amazon awscdk services apigateway Domain Name Options As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LAMBDA_REST_API_PROPS_BUILDER_APIGATEWAY__DOMAIN_NAME_WITH_DOMAIN_NAME_OPTIONS_SOFTWARE_AMAZON_AWSCDK_SERVICES_APIGATEWAY_DOMAIN_NAME_OPTIONS_AS_REFERENCE = 13;
+
+	/**
+	 * The feature id for the '<em><b>Endpoint Export Name java lang String </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LAMBDA_REST_API_PROPS_BUILDER_APIGATEWAY__ENDPOINT_EXPORT_NAME_JAVA_LANG_STRING_ = 14;
+
+	/**
+	 * The feature id for the '<em><b>Fail On Warnings java lang Boolean </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LAMBDA_REST_API_PROPS_BUILDER_APIGATEWAY__FAIL_ON_WARNINGS_JAVA_LANG_BOOLEAN_ = 15;
+
+	/**
+	 * The feature id for the '<em><b>Parameters java lang String java lang String As Map</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LAMBDA_REST_API_PROPS_BUILDER_APIGATEWAY__PARAMETERS_JAVA_LANG_STRING_JAVA_LANG_STRING_AS_MAP = 16;
+
+	/**
+	 * The feature id for the '<em><b>Policy With Policy Document software amazon awscdk services iam Policy Document As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LAMBDA_REST_API_PROPS_BUILDER_APIGATEWAY__POLICY_WITH_POLICY_DOCUMENT_SOFTWARE_AMAZON_AWSCDK_SERVICES_IAM_POLICY_DOCUMENT_AS_REFERENCE = 17;
+
+	/**
+	 * The feature id for the '<em><b>Rest Api Name java lang String </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LAMBDA_REST_API_PROPS_BUILDER_APIGATEWAY__REST_API_NAME_JAVA_LANG_STRING_ = 18;
+
+	/**
+	 * The feature id for the '<em><b>Retain Deployments java lang Boolean </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LAMBDA_REST_API_PROPS_BUILDER_APIGATEWAY__RETAIN_DEPLOYMENTS_JAVA_LANG_BOOLEAN_ = 19;
+
+	/**
+	 * The feature id for the '<em><b>Default Cors Preflight Options With Cors Options software amazon awscdk services apigateway Cors Options As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LAMBDA_REST_API_PROPS_BUILDER_APIGATEWAY__DEFAULT_CORS_PREFLIGHT_OPTIONS_WITH_CORS_OPTIONS_SOFTWARE_AMAZON_AWSCDK_SERVICES_APIGATEWAY_CORS_OPTIONS_AS_REFERENCE = 20;
+
+	/**
+	 * The feature id for the '<em><b>Default Integration With Integration software amazon awscdk services apigateway Integration As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LAMBDA_REST_API_PROPS_BUILDER_APIGATEWAY__DEFAULT_INTEGRATION_WITH_INTEGRATION_SOFTWARE_AMAZON_AWSCDK_SERVICES_APIGATEWAY_INTEGRATION_AS_REFERENCE = 21;
+
+	/**
+	 * The feature id for the '<em><b>Default Method Options With Method Options software amazon awscdk services apigateway Method Options As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LAMBDA_REST_API_PROPS_BUILDER_APIGATEWAY__DEFAULT_METHOD_OPTIONS_WITH_METHOD_OPTIONS_SOFTWARE_AMAZON_AWSCDK_SERVICES_APIGATEWAY_METHOD_OPTIONS_AS_REFERENCE = 22;
+
+	/**
+	 * The feature id for the '<em><b>Generated Class Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LAMBDA_REST_API_PROPS_BUILDER_APIGATEWAY__GENERATED_CLASS_NAME = 23;
+
+	/**
+	 * The feature id for the '<em><b>Var Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LAMBDA_REST_API_PROPS_BUILDER_APIGATEWAY__VAR_NAME = 24;
+
+	/**
+	 * The feature id for the '<em><b>Identifier</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LAMBDA_REST_API_PROPS_BUILDER_APIGATEWAY__IDENTIFIER = 25;
+
+	/**
+	 * The feature id for the '<em><b>Additional Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LAMBDA_REST_API_PROPS_BUILDER_APIGATEWAY__ADDITIONAL_CODE = 26;
+
+	/**
+	 * The number of structural features of the '<em>Lambda Rest Api Props Builder apigateway</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LAMBDA_REST_API_PROPS_BUILDER_APIGATEWAY_FEATURE_COUNT = 27;
+
+	/**
+	 * The number of operations of the '<em>Lambda Rest Api Props Builder apigateway</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LAMBDA_REST_API_PROPS_BUILDER_APIGATEWAY_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.LambdaRestApiBuilder_apigatewayImpl <em>Lambda Rest Api Builder apigateway</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.LambdaRestApiBuilder_apigatewayImpl
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getLambdaRestApiBuilder_apigateway()
+	 * @generated
+	 */
+	int LAMBDA_REST_API_BUILDER_APIGATEWAY = 42;
+
+	/**
+	 * The feature id for the '<em><b>Default Cors Preflight Options With Cors Options software amazon awscdk services apigateway Cors Options As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LAMBDA_REST_API_BUILDER_APIGATEWAY__DEFAULT_CORS_PREFLIGHT_OPTIONS_WITH_CORS_OPTIONS_SOFTWARE_AMAZON_AWSCDK_SERVICES_APIGATEWAY_CORS_OPTIONS_AS_REFERENCE = 0;
+
+	/**
+	 * The feature id for the '<em><b>Default Integration With Integration software amazon awscdk services apigateway Integration As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LAMBDA_REST_API_BUILDER_APIGATEWAY__DEFAULT_INTEGRATION_WITH_INTEGRATION_SOFTWARE_AMAZON_AWSCDK_SERVICES_APIGATEWAY_INTEGRATION_AS_REFERENCE = 1;
+
+	/**
+	 * The feature id for the '<em><b>Default Method Options With Method Options software amazon awscdk services apigateway Method Options As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LAMBDA_REST_API_BUILDER_APIGATEWAY__DEFAULT_METHOD_OPTIONS_WITH_METHOD_OPTIONS_SOFTWARE_AMAZON_AWSCDK_SERVICES_APIGATEWAY_METHOD_OPTIONS_AS_REFERENCE = 2;
+
+	/**
+	 * The feature id for the '<em><b>Cloud Watch Role java lang Boolean </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LAMBDA_REST_API_BUILDER_APIGATEWAY__CLOUD_WATCH_ROLE_JAVA_LANG_BOOLEAN_ = 3;
+
+	/**
+	 * The feature id for the '<em><b>Deploy java lang Boolean </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LAMBDA_REST_API_BUILDER_APIGATEWAY__DEPLOY_JAVA_LANG_BOOLEAN_ = 4;
+
+	/**
+	 * The feature id for the '<em><b>Deploy Options With Stage Options software amazon awscdk services apigateway Stage Options As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LAMBDA_REST_API_BUILDER_APIGATEWAY__DEPLOY_OPTIONS_WITH_STAGE_OPTIONS_SOFTWARE_AMAZON_AWSCDK_SERVICES_APIGATEWAY_STAGE_OPTIONS_AS_REFERENCE = 5;
+
+	/**
+	 * The feature id for the '<em><b>Domain Name With Domain Name Options software amazon awscdk services apigateway Domain Name Options As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LAMBDA_REST_API_BUILDER_APIGATEWAY__DOMAIN_NAME_WITH_DOMAIN_NAME_OPTIONS_SOFTWARE_AMAZON_AWSCDK_SERVICES_APIGATEWAY_DOMAIN_NAME_OPTIONS_AS_REFERENCE = 6;
+
+	/**
+	 * The feature id for the '<em><b>Endpoint Export Name java lang String </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LAMBDA_REST_API_BUILDER_APIGATEWAY__ENDPOINT_EXPORT_NAME_JAVA_LANG_STRING_ = 7;
+
+	/**
+	 * The feature id for the '<em><b>Fail On Warnings java lang Boolean </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LAMBDA_REST_API_BUILDER_APIGATEWAY__FAIL_ON_WARNINGS_JAVA_LANG_BOOLEAN_ = 8;
+
+	/**
+	 * The feature id for the '<em><b>Parameters java lang String java lang String As Map</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LAMBDA_REST_API_BUILDER_APIGATEWAY__PARAMETERS_JAVA_LANG_STRING_JAVA_LANG_STRING_AS_MAP = 9;
+
+	/**
+	 * The feature id for the '<em><b>Policy With Policy Document software amazon awscdk services iam Policy Document As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LAMBDA_REST_API_BUILDER_APIGATEWAY__POLICY_WITH_POLICY_DOCUMENT_SOFTWARE_AMAZON_AWSCDK_SERVICES_IAM_POLICY_DOCUMENT_AS_REFERENCE = 10;
+
+	/**
+	 * The feature id for the '<em><b>Rest Api Name java lang String </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LAMBDA_REST_API_BUILDER_APIGATEWAY__REST_API_NAME_JAVA_LANG_STRING_ = 11;
+
+	/**
+	 * The feature id for the '<em><b>Retain Deployments java lang Boolean </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LAMBDA_REST_API_BUILDER_APIGATEWAY__RETAIN_DEPLOYMENTS_JAVA_LANG_BOOLEAN_ = 12;
+
+	/**
+	 * The feature id for the '<em><b>Api Key Source Type software amazon awscdk services apigateway Api Key Source Type </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LAMBDA_REST_API_BUILDER_APIGATEWAY__API_KEY_SOURCE_TYPE_SOFTWARE_AMAZON_AWSCDK_SERVICES_APIGATEWAY_API_KEY_SOURCE_TYPE_ = 13;
+
+	/**
+	 * The feature id for the '<em><b>Binary Media Types java lang String As List</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LAMBDA_REST_API_BUILDER_APIGATEWAY__BINARY_MEDIA_TYPES_JAVA_LANG_STRING_AS_LIST = 14;
+
+	/**
+	 * The feature id for the '<em><b>Clone From With IRest Api software amazon awscdk services apigateway IRest Api As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LAMBDA_REST_API_BUILDER_APIGATEWAY__CLONE_FROM_WITH_IREST_API_SOFTWARE_AMAZON_AWSCDK_SERVICES_APIGATEWAY_IREST_API_AS_REFERENCE = 15;
+
+	/**
+	 * The feature id for the '<em><b>Description java lang String </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LAMBDA_REST_API_BUILDER_APIGATEWAY__DESCRIPTION_JAVA_LANG_STRING_ = 16;
+
+	/**
+	 * The feature id for the '<em><b>Endpoint Configuration With Endpoint Configuration software amazon awscdk services apigateway Endpoint Configuration As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LAMBDA_REST_API_BUILDER_APIGATEWAY__ENDPOINT_CONFIGURATION_WITH_ENDPOINT_CONFIGURATION_SOFTWARE_AMAZON_AWSCDK_SERVICES_APIGATEWAY_ENDPOINT_CONFIGURATION_AS_REFERENCE = 17;
+
+	/**
+	 * The feature id for the '<em><b>Endpoint Types software amazon awscdk services apigateway Endpoint Type As List</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LAMBDA_REST_API_BUILDER_APIGATEWAY__ENDPOINT_TYPES_SOFTWARE_AMAZON_AWSCDK_SERVICES_APIGATEWAY_ENDPOINT_TYPE_AS_LIST = 18;
+
+	/**
+	 * The feature id for the '<em><b>Minimum Compression Size java lang Number </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LAMBDA_REST_API_BUILDER_APIGATEWAY__MINIMUM_COMPRESSION_SIZE_JAVA_LANG_NUMBER_ = 19;
+
+	/**
+	 * The feature id for the '<em><b>Handler With IFunction software amazon awscdk services lambda IFunction As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LAMBDA_REST_API_BUILDER_APIGATEWAY__HANDLER_WITH_IFUNCTION_SOFTWARE_AMAZON_AWSCDK_SERVICES_LAMBDA_IFUNCTION_AS_REFERENCE = 20;
+
+	/**
+	 * The feature id for the '<em><b>Options With Rest Api Props software amazon awscdk services apigateway Rest Api Props As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LAMBDA_REST_API_BUILDER_APIGATEWAY__OPTIONS_WITH_REST_API_PROPS_SOFTWARE_AMAZON_AWSCDK_SERVICES_APIGATEWAY_REST_API_PROPS_AS_REFERENCE = 21;
+
+	/**
+	 * The feature id for the '<em><b>Proxy java lang Boolean </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LAMBDA_REST_API_BUILDER_APIGATEWAY__PROXY_JAVA_LANG_BOOLEAN_ = 22;
+
+	/**
+	 * The feature id for the '<em><b>Generated Class Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LAMBDA_REST_API_BUILDER_APIGATEWAY__GENERATED_CLASS_NAME = 23;
+
+	/**
+	 * The feature id for the '<em><b>Var Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LAMBDA_REST_API_BUILDER_APIGATEWAY__VAR_NAME = 24;
+
+	/**
+	 * The feature id for the '<em><b>Identifier</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LAMBDA_REST_API_BUILDER_APIGATEWAY__IDENTIFIER = 25;
+
+	/**
+	 * The feature id for the '<em><b>Additional Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LAMBDA_REST_API_BUILDER_APIGATEWAY__ADDITIONAL_CODE = 26;
+
+	/**
+	 * The number of structural features of the '<em>Lambda Rest Api Builder apigateway</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LAMBDA_REST_API_BUILDER_APIGATEWAY_FEATURE_COUNT = 27;
+
+	/**
+	 * The number of operations of the '<em>Lambda Rest Api Builder apigateway</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LAMBDA_REST_API_BUILDER_APIGATEWAY_OPERATION_COUNT = 0;
+
+	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.ApiGatewayToLambdaBuilder_apigatewaylambdaImpl <em>Api Gateway To Lambda Builder apigatewaylambda</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -5378,7 +6236,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getApiGatewayToLambdaBuilder_apigatewaylambda()
 	 * @generated
 	 */
-	int API_GATEWAY_TO_LAMBDA_BUILDER_APIGATEWAYLAMBDA = 40;
+	int API_GATEWAY_TO_LAMBDA_BUILDER_APIGATEWAYLAMBDA = 43;
 
 	/**
 	 * The feature id for the '<em><b>Api Gateway Props java lang Object </b></em>' attribute.
@@ -5462,6 +6320,178 @@ public interface AwsworkbenchPackage extends EPackage {
 	int API_GATEWAY_TO_LAMBDA_BUILDER_APIGATEWAYLAMBDA_OPERATION_COUNT = 0;
 
 	/**
+	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.QueuePropsBuilder_sqsImpl <em>Queue Props Builder sqs</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.QueuePropsBuilder_sqsImpl
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getQueuePropsBuilder_sqs()
+	 * @generated
+	 */
+	int QUEUE_PROPS_BUILDER_SQS = 44;
+
+	/**
+	 * The feature id for the '<em><b>Content Based Deduplication java lang Boolean </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int QUEUE_PROPS_BUILDER_SQS__CONTENT_BASED_DEDUPLICATION_JAVA_LANG_BOOLEAN_ = 0;
+
+	/**
+	 * The feature id for the '<em><b>Data Key Reuse With Duration software amazon awscdk core Duration As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int QUEUE_PROPS_BUILDER_SQS__DATA_KEY_REUSE_WITH_DURATION_SOFTWARE_AMAZON_AWSCDK_CORE_DURATION_AS_REFERENCE = 1;
+
+	/**
+	 * The feature id for the '<em><b>Dead Letter Queue With Dead Letter Queue software amazon awscdk services sqs Dead Letter Queue As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int QUEUE_PROPS_BUILDER_SQS__DEAD_LETTER_QUEUE_WITH_DEAD_LETTER_QUEUE_SOFTWARE_AMAZON_AWSCDK_SERVICES_SQS_DEAD_LETTER_QUEUE_AS_REFERENCE = 2;
+
+	/**
+	 * The feature id for the '<em><b>Delivery Delay With Duration software amazon awscdk core Duration As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int QUEUE_PROPS_BUILDER_SQS__DELIVERY_DELAY_WITH_DURATION_SOFTWARE_AMAZON_AWSCDK_CORE_DURATION_AS_REFERENCE = 3;
+
+	/**
+	 * The feature id for the '<em><b>Encryption software amazon awscdk services sqs Queue Encryption </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int QUEUE_PROPS_BUILDER_SQS__ENCRYPTION_SOFTWARE_AMAZON_AWSCDK_SERVICES_SQS_QUEUE_ENCRYPTION_ = 4;
+
+	/**
+	 * The feature id for the '<em><b>Encryption Master Key With IKey software amazon awscdk services kms IKey As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int QUEUE_PROPS_BUILDER_SQS__ENCRYPTION_MASTER_KEY_WITH_IKEY_SOFTWARE_AMAZON_AWSCDK_SERVICES_KMS_IKEY_AS_REFERENCE = 5;
+
+	/**
+	 * The feature id for the '<em><b>Fifo java lang Boolean </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int QUEUE_PROPS_BUILDER_SQS__FIFO_JAVA_LANG_BOOLEAN_ = 6;
+
+	/**
+	 * The feature id for the '<em><b>Max Message Size Bytes java lang Number </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int QUEUE_PROPS_BUILDER_SQS__MAX_MESSAGE_SIZE_BYTES_JAVA_LANG_NUMBER_ = 7;
+
+	/**
+	 * The feature id for the '<em><b>Queue Name java lang String </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int QUEUE_PROPS_BUILDER_SQS__QUEUE_NAME_JAVA_LANG_STRING_ = 8;
+
+	/**
+	 * The feature id for the '<em><b>Receive Message Wait Time With Duration software amazon awscdk core Duration As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int QUEUE_PROPS_BUILDER_SQS__RECEIVE_MESSAGE_WAIT_TIME_WITH_DURATION_SOFTWARE_AMAZON_AWSCDK_CORE_DURATION_AS_REFERENCE = 9;
+
+	/**
+	 * The feature id for the '<em><b>Retention Period With Duration software amazon awscdk core Duration As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int QUEUE_PROPS_BUILDER_SQS__RETENTION_PERIOD_WITH_DURATION_SOFTWARE_AMAZON_AWSCDK_CORE_DURATION_AS_REFERENCE = 10;
+
+	/**
+	 * The feature id for the '<em><b>Visibility Timeout With Duration software amazon awscdk core Duration As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int QUEUE_PROPS_BUILDER_SQS__VISIBILITY_TIMEOUT_WITH_DURATION_SOFTWARE_AMAZON_AWSCDK_CORE_DURATION_AS_REFERENCE = 11;
+
+	/**
+	 * The feature id for the '<em><b>Generated Class Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int QUEUE_PROPS_BUILDER_SQS__GENERATED_CLASS_NAME = 12;
+
+	/**
+	 * The feature id for the '<em><b>Var Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int QUEUE_PROPS_BUILDER_SQS__VAR_NAME = 13;
+
+	/**
+	 * The feature id for the '<em><b>Identifier</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int QUEUE_PROPS_BUILDER_SQS__IDENTIFIER = 14;
+
+	/**
+	 * The feature id for the '<em><b>Additional Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int QUEUE_PROPS_BUILDER_SQS__ADDITIONAL_CODE = 15;
+
+	/**
+	 * The number of structural features of the '<em>Queue Props Builder sqs</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int QUEUE_PROPS_BUILDER_SQS_FEATURE_COUNT = 16;
+
+	/**
+	 * The number of operations of the '<em>Queue Props Builder sqs</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int QUEUE_PROPS_BUILDER_SQS_OPERATION_COUNT = 0;
+
+	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.ApiGatewayToSqsBuilder_apigatewaysqsImpl <em>Api Gateway To Sqs Builder apigatewaysqs</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -5469,7 +6499,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getApiGatewayToSqsBuilder_apigatewaysqs()
 	 * @generated
 	 */
-	int API_GATEWAY_TO_SQS_BUILDER_APIGATEWAYSQS = 41;
+	int API_GATEWAY_TO_SQS_BUILDER_APIGATEWAYSQS = 45;
 
 	/**
 	 * The feature id for the '<em><b>Allow Create Operation java lang Boolean </b></em>' attribute.
@@ -5598,6 +6628,2502 @@ public interface AwsworkbenchPackage extends EPackage {
 	int API_GATEWAY_TO_SQS_BUILDER_APIGATEWAYSQS_OPERATION_COUNT = 0;
 
 	/**
+	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.VersionBuilder_lambdaImpl <em>Version Builder lambda</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.VersionBuilder_lambdaImpl
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getVersionBuilder_lambda()
+	 * @generated
+	 */
+	int VERSION_BUILDER_LAMBDA = 46;
+
+	/**
+	 * The feature id for the '<em><b>Max Event Age With Duration software amazon awscdk core Duration As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VERSION_BUILDER_LAMBDA__MAX_EVENT_AGE_WITH_DURATION_SOFTWARE_AMAZON_AWSCDK_CORE_DURATION_AS_REFERENCE = 0;
+
+	/**
+	 * The feature id for the '<em><b>On Failure With IDestination software amazon awscdk services lambda IDestination As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VERSION_BUILDER_LAMBDA__ON_FAILURE_WITH_IDESTINATION_SOFTWARE_AMAZON_AWSCDK_SERVICES_LAMBDA_IDESTINATION_AS_REFERENCE = 1;
+
+	/**
+	 * The feature id for the '<em><b>On Success With IDestination software amazon awscdk services lambda IDestination As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VERSION_BUILDER_LAMBDA__ON_SUCCESS_WITH_IDESTINATION_SOFTWARE_AMAZON_AWSCDK_SERVICES_LAMBDA_IDESTINATION_AS_REFERENCE = 2;
+
+	/**
+	 * The feature id for the '<em><b>Retry Attempts java lang Number </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VERSION_BUILDER_LAMBDA__RETRY_ATTEMPTS_JAVA_LANG_NUMBER_ = 3;
+
+	/**
+	 * The feature id for the '<em><b>Code Sha256 java lang String </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VERSION_BUILDER_LAMBDA__CODE_SHA256_JAVA_LANG_STRING_ = 4;
+
+	/**
+	 * The feature id for the '<em><b>Description java lang String </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VERSION_BUILDER_LAMBDA__DESCRIPTION_JAVA_LANG_STRING_ = 5;
+
+	/**
+	 * The feature id for the '<em><b>Provisioned Concurrent Executions java lang Number </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VERSION_BUILDER_LAMBDA__PROVISIONED_CONCURRENT_EXECUTIONS_JAVA_LANG_NUMBER_ = 6;
+
+	/**
+	 * The feature id for the '<em><b>Removal Policy software amazon awscdk core Removal Policy </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VERSION_BUILDER_LAMBDA__REMOVAL_POLICY_SOFTWARE_AMAZON_AWSCDK_CORE_REMOVAL_POLICY_ = 7;
+
+	/**
+	 * The feature id for the '<em><b>Lambda With IFunction software amazon awscdk services lambda IFunction As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VERSION_BUILDER_LAMBDA__LAMBDA_WITH_IFUNCTION_SOFTWARE_AMAZON_AWSCDK_SERVICES_LAMBDA_IFUNCTION_AS_REFERENCE = 8;
+
+	/**
+	 * The feature id for the '<em><b>Generated Class Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VERSION_BUILDER_LAMBDA__GENERATED_CLASS_NAME = 9;
+
+	/**
+	 * The feature id for the '<em><b>Var Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VERSION_BUILDER_LAMBDA__VAR_NAME = 10;
+
+	/**
+	 * The feature id for the '<em><b>Identifier</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VERSION_BUILDER_LAMBDA__IDENTIFIER = 11;
+
+	/**
+	 * The feature id for the '<em><b>Additional Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VERSION_BUILDER_LAMBDA__ADDITIONAL_CODE = 12;
+
+	/**
+	 * The number of structural features of the '<em>Version Builder lambda</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VERSION_BUILDER_LAMBDA_FEATURE_COUNT = 13;
+
+	/**
+	 * The number of operations of the '<em>Version Builder lambda</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VERSION_BUILDER_LAMBDA_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.LambdaFunctionAssociationBuilder_cloudfrontImpl <em>Lambda Function Association Builder cloudfront</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.LambdaFunctionAssociationBuilder_cloudfrontImpl
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getLambdaFunctionAssociationBuilder_cloudfront()
+	 * @generated
+	 */
+	int LAMBDA_FUNCTION_ASSOCIATION_BUILDER_CLOUDFRONT = 47;
+
+	/**
+	 * The feature id for the '<em><b>Event Type software amazon awscdk services cloudfront Lambda Edge Event Type </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LAMBDA_FUNCTION_ASSOCIATION_BUILDER_CLOUDFRONT__EVENT_TYPE_SOFTWARE_AMAZON_AWSCDK_SERVICES_CLOUDFRONT_LAMBDA_EDGE_EVENT_TYPE_ = 0;
+
+	/**
+	 * The feature id for the '<em><b>Lambda Function With IVersion software amazon awscdk services lambda IVersion As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LAMBDA_FUNCTION_ASSOCIATION_BUILDER_CLOUDFRONT__LAMBDA_FUNCTION_WITH_IVERSION_SOFTWARE_AMAZON_AWSCDK_SERVICES_LAMBDA_IVERSION_AS_REFERENCE = 1;
+
+	/**
+	 * The feature id for the '<em><b>Generated Class Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LAMBDA_FUNCTION_ASSOCIATION_BUILDER_CLOUDFRONT__GENERATED_CLASS_NAME = 2;
+
+	/**
+	 * The feature id for the '<em><b>Var Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LAMBDA_FUNCTION_ASSOCIATION_BUILDER_CLOUDFRONT__VAR_NAME = 3;
+
+	/**
+	 * The feature id for the '<em><b>Identifier</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LAMBDA_FUNCTION_ASSOCIATION_BUILDER_CLOUDFRONT__IDENTIFIER = 4;
+
+	/**
+	 * The feature id for the '<em><b>Additional Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LAMBDA_FUNCTION_ASSOCIATION_BUILDER_CLOUDFRONT__ADDITIONAL_CODE = 5;
+
+	/**
+	 * The number of structural features of the '<em>Lambda Function Association Builder cloudfront</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LAMBDA_FUNCTION_ASSOCIATION_BUILDER_CLOUDFRONT_FEATURE_COUNT = 6;
+
+	/**
+	 * The number of operations of the '<em>Lambda Function Association Builder cloudfront</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LAMBDA_FUNCTION_ASSOCIATION_BUILDER_CLOUDFRONT_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.BehaviorBuilder_cloudfrontImpl <em>Behavior Builder cloudfront</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.BehaviorBuilder_cloudfrontImpl
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getBehaviorBuilder_cloudfront()
+	 * @generated
+	 */
+	int BEHAVIOR_BUILDER_CLOUDFRONT = 48;
+
+	/**
+	 * The feature id for the '<em><b>Allowed Methods software amazon awscdk services cloudfront Cloud Front Allowed Methods </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BEHAVIOR_BUILDER_CLOUDFRONT__ALLOWED_METHODS_SOFTWARE_AMAZON_AWSCDK_SERVICES_CLOUDFRONT_CLOUD_FRONT_ALLOWED_METHODS_ = 0;
+
+	/**
+	 * The feature id for the '<em><b>Cached Methods software amazon awscdk services cloudfront Cloud Front Allowed Cached Methods </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BEHAVIOR_BUILDER_CLOUDFRONT__CACHED_METHODS_SOFTWARE_AMAZON_AWSCDK_SERVICES_CLOUDFRONT_CLOUD_FRONT_ALLOWED_CACHED_METHODS_ = 1;
+
+	/**
+	 * The feature id for the '<em><b>Compress java lang Boolean </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BEHAVIOR_BUILDER_CLOUDFRONT__COMPRESS_JAVA_LANG_BOOLEAN_ = 2;
+
+	/**
+	 * The feature id for the '<em><b>Default Ttl With Duration software amazon awscdk core Duration As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BEHAVIOR_BUILDER_CLOUDFRONT__DEFAULT_TTL_WITH_DURATION_SOFTWARE_AMAZON_AWSCDK_CORE_DURATION_AS_REFERENCE = 3;
+
+	/**
+	 * The feature id for the '<em><b>Forwarded Values With Forwarded Values Property software amazon awscdk services cloudfront Cfn Distribution Forwarded Values Property As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BEHAVIOR_BUILDER_CLOUDFRONT__FORWARDED_VALUES_WITH_FORWARDED_VALUES_PROPERTY_SOFTWARE_AMAZON_AWSCDK_SERVICES_CLOUDFRONT_CFN_DISTRIBUTION_FORWARDED_VALUES_PROPERTY_AS_REFERENCE = 4;
+
+	/**
+	 * The feature id for the '<em><b>Is Default Behavior java lang Boolean </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BEHAVIOR_BUILDER_CLOUDFRONT__IS_DEFAULT_BEHAVIOR_JAVA_LANG_BOOLEAN_ = 5;
+
+	/**
+	 * The feature id for the '<em><b>Lambda Function Associations software amazon awscdk services cloudfront Lambda Function Association As List</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BEHAVIOR_BUILDER_CLOUDFRONT__LAMBDA_FUNCTION_ASSOCIATIONS_SOFTWARE_AMAZON_AWSCDK_SERVICES_CLOUDFRONT_LAMBDA_FUNCTION_ASSOCIATION_AS_LIST = 6;
+
+	/**
+	 * The feature id for the '<em><b>Max Ttl With Duration software amazon awscdk core Duration As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BEHAVIOR_BUILDER_CLOUDFRONT__MAX_TTL_WITH_DURATION_SOFTWARE_AMAZON_AWSCDK_CORE_DURATION_AS_REFERENCE = 7;
+
+	/**
+	 * The feature id for the '<em><b>Min Ttl With Duration software amazon awscdk core Duration As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BEHAVIOR_BUILDER_CLOUDFRONT__MIN_TTL_WITH_DURATION_SOFTWARE_AMAZON_AWSCDK_CORE_DURATION_AS_REFERENCE = 8;
+
+	/**
+	 * The feature id for the '<em><b>Path Pattern java lang String </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BEHAVIOR_BUILDER_CLOUDFRONT__PATH_PATTERN_JAVA_LANG_STRING_ = 9;
+
+	/**
+	 * The feature id for the '<em><b>Trusted Signers java lang String As List</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BEHAVIOR_BUILDER_CLOUDFRONT__TRUSTED_SIGNERS_JAVA_LANG_STRING_AS_LIST = 10;
+
+	/**
+	 * The feature id for the '<em><b>Generated Class Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BEHAVIOR_BUILDER_CLOUDFRONT__GENERATED_CLASS_NAME = 11;
+
+	/**
+	 * The feature id for the '<em><b>Var Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BEHAVIOR_BUILDER_CLOUDFRONT__VAR_NAME = 12;
+
+	/**
+	 * The feature id for the '<em><b>Identifier</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BEHAVIOR_BUILDER_CLOUDFRONT__IDENTIFIER = 13;
+
+	/**
+	 * The feature id for the '<em><b>Additional Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BEHAVIOR_BUILDER_CLOUDFRONT__ADDITIONAL_CODE = 14;
+
+	/**
+	 * The number of structural features of the '<em>Behavior Builder cloudfront</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BEHAVIOR_BUILDER_CLOUDFRONT_FEATURE_COUNT = 15;
+
+	/**
+	 * The number of operations of the '<em>Behavior Builder cloudfront</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BEHAVIOR_BUILDER_CLOUDFRONT_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.CustomOriginConfigBuilder_cloudfrontImpl <em>Custom Origin Config Builder cloudfront</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.CustomOriginConfigBuilder_cloudfrontImpl
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getCustomOriginConfigBuilder_cloudfront()
+	 * @generated
+	 */
+	int CUSTOM_ORIGIN_CONFIG_BUILDER_CLOUDFRONT = 49;
+
+	/**
+	 * The feature id for the '<em><b>Domain Name java lang String </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CUSTOM_ORIGIN_CONFIG_BUILDER_CLOUDFRONT__DOMAIN_NAME_JAVA_LANG_STRING_ = 0;
+
+	/**
+	 * The feature id for the '<em><b>Allowed Origin Ssl Versions software amazon awscdk services cloudfront Origin Ssl Policy As List</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CUSTOM_ORIGIN_CONFIG_BUILDER_CLOUDFRONT__ALLOWED_ORIGIN_SSL_VERSIONS_SOFTWARE_AMAZON_AWSCDK_SERVICES_CLOUDFRONT_ORIGIN_SSL_POLICY_AS_LIST = 1;
+
+	/**
+	 * The feature id for the '<em><b>Http Port java lang Number </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CUSTOM_ORIGIN_CONFIG_BUILDER_CLOUDFRONT__HTTP_PORT_JAVA_LANG_NUMBER_ = 2;
+
+	/**
+	 * The feature id for the '<em><b>Https Port java lang Number </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CUSTOM_ORIGIN_CONFIG_BUILDER_CLOUDFRONT__HTTPS_PORT_JAVA_LANG_NUMBER_ = 3;
+
+	/**
+	 * The feature id for the '<em><b>Origin Keepalive Timeout With Duration software amazon awscdk core Duration As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CUSTOM_ORIGIN_CONFIG_BUILDER_CLOUDFRONT__ORIGIN_KEEPALIVE_TIMEOUT_WITH_DURATION_SOFTWARE_AMAZON_AWSCDK_CORE_DURATION_AS_REFERENCE = 4;
+
+	/**
+	 * The feature id for the '<em><b>Origin Protocol Policy software amazon awscdk services cloudfront Origin Protocol Policy </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CUSTOM_ORIGIN_CONFIG_BUILDER_CLOUDFRONT__ORIGIN_PROTOCOL_POLICY_SOFTWARE_AMAZON_AWSCDK_SERVICES_CLOUDFRONT_ORIGIN_PROTOCOL_POLICY_ = 5;
+
+	/**
+	 * The feature id for the '<em><b>Origin Read Timeout With Duration software amazon awscdk core Duration As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CUSTOM_ORIGIN_CONFIG_BUILDER_CLOUDFRONT__ORIGIN_READ_TIMEOUT_WITH_DURATION_SOFTWARE_AMAZON_AWSCDK_CORE_DURATION_AS_REFERENCE = 6;
+
+	/**
+	 * The feature id for the '<em><b>Generated Class Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CUSTOM_ORIGIN_CONFIG_BUILDER_CLOUDFRONT__GENERATED_CLASS_NAME = 7;
+
+	/**
+	 * The feature id for the '<em><b>Var Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CUSTOM_ORIGIN_CONFIG_BUILDER_CLOUDFRONT__VAR_NAME = 8;
+
+	/**
+	 * The feature id for the '<em><b>Identifier</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CUSTOM_ORIGIN_CONFIG_BUILDER_CLOUDFRONT__IDENTIFIER = 9;
+
+	/**
+	 * The feature id for the '<em><b>Additional Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CUSTOM_ORIGIN_CONFIG_BUILDER_CLOUDFRONT__ADDITIONAL_CODE = 10;
+
+	/**
+	 * The number of structural features of the '<em>Custom Origin Config Builder cloudfront</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CUSTOM_ORIGIN_CONFIG_BUILDER_CLOUDFRONT_FEATURE_COUNT = 11;
+
+	/**
+	 * The number of operations of the '<em>Custom Origin Config Builder cloudfront</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CUSTOM_ORIGIN_CONFIG_BUILDER_CLOUDFRONT_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.BlockPublicAccessBuilder_s3Impl <em>Block Public Access Builder s3</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.BlockPublicAccessBuilder_s3Impl
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getBlockPublicAccessBuilder_s3()
+	 * @generated
+	 */
+	int BLOCK_PUBLIC_ACCESS_BUILDER_S3 = 50;
+
+	/**
+	 * The feature id for the '<em><b>Block Public Acls java lang Boolean </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BLOCK_PUBLIC_ACCESS_BUILDER_S3__BLOCK_PUBLIC_ACLS_JAVA_LANG_BOOLEAN_ = 0;
+
+	/**
+	 * The feature id for the '<em><b>Block Public Policy java lang Boolean </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BLOCK_PUBLIC_ACCESS_BUILDER_S3__BLOCK_PUBLIC_POLICY_JAVA_LANG_BOOLEAN_ = 1;
+
+	/**
+	 * The feature id for the '<em><b>Ignore Public Acls java lang Boolean </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BLOCK_PUBLIC_ACCESS_BUILDER_S3__IGNORE_PUBLIC_ACLS_JAVA_LANG_BOOLEAN_ = 2;
+
+	/**
+	 * The feature id for the '<em><b>Restrict Public Buckets java lang Boolean </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BLOCK_PUBLIC_ACCESS_BUILDER_S3__RESTRICT_PUBLIC_BUCKETS_JAVA_LANG_BOOLEAN_ = 3;
+
+	/**
+	 * The feature id for the '<em><b>Generated Class Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BLOCK_PUBLIC_ACCESS_BUILDER_S3__GENERATED_CLASS_NAME = 4;
+
+	/**
+	 * The feature id for the '<em><b>Var Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BLOCK_PUBLIC_ACCESS_BUILDER_S3__VAR_NAME = 5;
+
+	/**
+	 * The feature id for the '<em><b>Identifier</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BLOCK_PUBLIC_ACCESS_BUILDER_S3__IDENTIFIER = 6;
+
+	/**
+	 * The feature id for the '<em><b>Additional Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BLOCK_PUBLIC_ACCESS_BUILDER_S3__ADDITIONAL_CODE = 7;
+
+	/**
+	 * The number of structural features of the '<em>Block Public Access Builder s3</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BLOCK_PUBLIC_ACCESS_BUILDER_S3_FEATURE_COUNT = 8;
+
+	/**
+	 * The number of operations of the '<em>Block Public Access Builder s3</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BLOCK_PUBLIC_ACCESS_BUILDER_S3_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.CorsRuleBuilder_s3Impl <em>Cors Rule Builder s3</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.CorsRuleBuilder_s3Impl
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getCorsRuleBuilder_s3()
+	 * @generated
+	 */
+	int CORS_RULE_BUILDER_S3 = 51;
+
+	/**
+	 * The feature id for the '<em><b>Allowed Methods software amazon awscdk services s3 Http Methods As List</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORS_RULE_BUILDER_S3__ALLOWED_METHODS_SOFTWARE_AMAZON_AWSCDK_SERVICES_S3_HTTP_METHODS_AS_LIST = 0;
+
+	/**
+	 * The feature id for the '<em><b>Allowed Origins java lang String As List</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORS_RULE_BUILDER_S3__ALLOWED_ORIGINS_JAVA_LANG_STRING_AS_LIST = 1;
+
+	/**
+	 * The feature id for the '<em><b>Allowed Headers java lang String As List</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORS_RULE_BUILDER_S3__ALLOWED_HEADERS_JAVA_LANG_STRING_AS_LIST = 2;
+
+	/**
+	 * The feature id for the '<em><b>Exposed Headers java lang String As List</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORS_RULE_BUILDER_S3__EXPOSED_HEADERS_JAVA_LANG_STRING_AS_LIST = 3;
+
+	/**
+	 * The feature id for the '<em><b>Id java lang String </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORS_RULE_BUILDER_S3__ID_JAVA_LANG_STRING_ = 4;
+
+	/**
+	 * The feature id for the '<em><b>Max Age java lang Number </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORS_RULE_BUILDER_S3__MAX_AGE_JAVA_LANG_NUMBER_ = 5;
+
+	/**
+	 * The feature id for the '<em><b>Generated Class Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORS_RULE_BUILDER_S3__GENERATED_CLASS_NAME = 6;
+
+	/**
+	 * The feature id for the '<em><b>Var Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORS_RULE_BUILDER_S3__VAR_NAME = 7;
+
+	/**
+	 * The feature id for the '<em><b>Identifier</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORS_RULE_BUILDER_S3__IDENTIFIER = 8;
+
+	/**
+	 * The feature id for the '<em><b>Additional Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORS_RULE_BUILDER_S3__ADDITIONAL_CODE = 9;
+
+	/**
+	 * The number of structural features of the '<em>Cors Rule Builder s3</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORS_RULE_BUILDER_S3_FEATURE_COUNT = 10;
+
+	/**
+	 * The number of operations of the '<em>Cors Rule Builder s3</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORS_RULE_BUILDER_S3_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.NoncurrentVersionTransitionBuilder_s3Impl <em>Noncurrent Version Transition Builder s3</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.NoncurrentVersionTransitionBuilder_s3Impl
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getNoncurrentVersionTransitionBuilder_s3()
+	 * @generated
+	 */
+	int NONCURRENT_VERSION_TRANSITION_BUILDER_S3 = 52;
+
+	/**
+	 * The feature id for the '<em><b>Storage Class With Storage Class software amazon awscdk services s3 Storage Class As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NONCURRENT_VERSION_TRANSITION_BUILDER_S3__STORAGE_CLASS_WITH_STORAGE_CLASS_SOFTWARE_AMAZON_AWSCDK_SERVICES_S3_STORAGE_CLASS_AS_REFERENCE = 0;
+
+	/**
+	 * The feature id for the '<em><b>Transition After With Duration software amazon awscdk core Duration As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NONCURRENT_VERSION_TRANSITION_BUILDER_S3__TRANSITION_AFTER_WITH_DURATION_SOFTWARE_AMAZON_AWSCDK_CORE_DURATION_AS_REFERENCE = 1;
+
+	/**
+	 * The feature id for the '<em><b>Generated Class Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NONCURRENT_VERSION_TRANSITION_BUILDER_S3__GENERATED_CLASS_NAME = 2;
+
+	/**
+	 * The feature id for the '<em><b>Var Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NONCURRENT_VERSION_TRANSITION_BUILDER_S3__VAR_NAME = 3;
+
+	/**
+	 * The feature id for the '<em><b>Identifier</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NONCURRENT_VERSION_TRANSITION_BUILDER_S3__IDENTIFIER = 4;
+
+	/**
+	 * The feature id for the '<em><b>Additional Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NONCURRENT_VERSION_TRANSITION_BUILDER_S3__ADDITIONAL_CODE = 5;
+
+	/**
+	 * The number of structural features of the '<em>Noncurrent Version Transition Builder s3</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NONCURRENT_VERSION_TRANSITION_BUILDER_S3_FEATURE_COUNT = 6;
+
+	/**
+	 * The number of operations of the '<em>Noncurrent Version Transition Builder s3</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NONCURRENT_VERSION_TRANSITION_BUILDER_S3_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.TransitionBuilder_s3Impl <em>Transition Builder s3</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.TransitionBuilder_s3Impl
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getTransitionBuilder_s3()
+	 * @generated
+	 */
+	int TRANSITION_BUILDER_S3 = 53;
+
+	/**
+	 * The feature id for the '<em><b>Storage Class With Storage Class software amazon awscdk services s3 Storage Class As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRANSITION_BUILDER_S3__STORAGE_CLASS_WITH_STORAGE_CLASS_SOFTWARE_AMAZON_AWSCDK_SERVICES_S3_STORAGE_CLASS_AS_REFERENCE = 0;
+
+	/**
+	 * The feature id for the '<em><b>Transition After With Duration software amazon awscdk core Duration As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRANSITION_BUILDER_S3__TRANSITION_AFTER_WITH_DURATION_SOFTWARE_AMAZON_AWSCDK_CORE_DURATION_AS_REFERENCE = 1;
+
+	/**
+	 * The feature id for the '<em><b>Transition Date With Instant java time Instant As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRANSITION_BUILDER_S3__TRANSITION_DATE_WITH_INSTANT_JAVA_TIME_INSTANT_AS_REFERENCE = 2;
+
+	/**
+	 * The feature id for the '<em><b>Generated Class Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRANSITION_BUILDER_S3__GENERATED_CLASS_NAME = 3;
+
+	/**
+	 * The feature id for the '<em><b>Var Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRANSITION_BUILDER_S3__VAR_NAME = 4;
+
+	/**
+	 * The feature id for the '<em><b>Identifier</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRANSITION_BUILDER_S3__IDENTIFIER = 5;
+
+	/**
+	 * The feature id for the '<em><b>Additional Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRANSITION_BUILDER_S3__ADDITIONAL_CODE = 6;
+
+	/**
+	 * The number of structural features of the '<em>Transition Builder s3</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRANSITION_BUILDER_S3_FEATURE_COUNT = 7;
+
+	/**
+	 * The number of operations of the '<em>Transition Builder s3</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRANSITION_BUILDER_S3_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.LifecycleRuleBuilder_s3Impl <em>Lifecycle Rule Builder s3</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.LifecycleRuleBuilder_s3Impl
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getLifecycleRuleBuilder_s3()
+	 * @generated
+	 */
+	int LIFECYCLE_RULE_BUILDER_S3 = 54;
+
+	/**
+	 * The feature id for the '<em><b>Abort Incomplete Multipart Upload After With Duration software amazon awscdk core Duration As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LIFECYCLE_RULE_BUILDER_S3__ABORT_INCOMPLETE_MULTIPART_UPLOAD_AFTER_WITH_DURATION_SOFTWARE_AMAZON_AWSCDK_CORE_DURATION_AS_REFERENCE = 0;
+
+	/**
+	 * The feature id for the '<em><b>Enabled java lang Boolean </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LIFECYCLE_RULE_BUILDER_S3__ENABLED_JAVA_LANG_BOOLEAN_ = 1;
+
+	/**
+	 * The feature id for the '<em><b>Expiration With Duration software amazon awscdk core Duration As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LIFECYCLE_RULE_BUILDER_S3__EXPIRATION_WITH_DURATION_SOFTWARE_AMAZON_AWSCDK_CORE_DURATION_AS_REFERENCE = 2;
+
+	/**
+	 * The feature id for the '<em><b>Expiration Date With Instant java time Instant As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LIFECYCLE_RULE_BUILDER_S3__EXPIRATION_DATE_WITH_INSTANT_JAVA_TIME_INSTANT_AS_REFERENCE = 3;
+
+	/**
+	 * The feature id for the '<em><b>Id java lang String </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LIFECYCLE_RULE_BUILDER_S3__ID_JAVA_LANG_STRING_ = 4;
+
+	/**
+	 * The feature id for the '<em><b>Noncurrent Version Expiration With Duration software amazon awscdk core Duration As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LIFECYCLE_RULE_BUILDER_S3__NONCURRENT_VERSION_EXPIRATION_WITH_DURATION_SOFTWARE_AMAZON_AWSCDK_CORE_DURATION_AS_REFERENCE = 5;
+
+	/**
+	 * The feature id for the '<em><b>Noncurrent Version Transitions software amazon awscdk services s3 Noncurrent Version Transition As List</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LIFECYCLE_RULE_BUILDER_S3__NONCURRENT_VERSION_TRANSITIONS_SOFTWARE_AMAZON_AWSCDK_SERVICES_S3_NONCURRENT_VERSION_TRANSITION_AS_LIST = 6;
+
+	/**
+	 * The feature id for the '<em><b>Prefix java lang String </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LIFECYCLE_RULE_BUILDER_S3__PREFIX_JAVA_LANG_STRING_ = 7;
+
+	/**
+	 * The feature id for the '<em><b>Tag Filters java lang String java lang Object As Map</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LIFECYCLE_RULE_BUILDER_S3__TAG_FILTERS_JAVA_LANG_STRING_JAVA_LANG_OBJECT_AS_MAP = 8;
+
+	/**
+	 * The feature id for the '<em><b>Transitions software amazon awscdk services s3 Transition As List</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LIFECYCLE_RULE_BUILDER_S3__TRANSITIONS_SOFTWARE_AMAZON_AWSCDK_SERVICES_S3_TRANSITION_AS_LIST = 9;
+
+	/**
+	 * The feature id for the '<em><b>Generated Class Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LIFECYCLE_RULE_BUILDER_S3__GENERATED_CLASS_NAME = 10;
+
+	/**
+	 * The feature id for the '<em><b>Var Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LIFECYCLE_RULE_BUILDER_S3__VAR_NAME = 11;
+
+	/**
+	 * The feature id for the '<em><b>Identifier</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LIFECYCLE_RULE_BUILDER_S3__IDENTIFIER = 12;
+
+	/**
+	 * The feature id for the '<em><b>Additional Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LIFECYCLE_RULE_BUILDER_S3__ADDITIONAL_CODE = 13;
+
+	/**
+	 * The number of structural features of the '<em>Lifecycle Rule Builder s3</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LIFECYCLE_RULE_BUILDER_S3_FEATURE_COUNT = 14;
+
+	/**
+	 * The number of operations of the '<em>Lifecycle Rule Builder s3</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LIFECYCLE_RULE_BUILDER_S3_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.BucketMetricsBuilder_s3Impl <em>Bucket Metrics Builder s3</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.BucketMetricsBuilder_s3Impl
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getBucketMetricsBuilder_s3()
+	 * @generated
+	 */
+	int BUCKET_METRICS_BUILDER_S3 = 55;
+
+	/**
+	 * The feature id for the '<em><b>Id java lang String </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BUCKET_METRICS_BUILDER_S3__ID_JAVA_LANG_STRING_ = 0;
+
+	/**
+	 * The feature id for the '<em><b>Prefix java lang String </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BUCKET_METRICS_BUILDER_S3__PREFIX_JAVA_LANG_STRING_ = 1;
+
+	/**
+	 * The feature id for the '<em><b>Tag Filters java lang String java lang Object As Map</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BUCKET_METRICS_BUILDER_S3__TAG_FILTERS_JAVA_LANG_STRING_JAVA_LANG_OBJECT_AS_MAP = 2;
+
+	/**
+	 * The feature id for the '<em><b>Generated Class Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BUCKET_METRICS_BUILDER_S3__GENERATED_CLASS_NAME = 3;
+
+	/**
+	 * The feature id for the '<em><b>Var Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BUCKET_METRICS_BUILDER_S3__VAR_NAME = 4;
+
+	/**
+	 * The feature id for the '<em><b>Identifier</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BUCKET_METRICS_BUILDER_S3__IDENTIFIER = 5;
+
+	/**
+	 * The feature id for the '<em><b>Additional Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BUCKET_METRICS_BUILDER_S3__ADDITIONAL_CODE = 6;
+
+	/**
+	 * The number of structural features of the '<em>Bucket Metrics Builder s3</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BUCKET_METRICS_BUILDER_S3_FEATURE_COUNT = 7;
+
+	/**
+	 * The number of operations of the '<em>Bucket Metrics Builder s3</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BUCKET_METRICS_BUILDER_S3_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.RedirectTargetBuilder_s3Impl <em>Redirect Target Builder s3</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.RedirectTargetBuilder_s3Impl
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getRedirectTargetBuilder_s3()
+	 * @generated
+	 */
+	int REDIRECT_TARGET_BUILDER_S3 = 56;
+
+	/**
+	 * The feature id for the '<em><b>Host Name java lang String </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REDIRECT_TARGET_BUILDER_S3__HOST_NAME_JAVA_LANG_STRING_ = 0;
+
+	/**
+	 * The feature id for the '<em><b>Protocol software amazon awscdk services s3 Redirect Protocol </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REDIRECT_TARGET_BUILDER_S3__PROTOCOL_SOFTWARE_AMAZON_AWSCDK_SERVICES_S3_REDIRECT_PROTOCOL_ = 1;
+
+	/**
+	 * The feature id for the '<em><b>Generated Class Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REDIRECT_TARGET_BUILDER_S3__GENERATED_CLASS_NAME = 2;
+
+	/**
+	 * The feature id for the '<em><b>Var Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REDIRECT_TARGET_BUILDER_S3__VAR_NAME = 3;
+
+	/**
+	 * The feature id for the '<em><b>Identifier</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REDIRECT_TARGET_BUILDER_S3__IDENTIFIER = 4;
+
+	/**
+	 * The feature id for the '<em><b>Additional Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REDIRECT_TARGET_BUILDER_S3__ADDITIONAL_CODE = 5;
+
+	/**
+	 * The number of structural features of the '<em>Redirect Target Builder s3</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REDIRECT_TARGET_BUILDER_S3_FEATURE_COUNT = 6;
+
+	/**
+	 * The number of operations of the '<em>Redirect Target Builder s3</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REDIRECT_TARGET_BUILDER_S3_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.RoutingRuleConditionBuilder_s3Impl <em>Routing Rule Condition Builder s3</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.RoutingRuleConditionBuilder_s3Impl
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getRoutingRuleConditionBuilder_s3()
+	 * @generated
+	 */
+	int ROUTING_RULE_CONDITION_BUILDER_S3 = 57;
+
+	/**
+	 * The feature id for the '<em><b>Http Error Code Returned Equals java lang String </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ROUTING_RULE_CONDITION_BUILDER_S3__HTTP_ERROR_CODE_RETURNED_EQUALS_JAVA_LANG_STRING_ = 0;
+
+	/**
+	 * The feature id for the '<em><b>Key Prefix Equals java lang String </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ROUTING_RULE_CONDITION_BUILDER_S3__KEY_PREFIX_EQUALS_JAVA_LANG_STRING_ = 1;
+
+	/**
+	 * The feature id for the '<em><b>Generated Class Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ROUTING_RULE_CONDITION_BUILDER_S3__GENERATED_CLASS_NAME = 2;
+
+	/**
+	 * The feature id for the '<em><b>Var Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ROUTING_RULE_CONDITION_BUILDER_S3__VAR_NAME = 3;
+
+	/**
+	 * The feature id for the '<em><b>Identifier</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ROUTING_RULE_CONDITION_BUILDER_S3__IDENTIFIER = 4;
+
+	/**
+	 * The feature id for the '<em><b>Additional Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ROUTING_RULE_CONDITION_BUILDER_S3__ADDITIONAL_CODE = 5;
+
+	/**
+	 * The number of structural features of the '<em>Routing Rule Condition Builder s3</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ROUTING_RULE_CONDITION_BUILDER_S3_FEATURE_COUNT = 6;
+
+	/**
+	 * The number of operations of the '<em>Routing Rule Condition Builder s3</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ROUTING_RULE_CONDITION_BUILDER_S3_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.RoutingRuleBuilder_s3Impl <em>Routing Rule Builder s3</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.RoutingRuleBuilder_s3Impl
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getRoutingRuleBuilder_s3()
+	 * @generated
+	 */
+	int ROUTING_RULE_BUILDER_S3 = 58;
+
+	/**
+	 * The feature id for the '<em><b>Condition With Routing Rule Condition software amazon awscdk services s3 Routing Rule Condition As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ROUTING_RULE_BUILDER_S3__CONDITION_WITH_ROUTING_RULE_CONDITION_SOFTWARE_AMAZON_AWSCDK_SERVICES_S3_ROUTING_RULE_CONDITION_AS_REFERENCE = 0;
+
+	/**
+	 * The feature id for the '<em><b>Host Name java lang String </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ROUTING_RULE_BUILDER_S3__HOST_NAME_JAVA_LANG_STRING_ = 1;
+
+	/**
+	 * The feature id for the '<em><b>Http Redirect Code java lang String </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ROUTING_RULE_BUILDER_S3__HTTP_REDIRECT_CODE_JAVA_LANG_STRING_ = 2;
+
+	/**
+	 * The feature id for the '<em><b>Protocol software amazon awscdk services s3 Redirect Protocol </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ROUTING_RULE_BUILDER_S3__PROTOCOL_SOFTWARE_AMAZON_AWSCDK_SERVICES_S3_REDIRECT_PROTOCOL_ = 3;
+
+	/**
+	 * The feature id for the '<em><b>Replace Key With Replace Key software amazon awscdk services s3 Replace Key As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ROUTING_RULE_BUILDER_S3__REPLACE_KEY_WITH_REPLACE_KEY_SOFTWARE_AMAZON_AWSCDK_SERVICES_S3_REPLACE_KEY_AS_REFERENCE = 4;
+
+	/**
+	 * The feature id for the '<em><b>Generated Class Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ROUTING_RULE_BUILDER_S3__GENERATED_CLASS_NAME = 5;
+
+	/**
+	 * The feature id for the '<em><b>Var Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ROUTING_RULE_BUILDER_S3__VAR_NAME = 6;
+
+	/**
+	 * The feature id for the '<em><b>Identifier</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ROUTING_RULE_BUILDER_S3__IDENTIFIER = 7;
+
+	/**
+	 * The feature id for the '<em><b>Additional Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ROUTING_RULE_BUILDER_S3__ADDITIONAL_CODE = 8;
+
+	/**
+	 * The number of structural features of the '<em>Routing Rule Builder s3</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ROUTING_RULE_BUILDER_S3_FEATURE_COUNT = 9;
+
+	/**
+	 * The number of operations of the '<em>Routing Rule Builder s3</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ROUTING_RULE_BUILDER_S3_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.BucketBuilder_s3Impl <em>Bucket Builder s3</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.BucketBuilder_s3Impl
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getBucketBuilder_s3()
+	 * @generated
+	 */
+	int BUCKET_BUILDER_S3 = 59;
+
+	/**
+	 * The feature id for the '<em><b>Access Control software amazon awscdk services s3 Bucket Access Control </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BUCKET_BUILDER_S3__ACCESS_CONTROL_SOFTWARE_AMAZON_AWSCDK_SERVICES_S3_BUCKET_ACCESS_CONTROL_ = 0;
+
+	/**
+	 * The feature id for the '<em><b>Block Public Access With Block Public Access software amazon awscdk services s3 Block Public Access As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BUCKET_BUILDER_S3__BLOCK_PUBLIC_ACCESS_WITH_BLOCK_PUBLIC_ACCESS_SOFTWARE_AMAZON_AWSCDK_SERVICES_S3_BLOCK_PUBLIC_ACCESS_AS_REFERENCE = 1;
+
+	/**
+	 * The feature id for the '<em><b>Bucket Name java lang String </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BUCKET_BUILDER_S3__BUCKET_NAME_JAVA_LANG_STRING_ = 2;
+
+	/**
+	 * The feature id for the '<em><b>Cors software amazon awscdk services s3 Cors Rule As List</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BUCKET_BUILDER_S3__CORS_SOFTWARE_AMAZON_AWSCDK_SERVICES_S3_CORS_RULE_AS_LIST = 3;
+
+	/**
+	 * The feature id for the '<em><b>Encryption software amazon awscdk services s3 Bucket Encryption </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BUCKET_BUILDER_S3__ENCRYPTION_SOFTWARE_AMAZON_AWSCDK_SERVICES_S3_BUCKET_ENCRYPTION_ = 4;
+
+	/**
+	 * The feature id for the '<em><b>Encryption Key With IKey software amazon awscdk services kms IKey As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BUCKET_BUILDER_S3__ENCRYPTION_KEY_WITH_IKEY_SOFTWARE_AMAZON_AWSCDK_SERVICES_KMS_IKEY_AS_REFERENCE = 5;
+
+	/**
+	 * The feature id for the '<em><b>Lifecycle Rules software amazon awscdk services s3 Lifecycle Rule As List</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BUCKET_BUILDER_S3__LIFECYCLE_RULES_SOFTWARE_AMAZON_AWSCDK_SERVICES_S3_LIFECYCLE_RULE_AS_LIST = 6;
+
+	/**
+	 * The feature id for the '<em><b>Metrics software amazon awscdk services s3 Bucket Metrics As List</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BUCKET_BUILDER_S3__METRICS_SOFTWARE_AMAZON_AWSCDK_SERVICES_S3_BUCKET_METRICS_AS_LIST = 7;
+
+	/**
+	 * The feature id for the '<em><b>Public Read Access java lang Boolean </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BUCKET_BUILDER_S3__PUBLIC_READ_ACCESS_JAVA_LANG_BOOLEAN_ = 8;
+
+	/**
+	 * The feature id for the '<em><b>Removal Policy software amazon awscdk core Removal Policy </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BUCKET_BUILDER_S3__REMOVAL_POLICY_SOFTWARE_AMAZON_AWSCDK_CORE_REMOVAL_POLICY_ = 9;
+
+	/**
+	 * The feature id for the '<em><b>Server Access Logs Bucket With IBucket software amazon awscdk services s3 IBucket As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BUCKET_BUILDER_S3__SERVER_ACCESS_LOGS_BUCKET_WITH_IBUCKET_SOFTWARE_AMAZON_AWSCDK_SERVICES_S3_IBUCKET_AS_REFERENCE = 10;
+
+	/**
+	 * The feature id for the '<em><b>Server Access Logs Prefix java lang String </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BUCKET_BUILDER_S3__SERVER_ACCESS_LOGS_PREFIX_JAVA_LANG_STRING_ = 11;
+
+	/**
+	 * The feature id for the '<em><b>Versioned java lang Boolean </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BUCKET_BUILDER_S3__VERSIONED_JAVA_LANG_BOOLEAN_ = 12;
+
+	/**
+	 * The feature id for the '<em><b>Website Error Document java lang String </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BUCKET_BUILDER_S3__WEBSITE_ERROR_DOCUMENT_JAVA_LANG_STRING_ = 13;
+
+	/**
+	 * The feature id for the '<em><b>Website Index Document java lang String </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BUCKET_BUILDER_S3__WEBSITE_INDEX_DOCUMENT_JAVA_LANG_STRING_ = 14;
+
+	/**
+	 * The feature id for the '<em><b>Website Redirect With Redirect Target software amazon awscdk services s3 Redirect Target As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BUCKET_BUILDER_S3__WEBSITE_REDIRECT_WITH_REDIRECT_TARGET_SOFTWARE_AMAZON_AWSCDK_SERVICES_S3_REDIRECT_TARGET_AS_REFERENCE = 15;
+
+	/**
+	 * The feature id for the '<em><b>Website Routing Rules software amazon awscdk services s3 Routing Rule As List</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BUCKET_BUILDER_S3__WEBSITE_ROUTING_RULES_SOFTWARE_AMAZON_AWSCDK_SERVICES_S3_ROUTING_RULE_AS_LIST = 16;
+
+	/**
+	 * The feature id for the '<em><b>Generated Class Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BUCKET_BUILDER_S3__GENERATED_CLASS_NAME = 17;
+
+	/**
+	 * The feature id for the '<em><b>Var Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BUCKET_BUILDER_S3__VAR_NAME = 18;
+
+	/**
+	 * The feature id for the '<em><b>Identifier</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BUCKET_BUILDER_S3__IDENTIFIER = 19;
+
+	/**
+	 * The feature id for the '<em><b>Additional Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BUCKET_BUILDER_S3__ADDITIONAL_CODE = 20;
+
+	/**
+	 * The number of structural features of the '<em>Bucket Builder s3</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BUCKET_BUILDER_S3_FEATURE_COUNT = 21;
+
+	/**
+	 * The number of operations of the '<em>Bucket Builder s3</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BUCKET_BUILDER_S3_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.BucketPropsBuilder_s3Impl <em>Bucket Props Builder s3</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.BucketPropsBuilder_s3Impl
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getBucketPropsBuilder_s3()
+	 * @generated
+	 */
+	int BUCKET_PROPS_BUILDER_S3 = 60;
+
+	/**
+	 * The feature id for the '<em><b>Access Control software amazon awscdk services s3 Bucket Access Control </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BUCKET_PROPS_BUILDER_S3__ACCESS_CONTROL_SOFTWARE_AMAZON_AWSCDK_SERVICES_S3_BUCKET_ACCESS_CONTROL_ = 0;
+
+	/**
+	 * The feature id for the '<em><b>Block Public Access With Block Public Access software amazon awscdk services s3 Block Public Access As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BUCKET_PROPS_BUILDER_S3__BLOCK_PUBLIC_ACCESS_WITH_BLOCK_PUBLIC_ACCESS_SOFTWARE_AMAZON_AWSCDK_SERVICES_S3_BLOCK_PUBLIC_ACCESS_AS_REFERENCE = 1;
+
+	/**
+	 * The feature id for the '<em><b>Bucket Name java lang String </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BUCKET_PROPS_BUILDER_S3__BUCKET_NAME_JAVA_LANG_STRING_ = 2;
+
+	/**
+	 * The feature id for the '<em><b>Cors software amazon awscdk services s3 Cors Rule As List</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BUCKET_PROPS_BUILDER_S3__CORS_SOFTWARE_AMAZON_AWSCDK_SERVICES_S3_CORS_RULE_AS_LIST = 3;
+
+	/**
+	 * The feature id for the '<em><b>Encryption software amazon awscdk services s3 Bucket Encryption </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BUCKET_PROPS_BUILDER_S3__ENCRYPTION_SOFTWARE_AMAZON_AWSCDK_SERVICES_S3_BUCKET_ENCRYPTION_ = 4;
+
+	/**
+	 * The feature id for the '<em><b>Encryption Key With IKey software amazon awscdk services kms IKey As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BUCKET_PROPS_BUILDER_S3__ENCRYPTION_KEY_WITH_IKEY_SOFTWARE_AMAZON_AWSCDK_SERVICES_KMS_IKEY_AS_REFERENCE = 5;
+
+	/**
+	 * The feature id for the '<em><b>Lifecycle Rules software amazon awscdk services s3 Lifecycle Rule As List</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BUCKET_PROPS_BUILDER_S3__LIFECYCLE_RULES_SOFTWARE_AMAZON_AWSCDK_SERVICES_S3_LIFECYCLE_RULE_AS_LIST = 6;
+
+	/**
+	 * The feature id for the '<em><b>Metrics software amazon awscdk services s3 Bucket Metrics As List</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BUCKET_PROPS_BUILDER_S3__METRICS_SOFTWARE_AMAZON_AWSCDK_SERVICES_S3_BUCKET_METRICS_AS_LIST = 7;
+
+	/**
+	 * The feature id for the '<em><b>Public Read Access java lang Boolean </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BUCKET_PROPS_BUILDER_S3__PUBLIC_READ_ACCESS_JAVA_LANG_BOOLEAN_ = 8;
+
+	/**
+	 * The feature id for the '<em><b>Removal Policy software amazon awscdk core Removal Policy </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BUCKET_PROPS_BUILDER_S3__REMOVAL_POLICY_SOFTWARE_AMAZON_AWSCDK_CORE_REMOVAL_POLICY_ = 9;
+
+	/**
+	 * The feature id for the '<em><b>Server Access Logs Bucket With IBucket software amazon awscdk services s3 IBucket As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BUCKET_PROPS_BUILDER_S3__SERVER_ACCESS_LOGS_BUCKET_WITH_IBUCKET_SOFTWARE_AMAZON_AWSCDK_SERVICES_S3_IBUCKET_AS_REFERENCE = 10;
+
+	/**
+	 * The feature id for the '<em><b>Server Access Logs Prefix java lang String </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BUCKET_PROPS_BUILDER_S3__SERVER_ACCESS_LOGS_PREFIX_JAVA_LANG_STRING_ = 11;
+
+	/**
+	 * The feature id for the '<em><b>Versioned java lang Boolean </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BUCKET_PROPS_BUILDER_S3__VERSIONED_JAVA_LANG_BOOLEAN_ = 12;
+
+	/**
+	 * The feature id for the '<em><b>Website Error Document java lang String </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BUCKET_PROPS_BUILDER_S3__WEBSITE_ERROR_DOCUMENT_JAVA_LANG_STRING_ = 13;
+
+	/**
+	 * The feature id for the '<em><b>Website Index Document java lang String </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BUCKET_PROPS_BUILDER_S3__WEBSITE_INDEX_DOCUMENT_JAVA_LANG_STRING_ = 14;
+
+	/**
+	 * The feature id for the '<em><b>Website Redirect With Redirect Target software amazon awscdk services s3 Redirect Target As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BUCKET_PROPS_BUILDER_S3__WEBSITE_REDIRECT_WITH_REDIRECT_TARGET_SOFTWARE_AMAZON_AWSCDK_SERVICES_S3_REDIRECT_TARGET_AS_REFERENCE = 15;
+
+	/**
+	 * The feature id for the '<em><b>Website Routing Rules software amazon awscdk services s3 Routing Rule As List</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BUCKET_PROPS_BUILDER_S3__WEBSITE_ROUTING_RULES_SOFTWARE_AMAZON_AWSCDK_SERVICES_S3_ROUTING_RULE_AS_LIST = 16;
+
+	/**
+	 * The feature id for the '<em><b>Generated Class Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BUCKET_PROPS_BUILDER_S3__GENERATED_CLASS_NAME = 17;
+
+	/**
+	 * The feature id for the '<em><b>Var Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BUCKET_PROPS_BUILDER_S3__VAR_NAME = 18;
+
+	/**
+	 * The feature id for the '<em><b>Identifier</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BUCKET_PROPS_BUILDER_S3__IDENTIFIER = 19;
+
+	/**
+	 * The feature id for the '<em><b>Additional Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BUCKET_PROPS_BUILDER_S3__ADDITIONAL_CODE = 20;
+
+	/**
+	 * The number of structural features of the '<em>Bucket Props Builder s3</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BUCKET_PROPS_BUILDER_S3_FEATURE_COUNT = 21;
+
+	/**
+	 * The number of operations of the '<em>Bucket Props Builder s3</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BUCKET_PROPS_BUILDER_S3_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.OriginAccessIdentityBuilder_cloudfrontImpl <em>Origin Access Identity Builder cloudfront</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.OriginAccessIdentityBuilder_cloudfrontImpl
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getOriginAccessIdentityBuilder_cloudfront()
+	 * @generated
+	 */
+	int ORIGIN_ACCESS_IDENTITY_BUILDER_CLOUDFRONT = 61;
+
+	/**
+	 * The feature id for the '<em><b>Comment java lang String </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ORIGIN_ACCESS_IDENTITY_BUILDER_CLOUDFRONT__COMMENT_JAVA_LANG_STRING_ = 0;
+
+	/**
+	 * The feature id for the '<em><b>Generated Class Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ORIGIN_ACCESS_IDENTITY_BUILDER_CLOUDFRONT__GENERATED_CLASS_NAME = 1;
+
+	/**
+	 * The feature id for the '<em><b>Var Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ORIGIN_ACCESS_IDENTITY_BUILDER_CLOUDFRONT__VAR_NAME = 2;
+
+	/**
+	 * The feature id for the '<em><b>Identifier</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ORIGIN_ACCESS_IDENTITY_BUILDER_CLOUDFRONT__IDENTIFIER = 3;
+
+	/**
+	 * The feature id for the '<em><b>Additional Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ORIGIN_ACCESS_IDENTITY_BUILDER_CLOUDFRONT__ADDITIONAL_CODE = 4;
+
+	/**
+	 * The number of structural features of the '<em>Origin Access Identity Builder cloudfront</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ORIGIN_ACCESS_IDENTITY_BUILDER_CLOUDFRONT_FEATURE_COUNT = 5;
+
+	/**
+	 * The number of operations of the '<em>Origin Access Identity Builder cloudfront</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ORIGIN_ACCESS_IDENTITY_BUILDER_CLOUDFRONT_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.S3OriginConfigBuilder_cloudfrontImpl <em>S3 Origin Config Builder cloudfront</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.S3OriginConfigBuilder_cloudfrontImpl
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getS3OriginConfigBuilder_cloudfront()
+	 * @generated
+	 */
+	int S3_ORIGIN_CONFIG_BUILDER_CLOUDFRONT = 62;
+
+	/**
+	 * The feature id for the '<em><b>S3 Bucket Source With IBucket software amazon awscdk services s3 IBucket As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int S3_ORIGIN_CONFIG_BUILDER_CLOUDFRONT__S3_BUCKET_SOURCE_WITH_IBUCKET_SOFTWARE_AMAZON_AWSCDK_SERVICES_S3_IBUCKET_AS_REFERENCE = 0;
+
+	/**
+	 * The feature id for the '<em><b>Origin Access Identity With IOrigin Access Identity software amazon awscdk services cloudfront IOrigin Access Identity As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int S3_ORIGIN_CONFIG_BUILDER_CLOUDFRONT__ORIGIN_ACCESS_IDENTITY_WITH_IORIGIN_ACCESS_IDENTITY_SOFTWARE_AMAZON_AWSCDK_SERVICES_CLOUDFRONT_IORIGIN_ACCESS_IDENTITY_AS_REFERENCE = 1;
+
+	/**
+	 * The feature id for the '<em><b>Generated Class Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int S3_ORIGIN_CONFIG_BUILDER_CLOUDFRONT__GENERATED_CLASS_NAME = 2;
+
+	/**
+	 * The feature id for the '<em><b>Var Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int S3_ORIGIN_CONFIG_BUILDER_CLOUDFRONT__VAR_NAME = 3;
+
+	/**
+	 * The feature id for the '<em><b>Identifier</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int S3_ORIGIN_CONFIG_BUILDER_CLOUDFRONT__IDENTIFIER = 4;
+
+	/**
+	 * The feature id for the '<em><b>Additional Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int S3_ORIGIN_CONFIG_BUILDER_CLOUDFRONT__ADDITIONAL_CODE = 5;
+
+	/**
+	 * The number of structural features of the '<em>S3 Origin Config Builder cloudfront</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int S3_ORIGIN_CONFIG_BUILDER_CLOUDFRONT_FEATURE_COUNT = 6;
+
+	/**
+	 * The number of operations of the '<em>S3 Origin Config Builder cloudfront</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int S3_ORIGIN_CONFIG_BUILDER_CLOUDFRONT_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.SourceConfigurationBuilder_cloudfrontImpl <em>Source Configuration Builder cloudfront</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.SourceConfigurationBuilder_cloudfrontImpl
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getSourceConfigurationBuilder_cloudfront()
+	 * @generated
+	 */
+	int SOURCE_CONFIGURATION_BUILDER_CLOUDFRONT = 63;
+
+	/**
+	 * The feature id for the '<em><b>Behaviors software amazon awscdk services cloudfront Behavior As List</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SOURCE_CONFIGURATION_BUILDER_CLOUDFRONT__BEHAVIORS_SOFTWARE_AMAZON_AWSCDK_SERVICES_CLOUDFRONT_BEHAVIOR_AS_LIST = 0;
+
+	/**
+	 * The feature id for the '<em><b>Custom Origin Source With Custom Origin Config software amazon awscdk services cloudfront Custom Origin Config As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SOURCE_CONFIGURATION_BUILDER_CLOUDFRONT__CUSTOM_ORIGIN_SOURCE_WITH_CUSTOM_ORIGIN_CONFIG_SOFTWARE_AMAZON_AWSCDK_SERVICES_CLOUDFRONT_CUSTOM_ORIGIN_CONFIG_AS_REFERENCE = 1;
+
+	/**
+	 * The feature id for the '<em><b>Origin Headers java lang String java lang String As Map</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SOURCE_CONFIGURATION_BUILDER_CLOUDFRONT__ORIGIN_HEADERS_JAVA_LANG_STRING_JAVA_LANG_STRING_AS_MAP = 2;
+
+	/**
+	 * The feature id for the '<em><b>Origin Path java lang String </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SOURCE_CONFIGURATION_BUILDER_CLOUDFRONT__ORIGIN_PATH_JAVA_LANG_STRING_ = 3;
+
+	/**
+	 * The feature id for the '<em><b>S3 Origin Source With S3 Origin Config software amazon awscdk services cloudfront S3 Origin Config As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SOURCE_CONFIGURATION_BUILDER_CLOUDFRONT__S3_ORIGIN_SOURCE_WITH_S3_ORIGIN_CONFIG_SOFTWARE_AMAZON_AWSCDK_SERVICES_CLOUDFRONT_S3_ORIGIN_CONFIG_AS_REFERENCE = 4;
+
+	/**
+	 * The feature id for the '<em><b>Generated Class Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SOURCE_CONFIGURATION_BUILDER_CLOUDFRONT__GENERATED_CLASS_NAME = 5;
+
+	/**
+	 * The feature id for the '<em><b>Var Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SOURCE_CONFIGURATION_BUILDER_CLOUDFRONT__VAR_NAME = 6;
+
+	/**
+	 * The feature id for the '<em><b>Identifier</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SOURCE_CONFIGURATION_BUILDER_CLOUDFRONT__IDENTIFIER = 7;
+
+	/**
+	 * The feature id for the '<em><b>Additional Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SOURCE_CONFIGURATION_BUILDER_CLOUDFRONT__ADDITIONAL_CODE = 8;
+
+	/**
+	 * The number of structural features of the '<em>Source Configuration Builder cloudfront</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SOURCE_CONFIGURATION_BUILDER_CLOUDFRONT_FEATURE_COUNT = 9;
+
+	/**
+	 * The number of operations of the '<em>Source Configuration Builder cloudfront</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SOURCE_CONFIGURATION_BUILDER_CLOUDFRONT_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.AliasConfigurationBuilder_cloudfrontImpl <em>Alias Configuration Builder cloudfront</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AliasConfigurationBuilder_cloudfrontImpl
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getAliasConfigurationBuilder_cloudfront()
+	 * @generated
+	 */
+	int ALIAS_CONFIGURATION_BUILDER_CLOUDFRONT = 64;
+
+	/**
+	 * The feature id for the '<em><b>Acm Cert Ref java lang String </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ALIAS_CONFIGURATION_BUILDER_CLOUDFRONT__ACM_CERT_REF_JAVA_LANG_STRING_ = 0;
+
+	/**
+	 * The feature id for the '<em><b>Names java lang String As List</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ALIAS_CONFIGURATION_BUILDER_CLOUDFRONT__NAMES_JAVA_LANG_STRING_AS_LIST = 1;
+
+	/**
+	 * The feature id for the '<em><b>Security Policy software amazon awscdk services cloudfront Security Policy Protocol </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ALIAS_CONFIGURATION_BUILDER_CLOUDFRONT__SECURITY_POLICY_SOFTWARE_AMAZON_AWSCDK_SERVICES_CLOUDFRONT_SECURITY_POLICY_PROTOCOL_ = 2;
+
+	/**
+	 * The feature id for the '<em><b>Ssl Method software amazon awscdk services cloudfront SSL Method </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ALIAS_CONFIGURATION_BUILDER_CLOUDFRONT__SSL_METHOD_SOFTWARE_AMAZON_AWSCDK_SERVICES_CLOUDFRONT_SSL_METHOD_ = 3;
+
+	/**
+	 * The feature id for the '<em><b>Generated Class Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ALIAS_CONFIGURATION_BUILDER_CLOUDFRONT__GENERATED_CLASS_NAME = 4;
+
+	/**
+	 * The feature id for the '<em><b>Var Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ALIAS_CONFIGURATION_BUILDER_CLOUDFRONT__VAR_NAME = 5;
+
+	/**
+	 * The feature id for the '<em><b>Identifier</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ALIAS_CONFIGURATION_BUILDER_CLOUDFRONT__IDENTIFIER = 6;
+
+	/**
+	 * The feature id for the '<em><b>Additional Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ALIAS_CONFIGURATION_BUILDER_CLOUDFRONT__ADDITIONAL_CODE = 7;
+
+	/**
+	 * The number of structural features of the '<em>Alias Configuration Builder cloudfront</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ALIAS_CONFIGURATION_BUILDER_CLOUDFRONT_FEATURE_COUNT = 8;
+
+	/**
+	 * The number of operations of the '<em>Alias Configuration Builder cloudfront</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ALIAS_CONFIGURATION_BUILDER_CLOUDFRONT_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.LoggingConfigurationBuilder_cloudfrontImpl <em>Logging Configuration Builder cloudfront</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.LoggingConfigurationBuilder_cloudfrontImpl
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getLoggingConfigurationBuilder_cloudfront()
+	 * @generated
+	 */
+	int LOGGING_CONFIGURATION_BUILDER_CLOUDFRONT = 65;
+
+	/**
+	 * The feature id for the '<em><b>Bucket With IBucket software amazon awscdk services s3 IBucket As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LOGGING_CONFIGURATION_BUILDER_CLOUDFRONT__BUCKET_WITH_IBUCKET_SOFTWARE_AMAZON_AWSCDK_SERVICES_S3_IBUCKET_AS_REFERENCE = 0;
+
+	/**
+	 * The feature id for the '<em><b>Include Cookies java lang Boolean </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LOGGING_CONFIGURATION_BUILDER_CLOUDFRONT__INCLUDE_COOKIES_JAVA_LANG_BOOLEAN_ = 1;
+
+	/**
+	 * The feature id for the '<em><b>Prefix java lang String </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LOGGING_CONFIGURATION_BUILDER_CLOUDFRONT__PREFIX_JAVA_LANG_STRING_ = 2;
+
+	/**
+	 * The feature id for the '<em><b>Generated Class Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LOGGING_CONFIGURATION_BUILDER_CLOUDFRONT__GENERATED_CLASS_NAME = 3;
+
+	/**
+	 * The feature id for the '<em><b>Var Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LOGGING_CONFIGURATION_BUILDER_CLOUDFRONT__VAR_NAME = 4;
+
+	/**
+	 * The feature id for the '<em><b>Identifier</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LOGGING_CONFIGURATION_BUILDER_CLOUDFRONT__IDENTIFIER = 5;
+
+	/**
+	 * The feature id for the '<em><b>Additional Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LOGGING_CONFIGURATION_BUILDER_CLOUDFRONT__ADDITIONAL_CODE = 6;
+
+	/**
+	 * The number of structural features of the '<em>Logging Configuration Builder cloudfront</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LOGGING_CONFIGURATION_BUILDER_CLOUDFRONT_FEATURE_COUNT = 7;
+
+	/**
+	 * The number of operations of the '<em>Logging Configuration Builder cloudfront</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LOGGING_CONFIGURATION_BUILDER_CLOUDFRONT_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.CloudFrontWebDistributionPropsBuilder_cloudfrontImpl <em>Cloud Front Web Distribution Props Builder cloudfront</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.CloudFrontWebDistributionPropsBuilder_cloudfrontImpl
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getCloudFrontWebDistributionPropsBuilder_cloudfront()
+	 * @generated
+	 */
+	int CLOUD_FRONT_WEB_DISTRIBUTION_PROPS_BUILDER_CLOUDFRONT = 66;
+
+	/**
+	 * The feature id for the '<em><b>Origin Configs software amazon awscdk services cloudfront Source Configuration As List</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CLOUD_FRONT_WEB_DISTRIBUTION_PROPS_BUILDER_CLOUDFRONT__ORIGIN_CONFIGS_SOFTWARE_AMAZON_AWSCDK_SERVICES_CLOUDFRONT_SOURCE_CONFIGURATION_AS_LIST = 0;
+
+	/**
+	 * The feature id for the '<em><b>Alias Configuration With Alias Configuration software amazon awscdk services cloudfront Alias Configuration As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CLOUD_FRONT_WEB_DISTRIBUTION_PROPS_BUILDER_CLOUDFRONT__ALIAS_CONFIGURATION_WITH_ALIAS_CONFIGURATION_SOFTWARE_AMAZON_AWSCDK_SERVICES_CLOUDFRONT_ALIAS_CONFIGURATION_AS_REFERENCE = 1;
+
+	/**
+	 * The feature id for the '<em><b>Comment java lang String </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CLOUD_FRONT_WEB_DISTRIBUTION_PROPS_BUILDER_CLOUDFRONT__COMMENT_JAVA_LANG_STRING_ = 2;
+
+	/**
+	 * The feature id for the '<em><b>Default Root Object java lang String </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CLOUD_FRONT_WEB_DISTRIBUTION_PROPS_BUILDER_CLOUDFRONT__DEFAULT_ROOT_OBJECT_JAVA_LANG_STRING_ = 3;
+
+	/**
+	 * The feature id for the '<em><b>Enable Ip V6 java lang Boolean </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CLOUD_FRONT_WEB_DISTRIBUTION_PROPS_BUILDER_CLOUDFRONT__ENABLE_IP_V6_JAVA_LANG_BOOLEAN_ = 4;
+
+	/**
+	 * The feature id for the '<em><b>Error Configurations software amazon awscdk services cloudfront Cfn Distribution Custom Error Response Property As List</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CLOUD_FRONT_WEB_DISTRIBUTION_PROPS_BUILDER_CLOUDFRONT__ERROR_CONFIGURATIONS_SOFTWARE_AMAZON_AWSCDK_SERVICES_CLOUDFRONT_CFN_DISTRIBUTION_CUSTOM_ERROR_RESPONSE_PROPERTY_AS_LIST = 5;
+
+	/**
+	 * The feature id for the '<em><b>Geo Restriction With Geo Restriction software amazon awscdk services cloudfront Geo Restriction As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CLOUD_FRONT_WEB_DISTRIBUTION_PROPS_BUILDER_CLOUDFRONT__GEO_RESTRICTION_WITH_GEO_RESTRICTION_SOFTWARE_AMAZON_AWSCDK_SERVICES_CLOUDFRONT_GEO_RESTRICTION_AS_REFERENCE = 6;
+
+	/**
+	 * The feature id for the '<em><b>Http Version software amazon awscdk services cloudfront Http Version </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CLOUD_FRONT_WEB_DISTRIBUTION_PROPS_BUILDER_CLOUDFRONT__HTTP_VERSION_SOFTWARE_AMAZON_AWSCDK_SERVICES_CLOUDFRONT_HTTP_VERSION_ = 7;
+
+	/**
+	 * The feature id for the '<em><b>Logging Config With Logging Configuration software amazon awscdk services cloudfront Logging Configuration As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CLOUD_FRONT_WEB_DISTRIBUTION_PROPS_BUILDER_CLOUDFRONT__LOGGING_CONFIG_WITH_LOGGING_CONFIGURATION_SOFTWARE_AMAZON_AWSCDK_SERVICES_CLOUDFRONT_LOGGING_CONFIGURATION_AS_REFERENCE = 8;
+
+	/**
+	 * The feature id for the '<em><b>Price Class software amazon awscdk services cloudfront Price Class </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CLOUD_FRONT_WEB_DISTRIBUTION_PROPS_BUILDER_CLOUDFRONT__PRICE_CLASS_SOFTWARE_AMAZON_AWSCDK_SERVICES_CLOUDFRONT_PRICE_CLASS_ = 9;
+
+	/**
+	 * The feature id for the '<em><b>Viewer Certificate With Viewer Certificate software amazon awscdk services cloudfront Viewer Certificate As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CLOUD_FRONT_WEB_DISTRIBUTION_PROPS_BUILDER_CLOUDFRONT__VIEWER_CERTIFICATE_WITH_VIEWER_CERTIFICATE_SOFTWARE_AMAZON_AWSCDK_SERVICES_CLOUDFRONT_VIEWER_CERTIFICATE_AS_REFERENCE = 10;
+
+	/**
+	 * The feature id for the '<em><b>Viewer Protocol Policy software amazon awscdk services cloudfront Viewer Protocol Policy </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CLOUD_FRONT_WEB_DISTRIBUTION_PROPS_BUILDER_CLOUDFRONT__VIEWER_PROTOCOL_POLICY_SOFTWARE_AMAZON_AWSCDK_SERVICES_CLOUDFRONT_VIEWER_PROTOCOL_POLICY_ = 11;
+
+	/**
+	 * The feature id for the '<em><b>Web Acl Id java lang String </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CLOUD_FRONT_WEB_DISTRIBUTION_PROPS_BUILDER_CLOUDFRONT__WEB_ACL_ID_JAVA_LANG_STRING_ = 12;
+
+	/**
+	 * The feature id for the '<em><b>Generated Class Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CLOUD_FRONT_WEB_DISTRIBUTION_PROPS_BUILDER_CLOUDFRONT__GENERATED_CLASS_NAME = 13;
+
+	/**
+	 * The feature id for the '<em><b>Var Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CLOUD_FRONT_WEB_DISTRIBUTION_PROPS_BUILDER_CLOUDFRONT__VAR_NAME = 14;
+
+	/**
+	 * The feature id for the '<em><b>Identifier</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CLOUD_FRONT_WEB_DISTRIBUTION_PROPS_BUILDER_CLOUDFRONT__IDENTIFIER = 15;
+
+	/**
+	 * The feature id for the '<em><b>Additional Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CLOUD_FRONT_WEB_DISTRIBUTION_PROPS_BUILDER_CLOUDFRONT__ADDITIONAL_CODE = 16;
+
+	/**
+	 * The number of structural features of the '<em>Cloud Front Web Distribution Props Builder cloudfront</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CLOUD_FRONT_WEB_DISTRIBUTION_PROPS_BUILDER_CLOUDFRONT_FEATURE_COUNT = 17;
+
+	/**
+	 * The number of operations of the '<em>Cloud Front Web Distribution Props Builder cloudfront</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CLOUD_FRONT_WEB_DISTRIBUTION_PROPS_BUILDER_CLOUDFRONT_OPERATION_COUNT = 0;
+
+	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.CloudFrontToApiGatewayBuilder_cloudfrontapigatewayImpl <em>Cloud Front To Api Gateway Builder cloudfrontapigateway</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -5605,7 +9131,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getCloudFrontToApiGatewayBuilder_cloudfrontapigateway()
 	 * @generated
 	 */
-	int CLOUD_FRONT_TO_API_GATEWAY_BUILDER_CLOUDFRONTAPIGATEWAY = 42;
+	int CLOUD_FRONT_TO_API_GATEWAY_BUILDER_CLOUDFRONTAPIGATEWAY = 67;
 
 	/**
 	 * The feature id for the '<em><b>Existing Api Gateway Obj With Rest Api software amazon awscdk services apigateway Rest Api As Reference</b></em>' attribute.
@@ -5696,7 +9222,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getCloudFrontToApiGatewayToLambdaBuilder_cloudfrontapigatewaylambda()
 	 * @generated
 	 */
-	int CLOUD_FRONT_TO_API_GATEWAY_TO_LAMBDA_BUILDER_CLOUDFRONTAPIGATEWAYLAMBDA = 43;
+	int CLOUD_FRONT_TO_API_GATEWAY_TO_LAMBDA_BUILDER_CLOUDFRONTAPIGATEWAYLAMBDA = 68;
 
 	/**
 	 * The feature id for the '<em><b>Api Gateway Props With Lambda Rest Api Props software amazon awscdk services apigateway Lambda Rest Api Props As Reference</b></em>' attribute.
@@ -5805,7 +9331,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getCloudFrontToS3Builder_cloudfronts3()
 	 * @generated
 	 */
-	int CLOUD_FRONT_TO_S3_BUILDER_CLOUDFRONTS3 = 44;
+	int CLOUD_FRONT_TO_S3_BUILDER_CLOUDFRONTS3 = 69;
 
 	/**
 	 * The feature id for the '<em><b>Bucket Props With Bucket Props software amazon awscdk services s3 Bucket Props As Reference</b></em>' attribute.
@@ -5898,6 +9424,1857 @@ public interface AwsworkbenchPackage extends EPackage {
 	int CLOUD_FRONT_TO_S3_BUILDER_CLOUDFRONTS3_OPERATION_COUNT = 0;
 
 	/**
+	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.AutoVerifiedAttrsBuilder_cognitoImpl <em>Auto Verified Attrs Builder cognito</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AutoVerifiedAttrsBuilder_cognitoImpl
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getAutoVerifiedAttrsBuilder_cognito()
+	 * @generated
+	 */
+	int AUTO_VERIFIED_ATTRS_BUILDER_COGNITO = 70;
+
+	/**
+	 * The feature id for the '<em><b>Email java lang Boolean </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int AUTO_VERIFIED_ATTRS_BUILDER_COGNITO__EMAIL_JAVA_LANG_BOOLEAN_ = 0;
+
+	/**
+	 * The feature id for the '<em><b>Phone java lang Boolean </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int AUTO_VERIFIED_ATTRS_BUILDER_COGNITO__PHONE_JAVA_LANG_BOOLEAN_ = 1;
+
+	/**
+	 * The feature id for the '<em><b>Generated Class Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int AUTO_VERIFIED_ATTRS_BUILDER_COGNITO__GENERATED_CLASS_NAME = 2;
+
+	/**
+	 * The feature id for the '<em><b>Var Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int AUTO_VERIFIED_ATTRS_BUILDER_COGNITO__VAR_NAME = 3;
+
+	/**
+	 * The feature id for the '<em><b>Identifier</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int AUTO_VERIFIED_ATTRS_BUILDER_COGNITO__IDENTIFIER = 4;
+
+	/**
+	 * The feature id for the '<em><b>Additional Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int AUTO_VERIFIED_ATTRS_BUILDER_COGNITO__ADDITIONAL_CODE = 5;
+
+	/**
+	 * The number of structural features of the '<em>Auto Verified Attrs Builder cognito</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int AUTO_VERIFIED_ATTRS_BUILDER_COGNITO_FEATURE_COUNT = 6;
+
+	/**
+	 * The number of operations of the '<em>Auto Verified Attrs Builder cognito</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int AUTO_VERIFIED_ATTRS_BUILDER_COGNITO_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.UserPoolTriggersBuilder_cognitoImpl <em>User Pool Triggers Builder cognito</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.UserPoolTriggersBuilder_cognitoImpl
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getUserPoolTriggersBuilder_cognito()
+	 * @generated
+	 */
+	int USER_POOL_TRIGGERS_BUILDER_COGNITO = 71;
+
+	/**
+	 * The feature id for the '<em><b>Create Auth Challenge With IFunction software amazon awscdk services lambda IFunction As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_POOL_TRIGGERS_BUILDER_COGNITO__CREATE_AUTH_CHALLENGE_WITH_IFUNCTION_SOFTWARE_AMAZON_AWSCDK_SERVICES_LAMBDA_IFUNCTION_AS_REFERENCE = 0;
+
+	/**
+	 * The feature id for the '<em><b>Custom Message With IFunction software amazon awscdk services lambda IFunction As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_POOL_TRIGGERS_BUILDER_COGNITO__CUSTOM_MESSAGE_WITH_IFUNCTION_SOFTWARE_AMAZON_AWSCDK_SERVICES_LAMBDA_IFUNCTION_AS_REFERENCE = 1;
+
+	/**
+	 * The feature id for the '<em><b>Define Auth Challenge With IFunction software amazon awscdk services lambda IFunction As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_POOL_TRIGGERS_BUILDER_COGNITO__DEFINE_AUTH_CHALLENGE_WITH_IFUNCTION_SOFTWARE_AMAZON_AWSCDK_SERVICES_LAMBDA_IFUNCTION_AS_REFERENCE = 2;
+
+	/**
+	 * The feature id for the '<em><b>Post Authentication With IFunction software amazon awscdk services lambda IFunction As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_POOL_TRIGGERS_BUILDER_COGNITO__POST_AUTHENTICATION_WITH_IFUNCTION_SOFTWARE_AMAZON_AWSCDK_SERVICES_LAMBDA_IFUNCTION_AS_REFERENCE = 3;
+
+	/**
+	 * The feature id for the '<em><b>Post Confirmation With IFunction software amazon awscdk services lambda IFunction As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_POOL_TRIGGERS_BUILDER_COGNITO__POST_CONFIRMATION_WITH_IFUNCTION_SOFTWARE_AMAZON_AWSCDK_SERVICES_LAMBDA_IFUNCTION_AS_REFERENCE = 4;
+
+	/**
+	 * The feature id for the '<em><b>Pre Authentication With IFunction software amazon awscdk services lambda IFunction As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_POOL_TRIGGERS_BUILDER_COGNITO__PRE_AUTHENTICATION_WITH_IFUNCTION_SOFTWARE_AMAZON_AWSCDK_SERVICES_LAMBDA_IFUNCTION_AS_REFERENCE = 5;
+
+	/**
+	 * The feature id for the '<em><b>Pre Sign Up With IFunction software amazon awscdk services lambda IFunction As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_POOL_TRIGGERS_BUILDER_COGNITO__PRE_SIGN_UP_WITH_IFUNCTION_SOFTWARE_AMAZON_AWSCDK_SERVICES_LAMBDA_IFUNCTION_AS_REFERENCE = 6;
+
+	/**
+	 * The feature id for the '<em><b>Pre Token Generation With IFunction software amazon awscdk services lambda IFunction As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_POOL_TRIGGERS_BUILDER_COGNITO__PRE_TOKEN_GENERATION_WITH_IFUNCTION_SOFTWARE_AMAZON_AWSCDK_SERVICES_LAMBDA_IFUNCTION_AS_REFERENCE = 7;
+
+	/**
+	 * The feature id for the '<em><b>User Migration With IFunction software amazon awscdk services lambda IFunction As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_POOL_TRIGGERS_BUILDER_COGNITO__USER_MIGRATION_WITH_IFUNCTION_SOFTWARE_AMAZON_AWSCDK_SERVICES_LAMBDA_IFUNCTION_AS_REFERENCE = 8;
+
+	/**
+	 * The feature id for the '<em><b>Verify Auth Challenge Response With IFunction software amazon awscdk services lambda IFunction As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_POOL_TRIGGERS_BUILDER_COGNITO__VERIFY_AUTH_CHALLENGE_RESPONSE_WITH_IFUNCTION_SOFTWARE_AMAZON_AWSCDK_SERVICES_LAMBDA_IFUNCTION_AS_REFERENCE = 9;
+
+	/**
+	 * The feature id for the '<em><b>Generated Class Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_POOL_TRIGGERS_BUILDER_COGNITO__GENERATED_CLASS_NAME = 10;
+
+	/**
+	 * The feature id for the '<em><b>Var Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_POOL_TRIGGERS_BUILDER_COGNITO__VAR_NAME = 11;
+
+	/**
+	 * The feature id for the '<em><b>Identifier</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_POOL_TRIGGERS_BUILDER_COGNITO__IDENTIFIER = 12;
+
+	/**
+	 * The feature id for the '<em><b>Additional Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_POOL_TRIGGERS_BUILDER_COGNITO__ADDITIONAL_CODE = 13;
+
+	/**
+	 * The number of structural features of the '<em>User Pool Triggers Builder cognito</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_POOL_TRIGGERS_BUILDER_COGNITO_FEATURE_COUNT = 14;
+
+	/**
+	 * The number of operations of the '<em>User Pool Triggers Builder cognito</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_POOL_TRIGGERS_BUILDER_COGNITO_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.EmailSettingsBuilder_cognitoImpl <em>Email Settings Builder cognito</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.EmailSettingsBuilder_cognitoImpl
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getEmailSettingsBuilder_cognito()
+	 * @generated
+	 */
+	int EMAIL_SETTINGS_BUILDER_COGNITO = 72;
+
+	/**
+	 * The feature id for the '<em><b>From java lang String </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EMAIL_SETTINGS_BUILDER_COGNITO__FROM_JAVA_LANG_STRING_ = 0;
+
+	/**
+	 * The feature id for the '<em><b>Reply To java lang String </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EMAIL_SETTINGS_BUILDER_COGNITO__REPLY_TO_JAVA_LANG_STRING_ = 1;
+
+	/**
+	 * The feature id for the '<em><b>Generated Class Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EMAIL_SETTINGS_BUILDER_COGNITO__GENERATED_CLASS_NAME = 2;
+
+	/**
+	 * The feature id for the '<em><b>Var Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EMAIL_SETTINGS_BUILDER_COGNITO__VAR_NAME = 3;
+
+	/**
+	 * The feature id for the '<em><b>Identifier</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EMAIL_SETTINGS_BUILDER_COGNITO__IDENTIFIER = 4;
+
+	/**
+	 * The feature id for the '<em><b>Additional Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EMAIL_SETTINGS_BUILDER_COGNITO__ADDITIONAL_CODE = 5;
+
+	/**
+	 * The number of structural features of the '<em>Email Settings Builder cognito</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EMAIL_SETTINGS_BUILDER_COGNITO_FEATURE_COUNT = 6;
+
+	/**
+	 * The number of operations of the '<em>Email Settings Builder cognito</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EMAIL_SETTINGS_BUILDER_COGNITO_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.PasswordPolicyBuilder_cognitoImpl <em>Password Policy Builder cognito</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.PasswordPolicyBuilder_cognitoImpl
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getPasswordPolicyBuilder_cognito()
+	 * @generated
+	 */
+	int PASSWORD_POLICY_BUILDER_COGNITO = 73;
+
+	/**
+	 * The feature id for the '<em><b>Min Length java lang Number </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PASSWORD_POLICY_BUILDER_COGNITO__MIN_LENGTH_JAVA_LANG_NUMBER_ = 0;
+
+	/**
+	 * The feature id for the '<em><b>Require Digits java lang Boolean </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PASSWORD_POLICY_BUILDER_COGNITO__REQUIRE_DIGITS_JAVA_LANG_BOOLEAN_ = 1;
+
+	/**
+	 * The feature id for the '<em><b>Require Lowercase java lang Boolean </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PASSWORD_POLICY_BUILDER_COGNITO__REQUIRE_LOWERCASE_JAVA_LANG_BOOLEAN_ = 2;
+
+	/**
+	 * The feature id for the '<em><b>Require Symbols java lang Boolean </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PASSWORD_POLICY_BUILDER_COGNITO__REQUIRE_SYMBOLS_JAVA_LANG_BOOLEAN_ = 3;
+
+	/**
+	 * The feature id for the '<em><b>Require Uppercase java lang Boolean </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PASSWORD_POLICY_BUILDER_COGNITO__REQUIRE_UPPERCASE_JAVA_LANG_BOOLEAN_ = 4;
+
+	/**
+	 * The feature id for the '<em><b>Temp Password Validity With Duration software amazon awscdk core Duration As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PASSWORD_POLICY_BUILDER_COGNITO__TEMP_PASSWORD_VALIDITY_WITH_DURATION_SOFTWARE_AMAZON_AWSCDK_CORE_DURATION_AS_REFERENCE = 5;
+
+	/**
+	 * The feature id for the '<em><b>Generated Class Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PASSWORD_POLICY_BUILDER_COGNITO__GENERATED_CLASS_NAME = 6;
+
+	/**
+	 * The feature id for the '<em><b>Var Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PASSWORD_POLICY_BUILDER_COGNITO__VAR_NAME = 7;
+
+	/**
+	 * The feature id for the '<em><b>Identifier</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PASSWORD_POLICY_BUILDER_COGNITO__IDENTIFIER = 8;
+
+	/**
+	 * The feature id for the '<em><b>Additional Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PASSWORD_POLICY_BUILDER_COGNITO__ADDITIONAL_CODE = 9;
+
+	/**
+	 * The number of structural features of the '<em>Password Policy Builder cognito</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PASSWORD_POLICY_BUILDER_COGNITO_FEATURE_COUNT = 10;
+
+	/**
+	 * The number of operations of the '<em>Password Policy Builder cognito</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PASSWORD_POLICY_BUILDER_COGNITO_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.MfaSecondFactorBuilder_cognitoImpl <em>Mfa Second Factor Builder cognito</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.MfaSecondFactorBuilder_cognitoImpl
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getMfaSecondFactorBuilder_cognito()
+	 * @generated
+	 */
+	int MFA_SECOND_FACTOR_BUILDER_COGNITO = 74;
+
+	/**
+	 * The feature id for the '<em><b>Otp java lang Boolean </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MFA_SECOND_FACTOR_BUILDER_COGNITO__OTP_JAVA_LANG_BOOLEAN_ = 0;
+
+	/**
+	 * The feature id for the '<em><b>Sms java lang Boolean </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MFA_SECOND_FACTOR_BUILDER_COGNITO__SMS_JAVA_LANG_BOOLEAN_ = 1;
+
+	/**
+	 * The feature id for the '<em><b>Generated Class Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MFA_SECOND_FACTOR_BUILDER_COGNITO__GENERATED_CLASS_NAME = 2;
+
+	/**
+	 * The feature id for the '<em><b>Var Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MFA_SECOND_FACTOR_BUILDER_COGNITO__VAR_NAME = 3;
+
+	/**
+	 * The feature id for the '<em><b>Identifier</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MFA_SECOND_FACTOR_BUILDER_COGNITO__IDENTIFIER = 4;
+
+	/**
+	 * The feature id for the '<em><b>Additional Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MFA_SECOND_FACTOR_BUILDER_COGNITO__ADDITIONAL_CODE = 5;
+
+	/**
+	 * The number of structural features of the '<em>Mfa Second Factor Builder cognito</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MFA_SECOND_FACTOR_BUILDER_COGNITO_FEATURE_COUNT = 6;
+
+	/**
+	 * The number of operations of the '<em>Mfa Second Factor Builder cognito</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MFA_SECOND_FACTOR_BUILDER_COGNITO_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.RequiredAttributesBuilder_cognitoImpl <em>Required Attributes Builder cognito</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.RequiredAttributesBuilder_cognitoImpl
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getRequiredAttributesBuilder_cognito()
+	 * @generated
+	 */
+	int REQUIRED_ATTRIBUTES_BUILDER_COGNITO = 75;
+
+	/**
+	 * The feature id for the '<em><b>Address java lang Boolean </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REQUIRED_ATTRIBUTES_BUILDER_COGNITO__ADDRESS_JAVA_LANG_BOOLEAN_ = 0;
+
+	/**
+	 * The feature id for the '<em><b>Birthdate java lang Boolean </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REQUIRED_ATTRIBUTES_BUILDER_COGNITO__BIRTHDATE_JAVA_LANG_BOOLEAN_ = 1;
+
+	/**
+	 * The feature id for the '<em><b>Email java lang Boolean </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REQUIRED_ATTRIBUTES_BUILDER_COGNITO__EMAIL_JAVA_LANG_BOOLEAN_ = 2;
+
+	/**
+	 * The feature id for the '<em><b>Family Name java lang Boolean </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REQUIRED_ATTRIBUTES_BUILDER_COGNITO__FAMILY_NAME_JAVA_LANG_BOOLEAN_ = 3;
+
+	/**
+	 * The feature id for the '<em><b>Fullname java lang Boolean </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REQUIRED_ATTRIBUTES_BUILDER_COGNITO__FULLNAME_JAVA_LANG_BOOLEAN_ = 4;
+
+	/**
+	 * The feature id for the '<em><b>Gender java lang Boolean </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REQUIRED_ATTRIBUTES_BUILDER_COGNITO__GENDER_JAVA_LANG_BOOLEAN_ = 5;
+
+	/**
+	 * The feature id for the '<em><b>Given Name java lang Boolean </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REQUIRED_ATTRIBUTES_BUILDER_COGNITO__GIVEN_NAME_JAVA_LANG_BOOLEAN_ = 6;
+
+	/**
+	 * The feature id for the '<em><b>Last Update Time java lang Boolean </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REQUIRED_ATTRIBUTES_BUILDER_COGNITO__LAST_UPDATE_TIME_JAVA_LANG_BOOLEAN_ = 7;
+
+	/**
+	 * The feature id for the '<em><b>Locale java lang Boolean </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REQUIRED_ATTRIBUTES_BUILDER_COGNITO__LOCALE_JAVA_LANG_BOOLEAN_ = 8;
+
+	/**
+	 * The feature id for the '<em><b>Middle Name java lang Boolean </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REQUIRED_ATTRIBUTES_BUILDER_COGNITO__MIDDLE_NAME_JAVA_LANG_BOOLEAN_ = 9;
+
+	/**
+	 * The feature id for the '<em><b>Nickname java lang Boolean </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REQUIRED_ATTRIBUTES_BUILDER_COGNITO__NICKNAME_JAVA_LANG_BOOLEAN_ = 10;
+
+	/**
+	 * The feature id for the '<em><b>Phone Number java lang Boolean </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REQUIRED_ATTRIBUTES_BUILDER_COGNITO__PHONE_NUMBER_JAVA_LANG_BOOLEAN_ = 11;
+
+	/**
+	 * The feature id for the '<em><b>Preferred Username java lang Boolean </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REQUIRED_ATTRIBUTES_BUILDER_COGNITO__PREFERRED_USERNAME_JAVA_LANG_BOOLEAN_ = 12;
+
+	/**
+	 * The feature id for the '<em><b>Profile Page java lang Boolean </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REQUIRED_ATTRIBUTES_BUILDER_COGNITO__PROFILE_PAGE_JAVA_LANG_BOOLEAN_ = 13;
+
+	/**
+	 * The feature id for the '<em><b>Profile Picture java lang Boolean </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REQUIRED_ATTRIBUTES_BUILDER_COGNITO__PROFILE_PICTURE_JAVA_LANG_BOOLEAN_ = 14;
+
+	/**
+	 * The feature id for the '<em><b>Timezone java lang Boolean </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REQUIRED_ATTRIBUTES_BUILDER_COGNITO__TIMEZONE_JAVA_LANG_BOOLEAN_ = 15;
+
+	/**
+	 * The feature id for the '<em><b>Website java lang Boolean </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REQUIRED_ATTRIBUTES_BUILDER_COGNITO__WEBSITE_JAVA_LANG_BOOLEAN_ = 16;
+
+	/**
+	 * The feature id for the '<em><b>Generated Class Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REQUIRED_ATTRIBUTES_BUILDER_COGNITO__GENERATED_CLASS_NAME = 17;
+
+	/**
+	 * The feature id for the '<em><b>Var Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REQUIRED_ATTRIBUTES_BUILDER_COGNITO__VAR_NAME = 18;
+
+	/**
+	 * The feature id for the '<em><b>Identifier</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REQUIRED_ATTRIBUTES_BUILDER_COGNITO__IDENTIFIER = 19;
+
+	/**
+	 * The feature id for the '<em><b>Additional Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REQUIRED_ATTRIBUTES_BUILDER_COGNITO__ADDITIONAL_CODE = 20;
+
+	/**
+	 * The number of structural features of the '<em>Required Attributes Builder cognito</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REQUIRED_ATTRIBUTES_BUILDER_COGNITO_FEATURE_COUNT = 21;
+
+	/**
+	 * The number of operations of the '<em>Required Attributes Builder cognito</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REQUIRED_ATTRIBUTES_BUILDER_COGNITO_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.SignInAliasesBuilder_cognitoImpl <em>Sign In Aliases Builder cognito</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.SignInAliasesBuilder_cognitoImpl
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getSignInAliasesBuilder_cognito()
+	 * @generated
+	 */
+	int SIGN_IN_ALIASES_BUILDER_COGNITO = 76;
+
+	/**
+	 * The feature id for the '<em><b>Email java lang Boolean </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SIGN_IN_ALIASES_BUILDER_COGNITO__EMAIL_JAVA_LANG_BOOLEAN_ = 0;
+
+	/**
+	 * The feature id for the '<em><b>Phone java lang Boolean </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SIGN_IN_ALIASES_BUILDER_COGNITO__PHONE_JAVA_LANG_BOOLEAN_ = 1;
+
+	/**
+	 * The feature id for the '<em><b>Preferred Username java lang Boolean </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SIGN_IN_ALIASES_BUILDER_COGNITO__PREFERRED_USERNAME_JAVA_LANG_BOOLEAN_ = 2;
+
+	/**
+	 * The feature id for the '<em><b>Username java lang Boolean </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SIGN_IN_ALIASES_BUILDER_COGNITO__USERNAME_JAVA_LANG_BOOLEAN_ = 3;
+
+	/**
+	 * The feature id for the '<em><b>Generated Class Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SIGN_IN_ALIASES_BUILDER_COGNITO__GENERATED_CLASS_NAME = 4;
+
+	/**
+	 * The feature id for the '<em><b>Var Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SIGN_IN_ALIASES_BUILDER_COGNITO__VAR_NAME = 5;
+
+	/**
+	 * The feature id for the '<em><b>Identifier</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SIGN_IN_ALIASES_BUILDER_COGNITO__IDENTIFIER = 6;
+
+	/**
+	 * The feature id for the '<em><b>Additional Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SIGN_IN_ALIASES_BUILDER_COGNITO__ADDITIONAL_CODE = 7;
+
+	/**
+	 * The number of structural features of the '<em>Sign In Aliases Builder cognito</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SIGN_IN_ALIASES_BUILDER_COGNITO_FEATURE_COUNT = 8;
+
+	/**
+	 * The number of operations of the '<em>Sign In Aliases Builder cognito</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SIGN_IN_ALIASES_BUILDER_COGNITO_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.UserInvitationConfigBuilder_cognitoImpl <em>User Invitation Config Builder cognito</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.UserInvitationConfigBuilder_cognitoImpl
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getUserInvitationConfigBuilder_cognito()
+	 * @generated
+	 */
+	int USER_INVITATION_CONFIG_BUILDER_COGNITO = 77;
+
+	/**
+	 * The feature id for the '<em><b>Email Body java lang String </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_INVITATION_CONFIG_BUILDER_COGNITO__EMAIL_BODY_JAVA_LANG_STRING_ = 0;
+
+	/**
+	 * The feature id for the '<em><b>Email Subject java lang String </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_INVITATION_CONFIG_BUILDER_COGNITO__EMAIL_SUBJECT_JAVA_LANG_STRING_ = 1;
+
+	/**
+	 * The feature id for the '<em><b>Sms Message java lang String </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_INVITATION_CONFIG_BUILDER_COGNITO__SMS_MESSAGE_JAVA_LANG_STRING_ = 2;
+
+	/**
+	 * The feature id for the '<em><b>Generated Class Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_INVITATION_CONFIG_BUILDER_COGNITO__GENERATED_CLASS_NAME = 3;
+
+	/**
+	 * The feature id for the '<em><b>Var Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_INVITATION_CONFIG_BUILDER_COGNITO__VAR_NAME = 4;
+
+	/**
+	 * The feature id for the '<em><b>Identifier</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_INVITATION_CONFIG_BUILDER_COGNITO__IDENTIFIER = 5;
+
+	/**
+	 * The feature id for the '<em><b>Additional Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_INVITATION_CONFIG_BUILDER_COGNITO__ADDITIONAL_CODE = 6;
+
+	/**
+	 * The number of structural features of the '<em>User Invitation Config Builder cognito</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_INVITATION_CONFIG_BUILDER_COGNITO_FEATURE_COUNT = 7;
+
+	/**
+	 * The number of operations of the '<em>User Invitation Config Builder cognito</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_INVITATION_CONFIG_BUILDER_COGNITO_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.UserVerificationConfigBuilder_cognitoImpl <em>User Verification Config Builder cognito</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.UserVerificationConfigBuilder_cognitoImpl
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getUserVerificationConfigBuilder_cognito()
+	 * @generated
+	 */
+	int USER_VERIFICATION_CONFIG_BUILDER_COGNITO = 78;
+
+	/**
+	 * The feature id for the '<em><b>Email Body java lang String </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_VERIFICATION_CONFIG_BUILDER_COGNITO__EMAIL_BODY_JAVA_LANG_STRING_ = 0;
+
+	/**
+	 * The feature id for the '<em><b>Email Style software amazon awscdk services cognito Verification Email Style </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_VERIFICATION_CONFIG_BUILDER_COGNITO__EMAIL_STYLE_SOFTWARE_AMAZON_AWSCDK_SERVICES_COGNITO_VERIFICATION_EMAIL_STYLE_ = 1;
+
+	/**
+	 * The feature id for the '<em><b>Email Subject java lang String </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_VERIFICATION_CONFIG_BUILDER_COGNITO__EMAIL_SUBJECT_JAVA_LANG_STRING_ = 2;
+
+	/**
+	 * The feature id for the '<em><b>Sms Message java lang String </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_VERIFICATION_CONFIG_BUILDER_COGNITO__SMS_MESSAGE_JAVA_LANG_STRING_ = 3;
+
+	/**
+	 * The feature id for the '<em><b>Generated Class Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_VERIFICATION_CONFIG_BUILDER_COGNITO__GENERATED_CLASS_NAME = 4;
+
+	/**
+	 * The feature id for the '<em><b>Var Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_VERIFICATION_CONFIG_BUILDER_COGNITO__VAR_NAME = 5;
+
+	/**
+	 * The feature id for the '<em><b>Identifier</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_VERIFICATION_CONFIG_BUILDER_COGNITO__IDENTIFIER = 6;
+
+	/**
+	 * The feature id for the '<em><b>Additional Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_VERIFICATION_CONFIG_BUILDER_COGNITO__ADDITIONAL_CODE = 7;
+
+	/**
+	 * The number of structural features of the '<em>User Verification Config Builder cognito</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_VERIFICATION_CONFIG_BUILDER_COGNITO_FEATURE_COUNT = 8;
+
+	/**
+	 * The number of operations of the '<em>User Verification Config Builder cognito</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_VERIFICATION_CONFIG_BUILDER_COGNITO_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.UserPoolPropsBuilder_cognitoImpl <em>User Pool Props Builder cognito</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.UserPoolPropsBuilder_cognitoImpl
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getUserPoolPropsBuilder_cognito()
+	 * @generated
+	 */
+	int USER_POOL_PROPS_BUILDER_COGNITO = 79;
+
+	/**
+	 * The feature id for the '<em><b>Auto Verify With Auto Verified Attrs software amazon awscdk services cognito Auto Verified Attrs As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_POOL_PROPS_BUILDER_COGNITO__AUTO_VERIFY_WITH_AUTO_VERIFIED_ATTRS_SOFTWARE_AMAZON_AWSCDK_SERVICES_COGNITO_AUTO_VERIFIED_ATTRS_AS_REFERENCE = 0;
+
+	/**
+	 * The feature id for the '<em><b>Custom Attributes java lang String software amazon awscdk services cognito ICustom Attribute As Map</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_POOL_PROPS_BUILDER_COGNITO__CUSTOM_ATTRIBUTES_JAVA_LANG_STRING_SOFTWARE_AMAZON_AWSCDK_SERVICES_COGNITO_ICUSTOM_ATTRIBUTE_AS_MAP = 1;
+
+	/**
+	 * The feature id for the '<em><b>Email Settings With Email Settings software amazon awscdk services cognito Email Settings As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_POOL_PROPS_BUILDER_COGNITO__EMAIL_SETTINGS_WITH_EMAIL_SETTINGS_SOFTWARE_AMAZON_AWSCDK_SERVICES_COGNITO_EMAIL_SETTINGS_AS_REFERENCE = 2;
+
+	/**
+	 * The feature id for the '<em><b>Lambda Triggers With User Pool Triggers software amazon awscdk services cognito User Pool Triggers As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_POOL_PROPS_BUILDER_COGNITO__LAMBDA_TRIGGERS_WITH_USER_POOL_TRIGGERS_SOFTWARE_AMAZON_AWSCDK_SERVICES_COGNITO_USER_POOL_TRIGGERS_AS_REFERENCE = 3;
+
+	/**
+	 * The feature id for the '<em><b>Mfa software amazon awscdk services cognito Mfa </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_POOL_PROPS_BUILDER_COGNITO__MFA_SOFTWARE_AMAZON_AWSCDK_SERVICES_COGNITO_MFA_ = 4;
+
+	/**
+	 * The feature id for the '<em><b>Mfa Second Factor With Mfa Second Factor software amazon awscdk services cognito Mfa Second Factor As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_POOL_PROPS_BUILDER_COGNITO__MFA_SECOND_FACTOR_WITH_MFA_SECOND_FACTOR_SOFTWARE_AMAZON_AWSCDK_SERVICES_COGNITO_MFA_SECOND_FACTOR_AS_REFERENCE = 5;
+
+	/**
+	 * The feature id for the '<em><b>Password Policy With Password Policy software amazon awscdk services cognito Password Policy As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_POOL_PROPS_BUILDER_COGNITO__PASSWORD_POLICY_WITH_PASSWORD_POLICY_SOFTWARE_AMAZON_AWSCDK_SERVICES_COGNITO_PASSWORD_POLICY_AS_REFERENCE = 6;
+
+	/**
+	 * The feature id for the '<em><b>Required Attributes With Required Attributes software amazon awscdk services cognito Required Attributes As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_POOL_PROPS_BUILDER_COGNITO__REQUIRED_ATTRIBUTES_WITH_REQUIRED_ATTRIBUTES_SOFTWARE_AMAZON_AWSCDK_SERVICES_COGNITO_REQUIRED_ATTRIBUTES_AS_REFERENCE = 7;
+
+	/**
+	 * The feature id for the '<em><b>Self Sign Up Enabled java lang Boolean </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_POOL_PROPS_BUILDER_COGNITO__SELF_SIGN_UP_ENABLED_JAVA_LANG_BOOLEAN_ = 8;
+
+	/**
+	 * The feature id for the '<em><b>Sign In Aliases With Sign In Aliases software amazon awscdk services cognito Sign In Aliases As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_POOL_PROPS_BUILDER_COGNITO__SIGN_IN_ALIASES_WITH_SIGN_IN_ALIASES_SOFTWARE_AMAZON_AWSCDK_SERVICES_COGNITO_SIGN_IN_ALIASES_AS_REFERENCE = 9;
+
+	/**
+	 * The feature id for the '<em><b>Sign In Case Sensitive java lang Boolean </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_POOL_PROPS_BUILDER_COGNITO__SIGN_IN_CASE_SENSITIVE_JAVA_LANG_BOOLEAN_ = 10;
+
+	/**
+	 * The feature id for the '<em><b>Sms Role With IRole software amazon awscdk services iam IRole As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_POOL_PROPS_BUILDER_COGNITO__SMS_ROLE_WITH_IROLE_SOFTWARE_AMAZON_AWSCDK_SERVICES_IAM_IROLE_AS_REFERENCE = 11;
+
+	/**
+	 * The feature id for the '<em><b>Sms Role External Id java lang String </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_POOL_PROPS_BUILDER_COGNITO__SMS_ROLE_EXTERNAL_ID_JAVA_LANG_STRING_ = 12;
+
+	/**
+	 * The feature id for the '<em><b>User Invitation With User Invitation Config software amazon awscdk services cognito User Invitation Config As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_POOL_PROPS_BUILDER_COGNITO__USER_INVITATION_WITH_USER_INVITATION_CONFIG_SOFTWARE_AMAZON_AWSCDK_SERVICES_COGNITO_USER_INVITATION_CONFIG_AS_REFERENCE = 13;
+
+	/**
+	 * The feature id for the '<em><b>User Pool Name java lang String </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_POOL_PROPS_BUILDER_COGNITO__USER_POOL_NAME_JAVA_LANG_STRING_ = 14;
+
+	/**
+	 * The feature id for the '<em><b>User Verification With User Verification Config software amazon awscdk services cognito User Verification Config As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_POOL_PROPS_BUILDER_COGNITO__USER_VERIFICATION_WITH_USER_VERIFICATION_CONFIG_SOFTWARE_AMAZON_AWSCDK_SERVICES_COGNITO_USER_VERIFICATION_CONFIG_AS_REFERENCE = 15;
+
+	/**
+	 * The feature id for the '<em><b>Generated Class Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_POOL_PROPS_BUILDER_COGNITO__GENERATED_CLASS_NAME = 16;
+
+	/**
+	 * The feature id for the '<em><b>Var Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_POOL_PROPS_BUILDER_COGNITO__VAR_NAME = 17;
+
+	/**
+	 * The feature id for the '<em><b>Identifier</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_POOL_PROPS_BUILDER_COGNITO__IDENTIFIER = 18;
+
+	/**
+	 * The feature id for the '<em><b>Additional Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_POOL_PROPS_BUILDER_COGNITO__ADDITIONAL_CODE = 19;
+
+	/**
+	 * The number of structural features of the '<em>User Pool Props Builder cognito</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_POOL_PROPS_BUILDER_COGNITO_FEATURE_COUNT = 20;
+
+	/**
+	 * The number of operations of the '<em>User Pool Props Builder cognito</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_POOL_PROPS_BUILDER_COGNITO_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.UserPoolBuilder_cognitoImpl <em>User Pool Builder cognito</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.UserPoolBuilder_cognitoImpl
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getUserPoolBuilder_cognito()
+	 * @generated
+	 */
+	int USER_POOL_BUILDER_COGNITO = 80;
+
+	/**
+	 * The feature id for the '<em><b>Auto Verify With Auto Verified Attrs software amazon awscdk services cognito Auto Verified Attrs As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_POOL_BUILDER_COGNITO__AUTO_VERIFY_WITH_AUTO_VERIFIED_ATTRS_SOFTWARE_AMAZON_AWSCDK_SERVICES_COGNITO_AUTO_VERIFIED_ATTRS_AS_REFERENCE = 0;
+
+	/**
+	 * The feature id for the '<em><b>Custom Attributes java lang String software amazon awscdk services cognito ICustom Attribute As Map</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_POOL_BUILDER_COGNITO__CUSTOM_ATTRIBUTES_JAVA_LANG_STRING_SOFTWARE_AMAZON_AWSCDK_SERVICES_COGNITO_ICUSTOM_ATTRIBUTE_AS_MAP = 1;
+
+	/**
+	 * The feature id for the '<em><b>Email Settings With Email Settings software amazon awscdk services cognito Email Settings As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_POOL_BUILDER_COGNITO__EMAIL_SETTINGS_WITH_EMAIL_SETTINGS_SOFTWARE_AMAZON_AWSCDK_SERVICES_COGNITO_EMAIL_SETTINGS_AS_REFERENCE = 2;
+
+	/**
+	 * The feature id for the '<em><b>Lambda Triggers With User Pool Triggers software amazon awscdk services cognito User Pool Triggers As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_POOL_BUILDER_COGNITO__LAMBDA_TRIGGERS_WITH_USER_POOL_TRIGGERS_SOFTWARE_AMAZON_AWSCDK_SERVICES_COGNITO_USER_POOL_TRIGGERS_AS_REFERENCE = 3;
+
+	/**
+	 * The feature id for the '<em><b>Mfa software amazon awscdk services cognito Mfa </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_POOL_BUILDER_COGNITO__MFA_SOFTWARE_AMAZON_AWSCDK_SERVICES_COGNITO_MFA_ = 4;
+
+	/**
+	 * The feature id for the '<em><b>Mfa Second Factor With Mfa Second Factor software amazon awscdk services cognito Mfa Second Factor As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_POOL_BUILDER_COGNITO__MFA_SECOND_FACTOR_WITH_MFA_SECOND_FACTOR_SOFTWARE_AMAZON_AWSCDK_SERVICES_COGNITO_MFA_SECOND_FACTOR_AS_REFERENCE = 5;
+
+	/**
+	 * The feature id for the '<em><b>Password Policy With Password Policy software amazon awscdk services cognito Password Policy As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_POOL_BUILDER_COGNITO__PASSWORD_POLICY_WITH_PASSWORD_POLICY_SOFTWARE_AMAZON_AWSCDK_SERVICES_COGNITO_PASSWORD_POLICY_AS_REFERENCE = 6;
+
+	/**
+	 * The feature id for the '<em><b>Required Attributes With Required Attributes software amazon awscdk services cognito Required Attributes As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_POOL_BUILDER_COGNITO__REQUIRED_ATTRIBUTES_WITH_REQUIRED_ATTRIBUTES_SOFTWARE_AMAZON_AWSCDK_SERVICES_COGNITO_REQUIRED_ATTRIBUTES_AS_REFERENCE = 7;
+
+	/**
+	 * The feature id for the '<em><b>Self Sign Up Enabled java lang Boolean </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_POOL_BUILDER_COGNITO__SELF_SIGN_UP_ENABLED_JAVA_LANG_BOOLEAN_ = 8;
+
+	/**
+	 * The feature id for the '<em><b>Sign In Aliases With Sign In Aliases software amazon awscdk services cognito Sign In Aliases As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_POOL_BUILDER_COGNITO__SIGN_IN_ALIASES_WITH_SIGN_IN_ALIASES_SOFTWARE_AMAZON_AWSCDK_SERVICES_COGNITO_SIGN_IN_ALIASES_AS_REFERENCE = 9;
+
+	/**
+	 * The feature id for the '<em><b>Sign In Case Sensitive java lang Boolean </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_POOL_BUILDER_COGNITO__SIGN_IN_CASE_SENSITIVE_JAVA_LANG_BOOLEAN_ = 10;
+
+	/**
+	 * The feature id for the '<em><b>Sms Role With IRole software amazon awscdk services iam IRole As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_POOL_BUILDER_COGNITO__SMS_ROLE_WITH_IROLE_SOFTWARE_AMAZON_AWSCDK_SERVICES_IAM_IROLE_AS_REFERENCE = 11;
+
+	/**
+	 * The feature id for the '<em><b>Sms Role External Id java lang String </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_POOL_BUILDER_COGNITO__SMS_ROLE_EXTERNAL_ID_JAVA_LANG_STRING_ = 12;
+
+	/**
+	 * The feature id for the '<em><b>User Invitation With User Invitation Config software amazon awscdk services cognito User Invitation Config As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_POOL_BUILDER_COGNITO__USER_INVITATION_WITH_USER_INVITATION_CONFIG_SOFTWARE_AMAZON_AWSCDK_SERVICES_COGNITO_USER_INVITATION_CONFIG_AS_REFERENCE = 13;
+
+	/**
+	 * The feature id for the '<em><b>User Pool Name java lang String </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_POOL_BUILDER_COGNITO__USER_POOL_NAME_JAVA_LANG_STRING_ = 14;
+
+	/**
+	 * The feature id for the '<em><b>User Verification With User Verification Config software amazon awscdk services cognito User Verification Config As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_POOL_BUILDER_COGNITO__USER_VERIFICATION_WITH_USER_VERIFICATION_CONFIG_SOFTWARE_AMAZON_AWSCDK_SERVICES_COGNITO_USER_VERIFICATION_CONFIG_AS_REFERENCE = 15;
+
+	/**
+	 * The feature id for the '<em><b>Generated Class Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_POOL_BUILDER_COGNITO__GENERATED_CLASS_NAME = 16;
+
+	/**
+	 * The feature id for the '<em><b>Var Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_POOL_BUILDER_COGNITO__VAR_NAME = 17;
+
+	/**
+	 * The feature id for the '<em><b>Identifier</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_POOL_BUILDER_COGNITO__IDENTIFIER = 18;
+
+	/**
+	 * The feature id for the '<em><b>Additional Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_POOL_BUILDER_COGNITO__ADDITIONAL_CODE = 19;
+
+	/**
+	 * The number of structural features of the '<em>User Pool Builder cognito</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_POOL_BUILDER_COGNITO_FEATURE_COUNT = 20;
+
+	/**
+	 * The number of operations of the '<em>User Pool Builder cognito</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_POOL_BUILDER_COGNITO_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.AuthFlowBuilder_cognitoImpl <em>Auth Flow Builder cognito</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AuthFlowBuilder_cognitoImpl
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getAuthFlowBuilder_cognito()
+	 * @generated
+	 */
+	int AUTH_FLOW_BUILDER_COGNITO = 81;
+
+	/**
+	 * The feature id for the '<em><b>Admin User Password java lang Boolean </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int AUTH_FLOW_BUILDER_COGNITO__ADMIN_USER_PASSWORD_JAVA_LANG_BOOLEAN_ = 0;
+
+	/**
+	 * The feature id for the '<em><b>Custom java lang Boolean </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int AUTH_FLOW_BUILDER_COGNITO__CUSTOM_JAVA_LANG_BOOLEAN_ = 1;
+
+	/**
+	 * The feature id for the '<em><b>Refresh Token java lang Boolean </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int AUTH_FLOW_BUILDER_COGNITO__REFRESH_TOKEN_JAVA_LANG_BOOLEAN_ = 2;
+
+	/**
+	 * The feature id for the '<em><b>User Password java lang Boolean </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int AUTH_FLOW_BUILDER_COGNITO__USER_PASSWORD_JAVA_LANG_BOOLEAN_ = 3;
+
+	/**
+	 * The feature id for the '<em><b>User Srp java lang Boolean </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int AUTH_FLOW_BUILDER_COGNITO__USER_SRP_JAVA_LANG_BOOLEAN_ = 4;
+
+	/**
+	 * The feature id for the '<em><b>Generated Class Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int AUTH_FLOW_BUILDER_COGNITO__GENERATED_CLASS_NAME = 5;
+
+	/**
+	 * The feature id for the '<em><b>Var Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int AUTH_FLOW_BUILDER_COGNITO__VAR_NAME = 6;
+
+	/**
+	 * The feature id for the '<em><b>Identifier</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int AUTH_FLOW_BUILDER_COGNITO__IDENTIFIER = 7;
+
+	/**
+	 * The feature id for the '<em><b>Additional Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int AUTH_FLOW_BUILDER_COGNITO__ADDITIONAL_CODE = 8;
+
+	/**
+	 * The number of structural features of the '<em>Auth Flow Builder cognito</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int AUTH_FLOW_BUILDER_COGNITO_FEATURE_COUNT = 9;
+
+	/**
+	 * The number of operations of the '<em>Auth Flow Builder cognito</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int AUTH_FLOW_BUILDER_COGNITO_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.OAuthFlowsBuilder_cognitoImpl <em>OAuth Flows Builder cognito</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.OAuthFlowsBuilder_cognitoImpl
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getOAuthFlowsBuilder_cognito()
+	 * @generated
+	 */
+	int OAUTH_FLOWS_BUILDER_COGNITO = 82;
+
+	/**
+	 * The feature id for the '<em><b>Authorization Code Grant java lang Boolean </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OAUTH_FLOWS_BUILDER_COGNITO__AUTHORIZATION_CODE_GRANT_JAVA_LANG_BOOLEAN_ = 0;
+
+	/**
+	 * The feature id for the '<em><b>Client Credentials java lang Boolean </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OAUTH_FLOWS_BUILDER_COGNITO__CLIENT_CREDENTIALS_JAVA_LANG_BOOLEAN_ = 1;
+
+	/**
+	 * The feature id for the '<em><b>Implicit Code Grant java lang Boolean </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OAUTH_FLOWS_BUILDER_COGNITO__IMPLICIT_CODE_GRANT_JAVA_LANG_BOOLEAN_ = 2;
+
+	/**
+	 * The feature id for the '<em><b>Generated Class Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OAUTH_FLOWS_BUILDER_COGNITO__GENERATED_CLASS_NAME = 3;
+
+	/**
+	 * The feature id for the '<em><b>Var Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OAUTH_FLOWS_BUILDER_COGNITO__VAR_NAME = 4;
+
+	/**
+	 * The feature id for the '<em><b>Identifier</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OAUTH_FLOWS_BUILDER_COGNITO__IDENTIFIER = 5;
+
+	/**
+	 * The feature id for the '<em><b>Additional Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OAUTH_FLOWS_BUILDER_COGNITO__ADDITIONAL_CODE = 6;
+
+	/**
+	 * The number of structural features of the '<em>OAuth Flows Builder cognito</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OAUTH_FLOWS_BUILDER_COGNITO_FEATURE_COUNT = 7;
+
+	/**
+	 * The number of operations of the '<em>OAuth Flows Builder cognito</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OAUTH_FLOWS_BUILDER_COGNITO_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.OAuthSettingsBuilder_cognitoImpl <em>OAuth Settings Builder cognito</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.OAuthSettingsBuilder_cognitoImpl
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getOAuthSettingsBuilder_cognito()
+	 * @generated
+	 */
+	int OAUTH_SETTINGS_BUILDER_COGNITO = 83;
+
+	/**
+	 * The feature id for the '<em><b>Callback Urls java lang String As List</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OAUTH_SETTINGS_BUILDER_COGNITO__CALLBACK_URLS_JAVA_LANG_STRING_AS_LIST = 0;
+
+	/**
+	 * The feature id for the '<em><b>Flows With OAuth Flows software amazon awscdk services cognito OAuth Flows As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OAUTH_SETTINGS_BUILDER_COGNITO__FLOWS_WITH_OAUTH_FLOWS_SOFTWARE_AMAZON_AWSCDK_SERVICES_COGNITO_OAUTH_FLOWS_AS_REFERENCE = 1;
+
+	/**
+	 * The feature id for the '<em><b>Scopes software amazon awscdk services cognito OAuth Scope As List</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OAUTH_SETTINGS_BUILDER_COGNITO__SCOPES_SOFTWARE_AMAZON_AWSCDK_SERVICES_COGNITO_OAUTH_SCOPE_AS_LIST = 2;
+
+	/**
+	 * The feature id for the '<em><b>Generated Class Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OAUTH_SETTINGS_BUILDER_COGNITO__GENERATED_CLASS_NAME = 3;
+
+	/**
+	 * The feature id for the '<em><b>Var Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OAUTH_SETTINGS_BUILDER_COGNITO__VAR_NAME = 4;
+
+	/**
+	 * The feature id for the '<em><b>Identifier</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OAUTH_SETTINGS_BUILDER_COGNITO__IDENTIFIER = 5;
+
+	/**
+	 * The feature id for the '<em><b>Additional Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OAUTH_SETTINGS_BUILDER_COGNITO__ADDITIONAL_CODE = 6;
+
+	/**
+	 * The number of structural features of the '<em>OAuth Settings Builder cognito</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OAUTH_SETTINGS_BUILDER_COGNITO_FEATURE_COUNT = 7;
+
+	/**
+	 * The number of operations of the '<em>OAuth Settings Builder cognito</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OAUTH_SETTINGS_BUILDER_COGNITO_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.UserPoolClientPropsBuilder_cognitoImpl <em>User Pool Client Props Builder cognito</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.UserPoolClientPropsBuilder_cognitoImpl
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getUserPoolClientPropsBuilder_cognito()
+	 * @generated
+	 */
+	int USER_POOL_CLIENT_PROPS_BUILDER_COGNITO = 84;
+
+	/**
+	 * The feature id for the '<em><b>User Pool With IUser Pool software amazon awscdk services cognito IUser Pool As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_POOL_CLIENT_PROPS_BUILDER_COGNITO__USER_POOL_WITH_IUSER_POOL_SOFTWARE_AMAZON_AWSCDK_SERVICES_COGNITO_IUSER_POOL_AS_REFERENCE = 0;
+
+	/**
+	 * The feature id for the '<em><b>Auth Flows With Auth Flow software amazon awscdk services cognito Auth Flow As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_POOL_CLIENT_PROPS_BUILDER_COGNITO__AUTH_FLOWS_WITH_AUTH_FLOW_SOFTWARE_AMAZON_AWSCDK_SERVICES_COGNITO_AUTH_FLOW_AS_REFERENCE = 1;
+
+	/**
+	 * The feature id for the '<em><b>Generate Secret java lang Boolean </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_POOL_CLIENT_PROPS_BUILDER_COGNITO__GENERATE_SECRET_JAVA_LANG_BOOLEAN_ = 2;
+
+	/**
+	 * The feature id for the '<em><b>OAuth With OAuth Settings software amazon awscdk services cognito OAuth Settings As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_POOL_CLIENT_PROPS_BUILDER_COGNITO__OAUTH_WITH_OAUTH_SETTINGS_SOFTWARE_AMAZON_AWSCDK_SERVICES_COGNITO_OAUTH_SETTINGS_AS_REFERENCE = 3;
+
+	/**
+	 * The feature id for the '<em><b>Prevent User Existence Errors java lang Boolean </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_POOL_CLIENT_PROPS_BUILDER_COGNITO__PREVENT_USER_EXISTENCE_ERRORS_JAVA_LANG_BOOLEAN_ = 4;
+
+	/**
+	 * The feature id for the '<em><b>User Pool Client Name java lang String </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_POOL_CLIENT_PROPS_BUILDER_COGNITO__USER_POOL_CLIENT_NAME_JAVA_LANG_STRING_ = 5;
+
+	/**
+	 * The feature id for the '<em><b>Generated Class Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_POOL_CLIENT_PROPS_BUILDER_COGNITO__GENERATED_CLASS_NAME = 6;
+
+	/**
+	 * The feature id for the '<em><b>Var Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_POOL_CLIENT_PROPS_BUILDER_COGNITO__VAR_NAME = 7;
+
+	/**
+	 * The feature id for the '<em><b>Identifier</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_POOL_CLIENT_PROPS_BUILDER_COGNITO__IDENTIFIER = 8;
+
+	/**
+	 * The feature id for the '<em><b>Additional Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_POOL_CLIENT_PROPS_BUILDER_COGNITO__ADDITIONAL_CODE = 9;
+
+	/**
+	 * The number of structural features of the '<em>User Pool Client Props Builder cognito</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_POOL_CLIENT_PROPS_BUILDER_COGNITO_FEATURE_COUNT = 10;
+
+	/**
+	 * The number of operations of the '<em>User Pool Client Props Builder cognito</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_POOL_CLIENT_PROPS_BUILDER_COGNITO_OPERATION_COUNT = 0;
+
+	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.CognitoToApiGatewayToLambdaBuilder_cognitoapigatewaylambdaImpl <em>Cognito To Api Gateway To Lambda Builder cognitoapigatewaylambda</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -5905,7 +11282,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getCognitoToApiGatewayToLambdaBuilder_cognitoapigatewaylambda()
 	 * @generated
 	 */
-	int COGNITO_TO_API_GATEWAY_TO_LAMBDA_BUILDER_COGNITOAPIGATEWAYLAMBDA = 45;
+	int COGNITO_TO_API_GATEWAY_TO_LAMBDA_BUILDER_COGNITOAPIGATEWAYLAMBDA = 85;
 
 	/**
 	 * The feature id for the '<em><b>Api Gateway Props java lang Object </b></em>' attribute.
@@ -6014,7 +11391,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getBuildDeadLetterQueuePropsBuilder_core()
 	 * @generated
 	 */
-	int BUILD_DEAD_LETTER_QUEUE_PROPS_BUILDER_CORE = 46;
+	int BUILD_DEAD_LETTER_QUEUE_PROPS_BUILDER_CORE = 86;
 
 	/**
 	 * The feature id for the '<em><b>Dead Letter Queue With Queue software amazon awscdk services sqs Queue As Reference</b></em>' attribute.
@@ -6096,7 +11473,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getBuildQueuePropsBuilder_core()
 	 * @generated
 	 */
-	int BUILD_QUEUE_PROPS_BUILDER_CORE = 47;
+	int BUILD_QUEUE_PROPS_BUILDER_CORE = 87;
 
 	/**
 	 * The feature id for the '<em><b>Dead Letter Queue With Dead Letter Queue software amazon awscdk services sqs Dead Letter Queue As Reference</b></em>' attribute.
@@ -6187,7 +11564,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getBuildS3BucketPropsBuilder_core()
 	 * @generated
 	 */
-	int BUILD_S3_BUCKET_PROPS_BUILDER_CORE = 48;
+	int BUILD_S3_BUCKET_PROPS_BUILDER_CORE = 88;
 
 	/**
 	 * The feature id for the '<em><b>Bucket Props With Bucket Props software amazon awscdk services s3 Bucket Props As Reference</b></em>' attribute.
@@ -6269,7 +11646,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getBuildEncryptionKeyPropsBuilder_core()
 	 * @generated
 	 */
-	int BUILD_ENCRYPTION_KEY_PROPS_BUILDER_CORE = 49;
+	int BUILD_ENCRYPTION_KEY_PROPS_BUILDER_CORE = 89;
 
 	/**
 	 * The feature id for the '<em><b>Encryption Key Props java lang Object </b></em>' attribute.
@@ -6342,7 +11719,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getCognitoOptionsBuilder_core()
 	 * @generated
 	 */
-	int COGNITO_OPTIONS_BUILDER_CORE = 50;
+	int COGNITO_OPTIONS_BUILDER_CORE = 90;
 
 	/**
 	 * The feature id for the '<em><b>Identitypool With Cfn Identity Pool software amazon awscdk services cognito Cfn Identity Pool As Reference</b></em>' attribute.
@@ -6433,7 +11810,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getBuildKinesisStreamPropsBuilder_core()
 	 * @generated
 	 */
-	int BUILD_KINESIS_STREAM_PROPS_BUILDER_CORE = 51;
+	int BUILD_KINESIS_STREAM_PROPS_BUILDER_CORE = 91;
 
 	/**
 	 * The feature id for the '<em><b>Kinesis Stream Props java lang Object </b></em>' attribute.
@@ -6506,7 +11883,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getBuildKinesisAnalyticsAppPropsBuilder_core()
 	 * @generated
 	 */
-	int BUILD_KINESIS_ANALYTICS_APP_PROPS_BUILDER_CORE = 52;
+	int BUILD_KINESIS_ANALYTICS_APP_PROPS_BUILDER_CORE = 92;
 
 	/**
 	 * The feature id for the '<em><b>Kinesis Firehose With Cfn Delivery Stream software amazon awscdk services kinesisfirehose Cfn Delivery Stream As Reference</b></em>' attribute.
@@ -6588,7 +11965,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getBuildLambdaFunctionPropsBuilder_core()
 	 * @generated
 	 */
-	int BUILD_LAMBDA_FUNCTION_PROPS_BUILDER_CORE = 53;
+	int BUILD_LAMBDA_FUNCTION_PROPS_BUILDER_CORE = 93;
 
 	/**
 	 * The feature id for the '<em><b>Existing Lambda Obj With Function software amazon awscdk services lambda Function As Reference</b></em>' attribute.
@@ -6670,7 +12047,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getBuildDynamoDBTablePropsBuilder_core()
 	 * @generated
 	 */
-	int BUILD_DYNAMO_DB_TABLE_PROPS_BUILDER_CORE = 54;
+	int BUILD_DYNAMO_DB_TABLE_PROPS_BUILDER_CORE = 94;
 
 	/**
 	 * The feature id for the '<em><b>Dynamo Table Props With Table Props software amazon awscdk services dynamodb Table Props As Reference</b></em>' attribute.
@@ -6752,7 +12129,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getBuildTopicPropsBuilder_core()
 	 * @generated
 	 */
-	int BUILD_TOPIC_PROPS_BUILDER_CORE = 55;
+	int BUILD_TOPIC_PROPS_BUILDER_CORE = 95;
 
 	/**
 	 * The feature id for the '<em><b>Enable Encryption java lang Boolean </b></em>' attribute.
@@ -6843,7 +12220,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getDynamoDBStreamToLambdaBuilder_dynamodbstreamlambda()
 	 * @generated
 	 */
-	int DYNAMO_DB_STREAM_TO_LAMBDA_BUILDER_DYNAMODBSTREAMLAMBDA = 56;
+	int DYNAMO_DB_STREAM_TO_LAMBDA_BUILDER_DYNAMODBSTREAMLAMBDA = 96;
 
 	/**
 	 * The feature id for the '<em><b>Dynamo Table Props With Table Props software amazon awscdk services dynamodb Table Props As Reference</b></em>' attribute.
@@ -6943,7 +12320,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getDynamoDBStreamToLambdaToElasticSearchAndKibanaBuilder_dynamodbstreamlambdaelasticsearchkibana()
 	 * @generated
 	 */
-	int DYNAMO_DB_STREAM_TO_LAMBDA_TO_ELASTIC_SEARCH_AND_KIBANA_BUILDER_DYNAMODBSTREAMLAMBDAELASTICSEARCHKIBANA = 57;
+	int DYNAMO_DB_STREAM_TO_LAMBDA_TO_ELASTIC_SEARCH_AND_KIBANA_BUILDER_DYNAMODBSTREAMLAMBDAELASTICSEARCHKIBANA = 97;
 
 	/**
 	 * The feature id for the '<em><b>Domain Name java lang String </b></em>' attribute.
@@ -7061,7 +12438,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getEventsRuleToLambdaBuilder_eventsrulelambda()
 	 * @generated
 	 */
-	int EVENTS_RULE_TO_LAMBDA_BUILDER_EVENTSRULELAMBDA = 58;
+	int EVENTS_RULE_TO_LAMBDA_BUILDER_EVENTSRULELAMBDA = 98;
 
 	/**
 	 * The feature id for the '<em><b>Event Rule Props With Rule Props software amazon awscdk services events Rule Props As Reference</b></em>' attribute.
@@ -7152,7 +12529,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getEventsRuleToStepFunctionBuilder_eventsrulestepfunction()
 	 * @generated
 	 */
-	int EVENTS_RULE_TO_STEP_FUNCTION_BUILDER_EVENTSRULESTEPFUNCTION = 59;
+	int EVENTS_RULE_TO_STEP_FUNCTION_BUILDER_EVENTSRULESTEPFUNCTION = 99;
 
 	/**
 	 * The feature id for the '<em><b>Event Rule Props With Rule Props software amazon awscdk services events Rule Props As Reference</b></em>' attribute.
@@ -7234,7 +12611,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getIotToKinesisFirehoseToS3Builder_iotkinesisfirehoses3()
 	 * @generated
 	 */
-	int IOT_TO_KINESIS_FIREHOSE_TO_S3_BUILDER_IOTKINESISFIREHOSES3 = 60;
+	int IOT_TO_KINESIS_FIREHOSE_TO_S3_BUILDER_IOTKINESISFIREHOSES3 = 100;
 
 	/**
 	 * The feature id for the '<em><b>Iot Topic Rule Props With Cfn Topic Rule Props software amazon awscdk services iot Cfn Topic Rule Props As Reference</b></em>' attribute.
@@ -7334,7 +12711,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getIotToLambdaBuilder_iotlambda()
 	 * @generated
 	 */
-	int IOT_TO_LAMBDA_BUILDER_IOTLAMBDA = 61;
+	int IOT_TO_LAMBDA_BUILDER_IOTLAMBDA = 101;
 
 	/**
 	 * The feature id for the '<em><b>Iot Topic Rule Props With Cfn Topic Rule Props software amazon awscdk services iot Cfn Topic Rule Props As Reference</b></em>' attribute.
@@ -7425,7 +12802,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getIotToLambdaToDynamoDBBuilder_iotlambdadynamodb()
 	 * @generated
 	 */
-	int IOT_TO_LAMBDA_TO_DYNAMO_DB_BUILDER_IOTLAMBDADYNAMODB = 62;
+	int IOT_TO_LAMBDA_TO_DYNAMO_DB_BUILDER_IOTLAMBDADYNAMODB = 102;
 
 	/**
 	 * The feature id for the '<em><b>Iot Topic Rule Props With Cfn Topic Rule Props software amazon awscdk services iot Cfn Topic Rule Props As Reference</b></em>' attribute.
@@ -7534,7 +12911,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getKinesisFirehoseToS3Builder_kinesisfirehoses3()
 	 * @generated
 	 */
-	int KINESIS_FIREHOSE_TO_S3_BUILDER_KINESISFIREHOSES3 = 63;
+	int KINESIS_FIREHOSE_TO_S3_BUILDER_KINESISFIREHOSES3 = 103;
 
 	/**
 	 * The feature id for the '<em><b>Bucket Props With Bucket Props software amazon awscdk services s3 Bucket Props As Reference</b></em>' attribute.
@@ -7625,7 +13002,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getKinesisFirehoseToAnalyticsAndS3Builder_kinesisfirehoses3kinesisanalytics()
 	 * @generated
 	 */
-	int KINESIS_FIREHOSE_TO_ANALYTICS_AND_S3_BUILDER_KINESISFIREHOSES3KINESISANALYTICS = 64;
+	int KINESIS_FIREHOSE_TO_ANALYTICS_AND_S3_BUILDER_KINESISFIREHOSES3KINESISANALYTICS = 104;
 
 	/**
 	 * The feature id for the '<em><b>Bucket Props With Bucket Props software amazon awscdk services s3 Bucket Props As Reference</b></em>' attribute.
@@ -7725,7 +13102,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getKinesisStreamsToLambdaBuilder_kinesisstreamslambda()
 	 * @generated
 	 */
-	int KINESIS_STREAMS_TO_LAMBDA_BUILDER_KINESISSTREAMSLAMBDA = 65;
+	int KINESIS_STREAMS_TO_LAMBDA_BUILDER_KINESISSTREAMSLAMBDA = 105;
 
 	/**
 	 * The feature id for the '<em><b>Event Source Props java lang Object </b></em>' attribute.
@@ -7825,7 +13202,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getLambdaToDynamoDBBuilder_lambdadynamodb()
 	 * @generated
 	 */
-	int LAMBDA_TO_DYNAMO_DB_BUILDER_LAMBDADYNAMODB = 66;
+	int LAMBDA_TO_DYNAMO_DB_BUILDER_LAMBDADYNAMODB = 106;
 
 	/**
 	 * The feature id for the '<em><b>Dynamo Table Props With Table Props software amazon awscdk services dynamodb Table Props As Reference</b></em>' attribute.
@@ -7934,7 +13311,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getLambdaToElasticSearchAndKibanaBuilder_lambdaelasticsearchkibana()
 	 * @generated
 	 */
-	int LAMBDA_TO_ELASTIC_SEARCH_AND_KIBANA_BUILDER_LAMBDAELASTICSEARCHKIBANA = 67;
+	int LAMBDA_TO_ELASTIC_SEARCH_AND_KIBANA_BUILDER_LAMBDAELASTICSEARCHKIBANA = 107;
 
 	/**
 	 * The feature id for the '<em><b>Domain Name java lang String </b></em>' attribute.
@@ -8034,7 +13411,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getLambdaToS3Builder_lambdas3()
 	 * @generated
 	 */
-	int LAMBDA_TO_S3_BUILDER_LAMBDAS3 = 68;
+	int LAMBDA_TO_S3_BUILDER_LAMBDAS3 = 108;
 
 	/**
 	 * The feature id for the '<em><b>Bucket Permissions java lang String As List</b></em>' attribute.
@@ -8143,7 +13520,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getLambdaToSnsBuilder_lambdasns()
 	 * @generated
 	 */
-	int LAMBDA_TO_SNS_BUILDER_LAMBDASNS = 69;
+	int LAMBDA_TO_SNS_BUILDER_LAMBDASNS = 109;
 
 	/**
 	 * The feature id for the '<em><b>Enable Encryption java lang Boolean </b></em>' attribute.
@@ -8252,7 +13629,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getLambdaToSqsBuilder_lambdasqs()
 	 * @generated
 	 */
-	int LAMBDA_TO_SQS_BUILDER_LAMBDASQS = 70;
+	int LAMBDA_TO_SQS_BUILDER_LAMBDASQS = 110;
 
 	/**
 	 * The feature id for the '<em><b>Dead Letter Queue Props With Queue Props software amazon awscdk services sqs Queue Props As Reference</b></em>' attribute.
@@ -8388,7 +13765,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getLambdaToStepFunctionBuilder_lambdastepfunction()
 	 * @generated
 	 */
-	int LAMBDA_TO_STEP_FUNCTION_BUILDER_LAMBDASTEPFUNCTION = 71;
+	int LAMBDA_TO_STEP_FUNCTION_BUILDER_LAMBDASTEPFUNCTION = 111;
 
 	/**
 	 * The feature id for the '<em><b>State Machine Props With State Machine Props software amazon awscdk services stepfunctions State Machine Props As Reference</b></em>' attribute.
@@ -8479,7 +13856,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getS3ToLambdaBuilder_s3lambda()
 	 * @generated
 	 */
-	int S3_TO_LAMBDA_BUILDER_S3LAMBDA = 72;
+	int S3_TO_LAMBDA_BUILDER_S3LAMBDA = 112;
 
 	/**
 	 * The feature id for the '<em><b>Bucket Props With Bucket Props software amazon awscdk services s3 Bucket Props As Reference</b></em>' attribute.
@@ -8579,7 +13956,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getS3ToStepFunctionBuilder_s3stepfunction()
 	 * @generated
 	 */
-	int S3_TO_STEP_FUNCTION_BUILDER_S3STEPFUNCTION = 73;
+	int S3_TO_STEP_FUNCTION_BUILDER_S3STEPFUNCTION = 113;
 
 	/**
 	 * The feature id for the '<em><b>State Machine Props With State Machine Props software amazon awscdk services stepfunctions State Machine Props As Reference</b></em>' attribute.
@@ -8688,7 +14065,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getSnsToLambdaBuilder_snslambda()
 	 * @generated
 	 */
-	int SNS_TO_LAMBDA_BUILDER_SNSLAMBDA = 74;
+	int SNS_TO_LAMBDA_BUILDER_SNSLAMBDA = 114;
 
 	/**
 	 * The feature id for the '<em><b>Enable Encryption java lang Boolean </b></em>' attribute.
@@ -8797,7 +14174,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getManagedPolicyBuilder_iam()
 	 * @generated
 	 */
-	int MANAGED_POLICY_BUILDER_IAM = 75;
+	int MANAGED_POLICY_BUILDER_IAM = 115;
 
 	/**
 	 * The feature id for the '<em><b>Description java lang String </b></em>' attribute.
@@ -8933,7 +14310,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getUserBuilder_iam()
 	 * @generated
 	 */
-	int USER_BUILDER_IAM = 76;
+	int USER_BUILDER_IAM = 116;
 
 	/**
 	 * The feature id for the '<em><b>Groups software amazon awscdk services iam IGroup As List</b></em>' attribute.
@@ -9060,7 +14437,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getGroupBuilder_iam()
 	 * @generated
 	 */
-	int GROUP_BUILDER_IAM = 77;
+	int GROUP_BUILDER_IAM = 117;
 
 	/**
 	 * The feature id for the '<em><b>Group Name java lang String </b></em>' attribute.
@@ -9151,7 +14528,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getRoleBuilder_iam()
 	 * @generated
 	 */
-	int ROLE_BUILDER_IAM = 78;
+	int ROLE_BUILDER_IAM = 118;
 
 	/**
 	 * The feature id for the '<em><b>Assumed By With IPrincipal software amazon awscdk services iam IPrincipal As Reference</b></em>' attribute.
@@ -9305,7 +14682,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getPolicyStatementBuilder_iam()
 	 * @generated
 	 */
-	int POLICY_STATEMENT_BUILDER_IAM = 79;
+	int POLICY_STATEMENT_BUILDER_IAM = 119;
 
 	/**
 	 * The feature id for the '<em><b>Actions java lang String As List</b></em>' attribute.
@@ -9450,7 +14827,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getPolicyDocumentBuilder_iam()
 	 * @generated
 	 */
-	int POLICY_DOCUMENT_BUILDER_IAM = 80;
+	int POLICY_DOCUMENT_BUILDER_IAM = 120;
 
 	/**
 	 * The feature id for the '<em><b>Assign Sids java lang Boolean </b></em>' attribute.
@@ -9532,7 +14909,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getSqsToLambdaBuilder_sqslambda()
 	 * @generated
 	 */
-	int SQS_TO_LAMBDA_BUILDER_SQSLAMBDA = 81;
+	int SQS_TO_LAMBDA_BUILDER_SQSLAMBDA = 121;
 
 	/**
 	 * The feature id for the '<em><b>Dead Letter Queue Props With Queue Props software amazon awscdk services sqs Queue Props As Reference</b></em>' attribute.
@@ -9659,7 +15036,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getAttributeBuilder_dynamodb()
 	 * @generated
 	 */
-	int ATTRIBUTE_BUILDER_DYNAMODB = 82;
+	int ATTRIBUTE_BUILDER_DYNAMODB = 122;
 
 	/**
 	 * The feature id for the '<em><b>Name java lang String </b></em>' attribute.
@@ -9741,7 +15118,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getTablePropsBuilder_dynamodb()
 	 * @generated
 	 */
-	int TABLE_PROPS_BUILDER_DYNAMODB = 83;
+	int TABLE_PROPS_BUILDER_DYNAMODB = 123;
 
 	/**
 	 * The feature id for the '<em><b>Table Name java lang String </b></em>' attribute.
@@ -9931,7 +15308,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getFlowLogTrafficType()
 	 * @generated
 	 */
-	int FLOW_LOG_TRAFFIC_TYPE = 84;
+	int FLOW_LOG_TRAFFIC_TYPE = 124;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.DefaultInstanceTenancy <em>Default Instance Tenancy</em>}' enum.
@@ -9941,7 +15318,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getDefaultInstanceTenancy()
 	 * @generated
 	 */
-	int DEFAULT_INSTANCE_TENANCY = 85;
+	int DEFAULT_INSTANCE_TENANCY = 125;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.SubnetType <em>Subnet Type</em>}' enum.
@@ -9951,7 +15328,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getSubnetType()
 	 * @generated
 	 */
-	int SUBNET_TYPE = 86;
+	int SUBNET_TYPE = 126;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.ApiKeySourceType <em>Api Key Source Type</em>}' enum.
@@ -9961,7 +15338,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getApiKeySourceType()
 	 * @generated
 	 */
-	int API_KEY_SOURCE_TYPE = 87;
+	int API_KEY_SOURCE_TYPE = 127;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.EndpointType <em>Endpoint Type</em>}' enum.
@@ -9971,7 +15348,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getEndpointType()
 	 * @generated
 	 */
-	int ENDPOINT_TYPE = 88;
+	int ENDPOINT_TYPE = 128;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.MethodLoggingLevel <em>Method Logging Level</em>}' enum.
@@ -9981,7 +15358,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getMethodLoggingLevel()
 	 * @generated
 	 */
-	int METHOD_LOGGING_LEVEL = 89;
+	int METHOD_LOGGING_LEVEL = 129;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.ValidationMethod <em>Validation Method</em>}' enum.
@@ -9991,7 +15368,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getValidationMethod()
 	 * @generated
 	 */
-	int VALIDATION_METHOD = 90;
+	int VALIDATION_METHOD = 130;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.SecurityPolicy <em>Security Policy</em>}' enum.
@@ -10001,7 +15378,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getSecurityPolicy()
 	 * @generated
 	 */
-	int SECURITY_POLICY = 91;
+	int SECURITY_POLICY = 131;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.IntegrationType <em>Integration Type</em>}' enum.
@@ -10011,7 +15388,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getIntegrationType()
 	 * @generated
 	 */
-	int INTEGRATION_TYPE = 92;
+	int INTEGRATION_TYPE = 132;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.ContentHandling <em>Content Handling</em>}' enum.
@@ -10021,7 +15398,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getContentHandling()
 	 * @generated
 	 */
-	int CONTENT_HANDLING = 93;
+	int CONTENT_HANDLING = 133;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.ConnectionType <em>Connection Type</em>}' enum.
@@ -10031,7 +15408,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getConnectionType()
 	 * @generated
 	 */
-	int CONNECTION_TYPE = 94;
+	int CONNECTION_TYPE = 134;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.PassthroughBehavior <em>Passthrough Behavior</em>}' enum.
@@ -10041,7 +15418,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getPassthroughBehavior()
 	 * @generated
 	 */
-	int PASSTHROUGH_BEHAVIOR = 95;
+	int PASSTHROUGH_BEHAVIOR = 135;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.QueueEncryption <em>Queue Encryption</em>}' enum.
@@ -10051,7 +15428,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getQueueEncryption()
 	 * @generated
 	 */
-	int QUEUE_ENCRYPTION = 96;
+	int QUEUE_ENCRYPTION = 136;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.RetentionDays <em>Retention Days</em>}' enum.
@@ -10061,7 +15438,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getRetentionDays()
 	 * @generated
 	 */
-	int RETENTION_DAYS = 97;
+	int RETENTION_DAYS = 137;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.Tracing <em>Tracing</em>}' enum.
@@ -10071,7 +15448,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getTracing()
 	 * @generated
 	 */
-	int TRACING = 98;
+	int TRACING = 138;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.AuthorizationType <em>Authorization Type</em>}' enum.
@@ -10081,7 +15458,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getAuthorizationType()
 	 * @generated
 	 */
-	int AUTHORIZATION_TYPE = 99;
+	int AUTHORIZATION_TYPE = 139;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.JsonSchemaVersion <em>Json Schema Version</em>}' enum.
@@ -10091,7 +15468,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getJsonSchemaVersion()
 	 * @generated
 	 */
-	int JSON_SCHEMA_VERSION = 100;
+	int JSON_SCHEMA_VERSION = 140;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.JsonSchemaType <em>Json Schema Type</em>}' enum.
@@ -10101,7 +15478,167 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getJsonSchemaType()
 	 * @generated
 	 */
-	int JSON_SCHEMA_TYPE = 101;
+	int JSON_SCHEMA_TYPE = 141;
+
+	/**
+	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.CloudFrontAllowedCachedMethods <em>Cloud Front Allowed Cached Methods</em>}' enum.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.amazon.aws.workbench.model.awsworkbench.CloudFrontAllowedCachedMethods
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getCloudFrontAllowedCachedMethods()
+	 * @generated
+	 */
+	int CLOUD_FRONT_ALLOWED_CACHED_METHODS = 142;
+
+	/**
+	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.CloudFrontAllowedMethods <em>Cloud Front Allowed Methods</em>}' enum.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.amazon.aws.workbench.model.awsworkbench.CloudFrontAllowedMethods
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getCloudFrontAllowedMethods()
+	 * @generated
+	 */
+	int CLOUD_FRONT_ALLOWED_METHODS = 143;
+
+	/**
+	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.LambdaEdgeEventType <em>Lambda Edge Event Type</em>}' enum.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.amazon.aws.workbench.model.awsworkbench.LambdaEdgeEventType
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getLambdaEdgeEventType()
+	 * @generated
+	 */
+	int LAMBDA_EDGE_EVENT_TYPE = 144;
+
+	/**
+	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.OriginSslPolicy <em>Origin Ssl Policy</em>}' enum.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.amazon.aws.workbench.model.awsworkbench.OriginSslPolicy
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getOriginSslPolicy()
+	 * @generated
+	 */
+	int ORIGIN_SSL_POLICY = 145;
+
+	/**
+	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.OriginProtocolPolicy <em>Origin Protocol Policy</em>}' enum.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.amazon.aws.workbench.model.awsworkbench.OriginProtocolPolicy
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getOriginProtocolPolicy()
+	 * @generated
+	 */
+	int ORIGIN_PROTOCOL_POLICY = 146;
+
+	/**
+	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.BucketAccessControl <em>Bucket Access Control</em>}' enum.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.amazon.aws.workbench.model.awsworkbench.BucketAccessControl
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getBucketAccessControl()
+	 * @generated
+	 */
+	int BUCKET_ACCESS_CONTROL = 147;
+
+	/**
+	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.HttpMethods <em>Http Methods</em>}' enum.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.amazon.aws.workbench.model.awsworkbench.HttpMethods
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getHttpMethods()
+	 * @generated
+	 */
+	int HTTP_METHODS = 148;
+
+	/**
+	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.BucketEncryption <em>Bucket Encryption</em>}' enum.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.amazon.aws.workbench.model.awsworkbench.BucketEncryption
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getBucketEncryption()
+	 * @generated
+	 */
+	int BUCKET_ENCRYPTION = 149;
+
+	/**
+	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.RedirectProtocol <em>Redirect Protocol</em>}' enum.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.amazon.aws.workbench.model.awsworkbench.RedirectProtocol
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getRedirectProtocol()
+	 * @generated
+	 */
+	int REDIRECT_PROTOCOL = 150;
+
+	/**
+	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.HttpVersion <em>Http Version</em>}' enum.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.amazon.aws.workbench.model.awsworkbench.HttpVersion
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getHttpVersion()
+	 * @generated
+	 */
+	int HTTP_VERSION = 151;
+
+	/**
+	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.PriceClass <em>Price Class</em>}' enum.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.amazon.aws.workbench.model.awsworkbench.PriceClass
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getPriceClass()
+	 * @generated
+	 */
+	int PRICE_CLASS = 152;
+
+	/**
+	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.ViewerProtocolPolicy <em>Viewer Protocol Policy</em>}' enum.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.amazon.aws.workbench.model.awsworkbench.ViewerProtocolPolicy
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getViewerProtocolPolicy()
+	 * @generated
+	 */
+	int VIEWER_PROTOCOL_POLICY = 153;
+
+	/**
+	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.SecurityPolicyProtocol <em>Security Policy Protocol</em>}' enum.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.amazon.aws.workbench.model.awsworkbench.SecurityPolicyProtocol
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getSecurityPolicyProtocol()
+	 * @generated
+	 */
+	int SECURITY_POLICY_PROTOCOL = 154;
+
+	/**
+	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.SSLMethod <em>SSL Method</em>}' enum.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.amazon.aws.workbench.model.awsworkbench.SSLMethod
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getSSLMethod()
+	 * @generated
+	 */
+	int SSL_METHOD = 155;
+
+	/**
+	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.Mfa <em>Mfa</em>}' enum.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.amazon.aws.workbench.model.awsworkbench.Mfa
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getMfa()
+	 * @generated
+	 */
+	int MFA = 156;
+
+	/**
+	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.VerificationEmailStyle <em>Verification Email Style</em>}' enum.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.amazon.aws.workbench.model.awsworkbench.VerificationEmailStyle
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getVerificationEmailStyle()
+	 * @generated
+	 */
+	int VERIFICATION_EMAIL_STYLE = 157;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.Effect <em>Effect</em>}' enum.
@@ -10111,7 +15648,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getEffect()
 	 * @generated
 	 */
-	int EFFECT = 102;
+	int EFFECT = 158;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.AttributeType <em>Attribute Type</em>}' enum.
@@ -10121,7 +15658,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getAttributeType()
 	 * @generated
 	 */
-	int ATTRIBUTE_TYPE = 103;
+	int ATTRIBUTE_TYPE = 159;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.StreamViewType <em>Stream View Type</em>}' enum.
@@ -10131,7 +15668,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getStreamViewType()
 	 * @generated
 	 */
-	int STREAM_VIEW_TYPE = 104;
+	int STREAM_VIEW_TYPE = 160;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.RemovalPolicy <em>Removal Policy</em>}' enum.
@@ -10141,7 +15678,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getRemovalPolicy()
 	 * @generated
 	 */
-	int REMOVAL_POLICY = 105;
+	int REMOVAL_POLICY = 161;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.TableEncryption <em>Table Encryption</em>}' enum.
@@ -10151,7 +15688,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getTableEncryption()
 	 * @generated
 	 */
-	int TABLE_ENCRYPTION = 106;
+	int TABLE_ENCRYPTION = 162;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.BillingMode <em>Billing Mode</em>}' enum.
@@ -10161,7 +15698,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getBillingMode()
 	 * @generated
 	 */
-	int BILLING_MODE = 107;
+	int BILLING_MODE = 163;
 
 	/**
 	 * Returns the meta object for class '{@link com.amazon.aws.workbench.model.awsworkbench.ServiceResources <em>Service Resources</em>}'.
@@ -13655,6 +19192,368 @@ public interface AwsworkbenchPackage extends EPackage {
 	EAttribute getSecurityGroupBuilder_ec2_AdditionalCode();
 
 	/**
+	 * Returns the meta object for class '{@link com.amazon.aws.workbench.model.awsworkbench.FunctionPropsBuilder_lambda <em>Function Props Builder lambda</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Function Props Builder lambda</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.FunctionPropsBuilder_lambda
+	 * @generated
+	 */
+	EClass getFunctionPropsBuilder_lambda();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.FunctionPropsBuilder_lambda#getCodeWithCode_software_amazon_awscdk_services_lambda_Code_AsReference <em>Code With Code software amazon awscdk services lambda Code As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Code With Code software amazon awscdk services lambda Code As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.FunctionPropsBuilder_lambda#getCodeWithCode_software_amazon_awscdk_services_lambda_Code_AsReference()
+	 * @see #getFunctionPropsBuilder_lambda()
+	 * @generated
+	 */
+	EAttribute getFunctionPropsBuilder_lambda_CodeWithCode_software_amazon_awscdk_services_lambda_Code_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.FunctionPropsBuilder_lambda#getHandler_java_lang_String_ <em>Handler java lang String </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Handler java lang String </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.FunctionPropsBuilder_lambda#getHandler_java_lang_String_()
+	 * @see #getFunctionPropsBuilder_lambda()
+	 * @generated
+	 */
+	EAttribute getFunctionPropsBuilder_lambda_Handler_java_lang_String_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.FunctionPropsBuilder_lambda#getRuntimeWithRuntime_software_amazon_awscdk_services_lambda_Runtime_AsReference <em>Runtime With Runtime software amazon awscdk services lambda Runtime As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Runtime With Runtime software amazon awscdk services lambda Runtime As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.FunctionPropsBuilder_lambda#getRuntimeWithRuntime_software_amazon_awscdk_services_lambda_Runtime_AsReference()
+	 * @see #getFunctionPropsBuilder_lambda()
+	 * @generated
+	 */
+	EAttribute getFunctionPropsBuilder_lambda_RuntimeWithRuntime_software_amazon_awscdk_services_lambda_Runtime_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.FunctionPropsBuilder_lambda#getAllowAllOutbound_java_lang_Boolean_ <em>Allow All Outbound java lang Boolean </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Allow All Outbound java lang Boolean </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.FunctionPropsBuilder_lambda#getAllowAllOutbound_java_lang_Boolean_()
+	 * @see #getFunctionPropsBuilder_lambda()
+	 * @generated
+	 */
+	EAttribute getFunctionPropsBuilder_lambda_AllowAllOutbound_java_lang_Boolean_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.FunctionPropsBuilder_lambda#getCurrentVersionOptionsWithVersionOptions_software_amazon_awscdk_services_lambda_VersionOptions_AsReference <em>Current Version Options With Version Options software amazon awscdk services lambda Version Options As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Current Version Options With Version Options software amazon awscdk services lambda Version Options As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.FunctionPropsBuilder_lambda#getCurrentVersionOptionsWithVersionOptions_software_amazon_awscdk_services_lambda_VersionOptions_AsReference()
+	 * @see #getFunctionPropsBuilder_lambda()
+	 * @generated
+	 */
+	EAttribute getFunctionPropsBuilder_lambda_CurrentVersionOptionsWithVersionOptions_software_amazon_awscdk_services_lambda_VersionOptions_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.FunctionPropsBuilder_lambda#getDeadLetterQueueWithIQueue_software_amazon_awscdk_services_sqs_IQueue_AsReference <em>Dead Letter Queue With IQueue software amazon awscdk services sqs IQueue As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Dead Letter Queue With IQueue software amazon awscdk services sqs IQueue As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.FunctionPropsBuilder_lambda#getDeadLetterQueueWithIQueue_software_amazon_awscdk_services_sqs_IQueue_AsReference()
+	 * @see #getFunctionPropsBuilder_lambda()
+	 * @generated
+	 */
+	EAttribute getFunctionPropsBuilder_lambda_DeadLetterQueueWithIQueue_software_amazon_awscdk_services_sqs_IQueue_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.FunctionPropsBuilder_lambda#getDeadLetterQueueEnabled_java_lang_Boolean_ <em>Dead Letter Queue Enabled java lang Boolean </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Dead Letter Queue Enabled java lang Boolean </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.FunctionPropsBuilder_lambda#getDeadLetterQueueEnabled_java_lang_Boolean_()
+	 * @see #getFunctionPropsBuilder_lambda()
+	 * @generated
+	 */
+	EAttribute getFunctionPropsBuilder_lambda_DeadLetterQueueEnabled_java_lang_Boolean_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.FunctionPropsBuilder_lambda#getDescription_java_lang_String_ <em>Description java lang String </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Description java lang String </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.FunctionPropsBuilder_lambda#getDescription_java_lang_String_()
+	 * @see #getFunctionPropsBuilder_lambda()
+	 * @generated
+	 */
+	EAttribute getFunctionPropsBuilder_lambda_Description_java_lang_String_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.FunctionPropsBuilder_lambda#getEnvironment_java_lang_String__java_lang_String_AsMap <em>Environment java lang String java lang String As Map</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Environment java lang String java lang String As Map</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.FunctionPropsBuilder_lambda#getEnvironment_java_lang_String__java_lang_String_AsMap()
+	 * @see #getFunctionPropsBuilder_lambda()
+	 * @generated
+	 */
+	EAttribute getFunctionPropsBuilder_lambda_Environment_java_lang_String__java_lang_String_AsMap();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.FunctionPropsBuilder_lambda#getEvents_software_amazon_awscdk_services_lambda_IEventSource_AsList <em>Events software amazon awscdk services lambda IEvent Source As List</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Events software amazon awscdk services lambda IEvent Source As List</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.FunctionPropsBuilder_lambda#getEvents_software_amazon_awscdk_services_lambda_IEventSource_AsList()
+	 * @see #getFunctionPropsBuilder_lambda()
+	 * @generated
+	 */
+	EAttribute getFunctionPropsBuilder_lambda_Events_software_amazon_awscdk_services_lambda_IEventSource_AsList();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.FunctionPropsBuilder_lambda#getFunctionName_java_lang_String_ <em>Function Name java lang String </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Function Name java lang String </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.FunctionPropsBuilder_lambda#getFunctionName_java_lang_String_()
+	 * @see #getFunctionPropsBuilder_lambda()
+	 * @generated
+	 */
+	EAttribute getFunctionPropsBuilder_lambda_FunctionName_java_lang_String_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.FunctionPropsBuilder_lambda#getInitialPolicy_software_amazon_awscdk_services_iam_PolicyStatement_AsList <em>Initial Policy software amazon awscdk services iam Policy Statement As List</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Initial Policy software amazon awscdk services iam Policy Statement As List</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.FunctionPropsBuilder_lambda#getInitialPolicy_software_amazon_awscdk_services_iam_PolicyStatement_AsList()
+	 * @see #getFunctionPropsBuilder_lambda()
+	 * @generated
+	 */
+	EAttribute getFunctionPropsBuilder_lambda_InitialPolicy_software_amazon_awscdk_services_iam_PolicyStatement_AsList();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.FunctionPropsBuilder_lambda#getLayers_software_amazon_awscdk_services_lambda_ILayerVersion_AsList <em>Layers software amazon awscdk services lambda ILayer Version As List</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Layers software amazon awscdk services lambda ILayer Version As List</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.FunctionPropsBuilder_lambda#getLayers_software_amazon_awscdk_services_lambda_ILayerVersion_AsList()
+	 * @see #getFunctionPropsBuilder_lambda()
+	 * @generated
+	 */
+	EAttribute getFunctionPropsBuilder_lambda_Layers_software_amazon_awscdk_services_lambda_ILayerVersion_AsList();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.FunctionPropsBuilder_lambda#getLogRetention_software_amazon_awscdk_services_logs_RetentionDays_ <em>Log Retention software amazon awscdk services logs Retention Days </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Log Retention software amazon awscdk services logs Retention Days </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.FunctionPropsBuilder_lambda#getLogRetention_software_amazon_awscdk_services_logs_RetentionDays_()
+	 * @see #getFunctionPropsBuilder_lambda()
+	 * @generated
+	 */
+	EAttribute getFunctionPropsBuilder_lambda_LogRetention_software_amazon_awscdk_services_logs_RetentionDays_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.FunctionPropsBuilder_lambda#getLogRetentionRoleWithIRole_software_amazon_awscdk_services_iam_IRole_AsReference <em>Log Retention Role With IRole software amazon awscdk services iam IRole As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Log Retention Role With IRole software amazon awscdk services iam IRole As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.FunctionPropsBuilder_lambda#getLogRetentionRoleWithIRole_software_amazon_awscdk_services_iam_IRole_AsReference()
+	 * @see #getFunctionPropsBuilder_lambda()
+	 * @generated
+	 */
+	EAttribute getFunctionPropsBuilder_lambda_LogRetentionRoleWithIRole_software_amazon_awscdk_services_iam_IRole_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.FunctionPropsBuilder_lambda#getMemorySize_java_lang_Number_ <em>Memory Size java lang Number </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Memory Size java lang Number </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.FunctionPropsBuilder_lambda#getMemorySize_java_lang_Number_()
+	 * @see #getFunctionPropsBuilder_lambda()
+	 * @generated
+	 */
+	EAttribute getFunctionPropsBuilder_lambda_MemorySize_java_lang_Number_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.FunctionPropsBuilder_lambda#getReservedConcurrentExecutions_java_lang_Number_ <em>Reserved Concurrent Executions java lang Number </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Reserved Concurrent Executions java lang Number </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.FunctionPropsBuilder_lambda#getReservedConcurrentExecutions_java_lang_Number_()
+	 * @see #getFunctionPropsBuilder_lambda()
+	 * @generated
+	 */
+	EAttribute getFunctionPropsBuilder_lambda_ReservedConcurrentExecutions_java_lang_Number_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.FunctionPropsBuilder_lambda#getRoleWithIRole_software_amazon_awscdk_services_iam_IRole_AsReference <em>Role With IRole software amazon awscdk services iam IRole As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Role With IRole software amazon awscdk services iam IRole As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.FunctionPropsBuilder_lambda#getRoleWithIRole_software_amazon_awscdk_services_iam_IRole_AsReference()
+	 * @see #getFunctionPropsBuilder_lambda()
+	 * @generated
+	 */
+	EAttribute getFunctionPropsBuilder_lambda_RoleWithIRole_software_amazon_awscdk_services_iam_IRole_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.FunctionPropsBuilder_lambda#getSecurityGroupWithISecurityGroup_software_amazon_awscdk_services_ec2_ISecurityGroup_AsReference <em>Security Group With ISecurity Group software amazon awscdk services ec2 ISecurity Group As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Security Group With ISecurity Group software amazon awscdk services ec2 ISecurity Group As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.FunctionPropsBuilder_lambda#getSecurityGroupWithISecurityGroup_software_amazon_awscdk_services_ec2_ISecurityGroup_AsReference()
+	 * @see #getFunctionPropsBuilder_lambda()
+	 * @generated
+	 */
+	EAttribute getFunctionPropsBuilder_lambda_SecurityGroupWithISecurityGroup_software_amazon_awscdk_services_ec2_ISecurityGroup_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.FunctionPropsBuilder_lambda#getSecurityGroups_software_amazon_awscdk_services_ec2_ISecurityGroup_AsList <em>Security Groups software amazon awscdk services ec2 ISecurity Group As List</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Security Groups software amazon awscdk services ec2 ISecurity Group As List</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.FunctionPropsBuilder_lambda#getSecurityGroups_software_amazon_awscdk_services_ec2_ISecurityGroup_AsList()
+	 * @see #getFunctionPropsBuilder_lambda()
+	 * @generated
+	 */
+	EAttribute getFunctionPropsBuilder_lambda_SecurityGroups_software_amazon_awscdk_services_ec2_ISecurityGroup_AsList();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.FunctionPropsBuilder_lambda#getTimeoutWithDuration_software_amazon_awscdk_core_Duration_AsReference <em>Timeout With Duration software amazon awscdk core Duration As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Timeout With Duration software amazon awscdk core Duration As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.FunctionPropsBuilder_lambda#getTimeoutWithDuration_software_amazon_awscdk_core_Duration_AsReference()
+	 * @see #getFunctionPropsBuilder_lambda()
+	 * @generated
+	 */
+	EAttribute getFunctionPropsBuilder_lambda_TimeoutWithDuration_software_amazon_awscdk_core_Duration_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.FunctionPropsBuilder_lambda#getTracing_software_amazon_awscdk_services_lambda_Tracing_ <em>Tracing software amazon awscdk services lambda Tracing </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Tracing software amazon awscdk services lambda Tracing </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.FunctionPropsBuilder_lambda#getTracing_software_amazon_awscdk_services_lambda_Tracing_()
+	 * @see #getFunctionPropsBuilder_lambda()
+	 * @generated
+	 */
+	EAttribute getFunctionPropsBuilder_lambda_Tracing_software_amazon_awscdk_services_lambda_Tracing_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.FunctionPropsBuilder_lambda#getVpcWithIVpc_software_amazon_awscdk_services_ec2_IVpc_AsReference <em>Vpc With IVpc software amazon awscdk services ec2 IVpc As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Vpc With IVpc software amazon awscdk services ec2 IVpc As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.FunctionPropsBuilder_lambda#getVpcWithIVpc_software_amazon_awscdk_services_ec2_IVpc_AsReference()
+	 * @see #getFunctionPropsBuilder_lambda()
+	 * @generated
+	 */
+	EAttribute getFunctionPropsBuilder_lambda_VpcWithIVpc_software_amazon_awscdk_services_ec2_IVpc_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.FunctionPropsBuilder_lambda#getVpcSubnetsWithSubnetSelection_software_amazon_awscdk_services_ec2_SubnetSelection_AsReference <em>Vpc Subnets With Subnet Selection software amazon awscdk services ec2 Subnet Selection As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Vpc Subnets With Subnet Selection software amazon awscdk services ec2 Subnet Selection As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.FunctionPropsBuilder_lambda#getVpcSubnetsWithSubnetSelection_software_amazon_awscdk_services_ec2_SubnetSelection_AsReference()
+	 * @see #getFunctionPropsBuilder_lambda()
+	 * @generated
+	 */
+	EAttribute getFunctionPropsBuilder_lambda_VpcSubnetsWithSubnetSelection_software_amazon_awscdk_services_ec2_SubnetSelection_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.FunctionPropsBuilder_lambda#getMaxEventAgeWithDuration_software_amazon_awscdk_core_Duration_AsReference <em>Max Event Age With Duration software amazon awscdk core Duration As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Max Event Age With Duration software amazon awscdk core Duration As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.FunctionPropsBuilder_lambda#getMaxEventAgeWithDuration_software_amazon_awscdk_core_Duration_AsReference()
+	 * @see #getFunctionPropsBuilder_lambda()
+	 * @generated
+	 */
+	EAttribute getFunctionPropsBuilder_lambda_MaxEventAgeWithDuration_software_amazon_awscdk_core_Duration_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.FunctionPropsBuilder_lambda#getOnFailureWithIDestination_software_amazon_awscdk_services_lambda_IDestination_AsReference <em>On Failure With IDestination software amazon awscdk services lambda IDestination As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>On Failure With IDestination software amazon awscdk services lambda IDestination As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.FunctionPropsBuilder_lambda#getOnFailureWithIDestination_software_amazon_awscdk_services_lambda_IDestination_AsReference()
+	 * @see #getFunctionPropsBuilder_lambda()
+	 * @generated
+	 */
+	EAttribute getFunctionPropsBuilder_lambda_OnFailureWithIDestination_software_amazon_awscdk_services_lambda_IDestination_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.FunctionPropsBuilder_lambda#getOnSuccessWithIDestination_software_amazon_awscdk_services_lambda_IDestination_AsReference <em>On Success With IDestination software amazon awscdk services lambda IDestination As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>On Success With IDestination software amazon awscdk services lambda IDestination As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.FunctionPropsBuilder_lambda#getOnSuccessWithIDestination_software_amazon_awscdk_services_lambda_IDestination_AsReference()
+	 * @see #getFunctionPropsBuilder_lambda()
+	 * @generated
+	 */
+	EAttribute getFunctionPropsBuilder_lambda_OnSuccessWithIDestination_software_amazon_awscdk_services_lambda_IDestination_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.FunctionPropsBuilder_lambda#getRetryAttempts_java_lang_Number_ <em>Retry Attempts java lang Number </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Retry Attempts java lang Number </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.FunctionPropsBuilder_lambda#getRetryAttempts_java_lang_Number_()
+	 * @see #getFunctionPropsBuilder_lambda()
+	 * @generated
+	 */
+	EAttribute getFunctionPropsBuilder_lambda_RetryAttempts_java_lang_Number_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.FunctionPropsBuilder_lambda#getGeneratedClassName <em>Generated Class Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Generated Class Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.FunctionPropsBuilder_lambda#getGeneratedClassName()
+	 * @see #getFunctionPropsBuilder_lambda()
+	 * @generated
+	 */
+	EAttribute getFunctionPropsBuilder_lambda_GeneratedClassName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.FunctionPropsBuilder_lambda#getVarName <em>Var Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Var Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.FunctionPropsBuilder_lambda#getVarName()
+	 * @see #getFunctionPropsBuilder_lambda()
+	 * @generated
+	 */
+	EAttribute getFunctionPropsBuilder_lambda_VarName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.FunctionPropsBuilder_lambda#getIdentifier <em>Identifier</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Identifier</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.FunctionPropsBuilder_lambda#getIdentifier()
+	 * @see #getFunctionPropsBuilder_lambda()
+	 * @generated
+	 */
+	EAttribute getFunctionPropsBuilder_lambda_Identifier();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.FunctionPropsBuilder_lambda#getAdditionalCode <em>Additional Code</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Additional Code</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.FunctionPropsBuilder_lambda#getAdditionalCode()
+	 * @see #getFunctionPropsBuilder_lambda()
+	 * @generated
+	 */
+	EAttribute getFunctionPropsBuilder_lambda_AdditionalCode();
+
+	/**
 	 * Returns the meta object for class '{@link com.amazon.aws.workbench.model.awsworkbench.FunctionBuilder_lambda <em>Function Builder lambda</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -15679,6 +21578,620 @@ public interface AwsworkbenchPackage extends EPackage {
 	EAttribute getApiGatewayToDynamoDBBuilder_apigatewaydynamodb_AdditionalCode();
 
 	/**
+	 * Returns the meta object for class '{@link com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiPropsBuilder_apigateway <em>Lambda Rest Api Props Builder apigateway</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Lambda Rest Api Props Builder apigateway</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiPropsBuilder_apigateway
+	 * @generated
+	 */
+	EClass getLambdaRestApiPropsBuilder_apigateway();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiPropsBuilder_apigateway#getHandlerWithIFunction_software_amazon_awscdk_services_lambda_IFunction_AsReference <em>Handler With IFunction software amazon awscdk services lambda IFunction As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Handler With IFunction software amazon awscdk services lambda IFunction As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiPropsBuilder_apigateway#getHandlerWithIFunction_software_amazon_awscdk_services_lambda_IFunction_AsReference()
+	 * @see #getLambdaRestApiPropsBuilder_apigateway()
+	 * @generated
+	 */
+	EAttribute getLambdaRestApiPropsBuilder_apigateway_HandlerWithIFunction_software_amazon_awscdk_services_lambda_IFunction_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiPropsBuilder_apigateway#getOptionsWithRestApiProps_software_amazon_awscdk_services_apigateway_RestApiProps_AsReference <em>Options With Rest Api Props software amazon awscdk services apigateway Rest Api Props As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Options With Rest Api Props software amazon awscdk services apigateway Rest Api Props As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiPropsBuilder_apigateway#getOptionsWithRestApiProps_software_amazon_awscdk_services_apigateway_RestApiProps_AsReference()
+	 * @see #getLambdaRestApiPropsBuilder_apigateway()
+	 * @generated
+	 */
+	EAttribute getLambdaRestApiPropsBuilder_apigateway_OptionsWithRestApiProps_software_amazon_awscdk_services_apigateway_RestApiProps_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiPropsBuilder_apigateway#getProxy_java_lang_Boolean_ <em>Proxy java lang Boolean </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Proxy java lang Boolean </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiPropsBuilder_apigateway#getProxy_java_lang_Boolean_()
+	 * @see #getLambdaRestApiPropsBuilder_apigateway()
+	 * @generated
+	 */
+	EAttribute getLambdaRestApiPropsBuilder_apigateway_Proxy_java_lang_Boolean_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiPropsBuilder_apigateway#getApiKeySourceType_software_amazon_awscdk_services_apigateway_ApiKeySourceType_ <em>Api Key Source Type software amazon awscdk services apigateway Api Key Source Type </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Api Key Source Type software amazon awscdk services apigateway Api Key Source Type </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiPropsBuilder_apigateway#getApiKeySourceType_software_amazon_awscdk_services_apigateway_ApiKeySourceType_()
+	 * @see #getLambdaRestApiPropsBuilder_apigateway()
+	 * @generated
+	 */
+	EAttribute getLambdaRestApiPropsBuilder_apigateway_ApiKeySourceType_software_amazon_awscdk_services_apigateway_ApiKeySourceType_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiPropsBuilder_apigateway#getBinaryMediaTypes_java_lang_String_AsList <em>Binary Media Types java lang String As List</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Binary Media Types java lang String As List</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiPropsBuilder_apigateway#getBinaryMediaTypes_java_lang_String_AsList()
+	 * @see #getLambdaRestApiPropsBuilder_apigateway()
+	 * @generated
+	 */
+	EAttribute getLambdaRestApiPropsBuilder_apigateway_BinaryMediaTypes_java_lang_String_AsList();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiPropsBuilder_apigateway#getCloneFromWithIRestApi_software_amazon_awscdk_services_apigateway_IRestApi_AsReference <em>Clone From With IRest Api software amazon awscdk services apigateway IRest Api As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Clone From With IRest Api software amazon awscdk services apigateway IRest Api As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiPropsBuilder_apigateway#getCloneFromWithIRestApi_software_amazon_awscdk_services_apigateway_IRestApi_AsReference()
+	 * @see #getLambdaRestApiPropsBuilder_apigateway()
+	 * @generated
+	 */
+	EAttribute getLambdaRestApiPropsBuilder_apigateway_CloneFromWithIRestApi_software_amazon_awscdk_services_apigateway_IRestApi_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiPropsBuilder_apigateway#getDescription_java_lang_String_ <em>Description java lang String </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Description java lang String </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiPropsBuilder_apigateway#getDescription_java_lang_String_()
+	 * @see #getLambdaRestApiPropsBuilder_apigateway()
+	 * @generated
+	 */
+	EAttribute getLambdaRestApiPropsBuilder_apigateway_Description_java_lang_String_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiPropsBuilder_apigateway#getEndpointConfigurationWithEndpointConfiguration_software_amazon_awscdk_services_apigateway_EndpointConfiguration_AsReference <em>Endpoint Configuration With Endpoint Configuration software amazon awscdk services apigateway Endpoint Configuration As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Endpoint Configuration With Endpoint Configuration software amazon awscdk services apigateway Endpoint Configuration As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiPropsBuilder_apigateway#getEndpointConfigurationWithEndpointConfiguration_software_amazon_awscdk_services_apigateway_EndpointConfiguration_AsReference()
+	 * @see #getLambdaRestApiPropsBuilder_apigateway()
+	 * @generated
+	 */
+	EAttribute getLambdaRestApiPropsBuilder_apigateway_EndpointConfigurationWithEndpointConfiguration_software_amazon_awscdk_services_apigateway_EndpointConfiguration_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiPropsBuilder_apigateway#getEndpointTypes_software_amazon_awscdk_services_apigateway_EndpointType_AsList <em>Endpoint Types software amazon awscdk services apigateway Endpoint Type As List</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Endpoint Types software amazon awscdk services apigateway Endpoint Type As List</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiPropsBuilder_apigateway#getEndpointTypes_software_amazon_awscdk_services_apigateway_EndpointType_AsList()
+	 * @see #getLambdaRestApiPropsBuilder_apigateway()
+	 * @generated
+	 */
+	EAttribute getLambdaRestApiPropsBuilder_apigateway_EndpointTypes_software_amazon_awscdk_services_apigateway_EndpointType_AsList();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiPropsBuilder_apigateway#getMinimumCompressionSize_java_lang_Number_ <em>Minimum Compression Size java lang Number </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Minimum Compression Size java lang Number </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiPropsBuilder_apigateway#getMinimumCompressionSize_java_lang_Number_()
+	 * @see #getLambdaRestApiPropsBuilder_apigateway()
+	 * @generated
+	 */
+	EAttribute getLambdaRestApiPropsBuilder_apigateway_MinimumCompressionSize_java_lang_Number_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiPropsBuilder_apigateway#getCloudWatchRole_java_lang_Boolean_ <em>Cloud Watch Role java lang Boolean </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Cloud Watch Role java lang Boolean </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiPropsBuilder_apigateway#getCloudWatchRole_java_lang_Boolean_()
+	 * @see #getLambdaRestApiPropsBuilder_apigateway()
+	 * @generated
+	 */
+	EAttribute getLambdaRestApiPropsBuilder_apigateway_CloudWatchRole_java_lang_Boolean_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiPropsBuilder_apigateway#getDeploy_java_lang_Boolean_ <em>Deploy java lang Boolean </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Deploy java lang Boolean </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiPropsBuilder_apigateway#getDeploy_java_lang_Boolean_()
+	 * @see #getLambdaRestApiPropsBuilder_apigateway()
+	 * @generated
+	 */
+	EAttribute getLambdaRestApiPropsBuilder_apigateway_Deploy_java_lang_Boolean_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiPropsBuilder_apigateway#getDeployOptionsWithStageOptions_software_amazon_awscdk_services_apigateway_StageOptions_AsReference <em>Deploy Options With Stage Options software amazon awscdk services apigateway Stage Options As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Deploy Options With Stage Options software amazon awscdk services apigateway Stage Options As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiPropsBuilder_apigateway#getDeployOptionsWithStageOptions_software_amazon_awscdk_services_apigateway_StageOptions_AsReference()
+	 * @see #getLambdaRestApiPropsBuilder_apigateway()
+	 * @generated
+	 */
+	EAttribute getLambdaRestApiPropsBuilder_apigateway_DeployOptionsWithStageOptions_software_amazon_awscdk_services_apigateway_StageOptions_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiPropsBuilder_apigateway#getDomainNameWithDomainNameOptions_software_amazon_awscdk_services_apigateway_DomainNameOptions_AsReference <em>Domain Name With Domain Name Options software amazon awscdk services apigateway Domain Name Options As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Domain Name With Domain Name Options software amazon awscdk services apigateway Domain Name Options As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiPropsBuilder_apigateway#getDomainNameWithDomainNameOptions_software_amazon_awscdk_services_apigateway_DomainNameOptions_AsReference()
+	 * @see #getLambdaRestApiPropsBuilder_apigateway()
+	 * @generated
+	 */
+	EAttribute getLambdaRestApiPropsBuilder_apigateway_DomainNameWithDomainNameOptions_software_amazon_awscdk_services_apigateway_DomainNameOptions_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiPropsBuilder_apigateway#getEndpointExportName_java_lang_String_ <em>Endpoint Export Name java lang String </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Endpoint Export Name java lang String </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiPropsBuilder_apigateway#getEndpointExportName_java_lang_String_()
+	 * @see #getLambdaRestApiPropsBuilder_apigateway()
+	 * @generated
+	 */
+	EAttribute getLambdaRestApiPropsBuilder_apigateway_EndpointExportName_java_lang_String_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiPropsBuilder_apigateway#getFailOnWarnings_java_lang_Boolean_ <em>Fail On Warnings java lang Boolean </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Fail On Warnings java lang Boolean </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiPropsBuilder_apigateway#getFailOnWarnings_java_lang_Boolean_()
+	 * @see #getLambdaRestApiPropsBuilder_apigateway()
+	 * @generated
+	 */
+	EAttribute getLambdaRestApiPropsBuilder_apigateway_FailOnWarnings_java_lang_Boolean_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiPropsBuilder_apigateway#getParameters_java_lang_String__java_lang_String_AsMap <em>Parameters java lang String java lang String As Map</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Parameters java lang String java lang String As Map</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiPropsBuilder_apigateway#getParameters_java_lang_String__java_lang_String_AsMap()
+	 * @see #getLambdaRestApiPropsBuilder_apigateway()
+	 * @generated
+	 */
+	EAttribute getLambdaRestApiPropsBuilder_apigateway_Parameters_java_lang_String__java_lang_String_AsMap();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiPropsBuilder_apigateway#getPolicyWithPolicyDocument_software_amazon_awscdk_services_iam_PolicyDocument_AsReference <em>Policy With Policy Document software amazon awscdk services iam Policy Document As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Policy With Policy Document software amazon awscdk services iam Policy Document As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiPropsBuilder_apigateway#getPolicyWithPolicyDocument_software_amazon_awscdk_services_iam_PolicyDocument_AsReference()
+	 * @see #getLambdaRestApiPropsBuilder_apigateway()
+	 * @generated
+	 */
+	EAttribute getLambdaRestApiPropsBuilder_apigateway_PolicyWithPolicyDocument_software_amazon_awscdk_services_iam_PolicyDocument_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiPropsBuilder_apigateway#getRestApiName_java_lang_String_ <em>Rest Api Name java lang String </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Rest Api Name java lang String </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiPropsBuilder_apigateway#getRestApiName_java_lang_String_()
+	 * @see #getLambdaRestApiPropsBuilder_apigateway()
+	 * @generated
+	 */
+	EAttribute getLambdaRestApiPropsBuilder_apigateway_RestApiName_java_lang_String_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiPropsBuilder_apigateway#getRetainDeployments_java_lang_Boolean_ <em>Retain Deployments java lang Boolean </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Retain Deployments java lang Boolean </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiPropsBuilder_apigateway#getRetainDeployments_java_lang_Boolean_()
+	 * @see #getLambdaRestApiPropsBuilder_apigateway()
+	 * @generated
+	 */
+	EAttribute getLambdaRestApiPropsBuilder_apigateway_RetainDeployments_java_lang_Boolean_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiPropsBuilder_apigateway#getDefaultCorsPreflightOptionsWithCorsOptions_software_amazon_awscdk_services_apigateway_CorsOptions_AsReference <em>Default Cors Preflight Options With Cors Options software amazon awscdk services apigateway Cors Options As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Default Cors Preflight Options With Cors Options software amazon awscdk services apigateway Cors Options As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiPropsBuilder_apigateway#getDefaultCorsPreflightOptionsWithCorsOptions_software_amazon_awscdk_services_apigateway_CorsOptions_AsReference()
+	 * @see #getLambdaRestApiPropsBuilder_apigateway()
+	 * @generated
+	 */
+	EAttribute getLambdaRestApiPropsBuilder_apigateway_DefaultCorsPreflightOptionsWithCorsOptions_software_amazon_awscdk_services_apigateway_CorsOptions_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiPropsBuilder_apigateway#getDefaultIntegrationWithIntegration_software_amazon_awscdk_services_apigateway_Integration_AsReference <em>Default Integration With Integration software amazon awscdk services apigateway Integration As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Default Integration With Integration software amazon awscdk services apigateway Integration As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiPropsBuilder_apigateway#getDefaultIntegrationWithIntegration_software_amazon_awscdk_services_apigateway_Integration_AsReference()
+	 * @see #getLambdaRestApiPropsBuilder_apigateway()
+	 * @generated
+	 */
+	EAttribute getLambdaRestApiPropsBuilder_apigateway_DefaultIntegrationWithIntegration_software_amazon_awscdk_services_apigateway_Integration_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiPropsBuilder_apigateway#getDefaultMethodOptionsWithMethodOptions_software_amazon_awscdk_services_apigateway_MethodOptions_AsReference <em>Default Method Options With Method Options software amazon awscdk services apigateway Method Options As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Default Method Options With Method Options software amazon awscdk services apigateway Method Options As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiPropsBuilder_apigateway#getDefaultMethodOptionsWithMethodOptions_software_amazon_awscdk_services_apigateway_MethodOptions_AsReference()
+	 * @see #getLambdaRestApiPropsBuilder_apigateway()
+	 * @generated
+	 */
+	EAttribute getLambdaRestApiPropsBuilder_apigateway_DefaultMethodOptionsWithMethodOptions_software_amazon_awscdk_services_apigateway_MethodOptions_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiPropsBuilder_apigateway#getGeneratedClassName <em>Generated Class Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Generated Class Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiPropsBuilder_apigateway#getGeneratedClassName()
+	 * @see #getLambdaRestApiPropsBuilder_apigateway()
+	 * @generated
+	 */
+	EAttribute getLambdaRestApiPropsBuilder_apigateway_GeneratedClassName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiPropsBuilder_apigateway#getVarName <em>Var Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Var Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiPropsBuilder_apigateway#getVarName()
+	 * @see #getLambdaRestApiPropsBuilder_apigateway()
+	 * @generated
+	 */
+	EAttribute getLambdaRestApiPropsBuilder_apigateway_VarName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiPropsBuilder_apigateway#getIdentifier <em>Identifier</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Identifier</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiPropsBuilder_apigateway#getIdentifier()
+	 * @see #getLambdaRestApiPropsBuilder_apigateway()
+	 * @generated
+	 */
+	EAttribute getLambdaRestApiPropsBuilder_apigateway_Identifier();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiPropsBuilder_apigateway#getAdditionalCode <em>Additional Code</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Additional Code</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiPropsBuilder_apigateway#getAdditionalCode()
+	 * @see #getLambdaRestApiPropsBuilder_apigateway()
+	 * @generated
+	 */
+	EAttribute getLambdaRestApiPropsBuilder_apigateway_AdditionalCode();
+
+	/**
+	 * Returns the meta object for class '{@link com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiBuilder_apigateway <em>Lambda Rest Api Builder apigateway</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Lambda Rest Api Builder apigateway</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiBuilder_apigateway
+	 * @generated
+	 */
+	EClass getLambdaRestApiBuilder_apigateway();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiBuilder_apigateway#getDefaultCorsPreflightOptionsWithCorsOptions_software_amazon_awscdk_services_apigateway_CorsOptions_AsReference <em>Default Cors Preflight Options With Cors Options software amazon awscdk services apigateway Cors Options As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Default Cors Preflight Options With Cors Options software amazon awscdk services apigateway Cors Options As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiBuilder_apigateway#getDefaultCorsPreflightOptionsWithCorsOptions_software_amazon_awscdk_services_apigateway_CorsOptions_AsReference()
+	 * @see #getLambdaRestApiBuilder_apigateway()
+	 * @generated
+	 */
+	EAttribute getLambdaRestApiBuilder_apigateway_DefaultCorsPreflightOptionsWithCorsOptions_software_amazon_awscdk_services_apigateway_CorsOptions_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiBuilder_apigateway#getDefaultIntegrationWithIntegration_software_amazon_awscdk_services_apigateway_Integration_AsReference <em>Default Integration With Integration software amazon awscdk services apigateway Integration As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Default Integration With Integration software amazon awscdk services apigateway Integration As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiBuilder_apigateway#getDefaultIntegrationWithIntegration_software_amazon_awscdk_services_apigateway_Integration_AsReference()
+	 * @see #getLambdaRestApiBuilder_apigateway()
+	 * @generated
+	 */
+	EAttribute getLambdaRestApiBuilder_apigateway_DefaultIntegrationWithIntegration_software_amazon_awscdk_services_apigateway_Integration_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiBuilder_apigateway#getDefaultMethodOptionsWithMethodOptions_software_amazon_awscdk_services_apigateway_MethodOptions_AsReference <em>Default Method Options With Method Options software amazon awscdk services apigateway Method Options As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Default Method Options With Method Options software amazon awscdk services apigateway Method Options As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiBuilder_apigateway#getDefaultMethodOptionsWithMethodOptions_software_amazon_awscdk_services_apigateway_MethodOptions_AsReference()
+	 * @see #getLambdaRestApiBuilder_apigateway()
+	 * @generated
+	 */
+	EAttribute getLambdaRestApiBuilder_apigateway_DefaultMethodOptionsWithMethodOptions_software_amazon_awscdk_services_apigateway_MethodOptions_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiBuilder_apigateway#getCloudWatchRole_java_lang_Boolean_ <em>Cloud Watch Role java lang Boolean </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Cloud Watch Role java lang Boolean </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiBuilder_apigateway#getCloudWatchRole_java_lang_Boolean_()
+	 * @see #getLambdaRestApiBuilder_apigateway()
+	 * @generated
+	 */
+	EAttribute getLambdaRestApiBuilder_apigateway_CloudWatchRole_java_lang_Boolean_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiBuilder_apigateway#getDeploy_java_lang_Boolean_ <em>Deploy java lang Boolean </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Deploy java lang Boolean </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiBuilder_apigateway#getDeploy_java_lang_Boolean_()
+	 * @see #getLambdaRestApiBuilder_apigateway()
+	 * @generated
+	 */
+	EAttribute getLambdaRestApiBuilder_apigateway_Deploy_java_lang_Boolean_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiBuilder_apigateway#getDeployOptionsWithStageOptions_software_amazon_awscdk_services_apigateway_StageOptions_AsReference <em>Deploy Options With Stage Options software amazon awscdk services apigateway Stage Options As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Deploy Options With Stage Options software amazon awscdk services apigateway Stage Options As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiBuilder_apigateway#getDeployOptionsWithStageOptions_software_amazon_awscdk_services_apigateway_StageOptions_AsReference()
+	 * @see #getLambdaRestApiBuilder_apigateway()
+	 * @generated
+	 */
+	EAttribute getLambdaRestApiBuilder_apigateway_DeployOptionsWithStageOptions_software_amazon_awscdk_services_apigateway_StageOptions_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiBuilder_apigateway#getDomainNameWithDomainNameOptions_software_amazon_awscdk_services_apigateway_DomainNameOptions_AsReference <em>Domain Name With Domain Name Options software amazon awscdk services apigateway Domain Name Options As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Domain Name With Domain Name Options software amazon awscdk services apigateway Domain Name Options As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiBuilder_apigateway#getDomainNameWithDomainNameOptions_software_amazon_awscdk_services_apigateway_DomainNameOptions_AsReference()
+	 * @see #getLambdaRestApiBuilder_apigateway()
+	 * @generated
+	 */
+	EAttribute getLambdaRestApiBuilder_apigateway_DomainNameWithDomainNameOptions_software_amazon_awscdk_services_apigateway_DomainNameOptions_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiBuilder_apigateway#getEndpointExportName_java_lang_String_ <em>Endpoint Export Name java lang String </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Endpoint Export Name java lang String </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiBuilder_apigateway#getEndpointExportName_java_lang_String_()
+	 * @see #getLambdaRestApiBuilder_apigateway()
+	 * @generated
+	 */
+	EAttribute getLambdaRestApiBuilder_apigateway_EndpointExportName_java_lang_String_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiBuilder_apigateway#getFailOnWarnings_java_lang_Boolean_ <em>Fail On Warnings java lang Boolean </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Fail On Warnings java lang Boolean </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiBuilder_apigateway#getFailOnWarnings_java_lang_Boolean_()
+	 * @see #getLambdaRestApiBuilder_apigateway()
+	 * @generated
+	 */
+	EAttribute getLambdaRestApiBuilder_apigateway_FailOnWarnings_java_lang_Boolean_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiBuilder_apigateway#getParameters_java_lang_String__java_lang_String_AsMap <em>Parameters java lang String java lang String As Map</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Parameters java lang String java lang String As Map</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiBuilder_apigateway#getParameters_java_lang_String__java_lang_String_AsMap()
+	 * @see #getLambdaRestApiBuilder_apigateway()
+	 * @generated
+	 */
+	EAttribute getLambdaRestApiBuilder_apigateway_Parameters_java_lang_String__java_lang_String_AsMap();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiBuilder_apigateway#getPolicyWithPolicyDocument_software_amazon_awscdk_services_iam_PolicyDocument_AsReference <em>Policy With Policy Document software amazon awscdk services iam Policy Document As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Policy With Policy Document software amazon awscdk services iam Policy Document As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiBuilder_apigateway#getPolicyWithPolicyDocument_software_amazon_awscdk_services_iam_PolicyDocument_AsReference()
+	 * @see #getLambdaRestApiBuilder_apigateway()
+	 * @generated
+	 */
+	EAttribute getLambdaRestApiBuilder_apigateway_PolicyWithPolicyDocument_software_amazon_awscdk_services_iam_PolicyDocument_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiBuilder_apigateway#getRestApiName_java_lang_String_ <em>Rest Api Name java lang String </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Rest Api Name java lang String </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiBuilder_apigateway#getRestApiName_java_lang_String_()
+	 * @see #getLambdaRestApiBuilder_apigateway()
+	 * @generated
+	 */
+	EAttribute getLambdaRestApiBuilder_apigateway_RestApiName_java_lang_String_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiBuilder_apigateway#getRetainDeployments_java_lang_Boolean_ <em>Retain Deployments java lang Boolean </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Retain Deployments java lang Boolean </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiBuilder_apigateway#getRetainDeployments_java_lang_Boolean_()
+	 * @see #getLambdaRestApiBuilder_apigateway()
+	 * @generated
+	 */
+	EAttribute getLambdaRestApiBuilder_apigateway_RetainDeployments_java_lang_Boolean_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiBuilder_apigateway#getApiKeySourceType_software_amazon_awscdk_services_apigateway_ApiKeySourceType_ <em>Api Key Source Type software amazon awscdk services apigateway Api Key Source Type </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Api Key Source Type software amazon awscdk services apigateway Api Key Source Type </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiBuilder_apigateway#getApiKeySourceType_software_amazon_awscdk_services_apigateway_ApiKeySourceType_()
+	 * @see #getLambdaRestApiBuilder_apigateway()
+	 * @generated
+	 */
+	EAttribute getLambdaRestApiBuilder_apigateway_ApiKeySourceType_software_amazon_awscdk_services_apigateway_ApiKeySourceType_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiBuilder_apigateway#getBinaryMediaTypes_java_lang_String_AsList <em>Binary Media Types java lang String As List</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Binary Media Types java lang String As List</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiBuilder_apigateway#getBinaryMediaTypes_java_lang_String_AsList()
+	 * @see #getLambdaRestApiBuilder_apigateway()
+	 * @generated
+	 */
+	EAttribute getLambdaRestApiBuilder_apigateway_BinaryMediaTypes_java_lang_String_AsList();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiBuilder_apigateway#getCloneFromWithIRestApi_software_amazon_awscdk_services_apigateway_IRestApi_AsReference <em>Clone From With IRest Api software amazon awscdk services apigateway IRest Api As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Clone From With IRest Api software amazon awscdk services apigateway IRest Api As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiBuilder_apigateway#getCloneFromWithIRestApi_software_amazon_awscdk_services_apigateway_IRestApi_AsReference()
+	 * @see #getLambdaRestApiBuilder_apigateway()
+	 * @generated
+	 */
+	EAttribute getLambdaRestApiBuilder_apigateway_CloneFromWithIRestApi_software_amazon_awscdk_services_apigateway_IRestApi_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiBuilder_apigateway#getDescription_java_lang_String_ <em>Description java lang String </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Description java lang String </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiBuilder_apigateway#getDescription_java_lang_String_()
+	 * @see #getLambdaRestApiBuilder_apigateway()
+	 * @generated
+	 */
+	EAttribute getLambdaRestApiBuilder_apigateway_Description_java_lang_String_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiBuilder_apigateway#getEndpointConfigurationWithEndpointConfiguration_software_amazon_awscdk_services_apigateway_EndpointConfiguration_AsReference <em>Endpoint Configuration With Endpoint Configuration software amazon awscdk services apigateway Endpoint Configuration As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Endpoint Configuration With Endpoint Configuration software amazon awscdk services apigateway Endpoint Configuration As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiBuilder_apigateway#getEndpointConfigurationWithEndpointConfiguration_software_amazon_awscdk_services_apigateway_EndpointConfiguration_AsReference()
+	 * @see #getLambdaRestApiBuilder_apigateway()
+	 * @generated
+	 */
+	EAttribute getLambdaRestApiBuilder_apigateway_EndpointConfigurationWithEndpointConfiguration_software_amazon_awscdk_services_apigateway_EndpointConfiguration_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiBuilder_apigateway#getEndpointTypes_software_amazon_awscdk_services_apigateway_EndpointType_AsList <em>Endpoint Types software amazon awscdk services apigateway Endpoint Type As List</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Endpoint Types software amazon awscdk services apigateway Endpoint Type As List</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiBuilder_apigateway#getEndpointTypes_software_amazon_awscdk_services_apigateway_EndpointType_AsList()
+	 * @see #getLambdaRestApiBuilder_apigateway()
+	 * @generated
+	 */
+	EAttribute getLambdaRestApiBuilder_apigateway_EndpointTypes_software_amazon_awscdk_services_apigateway_EndpointType_AsList();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiBuilder_apigateway#getMinimumCompressionSize_java_lang_Number_ <em>Minimum Compression Size java lang Number </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Minimum Compression Size java lang Number </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiBuilder_apigateway#getMinimumCompressionSize_java_lang_Number_()
+	 * @see #getLambdaRestApiBuilder_apigateway()
+	 * @generated
+	 */
+	EAttribute getLambdaRestApiBuilder_apigateway_MinimumCompressionSize_java_lang_Number_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiBuilder_apigateway#getHandlerWithIFunction_software_amazon_awscdk_services_lambda_IFunction_AsReference <em>Handler With IFunction software amazon awscdk services lambda IFunction As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Handler With IFunction software amazon awscdk services lambda IFunction As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiBuilder_apigateway#getHandlerWithIFunction_software_amazon_awscdk_services_lambda_IFunction_AsReference()
+	 * @see #getLambdaRestApiBuilder_apigateway()
+	 * @generated
+	 */
+	EAttribute getLambdaRestApiBuilder_apigateway_HandlerWithIFunction_software_amazon_awscdk_services_lambda_IFunction_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiBuilder_apigateway#getOptionsWithRestApiProps_software_amazon_awscdk_services_apigateway_RestApiProps_AsReference <em>Options With Rest Api Props software amazon awscdk services apigateway Rest Api Props As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Options With Rest Api Props software amazon awscdk services apigateway Rest Api Props As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiBuilder_apigateway#getOptionsWithRestApiProps_software_amazon_awscdk_services_apigateway_RestApiProps_AsReference()
+	 * @see #getLambdaRestApiBuilder_apigateway()
+	 * @generated
+	 */
+	EAttribute getLambdaRestApiBuilder_apigateway_OptionsWithRestApiProps_software_amazon_awscdk_services_apigateway_RestApiProps_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiBuilder_apigateway#getProxy_java_lang_Boolean_ <em>Proxy java lang Boolean </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Proxy java lang Boolean </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiBuilder_apigateway#getProxy_java_lang_Boolean_()
+	 * @see #getLambdaRestApiBuilder_apigateway()
+	 * @generated
+	 */
+	EAttribute getLambdaRestApiBuilder_apigateway_Proxy_java_lang_Boolean_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiBuilder_apigateway#getGeneratedClassName <em>Generated Class Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Generated Class Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiBuilder_apigateway#getGeneratedClassName()
+	 * @see #getLambdaRestApiBuilder_apigateway()
+	 * @generated
+	 */
+	EAttribute getLambdaRestApiBuilder_apigateway_GeneratedClassName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiBuilder_apigateway#getVarName <em>Var Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Var Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiBuilder_apigateway#getVarName()
+	 * @see #getLambdaRestApiBuilder_apigateway()
+	 * @generated
+	 */
+	EAttribute getLambdaRestApiBuilder_apigateway_VarName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiBuilder_apigateway#getIdentifier <em>Identifier</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Identifier</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiBuilder_apigateway#getIdentifier()
+	 * @see #getLambdaRestApiBuilder_apigateway()
+	 * @generated
+	 */
+	EAttribute getLambdaRestApiBuilder_apigateway_Identifier();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiBuilder_apigateway#getAdditionalCode <em>Additional Code</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Additional Code</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.LambdaRestApiBuilder_apigateway#getAdditionalCode()
+	 * @see #getLambdaRestApiBuilder_apigateway()
+	 * @generated
+	 */
+	EAttribute getLambdaRestApiBuilder_apigateway_AdditionalCode();
+
+	/**
 	 * Returns the meta object for class '{@link com.amazon.aws.workbench.model.awsworkbench.ApiGatewayToLambdaBuilder_apigatewaylambda <em>Api Gateway To Lambda Builder apigatewaylambda</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -15764,6 +22277,192 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getApiGatewayToLambdaBuilder_apigatewaylambda_AdditionalCode();
+
+	/**
+	 * Returns the meta object for class '{@link com.amazon.aws.workbench.model.awsworkbench.QueuePropsBuilder_sqs <em>Queue Props Builder sqs</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Queue Props Builder sqs</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.QueuePropsBuilder_sqs
+	 * @generated
+	 */
+	EClass getQueuePropsBuilder_sqs();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.QueuePropsBuilder_sqs#getContentBasedDeduplication_java_lang_Boolean_ <em>Content Based Deduplication java lang Boolean </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Content Based Deduplication java lang Boolean </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.QueuePropsBuilder_sqs#getContentBasedDeduplication_java_lang_Boolean_()
+	 * @see #getQueuePropsBuilder_sqs()
+	 * @generated
+	 */
+	EAttribute getQueuePropsBuilder_sqs_ContentBasedDeduplication_java_lang_Boolean_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.QueuePropsBuilder_sqs#getDataKeyReuseWithDuration_software_amazon_awscdk_core_Duration_AsReference <em>Data Key Reuse With Duration software amazon awscdk core Duration As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Data Key Reuse With Duration software amazon awscdk core Duration As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.QueuePropsBuilder_sqs#getDataKeyReuseWithDuration_software_amazon_awscdk_core_Duration_AsReference()
+	 * @see #getQueuePropsBuilder_sqs()
+	 * @generated
+	 */
+	EAttribute getQueuePropsBuilder_sqs_DataKeyReuseWithDuration_software_amazon_awscdk_core_Duration_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.QueuePropsBuilder_sqs#getDeadLetterQueueWithDeadLetterQueue_software_amazon_awscdk_services_sqs_DeadLetterQueue_AsReference <em>Dead Letter Queue With Dead Letter Queue software amazon awscdk services sqs Dead Letter Queue As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Dead Letter Queue With Dead Letter Queue software amazon awscdk services sqs Dead Letter Queue As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.QueuePropsBuilder_sqs#getDeadLetterQueueWithDeadLetterQueue_software_amazon_awscdk_services_sqs_DeadLetterQueue_AsReference()
+	 * @see #getQueuePropsBuilder_sqs()
+	 * @generated
+	 */
+	EAttribute getQueuePropsBuilder_sqs_DeadLetterQueueWithDeadLetterQueue_software_amazon_awscdk_services_sqs_DeadLetterQueue_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.QueuePropsBuilder_sqs#getDeliveryDelayWithDuration_software_amazon_awscdk_core_Duration_AsReference <em>Delivery Delay With Duration software amazon awscdk core Duration As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Delivery Delay With Duration software amazon awscdk core Duration As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.QueuePropsBuilder_sqs#getDeliveryDelayWithDuration_software_amazon_awscdk_core_Duration_AsReference()
+	 * @see #getQueuePropsBuilder_sqs()
+	 * @generated
+	 */
+	EAttribute getQueuePropsBuilder_sqs_DeliveryDelayWithDuration_software_amazon_awscdk_core_Duration_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.QueuePropsBuilder_sqs#getEncryption_software_amazon_awscdk_services_sqs_QueueEncryption_ <em>Encryption software amazon awscdk services sqs Queue Encryption </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Encryption software amazon awscdk services sqs Queue Encryption </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.QueuePropsBuilder_sqs#getEncryption_software_amazon_awscdk_services_sqs_QueueEncryption_()
+	 * @see #getQueuePropsBuilder_sqs()
+	 * @generated
+	 */
+	EAttribute getQueuePropsBuilder_sqs_Encryption_software_amazon_awscdk_services_sqs_QueueEncryption_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.QueuePropsBuilder_sqs#getEncryptionMasterKeyWithIKey_software_amazon_awscdk_services_kms_IKey_AsReference <em>Encryption Master Key With IKey software amazon awscdk services kms IKey As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Encryption Master Key With IKey software amazon awscdk services kms IKey As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.QueuePropsBuilder_sqs#getEncryptionMasterKeyWithIKey_software_amazon_awscdk_services_kms_IKey_AsReference()
+	 * @see #getQueuePropsBuilder_sqs()
+	 * @generated
+	 */
+	EAttribute getQueuePropsBuilder_sqs_EncryptionMasterKeyWithIKey_software_amazon_awscdk_services_kms_IKey_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.QueuePropsBuilder_sqs#getFifo_java_lang_Boolean_ <em>Fifo java lang Boolean </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Fifo java lang Boolean </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.QueuePropsBuilder_sqs#getFifo_java_lang_Boolean_()
+	 * @see #getQueuePropsBuilder_sqs()
+	 * @generated
+	 */
+	EAttribute getQueuePropsBuilder_sqs_Fifo_java_lang_Boolean_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.QueuePropsBuilder_sqs#getMaxMessageSizeBytes_java_lang_Number_ <em>Max Message Size Bytes java lang Number </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Max Message Size Bytes java lang Number </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.QueuePropsBuilder_sqs#getMaxMessageSizeBytes_java_lang_Number_()
+	 * @see #getQueuePropsBuilder_sqs()
+	 * @generated
+	 */
+	EAttribute getQueuePropsBuilder_sqs_MaxMessageSizeBytes_java_lang_Number_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.QueuePropsBuilder_sqs#getQueueName_java_lang_String_ <em>Queue Name java lang String </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Queue Name java lang String </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.QueuePropsBuilder_sqs#getQueueName_java_lang_String_()
+	 * @see #getQueuePropsBuilder_sqs()
+	 * @generated
+	 */
+	EAttribute getQueuePropsBuilder_sqs_QueueName_java_lang_String_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.QueuePropsBuilder_sqs#getReceiveMessageWaitTimeWithDuration_software_amazon_awscdk_core_Duration_AsReference <em>Receive Message Wait Time With Duration software amazon awscdk core Duration As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Receive Message Wait Time With Duration software amazon awscdk core Duration As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.QueuePropsBuilder_sqs#getReceiveMessageWaitTimeWithDuration_software_amazon_awscdk_core_Duration_AsReference()
+	 * @see #getQueuePropsBuilder_sqs()
+	 * @generated
+	 */
+	EAttribute getQueuePropsBuilder_sqs_ReceiveMessageWaitTimeWithDuration_software_amazon_awscdk_core_Duration_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.QueuePropsBuilder_sqs#getRetentionPeriodWithDuration_software_amazon_awscdk_core_Duration_AsReference <em>Retention Period With Duration software amazon awscdk core Duration As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Retention Period With Duration software amazon awscdk core Duration As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.QueuePropsBuilder_sqs#getRetentionPeriodWithDuration_software_amazon_awscdk_core_Duration_AsReference()
+	 * @see #getQueuePropsBuilder_sqs()
+	 * @generated
+	 */
+	EAttribute getQueuePropsBuilder_sqs_RetentionPeriodWithDuration_software_amazon_awscdk_core_Duration_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.QueuePropsBuilder_sqs#getVisibilityTimeoutWithDuration_software_amazon_awscdk_core_Duration_AsReference <em>Visibility Timeout With Duration software amazon awscdk core Duration As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Visibility Timeout With Duration software amazon awscdk core Duration As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.QueuePropsBuilder_sqs#getVisibilityTimeoutWithDuration_software_amazon_awscdk_core_Duration_AsReference()
+	 * @see #getQueuePropsBuilder_sqs()
+	 * @generated
+	 */
+	EAttribute getQueuePropsBuilder_sqs_VisibilityTimeoutWithDuration_software_amazon_awscdk_core_Duration_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.QueuePropsBuilder_sqs#getGeneratedClassName <em>Generated Class Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Generated Class Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.QueuePropsBuilder_sqs#getGeneratedClassName()
+	 * @see #getQueuePropsBuilder_sqs()
+	 * @generated
+	 */
+	EAttribute getQueuePropsBuilder_sqs_GeneratedClassName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.QueuePropsBuilder_sqs#getVarName <em>Var Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Var Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.QueuePropsBuilder_sqs#getVarName()
+	 * @see #getQueuePropsBuilder_sqs()
+	 * @generated
+	 */
+	EAttribute getQueuePropsBuilder_sqs_VarName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.QueuePropsBuilder_sqs#getIdentifier <em>Identifier</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Identifier</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.QueuePropsBuilder_sqs#getIdentifier()
+	 * @see #getQueuePropsBuilder_sqs()
+	 * @generated
+	 */
+	EAttribute getQueuePropsBuilder_sqs_Identifier();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.QueuePropsBuilder_sqs#getAdditionalCode <em>Additional Code</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Additional Code</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.QueuePropsBuilder_sqs#getAdditionalCode()
+	 * @see #getQueuePropsBuilder_sqs()
+	 * @generated
+	 */
+	EAttribute getQueuePropsBuilder_sqs_AdditionalCode();
 
 	/**
 	 * Returns the meta object for class '{@link com.amazon.aws.workbench.model.awsworkbench.ApiGatewayToSqsBuilder_apigatewaysqs <em>Api Gateway To Sqs Builder apigatewaysqs</em>}'.
@@ -15906,6 +22605,2548 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getApiGatewayToSqsBuilder_apigatewaysqs_AdditionalCode();
+
+	/**
+	 * Returns the meta object for class '{@link com.amazon.aws.workbench.model.awsworkbench.VersionBuilder_lambda <em>Version Builder lambda</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Version Builder lambda</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.VersionBuilder_lambda
+	 * @generated
+	 */
+	EClass getVersionBuilder_lambda();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.VersionBuilder_lambda#getMaxEventAgeWithDuration_software_amazon_awscdk_core_Duration_AsReference <em>Max Event Age With Duration software amazon awscdk core Duration As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Max Event Age With Duration software amazon awscdk core Duration As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.VersionBuilder_lambda#getMaxEventAgeWithDuration_software_amazon_awscdk_core_Duration_AsReference()
+	 * @see #getVersionBuilder_lambda()
+	 * @generated
+	 */
+	EAttribute getVersionBuilder_lambda_MaxEventAgeWithDuration_software_amazon_awscdk_core_Duration_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.VersionBuilder_lambda#getOnFailureWithIDestination_software_amazon_awscdk_services_lambda_IDestination_AsReference <em>On Failure With IDestination software amazon awscdk services lambda IDestination As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>On Failure With IDestination software amazon awscdk services lambda IDestination As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.VersionBuilder_lambda#getOnFailureWithIDestination_software_amazon_awscdk_services_lambda_IDestination_AsReference()
+	 * @see #getVersionBuilder_lambda()
+	 * @generated
+	 */
+	EAttribute getVersionBuilder_lambda_OnFailureWithIDestination_software_amazon_awscdk_services_lambda_IDestination_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.VersionBuilder_lambda#getOnSuccessWithIDestination_software_amazon_awscdk_services_lambda_IDestination_AsReference <em>On Success With IDestination software amazon awscdk services lambda IDestination As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>On Success With IDestination software amazon awscdk services lambda IDestination As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.VersionBuilder_lambda#getOnSuccessWithIDestination_software_amazon_awscdk_services_lambda_IDestination_AsReference()
+	 * @see #getVersionBuilder_lambda()
+	 * @generated
+	 */
+	EAttribute getVersionBuilder_lambda_OnSuccessWithIDestination_software_amazon_awscdk_services_lambda_IDestination_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.VersionBuilder_lambda#getRetryAttempts_java_lang_Number_ <em>Retry Attempts java lang Number </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Retry Attempts java lang Number </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.VersionBuilder_lambda#getRetryAttempts_java_lang_Number_()
+	 * @see #getVersionBuilder_lambda()
+	 * @generated
+	 */
+	EAttribute getVersionBuilder_lambda_RetryAttempts_java_lang_Number_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.VersionBuilder_lambda#getCodeSha256_java_lang_String_ <em>Code Sha256 java lang String </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Code Sha256 java lang String </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.VersionBuilder_lambda#getCodeSha256_java_lang_String_()
+	 * @see #getVersionBuilder_lambda()
+	 * @generated
+	 */
+	EAttribute getVersionBuilder_lambda_CodeSha256_java_lang_String_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.VersionBuilder_lambda#getDescription_java_lang_String_ <em>Description java lang String </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Description java lang String </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.VersionBuilder_lambda#getDescription_java_lang_String_()
+	 * @see #getVersionBuilder_lambda()
+	 * @generated
+	 */
+	EAttribute getVersionBuilder_lambda_Description_java_lang_String_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.VersionBuilder_lambda#getProvisionedConcurrentExecutions_java_lang_Number_ <em>Provisioned Concurrent Executions java lang Number </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Provisioned Concurrent Executions java lang Number </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.VersionBuilder_lambda#getProvisionedConcurrentExecutions_java_lang_Number_()
+	 * @see #getVersionBuilder_lambda()
+	 * @generated
+	 */
+	EAttribute getVersionBuilder_lambda_ProvisionedConcurrentExecutions_java_lang_Number_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.VersionBuilder_lambda#getRemovalPolicy_software_amazon_awscdk_core_RemovalPolicy_ <em>Removal Policy software amazon awscdk core Removal Policy </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Removal Policy software amazon awscdk core Removal Policy </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.VersionBuilder_lambda#getRemovalPolicy_software_amazon_awscdk_core_RemovalPolicy_()
+	 * @see #getVersionBuilder_lambda()
+	 * @generated
+	 */
+	EAttribute getVersionBuilder_lambda_RemovalPolicy_software_amazon_awscdk_core_RemovalPolicy_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.VersionBuilder_lambda#getLambdaWithIFunction_software_amazon_awscdk_services_lambda_IFunction_AsReference <em>Lambda With IFunction software amazon awscdk services lambda IFunction As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Lambda With IFunction software amazon awscdk services lambda IFunction As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.VersionBuilder_lambda#getLambdaWithIFunction_software_amazon_awscdk_services_lambda_IFunction_AsReference()
+	 * @see #getVersionBuilder_lambda()
+	 * @generated
+	 */
+	EAttribute getVersionBuilder_lambda_LambdaWithIFunction_software_amazon_awscdk_services_lambda_IFunction_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.VersionBuilder_lambda#getGeneratedClassName <em>Generated Class Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Generated Class Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.VersionBuilder_lambda#getGeneratedClassName()
+	 * @see #getVersionBuilder_lambda()
+	 * @generated
+	 */
+	EAttribute getVersionBuilder_lambda_GeneratedClassName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.VersionBuilder_lambda#getVarName <em>Var Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Var Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.VersionBuilder_lambda#getVarName()
+	 * @see #getVersionBuilder_lambda()
+	 * @generated
+	 */
+	EAttribute getVersionBuilder_lambda_VarName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.VersionBuilder_lambda#getIdentifier <em>Identifier</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Identifier</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.VersionBuilder_lambda#getIdentifier()
+	 * @see #getVersionBuilder_lambda()
+	 * @generated
+	 */
+	EAttribute getVersionBuilder_lambda_Identifier();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.VersionBuilder_lambda#getAdditionalCode <em>Additional Code</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Additional Code</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.VersionBuilder_lambda#getAdditionalCode()
+	 * @see #getVersionBuilder_lambda()
+	 * @generated
+	 */
+	EAttribute getVersionBuilder_lambda_AdditionalCode();
+
+	/**
+	 * Returns the meta object for class '{@link com.amazon.aws.workbench.model.awsworkbench.LambdaFunctionAssociationBuilder_cloudfront <em>Lambda Function Association Builder cloudfront</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Lambda Function Association Builder cloudfront</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.LambdaFunctionAssociationBuilder_cloudfront
+	 * @generated
+	 */
+	EClass getLambdaFunctionAssociationBuilder_cloudfront();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.LambdaFunctionAssociationBuilder_cloudfront#getEventType_software_amazon_awscdk_services_cloudfront_LambdaEdgeEventType_ <em>Event Type software amazon awscdk services cloudfront Lambda Edge Event Type </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Event Type software amazon awscdk services cloudfront Lambda Edge Event Type </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.LambdaFunctionAssociationBuilder_cloudfront#getEventType_software_amazon_awscdk_services_cloudfront_LambdaEdgeEventType_()
+	 * @see #getLambdaFunctionAssociationBuilder_cloudfront()
+	 * @generated
+	 */
+	EAttribute getLambdaFunctionAssociationBuilder_cloudfront_EventType_software_amazon_awscdk_services_cloudfront_LambdaEdgeEventType_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.LambdaFunctionAssociationBuilder_cloudfront#getLambdaFunctionWithIVersion_software_amazon_awscdk_services_lambda_IVersion_AsReference <em>Lambda Function With IVersion software amazon awscdk services lambda IVersion As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Lambda Function With IVersion software amazon awscdk services lambda IVersion As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.LambdaFunctionAssociationBuilder_cloudfront#getLambdaFunctionWithIVersion_software_amazon_awscdk_services_lambda_IVersion_AsReference()
+	 * @see #getLambdaFunctionAssociationBuilder_cloudfront()
+	 * @generated
+	 */
+	EAttribute getLambdaFunctionAssociationBuilder_cloudfront_LambdaFunctionWithIVersion_software_amazon_awscdk_services_lambda_IVersion_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.LambdaFunctionAssociationBuilder_cloudfront#getGeneratedClassName <em>Generated Class Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Generated Class Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.LambdaFunctionAssociationBuilder_cloudfront#getGeneratedClassName()
+	 * @see #getLambdaFunctionAssociationBuilder_cloudfront()
+	 * @generated
+	 */
+	EAttribute getLambdaFunctionAssociationBuilder_cloudfront_GeneratedClassName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.LambdaFunctionAssociationBuilder_cloudfront#getVarName <em>Var Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Var Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.LambdaFunctionAssociationBuilder_cloudfront#getVarName()
+	 * @see #getLambdaFunctionAssociationBuilder_cloudfront()
+	 * @generated
+	 */
+	EAttribute getLambdaFunctionAssociationBuilder_cloudfront_VarName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.LambdaFunctionAssociationBuilder_cloudfront#getIdentifier <em>Identifier</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Identifier</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.LambdaFunctionAssociationBuilder_cloudfront#getIdentifier()
+	 * @see #getLambdaFunctionAssociationBuilder_cloudfront()
+	 * @generated
+	 */
+	EAttribute getLambdaFunctionAssociationBuilder_cloudfront_Identifier();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.LambdaFunctionAssociationBuilder_cloudfront#getAdditionalCode <em>Additional Code</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Additional Code</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.LambdaFunctionAssociationBuilder_cloudfront#getAdditionalCode()
+	 * @see #getLambdaFunctionAssociationBuilder_cloudfront()
+	 * @generated
+	 */
+	EAttribute getLambdaFunctionAssociationBuilder_cloudfront_AdditionalCode();
+
+	/**
+	 * Returns the meta object for class '{@link com.amazon.aws.workbench.model.awsworkbench.BehaviorBuilder_cloudfront <em>Behavior Builder cloudfront</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Behavior Builder cloudfront</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.BehaviorBuilder_cloudfront
+	 * @generated
+	 */
+	EClass getBehaviorBuilder_cloudfront();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.BehaviorBuilder_cloudfront#getAllowedMethods_software_amazon_awscdk_services_cloudfront_CloudFrontAllowedMethods_ <em>Allowed Methods software amazon awscdk services cloudfront Cloud Front Allowed Methods </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Allowed Methods software amazon awscdk services cloudfront Cloud Front Allowed Methods </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.BehaviorBuilder_cloudfront#getAllowedMethods_software_amazon_awscdk_services_cloudfront_CloudFrontAllowedMethods_()
+	 * @see #getBehaviorBuilder_cloudfront()
+	 * @generated
+	 */
+	EAttribute getBehaviorBuilder_cloudfront_AllowedMethods_software_amazon_awscdk_services_cloudfront_CloudFrontAllowedMethods_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.BehaviorBuilder_cloudfront#getCachedMethods_software_amazon_awscdk_services_cloudfront_CloudFrontAllowedCachedMethods_ <em>Cached Methods software amazon awscdk services cloudfront Cloud Front Allowed Cached Methods </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Cached Methods software amazon awscdk services cloudfront Cloud Front Allowed Cached Methods </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.BehaviorBuilder_cloudfront#getCachedMethods_software_amazon_awscdk_services_cloudfront_CloudFrontAllowedCachedMethods_()
+	 * @see #getBehaviorBuilder_cloudfront()
+	 * @generated
+	 */
+	EAttribute getBehaviorBuilder_cloudfront_CachedMethods_software_amazon_awscdk_services_cloudfront_CloudFrontAllowedCachedMethods_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.BehaviorBuilder_cloudfront#getCompress_java_lang_Boolean_ <em>Compress java lang Boolean </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Compress java lang Boolean </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.BehaviorBuilder_cloudfront#getCompress_java_lang_Boolean_()
+	 * @see #getBehaviorBuilder_cloudfront()
+	 * @generated
+	 */
+	EAttribute getBehaviorBuilder_cloudfront_Compress_java_lang_Boolean_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.BehaviorBuilder_cloudfront#getDefaultTtlWithDuration_software_amazon_awscdk_core_Duration_AsReference <em>Default Ttl With Duration software amazon awscdk core Duration As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Default Ttl With Duration software amazon awscdk core Duration As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.BehaviorBuilder_cloudfront#getDefaultTtlWithDuration_software_amazon_awscdk_core_Duration_AsReference()
+	 * @see #getBehaviorBuilder_cloudfront()
+	 * @generated
+	 */
+	EAttribute getBehaviorBuilder_cloudfront_DefaultTtlWithDuration_software_amazon_awscdk_core_Duration_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.BehaviorBuilder_cloudfront#getForwardedValuesWithForwardedValuesProperty_software_amazon_awscdk_services_cloudfront_CfnDistribution_ForwardedValuesProperty_AsReference <em>Forwarded Values With Forwarded Values Property software amazon awscdk services cloudfront Cfn Distribution Forwarded Values Property As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Forwarded Values With Forwarded Values Property software amazon awscdk services cloudfront Cfn Distribution Forwarded Values Property As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.BehaviorBuilder_cloudfront#getForwardedValuesWithForwardedValuesProperty_software_amazon_awscdk_services_cloudfront_CfnDistribution_ForwardedValuesProperty_AsReference()
+	 * @see #getBehaviorBuilder_cloudfront()
+	 * @generated
+	 */
+	EAttribute getBehaviorBuilder_cloudfront_ForwardedValuesWithForwardedValuesProperty_software_amazon_awscdk_services_cloudfront_CfnDistribution_ForwardedValuesProperty_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.BehaviorBuilder_cloudfront#getIsDefaultBehavior_java_lang_Boolean_ <em>Is Default Behavior java lang Boolean </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Is Default Behavior java lang Boolean </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.BehaviorBuilder_cloudfront#getIsDefaultBehavior_java_lang_Boolean_()
+	 * @see #getBehaviorBuilder_cloudfront()
+	 * @generated
+	 */
+	EAttribute getBehaviorBuilder_cloudfront_IsDefaultBehavior_java_lang_Boolean_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.BehaviorBuilder_cloudfront#getLambdaFunctionAssociations_software_amazon_awscdk_services_cloudfront_LambdaFunctionAssociation_AsList <em>Lambda Function Associations software amazon awscdk services cloudfront Lambda Function Association As List</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Lambda Function Associations software amazon awscdk services cloudfront Lambda Function Association As List</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.BehaviorBuilder_cloudfront#getLambdaFunctionAssociations_software_amazon_awscdk_services_cloudfront_LambdaFunctionAssociation_AsList()
+	 * @see #getBehaviorBuilder_cloudfront()
+	 * @generated
+	 */
+	EAttribute getBehaviorBuilder_cloudfront_LambdaFunctionAssociations_software_amazon_awscdk_services_cloudfront_LambdaFunctionAssociation_AsList();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.BehaviorBuilder_cloudfront#getMaxTtlWithDuration_software_amazon_awscdk_core_Duration_AsReference <em>Max Ttl With Duration software amazon awscdk core Duration As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Max Ttl With Duration software amazon awscdk core Duration As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.BehaviorBuilder_cloudfront#getMaxTtlWithDuration_software_amazon_awscdk_core_Duration_AsReference()
+	 * @see #getBehaviorBuilder_cloudfront()
+	 * @generated
+	 */
+	EAttribute getBehaviorBuilder_cloudfront_MaxTtlWithDuration_software_amazon_awscdk_core_Duration_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.BehaviorBuilder_cloudfront#getMinTtlWithDuration_software_amazon_awscdk_core_Duration_AsReference <em>Min Ttl With Duration software amazon awscdk core Duration As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Min Ttl With Duration software amazon awscdk core Duration As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.BehaviorBuilder_cloudfront#getMinTtlWithDuration_software_amazon_awscdk_core_Duration_AsReference()
+	 * @see #getBehaviorBuilder_cloudfront()
+	 * @generated
+	 */
+	EAttribute getBehaviorBuilder_cloudfront_MinTtlWithDuration_software_amazon_awscdk_core_Duration_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.BehaviorBuilder_cloudfront#getPathPattern_java_lang_String_ <em>Path Pattern java lang String </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Path Pattern java lang String </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.BehaviorBuilder_cloudfront#getPathPattern_java_lang_String_()
+	 * @see #getBehaviorBuilder_cloudfront()
+	 * @generated
+	 */
+	EAttribute getBehaviorBuilder_cloudfront_PathPattern_java_lang_String_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.BehaviorBuilder_cloudfront#getTrustedSigners_java_lang_String_AsList <em>Trusted Signers java lang String As List</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Trusted Signers java lang String As List</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.BehaviorBuilder_cloudfront#getTrustedSigners_java_lang_String_AsList()
+	 * @see #getBehaviorBuilder_cloudfront()
+	 * @generated
+	 */
+	EAttribute getBehaviorBuilder_cloudfront_TrustedSigners_java_lang_String_AsList();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.BehaviorBuilder_cloudfront#getGeneratedClassName <em>Generated Class Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Generated Class Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.BehaviorBuilder_cloudfront#getGeneratedClassName()
+	 * @see #getBehaviorBuilder_cloudfront()
+	 * @generated
+	 */
+	EAttribute getBehaviorBuilder_cloudfront_GeneratedClassName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.BehaviorBuilder_cloudfront#getVarName <em>Var Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Var Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.BehaviorBuilder_cloudfront#getVarName()
+	 * @see #getBehaviorBuilder_cloudfront()
+	 * @generated
+	 */
+	EAttribute getBehaviorBuilder_cloudfront_VarName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.BehaviorBuilder_cloudfront#getIdentifier <em>Identifier</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Identifier</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.BehaviorBuilder_cloudfront#getIdentifier()
+	 * @see #getBehaviorBuilder_cloudfront()
+	 * @generated
+	 */
+	EAttribute getBehaviorBuilder_cloudfront_Identifier();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.BehaviorBuilder_cloudfront#getAdditionalCode <em>Additional Code</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Additional Code</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.BehaviorBuilder_cloudfront#getAdditionalCode()
+	 * @see #getBehaviorBuilder_cloudfront()
+	 * @generated
+	 */
+	EAttribute getBehaviorBuilder_cloudfront_AdditionalCode();
+
+	/**
+	 * Returns the meta object for class '{@link com.amazon.aws.workbench.model.awsworkbench.CustomOriginConfigBuilder_cloudfront <em>Custom Origin Config Builder cloudfront</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Custom Origin Config Builder cloudfront</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.CustomOriginConfigBuilder_cloudfront
+	 * @generated
+	 */
+	EClass getCustomOriginConfigBuilder_cloudfront();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.CustomOriginConfigBuilder_cloudfront#getDomainName_java_lang_String_ <em>Domain Name java lang String </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Domain Name java lang String </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.CustomOriginConfigBuilder_cloudfront#getDomainName_java_lang_String_()
+	 * @see #getCustomOriginConfigBuilder_cloudfront()
+	 * @generated
+	 */
+	EAttribute getCustomOriginConfigBuilder_cloudfront_DomainName_java_lang_String_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.CustomOriginConfigBuilder_cloudfront#getAllowedOriginSslVersions_software_amazon_awscdk_services_cloudfront_OriginSslPolicy_AsList <em>Allowed Origin Ssl Versions software amazon awscdk services cloudfront Origin Ssl Policy As List</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Allowed Origin Ssl Versions software amazon awscdk services cloudfront Origin Ssl Policy As List</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.CustomOriginConfigBuilder_cloudfront#getAllowedOriginSslVersions_software_amazon_awscdk_services_cloudfront_OriginSslPolicy_AsList()
+	 * @see #getCustomOriginConfigBuilder_cloudfront()
+	 * @generated
+	 */
+	EAttribute getCustomOriginConfigBuilder_cloudfront_AllowedOriginSslVersions_software_amazon_awscdk_services_cloudfront_OriginSslPolicy_AsList();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.CustomOriginConfigBuilder_cloudfront#getHttpPort_java_lang_Number_ <em>Http Port java lang Number </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Http Port java lang Number </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.CustomOriginConfigBuilder_cloudfront#getHttpPort_java_lang_Number_()
+	 * @see #getCustomOriginConfigBuilder_cloudfront()
+	 * @generated
+	 */
+	EAttribute getCustomOriginConfigBuilder_cloudfront_HttpPort_java_lang_Number_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.CustomOriginConfigBuilder_cloudfront#getHttpsPort_java_lang_Number_ <em>Https Port java lang Number </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Https Port java lang Number </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.CustomOriginConfigBuilder_cloudfront#getHttpsPort_java_lang_Number_()
+	 * @see #getCustomOriginConfigBuilder_cloudfront()
+	 * @generated
+	 */
+	EAttribute getCustomOriginConfigBuilder_cloudfront_HttpsPort_java_lang_Number_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.CustomOriginConfigBuilder_cloudfront#getOriginKeepaliveTimeoutWithDuration_software_amazon_awscdk_core_Duration_AsReference <em>Origin Keepalive Timeout With Duration software amazon awscdk core Duration As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Origin Keepalive Timeout With Duration software amazon awscdk core Duration As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.CustomOriginConfigBuilder_cloudfront#getOriginKeepaliveTimeoutWithDuration_software_amazon_awscdk_core_Duration_AsReference()
+	 * @see #getCustomOriginConfigBuilder_cloudfront()
+	 * @generated
+	 */
+	EAttribute getCustomOriginConfigBuilder_cloudfront_OriginKeepaliveTimeoutWithDuration_software_amazon_awscdk_core_Duration_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.CustomOriginConfigBuilder_cloudfront#getOriginProtocolPolicy_software_amazon_awscdk_services_cloudfront_OriginProtocolPolicy_ <em>Origin Protocol Policy software amazon awscdk services cloudfront Origin Protocol Policy </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Origin Protocol Policy software amazon awscdk services cloudfront Origin Protocol Policy </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.CustomOriginConfigBuilder_cloudfront#getOriginProtocolPolicy_software_amazon_awscdk_services_cloudfront_OriginProtocolPolicy_()
+	 * @see #getCustomOriginConfigBuilder_cloudfront()
+	 * @generated
+	 */
+	EAttribute getCustomOriginConfigBuilder_cloudfront_OriginProtocolPolicy_software_amazon_awscdk_services_cloudfront_OriginProtocolPolicy_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.CustomOriginConfigBuilder_cloudfront#getOriginReadTimeoutWithDuration_software_amazon_awscdk_core_Duration_AsReference <em>Origin Read Timeout With Duration software amazon awscdk core Duration As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Origin Read Timeout With Duration software amazon awscdk core Duration As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.CustomOriginConfigBuilder_cloudfront#getOriginReadTimeoutWithDuration_software_amazon_awscdk_core_Duration_AsReference()
+	 * @see #getCustomOriginConfigBuilder_cloudfront()
+	 * @generated
+	 */
+	EAttribute getCustomOriginConfigBuilder_cloudfront_OriginReadTimeoutWithDuration_software_amazon_awscdk_core_Duration_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.CustomOriginConfigBuilder_cloudfront#getGeneratedClassName <em>Generated Class Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Generated Class Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.CustomOriginConfigBuilder_cloudfront#getGeneratedClassName()
+	 * @see #getCustomOriginConfigBuilder_cloudfront()
+	 * @generated
+	 */
+	EAttribute getCustomOriginConfigBuilder_cloudfront_GeneratedClassName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.CustomOriginConfigBuilder_cloudfront#getVarName <em>Var Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Var Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.CustomOriginConfigBuilder_cloudfront#getVarName()
+	 * @see #getCustomOriginConfigBuilder_cloudfront()
+	 * @generated
+	 */
+	EAttribute getCustomOriginConfigBuilder_cloudfront_VarName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.CustomOriginConfigBuilder_cloudfront#getIdentifier <em>Identifier</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Identifier</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.CustomOriginConfigBuilder_cloudfront#getIdentifier()
+	 * @see #getCustomOriginConfigBuilder_cloudfront()
+	 * @generated
+	 */
+	EAttribute getCustomOriginConfigBuilder_cloudfront_Identifier();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.CustomOriginConfigBuilder_cloudfront#getAdditionalCode <em>Additional Code</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Additional Code</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.CustomOriginConfigBuilder_cloudfront#getAdditionalCode()
+	 * @see #getCustomOriginConfigBuilder_cloudfront()
+	 * @generated
+	 */
+	EAttribute getCustomOriginConfigBuilder_cloudfront_AdditionalCode();
+
+	/**
+	 * Returns the meta object for class '{@link com.amazon.aws.workbench.model.awsworkbench.BlockPublicAccessBuilder_s3 <em>Block Public Access Builder s3</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Block Public Access Builder s3</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.BlockPublicAccessBuilder_s3
+	 * @generated
+	 */
+	EClass getBlockPublicAccessBuilder_s3();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.BlockPublicAccessBuilder_s3#getBlockPublicAcls_java_lang_Boolean_ <em>Block Public Acls java lang Boolean </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Block Public Acls java lang Boolean </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.BlockPublicAccessBuilder_s3#getBlockPublicAcls_java_lang_Boolean_()
+	 * @see #getBlockPublicAccessBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getBlockPublicAccessBuilder_s3_BlockPublicAcls_java_lang_Boolean_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.BlockPublicAccessBuilder_s3#getBlockPublicPolicy_java_lang_Boolean_ <em>Block Public Policy java lang Boolean </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Block Public Policy java lang Boolean </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.BlockPublicAccessBuilder_s3#getBlockPublicPolicy_java_lang_Boolean_()
+	 * @see #getBlockPublicAccessBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getBlockPublicAccessBuilder_s3_BlockPublicPolicy_java_lang_Boolean_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.BlockPublicAccessBuilder_s3#getIgnorePublicAcls_java_lang_Boolean_ <em>Ignore Public Acls java lang Boolean </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Ignore Public Acls java lang Boolean </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.BlockPublicAccessBuilder_s3#getIgnorePublicAcls_java_lang_Boolean_()
+	 * @see #getBlockPublicAccessBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getBlockPublicAccessBuilder_s3_IgnorePublicAcls_java_lang_Boolean_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.BlockPublicAccessBuilder_s3#getRestrictPublicBuckets_java_lang_Boolean_ <em>Restrict Public Buckets java lang Boolean </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Restrict Public Buckets java lang Boolean </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.BlockPublicAccessBuilder_s3#getRestrictPublicBuckets_java_lang_Boolean_()
+	 * @see #getBlockPublicAccessBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getBlockPublicAccessBuilder_s3_RestrictPublicBuckets_java_lang_Boolean_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.BlockPublicAccessBuilder_s3#getGeneratedClassName <em>Generated Class Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Generated Class Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.BlockPublicAccessBuilder_s3#getGeneratedClassName()
+	 * @see #getBlockPublicAccessBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getBlockPublicAccessBuilder_s3_GeneratedClassName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.BlockPublicAccessBuilder_s3#getVarName <em>Var Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Var Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.BlockPublicAccessBuilder_s3#getVarName()
+	 * @see #getBlockPublicAccessBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getBlockPublicAccessBuilder_s3_VarName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.BlockPublicAccessBuilder_s3#getIdentifier <em>Identifier</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Identifier</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.BlockPublicAccessBuilder_s3#getIdentifier()
+	 * @see #getBlockPublicAccessBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getBlockPublicAccessBuilder_s3_Identifier();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.BlockPublicAccessBuilder_s3#getAdditionalCode <em>Additional Code</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Additional Code</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.BlockPublicAccessBuilder_s3#getAdditionalCode()
+	 * @see #getBlockPublicAccessBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getBlockPublicAccessBuilder_s3_AdditionalCode();
+
+	/**
+	 * Returns the meta object for class '{@link com.amazon.aws.workbench.model.awsworkbench.CorsRuleBuilder_s3 <em>Cors Rule Builder s3</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Cors Rule Builder s3</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.CorsRuleBuilder_s3
+	 * @generated
+	 */
+	EClass getCorsRuleBuilder_s3();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.CorsRuleBuilder_s3#getAllowedMethods_software_amazon_awscdk_services_s3_HttpMethods_AsList <em>Allowed Methods software amazon awscdk services s3 Http Methods As List</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Allowed Methods software amazon awscdk services s3 Http Methods As List</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.CorsRuleBuilder_s3#getAllowedMethods_software_amazon_awscdk_services_s3_HttpMethods_AsList()
+	 * @see #getCorsRuleBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getCorsRuleBuilder_s3_AllowedMethods_software_amazon_awscdk_services_s3_HttpMethods_AsList();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.CorsRuleBuilder_s3#getAllowedOrigins_java_lang_String_AsList <em>Allowed Origins java lang String As List</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Allowed Origins java lang String As List</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.CorsRuleBuilder_s3#getAllowedOrigins_java_lang_String_AsList()
+	 * @see #getCorsRuleBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getCorsRuleBuilder_s3_AllowedOrigins_java_lang_String_AsList();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.CorsRuleBuilder_s3#getAllowedHeaders_java_lang_String_AsList <em>Allowed Headers java lang String As List</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Allowed Headers java lang String As List</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.CorsRuleBuilder_s3#getAllowedHeaders_java_lang_String_AsList()
+	 * @see #getCorsRuleBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getCorsRuleBuilder_s3_AllowedHeaders_java_lang_String_AsList();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.CorsRuleBuilder_s3#getExposedHeaders_java_lang_String_AsList <em>Exposed Headers java lang String As List</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Exposed Headers java lang String As List</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.CorsRuleBuilder_s3#getExposedHeaders_java_lang_String_AsList()
+	 * @see #getCorsRuleBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getCorsRuleBuilder_s3_ExposedHeaders_java_lang_String_AsList();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.CorsRuleBuilder_s3#getId_java_lang_String_ <em>Id java lang String </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Id java lang String </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.CorsRuleBuilder_s3#getId_java_lang_String_()
+	 * @see #getCorsRuleBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getCorsRuleBuilder_s3_Id_java_lang_String_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.CorsRuleBuilder_s3#getMaxAge_java_lang_Number_ <em>Max Age java lang Number </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Max Age java lang Number </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.CorsRuleBuilder_s3#getMaxAge_java_lang_Number_()
+	 * @see #getCorsRuleBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getCorsRuleBuilder_s3_MaxAge_java_lang_Number_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.CorsRuleBuilder_s3#getGeneratedClassName <em>Generated Class Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Generated Class Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.CorsRuleBuilder_s3#getGeneratedClassName()
+	 * @see #getCorsRuleBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getCorsRuleBuilder_s3_GeneratedClassName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.CorsRuleBuilder_s3#getVarName <em>Var Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Var Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.CorsRuleBuilder_s3#getVarName()
+	 * @see #getCorsRuleBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getCorsRuleBuilder_s3_VarName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.CorsRuleBuilder_s3#getIdentifier <em>Identifier</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Identifier</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.CorsRuleBuilder_s3#getIdentifier()
+	 * @see #getCorsRuleBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getCorsRuleBuilder_s3_Identifier();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.CorsRuleBuilder_s3#getAdditionalCode <em>Additional Code</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Additional Code</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.CorsRuleBuilder_s3#getAdditionalCode()
+	 * @see #getCorsRuleBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getCorsRuleBuilder_s3_AdditionalCode();
+
+	/**
+	 * Returns the meta object for class '{@link com.amazon.aws.workbench.model.awsworkbench.NoncurrentVersionTransitionBuilder_s3 <em>Noncurrent Version Transition Builder s3</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Noncurrent Version Transition Builder s3</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.NoncurrentVersionTransitionBuilder_s3
+	 * @generated
+	 */
+	EClass getNoncurrentVersionTransitionBuilder_s3();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.NoncurrentVersionTransitionBuilder_s3#getStorageClassWithStorageClass_software_amazon_awscdk_services_s3_StorageClass_AsReference <em>Storage Class With Storage Class software amazon awscdk services s3 Storage Class As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Storage Class With Storage Class software amazon awscdk services s3 Storage Class As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.NoncurrentVersionTransitionBuilder_s3#getStorageClassWithStorageClass_software_amazon_awscdk_services_s3_StorageClass_AsReference()
+	 * @see #getNoncurrentVersionTransitionBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getNoncurrentVersionTransitionBuilder_s3_StorageClassWithStorageClass_software_amazon_awscdk_services_s3_StorageClass_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.NoncurrentVersionTransitionBuilder_s3#getTransitionAfterWithDuration_software_amazon_awscdk_core_Duration_AsReference <em>Transition After With Duration software amazon awscdk core Duration As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Transition After With Duration software amazon awscdk core Duration As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.NoncurrentVersionTransitionBuilder_s3#getTransitionAfterWithDuration_software_amazon_awscdk_core_Duration_AsReference()
+	 * @see #getNoncurrentVersionTransitionBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getNoncurrentVersionTransitionBuilder_s3_TransitionAfterWithDuration_software_amazon_awscdk_core_Duration_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.NoncurrentVersionTransitionBuilder_s3#getGeneratedClassName <em>Generated Class Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Generated Class Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.NoncurrentVersionTransitionBuilder_s3#getGeneratedClassName()
+	 * @see #getNoncurrentVersionTransitionBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getNoncurrentVersionTransitionBuilder_s3_GeneratedClassName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.NoncurrentVersionTransitionBuilder_s3#getVarName <em>Var Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Var Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.NoncurrentVersionTransitionBuilder_s3#getVarName()
+	 * @see #getNoncurrentVersionTransitionBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getNoncurrentVersionTransitionBuilder_s3_VarName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.NoncurrentVersionTransitionBuilder_s3#getIdentifier <em>Identifier</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Identifier</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.NoncurrentVersionTransitionBuilder_s3#getIdentifier()
+	 * @see #getNoncurrentVersionTransitionBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getNoncurrentVersionTransitionBuilder_s3_Identifier();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.NoncurrentVersionTransitionBuilder_s3#getAdditionalCode <em>Additional Code</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Additional Code</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.NoncurrentVersionTransitionBuilder_s3#getAdditionalCode()
+	 * @see #getNoncurrentVersionTransitionBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getNoncurrentVersionTransitionBuilder_s3_AdditionalCode();
+
+	/**
+	 * Returns the meta object for class '{@link com.amazon.aws.workbench.model.awsworkbench.TransitionBuilder_s3 <em>Transition Builder s3</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Transition Builder s3</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.TransitionBuilder_s3
+	 * @generated
+	 */
+	EClass getTransitionBuilder_s3();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.TransitionBuilder_s3#getStorageClassWithStorageClass_software_amazon_awscdk_services_s3_StorageClass_AsReference <em>Storage Class With Storage Class software amazon awscdk services s3 Storage Class As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Storage Class With Storage Class software amazon awscdk services s3 Storage Class As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.TransitionBuilder_s3#getStorageClassWithStorageClass_software_amazon_awscdk_services_s3_StorageClass_AsReference()
+	 * @see #getTransitionBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getTransitionBuilder_s3_StorageClassWithStorageClass_software_amazon_awscdk_services_s3_StorageClass_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.TransitionBuilder_s3#getTransitionAfterWithDuration_software_amazon_awscdk_core_Duration_AsReference <em>Transition After With Duration software amazon awscdk core Duration As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Transition After With Duration software amazon awscdk core Duration As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.TransitionBuilder_s3#getTransitionAfterWithDuration_software_amazon_awscdk_core_Duration_AsReference()
+	 * @see #getTransitionBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getTransitionBuilder_s3_TransitionAfterWithDuration_software_amazon_awscdk_core_Duration_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.TransitionBuilder_s3#getTransitionDateWithInstant_java_time_Instant_AsReference <em>Transition Date With Instant java time Instant As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Transition Date With Instant java time Instant As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.TransitionBuilder_s3#getTransitionDateWithInstant_java_time_Instant_AsReference()
+	 * @see #getTransitionBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getTransitionBuilder_s3_TransitionDateWithInstant_java_time_Instant_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.TransitionBuilder_s3#getGeneratedClassName <em>Generated Class Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Generated Class Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.TransitionBuilder_s3#getGeneratedClassName()
+	 * @see #getTransitionBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getTransitionBuilder_s3_GeneratedClassName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.TransitionBuilder_s3#getVarName <em>Var Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Var Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.TransitionBuilder_s3#getVarName()
+	 * @see #getTransitionBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getTransitionBuilder_s3_VarName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.TransitionBuilder_s3#getIdentifier <em>Identifier</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Identifier</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.TransitionBuilder_s3#getIdentifier()
+	 * @see #getTransitionBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getTransitionBuilder_s3_Identifier();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.TransitionBuilder_s3#getAdditionalCode <em>Additional Code</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Additional Code</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.TransitionBuilder_s3#getAdditionalCode()
+	 * @see #getTransitionBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getTransitionBuilder_s3_AdditionalCode();
+
+	/**
+	 * Returns the meta object for class '{@link com.amazon.aws.workbench.model.awsworkbench.LifecycleRuleBuilder_s3 <em>Lifecycle Rule Builder s3</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Lifecycle Rule Builder s3</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.LifecycleRuleBuilder_s3
+	 * @generated
+	 */
+	EClass getLifecycleRuleBuilder_s3();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.LifecycleRuleBuilder_s3#getAbortIncompleteMultipartUploadAfterWithDuration_software_amazon_awscdk_core_Duration_AsReference <em>Abort Incomplete Multipart Upload After With Duration software amazon awscdk core Duration As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Abort Incomplete Multipart Upload After With Duration software amazon awscdk core Duration As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.LifecycleRuleBuilder_s3#getAbortIncompleteMultipartUploadAfterWithDuration_software_amazon_awscdk_core_Duration_AsReference()
+	 * @see #getLifecycleRuleBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getLifecycleRuleBuilder_s3_AbortIncompleteMultipartUploadAfterWithDuration_software_amazon_awscdk_core_Duration_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.LifecycleRuleBuilder_s3#getEnabled_java_lang_Boolean_ <em>Enabled java lang Boolean </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Enabled java lang Boolean </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.LifecycleRuleBuilder_s3#getEnabled_java_lang_Boolean_()
+	 * @see #getLifecycleRuleBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getLifecycleRuleBuilder_s3_Enabled_java_lang_Boolean_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.LifecycleRuleBuilder_s3#getExpirationWithDuration_software_amazon_awscdk_core_Duration_AsReference <em>Expiration With Duration software amazon awscdk core Duration As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Expiration With Duration software amazon awscdk core Duration As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.LifecycleRuleBuilder_s3#getExpirationWithDuration_software_amazon_awscdk_core_Duration_AsReference()
+	 * @see #getLifecycleRuleBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getLifecycleRuleBuilder_s3_ExpirationWithDuration_software_amazon_awscdk_core_Duration_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.LifecycleRuleBuilder_s3#getExpirationDateWithInstant_java_time_Instant_AsReference <em>Expiration Date With Instant java time Instant As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Expiration Date With Instant java time Instant As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.LifecycleRuleBuilder_s3#getExpirationDateWithInstant_java_time_Instant_AsReference()
+	 * @see #getLifecycleRuleBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getLifecycleRuleBuilder_s3_ExpirationDateWithInstant_java_time_Instant_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.LifecycleRuleBuilder_s3#getId_java_lang_String_ <em>Id java lang String </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Id java lang String </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.LifecycleRuleBuilder_s3#getId_java_lang_String_()
+	 * @see #getLifecycleRuleBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getLifecycleRuleBuilder_s3_Id_java_lang_String_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.LifecycleRuleBuilder_s3#getNoncurrentVersionExpirationWithDuration_software_amazon_awscdk_core_Duration_AsReference <em>Noncurrent Version Expiration With Duration software amazon awscdk core Duration As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Noncurrent Version Expiration With Duration software amazon awscdk core Duration As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.LifecycleRuleBuilder_s3#getNoncurrentVersionExpirationWithDuration_software_amazon_awscdk_core_Duration_AsReference()
+	 * @see #getLifecycleRuleBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getLifecycleRuleBuilder_s3_NoncurrentVersionExpirationWithDuration_software_amazon_awscdk_core_Duration_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.LifecycleRuleBuilder_s3#getNoncurrentVersionTransitions_software_amazon_awscdk_services_s3_NoncurrentVersionTransition_AsList <em>Noncurrent Version Transitions software amazon awscdk services s3 Noncurrent Version Transition As List</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Noncurrent Version Transitions software amazon awscdk services s3 Noncurrent Version Transition As List</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.LifecycleRuleBuilder_s3#getNoncurrentVersionTransitions_software_amazon_awscdk_services_s3_NoncurrentVersionTransition_AsList()
+	 * @see #getLifecycleRuleBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getLifecycleRuleBuilder_s3_NoncurrentVersionTransitions_software_amazon_awscdk_services_s3_NoncurrentVersionTransition_AsList();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.LifecycleRuleBuilder_s3#getPrefix_java_lang_String_ <em>Prefix java lang String </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Prefix java lang String </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.LifecycleRuleBuilder_s3#getPrefix_java_lang_String_()
+	 * @see #getLifecycleRuleBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getLifecycleRuleBuilder_s3_Prefix_java_lang_String_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.LifecycleRuleBuilder_s3#getTagFilters_java_lang_String__java_lang_Object_AsMap <em>Tag Filters java lang String java lang Object As Map</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Tag Filters java lang String java lang Object As Map</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.LifecycleRuleBuilder_s3#getTagFilters_java_lang_String__java_lang_Object_AsMap()
+	 * @see #getLifecycleRuleBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getLifecycleRuleBuilder_s3_TagFilters_java_lang_String__java_lang_Object_AsMap();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.LifecycleRuleBuilder_s3#getTransitions_software_amazon_awscdk_services_s3_Transition_AsList <em>Transitions software amazon awscdk services s3 Transition As List</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Transitions software amazon awscdk services s3 Transition As List</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.LifecycleRuleBuilder_s3#getTransitions_software_amazon_awscdk_services_s3_Transition_AsList()
+	 * @see #getLifecycleRuleBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getLifecycleRuleBuilder_s3_Transitions_software_amazon_awscdk_services_s3_Transition_AsList();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.LifecycleRuleBuilder_s3#getGeneratedClassName <em>Generated Class Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Generated Class Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.LifecycleRuleBuilder_s3#getGeneratedClassName()
+	 * @see #getLifecycleRuleBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getLifecycleRuleBuilder_s3_GeneratedClassName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.LifecycleRuleBuilder_s3#getVarName <em>Var Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Var Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.LifecycleRuleBuilder_s3#getVarName()
+	 * @see #getLifecycleRuleBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getLifecycleRuleBuilder_s3_VarName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.LifecycleRuleBuilder_s3#getIdentifier <em>Identifier</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Identifier</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.LifecycleRuleBuilder_s3#getIdentifier()
+	 * @see #getLifecycleRuleBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getLifecycleRuleBuilder_s3_Identifier();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.LifecycleRuleBuilder_s3#getAdditionalCode <em>Additional Code</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Additional Code</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.LifecycleRuleBuilder_s3#getAdditionalCode()
+	 * @see #getLifecycleRuleBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getLifecycleRuleBuilder_s3_AdditionalCode();
+
+	/**
+	 * Returns the meta object for class '{@link com.amazon.aws.workbench.model.awsworkbench.BucketMetricsBuilder_s3 <em>Bucket Metrics Builder s3</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Bucket Metrics Builder s3</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.BucketMetricsBuilder_s3
+	 * @generated
+	 */
+	EClass getBucketMetricsBuilder_s3();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.BucketMetricsBuilder_s3#getId_java_lang_String_ <em>Id java lang String </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Id java lang String </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.BucketMetricsBuilder_s3#getId_java_lang_String_()
+	 * @see #getBucketMetricsBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getBucketMetricsBuilder_s3_Id_java_lang_String_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.BucketMetricsBuilder_s3#getPrefix_java_lang_String_ <em>Prefix java lang String </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Prefix java lang String </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.BucketMetricsBuilder_s3#getPrefix_java_lang_String_()
+	 * @see #getBucketMetricsBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getBucketMetricsBuilder_s3_Prefix_java_lang_String_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.BucketMetricsBuilder_s3#getTagFilters_java_lang_String__java_lang_Object_AsMap <em>Tag Filters java lang String java lang Object As Map</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Tag Filters java lang String java lang Object As Map</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.BucketMetricsBuilder_s3#getTagFilters_java_lang_String__java_lang_Object_AsMap()
+	 * @see #getBucketMetricsBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getBucketMetricsBuilder_s3_TagFilters_java_lang_String__java_lang_Object_AsMap();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.BucketMetricsBuilder_s3#getGeneratedClassName <em>Generated Class Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Generated Class Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.BucketMetricsBuilder_s3#getGeneratedClassName()
+	 * @see #getBucketMetricsBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getBucketMetricsBuilder_s3_GeneratedClassName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.BucketMetricsBuilder_s3#getVarName <em>Var Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Var Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.BucketMetricsBuilder_s3#getVarName()
+	 * @see #getBucketMetricsBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getBucketMetricsBuilder_s3_VarName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.BucketMetricsBuilder_s3#getIdentifier <em>Identifier</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Identifier</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.BucketMetricsBuilder_s3#getIdentifier()
+	 * @see #getBucketMetricsBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getBucketMetricsBuilder_s3_Identifier();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.BucketMetricsBuilder_s3#getAdditionalCode <em>Additional Code</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Additional Code</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.BucketMetricsBuilder_s3#getAdditionalCode()
+	 * @see #getBucketMetricsBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getBucketMetricsBuilder_s3_AdditionalCode();
+
+	/**
+	 * Returns the meta object for class '{@link com.amazon.aws.workbench.model.awsworkbench.RedirectTargetBuilder_s3 <em>Redirect Target Builder s3</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Redirect Target Builder s3</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.RedirectTargetBuilder_s3
+	 * @generated
+	 */
+	EClass getRedirectTargetBuilder_s3();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.RedirectTargetBuilder_s3#getHostName_java_lang_String_ <em>Host Name java lang String </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Host Name java lang String </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.RedirectTargetBuilder_s3#getHostName_java_lang_String_()
+	 * @see #getRedirectTargetBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getRedirectTargetBuilder_s3_HostName_java_lang_String_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.RedirectTargetBuilder_s3#getProtocol_software_amazon_awscdk_services_s3_RedirectProtocol_ <em>Protocol software amazon awscdk services s3 Redirect Protocol </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Protocol software amazon awscdk services s3 Redirect Protocol </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.RedirectTargetBuilder_s3#getProtocol_software_amazon_awscdk_services_s3_RedirectProtocol_()
+	 * @see #getRedirectTargetBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getRedirectTargetBuilder_s3_Protocol_software_amazon_awscdk_services_s3_RedirectProtocol_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.RedirectTargetBuilder_s3#getGeneratedClassName <em>Generated Class Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Generated Class Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.RedirectTargetBuilder_s3#getGeneratedClassName()
+	 * @see #getRedirectTargetBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getRedirectTargetBuilder_s3_GeneratedClassName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.RedirectTargetBuilder_s3#getVarName <em>Var Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Var Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.RedirectTargetBuilder_s3#getVarName()
+	 * @see #getRedirectTargetBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getRedirectTargetBuilder_s3_VarName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.RedirectTargetBuilder_s3#getIdentifier <em>Identifier</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Identifier</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.RedirectTargetBuilder_s3#getIdentifier()
+	 * @see #getRedirectTargetBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getRedirectTargetBuilder_s3_Identifier();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.RedirectTargetBuilder_s3#getAdditionalCode <em>Additional Code</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Additional Code</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.RedirectTargetBuilder_s3#getAdditionalCode()
+	 * @see #getRedirectTargetBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getRedirectTargetBuilder_s3_AdditionalCode();
+
+	/**
+	 * Returns the meta object for class '{@link com.amazon.aws.workbench.model.awsworkbench.RoutingRuleConditionBuilder_s3 <em>Routing Rule Condition Builder s3</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Routing Rule Condition Builder s3</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.RoutingRuleConditionBuilder_s3
+	 * @generated
+	 */
+	EClass getRoutingRuleConditionBuilder_s3();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.RoutingRuleConditionBuilder_s3#getHttpErrorCodeReturnedEquals_java_lang_String_ <em>Http Error Code Returned Equals java lang String </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Http Error Code Returned Equals java lang String </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.RoutingRuleConditionBuilder_s3#getHttpErrorCodeReturnedEquals_java_lang_String_()
+	 * @see #getRoutingRuleConditionBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getRoutingRuleConditionBuilder_s3_HttpErrorCodeReturnedEquals_java_lang_String_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.RoutingRuleConditionBuilder_s3#getKeyPrefixEquals_java_lang_String_ <em>Key Prefix Equals java lang String </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Key Prefix Equals java lang String </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.RoutingRuleConditionBuilder_s3#getKeyPrefixEquals_java_lang_String_()
+	 * @see #getRoutingRuleConditionBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getRoutingRuleConditionBuilder_s3_KeyPrefixEquals_java_lang_String_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.RoutingRuleConditionBuilder_s3#getGeneratedClassName <em>Generated Class Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Generated Class Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.RoutingRuleConditionBuilder_s3#getGeneratedClassName()
+	 * @see #getRoutingRuleConditionBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getRoutingRuleConditionBuilder_s3_GeneratedClassName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.RoutingRuleConditionBuilder_s3#getVarName <em>Var Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Var Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.RoutingRuleConditionBuilder_s3#getVarName()
+	 * @see #getRoutingRuleConditionBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getRoutingRuleConditionBuilder_s3_VarName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.RoutingRuleConditionBuilder_s3#getIdentifier <em>Identifier</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Identifier</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.RoutingRuleConditionBuilder_s3#getIdentifier()
+	 * @see #getRoutingRuleConditionBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getRoutingRuleConditionBuilder_s3_Identifier();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.RoutingRuleConditionBuilder_s3#getAdditionalCode <em>Additional Code</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Additional Code</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.RoutingRuleConditionBuilder_s3#getAdditionalCode()
+	 * @see #getRoutingRuleConditionBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getRoutingRuleConditionBuilder_s3_AdditionalCode();
+
+	/**
+	 * Returns the meta object for class '{@link com.amazon.aws.workbench.model.awsworkbench.RoutingRuleBuilder_s3 <em>Routing Rule Builder s3</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Routing Rule Builder s3</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.RoutingRuleBuilder_s3
+	 * @generated
+	 */
+	EClass getRoutingRuleBuilder_s3();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.RoutingRuleBuilder_s3#getConditionWithRoutingRuleCondition_software_amazon_awscdk_services_s3_RoutingRuleCondition_AsReference <em>Condition With Routing Rule Condition software amazon awscdk services s3 Routing Rule Condition As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Condition With Routing Rule Condition software amazon awscdk services s3 Routing Rule Condition As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.RoutingRuleBuilder_s3#getConditionWithRoutingRuleCondition_software_amazon_awscdk_services_s3_RoutingRuleCondition_AsReference()
+	 * @see #getRoutingRuleBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getRoutingRuleBuilder_s3_ConditionWithRoutingRuleCondition_software_amazon_awscdk_services_s3_RoutingRuleCondition_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.RoutingRuleBuilder_s3#getHostName_java_lang_String_ <em>Host Name java lang String </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Host Name java lang String </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.RoutingRuleBuilder_s3#getHostName_java_lang_String_()
+	 * @see #getRoutingRuleBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getRoutingRuleBuilder_s3_HostName_java_lang_String_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.RoutingRuleBuilder_s3#getHttpRedirectCode_java_lang_String_ <em>Http Redirect Code java lang String </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Http Redirect Code java lang String </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.RoutingRuleBuilder_s3#getHttpRedirectCode_java_lang_String_()
+	 * @see #getRoutingRuleBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getRoutingRuleBuilder_s3_HttpRedirectCode_java_lang_String_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.RoutingRuleBuilder_s3#getProtocol_software_amazon_awscdk_services_s3_RedirectProtocol_ <em>Protocol software amazon awscdk services s3 Redirect Protocol </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Protocol software amazon awscdk services s3 Redirect Protocol </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.RoutingRuleBuilder_s3#getProtocol_software_amazon_awscdk_services_s3_RedirectProtocol_()
+	 * @see #getRoutingRuleBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getRoutingRuleBuilder_s3_Protocol_software_amazon_awscdk_services_s3_RedirectProtocol_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.RoutingRuleBuilder_s3#getReplaceKeyWithReplaceKey_software_amazon_awscdk_services_s3_ReplaceKey_AsReference <em>Replace Key With Replace Key software amazon awscdk services s3 Replace Key As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Replace Key With Replace Key software amazon awscdk services s3 Replace Key As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.RoutingRuleBuilder_s3#getReplaceKeyWithReplaceKey_software_amazon_awscdk_services_s3_ReplaceKey_AsReference()
+	 * @see #getRoutingRuleBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getRoutingRuleBuilder_s3_ReplaceKeyWithReplaceKey_software_amazon_awscdk_services_s3_ReplaceKey_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.RoutingRuleBuilder_s3#getGeneratedClassName <em>Generated Class Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Generated Class Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.RoutingRuleBuilder_s3#getGeneratedClassName()
+	 * @see #getRoutingRuleBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getRoutingRuleBuilder_s3_GeneratedClassName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.RoutingRuleBuilder_s3#getVarName <em>Var Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Var Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.RoutingRuleBuilder_s3#getVarName()
+	 * @see #getRoutingRuleBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getRoutingRuleBuilder_s3_VarName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.RoutingRuleBuilder_s3#getIdentifier <em>Identifier</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Identifier</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.RoutingRuleBuilder_s3#getIdentifier()
+	 * @see #getRoutingRuleBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getRoutingRuleBuilder_s3_Identifier();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.RoutingRuleBuilder_s3#getAdditionalCode <em>Additional Code</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Additional Code</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.RoutingRuleBuilder_s3#getAdditionalCode()
+	 * @see #getRoutingRuleBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getRoutingRuleBuilder_s3_AdditionalCode();
+
+	/**
+	 * Returns the meta object for class '{@link com.amazon.aws.workbench.model.awsworkbench.BucketBuilder_s3 <em>Bucket Builder s3</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Bucket Builder s3</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.BucketBuilder_s3
+	 * @generated
+	 */
+	EClass getBucketBuilder_s3();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.BucketBuilder_s3#getAccessControl_software_amazon_awscdk_services_s3_BucketAccessControl_ <em>Access Control software amazon awscdk services s3 Bucket Access Control </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Access Control software amazon awscdk services s3 Bucket Access Control </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.BucketBuilder_s3#getAccessControl_software_amazon_awscdk_services_s3_BucketAccessControl_()
+	 * @see #getBucketBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getBucketBuilder_s3_AccessControl_software_amazon_awscdk_services_s3_BucketAccessControl_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.BucketBuilder_s3#getBlockPublicAccessWithBlockPublicAccess_software_amazon_awscdk_services_s3_BlockPublicAccess_AsReference <em>Block Public Access With Block Public Access software amazon awscdk services s3 Block Public Access As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Block Public Access With Block Public Access software amazon awscdk services s3 Block Public Access As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.BucketBuilder_s3#getBlockPublicAccessWithBlockPublicAccess_software_amazon_awscdk_services_s3_BlockPublicAccess_AsReference()
+	 * @see #getBucketBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getBucketBuilder_s3_BlockPublicAccessWithBlockPublicAccess_software_amazon_awscdk_services_s3_BlockPublicAccess_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.BucketBuilder_s3#getBucketName_java_lang_String_ <em>Bucket Name java lang String </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Bucket Name java lang String </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.BucketBuilder_s3#getBucketName_java_lang_String_()
+	 * @see #getBucketBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getBucketBuilder_s3_BucketName_java_lang_String_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.BucketBuilder_s3#getCors_software_amazon_awscdk_services_s3_CorsRule_AsList <em>Cors software amazon awscdk services s3 Cors Rule As List</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Cors software amazon awscdk services s3 Cors Rule As List</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.BucketBuilder_s3#getCors_software_amazon_awscdk_services_s3_CorsRule_AsList()
+	 * @see #getBucketBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getBucketBuilder_s3_Cors_software_amazon_awscdk_services_s3_CorsRule_AsList();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.BucketBuilder_s3#getEncryption_software_amazon_awscdk_services_s3_BucketEncryption_ <em>Encryption software amazon awscdk services s3 Bucket Encryption </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Encryption software amazon awscdk services s3 Bucket Encryption </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.BucketBuilder_s3#getEncryption_software_amazon_awscdk_services_s3_BucketEncryption_()
+	 * @see #getBucketBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getBucketBuilder_s3_Encryption_software_amazon_awscdk_services_s3_BucketEncryption_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.BucketBuilder_s3#getEncryptionKeyWithIKey_software_amazon_awscdk_services_kms_IKey_AsReference <em>Encryption Key With IKey software amazon awscdk services kms IKey As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Encryption Key With IKey software amazon awscdk services kms IKey As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.BucketBuilder_s3#getEncryptionKeyWithIKey_software_amazon_awscdk_services_kms_IKey_AsReference()
+	 * @see #getBucketBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getBucketBuilder_s3_EncryptionKeyWithIKey_software_amazon_awscdk_services_kms_IKey_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.BucketBuilder_s3#getLifecycleRules_software_amazon_awscdk_services_s3_LifecycleRule_AsList <em>Lifecycle Rules software amazon awscdk services s3 Lifecycle Rule As List</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Lifecycle Rules software amazon awscdk services s3 Lifecycle Rule As List</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.BucketBuilder_s3#getLifecycleRules_software_amazon_awscdk_services_s3_LifecycleRule_AsList()
+	 * @see #getBucketBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getBucketBuilder_s3_LifecycleRules_software_amazon_awscdk_services_s3_LifecycleRule_AsList();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.BucketBuilder_s3#getMetrics_software_amazon_awscdk_services_s3_BucketMetrics_AsList <em>Metrics software amazon awscdk services s3 Bucket Metrics As List</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Metrics software amazon awscdk services s3 Bucket Metrics As List</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.BucketBuilder_s3#getMetrics_software_amazon_awscdk_services_s3_BucketMetrics_AsList()
+	 * @see #getBucketBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getBucketBuilder_s3_Metrics_software_amazon_awscdk_services_s3_BucketMetrics_AsList();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.BucketBuilder_s3#getPublicReadAccess_java_lang_Boolean_ <em>Public Read Access java lang Boolean </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Public Read Access java lang Boolean </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.BucketBuilder_s3#getPublicReadAccess_java_lang_Boolean_()
+	 * @see #getBucketBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getBucketBuilder_s3_PublicReadAccess_java_lang_Boolean_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.BucketBuilder_s3#getRemovalPolicy_software_amazon_awscdk_core_RemovalPolicy_ <em>Removal Policy software amazon awscdk core Removal Policy </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Removal Policy software amazon awscdk core Removal Policy </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.BucketBuilder_s3#getRemovalPolicy_software_amazon_awscdk_core_RemovalPolicy_()
+	 * @see #getBucketBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getBucketBuilder_s3_RemovalPolicy_software_amazon_awscdk_core_RemovalPolicy_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.BucketBuilder_s3#getServerAccessLogsBucketWithIBucket_software_amazon_awscdk_services_s3_IBucket_AsReference <em>Server Access Logs Bucket With IBucket software amazon awscdk services s3 IBucket As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Server Access Logs Bucket With IBucket software amazon awscdk services s3 IBucket As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.BucketBuilder_s3#getServerAccessLogsBucketWithIBucket_software_amazon_awscdk_services_s3_IBucket_AsReference()
+	 * @see #getBucketBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getBucketBuilder_s3_ServerAccessLogsBucketWithIBucket_software_amazon_awscdk_services_s3_IBucket_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.BucketBuilder_s3#getServerAccessLogsPrefix_java_lang_String_ <em>Server Access Logs Prefix java lang String </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Server Access Logs Prefix java lang String </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.BucketBuilder_s3#getServerAccessLogsPrefix_java_lang_String_()
+	 * @see #getBucketBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getBucketBuilder_s3_ServerAccessLogsPrefix_java_lang_String_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.BucketBuilder_s3#getVersioned_java_lang_Boolean_ <em>Versioned java lang Boolean </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Versioned java lang Boolean </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.BucketBuilder_s3#getVersioned_java_lang_Boolean_()
+	 * @see #getBucketBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getBucketBuilder_s3_Versioned_java_lang_Boolean_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.BucketBuilder_s3#getWebsiteErrorDocument_java_lang_String_ <em>Website Error Document java lang String </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Website Error Document java lang String </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.BucketBuilder_s3#getWebsiteErrorDocument_java_lang_String_()
+	 * @see #getBucketBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getBucketBuilder_s3_WebsiteErrorDocument_java_lang_String_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.BucketBuilder_s3#getWebsiteIndexDocument_java_lang_String_ <em>Website Index Document java lang String </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Website Index Document java lang String </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.BucketBuilder_s3#getWebsiteIndexDocument_java_lang_String_()
+	 * @see #getBucketBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getBucketBuilder_s3_WebsiteIndexDocument_java_lang_String_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.BucketBuilder_s3#getWebsiteRedirectWithRedirectTarget_software_amazon_awscdk_services_s3_RedirectTarget_AsReference <em>Website Redirect With Redirect Target software amazon awscdk services s3 Redirect Target As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Website Redirect With Redirect Target software amazon awscdk services s3 Redirect Target As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.BucketBuilder_s3#getWebsiteRedirectWithRedirectTarget_software_amazon_awscdk_services_s3_RedirectTarget_AsReference()
+	 * @see #getBucketBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getBucketBuilder_s3_WebsiteRedirectWithRedirectTarget_software_amazon_awscdk_services_s3_RedirectTarget_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.BucketBuilder_s3#getWebsiteRoutingRules_software_amazon_awscdk_services_s3_RoutingRule_AsList <em>Website Routing Rules software amazon awscdk services s3 Routing Rule As List</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Website Routing Rules software amazon awscdk services s3 Routing Rule As List</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.BucketBuilder_s3#getWebsiteRoutingRules_software_amazon_awscdk_services_s3_RoutingRule_AsList()
+	 * @see #getBucketBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getBucketBuilder_s3_WebsiteRoutingRules_software_amazon_awscdk_services_s3_RoutingRule_AsList();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.BucketBuilder_s3#getGeneratedClassName <em>Generated Class Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Generated Class Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.BucketBuilder_s3#getGeneratedClassName()
+	 * @see #getBucketBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getBucketBuilder_s3_GeneratedClassName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.BucketBuilder_s3#getVarName <em>Var Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Var Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.BucketBuilder_s3#getVarName()
+	 * @see #getBucketBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getBucketBuilder_s3_VarName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.BucketBuilder_s3#getIdentifier <em>Identifier</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Identifier</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.BucketBuilder_s3#getIdentifier()
+	 * @see #getBucketBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getBucketBuilder_s3_Identifier();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.BucketBuilder_s3#getAdditionalCode <em>Additional Code</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Additional Code</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.BucketBuilder_s3#getAdditionalCode()
+	 * @see #getBucketBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getBucketBuilder_s3_AdditionalCode();
+
+	/**
+	 * Returns the meta object for class '{@link com.amazon.aws.workbench.model.awsworkbench.BucketPropsBuilder_s3 <em>Bucket Props Builder s3</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Bucket Props Builder s3</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.BucketPropsBuilder_s3
+	 * @generated
+	 */
+	EClass getBucketPropsBuilder_s3();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.BucketPropsBuilder_s3#getAccessControl_software_amazon_awscdk_services_s3_BucketAccessControl_ <em>Access Control software amazon awscdk services s3 Bucket Access Control </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Access Control software amazon awscdk services s3 Bucket Access Control </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.BucketPropsBuilder_s3#getAccessControl_software_amazon_awscdk_services_s3_BucketAccessControl_()
+	 * @see #getBucketPropsBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getBucketPropsBuilder_s3_AccessControl_software_amazon_awscdk_services_s3_BucketAccessControl_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.BucketPropsBuilder_s3#getBlockPublicAccessWithBlockPublicAccess_software_amazon_awscdk_services_s3_BlockPublicAccess_AsReference <em>Block Public Access With Block Public Access software amazon awscdk services s3 Block Public Access As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Block Public Access With Block Public Access software amazon awscdk services s3 Block Public Access As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.BucketPropsBuilder_s3#getBlockPublicAccessWithBlockPublicAccess_software_amazon_awscdk_services_s3_BlockPublicAccess_AsReference()
+	 * @see #getBucketPropsBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getBucketPropsBuilder_s3_BlockPublicAccessWithBlockPublicAccess_software_amazon_awscdk_services_s3_BlockPublicAccess_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.BucketPropsBuilder_s3#getBucketName_java_lang_String_ <em>Bucket Name java lang String </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Bucket Name java lang String </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.BucketPropsBuilder_s3#getBucketName_java_lang_String_()
+	 * @see #getBucketPropsBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getBucketPropsBuilder_s3_BucketName_java_lang_String_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.BucketPropsBuilder_s3#getCors_software_amazon_awscdk_services_s3_CorsRule_AsList <em>Cors software amazon awscdk services s3 Cors Rule As List</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Cors software amazon awscdk services s3 Cors Rule As List</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.BucketPropsBuilder_s3#getCors_software_amazon_awscdk_services_s3_CorsRule_AsList()
+	 * @see #getBucketPropsBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getBucketPropsBuilder_s3_Cors_software_amazon_awscdk_services_s3_CorsRule_AsList();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.BucketPropsBuilder_s3#getEncryption_software_amazon_awscdk_services_s3_BucketEncryption_ <em>Encryption software amazon awscdk services s3 Bucket Encryption </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Encryption software amazon awscdk services s3 Bucket Encryption </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.BucketPropsBuilder_s3#getEncryption_software_amazon_awscdk_services_s3_BucketEncryption_()
+	 * @see #getBucketPropsBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getBucketPropsBuilder_s3_Encryption_software_amazon_awscdk_services_s3_BucketEncryption_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.BucketPropsBuilder_s3#getEncryptionKeyWithIKey_software_amazon_awscdk_services_kms_IKey_AsReference <em>Encryption Key With IKey software amazon awscdk services kms IKey As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Encryption Key With IKey software amazon awscdk services kms IKey As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.BucketPropsBuilder_s3#getEncryptionKeyWithIKey_software_amazon_awscdk_services_kms_IKey_AsReference()
+	 * @see #getBucketPropsBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getBucketPropsBuilder_s3_EncryptionKeyWithIKey_software_amazon_awscdk_services_kms_IKey_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.BucketPropsBuilder_s3#getLifecycleRules_software_amazon_awscdk_services_s3_LifecycleRule_AsList <em>Lifecycle Rules software amazon awscdk services s3 Lifecycle Rule As List</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Lifecycle Rules software amazon awscdk services s3 Lifecycle Rule As List</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.BucketPropsBuilder_s3#getLifecycleRules_software_amazon_awscdk_services_s3_LifecycleRule_AsList()
+	 * @see #getBucketPropsBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getBucketPropsBuilder_s3_LifecycleRules_software_amazon_awscdk_services_s3_LifecycleRule_AsList();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.BucketPropsBuilder_s3#getMetrics_software_amazon_awscdk_services_s3_BucketMetrics_AsList <em>Metrics software amazon awscdk services s3 Bucket Metrics As List</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Metrics software amazon awscdk services s3 Bucket Metrics As List</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.BucketPropsBuilder_s3#getMetrics_software_amazon_awscdk_services_s3_BucketMetrics_AsList()
+	 * @see #getBucketPropsBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getBucketPropsBuilder_s3_Metrics_software_amazon_awscdk_services_s3_BucketMetrics_AsList();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.BucketPropsBuilder_s3#getPublicReadAccess_java_lang_Boolean_ <em>Public Read Access java lang Boolean </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Public Read Access java lang Boolean </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.BucketPropsBuilder_s3#getPublicReadAccess_java_lang_Boolean_()
+	 * @see #getBucketPropsBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getBucketPropsBuilder_s3_PublicReadAccess_java_lang_Boolean_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.BucketPropsBuilder_s3#getRemovalPolicy_software_amazon_awscdk_core_RemovalPolicy_ <em>Removal Policy software amazon awscdk core Removal Policy </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Removal Policy software amazon awscdk core Removal Policy </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.BucketPropsBuilder_s3#getRemovalPolicy_software_amazon_awscdk_core_RemovalPolicy_()
+	 * @see #getBucketPropsBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getBucketPropsBuilder_s3_RemovalPolicy_software_amazon_awscdk_core_RemovalPolicy_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.BucketPropsBuilder_s3#getServerAccessLogsBucketWithIBucket_software_amazon_awscdk_services_s3_IBucket_AsReference <em>Server Access Logs Bucket With IBucket software amazon awscdk services s3 IBucket As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Server Access Logs Bucket With IBucket software amazon awscdk services s3 IBucket As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.BucketPropsBuilder_s3#getServerAccessLogsBucketWithIBucket_software_amazon_awscdk_services_s3_IBucket_AsReference()
+	 * @see #getBucketPropsBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getBucketPropsBuilder_s3_ServerAccessLogsBucketWithIBucket_software_amazon_awscdk_services_s3_IBucket_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.BucketPropsBuilder_s3#getServerAccessLogsPrefix_java_lang_String_ <em>Server Access Logs Prefix java lang String </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Server Access Logs Prefix java lang String </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.BucketPropsBuilder_s3#getServerAccessLogsPrefix_java_lang_String_()
+	 * @see #getBucketPropsBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getBucketPropsBuilder_s3_ServerAccessLogsPrefix_java_lang_String_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.BucketPropsBuilder_s3#getVersioned_java_lang_Boolean_ <em>Versioned java lang Boolean </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Versioned java lang Boolean </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.BucketPropsBuilder_s3#getVersioned_java_lang_Boolean_()
+	 * @see #getBucketPropsBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getBucketPropsBuilder_s3_Versioned_java_lang_Boolean_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.BucketPropsBuilder_s3#getWebsiteErrorDocument_java_lang_String_ <em>Website Error Document java lang String </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Website Error Document java lang String </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.BucketPropsBuilder_s3#getWebsiteErrorDocument_java_lang_String_()
+	 * @see #getBucketPropsBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getBucketPropsBuilder_s3_WebsiteErrorDocument_java_lang_String_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.BucketPropsBuilder_s3#getWebsiteIndexDocument_java_lang_String_ <em>Website Index Document java lang String </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Website Index Document java lang String </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.BucketPropsBuilder_s3#getWebsiteIndexDocument_java_lang_String_()
+	 * @see #getBucketPropsBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getBucketPropsBuilder_s3_WebsiteIndexDocument_java_lang_String_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.BucketPropsBuilder_s3#getWebsiteRedirectWithRedirectTarget_software_amazon_awscdk_services_s3_RedirectTarget_AsReference <em>Website Redirect With Redirect Target software amazon awscdk services s3 Redirect Target As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Website Redirect With Redirect Target software amazon awscdk services s3 Redirect Target As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.BucketPropsBuilder_s3#getWebsiteRedirectWithRedirectTarget_software_amazon_awscdk_services_s3_RedirectTarget_AsReference()
+	 * @see #getBucketPropsBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getBucketPropsBuilder_s3_WebsiteRedirectWithRedirectTarget_software_amazon_awscdk_services_s3_RedirectTarget_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.BucketPropsBuilder_s3#getWebsiteRoutingRules_software_amazon_awscdk_services_s3_RoutingRule_AsList <em>Website Routing Rules software amazon awscdk services s3 Routing Rule As List</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Website Routing Rules software amazon awscdk services s3 Routing Rule As List</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.BucketPropsBuilder_s3#getWebsiteRoutingRules_software_amazon_awscdk_services_s3_RoutingRule_AsList()
+	 * @see #getBucketPropsBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getBucketPropsBuilder_s3_WebsiteRoutingRules_software_amazon_awscdk_services_s3_RoutingRule_AsList();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.BucketPropsBuilder_s3#getGeneratedClassName <em>Generated Class Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Generated Class Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.BucketPropsBuilder_s3#getGeneratedClassName()
+	 * @see #getBucketPropsBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getBucketPropsBuilder_s3_GeneratedClassName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.BucketPropsBuilder_s3#getVarName <em>Var Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Var Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.BucketPropsBuilder_s3#getVarName()
+	 * @see #getBucketPropsBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getBucketPropsBuilder_s3_VarName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.BucketPropsBuilder_s3#getIdentifier <em>Identifier</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Identifier</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.BucketPropsBuilder_s3#getIdentifier()
+	 * @see #getBucketPropsBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getBucketPropsBuilder_s3_Identifier();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.BucketPropsBuilder_s3#getAdditionalCode <em>Additional Code</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Additional Code</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.BucketPropsBuilder_s3#getAdditionalCode()
+	 * @see #getBucketPropsBuilder_s3()
+	 * @generated
+	 */
+	EAttribute getBucketPropsBuilder_s3_AdditionalCode();
+
+	/**
+	 * Returns the meta object for class '{@link com.amazon.aws.workbench.model.awsworkbench.OriginAccessIdentityBuilder_cloudfront <em>Origin Access Identity Builder cloudfront</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Origin Access Identity Builder cloudfront</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.OriginAccessIdentityBuilder_cloudfront
+	 * @generated
+	 */
+	EClass getOriginAccessIdentityBuilder_cloudfront();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.OriginAccessIdentityBuilder_cloudfront#getComment_java_lang_String_ <em>Comment java lang String </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Comment java lang String </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.OriginAccessIdentityBuilder_cloudfront#getComment_java_lang_String_()
+	 * @see #getOriginAccessIdentityBuilder_cloudfront()
+	 * @generated
+	 */
+	EAttribute getOriginAccessIdentityBuilder_cloudfront_Comment_java_lang_String_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.OriginAccessIdentityBuilder_cloudfront#getGeneratedClassName <em>Generated Class Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Generated Class Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.OriginAccessIdentityBuilder_cloudfront#getGeneratedClassName()
+	 * @see #getOriginAccessIdentityBuilder_cloudfront()
+	 * @generated
+	 */
+	EAttribute getOriginAccessIdentityBuilder_cloudfront_GeneratedClassName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.OriginAccessIdentityBuilder_cloudfront#getVarName <em>Var Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Var Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.OriginAccessIdentityBuilder_cloudfront#getVarName()
+	 * @see #getOriginAccessIdentityBuilder_cloudfront()
+	 * @generated
+	 */
+	EAttribute getOriginAccessIdentityBuilder_cloudfront_VarName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.OriginAccessIdentityBuilder_cloudfront#getIdentifier <em>Identifier</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Identifier</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.OriginAccessIdentityBuilder_cloudfront#getIdentifier()
+	 * @see #getOriginAccessIdentityBuilder_cloudfront()
+	 * @generated
+	 */
+	EAttribute getOriginAccessIdentityBuilder_cloudfront_Identifier();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.OriginAccessIdentityBuilder_cloudfront#getAdditionalCode <em>Additional Code</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Additional Code</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.OriginAccessIdentityBuilder_cloudfront#getAdditionalCode()
+	 * @see #getOriginAccessIdentityBuilder_cloudfront()
+	 * @generated
+	 */
+	EAttribute getOriginAccessIdentityBuilder_cloudfront_AdditionalCode();
+
+	/**
+	 * Returns the meta object for class '{@link com.amazon.aws.workbench.model.awsworkbench.S3OriginConfigBuilder_cloudfront <em>S3 Origin Config Builder cloudfront</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>S3 Origin Config Builder cloudfront</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.S3OriginConfigBuilder_cloudfront
+	 * @generated
+	 */
+	EClass getS3OriginConfigBuilder_cloudfront();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.S3OriginConfigBuilder_cloudfront#getS3BucketSourceWithIBucket_software_amazon_awscdk_services_s3_IBucket_AsReference <em>S3 Bucket Source With IBucket software amazon awscdk services s3 IBucket As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>S3 Bucket Source With IBucket software amazon awscdk services s3 IBucket As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.S3OriginConfigBuilder_cloudfront#getS3BucketSourceWithIBucket_software_amazon_awscdk_services_s3_IBucket_AsReference()
+	 * @see #getS3OriginConfigBuilder_cloudfront()
+	 * @generated
+	 */
+	EAttribute getS3OriginConfigBuilder_cloudfront_S3BucketSourceWithIBucket_software_amazon_awscdk_services_s3_IBucket_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.S3OriginConfigBuilder_cloudfront#getOriginAccessIdentityWithIOriginAccessIdentity_software_amazon_awscdk_services_cloudfront_IOriginAccessIdentity_AsReference <em>Origin Access Identity With IOrigin Access Identity software amazon awscdk services cloudfront IOrigin Access Identity As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Origin Access Identity With IOrigin Access Identity software amazon awscdk services cloudfront IOrigin Access Identity As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.S3OriginConfigBuilder_cloudfront#getOriginAccessIdentityWithIOriginAccessIdentity_software_amazon_awscdk_services_cloudfront_IOriginAccessIdentity_AsReference()
+	 * @see #getS3OriginConfigBuilder_cloudfront()
+	 * @generated
+	 */
+	EAttribute getS3OriginConfigBuilder_cloudfront_OriginAccessIdentityWithIOriginAccessIdentity_software_amazon_awscdk_services_cloudfront_IOriginAccessIdentity_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.S3OriginConfigBuilder_cloudfront#getGeneratedClassName <em>Generated Class Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Generated Class Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.S3OriginConfigBuilder_cloudfront#getGeneratedClassName()
+	 * @see #getS3OriginConfigBuilder_cloudfront()
+	 * @generated
+	 */
+	EAttribute getS3OriginConfigBuilder_cloudfront_GeneratedClassName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.S3OriginConfigBuilder_cloudfront#getVarName <em>Var Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Var Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.S3OriginConfigBuilder_cloudfront#getVarName()
+	 * @see #getS3OriginConfigBuilder_cloudfront()
+	 * @generated
+	 */
+	EAttribute getS3OriginConfigBuilder_cloudfront_VarName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.S3OriginConfigBuilder_cloudfront#getIdentifier <em>Identifier</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Identifier</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.S3OriginConfigBuilder_cloudfront#getIdentifier()
+	 * @see #getS3OriginConfigBuilder_cloudfront()
+	 * @generated
+	 */
+	EAttribute getS3OriginConfigBuilder_cloudfront_Identifier();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.S3OriginConfigBuilder_cloudfront#getAdditionalCode <em>Additional Code</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Additional Code</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.S3OriginConfigBuilder_cloudfront#getAdditionalCode()
+	 * @see #getS3OriginConfigBuilder_cloudfront()
+	 * @generated
+	 */
+	EAttribute getS3OriginConfigBuilder_cloudfront_AdditionalCode();
+
+	/**
+	 * Returns the meta object for class '{@link com.amazon.aws.workbench.model.awsworkbench.SourceConfigurationBuilder_cloudfront <em>Source Configuration Builder cloudfront</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Source Configuration Builder cloudfront</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.SourceConfigurationBuilder_cloudfront
+	 * @generated
+	 */
+	EClass getSourceConfigurationBuilder_cloudfront();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.SourceConfigurationBuilder_cloudfront#getBehaviors_software_amazon_awscdk_services_cloudfront_Behavior_AsList <em>Behaviors software amazon awscdk services cloudfront Behavior As List</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Behaviors software amazon awscdk services cloudfront Behavior As List</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.SourceConfigurationBuilder_cloudfront#getBehaviors_software_amazon_awscdk_services_cloudfront_Behavior_AsList()
+	 * @see #getSourceConfigurationBuilder_cloudfront()
+	 * @generated
+	 */
+	EAttribute getSourceConfigurationBuilder_cloudfront_Behaviors_software_amazon_awscdk_services_cloudfront_Behavior_AsList();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.SourceConfigurationBuilder_cloudfront#getCustomOriginSourceWithCustomOriginConfig_software_amazon_awscdk_services_cloudfront_CustomOriginConfig_AsReference <em>Custom Origin Source With Custom Origin Config software amazon awscdk services cloudfront Custom Origin Config As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Custom Origin Source With Custom Origin Config software amazon awscdk services cloudfront Custom Origin Config As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.SourceConfigurationBuilder_cloudfront#getCustomOriginSourceWithCustomOriginConfig_software_amazon_awscdk_services_cloudfront_CustomOriginConfig_AsReference()
+	 * @see #getSourceConfigurationBuilder_cloudfront()
+	 * @generated
+	 */
+	EAttribute getSourceConfigurationBuilder_cloudfront_CustomOriginSourceWithCustomOriginConfig_software_amazon_awscdk_services_cloudfront_CustomOriginConfig_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.SourceConfigurationBuilder_cloudfront#getOriginHeaders_java_lang_String__java_lang_String_AsMap <em>Origin Headers java lang String java lang String As Map</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Origin Headers java lang String java lang String As Map</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.SourceConfigurationBuilder_cloudfront#getOriginHeaders_java_lang_String__java_lang_String_AsMap()
+	 * @see #getSourceConfigurationBuilder_cloudfront()
+	 * @generated
+	 */
+	EAttribute getSourceConfigurationBuilder_cloudfront_OriginHeaders_java_lang_String__java_lang_String_AsMap();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.SourceConfigurationBuilder_cloudfront#getOriginPath_java_lang_String_ <em>Origin Path java lang String </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Origin Path java lang String </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.SourceConfigurationBuilder_cloudfront#getOriginPath_java_lang_String_()
+	 * @see #getSourceConfigurationBuilder_cloudfront()
+	 * @generated
+	 */
+	EAttribute getSourceConfigurationBuilder_cloudfront_OriginPath_java_lang_String_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.SourceConfigurationBuilder_cloudfront#getS3OriginSourceWithS3OriginConfig_software_amazon_awscdk_services_cloudfront_S3OriginConfig_AsReference <em>S3 Origin Source With S3 Origin Config software amazon awscdk services cloudfront S3 Origin Config As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>S3 Origin Source With S3 Origin Config software amazon awscdk services cloudfront S3 Origin Config As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.SourceConfigurationBuilder_cloudfront#getS3OriginSourceWithS3OriginConfig_software_amazon_awscdk_services_cloudfront_S3OriginConfig_AsReference()
+	 * @see #getSourceConfigurationBuilder_cloudfront()
+	 * @generated
+	 */
+	EAttribute getSourceConfigurationBuilder_cloudfront_S3OriginSourceWithS3OriginConfig_software_amazon_awscdk_services_cloudfront_S3OriginConfig_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.SourceConfigurationBuilder_cloudfront#getGeneratedClassName <em>Generated Class Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Generated Class Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.SourceConfigurationBuilder_cloudfront#getGeneratedClassName()
+	 * @see #getSourceConfigurationBuilder_cloudfront()
+	 * @generated
+	 */
+	EAttribute getSourceConfigurationBuilder_cloudfront_GeneratedClassName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.SourceConfigurationBuilder_cloudfront#getVarName <em>Var Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Var Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.SourceConfigurationBuilder_cloudfront#getVarName()
+	 * @see #getSourceConfigurationBuilder_cloudfront()
+	 * @generated
+	 */
+	EAttribute getSourceConfigurationBuilder_cloudfront_VarName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.SourceConfigurationBuilder_cloudfront#getIdentifier <em>Identifier</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Identifier</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.SourceConfigurationBuilder_cloudfront#getIdentifier()
+	 * @see #getSourceConfigurationBuilder_cloudfront()
+	 * @generated
+	 */
+	EAttribute getSourceConfigurationBuilder_cloudfront_Identifier();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.SourceConfigurationBuilder_cloudfront#getAdditionalCode <em>Additional Code</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Additional Code</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.SourceConfigurationBuilder_cloudfront#getAdditionalCode()
+	 * @see #getSourceConfigurationBuilder_cloudfront()
+	 * @generated
+	 */
+	EAttribute getSourceConfigurationBuilder_cloudfront_AdditionalCode();
+
+	/**
+	 * Returns the meta object for class '{@link com.amazon.aws.workbench.model.awsworkbench.AliasConfigurationBuilder_cloudfront <em>Alias Configuration Builder cloudfront</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Alias Configuration Builder cloudfront</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AliasConfigurationBuilder_cloudfront
+	 * @generated
+	 */
+	EClass getAliasConfigurationBuilder_cloudfront();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.AliasConfigurationBuilder_cloudfront#getAcmCertRef_java_lang_String_ <em>Acm Cert Ref java lang String </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Acm Cert Ref java lang String </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AliasConfigurationBuilder_cloudfront#getAcmCertRef_java_lang_String_()
+	 * @see #getAliasConfigurationBuilder_cloudfront()
+	 * @generated
+	 */
+	EAttribute getAliasConfigurationBuilder_cloudfront_AcmCertRef_java_lang_String_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.AliasConfigurationBuilder_cloudfront#getNames_java_lang_String_AsList <em>Names java lang String As List</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Names java lang String As List</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AliasConfigurationBuilder_cloudfront#getNames_java_lang_String_AsList()
+	 * @see #getAliasConfigurationBuilder_cloudfront()
+	 * @generated
+	 */
+	EAttribute getAliasConfigurationBuilder_cloudfront_Names_java_lang_String_AsList();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.AliasConfigurationBuilder_cloudfront#getSecurityPolicy_software_amazon_awscdk_services_cloudfront_SecurityPolicyProtocol_ <em>Security Policy software amazon awscdk services cloudfront Security Policy Protocol </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Security Policy software amazon awscdk services cloudfront Security Policy Protocol </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AliasConfigurationBuilder_cloudfront#getSecurityPolicy_software_amazon_awscdk_services_cloudfront_SecurityPolicyProtocol_()
+	 * @see #getAliasConfigurationBuilder_cloudfront()
+	 * @generated
+	 */
+	EAttribute getAliasConfigurationBuilder_cloudfront_SecurityPolicy_software_amazon_awscdk_services_cloudfront_SecurityPolicyProtocol_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.AliasConfigurationBuilder_cloudfront#getSslMethod_software_amazon_awscdk_services_cloudfront_SSLMethod_ <em>Ssl Method software amazon awscdk services cloudfront SSL Method </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Ssl Method software amazon awscdk services cloudfront SSL Method </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AliasConfigurationBuilder_cloudfront#getSslMethod_software_amazon_awscdk_services_cloudfront_SSLMethod_()
+	 * @see #getAliasConfigurationBuilder_cloudfront()
+	 * @generated
+	 */
+	EAttribute getAliasConfigurationBuilder_cloudfront_SslMethod_software_amazon_awscdk_services_cloudfront_SSLMethod_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.AliasConfigurationBuilder_cloudfront#getGeneratedClassName <em>Generated Class Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Generated Class Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AliasConfigurationBuilder_cloudfront#getGeneratedClassName()
+	 * @see #getAliasConfigurationBuilder_cloudfront()
+	 * @generated
+	 */
+	EAttribute getAliasConfigurationBuilder_cloudfront_GeneratedClassName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.AliasConfigurationBuilder_cloudfront#getVarName <em>Var Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Var Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AliasConfigurationBuilder_cloudfront#getVarName()
+	 * @see #getAliasConfigurationBuilder_cloudfront()
+	 * @generated
+	 */
+	EAttribute getAliasConfigurationBuilder_cloudfront_VarName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.AliasConfigurationBuilder_cloudfront#getIdentifier <em>Identifier</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Identifier</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AliasConfigurationBuilder_cloudfront#getIdentifier()
+	 * @see #getAliasConfigurationBuilder_cloudfront()
+	 * @generated
+	 */
+	EAttribute getAliasConfigurationBuilder_cloudfront_Identifier();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.AliasConfigurationBuilder_cloudfront#getAdditionalCode <em>Additional Code</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Additional Code</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AliasConfigurationBuilder_cloudfront#getAdditionalCode()
+	 * @see #getAliasConfigurationBuilder_cloudfront()
+	 * @generated
+	 */
+	EAttribute getAliasConfigurationBuilder_cloudfront_AdditionalCode();
+
+	/**
+	 * Returns the meta object for class '{@link com.amazon.aws.workbench.model.awsworkbench.LoggingConfigurationBuilder_cloudfront <em>Logging Configuration Builder cloudfront</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Logging Configuration Builder cloudfront</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.LoggingConfigurationBuilder_cloudfront
+	 * @generated
+	 */
+	EClass getLoggingConfigurationBuilder_cloudfront();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.LoggingConfigurationBuilder_cloudfront#getBucketWithIBucket_software_amazon_awscdk_services_s3_IBucket_AsReference <em>Bucket With IBucket software amazon awscdk services s3 IBucket As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Bucket With IBucket software amazon awscdk services s3 IBucket As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.LoggingConfigurationBuilder_cloudfront#getBucketWithIBucket_software_amazon_awscdk_services_s3_IBucket_AsReference()
+	 * @see #getLoggingConfigurationBuilder_cloudfront()
+	 * @generated
+	 */
+	EAttribute getLoggingConfigurationBuilder_cloudfront_BucketWithIBucket_software_amazon_awscdk_services_s3_IBucket_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.LoggingConfigurationBuilder_cloudfront#getIncludeCookies_java_lang_Boolean_ <em>Include Cookies java lang Boolean </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Include Cookies java lang Boolean </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.LoggingConfigurationBuilder_cloudfront#getIncludeCookies_java_lang_Boolean_()
+	 * @see #getLoggingConfigurationBuilder_cloudfront()
+	 * @generated
+	 */
+	EAttribute getLoggingConfigurationBuilder_cloudfront_IncludeCookies_java_lang_Boolean_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.LoggingConfigurationBuilder_cloudfront#getPrefix_java_lang_String_ <em>Prefix java lang String </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Prefix java lang String </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.LoggingConfigurationBuilder_cloudfront#getPrefix_java_lang_String_()
+	 * @see #getLoggingConfigurationBuilder_cloudfront()
+	 * @generated
+	 */
+	EAttribute getLoggingConfigurationBuilder_cloudfront_Prefix_java_lang_String_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.LoggingConfigurationBuilder_cloudfront#getGeneratedClassName <em>Generated Class Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Generated Class Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.LoggingConfigurationBuilder_cloudfront#getGeneratedClassName()
+	 * @see #getLoggingConfigurationBuilder_cloudfront()
+	 * @generated
+	 */
+	EAttribute getLoggingConfigurationBuilder_cloudfront_GeneratedClassName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.LoggingConfigurationBuilder_cloudfront#getVarName <em>Var Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Var Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.LoggingConfigurationBuilder_cloudfront#getVarName()
+	 * @see #getLoggingConfigurationBuilder_cloudfront()
+	 * @generated
+	 */
+	EAttribute getLoggingConfigurationBuilder_cloudfront_VarName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.LoggingConfigurationBuilder_cloudfront#getIdentifier <em>Identifier</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Identifier</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.LoggingConfigurationBuilder_cloudfront#getIdentifier()
+	 * @see #getLoggingConfigurationBuilder_cloudfront()
+	 * @generated
+	 */
+	EAttribute getLoggingConfigurationBuilder_cloudfront_Identifier();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.LoggingConfigurationBuilder_cloudfront#getAdditionalCode <em>Additional Code</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Additional Code</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.LoggingConfigurationBuilder_cloudfront#getAdditionalCode()
+	 * @see #getLoggingConfigurationBuilder_cloudfront()
+	 * @generated
+	 */
+	EAttribute getLoggingConfigurationBuilder_cloudfront_AdditionalCode();
+
+	/**
+	 * Returns the meta object for class '{@link com.amazon.aws.workbench.model.awsworkbench.CloudFrontWebDistributionPropsBuilder_cloudfront <em>Cloud Front Web Distribution Props Builder cloudfront</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Cloud Front Web Distribution Props Builder cloudfront</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.CloudFrontWebDistributionPropsBuilder_cloudfront
+	 * @generated
+	 */
+	EClass getCloudFrontWebDistributionPropsBuilder_cloudfront();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.CloudFrontWebDistributionPropsBuilder_cloudfront#getOriginConfigs_software_amazon_awscdk_services_cloudfront_SourceConfiguration_AsList <em>Origin Configs software amazon awscdk services cloudfront Source Configuration As List</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Origin Configs software amazon awscdk services cloudfront Source Configuration As List</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.CloudFrontWebDistributionPropsBuilder_cloudfront#getOriginConfigs_software_amazon_awscdk_services_cloudfront_SourceConfiguration_AsList()
+	 * @see #getCloudFrontWebDistributionPropsBuilder_cloudfront()
+	 * @generated
+	 */
+	EAttribute getCloudFrontWebDistributionPropsBuilder_cloudfront_OriginConfigs_software_amazon_awscdk_services_cloudfront_SourceConfiguration_AsList();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.CloudFrontWebDistributionPropsBuilder_cloudfront#getAliasConfigurationWithAliasConfiguration_software_amazon_awscdk_services_cloudfront_AliasConfiguration_AsReference <em>Alias Configuration With Alias Configuration software amazon awscdk services cloudfront Alias Configuration As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Alias Configuration With Alias Configuration software amazon awscdk services cloudfront Alias Configuration As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.CloudFrontWebDistributionPropsBuilder_cloudfront#getAliasConfigurationWithAliasConfiguration_software_amazon_awscdk_services_cloudfront_AliasConfiguration_AsReference()
+	 * @see #getCloudFrontWebDistributionPropsBuilder_cloudfront()
+	 * @generated
+	 */
+	EAttribute getCloudFrontWebDistributionPropsBuilder_cloudfront_AliasConfigurationWithAliasConfiguration_software_amazon_awscdk_services_cloudfront_AliasConfiguration_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.CloudFrontWebDistributionPropsBuilder_cloudfront#getComment_java_lang_String_ <em>Comment java lang String </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Comment java lang String </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.CloudFrontWebDistributionPropsBuilder_cloudfront#getComment_java_lang_String_()
+	 * @see #getCloudFrontWebDistributionPropsBuilder_cloudfront()
+	 * @generated
+	 */
+	EAttribute getCloudFrontWebDistributionPropsBuilder_cloudfront_Comment_java_lang_String_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.CloudFrontWebDistributionPropsBuilder_cloudfront#getDefaultRootObject_java_lang_String_ <em>Default Root Object java lang String </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Default Root Object java lang String </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.CloudFrontWebDistributionPropsBuilder_cloudfront#getDefaultRootObject_java_lang_String_()
+	 * @see #getCloudFrontWebDistributionPropsBuilder_cloudfront()
+	 * @generated
+	 */
+	EAttribute getCloudFrontWebDistributionPropsBuilder_cloudfront_DefaultRootObject_java_lang_String_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.CloudFrontWebDistributionPropsBuilder_cloudfront#getEnableIpV6_java_lang_Boolean_ <em>Enable Ip V6 java lang Boolean </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Enable Ip V6 java lang Boolean </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.CloudFrontWebDistributionPropsBuilder_cloudfront#getEnableIpV6_java_lang_Boolean_()
+	 * @see #getCloudFrontWebDistributionPropsBuilder_cloudfront()
+	 * @generated
+	 */
+	EAttribute getCloudFrontWebDistributionPropsBuilder_cloudfront_EnableIpV6_java_lang_Boolean_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.CloudFrontWebDistributionPropsBuilder_cloudfront#getErrorConfigurations_software_amazon_awscdk_services_cloudfront_CfnDistribution_CustomErrorResponseProperty_AsList <em>Error Configurations software amazon awscdk services cloudfront Cfn Distribution Custom Error Response Property As List</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Error Configurations software amazon awscdk services cloudfront Cfn Distribution Custom Error Response Property As List</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.CloudFrontWebDistributionPropsBuilder_cloudfront#getErrorConfigurations_software_amazon_awscdk_services_cloudfront_CfnDistribution_CustomErrorResponseProperty_AsList()
+	 * @see #getCloudFrontWebDistributionPropsBuilder_cloudfront()
+	 * @generated
+	 */
+	EAttribute getCloudFrontWebDistributionPropsBuilder_cloudfront_ErrorConfigurations_software_amazon_awscdk_services_cloudfront_CfnDistribution_CustomErrorResponseProperty_AsList();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.CloudFrontWebDistributionPropsBuilder_cloudfront#getGeoRestrictionWithGeoRestriction_software_amazon_awscdk_services_cloudfront_GeoRestriction_AsReference <em>Geo Restriction With Geo Restriction software amazon awscdk services cloudfront Geo Restriction As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Geo Restriction With Geo Restriction software amazon awscdk services cloudfront Geo Restriction As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.CloudFrontWebDistributionPropsBuilder_cloudfront#getGeoRestrictionWithGeoRestriction_software_amazon_awscdk_services_cloudfront_GeoRestriction_AsReference()
+	 * @see #getCloudFrontWebDistributionPropsBuilder_cloudfront()
+	 * @generated
+	 */
+	EAttribute getCloudFrontWebDistributionPropsBuilder_cloudfront_GeoRestrictionWithGeoRestriction_software_amazon_awscdk_services_cloudfront_GeoRestriction_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.CloudFrontWebDistributionPropsBuilder_cloudfront#getHttpVersion_software_amazon_awscdk_services_cloudfront_HttpVersion_ <em>Http Version software amazon awscdk services cloudfront Http Version </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Http Version software amazon awscdk services cloudfront Http Version </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.CloudFrontWebDistributionPropsBuilder_cloudfront#getHttpVersion_software_amazon_awscdk_services_cloudfront_HttpVersion_()
+	 * @see #getCloudFrontWebDistributionPropsBuilder_cloudfront()
+	 * @generated
+	 */
+	EAttribute getCloudFrontWebDistributionPropsBuilder_cloudfront_HttpVersion_software_amazon_awscdk_services_cloudfront_HttpVersion_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.CloudFrontWebDistributionPropsBuilder_cloudfront#getLoggingConfigWithLoggingConfiguration_software_amazon_awscdk_services_cloudfront_LoggingConfiguration_AsReference <em>Logging Config With Logging Configuration software amazon awscdk services cloudfront Logging Configuration As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Logging Config With Logging Configuration software amazon awscdk services cloudfront Logging Configuration As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.CloudFrontWebDistributionPropsBuilder_cloudfront#getLoggingConfigWithLoggingConfiguration_software_amazon_awscdk_services_cloudfront_LoggingConfiguration_AsReference()
+	 * @see #getCloudFrontWebDistributionPropsBuilder_cloudfront()
+	 * @generated
+	 */
+	EAttribute getCloudFrontWebDistributionPropsBuilder_cloudfront_LoggingConfigWithLoggingConfiguration_software_amazon_awscdk_services_cloudfront_LoggingConfiguration_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.CloudFrontWebDistributionPropsBuilder_cloudfront#getPriceClass_software_amazon_awscdk_services_cloudfront_PriceClass_ <em>Price Class software amazon awscdk services cloudfront Price Class </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Price Class software amazon awscdk services cloudfront Price Class </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.CloudFrontWebDistributionPropsBuilder_cloudfront#getPriceClass_software_amazon_awscdk_services_cloudfront_PriceClass_()
+	 * @see #getCloudFrontWebDistributionPropsBuilder_cloudfront()
+	 * @generated
+	 */
+	EAttribute getCloudFrontWebDistributionPropsBuilder_cloudfront_PriceClass_software_amazon_awscdk_services_cloudfront_PriceClass_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.CloudFrontWebDistributionPropsBuilder_cloudfront#getViewerCertificateWithViewerCertificate_software_amazon_awscdk_services_cloudfront_ViewerCertificate_AsReference <em>Viewer Certificate With Viewer Certificate software amazon awscdk services cloudfront Viewer Certificate As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Viewer Certificate With Viewer Certificate software amazon awscdk services cloudfront Viewer Certificate As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.CloudFrontWebDistributionPropsBuilder_cloudfront#getViewerCertificateWithViewerCertificate_software_amazon_awscdk_services_cloudfront_ViewerCertificate_AsReference()
+	 * @see #getCloudFrontWebDistributionPropsBuilder_cloudfront()
+	 * @generated
+	 */
+	EAttribute getCloudFrontWebDistributionPropsBuilder_cloudfront_ViewerCertificateWithViewerCertificate_software_amazon_awscdk_services_cloudfront_ViewerCertificate_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.CloudFrontWebDistributionPropsBuilder_cloudfront#getViewerProtocolPolicy_software_amazon_awscdk_services_cloudfront_ViewerProtocolPolicy_ <em>Viewer Protocol Policy software amazon awscdk services cloudfront Viewer Protocol Policy </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Viewer Protocol Policy software amazon awscdk services cloudfront Viewer Protocol Policy </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.CloudFrontWebDistributionPropsBuilder_cloudfront#getViewerProtocolPolicy_software_amazon_awscdk_services_cloudfront_ViewerProtocolPolicy_()
+	 * @see #getCloudFrontWebDistributionPropsBuilder_cloudfront()
+	 * @generated
+	 */
+	EAttribute getCloudFrontWebDistributionPropsBuilder_cloudfront_ViewerProtocolPolicy_software_amazon_awscdk_services_cloudfront_ViewerProtocolPolicy_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.CloudFrontWebDistributionPropsBuilder_cloudfront#getWebAclId_java_lang_String_ <em>Web Acl Id java lang String </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Web Acl Id java lang String </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.CloudFrontWebDistributionPropsBuilder_cloudfront#getWebAclId_java_lang_String_()
+	 * @see #getCloudFrontWebDistributionPropsBuilder_cloudfront()
+	 * @generated
+	 */
+	EAttribute getCloudFrontWebDistributionPropsBuilder_cloudfront_WebAclId_java_lang_String_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.CloudFrontWebDistributionPropsBuilder_cloudfront#getGeneratedClassName <em>Generated Class Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Generated Class Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.CloudFrontWebDistributionPropsBuilder_cloudfront#getGeneratedClassName()
+	 * @see #getCloudFrontWebDistributionPropsBuilder_cloudfront()
+	 * @generated
+	 */
+	EAttribute getCloudFrontWebDistributionPropsBuilder_cloudfront_GeneratedClassName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.CloudFrontWebDistributionPropsBuilder_cloudfront#getVarName <em>Var Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Var Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.CloudFrontWebDistributionPropsBuilder_cloudfront#getVarName()
+	 * @see #getCloudFrontWebDistributionPropsBuilder_cloudfront()
+	 * @generated
+	 */
+	EAttribute getCloudFrontWebDistributionPropsBuilder_cloudfront_VarName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.CloudFrontWebDistributionPropsBuilder_cloudfront#getIdentifier <em>Identifier</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Identifier</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.CloudFrontWebDistributionPropsBuilder_cloudfront#getIdentifier()
+	 * @see #getCloudFrontWebDistributionPropsBuilder_cloudfront()
+	 * @generated
+	 */
+	EAttribute getCloudFrontWebDistributionPropsBuilder_cloudfront_Identifier();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.CloudFrontWebDistributionPropsBuilder_cloudfront#getAdditionalCode <em>Additional Code</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Additional Code</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.CloudFrontWebDistributionPropsBuilder_cloudfront#getAdditionalCode()
+	 * @see #getCloudFrontWebDistributionPropsBuilder_cloudfront()
+	 * @generated
+	 */
+	EAttribute getCloudFrontWebDistributionPropsBuilder_cloudfront_AdditionalCode();
 
 	/**
 	 * Returns the meta object for class '{@link com.amazon.aws.workbench.model.awsworkbench.CloudFrontToApiGatewayBuilder_cloudfrontapigateway <em>Cloud Front To Api Gateway Builder cloudfrontapigateway</em>}'.
@@ -16200,6 +25441,1905 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getCloudFrontToS3Builder_cloudfronts3_AdditionalCode();
+
+	/**
+	 * Returns the meta object for class '{@link com.amazon.aws.workbench.model.awsworkbench.AutoVerifiedAttrsBuilder_cognito <em>Auto Verified Attrs Builder cognito</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Auto Verified Attrs Builder cognito</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AutoVerifiedAttrsBuilder_cognito
+	 * @generated
+	 */
+	EClass getAutoVerifiedAttrsBuilder_cognito();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.AutoVerifiedAttrsBuilder_cognito#getEmail_java_lang_Boolean_ <em>Email java lang Boolean </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Email java lang Boolean </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AutoVerifiedAttrsBuilder_cognito#getEmail_java_lang_Boolean_()
+	 * @see #getAutoVerifiedAttrsBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getAutoVerifiedAttrsBuilder_cognito_Email_java_lang_Boolean_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.AutoVerifiedAttrsBuilder_cognito#getPhone_java_lang_Boolean_ <em>Phone java lang Boolean </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Phone java lang Boolean </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AutoVerifiedAttrsBuilder_cognito#getPhone_java_lang_Boolean_()
+	 * @see #getAutoVerifiedAttrsBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getAutoVerifiedAttrsBuilder_cognito_Phone_java_lang_Boolean_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.AutoVerifiedAttrsBuilder_cognito#getGeneratedClassName <em>Generated Class Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Generated Class Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AutoVerifiedAttrsBuilder_cognito#getGeneratedClassName()
+	 * @see #getAutoVerifiedAttrsBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getAutoVerifiedAttrsBuilder_cognito_GeneratedClassName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.AutoVerifiedAttrsBuilder_cognito#getVarName <em>Var Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Var Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AutoVerifiedAttrsBuilder_cognito#getVarName()
+	 * @see #getAutoVerifiedAttrsBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getAutoVerifiedAttrsBuilder_cognito_VarName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.AutoVerifiedAttrsBuilder_cognito#getIdentifier <em>Identifier</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Identifier</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AutoVerifiedAttrsBuilder_cognito#getIdentifier()
+	 * @see #getAutoVerifiedAttrsBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getAutoVerifiedAttrsBuilder_cognito_Identifier();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.AutoVerifiedAttrsBuilder_cognito#getAdditionalCode <em>Additional Code</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Additional Code</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AutoVerifiedAttrsBuilder_cognito#getAdditionalCode()
+	 * @see #getAutoVerifiedAttrsBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getAutoVerifiedAttrsBuilder_cognito_AdditionalCode();
+
+	/**
+	 * Returns the meta object for class '{@link com.amazon.aws.workbench.model.awsworkbench.UserPoolTriggersBuilder_cognito <em>User Pool Triggers Builder cognito</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>User Pool Triggers Builder cognito</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.UserPoolTriggersBuilder_cognito
+	 * @generated
+	 */
+	EClass getUserPoolTriggersBuilder_cognito();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.UserPoolTriggersBuilder_cognito#getCreateAuthChallengeWithIFunction_software_amazon_awscdk_services_lambda_IFunction_AsReference <em>Create Auth Challenge With IFunction software amazon awscdk services lambda IFunction As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Create Auth Challenge With IFunction software amazon awscdk services lambda IFunction As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.UserPoolTriggersBuilder_cognito#getCreateAuthChallengeWithIFunction_software_amazon_awscdk_services_lambda_IFunction_AsReference()
+	 * @see #getUserPoolTriggersBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getUserPoolTriggersBuilder_cognito_CreateAuthChallengeWithIFunction_software_amazon_awscdk_services_lambda_IFunction_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.UserPoolTriggersBuilder_cognito#getCustomMessageWithIFunction_software_amazon_awscdk_services_lambda_IFunction_AsReference <em>Custom Message With IFunction software amazon awscdk services lambda IFunction As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Custom Message With IFunction software amazon awscdk services lambda IFunction As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.UserPoolTriggersBuilder_cognito#getCustomMessageWithIFunction_software_amazon_awscdk_services_lambda_IFunction_AsReference()
+	 * @see #getUserPoolTriggersBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getUserPoolTriggersBuilder_cognito_CustomMessageWithIFunction_software_amazon_awscdk_services_lambda_IFunction_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.UserPoolTriggersBuilder_cognito#getDefineAuthChallengeWithIFunction_software_amazon_awscdk_services_lambda_IFunction_AsReference <em>Define Auth Challenge With IFunction software amazon awscdk services lambda IFunction As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Define Auth Challenge With IFunction software amazon awscdk services lambda IFunction As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.UserPoolTriggersBuilder_cognito#getDefineAuthChallengeWithIFunction_software_amazon_awscdk_services_lambda_IFunction_AsReference()
+	 * @see #getUserPoolTriggersBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getUserPoolTriggersBuilder_cognito_DefineAuthChallengeWithIFunction_software_amazon_awscdk_services_lambda_IFunction_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.UserPoolTriggersBuilder_cognito#getPostAuthenticationWithIFunction_software_amazon_awscdk_services_lambda_IFunction_AsReference <em>Post Authentication With IFunction software amazon awscdk services lambda IFunction As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Post Authentication With IFunction software amazon awscdk services lambda IFunction As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.UserPoolTriggersBuilder_cognito#getPostAuthenticationWithIFunction_software_amazon_awscdk_services_lambda_IFunction_AsReference()
+	 * @see #getUserPoolTriggersBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getUserPoolTriggersBuilder_cognito_PostAuthenticationWithIFunction_software_amazon_awscdk_services_lambda_IFunction_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.UserPoolTriggersBuilder_cognito#getPostConfirmationWithIFunction_software_amazon_awscdk_services_lambda_IFunction_AsReference <em>Post Confirmation With IFunction software amazon awscdk services lambda IFunction As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Post Confirmation With IFunction software amazon awscdk services lambda IFunction As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.UserPoolTriggersBuilder_cognito#getPostConfirmationWithIFunction_software_amazon_awscdk_services_lambda_IFunction_AsReference()
+	 * @see #getUserPoolTriggersBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getUserPoolTriggersBuilder_cognito_PostConfirmationWithIFunction_software_amazon_awscdk_services_lambda_IFunction_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.UserPoolTriggersBuilder_cognito#getPreAuthenticationWithIFunction_software_amazon_awscdk_services_lambda_IFunction_AsReference <em>Pre Authentication With IFunction software amazon awscdk services lambda IFunction As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Pre Authentication With IFunction software amazon awscdk services lambda IFunction As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.UserPoolTriggersBuilder_cognito#getPreAuthenticationWithIFunction_software_amazon_awscdk_services_lambda_IFunction_AsReference()
+	 * @see #getUserPoolTriggersBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getUserPoolTriggersBuilder_cognito_PreAuthenticationWithIFunction_software_amazon_awscdk_services_lambda_IFunction_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.UserPoolTriggersBuilder_cognito#getPreSignUpWithIFunction_software_amazon_awscdk_services_lambda_IFunction_AsReference <em>Pre Sign Up With IFunction software amazon awscdk services lambda IFunction As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Pre Sign Up With IFunction software amazon awscdk services lambda IFunction As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.UserPoolTriggersBuilder_cognito#getPreSignUpWithIFunction_software_amazon_awscdk_services_lambda_IFunction_AsReference()
+	 * @see #getUserPoolTriggersBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getUserPoolTriggersBuilder_cognito_PreSignUpWithIFunction_software_amazon_awscdk_services_lambda_IFunction_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.UserPoolTriggersBuilder_cognito#getPreTokenGenerationWithIFunction_software_amazon_awscdk_services_lambda_IFunction_AsReference <em>Pre Token Generation With IFunction software amazon awscdk services lambda IFunction As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Pre Token Generation With IFunction software amazon awscdk services lambda IFunction As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.UserPoolTriggersBuilder_cognito#getPreTokenGenerationWithIFunction_software_amazon_awscdk_services_lambda_IFunction_AsReference()
+	 * @see #getUserPoolTriggersBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getUserPoolTriggersBuilder_cognito_PreTokenGenerationWithIFunction_software_amazon_awscdk_services_lambda_IFunction_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.UserPoolTriggersBuilder_cognito#getUserMigrationWithIFunction_software_amazon_awscdk_services_lambda_IFunction_AsReference <em>User Migration With IFunction software amazon awscdk services lambda IFunction As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>User Migration With IFunction software amazon awscdk services lambda IFunction As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.UserPoolTriggersBuilder_cognito#getUserMigrationWithIFunction_software_amazon_awscdk_services_lambda_IFunction_AsReference()
+	 * @see #getUserPoolTriggersBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getUserPoolTriggersBuilder_cognito_UserMigrationWithIFunction_software_amazon_awscdk_services_lambda_IFunction_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.UserPoolTriggersBuilder_cognito#getVerifyAuthChallengeResponseWithIFunction_software_amazon_awscdk_services_lambda_IFunction_AsReference <em>Verify Auth Challenge Response With IFunction software amazon awscdk services lambda IFunction As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Verify Auth Challenge Response With IFunction software amazon awscdk services lambda IFunction As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.UserPoolTriggersBuilder_cognito#getVerifyAuthChallengeResponseWithIFunction_software_amazon_awscdk_services_lambda_IFunction_AsReference()
+	 * @see #getUserPoolTriggersBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getUserPoolTriggersBuilder_cognito_VerifyAuthChallengeResponseWithIFunction_software_amazon_awscdk_services_lambda_IFunction_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.UserPoolTriggersBuilder_cognito#getGeneratedClassName <em>Generated Class Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Generated Class Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.UserPoolTriggersBuilder_cognito#getGeneratedClassName()
+	 * @see #getUserPoolTriggersBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getUserPoolTriggersBuilder_cognito_GeneratedClassName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.UserPoolTriggersBuilder_cognito#getVarName <em>Var Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Var Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.UserPoolTriggersBuilder_cognito#getVarName()
+	 * @see #getUserPoolTriggersBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getUserPoolTriggersBuilder_cognito_VarName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.UserPoolTriggersBuilder_cognito#getIdentifier <em>Identifier</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Identifier</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.UserPoolTriggersBuilder_cognito#getIdentifier()
+	 * @see #getUserPoolTriggersBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getUserPoolTriggersBuilder_cognito_Identifier();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.UserPoolTriggersBuilder_cognito#getAdditionalCode <em>Additional Code</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Additional Code</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.UserPoolTriggersBuilder_cognito#getAdditionalCode()
+	 * @see #getUserPoolTriggersBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getUserPoolTriggersBuilder_cognito_AdditionalCode();
+
+	/**
+	 * Returns the meta object for class '{@link com.amazon.aws.workbench.model.awsworkbench.EmailSettingsBuilder_cognito <em>Email Settings Builder cognito</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Email Settings Builder cognito</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.EmailSettingsBuilder_cognito
+	 * @generated
+	 */
+	EClass getEmailSettingsBuilder_cognito();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.EmailSettingsBuilder_cognito#getFrom_java_lang_String_ <em>From java lang String </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>From java lang String </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.EmailSettingsBuilder_cognito#getFrom_java_lang_String_()
+	 * @see #getEmailSettingsBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getEmailSettingsBuilder_cognito_From_java_lang_String_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.EmailSettingsBuilder_cognito#getReplyTo_java_lang_String_ <em>Reply To java lang String </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Reply To java lang String </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.EmailSettingsBuilder_cognito#getReplyTo_java_lang_String_()
+	 * @see #getEmailSettingsBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getEmailSettingsBuilder_cognito_ReplyTo_java_lang_String_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.EmailSettingsBuilder_cognito#getGeneratedClassName <em>Generated Class Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Generated Class Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.EmailSettingsBuilder_cognito#getGeneratedClassName()
+	 * @see #getEmailSettingsBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getEmailSettingsBuilder_cognito_GeneratedClassName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.EmailSettingsBuilder_cognito#getVarName <em>Var Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Var Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.EmailSettingsBuilder_cognito#getVarName()
+	 * @see #getEmailSettingsBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getEmailSettingsBuilder_cognito_VarName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.EmailSettingsBuilder_cognito#getIdentifier <em>Identifier</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Identifier</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.EmailSettingsBuilder_cognito#getIdentifier()
+	 * @see #getEmailSettingsBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getEmailSettingsBuilder_cognito_Identifier();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.EmailSettingsBuilder_cognito#getAdditionalCode <em>Additional Code</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Additional Code</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.EmailSettingsBuilder_cognito#getAdditionalCode()
+	 * @see #getEmailSettingsBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getEmailSettingsBuilder_cognito_AdditionalCode();
+
+	/**
+	 * Returns the meta object for class '{@link com.amazon.aws.workbench.model.awsworkbench.PasswordPolicyBuilder_cognito <em>Password Policy Builder cognito</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Password Policy Builder cognito</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.PasswordPolicyBuilder_cognito
+	 * @generated
+	 */
+	EClass getPasswordPolicyBuilder_cognito();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.PasswordPolicyBuilder_cognito#getMinLength_java_lang_Number_ <em>Min Length java lang Number </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Min Length java lang Number </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.PasswordPolicyBuilder_cognito#getMinLength_java_lang_Number_()
+	 * @see #getPasswordPolicyBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getPasswordPolicyBuilder_cognito_MinLength_java_lang_Number_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.PasswordPolicyBuilder_cognito#getRequireDigits_java_lang_Boolean_ <em>Require Digits java lang Boolean </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Require Digits java lang Boolean </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.PasswordPolicyBuilder_cognito#getRequireDigits_java_lang_Boolean_()
+	 * @see #getPasswordPolicyBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getPasswordPolicyBuilder_cognito_RequireDigits_java_lang_Boolean_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.PasswordPolicyBuilder_cognito#getRequireLowercase_java_lang_Boolean_ <em>Require Lowercase java lang Boolean </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Require Lowercase java lang Boolean </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.PasswordPolicyBuilder_cognito#getRequireLowercase_java_lang_Boolean_()
+	 * @see #getPasswordPolicyBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getPasswordPolicyBuilder_cognito_RequireLowercase_java_lang_Boolean_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.PasswordPolicyBuilder_cognito#getRequireSymbols_java_lang_Boolean_ <em>Require Symbols java lang Boolean </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Require Symbols java lang Boolean </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.PasswordPolicyBuilder_cognito#getRequireSymbols_java_lang_Boolean_()
+	 * @see #getPasswordPolicyBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getPasswordPolicyBuilder_cognito_RequireSymbols_java_lang_Boolean_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.PasswordPolicyBuilder_cognito#getRequireUppercase_java_lang_Boolean_ <em>Require Uppercase java lang Boolean </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Require Uppercase java lang Boolean </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.PasswordPolicyBuilder_cognito#getRequireUppercase_java_lang_Boolean_()
+	 * @see #getPasswordPolicyBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getPasswordPolicyBuilder_cognito_RequireUppercase_java_lang_Boolean_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.PasswordPolicyBuilder_cognito#getTempPasswordValidityWithDuration_software_amazon_awscdk_core_Duration_AsReference <em>Temp Password Validity With Duration software amazon awscdk core Duration As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Temp Password Validity With Duration software amazon awscdk core Duration As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.PasswordPolicyBuilder_cognito#getTempPasswordValidityWithDuration_software_amazon_awscdk_core_Duration_AsReference()
+	 * @see #getPasswordPolicyBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getPasswordPolicyBuilder_cognito_TempPasswordValidityWithDuration_software_amazon_awscdk_core_Duration_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.PasswordPolicyBuilder_cognito#getGeneratedClassName <em>Generated Class Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Generated Class Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.PasswordPolicyBuilder_cognito#getGeneratedClassName()
+	 * @see #getPasswordPolicyBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getPasswordPolicyBuilder_cognito_GeneratedClassName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.PasswordPolicyBuilder_cognito#getVarName <em>Var Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Var Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.PasswordPolicyBuilder_cognito#getVarName()
+	 * @see #getPasswordPolicyBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getPasswordPolicyBuilder_cognito_VarName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.PasswordPolicyBuilder_cognito#getIdentifier <em>Identifier</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Identifier</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.PasswordPolicyBuilder_cognito#getIdentifier()
+	 * @see #getPasswordPolicyBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getPasswordPolicyBuilder_cognito_Identifier();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.PasswordPolicyBuilder_cognito#getAdditionalCode <em>Additional Code</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Additional Code</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.PasswordPolicyBuilder_cognito#getAdditionalCode()
+	 * @see #getPasswordPolicyBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getPasswordPolicyBuilder_cognito_AdditionalCode();
+
+	/**
+	 * Returns the meta object for class '{@link com.amazon.aws.workbench.model.awsworkbench.MfaSecondFactorBuilder_cognito <em>Mfa Second Factor Builder cognito</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Mfa Second Factor Builder cognito</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.MfaSecondFactorBuilder_cognito
+	 * @generated
+	 */
+	EClass getMfaSecondFactorBuilder_cognito();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.MfaSecondFactorBuilder_cognito#getOtp_java_lang_Boolean_ <em>Otp java lang Boolean </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Otp java lang Boolean </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.MfaSecondFactorBuilder_cognito#getOtp_java_lang_Boolean_()
+	 * @see #getMfaSecondFactorBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getMfaSecondFactorBuilder_cognito_Otp_java_lang_Boolean_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.MfaSecondFactorBuilder_cognito#getSms_java_lang_Boolean_ <em>Sms java lang Boolean </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Sms java lang Boolean </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.MfaSecondFactorBuilder_cognito#getSms_java_lang_Boolean_()
+	 * @see #getMfaSecondFactorBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getMfaSecondFactorBuilder_cognito_Sms_java_lang_Boolean_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.MfaSecondFactorBuilder_cognito#getGeneratedClassName <em>Generated Class Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Generated Class Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.MfaSecondFactorBuilder_cognito#getGeneratedClassName()
+	 * @see #getMfaSecondFactorBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getMfaSecondFactorBuilder_cognito_GeneratedClassName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.MfaSecondFactorBuilder_cognito#getVarName <em>Var Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Var Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.MfaSecondFactorBuilder_cognito#getVarName()
+	 * @see #getMfaSecondFactorBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getMfaSecondFactorBuilder_cognito_VarName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.MfaSecondFactorBuilder_cognito#getIdentifier <em>Identifier</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Identifier</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.MfaSecondFactorBuilder_cognito#getIdentifier()
+	 * @see #getMfaSecondFactorBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getMfaSecondFactorBuilder_cognito_Identifier();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.MfaSecondFactorBuilder_cognito#getAdditionalCode <em>Additional Code</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Additional Code</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.MfaSecondFactorBuilder_cognito#getAdditionalCode()
+	 * @see #getMfaSecondFactorBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getMfaSecondFactorBuilder_cognito_AdditionalCode();
+
+	/**
+	 * Returns the meta object for class '{@link com.amazon.aws.workbench.model.awsworkbench.RequiredAttributesBuilder_cognito <em>Required Attributes Builder cognito</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Required Attributes Builder cognito</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.RequiredAttributesBuilder_cognito
+	 * @generated
+	 */
+	EClass getRequiredAttributesBuilder_cognito();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.RequiredAttributesBuilder_cognito#getAddress_java_lang_Boolean_ <em>Address java lang Boolean </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Address java lang Boolean </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.RequiredAttributesBuilder_cognito#getAddress_java_lang_Boolean_()
+	 * @see #getRequiredAttributesBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getRequiredAttributesBuilder_cognito_Address_java_lang_Boolean_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.RequiredAttributesBuilder_cognito#getBirthdate_java_lang_Boolean_ <em>Birthdate java lang Boolean </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Birthdate java lang Boolean </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.RequiredAttributesBuilder_cognito#getBirthdate_java_lang_Boolean_()
+	 * @see #getRequiredAttributesBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getRequiredAttributesBuilder_cognito_Birthdate_java_lang_Boolean_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.RequiredAttributesBuilder_cognito#getEmail_java_lang_Boolean_ <em>Email java lang Boolean </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Email java lang Boolean </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.RequiredAttributesBuilder_cognito#getEmail_java_lang_Boolean_()
+	 * @see #getRequiredAttributesBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getRequiredAttributesBuilder_cognito_Email_java_lang_Boolean_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.RequiredAttributesBuilder_cognito#getFamilyName_java_lang_Boolean_ <em>Family Name java lang Boolean </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Family Name java lang Boolean </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.RequiredAttributesBuilder_cognito#getFamilyName_java_lang_Boolean_()
+	 * @see #getRequiredAttributesBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getRequiredAttributesBuilder_cognito_FamilyName_java_lang_Boolean_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.RequiredAttributesBuilder_cognito#getFullname_java_lang_Boolean_ <em>Fullname java lang Boolean </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Fullname java lang Boolean </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.RequiredAttributesBuilder_cognito#getFullname_java_lang_Boolean_()
+	 * @see #getRequiredAttributesBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getRequiredAttributesBuilder_cognito_Fullname_java_lang_Boolean_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.RequiredAttributesBuilder_cognito#getGender_java_lang_Boolean_ <em>Gender java lang Boolean </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Gender java lang Boolean </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.RequiredAttributesBuilder_cognito#getGender_java_lang_Boolean_()
+	 * @see #getRequiredAttributesBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getRequiredAttributesBuilder_cognito_Gender_java_lang_Boolean_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.RequiredAttributesBuilder_cognito#getGivenName_java_lang_Boolean_ <em>Given Name java lang Boolean </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Given Name java lang Boolean </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.RequiredAttributesBuilder_cognito#getGivenName_java_lang_Boolean_()
+	 * @see #getRequiredAttributesBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getRequiredAttributesBuilder_cognito_GivenName_java_lang_Boolean_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.RequiredAttributesBuilder_cognito#getLastUpdateTime_java_lang_Boolean_ <em>Last Update Time java lang Boolean </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Last Update Time java lang Boolean </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.RequiredAttributesBuilder_cognito#getLastUpdateTime_java_lang_Boolean_()
+	 * @see #getRequiredAttributesBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getRequiredAttributesBuilder_cognito_LastUpdateTime_java_lang_Boolean_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.RequiredAttributesBuilder_cognito#getLocale_java_lang_Boolean_ <em>Locale java lang Boolean </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Locale java lang Boolean </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.RequiredAttributesBuilder_cognito#getLocale_java_lang_Boolean_()
+	 * @see #getRequiredAttributesBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getRequiredAttributesBuilder_cognito_Locale_java_lang_Boolean_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.RequiredAttributesBuilder_cognito#getMiddleName_java_lang_Boolean_ <em>Middle Name java lang Boolean </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Middle Name java lang Boolean </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.RequiredAttributesBuilder_cognito#getMiddleName_java_lang_Boolean_()
+	 * @see #getRequiredAttributesBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getRequiredAttributesBuilder_cognito_MiddleName_java_lang_Boolean_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.RequiredAttributesBuilder_cognito#getNickname_java_lang_Boolean_ <em>Nickname java lang Boolean </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Nickname java lang Boolean </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.RequiredAttributesBuilder_cognito#getNickname_java_lang_Boolean_()
+	 * @see #getRequiredAttributesBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getRequiredAttributesBuilder_cognito_Nickname_java_lang_Boolean_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.RequiredAttributesBuilder_cognito#getPhoneNumber_java_lang_Boolean_ <em>Phone Number java lang Boolean </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Phone Number java lang Boolean </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.RequiredAttributesBuilder_cognito#getPhoneNumber_java_lang_Boolean_()
+	 * @see #getRequiredAttributesBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getRequiredAttributesBuilder_cognito_PhoneNumber_java_lang_Boolean_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.RequiredAttributesBuilder_cognito#getPreferredUsername_java_lang_Boolean_ <em>Preferred Username java lang Boolean </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Preferred Username java lang Boolean </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.RequiredAttributesBuilder_cognito#getPreferredUsername_java_lang_Boolean_()
+	 * @see #getRequiredAttributesBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getRequiredAttributesBuilder_cognito_PreferredUsername_java_lang_Boolean_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.RequiredAttributesBuilder_cognito#getProfilePage_java_lang_Boolean_ <em>Profile Page java lang Boolean </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Profile Page java lang Boolean </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.RequiredAttributesBuilder_cognito#getProfilePage_java_lang_Boolean_()
+	 * @see #getRequiredAttributesBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getRequiredAttributesBuilder_cognito_ProfilePage_java_lang_Boolean_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.RequiredAttributesBuilder_cognito#getProfilePicture_java_lang_Boolean_ <em>Profile Picture java lang Boolean </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Profile Picture java lang Boolean </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.RequiredAttributesBuilder_cognito#getProfilePicture_java_lang_Boolean_()
+	 * @see #getRequiredAttributesBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getRequiredAttributesBuilder_cognito_ProfilePicture_java_lang_Boolean_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.RequiredAttributesBuilder_cognito#getTimezone_java_lang_Boolean_ <em>Timezone java lang Boolean </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Timezone java lang Boolean </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.RequiredAttributesBuilder_cognito#getTimezone_java_lang_Boolean_()
+	 * @see #getRequiredAttributesBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getRequiredAttributesBuilder_cognito_Timezone_java_lang_Boolean_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.RequiredAttributesBuilder_cognito#getWebsite_java_lang_Boolean_ <em>Website java lang Boolean </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Website java lang Boolean </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.RequiredAttributesBuilder_cognito#getWebsite_java_lang_Boolean_()
+	 * @see #getRequiredAttributesBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getRequiredAttributesBuilder_cognito_Website_java_lang_Boolean_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.RequiredAttributesBuilder_cognito#getGeneratedClassName <em>Generated Class Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Generated Class Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.RequiredAttributesBuilder_cognito#getGeneratedClassName()
+	 * @see #getRequiredAttributesBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getRequiredAttributesBuilder_cognito_GeneratedClassName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.RequiredAttributesBuilder_cognito#getVarName <em>Var Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Var Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.RequiredAttributesBuilder_cognito#getVarName()
+	 * @see #getRequiredAttributesBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getRequiredAttributesBuilder_cognito_VarName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.RequiredAttributesBuilder_cognito#getIdentifier <em>Identifier</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Identifier</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.RequiredAttributesBuilder_cognito#getIdentifier()
+	 * @see #getRequiredAttributesBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getRequiredAttributesBuilder_cognito_Identifier();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.RequiredAttributesBuilder_cognito#getAdditionalCode <em>Additional Code</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Additional Code</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.RequiredAttributesBuilder_cognito#getAdditionalCode()
+	 * @see #getRequiredAttributesBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getRequiredAttributesBuilder_cognito_AdditionalCode();
+
+	/**
+	 * Returns the meta object for class '{@link com.amazon.aws.workbench.model.awsworkbench.SignInAliasesBuilder_cognito <em>Sign In Aliases Builder cognito</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Sign In Aliases Builder cognito</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.SignInAliasesBuilder_cognito
+	 * @generated
+	 */
+	EClass getSignInAliasesBuilder_cognito();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.SignInAliasesBuilder_cognito#getEmail_java_lang_Boolean_ <em>Email java lang Boolean </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Email java lang Boolean </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.SignInAliasesBuilder_cognito#getEmail_java_lang_Boolean_()
+	 * @see #getSignInAliasesBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getSignInAliasesBuilder_cognito_Email_java_lang_Boolean_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.SignInAliasesBuilder_cognito#getPhone_java_lang_Boolean_ <em>Phone java lang Boolean </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Phone java lang Boolean </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.SignInAliasesBuilder_cognito#getPhone_java_lang_Boolean_()
+	 * @see #getSignInAliasesBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getSignInAliasesBuilder_cognito_Phone_java_lang_Boolean_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.SignInAliasesBuilder_cognito#getPreferredUsername_java_lang_Boolean_ <em>Preferred Username java lang Boolean </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Preferred Username java lang Boolean </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.SignInAliasesBuilder_cognito#getPreferredUsername_java_lang_Boolean_()
+	 * @see #getSignInAliasesBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getSignInAliasesBuilder_cognito_PreferredUsername_java_lang_Boolean_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.SignInAliasesBuilder_cognito#getUsername_java_lang_Boolean_ <em>Username java lang Boolean </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Username java lang Boolean </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.SignInAliasesBuilder_cognito#getUsername_java_lang_Boolean_()
+	 * @see #getSignInAliasesBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getSignInAliasesBuilder_cognito_Username_java_lang_Boolean_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.SignInAliasesBuilder_cognito#getGeneratedClassName <em>Generated Class Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Generated Class Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.SignInAliasesBuilder_cognito#getGeneratedClassName()
+	 * @see #getSignInAliasesBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getSignInAliasesBuilder_cognito_GeneratedClassName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.SignInAliasesBuilder_cognito#getVarName <em>Var Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Var Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.SignInAliasesBuilder_cognito#getVarName()
+	 * @see #getSignInAliasesBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getSignInAliasesBuilder_cognito_VarName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.SignInAliasesBuilder_cognito#getIdentifier <em>Identifier</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Identifier</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.SignInAliasesBuilder_cognito#getIdentifier()
+	 * @see #getSignInAliasesBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getSignInAliasesBuilder_cognito_Identifier();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.SignInAliasesBuilder_cognito#getAdditionalCode <em>Additional Code</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Additional Code</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.SignInAliasesBuilder_cognito#getAdditionalCode()
+	 * @see #getSignInAliasesBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getSignInAliasesBuilder_cognito_AdditionalCode();
+
+	/**
+	 * Returns the meta object for class '{@link com.amazon.aws.workbench.model.awsworkbench.UserInvitationConfigBuilder_cognito <em>User Invitation Config Builder cognito</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>User Invitation Config Builder cognito</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.UserInvitationConfigBuilder_cognito
+	 * @generated
+	 */
+	EClass getUserInvitationConfigBuilder_cognito();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.UserInvitationConfigBuilder_cognito#getEmailBody_java_lang_String_ <em>Email Body java lang String </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Email Body java lang String </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.UserInvitationConfigBuilder_cognito#getEmailBody_java_lang_String_()
+	 * @see #getUserInvitationConfigBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getUserInvitationConfigBuilder_cognito_EmailBody_java_lang_String_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.UserInvitationConfigBuilder_cognito#getEmailSubject_java_lang_String_ <em>Email Subject java lang String </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Email Subject java lang String </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.UserInvitationConfigBuilder_cognito#getEmailSubject_java_lang_String_()
+	 * @see #getUserInvitationConfigBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getUserInvitationConfigBuilder_cognito_EmailSubject_java_lang_String_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.UserInvitationConfigBuilder_cognito#getSmsMessage_java_lang_String_ <em>Sms Message java lang String </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Sms Message java lang String </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.UserInvitationConfigBuilder_cognito#getSmsMessage_java_lang_String_()
+	 * @see #getUserInvitationConfigBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getUserInvitationConfigBuilder_cognito_SmsMessage_java_lang_String_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.UserInvitationConfigBuilder_cognito#getGeneratedClassName <em>Generated Class Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Generated Class Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.UserInvitationConfigBuilder_cognito#getGeneratedClassName()
+	 * @see #getUserInvitationConfigBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getUserInvitationConfigBuilder_cognito_GeneratedClassName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.UserInvitationConfigBuilder_cognito#getVarName <em>Var Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Var Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.UserInvitationConfigBuilder_cognito#getVarName()
+	 * @see #getUserInvitationConfigBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getUserInvitationConfigBuilder_cognito_VarName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.UserInvitationConfigBuilder_cognito#getIdentifier <em>Identifier</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Identifier</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.UserInvitationConfigBuilder_cognito#getIdentifier()
+	 * @see #getUserInvitationConfigBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getUserInvitationConfigBuilder_cognito_Identifier();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.UserInvitationConfigBuilder_cognito#getAdditionalCode <em>Additional Code</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Additional Code</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.UserInvitationConfigBuilder_cognito#getAdditionalCode()
+	 * @see #getUserInvitationConfigBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getUserInvitationConfigBuilder_cognito_AdditionalCode();
+
+	/**
+	 * Returns the meta object for class '{@link com.amazon.aws.workbench.model.awsworkbench.UserVerificationConfigBuilder_cognito <em>User Verification Config Builder cognito</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>User Verification Config Builder cognito</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.UserVerificationConfigBuilder_cognito
+	 * @generated
+	 */
+	EClass getUserVerificationConfigBuilder_cognito();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.UserVerificationConfigBuilder_cognito#getEmailBody_java_lang_String_ <em>Email Body java lang String </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Email Body java lang String </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.UserVerificationConfigBuilder_cognito#getEmailBody_java_lang_String_()
+	 * @see #getUserVerificationConfigBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getUserVerificationConfigBuilder_cognito_EmailBody_java_lang_String_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.UserVerificationConfigBuilder_cognito#getEmailStyle_software_amazon_awscdk_services_cognito_VerificationEmailStyle_ <em>Email Style software amazon awscdk services cognito Verification Email Style </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Email Style software amazon awscdk services cognito Verification Email Style </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.UserVerificationConfigBuilder_cognito#getEmailStyle_software_amazon_awscdk_services_cognito_VerificationEmailStyle_()
+	 * @see #getUserVerificationConfigBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getUserVerificationConfigBuilder_cognito_EmailStyle_software_amazon_awscdk_services_cognito_VerificationEmailStyle_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.UserVerificationConfigBuilder_cognito#getEmailSubject_java_lang_String_ <em>Email Subject java lang String </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Email Subject java lang String </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.UserVerificationConfigBuilder_cognito#getEmailSubject_java_lang_String_()
+	 * @see #getUserVerificationConfigBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getUserVerificationConfigBuilder_cognito_EmailSubject_java_lang_String_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.UserVerificationConfigBuilder_cognito#getSmsMessage_java_lang_String_ <em>Sms Message java lang String </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Sms Message java lang String </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.UserVerificationConfigBuilder_cognito#getSmsMessage_java_lang_String_()
+	 * @see #getUserVerificationConfigBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getUserVerificationConfigBuilder_cognito_SmsMessage_java_lang_String_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.UserVerificationConfigBuilder_cognito#getGeneratedClassName <em>Generated Class Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Generated Class Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.UserVerificationConfigBuilder_cognito#getGeneratedClassName()
+	 * @see #getUserVerificationConfigBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getUserVerificationConfigBuilder_cognito_GeneratedClassName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.UserVerificationConfigBuilder_cognito#getVarName <em>Var Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Var Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.UserVerificationConfigBuilder_cognito#getVarName()
+	 * @see #getUserVerificationConfigBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getUserVerificationConfigBuilder_cognito_VarName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.UserVerificationConfigBuilder_cognito#getIdentifier <em>Identifier</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Identifier</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.UserVerificationConfigBuilder_cognito#getIdentifier()
+	 * @see #getUserVerificationConfigBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getUserVerificationConfigBuilder_cognito_Identifier();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.UserVerificationConfigBuilder_cognito#getAdditionalCode <em>Additional Code</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Additional Code</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.UserVerificationConfigBuilder_cognito#getAdditionalCode()
+	 * @see #getUserVerificationConfigBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getUserVerificationConfigBuilder_cognito_AdditionalCode();
+
+	/**
+	 * Returns the meta object for class '{@link com.amazon.aws.workbench.model.awsworkbench.UserPoolPropsBuilder_cognito <em>User Pool Props Builder cognito</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>User Pool Props Builder cognito</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.UserPoolPropsBuilder_cognito
+	 * @generated
+	 */
+	EClass getUserPoolPropsBuilder_cognito();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.UserPoolPropsBuilder_cognito#getAutoVerifyWithAutoVerifiedAttrs_software_amazon_awscdk_services_cognito_AutoVerifiedAttrs_AsReference <em>Auto Verify With Auto Verified Attrs software amazon awscdk services cognito Auto Verified Attrs As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Auto Verify With Auto Verified Attrs software amazon awscdk services cognito Auto Verified Attrs As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.UserPoolPropsBuilder_cognito#getAutoVerifyWithAutoVerifiedAttrs_software_amazon_awscdk_services_cognito_AutoVerifiedAttrs_AsReference()
+	 * @see #getUserPoolPropsBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getUserPoolPropsBuilder_cognito_AutoVerifyWithAutoVerifiedAttrs_software_amazon_awscdk_services_cognito_AutoVerifiedAttrs_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.UserPoolPropsBuilder_cognito#getCustomAttributes_java_lang_String__software_amazon_awscdk_services_cognito_ICustomAttribute_AsMap <em>Custom Attributes java lang String software amazon awscdk services cognito ICustom Attribute As Map</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Custom Attributes java lang String software amazon awscdk services cognito ICustom Attribute As Map</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.UserPoolPropsBuilder_cognito#getCustomAttributes_java_lang_String__software_amazon_awscdk_services_cognito_ICustomAttribute_AsMap()
+	 * @see #getUserPoolPropsBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getUserPoolPropsBuilder_cognito_CustomAttributes_java_lang_String__software_amazon_awscdk_services_cognito_ICustomAttribute_AsMap();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.UserPoolPropsBuilder_cognito#getEmailSettingsWithEmailSettings_software_amazon_awscdk_services_cognito_EmailSettings_AsReference <em>Email Settings With Email Settings software amazon awscdk services cognito Email Settings As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Email Settings With Email Settings software amazon awscdk services cognito Email Settings As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.UserPoolPropsBuilder_cognito#getEmailSettingsWithEmailSettings_software_amazon_awscdk_services_cognito_EmailSettings_AsReference()
+	 * @see #getUserPoolPropsBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getUserPoolPropsBuilder_cognito_EmailSettingsWithEmailSettings_software_amazon_awscdk_services_cognito_EmailSettings_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.UserPoolPropsBuilder_cognito#getLambdaTriggersWithUserPoolTriggers_software_amazon_awscdk_services_cognito_UserPoolTriggers_AsReference <em>Lambda Triggers With User Pool Triggers software amazon awscdk services cognito User Pool Triggers As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Lambda Triggers With User Pool Triggers software amazon awscdk services cognito User Pool Triggers As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.UserPoolPropsBuilder_cognito#getLambdaTriggersWithUserPoolTriggers_software_amazon_awscdk_services_cognito_UserPoolTriggers_AsReference()
+	 * @see #getUserPoolPropsBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getUserPoolPropsBuilder_cognito_LambdaTriggersWithUserPoolTriggers_software_amazon_awscdk_services_cognito_UserPoolTriggers_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.UserPoolPropsBuilder_cognito#getMfa_software_amazon_awscdk_services_cognito_Mfa_ <em>Mfa software amazon awscdk services cognito Mfa </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Mfa software amazon awscdk services cognito Mfa </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.UserPoolPropsBuilder_cognito#getMfa_software_amazon_awscdk_services_cognito_Mfa_()
+	 * @see #getUserPoolPropsBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getUserPoolPropsBuilder_cognito_Mfa_software_amazon_awscdk_services_cognito_Mfa_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.UserPoolPropsBuilder_cognito#getMfaSecondFactorWithMfaSecondFactor_software_amazon_awscdk_services_cognito_MfaSecondFactor_AsReference <em>Mfa Second Factor With Mfa Second Factor software amazon awscdk services cognito Mfa Second Factor As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Mfa Second Factor With Mfa Second Factor software amazon awscdk services cognito Mfa Second Factor As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.UserPoolPropsBuilder_cognito#getMfaSecondFactorWithMfaSecondFactor_software_amazon_awscdk_services_cognito_MfaSecondFactor_AsReference()
+	 * @see #getUserPoolPropsBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getUserPoolPropsBuilder_cognito_MfaSecondFactorWithMfaSecondFactor_software_amazon_awscdk_services_cognito_MfaSecondFactor_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.UserPoolPropsBuilder_cognito#getPasswordPolicyWithPasswordPolicy_software_amazon_awscdk_services_cognito_PasswordPolicy_AsReference <em>Password Policy With Password Policy software amazon awscdk services cognito Password Policy As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Password Policy With Password Policy software amazon awscdk services cognito Password Policy As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.UserPoolPropsBuilder_cognito#getPasswordPolicyWithPasswordPolicy_software_amazon_awscdk_services_cognito_PasswordPolicy_AsReference()
+	 * @see #getUserPoolPropsBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getUserPoolPropsBuilder_cognito_PasswordPolicyWithPasswordPolicy_software_amazon_awscdk_services_cognito_PasswordPolicy_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.UserPoolPropsBuilder_cognito#getRequiredAttributesWithRequiredAttributes_software_amazon_awscdk_services_cognito_RequiredAttributes_AsReference <em>Required Attributes With Required Attributes software amazon awscdk services cognito Required Attributes As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Required Attributes With Required Attributes software amazon awscdk services cognito Required Attributes As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.UserPoolPropsBuilder_cognito#getRequiredAttributesWithRequiredAttributes_software_amazon_awscdk_services_cognito_RequiredAttributes_AsReference()
+	 * @see #getUserPoolPropsBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getUserPoolPropsBuilder_cognito_RequiredAttributesWithRequiredAttributes_software_amazon_awscdk_services_cognito_RequiredAttributes_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.UserPoolPropsBuilder_cognito#getSelfSignUpEnabled_java_lang_Boolean_ <em>Self Sign Up Enabled java lang Boolean </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Self Sign Up Enabled java lang Boolean </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.UserPoolPropsBuilder_cognito#getSelfSignUpEnabled_java_lang_Boolean_()
+	 * @see #getUserPoolPropsBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getUserPoolPropsBuilder_cognito_SelfSignUpEnabled_java_lang_Boolean_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.UserPoolPropsBuilder_cognito#getSignInAliasesWithSignInAliases_software_amazon_awscdk_services_cognito_SignInAliases_AsReference <em>Sign In Aliases With Sign In Aliases software amazon awscdk services cognito Sign In Aliases As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Sign In Aliases With Sign In Aliases software amazon awscdk services cognito Sign In Aliases As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.UserPoolPropsBuilder_cognito#getSignInAliasesWithSignInAliases_software_amazon_awscdk_services_cognito_SignInAliases_AsReference()
+	 * @see #getUserPoolPropsBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getUserPoolPropsBuilder_cognito_SignInAliasesWithSignInAliases_software_amazon_awscdk_services_cognito_SignInAliases_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.UserPoolPropsBuilder_cognito#getSignInCaseSensitive_java_lang_Boolean_ <em>Sign In Case Sensitive java lang Boolean </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Sign In Case Sensitive java lang Boolean </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.UserPoolPropsBuilder_cognito#getSignInCaseSensitive_java_lang_Boolean_()
+	 * @see #getUserPoolPropsBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getUserPoolPropsBuilder_cognito_SignInCaseSensitive_java_lang_Boolean_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.UserPoolPropsBuilder_cognito#getSmsRoleWithIRole_software_amazon_awscdk_services_iam_IRole_AsReference <em>Sms Role With IRole software amazon awscdk services iam IRole As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Sms Role With IRole software amazon awscdk services iam IRole As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.UserPoolPropsBuilder_cognito#getSmsRoleWithIRole_software_amazon_awscdk_services_iam_IRole_AsReference()
+	 * @see #getUserPoolPropsBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getUserPoolPropsBuilder_cognito_SmsRoleWithIRole_software_amazon_awscdk_services_iam_IRole_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.UserPoolPropsBuilder_cognito#getSmsRoleExternalId_java_lang_String_ <em>Sms Role External Id java lang String </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Sms Role External Id java lang String </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.UserPoolPropsBuilder_cognito#getSmsRoleExternalId_java_lang_String_()
+	 * @see #getUserPoolPropsBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getUserPoolPropsBuilder_cognito_SmsRoleExternalId_java_lang_String_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.UserPoolPropsBuilder_cognito#getUserInvitationWithUserInvitationConfig_software_amazon_awscdk_services_cognito_UserInvitationConfig_AsReference <em>User Invitation With User Invitation Config software amazon awscdk services cognito User Invitation Config As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>User Invitation With User Invitation Config software amazon awscdk services cognito User Invitation Config As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.UserPoolPropsBuilder_cognito#getUserInvitationWithUserInvitationConfig_software_amazon_awscdk_services_cognito_UserInvitationConfig_AsReference()
+	 * @see #getUserPoolPropsBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getUserPoolPropsBuilder_cognito_UserInvitationWithUserInvitationConfig_software_amazon_awscdk_services_cognito_UserInvitationConfig_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.UserPoolPropsBuilder_cognito#getUserPoolName_java_lang_String_ <em>User Pool Name java lang String </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>User Pool Name java lang String </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.UserPoolPropsBuilder_cognito#getUserPoolName_java_lang_String_()
+	 * @see #getUserPoolPropsBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getUserPoolPropsBuilder_cognito_UserPoolName_java_lang_String_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.UserPoolPropsBuilder_cognito#getUserVerificationWithUserVerificationConfig_software_amazon_awscdk_services_cognito_UserVerificationConfig_AsReference <em>User Verification With User Verification Config software amazon awscdk services cognito User Verification Config As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>User Verification With User Verification Config software amazon awscdk services cognito User Verification Config As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.UserPoolPropsBuilder_cognito#getUserVerificationWithUserVerificationConfig_software_amazon_awscdk_services_cognito_UserVerificationConfig_AsReference()
+	 * @see #getUserPoolPropsBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getUserPoolPropsBuilder_cognito_UserVerificationWithUserVerificationConfig_software_amazon_awscdk_services_cognito_UserVerificationConfig_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.UserPoolPropsBuilder_cognito#getGeneratedClassName <em>Generated Class Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Generated Class Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.UserPoolPropsBuilder_cognito#getGeneratedClassName()
+	 * @see #getUserPoolPropsBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getUserPoolPropsBuilder_cognito_GeneratedClassName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.UserPoolPropsBuilder_cognito#getVarName <em>Var Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Var Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.UserPoolPropsBuilder_cognito#getVarName()
+	 * @see #getUserPoolPropsBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getUserPoolPropsBuilder_cognito_VarName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.UserPoolPropsBuilder_cognito#getIdentifier <em>Identifier</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Identifier</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.UserPoolPropsBuilder_cognito#getIdentifier()
+	 * @see #getUserPoolPropsBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getUserPoolPropsBuilder_cognito_Identifier();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.UserPoolPropsBuilder_cognito#getAdditionalCode <em>Additional Code</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Additional Code</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.UserPoolPropsBuilder_cognito#getAdditionalCode()
+	 * @see #getUserPoolPropsBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getUserPoolPropsBuilder_cognito_AdditionalCode();
+
+	/**
+	 * Returns the meta object for class '{@link com.amazon.aws.workbench.model.awsworkbench.UserPoolBuilder_cognito <em>User Pool Builder cognito</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>User Pool Builder cognito</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.UserPoolBuilder_cognito
+	 * @generated
+	 */
+	EClass getUserPoolBuilder_cognito();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.UserPoolBuilder_cognito#getAutoVerifyWithAutoVerifiedAttrs_software_amazon_awscdk_services_cognito_AutoVerifiedAttrs_AsReference <em>Auto Verify With Auto Verified Attrs software amazon awscdk services cognito Auto Verified Attrs As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Auto Verify With Auto Verified Attrs software amazon awscdk services cognito Auto Verified Attrs As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.UserPoolBuilder_cognito#getAutoVerifyWithAutoVerifiedAttrs_software_amazon_awscdk_services_cognito_AutoVerifiedAttrs_AsReference()
+	 * @see #getUserPoolBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getUserPoolBuilder_cognito_AutoVerifyWithAutoVerifiedAttrs_software_amazon_awscdk_services_cognito_AutoVerifiedAttrs_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.UserPoolBuilder_cognito#getCustomAttributes_java_lang_String__software_amazon_awscdk_services_cognito_ICustomAttribute_AsMap <em>Custom Attributes java lang String software amazon awscdk services cognito ICustom Attribute As Map</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Custom Attributes java lang String software amazon awscdk services cognito ICustom Attribute As Map</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.UserPoolBuilder_cognito#getCustomAttributes_java_lang_String__software_amazon_awscdk_services_cognito_ICustomAttribute_AsMap()
+	 * @see #getUserPoolBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getUserPoolBuilder_cognito_CustomAttributes_java_lang_String__software_amazon_awscdk_services_cognito_ICustomAttribute_AsMap();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.UserPoolBuilder_cognito#getEmailSettingsWithEmailSettings_software_amazon_awscdk_services_cognito_EmailSettings_AsReference <em>Email Settings With Email Settings software amazon awscdk services cognito Email Settings As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Email Settings With Email Settings software amazon awscdk services cognito Email Settings As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.UserPoolBuilder_cognito#getEmailSettingsWithEmailSettings_software_amazon_awscdk_services_cognito_EmailSettings_AsReference()
+	 * @see #getUserPoolBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getUserPoolBuilder_cognito_EmailSettingsWithEmailSettings_software_amazon_awscdk_services_cognito_EmailSettings_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.UserPoolBuilder_cognito#getLambdaTriggersWithUserPoolTriggers_software_amazon_awscdk_services_cognito_UserPoolTriggers_AsReference <em>Lambda Triggers With User Pool Triggers software amazon awscdk services cognito User Pool Triggers As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Lambda Triggers With User Pool Triggers software amazon awscdk services cognito User Pool Triggers As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.UserPoolBuilder_cognito#getLambdaTriggersWithUserPoolTriggers_software_amazon_awscdk_services_cognito_UserPoolTriggers_AsReference()
+	 * @see #getUserPoolBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getUserPoolBuilder_cognito_LambdaTriggersWithUserPoolTriggers_software_amazon_awscdk_services_cognito_UserPoolTriggers_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.UserPoolBuilder_cognito#getMfa_software_amazon_awscdk_services_cognito_Mfa_ <em>Mfa software amazon awscdk services cognito Mfa </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Mfa software amazon awscdk services cognito Mfa </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.UserPoolBuilder_cognito#getMfa_software_amazon_awscdk_services_cognito_Mfa_()
+	 * @see #getUserPoolBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getUserPoolBuilder_cognito_Mfa_software_amazon_awscdk_services_cognito_Mfa_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.UserPoolBuilder_cognito#getMfaSecondFactorWithMfaSecondFactor_software_amazon_awscdk_services_cognito_MfaSecondFactor_AsReference <em>Mfa Second Factor With Mfa Second Factor software amazon awscdk services cognito Mfa Second Factor As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Mfa Second Factor With Mfa Second Factor software amazon awscdk services cognito Mfa Second Factor As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.UserPoolBuilder_cognito#getMfaSecondFactorWithMfaSecondFactor_software_amazon_awscdk_services_cognito_MfaSecondFactor_AsReference()
+	 * @see #getUserPoolBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getUserPoolBuilder_cognito_MfaSecondFactorWithMfaSecondFactor_software_amazon_awscdk_services_cognito_MfaSecondFactor_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.UserPoolBuilder_cognito#getPasswordPolicyWithPasswordPolicy_software_amazon_awscdk_services_cognito_PasswordPolicy_AsReference <em>Password Policy With Password Policy software amazon awscdk services cognito Password Policy As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Password Policy With Password Policy software amazon awscdk services cognito Password Policy As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.UserPoolBuilder_cognito#getPasswordPolicyWithPasswordPolicy_software_amazon_awscdk_services_cognito_PasswordPolicy_AsReference()
+	 * @see #getUserPoolBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getUserPoolBuilder_cognito_PasswordPolicyWithPasswordPolicy_software_amazon_awscdk_services_cognito_PasswordPolicy_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.UserPoolBuilder_cognito#getRequiredAttributesWithRequiredAttributes_software_amazon_awscdk_services_cognito_RequiredAttributes_AsReference <em>Required Attributes With Required Attributes software amazon awscdk services cognito Required Attributes As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Required Attributes With Required Attributes software amazon awscdk services cognito Required Attributes As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.UserPoolBuilder_cognito#getRequiredAttributesWithRequiredAttributes_software_amazon_awscdk_services_cognito_RequiredAttributes_AsReference()
+	 * @see #getUserPoolBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getUserPoolBuilder_cognito_RequiredAttributesWithRequiredAttributes_software_amazon_awscdk_services_cognito_RequiredAttributes_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.UserPoolBuilder_cognito#getSelfSignUpEnabled_java_lang_Boolean_ <em>Self Sign Up Enabled java lang Boolean </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Self Sign Up Enabled java lang Boolean </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.UserPoolBuilder_cognito#getSelfSignUpEnabled_java_lang_Boolean_()
+	 * @see #getUserPoolBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getUserPoolBuilder_cognito_SelfSignUpEnabled_java_lang_Boolean_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.UserPoolBuilder_cognito#getSignInAliasesWithSignInAliases_software_amazon_awscdk_services_cognito_SignInAliases_AsReference <em>Sign In Aliases With Sign In Aliases software amazon awscdk services cognito Sign In Aliases As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Sign In Aliases With Sign In Aliases software amazon awscdk services cognito Sign In Aliases As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.UserPoolBuilder_cognito#getSignInAliasesWithSignInAliases_software_amazon_awscdk_services_cognito_SignInAliases_AsReference()
+	 * @see #getUserPoolBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getUserPoolBuilder_cognito_SignInAliasesWithSignInAliases_software_amazon_awscdk_services_cognito_SignInAliases_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.UserPoolBuilder_cognito#getSignInCaseSensitive_java_lang_Boolean_ <em>Sign In Case Sensitive java lang Boolean </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Sign In Case Sensitive java lang Boolean </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.UserPoolBuilder_cognito#getSignInCaseSensitive_java_lang_Boolean_()
+	 * @see #getUserPoolBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getUserPoolBuilder_cognito_SignInCaseSensitive_java_lang_Boolean_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.UserPoolBuilder_cognito#getSmsRoleWithIRole_software_amazon_awscdk_services_iam_IRole_AsReference <em>Sms Role With IRole software amazon awscdk services iam IRole As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Sms Role With IRole software amazon awscdk services iam IRole As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.UserPoolBuilder_cognito#getSmsRoleWithIRole_software_amazon_awscdk_services_iam_IRole_AsReference()
+	 * @see #getUserPoolBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getUserPoolBuilder_cognito_SmsRoleWithIRole_software_amazon_awscdk_services_iam_IRole_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.UserPoolBuilder_cognito#getSmsRoleExternalId_java_lang_String_ <em>Sms Role External Id java lang String </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Sms Role External Id java lang String </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.UserPoolBuilder_cognito#getSmsRoleExternalId_java_lang_String_()
+	 * @see #getUserPoolBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getUserPoolBuilder_cognito_SmsRoleExternalId_java_lang_String_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.UserPoolBuilder_cognito#getUserInvitationWithUserInvitationConfig_software_amazon_awscdk_services_cognito_UserInvitationConfig_AsReference <em>User Invitation With User Invitation Config software amazon awscdk services cognito User Invitation Config As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>User Invitation With User Invitation Config software amazon awscdk services cognito User Invitation Config As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.UserPoolBuilder_cognito#getUserInvitationWithUserInvitationConfig_software_amazon_awscdk_services_cognito_UserInvitationConfig_AsReference()
+	 * @see #getUserPoolBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getUserPoolBuilder_cognito_UserInvitationWithUserInvitationConfig_software_amazon_awscdk_services_cognito_UserInvitationConfig_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.UserPoolBuilder_cognito#getUserPoolName_java_lang_String_ <em>User Pool Name java lang String </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>User Pool Name java lang String </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.UserPoolBuilder_cognito#getUserPoolName_java_lang_String_()
+	 * @see #getUserPoolBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getUserPoolBuilder_cognito_UserPoolName_java_lang_String_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.UserPoolBuilder_cognito#getUserVerificationWithUserVerificationConfig_software_amazon_awscdk_services_cognito_UserVerificationConfig_AsReference <em>User Verification With User Verification Config software amazon awscdk services cognito User Verification Config As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>User Verification With User Verification Config software amazon awscdk services cognito User Verification Config As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.UserPoolBuilder_cognito#getUserVerificationWithUserVerificationConfig_software_amazon_awscdk_services_cognito_UserVerificationConfig_AsReference()
+	 * @see #getUserPoolBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getUserPoolBuilder_cognito_UserVerificationWithUserVerificationConfig_software_amazon_awscdk_services_cognito_UserVerificationConfig_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.UserPoolBuilder_cognito#getGeneratedClassName <em>Generated Class Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Generated Class Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.UserPoolBuilder_cognito#getGeneratedClassName()
+	 * @see #getUserPoolBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getUserPoolBuilder_cognito_GeneratedClassName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.UserPoolBuilder_cognito#getVarName <em>Var Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Var Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.UserPoolBuilder_cognito#getVarName()
+	 * @see #getUserPoolBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getUserPoolBuilder_cognito_VarName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.UserPoolBuilder_cognito#getIdentifier <em>Identifier</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Identifier</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.UserPoolBuilder_cognito#getIdentifier()
+	 * @see #getUserPoolBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getUserPoolBuilder_cognito_Identifier();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.UserPoolBuilder_cognito#getAdditionalCode <em>Additional Code</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Additional Code</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.UserPoolBuilder_cognito#getAdditionalCode()
+	 * @see #getUserPoolBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getUserPoolBuilder_cognito_AdditionalCode();
+
+	/**
+	 * Returns the meta object for class '{@link com.amazon.aws.workbench.model.awsworkbench.AuthFlowBuilder_cognito <em>Auth Flow Builder cognito</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Auth Flow Builder cognito</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AuthFlowBuilder_cognito
+	 * @generated
+	 */
+	EClass getAuthFlowBuilder_cognito();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.AuthFlowBuilder_cognito#getAdminUserPassword_java_lang_Boolean_ <em>Admin User Password java lang Boolean </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Admin User Password java lang Boolean </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AuthFlowBuilder_cognito#getAdminUserPassword_java_lang_Boolean_()
+	 * @see #getAuthFlowBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getAuthFlowBuilder_cognito_AdminUserPassword_java_lang_Boolean_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.AuthFlowBuilder_cognito#getCustom_java_lang_Boolean_ <em>Custom java lang Boolean </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Custom java lang Boolean </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AuthFlowBuilder_cognito#getCustom_java_lang_Boolean_()
+	 * @see #getAuthFlowBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getAuthFlowBuilder_cognito_Custom_java_lang_Boolean_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.AuthFlowBuilder_cognito#getRefreshToken_java_lang_Boolean_ <em>Refresh Token java lang Boolean </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Refresh Token java lang Boolean </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AuthFlowBuilder_cognito#getRefreshToken_java_lang_Boolean_()
+	 * @see #getAuthFlowBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getAuthFlowBuilder_cognito_RefreshToken_java_lang_Boolean_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.AuthFlowBuilder_cognito#getUserPassword_java_lang_Boolean_ <em>User Password java lang Boolean </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>User Password java lang Boolean </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AuthFlowBuilder_cognito#getUserPassword_java_lang_Boolean_()
+	 * @see #getAuthFlowBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getAuthFlowBuilder_cognito_UserPassword_java_lang_Boolean_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.AuthFlowBuilder_cognito#getUserSrp_java_lang_Boolean_ <em>User Srp java lang Boolean </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>User Srp java lang Boolean </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AuthFlowBuilder_cognito#getUserSrp_java_lang_Boolean_()
+	 * @see #getAuthFlowBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getAuthFlowBuilder_cognito_UserSrp_java_lang_Boolean_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.AuthFlowBuilder_cognito#getGeneratedClassName <em>Generated Class Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Generated Class Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AuthFlowBuilder_cognito#getGeneratedClassName()
+	 * @see #getAuthFlowBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getAuthFlowBuilder_cognito_GeneratedClassName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.AuthFlowBuilder_cognito#getVarName <em>Var Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Var Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AuthFlowBuilder_cognito#getVarName()
+	 * @see #getAuthFlowBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getAuthFlowBuilder_cognito_VarName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.AuthFlowBuilder_cognito#getIdentifier <em>Identifier</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Identifier</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AuthFlowBuilder_cognito#getIdentifier()
+	 * @see #getAuthFlowBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getAuthFlowBuilder_cognito_Identifier();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.AuthFlowBuilder_cognito#getAdditionalCode <em>Additional Code</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Additional Code</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AuthFlowBuilder_cognito#getAdditionalCode()
+	 * @see #getAuthFlowBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getAuthFlowBuilder_cognito_AdditionalCode();
+
+	/**
+	 * Returns the meta object for class '{@link com.amazon.aws.workbench.model.awsworkbench.OAuthFlowsBuilder_cognito <em>OAuth Flows Builder cognito</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>OAuth Flows Builder cognito</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.OAuthFlowsBuilder_cognito
+	 * @generated
+	 */
+	EClass getOAuthFlowsBuilder_cognito();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.OAuthFlowsBuilder_cognito#getAuthorizationCodeGrant_java_lang_Boolean_ <em>Authorization Code Grant java lang Boolean </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Authorization Code Grant java lang Boolean </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.OAuthFlowsBuilder_cognito#getAuthorizationCodeGrant_java_lang_Boolean_()
+	 * @see #getOAuthFlowsBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getOAuthFlowsBuilder_cognito_AuthorizationCodeGrant_java_lang_Boolean_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.OAuthFlowsBuilder_cognito#getClientCredentials_java_lang_Boolean_ <em>Client Credentials java lang Boolean </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Client Credentials java lang Boolean </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.OAuthFlowsBuilder_cognito#getClientCredentials_java_lang_Boolean_()
+	 * @see #getOAuthFlowsBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getOAuthFlowsBuilder_cognito_ClientCredentials_java_lang_Boolean_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.OAuthFlowsBuilder_cognito#getImplicitCodeGrant_java_lang_Boolean_ <em>Implicit Code Grant java lang Boolean </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Implicit Code Grant java lang Boolean </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.OAuthFlowsBuilder_cognito#getImplicitCodeGrant_java_lang_Boolean_()
+	 * @see #getOAuthFlowsBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getOAuthFlowsBuilder_cognito_ImplicitCodeGrant_java_lang_Boolean_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.OAuthFlowsBuilder_cognito#getGeneratedClassName <em>Generated Class Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Generated Class Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.OAuthFlowsBuilder_cognito#getGeneratedClassName()
+	 * @see #getOAuthFlowsBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getOAuthFlowsBuilder_cognito_GeneratedClassName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.OAuthFlowsBuilder_cognito#getVarName <em>Var Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Var Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.OAuthFlowsBuilder_cognito#getVarName()
+	 * @see #getOAuthFlowsBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getOAuthFlowsBuilder_cognito_VarName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.OAuthFlowsBuilder_cognito#getIdentifier <em>Identifier</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Identifier</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.OAuthFlowsBuilder_cognito#getIdentifier()
+	 * @see #getOAuthFlowsBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getOAuthFlowsBuilder_cognito_Identifier();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.OAuthFlowsBuilder_cognito#getAdditionalCode <em>Additional Code</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Additional Code</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.OAuthFlowsBuilder_cognito#getAdditionalCode()
+	 * @see #getOAuthFlowsBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getOAuthFlowsBuilder_cognito_AdditionalCode();
+
+	/**
+	 * Returns the meta object for class '{@link com.amazon.aws.workbench.model.awsworkbench.OAuthSettingsBuilder_cognito <em>OAuth Settings Builder cognito</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>OAuth Settings Builder cognito</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.OAuthSettingsBuilder_cognito
+	 * @generated
+	 */
+	EClass getOAuthSettingsBuilder_cognito();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.OAuthSettingsBuilder_cognito#getCallbackUrls_java_lang_String_AsList <em>Callback Urls java lang String As List</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Callback Urls java lang String As List</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.OAuthSettingsBuilder_cognito#getCallbackUrls_java_lang_String_AsList()
+	 * @see #getOAuthSettingsBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getOAuthSettingsBuilder_cognito_CallbackUrls_java_lang_String_AsList();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.OAuthSettingsBuilder_cognito#getFlowsWithOAuthFlows_software_amazon_awscdk_services_cognito_OAuthFlows_AsReference <em>Flows With OAuth Flows software amazon awscdk services cognito OAuth Flows As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Flows With OAuth Flows software amazon awscdk services cognito OAuth Flows As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.OAuthSettingsBuilder_cognito#getFlowsWithOAuthFlows_software_amazon_awscdk_services_cognito_OAuthFlows_AsReference()
+	 * @see #getOAuthSettingsBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getOAuthSettingsBuilder_cognito_FlowsWithOAuthFlows_software_amazon_awscdk_services_cognito_OAuthFlows_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.OAuthSettingsBuilder_cognito#getScopes_software_amazon_awscdk_services_cognito_OAuthScope_AsList <em>Scopes software amazon awscdk services cognito OAuth Scope As List</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Scopes software amazon awscdk services cognito OAuth Scope As List</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.OAuthSettingsBuilder_cognito#getScopes_software_amazon_awscdk_services_cognito_OAuthScope_AsList()
+	 * @see #getOAuthSettingsBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getOAuthSettingsBuilder_cognito_Scopes_software_amazon_awscdk_services_cognito_OAuthScope_AsList();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.OAuthSettingsBuilder_cognito#getGeneratedClassName <em>Generated Class Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Generated Class Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.OAuthSettingsBuilder_cognito#getGeneratedClassName()
+	 * @see #getOAuthSettingsBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getOAuthSettingsBuilder_cognito_GeneratedClassName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.OAuthSettingsBuilder_cognito#getVarName <em>Var Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Var Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.OAuthSettingsBuilder_cognito#getVarName()
+	 * @see #getOAuthSettingsBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getOAuthSettingsBuilder_cognito_VarName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.OAuthSettingsBuilder_cognito#getIdentifier <em>Identifier</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Identifier</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.OAuthSettingsBuilder_cognito#getIdentifier()
+	 * @see #getOAuthSettingsBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getOAuthSettingsBuilder_cognito_Identifier();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.OAuthSettingsBuilder_cognito#getAdditionalCode <em>Additional Code</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Additional Code</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.OAuthSettingsBuilder_cognito#getAdditionalCode()
+	 * @see #getOAuthSettingsBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getOAuthSettingsBuilder_cognito_AdditionalCode();
+
+	/**
+	 * Returns the meta object for class '{@link com.amazon.aws.workbench.model.awsworkbench.UserPoolClientPropsBuilder_cognito <em>User Pool Client Props Builder cognito</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>User Pool Client Props Builder cognito</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.UserPoolClientPropsBuilder_cognito
+	 * @generated
+	 */
+	EClass getUserPoolClientPropsBuilder_cognito();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.UserPoolClientPropsBuilder_cognito#getUserPoolWithIUserPool_software_amazon_awscdk_services_cognito_IUserPool_AsReference <em>User Pool With IUser Pool software amazon awscdk services cognito IUser Pool As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>User Pool With IUser Pool software amazon awscdk services cognito IUser Pool As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.UserPoolClientPropsBuilder_cognito#getUserPoolWithIUserPool_software_amazon_awscdk_services_cognito_IUserPool_AsReference()
+	 * @see #getUserPoolClientPropsBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getUserPoolClientPropsBuilder_cognito_UserPoolWithIUserPool_software_amazon_awscdk_services_cognito_IUserPool_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.UserPoolClientPropsBuilder_cognito#getAuthFlowsWithAuthFlow_software_amazon_awscdk_services_cognito_AuthFlow_AsReference <em>Auth Flows With Auth Flow software amazon awscdk services cognito Auth Flow As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Auth Flows With Auth Flow software amazon awscdk services cognito Auth Flow As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.UserPoolClientPropsBuilder_cognito#getAuthFlowsWithAuthFlow_software_amazon_awscdk_services_cognito_AuthFlow_AsReference()
+	 * @see #getUserPoolClientPropsBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getUserPoolClientPropsBuilder_cognito_AuthFlowsWithAuthFlow_software_amazon_awscdk_services_cognito_AuthFlow_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.UserPoolClientPropsBuilder_cognito#getGenerateSecret_java_lang_Boolean_ <em>Generate Secret java lang Boolean </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Generate Secret java lang Boolean </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.UserPoolClientPropsBuilder_cognito#getGenerateSecret_java_lang_Boolean_()
+	 * @see #getUserPoolClientPropsBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getUserPoolClientPropsBuilder_cognito_GenerateSecret_java_lang_Boolean_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.UserPoolClientPropsBuilder_cognito#getOAuthWithOAuthSettings_software_amazon_awscdk_services_cognito_OAuthSettings_AsReference <em>OAuth With OAuth Settings software amazon awscdk services cognito OAuth Settings As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>OAuth With OAuth Settings software amazon awscdk services cognito OAuth Settings As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.UserPoolClientPropsBuilder_cognito#getOAuthWithOAuthSettings_software_amazon_awscdk_services_cognito_OAuthSettings_AsReference()
+	 * @see #getUserPoolClientPropsBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getUserPoolClientPropsBuilder_cognito_OAuthWithOAuthSettings_software_amazon_awscdk_services_cognito_OAuthSettings_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.UserPoolClientPropsBuilder_cognito#getPreventUserExistenceErrors_java_lang_Boolean_ <em>Prevent User Existence Errors java lang Boolean </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Prevent User Existence Errors java lang Boolean </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.UserPoolClientPropsBuilder_cognito#getPreventUserExistenceErrors_java_lang_Boolean_()
+	 * @see #getUserPoolClientPropsBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getUserPoolClientPropsBuilder_cognito_PreventUserExistenceErrors_java_lang_Boolean_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.UserPoolClientPropsBuilder_cognito#getUserPoolClientName_java_lang_String_ <em>User Pool Client Name java lang String </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>User Pool Client Name java lang String </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.UserPoolClientPropsBuilder_cognito#getUserPoolClientName_java_lang_String_()
+	 * @see #getUserPoolClientPropsBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getUserPoolClientPropsBuilder_cognito_UserPoolClientName_java_lang_String_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.UserPoolClientPropsBuilder_cognito#getGeneratedClassName <em>Generated Class Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Generated Class Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.UserPoolClientPropsBuilder_cognito#getGeneratedClassName()
+	 * @see #getUserPoolClientPropsBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getUserPoolClientPropsBuilder_cognito_GeneratedClassName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.UserPoolClientPropsBuilder_cognito#getVarName <em>Var Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Var Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.UserPoolClientPropsBuilder_cognito#getVarName()
+	 * @see #getUserPoolClientPropsBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getUserPoolClientPropsBuilder_cognito_VarName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.UserPoolClientPropsBuilder_cognito#getIdentifier <em>Identifier</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Identifier</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.UserPoolClientPropsBuilder_cognito#getIdentifier()
+	 * @see #getUserPoolClientPropsBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getUserPoolClientPropsBuilder_cognito_Identifier();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.UserPoolClientPropsBuilder_cognito#getAdditionalCode <em>Additional Code</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Additional Code</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.UserPoolClientPropsBuilder_cognito#getAdditionalCode()
+	 * @see #getUserPoolClientPropsBuilder_cognito()
+	 * @generated
+	 */
+	EAttribute getUserPoolClientPropsBuilder_cognito_AdditionalCode();
 
 	/**
 	 * Returns the meta object for class '{@link com.amazon.aws.workbench.model.awsworkbench.CognitoToApiGatewayToLambdaBuilder_cognitoapigatewaylambda <em>Cognito To Api Gateway To Lambda Builder cognitoapigatewaylambda</em>}'.
@@ -20358,6 +31498,166 @@ public interface AwsworkbenchPackage extends EPackage {
 	EEnum getJsonSchemaType();
 
 	/**
+	 * Returns the meta object for enum '{@link com.amazon.aws.workbench.model.awsworkbench.CloudFrontAllowedCachedMethods <em>Cloud Front Allowed Cached Methods</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for enum '<em>Cloud Front Allowed Cached Methods</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.CloudFrontAllowedCachedMethods
+	 * @generated
+	 */
+	EEnum getCloudFrontAllowedCachedMethods();
+
+	/**
+	 * Returns the meta object for enum '{@link com.amazon.aws.workbench.model.awsworkbench.CloudFrontAllowedMethods <em>Cloud Front Allowed Methods</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for enum '<em>Cloud Front Allowed Methods</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.CloudFrontAllowedMethods
+	 * @generated
+	 */
+	EEnum getCloudFrontAllowedMethods();
+
+	/**
+	 * Returns the meta object for enum '{@link com.amazon.aws.workbench.model.awsworkbench.LambdaEdgeEventType <em>Lambda Edge Event Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for enum '<em>Lambda Edge Event Type</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.LambdaEdgeEventType
+	 * @generated
+	 */
+	EEnum getLambdaEdgeEventType();
+
+	/**
+	 * Returns the meta object for enum '{@link com.amazon.aws.workbench.model.awsworkbench.OriginSslPolicy <em>Origin Ssl Policy</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for enum '<em>Origin Ssl Policy</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.OriginSslPolicy
+	 * @generated
+	 */
+	EEnum getOriginSslPolicy();
+
+	/**
+	 * Returns the meta object for enum '{@link com.amazon.aws.workbench.model.awsworkbench.OriginProtocolPolicy <em>Origin Protocol Policy</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for enum '<em>Origin Protocol Policy</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.OriginProtocolPolicy
+	 * @generated
+	 */
+	EEnum getOriginProtocolPolicy();
+
+	/**
+	 * Returns the meta object for enum '{@link com.amazon.aws.workbench.model.awsworkbench.BucketAccessControl <em>Bucket Access Control</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for enum '<em>Bucket Access Control</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.BucketAccessControl
+	 * @generated
+	 */
+	EEnum getBucketAccessControl();
+
+	/**
+	 * Returns the meta object for enum '{@link com.amazon.aws.workbench.model.awsworkbench.HttpMethods <em>Http Methods</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for enum '<em>Http Methods</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.HttpMethods
+	 * @generated
+	 */
+	EEnum getHttpMethods();
+
+	/**
+	 * Returns the meta object for enum '{@link com.amazon.aws.workbench.model.awsworkbench.BucketEncryption <em>Bucket Encryption</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for enum '<em>Bucket Encryption</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.BucketEncryption
+	 * @generated
+	 */
+	EEnum getBucketEncryption();
+
+	/**
+	 * Returns the meta object for enum '{@link com.amazon.aws.workbench.model.awsworkbench.RedirectProtocol <em>Redirect Protocol</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for enum '<em>Redirect Protocol</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.RedirectProtocol
+	 * @generated
+	 */
+	EEnum getRedirectProtocol();
+
+	/**
+	 * Returns the meta object for enum '{@link com.amazon.aws.workbench.model.awsworkbench.HttpVersion <em>Http Version</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for enum '<em>Http Version</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.HttpVersion
+	 * @generated
+	 */
+	EEnum getHttpVersion();
+
+	/**
+	 * Returns the meta object for enum '{@link com.amazon.aws.workbench.model.awsworkbench.PriceClass <em>Price Class</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for enum '<em>Price Class</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.PriceClass
+	 * @generated
+	 */
+	EEnum getPriceClass();
+
+	/**
+	 * Returns the meta object for enum '{@link com.amazon.aws.workbench.model.awsworkbench.ViewerProtocolPolicy <em>Viewer Protocol Policy</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for enum '<em>Viewer Protocol Policy</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.ViewerProtocolPolicy
+	 * @generated
+	 */
+	EEnum getViewerProtocolPolicy();
+
+	/**
+	 * Returns the meta object for enum '{@link com.amazon.aws.workbench.model.awsworkbench.SecurityPolicyProtocol <em>Security Policy Protocol</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for enum '<em>Security Policy Protocol</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.SecurityPolicyProtocol
+	 * @generated
+	 */
+	EEnum getSecurityPolicyProtocol();
+
+	/**
+	 * Returns the meta object for enum '{@link com.amazon.aws.workbench.model.awsworkbench.SSLMethod <em>SSL Method</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for enum '<em>SSL Method</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.SSLMethod
+	 * @generated
+	 */
+	EEnum getSSLMethod();
+
+	/**
+	 * Returns the meta object for enum '{@link com.amazon.aws.workbench.model.awsworkbench.Mfa <em>Mfa</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for enum '<em>Mfa</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.Mfa
+	 * @generated
+	 */
+	EEnum getMfa();
+
+	/**
+	 * Returns the meta object for enum '{@link com.amazon.aws.workbench.model.awsworkbench.VerificationEmailStyle <em>Verification Email Style</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for enum '<em>Verification Email Style</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.VerificationEmailStyle
+	 * @generated
+	 */
+	EEnum getVerificationEmailStyle();
+
+	/**
 	 * Returns the meta object for enum '{@link com.amazon.aws.workbench.model.awsworkbench.Effect <em>Effect</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -23295,6 +34595,302 @@ public interface AwsworkbenchPackage extends EPackage {
 		EAttribute SECURITY_GROUP_BUILDER_EC2__ADDITIONAL_CODE = eINSTANCE.getSecurityGroupBuilder_ec2_AdditionalCode();
 
 		/**
+		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.FunctionPropsBuilder_lambdaImpl <em>Function Props Builder lambda</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.FunctionPropsBuilder_lambdaImpl
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getFunctionPropsBuilder_lambda()
+		 * @generated
+		 */
+		EClass FUNCTION_PROPS_BUILDER_LAMBDA = eINSTANCE.getFunctionPropsBuilder_lambda();
+
+		/**
+		 * The meta object literal for the '<em><b>Code With Code software amazon awscdk services lambda Code As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FUNCTION_PROPS_BUILDER_LAMBDA__CODE_WITH_CODE_SOFTWARE_AMAZON_AWSCDK_SERVICES_LAMBDA_CODE_AS_REFERENCE = eINSTANCE
+				.getFunctionPropsBuilder_lambda_CodeWithCode_software_amazon_awscdk_services_lambda_Code_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Handler java lang String </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FUNCTION_PROPS_BUILDER_LAMBDA__HANDLER_JAVA_LANG_STRING_ = eINSTANCE
+				.getFunctionPropsBuilder_lambda_Handler_java_lang_String_();
+
+		/**
+		 * The meta object literal for the '<em><b>Runtime With Runtime software amazon awscdk services lambda Runtime As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FUNCTION_PROPS_BUILDER_LAMBDA__RUNTIME_WITH_RUNTIME_SOFTWARE_AMAZON_AWSCDK_SERVICES_LAMBDA_RUNTIME_AS_REFERENCE = eINSTANCE
+				.getFunctionPropsBuilder_lambda_RuntimeWithRuntime_software_amazon_awscdk_services_lambda_Runtime_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Allow All Outbound java lang Boolean </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FUNCTION_PROPS_BUILDER_LAMBDA__ALLOW_ALL_OUTBOUND_JAVA_LANG_BOOLEAN_ = eINSTANCE
+				.getFunctionPropsBuilder_lambda_AllowAllOutbound_java_lang_Boolean_();
+
+		/**
+		 * The meta object literal for the '<em><b>Current Version Options With Version Options software amazon awscdk services lambda Version Options As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FUNCTION_PROPS_BUILDER_LAMBDA__CURRENT_VERSION_OPTIONS_WITH_VERSION_OPTIONS_SOFTWARE_AMAZON_AWSCDK_SERVICES_LAMBDA_VERSION_OPTIONS_AS_REFERENCE = eINSTANCE
+				.getFunctionPropsBuilder_lambda_CurrentVersionOptionsWithVersionOptions_software_amazon_awscdk_services_lambda_VersionOptions_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Dead Letter Queue With IQueue software amazon awscdk services sqs IQueue As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FUNCTION_PROPS_BUILDER_LAMBDA__DEAD_LETTER_QUEUE_WITH_IQUEUE_SOFTWARE_AMAZON_AWSCDK_SERVICES_SQS_IQUEUE_AS_REFERENCE = eINSTANCE
+				.getFunctionPropsBuilder_lambda_DeadLetterQueueWithIQueue_software_amazon_awscdk_services_sqs_IQueue_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Dead Letter Queue Enabled java lang Boolean </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FUNCTION_PROPS_BUILDER_LAMBDA__DEAD_LETTER_QUEUE_ENABLED_JAVA_LANG_BOOLEAN_ = eINSTANCE
+				.getFunctionPropsBuilder_lambda_DeadLetterQueueEnabled_java_lang_Boolean_();
+
+		/**
+		 * The meta object literal for the '<em><b>Description java lang String </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FUNCTION_PROPS_BUILDER_LAMBDA__DESCRIPTION_JAVA_LANG_STRING_ = eINSTANCE
+				.getFunctionPropsBuilder_lambda_Description_java_lang_String_();
+
+		/**
+		 * The meta object literal for the '<em><b>Environment java lang String java lang String As Map</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FUNCTION_PROPS_BUILDER_LAMBDA__ENVIRONMENT_JAVA_LANG_STRING_JAVA_LANG_STRING_AS_MAP = eINSTANCE
+				.getFunctionPropsBuilder_lambda_Environment_java_lang_String__java_lang_String_AsMap();
+
+		/**
+		 * The meta object literal for the '<em><b>Events software amazon awscdk services lambda IEvent Source As List</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FUNCTION_PROPS_BUILDER_LAMBDA__EVENTS_SOFTWARE_AMAZON_AWSCDK_SERVICES_LAMBDA_IEVENT_SOURCE_AS_LIST = eINSTANCE
+				.getFunctionPropsBuilder_lambda_Events_software_amazon_awscdk_services_lambda_IEventSource_AsList();
+
+		/**
+		 * The meta object literal for the '<em><b>Function Name java lang String </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FUNCTION_PROPS_BUILDER_LAMBDA__FUNCTION_NAME_JAVA_LANG_STRING_ = eINSTANCE
+				.getFunctionPropsBuilder_lambda_FunctionName_java_lang_String_();
+
+		/**
+		 * The meta object literal for the '<em><b>Initial Policy software amazon awscdk services iam Policy Statement As List</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FUNCTION_PROPS_BUILDER_LAMBDA__INITIAL_POLICY_SOFTWARE_AMAZON_AWSCDK_SERVICES_IAM_POLICY_STATEMENT_AS_LIST = eINSTANCE
+				.getFunctionPropsBuilder_lambda_InitialPolicy_software_amazon_awscdk_services_iam_PolicyStatement_AsList();
+
+		/**
+		 * The meta object literal for the '<em><b>Layers software amazon awscdk services lambda ILayer Version As List</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FUNCTION_PROPS_BUILDER_LAMBDA__LAYERS_SOFTWARE_AMAZON_AWSCDK_SERVICES_LAMBDA_ILAYER_VERSION_AS_LIST = eINSTANCE
+				.getFunctionPropsBuilder_lambda_Layers_software_amazon_awscdk_services_lambda_ILayerVersion_AsList();
+
+		/**
+		 * The meta object literal for the '<em><b>Log Retention software amazon awscdk services logs Retention Days </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FUNCTION_PROPS_BUILDER_LAMBDA__LOG_RETENTION_SOFTWARE_AMAZON_AWSCDK_SERVICES_LOGS_RETENTION_DAYS_ = eINSTANCE
+				.getFunctionPropsBuilder_lambda_LogRetention_software_amazon_awscdk_services_logs_RetentionDays_();
+
+		/**
+		 * The meta object literal for the '<em><b>Log Retention Role With IRole software amazon awscdk services iam IRole As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FUNCTION_PROPS_BUILDER_LAMBDA__LOG_RETENTION_ROLE_WITH_IROLE_SOFTWARE_AMAZON_AWSCDK_SERVICES_IAM_IROLE_AS_REFERENCE = eINSTANCE
+				.getFunctionPropsBuilder_lambda_LogRetentionRoleWithIRole_software_amazon_awscdk_services_iam_IRole_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Memory Size java lang Number </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FUNCTION_PROPS_BUILDER_LAMBDA__MEMORY_SIZE_JAVA_LANG_NUMBER_ = eINSTANCE
+				.getFunctionPropsBuilder_lambda_MemorySize_java_lang_Number_();
+
+		/**
+		 * The meta object literal for the '<em><b>Reserved Concurrent Executions java lang Number </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FUNCTION_PROPS_BUILDER_LAMBDA__RESERVED_CONCURRENT_EXECUTIONS_JAVA_LANG_NUMBER_ = eINSTANCE
+				.getFunctionPropsBuilder_lambda_ReservedConcurrentExecutions_java_lang_Number_();
+
+		/**
+		 * The meta object literal for the '<em><b>Role With IRole software amazon awscdk services iam IRole As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FUNCTION_PROPS_BUILDER_LAMBDA__ROLE_WITH_IROLE_SOFTWARE_AMAZON_AWSCDK_SERVICES_IAM_IROLE_AS_REFERENCE = eINSTANCE
+				.getFunctionPropsBuilder_lambda_RoleWithIRole_software_amazon_awscdk_services_iam_IRole_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Security Group With ISecurity Group software amazon awscdk services ec2 ISecurity Group As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FUNCTION_PROPS_BUILDER_LAMBDA__SECURITY_GROUP_WITH_ISECURITY_GROUP_SOFTWARE_AMAZON_AWSCDK_SERVICES_EC2_ISECURITY_GROUP_AS_REFERENCE = eINSTANCE
+				.getFunctionPropsBuilder_lambda_SecurityGroupWithISecurityGroup_software_amazon_awscdk_services_ec2_ISecurityGroup_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Security Groups software amazon awscdk services ec2 ISecurity Group As List</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FUNCTION_PROPS_BUILDER_LAMBDA__SECURITY_GROUPS_SOFTWARE_AMAZON_AWSCDK_SERVICES_EC2_ISECURITY_GROUP_AS_LIST = eINSTANCE
+				.getFunctionPropsBuilder_lambda_SecurityGroups_software_amazon_awscdk_services_ec2_ISecurityGroup_AsList();
+
+		/**
+		 * The meta object literal for the '<em><b>Timeout With Duration software amazon awscdk core Duration As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FUNCTION_PROPS_BUILDER_LAMBDA__TIMEOUT_WITH_DURATION_SOFTWARE_AMAZON_AWSCDK_CORE_DURATION_AS_REFERENCE = eINSTANCE
+				.getFunctionPropsBuilder_lambda_TimeoutWithDuration_software_amazon_awscdk_core_Duration_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Tracing software amazon awscdk services lambda Tracing </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FUNCTION_PROPS_BUILDER_LAMBDA__TRACING_SOFTWARE_AMAZON_AWSCDK_SERVICES_LAMBDA_TRACING_ = eINSTANCE
+				.getFunctionPropsBuilder_lambda_Tracing_software_amazon_awscdk_services_lambda_Tracing_();
+
+		/**
+		 * The meta object literal for the '<em><b>Vpc With IVpc software amazon awscdk services ec2 IVpc As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FUNCTION_PROPS_BUILDER_LAMBDA__VPC_WITH_IVPC_SOFTWARE_AMAZON_AWSCDK_SERVICES_EC2_IVPC_AS_REFERENCE = eINSTANCE
+				.getFunctionPropsBuilder_lambda_VpcWithIVpc_software_amazon_awscdk_services_ec2_IVpc_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Vpc Subnets With Subnet Selection software amazon awscdk services ec2 Subnet Selection As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FUNCTION_PROPS_BUILDER_LAMBDA__VPC_SUBNETS_WITH_SUBNET_SELECTION_SOFTWARE_AMAZON_AWSCDK_SERVICES_EC2_SUBNET_SELECTION_AS_REFERENCE = eINSTANCE
+				.getFunctionPropsBuilder_lambda_VpcSubnetsWithSubnetSelection_software_amazon_awscdk_services_ec2_SubnetSelection_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Max Event Age With Duration software amazon awscdk core Duration As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FUNCTION_PROPS_BUILDER_LAMBDA__MAX_EVENT_AGE_WITH_DURATION_SOFTWARE_AMAZON_AWSCDK_CORE_DURATION_AS_REFERENCE = eINSTANCE
+				.getFunctionPropsBuilder_lambda_MaxEventAgeWithDuration_software_amazon_awscdk_core_Duration_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>On Failure With IDestination software amazon awscdk services lambda IDestination As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FUNCTION_PROPS_BUILDER_LAMBDA__ON_FAILURE_WITH_IDESTINATION_SOFTWARE_AMAZON_AWSCDK_SERVICES_LAMBDA_IDESTINATION_AS_REFERENCE = eINSTANCE
+				.getFunctionPropsBuilder_lambda_OnFailureWithIDestination_software_amazon_awscdk_services_lambda_IDestination_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>On Success With IDestination software amazon awscdk services lambda IDestination As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FUNCTION_PROPS_BUILDER_LAMBDA__ON_SUCCESS_WITH_IDESTINATION_SOFTWARE_AMAZON_AWSCDK_SERVICES_LAMBDA_IDESTINATION_AS_REFERENCE = eINSTANCE
+				.getFunctionPropsBuilder_lambda_OnSuccessWithIDestination_software_amazon_awscdk_services_lambda_IDestination_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Retry Attempts java lang Number </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FUNCTION_PROPS_BUILDER_LAMBDA__RETRY_ATTEMPTS_JAVA_LANG_NUMBER_ = eINSTANCE
+				.getFunctionPropsBuilder_lambda_RetryAttempts_java_lang_Number_();
+
+		/**
+		 * The meta object literal for the '<em><b>Generated Class Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FUNCTION_PROPS_BUILDER_LAMBDA__GENERATED_CLASS_NAME = eINSTANCE
+				.getFunctionPropsBuilder_lambda_GeneratedClassName();
+
+		/**
+		 * The meta object literal for the '<em><b>Var Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FUNCTION_PROPS_BUILDER_LAMBDA__VAR_NAME = eINSTANCE.getFunctionPropsBuilder_lambda_VarName();
+
+		/**
+		 * The meta object literal for the '<em><b>Identifier</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FUNCTION_PROPS_BUILDER_LAMBDA__IDENTIFIER = eINSTANCE.getFunctionPropsBuilder_lambda_Identifier();
+
+		/**
+		 * The meta object literal for the '<em><b>Additional Code</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FUNCTION_PROPS_BUILDER_LAMBDA__ADDITIONAL_CODE = eINSTANCE
+				.getFunctionPropsBuilder_lambda_AdditionalCode();
+
+		/**
 		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.FunctionBuilder_lambdaImpl <em>Function Builder lambda</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -24962,6 +36558,512 @@ public interface AwsworkbenchPackage extends EPackage {
 				.getApiGatewayToDynamoDBBuilder_apigatewaydynamodb_AdditionalCode();
 
 		/**
+		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.LambdaRestApiPropsBuilder_apigatewayImpl <em>Lambda Rest Api Props Builder apigateway</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.LambdaRestApiPropsBuilder_apigatewayImpl
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getLambdaRestApiPropsBuilder_apigateway()
+		 * @generated
+		 */
+		EClass LAMBDA_REST_API_PROPS_BUILDER_APIGATEWAY = eINSTANCE.getLambdaRestApiPropsBuilder_apigateway();
+
+		/**
+		 * The meta object literal for the '<em><b>Handler With IFunction software amazon awscdk services lambda IFunction As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LAMBDA_REST_API_PROPS_BUILDER_APIGATEWAY__HANDLER_WITH_IFUNCTION_SOFTWARE_AMAZON_AWSCDK_SERVICES_LAMBDA_IFUNCTION_AS_REFERENCE = eINSTANCE
+				.getLambdaRestApiPropsBuilder_apigateway_HandlerWithIFunction_software_amazon_awscdk_services_lambda_IFunction_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Options With Rest Api Props software amazon awscdk services apigateway Rest Api Props As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LAMBDA_REST_API_PROPS_BUILDER_APIGATEWAY__OPTIONS_WITH_REST_API_PROPS_SOFTWARE_AMAZON_AWSCDK_SERVICES_APIGATEWAY_REST_API_PROPS_AS_REFERENCE = eINSTANCE
+				.getLambdaRestApiPropsBuilder_apigateway_OptionsWithRestApiProps_software_amazon_awscdk_services_apigateway_RestApiProps_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Proxy java lang Boolean </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LAMBDA_REST_API_PROPS_BUILDER_APIGATEWAY__PROXY_JAVA_LANG_BOOLEAN_ = eINSTANCE
+				.getLambdaRestApiPropsBuilder_apigateway_Proxy_java_lang_Boolean_();
+
+		/**
+		 * The meta object literal for the '<em><b>Api Key Source Type software amazon awscdk services apigateway Api Key Source Type </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LAMBDA_REST_API_PROPS_BUILDER_APIGATEWAY__API_KEY_SOURCE_TYPE_SOFTWARE_AMAZON_AWSCDK_SERVICES_APIGATEWAY_API_KEY_SOURCE_TYPE_ = eINSTANCE
+				.getLambdaRestApiPropsBuilder_apigateway_ApiKeySourceType_software_amazon_awscdk_services_apigateway_ApiKeySourceType_();
+
+		/**
+		 * The meta object literal for the '<em><b>Binary Media Types java lang String As List</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LAMBDA_REST_API_PROPS_BUILDER_APIGATEWAY__BINARY_MEDIA_TYPES_JAVA_LANG_STRING_AS_LIST = eINSTANCE
+				.getLambdaRestApiPropsBuilder_apigateway_BinaryMediaTypes_java_lang_String_AsList();
+
+		/**
+		 * The meta object literal for the '<em><b>Clone From With IRest Api software amazon awscdk services apigateway IRest Api As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LAMBDA_REST_API_PROPS_BUILDER_APIGATEWAY__CLONE_FROM_WITH_IREST_API_SOFTWARE_AMAZON_AWSCDK_SERVICES_APIGATEWAY_IREST_API_AS_REFERENCE = eINSTANCE
+				.getLambdaRestApiPropsBuilder_apigateway_CloneFromWithIRestApi_software_amazon_awscdk_services_apigateway_IRestApi_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Description java lang String </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LAMBDA_REST_API_PROPS_BUILDER_APIGATEWAY__DESCRIPTION_JAVA_LANG_STRING_ = eINSTANCE
+				.getLambdaRestApiPropsBuilder_apigateway_Description_java_lang_String_();
+
+		/**
+		 * The meta object literal for the '<em><b>Endpoint Configuration With Endpoint Configuration software amazon awscdk services apigateway Endpoint Configuration As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LAMBDA_REST_API_PROPS_BUILDER_APIGATEWAY__ENDPOINT_CONFIGURATION_WITH_ENDPOINT_CONFIGURATION_SOFTWARE_AMAZON_AWSCDK_SERVICES_APIGATEWAY_ENDPOINT_CONFIGURATION_AS_REFERENCE = eINSTANCE
+				.getLambdaRestApiPropsBuilder_apigateway_EndpointConfigurationWithEndpointConfiguration_software_amazon_awscdk_services_apigateway_EndpointConfiguration_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Endpoint Types software amazon awscdk services apigateway Endpoint Type As List</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LAMBDA_REST_API_PROPS_BUILDER_APIGATEWAY__ENDPOINT_TYPES_SOFTWARE_AMAZON_AWSCDK_SERVICES_APIGATEWAY_ENDPOINT_TYPE_AS_LIST = eINSTANCE
+				.getLambdaRestApiPropsBuilder_apigateway_EndpointTypes_software_amazon_awscdk_services_apigateway_EndpointType_AsList();
+
+		/**
+		 * The meta object literal for the '<em><b>Minimum Compression Size java lang Number </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LAMBDA_REST_API_PROPS_BUILDER_APIGATEWAY__MINIMUM_COMPRESSION_SIZE_JAVA_LANG_NUMBER_ = eINSTANCE
+				.getLambdaRestApiPropsBuilder_apigateway_MinimumCompressionSize_java_lang_Number_();
+
+		/**
+		 * The meta object literal for the '<em><b>Cloud Watch Role java lang Boolean </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LAMBDA_REST_API_PROPS_BUILDER_APIGATEWAY__CLOUD_WATCH_ROLE_JAVA_LANG_BOOLEAN_ = eINSTANCE
+				.getLambdaRestApiPropsBuilder_apigateway_CloudWatchRole_java_lang_Boolean_();
+
+		/**
+		 * The meta object literal for the '<em><b>Deploy java lang Boolean </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LAMBDA_REST_API_PROPS_BUILDER_APIGATEWAY__DEPLOY_JAVA_LANG_BOOLEAN_ = eINSTANCE
+				.getLambdaRestApiPropsBuilder_apigateway_Deploy_java_lang_Boolean_();
+
+		/**
+		 * The meta object literal for the '<em><b>Deploy Options With Stage Options software amazon awscdk services apigateway Stage Options As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LAMBDA_REST_API_PROPS_BUILDER_APIGATEWAY__DEPLOY_OPTIONS_WITH_STAGE_OPTIONS_SOFTWARE_AMAZON_AWSCDK_SERVICES_APIGATEWAY_STAGE_OPTIONS_AS_REFERENCE = eINSTANCE
+				.getLambdaRestApiPropsBuilder_apigateway_DeployOptionsWithStageOptions_software_amazon_awscdk_services_apigateway_StageOptions_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Domain Name With Domain Name Options software amazon awscdk services apigateway Domain Name Options As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LAMBDA_REST_API_PROPS_BUILDER_APIGATEWAY__DOMAIN_NAME_WITH_DOMAIN_NAME_OPTIONS_SOFTWARE_AMAZON_AWSCDK_SERVICES_APIGATEWAY_DOMAIN_NAME_OPTIONS_AS_REFERENCE = eINSTANCE
+				.getLambdaRestApiPropsBuilder_apigateway_DomainNameWithDomainNameOptions_software_amazon_awscdk_services_apigateway_DomainNameOptions_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Endpoint Export Name java lang String </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LAMBDA_REST_API_PROPS_BUILDER_APIGATEWAY__ENDPOINT_EXPORT_NAME_JAVA_LANG_STRING_ = eINSTANCE
+				.getLambdaRestApiPropsBuilder_apigateway_EndpointExportName_java_lang_String_();
+
+		/**
+		 * The meta object literal for the '<em><b>Fail On Warnings java lang Boolean </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LAMBDA_REST_API_PROPS_BUILDER_APIGATEWAY__FAIL_ON_WARNINGS_JAVA_LANG_BOOLEAN_ = eINSTANCE
+				.getLambdaRestApiPropsBuilder_apigateway_FailOnWarnings_java_lang_Boolean_();
+
+		/**
+		 * The meta object literal for the '<em><b>Parameters java lang String java lang String As Map</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LAMBDA_REST_API_PROPS_BUILDER_APIGATEWAY__PARAMETERS_JAVA_LANG_STRING_JAVA_LANG_STRING_AS_MAP = eINSTANCE
+				.getLambdaRestApiPropsBuilder_apigateway_Parameters_java_lang_String__java_lang_String_AsMap();
+
+		/**
+		 * The meta object literal for the '<em><b>Policy With Policy Document software amazon awscdk services iam Policy Document As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LAMBDA_REST_API_PROPS_BUILDER_APIGATEWAY__POLICY_WITH_POLICY_DOCUMENT_SOFTWARE_AMAZON_AWSCDK_SERVICES_IAM_POLICY_DOCUMENT_AS_REFERENCE = eINSTANCE
+				.getLambdaRestApiPropsBuilder_apigateway_PolicyWithPolicyDocument_software_amazon_awscdk_services_iam_PolicyDocument_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Rest Api Name java lang String </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LAMBDA_REST_API_PROPS_BUILDER_APIGATEWAY__REST_API_NAME_JAVA_LANG_STRING_ = eINSTANCE
+				.getLambdaRestApiPropsBuilder_apigateway_RestApiName_java_lang_String_();
+
+		/**
+		 * The meta object literal for the '<em><b>Retain Deployments java lang Boolean </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LAMBDA_REST_API_PROPS_BUILDER_APIGATEWAY__RETAIN_DEPLOYMENTS_JAVA_LANG_BOOLEAN_ = eINSTANCE
+				.getLambdaRestApiPropsBuilder_apigateway_RetainDeployments_java_lang_Boolean_();
+
+		/**
+		 * The meta object literal for the '<em><b>Default Cors Preflight Options With Cors Options software amazon awscdk services apigateway Cors Options As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LAMBDA_REST_API_PROPS_BUILDER_APIGATEWAY__DEFAULT_CORS_PREFLIGHT_OPTIONS_WITH_CORS_OPTIONS_SOFTWARE_AMAZON_AWSCDK_SERVICES_APIGATEWAY_CORS_OPTIONS_AS_REFERENCE = eINSTANCE
+				.getLambdaRestApiPropsBuilder_apigateway_DefaultCorsPreflightOptionsWithCorsOptions_software_amazon_awscdk_services_apigateway_CorsOptions_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Default Integration With Integration software amazon awscdk services apigateway Integration As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LAMBDA_REST_API_PROPS_BUILDER_APIGATEWAY__DEFAULT_INTEGRATION_WITH_INTEGRATION_SOFTWARE_AMAZON_AWSCDK_SERVICES_APIGATEWAY_INTEGRATION_AS_REFERENCE = eINSTANCE
+				.getLambdaRestApiPropsBuilder_apigateway_DefaultIntegrationWithIntegration_software_amazon_awscdk_services_apigateway_Integration_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Default Method Options With Method Options software amazon awscdk services apigateway Method Options As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LAMBDA_REST_API_PROPS_BUILDER_APIGATEWAY__DEFAULT_METHOD_OPTIONS_WITH_METHOD_OPTIONS_SOFTWARE_AMAZON_AWSCDK_SERVICES_APIGATEWAY_METHOD_OPTIONS_AS_REFERENCE = eINSTANCE
+				.getLambdaRestApiPropsBuilder_apigateway_DefaultMethodOptionsWithMethodOptions_software_amazon_awscdk_services_apigateway_MethodOptions_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Generated Class Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LAMBDA_REST_API_PROPS_BUILDER_APIGATEWAY__GENERATED_CLASS_NAME = eINSTANCE
+				.getLambdaRestApiPropsBuilder_apigateway_GeneratedClassName();
+
+		/**
+		 * The meta object literal for the '<em><b>Var Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LAMBDA_REST_API_PROPS_BUILDER_APIGATEWAY__VAR_NAME = eINSTANCE
+				.getLambdaRestApiPropsBuilder_apigateway_VarName();
+
+		/**
+		 * The meta object literal for the '<em><b>Identifier</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LAMBDA_REST_API_PROPS_BUILDER_APIGATEWAY__IDENTIFIER = eINSTANCE
+				.getLambdaRestApiPropsBuilder_apigateway_Identifier();
+
+		/**
+		 * The meta object literal for the '<em><b>Additional Code</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LAMBDA_REST_API_PROPS_BUILDER_APIGATEWAY__ADDITIONAL_CODE = eINSTANCE
+				.getLambdaRestApiPropsBuilder_apigateway_AdditionalCode();
+
+		/**
+		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.LambdaRestApiBuilder_apigatewayImpl <em>Lambda Rest Api Builder apigateway</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.LambdaRestApiBuilder_apigatewayImpl
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getLambdaRestApiBuilder_apigateway()
+		 * @generated
+		 */
+		EClass LAMBDA_REST_API_BUILDER_APIGATEWAY = eINSTANCE.getLambdaRestApiBuilder_apigateway();
+
+		/**
+		 * The meta object literal for the '<em><b>Default Cors Preflight Options With Cors Options software amazon awscdk services apigateway Cors Options As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LAMBDA_REST_API_BUILDER_APIGATEWAY__DEFAULT_CORS_PREFLIGHT_OPTIONS_WITH_CORS_OPTIONS_SOFTWARE_AMAZON_AWSCDK_SERVICES_APIGATEWAY_CORS_OPTIONS_AS_REFERENCE = eINSTANCE
+				.getLambdaRestApiBuilder_apigateway_DefaultCorsPreflightOptionsWithCorsOptions_software_amazon_awscdk_services_apigateway_CorsOptions_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Default Integration With Integration software amazon awscdk services apigateway Integration As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LAMBDA_REST_API_BUILDER_APIGATEWAY__DEFAULT_INTEGRATION_WITH_INTEGRATION_SOFTWARE_AMAZON_AWSCDK_SERVICES_APIGATEWAY_INTEGRATION_AS_REFERENCE = eINSTANCE
+				.getLambdaRestApiBuilder_apigateway_DefaultIntegrationWithIntegration_software_amazon_awscdk_services_apigateway_Integration_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Default Method Options With Method Options software amazon awscdk services apigateway Method Options As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LAMBDA_REST_API_BUILDER_APIGATEWAY__DEFAULT_METHOD_OPTIONS_WITH_METHOD_OPTIONS_SOFTWARE_AMAZON_AWSCDK_SERVICES_APIGATEWAY_METHOD_OPTIONS_AS_REFERENCE = eINSTANCE
+				.getLambdaRestApiBuilder_apigateway_DefaultMethodOptionsWithMethodOptions_software_amazon_awscdk_services_apigateway_MethodOptions_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Cloud Watch Role java lang Boolean </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LAMBDA_REST_API_BUILDER_APIGATEWAY__CLOUD_WATCH_ROLE_JAVA_LANG_BOOLEAN_ = eINSTANCE
+				.getLambdaRestApiBuilder_apigateway_CloudWatchRole_java_lang_Boolean_();
+
+		/**
+		 * The meta object literal for the '<em><b>Deploy java lang Boolean </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LAMBDA_REST_API_BUILDER_APIGATEWAY__DEPLOY_JAVA_LANG_BOOLEAN_ = eINSTANCE
+				.getLambdaRestApiBuilder_apigateway_Deploy_java_lang_Boolean_();
+
+		/**
+		 * The meta object literal for the '<em><b>Deploy Options With Stage Options software amazon awscdk services apigateway Stage Options As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LAMBDA_REST_API_BUILDER_APIGATEWAY__DEPLOY_OPTIONS_WITH_STAGE_OPTIONS_SOFTWARE_AMAZON_AWSCDK_SERVICES_APIGATEWAY_STAGE_OPTIONS_AS_REFERENCE = eINSTANCE
+				.getLambdaRestApiBuilder_apigateway_DeployOptionsWithStageOptions_software_amazon_awscdk_services_apigateway_StageOptions_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Domain Name With Domain Name Options software amazon awscdk services apigateway Domain Name Options As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LAMBDA_REST_API_BUILDER_APIGATEWAY__DOMAIN_NAME_WITH_DOMAIN_NAME_OPTIONS_SOFTWARE_AMAZON_AWSCDK_SERVICES_APIGATEWAY_DOMAIN_NAME_OPTIONS_AS_REFERENCE = eINSTANCE
+				.getLambdaRestApiBuilder_apigateway_DomainNameWithDomainNameOptions_software_amazon_awscdk_services_apigateway_DomainNameOptions_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Endpoint Export Name java lang String </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LAMBDA_REST_API_BUILDER_APIGATEWAY__ENDPOINT_EXPORT_NAME_JAVA_LANG_STRING_ = eINSTANCE
+				.getLambdaRestApiBuilder_apigateway_EndpointExportName_java_lang_String_();
+
+		/**
+		 * The meta object literal for the '<em><b>Fail On Warnings java lang Boolean </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LAMBDA_REST_API_BUILDER_APIGATEWAY__FAIL_ON_WARNINGS_JAVA_LANG_BOOLEAN_ = eINSTANCE
+				.getLambdaRestApiBuilder_apigateway_FailOnWarnings_java_lang_Boolean_();
+
+		/**
+		 * The meta object literal for the '<em><b>Parameters java lang String java lang String As Map</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LAMBDA_REST_API_BUILDER_APIGATEWAY__PARAMETERS_JAVA_LANG_STRING_JAVA_LANG_STRING_AS_MAP = eINSTANCE
+				.getLambdaRestApiBuilder_apigateway_Parameters_java_lang_String__java_lang_String_AsMap();
+
+		/**
+		 * The meta object literal for the '<em><b>Policy With Policy Document software amazon awscdk services iam Policy Document As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LAMBDA_REST_API_BUILDER_APIGATEWAY__POLICY_WITH_POLICY_DOCUMENT_SOFTWARE_AMAZON_AWSCDK_SERVICES_IAM_POLICY_DOCUMENT_AS_REFERENCE = eINSTANCE
+				.getLambdaRestApiBuilder_apigateway_PolicyWithPolicyDocument_software_amazon_awscdk_services_iam_PolicyDocument_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Rest Api Name java lang String </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LAMBDA_REST_API_BUILDER_APIGATEWAY__REST_API_NAME_JAVA_LANG_STRING_ = eINSTANCE
+				.getLambdaRestApiBuilder_apigateway_RestApiName_java_lang_String_();
+
+		/**
+		 * The meta object literal for the '<em><b>Retain Deployments java lang Boolean </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LAMBDA_REST_API_BUILDER_APIGATEWAY__RETAIN_DEPLOYMENTS_JAVA_LANG_BOOLEAN_ = eINSTANCE
+				.getLambdaRestApiBuilder_apigateway_RetainDeployments_java_lang_Boolean_();
+
+		/**
+		 * The meta object literal for the '<em><b>Api Key Source Type software amazon awscdk services apigateway Api Key Source Type </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LAMBDA_REST_API_BUILDER_APIGATEWAY__API_KEY_SOURCE_TYPE_SOFTWARE_AMAZON_AWSCDK_SERVICES_APIGATEWAY_API_KEY_SOURCE_TYPE_ = eINSTANCE
+				.getLambdaRestApiBuilder_apigateway_ApiKeySourceType_software_amazon_awscdk_services_apigateway_ApiKeySourceType_();
+
+		/**
+		 * The meta object literal for the '<em><b>Binary Media Types java lang String As List</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LAMBDA_REST_API_BUILDER_APIGATEWAY__BINARY_MEDIA_TYPES_JAVA_LANG_STRING_AS_LIST = eINSTANCE
+				.getLambdaRestApiBuilder_apigateway_BinaryMediaTypes_java_lang_String_AsList();
+
+		/**
+		 * The meta object literal for the '<em><b>Clone From With IRest Api software amazon awscdk services apigateway IRest Api As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LAMBDA_REST_API_BUILDER_APIGATEWAY__CLONE_FROM_WITH_IREST_API_SOFTWARE_AMAZON_AWSCDK_SERVICES_APIGATEWAY_IREST_API_AS_REFERENCE = eINSTANCE
+				.getLambdaRestApiBuilder_apigateway_CloneFromWithIRestApi_software_amazon_awscdk_services_apigateway_IRestApi_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Description java lang String </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LAMBDA_REST_API_BUILDER_APIGATEWAY__DESCRIPTION_JAVA_LANG_STRING_ = eINSTANCE
+				.getLambdaRestApiBuilder_apigateway_Description_java_lang_String_();
+
+		/**
+		 * The meta object literal for the '<em><b>Endpoint Configuration With Endpoint Configuration software amazon awscdk services apigateway Endpoint Configuration As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LAMBDA_REST_API_BUILDER_APIGATEWAY__ENDPOINT_CONFIGURATION_WITH_ENDPOINT_CONFIGURATION_SOFTWARE_AMAZON_AWSCDK_SERVICES_APIGATEWAY_ENDPOINT_CONFIGURATION_AS_REFERENCE = eINSTANCE
+				.getLambdaRestApiBuilder_apigateway_EndpointConfigurationWithEndpointConfiguration_software_amazon_awscdk_services_apigateway_EndpointConfiguration_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Endpoint Types software amazon awscdk services apigateway Endpoint Type As List</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LAMBDA_REST_API_BUILDER_APIGATEWAY__ENDPOINT_TYPES_SOFTWARE_AMAZON_AWSCDK_SERVICES_APIGATEWAY_ENDPOINT_TYPE_AS_LIST = eINSTANCE
+				.getLambdaRestApiBuilder_apigateway_EndpointTypes_software_amazon_awscdk_services_apigateway_EndpointType_AsList();
+
+		/**
+		 * The meta object literal for the '<em><b>Minimum Compression Size java lang Number </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LAMBDA_REST_API_BUILDER_APIGATEWAY__MINIMUM_COMPRESSION_SIZE_JAVA_LANG_NUMBER_ = eINSTANCE
+				.getLambdaRestApiBuilder_apigateway_MinimumCompressionSize_java_lang_Number_();
+
+		/**
+		 * The meta object literal for the '<em><b>Handler With IFunction software amazon awscdk services lambda IFunction As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LAMBDA_REST_API_BUILDER_APIGATEWAY__HANDLER_WITH_IFUNCTION_SOFTWARE_AMAZON_AWSCDK_SERVICES_LAMBDA_IFUNCTION_AS_REFERENCE = eINSTANCE
+				.getLambdaRestApiBuilder_apigateway_HandlerWithIFunction_software_amazon_awscdk_services_lambda_IFunction_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Options With Rest Api Props software amazon awscdk services apigateway Rest Api Props As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LAMBDA_REST_API_BUILDER_APIGATEWAY__OPTIONS_WITH_REST_API_PROPS_SOFTWARE_AMAZON_AWSCDK_SERVICES_APIGATEWAY_REST_API_PROPS_AS_REFERENCE = eINSTANCE
+				.getLambdaRestApiBuilder_apigateway_OptionsWithRestApiProps_software_amazon_awscdk_services_apigateway_RestApiProps_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Proxy java lang Boolean </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LAMBDA_REST_API_BUILDER_APIGATEWAY__PROXY_JAVA_LANG_BOOLEAN_ = eINSTANCE
+				.getLambdaRestApiBuilder_apigateway_Proxy_java_lang_Boolean_();
+
+		/**
+		 * The meta object literal for the '<em><b>Generated Class Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LAMBDA_REST_API_BUILDER_APIGATEWAY__GENERATED_CLASS_NAME = eINSTANCE
+				.getLambdaRestApiBuilder_apigateway_GeneratedClassName();
+
+		/**
+		 * The meta object literal for the '<em><b>Var Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LAMBDA_REST_API_BUILDER_APIGATEWAY__VAR_NAME = eINSTANCE
+				.getLambdaRestApiBuilder_apigateway_VarName();
+
+		/**
+		 * The meta object literal for the '<em><b>Identifier</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LAMBDA_REST_API_BUILDER_APIGATEWAY__IDENTIFIER = eINSTANCE
+				.getLambdaRestApiBuilder_apigateway_Identifier();
+
+		/**
+		 * The meta object literal for the '<em><b>Additional Code</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LAMBDA_REST_API_BUILDER_APIGATEWAY__ADDITIONAL_CODE = eINSTANCE
+				.getLambdaRestApiBuilder_apigateway_AdditionalCode();
+
+		/**
 		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.ApiGatewayToLambdaBuilder_apigatewaylambdaImpl <em>Api Gateway To Lambda Builder apigatewaylambda</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -25034,6 +37136,157 @@ public interface AwsworkbenchPackage extends EPackage {
 		 */
 		EAttribute API_GATEWAY_TO_LAMBDA_BUILDER_APIGATEWAYLAMBDA__ADDITIONAL_CODE = eINSTANCE
 				.getApiGatewayToLambdaBuilder_apigatewaylambda_AdditionalCode();
+
+		/**
+		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.QueuePropsBuilder_sqsImpl <em>Queue Props Builder sqs</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.QueuePropsBuilder_sqsImpl
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getQueuePropsBuilder_sqs()
+		 * @generated
+		 */
+		EClass QUEUE_PROPS_BUILDER_SQS = eINSTANCE.getQueuePropsBuilder_sqs();
+
+		/**
+		 * The meta object literal for the '<em><b>Content Based Deduplication java lang Boolean </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute QUEUE_PROPS_BUILDER_SQS__CONTENT_BASED_DEDUPLICATION_JAVA_LANG_BOOLEAN_ = eINSTANCE
+				.getQueuePropsBuilder_sqs_ContentBasedDeduplication_java_lang_Boolean_();
+
+		/**
+		 * The meta object literal for the '<em><b>Data Key Reuse With Duration software amazon awscdk core Duration As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute QUEUE_PROPS_BUILDER_SQS__DATA_KEY_REUSE_WITH_DURATION_SOFTWARE_AMAZON_AWSCDK_CORE_DURATION_AS_REFERENCE = eINSTANCE
+				.getQueuePropsBuilder_sqs_DataKeyReuseWithDuration_software_amazon_awscdk_core_Duration_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Dead Letter Queue With Dead Letter Queue software amazon awscdk services sqs Dead Letter Queue As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute QUEUE_PROPS_BUILDER_SQS__DEAD_LETTER_QUEUE_WITH_DEAD_LETTER_QUEUE_SOFTWARE_AMAZON_AWSCDK_SERVICES_SQS_DEAD_LETTER_QUEUE_AS_REFERENCE = eINSTANCE
+				.getQueuePropsBuilder_sqs_DeadLetterQueueWithDeadLetterQueue_software_amazon_awscdk_services_sqs_DeadLetterQueue_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Delivery Delay With Duration software amazon awscdk core Duration As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute QUEUE_PROPS_BUILDER_SQS__DELIVERY_DELAY_WITH_DURATION_SOFTWARE_AMAZON_AWSCDK_CORE_DURATION_AS_REFERENCE = eINSTANCE
+				.getQueuePropsBuilder_sqs_DeliveryDelayWithDuration_software_amazon_awscdk_core_Duration_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Encryption software amazon awscdk services sqs Queue Encryption </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute QUEUE_PROPS_BUILDER_SQS__ENCRYPTION_SOFTWARE_AMAZON_AWSCDK_SERVICES_SQS_QUEUE_ENCRYPTION_ = eINSTANCE
+				.getQueuePropsBuilder_sqs_Encryption_software_amazon_awscdk_services_sqs_QueueEncryption_();
+
+		/**
+		 * The meta object literal for the '<em><b>Encryption Master Key With IKey software amazon awscdk services kms IKey As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute QUEUE_PROPS_BUILDER_SQS__ENCRYPTION_MASTER_KEY_WITH_IKEY_SOFTWARE_AMAZON_AWSCDK_SERVICES_KMS_IKEY_AS_REFERENCE = eINSTANCE
+				.getQueuePropsBuilder_sqs_EncryptionMasterKeyWithIKey_software_amazon_awscdk_services_kms_IKey_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Fifo java lang Boolean </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute QUEUE_PROPS_BUILDER_SQS__FIFO_JAVA_LANG_BOOLEAN_ = eINSTANCE
+				.getQueuePropsBuilder_sqs_Fifo_java_lang_Boolean_();
+
+		/**
+		 * The meta object literal for the '<em><b>Max Message Size Bytes java lang Number </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute QUEUE_PROPS_BUILDER_SQS__MAX_MESSAGE_SIZE_BYTES_JAVA_LANG_NUMBER_ = eINSTANCE
+				.getQueuePropsBuilder_sqs_MaxMessageSizeBytes_java_lang_Number_();
+
+		/**
+		 * The meta object literal for the '<em><b>Queue Name java lang String </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute QUEUE_PROPS_BUILDER_SQS__QUEUE_NAME_JAVA_LANG_STRING_ = eINSTANCE
+				.getQueuePropsBuilder_sqs_QueueName_java_lang_String_();
+
+		/**
+		 * The meta object literal for the '<em><b>Receive Message Wait Time With Duration software amazon awscdk core Duration As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute QUEUE_PROPS_BUILDER_SQS__RECEIVE_MESSAGE_WAIT_TIME_WITH_DURATION_SOFTWARE_AMAZON_AWSCDK_CORE_DURATION_AS_REFERENCE = eINSTANCE
+				.getQueuePropsBuilder_sqs_ReceiveMessageWaitTimeWithDuration_software_amazon_awscdk_core_Duration_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Retention Period With Duration software amazon awscdk core Duration As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute QUEUE_PROPS_BUILDER_SQS__RETENTION_PERIOD_WITH_DURATION_SOFTWARE_AMAZON_AWSCDK_CORE_DURATION_AS_REFERENCE = eINSTANCE
+				.getQueuePropsBuilder_sqs_RetentionPeriodWithDuration_software_amazon_awscdk_core_Duration_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Visibility Timeout With Duration software amazon awscdk core Duration As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute QUEUE_PROPS_BUILDER_SQS__VISIBILITY_TIMEOUT_WITH_DURATION_SOFTWARE_AMAZON_AWSCDK_CORE_DURATION_AS_REFERENCE = eINSTANCE
+				.getQueuePropsBuilder_sqs_VisibilityTimeoutWithDuration_software_amazon_awscdk_core_Duration_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Generated Class Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute QUEUE_PROPS_BUILDER_SQS__GENERATED_CLASS_NAME = eINSTANCE
+				.getQueuePropsBuilder_sqs_GeneratedClassName();
+
+		/**
+		 * The meta object literal for the '<em><b>Var Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute QUEUE_PROPS_BUILDER_SQS__VAR_NAME = eINSTANCE.getQueuePropsBuilder_sqs_VarName();
+
+		/**
+		 * The meta object literal for the '<em><b>Identifier</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute QUEUE_PROPS_BUILDER_SQS__IDENTIFIER = eINSTANCE.getQueuePropsBuilder_sqs_Identifier();
+
+		/**
+		 * The meta object literal for the '<em><b>Additional Code</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute QUEUE_PROPS_BUILDER_SQS__ADDITIONAL_CODE = eINSTANCE.getQueuePropsBuilder_sqs_AdditionalCode();
 
 		/**
 		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.ApiGatewayToSqsBuilder_apigatewaysqsImpl <em>Api Gateway To Sqs Builder apigatewaysqs</em>}' class.
@@ -25152,6 +37405,2090 @@ public interface AwsworkbenchPackage extends EPackage {
 		 */
 		EAttribute API_GATEWAY_TO_SQS_BUILDER_APIGATEWAYSQS__ADDITIONAL_CODE = eINSTANCE
 				.getApiGatewayToSqsBuilder_apigatewaysqs_AdditionalCode();
+
+		/**
+		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.VersionBuilder_lambdaImpl <em>Version Builder lambda</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.VersionBuilder_lambdaImpl
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getVersionBuilder_lambda()
+		 * @generated
+		 */
+		EClass VERSION_BUILDER_LAMBDA = eINSTANCE.getVersionBuilder_lambda();
+
+		/**
+		 * The meta object literal for the '<em><b>Max Event Age With Duration software amazon awscdk core Duration As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute VERSION_BUILDER_LAMBDA__MAX_EVENT_AGE_WITH_DURATION_SOFTWARE_AMAZON_AWSCDK_CORE_DURATION_AS_REFERENCE = eINSTANCE
+				.getVersionBuilder_lambda_MaxEventAgeWithDuration_software_amazon_awscdk_core_Duration_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>On Failure With IDestination software amazon awscdk services lambda IDestination As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute VERSION_BUILDER_LAMBDA__ON_FAILURE_WITH_IDESTINATION_SOFTWARE_AMAZON_AWSCDK_SERVICES_LAMBDA_IDESTINATION_AS_REFERENCE = eINSTANCE
+				.getVersionBuilder_lambda_OnFailureWithIDestination_software_amazon_awscdk_services_lambda_IDestination_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>On Success With IDestination software amazon awscdk services lambda IDestination As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute VERSION_BUILDER_LAMBDA__ON_SUCCESS_WITH_IDESTINATION_SOFTWARE_AMAZON_AWSCDK_SERVICES_LAMBDA_IDESTINATION_AS_REFERENCE = eINSTANCE
+				.getVersionBuilder_lambda_OnSuccessWithIDestination_software_amazon_awscdk_services_lambda_IDestination_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Retry Attempts java lang Number </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute VERSION_BUILDER_LAMBDA__RETRY_ATTEMPTS_JAVA_LANG_NUMBER_ = eINSTANCE
+				.getVersionBuilder_lambda_RetryAttempts_java_lang_Number_();
+
+		/**
+		 * The meta object literal for the '<em><b>Code Sha256 java lang String </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute VERSION_BUILDER_LAMBDA__CODE_SHA256_JAVA_LANG_STRING_ = eINSTANCE
+				.getVersionBuilder_lambda_CodeSha256_java_lang_String_();
+
+		/**
+		 * The meta object literal for the '<em><b>Description java lang String </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute VERSION_BUILDER_LAMBDA__DESCRIPTION_JAVA_LANG_STRING_ = eINSTANCE
+				.getVersionBuilder_lambda_Description_java_lang_String_();
+
+		/**
+		 * The meta object literal for the '<em><b>Provisioned Concurrent Executions java lang Number </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute VERSION_BUILDER_LAMBDA__PROVISIONED_CONCURRENT_EXECUTIONS_JAVA_LANG_NUMBER_ = eINSTANCE
+				.getVersionBuilder_lambda_ProvisionedConcurrentExecutions_java_lang_Number_();
+
+		/**
+		 * The meta object literal for the '<em><b>Removal Policy software amazon awscdk core Removal Policy </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute VERSION_BUILDER_LAMBDA__REMOVAL_POLICY_SOFTWARE_AMAZON_AWSCDK_CORE_REMOVAL_POLICY_ = eINSTANCE
+				.getVersionBuilder_lambda_RemovalPolicy_software_amazon_awscdk_core_RemovalPolicy_();
+
+		/**
+		 * The meta object literal for the '<em><b>Lambda With IFunction software amazon awscdk services lambda IFunction As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute VERSION_BUILDER_LAMBDA__LAMBDA_WITH_IFUNCTION_SOFTWARE_AMAZON_AWSCDK_SERVICES_LAMBDA_IFUNCTION_AS_REFERENCE = eINSTANCE
+				.getVersionBuilder_lambda_LambdaWithIFunction_software_amazon_awscdk_services_lambda_IFunction_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Generated Class Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute VERSION_BUILDER_LAMBDA__GENERATED_CLASS_NAME = eINSTANCE
+				.getVersionBuilder_lambda_GeneratedClassName();
+
+		/**
+		 * The meta object literal for the '<em><b>Var Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute VERSION_BUILDER_LAMBDA__VAR_NAME = eINSTANCE.getVersionBuilder_lambda_VarName();
+
+		/**
+		 * The meta object literal for the '<em><b>Identifier</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute VERSION_BUILDER_LAMBDA__IDENTIFIER = eINSTANCE.getVersionBuilder_lambda_Identifier();
+
+		/**
+		 * The meta object literal for the '<em><b>Additional Code</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute VERSION_BUILDER_LAMBDA__ADDITIONAL_CODE = eINSTANCE.getVersionBuilder_lambda_AdditionalCode();
+
+		/**
+		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.LambdaFunctionAssociationBuilder_cloudfrontImpl <em>Lambda Function Association Builder cloudfront</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.LambdaFunctionAssociationBuilder_cloudfrontImpl
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getLambdaFunctionAssociationBuilder_cloudfront()
+		 * @generated
+		 */
+		EClass LAMBDA_FUNCTION_ASSOCIATION_BUILDER_CLOUDFRONT = eINSTANCE
+				.getLambdaFunctionAssociationBuilder_cloudfront();
+
+		/**
+		 * The meta object literal for the '<em><b>Event Type software amazon awscdk services cloudfront Lambda Edge Event Type </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LAMBDA_FUNCTION_ASSOCIATION_BUILDER_CLOUDFRONT__EVENT_TYPE_SOFTWARE_AMAZON_AWSCDK_SERVICES_CLOUDFRONT_LAMBDA_EDGE_EVENT_TYPE_ = eINSTANCE
+				.getLambdaFunctionAssociationBuilder_cloudfront_EventType_software_amazon_awscdk_services_cloudfront_LambdaEdgeEventType_();
+
+		/**
+		 * The meta object literal for the '<em><b>Lambda Function With IVersion software amazon awscdk services lambda IVersion As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LAMBDA_FUNCTION_ASSOCIATION_BUILDER_CLOUDFRONT__LAMBDA_FUNCTION_WITH_IVERSION_SOFTWARE_AMAZON_AWSCDK_SERVICES_LAMBDA_IVERSION_AS_REFERENCE = eINSTANCE
+				.getLambdaFunctionAssociationBuilder_cloudfront_LambdaFunctionWithIVersion_software_amazon_awscdk_services_lambda_IVersion_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Generated Class Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LAMBDA_FUNCTION_ASSOCIATION_BUILDER_CLOUDFRONT__GENERATED_CLASS_NAME = eINSTANCE
+				.getLambdaFunctionAssociationBuilder_cloudfront_GeneratedClassName();
+
+		/**
+		 * The meta object literal for the '<em><b>Var Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LAMBDA_FUNCTION_ASSOCIATION_BUILDER_CLOUDFRONT__VAR_NAME = eINSTANCE
+				.getLambdaFunctionAssociationBuilder_cloudfront_VarName();
+
+		/**
+		 * The meta object literal for the '<em><b>Identifier</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LAMBDA_FUNCTION_ASSOCIATION_BUILDER_CLOUDFRONT__IDENTIFIER = eINSTANCE
+				.getLambdaFunctionAssociationBuilder_cloudfront_Identifier();
+
+		/**
+		 * The meta object literal for the '<em><b>Additional Code</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LAMBDA_FUNCTION_ASSOCIATION_BUILDER_CLOUDFRONT__ADDITIONAL_CODE = eINSTANCE
+				.getLambdaFunctionAssociationBuilder_cloudfront_AdditionalCode();
+
+		/**
+		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.BehaviorBuilder_cloudfrontImpl <em>Behavior Builder cloudfront</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.BehaviorBuilder_cloudfrontImpl
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getBehaviorBuilder_cloudfront()
+		 * @generated
+		 */
+		EClass BEHAVIOR_BUILDER_CLOUDFRONT = eINSTANCE.getBehaviorBuilder_cloudfront();
+
+		/**
+		 * The meta object literal for the '<em><b>Allowed Methods software amazon awscdk services cloudfront Cloud Front Allowed Methods </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BEHAVIOR_BUILDER_CLOUDFRONT__ALLOWED_METHODS_SOFTWARE_AMAZON_AWSCDK_SERVICES_CLOUDFRONT_CLOUD_FRONT_ALLOWED_METHODS_ = eINSTANCE
+				.getBehaviorBuilder_cloudfront_AllowedMethods_software_amazon_awscdk_services_cloudfront_CloudFrontAllowedMethods_();
+
+		/**
+		 * The meta object literal for the '<em><b>Cached Methods software amazon awscdk services cloudfront Cloud Front Allowed Cached Methods </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BEHAVIOR_BUILDER_CLOUDFRONT__CACHED_METHODS_SOFTWARE_AMAZON_AWSCDK_SERVICES_CLOUDFRONT_CLOUD_FRONT_ALLOWED_CACHED_METHODS_ = eINSTANCE
+				.getBehaviorBuilder_cloudfront_CachedMethods_software_amazon_awscdk_services_cloudfront_CloudFrontAllowedCachedMethods_();
+
+		/**
+		 * The meta object literal for the '<em><b>Compress java lang Boolean </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BEHAVIOR_BUILDER_CLOUDFRONT__COMPRESS_JAVA_LANG_BOOLEAN_ = eINSTANCE
+				.getBehaviorBuilder_cloudfront_Compress_java_lang_Boolean_();
+
+		/**
+		 * The meta object literal for the '<em><b>Default Ttl With Duration software amazon awscdk core Duration As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BEHAVIOR_BUILDER_CLOUDFRONT__DEFAULT_TTL_WITH_DURATION_SOFTWARE_AMAZON_AWSCDK_CORE_DURATION_AS_REFERENCE = eINSTANCE
+				.getBehaviorBuilder_cloudfront_DefaultTtlWithDuration_software_amazon_awscdk_core_Duration_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Forwarded Values With Forwarded Values Property software amazon awscdk services cloudfront Cfn Distribution Forwarded Values Property As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BEHAVIOR_BUILDER_CLOUDFRONT__FORWARDED_VALUES_WITH_FORWARDED_VALUES_PROPERTY_SOFTWARE_AMAZON_AWSCDK_SERVICES_CLOUDFRONT_CFN_DISTRIBUTION_FORWARDED_VALUES_PROPERTY_AS_REFERENCE = eINSTANCE
+				.getBehaviorBuilder_cloudfront_ForwardedValuesWithForwardedValuesProperty_software_amazon_awscdk_services_cloudfront_CfnDistribution_ForwardedValuesProperty_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Is Default Behavior java lang Boolean </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BEHAVIOR_BUILDER_CLOUDFRONT__IS_DEFAULT_BEHAVIOR_JAVA_LANG_BOOLEAN_ = eINSTANCE
+				.getBehaviorBuilder_cloudfront_IsDefaultBehavior_java_lang_Boolean_();
+
+		/**
+		 * The meta object literal for the '<em><b>Lambda Function Associations software amazon awscdk services cloudfront Lambda Function Association As List</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BEHAVIOR_BUILDER_CLOUDFRONT__LAMBDA_FUNCTION_ASSOCIATIONS_SOFTWARE_AMAZON_AWSCDK_SERVICES_CLOUDFRONT_LAMBDA_FUNCTION_ASSOCIATION_AS_LIST = eINSTANCE
+				.getBehaviorBuilder_cloudfront_LambdaFunctionAssociations_software_amazon_awscdk_services_cloudfront_LambdaFunctionAssociation_AsList();
+
+		/**
+		 * The meta object literal for the '<em><b>Max Ttl With Duration software amazon awscdk core Duration As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BEHAVIOR_BUILDER_CLOUDFRONT__MAX_TTL_WITH_DURATION_SOFTWARE_AMAZON_AWSCDK_CORE_DURATION_AS_REFERENCE = eINSTANCE
+				.getBehaviorBuilder_cloudfront_MaxTtlWithDuration_software_amazon_awscdk_core_Duration_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Min Ttl With Duration software amazon awscdk core Duration As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BEHAVIOR_BUILDER_CLOUDFRONT__MIN_TTL_WITH_DURATION_SOFTWARE_AMAZON_AWSCDK_CORE_DURATION_AS_REFERENCE = eINSTANCE
+				.getBehaviorBuilder_cloudfront_MinTtlWithDuration_software_amazon_awscdk_core_Duration_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Path Pattern java lang String </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BEHAVIOR_BUILDER_CLOUDFRONT__PATH_PATTERN_JAVA_LANG_STRING_ = eINSTANCE
+				.getBehaviorBuilder_cloudfront_PathPattern_java_lang_String_();
+
+		/**
+		 * The meta object literal for the '<em><b>Trusted Signers java lang String As List</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BEHAVIOR_BUILDER_CLOUDFRONT__TRUSTED_SIGNERS_JAVA_LANG_STRING_AS_LIST = eINSTANCE
+				.getBehaviorBuilder_cloudfront_TrustedSigners_java_lang_String_AsList();
+
+		/**
+		 * The meta object literal for the '<em><b>Generated Class Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BEHAVIOR_BUILDER_CLOUDFRONT__GENERATED_CLASS_NAME = eINSTANCE
+				.getBehaviorBuilder_cloudfront_GeneratedClassName();
+
+		/**
+		 * The meta object literal for the '<em><b>Var Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BEHAVIOR_BUILDER_CLOUDFRONT__VAR_NAME = eINSTANCE.getBehaviorBuilder_cloudfront_VarName();
+
+		/**
+		 * The meta object literal for the '<em><b>Identifier</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BEHAVIOR_BUILDER_CLOUDFRONT__IDENTIFIER = eINSTANCE.getBehaviorBuilder_cloudfront_Identifier();
+
+		/**
+		 * The meta object literal for the '<em><b>Additional Code</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BEHAVIOR_BUILDER_CLOUDFRONT__ADDITIONAL_CODE = eINSTANCE
+				.getBehaviorBuilder_cloudfront_AdditionalCode();
+
+		/**
+		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.CustomOriginConfigBuilder_cloudfrontImpl <em>Custom Origin Config Builder cloudfront</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.CustomOriginConfigBuilder_cloudfrontImpl
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getCustomOriginConfigBuilder_cloudfront()
+		 * @generated
+		 */
+		EClass CUSTOM_ORIGIN_CONFIG_BUILDER_CLOUDFRONT = eINSTANCE.getCustomOriginConfigBuilder_cloudfront();
+
+		/**
+		 * The meta object literal for the '<em><b>Domain Name java lang String </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CUSTOM_ORIGIN_CONFIG_BUILDER_CLOUDFRONT__DOMAIN_NAME_JAVA_LANG_STRING_ = eINSTANCE
+				.getCustomOriginConfigBuilder_cloudfront_DomainName_java_lang_String_();
+
+		/**
+		 * The meta object literal for the '<em><b>Allowed Origin Ssl Versions software amazon awscdk services cloudfront Origin Ssl Policy As List</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CUSTOM_ORIGIN_CONFIG_BUILDER_CLOUDFRONT__ALLOWED_ORIGIN_SSL_VERSIONS_SOFTWARE_AMAZON_AWSCDK_SERVICES_CLOUDFRONT_ORIGIN_SSL_POLICY_AS_LIST = eINSTANCE
+				.getCustomOriginConfigBuilder_cloudfront_AllowedOriginSslVersions_software_amazon_awscdk_services_cloudfront_OriginSslPolicy_AsList();
+
+		/**
+		 * The meta object literal for the '<em><b>Http Port java lang Number </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CUSTOM_ORIGIN_CONFIG_BUILDER_CLOUDFRONT__HTTP_PORT_JAVA_LANG_NUMBER_ = eINSTANCE
+				.getCustomOriginConfigBuilder_cloudfront_HttpPort_java_lang_Number_();
+
+		/**
+		 * The meta object literal for the '<em><b>Https Port java lang Number </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CUSTOM_ORIGIN_CONFIG_BUILDER_CLOUDFRONT__HTTPS_PORT_JAVA_LANG_NUMBER_ = eINSTANCE
+				.getCustomOriginConfigBuilder_cloudfront_HttpsPort_java_lang_Number_();
+
+		/**
+		 * The meta object literal for the '<em><b>Origin Keepalive Timeout With Duration software amazon awscdk core Duration As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CUSTOM_ORIGIN_CONFIG_BUILDER_CLOUDFRONT__ORIGIN_KEEPALIVE_TIMEOUT_WITH_DURATION_SOFTWARE_AMAZON_AWSCDK_CORE_DURATION_AS_REFERENCE = eINSTANCE
+				.getCustomOriginConfigBuilder_cloudfront_OriginKeepaliveTimeoutWithDuration_software_amazon_awscdk_core_Duration_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Origin Protocol Policy software amazon awscdk services cloudfront Origin Protocol Policy </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CUSTOM_ORIGIN_CONFIG_BUILDER_CLOUDFRONT__ORIGIN_PROTOCOL_POLICY_SOFTWARE_AMAZON_AWSCDK_SERVICES_CLOUDFRONT_ORIGIN_PROTOCOL_POLICY_ = eINSTANCE
+				.getCustomOriginConfigBuilder_cloudfront_OriginProtocolPolicy_software_amazon_awscdk_services_cloudfront_OriginProtocolPolicy_();
+
+		/**
+		 * The meta object literal for the '<em><b>Origin Read Timeout With Duration software amazon awscdk core Duration As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CUSTOM_ORIGIN_CONFIG_BUILDER_CLOUDFRONT__ORIGIN_READ_TIMEOUT_WITH_DURATION_SOFTWARE_AMAZON_AWSCDK_CORE_DURATION_AS_REFERENCE = eINSTANCE
+				.getCustomOriginConfigBuilder_cloudfront_OriginReadTimeoutWithDuration_software_amazon_awscdk_core_Duration_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Generated Class Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CUSTOM_ORIGIN_CONFIG_BUILDER_CLOUDFRONT__GENERATED_CLASS_NAME = eINSTANCE
+				.getCustomOriginConfigBuilder_cloudfront_GeneratedClassName();
+
+		/**
+		 * The meta object literal for the '<em><b>Var Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CUSTOM_ORIGIN_CONFIG_BUILDER_CLOUDFRONT__VAR_NAME = eINSTANCE
+				.getCustomOriginConfigBuilder_cloudfront_VarName();
+
+		/**
+		 * The meta object literal for the '<em><b>Identifier</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CUSTOM_ORIGIN_CONFIG_BUILDER_CLOUDFRONT__IDENTIFIER = eINSTANCE
+				.getCustomOriginConfigBuilder_cloudfront_Identifier();
+
+		/**
+		 * The meta object literal for the '<em><b>Additional Code</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CUSTOM_ORIGIN_CONFIG_BUILDER_CLOUDFRONT__ADDITIONAL_CODE = eINSTANCE
+				.getCustomOriginConfigBuilder_cloudfront_AdditionalCode();
+
+		/**
+		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.BlockPublicAccessBuilder_s3Impl <em>Block Public Access Builder s3</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.BlockPublicAccessBuilder_s3Impl
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getBlockPublicAccessBuilder_s3()
+		 * @generated
+		 */
+		EClass BLOCK_PUBLIC_ACCESS_BUILDER_S3 = eINSTANCE.getBlockPublicAccessBuilder_s3();
+
+		/**
+		 * The meta object literal for the '<em><b>Block Public Acls java lang Boolean </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BLOCK_PUBLIC_ACCESS_BUILDER_S3__BLOCK_PUBLIC_ACLS_JAVA_LANG_BOOLEAN_ = eINSTANCE
+				.getBlockPublicAccessBuilder_s3_BlockPublicAcls_java_lang_Boolean_();
+
+		/**
+		 * The meta object literal for the '<em><b>Block Public Policy java lang Boolean </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BLOCK_PUBLIC_ACCESS_BUILDER_S3__BLOCK_PUBLIC_POLICY_JAVA_LANG_BOOLEAN_ = eINSTANCE
+				.getBlockPublicAccessBuilder_s3_BlockPublicPolicy_java_lang_Boolean_();
+
+		/**
+		 * The meta object literal for the '<em><b>Ignore Public Acls java lang Boolean </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BLOCK_PUBLIC_ACCESS_BUILDER_S3__IGNORE_PUBLIC_ACLS_JAVA_LANG_BOOLEAN_ = eINSTANCE
+				.getBlockPublicAccessBuilder_s3_IgnorePublicAcls_java_lang_Boolean_();
+
+		/**
+		 * The meta object literal for the '<em><b>Restrict Public Buckets java lang Boolean </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BLOCK_PUBLIC_ACCESS_BUILDER_S3__RESTRICT_PUBLIC_BUCKETS_JAVA_LANG_BOOLEAN_ = eINSTANCE
+				.getBlockPublicAccessBuilder_s3_RestrictPublicBuckets_java_lang_Boolean_();
+
+		/**
+		 * The meta object literal for the '<em><b>Generated Class Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BLOCK_PUBLIC_ACCESS_BUILDER_S3__GENERATED_CLASS_NAME = eINSTANCE
+				.getBlockPublicAccessBuilder_s3_GeneratedClassName();
+
+		/**
+		 * The meta object literal for the '<em><b>Var Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BLOCK_PUBLIC_ACCESS_BUILDER_S3__VAR_NAME = eINSTANCE.getBlockPublicAccessBuilder_s3_VarName();
+
+		/**
+		 * The meta object literal for the '<em><b>Identifier</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BLOCK_PUBLIC_ACCESS_BUILDER_S3__IDENTIFIER = eINSTANCE.getBlockPublicAccessBuilder_s3_Identifier();
+
+		/**
+		 * The meta object literal for the '<em><b>Additional Code</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BLOCK_PUBLIC_ACCESS_BUILDER_S3__ADDITIONAL_CODE = eINSTANCE
+				.getBlockPublicAccessBuilder_s3_AdditionalCode();
+
+		/**
+		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.CorsRuleBuilder_s3Impl <em>Cors Rule Builder s3</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.CorsRuleBuilder_s3Impl
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getCorsRuleBuilder_s3()
+		 * @generated
+		 */
+		EClass CORS_RULE_BUILDER_S3 = eINSTANCE.getCorsRuleBuilder_s3();
+
+		/**
+		 * The meta object literal for the '<em><b>Allowed Methods software amazon awscdk services s3 Http Methods As List</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CORS_RULE_BUILDER_S3__ALLOWED_METHODS_SOFTWARE_AMAZON_AWSCDK_SERVICES_S3_HTTP_METHODS_AS_LIST = eINSTANCE
+				.getCorsRuleBuilder_s3_AllowedMethods_software_amazon_awscdk_services_s3_HttpMethods_AsList();
+
+		/**
+		 * The meta object literal for the '<em><b>Allowed Origins java lang String As List</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CORS_RULE_BUILDER_S3__ALLOWED_ORIGINS_JAVA_LANG_STRING_AS_LIST = eINSTANCE
+				.getCorsRuleBuilder_s3_AllowedOrigins_java_lang_String_AsList();
+
+		/**
+		 * The meta object literal for the '<em><b>Allowed Headers java lang String As List</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CORS_RULE_BUILDER_S3__ALLOWED_HEADERS_JAVA_LANG_STRING_AS_LIST = eINSTANCE
+				.getCorsRuleBuilder_s3_AllowedHeaders_java_lang_String_AsList();
+
+		/**
+		 * The meta object literal for the '<em><b>Exposed Headers java lang String As List</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CORS_RULE_BUILDER_S3__EXPOSED_HEADERS_JAVA_LANG_STRING_AS_LIST = eINSTANCE
+				.getCorsRuleBuilder_s3_ExposedHeaders_java_lang_String_AsList();
+
+		/**
+		 * The meta object literal for the '<em><b>Id java lang String </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CORS_RULE_BUILDER_S3__ID_JAVA_LANG_STRING_ = eINSTANCE.getCorsRuleBuilder_s3_Id_java_lang_String_();
+
+		/**
+		 * The meta object literal for the '<em><b>Max Age java lang Number </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CORS_RULE_BUILDER_S3__MAX_AGE_JAVA_LANG_NUMBER_ = eINSTANCE
+				.getCorsRuleBuilder_s3_MaxAge_java_lang_Number_();
+
+		/**
+		 * The meta object literal for the '<em><b>Generated Class Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CORS_RULE_BUILDER_S3__GENERATED_CLASS_NAME = eINSTANCE.getCorsRuleBuilder_s3_GeneratedClassName();
+
+		/**
+		 * The meta object literal for the '<em><b>Var Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CORS_RULE_BUILDER_S3__VAR_NAME = eINSTANCE.getCorsRuleBuilder_s3_VarName();
+
+		/**
+		 * The meta object literal for the '<em><b>Identifier</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CORS_RULE_BUILDER_S3__IDENTIFIER = eINSTANCE.getCorsRuleBuilder_s3_Identifier();
+
+		/**
+		 * The meta object literal for the '<em><b>Additional Code</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CORS_RULE_BUILDER_S3__ADDITIONAL_CODE = eINSTANCE.getCorsRuleBuilder_s3_AdditionalCode();
+
+		/**
+		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.NoncurrentVersionTransitionBuilder_s3Impl <em>Noncurrent Version Transition Builder s3</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.NoncurrentVersionTransitionBuilder_s3Impl
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getNoncurrentVersionTransitionBuilder_s3()
+		 * @generated
+		 */
+		EClass NONCURRENT_VERSION_TRANSITION_BUILDER_S3 = eINSTANCE.getNoncurrentVersionTransitionBuilder_s3();
+
+		/**
+		 * The meta object literal for the '<em><b>Storage Class With Storage Class software amazon awscdk services s3 Storage Class As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute NONCURRENT_VERSION_TRANSITION_BUILDER_S3__STORAGE_CLASS_WITH_STORAGE_CLASS_SOFTWARE_AMAZON_AWSCDK_SERVICES_S3_STORAGE_CLASS_AS_REFERENCE = eINSTANCE
+				.getNoncurrentVersionTransitionBuilder_s3_StorageClassWithStorageClass_software_amazon_awscdk_services_s3_StorageClass_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Transition After With Duration software amazon awscdk core Duration As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute NONCURRENT_VERSION_TRANSITION_BUILDER_S3__TRANSITION_AFTER_WITH_DURATION_SOFTWARE_AMAZON_AWSCDK_CORE_DURATION_AS_REFERENCE = eINSTANCE
+				.getNoncurrentVersionTransitionBuilder_s3_TransitionAfterWithDuration_software_amazon_awscdk_core_Duration_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Generated Class Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute NONCURRENT_VERSION_TRANSITION_BUILDER_S3__GENERATED_CLASS_NAME = eINSTANCE
+				.getNoncurrentVersionTransitionBuilder_s3_GeneratedClassName();
+
+		/**
+		 * The meta object literal for the '<em><b>Var Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute NONCURRENT_VERSION_TRANSITION_BUILDER_S3__VAR_NAME = eINSTANCE
+				.getNoncurrentVersionTransitionBuilder_s3_VarName();
+
+		/**
+		 * The meta object literal for the '<em><b>Identifier</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute NONCURRENT_VERSION_TRANSITION_BUILDER_S3__IDENTIFIER = eINSTANCE
+				.getNoncurrentVersionTransitionBuilder_s3_Identifier();
+
+		/**
+		 * The meta object literal for the '<em><b>Additional Code</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute NONCURRENT_VERSION_TRANSITION_BUILDER_S3__ADDITIONAL_CODE = eINSTANCE
+				.getNoncurrentVersionTransitionBuilder_s3_AdditionalCode();
+
+		/**
+		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.TransitionBuilder_s3Impl <em>Transition Builder s3</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.TransitionBuilder_s3Impl
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getTransitionBuilder_s3()
+		 * @generated
+		 */
+		EClass TRANSITION_BUILDER_S3 = eINSTANCE.getTransitionBuilder_s3();
+
+		/**
+		 * The meta object literal for the '<em><b>Storage Class With Storage Class software amazon awscdk services s3 Storage Class As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TRANSITION_BUILDER_S3__STORAGE_CLASS_WITH_STORAGE_CLASS_SOFTWARE_AMAZON_AWSCDK_SERVICES_S3_STORAGE_CLASS_AS_REFERENCE = eINSTANCE
+				.getTransitionBuilder_s3_StorageClassWithStorageClass_software_amazon_awscdk_services_s3_StorageClass_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Transition After With Duration software amazon awscdk core Duration As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TRANSITION_BUILDER_S3__TRANSITION_AFTER_WITH_DURATION_SOFTWARE_AMAZON_AWSCDK_CORE_DURATION_AS_REFERENCE = eINSTANCE
+				.getTransitionBuilder_s3_TransitionAfterWithDuration_software_amazon_awscdk_core_Duration_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Transition Date With Instant java time Instant As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TRANSITION_BUILDER_S3__TRANSITION_DATE_WITH_INSTANT_JAVA_TIME_INSTANT_AS_REFERENCE = eINSTANCE
+				.getTransitionBuilder_s3_TransitionDateWithInstant_java_time_Instant_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Generated Class Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TRANSITION_BUILDER_S3__GENERATED_CLASS_NAME = eINSTANCE.getTransitionBuilder_s3_GeneratedClassName();
+
+		/**
+		 * The meta object literal for the '<em><b>Var Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TRANSITION_BUILDER_S3__VAR_NAME = eINSTANCE.getTransitionBuilder_s3_VarName();
+
+		/**
+		 * The meta object literal for the '<em><b>Identifier</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TRANSITION_BUILDER_S3__IDENTIFIER = eINSTANCE.getTransitionBuilder_s3_Identifier();
+
+		/**
+		 * The meta object literal for the '<em><b>Additional Code</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TRANSITION_BUILDER_S3__ADDITIONAL_CODE = eINSTANCE.getTransitionBuilder_s3_AdditionalCode();
+
+		/**
+		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.LifecycleRuleBuilder_s3Impl <em>Lifecycle Rule Builder s3</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.LifecycleRuleBuilder_s3Impl
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getLifecycleRuleBuilder_s3()
+		 * @generated
+		 */
+		EClass LIFECYCLE_RULE_BUILDER_S3 = eINSTANCE.getLifecycleRuleBuilder_s3();
+
+		/**
+		 * The meta object literal for the '<em><b>Abort Incomplete Multipart Upload After With Duration software amazon awscdk core Duration As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LIFECYCLE_RULE_BUILDER_S3__ABORT_INCOMPLETE_MULTIPART_UPLOAD_AFTER_WITH_DURATION_SOFTWARE_AMAZON_AWSCDK_CORE_DURATION_AS_REFERENCE = eINSTANCE
+				.getLifecycleRuleBuilder_s3_AbortIncompleteMultipartUploadAfterWithDuration_software_amazon_awscdk_core_Duration_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Enabled java lang Boolean </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LIFECYCLE_RULE_BUILDER_S3__ENABLED_JAVA_LANG_BOOLEAN_ = eINSTANCE
+				.getLifecycleRuleBuilder_s3_Enabled_java_lang_Boolean_();
+
+		/**
+		 * The meta object literal for the '<em><b>Expiration With Duration software amazon awscdk core Duration As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LIFECYCLE_RULE_BUILDER_S3__EXPIRATION_WITH_DURATION_SOFTWARE_AMAZON_AWSCDK_CORE_DURATION_AS_REFERENCE = eINSTANCE
+				.getLifecycleRuleBuilder_s3_ExpirationWithDuration_software_amazon_awscdk_core_Duration_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Expiration Date With Instant java time Instant As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LIFECYCLE_RULE_BUILDER_S3__EXPIRATION_DATE_WITH_INSTANT_JAVA_TIME_INSTANT_AS_REFERENCE = eINSTANCE
+				.getLifecycleRuleBuilder_s3_ExpirationDateWithInstant_java_time_Instant_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Id java lang String </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LIFECYCLE_RULE_BUILDER_S3__ID_JAVA_LANG_STRING_ = eINSTANCE
+				.getLifecycleRuleBuilder_s3_Id_java_lang_String_();
+
+		/**
+		 * The meta object literal for the '<em><b>Noncurrent Version Expiration With Duration software amazon awscdk core Duration As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LIFECYCLE_RULE_BUILDER_S3__NONCURRENT_VERSION_EXPIRATION_WITH_DURATION_SOFTWARE_AMAZON_AWSCDK_CORE_DURATION_AS_REFERENCE = eINSTANCE
+				.getLifecycleRuleBuilder_s3_NoncurrentVersionExpirationWithDuration_software_amazon_awscdk_core_Duration_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Noncurrent Version Transitions software amazon awscdk services s3 Noncurrent Version Transition As List</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LIFECYCLE_RULE_BUILDER_S3__NONCURRENT_VERSION_TRANSITIONS_SOFTWARE_AMAZON_AWSCDK_SERVICES_S3_NONCURRENT_VERSION_TRANSITION_AS_LIST = eINSTANCE
+				.getLifecycleRuleBuilder_s3_NoncurrentVersionTransitions_software_amazon_awscdk_services_s3_NoncurrentVersionTransition_AsList();
+
+		/**
+		 * The meta object literal for the '<em><b>Prefix java lang String </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LIFECYCLE_RULE_BUILDER_S3__PREFIX_JAVA_LANG_STRING_ = eINSTANCE
+				.getLifecycleRuleBuilder_s3_Prefix_java_lang_String_();
+
+		/**
+		 * The meta object literal for the '<em><b>Tag Filters java lang String java lang Object As Map</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LIFECYCLE_RULE_BUILDER_S3__TAG_FILTERS_JAVA_LANG_STRING_JAVA_LANG_OBJECT_AS_MAP = eINSTANCE
+				.getLifecycleRuleBuilder_s3_TagFilters_java_lang_String__java_lang_Object_AsMap();
+
+		/**
+		 * The meta object literal for the '<em><b>Transitions software amazon awscdk services s3 Transition As List</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LIFECYCLE_RULE_BUILDER_S3__TRANSITIONS_SOFTWARE_AMAZON_AWSCDK_SERVICES_S3_TRANSITION_AS_LIST = eINSTANCE
+				.getLifecycleRuleBuilder_s3_Transitions_software_amazon_awscdk_services_s3_Transition_AsList();
+
+		/**
+		 * The meta object literal for the '<em><b>Generated Class Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LIFECYCLE_RULE_BUILDER_S3__GENERATED_CLASS_NAME = eINSTANCE
+				.getLifecycleRuleBuilder_s3_GeneratedClassName();
+
+		/**
+		 * The meta object literal for the '<em><b>Var Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LIFECYCLE_RULE_BUILDER_S3__VAR_NAME = eINSTANCE.getLifecycleRuleBuilder_s3_VarName();
+
+		/**
+		 * The meta object literal for the '<em><b>Identifier</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LIFECYCLE_RULE_BUILDER_S3__IDENTIFIER = eINSTANCE.getLifecycleRuleBuilder_s3_Identifier();
+
+		/**
+		 * The meta object literal for the '<em><b>Additional Code</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LIFECYCLE_RULE_BUILDER_S3__ADDITIONAL_CODE = eINSTANCE.getLifecycleRuleBuilder_s3_AdditionalCode();
+
+		/**
+		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.BucketMetricsBuilder_s3Impl <em>Bucket Metrics Builder s3</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.BucketMetricsBuilder_s3Impl
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getBucketMetricsBuilder_s3()
+		 * @generated
+		 */
+		EClass BUCKET_METRICS_BUILDER_S3 = eINSTANCE.getBucketMetricsBuilder_s3();
+
+		/**
+		 * The meta object literal for the '<em><b>Id java lang String </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BUCKET_METRICS_BUILDER_S3__ID_JAVA_LANG_STRING_ = eINSTANCE
+				.getBucketMetricsBuilder_s3_Id_java_lang_String_();
+
+		/**
+		 * The meta object literal for the '<em><b>Prefix java lang String </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BUCKET_METRICS_BUILDER_S3__PREFIX_JAVA_LANG_STRING_ = eINSTANCE
+				.getBucketMetricsBuilder_s3_Prefix_java_lang_String_();
+
+		/**
+		 * The meta object literal for the '<em><b>Tag Filters java lang String java lang Object As Map</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BUCKET_METRICS_BUILDER_S3__TAG_FILTERS_JAVA_LANG_STRING_JAVA_LANG_OBJECT_AS_MAP = eINSTANCE
+				.getBucketMetricsBuilder_s3_TagFilters_java_lang_String__java_lang_Object_AsMap();
+
+		/**
+		 * The meta object literal for the '<em><b>Generated Class Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BUCKET_METRICS_BUILDER_S3__GENERATED_CLASS_NAME = eINSTANCE
+				.getBucketMetricsBuilder_s3_GeneratedClassName();
+
+		/**
+		 * The meta object literal for the '<em><b>Var Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BUCKET_METRICS_BUILDER_S3__VAR_NAME = eINSTANCE.getBucketMetricsBuilder_s3_VarName();
+
+		/**
+		 * The meta object literal for the '<em><b>Identifier</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BUCKET_METRICS_BUILDER_S3__IDENTIFIER = eINSTANCE.getBucketMetricsBuilder_s3_Identifier();
+
+		/**
+		 * The meta object literal for the '<em><b>Additional Code</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BUCKET_METRICS_BUILDER_S3__ADDITIONAL_CODE = eINSTANCE.getBucketMetricsBuilder_s3_AdditionalCode();
+
+		/**
+		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.RedirectTargetBuilder_s3Impl <em>Redirect Target Builder s3</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.RedirectTargetBuilder_s3Impl
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getRedirectTargetBuilder_s3()
+		 * @generated
+		 */
+		EClass REDIRECT_TARGET_BUILDER_S3 = eINSTANCE.getRedirectTargetBuilder_s3();
+
+		/**
+		 * The meta object literal for the '<em><b>Host Name java lang String </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute REDIRECT_TARGET_BUILDER_S3__HOST_NAME_JAVA_LANG_STRING_ = eINSTANCE
+				.getRedirectTargetBuilder_s3_HostName_java_lang_String_();
+
+		/**
+		 * The meta object literal for the '<em><b>Protocol software amazon awscdk services s3 Redirect Protocol </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute REDIRECT_TARGET_BUILDER_S3__PROTOCOL_SOFTWARE_AMAZON_AWSCDK_SERVICES_S3_REDIRECT_PROTOCOL_ = eINSTANCE
+				.getRedirectTargetBuilder_s3_Protocol_software_amazon_awscdk_services_s3_RedirectProtocol_();
+
+		/**
+		 * The meta object literal for the '<em><b>Generated Class Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute REDIRECT_TARGET_BUILDER_S3__GENERATED_CLASS_NAME = eINSTANCE
+				.getRedirectTargetBuilder_s3_GeneratedClassName();
+
+		/**
+		 * The meta object literal for the '<em><b>Var Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute REDIRECT_TARGET_BUILDER_S3__VAR_NAME = eINSTANCE.getRedirectTargetBuilder_s3_VarName();
+
+		/**
+		 * The meta object literal for the '<em><b>Identifier</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute REDIRECT_TARGET_BUILDER_S3__IDENTIFIER = eINSTANCE.getRedirectTargetBuilder_s3_Identifier();
+
+		/**
+		 * The meta object literal for the '<em><b>Additional Code</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute REDIRECT_TARGET_BUILDER_S3__ADDITIONAL_CODE = eINSTANCE.getRedirectTargetBuilder_s3_AdditionalCode();
+
+		/**
+		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.RoutingRuleConditionBuilder_s3Impl <em>Routing Rule Condition Builder s3</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.RoutingRuleConditionBuilder_s3Impl
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getRoutingRuleConditionBuilder_s3()
+		 * @generated
+		 */
+		EClass ROUTING_RULE_CONDITION_BUILDER_S3 = eINSTANCE.getRoutingRuleConditionBuilder_s3();
+
+		/**
+		 * The meta object literal for the '<em><b>Http Error Code Returned Equals java lang String </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ROUTING_RULE_CONDITION_BUILDER_S3__HTTP_ERROR_CODE_RETURNED_EQUALS_JAVA_LANG_STRING_ = eINSTANCE
+				.getRoutingRuleConditionBuilder_s3_HttpErrorCodeReturnedEquals_java_lang_String_();
+
+		/**
+		 * The meta object literal for the '<em><b>Key Prefix Equals java lang String </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ROUTING_RULE_CONDITION_BUILDER_S3__KEY_PREFIX_EQUALS_JAVA_LANG_STRING_ = eINSTANCE
+				.getRoutingRuleConditionBuilder_s3_KeyPrefixEquals_java_lang_String_();
+
+		/**
+		 * The meta object literal for the '<em><b>Generated Class Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ROUTING_RULE_CONDITION_BUILDER_S3__GENERATED_CLASS_NAME = eINSTANCE
+				.getRoutingRuleConditionBuilder_s3_GeneratedClassName();
+
+		/**
+		 * The meta object literal for the '<em><b>Var Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ROUTING_RULE_CONDITION_BUILDER_S3__VAR_NAME = eINSTANCE.getRoutingRuleConditionBuilder_s3_VarName();
+
+		/**
+		 * The meta object literal for the '<em><b>Identifier</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ROUTING_RULE_CONDITION_BUILDER_S3__IDENTIFIER = eINSTANCE
+				.getRoutingRuleConditionBuilder_s3_Identifier();
+
+		/**
+		 * The meta object literal for the '<em><b>Additional Code</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ROUTING_RULE_CONDITION_BUILDER_S3__ADDITIONAL_CODE = eINSTANCE
+				.getRoutingRuleConditionBuilder_s3_AdditionalCode();
+
+		/**
+		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.RoutingRuleBuilder_s3Impl <em>Routing Rule Builder s3</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.RoutingRuleBuilder_s3Impl
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getRoutingRuleBuilder_s3()
+		 * @generated
+		 */
+		EClass ROUTING_RULE_BUILDER_S3 = eINSTANCE.getRoutingRuleBuilder_s3();
+
+		/**
+		 * The meta object literal for the '<em><b>Condition With Routing Rule Condition software amazon awscdk services s3 Routing Rule Condition As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ROUTING_RULE_BUILDER_S3__CONDITION_WITH_ROUTING_RULE_CONDITION_SOFTWARE_AMAZON_AWSCDK_SERVICES_S3_ROUTING_RULE_CONDITION_AS_REFERENCE = eINSTANCE
+				.getRoutingRuleBuilder_s3_ConditionWithRoutingRuleCondition_software_amazon_awscdk_services_s3_RoutingRuleCondition_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Host Name java lang String </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ROUTING_RULE_BUILDER_S3__HOST_NAME_JAVA_LANG_STRING_ = eINSTANCE
+				.getRoutingRuleBuilder_s3_HostName_java_lang_String_();
+
+		/**
+		 * The meta object literal for the '<em><b>Http Redirect Code java lang String </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ROUTING_RULE_BUILDER_S3__HTTP_REDIRECT_CODE_JAVA_LANG_STRING_ = eINSTANCE
+				.getRoutingRuleBuilder_s3_HttpRedirectCode_java_lang_String_();
+
+		/**
+		 * The meta object literal for the '<em><b>Protocol software amazon awscdk services s3 Redirect Protocol </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ROUTING_RULE_BUILDER_S3__PROTOCOL_SOFTWARE_AMAZON_AWSCDK_SERVICES_S3_REDIRECT_PROTOCOL_ = eINSTANCE
+				.getRoutingRuleBuilder_s3_Protocol_software_amazon_awscdk_services_s3_RedirectProtocol_();
+
+		/**
+		 * The meta object literal for the '<em><b>Replace Key With Replace Key software amazon awscdk services s3 Replace Key As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ROUTING_RULE_BUILDER_S3__REPLACE_KEY_WITH_REPLACE_KEY_SOFTWARE_AMAZON_AWSCDK_SERVICES_S3_REPLACE_KEY_AS_REFERENCE = eINSTANCE
+				.getRoutingRuleBuilder_s3_ReplaceKeyWithReplaceKey_software_amazon_awscdk_services_s3_ReplaceKey_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Generated Class Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ROUTING_RULE_BUILDER_S3__GENERATED_CLASS_NAME = eINSTANCE
+				.getRoutingRuleBuilder_s3_GeneratedClassName();
+
+		/**
+		 * The meta object literal for the '<em><b>Var Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ROUTING_RULE_BUILDER_S3__VAR_NAME = eINSTANCE.getRoutingRuleBuilder_s3_VarName();
+
+		/**
+		 * The meta object literal for the '<em><b>Identifier</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ROUTING_RULE_BUILDER_S3__IDENTIFIER = eINSTANCE.getRoutingRuleBuilder_s3_Identifier();
+
+		/**
+		 * The meta object literal for the '<em><b>Additional Code</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ROUTING_RULE_BUILDER_S3__ADDITIONAL_CODE = eINSTANCE.getRoutingRuleBuilder_s3_AdditionalCode();
+
+		/**
+		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.BucketBuilder_s3Impl <em>Bucket Builder s3</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.BucketBuilder_s3Impl
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getBucketBuilder_s3()
+		 * @generated
+		 */
+		EClass BUCKET_BUILDER_S3 = eINSTANCE.getBucketBuilder_s3();
+
+		/**
+		 * The meta object literal for the '<em><b>Access Control software amazon awscdk services s3 Bucket Access Control </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BUCKET_BUILDER_S3__ACCESS_CONTROL_SOFTWARE_AMAZON_AWSCDK_SERVICES_S3_BUCKET_ACCESS_CONTROL_ = eINSTANCE
+				.getBucketBuilder_s3_AccessControl_software_amazon_awscdk_services_s3_BucketAccessControl_();
+
+		/**
+		 * The meta object literal for the '<em><b>Block Public Access With Block Public Access software amazon awscdk services s3 Block Public Access As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BUCKET_BUILDER_S3__BLOCK_PUBLIC_ACCESS_WITH_BLOCK_PUBLIC_ACCESS_SOFTWARE_AMAZON_AWSCDK_SERVICES_S3_BLOCK_PUBLIC_ACCESS_AS_REFERENCE = eINSTANCE
+				.getBucketBuilder_s3_BlockPublicAccessWithBlockPublicAccess_software_amazon_awscdk_services_s3_BlockPublicAccess_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Bucket Name java lang String </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BUCKET_BUILDER_S3__BUCKET_NAME_JAVA_LANG_STRING_ = eINSTANCE
+				.getBucketBuilder_s3_BucketName_java_lang_String_();
+
+		/**
+		 * The meta object literal for the '<em><b>Cors software amazon awscdk services s3 Cors Rule As List</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BUCKET_BUILDER_S3__CORS_SOFTWARE_AMAZON_AWSCDK_SERVICES_S3_CORS_RULE_AS_LIST = eINSTANCE
+				.getBucketBuilder_s3_Cors_software_amazon_awscdk_services_s3_CorsRule_AsList();
+
+		/**
+		 * The meta object literal for the '<em><b>Encryption software amazon awscdk services s3 Bucket Encryption </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BUCKET_BUILDER_S3__ENCRYPTION_SOFTWARE_AMAZON_AWSCDK_SERVICES_S3_BUCKET_ENCRYPTION_ = eINSTANCE
+				.getBucketBuilder_s3_Encryption_software_amazon_awscdk_services_s3_BucketEncryption_();
+
+		/**
+		 * The meta object literal for the '<em><b>Encryption Key With IKey software amazon awscdk services kms IKey As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BUCKET_BUILDER_S3__ENCRYPTION_KEY_WITH_IKEY_SOFTWARE_AMAZON_AWSCDK_SERVICES_KMS_IKEY_AS_REFERENCE = eINSTANCE
+				.getBucketBuilder_s3_EncryptionKeyWithIKey_software_amazon_awscdk_services_kms_IKey_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Lifecycle Rules software amazon awscdk services s3 Lifecycle Rule As List</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BUCKET_BUILDER_S3__LIFECYCLE_RULES_SOFTWARE_AMAZON_AWSCDK_SERVICES_S3_LIFECYCLE_RULE_AS_LIST = eINSTANCE
+				.getBucketBuilder_s3_LifecycleRules_software_amazon_awscdk_services_s3_LifecycleRule_AsList();
+
+		/**
+		 * The meta object literal for the '<em><b>Metrics software amazon awscdk services s3 Bucket Metrics As List</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BUCKET_BUILDER_S3__METRICS_SOFTWARE_AMAZON_AWSCDK_SERVICES_S3_BUCKET_METRICS_AS_LIST = eINSTANCE
+				.getBucketBuilder_s3_Metrics_software_amazon_awscdk_services_s3_BucketMetrics_AsList();
+
+		/**
+		 * The meta object literal for the '<em><b>Public Read Access java lang Boolean </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BUCKET_BUILDER_S3__PUBLIC_READ_ACCESS_JAVA_LANG_BOOLEAN_ = eINSTANCE
+				.getBucketBuilder_s3_PublicReadAccess_java_lang_Boolean_();
+
+		/**
+		 * The meta object literal for the '<em><b>Removal Policy software amazon awscdk core Removal Policy </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BUCKET_BUILDER_S3__REMOVAL_POLICY_SOFTWARE_AMAZON_AWSCDK_CORE_REMOVAL_POLICY_ = eINSTANCE
+				.getBucketBuilder_s3_RemovalPolicy_software_amazon_awscdk_core_RemovalPolicy_();
+
+		/**
+		 * The meta object literal for the '<em><b>Server Access Logs Bucket With IBucket software amazon awscdk services s3 IBucket As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BUCKET_BUILDER_S3__SERVER_ACCESS_LOGS_BUCKET_WITH_IBUCKET_SOFTWARE_AMAZON_AWSCDK_SERVICES_S3_IBUCKET_AS_REFERENCE = eINSTANCE
+				.getBucketBuilder_s3_ServerAccessLogsBucketWithIBucket_software_amazon_awscdk_services_s3_IBucket_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Server Access Logs Prefix java lang String </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BUCKET_BUILDER_S3__SERVER_ACCESS_LOGS_PREFIX_JAVA_LANG_STRING_ = eINSTANCE
+				.getBucketBuilder_s3_ServerAccessLogsPrefix_java_lang_String_();
+
+		/**
+		 * The meta object literal for the '<em><b>Versioned java lang Boolean </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BUCKET_BUILDER_S3__VERSIONED_JAVA_LANG_BOOLEAN_ = eINSTANCE
+				.getBucketBuilder_s3_Versioned_java_lang_Boolean_();
+
+		/**
+		 * The meta object literal for the '<em><b>Website Error Document java lang String </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BUCKET_BUILDER_S3__WEBSITE_ERROR_DOCUMENT_JAVA_LANG_STRING_ = eINSTANCE
+				.getBucketBuilder_s3_WebsiteErrorDocument_java_lang_String_();
+
+		/**
+		 * The meta object literal for the '<em><b>Website Index Document java lang String </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BUCKET_BUILDER_S3__WEBSITE_INDEX_DOCUMENT_JAVA_LANG_STRING_ = eINSTANCE
+				.getBucketBuilder_s3_WebsiteIndexDocument_java_lang_String_();
+
+		/**
+		 * The meta object literal for the '<em><b>Website Redirect With Redirect Target software amazon awscdk services s3 Redirect Target As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BUCKET_BUILDER_S3__WEBSITE_REDIRECT_WITH_REDIRECT_TARGET_SOFTWARE_AMAZON_AWSCDK_SERVICES_S3_REDIRECT_TARGET_AS_REFERENCE = eINSTANCE
+				.getBucketBuilder_s3_WebsiteRedirectWithRedirectTarget_software_amazon_awscdk_services_s3_RedirectTarget_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Website Routing Rules software amazon awscdk services s3 Routing Rule As List</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BUCKET_BUILDER_S3__WEBSITE_ROUTING_RULES_SOFTWARE_AMAZON_AWSCDK_SERVICES_S3_ROUTING_RULE_AS_LIST = eINSTANCE
+				.getBucketBuilder_s3_WebsiteRoutingRules_software_amazon_awscdk_services_s3_RoutingRule_AsList();
+
+		/**
+		 * The meta object literal for the '<em><b>Generated Class Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BUCKET_BUILDER_S3__GENERATED_CLASS_NAME = eINSTANCE.getBucketBuilder_s3_GeneratedClassName();
+
+		/**
+		 * The meta object literal for the '<em><b>Var Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BUCKET_BUILDER_S3__VAR_NAME = eINSTANCE.getBucketBuilder_s3_VarName();
+
+		/**
+		 * The meta object literal for the '<em><b>Identifier</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BUCKET_BUILDER_S3__IDENTIFIER = eINSTANCE.getBucketBuilder_s3_Identifier();
+
+		/**
+		 * The meta object literal for the '<em><b>Additional Code</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BUCKET_BUILDER_S3__ADDITIONAL_CODE = eINSTANCE.getBucketBuilder_s3_AdditionalCode();
+
+		/**
+		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.BucketPropsBuilder_s3Impl <em>Bucket Props Builder s3</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.BucketPropsBuilder_s3Impl
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getBucketPropsBuilder_s3()
+		 * @generated
+		 */
+		EClass BUCKET_PROPS_BUILDER_S3 = eINSTANCE.getBucketPropsBuilder_s3();
+
+		/**
+		 * The meta object literal for the '<em><b>Access Control software amazon awscdk services s3 Bucket Access Control </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BUCKET_PROPS_BUILDER_S3__ACCESS_CONTROL_SOFTWARE_AMAZON_AWSCDK_SERVICES_S3_BUCKET_ACCESS_CONTROL_ = eINSTANCE
+				.getBucketPropsBuilder_s3_AccessControl_software_amazon_awscdk_services_s3_BucketAccessControl_();
+
+		/**
+		 * The meta object literal for the '<em><b>Block Public Access With Block Public Access software amazon awscdk services s3 Block Public Access As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BUCKET_PROPS_BUILDER_S3__BLOCK_PUBLIC_ACCESS_WITH_BLOCK_PUBLIC_ACCESS_SOFTWARE_AMAZON_AWSCDK_SERVICES_S3_BLOCK_PUBLIC_ACCESS_AS_REFERENCE = eINSTANCE
+				.getBucketPropsBuilder_s3_BlockPublicAccessWithBlockPublicAccess_software_amazon_awscdk_services_s3_BlockPublicAccess_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Bucket Name java lang String </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BUCKET_PROPS_BUILDER_S3__BUCKET_NAME_JAVA_LANG_STRING_ = eINSTANCE
+				.getBucketPropsBuilder_s3_BucketName_java_lang_String_();
+
+		/**
+		 * The meta object literal for the '<em><b>Cors software amazon awscdk services s3 Cors Rule As List</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BUCKET_PROPS_BUILDER_S3__CORS_SOFTWARE_AMAZON_AWSCDK_SERVICES_S3_CORS_RULE_AS_LIST = eINSTANCE
+				.getBucketPropsBuilder_s3_Cors_software_amazon_awscdk_services_s3_CorsRule_AsList();
+
+		/**
+		 * The meta object literal for the '<em><b>Encryption software amazon awscdk services s3 Bucket Encryption </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BUCKET_PROPS_BUILDER_S3__ENCRYPTION_SOFTWARE_AMAZON_AWSCDK_SERVICES_S3_BUCKET_ENCRYPTION_ = eINSTANCE
+				.getBucketPropsBuilder_s3_Encryption_software_amazon_awscdk_services_s3_BucketEncryption_();
+
+		/**
+		 * The meta object literal for the '<em><b>Encryption Key With IKey software amazon awscdk services kms IKey As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BUCKET_PROPS_BUILDER_S3__ENCRYPTION_KEY_WITH_IKEY_SOFTWARE_AMAZON_AWSCDK_SERVICES_KMS_IKEY_AS_REFERENCE = eINSTANCE
+				.getBucketPropsBuilder_s3_EncryptionKeyWithIKey_software_amazon_awscdk_services_kms_IKey_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Lifecycle Rules software amazon awscdk services s3 Lifecycle Rule As List</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BUCKET_PROPS_BUILDER_S3__LIFECYCLE_RULES_SOFTWARE_AMAZON_AWSCDK_SERVICES_S3_LIFECYCLE_RULE_AS_LIST = eINSTANCE
+				.getBucketPropsBuilder_s3_LifecycleRules_software_amazon_awscdk_services_s3_LifecycleRule_AsList();
+
+		/**
+		 * The meta object literal for the '<em><b>Metrics software amazon awscdk services s3 Bucket Metrics As List</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BUCKET_PROPS_BUILDER_S3__METRICS_SOFTWARE_AMAZON_AWSCDK_SERVICES_S3_BUCKET_METRICS_AS_LIST = eINSTANCE
+				.getBucketPropsBuilder_s3_Metrics_software_amazon_awscdk_services_s3_BucketMetrics_AsList();
+
+		/**
+		 * The meta object literal for the '<em><b>Public Read Access java lang Boolean </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BUCKET_PROPS_BUILDER_S3__PUBLIC_READ_ACCESS_JAVA_LANG_BOOLEAN_ = eINSTANCE
+				.getBucketPropsBuilder_s3_PublicReadAccess_java_lang_Boolean_();
+
+		/**
+		 * The meta object literal for the '<em><b>Removal Policy software amazon awscdk core Removal Policy </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BUCKET_PROPS_BUILDER_S3__REMOVAL_POLICY_SOFTWARE_AMAZON_AWSCDK_CORE_REMOVAL_POLICY_ = eINSTANCE
+				.getBucketPropsBuilder_s3_RemovalPolicy_software_amazon_awscdk_core_RemovalPolicy_();
+
+		/**
+		 * The meta object literal for the '<em><b>Server Access Logs Bucket With IBucket software amazon awscdk services s3 IBucket As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BUCKET_PROPS_BUILDER_S3__SERVER_ACCESS_LOGS_BUCKET_WITH_IBUCKET_SOFTWARE_AMAZON_AWSCDK_SERVICES_S3_IBUCKET_AS_REFERENCE = eINSTANCE
+				.getBucketPropsBuilder_s3_ServerAccessLogsBucketWithIBucket_software_amazon_awscdk_services_s3_IBucket_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Server Access Logs Prefix java lang String </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BUCKET_PROPS_BUILDER_S3__SERVER_ACCESS_LOGS_PREFIX_JAVA_LANG_STRING_ = eINSTANCE
+				.getBucketPropsBuilder_s3_ServerAccessLogsPrefix_java_lang_String_();
+
+		/**
+		 * The meta object literal for the '<em><b>Versioned java lang Boolean </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BUCKET_PROPS_BUILDER_S3__VERSIONED_JAVA_LANG_BOOLEAN_ = eINSTANCE
+				.getBucketPropsBuilder_s3_Versioned_java_lang_Boolean_();
+
+		/**
+		 * The meta object literal for the '<em><b>Website Error Document java lang String </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BUCKET_PROPS_BUILDER_S3__WEBSITE_ERROR_DOCUMENT_JAVA_LANG_STRING_ = eINSTANCE
+				.getBucketPropsBuilder_s3_WebsiteErrorDocument_java_lang_String_();
+
+		/**
+		 * The meta object literal for the '<em><b>Website Index Document java lang String </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BUCKET_PROPS_BUILDER_S3__WEBSITE_INDEX_DOCUMENT_JAVA_LANG_STRING_ = eINSTANCE
+				.getBucketPropsBuilder_s3_WebsiteIndexDocument_java_lang_String_();
+
+		/**
+		 * The meta object literal for the '<em><b>Website Redirect With Redirect Target software amazon awscdk services s3 Redirect Target As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BUCKET_PROPS_BUILDER_S3__WEBSITE_REDIRECT_WITH_REDIRECT_TARGET_SOFTWARE_AMAZON_AWSCDK_SERVICES_S3_REDIRECT_TARGET_AS_REFERENCE = eINSTANCE
+				.getBucketPropsBuilder_s3_WebsiteRedirectWithRedirectTarget_software_amazon_awscdk_services_s3_RedirectTarget_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Website Routing Rules software amazon awscdk services s3 Routing Rule As List</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BUCKET_PROPS_BUILDER_S3__WEBSITE_ROUTING_RULES_SOFTWARE_AMAZON_AWSCDK_SERVICES_S3_ROUTING_RULE_AS_LIST = eINSTANCE
+				.getBucketPropsBuilder_s3_WebsiteRoutingRules_software_amazon_awscdk_services_s3_RoutingRule_AsList();
+
+		/**
+		 * The meta object literal for the '<em><b>Generated Class Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BUCKET_PROPS_BUILDER_S3__GENERATED_CLASS_NAME = eINSTANCE
+				.getBucketPropsBuilder_s3_GeneratedClassName();
+
+		/**
+		 * The meta object literal for the '<em><b>Var Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BUCKET_PROPS_BUILDER_S3__VAR_NAME = eINSTANCE.getBucketPropsBuilder_s3_VarName();
+
+		/**
+		 * The meta object literal for the '<em><b>Identifier</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BUCKET_PROPS_BUILDER_S3__IDENTIFIER = eINSTANCE.getBucketPropsBuilder_s3_Identifier();
+
+		/**
+		 * The meta object literal for the '<em><b>Additional Code</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BUCKET_PROPS_BUILDER_S3__ADDITIONAL_CODE = eINSTANCE.getBucketPropsBuilder_s3_AdditionalCode();
+
+		/**
+		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.OriginAccessIdentityBuilder_cloudfrontImpl <em>Origin Access Identity Builder cloudfront</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.OriginAccessIdentityBuilder_cloudfrontImpl
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getOriginAccessIdentityBuilder_cloudfront()
+		 * @generated
+		 */
+		EClass ORIGIN_ACCESS_IDENTITY_BUILDER_CLOUDFRONT = eINSTANCE.getOriginAccessIdentityBuilder_cloudfront();
+
+		/**
+		 * The meta object literal for the '<em><b>Comment java lang String </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ORIGIN_ACCESS_IDENTITY_BUILDER_CLOUDFRONT__COMMENT_JAVA_LANG_STRING_ = eINSTANCE
+				.getOriginAccessIdentityBuilder_cloudfront_Comment_java_lang_String_();
+
+		/**
+		 * The meta object literal for the '<em><b>Generated Class Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ORIGIN_ACCESS_IDENTITY_BUILDER_CLOUDFRONT__GENERATED_CLASS_NAME = eINSTANCE
+				.getOriginAccessIdentityBuilder_cloudfront_GeneratedClassName();
+
+		/**
+		 * The meta object literal for the '<em><b>Var Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ORIGIN_ACCESS_IDENTITY_BUILDER_CLOUDFRONT__VAR_NAME = eINSTANCE
+				.getOriginAccessIdentityBuilder_cloudfront_VarName();
+
+		/**
+		 * The meta object literal for the '<em><b>Identifier</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ORIGIN_ACCESS_IDENTITY_BUILDER_CLOUDFRONT__IDENTIFIER = eINSTANCE
+				.getOriginAccessIdentityBuilder_cloudfront_Identifier();
+
+		/**
+		 * The meta object literal for the '<em><b>Additional Code</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ORIGIN_ACCESS_IDENTITY_BUILDER_CLOUDFRONT__ADDITIONAL_CODE = eINSTANCE
+				.getOriginAccessIdentityBuilder_cloudfront_AdditionalCode();
+
+		/**
+		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.S3OriginConfigBuilder_cloudfrontImpl <em>S3 Origin Config Builder cloudfront</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.S3OriginConfigBuilder_cloudfrontImpl
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getS3OriginConfigBuilder_cloudfront()
+		 * @generated
+		 */
+		EClass S3_ORIGIN_CONFIG_BUILDER_CLOUDFRONT = eINSTANCE.getS3OriginConfigBuilder_cloudfront();
+
+		/**
+		 * The meta object literal for the '<em><b>S3 Bucket Source With IBucket software amazon awscdk services s3 IBucket As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute S3_ORIGIN_CONFIG_BUILDER_CLOUDFRONT__S3_BUCKET_SOURCE_WITH_IBUCKET_SOFTWARE_AMAZON_AWSCDK_SERVICES_S3_IBUCKET_AS_REFERENCE = eINSTANCE
+				.getS3OriginConfigBuilder_cloudfront_S3BucketSourceWithIBucket_software_amazon_awscdk_services_s3_IBucket_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Origin Access Identity With IOrigin Access Identity software amazon awscdk services cloudfront IOrigin Access Identity As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute S3_ORIGIN_CONFIG_BUILDER_CLOUDFRONT__ORIGIN_ACCESS_IDENTITY_WITH_IORIGIN_ACCESS_IDENTITY_SOFTWARE_AMAZON_AWSCDK_SERVICES_CLOUDFRONT_IORIGIN_ACCESS_IDENTITY_AS_REFERENCE = eINSTANCE
+				.getS3OriginConfigBuilder_cloudfront_OriginAccessIdentityWithIOriginAccessIdentity_software_amazon_awscdk_services_cloudfront_IOriginAccessIdentity_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Generated Class Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute S3_ORIGIN_CONFIG_BUILDER_CLOUDFRONT__GENERATED_CLASS_NAME = eINSTANCE
+				.getS3OriginConfigBuilder_cloudfront_GeneratedClassName();
+
+		/**
+		 * The meta object literal for the '<em><b>Var Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute S3_ORIGIN_CONFIG_BUILDER_CLOUDFRONT__VAR_NAME = eINSTANCE
+				.getS3OriginConfigBuilder_cloudfront_VarName();
+
+		/**
+		 * The meta object literal for the '<em><b>Identifier</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute S3_ORIGIN_CONFIG_BUILDER_CLOUDFRONT__IDENTIFIER = eINSTANCE
+				.getS3OriginConfigBuilder_cloudfront_Identifier();
+
+		/**
+		 * The meta object literal for the '<em><b>Additional Code</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute S3_ORIGIN_CONFIG_BUILDER_CLOUDFRONT__ADDITIONAL_CODE = eINSTANCE
+				.getS3OriginConfigBuilder_cloudfront_AdditionalCode();
+
+		/**
+		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.SourceConfigurationBuilder_cloudfrontImpl <em>Source Configuration Builder cloudfront</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.SourceConfigurationBuilder_cloudfrontImpl
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getSourceConfigurationBuilder_cloudfront()
+		 * @generated
+		 */
+		EClass SOURCE_CONFIGURATION_BUILDER_CLOUDFRONT = eINSTANCE.getSourceConfigurationBuilder_cloudfront();
+
+		/**
+		 * The meta object literal for the '<em><b>Behaviors software amazon awscdk services cloudfront Behavior As List</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SOURCE_CONFIGURATION_BUILDER_CLOUDFRONT__BEHAVIORS_SOFTWARE_AMAZON_AWSCDK_SERVICES_CLOUDFRONT_BEHAVIOR_AS_LIST = eINSTANCE
+				.getSourceConfigurationBuilder_cloudfront_Behaviors_software_amazon_awscdk_services_cloudfront_Behavior_AsList();
+
+		/**
+		 * The meta object literal for the '<em><b>Custom Origin Source With Custom Origin Config software amazon awscdk services cloudfront Custom Origin Config As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SOURCE_CONFIGURATION_BUILDER_CLOUDFRONT__CUSTOM_ORIGIN_SOURCE_WITH_CUSTOM_ORIGIN_CONFIG_SOFTWARE_AMAZON_AWSCDK_SERVICES_CLOUDFRONT_CUSTOM_ORIGIN_CONFIG_AS_REFERENCE = eINSTANCE
+				.getSourceConfigurationBuilder_cloudfront_CustomOriginSourceWithCustomOriginConfig_software_amazon_awscdk_services_cloudfront_CustomOriginConfig_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Origin Headers java lang String java lang String As Map</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SOURCE_CONFIGURATION_BUILDER_CLOUDFRONT__ORIGIN_HEADERS_JAVA_LANG_STRING_JAVA_LANG_STRING_AS_MAP = eINSTANCE
+				.getSourceConfigurationBuilder_cloudfront_OriginHeaders_java_lang_String__java_lang_String_AsMap();
+
+		/**
+		 * The meta object literal for the '<em><b>Origin Path java lang String </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SOURCE_CONFIGURATION_BUILDER_CLOUDFRONT__ORIGIN_PATH_JAVA_LANG_STRING_ = eINSTANCE
+				.getSourceConfigurationBuilder_cloudfront_OriginPath_java_lang_String_();
+
+		/**
+		 * The meta object literal for the '<em><b>S3 Origin Source With S3 Origin Config software amazon awscdk services cloudfront S3 Origin Config As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SOURCE_CONFIGURATION_BUILDER_CLOUDFRONT__S3_ORIGIN_SOURCE_WITH_S3_ORIGIN_CONFIG_SOFTWARE_AMAZON_AWSCDK_SERVICES_CLOUDFRONT_S3_ORIGIN_CONFIG_AS_REFERENCE = eINSTANCE
+				.getSourceConfigurationBuilder_cloudfront_S3OriginSourceWithS3OriginConfig_software_amazon_awscdk_services_cloudfront_S3OriginConfig_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Generated Class Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SOURCE_CONFIGURATION_BUILDER_CLOUDFRONT__GENERATED_CLASS_NAME = eINSTANCE
+				.getSourceConfigurationBuilder_cloudfront_GeneratedClassName();
+
+		/**
+		 * The meta object literal for the '<em><b>Var Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SOURCE_CONFIGURATION_BUILDER_CLOUDFRONT__VAR_NAME = eINSTANCE
+				.getSourceConfigurationBuilder_cloudfront_VarName();
+
+		/**
+		 * The meta object literal for the '<em><b>Identifier</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SOURCE_CONFIGURATION_BUILDER_CLOUDFRONT__IDENTIFIER = eINSTANCE
+				.getSourceConfigurationBuilder_cloudfront_Identifier();
+
+		/**
+		 * The meta object literal for the '<em><b>Additional Code</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SOURCE_CONFIGURATION_BUILDER_CLOUDFRONT__ADDITIONAL_CODE = eINSTANCE
+				.getSourceConfigurationBuilder_cloudfront_AdditionalCode();
+
+		/**
+		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.AliasConfigurationBuilder_cloudfrontImpl <em>Alias Configuration Builder cloudfront</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AliasConfigurationBuilder_cloudfrontImpl
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getAliasConfigurationBuilder_cloudfront()
+		 * @generated
+		 */
+		EClass ALIAS_CONFIGURATION_BUILDER_CLOUDFRONT = eINSTANCE.getAliasConfigurationBuilder_cloudfront();
+
+		/**
+		 * The meta object literal for the '<em><b>Acm Cert Ref java lang String </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ALIAS_CONFIGURATION_BUILDER_CLOUDFRONT__ACM_CERT_REF_JAVA_LANG_STRING_ = eINSTANCE
+				.getAliasConfigurationBuilder_cloudfront_AcmCertRef_java_lang_String_();
+
+		/**
+		 * The meta object literal for the '<em><b>Names java lang String As List</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ALIAS_CONFIGURATION_BUILDER_CLOUDFRONT__NAMES_JAVA_LANG_STRING_AS_LIST = eINSTANCE
+				.getAliasConfigurationBuilder_cloudfront_Names_java_lang_String_AsList();
+
+		/**
+		 * The meta object literal for the '<em><b>Security Policy software amazon awscdk services cloudfront Security Policy Protocol </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ALIAS_CONFIGURATION_BUILDER_CLOUDFRONT__SECURITY_POLICY_SOFTWARE_AMAZON_AWSCDK_SERVICES_CLOUDFRONT_SECURITY_POLICY_PROTOCOL_ = eINSTANCE
+				.getAliasConfigurationBuilder_cloudfront_SecurityPolicy_software_amazon_awscdk_services_cloudfront_SecurityPolicyProtocol_();
+
+		/**
+		 * The meta object literal for the '<em><b>Ssl Method software amazon awscdk services cloudfront SSL Method </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ALIAS_CONFIGURATION_BUILDER_CLOUDFRONT__SSL_METHOD_SOFTWARE_AMAZON_AWSCDK_SERVICES_CLOUDFRONT_SSL_METHOD_ = eINSTANCE
+				.getAliasConfigurationBuilder_cloudfront_SslMethod_software_amazon_awscdk_services_cloudfront_SSLMethod_();
+
+		/**
+		 * The meta object literal for the '<em><b>Generated Class Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ALIAS_CONFIGURATION_BUILDER_CLOUDFRONT__GENERATED_CLASS_NAME = eINSTANCE
+				.getAliasConfigurationBuilder_cloudfront_GeneratedClassName();
+
+		/**
+		 * The meta object literal for the '<em><b>Var Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ALIAS_CONFIGURATION_BUILDER_CLOUDFRONT__VAR_NAME = eINSTANCE
+				.getAliasConfigurationBuilder_cloudfront_VarName();
+
+		/**
+		 * The meta object literal for the '<em><b>Identifier</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ALIAS_CONFIGURATION_BUILDER_CLOUDFRONT__IDENTIFIER = eINSTANCE
+				.getAliasConfigurationBuilder_cloudfront_Identifier();
+
+		/**
+		 * The meta object literal for the '<em><b>Additional Code</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ALIAS_CONFIGURATION_BUILDER_CLOUDFRONT__ADDITIONAL_CODE = eINSTANCE
+				.getAliasConfigurationBuilder_cloudfront_AdditionalCode();
+
+		/**
+		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.LoggingConfigurationBuilder_cloudfrontImpl <em>Logging Configuration Builder cloudfront</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.LoggingConfigurationBuilder_cloudfrontImpl
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getLoggingConfigurationBuilder_cloudfront()
+		 * @generated
+		 */
+		EClass LOGGING_CONFIGURATION_BUILDER_CLOUDFRONT = eINSTANCE.getLoggingConfigurationBuilder_cloudfront();
+
+		/**
+		 * The meta object literal for the '<em><b>Bucket With IBucket software amazon awscdk services s3 IBucket As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LOGGING_CONFIGURATION_BUILDER_CLOUDFRONT__BUCKET_WITH_IBUCKET_SOFTWARE_AMAZON_AWSCDK_SERVICES_S3_IBUCKET_AS_REFERENCE = eINSTANCE
+				.getLoggingConfigurationBuilder_cloudfront_BucketWithIBucket_software_amazon_awscdk_services_s3_IBucket_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Include Cookies java lang Boolean </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LOGGING_CONFIGURATION_BUILDER_CLOUDFRONT__INCLUDE_COOKIES_JAVA_LANG_BOOLEAN_ = eINSTANCE
+				.getLoggingConfigurationBuilder_cloudfront_IncludeCookies_java_lang_Boolean_();
+
+		/**
+		 * The meta object literal for the '<em><b>Prefix java lang String </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LOGGING_CONFIGURATION_BUILDER_CLOUDFRONT__PREFIX_JAVA_LANG_STRING_ = eINSTANCE
+				.getLoggingConfigurationBuilder_cloudfront_Prefix_java_lang_String_();
+
+		/**
+		 * The meta object literal for the '<em><b>Generated Class Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LOGGING_CONFIGURATION_BUILDER_CLOUDFRONT__GENERATED_CLASS_NAME = eINSTANCE
+				.getLoggingConfigurationBuilder_cloudfront_GeneratedClassName();
+
+		/**
+		 * The meta object literal for the '<em><b>Var Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LOGGING_CONFIGURATION_BUILDER_CLOUDFRONT__VAR_NAME = eINSTANCE
+				.getLoggingConfigurationBuilder_cloudfront_VarName();
+
+		/**
+		 * The meta object literal for the '<em><b>Identifier</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LOGGING_CONFIGURATION_BUILDER_CLOUDFRONT__IDENTIFIER = eINSTANCE
+				.getLoggingConfigurationBuilder_cloudfront_Identifier();
+
+		/**
+		 * The meta object literal for the '<em><b>Additional Code</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LOGGING_CONFIGURATION_BUILDER_CLOUDFRONT__ADDITIONAL_CODE = eINSTANCE
+				.getLoggingConfigurationBuilder_cloudfront_AdditionalCode();
+
+		/**
+		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.CloudFrontWebDistributionPropsBuilder_cloudfrontImpl <em>Cloud Front Web Distribution Props Builder cloudfront</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.CloudFrontWebDistributionPropsBuilder_cloudfrontImpl
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getCloudFrontWebDistributionPropsBuilder_cloudfront()
+		 * @generated
+		 */
+		EClass CLOUD_FRONT_WEB_DISTRIBUTION_PROPS_BUILDER_CLOUDFRONT = eINSTANCE
+				.getCloudFrontWebDistributionPropsBuilder_cloudfront();
+
+		/**
+		 * The meta object literal for the '<em><b>Origin Configs software amazon awscdk services cloudfront Source Configuration As List</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CLOUD_FRONT_WEB_DISTRIBUTION_PROPS_BUILDER_CLOUDFRONT__ORIGIN_CONFIGS_SOFTWARE_AMAZON_AWSCDK_SERVICES_CLOUDFRONT_SOURCE_CONFIGURATION_AS_LIST = eINSTANCE
+				.getCloudFrontWebDistributionPropsBuilder_cloudfront_OriginConfigs_software_amazon_awscdk_services_cloudfront_SourceConfiguration_AsList();
+
+		/**
+		 * The meta object literal for the '<em><b>Alias Configuration With Alias Configuration software amazon awscdk services cloudfront Alias Configuration As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CLOUD_FRONT_WEB_DISTRIBUTION_PROPS_BUILDER_CLOUDFRONT__ALIAS_CONFIGURATION_WITH_ALIAS_CONFIGURATION_SOFTWARE_AMAZON_AWSCDK_SERVICES_CLOUDFRONT_ALIAS_CONFIGURATION_AS_REFERENCE = eINSTANCE
+				.getCloudFrontWebDistributionPropsBuilder_cloudfront_AliasConfigurationWithAliasConfiguration_software_amazon_awscdk_services_cloudfront_AliasConfiguration_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Comment java lang String </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CLOUD_FRONT_WEB_DISTRIBUTION_PROPS_BUILDER_CLOUDFRONT__COMMENT_JAVA_LANG_STRING_ = eINSTANCE
+				.getCloudFrontWebDistributionPropsBuilder_cloudfront_Comment_java_lang_String_();
+
+		/**
+		 * The meta object literal for the '<em><b>Default Root Object java lang String </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CLOUD_FRONT_WEB_DISTRIBUTION_PROPS_BUILDER_CLOUDFRONT__DEFAULT_ROOT_OBJECT_JAVA_LANG_STRING_ = eINSTANCE
+				.getCloudFrontWebDistributionPropsBuilder_cloudfront_DefaultRootObject_java_lang_String_();
+
+		/**
+		 * The meta object literal for the '<em><b>Enable Ip V6 java lang Boolean </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CLOUD_FRONT_WEB_DISTRIBUTION_PROPS_BUILDER_CLOUDFRONT__ENABLE_IP_V6_JAVA_LANG_BOOLEAN_ = eINSTANCE
+				.getCloudFrontWebDistributionPropsBuilder_cloudfront_EnableIpV6_java_lang_Boolean_();
+
+		/**
+		 * The meta object literal for the '<em><b>Error Configurations software amazon awscdk services cloudfront Cfn Distribution Custom Error Response Property As List</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CLOUD_FRONT_WEB_DISTRIBUTION_PROPS_BUILDER_CLOUDFRONT__ERROR_CONFIGURATIONS_SOFTWARE_AMAZON_AWSCDK_SERVICES_CLOUDFRONT_CFN_DISTRIBUTION_CUSTOM_ERROR_RESPONSE_PROPERTY_AS_LIST = eINSTANCE
+				.getCloudFrontWebDistributionPropsBuilder_cloudfront_ErrorConfigurations_software_amazon_awscdk_services_cloudfront_CfnDistribution_CustomErrorResponseProperty_AsList();
+
+		/**
+		 * The meta object literal for the '<em><b>Geo Restriction With Geo Restriction software amazon awscdk services cloudfront Geo Restriction As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CLOUD_FRONT_WEB_DISTRIBUTION_PROPS_BUILDER_CLOUDFRONT__GEO_RESTRICTION_WITH_GEO_RESTRICTION_SOFTWARE_AMAZON_AWSCDK_SERVICES_CLOUDFRONT_GEO_RESTRICTION_AS_REFERENCE = eINSTANCE
+				.getCloudFrontWebDistributionPropsBuilder_cloudfront_GeoRestrictionWithGeoRestriction_software_amazon_awscdk_services_cloudfront_GeoRestriction_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Http Version software amazon awscdk services cloudfront Http Version </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CLOUD_FRONT_WEB_DISTRIBUTION_PROPS_BUILDER_CLOUDFRONT__HTTP_VERSION_SOFTWARE_AMAZON_AWSCDK_SERVICES_CLOUDFRONT_HTTP_VERSION_ = eINSTANCE
+				.getCloudFrontWebDistributionPropsBuilder_cloudfront_HttpVersion_software_amazon_awscdk_services_cloudfront_HttpVersion_();
+
+		/**
+		 * The meta object literal for the '<em><b>Logging Config With Logging Configuration software amazon awscdk services cloudfront Logging Configuration As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CLOUD_FRONT_WEB_DISTRIBUTION_PROPS_BUILDER_CLOUDFRONT__LOGGING_CONFIG_WITH_LOGGING_CONFIGURATION_SOFTWARE_AMAZON_AWSCDK_SERVICES_CLOUDFRONT_LOGGING_CONFIGURATION_AS_REFERENCE = eINSTANCE
+				.getCloudFrontWebDistributionPropsBuilder_cloudfront_LoggingConfigWithLoggingConfiguration_software_amazon_awscdk_services_cloudfront_LoggingConfiguration_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Price Class software amazon awscdk services cloudfront Price Class </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CLOUD_FRONT_WEB_DISTRIBUTION_PROPS_BUILDER_CLOUDFRONT__PRICE_CLASS_SOFTWARE_AMAZON_AWSCDK_SERVICES_CLOUDFRONT_PRICE_CLASS_ = eINSTANCE
+				.getCloudFrontWebDistributionPropsBuilder_cloudfront_PriceClass_software_amazon_awscdk_services_cloudfront_PriceClass_();
+
+		/**
+		 * The meta object literal for the '<em><b>Viewer Certificate With Viewer Certificate software amazon awscdk services cloudfront Viewer Certificate As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CLOUD_FRONT_WEB_DISTRIBUTION_PROPS_BUILDER_CLOUDFRONT__VIEWER_CERTIFICATE_WITH_VIEWER_CERTIFICATE_SOFTWARE_AMAZON_AWSCDK_SERVICES_CLOUDFRONT_VIEWER_CERTIFICATE_AS_REFERENCE = eINSTANCE
+				.getCloudFrontWebDistributionPropsBuilder_cloudfront_ViewerCertificateWithViewerCertificate_software_amazon_awscdk_services_cloudfront_ViewerCertificate_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Viewer Protocol Policy software amazon awscdk services cloudfront Viewer Protocol Policy </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CLOUD_FRONT_WEB_DISTRIBUTION_PROPS_BUILDER_CLOUDFRONT__VIEWER_PROTOCOL_POLICY_SOFTWARE_AMAZON_AWSCDK_SERVICES_CLOUDFRONT_VIEWER_PROTOCOL_POLICY_ = eINSTANCE
+				.getCloudFrontWebDistributionPropsBuilder_cloudfront_ViewerProtocolPolicy_software_amazon_awscdk_services_cloudfront_ViewerProtocolPolicy_();
+
+		/**
+		 * The meta object literal for the '<em><b>Web Acl Id java lang String </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CLOUD_FRONT_WEB_DISTRIBUTION_PROPS_BUILDER_CLOUDFRONT__WEB_ACL_ID_JAVA_LANG_STRING_ = eINSTANCE
+				.getCloudFrontWebDistributionPropsBuilder_cloudfront_WebAclId_java_lang_String_();
+
+		/**
+		 * The meta object literal for the '<em><b>Generated Class Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CLOUD_FRONT_WEB_DISTRIBUTION_PROPS_BUILDER_CLOUDFRONT__GENERATED_CLASS_NAME = eINSTANCE
+				.getCloudFrontWebDistributionPropsBuilder_cloudfront_GeneratedClassName();
+
+		/**
+		 * The meta object literal for the '<em><b>Var Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CLOUD_FRONT_WEB_DISTRIBUTION_PROPS_BUILDER_CLOUDFRONT__VAR_NAME = eINSTANCE
+				.getCloudFrontWebDistributionPropsBuilder_cloudfront_VarName();
+
+		/**
+		 * The meta object literal for the '<em><b>Identifier</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CLOUD_FRONT_WEB_DISTRIBUTION_PROPS_BUILDER_CLOUDFRONT__IDENTIFIER = eINSTANCE
+				.getCloudFrontWebDistributionPropsBuilder_cloudfront_Identifier();
+
+		/**
+		 * The meta object literal for the '<em><b>Additional Code</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CLOUD_FRONT_WEB_DISTRIBUTION_PROPS_BUILDER_CLOUDFRONT__ADDITIONAL_CODE = eINSTANCE
+				.getCloudFrontWebDistributionPropsBuilder_cloudfront_AdditionalCode();
 
 		/**
 		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.CloudFrontToApiGatewayBuilder_cloudfrontapigatewayImpl <em>Cloud Front To Api Gateway Builder cloudfrontapigateway</em>}' class.
@@ -25400,6 +39737,1569 @@ public interface AwsworkbenchPackage extends EPackage {
 		 */
 		EAttribute CLOUD_FRONT_TO_S3_BUILDER_CLOUDFRONTS3__ADDITIONAL_CODE = eINSTANCE
 				.getCloudFrontToS3Builder_cloudfronts3_AdditionalCode();
+
+		/**
+		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.AutoVerifiedAttrsBuilder_cognitoImpl <em>Auto Verified Attrs Builder cognito</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AutoVerifiedAttrsBuilder_cognitoImpl
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getAutoVerifiedAttrsBuilder_cognito()
+		 * @generated
+		 */
+		EClass AUTO_VERIFIED_ATTRS_BUILDER_COGNITO = eINSTANCE.getAutoVerifiedAttrsBuilder_cognito();
+
+		/**
+		 * The meta object literal for the '<em><b>Email java lang Boolean </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute AUTO_VERIFIED_ATTRS_BUILDER_COGNITO__EMAIL_JAVA_LANG_BOOLEAN_ = eINSTANCE
+				.getAutoVerifiedAttrsBuilder_cognito_Email_java_lang_Boolean_();
+
+		/**
+		 * The meta object literal for the '<em><b>Phone java lang Boolean </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute AUTO_VERIFIED_ATTRS_BUILDER_COGNITO__PHONE_JAVA_LANG_BOOLEAN_ = eINSTANCE
+				.getAutoVerifiedAttrsBuilder_cognito_Phone_java_lang_Boolean_();
+
+		/**
+		 * The meta object literal for the '<em><b>Generated Class Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute AUTO_VERIFIED_ATTRS_BUILDER_COGNITO__GENERATED_CLASS_NAME = eINSTANCE
+				.getAutoVerifiedAttrsBuilder_cognito_GeneratedClassName();
+
+		/**
+		 * The meta object literal for the '<em><b>Var Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute AUTO_VERIFIED_ATTRS_BUILDER_COGNITO__VAR_NAME = eINSTANCE
+				.getAutoVerifiedAttrsBuilder_cognito_VarName();
+
+		/**
+		 * The meta object literal for the '<em><b>Identifier</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute AUTO_VERIFIED_ATTRS_BUILDER_COGNITO__IDENTIFIER = eINSTANCE
+				.getAutoVerifiedAttrsBuilder_cognito_Identifier();
+
+		/**
+		 * The meta object literal for the '<em><b>Additional Code</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute AUTO_VERIFIED_ATTRS_BUILDER_COGNITO__ADDITIONAL_CODE = eINSTANCE
+				.getAutoVerifiedAttrsBuilder_cognito_AdditionalCode();
+
+		/**
+		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.UserPoolTriggersBuilder_cognitoImpl <em>User Pool Triggers Builder cognito</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.UserPoolTriggersBuilder_cognitoImpl
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getUserPoolTriggersBuilder_cognito()
+		 * @generated
+		 */
+		EClass USER_POOL_TRIGGERS_BUILDER_COGNITO = eINSTANCE.getUserPoolTriggersBuilder_cognito();
+
+		/**
+		 * The meta object literal for the '<em><b>Create Auth Challenge With IFunction software amazon awscdk services lambda IFunction As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USER_POOL_TRIGGERS_BUILDER_COGNITO__CREATE_AUTH_CHALLENGE_WITH_IFUNCTION_SOFTWARE_AMAZON_AWSCDK_SERVICES_LAMBDA_IFUNCTION_AS_REFERENCE = eINSTANCE
+				.getUserPoolTriggersBuilder_cognito_CreateAuthChallengeWithIFunction_software_amazon_awscdk_services_lambda_IFunction_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Custom Message With IFunction software amazon awscdk services lambda IFunction As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USER_POOL_TRIGGERS_BUILDER_COGNITO__CUSTOM_MESSAGE_WITH_IFUNCTION_SOFTWARE_AMAZON_AWSCDK_SERVICES_LAMBDA_IFUNCTION_AS_REFERENCE = eINSTANCE
+				.getUserPoolTriggersBuilder_cognito_CustomMessageWithIFunction_software_amazon_awscdk_services_lambda_IFunction_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Define Auth Challenge With IFunction software amazon awscdk services lambda IFunction As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USER_POOL_TRIGGERS_BUILDER_COGNITO__DEFINE_AUTH_CHALLENGE_WITH_IFUNCTION_SOFTWARE_AMAZON_AWSCDK_SERVICES_LAMBDA_IFUNCTION_AS_REFERENCE = eINSTANCE
+				.getUserPoolTriggersBuilder_cognito_DefineAuthChallengeWithIFunction_software_amazon_awscdk_services_lambda_IFunction_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Post Authentication With IFunction software amazon awscdk services lambda IFunction As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USER_POOL_TRIGGERS_BUILDER_COGNITO__POST_AUTHENTICATION_WITH_IFUNCTION_SOFTWARE_AMAZON_AWSCDK_SERVICES_LAMBDA_IFUNCTION_AS_REFERENCE = eINSTANCE
+				.getUserPoolTriggersBuilder_cognito_PostAuthenticationWithIFunction_software_amazon_awscdk_services_lambda_IFunction_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Post Confirmation With IFunction software amazon awscdk services lambda IFunction As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USER_POOL_TRIGGERS_BUILDER_COGNITO__POST_CONFIRMATION_WITH_IFUNCTION_SOFTWARE_AMAZON_AWSCDK_SERVICES_LAMBDA_IFUNCTION_AS_REFERENCE = eINSTANCE
+				.getUserPoolTriggersBuilder_cognito_PostConfirmationWithIFunction_software_amazon_awscdk_services_lambda_IFunction_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Pre Authentication With IFunction software amazon awscdk services lambda IFunction As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USER_POOL_TRIGGERS_BUILDER_COGNITO__PRE_AUTHENTICATION_WITH_IFUNCTION_SOFTWARE_AMAZON_AWSCDK_SERVICES_LAMBDA_IFUNCTION_AS_REFERENCE = eINSTANCE
+				.getUserPoolTriggersBuilder_cognito_PreAuthenticationWithIFunction_software_amazon_awscdk_services_lambda_IFunction_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Pre Sign Up With IFunction software amazon awscdk services lambda IFunction As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USER_POOL_TRIGGERS_BUILDER_COGNITO__PRE_SIGN_UP_WITH_IFUNCTION_SOFTWARE_AMAZON_AWSCDK_SERVICES_LAMBDA_IFUNCTION_AS_REFERENCE = eINSTANCE
+				.getUserPoolTriggersBuilder_cognito_PreSignUpWithIFunction_software_amazon_awscdk_services_lambda_IFunction_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Pre Token Generation With IFunction software amazon awscdk services lambda IFunction As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USER_POOL_TRIGGERS_BUILDER_COGNITO__PRE_TOKEN_GENERATION_WITH_IFUNCTION_SOFTWARE_AMAZON_AWSCDK_SERVICES_LAMBDA_IFUNCTION_AS_REFERENCE = eINSTANCE
+				.getUserPoolTriggersBuilder_cognito_PreTokenGenerationWithIFunction_software_amazon_awscdk_services_lambda_IFunction_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>User Migration With IFunction software amazon awscdk services lambda IFunction As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USER_POOL_TRIGGERS_BUILDER_COGNITO__USER_MIGRATION_WITH_IFUNCTION_SOFTWARE_AMAZON_AWSCDK_SERVICES_LAMBDA_IFUNCTION_AS_REFERENCE = eINSTANCE
+				.getUserPoolTriggersBuilder_cognito_UserMigrationWithIFunction_software_amazon_awscdk_services_lambda_IFunction_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Verify Auth Challenge Response With IFunction software amazon awscdk services lambda IFunction As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USER_POOL_TRIGGERS_BUILDER_COGNITO__VERIFY_AUTH_CHALLENGE_RESPONSE_WITH_IFUNCTION_SOFTWARE_AMAZON_AWSCDK_SERVICES_LAMBDA_IFUNCTION_AS_REFERENCE = eINSTANCE
+				.getUserPoolTriggersBuilder_cognito_VerifyAuthChallengeResponseWithIFunction_software_amazon_awscdk_services_lambda_IFunction_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Generated Class Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USER_POOL_TRIGGERS_BUILDER_COGNITO__GENERATED_CLASS_NAME = eINSTANCE
+				.getUserPoolTriggersBuilder_cognito_GeneratedClassName();
+
+		/**
+		 * The meta object literal for the '<em><b>Var Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USER_POOL_TRIGGERS_BUILDER_COGNITO__VAR_NAME = eINSTANCE
+				.getUserPoolTriggersBuilder_cognito_VarName();
+
+		/**
+		 * The meta object literal for the '<em><b>Identifier</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USER_POOL_TRIGGERS_BUILDER_COGNITO__IDENTIFIER = eINSTANCE
+				.getUserPoolTriggersBuilder_cognito_Identifier();
+
+		/**
+		 * The meta object literal for the '<em><b>Additional Code</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USER_POOL_TRIGGERS_BUILDER_COGNITO__ADDITIONAL_CODE = eINSTANCE
+				.getUserPoolTriggersBuilder_cognito_AdditionalCode();
+
+		/**
+		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.EmailSettingsBuilder_cognitoImpl <em>Email Settings Builder cognito</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.EmailSettingsBuilder_cognitoImpl
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getEmailSettingsBuilder_cognito()
+		 * @generated
+		 */
+		EClass EMAIL_SETTINGS_BUILDER_COGNITO = eINSTANCE.getEmailSettingsBuilder_cognito();
+
+		/**
+		 * The meta object literal for the '<em><b>From java lang String </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute EMAIL_SETTINGS_BUILDER_COGNITO__FROM_JAVA_LANG_STRING_ = eINSTANCE
+				.getEmailSettingsBuilder_cognito_From_java_lang_String_();
+
+		/**
+		 * The meta object literal for the '<em><b>Reply To java lang String </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute EMAIL_SETTINGS_BUILDER_COGNITO__REPLY_TO_JAVA_LANG_STRING_ = eINSTANCE
+				.getEmailSettingsBuilder_cognito_ReplyTo_java_lang_String_();
+
+		/**
+		 * The meta object literal for the '<em><b>Generated Class Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute EMAIL_SETTINGS_BUILDER_COGNITO__GENERATED_CLASS_NAME = eINSTANCE
+				.getEmailSettingsBuilder_cognito_GeneratedClassName();
+
+		/**
+		 * The meta object literal for the '<em><b>Var Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute EMAIL_SETTINGS_BUILDER_COGNITO__VAR_NAME = eINSTANCE.getEmailSettingsBuilder_cognito_VarName();
+
+		/**
+		 * The meta object literal for the '<em><b>Identifier</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute EMAIL_SETTINGS_BUILDER_COGNITO__IDENTIFIER = eINSTANCE.getEmailSettingsBuilder_cognito_Identifier();
+
+		/**
+		 * The meta object literal for the '<em><b>Additional Code</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute EMAIL_SETTINGS_BUILDER_COGNITO__ADDITIONAL_CODE = eINSTANCE
+				.getEmailSettingsBuilder_cognito_AdditionalCode();
+
+		/**
+		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.PasswordPolicyBuilder_cognitoImpl <em>Password Policy Builder cognito</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.PasswordPolicyBuilder_cognitoImpl
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getPasswordPolicyBuilder_cognito()
+		 * @generated
+		 */
+		EClass PASSWORD_POLICY_BUILDER_COGNITO = eINSTANCE.getPasswordPolicyBuilder_cognito();
+
+		/**
+		 * The meta object literal for the '<em><b>Min Length java lang Number </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PASSWORD_POLICY_BUILDER_COGNITO__MIN_LENGTH_JAVA_LANG_NUMBER_ = eINSTANCE
+				.getPasswordPolicyBuilder_cognito_MinLength_java_lang_Number_();
+
+		/**
+		 * The meta object literal for the '<em><b>Require Digits java lang Boolean </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PASSWORD_POLICY_BUILDER_COGNITO__REQUIRE_DIGITS_JAVA_LANG_BOOLEAN_ = eINSTANCE
+				.getPasswordPolicyBuilder_cognito_RequireDigits_java_lang_Boolean_();
+
+		/**
+		 * The meta object literal for the '<em><b>Require Lowercase java lang Boolean </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PASSWORD_POLICY_BUILDER_COGNITO__REQUIRE_LOWERCASE_JAVA_LANG_BOOLEAN_ = eINSTANCE
+				.getPasswordPolicyBuilder_cognito_RequireLowercase_java_lang_Boolean_();
+
+		/**
+		 * The meta object literal for the '<em><b>Require Symbols java lang Boolean </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PASSWORD_POLICY_BUILDER_COGNITO__REQUIRE_SYMBOLS_JAVA_LANG_BOOLEAN_ = eINSTANCE
+				.getPasswordPolicyBuilder_cognito_RequireSymbols_java_lang_Boolean_();
+
+		/**
+		 * The meta object literal for the '<em><b>Require Uppercase java lang Boolean </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PASSWORD_POLICY_BUILDER_COGNITO__REQUIRE_UPPERCASE_JAVA_LANG_BOOLEAN_ = eINSTANCE
+				.getPasswordPolicyBuilder_cognito_RequireUppercase_java_lang_Boolean_();
+
+		/**
+		 * The meta object literal for the '<em><b>Temp Password Validity With Duration software amazon awscdk core Duration As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PASSWORD_POLICY_BUILDER_COGNITO__TEMP_PASSWORD_VALIDITY_WITH_DURATION_SOFTWARE_AMAZON_AWSCDK_CORE_DURATION_AS_REFERENCE = eINSTANCE
+				.getPasswordPolicyBuilder_cognito_TempPasswordValidityWithDuration_software_amazon_awscdk_core_Duration_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Generated Class Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PASSWORD_POLICY_BUILDER_COGNITO__GENERATED_CLASS_NAME = eINSTANCE
+				.getPasswordPolicyBuilder_cognito_GeneratedClassName();
+
+		/**
+		 * The meta object literal for the '<em><b>Var Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PASSWORD_POLICY_BUILDER_COGNITO__VAR_NAME = eINSTANCE.getPasswordPolicyBuilder_cognito_VarName();
+
+		/**
+		 * The meta object literal for the '<em><b>Identifier</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PASSWORD_POLICY_BUILDER_COGNITO__IDENTIFIER = eINSTANCE
+				.getPasswordPolicyBuilder_cognito_Identifier();
+
+		/**
+		 * The meta object literal for the '<em><b>Additional Code</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PASSWORD_POLICY_BUILDER_COGNITO__ADDITIONAL_CODE = eINSTANCE
+				.getPasswordPolicyBuilder_cognito_AdditionalCode();
+
+		/**
+		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.MfaSecondFactorBuilder_cognitoImpl <em>Mfa Second Factor Builder cognito</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.MfaSecondFactorBuilder_cognitoImpl
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getMfaSecondFactorBuilder_cognito()
+		 * @generated
+		 */
+		EClass MFA_SECOND_FACTOR_BUILDER_COGNITO = eINSTANCE.getMfaSecondFactorBuilder_cognito();
+
+		/**
+		 * The meta object literal for the '<em><b>Otp java lang Boolean </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MFA_SECOND_FACTOR_BUILDER_COGNITO__OTP_JAVA_LANG_BOOLEAN_ = eINSTANCE
+				.getMfaSecondFactorBuilder_cognito_Otp_java_lang_Boolean_();
+
+		/**
+		 * The meta object literal for the '<em><b>Sms java lang Boolean </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MFA_SECOND_FACTOR_BUILDER_COGNITO__SMS_JAVA_LANG_BOOLEAN_ = eINSTANCE
+				.getMfaSecondFactorBuilder_cognito_Sms_java_lang_Boolean_();
+
+		/**
+		 * The meta object literal for the '<em><b>Generated Class Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MFA_SECOND_FACTOR_BUILDER_COGNITO__GENERATED_CLASS_NAME = eINSTANCE
+				.getMfaSecondFactorBuilder_cognito_GeneratedClassName();
+
+		/**
+		 * The meta object literal for the '<em><b>Var Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MFA_SECOND_FACTOR_BUILDER_COGNITO__VAR_NAME = eINSTANCE.getMfaSecondFactorBuilder_cognito_VarName();
+
+		/**
+		 * The meta object literal for the '<em><b>Identifier</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MFA_SECOND_FACTOR_BUILDER_COGNITO__IDENTIFIER = eINSTANCE
+				.getMfaSecondFactorBuilder_cognito_Identifier();
+
+		/**
+		 * The meta object literal for the '<em><b>Additional Code</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MFA_SECOND_FACTOR_BUILDER_COGNITO__ADDITIONAL_CODE = eINSTANCE
+				.getMfaSecondFactorBuilder_cognito_AdditionalCode();
+
+		/**
+		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.RequiredAttributesBuilder_cognitoImpl <em>Required Attributes Builder cognito</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.RequiredAttributesBuilder_cognitoImpl
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getRequiredAttributesBuilder_cognito()
+		 * @generated
+		 */
+		EClass REQUIRED_ATTRIBUTES_BUILDER_COGNITO = eINSTANCE.getRequiredAttributesBuilder_cognito();
+
+		/**
+		 * The meta object literal for the '<em><b>Address java lang Boolean </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute REQUIRED_ATTRIBUTES_BUILDER_COGNITO__ADDRESS_JAVA_LANG_BOOLEAN_ = eINSTANCE
+				.getRequiredAttributesBuilder_cognito_Address_java_lang_Boolean_();
+
+		/**
+		 * The meta object literal for the '<em><b>Birthdate java lang Boolean </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute REQUIRED_ATTRIBUTES_BUILDER_COGNITO__BIRTHDATE_JAVA_LANG_BOOLEAN_ = eINSTANCE
+				.getRequiredAttributesBuilder_cognito_Birthdate_java_lang_Boolean_();
+
+		/**
+		 * The meta object literal for the '<em><b>Email java lang Boolean </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute REQUIRED_ATTRIBUTES_BUILDER_COGNITO__EMAIL_JAVA_LANG_BOOLEAN_ = eINSTANCE
+				.getRequiredAttributesBuilder_cognito_Email_java_lang_Boolean_();
+
+		/**
+		 * The meta object literal for the '<em><b>Family Name java lang Boolean </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute REQUIRED_ATTRIBUTES_BUILDER_COGNITO__FAMILY_NAME_JAVA_LANG_BOOLEAN_ = eINSTANCE
+				.getRequiredAttributesBuilder_cognito_FamilyName_java_lang_Boolean_();
+
+		/**
+		 * The meta object literal for the '<em><b>Fullname java lang Boolean </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute REQUIRED_ATTRIBUTES_BUILDER_COGNITO__FULLNAME_JAVA_LANG_BOOLEAN_ = eINSTANCE
+				.getRequiredAttributesBuilder_cognito_Fullname_java_lang_Boolean_();
+
+		/**
+		 * The meta object literal for the '<em><b>Gender java lang Boolean </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute REQUIRED_ATTRIBUTES_BUILDER_COGNITO__GENDER_JAVA_LANG_BOOLEAN_ = eINSTANCE
+				.getRequiredAttributesBuilder_cognito_Gender_java_lang_Boolean_();
+
+		/**
+		 * The meta object literal for the '<em><b>Given Name java lang Boolean </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute REQUIRED_ATTRIBUTES_BUILDER_COGNITO__GIVEN_NAME_JAVA_LANG_BOOLEAN_ = eINSTANCE
+				.getRequiredAttributesBuilder_cognito_GivenName_java_lang_Boolean_();
+
+		/**
+		 * The meta object literal for the '<em><b>Last Update Time java lang Boolean </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute REQUIRED_ATTRIBUTES_BUILDER_COGNITO__LAST_UPDATE_TIME_JAVA_LANG_BOOLEAN_ = eINSTANCE
+				.getRequiredAttributesBuilder_cognito_LastUpdateTime_java_lang_Boolean_();
+
+		/**
+		 * The meta object literal for the '<em><b>Locale java lang Boolean </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute REQUIRED_ATTRIBUTES_BUILDER_COGNITO__LOCALE_JAVA_LANG_BOOLEAN_ = eINSTANCE
+				.getRequiredAttributesBuilder_cognito_Locale_java_lang_Boolean_();
+
+		/**
+		 * The meta object literal for the '<em><b>Middle Name java lang Boolean </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute REQUIRED_ATTRIBUTES_BUILDER_COGNITO__MIDDLE_NAME_JAVA_LANG_BOOLEAN_ = eINSTANCE
+				.getRequiredAttributesBuilder_cognito_MiddleName_java_lang_Boolean_();
+
+		/**
+		 * The meta object literal for the '<em><b>Nickname java lang Boolean </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute REQUIRED_ATTRIBUTES_BUILDER_COGNITO__NICKNAME_JAVA_LANG_BOOLEAN_ = eINSTANCE
+				.getRequiredAttributesBuilder_cognito_Nickname_java_lang_Boolean_();
+
+		/**
+		 * The meta object literal for the '<em><b>Phone Number java lang Boolean </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute REQUIRED_ATTRIBUTES_BUILDER_COGNITO__PHONE_NUMBER_JAVA_LANG_BOOLEAN_ = eINSTANCE
+				.getRequiredAttributesBuilder_cognito_PhoneNumber_java_lang_Boolean_();
+
+		/**
+		 * The meta object literal for the '<em><b>Preferred Username java lang Boolean </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute REQUIRED_ATTRIBUTES_BUILDER_COGNITO__PREFERRED_USERNAME_JAVA_LANG_BOOLEAN_ = eINSTANCE
+				.getRequiredAttributesBuilder_cognito_PreferredUsername_java_lang_Boolean_();
+
+		/**
+		 * The meta object literal for the '<em><b>Profile Page java lang Boolean </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute REQUIRED_ATTRIBUTES_BUILDER_COGNITO__PROFILE_PAGE_JAVA_LANG_BOOLEAN_ = eINSTANCE
+				.getRequiredAttributesBuilder_cognito_ProfilePage_java_lang_Boolean_();
+
+		/**
+		 * The meta object literal for the '<em><b>Profile Picture java lang Boolean </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute REQUIRED_ATTRIBUTES_BUILDER_COGNITO__PROFILE_PICTURE_JAVA_LANG_BOOLEAN_ = eINSTANCE
+				.getRequiredAttributesBuilder_cognito_ProfilePicture_java_lang_Boolean_();
+
+		/**
+		 * The meta object literal for the '<em><b>Timezone java lang Boolean </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute REQUIRED_ATTRIBUTES_BUILDER_COGNITO__TIMEZONE_JAVA_LANG_BOOLEAN_ = eINSTANCE
+				.getRequiredAttributesBuilder_cognito_Timezone_java_lang_Boolean_();
+
+		/**
+		 * The meta object literal for the '<em><b>Website java lang Boolean </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute REQUIRED_ATTRIBUTES_BUILDER_COGNITO__WEBSITE_JAVA_LANG_BOOLEAN_ = eINSTANCE
+				.getRequiredAttributesBuilder_cognito_Website_java_lang_Boolean_();
+
+		/**
+		 * The meta object literal for the '<em><b>Generated Class Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute REQUIRED_ATTRIBUTES_BUILDER_COGNITO__GENERATED_CLASS_NAME = eINSTANCE
+				.getRequiredAttributesBuilder_cognito_GeneratedClassName();
+
+		/**
+		 * The meta object literal for the '<em><b>Var Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute REQUIRED_ATTRIBUTES_BUILDER_COGNITO__VAR_NAME = eINSTANCE
+				.getRequiredAttributesBuilder_cognito_VarName();
+
+		/**
+		 * The meta object literal for the '<em><b>Identifier</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute REQUIRED_ATTRIBUTES_BUILDER_COGNITO__IDENTIFIER = eINSTANCE
+				.getRequiredAttributesBuilder_cognito_Identifier();
+
+		/**
+		 * The meta object literal for the '<em><b>Additional Code</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute REQUIRED_ATTRIBUTES_BUILDER_COGNITO__ADDITIONAL_CODE = eINSTANCE
+				.getRequiredAttributesBuilder_cognito_AdditionalCode();
+
+		/**
+		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.SignInAliasesBuilder_cognitoImpl <em>Sign In Aliases Builder cognito</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.SignInAliasesBuilder_cognitoImpl
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getSignInAliasesBuilder_cognito()
+		 * @generated
+		 */
+		EClass SIGN_IN_ALIASES_BUILDER_COGNITO = eINSTANCE.getSignInAliasesBuilder_cognito();
+
+		/**
+		 * The meta object literal for the '<em><b>Email java lang Boolean </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SIGN_IN_ALIASES_BUILDER_COGNITO__EMAIL_JAVA_LANG_BOOLEAN_ = eINSTANCE
+				.getSignInAliasesBuilder_cognito_Email_java_lang_Boolean_();
+
+		/**
+		 * The meta object literal for the '<em><b>Phone java lang Boolean </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SIGN_IN_ALIASES_BUILDER_COGNITO__PHONE_JAVA_LANG_BOOLEAN_ = eINSTANCE
+				.getSignInAliasesBuilder_cognito_Phone_java_lang_Boolean_();
+
+		/**
+		 * The meta object literal for the '<em><b>Preferred Username java lang Boolean </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SIGN_IN_ALIASES_BUILDER_COGNITO__PREFERRED_USERNAME_JAVA_LANG_BOOLEAN_ = eINSTANCE
+				.getSignInAliasesBuilder_cognito_PreferredUsername_java_lang_Boolean_();
+
+		/**
+		 * The meta object literal for the '<em><b>Username java lang Boolean </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SIGN_IN_ALIASES_BUILDER_COGNITO__USERNAME_JAVA_LANG_BOOLEAN_ = eINSTANCE
+				.getSignInAliasesBuilder_cognito_Username_java_lang_Boolean_();
+
+		/**
+		 * The meta object literal for the '<em><b>Generated Class Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SIGN_IN_ALIASES_BUILDER_COGNITO__GENERATED_CLASS_NAME = eINSTANCE
+				.getSignInAliasesBuilder_cognito_GeneratedClassName();
+
+		/**
+		 * The meta object literal for the '<em><b>Var Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SIGN_IN_ALIASES_BUILDER_COGNITO__VAR_NAME = eINSTANCE.getSignInAliasesBuilder_cognito_VarName();
+
+		/**
+		 * The meta object literal for the '<em><b>Identifier</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SIGN_IN_ALIASES_BUILDER_COGNITO__IDENTIFIER = eINSTANCE.getSignInAliasesBuilder_cognito_Identifier();
+
+		/**
+		 * The meta object literal for the '<em><b>Additional Code</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SIGN_IN_ALIASES_BUILDER_COGNITO__ADDITIONAL_CODE = eINSTANCE
+				.getSignInAliasesBuilder_cognito_AdditionalCode();
+
+		/**
+		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.UserInvitationConfigBuilder_cognitoImpl <em>User Invitation Config Builder cognito</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.UserInvitationConfigBuilder_cognitoImpl
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getUserInvitationConfigBuilder_cognito()
+		 * @generated
+		 */
+		EClass USER_INVITATION_CONFIG_BUILDER_COGNITO = eINSTANCE.getUserInvitationConfigBuilder_cognito();
+
+		/**
+		 * The meta object literal for the '<em><b>Email Body java lang String </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USER_INVITATION_CONFIG_BUILDER_COGNITO__EMAIL_BODY_JAVA_LANG_STRING_ = eINSTANCE
+				.getUserInvitationConfigBuilder_cognito_EmailBody_java_lang_String_();
+
+		/**
+		 * The meta object literal for the '<em><b>Email Subject java lang String </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USER_INVITATION_CONFIG_BUILDER_COGNITO__EMAIL_SUBJECT_JAVA_LANG_STRING_ = eINSTANCE
+				.getUserInvitationConfigBuilder_cognito_EmailSubject_java_lang_String_();
+
+		/**
+		 * The meta object literal for the '<em><b>Sms Message java lang String </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USER_INVITATION_CONFIG_BUILDER_COGNITO__SMS_MESSAGE_JAVA_LANG_STRING_ = eINSTANCE
+				.getUserInvitationConfigBuilder_cognito_SmsMessage_java_lang_String_();
+
+		/**
+		 * The meta object literal for the '<em><b>Generated Class Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USER_INVITATION_CONFIG_BUILDER_COGNITO__GENERATED_CLASS_NAME = eINSTANCE
+				.getUserInvitationConfigBuilder_cognito_GeneratedClassName();
+
+		/**
+		 * The meta object literal for the '<em><b>Var Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USER_INVITATION_CONFIG_BUILDER_COGNITO__VAR_NAME = eINSTANCE
+				.getUserInvitationConfigBuilder_cognito_VarName();
+
+		/**
+		 * The meta object literal for the '<em><b>Identifier</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USER_INVITATION_CONFIG_BUILDER_COGNITO__IDENTIFIER = eINSTANCE
+				.getUserInvitationConfigBuilder_cognito_Identifier();
+
+		/**
+		 * The meta object literal for the '<em><b>Additional Code</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USER_INVITATION_CONFIG_BUILDER_COGNITO__ADDITIONAL_CODE = eINSTANCE
+				.getUserInvitationConfigBuilder_cognito_AdditionalCode();
+
+		/**
+		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.UserVerificationConfigBuilder_cognitoImpl <em>User Verification Config Builder cognito</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.UserVerificationConfigBuilder_cognitoImpl
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getUserVerificationConfigBuilder_cognito()
+		 * @generated
+		 */
+		EClass USER_VERIFICATION_CONFIG_BUILDER_COGNITO = eINSTANCE.getUserVerificationConfigBuilder_cognito();
+
+		/**
+		 * The meta object literal for the '<em><b>Email Body java lang String </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USER_VERIFICATION_CONFIG_BUILDER_COGNITO__EMAIL_BODY_JAVA_LANG_STRING_ = eINSTANCE
+				.getUserVerificationConfigBuilder_cognito_EmailBody_java_lang_String_();
+
+		/**
+		 * The meta object literal for the '<em><b>Email Style software amazon awscdk services cognito Verification Email Style </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USER_VERIFICATION_CONFIG_BUILDER_COGNITO__EMAIL_STYLE_SOFTWARE_AMAZON_AWSCDK_SERVICES_COGNITO_VERIFICATION_EMAIL_STYLE_ = eINSTANCE
+				.getUserVerificationConfigBuilder_cognito_EmailStyle_software_amazon_awscdk_services_cognito_VerificationEmailStyle_();
+
+		/**
+		 * The meta object literal for the '<em><b>Email Subject java lang String </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USER_VERIFICATION_CONFIG_BUILDER_COGNITO__EMAIL_SUBJECT_JAVA_LANG_STRING_ = eINSTANCE
+				.getUserVerificationConfigBuilder_cognito_EmailSubject_java_lang_String_();
+
+		/**
+		 * The meta object literal for the '<em><b>Sms Message java lang String </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USER_VERIFICATION_CONFIG_BUILDER_COGNITO__SMS_MESSAGE_JAVA_LANG_STRING_ = eINSTANCE
+				.getUserVerificationConfigBuilder_cognito_SmsMessage_java_lang_String_();
+
+		/**
+		 * The meta object literal for the '<em><b>Generated Class Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USER_VERIFICATION_CONFIG_BUILDER_COGNITO__GENERATED_CLASS_NAME = eINSTANCE
+				.getUserVerificationConfigBuilder_cognito_GeneratedClassName();
+
+		/**
+		 * The meta object literal for the '<em><b>Var Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USER_VERIFICATION_CONFIG_BUILDER_COGNITO__VAR_NAME = eINSTANCE
+				.getUserVerificationConfigBuilder_cognito_VarName();
+
+		/**
+		 * The meta object literal for the '<em><b>Identifier</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USER_VERIFICATION_CONFIG_BUILDER_COGNITO__IDENTIFIER = eINSTANCE
+				.getUserVerificationConfigBuilder_cognito_Identifier();
+
+		/**
+		 * The meta object literal for the '<em><b>Additional Code</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USER_VERIFICATION_CONFIG_BUILDER_COGNITO__ADDITIONAL_CODE = eINSTANCE
+				.getUserVerificationConfigBuilder_cognito_AdditionalCode();
+
+		/**
+		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.UserPoolPropsBuilder_cognitoImpl <em>User Pool Props Builder cognito</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.UserPoolPropsBuilder_cognitoImpl
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getUserPoolPropsBuilder_cognito()
+		 * @generated
+		 */
+		EClass USER_POOL_PROPS_BUILDER_COGNITO = eINSTANCE.getUserPoolPropsBuilder_cognito();
+
+		/**
+		 * The meta object literal for the '<em><b>Auto Verify With Auto Verified Attrs software amazon awscdk services cognito Auto Verified Attrs As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USER_POOL_PROPS_BUILDER_COGNITO__AUTO_VERIFY_WITH_AUTO_VERIFIED_ATTRS_SOFTWARE_AMAZON_AWSCDK_SERVICES_COGNITO_AUTO_VERIFIED_ATTRS_AS_REFERENCE = eINSTANCE
+				.getUserPoolPropsBuilder_cognito_AutoVerifyWithAutoVerifiedAttrs_software_amazon_awscdk_services_cognito_AutoVerifiedAttrs_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Custom Attributes java lang String software amazon awscdk services cognito ICustom Attribute As Map</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USER_POOL_PROPS_BUILDER_COGNITO__CUSTOM_ATTRIBUTES_JAVA_LANG_STRING_SOFTWARE_AMAZON_AWSCDK_SERVICES_COGNITO_ICUSTOM_ATTRIBUTE_AS_MAP = eINSTANCE
+				.getUserPoolPropsBuilder_cognito_CustomAttributes_java_lang_String__software_amazon_awscdk_services_cognito_ICustomAttribute_AsMap();
+
+		/**
+		 * The meta object literal for the '<em><b>Email Settings With Email Settings software amazon awscdk services cognito Email Settings As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USER_POOL_PROPS_BUILDER_COGNITO__EMAIL_SETTINGS_WITH_EMAIL_SETTINGS_SOFTWARE_AMAZON_AWSCDK_SERVICES_COGNITO_EMAIL_SETTINGS_AS_REFERENCE = eINSTANCE
+				.getUserPoolPropsBuilder_cognito_EmailSettingsWithEmailSettings_software_amazon_awscdk_services_cognito_EmailSettings_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Lambda Triggers With User Pool Triggers software amazon awscdk services cognito User Pool Triggers As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USER_POOL_PROPS_BUILDER_COGNITO__LAMBDA_TRIGGERS_WITH_USER_POOL_TRIGGERS_SOFTWARE_AMAZON_AWSCDK_SERVICES_COGNITO_USER_POOL_TRIGGERS_AS_REFERENCE = eINSTANCE
+				.getUserPoolPropsBuilder_cognito_LambdaTriggersWithUserPoolTriggers_software_amazon_awscdk_services_cognito_UserPoolTriggers_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Mfa software amazon awscdk services cognito Mfa </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USER_POOL_PROPS_BUILDER_COGNITO__MFA_SOFTWARE_AMAZON_AWSCDK_SERVICES_COGNITO_MFA_ = eINSTANCE
+				.getUserPoolPropsBuilder_cognito_Mfa_software_amazon_awscdk_services_cognito_Mfa_();
+
+		/**
+		 * The meta object literal for the '<em><b>Mfa Second Factor With Mfa Second Factor software amazon awscdk services cognito Mfa Second Factor As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USER_POOL_PROPS_BUILDER_COGNITO__MFA_SECOND_FACTOR_WITH_MFA_SECOND_FACTOR_SOFTWARE_AMAZON_AWSCDK_SERVICES_COGNITO_MFA_SECOND_FACTOR_AS_REFERENCE = eINSTANCE
+				.getUserPoolPropsBuilder_cognito_MfaSecondFactorWithMfaSecondFactor_software_amazon_awscdk_services_cognito_MfaSecondFactor_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Password Policy With Password Policy software amazon awscdk services cognito Password Policy As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USER_POOL_PROPS_BUILDER_COGNITO__PASSWORD_POLICY_WITH_PASSWORD_POLICY_SOFTWARE_AMAZON_AWSCDK_SERVICES_COGNITO_PASSWORD_POLICY_AS_REFERENCE = eINSTANCE
+				.getUserPoolPropsBuilder_cognito_PasswordPolicyWithPasswordPolicy_software_amazon_awscdk_services_cognito_PasswordPolicy_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Required Attributes With Required Attributes software amazon awscdk services cognito Required Attributes As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USER_POOL_PROPS_BUILDER_COGNITO__REQUIRED_ATTRIBUTES_WITH_REQUIRED_ATTRIBUTES_SOFTWARE_AMAZON_AWSCDK_SERVICES_COGNITO_REQUIRED_ATTRIBUTES_AS_REFERENCE = eINSTANCE
+				.getUserPoolPropsBuilder_cognito_RequiredAttributesWithRequiredAttributes_software_amazon_awscdk_services_cognito_RequiredAttributes_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Self Sign Up Enabled java lang Boolean </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USER_POOL_PROPS_BUILDER_COGNITO__SELF_SIGN_UP_ENABLED_JAVA_LANG_BOOLEAN_ = eINSTANCE
+				.getUserPoolPropsBuilder_cognito_SelfSignUpEnabled_java_lang_Boolean_();
+
+		/**
+		 * The meta object literal for the '<em><b>Sign In Aliases With Sign In Aliases software amazon awscdk services cognito Sign In Aliases As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USER_POOL_PROPS_BUILDER_COGNITO__SIGN_IN_ALIASES_WITH_SIGN_IN_ALIASES_SOFTWARE_AMAZON_AWSCDK_SERVICES_COGNITO_SIGN_IN_ALIASES_AS_REFERENCE = eINSTANCE
+				.getUserPoolPropsBuilder_cognito_SignInAliasesWithSignInAliases_software_amazon_awscdk_services_cognito_SignInAliases_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Sign In Case Sensitive java lang Boolean </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USER_POOL_PROPS_BUILDER_COGNITO__SIGN_IN_CASE_SENSITIVE_JAVA_LANG_BOOLEAN_ = eINSTANCE
+				.getUserPoolPropsBuilder_cognito_SignInCaseSensitive_java_lang_Boolean_();
+
+		/**
+		 * The meta object literal for the '<em><b>Sms Role With IRole software amazon awscdk services iam IRole As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USER_POOL_PROPS_BUILDER_COGNITO__SMS_ROLE_WITH_IROLE_SOFTWARE_AMAZON_AWSCDK_SERVICES_IAM_IROLE_AS_REFERENCE = eINSTANCE
+				.getUserPoolPropsBuilder_cognito_SmsRoleWithIRole_software_amazon_awscdk_services_iam_IRole_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Sms Role External Id java lang String </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USER_POOL_PROPS_BUILDER_COGNITO__SMS_ROLE_EXTERNAL_ID_JAVA_LANG_STRING_ = eINSTANCE
+				.getUserPoolPropsBuilder_cognito_SmsRoleExternalId_java_lang_String_();
+
+		/**
+		 * The meta object literal for the '<em><b>User Invitation With User Invitation Config software amazon awscdk services cognito User Invitation Config As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USER_POOL_PROPS_BUILDER_COGNITO__USER_INVITATION_WITH_USER_INVITATION_CONFIG_SOFTWARE_AMAZON_AWSCDK_SERVICES_COGNITO_USER_INVITATION_CONFIG_AS_REFERENCE = eINSTANCE
+				.getUserPoolPropsBuilder_cognito_UserInvitationWithUserInvitationConfig_software_amazon_awscdk_services_cognito_UserInvitationConfig_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>User Pool Name java lang String </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USER_POOL_PROPS_BUILDER_COGNITO__USER_POOL_NAME_JAVA_LANG_STRING_ = eINSTANCE
+				.getUserPoolPropsBuilder_cognito_UserPoolName_java_lang_String_();
+
+		/**
+		 * The meta object literal for the '<em><b>User Verification With User Verification Config software amazon awscdk services cognito User Verification Config As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USER_POOL_PROPS_BUILDER_COGNITO__USER_VERIFICATION_WITH_USER_VERIFICATION_CONFIG_SOFTWARE_AMAZON_AWSCDK_SERVICES_COGNITO_USER_VERIFICATION_CONFIG_AS_REFERENCE = eINSTANCE
+				.getUserPoolPropsBuilder_cognito_UserVerificationWithUserVerificationConfig_software_amazon_awscdk_services_cognito_UserVerificationConfig_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Generated Class Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USER_POOL_PROPS_BUILDER_COGNITO__GENERATED_CLASS_NAME = eINSTANCE
+				.getUserPoolPropsBuilder_cognito_GeneratedClassName();
+
+		/**
+		 * The meta object literal for the '<em><b>Var Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USER_POOL_PROPS_BUILDER_COGNITO__VAR_NAME = eINSTANCE.getUserPoolPropsBuilder_cognito_VarName();
+
+		/**
+		 * The meta object literal for the '<em><b>Identifier</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USER_POOL_PROPS_BUILDER_COGNITO__IDENTIFIER = eINSTANCE.getUserPoolPropsBuilder_cognito_Identifier();
+
+		/**
+		 * The meta object literal for the '<em><b>Additional Code</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USER_POOL_PROPS_BUILDER_COGNITO__ADDITIONAL_CODE = eINSTANCE
+				.getUserPoolPropsBuilder_cognito_AdditionalCode();
+
+		/**
+		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.UserPoolBuilder_cognitoImpl <em>User Pool Builder cognito</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.UserPoolBuilder_cognitoImpl
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getUserPoolBuilder_cognito()
+		 * @generated
+		 */
+		EClass USER_POOL_BUILDER_COGNITO = eINSTANCE.getUserPoolBuilder_cognito();
+
+		/**
+		 * The meta object literal for the '<em><b>Auto Verify With Auto Verified Attrs software amazon awscdk services cognito Auto Verified Attrs As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USER_POOL_BUILDER_COGNITO__AUTO_VERIFY_WITH_AUTO_VERIFIED_ATTRS_SOFTWARE_AMAZON_AWSCDK_SERVICES_COGNITO_AUTO_VERIFIED_ATTRS_AS_REFERENCE = eINSTANCE
+				.getUserPoolBuilder_cognito_AutoVerifyWithAutoVerifiedAttrs_software_amazon_awscdk_services_cognito_AutoVerifiedAttrs_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Custom Attributes java lang String software amazon awscdk services cognito ICustom Attribute As Map</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USER_POOL_BUILDER_COGNITO__CUSTOM_ATTRIBUTES_JAVA_LANG_STRING_SOFTWARE_AMAZON_AWSCDK_SERVICES_COGNITO_ICUSTOM_ATTRIBUTE_AS_MAP = eINSTANCE
+				.getUserPoolBuilder_cognito_CustomAttributes_java_lang_String__software_amazon_awscdk_services_cognito_ICustomAttribute_AsMap();
+
+		/**
+		 * The meta object literal for the '<em><b>Email Settings With Email Settings software amazon awscdk services cognito Email Settings As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USER_POOL_BUILDER_COGNITO__EMAIL_SETTINGS_WITH_EMAIL_SETTINGS_SOFTWARE_AMAZON_AWSCDK_SERVICES_COGNITO_EMAIL_SETTINGS_AS_REFERENCE = eINSTANCE
+				.getUserPoolBuilder_cognito_EmailSettingsWithEmailSettings_software_amazon_awscdk_services_cognito_EmailSettings_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Lambda Triggers With User Pool Triggers software amazon awscdk services cognito User Pool Triggers As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USER_POOL_BUILDER_COGNITO__LAMBDA_TRIGGERS_WITH_USER_POOL_TRIGGERS_SOFTWARE_AMAZON_AWSCDK_SERVICES_COGNITO_USER_POOL_TRIGGERS_AS_REFERENCE = eINSTANCE
+				.getUserPoolBuilder_cognito_LambdaTriggersWithUserPoolTriggers_software_amazon_awscdk_services_cognito_UserPoolTriggers_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Mfa software amazon awscdk services cognito Mfa </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USER_POOL_BUILDER_COGNITO__MFA_SOFTWARE_AMAZON_AWSCDK_SERVICES_COGNITO_MFA_ = eINSTANCE
+				.getUserPoolBuilder_cognito_Mfa_software_amazon_awscdk_services_cognito_Mfa_();
+
+		/**
+		 * The meta object literal for the '<em><b>Mfa Second Factor With Mfa Second Factor software amazon awscdk services cognito Mfa Second Factor As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USER_POOL_BUILDER_COGNITO__MFA_SECOND_FACTOR_WITH_MFA_SECOND_FACTOR_SOFTWARE_AMAZON_AWSCDK_SERVICES_COGNITO_MFA_SECOND_FACTOR_AS_REFERENCE = eINSTANCE
+				.getUserPoolBuilder_cognito_MfaSecondFactorWithMfaSecondFactor_software_amazon_awscdk_services_cognito_MfaSecondFactor_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Password Policy With Password Policy software amazon awscdk services cognito Password Policy As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USER_POOL_BUILDER_COGNITO__PASSWORD_POLICY_WITH_PASSWORD_POLICY_SOFTWARE_AMAZON_AWSCDK_SERVICES_COGNITO_PASSWORD_POLICY_AS_REFERENCE = eINSTANCE
+				.getUserPoolBuilder_cognito_PasswordPolicyWithPasswordPolicy_software_amazon_awscdk_services_cognito_PasswordPolicy_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Required Attributes With Required Attributes software amazon awscdk services cognito Required Attributes As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USER_POOL_BUILDER_COGNITO__REQUIRED_ATTRIBUTES_WITH_REQUIRED_ATTRIBUTES_SOFTWARE_AMAZON_AWSCDK_SERVICES_COGNITO_REQUIRED_ATTRIBUTES_AS_REFERENCE = eINSTANCE
+				.getUserPoolBuilder_cognito_RequiredAttributesWithRequiredAttributes_software_amazon_awscdk_services_cognito_RequiredAttributes_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Self Sign Up Enabled java lang Boolean </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USER_POOL_BUILDER_COGNITO__SELF_SIGN_UP_ENABLED_JAVA_LANG_BOOLEAN_ = eINSTANCE
+				.getUserPoolBuilder_cognito_SelfSignUpEnabled_java_lang_Boolean_();
+
+		/**
+		 * The meta object literal for the '<em><b>Sign In Aliases With Sign In Aliases software amazon awscdk services cognito Sign In Aliases As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USER_POOL_BUILDER_COGNITO__SIGN_IN_ALIASES_WITH_SIGN_IN_ALIASES_SOFTWARE_AMAZON_AWSCDK_SERVICES_COGNITO_SIGN_IN_ALIASES_AS_REFERENCE = eINSTANCE
+				.getUserPoolBuilder_cognito_SignInAliasesWithSignInAliases_software_amazon_awscdk_services_cognito_SignInAliases_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Sign In Case Sensitive java lang Boolean </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USER_POOL_BUILDER_COGNITO__SIGN_IN_CASE_SENSITIVE_JAVA_LANG_BOOLEAN_ = eINSTANCE
+				.getUserPoolBuilder_cognito_SignInCaseSensitive_java_lang_Boolean_();
+
+		/**
+		 * The meta object literal for the '<em><b>Sms Role With IRole software amazon awscdk services iam IRole As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USER_POOL_BUILDER_COGNITO__SMS_ROLE_WITH_IROLE_SOFTWARE_AMAZON_AWSCDK_SERVICES_IAM_IROLE_AS_REFERENCE = eINSTANCE
+				.getUserPoolBuilder_cognito_SmsRoleWithIRole_software_amazon_awscdk_services_iam_IRole_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Sms Role External Id java lang String </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USER_POOL_BUILDER_COGNITO__SMS_ROLE_EXTERNAL_ID_JAVA_LANG_STRING_ = eINSTANCE
+				.getUserPoolBuilder_cognito_SmsRoleExternalId_java_lang_String_();
+
+		/**
+		 * The meta object literal for the '<em><b>User Invitation With User Invitation Config software amazon awscdk services cognito User Invitation Config As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USER_POOL_BUILDER_COGNITO__USER_INVITATION_WITH_USER_INVITATION_CONFIG_SOFTWARE_AMAZON_AWSCDK_SERVICES_COGNITO_USER_INVITATION_CONFIG_AS_REFERENCE = eINSTANCE
+				.getUserPoolBuilder_cognito_UserInvitationWithUserInvitationConfig_software_amazon_awscdk_services_cognito_UserInvitationConfig_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>User Pool Name java lang String </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USER_POOL_BUILDER_COGNITO__USER_POOL_NAME_JAVA_LANG_STRING_ = eINSTANCE
+				.getUserPoolBuilder_cognito_UserPoolName_java_lang_String_();
+
+		/**
+		 * The meta object literal for the '<em><b>User Verification With User Verification Config software amazon awscdk services cognito User Verification Config As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USER_POOL_BUILDER_COGNITO__USER_VERIFICATION_WITH_USER_VERIFICATION_CONFIG_SOFTWARE_AMAZON_AWSCDK_SERVICES_COGNITO_USER_VERIFICATION_CONFIG_AS_REFERENCE = eINSTANCE
+				.getUserPoolBuilder_cognito_UserVerificationWithUserVerificationConfig_software_amazon_awscdk_services_cognito_UserVerificationConfig_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Generated Class Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USER_POOL_BUILDER_COGNITO__GENERATED_CLASS_NAME = eINSTANCE
+				.getUserPoolBuilder_cognito_GeneratedClassName();
+
+		/**
+		 * The meta object literal for the '<em><b>Var Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USER_POOL_BUILDER_COGNITO__VAR_NAME = eINSTANCE.getUserPoolBuilder_cognito_VarName();
+
+		/**
+		 * The meta object literal for the '<em><b>Identifier</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USER_POOL_BUILDER_COGNITO__IDENTIFIER = eINSTANCE.getUserPoolBuilder_cognito_Identifier();
+
+		/**
+		 * The meta object literal for the '<em><b>Additional Code</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USER_POOL_BUILDER_COGNITO__ADDITIONAL_CODE = eINSTANCE.getUserPoolBuilder_cognito_AdditionalCode();
+
+		/**
+		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.AuthFlowBuilder_cognitoImpl <em>Auth Flow Builder cognito</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AuthFlowBuilder_cognitoImpl
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getAuthFlowBuilder_cognito()
+		 * @generated
+		 */
+		EClass AUTH_FLOW_BUILDER_COGNITO = eINSTANCE.getAuthFlowBuilder_cognito();
+
+		/**
+		 * The meta object literal for the '<em><b>Admin User Password java lang Boolean </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute AUTH_FLOW_BUILDER_COGNITO__ADMIN_USER_PASSWORD_JAVA_LANG_BOOLEAN_ = eINSTANCE
+				.getAuthFlowBuilder_cognito_AdminUserPassword_java_lang_Boolean_();
+
+		/**
+		 * The meta object literal for the '<em><b>Custom java lang Boolean </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute AUTH_FLOW_BUILDER_COGNITO__CUSTOM_JAVA_LANG_BOOLEAN_ = eINSTANCE
+				.getAuthFlowBuilder_cognito_Custom_java_lang_Boolean_();
+
+		/**
+		 * The meta object literal for the '<em><b>Refresh Token java lang Boolean </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute AUTH_FLOW_BUILDER_COGNITO__REFRESH_TOKEN_JAVA_LANG_BOOLEAN_ = eINSTANCE
+				.getAuthFlowBuilder_cognito_RefreshToken_java_lang_Boolean_();
+
+		/**
+		 * The meta object literal for the '<em><b>User Password java lang Boolean </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute AUTH_FLOW_BUILDER_COGNITO__USER_PASSWORD_JAVA_LANG_BOOLEAN_ = eINSTANCE
+				.getAuthFlowBuilder_cognito_UserPassword_java_lang_Boolean_();
+
+		/**
+		 * The meta object literal for the '<em><b>User Srp java lang Boolean </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute AUTH_FLOW_BUILDER_COGNITO__USER_SRP_JAVA_LANG_BOOLEAN_ = eINSTANCE
+				.getAuthFlowBuilder_cognito_UserSrp_java_lang_Boolean_();
+
+		/**
+		 * The meta object literal for the '<em><b>Generated Class Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute AUTH_FLOW_BUILDER_COGNITO__GENERATED_CLASS_NAME = eINSTANCE
+				.getAuthFlowBuilder_cognito_GeneratedClassName();
+
+		/**
+		 * The meta object literal for the '<em><b>Var Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute AUTH_FLOW_BUILDER_COGNITO__VAR_NAME = eINSTANCE.getAuthFlowBuilder_cognito_VarName();
+
+		/**
+		 * The meta object literal for the '<em><b>Identifier</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute AUTH_FLOW_BUILDER_COGNITO__IDENTIFIER = eINSTANCE.getAuthFlowBuilder_cognito_Identifier();
+
+		/**
+		 * The meta object literal for the '<em><b>Additional Code</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute AUTH_FLOW_BUILDER_COGNITO__ADDITIONAL_CODE = eINSTANCE.getAuthFlowBuilder_cognito_AdditionalCode();
+
+		/**
+		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.OAuthFlowsBuilder_cognitoImpl <em>OAuth Flows Builder cognito</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.OAuthFlowsBuilder_cognitoImpl
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getOAuthFlowsBuilder_cognito()
+		 * @generated
+		 */
+		EClass OAUTH_FLOWS_BUILDER_COGNITO = eINSTANCE.getOAuthFlowsBuilder_cognito();
+
+		/**
+		 * The meta object literal for the '<em><b>Authorization Code Grant java lang Boolean </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute OAUTH_FLOWS_BUILDER_COGNITO__AUTHORIZATION_CODE_GRANT_JAVA_LANG_BOOLEAN_ = eINSTANCE
+				.getOAuthFlowsBuilder_cognito_AuthorizationCodeGrant_java_lang_Boolean_();
+
+		/**
+		 * The meta object literal for the '<em><b>Client Credentials java lang Boolean </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute OAUTH_FLOWS_BUILDER_COGNITO__CLIENT_CREDENTIALS_JAVA_LANG_BOOLEAN_ = eINSTANCE
+				.getOAuthFlowsBuilder_cognito_ClientCredentials_java_lang_Boolean_();
+
+		/**
+		 * The meta object literal for the '<em><b>Implicit Code Grant java lang Boolean </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute OAUTH_FLOWS_BUILDER_COGNITO__IMPLICIT_CODE_GRANT_JAVA_LANG_BOOLEAN_ = eINSTANCE
+				.getOAuthFlowsBuilder_cognito_ImplicitCodeGrant_java_lang_Boolean_();
+
+		/**
+		 * The meta object literal for the '<em><b>Generated Class Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute OAUTH_FLOWS_BUILDER_COGNITO__GENERATED_CLASS_NAME = eINSTANCE
+				.getOAuthFlowsBuilder_cognito_GeneratedClassName();
+
+		/**
+		 * The meta object literal for the '<em><b>Var Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute OAUTH_FLOWS_BUILDER_COGNITO__VAR_NAME = eINSTANCE.getOAuthFlowsBuilder_cognito_VarName();
+
+		/**
+		 * The meta object literal for the '<em><b>Identifier</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute OAUTH_FLOWS_BUILDER_COGNITO__IDENTIFIER = eINSTANCE.getOAuthFlowsBuilder_cognito_Identifier();
+
+		/**
+		 * The meta object literal for the '<em><b>Additional Code</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute OAUTH_FLOWS_BUILDER_COGNITO__ADDITIONAL_CODE = eINSTANCE
+				.getOAuthFlowsBuilder_cognito_AdditionalCode();
+
+		/**
+		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.OAuthSettingsBuilder_cognitoImpl <em>OAuth Settings Builder cognito</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.OAuthSettingsBuilder_cognitoImpl
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getOAuthSettingsBuilder_cognito()
+		 * @generated
+		 */
+		EClass OAUTH_SETTINGS_BUILDER_COGNITO = eINSTANCE.getOAuthSettingsBuilder_cognito();
+
+		/**
+		 * The meta object literal for the '<em><b>Callback Urls java lang String As List</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute OAUTH_SETTINGS_BUILDER_COGNITO__CALLBACK_URLS_JAVA_LANG_STRING_AS_LIST = eINSTANCE
+				.getOAuthSettingsBuilder_cognito_CallbackUrls_java_lang_String_AsList();
+
+		/**
+		 * The meta object literal for the '<em><b>Flows With OAuth Flows software amazon awscdk services cognito OAuth Flows As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute OAUTH_SETTINGS_BUILDER_COGNITO__FLOWS_WITH_OAUTH_FLOWS_SOFTWARE_AMAZON_AWSCDK_SERVICES_COGNITO_OAUTH_FLOWS_AS_REFERENCE = eINSTANCE
+				.getOAuthSettingsBuilder_cognito_FlowsWithOAuthFlows_software_amazon_awscdk_services_cognito_OAuthFlows_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Scopes software amazon awscdk services cognito OAuth Scope As List</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute OAUTH_SETTINGS_BUILDER_COGNITO__SCOPES_SOFTWARE_AMAZON_AWSCDK_SERVICES_COGNITO_OAUTH_SCOPE_AS_LIST = eINSTANCE
+				.getOAuthSettingsBuilder_cognito_Scopes_software_amazon_awscdk_services_cognito_OAuthScope_AsList();
+
+		/**
+		 * The meta object literal for the '<em><b>Generated Class Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute OAUTH_SETTINGS_BUILDER_COGNITO__GENERATED_CLASS_NAME = eINSTANCE
+				.getOAuthSettingsBuilder_cognito_GeneratedClassName();
+
+		/**
+		 * The meta object literal for the '<em><b>Var Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute OAUTH_SETTINGS_BUILDER_COGNITO__VAR_NAME = eINSTANCE.getOAuthSettingsBuilder_cognito_VarName();
+
+		/**
+		 * The meta object literal for the '<em><b>Identifier</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute OAUTH_SETTINGS_BUILDER_COGNITO__IDENTIFIER = eINSTANCE.getOAuthSettingsBuilder_cognito_Identifier();
+
+		/**
+		 * The meta object literal for the '<em><b>Additional Code</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute OAUTH_SETTINGS_BUILDER_COGNITO__ADDITIONAL_CODE = eINSTANCE
+				.getOAuthSettingsBuilder_cognito_AdditionalCode();
+
+		/**
+		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.UserPoolClientPropsBuilder_cognitoImpl <em>User Pool Client Props Builder cognito</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.UserPoolClientPropsBuilder_cognitoImpl
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getUserPoolClientPropsBuilder_cognito()
+		 * @generated
+		 */
+		EClass USER_POOL_CLIENT_PROPS_BUILDER_COGNITO = eINSTANCE.getUserPoolClientPropsBuilder_cognito();
+
+		/**
+		 * The meta object literal for the '<em><b>User Pool With IUser Pool software amazon awscdk services cognito IUser Pool As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USER_POOL_CLIENT_PROPS_BUILDER_COGNITO__USER_POOL_WITH_IUSER_POOL_SOFTWARE_AMAZON_AWSCDK_SERVICES_COGNITO_IUSER_POOL_AS_REFERENCE = eINSTANCE
+				.getUserPoolClientPropsBuilder_cognito_UserPoolWithIUserPool_software_amazon_awscdk_services_cognito_IUserPool_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Auth Flows With Auth Flow software amazon awscdk services cognito Auth Flow As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USER_POOL_CLIENT_PROPS_BUILDER_COGNITO__AUTH_FLOWS_WITH_AUTH_FLOW_SOFTWARE_AMAZON_AWSCDK_SERVICES_COGNITO_AUTH_FLOW_AS_REFERENCE = eINSTANCE
+				.getUserPoolClientPropsBuilder_cognito_AuthFlowsWithAuthFlow_software_amazon_awscdk_services_cognito_AuthFlow_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Generate Secret java lang Boolean </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USER_POOL_CLIENT_PROPS_BUILDER_COGNITO__GENERATE_SECRET_JAVA_LANG_BOOLEAN_ = eINSTANCE
+				.getUserPoolClientPropsBuilder_cognito_GenerateSecret_java_lang_Boolean_();
+
+		/**
+		 * The meta object literal for the '<em><b>OAuth With OAuth Settings software amazon awscdk services cognito OAuth Settings As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USER_POOL_CLIENT_PROPS_BUILDER_COGNITO__OAUTH_WITH_OAUTH_SETTINGS_SOFTWARE_AMAZON_AWSCDK_SERVICES_COGNITO_OAUTH_SETTINGS_AS_REFERENCE = eINSTANCE
+				.getUserPoolClientPropsBuilder_cognito_OAuthWithOAuthSettings_software_amazon_awscdk_services_cognito_OAuthSettings_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Prevent User Existence Errors java lang Boolean </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USER_POOL_CLIENT_PROPS_BUILDER_COGNITO__PREVENT_USER_EXISTENCE_ERRORS_JAVA_LANG_BOOLEAN_ = eINSTANCE
+				.getUserPoolClientPropsBuilder_cognito_PreventUserExistenceErrors_java_lang_Boolean_();
+
+		/**
+		 * The meta object literal for the '<em><b>User Pool Client Name java lang String </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USER_POOL_CLIENT_PROPS_BUILDER_COGNITO__USER_POOL_CLIENT_NAME_JAVA_LANG_STRING_ = eINSTANCE
+				.getUserPoolClientPropsBuilder_cognito_UserPoolClientName_java_lang_String_();
+
+		/**
+		 * The meta object literal for the '<em><b>Generated Class Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USER_POOL_CLIENT_PROPS_BUILDER_COGNITO__GENERATED_CLASS_NAME = eINSTANCE
+				.getUserPoolClientPropsBuilder_cognito_GeneratedClassName();
+
+		/**
+		 * The meta object literal for the '<em><b>Var Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USER_POOL_CLIENT_PROPS_BUILDER_COGNITO__VAR_NAME = eINSTANCE
+				.getUserPoolClientPropsBuilder_cognito_VarName();
+
+		/**
+		 * The meta object literal for the '<em><b>Identifier</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USER_POOL_CLIENT_PROPS_BUILDER_COGNITO__IDENTIFIER = eINSTANCE
+				.getUserPoolClientPropsBuilder_cognito_Identifier();
+
+		/**
+		 * The meta object literal for the '<em><b>Additional Code</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USER_POOL_CLIENT_PROPS_BUILDER_COGNITO__ADDITIONAL_CODE = eINSTANCE
+				.getUserPoolClientPropsBuilder_cognito_AdditionalCode();
 
 		/**
 		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.CognitoToApiGatewayToLambdaBuilder_cognitoapigatewaylambdaImpl <em>Cognito To Api Gateway To Lambda Builder cognitoapigatewaylambda</em>}' class.
@@ -28870,6 +44770,166 @@ public interface AwsworkbenchPackage extends EPackage {
 		 * @generated
 		 */
 		EEnum JSON_SCHEMA_TYPE = eINSTANCE.getJsonSchemaType();
+
+		/**
+		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.CloudFrontAllowedCachedMethods <em>Cloud Front Allowed Cached Methods</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.amazon.aws.workbench.model.awsworkbench.CloudFrontAllowedCachedMethods
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getCloudFrontAllowedCachedMethods()
+		 * @generated
+		 */
+		EEnum CLOUD_FRONT_ALLOWED_CACHED_METHODS = eINSTANCE.getCloudFrontAllowedCachedMethods();
+
+		/**
+		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.CloudFrontAllowedMethods <em>Cloud Front Allowed Methods</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.amazon.aws.workbench.model.awsworkbench.CloudFrontAllowedMethods
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getCloudFrontAllowedMethods()
+		 * @generated
+		 */
+		EEnum CLOUD_FRONT_ALLOWED_METHODS = eINSTANCE.getCloudFrontAllowedMethods();
+
+		/**
+		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.LambdaEdgeEventType <em>Lambda Edge Event Type</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.amazon.aws.workbench.model.awsworkbench.LambdaEdgeEventType
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getLambdaEdgeEventType()
+		 * @generated
+		 */
+		EEnum LAMBDA_EDGE_EVENT_TYPE = eINSTANCE.getLambdaEdgeEventType();
+
+		/**
+		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.OriginSslPolicy <em>Origin Ssl Policy</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.amazon.aws.workbench.model.awsworkbench.OriginSslPolicy
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getOriginSslPolicy()
+		 * @generated
+		 */
+		EEnum ORIGIN_SSL_POLICY = eINSTANCE.getOriginSslPolicy();
+
+		/**
+		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.OriginProtocolPolicy <em>Origin Protocol Policy</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.amazon.aws.workbench.model.awsworkbench.OriginProtocolPolicy
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getOriginProtocolPolicy()
+		 * @generated
+		 */
+		EEnum ORIGIN_PROTOCOL_POLICY = eINSTANCE.getOriginProtocolPolicy();
+
+		/**
+		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.BucketAccessControl <em>Bucket Access Control</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.amazon.aws.workbench.model.awsworkbench.BucketAccessControl
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getBucketAccessControl()
+		 * @generated
+		 */
+		EEnum BUCKET_ACCESS_CONTROL = eINSTANCE.getBucketAccessControl();
+
+		/**
+		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.HttpMethods <em>Http Methods</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.amazon.aws.workbench.model.awsworkbench.HttpMethods
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getHttpMethods()
+		 * @generated
+		 */
+		EEnum HTTP_METHODS = eINSTANCE.getHttpMethods();
+
+		/**
+		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.BucketEncryption <em>Bucket Encryption</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.amazon.aws.workbench.model.awsworkbench.BucketEncryption
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getBucketEncryption()
+		 * @generated
+		 */
+		EEnum BUCKET_ENCRYPTION = eINSTANCE.getBucketEncryption();
+
+		/**
+		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.RedirectProtocol <em>Redirect Protocol</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.amazon.aws.workbench.model.awsworkbench.RedirectProtocol
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getRedirectProtocol()
+		 * @generated
+		 */
+		EEnum REDIRECT_PROTOCOL = eINSTANCE.getRedirectProtocol();
+
+		/**
+		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.HttpVersion <em>Http Version</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.amazon.aws.workbench.model.awsworkbench.HttpVersion
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getHttpVersion()
+		 * @generated
+		 */
+		EEnum HTTP_VERSION = eINSTANCE.getHttpVersion();
+
+		/**
+		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.PriceClass <em>Price Class</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.amazon.aws.workbench.model.awsworkbench.PriceClass
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getPriceClass()
+		 * @generated
+		 */
+		EEnum PRICE_CLASS = eINSTANCE.getPriceClass();
+
+		/**
+		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.ViewerProtocolPolicy <em>Viewer Protocol Policy</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.amazon.aws.workbench.model.awsworkbench.ViewerProtocolPolicy
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getViewerProtocolPolicy()
+		 * @generated
+		 */
+		EEnum VIEWER_PROTOCOL_POLICY = eINSTANCE.getViewerProtocolPolicy();
+
+		/**
+		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.SecurityPolicyProtocol <em>Security Policy Protocol</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.amazon.aws.workbench.model.awsworkbench.SecurityPolicyProtocol
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getSecurityPolicyProtocol()
+		 * @generated
+		 */
+		EEnum SECURITY_POLICY_PROTOCOL = eINSTANCE.getSecurityPolicyProtocol();
+
+		/**
+		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.SSLMethod <em>SSL Method</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.amazon.aws.workbench.model.awsworkbench.SSLMethod
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getSSLMethod()
+		 * @generated
+		 */
+		EEnum SSL_METHOD = eINSTANCE.getSSLMethod();
+
+		/**
+		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.Mfa <em>Mfa</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.amazon.aws.workbench.model.awsworkbench.Mfa
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getMfa()
+		 * @generated
+		 */
+		EEnum MFA = eINSTANCE.getMfa();
+
+		/**
+		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.VerificationEmailStyle <em>Verification Email Style</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.amazon.aws.workbench.model.awsworkbench.VerificationEmailStyle
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getVerificationEmailStyle()
+		 * @generated
+		 */
+		EEnum VERIFICATION_EMAIL_STYLE = eINSTANCE.getVerificationEmailStyle();
 
 		/**
 		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.Effect <em>Effect</em>}' enum.

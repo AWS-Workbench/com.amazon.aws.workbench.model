@@ -273,6 +273,13 @@ public class AwsworkbenchSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
+		case AwsworkbenchPackage.FUNCTION_PROPS_BUILDER_LAMBDA: {
+			FunctionPropsBuilder_lambda functionPropsBuilder_lambda = (FunctionPropsBuilder_lambda) theEObject;
+			T result = caseFunctionPropsBuilder_lambda(functionPropsBuilder_lambda);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
 		case AwsworkbenchPackage.FUNCTION_BUILDER_LAMBDA: {
 			FunctionBuilder_lambda functionBuilder_lambda = (FunctionBuilder_lambda) theEObject;
 			T result = caseFunctionBuilder_lambda(functionBuilder_lambda);
@@ -351,6 +358,20 @@ public class AwsworkbenchSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
+		case AwsworkbenchPackage.LAMBDA_REST_API_PROPS_BUILDER_APIGATEWAY: {
+			LambdaRestApiPropsBuilder_apigateway lambdaRestApiPropsBuilder_apigateway = (LambdaRestApiPropsBuilder_apigateway) theEObject;
+			T result = caseLambdaRestApiPropsBuilder_apigateway(lambdaRestApiPropsBuilder_apigateway);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.LAMBDA_REST_API_BUILDER_APIGATEWAY: {
+			LambdaRestApiBuilder_apigateway lambdaRestApiBuilder_apigateway = (LambdaRestApiBuilder_apigateway) theEObject;
+			T result = caseLambdaRestApiBuilder_apigateway(lambdaRestApiBuilder_apigateway);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
 		case AwsworkbenchPackage.API_GATEWAY_TO_LAMBDA_BUILDER_APIGATEWAYLAMBDA: {
 			ApiGatewayToLambdaBuilder_apigatewaylambda apiGatewayToLambdaBuilder_apigatewaylambda = (ApiGatewayToLambdaBuilder_apigatewaylambda) theEObject;
 			T result = caseApiGatewayToLambdaBuilder_apigatewaylambda(apiGatewayToLambdaBuilder_apigatewaylambda);
@@ -358,9 +379,164 @@ public class AwsworkbenchSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
+		case AwsworkbenchPackage.QUEUE_PROPS_BUILDER_SQS: {
+			QueuePropsBuilder_sqs queuePropsBuilder_sqs = (QueuePropsBuilder_sqs) theEObject;
+			T result = caseQueuePropsBuilder_sqs(queuePropsBuilder_sqs);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
 		case AwsworkbenchPackage.API_GATEWAY_TO_SQS_BUILDER_APIGATEWAYSQS: {
 			ApiGatewayToSqsBuilder_apigatewaysqs apiGatewayToSqsBuilder_apigatewaysqs = (ApiGatewayToSqsBuilder_apigatewaysqs) theEObject;
 			T result = caseApiGatewayToSqsBuilder_apigatewaysqs(apiGatewayToSqsBuilder_apigatewaysqs);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.VERSION_BUILDER_LAMBDA: {
+			VersionBuilder_lambda versionBuilder_lambda = (VersionBuilder_lambda) theEObject;
+			T result = caseVersionBuilder_lambda(versionBuilder_lambda);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.LAMBDA_FUNCTION_ASSOCIATION_BUILDER_CLOUDFRONT: {
+			LambdaFunctionAssociationBuilder_cloudfront lambdaFunctionAssociationBuilder_cloudfront = (LambdaFunctionAssociationBuilder_cloudfront) theEObject;
+			T result = caseLambdaFunctionAssociationBuilder_cloudfront(lambdaFunctionAssociationBuilder_cloudfront);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.BEHAVIOR_BUILDER_CLOUDFRONT: {
+			BehaviorBuilder_cloudfront behaviorBuilder_cloudfront = (BehaviorBuilder_cloudfront) theEObject;
+			T result = caseBehaviorBuilder_cloudfront(behaviorBuilder_cloudfront);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.CUSTOM_ORIGIN_CONFIG_BUILDER_CLOUDFRONT: {
+			CustomOriginConfigBuilder_cloudfront customOriginConfigBuilder_cloudfront = (CustomOriginConfigBuilder_cloudfront) theEObject;
+			T result = caseCustomOriginConfigBuilder_cloudfront(customOriginConfigBuilder_cloudfront);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.BLOCK_PUBLIC_ACCESS_BUILDER_S3: {
+			BlockPublicAccessBuilder_s3 blockPublicAccessBuilder_s3 = (BlockPublicAccessBuilder_s3) theEObject;
+			T result = caseBlockPublicAccessBuilder_s3(blockPublicAccessBuilder_s3);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.CORS_RULE_BUILDER_S3: {
+			CorsRuleBuilder_s3 corsRuleBuilder_s3 = (CorsRuleBuilder_s3) theEObject;
+			T result = caseCorsRuleBuilder_s3(corsRuleBuilder_s3);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.NONCURRENT_VERSION_TRANSITION_BUILDER_S3: {
+			NoncurrentVersionTransitionBuilder_s3 noncurrentVersionTransitionBuilder_s3 = (NoncurrentVersionTransitionBuilder_s3) theEObject;
+			T result = caseNoncurrentVersionTransitionBuilder_s3(noncurrentVersionTransitionBuilder_s3);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.TRANSITION_BUILDER_S3: {
+			TransitionBuilder_s3 transitionBuilder_s3 = (TransitionBuilder_s3) theEObject;
+			T result = caseTransitionBuilder_s3(transitionBuilder_s3);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.LIFECYCLE_RULE_BUILDER_S3: {
+			LifecycleRuleBuilder_s3 lifecycleRuleBuilder_s3 = (LifecycleRuleBuilder_s3) theEObject;
+			T result = caseLifecycleRuleBuilder_s3(lifecycleRuleBuilder_s3);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.BUCKET_METRICS_BUILDER_S3: {
+			BucketMetricsBuilder_s3 bucketMetricsBuilder_s3 = (BucketMetricsBuilder_s3) theEObject;
+			T result = caseBucketMetricsBuilder_s3(bucketMetricsBuilder_s3);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.REDIRECT_TARGET_BUILDER_S3: {
+			RedirectTargetBuilder_s3 redirectTargetBuilder_s3 = (RedirectTargetBuilder_s3) theEObject;
+			T result = caseRedirectTargetBuilder_s3(redirectTargetBuilder_s3);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.ROUTING_RULE_CONDITION_BUILDER_S3: {
+			RoutingRuleConditionBuilder_s3 routingRuleConditionBuilder_s3 = (RoutingRuleConditionBuilder_s3) theEObject;
+			T result = caseRoutingRuleConditionBuilder_s3(routingRuleConditionBuilder_s3);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.ROUTING_RULE_BUILDER_S3: {
+			RoutingRuleBuilder_s3 routingRuleBuilder_s3 = (RoutingRuleBuilder_s3) theEObject;
+			T result = caseRoutingRuleBuilder_s3(routingRuleBuilder_s3);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.BUCKET_BUILDER_S3: {
+			BucketBuilder_s3 bucketBuilder_s3 = (BucketBuilder_s3) theEObject;
+			T result = caseBucketBuilder_s3(bucketBuilder_s3);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.BUCKET_PROPS_BUILDER_S3: {
+			BucketPropsBuilder_s3 bucketPropsBuilder_s3 = (BucketPropsBuilder_s3) theEObject;
+			T result = caseBucketPropsBuilder_s3(bucketPropsBuilder_s3);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.ORIGIN_ACCESS_IDENTITY_BUILDER_CLOUDFRONT: {
+			OriginAccessIdentityBuilder_cloudfront originAccessIdentityBuilder_cloudfront = (OriginAccessIdentityBuilder_cloudfront) theEObject;
+			T result = caseOriginAccessIdentityBuilder_cloudfront(originAccessIdentityBuilder_cloudfront);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.S3_ORIGIN_CONFIG_BUILDER_CLOUDFRONT: {
+			S3OriginConfigBuilder_cloudfront s3OriginConfigBuilder_cloudfront = (S3OriginConfigBuilder_cloudfront) theEObject;
+			T result = caseS3OriginConfigBuilder_cloudfront(s3OriginConfigBuilder_cloudfront);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.SOURCE_CONFIGURATION_BUILDER_CLOUDFRONT: {
+			SourceConfigurationBuilder_cloudfront sourceConfigurationBuilder_cloudfront = (SourceConfigurationBuilder_cloudfront) theEObject;
+			T result = caseSourceConfigurationBuilder_cloudfront(sourceConfigurationBuilder_cloudfront);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.ALIAS_CONFIGURATION_BUILDER_CLOUDFRONT: {
+			AliasConfigurationBuilder_cloudfront aliasConfigurationBuilder_cloudfront = (AliasConfigurationBuilder_cloudfront) theEObject;
+			T result = caseAliasConfigurationBuilder_cloudfront(aliasConfigurationBuilder_cloudfront);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.LOGGING_CONFIGURATION_BUILDER_CLOUDFRONT: {
+			LoggingConfigurationBuilder_cloudfront loggingConfigurationBuilder_cloudfront = (LoggingConfigurationBuilder_cloudfront) theEObject;
+			T result = caseLoggingConfigurationBuilder_cloudfront(loggingConfigurationBuilder_cloudfront);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.CLOUD_FRONT_WEB_DISTRIBUTION_PROPS_BUILDER_CLOUDFRONT: {
+			CloudFrontWebDistributionPropsBuilder_cloudfront cloudFrontWebDistributionPropsBuilder_cloudfront = (CloudFrontWebDistributionPropsBuilder_cloudfront) theEObject;
+			T result = caseCloudFrontWebDistributionPropsBuilder_cloudfront(
+					cloudFrontWebDistributionPropsBuilder_cloudfront);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -384,6 +560,111 @@ public class AwsworkbenchSwitch<T> extends Switch<T> {
 		case AwsworkbenchPackage.CLOUD_FRONT_TO_S3_BUILDER_CLOUDFRONTS3: {
 			CloudFrontToS3Builder_cloudfronts3 cloudFrontToS3Builder_cloudfronts3 = (CloudFrontToS3Builder_cloudfronts3) theEObject;
 			T result = caseCloudFrontToS3Builder_cloudfronts3(cloudFrontToS3Builder_cloudfronts3);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.AUTO_VERIFIED_ATTRS_BUILDER_COGNITO: {
+			AutoVerifiedAttrsBuilder_cognito autoVerifiedAttrsBuilder_cognito = (AutoVerifiedAttrsBuilder_cognito) theEObject;
+			T result = caseAutoVerifiedAttrsBuilder_cognito(autoVerifiedAttrsBuilder_cognito);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.USER_POOL_TRIGGERS_BUILDER_COGNITO: {
+			UserPoolTriggersBuilder_cognito userPoolTriggersBuilder_cognito = (UserPoolTriggersBuilder_cognito) theEObject;
+			T result = caseUserPoolTriggersBuilder_cognito(userPoolTriggersBuilder_cognito);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.EMAIL_SETTINGS_BUILDER_COGNITO: {
+			EmailSettingsBuilder_cognito emailSettingsBuilder_cognito = (EmailSettingsBuilder_cognito) theEObject;
+			T result = caseEmailSettingsBuilder_cognito(emailSettingsBuilder_cognito);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.PASSWORD_POLICY_BUILDER_COGNITO: {
+			PasswordPolicyBuilder_cognito passwordPolicyBuilder_cognito = (PasswordPolicyBuilder_cognito) theEObject;
+			T result = casePasswordPolicyBuilder_cognito(passwordPolicyBuilder_cognito);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.MFA_SECOND_FACTOR_BUILDER_COGNITO: {
+			MfaSecondFactorBuilder_cognito mfaSecondFactorBuilder_cognito = (MfaSecondFactorBuilder_cognito) theEObject;
+			T result = caseMfaSecondFactorBuilder_cognito(mfaSecondFactorBuilder_cognito);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.REQUIRED_ATTRIBUTES_BUILDER_COGNITO: {
+			RequiredAttributesBuilder_cognito requiredAttributesBuilder_cognito = (RequiredAttributesBuilder_cognito) theEObject;
+			T result = caseRequiredAttributesBuilder_cognito(requiredAttributesBuilder_cognito);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.SIGN_IN_ALIASES_BUILDER_COGNITO: {
+			SignInAliasesBuilder_cognito signInAliasesBuilder_cognito = (SignInAliasesBuilder_cognito) theEObject;
+			T result = caseSignInAliasesBuilder_cognito(signInAliasesBuilder_cognito);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.USER_INVITATION_CONFIG_BUILDER_COGNITO: {
+			UserInvitationConfigBuilder_cognito userInvitationConfigBuilder_cognito = (UserInvitationConfigBuilder_cognito) theEObject;
+			T result = caseUserInvitationConfigBuilder_cognito(userInvitationConfigBuilder_cognito);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.USER_VERIFICATION_CONFIG_BUILDER_COGNITO: {
+			UserVerificationConfigBuilder_cognito userVerificationConfigBuilder_cognito = (UserVerificationConfigBuilder_cognito) theEObject;
+			T result = caseUserVerificationConfigBuilder_cognito(userVerificationConfigBuilder_cognito);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.USER_POOL_PROPS_BUILDER_COGNITO: {
+			UserPoolPropsBuilder_cognito userPoolPropsBuilder_cognito = (UserPoolPropsBuilder_cognito) theEObject;
+			T result = caseUserPoolPropsBuilder_cognito(userPoolPropsBuilder_cognito);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.USER_POOL_BUILDER_COGNITO: {
+			UserPoolBuilder_cognito userPoolBuilder_cognito = (UserPoolBuilder_cognito) theEObject;
+			T result = caseUserPoolBuilder_cognito(userPoolBuilder_cognito);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.AUTH_FLOW_BUILDER_COGNITO: {
+			AuthFlowBuilder_cognito authFlowBuilder_cognito = (AuthFlowBuilder_cognito) theEObject;
+			T result = caseAuthFlowBuilder_cognito(authFlowBuilder_cognito);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.OAUTH_FLOWS_BUILDER_COGNITO: {
+			OAuthFlowsBuilder_cognito oAuthFlowsBuilder_cognito = (OAuthFlowsBuilder_cognito) theEObject;
+			T result = caseOAuthFlowsBuilder_cognito(oAuthFlowsBuilder_cognito);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.OAUTH_SETTINGS_BUILDER_COGNITO: {
+			OAuthSettingsBuilder_cognito oAuthSettingsBuilder_cognito = (OAuthSettingsBuilder_cognito) theEObject;
+			T result = caseOAuthSettingsBuilder_cognito(oAuthSettingsBuilder_cognito);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.USER_POOL_CLIENT_PROPS_BUILDER_COGNITO: {
+			UserPoolClientPropsBuilder_cognito userPoolClientPropsBuilder_cognito = (UserPoolClientPropsBuilder_cognito) theEObject;
+			T result = caseUserPoolClientPropsBuilder_cognito(userPoolClientPropsBuilder_cognito);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -1114,6 +1395,21 @@ public class AwsworkbenchSwitch<T> extends Switch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Function Props Builder lambda</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Function Props Builder lambda</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseFunctionPropsBuilder_lambda(FunctionPropsBuilder_lambda object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Function Builder lambda</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -1279,6 +1575,36 @@ public class AwsworkbenchSwitch<T> extends Switch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Lambda Rest Api Props Builder apigateway</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Lambda Rest Api Props Builder apigateway</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseLambdaRestApiPropsBuilder_apigateway(LambdaRestApiPropsBuilder_apigateway object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Lambda Rest Api Builder apigateway</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Lambda Rest Api Builder apigateway</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseLambdaRestApiBuilder_apigateway(LambdaRestApiBuilder_apigateway object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Api Gateway To Lambda Builder apigatewaylambda</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -1294,6 +1620,21 @@ public class AwsworkbenchSwitch<T> extends Switch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Queue Props Builder sqs</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Queue Props Builder sqs</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseQueuePropsBuilder_sqs(QueuePropsBuilder_sqs object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Api Gateway To Sqs Builder apigatewaysqs</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -1305,6 +1646,322 @@ public class AwsworkbenchSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseApiGatewayToSqsBuilder_apigatewaysqs(ApiGatewayToSqsBuilder_apigatewaysqs object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Version Builder lambda</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Version Builder lambda</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseVersionBuilder_lambda(VersionBuilder_lambda object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Lambda Function Association Builder cloudfront</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Lambda Function Association Builder cloudfront</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseLambdaFunctionAssociationBuilder_cloudfront(LambdaFunctionAssociationBuilder_cloudfront object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Behavior Builder cloudfront</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Behavior Builder cloudfront</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseBehaviorBuilder_cloudfront(BehaviorBuilder_cloudfront object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Custom Origin Config Builder cloudfront</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Custom Origin Config Builder cloudfront</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseCustomOriginConfigBuilder_cloudfront(CustomOriginConfigBuilder_cloudfront object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Block Public Access Builder s3</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Block Public Access Builder s3</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseBlockPublicAccessBuilder_s3(BlockPublicAccessBuilder_s3 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Cors Rule Builder s3</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Cors Rule Builder s3</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseCorsRuleBuilder_s3(CorsRuleBuilder_s3 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Noncurrent Version Transition Builder s3</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Noncurrent Version Transition Builder s3</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseNoncurrentVersionTransitionBuilder_s3(NoncurrentVersionTransitionBuilder_s3 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Transition Builder s3</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Transition Builder s3</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseTransitionBuilder_s3(TransitionBuilder_s3 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Lifecycle Rule Builder s3</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Lifecycle Rule Builder s3</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseLifecycleRuleBuilder_s3(LifecycleRuleBuilder_s3 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Bucket Metrics Builder s3</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Bucket Metrics Builder s3</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseBucketMetricsBuilder_s3(BucketMetricsBuilder_s3 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Redirect Target Builder s3</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Redirect Target Builder s3</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseRedirectTargetBuilder_s3(RedirectTargetBuilder_s3 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Routing Rule Condition Builder s3</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Routing Rule Condition Builder s3</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseRoutingRuleConditionBuilder_s3(RoutingRuleConditionBuilder_s3 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Routing Rule Builder s3</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Routing Rule Builder s3</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseRoutingRuleBuilder_s3(RoutingRuleBuilder_s3 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Bucket Builder s3</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Bucket Builder s3</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseBucketBuilder_s3(BucketBuilder_s3 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Bucket Props Builder s3</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Bucket Props Builder s3</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseBucketPropsBuilder_s3(BucketPropsBuilder_s3 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Origin Access Identity Builder cloudfront</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Origin Access Identity Builder cloudfront</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseOriginAccessIdentityBuilder_cloudfront(OriginAccessIdentityBuilder_cloudfront object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>S3 Origin Config Builder cloudfront</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>S3 Origin Config Builder cloudfront</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseS3OriginConfigBuilder_cloudfront(S3OriginConfigBuilder_cloudfront object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Source Configuration Builder cloudfront</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Source Configuration Builder cloudfront</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseSourceConfigurationBuilder_cloudfront(SourceConfigurationBuilder_cloudfront object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Alias Configuration Builder cloudfront</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Alias Configuration Builder cloudfront</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseAliasConfigurationBuilder_cloudfront(AliasConfigurationBuilder_cloudfront object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Logging Configuration Builder cloudfront</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Logging Configuration Builder cloudfront</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseLoggingConfigurationBuilder_cloudfront(LoggingConfigurationBuilder_cloudfront object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Cloud Front Web Distribution Props Builder cloudfront</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Cloud Front Web Distribution Props Builder cloudfront</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseCloudFrontWebDistributionPropsBuilder_cloudfront(
+			CloudFrontWebDistributionPropsBuilder_cloudfront object) {
 		return null;
 	}
 
@@ -1352,6 +2009,231 @@ public class AwsworkbenchSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseCloudFrontToS3Builder_cloudfronts3(CloudFrontToS3Builder_cloudfronts3 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Auto Verified Attrs Builder cognito</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Auto Verified Attrs Builder cognito</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseAutoVerifiedAttrsBuilder_cognito(AutoVerifiedAttrsBuilder_cognito object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>User Pool Triggers Builder cognito</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>User Pool Triggers Builder cognito</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseUserPoolTriggersBuilder_cognito(UserPoolTriggersBuilder_cognito object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Email Settings Builder cognito</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Email Settings Builder cognito</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseEmailSettingsBuilder_cognito(EmailSettingsBuilder_cognito object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Password Policy Builder cognito</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Password Policy Builder cognito</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T casePasswordPolicyBuilder_cognito(PasswordPolicyBuilder_cognito object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Mfa Second Factor Builder cognito</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Mfa Second Factor Builder cognito</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseMfaSecondFactorBuilder_cognito(MfaSecondFactorBuilder_cognito object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Required Attributes Builder cognito</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Required Attributes Builder cognito</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseRequiredAttributesBuilder_cognito(RequiredAttributesBuilder_cognito object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Sign In Aliases Builder cognito</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Sign In Aliases Builder cognito</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseSignInAliasesBuilder_cognito(SignInAliasesBuilder_cognito object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>User Invitation Config Builder cognito</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>User Invitation Config Builder cognito</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseUserInvitationConfigBuilder_cognito(UserInvitationConfigBuilder_cognito object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>User Verification Config Builder cognito</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>User Verification Config Builder cognito</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseUserVerificationConfigBuilder_cognito(UserVerificationConfigBuilder_cognito object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>User Pool Props Builder cognito</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>User Pool Props Builder cognito</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseUserPoolPropsBuilder_cognito(UserPoolPropsBuilder_cognito object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>User Pool Builder cognito</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>User Pool Builder cognito</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseUserPoolBuilder_cognito(UserPoolBuilder_cognito object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Auth Flow Builder cognito</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Auth Flow Builder cognito</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseAuthFlowBuilder_cognito(AuthFlowBuilder_cognito object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>OAuth Flows Builder cognito</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>OAuth Flows Builder cognito</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseOAuthFlowsBuilder_cognito(OAuthFlowsBuilder_cognito object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>OAuth Settings Builder cognito</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>OAuth Settings Builder cognito</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseOAuthSettingsBuilder_cognito(OAuthSettingsBuilder_cognito object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>User Pool Client Props Builder cognito</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>User Pool Client Props Builder cognito</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseUserPoolClientPropsBuilder_cognito(UserPoolClientPropsBuilder_cognito object) {
 		return null;
 	}
 

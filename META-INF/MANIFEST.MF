@@ -8,27 +8,9 @@ Bundle-ClassPath: .
 Bundle-Vendor: %providerName
 Bundle-Localization: plugin
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
-Export-Package: apigateway,
- apigateway.impl,
- apigateway.util,
- certificatemanager,
- certificatemanager.impl,
- certificatemanager.util,
- com.amazon.aws.workbench.model.awsworkbench,
+Export-Package: com.amazon.aws.workbench.model.awsworkbench,
  com.amazon.aws.workbench.model.awsworkbench.impl,
- com.amazon.aws.workbench.model.awsworkbench.util,
- core,
- core.impl,
- core.util,
- dynamodb,
- dynamodb.impl,
- dynamodb.util,
- ec2,
- ec2.impl,
- ec2.util,
- iam,
- iam.impl,
- iam.util
+ com.amazon.aws.workbench.model.awsworkbench.util
 Require-Bundle: org.eclipse.emf.ecore;visibility:=reexport,
  com.amazon.aws.workbench.model;visibility:=reexport,
  org.eclipse.emf.ecore.xmi;visibility:=reexport,

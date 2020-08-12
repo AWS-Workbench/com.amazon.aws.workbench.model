@@ -251,8 +251,18 @@ public class AwsworkbenchFactoryImpl extends EFactoryImpl implements Awsworkbenc
 			return createDynamoDBStreamToLambdaBuilder_dynamodbstreamlambda();
 		case AwsworkbenchPackage.DYNAMO_DB_STREAM_TO_LAMBDA_TO_ELASTIC_SEARCH_AND_KIBANA_BUILDER_DYNAMODBSTREAMLAMBDAELASTICSEARCHKIBANA:
 			return createDynamoDBStreamToLambdaToElasticSearchAndKibanaBuilder_dynamodbstreamlambdaelasticsearchkibana();
+		case AwsworkbenchPackage.EVENT_BUS_BUILDER_EVENTS:
+			return createEventBusBuilder_events();
+		case AwsworkbenchPackage.EVENT_PATTERN_BUILDER_EVENTS:
+			return createEventPatternBuilder_events();
+		case AwsworkbenchPackage.RULE_PROPS_BUILDER_EVENTS:
+			return createRulePropsBuilder_events();
+		case AwsworkbenchPackage.CRON_OPTIONS_BUILDER_EVENTS:
+			return createCronOptionsBuilder_events();
 		case AwsworkbenchPackage.EVENTS_RULE_TO_LAMBDA_BUILDER_EVENTSRULELAMBDA:
 			return createEventsRuleToLambdaBuilder_eventsrulelambda();
+		case AwsworkbenchPackage.STATE_MACHINE_PROPS_BUILDER_STEPFUNCTIONS:
+			return createStateMachinePropsBuilder_stepfunctions();
 		case AwsworkbenchPackage.EVENTS_RULE_TO_STEP_FUNCTION_BUILDER_EVENTSRULESTEPFUNCTION:
 			return createEventsRuleToStepFunctionBuilder_eventsrulestepfunction();
 		case AwsworkbenchPackage.IOT_TO_KINESIS_FIREHOSE_TO_S3_BUILDER_IOTKINESISFIREHOSES3:
@@ -267,12 +277,16 @@ public class AwsworkbenchFactoryImpl extends EFactoryImpl implements Awsworkbenc
 			return createKinesisFirehoseToAnalyticsAndS3Builder_kinesisfirehoses3kinesisanalytics();
 		case AwsworkbenchPackage.KINESIS_STREAMS_TO_LAMBDA_BUILDER_KINESISSTREAMSLAMBDA:
 			return createKinesisStreamsToLambdaBuilder_kinesisstreamslambda();
+		case AwsworkbenchPackage.TABLE_BUILDER_DYNAMODB:
+			return createTableBuilder_dynamodb();
 		case AwsworkbenchPackage.LAMBDA_TO_DYNAMO_DB_BUILDER_LAMBDADYNAMODB:
 			return createLambdaToDynamoDBBuilder_lambdadynamodb();
 		case AwsworkbenchPackage.LAMBDA_TO_ELASTIC_SEARCH_AND_KIBANA_BUILDER_LAMBDAELASTICSEARCHKIBANA:
 			return createLambdaToElasticSearchAndKibanaBuilder_lambdaelasticsearchkibana();
 		case AwsworkbenchPackage.LAMBDA_TO_S3_BUILDER_LAMBDAS3:
 			return createLambdaToS3Builder_lambdas3();
+		case AwsworkbenchPackage.TOPIC_PROPS_BUILDER_SNS:
+			return createTopicPropsBuilder_sns();
 		case AwsworkbenchPackage.LAMBDA_TO_SNS_BUILDER_LAMBDASNS:
 			return createLambdaToSnsBuilder_lambdasns();
 		case AwsworkbenchPackage.LAMBDA_TO_SQS_BUILDER_LAMBDASQS:
@@ -303,6 +317,110 @@ public class AwsworkbenchFactoryImpl extends EFactoryImpl implements Awsworkbenc
 			return createAttributeBuilder_dynamodb();
 		case AwsworkbenchPackage.TABLE_PROPS_BUILDER_DYNAMODB:
 			return createTablePropsBuilder_dynamodb();
+		case AwsworkbenchPackage.PRIVATE_DNS_NAMESPACE_BUILDER_SERVICEDISCOVERY:
+			return createPrivateDnsNamespaceBuilder_servicediscovery();
+		case AwsworkbenchPackage.PUBLIC_DNS_NAMESPACE_BUILDER_SERVICEDISCOVERY:
+			return createPublicDnsNamespaceBuilder_servicediscovery();
+		case AwsworkbenchPackage.HTTP_NAMESPACE_BUILDER_SERVICEDISCOVERY:
+			return createHttpNamespaceBuilder_servicediscovery();
+		case AwsworkbenchPackage.CLOUD_MAP_OPTIONS_BUILDER_ECS:
+			return createCloudMapOptionsBuilder_ecs();
+		case AwsworkbenchPackage.BLOCK_DEVICE_BUILDER_AUTOSCALING:
+			return createBlockDeviceBuilder_autoscaling();
+		case AwsworkbenchPackage.HEALTH_CHECK_BUILDER_ECS:
+			return createHealthCheckBuilder_ecs();
+		case AwsworkbenchPackage.AMAZON_LINUX_IMAGE_BUILDER_EC2:
+			return createAmazonLinuxImageBuilder_ec2();
+		case AwsworkbenchPackage.ROLLING_UPDATE_CONFIGURATION_BUILDER_AUTOSCALING:
+			return createRollingUpdateConfigurationBuilder_autoscaling();
+		case AwsworkbenchPackage.ADD_CAPACITY_OPTIONS_BUILDER_ECS:
+			return createAddCapacityOptionsBuilder_ecs();
+		case AwsworkbenchPackage.CLOUD_MAP_NAMESPACE_OPTIONS_BUILDER_ECS:
+			return createCloudMapNamespaceOptionsBuilder_ecs();
+		case AwsworkbenchPackage.CLUSTER_BUILDER_ECS:
+			return createClusterBuilder_ecs();
+		case AwsworkbenchPackage.APPLICATION_LOAD_BALANCER_BUILDER_ELASTICLOADBALANCINGV2:
+			return createApplicationLoadBalancerBuilder_elasticloadbalancingv2();
+		case AwsworkbenchPackage.DOCKER_IMAGE_ASSET_BUILDER_ASSETS:
+			return createDockerImageAssetBuilder_assets();
+		case AwsworkbenchPackage.ASSET_IMAGE_BUILDER_ECS:
+			return createAssetImageBuilder_ecs();
+		case AwsworkbenchPackage.SECRET_STRING_GENERATOR_BUILDER_SECRETSMANAGER:
+			return createSecretStringGeneratorBuilder_secretsmanager();
+		case AwsworkbenchPackage.SECRET_BUILDER_SECRETSMANAGER:
+			return createSecretBuilder_secretsmanager();
+		case AwsworkbenchPackage.AWS_LOG_DRIVER_BUILDER_ECS:
+			return createAwsLogDriverBuilder_ecs();
+		case AwsworkbenchPackage.LOG_GROUP_BUILDER_LOGS:
+			return createLogGroupBuilder_logs();
+		case AwsworkbenchPackage.AWS_LOG_DRIVER_PROPS_BUILDER_ECS:
+			return createAwsLogDriverPropsBuilder_ecs();
+		case AwsworkbenchPackage.APPLICATION_LOAD_BALANCED_TASK_IMAGE_OPTIONS_BUILDER_PATTERNS:
+			return createApplicationLoadBalancedTaskImageOptionsBuilder_patterns();
+		case AwsworkbenchPackage.APP_MESH_PROXY_CONFIGURATION_PROPS_BUILDER_ECS:
+			return createAppMeshProxyConfigurationPropsBuilder_ecs();
+		case AwsworkbenchPackage.APP_MESH_PROXY_CONFIGURATION_BUILDER_ECS:
+			return createAppMeshProxyConfigurationBuilder_ecs();
+		case AwsworkbenchPackage.HOST_BUILDER_ECS:
+			return createHostBuilder_ecs();
+		case AwsworkbenchPackage.DOCKER_VOLUME_CONFIGURATION_BUILDER_ECS:
+			return createDockerVolumeConfigurationBuilder_ecs();
+		case AwsworkbenchPackage.VOLUME_BUILDER_ECS:
+			return createVolumeBuilder_ecs();
+		case AwsworkbenchPackage.EC2_TASK_DEFINITION_BUILDER_ECS:
+			return createEc2TaskDefinitionBuilder_ecs();
+		case AwsworkbenchPackage.APPLICATION_LOAD_BALANCED_EC2_SERVICE_BUILDER_PATTERNS:
+			return createApplicationLoadBalancedEc2ServiceBuilder_patterns();
+		case AwsworkbenchPackage.FARGATE_TASK_DEFINITION_BUILDER_ECS:
+			return createFargateTaskDefinitionBuilder_ecs();
+		case AwsworkbenchPackage.APPLICATION_LOAD_BALANCED_FARGATE_SERVICE_BUILDER_PATTERNS:
+			return createApplicationLoadBalancedFargateServiceBuilder_patterns();
+		case AwsworkbenchPackage.APPLICATION_MULTIPLE_TARGET_GROUPS_FARGATE_SERVICE_BUILDER_PATTERNS:
+			return createApplicationMultipleTargetGroupsFargateServiceBuilder_patterns();
+		case AwsworkbenchPackage.APPLICATION_LISTENER_PROPS_BUILDER_PATTERNS:
+			return createApplicationListenerPropsBuilder_patterns();
+		case AwsworkbenchPackage.APPLICATION_LOAD_BALANCER_PROPS_BUILDER_PATTERNS:
+			return createApplicationLoadBalancerPropsBuilder_patterns();
+		case AwsworkbenchPackage.APPLICATION_TARGET_PROPS_BUILDER_PATTERNS:
+			return createApplicationTargetPropsBuilder_patterns();
+		case AwsworkbenchPackage.APPLICATION_LOAD_BALANCED_TASK_IMAGE_PROPS_BUILDER_PATTERNS:
+			return createApplicationLoadBalancedTaskImagePropsBuilder_patterns();
+		case AwsworkbenchPackage.APPLICATION_MULTIPLE_TARGET_GROUPS_EC2_SERVICE_BUILDER_PATTERNS:
+			return createApplicationMultipleTargetGroupsEc2ServiceBuilder_patterns();
+		case AwsworkbenchPackage.NETWORK_LOAD_BALANCED_TASK_IMAGE_OPTIONS_BUILDER_PATTERNS:
+			return createNetworkLoadBalancedTaskImageOptionsBuilder_patterns();
+		case AwsworkbenchPackage.NETWORK_LOAD_BALANCED_FARGATE_SERVICE_BUILDER_PATTERNS:
+			return createNetworkLoadBalancedFargateServiceBuilder_patterns();
+		case AwsworkbenchPackage.NETWORK_LOAD_BALANCED_EC2_SERVICE_BUILDER_PATTERNS:
+			return createNetworkLoadBalancedEc2ServiceBuilder_patterns();
+		case AwsworkbenchPackage.NETWORK_MULTIPLE_TARGET_GROUPS_EC2_SERVICE_BUILDER_PATTERNS:
+			return createNetworkMultipleTargetGroupsEc2ServiceBuilder_patterns();
+		case AwsworkbenchPackage.NETWORK_TARGET_PROPS_BUILDER_PATTERNS:
+			return createNetworkTargetPropsBuilder_patterns();
+		case AwsworkbenchPackage.NETWORK_LOAD_BALANCED_TASK_IMAGE_PROPS_BUILDER_PATTERNS:
+			return createNetworkLoadBalancedTaskImagePropsBuilder_patterns();
+		case AwsworkbenchPackage.NETWORK_MULTIPLE_TARGET_GROUPS_FARGATE_SERVICE_BUILDER_PATTERNS:
+			return createNetworkMultipleTargetGroupsFargateServiceBuilder_patterns();
+		case AwsworkbenchPackage.SCALING_INTERVAL_BUILDER_APPLICATIONAUTOSCALING:
+			return createScalingIntervalBuilder_applicationautoscaling();
+		case AwsworkbenchPackage.QUEUE_PROCESSING_FARGATE_SERVICE_BUILDER_PATTERNS:
+			return createQueueProcessingFargateServiceBuilder_patterns();
+		case AwsworkbenchPackage.CRON_OPTIONS_BUILDER_APPLICATIONAUTOSCALING:
+			return createCronOptionsBuilder_applicationautoscaling();
+		case AwsworkbenchPackage.SCHEDULED_EC2_TASK_DEFINITION_OPTIONS_BUILDER_PATTERNS:
+			return createScheduledEc2TaskDefinitionOptionsBuilder_patterns();
+		case AwsworkbenchPackage.SCHEDULED_EC2_TASK_IMAGE_OPTIONS_BUILDER_PATTERNS:
+			return createScheduledEc2TaskImageOptionsBuilder_patterns();
+		case AwsworkbenchPackage.SCHEDULED_EC2_TASK_BUILDER_PATTERNS:
+			return createScheduledEc2TaskBuilder_patterns();
+		case AwsworkbenchPackage.QUEUE_PROCESSING_EC2_SERVICE_BUILDER_PATTERNS:
+			return createQueueProcessingEc2ServiceBuilder_patterns();
+		case AwsworkbenchPackage.SCHEDULED_FARGATE_TASK_DEFINITION_OPTIONS_BUILDER_PATTERNS:
+			return createScheduledFargateTaskDefinitionOptionsBuilder_patterns();
+		case AwsworkbenchPackage.SCHEDULED_FARGATE_TASK_IMAGE_OPTIONS_BUILDER_PATTERNS:
+			return createScheduledFargateTaskImageOptionsBuilder_patterns();
+		case AwsworkbenchPackage.SCHEDULED_FARGATE_TASK_BUILDER_PATTERNS:
+			return createScheduledFargateTaskBuilder_patterns();
 		default:
 			throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -384,6 +502,8 @@ public class AwsworkbenchFactoryImpl extends EFactoryImpl implements Awsworkbenc
 			return createMfaFromString(eDataType, initialValue);
 		case AwsworkbenchPackage.VERIFICATION_EMAIL_STYLE:
 			return createVerificationEmailStyleFromString(eDataType, initialValue);
+		case AwsworkbenchPackage.STATE_MACHINE_TYPE:
+			return createStateMachineTypeFromString(eDataType, initialValue);
 		case AwsworkbenchPackage.EFFECT:
 			return createEffectFromString(eDataType, initialValue);
 		case AwsworkbenchPackage.ATTRIBUTE_TYPE:
@@ -396,6 +516,46 @@ public class AwsworkbenchFactoryImpl extends EFactoryImpl implements Awsworkbenc
 			return createTableEncryptionFromString(eDataType, initialValue);
 		case AwsworkbenchPackage.BILLING_MODE:
 			return createBillingModeFromString(eDataType, initialValue);
+		case AwsworkbenchPackage.DNS_RECORD_TYPE:
+			return createDnsRecordTypeFromString(eDataType, initialValue);
+		case AwsworkbenchPackage.INSTANCE_CLASS:
+			return createInstanceClassFromString(eDataType, initialValue);
+		case AwsworkbenchPackage.INSTANCE_SIZE:
+			return createInstanceSizeFromString(eDataType, initialValue);
+		case AwsworkbenchPackage.AMAZON_LINUX_EDITION:
+			return createAmazonLinuxEditionFromString(eDataType, initialValue);
+		case AwsworkbenchPackage.AMAZON_LINUX_GENERATION:
+			return createAmazonLinuxGenerationFromString(eDataType, initialValue);
+		case AwsworkbenchPackage.AMAZON_LINUX_STORAGE:
+			return createAmazonLinuxStorageFromString(eDataType, initialValue);
+		case AwsworkbenchPackage.AMAZON_LINUX_VIRT:
+			return createAmazonLinuxVirtFromString(eDataType, initialValue);
+		case AwsworkbenchPackage.SCALING_PROCESS:
+			return createScalingProcessFromString(eDataType, initialValue);
+		case AwsworkbenchPackage.UPDATE_TYPE:
+			return createUpdateTypeFromString(eDataType, initialValue);
+		case AwsworkbenchPackage.NAMESPACE_TYPE:
+			return createNamespaceTypeFromString(eDataType, initialValue);
+		case AwsworkbenchPackage.IP_ADDRESS_TYPE:
+			return createIpAddressTypeFromString(eDataType, initialValue);
+		case AwsworkbenchPackage.PROPAGATED_TAG_SOURCE:
+			return createPropagatedTagSourceFromString(eDataType, initialValue);
+		case AwsworkbenchPackage.APPLICATION_PROTOCOL:
+			return createApplicationProtocolFromString(eDataType, initialValue);
+		case AwsworkbenchPackage.FOLLOW_MODE:
+			return createFollowModeFromString(eDataType, initialValue);
+		case AwsworkbenchPackage.SCOPE:
+			return createScopeFromString(eDataType, initialValue);
+		case AwsworkbenchPackage.NETWORK_MODE:
+			return createNetworkModeFromString(eDataType, initialValue);
+		case AwsworkbenchPackage.IPC_MODE:
+			return createIpcModeFromString(eDataType, initialValue);
+		case AwsworkbenchPackage.PID_MODE:
+			return createPidModeFromString(eDataType, initialValue);
+		case AwsworkbenchPackage.FARGATE_PLATFORM_VERSION:
+			return createFargatePlatformVersionFromString(eDataType, initialValue);
+		case AwsworkbenchPackage.PROTOCOL:
+			return createProtocolFromString(eDataType, initialValue);
 		default:
 			throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
 		}
@@ -477,6 +637,8 @@ public class AwsworkbenchFactoryImpl extends EFactoryImpl implements Awsworkbenc
 			return convertMfaToString(eDataType, instanceValue);
 		case AwsworkbenchPackage.VERIFICATION_EMAIL_STYLE:
 			return convertVerificationEmailStyleToString(eDataType, instanceValue);
+		case AwsworkbenchPackage.STATE_MACHINE_TYPE:
+			return convertStateMachineTypeToString(eDataType, instanceValue);
 		case AwsworkbenchPackage.EFFECT:
 			return convertEffectToString(eDataType, instanceValue);
 		case AwsworkbenchPackage.ATTRIBUTE_TYPE:
@@ -489,6 +651,46 @@ public class AwsworkbenchFactoryImpl extends EFactoryImpl implements Awsworkbenc
 			return convertTableEncryptionToString(eDataType, instanceValue);
 		case AwsworkbenchPackage.BILLING_MODE:
 			return convertBillingModeToString(eDataType, instanceValue);
+		case AwsworkbenchPackage.DNS_RECORD_TYPE:
+			return convertDnsRecordTypeToString(eDataType, instanceValue);
+		case AwsworkbenchPackage.INSTANCE_CLASS:
+			return convertInstanceClassToString(eDataType, instanceValue);
+		case AwsworkbenchPackage.INSTANCE_SIZE:
+			return convertInstanceSizeToString(eDataType, instanceValue);
+		case AwsworkbenchPackage.AMAZON_LINUX_EDITION:
+			return convertAmazonLinuxEditionToString(eDataType, instanceValue);
+		case AwsworkbenchPackage.AMAZON_LINUX_GENERATION:
+			return convertAmazonLinuxGenerationToString(eDataType, instanceValue);
+		case AwsworkbenchPackage.AMAZON_LINUX_STORAGE:
+			return convertAmazonLinuxStorageToString(eDataType, instanceValue);
+		case AwsworkbenchPackage.AMAZON_LINUX_VIRT:
+			return convertAmazonLinuxVirtToString(eDataType, instanceValue);
+		case AwsworkbenchPackage.SCALING_PROCESS:
+			return convertScalingProcessToString(eDataType, instanceValue);
+		case AwsworkbenchPackage.UPDATE_TYPE:
+			return convertUpdateTypeToString(eDataType, instanceValue);
+		case AwsworkbenchPackage.NAMESPACE_TYPE:
+			return convertNamespaceTypeToString(eDataType, instanceValue);
+		case AwsworkbenchPackage.IP_ADDRESS_TYPE:
+			return convertIpAddressTypeToString(eDataType, instanceValue);
+		case AwsworkbenchPackage.PROPAGATED_TAG_SOURCE:
+			return convertPropagatedTagSourceToString(eDataType, instanceValue);
+		case AwsworkbenchPackage.APPLICATION_PROTOCOL:
+			return convertApplicationProtocolToString(eDataType, instanceValue);
+		case AwsworkbenchPackage.FOLLOW_MODE:
+			return convertFollowModeToString(eDataType, instanceValue);
+		case AwsworkbenchPackage.SCOPE:
+			return convertScopeToString(eDataType, instanceValue);
+		case AwsworkbenchPackage.NETWORK_MODE:
+			return convertNetworkModeToString(eDataType, instanceValue);
+		case AwsworkbenchPackage.IPC_MODE:
+			return convertIpcModeToString(eDataType, instanceValue);
+		case AwsworkbenchPackage.PID_MODE:
+			return convertPidModeToString(eDataType, instanceValue);
+		case AwsworkbenchPackage.FARGATE_PLATFORM_VERSION:
+			return convertFargatePlatformVersionToString(eDataType, instanceValue);
+		case AwsworkbenchPackage.PROTOCOL:
+			return convertProtocolToString(eDataType, instanceValue);
 		default:
 			throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
 		}
@@ -1567,9 +1769,64 @@ public class AwsworkbenchFactoryImpl extends EFactoryImpl implements Awsworkbenc
 	 * @generated
 	 */
 	@Override
+	public EventBusBuilder_events createEventBusBuilder_events() {
+		EventBusBuilder_eventsImpl eventBusBuilder_events = new EventBusBuilder_eventsImpl();
+		return eventBusBuilder_events;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EventPatternBuilder_events createEventPatternBuilder_events() {
+		EventPatternBuilder_eventsImpl eventPatternBuilder_events = new EventPatternBuilder_eventsImpl();
+		return eventPatternBuilder_events;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public RulePropsBuilder_events createRulePropsBuilder_events() {
+		RulePropsBuilder_eventsImpl rulePropsBuilder_events = new RulePropsBuilder_eventsImpl();
+		return rulePropsBuilder_events;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public CronOptionsBuilder_events createCronOptionsBuilder_events() {
+		CronOptionsBuilder_eventsImpl cronOptionsBuilder_events = new CronOptionsBuilder_eventsImpl();
+		return cronOptionsBuilder_events;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EventsRuleToLambdaBuilder_eventsrulelambda createEventsRuleToLambdaBuilder_eventsrulelambda() {
 		EventsRuleToLambdaBuilder_eventsrulelambdaImpl eventsRuleToLambdaBuilder_eventsrulelambda = new EventsRuleToLambdaBuilder_eventsrulelambdaImpl();
 		return eventsRuleToLambdaBuilder_eventsrulelambda;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public StateMachinePropsBuilder_stepfunctions createStateMachinePropsBuilder_stepfunctions() {
+		StateMachinePropsBuilder_stepfunctionsImpl stateMachinePropsBuilder_stepfunctions = new StateMachinePropsBuilder_stepfunctionsImpl();
+		return stateMachinePropsBuilder_stepfunctions;
 	}
 
 	/**
@@ -1655,6 +1912,17 @@ public class AwsworkbenchFactoryImpl extends EFactoryImpl implements Awsworkbenc
 	 * @generated
 	 */
 	@Override
+	public TableBuilder_dynamodb createTableBuilder_dynamodb() {
+		TableBuilder_dynamodbImpl tableBuilder_dynamodb = new TableBuilder_dynamodbImpl();
+		return tableBuilder_dynamodb;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public LambdaToDynamoDBBuilder_lambdadynamodb createLambdaToDynamoDBBuilder_lambdadynamodb() {
 		LambdaToDynamoDBBuilder_lambdadynamodbImpl lambdaToDynamoDBBuilder_lambdadynamodb = new LambdaToDynamoDBBuilder_lambdadynamodbImpl();
 		return lambdaToDynamoDBBuilder_lambdadynamodb;
@@ -1680,6 +1948,17 @@ public class AwsworkbenchFactoryImpl extends EFactoryImpl implements Awsworkbenc
 	public LambdaToS3Builder_lambdas3 createLambdaToS3Builder_lambdas3() {
 		LambdaToS3Builder_lambdas3Impl lambdaToS3Builder_lambdas3 = new LambdaToS3Builder_lambdas3Impl();
 		return lambdaToS3Builder_lambdas3;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public TopicPropsBuilder_sns createTopicPropsBuilder_sns() {
+		TopicPropsBuilder_snsImpl topicPropsBuilder_sns = new TopicPropsBuilder_snsImpl();
+		return topicPropsBuilder_sns;
 	}
 
 	/**
@@ -1845,6 +2124,578 @@ public class AwsworkbenchFactoryImpl extends EFactoryImpl implements Awsworkbenc
 	public TablePropsBuilder_dynamodb createTablePropsBuilder_dynamodb() {
 		TablePropsBuilder_dynamodbImpl tablePropsBuilder_dynamodb = new TablePropsBuilder_dynamodbImpl();
 		return tablePropsBuilder_dynamodb;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public PrivateDnsNamespaceBuilder_servicediscovery createPrivateDnsNamespaceBuilder_servicediscovery() {
+		PrivateDnsNamespaceBuilder_servicediscoveryImpl privateDnsNamespaceBuilder_servicediscovery = new PrivateDnsNamespaceBuilder_servicediscoveryImpl();
+		return privateDnsNamespaceBuilder_servicediscovery;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public PublicDnsNamespaceBuilder_servicediscovery createPublicDnsNamespaceBuilder_servicediscovery() {
+		PublicDnsNamespaceBuilder_servicediscoveryImpl publicDnsNamespaceBuilder_servicediscovery = new PublicDnsNamespaceBuilder_servicediscoveryImpl();
+		return publicDnsNamespaceBuilder_servicediscovery;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public HttpNamespaceBuilder_servicediscovery createHttpNamespaceBuilder_servicediscovery() {
+		HttpNamespaceBuilder_servicediscoveryImpl httpNamespaceBuilder_servicediscovery = new HttpNamespaceBuilder_servicediscoveryImpl();
+		return httpNamespaceBuilder_servicediscovery;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public CloudMapOptionsBuilder_ecs createCloudMapOptionsBuilder_ecs() {
+		CloudMapOptionsBuilder_ecsImpl cloudMapOptionsBuilder_ecs = new CloudMapOptionsBuilder_ecsImpl();
+		return cloudMapOptionsBuilder_ecs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public BlockDeviceBuilder_autoscaling createBlockDeviceBuilder_autoscaling() {
+		BlockDeviceBuilder_autoscalingImpl blockDeviceBuilder_autoscaling = new BlockDeviceBuilder_autoscalingImpl();
+		return blockDeviceBuilder_autoscaling;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public HealthCheckBuilder_ecs createHealthCheckBuilder_ecs() {
+		HealthCheckBuilder_ecsImpl healthCheckBuilder_ecs = new HealthCheckBuilder_ecsImpl();
+		return healthCheckBuilder_ecs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public AmazonLinuxImageBuilder_ec2 createAmazonLinuxImageBuilder_ec2() {
+		AmazonLinuxImageBuilder_ec2Impl amazonLinuxImageBuilder_ec2 = new AmazonLinuxImageBuilder_ec2Impl();
+		return amazonLinuxImageBuilder_ec2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public RollingUpdateConfigurationBuilder_autoscaling createRollingUpdateConfigurationBuilder_autoscaling() {
+		RollingUpdateConfigurationBuilder_autoscalingImpl rollingUpdateConfigurationBuilder_autoscaling = new RollingUpdateConfigurationBuilder_autoscalingImpl();
+		return rollingUpdateConfigurationBuilder_autoscaling;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public AddCapacityOptionsBuilder_ecs createAddCapacityOptionsBuilder_ecs() {
+		AddCapacityOptionsBuilder_ecsImpl addCapacityOptionsBuilder_ecs = new AddCapacityOptionsBuilder_ecsImpl();
+		return addCapacityOptionsBuilder_ecs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public CloudMapNamespaceOptionsBuilder_ecs createCloudMapNamespaceOptionsBuilder_ecs() {
+		CloudMapNamespaceOptionsBuilder_ecsImpl cloudMapNamespaceOptionsBuilder_ecs = new CloudMapNamespaceOptionsBuilder_ecsImpl();
+		return cloudMapNamespaceOptionsBuilder_ecs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ClusterBuilder_ecs createClusterBuilder_ecs() {
+		ClusterBuilder_ecsImpl clusterBuilder_ecs = new ClusterBuilder_ecsImpl();
+		return clusterBuilder_ecs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ApplicationLoadBalancerBuilder_elasticloadbalancingv2 createApplicationLoadBalancerBuilder_elasticloadbalancingv2() {
+		ApplicationLoadBalancerBuilder_elasticloadbalancingv2Impl applicationLoadBalancerBuilder_elasticloadbalancingv2 = new ApplicationLoadBalancerBuilder_elasticloadbalancingv2Impl();
+		return applicationLoadBalancerBuilder_elasticloadbalancingv2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public DockerImageAssetBuilder_assets createDockerImageAssetBuilder_assets() {
+		DockerImageAssetBuilder_assetsImpl dockerImageAssetBuilder_assets = new DockerImageAssetBuilder_assetsImpl();
+		return dockerImageAssetBuilder_assets;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public AssetImageBuilder_ecs createAssetImageBuilder_ecs() {
+		AssetImageBuilder_ecsImpl assetImageBuilder_ecs = new AssetImageBuilder_ecsImpl();
+		return assetImageBuilder_ecs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public SecretStringGeneratorBuilder_secretsmanager createSecretStringGeneratorBuilder_secretsmanager() {
+		SecretStringGeneratorBuilder_secretsmanagerImpl secretStringGeneratorBuilder_secretsmanager = new SecretStringGeneratorBuilder_secretsmanagerImpl();
+		return secretStringGeneratorBuilder_secretsmanager;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public SecretBuilder_secretsmanager createSecretBuilder_secretsmanager() {
+		SecretBuilder_secretsmanagerImpl secretBuilder_secretsmanager = new SecretBuilder_secretsmanagerImpl();
+		return secretBuilder_secretsmanager;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public AwsLogDriverBuilder_ecs createAwsLogDriverBuilder_ecs() {
+		AwsLogDriverBuilder_ecsImpl awsLogDriverBuilder_ecs = new AwsLogDriverBuilder_ecsImpl();
+		return awsLogDriverBuilder_ecs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public LogGroupBuilder_logs createLogGroupBuilder_logs() {
+		LogGroupBuilder_logsImpl logGroupBuilder_logs = new LogGroupBuilder_logsImpl();
+		return logGroupBuilder_logs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public AwsLogDriverPropsBuilder_ecs createAwsLogDriverPropsBuilder_ecs() {
+		AwsLogDriverPropsBuilder_ecsImpl awsLogDriverPropsBuilder_ecs = new AwsLogDriverPropsBuilder_ecsImpl();
+		return awsLogDriverPropsBuilder_ecs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ApplicationLoadBalancedTaskImageOptionsBuilder_patterns createApplicationLoadBalancedTaskImageOptionsBuilder_patterns() {
+		ApplicationLoadBalancedTaskImageOptionsBuilder_patternsImpl applicationLoadBalancedTaskImageOptionsBuilder_patterns = new ApplicationLoadBalancedTaskImageOptionsBuilder_patternsImpl();
+		return applicationLoadBalancedTaskImageOptionsBuilder_patterns;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public AppMeshProxyConfigurationPropsBuilder_ecs createAppMeshProxyConfigurationPropsBuilder_ecs() {
+		AppMeshProxyConfigurationPropsBuilder_ecsImpl appMeshProxyConfigurationPropsBuilder_ecs = new AppMeshProxyConfigurationPropsBuilder_ecsImpl();
+		return appMeshProxyConfigurationPropsBuilder_ecs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public AppMeshProxyConfigurationBuilder_ecs createAppMeshProxyConfigurationBuilder_ecs() {
+		AppMeshProxyConfigurationBuilder_ecsImpl appMeshProxyConfigurationBuilder_ecs = new AppMeshProxyConfigurationBuilder_ecsImpl();
+		return appMeshProxyConfigurationBuilder_ecs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public HostBuilder_ecs createHostBuilder_ecs() {
+		HostBuilder_ecsImpl hostBuilder_ecs = new HostBuilder_ecsImpl();
+		return hostBuilder_ecs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public DockerVolumeConfigurationBuilder_ecs createDockerVolumeConfigurationBuilder_ecs() {
+		DockerVolumeConfigurationBuilder_ecsImpl dockerVolumeConfigurationBuilder_ecs = new DockerVolumeConfigurationBuilder_ecsImpl();
+		return dockerVolumeConfigurationBuilder_ecs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public VolumeBuilder_ecs createVolumeBuilder_ecs() {
+		VolumeBuilder_ecsImpl volumeBuilder_ecs = new VolumeBuilder_ecsImpl();
+		return volumeBuilder_ecs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Ec2TaskDefinitionBuilder_ecs createEc2TaskDefinitionBuilder_ecs() {
+		Ec2TaskDefinitionBuilder_ecsImpl ec2TaskDefinitionBuilder_ecs = new Ec2TaskDefinitionBuilder_ecsImpl();
+		return ec2TaskDefinitionBuilder_ecs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ApplicationLoadBalancedEc2ServiceBuilder_patterns createApplicationLoadBalancedEc2ServiceBuilder_patterns() {
+		ApplicationLoadBalancedEc2ServiceBuilder_patternsImpl applicationLoadBalancedEc2ServiceBuilder_patterns = new ApplicationLoadBalancedEc2ServiceBuilder_patternsImpl();
+		return applicationLoadBalancedEc2ServiceBuilder_patterns;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public FargateTaskDefinitionBuilder_ecs createFargateTaskDefinitionBuilder_ecs() {
+		FargateTaskDefinitionBuilder_ecsImpl fargateTaskDefinitionBuilder_ecs = new FargateTaskDefinitionBuilder_ecsImpl();
+		return fargateTaskDefinitionBuilder_ecs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ApplicationLoadBalancedFargateServiceBuilder_patterns createApplicationLoadBalancedFargateServiceBuilder_patterns() {
+		ApplicationLoadBalancedFargateServiceBuilder_patternsImpl applicationLoadBalancedFargateServiceBuilder_patterns = new ApplicationLoadBalancedFargateServiceBuilder_patternsImpl();
+		return applicationLoadBalancedFargateServiceBuilder_patterns;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ApplicationMultipleTargetGroupsFargateServiceBuilder_patterns createApplicationMultipleTargetGroupsFargateServiceBuilder_patterns() {
+		ApplicationMultipleTargetGroupsFargateServiceBuilder_patternsImpl applicationMultipleTargetGroupsFargateServiceBuilder_patterns = new ApplicationMultipleTargetGroupsFargateServiceBuilder_patternsImpl();
+		return applicationMultipleTargetGroupsFargateServiceBuilder_patterns;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ApplicationListenerPropsBuilder_patterns createApplicationListenerPropsBuilder_patterns() {
+		ApplicationListenerPropsBuilder_patternsImpl applicationListenerPropsBuilder_patterns = new ApplicationListenerPropsBuilder_patternsImpl();
+		return applicationListenerPropsBuilder_patterns;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ApplicationLoadBalancerPropsBuilder_patterns createApplicationLoadBalancerPropsBuilder_patterns() {
+		ApplicationLoadBalancerPropsBuilder_patternsImpl applicationLoadBalancerPropsBuilder_patterns = new ApplicationLoadBalancerPropsBuilder_patternsImpl();
+		return applicationLoadBalancerPropsBuilder_patterns;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ApplicationTargetPropsBuilder_patterns createApplicationTargetPropsBuilder_patterns() {
+		ApplicationTargetPropsBuilder_patternsImpl applicationTargetPropsBuilder_patterns = new ApplicationTargetPropsBuilder_patternsImpl();
+		return applicationTargetPropsBuilder_patterns;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ApplicationLoadBalancedTaskImagePropsBuilder_patterns createApplicationLoadBalancedTaskImagePropsBuilder_patterns() {
+		ApplicationLoadBalancedTaskImagePropsBuilder_patternsImpl applicationLoadBalancedTaskImagePropsBuilder_patterns = new ApplicationLoadBalancedTaskImagePropsBuilder_patternsImpl();
+		return applicationLoadBalancedTaskImagePropsBuilder_patterns;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ApplicationMultipleTargetGroupsEc2ServiceBuilder_patterns createApplicationMultipleTargetGroupsEc2ServiceBuilder_patterns() {
+		ApplicationMultipleTargetGroupsEc2ServiceBuilder_patternsImpl applicationMultipleTargetGroupsEc2ServiceBuilder_patterns = new ApplicationMultipleTargetGroupsEc2ServiceBuilder_patternsImpl();
+		return applicationMultipleTargetGroupsEc2ServiceBuilder_patterns;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public NetworkLoadBalancedTaskImageOptionsBuilder_patterns createNetworkLoadBalancedTaskImageOptionsBuilder_patterns() {
+		NetworkLoadBalancedTaskImageOptionsBuilder_patternsImpl networkLoadBalancedTaskImageOptionsBuilder_patterns = new NetworkLoadBalancedTaskImageOptionsBuilder_patternsImpl();
+		return networkLoadBalancedTaskImageOptionsBuilder_patterns;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public NetworkLoadBalancedFargateServiceBuilder_patterns createNetworkLoadBalancedFargateServiceBuilder_patterns() {
+		NetworkLoadBalancedFargateServiceBuilder_patternsImpl networkLoadBalancedFargateServiceBuilder_patterns = new NetworkLoadBalancedFargateServiceBuilder_patternsImpl();
+		return networkLoadBalancedFargateServiceBuilder_patterns;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public NetworkLoadBalancedEc2ServiceBuilder_patterns createNetworkLoadBalancedEc2ServiceBuilder_patterns() {
+		NetworkLoadBalancedEc2ServiceBuilder_patternsImpl networkLoadBalancedEc2ServiceBuilder_patterns = new NetworkLoadBalancedEc2ServiceBuilder_patternsImpl();
+		return networkLoadBalancedEc2ServiceBuilder_patterns;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public NetworkMultipleTargetGroupsEc2ServiceBuilder_patterns createNetworkMultipleTargetGroupsEc2ServiceBuilder_patterns() {
+		NetworkMultipleTargetGroupsEc2ServiceBuilder_patternsImpl networkMultipleTargetGroupsEc2ServiceBuilder_patterns = new NetworkMultipleTargetGroupsEc2ServiceBuilder_patternsImpl();
+		return networkMultipleTargetGroupsEc2ServiceBuilder_patterns;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public NetworkTargetPropsBuilder_patterns createNetworkTargetPropsBuilder_patterns() {
+		NetworkTargetPropsBuilder_patternsImpl networkTargetPropsBuilder_patterns = new NetworkTargetPropsBuilder_patternsImpl();
+		return networkTargetPropsBuilder_patterns;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public NetworkLoadBalancedTaskImagePropsBuilder_patterns createNetworkLoadBalancedTaskImagePropsBuilder_patterns() {
+		NetworkLoadBalancedTaskImagePropsBuilder_patternsImpl networkLoadBalancedTaskImagePropsBuilder_patterns = new NetworkLoadBalancedTaskImagePropsBuilder_patternsImpl();
+		return networkLoadBalancedTaskImagePropsBuilder_patterns;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public NetworkMultipleTargetGroupsFargateServiceBuilder_patterns createNetworkMultipleTargetGroupsFargateServiceBuilder_patterns() {
+		NetworkMultipleTargetGroupsFargateServiceBuilder_patternsImpl networkMultipleTargetGroupsFargateServiceBuilder_patterns = new NetworkMultipleTargetGroupsFargateServiceBuilder_patternsImpl();
+		return networkMultipleTargetGroupsFargateServiceBuilder_patterns;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ScalingIntervalBuilder_applicationautoscaling createScalingIntervalBuilder_applicationautoscaling() {
+		ScalingIntervalBuilder_applicationautoscalingImpl scalingIntervalBuilder_applicationautoscaling = new ScalingIntervalBuilder_applicationautoscalingImpl();
+		return scalingIntervalBuilder_applicationautoscaling;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public QueueProcessingFargateServiceBuilder_patterns createQueueProcessingFargateServiceBuilder_patterns() {
+		QueueProcessingFargateServiceBuilder_patternsImpl queueProcessingFargateServiceBuilder_patterns = new QueueProcessingFargateServiceBuilder_patternsImpl();
+		return queueProcessingFargateServiceBuilder_patterns;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public CronOptionsBuilder_applicationautoscaling createCronOptionsBuilder_applicationautoscaling() {
+		CronOptionsBuilder_applicationautoscalingImpl cronOptionsBuilder_applicationautoscaling = new CronOptionsBuilder_applicationautoscalingImpl();
+		return cronOptionsBuilder_applicationautoscaling;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ScheduledEc2TaskDefinitionOptionsBuilder_patterns createScheduledEc2TaskDefinitionOptionsBuilder_patterns() {
+		ScheduledEc2TaskDefinitionOptionsBuilder_patternsImpl scheduledEc2TaskDefinitionOptionsBuilder_patterns = new ScheduledEc2TaskDefinitionOptionsBuilder_patternsImpl();
+		return scheduledEc2TaskDefinitionOptionsBuilder_patterns;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ScheduledEc2TaskImageOptionsBuilder_patterns createScheduledEc2TaskImageOptionsBuilder_patterns() {
+		ScheduledEc2TaskImageOptionsBuilder_patternsImpl scheduledEc2TaskImageOptionsBuilder_patterns = new ScheduledEc2TaskImageOptionsBuilder_patternsImpl();
+		return scheduledEc2TaskImageOptionsBuilder_patterns;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ScheduledEc2TaskBuilder_patterns createScheduledEc2TaskBuilder_patterns() {
+		ScheduledEc2TaskBuilder_patternsImpl scheduledEc2TaskBuilder_patterns = new ScheduledEc2TaskBuilder_patternsImpl();
+		return scheduledEc2TaskBuilder_patterns;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public QueueProcessingEc2ServiceBuilder_patterns createQueueProcessingEc2ServiceBuilder_patterns() {
+		QueueProcessingEc2ServiceBuilder_patternsImpl queueProcessingEc2ServiceBuilder_patterns = new QueueProcessingEc2ServiceBuilder_patternsImpl();
+		return queueProcessingEc2ServiceBuilder_patterns;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ScheduledFargateTaskDefinitionOptionsBuilder_patterns createScheduledFargateTaskDefinitionOptionsBuilder_patterns() {
+		ScheduledFargateTaskDefinitionOptionsBuilder_patternsImpl scheduledFargateTaskDefinitionOptionsBuilder_patterns = new ScheduledFargateTaskDefinitionOptionsBuilder_patternsImpl();
+		return scheduledFargateTaskDefinitionOptionsBuilder_patterns;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ScheduledFargateTaskImageOptionsBuilder_patterns createScheduledFargateTaskImageOptionsBuilder_patterns() {
+		ScheduledFargateTaskImageOptionsBuilder_patternsImpl scheduledFargateTaskImageOptionsBuilder_patterns = new ScheduledFargateTaskImageOptionsBuilder_patternsImpl();
+		return scheduledFargateTaskImageOptionsBuilder_patterns;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ScheduledFargateTaskBuilder_patterns createScheduledFargateTaskBuilder_patterns() {
+		ScheduledFargateTaskBuilder_patternsImpl scheduledFargateTaskBuilder_patterns = new ScheduledFargateTaskBuilder_patternsImpl();
+		return scheduledFargateTaskBuilder_patterns;
 	}
 
 	/**
@@ -2601,6 +3452,28 @@ public class AwsworkbenchFactoryImpl extends EFactoryImpl implements Awsworkbenc
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public StateMachineType createStateMachineTypeFromString(EDataType eDataType, String initialValue) {
+		StateMachineType result = StateMachineType.get(initialValue);
+		if (result == null)
+			throw new IllegalArgumentException(
+					"The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+		return result;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String convertStateMachineTypeToString(EDataType eDataType, Object instanceValue) {
+		return instanceValue == null ? null : instanceValue.toString();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public Effect createEffectFromString(EDataType eDataType, String initialValue) {
 		Effect result = Effect.get(initialValue);
 		if (result == null)
@@ -2725,6 +3598,446 @@ public class AwsworkbenchFactoryImpl extends EFactoryImpl implements Awsworkbenc
 	 * @generated
 	 */
 	public String convertBillingModeToString(EDataType eDataType, Object instanceValue) {
+		return instanceValue == null ? null : instanceValue.toString();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public DnsRecordType createDnsRecordTypeFromString(EDataType eDataType, String initialValue) {
+		DnsRecordType result = DnsRecordType.get(initialValue);
+		if (result == null)
+			throw new IllegalArgumentException(
+					"The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+		return result;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String convertDnsRecordTypeToString(EDataType eDataType, Object instanceValue) {
+		return instanceValue == null ? null : instanceValue.toString();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public InstanceClass createInstanceClassFromString(EDataType eDataType, String initialValue) {
+		InstanceClass result = InstanceClass.get(initialValue);
+		if (result == null)
+			throw new IllegalArgumentException(
+					"The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+		return result;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String convertInstanceClassToString(EDataType eDataType, Object instanceValue) {
+		return instanceValue == null ? null : instanceValue.toString();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public InstanceSize createInstanceSizeFromString(EDataType eDataType, String initialValue) {
+		InstanceSize result = InstanceSize.get(initialValue);
+		if (result == null)
+			throw new IllegalArgumentException(
+					"The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+		return result;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String convertInstanceSizeToString(EDataType eDataType, Object instanceValue) {
+		return instanceValue == null ? null : instanceValue.toString();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public AmazonLinuxEdition createAmazonLinuxEditionFromString(EDataType eDataType, String initialValue) {
+		AmazonLinuxEdition result = AmazonLinuxEdition.get(initialValue);
+		if (result == null)
+			throw new IllegalArgumentException(
+					"The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+		return result;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String convertAmazonLinuxEditionToString(EDataType eDataType, Object instanceValue) {
+		return instanceValue == null ? null : instanceValue.toString();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public AmazonLinuxGeneration createAmazonLinuxGenerationFromString(EDataType eDataType, String initialValue) {
+		AmazonLinuxGeneration result = AmazonLinuxGeneration.get(initialValue);
+		if (result == null)
+			throw new IllegalArgumentException(
+					"The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+		return result;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String convertAmazonLinuxGenerationToString(EDataType eDataType, Object instanceValue) {
+		return instanceValue == null ? null : instanceValue.toString();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public AmazonLinuxStorage createAmazonLinuxStorageFromString(EDataType eDataType, String initialValue) {
+		AmazonLinuxStorage result = AmazonLinuxStorage.get(initialValue);
+		if (result == null)
+			throw new IllegalArgumentException(
+					"The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+		return result;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String convertAmazonLinuxStorageToString(EDataType eDataType, Object instanceValue) {
+		return instanceValue == null ? null : instanceValue.toString();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public AmazonLinuxVirt createAmazonLinuxVirtFromString(EDataType eDataType, String initialValue) {
+		AmazonLinuxVirt result = AmazonLinuxVirt.get(initialValue);
+		if (result == null)
+			throw new IllegalArgumentException(
+					"The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+		return result;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String convertAmazonLinuxVirtToString(EDataType eDataType, Object instanceValue) {
+		return instanceValue == null ? null : instanceValue.toString();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ScalingProcess createScalingProcessFromString(EDataType eDataType, String initialValue) {
+		ScalingProcess result = ScalingProcess.get(initialValue);
+		if (result == null)
+			throw new IllegalArgumentException(
+					"The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+		return result;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String convertScalingProcessToString(EDataType eDataType, Object instanceValue) {
+		return instanceValue == null ? null : instanceValue.toString();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public UpdateType createUpdateTypeFromString(EDataType eDataType, String initialValue) {
+		UpdateType result = UpdateType.get(initialValue);
+		if (result == null)
+			throw new IllegalArgumentException(
+					"The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+		return result;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String convertUpdateTypeToString(EDataType eDataType, Object instanceValue) {
+		return instanceValue == null ? null : instanceValue.toString();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NamespaceType createNamespaceTypeFromString(EDataType eDataType, String initialValue) {
+		NamespaceType result = NamespaceType.get(initialValue);
+		if (result == null)
+			throw new IllegalArgumentException(
+					"The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+		return result;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String convertNamespaceTypeToString(EDataType eDataType, Object instanceValue) {
+		return instanceValue == null ? null : instanceValue.toString();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IpAddressType createIpAddressTypeFromString(EDataType eDataType, String initialValue) {
+		IpAddressType result = IpAddressType.get(initialValue);
+		if (result == null)
+			throw new IllegalArgumentException(
+					"The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+		return result;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String convertIpAddressTypeToString(EDataType eDataType, Object instanceValue) {
+		return instanceValue == null ? null : instanceValue.toString();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PropagatedTagSource createPropagatedTagSourceFromString(EDataType eDataType, String initialValue) {
+		PropagatedTagSource result = PropagatedTagSource.get(initialValue);
+		if (result == null)
+			throw new IllegalArgumentException(
+					"The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+		return result;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String convertPropagatedTagSourceToString(EDataType eDataType, Object instanceValue) {
+		return instanceValue == null ? null : instanceValue.toString();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ApplicationProtocol createApplicationProtocolFromString(EDataType eDataType, String initialValue) {
+		ApplicationProtocol result = ApplicationProtocol.get(initialValue);
+		if (result == null)
+			throw new IllegalArgumentException(
+					"The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+		return result;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String convertApplicationProtocolToString(EDataType eDataType, Object instanceValue) {
+		return instanceValue == null ? null : instanceValue.toString();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public FollowMode createFollowModeFromString(EDataType eDataType, String initialValue) {
+		FollowMode result = FollowMode.get(initialValue);
+		if (result == null)
+			throw new IllegalArgumentException(
+					"The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+		return result;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String convertFollowModeToString(EDataType eDataType, Object instanceValue) {
+		return instanceValue == null ? null : instanceValue.toString();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Scope createScopeFromString(EDataType eDataType, String initialValue) {
+		Scope result = Scope.get(initialValue);
+		if (result == null)
+			throw new IllegalArgumentException(
+					"The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+		return result;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String convertScopeToString(EDataType eDataType, Object instanceValue) {
+		return instanceValue == null ? null : instanceValue.toString();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NetworkMode createNetworkModeFromString(EDataType eDataType, String initialValue) {
+		NetworkMode result = NetworkMode.get(initialValue);
+		if (result == null)
+			throw new IllegalArgumentException(
+					"The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+		return result;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String convertNetworkModeToString(EDataType eDataType, Object instanceValue) {
+		return instanceValue == null ? null : instanceValue.toString();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IpcMode createIpcModeFromString(EDataType eDataType, String initialValue) {
+		IpcMode result = IpcMode.get(initialValue);
+		if (result == null)
+			throw new IllegalArgumentException(
+					"The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+		return result;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String convertIpcModeToString(EDataType eDataType, Object instanceValue) {
+		return instanceValue == null ? null : instanceValue.toString();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PidMode createPidModeFromString(EDataType eDataType, String initialValue) {
+		PidMode result = PidMode.get(initialValue);
+		if (result == null)
+			throw new IllegalArgumentException(
+					"The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+		return result;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String convertPidModeToString(EDataType eDataType, Object instanceValue) {
+		return instanceValue == null ? null : instanceValue.toString();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public FargatePlatformVersion createFargatePlatformVersionFromString(EDataType eDataType, String initialValue) {
+		FargatePlatformVersion result = FargatePlatformVersion.get(initialValue);
+		if (result == null)
+			throw new IllegalArgumentException(
+					"The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+		return result;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String convertFargatePlatformVersionToString(EDataType eDataType, Object instanceValue) {
+		return instanceValue == null ? null : instanceValue.toString();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Protocol createProtocolFromString(EDataType eDataType, String initialValue) {
+		Protocol result = Protocol.get(initialValue);
+		if (result == null)
+			throw new IllegalArgumentException(
+					"The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+		return result;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String convertProtocolToString(EDataType eDataType, Object instanceValue) {
 		return instanceValue == null ? null : instanceValue.toString();
 	}
 

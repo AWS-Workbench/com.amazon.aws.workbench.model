@@ -763,9 +763,44 @@ public class AwsworkbenchSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
+		case AwsworkbenchPackage.EVENT_BUS_BUILDER_EVENTS: {
+			EventBusBuilder_events eventBusBuilder_events = (EventBusBuilder_events) theEObject;
+			T result = caseEventBusBuilder_events(eventBusBuilder_events);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.EVENT_PATTERN_BUILDER_EVENTS: {
+			EventPatternBuilder_events eventPatternBuilder_events = (EventPatternBuilder_events) theEObject;
+			T result = caseEventPatternBuilder_events(eventPatternBuilder_events);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.RULE_PROPS_BUILDER_EVENTS: {
+			RulePropsBuilder_events rulePropsBuilder_events = (RulePropsBuilder_events) theEObject;
+			T result = caseRulePropsBuilder_events(rulePropsBuilder_events);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.CRON_OPTIONS_BUILDER_EVENTS: {
+			CronOptionsBuilder_events cronOptionsBuilder_events = (CronOptionsBuilder_events) theEObject;
+			T result = caseCronOptionsBuilder_events(cronOptionsBuilder_events);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
 		case AwsworkbenchPackage.EVENTS_RULE_TO_LAMBDA_BUILDER_EVENTSRULELAMBDA: {
 			EventsRuleToLambdaBuilder_eventsrulelambda eventsRuleToLambdaBuilder_eventsrulelambda = (EventsRuleToLambdaBuilder_eventsrulelambda) theEObject;
 			T result = caseEventsRuleToLambdaBuilder_eventsrulelambda(eventsRuleToLambdaBuilder_eventsrulelambda);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.STATE_MACHINE_PROPS_BUILDER_STEPFUNCTIONS: {
+			StateMachinePropsBuilder_stepfunctions stateMachinePropsBuilder_stepfunctions = (StateMachinePropsBuilder_stepfunctions) theEObject;
+			T result = caseStateMachinePropsBuilder_stepfunctions(stateMachinePropsBuilder_stepfunctions);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -824,6 +859,13 @@ public class AwsworkbenchSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
+		case AwsworkbenchPackage.TABLE_BUILDER_DYNAMODB: {
+			TableBuilder_dynamodb tableBuilder_dynamodb = (TableBuilder_dynamodb) theEObject;
+			T result = caseTableBuilder_dynamodb(tableBuilder_dynamodb);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
 		case AwsworkbenchPackage.LAMBDA_TO_DYNAMO_DB_BUILDER_LAMBDADYNAMODB: {
 			LambdaToDynamoDBBuilder_lambdadynamodb lambdaToDynamoDBBuilder_lambdadynamodb = (LambdaToDynamoDBBuilder_lambdadynamodb) theEObject;
 			T result = caseLambdaToDynamoDBBuilder_lambdadynamodb(lambdaToDynamoDBBuilder_lambdadynamodb);
@@ -842,6 +884,13 @@ public class AwsworkbenchSwitch<T> extends Switch<T> {
 		case AwsworkbenchPackage.LAMBDA_TO_S3_BUILDER_LAMBDAS3: {
 			LambdaToS3Builder_lambdas3 lambdaToS3Builder_lambdas3 = (LambdaToS3Builder_lambdas3) theEObject;
 			T result = caseLambdaToS3Builder_lambdas3(lambdaToS3Builder_lambdas3);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.TOPIC_PROPS_BUILDER_SNS: {
+			TopicPropsBuilder_sns topicPropsBuilder_sns = (TopicPropsBuilder_sns) theEObject;
+			T result = caseTopicPropsBuilder_sns(topicPropsBuilder_sns);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -948,6 +997,385 @@ public class AwsworkbenchSwitch<T> extends Switch<T> {
 		case AwsworkbenchPackage.TABLE_PROPS_BUILDER_DYNAMODB: {
 			TablePropsBuilder_dynamodb tablePropsBuilder_dynamodb = (TablePropsBuilder_dynamodb) theEObject;
 			T result = caseTablePropsBuilder_dynamodb(tablePropsBuilder_dynamodb);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.PRIVATE_DNS_NAMESPACE_BUILDER_SERVICEDISCOVERY: {
+			PrivateDnsNamespaceBuilder_servicediscovery privateDnsNamespaceBuilder_servicediscovery = (PrivateDnsNamespaceBuilder_servicediscovery) theEObject;
+			T result = casePrivateDnsNamespaceBuilder_servicediscovery(privateDnsNamespaceBuilder_servicediscovery);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.PUBLIC_DNS_NAMESPACE_BUILDER_SERVICEDISCOVERY: {
+			PublicDnsNamespaceBuilder_servicediscovery publicDnsNamespaceBuilder_servicediscovery = (PublicDnsNamespaceBuilder_servicediscovery) theEObject;
+			T result = casePublicDnsNamespaceBuilder_servicediscovery(publicDnsNamespaceBuilder_servicediscovery);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.HTTP_NAMESPACE_BUILDER_SERVICEDISCOVERY: {
+			HttpNamespaceBuilder_servicediscovery httpNamespaceBuilder_servicediscovery = (HttpNamespaceBuilder_servicediscovery) theEObject;
+			T result = caseHttpNamespaceBuilder_servicediscovery(httpNamespaceBuilder_servicediscovery);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.CLOUD_MAP_OPTIONS_BUILDER_ECS: {
+			CloudMapOptionsBuilder_ecs cloudMapOptionsBuilder_ecs = (CloudMapOptionsBuilder_ecs) theEObject;
+			T result = caseCloudMapOptionsBuilder_ecs(cloudMapOptionsBuilder_ecs);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.BLOCK_DEVICE_BUILDER_AUTOSCALING: {
+			BlockDeviceBuilder_autoscaling blockDeviceBuilder_autoscaling = (BlockDeviceBuilder_autoscaling) theEObject;
+			T result = caseBlockDeviceBuilder_autoscaling(blockDeviceBuilder_autoscaling);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.HEALTH_CHECK_BUILDER_ECS: {
+			HealthCheckBuilder_ecs healthCheckBuilder_ecs = (HealthCheckBuilder_ecs) theEObject;
+			T result = caseHealthCheckBuilder_ecs(healthCheckBuilder_ecs);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.AMAZON_LINUX_IMAGE_BUILDER_EC2: {
+			AmazonLinuxImageBuilder_ec2 amazonLinuxImageBuilder_ec2 = (AmazonLinuxImageBuilder_ec2) theEObject;
+			T result = caseAmazonLinuxImageBuilder_ec2(amazonLinuxImageBuilder_ec2);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.ROLLING_UPDATE_CONFIGURATION_BUILDER_AUTOSCALING: {
+			RollingUpdateConfigurationBuilder_autoscaling rollingUpdateConfigurationBuilder_autoscaling = (RollingUpdateConfigurationBuilder_autoscaling) theEObject;
+			T result = caseRollingUpdateConfigurationBuilder_autoscaling(rollingUpdateConfigurationBuilder_autoscaling);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.ADD_CAPACITY_OPTIONS_BUILDER_ECS: {
+			AddCapacityOptionsBuilder_ecs addCapacityOptionsBuilder_ecs = (AddCapacityOptionsBuilder_ecs) theEObject;
+			T result = caseAddCapacityOptionsBuilder_ecs(addCapacityOptionsBuilder_ecs);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.CLOUD_MAP_NAMESPACE_OPTIONS_BUILDER_ECS: {
+			CloudMapNamespaceOptionsBuilder_ecs cloudMapNamespaceOptionsBuilder_ecs = (CloudMapNamespaceOptionsBuilder_ecs) theEObject;
+			T result = caseCloudMapNamespaceOptionsBuilder_ecs(cloudMapNamespaceOptionsBuilder_ecs);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.CLUSTER_BUILDER_ECS: {
+			ClusterBuilder_ecs clusterBuilder_ecs = (ClusterBuilder_ecs) theEObject;
+			T result = caseClusterBuilder_ecs(clusterBuilder_ecs);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.APPLICATION_LOAD_BALANCER_BUILDER_ELASTICLOADBALANCINGV2: {
+			ApplicationLoadBalancerBuilder_elasticloadbalancingv2 applicationLoadBalancerBuilder_elasticloadbalancingv2 = (ApplicationLoadBalancerBuilder_elasticloadbalancingv2) theEObject;
+			T result = caseApplicationLoadBalancerBuilder_elasticloadbalancingv2(
+					applicationLoadBalancerBuilder_elasticloadbalancingv2);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.DOCKER_IMAGE_ASSET_BUILDER_ASSETS: {
+			DockerImageAssetBuilder_assets dockerImageAssetBuilder_assets = (DockerImageAssetBuilder_assets) theEObject;
+			T result = caseDockerImageAssetBuilder_assets(dockerImageAssetBuilder_assets);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.ASSET_IMAGE_BUILDER_ECS: {
+			AssetImageBuilder_ecs assetImageBuilder_ecs = (AssetImageBuilder_ecs) theEObject;
+			T result = caseAssetImageBuilder_ecs(assetImageBuilder_ecs);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.SECRET_STRING_GENERATOR_BUILDER_SECRETSMANAGER: {
+			SecretStringGeneratorBuilder_secretsmanager secretStringGeneratorBuilder_secretsmanager = (SecretStringGeneratorBuilder_secretsmanager) theEObject;
+			T result = caseSecretStringGeneratorBuilder_secretsmanager(secretStringGeneratorBuilder_secretsmanager);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.SECRET_BUILDER_SECRETSMANAGER: {
+			SecretBuilder_secretsmanager secretBuilder_secretsmanager = (SecretBuilder_secretsmanager) theEObject;
+			T result = caseSecretBuilder_secretsmanager(secretBuilder_secretsmanager);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.AWS_LOG_DRIVER_BUILDER_ECS: {
+			AwsLogDriverBuilder_ecs awsLogDriverBuilder_ecs = (AwsLogDriverBuilder_ecs) theEObject;
+			T result = caseAwsLogDriverBuilder_ecs(awsLogDriverBuilder_ecs);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.LOG_GROUP_BUILDER_LOGS: {
+			LogGroupBuilder_logs logGroupBuilder_logs = (LogGroupBuilder_logs) theEObject;
+			T result = caseLogGroupBuilder_logs(logGroupBuilder_logs);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.AWS_LOG_DRIVER_PROPS_BUILDER_ECS: {
+			AwsLogDriverPropsBuilder_ecs awsLogDriverPropsBuilder_ecs = (AwsLogDriverPropsBuilder_ecs) theEObject;
+			T result = caseAwsLogDriverPropsBuilder_ecs(awsLogDriverPropsBuilder_ecs);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.APPLICATION_LOAD_BALANCED_TASK_IMAGE_OPTIONS_BUILDER_PATTERNS: {
+			ApplicationLoadBalancedTaskImageOptionsBuilder_patterns applicationLoadBalancedTaskImageOptionsBuilder_patterns = (ApplicationLoadBalancedTaskImageOptionsBuilder_patterns) theEObject;
+			T result = caseApplicationLoadBalancedTaskImageOptionsBuilder_patterns(
+					applicationLoadBalancedTaskImageOptionsBuilder_patterns);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.APP_MESH_PROXY_CONFIGURATION_PROPS_BUILDER_ECS: {
+			AppMeshProxyConfigurationPropsBuilder_ecs appMeshProxyConfigurationPropsBuilder_ecs = (AppMeshProxyConfigurationPropsBuilder_ecs) theEObject;
+			T result = caseAppMeshProxyConfigurationPropsBuilder_ecs(appMeshProxyConfigurationPropsBuilder_ecs);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.APP_MESH_PROXY_CONFIGURATION_BUILDER_ECS: {
+			AppMeshProxyConfigurationBuilder_ecs appMeshProxyConfigurationBuilder_ecs = (AppMeshProxyConfigurationBuilder_ecs) theEObject;
+			T result = caseAppMeshProxyConfigurationBuilder_ecs(appMeshProxyConfigurationBuilder_ecs);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.HOST_BUILDER_ECS: {
+			HostBuilder_ecs hostBuilder_ecs = (HostBuilder_ecs) theEObject;
+			T result = caseHostBuilder_ecs(hostBuilder_ecs);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.DOCKER_VOLUME_CONFIGURATION_BUILDER_ECS: {
+			DockerVolumeConfigurationBuilder_ecs dockerVolumeConfigurationBuilder_ecs = (DockerVolumeConfigurationBuilder_ecs) theEObject;
+			T result = caseDockerVolumeConfigurationBuilder_ecs(dockerVolumeConfigurationBuilder_ecs);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.VOLUME_BUILDER_ECS: {
+			VolumeBuilder_ecs volumeBuilder_ecs = (VolumeBuilder_ecs) theEObject;
+			T result = caseVolumeBuilder_ecs(volumeBuilder_ecs);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.EC2_TASK_DEFINITION_BUILDER_ECS: {
+			Ec2TaskDefinitionBuilder_ecs ec2TaskDefinitionBuilder_ecs = (Ec2TaskDefinitionBuilder_ecs) theEObject;
+			T result = caseEc2TaskDefinitionBuilder_ecs(ec2TaskDefinitionBuilder_ecs);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.APPLICATION_LOAD_BALANCED_EC2_SERVICE_BUILDER_PATTERNS: {
+			ApplicationLoadBalancedEc2ServiceBuilder_patterns applicationLoadBalancedEc2ServiceBuilder_patterns = (ApplicationLoadBalancedEc2ServiceBuilder_patterns) theEObject;
+			T result = caseApplicationLoadBalancedEc2ServiceBuilder_patterns(
+					applicationLoadBalancedEc2ServiceBuilder_patterns);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.FARGATE_TASK_DEFINITION_BUILDER_ECS: {
+			FargateTaskDefinitionBuilder_ecs fargateTaskDefinitionBuilder_ecs = (FargateTaskDefinitionBuilder_ecs) theEObject;
+			T result = caseFargateTaskDefinitionBuilder_ecs(fargateTaskDefinitionBuilder_ecs);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.APPLICATION_LOAD_BALANCED_FARGATE_SERVICE_BUILDER_PATTERNS: {
+			ApplicationLoadBalancedFargateServiceBuilder_patterns applicationLoadBalancedFargateServiceBuilder_patterns = (ApplicationLoadBalancedFargateServiceBuilder_patterns) theEObject;
+			T result = caseApplicationLoadBalancedFargateServiceBuilder_patterns(
+					applicationLoadBalancedFargateServiceBuilder_patterns);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.APPLICATION_MULTIPLE_TARGET_GROUPS_FARGATE_SERVICE_BUILDER_PATTERNS: {
+			ApplicationMultipleTargetGroupsFargateServiceBuilder_patterns applicationMultipleTargetGroupsFargateServiceBuilder_patterns = (ApplicationMultipleTargetGroupsFargateServiceBuilder_patterns) theEObject;
+			T result = caseApplicationMultipleTargetGroupsFargateServiceBuilder_patterns(
+					applicationMultipleTargetGroupsFargateServiceBuilder_patterns);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.APPLICATION_LISTENER_PROPS_BUILDER_PATTERNS: {
+			ApplicationListenerPropsBuilder_patterns applicationListenerPropsBuilder_patterns = (ApplicationListenerPropsBuilder_patterns) theEObject;
+			T result = caseApplicationListenerPropsBuilder_patterns(applicationListenerPropsBuilder_patterns);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.APPLICATION_LOAD_BALANCER_PROPS_BUILDER_PATTERNS: {
+			ApplicationLoadBalancerPropsBuilder_patterns applicationLoadBalancerPropsBuilder_patterns = (ApplicationLoadBalancerPropsBuilder_patterns) theEObject;
+			T result = caseApplicationLoadBalancerPropsBuilder_patterns(applicationLoadBalancerPropsBuilder_patterns);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.APPLICATION_TARGET_PROPS_BUILDER_PATTERNS: {
+			ApplicationTargetPropsBuilder_patterns applicationTargetPropsBuilder_patterns = (ApplicationTargetPropsBuilder_patterns) theEObject;
+			T result = caseApplicationTargetPropsBuilder_patterns(applicationTargetPropsBuilder_patterns);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.APPLICATION_LOAD_BALANCED_TASK_IMAGE_PROPS_BUILDER_PATTERNS: {
+			ApplicationLoadBalancedTaskImagePropsBuilder_patterns applicationLoadBalancedTaskImagePropsBuilder_patterns = (ApplicationLoadBalancedTaskImagePropsBuilder_patterns) theEObject;
+			T result = caseApplicationLoadBalancedTaskImagePropsBuilder_patterns(
+					applicationLoadBalancedTaskImagePropsBuilder_patterns);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.APPLICATION_MULTIPLE_TARGET_GROUPS_EC2_SERVICE_BUILDER_PATTERNS: {
+			ApplicationMultipleTargetGroupsEc2ServiceBuilder_patterns applicationMultipleTargetGroupsEc2ServiceBuilder_patterns = (ApplicationMultipleTargetGroupsEc2ServiceBuilder_patterns) theEObject;
+			T result = caseApplicationMultipleTargetGroupsEc2ServiceBuilder_patterns(
+					applicationMultipleTargetGroupsEc2ServiceBuilder_patterns);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.NETWORK_LOAD_BALANCED_TASK_IMAGE_OPTIONS_BUILDER_PATTERNS: {
+			NetworkLoadBalancedTaskImageOptionsBuilder_patterns networkLoadBalancedTaskImageOptionsBuilder_patterns = (NetworkLoadBalancedTaskImageOptionsBuilder_patterns) theEObject;
+			T result = caseNetworkLoadBalancedTaskImageOptionsBuilder_patterns(
+					networkLoadBalancedTaskImageOptionsBuilder_patterns);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.NETWORK_LOAD_BALANCED_FARGATE_SERVICE_BUILDER_PATTERNS: {
+			NetworkLoadBalancedFargateServiceBuilder_patterns networkLoadBalancedFargateServiceBuilder_patterns = (NetworkLoadBalancedFargateServiceBuilder_patterns) theEObject;
+			T result = caseNetworkLoadBalancedFargateServiceBuilder_patterns(
+					networkLoadBalancedFargateServiceBuilder_patterns);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.NETWORK_LOAD_BALANCED_EC2_SERVICE_BUILDER_PATTERNS: {
+			NetworkLoadBalancedEc2ServiceBuilder_patterns networkLoadBalancedEc2ServiceBuilder_patterns = (NetworkLoadBalancedEc2ServiceBuilder_patterns) theEObject;
+			T result = caseNetworkLoadBalancedEc2ServiceBuilder_patterns(networkLoadBalancedEc2ServiceBuilder_patterns);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.NETWORK_MULTIPLE_TARGET_GROUPS_EC2_SERVICE_BUILDER_PATTERNS: {
+			NetworkMultipleTargetGroupsEc2ServiceBuilder_patterns networkMultipleTargetGroupsEc2ServiceBuilder_patterns = (NetworkMultipleTargetGroupsEc2ServiceBuilder_patterns) theEObject;
+			T result = caseNetworkMultipleTargetGroupsEc2ServiceBuilder_patterns(
+					networkMultipleTargetGroupsEc2ServiceBuilder_patterns);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.NETWORK_TARGET_PROPS_BUILDER_PATTERNS: {
+			NetworkTargetPropsBuilder_patterns networkTargetPropsBuilder_patterns = (NetworkTargetPropsBuilder_patterns) theEObject;
+			T result = caseNetworkTargetPropsBuilder_patterns(networkTargetPropsBuilder_patterns);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.NETWORK_LOAD_BALANCED_TASK_IMAGE_PROPS_BUILDER_PATTERNS: {
+			NetworkLoadBalancedTaskImagePropsBuilder_patterns networkLoadBalancedTaskImagePropsBuilder_patterns = (NetworkLoadBalancedTaskImagePropsBuilder_patterns) theEObject;
+			T result = caseNetworkLoadBalancedTaskImagePropsBuilder_patterns(
+					networkLoadBalancedTaskImagePropsBuilder_patterns);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.NETWORK_MULTIPLE_TARGET_GROUPS_FARGATE_SERVICE_BUILDER_PATTERNS: {
+			NetworkMultipleTargetGroupsFargateServiceBuilder_patterns networkMultipleTargetGroupsFargateServiceBuilder_patterns = (NetworkMultipleTargetGroupsFargateServiceBuilder_patterns) theEObject;
+			T result = caseNetworkMultipleTargetGroupsFargateServiceBuilder_patterns(
+					networkMultipleTargetGroupsFargateServiceBuilder_patterns);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.SCALING_INTERVAL_BUILDER_APPLICATIONAUTOSCALING: {
+			ScalingIntervalBuilder_applicationautoscaling scalingIntervalBuilder_applicationautoscaling = (ScalingIntervalBuilder_applicationautoscaling) theEObject;
+			T result = caseScalingIntervalBuilder_applicationautoscaling(scalingIntervalBuilder_applicationautoscaling);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.QUEUE_PROCESSING_FARGATE_SERVICE_BUILDER_PATTERNS: {
+			QueueProcessingFargateServiceBuilder_patterns queueProcessingFargateServiceBuilder_patterns = (QueueProcessingFargateServiceBuilder_patterns) theEObject;
+			T result = caseQueueProcessingFargateServiceBuilder_patterns(queueProcessingFargateServiceBuilder_patterns);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.CRON_OPTIONS_BUILDER_APPLICATIONAUTOSCALING: {
+			CronOptionsBuilder_applicationautoscaling cronOptionsBuilder_applicationautoscaling = (CronOptionsBuilder_applicationautoscaling) theEObject;
+			T result = caseCronOptionsBuilder_applicationautoscaling(cronOptionsBuilder_applicationautoscaling);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.SCHEDULED_EC2_TASK_DEFINITION_OPTIONS_BUILDER_PATTERNS: {
+			ScheduledEc2TaskDefinitionOptionsBuilder_patterns scheduledEc2TaskDefinitionOptionsBuilder_patterns = (ScheduledEc2TaskDefinitionOptionsBuilder_patterns) theEObject;
+			T result = caseScheduledEc2TaskDefinitionOptionsBuilder_patterns(
+					scheduledEc2TaskDefinitionOptionsBuilder_patterns);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.SCHEDULED_EC2_TASK_IMAGE_OPTIONS_BUILDER_PATTERNS: {
+			ScheduledEc2TaskImageOptionsBuilder_patterns scheduledEc2TaskImageOptionsBuilder_patterns = (ScheduledEc2TaskImageOptionsBuilder_patterns) theEObject;
+			T result = caseScheduledEc2TaskImageOptionsBuilder_patterns(scheduledEc2TaskImageOptionsBuilder_patterns);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.SCHEDULED_EC2_TASK_BUILDER_PATTERNS: {
+			ScheduledEc2TaskBuilder_patterns scheduledEc2TaskBuilder_patterns = (ScheduledEc2TaskBuilder_patterns) theEObject;
+			T result = caseScheduledEc2TaskBuilder_patterns(scheduledEc2TaskBuilder_patterns);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.QUEUE_PROCESSING_EC2_SERVICE_BUILDER_PATTERNS: {
+			QueueProcessingEc2ServiceBuilder_patterns queueProcessingEc2ServiceBuilder_patterns = (QueueProcessingEc2ServiceBuilder_patterns) theEObject;
+			T result = caseQueueProcessingEc2ServiceBuilder_patterns(queueProcessingEc2ServiceBuilder_patterns);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.SCHEDULED_FARGATE_TASK_DEFINITION_OPTIONS_BUILDER_PATTERNS: {
+			ScheduledFargateTaskDefinitionOptionsBuilder_patterns scheduledFargateTaskDefinitionOptionsBuilder_patterns = (ScheduledFargateTaskDefinitionOptionsBuilder_patterns) theEObject;
+			T result = caseScheduledFargateTaskDefinitionOptionsBuilder_patterns(
+					scheduledFargateTaskDefinitionOptionsBuilder_patterns);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.SCHEDULED_FARGATE_TASK_IMAGE_OPTIONS_BUILDER_PATTERNS: {
+			ScheduledFargateTaskImageOptionsBuilder_patterns scheduledFargateTaskImageOptionsBuilder_patterns = (ScheduledFargateTaskImageOptionsBuilder_patterns) theEObject;
+			T result = caseScheduledFargateTaskImageOptionsBuilder_patterns(
+					scheduledFargateTaskImageOptionsBuilder_patterns);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.SCHEDULED_FARGATE_TASK_BUILDER_PATTERNS: {
+			ScheduledFargateTaskBuilder_patterns scheduledFargateTaskBuilder_patterns = (ScheduledFargateTaskBuilder_patterns) theEObject;
+			T result = caseScheduledFargateTaskBuilder_patterns(scheduledFargateTaskBuilder_patterns);
 			if (result == null)
 				result = defaultCase(theEObject);
 			return result;
@@ -2436,6 +2864,66 @@ public class AwsworkbenchSwitch<T> extends Switch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Event Bus Builder events</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Event Bus Builder events</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseEventBusBuilder_events(EventBusBuilder_events object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Event Pattern Builder events</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Event Pattern Builder events</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseEventPatternBuilder_events(EventPatternBuilder_events object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Rule Props Builder events</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Rule Props Builder events</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseRulePropsBuilder_events(RulePropsBuilder_events object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Cron Options Builder events</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Cron Options Builder events</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseCronOptionsBuilder_events(CronOptionsBuilder_events object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Events Rule To Lambda Builder eventsrulelambda</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -2447,6 +2935,21 @@ public class AwsworkbenchSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseEventsRuleToLambdaBuilder_eventsrulelambda(EventsRuleToLambdaBuilder_eventsrulelambda object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>State Machine Props Builder stepfunctions</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>State Machine Props Builder stepfunctions</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseStateMachinePropsBuilder_stepfunctions(StateMachinePropsBuilder_stepfunctions object) {
 		return null;
 	}
 
@@ -2560,6 +3063,21 @@ public class AwsworkbenchSwitch<T> extends Switch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Table Builder dynamodb</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Table Builder dynamodb</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseTableBuilder_dynamodb(TableBuilder_dynamodb object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Lambda To Dynamo DB Builder lambdadynamodb</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -2602,6 +3120,21 @@ public class AwsworkbenchSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseLambdaToS3Builder_lambdas3(LambdaToS3Builder_lambdas3 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Topic Props Builder sns</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Topic Props Builder sns</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseTopicPropsBuilder_sns(TopicPropsBuilder_sns object) {
 		return null;
 	}
 
@@ -2827,6 +3360,801 @@ public class AwsworkbenchSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseTablePropsBuilder_dynamodb(TablePropsBuilder_dynamodb object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Private Dns Namespace Builder servicediscovery</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Private Dns Namespace Builder servicediscovery</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T casePrivateDnsNamespaceBuilder_servicediscovery(PrivateDnsNamespaceBuilder_servicediscovery object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Public Dns Namespace Builder servicediscovery</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Public Dns Namespace Builder servicediscovery</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T casePublicDnsNamespaceBuilder_servicediscovery(PublicDnsNamespaceBuilder_servicediscovery object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Http Namespace Builder servicediscovery</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Http Namespace Builder servicediscovery</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseHttpNamespaceBuilder_servicediscovery(HttpNamespaceBuilder_servicediscovery object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Cloud Map Options Builder ecs</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Cloud Map Options Builder ecs</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseCloudMapOptionsBuilder_ecs(CloudMapOptionsBuilder_ecs object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Block Device Builder autoscaling</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Block Device Builder autoscaling</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseBlockDeviceBuilder_autoscaling(BlockDeviceBuilder_autoscaling object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Health Check Builder ecs</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Health Check Builder ecs</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseHealthCheckBuilder_ecs(HealthCheckBuilder_ecs object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Amazon Linux Image Builder ec2</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Amazon Linux Image Builder ec2</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseAmazonLinuxImageBuilder_ec2(AmazonLinuxImageBuilder_ec2 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Rolling Update Configuration Builder autoscaling</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Rolling Update Configuration Builder autoscaling</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseRollingUpdateConfigurationBuilder_autoscaling(RollingUpdateConfigurationBuilder_autoscaling object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Add Capacity Options Builder ecs</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Add Capacity Options Builder ecs</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseAddCapacityOptionsBuilder_ecs(AddCapacityOptionsBuilder_ecs object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Cloud Map Namespace Options Builder ecs</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Cloud Map Namespace Options Builder ecs</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseCloudMapNamespaceOptionsBuilder_ecs(CloudMapNamespaceOptionsBuilder_ecs object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Cluster Builder ecs</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Cluster Builder ecs</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseClusterBuilder_ecs(ClusterBuilder_ecs object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Application Load Balancer Builder elasticloadbalancingv2</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Application Load Balancer Builder elasticloadbalancingv2</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseApplicationLoadBalancerBuilder_elasticloadbalancingv2(
+			ApplicationLoadBalancerBuilder_elasticloadbalancingv2 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Docker Image Asset Builder assets</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Docker Image Asset Builder assets</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseDockerImageAssetBuilder_assets(DockerImageAssetBuilder_assets object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Asset Image Builder ecs</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Asset Image Builder ecs</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseAssetImageBuilder_ecs(AssetImageBuilder_ecs object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Secret String Generator Builder secretsmanager</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Secret String Generator Builder secretsmanager</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseSecretStringGeneratorBuilder_secretsmanager(SecretStringGeneratorBuilder_secretsmanager object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Secret Builder secretsmanager</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Secret Builder secretsmanager</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseSecretBuilder_secretsmanager(SecretBuilder_secretsmanager object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Aws Log Driver Builder ecs</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Aws Log Driver Builder ecs</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseAwsLogDriverBuilder_ecs(AwsLogDriverBuilder_ecs object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Log Group Builder logs</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Log Group Builder logs</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseLogGroupBuilder_logs(LogGroupBuilder_logs object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Aws Log Driver Props Builder ecs</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Aws Log Driver Props Builder ecs</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseAwsLogDriverPropsBuilder_ecs(AwsLogDriverPropsBuilder_ecs object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Application Load Balanced Task Image Options Builder patterns</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Application Load Balanced Task Image Options Builder patterns</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseApplicationLoadBalancedTaskImageOptionsBuilder_patterns(
+			ApplicationLoadBalancedTaskImageOptionsBuilder_patterns object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>App Mesh Proxy Configuration Props Builder ecs</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>App Mesh Proxy Configuration Props Builder ecs</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseAppMeshProxyConfigurationPropsBuilder_ecs(AppMeshProxyConfigurationPropsBuilder_ecs object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>App Mesh Proxy Configuration Builder ecs</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>App Mesh Proxy Configuration Builder ecs</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseAppMeshProxyConfigurationBuilder_ecs(AppMeshProxyConfigurationBuilder_ecs object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Host Builder ecs</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Host Builder ecs</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseHostBuilder_ecs(HostBuilder_ecs object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Docker Volume Configuration Builder ecs</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Docker Volume Configuration Builder ecs</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseDockerVolumeConfigurationBuilder_ecs(DockerVolumeConfigurationBuilder_ecs object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Volume Builder ecs</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Volume Builder ecs</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseVolumeBuilder_ecs(VolumeBuilder_ecs object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Ec2 Task Definition Builder ecs</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Ec2 Task Definition Builder ecs</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseEc2TaskDefinitionBuilder_ecs(Ec2TaskDefinitionBuilder_ecs object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Application Load Balanced Ec2 Service Builder patterns</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Application Load Balanced Ec2 Service Builder patterns</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseApplicationLoadBalancedEc2ServiceBuilder_patterns(
+			ApplicationLoadBalancedEc2ServiceBuilder_patterns object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Fargate Task Definition Builder ecs</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Fargate Task Definition Builder ecs</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseFargateTaskDefinitionBuilder_ecs(FargateTaskDefinitionBuilder_ecs object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Application Load Balanced Fargate Service Builder patterns</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Application Load Balanced Fargate Service Builder patterns</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseApplicationLoadBalancedFargateServiceBuilder_patterns(
+			ApplicationLoadBalancedFargateServiceBuilder_patterns object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Application Multiple Target Groups Fargate Service Builder patterns</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Application Multiple Target Groups Fargate Service Builder patterns</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseApplicationMultipleTargetGroupsFargateServiceBuilder_patterns(
+			ApplicationMultipleTargetGroupsFargateServiceBuilder_patterns object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Application Listener Props Builder patterns</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Application Listener Props Builder patterns</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseApplicationListenerPropsBuilder_patterns(ApplicationListenerPropsBuilder_patterns object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Application Load Balancer Props Builder patterns</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Application Load Balancer Props Builder patterns</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseApplicationLoadBalancerPropsBuilder_patterns(ApplicationLoadBalancerPropsBuilder_patterns object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Application Target Props Builder patterns</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Application Target Props Builder patterns</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseApplicationTargetPropsBuilder_patterns(ApplicationTargetPropsBuilder_patterns object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Application Load Balanced Task Image Props Builder patterns</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Application Load Balanced Task Image Props Builder patterns</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseApplicationLoadBalancedTaskImagePropsBuilder_patterns(
+			ApplicationLoadBalancedTaskImagePropsBuilder_patterns object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Application Multiple Target Groups Ec2 Service Builder patterns</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Application Multiple Target Groups Ec2 Service Builder patterns</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseApplicationMultipleTargetGroupsEc2ServiceBuilder_patterns(
+			ApplicationMultipleTargetGroupsEc2ServiceBuilder_patterns object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Network Load Balanced Task Image Options Builder patterns</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Network Load Balanced Task Image Options Builder patterns</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseNetworkLoadBalancedTaskImageOptionsBuilder_patterns(
+			NetworkLoadBalancedTaskImageOptionsBuilder_patterns object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Network Load Balanced Fargate Service Builder patterns</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Network Load Balanced Fargate Service Builder patterns</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseNetworkLoadBalancedFargateServiceBuilder_patterns(
+			NetworkLoadBalancedFargateServiceBuilder_patterns object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Network Load Balanced Ec2 Service Builder patterns</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Network Load Balanced Ec2 Service Builder patterns</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseNetworkLoadBalancedEc2ServiceBuilder_patterns(NetworkLoadBalancedEc2ServiceBuilder_patterns object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Network Multiple Target Groups Ec2 Service Builder patterns</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Network Multiple Target Groups Ec2 Service Builder patterns</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseNetworkMultipleTargetGroupsEc2ServiceBuilder_patterns(
+			NetworkMultipleTargetGroupsEc2ServiceBuilder_patterns object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Network Target Props Builder patterns</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Network Target Props Builder patterns</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseNetworkTargetPropsBuilder_patterns(NetworkTargetPropsBuilder_patterns object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Network Load Balanced Task Image Props Builder patterns</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Network Load Balanced Task Image Props Builder patterns</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseNetworkLoadBalancedTaskImagePropsBuilder_patterns(
+			NetworkLoadBalancedTaskImagePropsBuilder_patterns object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Network Multiple Target Groups Fargate Service Builder patterns</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Network Multiple Target Groups Fargate Service Builder patterns</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseNetworkMultipleTargetGroupsFargateServiceBuilder_patterns(
+			NetworkMultipleTargetGroupsFargateServiceBuilder_patterns object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Scaling Interval Builder applicationautoscaling</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Scaling Interval Builder applicationautoscaling</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseScalingIntervalBuilder_applicationautoscaling(ScalingIntervalBuilder_applicationautoscaling object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Queue Processing Fargate Service Builder patterns</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Queue Processing Fargate Service Builder patterns</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseQueueProcessingFargateServiceBuilder_patterns(QueueProcessingFargateServiceBuilder_patterns object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Cron Options Builder applicationautoscaling</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Cron Options Builder applicationautoscaling</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseCronOptionsBuilder_applicationautoscaling(CronOptionsBuilder_applicationautoscaling object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Scheduled Ec2 Task Definition Options Builder patterns</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Scheduled Ec2 Task Definition Options Builder patterns</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseScheduledEc2TaskDefinitionOptionsBuilder_patterns(
+			ScheduledEc2TaskDefinitionOptionsBuilder_patterns object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Scheduled Ec2 Task Image Options Builder patterns</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Scheduled Ec2 Task Image Options Builder patterns</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseScheduledEc2TaskImageOptionsBuilder_patterns(ScheduledEc2TaskImageOptionsBuilder_patterns object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Scheduled Ec2 Task Builder patterns</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Scheduled Ec2 Task Builder patterns</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseScheduledEc2TaskBuilder_patterns(ScheduledEc2TaskBuilder_patterns object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Queue Processing Ec2 Service Builder patterns</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Queue Processing Ec2 Service Builder patterns</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseQueueProcessingEc2ServiceBuilder_patterns(QueueProcessingEc2ServiceBuilder_patterns object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Scheduled Fargate Task Definition Options Builder patterns</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Scheduled Fargate Task Definition Options Builder patterns</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseScheduledFargateTaskDefinitionOptionsBuilder_patterns(
+			ScheduledFargateTaskDefinitionOptionsBuilder_patterns object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Scheduled Fargate Task Image Options Builder patterns</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Scheduled Fargate Task Image Options Builder patterns</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseScheduledFargateTaskImageOptionsBuilder_patterns(
+			ScheduledFargateTaskImageOptionsBuilder_patterns object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Scheduled Fargate Task Builder patterns</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Scheduled Fargate Task Builder patterns</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseScheduledFargateTaskBuilder_patterns(ScheduledFargateTaskBuilder_patterns object) {
 		return null;
 	}
 

@@ -202,6 +202,10 @@
       <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//VerificationEmailStyle/CODE"/>
       <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//VerificationEmailStyle/LINK"/>
     </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="awsworkbench.ecore#//StateMachineType">
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//StateMachineType/EXPRESS"/>
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//StateMachineType/STANDARD"/>
+    </genEnums>
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="awsworkbench.ecore#//Effect">
       <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//Effect/ALLOW"/>
       <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//Effect/DENY"/>
@@ -229,6 +233,157 @@
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="awsworkbench.ecore#//BillingMode">
       <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//BillingMode/PAY_PER_REQUEST"/>
       <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//BillingMode/PROVISIONED"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="awsworkbench.ecore#//DnsRecordType">
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//DnsRecordType/A"/>
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//DnsRecordType/AAAA"/>
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//DnsRecordType/A_AAAA"/>
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//DnsRecordType/SRV"/>
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//DnsRecordType/CNAME"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="awsworkbench.ecore#//InstanceClass">
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//InstanceClass/STANDARD3"/>
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//InstanceClass/STANDARD4"/>
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//InstanceClass/STANDARD5"/>
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//InstanceClass/STANDARD5_NVME_DRIVE"/>
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//InstanceClass/STANDARD5_AMD"/>
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//InstanceClass/STANDARD5_AMD_NVME_DRIVE"/>
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//InstanceClass/MEMORY3"/>
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//InstanceClass/MEMORY4"/>
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//InstanceClass/MEMORY5"/>
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//InstanceClass/MEMORY5_HIGH_PERFORMANCE"/>
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//InstanceClass/MEMORY5_NVME_DRIVE"/>
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//InstanceClass/MEMORY5_NVME_DRIVE_HIGH_PERFORMANCE"/>
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//InstanceClass/MEMORY5_AMD"/>
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//InstanceClass/COMPUTE3"/>
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//InstanceClass/COMPUTE4"/>
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//InstanceClass/COMPUTE5"/>
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//InstanceClass/COMPUTE5_NVME_DRIVE"/>
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//InstanceClass/COMPUTE5_HIGH_PERFORMANCE"/>
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//InstanceClass/STORAGE2"/>
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//InstanceClass/STORAGE_COMPUTE_1"/>
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//InstanceClass/IO3"/>
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//InstanceClass/IO3_DENSE_NVME_DRIVE"/>
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//InstanceClass/BURSTABLE2"/>
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//InstanceClass/BURSTABLE3"/>
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//InstanceClass/BURSTABLE3_AMD"/>
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//InstanceClass/MEMORY_INTENSIVE_1"/>
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//InstanceClass/MEMORY_INTENSIVE_1_EXTENDED"/>
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//InstanceClass/FPGA1"/>
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//InstanceClass/GRAPHICS3"/>
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//InstanceClass/GRAPHICS4_NVME_DRIVE_HIGH_PERFORMANCE"/>
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//InstanceClass/PARALLEL2"/>
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//InstanceClass/PARALLEL3"/>
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//InstanceClass/ARM1"/>
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//InstanceClass/STANDARD6_GRAVITON"/>
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//InstanceClass/HIGH_COMPUTE_MEMORY1"/>
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//InstanceClass/INFERENCE1"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="awsworkbench.ecore#//InstanceSize">
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//InstanceSize/NANO"/>
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//InstanceSize/MICRO"/>
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//InstanceSize/SMALL"/>
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//InstanceSize/MEDIUM"/>
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//InstanceSize/LARGE"/>
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//InstanceSize/XLARGE"/>
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//InstanceSize/XLARGE2"/>
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//InstanceSize/XLARGE4"/>
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//InstanceSize/XLARGE8"/>
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//InstanceSize/XLARGE9"/>
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//InstanceSize/XLARGE10"/>
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//InstanceSize/XLARGE12"/>
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//InstanceSize/XLARGE16"/>
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//InstanceSize/XLARGE18"/>
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//InstanceSize/XLARGE24"/>
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//InstanceSize/XLARGE32"/>
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//InstanceSize/METAL"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="awsworkbench.ecore#//AmazonLinuxEdition">
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//AmazonLinuxEdition/STANDARD"/>
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//AmazonLinuxEdition/MINIMAL"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="awsworkbench.ecore#//AmazonLinuxGeneration">
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//AmazonLinuxGeneration/AMAZON_LINUX"/>
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//AmazonLinuxGeneration/AMAZON_LINUX_2"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="awsworkbench.ecore#//AmazonLinuxStorage">
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//AmazonLinuxStorage/EBS"/>
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//AmazonLinuxStorage/GENERAL_PURPOSE"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="awsworkbench.ecore#//AmazonLinuxVirt">
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//AmazonLinuxVirt/HVM"/>
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//AmazonLinuxVirt/PV"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="awsworkbench.ecore#//ScalingProcess">
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//ScalingProcess/LAUNCH"/>
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//ScalingProcess/TERMINATE"/>
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//ScalingProcess/HEALTH_CHECK"/>
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//ScalingProcess/REPLACE_UNHEALTHY"/>
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//ScalingProcess/AZ_REBALANCE"/>
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//ScalingProcess/ALARM_NOTIFICATION"/>
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//ScalingProcess/SCHEDULED_ACTIONS"/>
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//ScalingProcess/ADD_TO_LOAD_BALANCER"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="awsworkbench.ecore#//UpdateType">
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//UpdateType/NONE"/>
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//UpdateType/REPLACING_UPDATE"/>
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//UpdateType/ROLLING_UPDATE"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="awsworkbench.ecore#//NamespaceType">
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//NamespaceType/HTTP"/>
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//NamespaceType/DNS_PRIVATE"/>
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//NamespaceType/DNS_PUBLIC"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="awsworkbench.ecore#//IpAddressType">
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//IpAddressType/IPV4"/>
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//IpAddressType/DUAL_STACK"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="awsworkbench.ecore#//PropagatedTagSource">
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//PropagatedTagSource/SERVICE"/>
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//PropagatedTagSource/TASK_DEFINITION"/>
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//PropagatedTagSource/NONE"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="awsworkbench.ecore#//ApplicationProtocol">
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//ApplicationProtocol/HTTP"/>
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//ApplicationProtocol/HTTPS"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="awsworkbench.ecore#//FollowMode">
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//FollowMode/NEVER"/>
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//FollowMode/ALWAYS"/>
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//FollowMode/EXTERNAL"/>
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//FollowMode/BLOCK_EXTERNAL"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="awsworkbench.ecore#//Scope">
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//Scope/TASK"/>
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//Scope/SHARED"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="awsworkbench.ecore#//NetworkMode">
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//NetworkMode/NONE"/>
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//NetworkMode/BRIDGE"/>
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//NetworkMode/AWS_VPC"/>
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//NetworkMode/HOST"/>
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//NetworkMode/NAT"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="awsworkbench.ecore#//IpcMode">
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//IpcMode/NONE"/>
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//IpcMode/HOST"/>
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//IpcMode/TASK"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="awsworkbench.ecore#//PidMode">
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//PidMode/HOST"/>
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//PidMode/TASK"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="awsworkbench.ecore#//FargatePlatformVersion">
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//FargatePlatformVersion/LATEST"/>
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//FargatePlatformVersion/VERSION1_4"/>
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//FargatePlatformVersion/VERSION1_3"/>
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//FargatePlatformVersion/VERSION1_2"/>
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//FargatePlatformVersion/VERSION1_1"/>
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//FargatePlatformVersion/VERSION1_0"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="awsworkbench.ecore#//Protocol">
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//Protocol/TCP"/>
+      <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//Protocol/UDP"/>
     </genEnums>
     <genClasses ecoreClass="awsworkbench.ecore#//ServiceResources"/>
     <genClasses ecoreClass="awsworkbench.ecore#//AppBuilder_core">
@@ -1494,6 +1649,54 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//DynamoDBStreamToLambdaToElasticSearchAndKibanaBuilder_dynamodbstreamlambdaelasticsearchkibana/identifier"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//DynamoDBStreamToLambdaToElasticSearchAndKibanaBuilder_dynamodbstreamlambdaelasticsearchkibana/additionalCode"/>
     </genClasses>
+    <genClasses ecoreClass="awsworkbench.ecore#//EventBusBuilder_events">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//EventBusBuilder_events/eventBusName_java_lang_String_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//EventBusBuilder_events/eventSourceName_java_lang_String_"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//EventBusBuilder_events/generatedClassName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//EventBusBuilder_events/varName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//EventBusBuilder_events/identifier"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//EventBusBuilder_events/additionalCode"/>
+    </genClasses>
+    <genClasses ecoreClass="awsworkbench.ecore#//EventPatternBuilder_events">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//EventPatternBuilder_events/account_java_lang_String_AsList"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//EventPatternBuilder_events/detail_java_lang_String__java_lang_Object_AsMap"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//EventPatternBuilder_events/detailType_java_lang_String_AsList"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//EventPatternBuilder_events/id_java_lang_String_AsList"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//EventPatternBuilder_events/region_java_lang_String_AsList"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//EventPatternBuilder_events/resources_java_lang_String_AsList"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//EventPatternBuilder_events/source_java_lang_String_AsList"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//EventPatternBuilder_events/time_java_lang_String_AsList"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//EventPatternBuilder_events/version_java_lang_String_AsList"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//EventPatternBuilder_events/generatedClassName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//EventPatternBuilder_events/varName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//EventPatternBuilder_events/identifier"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//EventPatternBuilder_events/additionalCode"/>
+    </genClasses>
+    <genClasses ecoreClass="awsworkbench.ecore#//RulePropsBuilder_events">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//RulePropsBuilder_events/description_java_lang_String_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//RulePropsBuilder_events/enabled_java_lang_Boolean_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//RulePropsBuilder_events/eventBusWithIEventBus_software_amazon_awscdk_services_events_IEventBus_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//RulePropsBuilder_events/eventPatternWithEventPattern_software_amazon_awscdk_services_events_EventPattern_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//RulePropsBuilder_events/ruleName_java_lang_String_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//RulePropsBuilder_events/scheduleWithSchedule_software_amazon_awscdk_services_events_Schedule_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//RulePropsBuilder_events/targets_software_amazon_awscdk_services_events_IRuleTarget_AsList"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//RulePropsBuilder_events/generatedClassName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//RulePropsBuilder_events/varName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//RulePropsBuilder_events/identifier"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//RulePropsBuilder_events/additionalCode"/>
+    </genClasses>
+    <genClasses ecoreClass="awsworkbench.ecore#//CronOptionsBuilder_events">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//CronOptionsBuilder_events/day_java_lang_String_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//CronOptionsBuilder_events/hour_java_lang_String_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//CronOptionsBuilder_events/minute_java_lang_String_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//CronOptionsBuilder_events/month_java_lang_String_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//CronOptionsBuilder_events/weekDay_java_lang_String_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//CronOptionsBuilder_events/year_java_lang_String_"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//CronOptionsBuilder_events/generatedClassName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//CronOptionsBuilder_events/varName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//CronOptionsBuilder_events/identifier"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//CronOptionsBuilder_events/additionalCode"/>
+    </genClasses>
     <genClasses ecoreClass="awsworkbench.ecore#//EventsRuleToLambdaBuilder_eventsrulelambda">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//EventsRuleToLambdaBuilder_eventsrulelambda/eventRulePropsWithRuleProps_software_amazon_awscdk_services_events_RuleProps_AsReference"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//EventsRuleToLambdaBuilder_eventsrulelambda/existingLambdaObjWithFunction_software_amazon_awscdk_services_lambda_Function_AsReference"/>
@@ -1502,6 +1705,18 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//EventsRuleToLambdaBuilder_eventsrulelambda/varName"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//EventsRuleToLambdaBuilder_eventsrulelambda/identifier"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//EventsRuleToLambdaBuilder_eventsrulelambda/additionalCode"/>
+    </genClasses>
+    <genClasses ecoreClass="awsworkbench.ecore#//StateMachinePropsBuilder_stepfunctions">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//StateMachinePropsBuilder_stepfunctions/definitionWithIChainable_software_amazon_awscdk_services_stepfunctions_IChainable_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//StateMachinePropsBuilder_stepfunctions/logsWithLogOptions_software_amazon_awscdk_services_stepfunctions_LogOptions_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//StateMachinePropsBuilder_stepfunctions/roleWithIRole_software_amazon_awscdk_services_iam_IRole_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//StateMachinePropsBuilder_stepfunctions/stateMachineName_java_lang_String_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//StateMachinePropsBuilder_stepfunctions/stateMachineType_software_amazon_awscdk_services_stepfunctions_StateMachineType_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//StateMachinePropsBuilder_stepfunctions/timeoutWithDuration_software_amazon_awscdk_core_Duration_AsReference"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//StateMachinePropsBuilder_stepfunctions/generatedClassName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//StateMachinePropsBuilder_stepfunctions/varName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//StateMachinePropsBuilder_stepfunctions/identifier"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//StateMachinePropsBuilder_stepfunctions/additionalCode"/>
     </genClasses>
     <genClasses ecoreClass="awsworkbench.ecore#//EventsRuleToStepFunctionBuilder_eventsrulestepfunction">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//EventsRuleToStepFunctionBuilder_eventsrulestepfunction/eventRulePropsWithRuleProps_software_amazon_awscdk_services_events_RuleProps_AsReference"/>
@@ -1570,6 +1785,26 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//KinesisStreamsToLambdaBuilder_kinesisstreamslambda/identifier"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//KinesisStreamsToLambdaBuilder_kinesisstreamslambda/additionalCode"/>
     </genClasses>
+    <genClasses ecoreClass="awsworkbench.ecore#//TableBuilder_dynamodb">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//TableBuilder_dynamodb/partitionKeyWithAttribute_software_amazon_awscdk_services_dynamodb_Attribute_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//TableBuilder_dynamodb/billingMode_software_amazon_awscdk_services_dynamodb_BillingMode_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//TableBuilder_dynamodb/encryption_software_amazon_awscdk_services_dynamodb_TableEncryption_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//TableBuilder_dynamodb/encryptionKeyWithIKey_software_amazon_awscdk_services_kms_IKey_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//TableBuilder_dynamodb/pointInTimeRecovery_java_lang_Boolean_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//TableBuilder_dynamodb/readCapacity_java_lang_Number_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//TableBuilder_dynamodb/removalPolicy_software_amazon_awscdk_core_RemovalPolicy_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//TableBuilder_dynamodb/replicationRegions_java_lang_String_AsList"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//TableBuilder_dynamodb/serverSideEncryption_java_lang_Boolean_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//TableBuilder_dynamodb/sortKeyWithAttribute_software_amazon_awscdk_services_dynamodb_Attribute_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//TableBuilder_dynamodb/stream_software_amazon_awscdk_services_dynamodb_StreamViewType_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//TableBuilder_dynamodb/timeToLiveAttribute_java_lang_String_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//TableBuilder_dynamodb/writeCapacity_java_lang_Number_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//TableBuilder_dynamodb/tableName_java_lang_String_"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//TableBuilder_dynamodb/generatedClassName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//TableBuilder_dynamodb/varName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//TableBuilder_dynamodb/identifier"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//TableBuilder_dynamodb/additionalCode"/>
+    </genClasses>
     <genClasses ecoreClass="awsworkbench.ecore#//LambdaToDynamoDBBuilder_lambdadynamodb">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//LambdaToDynamoDBBuilder_lambdadynamodb/dynamoTablePropsWithTableProps_software_amazon_awscdk_services_dynamodb_TableProps_AsReference"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//LambdaToDynamoDBBuilder_lambdadynamodb/existingLambdaObjWithFunction_software_amazon_awscdk_services_lambda_Function_AsReference"/>
@@ -1601,6 +1836,15 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//LambdaToS3Builder_lambdas3/varName"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//LambdaToS3Builder_lambdas3/identifier"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//LambdaToS3Builder_lambdas3/additionalCode"/>
+    </genClasses>
+    <genClasses ecoreClass="awsworkbench.ecore#//TopicPropsBuilder_sns">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//TopicPropsBuilder_sns/displayName_java_lang_String_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//TopicPropsBuilder_sns/masterKeyWithIKey_software_amazon_awscdk_services_kms_IKey_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//TopicPropsBuilder_sns/topicName_java_lang_String_"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//TopicPropsBuilder_sns/generatedClassName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//TopicPropsBuilder_sns/varName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//TopicPropsBuilder_sns/identifier"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//TopicPropsBuilder_sns/additionalCode"/>
     </genClasses>
     <genClasses ecoreClass="awsworkbench.ecore#//LambdaToSnsBuilder_lambdasns">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//LambdaToSnsBuilder_lambdasns/enableEncryption_java_lang_Boolean_"/>
@@ -1784,6 +2028,756 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//TablePropsBuilder_dynamodb/identifier"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//TablePropsBuilder_dynamodb/additionalCode"/>
     </genClasses>
+    <genClasses ecoreClass="awsworkbench.ecore#//PrivateDnsNamespaceBuilder_servicediscovery">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//PrivateDnsNamespaceBuilder_servicediscovery/name_java_lang_String_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//PrivateDnsNamespaceBuilder_servicediscovery/description_java_lang_String_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//PrivateDnsNamespaceBuilder_servicediscovery/vpcWithIVpc_software_amazon_awscdk_services_ec2_IVpc_AsReference"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//PrivateDnsNamespaceBuilder_servicediscovery/generatedClassName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//PrivateDnsNamespaceBuilder_servicediscovery/varName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//PrivateDnsNamespaceBuilder_servicediscovery/identifier"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//PrivateDnsNamespaceBuilder_servicediscovery/additionalCode"/>
+    </genClasses>
+    <genClasses ecoreClass="awsworkbench.ecore#//PublicDnsNamespaceBuilder_servicediscovery">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//PublicDnsNamespaceBuilder_servicediscovery/name_java_lang_String_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//PublicDnsNamespaceBuilder_servicediscovery/description_java_lang_String_"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//PublicDnsNamespaceBuilder_servicediscovery/generatedClassName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//PublicDnsNamespaceBuilder_servicediscovery/varName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//PublicDnsNamespaceBuilder_servicediscovery/identifier"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//PublicDnsNamespaceBuilder_servicediscovery/additionalCode"/>
+    </genClasses>
+    <genClasses ecoreClass="awsworkbench.ecore#//HttpNamespaceBuilder_servicediscovery">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//HttpNamespaceBuilder_servicediscovery/name_java_lang_String_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//HttpNamespaceBuilder_servicediscovery/description_java_lang_String_"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//HttpNamespaceBuilder_servicediscovery/generatedClassName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//HttpNamespaceBuilder_servicediscovery/varName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//HttpNamespaceBuilder_servicediscovery/identifier"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//HttpNamespaceBuilder_servicediscovery/additionalCode"/>
+    </genClasses>
+    <genClasses ecoreClass="awsworkbench.ecore#//CloudMapOptionsBuilder_ecs">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//CloudMapOptionsBuilder_ecs/cloudMapNamespaceWithINamespace_software_amazon_awscdk_services_servicediscovery_INamespace_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//CloudMapOptionsBuilder_ecs/dnsRecordType_software_amazon_awscdk_services_servicediscovery_DnsRecordType_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//CloudMapOptionsBuilder_ecs/dnsTtlWithDuration_software_amazon_awscdk_core_Duration_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//CloudMapOptionsBuilder_ecs/failureThreshold_java_lang_Number_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//CloudMapOptionsBuilder_ecs/name_java_lang_String_"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//CloudMapOptionsBuilder_ecs/generatedClassName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//CloudMapOptionsBuilder_ecs/varName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//CloudMapOptionsBuilder_ecs/identifier"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//CloudMapOptionsBuilder_ecs/additionalCode"/>
+    </genClasses>
+    <genClasses ecoreClass="awsworkbench.ecore#//BlockDeviceBuilder_autoscaling">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//BlockDeviceBuilder_autoscaling/deviceName_java_lang_String_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//BlockDeviceBuilder_autoscaling/volumeWithBlockDeviceVolume_software_amazon_awscdk_services_autoscaling_BlockDeviceVolume_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//BlockDeviceBuilder_autoscaling/mappingEnabled_java_lang_Boolean_"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//BlockDeviceBuilder_autoscaling/generatedClassName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//BlockDeviceBuilder_autoscaling/varName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//BlockDeviceBuilder_autoscaling/identifier"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//BlockDeviceBuilder_autoscaling/additionalCode"/>
+    </genClasses>
+    <genClasses ecoreClass="awsworkbench.ecore#//HealthCheckBuilder_ecs">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//HealthCheckBuilder_ecs/command_java_lang_String_AsList"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//HealthCheckBuilder_ecs/intervalWithDuration_software_amazon_awscdk_core_Duration_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//HealthCheckBuilder_ecs/retries_java_lang_Number_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//HealthCheckBuilder_ecs/startPeriodWithDuration_software_amazon_awscdk_core_Duration_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//HealthCheckBuilder_ecs/timeoutWithDuration_software_amazon_awscdk_core_Duration_AsReference"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//HealthCheckBuilder_ecs/generatedClassName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//HealthCheckBuilder_ecs/varName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//HealthCheckBuilder_ecs/identifier"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//HealthCheckBuilder_ecs/additionalCode"/>
+    </genClasses>
+    <genClasses ecoreClass="awsworkbench.ecore#//AmazonLinuxImageBuilder_ec2">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AmazonLinuxImageBuilder_ec2/edition_software_amazon_awscdk_services_ec2_AmazonLinuxEdition_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AmazonLinuxImageBuilder_ec2/generation_software_amazon_awscdk_services_ec2_AmazonLinuxGeneration_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AmazonLinuxImageBuilder_ec2/storage_software_amazon_awscdk_services_ec2_AmazonLinuxStorage_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AmazonLinuxImageBuilder_ec2/userDataWithUserData_software_amazon_awscdk_services_ec2_UserData_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AmazonLinuxImageBuilder_ec2/virtualization_software_amazon_awscdk_services_ec2_AmazonLinuxVirt_"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AmazonLinuxImageBuilder_ec2/generatedClassName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AmazonLinuxImageBuilder_ec2/varName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AmazonLinuxImageBuilder_ec2/identifier"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AmazonLinuxImageBuilder_ec2/additionalCode"/>
+    </genClasses>
+    <genClasses ecoreClass="awsworkbench.ecore#//RollingUpdateConfigurationBuilder_autoscaling">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//RollingUpdateConfigurationBuilder_autoscaling/maxBatchSize_java_lang_Number_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//RollingUpdateConfigurationBuilder_autoscaling/minInstancesInService_java_lang_Number_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//RollingUpdateConfigurationBuilder_autoscaling/minSuccessfulInstancesPercent_java_lang_Number_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//RollingUpdateConfigurationBuilder_autoscaling/pauseTimeWithDuration_software_amazon_awscdk_core_Duration_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//RollingUpdateConfigurationBuilder_autoscaling/suspendProcesses_software_amazon_awscdk_services_autoscaling_ScalingProcess_AsList"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//RollingUpdateConfigurationBuilder_autoscaling/waitOnResourceSignals_java_lang_Boolean_"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//RollingUpdateConfigurationBuilder_autoscaling/generatedClassName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//RollingUpdateConfigurationBuilder_autoscaling/varName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//RollingUpdateConfigurationBuilder_autoscaling/identifier"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//RollingUpdateConfigurationBuilder_autoscaling/additionalCode"/>
+    </genClasses>
+    <genClasses ecoreClass="awsworkbench.ecore#//AddCapacityOptionsBuilder_ecs">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AddCapacityOptionsBuilder_ecs/instanceTypeWithInstanceType_software_amazon_awscdk_services_ec2_InstanceType_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AddCapacityOptionsBuilder_ecs/machineImageWithIMachineImage_software_amazon_awscdk_services_ec2_IMachineImage_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AddCapacityOptionsBuilder_ecs/canContainersAccessInstanceRole_java_lang_Boolean_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AddCapacityOptionsBuilder_ecs/spotInstanceDraining_java_lang_Boolean_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AddCapacityOptionsBuilder_ecs/taskDrainTimeWithDuration_software_amazon_awscdk_core_Duration_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AddCapacityOptionsBuilder_ecs/allowAllOutbound_java_lang_Boolean_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AddCapacityOptionsBuilder_ecs/associatePublicIpAddress_java_lang_Boolean_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AddCapacityOptionsBuilder_ecs/blockDevices_software_amazon_awscdk_services_autoscaling_BlockDevice_AsList"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AddCapacityOptionsBuilder_ecs/cooldownWithDuration_software_amazon_awscdk_core_Duration_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AddCapacityOptionsBuilder_ecs/desiredCapacity_java_lang_Number_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AddCapacityOptionsBuilder_ecs/healthCheckWithHealthCheck_software_amazon_awscdk_services_ecs_HealthCheck_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AddCapacityOptionsBuilder_ecs/ignoreUnmodifiedSizeProperties_java_lang_Boolean_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AddCapacityOptionsBuilder_ecs/keyName_java_lang_String_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AddCapacityOptionsBuilder_ecs/maxCapacity_java_lang_Number_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AddCapacityOptionsBuilder_ecs/maxInstanceLifetimeWithDuration_software_amazon_awscdk_core_Duration_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AddCapacityOptionsBuilder_ecs/minCapacity_java_lang_Number_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AddCapacityOptionsBuilder_ecs/notificationsTopicWithITopic_software_amazon_awscdk_services_sns_ITopic_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AddCapacityOptionsBuilder_ecs/replacingUpdateMinSuccessfulInstancesPercent_java_lang_Number_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AddCapacityOptionsBuilder_ecs/resourceSignalCount_java_lang_Number_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AddCapacityOptionsBuilder_ecs/resourceSignalTimeoutWithDuration_software_amazon_awscdk_core_Duration_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AddCapacityOptionsBuilder_ecs/rollingUpdateConfigurationWithRollingUpdateConfiguration_software_amazon_awscdk_services_autoscaling_RollingUpdateConfiguration_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AddCapacityOptionsBuilder_ecs/spotPrice_java_lang_String_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AddCapacityOptionsBuilder_ecs/updateType_software_amazon_awscdk_services_autoscaling_UpdateType_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AddCapacityOptionsBuilder_ecs/vpcSubnetsWithSubnetSelection_software_amazon_awscdk_services_ec2_SubnetSelection_AsReference"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AddCapacityOptionsBuilder_ecs/generatedClassName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AddCapacityOptionsBuilder_ecs/varName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AddCapacityOptionsBuilder_ecs/identifier"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AddCapacityOptionsBuilder_ecs/additionalCode"/>
+    </genClasses>
+    <genClasses ecoreClass="awsworkbench.ecore#//CloudMapNamespaceOptionsBuilder_ecs">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//CloudMapNamespaceOptionsBuilder_ecs/name_java_lang_String_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//CloudMapNamespaceOptionsBuilder_ecs/type_software_amazon_awscdk_services_servicediscovery_NamespaceType_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//CloudMapNamespaceOptionsBuilder_ecs/vpcWithIVpc_software_amazon_awscdk_services_ec2_IVpc_AsReference"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//CloudMapNamespaceOptionsBuilder_ecs/generatedClassName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//CloudMapNamespaceOptionsBuilder_ecs/varName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//CloudMapNamespaceOptionsBuilder_ecs/identifier"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//CloudMapNamespaceOptionsBuilder_ecs/additionalCode"/>
+    </genClasses>
+    <genClasses ecoreClass="awsworkbench.ecore#//ClusterBuilder_ecs">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ClusterBuilder_ecs/capacityWithAddCapacityOptions_software_amazon_awscdk_services_ecs_AddCapacityOptions_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ClusterBuilder_ecs/clusterName_java_lang_String_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ClusterBuilder_ecs/containerInsights_java_lang_Boolean_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ClusterBuilder_ecs/defaultCloudMapNamespaceWithCloudMapNamespaceOptions_software_amazon_awscdk_services_ecs_CloudMapNamespaceOptions_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ClusterBuilder_ecs/vpcWithIVpc_software_amazon_awscdk_services_ec2_IVpc_AsReference"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ClusterBuilder_ecs/generatedClassName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ClusterBuilder_ecs/varName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ClusterBuilder_ecs/identifier"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ClusterBuilder_ecs/additionalCode"/>
+    </genClasses>
+    <genClasses ecoreClass="awsworkbench.ecore#//ApplicationLoadBalancerBuilder_elasticloadbalancingv2">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationLoadBalancerBuilder_elasticloadbalancingv2/vpcWithIVpc_software_amazon_awscdk_services_ec2_IVpc_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationLoadBalancerBuilder_elasticloadbalancingv2/deletionProtection_java_lang_Boolean_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationLoadBalancerBuilder_elasticloadbalancingv2/internetFacing_java_lang_Boolean_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationLoadBalancerBuilder_elasticloadbalancingv2/loadBalancerName_java_lang_String_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationLoadBalancerBuilder_elasticloadbalancingv2/vpcSubnetsWithSubnetSelection_software_amazon_awscdk_services_ec2_SubnetSelection_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationLoadBalancerBuilder_elasticloadbalancingv2/http2Enabled_java_lang_Boolean_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationLoadBalancerBuilder_elasticloadbalancingv2/idleTimeoutWithDuration_software_amazon_awscdk_core_Duration_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationLoadBalancerBuilder_elasticloadbalancingv2/ipAddressType_software_amazon_awscdk_services_elasticloadbalancingv2_IpAddressType_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationLoadBalancerBuilder_elasticloadbalancingv2/securityGroupWithISecurityGroup_software_amazon_awscdk_services_ec2_ISecurityGroup_AsReference"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationLoadBalancerBuilder_elasticloadbalancingv2/generatedClassName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationLoadBalancerBuilder_elasticloadbalancingv2/varName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationLoadBalancerBuilder_elasticloadbalancingv2/identifier"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationLoadBalancerBuilder_elasticloadbalancingv2/additionalCode"/>
+    </genClasses>
+    <genClasses ecoreClass="awsworkbench.ecore#//DockerImageAssetBuilder_assets">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//DockerImageAssetBuilder_assets/exclude_java_lang_String_AsList"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//DockerImageAssetBuilder_assets/follow_software_amazon_awscdk_assets_FollowMode_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//DockerImageAssetBuilder_assets/extraHash_java_lang_String_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//DockerImageAssetBuilder_assets/buildArgs_java_lang_String__java_lang_String_AsMap"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//DockerImageAssetBuilder_assets/file_java_lang_String_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//DockerImageAssetBuilder_assets/repositoryName_java_lang_String_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//DockerImageAssetBuilder_assets/target_java_lang_String_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//DockerImageAssetBuilder_assets/directory_java_lang_String_"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//DockerImageAssetBuilder_assets/generatedClassName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//DockerImageAssetBuilder_assets/varName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//DockerImageAssetBuilder_assets/identifier"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//DockerImageAssetBuilder_assets/additionalCode"/>
+    </genClasses>
+    <genClasses ecoreClass="awsworkbench.ecore#//AssetImageBuilder_ecs">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AssetImageBuilder_ecs/exclude_java_lang_String_AsList"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AssetImageBuilder_ecs/follow_software_amazon_awscdk_assets_FollowMode_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AssetImageBuilder_ecs/extraHash_java_lang_String_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AssetImageBuilder_ecs/buildArgs_java_lang_String__java_lang_String_AsMap"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AssetImageBuilder_ecs/file_java_lang_String_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AssetImageBuilder_ecs/repositoryName_java_lang_String_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AssetImageBuilder_ecs/target_java_lang_String_"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AssetImageBuilder_ecs/generatedClassName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AssetImageBuilder_ecs/varName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AssetImageBuilder_ecs/identifier"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AssetImageBuilder_ecs/additionalCode"/>
+    </genClasses>
+    <genClasses ecoreClass="awsworkbench.ecore#//SecretStringGeneratorBuilder_secretsmanager">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//SecretStringGeneratorBuilder_secretsmanager/excludeCharacters_java_lang_String_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//SecretStringGeneratorBuilder_secretsmanager/excludeLowercase_java_lang_Boolean_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//SecretStringGeneratorBuilder_secretsmanager/excludeNumbers_java_lang_Boolean_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//SecretStringGeneratorBuilder_secretsmanager/excludePunctuation_java_lang_Boolean_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//SecretStringGeneratorBuilder_secretsmanager/excludeUppercase_java_lang_Boolean_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//SecretStringGeneratorBuilder_secretsmanager/generateStringKey_java_lang_String_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//SecretStringGeneratorBuilder_secretsmanager/includeSpace_java_lang_Boolean_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//SecretStringGeneratorBuilder_secretsmanager/passwordLength_java_lang_Number_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//SecretStringGeneratorBuilder_secretsmanager/requireEachIncludedType_java_lang_Boolean_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//SecretStringGeneratorBuilder_secretsmanager/secretStringTemplate_java_lang_String_"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//SecretStringGeneratorBuilder_secretsmanager/generatedClassName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//SecretStringGeneratorBuilder_secretsmanager/varName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//SecretStringGeneratorBuilder_secretsmanager/identifier"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//SecretStringGeneratorBuilder_secretsmanager/additionalCode"/>
+    </genClasses>
+    <genClasses ecoreClass="awsworkbench.ecore#//SecretBuilder_secretsmanager">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//SecretBuilder_secretsmanager/description_java_lang_String_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//SecretBuilder_secretsmanager/encryptionKeyWithIKey_software_amazon_awscdk_services_kms_IKey_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//SecretBuilder_secretsmanager/generateSecretStringWithSecretStringGenerator_software_amazon_awscdk_services_secretsmanager_SecretStringGenerator_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//SecretBuilder_secretsmanager/secretName_java_lang_String_"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//SecretBuilder_secretsmanager/generatedClassName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//SecretBuilder_secretsmanager/varName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//SecretBuilder_secretsmanager/identifier"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//SecretBuilder_secretsmanager/additionalCode"/>
+    </genClasses>
+    <genClasses ecoreClass="awsworkbench.ecore#//AwsLogDriverBuilder_ecs">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AwsLogDriverBuilder_ecs/streamPrefix_java_lang_String_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AwsLogDriverBuilder_ecs/datetimeFormat_java_lang_String_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AwsLogDriverBuilder_ecs/logGroupWithILogGroup_software_amazon_awscdk_services_logs_ILogGroup_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AwsLogDriverBuilder_ecs/logRetention_software_amazon_awscdk_services_logs_RetentionDays_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AwsLogDriverBuilder_ecs/multilinePattern_java_lang_String_"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AwsLogDriverBuilder_ecs/generatedClassName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AwsLogDriverBuilder_ecs/varName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AwsLogDriverBuilder_ecs/identifier"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AwsLogDriverBuilder_ecs/additionalCode"/>
+    </genClasses>
+    <genClasses ecoreClass="awsworkbench.ecore#//LogGroupBuilder_logs">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//LogGroupBuilder_logs/logGroupName_java_lang_String_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//LogGroupBuilder_logs/removalPolicy_software_amazon_awscdk_core_RemovalPolicy_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//LogGroupBuilder_logs/retention_software_amazon_awscdk_services_logs_RetentionDays_"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//LogGroupBuilder_logs/generatedClassName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//LogGroupBuilder_logs/varName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//LogGroupBuilder_logs/identifier"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//LogGroupBuilder_logs/additionalCode"/>
+    </genClasses>
+    <genClasses ecoreClass="awsworkbench.ecore#//AwsLogDriverPropsBuilder_ecs">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AwsLogDriverPropsBuilder_ecs/streamPrefix_java_lang_String_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AwsLogDriverPropsBuilder_ecs/datetimeFormat_java_lang_String_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AwsLogDriverPropsBuilder_ecs/logGroupWithILogGroup_software_amazon_awscdk_services_logs_ILogGroup_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AwsLogDriverPropsBuilder_ecs/logRetention_software_amazon_awscdk_services_logs_RetentionDays_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AwsLogDriverPropsBuilder_ecs/multilinePattern_java_lang_String_"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AwsLogDriverPropsBuilder_ecs/generatedClassName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AwsLogDriverPropsBuilder_ecs/varName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AwsLogDriverPropsBuilder_ecs/identifier"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AwsLogDriverPropsBuilder_ecs/additionalCode"/>
+    </genClasses>
+    <genClasses ecoreClass="awsworkbench.ecore#//ApplicationLoadBalancedTaskImageOptionsBuilder_patterns">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationLoadBalancedTaskImageOptionsBuilder_patterns/imageWithContainerImage_software_amazon_awscdk_services_ecs_ContainerImage_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationLoadBalancedTaskImageOptionsBuilder_patterns/containerName_java_lang_String_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationLoadBalancedTaskImageOptionsBuilder_patterns/containerPort_java_lang_Number_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationLoadBalancedTaskImageOptionsBuilder_patterns/enableLogging_java_lang_Boolean_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationLoadBalancedTaskImageOptionsBuilder_patterns/environment_java_lang_String__java_lang_String_AsMap"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationLoadBalancedTaskImageOptionsBuilder_patterns/executionRoleWithIRole_software_amazon_awscdk_services_iam_IRole_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationLoadBalancedTaskImageOptionsBuilder_patterns/family_java_lang_String_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationLoadBalancedTaskImageOptionsBuilder_patterns/logDriverWithLogDriver_software_amazon_awscdk_services_ecs_LogDriver_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationLoadBalancedTaskImageOptionsBuilder_patterns/secrets_java_lang_String__software_amazon_awscdk_services_ecs_Secret_AsMap"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationLoadBalancedTaskImageOptionsBuilder_patterns/taskRoleWithIRole_software_amazon_awscdk_services_iam_IRole_AsReference"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationLoadBalancedTaskImageOptionsBuilder_patterns/generatedClassName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationLoadBalancedTaskImageOptionsBuilder_patterns/varName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationLoadBalancedTaskImageOptionsBuilder_patterns/identifier"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationLoadBalancedTaskImageOptionsBuilder_patterns/additionalCode"/>
+    </genClasses>
+    <genClasses ecoreClass="awsworkbench.ecore#//AppMeshProxyConfigurationPropsBuilder_ecs">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AppMeshProxyConfigurationPropsBuilder_ecs/appPorts_java_lang_Number_AsList"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AppMeshProxyConfigurationPropsBuilder_ecs/proxyEgressPort_java_lang_Number_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AppMeshProxyConfigurationPropsBuilder_ecs/proxyIngressPort_java_lang_Number_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AppMeshProxyConfigurationPropsBuilder_ecs/egressIgnoredIPs_java_lang_String_AsList"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AppMeshProxyConfigurationPropsBuilder_ecs/egressIgnoredPorts_java_lang_Number_AsList"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AppMeshProxyConfigurationPropsBuilder_ecs/ignoredGid_java_lang_Number_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AppMeshProxyConfigurationPropsBuilder_ecs/ignoredUid_java_lang_Number_"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AppMeshProxyConfigurationPropsBuilder_ecs/generatedClassName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AppMeshProxyConfigurationPropsBuilder_ecs/varName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AppMeshProxyConfigurationPropsBuilder_ecs/identifier"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AppMeshProxyConfigurationPropsBuilder_ecs/additionalCode"/>
+    </genClasses>
+    <genClasses ecoreClass="awsworkbench.ecore#//AppMeshProxyConfigurationBuilder_ecs">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AppMeshProxyConfigurationBuilder_ecs/containerName_java_lang_String_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AppMeshProxyConfigurationBuilder_ecs/propertiesWithAppMeshProxyConfigurationProps_software_amazon_awscdk_services_ecs_AppMeshProxyConfigurationProps_AsReference"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AppMeshProxyConfigurationBuilder_ecs/generatedClassName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AppMeshProxyConfigurationBuilder_ecs/varName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AppMeshProxyConfigurationBuilder_ecs/identifier"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AppMeshProxyConfigurationBuilder_ecs/additionalCode"/>
+    </genClasses>
+    <genClasses ecoreClass="awsworkbench.ecore#//HostBuilder_ecs">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//HostBuilder_ecs/sourcePath_java_lang_String_"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//HostBuilder_ecs/generatedClassName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//HostBuilder_ecs/varName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//HostBuilder_ecs/identifier"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//HostBuilder_ecs/additionalCode"/>
+    </genClasses>
+    <genClasses ecoreClass="awsworkbench.ecore#//DockerVolumeConfigurationBuilder_ecs">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//DockerVolumeConfigurationBuilder_ecs/driver_java_lang_String_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//DockerVolumeConfigurationBuilder_ecs/scope_software_amazon_awscdk_services_ecs_Scope_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//DockerVolumeConfigurationBuilder_ecs/autoprovision_java_lang_Boolean_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//DockerVolumeConfigurationBuilder_ecs/driverOpts_java_lang_String__java_lang_String_AsMap"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//DockerVolumeConfigurationBuilder_ecs/labels_java_lang_String_AsList"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//DockerVolumeConfigurationBuilder_ecs/generatedClassName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//DockerVolumeConfigurationBuilder_ecs/varName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//DockerVolumeConfigurationBuilder_ecs/identifier"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//DockerVolumeConfigurationBuilder_ecs/additionalCode"/>
+    </genClasses>
+    <genClasses ecoreClass="awsworkbench.ecore#//VolumeBuilder_ecs">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//VolumeBuilder_ecs/name_java_lang_String_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//VolumeBuilder_ecs/dockerVolumeConfigurationWithDockerVolumeConfiguration_software_amazon_awscdk_services_ecs_DockerVolumeConfiguration_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//VolumeBuilder_ecs/hostWithHost_software_amazon_awscdk_services_ecs_Host_AsReference"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//VolumeBuilder_ecs/generatedClassName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//VolumeBuilder_ecs/varName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//VolumeBuilder_ecs/identifier"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//VolumeBuilder_ecs/additionalCode"/>
+    </genClasses>
+    <genClasses ecoreClass="awsworkbench.ecore#//Ec2TaskDefinitionBuilder_ecs">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//Ec2TaskDefinitionBuilder_ecs/executionRoleWithIRole_software_amazon_awscdk_services_iam_IRole_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//Ec2TaskDefinitionBuilder_ecs/family_java_lang_String_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//Ec2TaskDefinitionBuilder_ecs/proxyConfigurationWithProxyConfiguration_software_amazon_awscdk_services_ecs_ProxyConfiguration_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//Ec2TaskDefinitionBuilder_ecs/taskRoleWithIRole_software_amazon_awscdk_services_iam_IRole_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//Ec2TaskDefinitionBuilder_ecs/volumes_software_amazon_awscdk_services_ecs_Volume_AsList"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//Ec2TaskDefinitionBuilder_ecs/ipcMode_software_amazon_awscdk_services_ecs_IpcMode_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//Ec2TaskDefinitionBuilder_ecs/networkMode_software_amazon_awscdk_services_ecs_NetworkMode_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//Ec2TaskDefinitionBuilder_ecs/pidMode_software_amazon_awscdk_services_ecs_PidMode_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//Ec2TaskDefinitionBuilder_ecs/placementConstraints_software_amazon_awscdk_services_ecs_PlacementConstraint_AsList"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//Ec2TaskDefinitionBuilder_ecs/generatedClassName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//Ec2TaskDefinitionBuilder_ecs/varName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//Ec2TaskDefinitionBuilder_ecs/identifier"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//Ec2TaskDefinitionBuilder_ecs/additionalCode"/>
+    </genClasses>
+    <genClasses ecoreClass="awsworkbench.ecore#//ApplicationLoadBalancedEc2ServiceBuilder_patterns">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationLoadBalancedEc2ServiceBuilder_patterns/certificateWithICertificate_software_amazon_awscdk_services_certificatemanager_ICertificate_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationLoadBalancedEc2ServiceBuilder_patterns/cloudMapOptionsWithCloudMapOptions_software_amazon_awscdk_services_ecs_CloudMapOptions_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationLoadBalancedEc2ServiceBuilder_patterns/clusterWithICluster_software_amazon_awscdk_services_ecs_ICluster_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationLoadBalancedEc2ServiceBuilder_patterns/desiredCount_java_lang_Number_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationLoadBalancedEc2ServiceBuilder_patterns/domainName_java_lang_String_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationLoadBalancedEc2ServiceBuilder_patterns/domainZoneWithIHostedZone_software_amazon_awscdk_services_route53_IHostedZone_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationLoadBalancedEc2ServiceBuilder_patterns/enableEcsManagedTags_java_lang_Boolean_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationLoadBalancedEc2ServiceBuilder_patterns/healthCheckGracePeriodWithDuration_software_amazon_awscdk_core_Duration_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationLoadBalancedEc2ServiceBuilder_patterns/listenerPort_java_lang_Number_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationLoadBalancedEc2ServiceBuilder_patterns/loadBalancerWithIApplicationLoadBalancer_software_amazon_awscdk_services_elasticloadbalancingv2_IApplicationLoadBalancer_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationLoadBalancedEc2ServiceBuilder_patterns/maxHealthyPercent_java_lang_Number_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationLoadBalancedEc2ServiceBuilder_patterns/minHealthyPercent_java_lang_Number_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationLoadBalancedEc2ServiceBuilder_patterns/propagateTags_software_amazon_awscdk_services_ecs_PropagatedTagSource_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationLoadBalancedEc2ServiceBuilder_patterns/protocol_software_amazon_awscdk_services_elasticloadbalancingv2_ApplicationProtocol_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationLoadBalancedEc2ServiceBuilder_patterns/publicLoadBalancer_java_lang_Boolean_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationLoadBalancedEc2ServiceBuilder_patterns/serviceName_java_lang_String_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationLoadBalancedEc2ServiceBuilder_patterns/taskImageOptionsWithApplicationLoadBalancedTaskImageOptions_software_amazon_awscdk_services_ecs_patterns_ApplicationLoadBalancedTaskImageOptions_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationLoadBalancedEc2ServiceBuilder_patterns/vpcWithIVpc_software_amazon_awscdk_services_ec2_IVpc_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationLoadBalancedEc2ServiceBuilder_patterns/cpu_java_lang_Number_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationLoadBalancedEc2ServiceBuilder_patterns/memoryLimitMiB_java_lang_Number_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationLoadBalancedEc2ServiceBuilder_patterns/memoryReservationMiB_java_lang_Number_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationLoadBalancedEc2ServiceBuilder_patterns/taskDefinitionWithEc2TaskDefinition_software_amazon_awscdk_services_ecs_Ec2TaskDefinition_AsReference"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationLoadBalancedEc2ServiceBuilder_patterns/generatedClassName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationLoadBalancedEc2ServiceBuilder_patterns/varName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationLoadBalancedEc2ServiceBuilder_patterns/identifier"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationLoadBalancedEc2ServiceBuilder_patterns/additionalCode"/>
+    </genClasses>
+    <genClasses ecoreClass="awsworkbench.ecore#//FargateTaskDefinitionBuilder_ecs">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//FargateTaskDefinitionBuilder_ecs/executionRoleWithIRole_software_amazon_awscdk_services_iam_IRole_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//FargateTaskDefinitionBuilder_ecs/family_java_lang_String_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//FargateTaskDefinitionBuilder_ecs/proxyConfigurationWithProxyConfiguration_software_amazon_awscdk_services_ecs_ProxyConfiguration_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//FargateTaskDefinitionBuilder_ecs/taskRoleWithIRole_software_amazon_awscdk_services_iam_IRole_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//FargateTaskDefinitionBuilder_ecs/volumes_software_amazon_awscdk_services_ecs_Volume_AsList"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//FargateTaskDefinitionBuilder_ecs/cpu_java_lang_Number_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//FargateTaskDefinitionBuilder_ecs/memoryLimitMiB_java_lang_Number_"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//FargateTaskDefinitionBuilder_ecs/generatedClassName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//FargateTaskDefinitionBuilder_ecs/varName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//FargateTaskDefinitionBuilder_ecs/identifier"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//FargateTaskDefinitionBuilder_ecs/additionalCode"/>
+    </genClasses>
+    <genClasses ecoreClass="awsworkbench.ecore#//ApplicationLoadBalancedFargateServiceBuilder_patterns">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationLoadBalancedFargateServiceBuilder_patterns/certificateWithICertificate_software_amazon_awscdk_services_certificatemanager_ICertificate_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationLoadBalancedFargateServiceBuilder_patterns/cloudMapOptionsWithCloudMapOptions_software_amazon_awscdk_services_ecs_CloudMapOptions_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationLoadBalancedFargateServiceBuilder_patterns/clusterWithICluster_software_amazon_awscdk_services_ecs_ICluster_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationLoadBalancedFargateServiceBuilder_patterns/desiredCount_java_lang_Number_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationLoadBalancedFargateServiceBuilder_patterns/domainName_java_lang_String_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationLoadBalancedFargateServiceBuilder_patterns/domainZoneWithIHostedZone_software_amazon_awscdk_services_route53_IHostedZone_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationLoadBalancedFargateServiceBuilder_patterns/enableEcsManagedTags_java_lang_Boolean_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationLoadBalancedFargateServiceBuilder_patterns/healthCheckGracePeriodWithDuration_software_amazon_awscdk_core_Duration_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationLoadBalancedFargateServiceBuilder_patterns/listenerPort_java_lang_Number_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationLoadBalancedFargateServiceBuilder_patterns/loadBalancerWithIApplicationLoadBalancer_software_amazon_awscdk_services_elasticloadbalancingv2_IApplicationLoadBalancer_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationLoadBalancedFargateServiceBuilder_patterns/maxHealthyPercent_java_lang_Number_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationLoadBalancedFargateServiceBuilder_patterns/minHealthyPercent_java_lang_Number_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationLoadBalancedFargateServiceBuilder_patterns/propagateTags_software_amazon_awscdk_services_ecs_PropagatedTagSource_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationLoadBalancedFargateServiceBuilder_patterns/protocol_software_amazon_awscdk_services_elasticloadbalancingv2_ApplicationProtocol_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationLoadBalancedFargateServiceBuilder_patterns/publicLoadBalancer_java_lang_Boolean_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationLoadBalancedFargateServiceBuilder_patterns/serviceName_java_lang_String_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationLoadBalancedFargateServiceBuilder_patterns/taskImageOptionsWithApplicationLoadBalancedTaskImageOptions_software_amazon_awscdk_services_ecs_patterns_ApplicationLoadBalancedTaskImageOptions_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationLoadBalancedFargateServiceBuilder_patterns/vpcWithIVpc_software_amazon_awscdk_services_ec2_IVpc_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationLoadBalancedFargateServiceBuilder_patterns/assignPublicIp_java_lang_Boolean_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationLoadBalancedFargateServiceBuilder_patterns/cpu_java_lang_Number_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationLoadBalancedFargateServiceBuilder_patterns/memoryLimitMiB_java_lang_Number_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationLoadBalancedFargateServiceBuilder_patterns/platformVersion_software_amazon_awscdk_services_ecs_FargatePlatformVersion_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationLoadBalancedFargateServiceBuilder_patterns/taskDefinitionWithFargateTaskDefinition_software_amazon_awscdk_services_ecs_FargateTaskDefinition_AsReference"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationLoadBalancedFargateServiceBuilder_patterns/generatedClassName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationLoadBalancedFargateServiceBuilder_patterns/varName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationLoadBalancedFargateServiceBuilder_patterns/identifier"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationLoadBalancedFargateServiceBuilder_patterns/additionalCode"/>
+    </genClasses>
+    <genClasses ecoreClass="awsworkbench.ecore#//ApplicationMultipleTargetGroupsFargateServiceBuilder_patterns">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationMultipleTargetGroupsFargateServiceBuilder_patterns/cloudMapOptionsWithCloudMapOptions_software_amazon_awscdk_services_ecs_CloudMapOptions_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationMultipleTargetGroupsFargateServiceBuilder_patterns/clusterWithICluster_software_amazon_awscdk_services_ecs_ICluster_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationMultipleTargetGroupsFargateServiceBuilder_patterns/desiredCount_java_lang_Number_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationMultipleTargetGroupsFargateServiceBuilder_patterns/enableEcsManagedTags_java_lang_Boolean_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationMultipleTargetGroupsFargateServiceBuilder_patterns/healthCheckGracePeriodWithDuration_software_amazon_awscdk_core_Duration_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationMultipleTargetGroupsFargateServiceBuilder_patterns/loadBalancers_software_amazon_awscdk_services_ecs_patterns_ApplicationLoadBalancerProps_AsList"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationMultipleTargetGroupsFargateServiceBuilder_patterns/propagateTags_software_amazon_awscdk_services_ecs_PropagatedTagSource_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationMultipleTargetGroupsFargateServiceBuilder_patterns/serviceName_java_lang_String_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationMultipleTargetGroupsFargateServiceBuilder_patterns/targetGroups_software_amazon_awscdk_services_ecs_patterns_ApplicationTargetProps_AsList"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationMultipleTargetGroupsFargateServiceBuilder_patterns/taskImageOptionsWithApplicationLoadBalancedTaskImageProps_software_amazon_awscdk_services_ecs_patterns_ApplicationLoadBalancedTaskImageProps_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationMultipleTargetGroupsFargateServiceBuilder_patterns/vpcWithIVpc_software_amazon_awscdk_services_ec2_IVpc_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationMultipleTargetGroupsFargateServiceBuilder_patterns/assignPublicIp_java_lang_Boolean_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationMultipleTargetGroupsFargateServiceBuilder_patterns/cpu_java_lang_Number_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationMultipleTargetGroupsFargateServiceBuilder_patterns/memoryLimitMiB_java_lang_Number_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationMultipleTargetGroupsFargateServiceBuilder_patterns/platformVersion_software_amazon_awscdk_services_ecs_FargatePlatformVersion_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationMultipleTargetGroupsFargateServiceBuilder_patterns/taskDefinitionWithFargateTaskDefinition_software_amazon_awscdk_services_ecs_FargateTaskDefinition_AsReference"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationMultipleTargetGroupsFargateServiceBuilder_patterns/generatedClassName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationMultipleTargetGroupsFargateServiceBuilder_patterns/varName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationMultipleTargetGroupsFargateServiceBuilder_patterns/identifier"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationMultipleTargetGroupsFargateServiceBuilder_patterns/additionalCode"/>
+    </genClasses>
+    <genClasses ecoreClass="awsworkbench.ecore#//ApplicationListenerPropsBuilder_patterns">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationListenerPropsBuilder_patterns/name_java_lang_String_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationListenerPropsBuilder_patterns/certificateWithICertificate_software_amazon_awscdk_services_certificatemanager_ICertificate_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationListenerPropsBuilder_patterns/port_java_lang_Number_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationListenerPropsBuilder_patterns/protocol_software_amazon_awscdk_services_elasticloadbalancingv2_ApplicationProtocol_"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationListenerPropsBuilder_patterns/generatedClassName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationListenerPropsBuilder_patterns/varName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationListenerPropsBuilder_patterns/identifier"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationListenerPropsBuilder_patterns/additionalCode"/>
+    </genClasses>
+    <genClasses ecoreClass="awsworkbench.ecore#//ApplicationLoadBalancerPropsBuilder_patterns">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationLoadBalancerPropsBuilder_patterns/listeners_software_amazon_awscdk_services_ecs_patterns_ApplicationListenerProps_AsList"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationLoadBalancerPropsBuilder_patterns/name_java_lang_String_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationLoadBalancerPropsBuilder_patterns/domainName_java_lang_String_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationLoadBalancerPropsBuilder_patterns/domainZoneWithIHostedZone_software_amazon_awscdk_services_route53_IHostedZone_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationLoadBalancerPropsBuilder_patterns/publicLoadBalancer_java_lang_Boolean_"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationLoadBalancerPropsBuilder_patterns/generatedClassName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationLoadBalancerPropsBuilder_patterns/varName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationLoadBalancerPropsBuilder_patterns/identifier"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationLoadBalancerPropsBuilder_patterns/additionalCode"/>
+    </genClasses>
+    <genClasses ecoreClass="awsworkbench.ecore#//ApplicationTargetPropsBuilder_patterns">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationTargetPropsBuilder_patterns/containerPort_java_lang_Number_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationTargetPropsBuilder_patterns/hostHeader_java_lang_String_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationTargetPropsBuilder_patterns/listener_java_lang_String_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationTargetPropsBuilder_patterns/pathPattern_java_lang_String_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationTargetPropsBuilder_patterns/priority_java_lang_Number_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationTargetPropsBuilder_patterns/protocol_software_amazon_awscdk_services_ecs_Protocol_"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationTargetPropsBuilder_patterns/generatedClassName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationTargetPropsBuilder_patterns/varName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationTargetPropsBuilder_patterns/identifier"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationTargetPropsBuilder_patterns/additionalCode"/>
+    </genClasses>
+    <genClasses ecoreClass="awsworkbench.ecore#//ApplicationLoadBalancedTaskImagePropsBuilder_patterns">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationLoadBalancedTaskImagePropsBuilder_patterns/imageWithContainerImage_software_amazon_awscdk_services_ecs_ContainerImage_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationLoadBalancedTaskImagePropsBuilder_patterns/containerName_java_lang_String_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationLoadBalancedTaskImagePropsBuilder_patterns/containerPorts_java_lang_Number_AsList"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationLoadBalancedTaskImagePropsBuilder_patterns/enableLogging_java_lang_Boolean_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationLoadBalancedTaskImagePropsBuilder_patterns/environment_java_lang_String__java_lang_String_AsMap"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationLoadBalancedTaskImagePropsBuilder_patterns/executionRoleWithIRole_software_amazon_awscdk_services_iam_IRole_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationLoadBalancedTaskImagePropsBuilder_patterns/family_java_lang_String_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationLoadBalancedTaskImagePropsBuilder_patterns/logDriverWithLogDriver_software_amazon_awscdk_services_ecs_LogDriver_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationLoadBalancedTaskImagePropsBuilder_patterns/secrets_java_lang_String__software_amazon_awscdk_services_ecs_Secret_AsMap"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationLoadBalancedTaskImagePropsBuilder_patterns/taskRoleWithIRole_software_amazon_awscdk_services_iam_IRole_AsReference"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationLoadBalancedTaskImagePropsBuilder_patterns/generatedClassName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationLoadBalancedTaskImagePropsBuilder_patterns/varName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationLoadBalancedTaskImagePropsBuilder_patterns/identifier"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationLoadBalancedTaskImagePropsBuilder_patterns/additionalCode"/>
+    </genClasses>
+    <genClasses ecoreClass="awsworkbench.ecore#//ApplicationMultipleTargetGroupsEc2ServiceBuilder_patterns">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationMultipleTargetGroupsEc2ServiceBuilder_patterns/cloudMapOptionsWithCloudMapOptions_software_amazon_awscdk_services_ecs_CloudMapOptions_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationMultipleTargetGroupsEc2ServiceBuilder_patterns/clusterWithICluster_software_amazon_awscdk_services_ecs_ICluster_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationMultipleTargetGroupsEc2ServiceBuilder_patterns/desiredCount_java_lang_Number_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationMultipleTargetGroupsEc2ServiceBuilder_patterns/enableEcsManagedTags_java_lang_Boolean_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationMultipleTargetGroupsEc2ServiceBuilder_patterns/healthCheckGracePeriodWithDuration_software_amazon_awscdk_core_Duration_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationMultipleTargetGroupsEc2ServiceBuilder_patterns/loadBalancers_software_amazon_awscdk_services_ecs_patterns_ApplicationLoadBalancerProps_AsList"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationMultipleTargetGroupsEc2ServiceBuilder_patterns/propagateTags_software_amazon_awscdk_services_ecs_PropagatedTagSource_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationMultipleTargetGroupsEc2ServiceBuilder_patterns/serviceName_java_lang_String_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationMultipleTargetGroupsEc2ServiceBuilder_patterns/targetGroups_software_amazon_awscdk_services_ecs_patterns_ApplicationTargetProps_AsList"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationMultipleTargetGroupsEc2ServiceBuilder_patterns/taskImageOptionsWithApplicationLoadBalancedTaskImageProps_software_amazon_awscdk_services_ecs_patterns_ApplicationLoadBalancedTaskImageProps_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationMultipleTargetGroupsEc2ServiceBuilder_patterns/vpcWithIVpc_software_amazon_awscdk_services_ec2_IVpc_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationMultipleTargetGroupsEc2ServiceBuilder_patterns/cpu_java_lang_Number_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationMultipleTargetGroupsEc2ServiceBuilder_patterns/memoryLimitMiB_java_lang_Number_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationMultipleTargetGroupsEc2ServiceBuilder_patterns/memoryReservationMiB_java_lang_Number_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationMultipleTargetGroupsEc2ServiceBuilder_patterns/taskDefinitionWithEc2TaskDefinition_software_amazon_awscdk_services_ecs_Ec2TaskDefinition_AsReference"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationMultipleTargetGroupsEc2ServiceBuilder_patterns/generatedClassName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationMultipleTargetGroupsEc2ServiceBuilder_patterns/varName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationMultipleTargetGroupsEc2ServiceBuilder_patterns/identifier"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ApplicationMultipleTargetGroupsEc2ServiceBuilder_patterns/additionalCode"/>
+    </genClasses>
+    <genClasses ecoreClass="awsworkbench.ecore#//NetworkLoadBalancedTaskImageOptionsBuilder_patterns">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkLoadBalancedTaskImageOptionsBuilder_patterns/imageWithContainerImage_software_amazon_awscdk_services_ecs_ContainerImage_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkLoadBalancedTaskImageOptionsBuilder_patterns/containerName_java_lang_String_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkLoadBalancedTaskImageOptionsBuilder_patterns/containerPort_java_lang_Number_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkLoadBalancedTaskImageOptionsBuilder_patterns/enableLogging_java_lang_Boolean_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkLoadBalancedTaskImageOptionsBuilder_patterns/environment_java_lang_String__java_lang_String_AsMap"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkLoadBalancedTaskImageOptionsBuilder_patterns/executionRoleWithIRole_software_amazon_awscdk_services_iam_IRole_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkLoadBalancedTaskImageOptionsBuilder_patterns/family_java_lang_String_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkLoadBalancedTaskImageOptionsBuilder_patterns/logDriverWithLogDriver_software_amazon_awscdk_services_ecs_LogDriver_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkLoadBalancedTaskImageOptionsBuilder_patterns/secrets_java_lang_String__software_amazon_awscdk_services_ecs_Secret_AsMap"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkLoadBalancedTaskImageOptionsBuilder_patterns/taskRoleWithIRole_software_amazon_awscdk_services_iam_IRole_AsReference"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkLoadBalancedTaskImageOptionsBuilder_patterns/generatedClassName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkLoadBalancedTaskImageOptionsBuilder_patterns/varName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkLoadBalancedTaskImageOptionsBuilder_patterns/identifier"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkLoadBalancedTaskImageOptionsBuilder_patterns/additionalCode"/>
+    </genClasses>
+    <genClasses ecoreClass="awsworkbench.ecore#//NetworkLoadBalancedFargateServiceBuilder_patterns">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkLoadBalancedFargateServiceBuilder_patterns/cloudMapOptionsWithCloudMapOptions_software_amazon_awscdk_services_ecs_CloudMapOptions_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkLoadBalancedFargateServiceBuilder_patterns/clusterWithICluster_software_amazon_awscdk_services_ecs_ICluster_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkLoadBalancedFargateServiceBuilder_patterns/desiredCount_java_lang_Number_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkLoadBalancedFargateServiceBuilder_patterns/domainName_java_lang_String_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkLoadBalancedFargateServiceBuilder_patterns/domainZoneWithIHostedZone_software_amazon_awscdk_services_route53_IHostedZone_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkLoadBalancedFargateServiceBuilder_patterns/enableEcsManagedTags_java_lang_Boolean_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkLoadBalancedFargateServiceBuilder_patterns/healthCheckGracePeriodWithDuration_software_amazon_awscdk_core_Duration_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkLoadBalancedFargateServiceBuilder_patterns/listenerPort_java_lang_Number_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkLoadBalancedFargateServiceBuilder_patterns/loadBalancerWithINetworkLoadBalancer_software_amazon_awscdk_services_elasticloadbalancingv2_INetworkLoadBalancer_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkLoadBalancedFargateServiceBuilder_patterns/maxHealthyPercent_java_lang_Number_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkLoadBalancedFargateServiceBuilder_patterns/minHealthyPercent_java_lang_Number_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkLoadBalancedFargateServiceBuilder_patterns/propagateTags_software_amazon_awscdk_services_ecs_PropagatedTagSource_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkLoadBalancedFargateServiceBuilder_patterns/publicLoadBalancer_java_lang_Boolean_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkLoadBalancedFargateServiceBuilder_patterns/serviceName_java_lang_String_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkLoadBalancedFargateServiceBuilder_patterns/taskImageOptionsWithNetworkLoadBalancedTaskImageOptions_software_amazon_awscdk_services_ecs_patterns_NetworkLoadBalancedTaskImageOptions_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkLoadBalancedFargateServiceBuilder_patterns/vpcWithIVpc_software_amazon_awscdk_services_ec2_IVpc_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkLoadBalancedFargateServiceBuilder_patterns/assignPublicIp_java_lang_Boolean_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkLoadBalancedFargateServiceBuilder_patterns/cpu_java_lang_Number_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkLoadBalancedFargateServiceBuilder_patterns/memoryLimitMiB_java_lang_Number_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkLoadBalancedFargateServiceBuilder_patterns/platformVersion_software_amazon_awscdk_services_ecs_FargatePlatformVersion_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkLoadBalancedFargateServiceBuilder_patterns/taskDefinitionWithFargateTaskDefinition_software_amazon_awscdk_services_ecs_FargateTaskDefinition_AsReference"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkLoadBalancedFargateServiceBuilder_patterns/generatedClassName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkLoadBalancedFargateServiceBuilder_patterns/varName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkLoadBalancedFargateServiceBuilder_patterns/identifier"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkLoadBalancedFargateServiceBuilder_patterns/additionalCode"/>
+    </genClasses>
+    <genClasses ecoreClass="awsworkbench.ecore#//NetworkLoadBalancedEc2ServiceBuilder_patterns">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkLoadBalancedEc2ServiceBuilder_patterns/cloudMapOptionsWithCloudMapOptions_software_amazon_awscdk_services_ecs_CloudMapOptions_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkLoadBalancedEc2ServiceBuilder_patterns/clusterWithICluster_software_amazon_awscdk_services_ecs_ICluster_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkLoadBalancedEc2ServiceBuilder_patterns/desiredCount_java_lang_Number_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkLoadBalancedEc2ServiceBuilder_patterns/domainName_java_lang_String_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkLoadBalancedEc2ServiceBuilder_patterns/domainZoneWithIHostedZone_software_amazon_awscdk_services_route53_IHostedZone_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkLoadBalancedEc2ServiceBuilder_patterns/enableEcsManagedTags_java_lang_Boolean_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkLoadBalancedEc2ServiceBuilder_patterns/healthCheckGracePeriodWithDuration_software_amazon_awscdk_core_Duration_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkLoadBalancedEc2ServiceBuilder_patterns/listenerPort_java_lang_Number_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkLoadBalancedEc2ServiceBuilder_patterns/loadBalancerWithINetworkLoadBalancer_software_amazon_awscdk_services_elasticloadbalancingv2_INetworkLoadBalancer_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkLoadBalancedEc2ServiceBuilder_patterns/maxHealthyPercent_java_lang_Number_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkLoadBalancedEc2ServiceBuilder_patterns/minHealthyPercent_java_lang_Number_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkLoadBalancedEc2ServiceBuilder_patterns/propagateTags_software_amazon_awscdk_services_ecs_PropagatedTagSource_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkLoadBalancedEc2ServiceBuilder_patterns/publicLoadBalancer_java_lang_Boolean_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkLoadBalancedEc2ServiceBuilder_patterns/serviceName_java_lang_String_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkLoadBalancedEc2ServiceBuilder_patterns/taskImageOptionsWithNetworkLoadBalancedTaskImageOptions_software_amazon_awscdk_services_ecs_patterns_NetworkLoadBalancedTaskImageOptions_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkLoadBalancedEc2ServiceBuilder_patterns/vpcWithIVpc_software_amazon_awscdk_services_ec2_IVpc_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkLoadBalancedEc2ServiceBuilder_patterns/cpu_java_lang_Number_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkLoadBalancedEc2ServiceBuilder_patterns/memoryLimitMiB_java_lang_Number_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkLoadBalancedEc2ServiceBuilder_patterns/memoryReservationMiB_java_lang_Number_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkLoadBalancedEc2ServiceBuilder_patterns/taskDefinitionWithEc2TaskDefinition_software_amazon_awscdk_services_ecs_Ec2TaskDefinition_AsReference"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkLoadBalancedEc2ServiceBuilder_patterns/generatedClassName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkLoadBalancedEc2ServiceBuilder_patterns/varName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkLoadBalancedEc2ServiceBuilder_patterns/identifier"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkLoadBalancedEc2ServiceBuilder_patterns/additionalCode"/>
+    </genClasses>
+    <genClasses ecoreClass="awsworkbench.ecore#//NetworkMultipleTargetGroupsEc2ServiceBuilder_patterns">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkMultipleTargetGroupsEc2ServiceBuilder_patterns/cloudMapOptionsWithCloudMapOptions_software_amazon_awscdk_services_ecs_CloudMapOptions_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkMultipleTargetGroupsEc2ServiceBuilder_patterns/clusterWithICluster_software_amazon_awscdk_services_ecs_ICluster_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkMultipleTargetGroupsEc2ServiceBuilder_patterns/desiredCount_java_lang_Number_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkMultipleTargetGroupsEc2ServiceBuilder_patterns/enableEcsManagedTags_java_lang_Boolean_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkMultipleTargetGroupsEc2ServiceBuilder_patterns/healthCheckGracePeriodWithDuration_software_amazon_awscdk_core_Duration_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkMultipleTargetGroupsEc2ServiceBuilder_patterns/loadBalancers_software_amazon_awscdk_services_ecs_patterns_NetworkLoadBalancerProps_AsList"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkMultipleTargetGroupsEc2ServiceBuilder_patterns/propagateTags_software_amazon_awscdk_services_ecs_PropagatedTagSource_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkMultipleTargetGroupsEc2ServiceBuilder_patterns/serviceName_java_lang_String_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkMultipleTargetGroupsEc2ServiceBuilder_patterns/targetGroups_software_amazon_awscdk_services_ecs_patterns_NetworkTargetProps_AsList"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkMultipleTargetGroupsEc2ServiceBuilder_patterns/taskImageOptionsWithNetworkLoadBalancedTaskImageProps_software_amazon_awscdk_services_ecs_patterns_NetworkLoadBalancedTaskImageProps_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkMultipleTargetGroupsEc2ServiceBuilder_patterns/vpcWithIVpc_software_amazon_awscdk_services_ec2_IVpc_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkMultipleTargetGroupsEc2ServiceBuilder_patterns/cpu_java_lang_Number_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkMultipleTargetGroupsEc2ServiceBuilder_patterns/memoryLimitMiB_java_lang_Number_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkMultipleTargetGroupsEc2ServiceBuilder_patterns/memoryReservationMiB_java_lang_Number_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkMultipleTargetGroupsEc2ServiceBuilder_patterns/taskDefinitionWithEc2TaskDefinition_software_amazon_awscdk_services_ecs_Ec2TaskDefinition_AsReference"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkMultipleTargetGroupsEc2ServiceBuilder_patterns/generatedClassName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkMultipleTargetGroupsEc2ServiceBuilder_patterns/varName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkMultipleTargetGroupsEc2ServiceBuilder_patterns/identifier"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkMultipleTargetGroupsEc2ServiceBuilder_patterns/additionalCode"/>
+    </genClasses>
+    <genClasses ecoreClass="awsworkbench.ecore#//NetworkTargetPropsBuilder_patterns">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkTargetPropsBuilder_patterns/containerPort_java_lang_Number_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkTargetPropsBuilder_patterns/listener_java_lang_String_"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkTargetPropsBuilder_patterns/generatedClassName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkTargetPropsBuilder_patterns/varName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkTargetPropsBuilder_patterns/identifier"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkTargetPropsBuilder_patterns/additionalCode"/>
+    </genClasses>
+    <genClasses ecoreClass="awsworkbench.ecore#//NetworkLoadBalancedTaskImagePropsBuilder_patterns">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkLoadBalancedTaskImagePropsBuilder_patterns/imageWithContainerImage_software_amazon_awscdk_services_ecs_ContainerImage_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkLoadBalancedTaskImagePropsBuilder_patterns/containerName_java_lang_String_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkLoadBalancedTaskImagePropsBuilder_patterns/containerPorts_java_lang_Number_AsList"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkLoadBalancedTaskImagePropsBuilder_patterns/enableLogging_java_lang_Boolean_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkLoadBalancedTaskImagePropsBuilder_patterns/environment_java_lang_String__java_lang_String_AsMap"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkLoadBalancedTaskImagePropsBuilder_patterns/executionRoleWithIRole_software_amazon_awscdk_services_iam_IRole_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkLoadBalancedTaskImagePropsBuilder_patterns/family_java_lang_String_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkLoadBalancedTaskImagePropsBuilder_patterns/logDriverWithLogDriver_software_amazon_awscdk_services_ecs_LogDriver_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkLoadBalancedTaskImagePropsBuilder_patterns/secrets_java_lang_String__software_amazon_awscdk_services_ecs_Secret_AsMap"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkLoadBalancedTaskImagePropsBuilder_patterns/taskRoleWithIRole_software_amazon_awscdk_services_iam_IRole_AsReference"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkLoadBalancedTaskImagePropsBuilder_patterns/generatedClassName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkLoadBalancedTaskImagePropsBuilder_patterns/varName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkLoadBalancedTaskImagePropsBuilder_patterns/identifier"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkLoadBalancedTaskImagePropsBuilder_patterns/additionalCode"/>
+    </genClasses>
+    <genClasses ecoreClass="awsworkbench.ecore#//NetworkMultipleTargetGroupsFargateServiceBuilder_patterns">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkMultipleTargetGroupsFargateServiceBuilder_patterns/cloudMapOptionsWithCloudMapOptions_software_amazon_awscdk_services_ecs_CloudMapOptions_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkMultipleTargetGroupsFargateServiceBuilder_patterns/clusterWithICluster_software_amazon_awscdk_services_ecs_ICluster_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkMultipleTargetGroupsFargateServiceBuilder_patterns/desiredCount_java_lang_Number_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkMultipleTargetGroupsFargateServiceBuilder_patterns/enableEcsManagedTags_java_lang_Boolean_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkMultipleTargetGroupsFargateServiceBuilder_patterns/healthCheckGracePeriodWithDuration_software_amazon_awscdk_core_Duration_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkMultipleTargetGroupsFargateServiceBuilder_patterns/loadBalancers_software_amazon_awscdk_services_ecs_patterns_NetworkLoadBalancerProps_AsList"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkMultipleTargetGroupsFargateServiceBuilder_patterns/propagateTags_software_amazon_awscdk_services_ecs_PropagatedTagSource_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkMultipleTargetGroupsFargateServiceBuilder_patterns/serviceName_java_lang_String_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkMultipleTargetGroupsFargateServiceBuilder_patterns/targetGroups_software_amazon_awscdk_services_ecs_patterns_NetworkTargetProps_AsList"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkMultipleTargetGroupsFargateServiceBuilder_patterns/taskImageOptionsWithNetworkLoadBalancedTaskImageProps_software_amazon_awscdk_services_ecs_patterns_NetworkLoadBalancedTaskImageProps_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkMultipleTargetGroupsFargateServiceBuilder_patterns/vpcWithIVpc_software_amazon_awscdk_services_ec2_IVpc_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkMultipleTargetGroupsFargateServiceBuilder_patterns/assignPublicIp_java_lang_Boolean_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkMultipleTargetGroupsFargateServiceBuilder_patterns/cpu_java_lang_Number_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkMultipleTargetGroupsFargateServiceBuilder_patterns/memoryLimitMiB_java_lang_Number_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkMultipleTargetGroupsFargateServiceBuilder_patterns/platformVersion_software_amazon_awscdk_services_ecs_FargatePlatformVersion_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkMultipleTargetGroupsFargateServiceBuilder_patterns/taskDefinitionWithFargateTaskDefinition_software_amazon_awscdk_services_ecs_FargateTaskDefinition_AsReference"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkMultipleTargetGroupsFargateServiceBuilder_patterns/generatedClassName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkMultipleTargetGroupsFargateServiceBuilder_patterns/varName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkMultipleTargetGroupsFargateServiceBuilder_patterns/identifier"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//NetworkMultipleTargetGroupsFargateServiceBuilder_patterns/additionalCode"/>
+    </genClasses>
+    <genClasses ecoreClass="awsworkbench.ecore#//ScalingIntervalBuilder_applicationautoscaling">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ScalingIntervalBuilder_applicationautoscaling/change_java_lang_Number_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ScalingIntervalBuilder_applicationautoscaling/lower_java_lang_Number_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ScalingIntervalBuilder_applicationautoscaling/upper_java_lang_Number_"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ScalingIntervalBuilder_applicationautoscaling/generatedClassName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ScalingIntervalBuilder_applicationautoscaling/varName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ScalingIntervalBuilder_applicationautoscaling/identifier"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ScalingIntervalBuilder_applicationautoscaling/additionalCode"/>
+    </genClasses>
+    <genClasses ecoreClass="awsworkbench.ecore#//QueueProcessingFargateServiceBuilder_patterns">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//QueueProcessingFargateServiceBuilder_patterns/imageWithContainerImage_software_amazon_awscdk_services_ecs_ContainerImage_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//QueueProcessingFargateServiceBuilder_patterns/clusterWithICluster_software_amazon_awscdk_services_ecs_ICluster_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//QueueProcessingFargateServiceBuilder_patterns/command_java_lang_String_AsList"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//QueueProcessingFargateServiceBuilder_patterns/desiredTaskCount_java_lang_Number_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//QueueProcessingFargateServiceBuilder_patterns/enableEcsManagedTags_java_lang_Boolean_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//QueueProcessingFargateServiceBuilder_patterns/enableLogging_java_lang_Boolean_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//QueueProcessingFargateServiceBuilder_patterns/environment_java_lang_String__java_lang_String_AsMap"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//QueueProcessingFargateServiceBuilder_patterns/family_java_lang_String_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//QueueProcessingFargateServiceBuilder_patterns/logDriverWithLogDriver_software_amazon_awscdk_services_ecs_LogDriver_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//QueueProcessingFargateServiceBuilder_patterns/maxHealthyPercent_java_lang_Number_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//QueueProcessingFargateServiceBuilder_patterns/maxReceiveCount_java_lang_Number_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//QueueProcessingFargateServiceBuilder_patterns/maxScalingCapacity_java_lang_Number_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//QueueProcessingFargateServiceBuilder_patterns/minHealthyPercent_java_lang_Number_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//QueueProcessingFargateServiceBuilder_patterns/propagateTags_software_amazon_awscdk_services_ecs_PropagatedTagSource_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//QueueProcessingFargateServiceBuilder_patterns/queueWithIQueue_software_amazon_awscdk_services_sqs_IQueue_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//QueueProcessingFargateServiceBuilder_patterns/retentionPeriodWithDuration_software_amazon_awscdk_core_Duration_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//QueueProcessingFargateServiceBuilder_patterns/scalingSteps_software_amazon_awscdk_services_applicationautoscaling_ScalingInterval_AsList"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//QueueProcessingFargateServiceBuilder_patterns/secrets_java_lang_String__software_amazon_awscdk_services_ecs_Secret_AsMap"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//QueueProcessingFargateServiceBuilder_patterns/serviceName_java_lang_String_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//QueueProcessingFargateServiceBuilder_patterns/vpcWithIVpc_software_amazon_awscdk_services_ec2_IVpc_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//QueueProcessingFargateServiceBuilder_patterns/cpu_java_lang_Number_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//QueueProcessingFargateServiceBuilder_patterns/memoryLimitMiB_java_lang_Number_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//QueueProcessingFargateServiceBuilder_patterns/platformVersion_software_amazon_awscdk_services_ecs_FargatePlatformVersion_"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//QueueProcessingFargateServiceBuilder_patterns/generatedClassName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//QueueProcessingFargateServiceBuilder_patterns/varName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//QueueProcessingFargateServiceBuilder_patterns/identifier"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//QueueProcessingFargateServiceBuilder_patterns/additionalCode"/>
+    </genClasses>
+    <genClasses ecoreClass="awsworkbench.ecore#//CronOptionsBuilder_applicationautoscaling">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//CronOptionsBuilder_applicationautoscaling/day_java_lang_String_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//CronOptionsBuilder_applicationautoscaling/hour_java_lang_String_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//CronOptionsBuilder_applicationautoscaling/minute_java_lang_String_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//CronOptionsBuilder_applicationautoscaling/month_java_lang_String_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//CronOptionsBuilder_applicationautoscaling/weekDay_java_lang_String_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//CronOptionsBuilder_applicationautoscaling/year_java_lang_String_"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//CronOptionsBuilder_applicationautoscaling/generatedClassName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//CronOptionsBuilder_applicationautoscaling/varName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//CronOptionsBuilder_applicationautoscaling/identifier"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//CronOptionsBuilder_applicationautoscaling/additionalCode"/>
+    </genClasses>
+    <genClasses ecoreClass="awsworkbench.ecore#//ScheduledEc2TaskDefinitionOptionsBuilder_patterns">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ScheduledEc2TaskDefinitionOptionsBuilder_patterns/taskDefinitionWithEc2TaskDefinition_software_amazon_awscdk_services_ecs_Ec2TaskDefinition_AsReference"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ScheduledEc2TaskDefinitionOptionsBuilder_patterns/generatedClassName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ScheduledEc2TaskDefinitionOptionsBuilder_patterns/varName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ScheduledEc2TaskDefinitionOptionsBuilder_patterns/identifier"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ScheduledEc2TaskDefinitionOptionsBuilder_patterns/additionalCode"/>
+    </genClasses>
+    <genClasses ecoreClass="awsworkbench.ecore#//ScheduledEc2TaskImageOptionsBuilder_patterns">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ScheduledEc2TaskImageOptionsBuilder_patterns/cpu_java_lang_Number_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ScheduledEc2TaskImageOptionsBuilder_patterns/memoryLimitMiB_java_lang_Number_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ScheduledEc2TaskImageOptionsBuilder_patterns/memoryReservationMiB_java_lang_Number_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ScheduledEc2TaskImageOptionsBuilder_patterns/imageWithContainerImage_software_amazon_awscdk_services_ecs_ContainerImage_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ScheduledEc2TaskImageOptionsBuilder_patterns/command_java_lang_String_AsList"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ScheduledEc2TaskImageOptionsBuilder_patterns/environment_java_lang_String__java_lang_String_AsMap"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ScheduledEc2TaskImageOptionsBuilder_patterns/logDriverWithLogDriver_software_amazon_awscdk_services_ecs_LogDriver_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ScheduledEc2TaskImageOptionsBuilder_patterns/secrets_java_lang_String__software_amazon_awscdk_services_ecs_Secret_AsMap"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ScheduledEc2TaskImageOptionsBuilder_patterns/generatedClassName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ScheduledEc2TaskImageOptionsBuilder_patterns/varName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ScheduledEc2TaskImageOptionsBuilder_patterns/identifier"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ScheduledEc2TaskImageOptionsBuilder_patterns/additionalCode"/>
+    </genClasses>
+    <genClasses ecoreClass="awsworkbench.ecore#//ScheduledEc2TaskBuilder_patterns">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ScheduledEc2TaskBuilder_patterns/scheduleWithSchedule_software_amazon_awscdk_services_applicationautoscaling_Schedule_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ScheduledEc2TaskBuilder_patterns/clusterWithICluster_software_amazon_awscdk_services_ecs_ICluster_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ScheduledEc2TaskBuilder_patterns/desiredTaskCount_java_lang_Number_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ScheduledEc2TaskBuilder_patterns/subnetSelectionWithSubnetSelection_software_amazon_awscdk_services_ec2_SubnetSelection_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ScheduledEc2TaskBuilder_patterns/vpcWithIVpc_software_amazon_awscdk_services_ec2_IVpc_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ScheduledEc2TaskBuilder_patterns/scheduledEc2TaskDefinitionOptionsWithScheduledEc2TaskDefinitionOptions_software_amazon_awscdk_services_ecs_patterns_ScheduledEc2TaskDefinitionOptions_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ScheduledEc2TaskBuilder_patterns/scheduledEc2TaskImageOptionsWithScheduledEc2TaskImageOptions_software_amazon_awscdk_services_ecs_patterns_ScheduledEc2TaskImageOptions_AsReference"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ScheduledEc2TaskBuilder_patterns/generatedClassName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ScheduledEc2TaskBuilder_patterns/varName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ScheduledEc2TaskBuilder_patterns/identifier"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ScheduledEc2TaskBuilder_patterns/additionalCode"/>
+    </genClasses>
+    <genClasses ecoreClass="awsworkbench.ecore#//QueueProcessingEc2ServiceBuilder_patterns">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//QueueProcessingEc2ServiceBuilder_patterns/imageWithContainerImage_software_amazon_awscdk_services_ecs_ContainerImage_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//QueueProcessingEc2ServiceBuilder_patterns/clusterWithICluster_software_amazon_awscdk_services_ecs_ICluster_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//QueueProcessingEc2ServiceBuilder_patterns/command_java_lang_String_AsList"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//QueueProcessingEc2ServiceBuilder_patterns/desiredTaskCount_java_lang_Number_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//QueueProcessingEc2ServiceBuilder_patterns/enableEcsManagedTags_java_lang_Boolean_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//QueueProcessingEc2ServiceBuilder_patterns/enableLogging_java_lang_Boolean_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//QueueProcessingEc2ServiceBuilder_patterns/environment_java_lang_String__java_lang_String_AsMap"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//QueueProcessingEc2ServiceBuilder_patterns/family_java_lang_String_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//QueueProcessingEc2ServiceBuilder_patterns/logDriverWithLogDriver_software_amazon_awscdk_services_ecs_LogDriver_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//QueueProcessingEc2ServiceBuilder_patterns/maxHealthyPercent_java_lang_Number_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//QueueProcessingEc2ServiceBuilder_patterns/maxReceiveCount_java_lang_Number_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//QueueProcessingEc2ServiceBuilder_patterns/maxScalingCapacity_java_lang_Number_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//QueueProcessingEc2ServiceBuilder_patterns/minHealthyPercent_java_lang_Number_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//QueueProcessingEc2ServiceBuilder_patterns/propagateTags_software_amazon_awscdk_services_ecs_PropagatedTagSource_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//QueueProcessingEc2ServiceBuilder_patterns/queueWithIQueue_software_amazon_awscdk_services_sqs_IQueue_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//QueueProcessingEc2ServiceBuilder_patterns/retentionPeriodWithDuration_software_amazon_awscdk_core_Duration_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//QueueProcessingEc2ServiceBuilder_patterns/scalingSteps_software_amazon_awscdk_services_applicationautoscaling_ScalingInterval_AsList"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//QueueProcessingEc2ServiceBuilder_patterns/secrets_java_lang_String__software_amazon_awscdk_services_ecs_Secret_AsMap"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//QueueProcessingEc2ServiceBuilder_patterns/serviceName_java_lang_String_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//QueueProcessingEc2ServiceBuilder_patterns/vpcWithIVpc_software_amazon_awscdk_services_ec2_IVpc_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//QueueProcessingEc2ServiceBuilder_patterns/cpu_java_lang_Number_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//QueueProcessingEc2ServiceBuilder_patterns/memoryLimitMiB_java_lang_Number_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//QueueProcessingEc2ServiceBuilder_patterns/memoryReservationMiB_java_lang_Number_"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//QueueProcessingEc2ServiceBuilder_patterns/generatedClassName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//QueueProcessingEc2ServiceBuilder_patterns/varName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//QueueProcessingEc2ServiceBuilder_patterns/identifier"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//QueueProcessingEc2ServiceBuilder_patterns/additionalCode"/>
+    </genClasses>
+    <genClasses ecoreClass="awsworkbench.ecore#//ScheduledFargateTaskDefinitionOptionsBuilder_patterns">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ScheduledFargateTaskDefinitionOptionsBuilder_patterns/taskDefinitionWithFargateTaskDefinition_software_amazon_awscdk_services_ecs_FargateTaskDefinition_AsReference"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ScheduledFargateTaskDefinitionOptionsBuilder_patterns/generatedClassName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ScheduledFargateTaskDefinitionOptionsBuilder_patterns/varName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ScheduledFargateTaskDefinitionOptionsBuilder_patterns/identifier"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ScheduledFargateTaskDefinitionOptionsBuilder_patterns/additionalCode"/>
+    </genClasses>
+    <genClasses ecoreClass="awsworkbench.ecore#//ScheduledFargateTaskImageOptionsBuilder_patterns">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ScheduledFargateTaskImageOptionsBuilder_patterns/cpu_java_lang_Number_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ScheduledFargateTaskImageOptionsBuilder_patterns/memoryLimitMiB_java_lang_Number_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ScheduledFargateTaskImageOptionsBuilder_patterns/imageWithContainerImage_software_amazon_awscdk_services_ecs_ContainerImage_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ScheduledFargateTaskImageOptionsBuilder_patterns/command_java_lang_String_AsList"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ScheduledFargateTaskImageOptionsBuilder_patterns/environment_java_lang_String__java_lang_String_AsMap"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ScheduledFargateTaskImageOptionsBuilder_patterns/logDriverWithLogDriver_software_amazon_awscdk_services_ecs_LogDriver_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ScheduledFargateTaskImageOptionsBuilder_patterns/secrets_java_lang_String__software_amazon_awscdk_services_ecs_Secret_AsMap"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ScheduledFargateTaskImageOptionsBuilder_patterns/generatedClassName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ScheduledFargateTaskImageOptionsBuilder_patterns/varName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ScheduledFargateTaskImageOptionsBuilder_patterns/identifier"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ScheduledFargateTaskImageOptionsBuilder_patterns/additionalCode"/>
+    </genClasses>
+    <genClasses ecoreClass="awsworkbench.ecore#//ScheduledFargateTaskBuilder_patterns">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ScheduledFargateTaskBuilder_patterns/scheduleWithSchedule_software_amazon_awscdk_services_applicationautoscaling_Schedule_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ScheduledFargateTaskBuilder_patterns/clusterWithICluster_software_amazon_awscdk_services_ecs_ICluster_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ScheduledFargateTaskBuilder_patterns/desiredTaskCount_java_lang_Number_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ScheduledFargateTaskBuilder_patterns/subnetSelectionWithSubnetSelection_software_amazon_awscdk_services_ec2_SubnetSelection_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ScheduledFargateTaskBuilder_patterns/vpcWithIVpc_software_amazon_awscdk_services_ec2_IVpc_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ScheduledFargateTaskBuilder_patterns/scheduledFargateTaskDefinitionOptionsWithScheduledFargateTaskDefinitionOptions_software_amazon_awscdk_services_ecs_patterns_ScheduledFargateTaskDefinitionOptions_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ScheduledFargateTaskBuilder_patterns/scheduledFargateTaskImageOptionsWithScheduledFargateTaskImageOptions_software_amazon_awscdk_services_ecs_patterns_ScheduledFargateTaskImageOptions_AsReference"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ScheduledFargateTaskBuilder_patterns/generatedClassName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ScheduledFargateTaskBuilder_patterns/varName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ScheduledFargateTaskBuilder_patterns/identifier"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ScheduledFargateTaskBuilder_patterns/additionalCode"/>
+    </genClasses>
   </genPackages>
- 
 </genmodel:GenModel>

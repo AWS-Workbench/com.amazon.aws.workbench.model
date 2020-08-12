@@ -895,6 +895,42 @@ public interface AwsworkbenchFactory extends EFactory {
 	DynamoDBStreamToLambdaToElasticSearchAndKibanaBuilder_dynamodbstreamlambdaelasticsearchkibana createDynamoDBStreamToLambdaToElasticSearchAndKibanaBuilder_dynamodbstreamlambdaelasticsearchkibana();
 
 	/**
+	 * Returns a new object of class '<em>Event Bus Builder events</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Event Bus Builder events</em>'.
+	 * @generated
+	 */
+	EventBusBuilder_events createEventBusBuilder_events();
+
+	/**
+	 * Returns a new object of class '<em>Event Pattern Builder events</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Event Pattern Builder events</em>'.
+	 * @generated
+	 */
+	EventPatternBuilder_events createEventPatternBuilder_events();
+
+	/**
+	 * Returns a new object of class '<em>Rule Props Builder events</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Rule Props Builder events</em>'.
+	 * @generated
+	 */
+	RulePropsBuilder_events createRulePropsBuilder_events();
+
+	/**
+	 * Returns a new object of class '<em>Cron Options Builder events</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Cron Options Builder events</em>'.
+	 * @generated
+	 */
+	CronOptionsBuilder_events createCronOptionsBuilder_events();
+
+	/**
 	 * Returns a new object of class '<em>Events Rule To Lambda Builder eventsrulelambda</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -902,6 +938,15 @@ public interface AwsworkbenchFactory extends EFactory {
 	 * @generated
 	 */
 	EventsRuleToLambdaBuilder_eventsrulelambda createEventsRuleToLambdaBuilder_eventsrulelambda();
+
+	/**
+	 * Returns a new object of class '<em>State Machine Props Builder stepfunctions</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>State Machine Props Builder stepfunctions</em>'.
+	 * @generated
+	 */
+	StateMachinePropsBuilder_stepfunctions createStateMachinePropsBuilder_stepfunctions();
 
 	/**
 	 * Returns a new object of class '<em>Events Rule To Step Function Builder eventsrulestepfunction</em>'.
@@ -967,6 +1012,15 @@ public interface AwsworkbenchFactory extends EFactory {
 	KinesisStreamsToLambdaBuilder_kinesisstreamslambda createKinesisStreamsToLambdaBuilder_kinesisstreamslambda();
 
 	/**
+	 * Returns a new object of class '<em>Table Builder dynamodb</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Table Builder dynamodb</em>'.
+	 * @generated
+	 */
+	TableBuilder_dynamodb createTableBuilder_dynamodb();
+
+	/**
 	 * Returns a new object of class '<em>Lambda To Dynamo DB Builder lambdadynamodb</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -992,6 +1046,15 @@ public interface AwsworkbenchFactory extends EFactory {
 	 * @generated
 	 */
 	LambdaToS3Builder_lambdas3 createLambdaToS3Builder_lambdas3();
+
+	/**
+	 * Returns a new object of class '<em>Topic Props Builder sns</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Topic Props Builder sns</em>'.
+	 * @generated
+	 */
+	TopicPropsBuilder_sns createTopicPropsBuilder_sns();
 
 	/**
 	 * Returns a new object of class '<em>Lambda To Sns Builder lambdasns</em>'.
@@ -1127,6 +1190,474 @@ public interface AwsworkbenchFactory extends EFactory {
 	 * @generated
 	 */
 	TablePropsBuilder_dynamodb createTablePropsBuilder_dynamodb();
+
+	/**
+	 * Returns a new object of class '<em>Private Dns Namespace Builder servicediscovery</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Private Dns Namespace Builder servicediscovery</em>'.
+	 * @generated
+	 */
+	PrivateDnsNamespaceBuilder_servicediscovery createPrivateDnsNamespaceBuilder_servicediscovery();
+
+	/**
+	 * Returns a new object of class '<em>Public Dns Namespace Builder servicediscovery</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Public Dns Namespace Builder servicediscovery</em>'.
+	 * @generated
+	 */
+	PublicDnsNamespaceBuilder_servicediscovery createPublicDnsNamespaceBuilder_servicediscovery();
+
+	/**
+	 * Returns a new object of class '<em>Http Namespace Builder servicediscovery</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Http Namespace Builder servicediscovery</em>'.
+	 * @generated
+	 */
+	HttpNamespaceBuilder_servicediscovery createHttpNamespaceBuilder_servicediscovery();
+
+	/**
+	 * Returns a new object of class '<em>Cloud Map Options Builder ecs</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Cloud Map Options Builder ecs</em>'.
+	 * @generated
+	 */
+	CloudMapOptionsBuilder_ecs createCloudMapOptionsBuilder_ecs();
+
+	/**
+	 * Returns a new object of class '<em>Block Device Builder autoscaling</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Block Device Builder autoscaling</em>'.
+	 * @generated
+	 */
+	BlockDeviceBuilder_autoscaling createBlockDeviceBuilder_autoscaling();
+
+	/**
+	 * Returns a new object of class '<em>Health Check Builder ecs</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Health Check Builder ecs</em>'.
+	 * @generated
+	 */
+	HealthCheckBuilder_ecs createHealthCheckBuilder_ecs();
+
+	/**
+	 * Returns a new object of class '<em>Amazon Linux Image Builder ec2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Amazon Linux Image Builder ec2</em>'.
+	 * @generated
+	 */
+	AmazonLinuxImageBuilder_ec2 createAmazonLinuxImageBuilder_ec2();
+
+	/**
+	 * Returns a new object of class '<em>Rolling Update Configuration Builder autoscaling</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Rolling Update Configuration Builder autoscaling</em>'.
+	 * @generated
+	 */
+	RollingUpdateConfigurationBuilder_autoscaling createRollingUpdateConfigurationBuilder_autoscaling();
+
+	/**
+	 * Returns a new object of class '<em>Add Capacity Options Builder ecs</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Add Capacity Options Builder ecs</em>'.
+	 * @generated
+	 */
+	AddCapacityOptionsBuilder_ecs createAddCapacityOptionsBuilder_ecs();
+
+	/**
+	 * Returns a new object of class '<em>Cloud Map Namespace Options Builder ecs</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Cloud Map Namespace Options Builder ecs</em>'.
+	 * @generated
+	 */
+	CloudMapNamespaceOptionsBuilder_ecs createCloudMapNamespaceOptionsBuilder_ecs();
+
+	/**
+	 * Returns a new object of class '<em>Cluster Builder ecs</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Cluster Builder ecs</em>'.
+	 * @generated
+	 */
+	ClusterBuilder_ecs createClusterBuilder_ecs();
+
+	/**
+	 * Returns a new object of class '<em>Application Load Balancer Builder elasticloadbalancingv2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Application Load Balancer Builder elasticloadbalancingv2</em>'.
+	 * @generated
+	 */
+	ApplicationLoadBalancerBuilder_elasticloadbalancingv2 createApplicationLoadBalancerBuilder_elasticloadbalancingv2();
+
+	/**
+	 * Returns a new object of class '<em>Docker Image Asset Builder assets</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Docker Image Asset Builder assets</em>'.
+	 * @generated
+	 */
+	DockerImageAssetBuilder_assets createDockerImageAssetBuilder_assets();
+
+	/**
+	 * Returns a new object of class '<em>Asset Image Builder ecs</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Asset Image Builder ecs</em>'.
+	 * @generated
+	 */
+	AssetImageBuilder_ecs createAssetImageBuilder_ecs();
+
+	/**
+	 * Returns a new object of class '<em>Secret String Generator Builder secretsmanager</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Secret String Generator Builder secretsmanager</em>'.
+	 * @generated
+	 */
+	SecretStringGeneratorBuilder_secretsmanager createSecretStringGeneratorBuilder_secretsmanager();
+
+	/**
+	 * Returns a new object of class '<em>Secret Builder secretsmanager</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Secret Builder secretsmanager</em>'.
+	 * @generated
+	 */
+	SecretBuilder_secretsmanager createSecretBuilder_secretsmanager();
+
+	/**
+	 * Returns a new object of class '<em>Aws Log Driver Builder ecs</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Aws Log Driver Builder ecs</em>'.
+	 * @generated
+	 */
+	AwsLogDriverBuilder_ecs createAwsLogDriverBuilder_ecs();
+
+	/**
+	 * Returns a new object of class '<em>Log Group Builder logs</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Log Group Builder logs</em>'.
+	 * @generated
+	 */
+	LogGroupBuilder_logs createLogGroupBuilder_logs();
+
+	/**
+	 * Returns a new object of class '<em>Aws Log Driver Props Builder ecs</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Aws Log Driver Props Builder ecs</em>'.
+	 * @generated
+	 */
+	AwsLogDriverPropsBuilder_ecs createAwsLogDriverPropsBuilder_ecs();
+
+	/**
+	 * Returns a new object of class '<em>Application Load Balanced Task Image Options Builder patterns</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Application Load Balanced Task Image Options Builder patterns</em>'.
+	 * @generated
+	 */
+	ApplicationLoadBalancedTaskImageOptionsBuilder_patterns createApplicationLoadBalancedTaskImageOptionsBuilder_patterns();
+
+	/**
+	 * Returns a new object of class '<em>App Mesh Proxy Configuration Props Builder ecs</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>App Mesh Proxy Configuration Props Builder ecs</em>'.
+	 * @generated
+	 */
+	AppMeshProxyConfigurationPropsBuilder_ecs createAppMeshProxyConfigurationPropsBuilder_ecs();
+
+	/**
+	 * Returns a new object of class '<em>App Mesh Proxy Configuration Builder ecs</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>App Mesh Proxy Configuration Builder ecs</em>'.
+	 * @generated
+	 */
+	AppMeshProxyConfigurationBuilder_ecs createAppMeshProxyConfigurationBuilder_ecs();
+
+	/**
+	 * Returns a new object of class '<em>Host Builder ecs</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Host Builder ecs</em>'.
+	 * @generated
+	 */
+	HostBuilder_ecs createHostBuilder_ecs();
+
+	/**
+	 * Returns a new object of class '<em>Docker Volume Configuration Builder ecs</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Docker Volume Configuration Builder ecs</em>'.
+	 * @generated
+	 */
+	DockerVolumeConfigurationBuilder_ecs createDockerVolumeConfigurationBuilder_ecs();
+
+	/**
+	 * Returns a new object of class '<em>Volume Builder ecs</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Volume Builder ecs</em>'.
+	 * @generated
+	 */
+	VolumeBuilder_ecs createVolumeBuilder_ecs();
+
+	/**
+	 * Returns a new object of class '<em>Ec2 Task Definition Builder ecs</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Ec2 Task Definition Builder ecs</em>'.
+	 * @generated
+	 */
+	Ec2TaskDefinitionBuilder_ecs createEc2TaskDefinitionBuilder_ecs();
+
+	/**
+	 * Returns a new object of class '<em>Application Load Balanced Ec2 Service Builder patterns</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Application Load Balanced Ec2 Service Builder patterns</em>'.
+	 * @generated
+	 */
+	ApplicationLoadBalancedEc2ServiceBuilder_patterns createApplicationLoadBalancedEc2ServiceBuilder_patterns();
+
+	/**
+	 * Returns a new object of class '<em>Fargate Task Definition Builder ecs</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Fargate Task Definition Builder ecs</em>'.
+	 * @generated
+	 */
+	FargateTaskDefinitionBuilder_ecs createFargateTaskDefinitionBuilder_ecs();
+
+	/**
+	 * Returns a new object of class '<em>Application Load Balanced Fargate Service Builder patterns</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Application Load Balanced Fargate Service Builder patterns</em>'.
+	 * @generated
+	 */
+	ApplicationLoadBalancedFargateServiceBuilder_patterns createApplicationLoadBalancedFargateServiceBuilder_patterns();
+
+	/**
+	 * Returns a new object of class '<em>Application Multiple Target Groups Fargate Service Builder patterns</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Application Multiple Target Groups Fargate Service Builder patterns</em>'.
+	 * @generated
+	 */
+	ApplicationMultipleTargetGroupsFargateServiceBuilder_patterns createApplicationMultipleTargetGroupsFargateServiceBuilder_patterns();
+
+	/**
+	 * Returns a new object of class '<em>Application Listener Props Builder patterns</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Application Listener Props Builder patterns</em>'.
+	 * @generated
+	 */
+	ApplicationListenerPropsBuilder_patterns createApplicationListenerPropsBuilder_patterns();
+
+	/**
+	 * Returns a new object of class '<em>Application Load Balancer Props Builder patterns</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Application Load Balancer Props Builder patterns</em>'.
+	 * @generated
+	 */
+	ApplicationLoadBalancerPropsBuilder_patterns createApplicationLoadBalancerPropsBuilder_patterns();
+
+	/**
+	 * Returns a new object of class '<em>Application Target Props Builder patterns</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Application Target Props Builder patterns</em>'.
+	 * @generated
+	 */
+	ApplicationTargetPropsBuilder_patterns createApplicationTargetPropsBuilder_patterns();
+
+	/**
+	 * Returns a new object of class '<em>Application Load Balanced Task Image Props Builder patterns</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Application Load Balanced Task Image Props Builder patterns</em>'.
+	 * @generated
+	 */
+	ApplicationLoadBalancedTaskImagePropsBuilder_patterns createApplicationLoadBalancedTaskImagePropsBuilder_patterns();
+
+	/**
+	 * Returns a new object of class '<em>Application Multiple Target Groups Ec2 Service Builder patterns</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Application Multiple Target Groups Ec2 Service Builder patterns</em>'.
+	 * @generated
+	 */
+	ApplicationMultipleTargetGroupsEc2ServiceBuilder_patterns createApplicationMultipleTargetGroupsEc2ServiceBuilder_patterns();
+
+	/**
+	 * Returns a new object of class '<em>Network Load Balanced Task Image Options Builder patterns</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Network Load Balanced Task Image Options Builder patterns</em>'.
+	 * @generated
+	 */
+	NetworkLoadBalancedTaskImageOptionsBuilder_patterns createNetworkLoadBalancedTaskImageOptionsBuilder_patterns();
+
+	/**
+	 * Returns a new object of class '<em>Network Load Balanced Fargate Service Builder patterns</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Network Load Balanced Fargate Service Builder patterns</em>'.
+	 * @generated
+	 */
+	NetworkLoadBalancedFargateServiceBuilder_patterns createNetworkLoadBalancedFargateServiceBuilder_patterns();
+
+	/**
+	 * Returns a new object of class '<em>Network Load Balanced Ec2 Service Builder patterns</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Network Load Balanced Ec2 Service Builder patterns</em>'.
+	 * @generated
+	 */
+	NetworkLoadBalancedEc2ServiceBuilder_patterns createNetworkLoadBalancedEc2ServiceBuilder_patterns();
+
+	/**
+	 * Returns a new object of class '<em>Network Multiple Target Groups Ec2 Service Builder patterns</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Network Multiple Target Groups Ec2 Service Builder patterns</em>'.
+	 * @generated
+	 */
+	NetworkMultipleTargetGroupsEc2ServiceBuilder_patterns createNetworkMultipleTargetGroupsEc2ServiceBuilder_patterns();
+
+	/**
+	 * Returns a new object of class '<em>Network Target Props Builder patterns</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Network Target Props Builder patterns</em>'.
+	 * @generated
+	 */
+	NetworkTargetPropsBuilder_patterns createNetworkTargetPropsBuilder_patterns();
+
+	/**
+	 * Returns a new object of class '<em>Network Load Balanced Task Image Props Builder patterns</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Network Load Balanced Task Image Props Builder patterns</em>'.
+	 * @generated
+	 */
+	NetworkLoadBalancedTaskImagePropsBuilder_patterns createNetworkLoadBalancedTaskImagePropsBuilder_patterns();
+
+	/**
+	 * Returns a new object of class '<em>Network Multiple Target Groups Fargate Service Builder patterns</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Network Multiple Target Groups Fargate Service Builder patterns</em>'.
+	 * @generated
+	 */
+	NetworkMultipleTargetGroupsFargateServiceBuilder_patterns createNetworkMultipleTargetGroupsFargateServiceBuilder_patterns();
+
+	/**
+	 * Returns a new object of class '<em>Scaling Interval Builder applicationautoscaling</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Scaling Interval Builder applicationautoscaling</em>'.
+	 * @generated
+	 */
+	ScalingIntervalBuilder_applicationautoscaling createScalingIntervalBuilder_applicationautoscaling();
+
+	/**
+	 * Returns a new object of class '<em>Queue Processing Fargate Service Builder patterns</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Queue Processing Fargate Service Builder patterns</em>'.
+	 * @generated
+	 */
+	QueueProcessingFargateServiceBuilder_patterns createQueueProcessingFargateServiceBuilder_patterns();
+
+	/**
+	 * Returns a new object of class '<em>Cron Options Builder applicationautoscaling</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Cron Options Builder applicationautoscaling</em>'.
+	 * @generated
+	 */
+	CronOptionsBuilder_applicationautoscaling createCronOptionsBuilder_applicationautoscaling();
+
+	/**
+	 * Returns a new object of class '<em>Scheduled Ec2 Task Definition Options Builder patterns</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Scheduled Ec2 Task Definition Options Builder patterns</em>'.
+	 * @generated
+	 */
+	ScheduledEc2TaskDefinitionOptionsBuilder_patterns createScheduledEc2TaskDefinitionOptionsBuilder_patterns();
+
+	/**
+	 * Returns a new object of class '<em>Scheduled Ec2 Task Image Options Builder patterns</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Scheduled Ec2 Task Image Options Builder patterns</em>'.
+	 * @generated
+	 */
+	ScheduledEc2TaskImageOptionsBuilder_patterns createScheduledEc2TaskImageOptionsBuilder_patterns();
+
+	/**
+	 * Returns a new object of class '<em>Scheduled Ec2 Task Builder patterns</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Scheduled Ec2 Task Builder patterns</em>'.
+	 * @generated
+	 */
+	ScheduledEc2TaskBuilder_patterns createScheduledEc2TaskBuilder_patterns();
+
+	/**
+	 * Returns a new object of class '<em>Queue Processing Ec2 Service Builder patterns</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Queue Processing Ec2 Service Builder patterns</em>'.
+	 * @generated
+	 */
+	QueueProcessingEc2ServiceBuilder_patterns createQueueProcessingEc2ServiceBuilder_patterns();
+
+	/**
+	 * Returns a new object of class '<em>Scheduled Fargate Task Definition Options Builder patterns</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Scheduled Fargate Task Definition Options Builder patterns</em>'.
+	 * @generated
+	 */
+	ScheduledFargateTaskDefinitionOptionsBuilder_patterns createScheduledFargateTaskDefinitionOptionsBuilder_patterns();
+
+	/**
+	 * Returns a new object of class '<em>Scheduled Fargate Task Image Options Builder patterns</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Scheduled Fargate Task Image Options Builder patterns</em>'.
+	 * @generated
+	 */
+	ScheduledFargateTaskImageOptionsBuilder_patterns createScheduledFargateTaskImageOptionsBuilder_patterns();
+
+	/**
+	 * Returns a new object of class '<em>Scheduled Fargate Task Builder patterns</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Scheduled Fargate Task Builder patterns</em>'.
+	 * @generated
+	 */
+	ScheduledFargateTaskBuilder_patterns createScheduledFargateTaskBuilder_patterns();
 
 	/**
 	 * Returns the package supported by this factory.

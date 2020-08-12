@@ -2,21 +2,44 @@
  */
 package com.amazon.aws.workbench.model.awsworkbench.impl;
 
+import com.amazon.aws.workbench.model.awsworkbench.AddCapacityOptionsBuilder_ecs;
 import com.amazon.aws.workbench.model.awsworkbench.AliasConfigurationBuilder_cloudfront;
+import com.amazon.aws.workbench.model.awsworkbench.AmazonLinuxEdition;
+import com.amazon.aws.workbench.model.awsworkbench.AmazonLinuxGeneration;
+import com.amazon.aws.workbench.model.awsworkbench.AmazonLinuxImageBuilder_ec2;
+import com.amazon.aws.workbench.model.awsworkbench.AmazonLinuxStorage;
+import com.amazon.aws.workbench.model.awsworkbench.AmazonLinuxVirt;
 import com.amazon.aws.workbench.model.awsworkbench.ApiGatewayToDynamoDBBuilder_apigatewaydynamodb;
 import com.amazon.aws.workbench.model.awsworkbench.ApiGatewayToLambdaBuilder_apigatewaylambda;
 import com.amazon.aws.workbench.model.awsworkbench.ApiGatewayToSqsBuilder_apigatewaysqs;
 import com.amazon.aws.workbench.model.awsworkbench.ApiKeySourceType;
 import com.amazon.aws.workbench.model.awsworkbench.AppBuilder_core;
+import com.amazon.aws.workbench.model.awsworkbench.AppMeshProxyConfigurationBuilder_ecs;
+import com.amazon.aws.workbench.model.awsworkbench.AppMeshProxyConfigurationPropsBuilder_ecs;
+import com.amazon.aws.workbench.model.awsworkbench.ApplicationListenerPropsBuilder_patterns;
+import com.amazon.aws.workbench.model.awsworkbench.ApplicationLoadBalancedEc2ServiceBuilder_patterns;
+import com.amazon.aws.workbench.model.awsworkbench.ApplicationLoadBalancedFargateServiceBuilder_patterns;
+import com.amazon.aws.workbench.model.awsworkbench.ApplicationLoadBalancedTaskImageOptionsBuilder_patterns;
+import com.amazon.aws.workbench.model.awsworkbench.ApplicationLoadBalancedTaskImagePropsBuilder_patterns;
+import com.amazon.aws.workbench.model.awsworkbench.ApplicationLoadBalancerBuilder_elasticloadbalancingv2;
+import com.amazon.aws.workbench.model.awsworkbench.ApplicationLoadBalancerPropsBuilder_patterns;
+import com.amazon.aws.workbench.model.awsworkbench.ApplicationMultipleTargetGroupsEc2ServiceBuilder_patterns;
+import com.amazon.aws.workbench.model.awsworkbench.ApplicationMultipleTargetGroupsFargateServiceBuilder_patterns;
+import com.amazon.aws.workbench.model.awsworkbench.ApplicationProtocol;
+import com.amazon.aws.workbench.model.awsworkbench.ApplicationTargetPropsBuilder_patterns;
+import com.amazon.aws.workbench.model.awsworkbench.AssetImageBuilder_ecs;
 import com.amazon.aws.workbench.model.awsworkbench.AttributeBuilder_dynamodb;
 import com.amazon.aws.workbench.model.awsworkbench.AttributeType;
 import com.amazon.aws.workbench.model.awsworkbench.AuthFlowBuilder_cognito;
 import com.amazon.aws.workbench.model.awsworkbench.AuthorizationType;
 import com.amazon.aws.workbench.model.awsworkbench.AutoVerifiedAttrsBuilder_cognito;
+import com.amazon.aws.workbench.model.awsworkbench.AwsLogDriverBuilder_ecs;
+import com.amazon.aws.workbench.model.awsworkbench.AwsLogDriverPropsBuilder_ecs;
 import com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchFactory;
 import com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage;
 import com.amazon.aws.workbench.model.awsworkbench.BehaviorBuilder_cloudfront;
 import com.amazon.aws.workbench.model.awsworkbench.BillingMode;
+import com.amazon.aws.workbench.model.awsworkbench.BlockDeviceBuilder_autoscaling;
 import com.amazon.aws.workbench.model.awsworkbench.BlockPublicAccessBuilder_s3;
 import com.amazon.aws.workbench.model.awsworkbench.BucketAccessControl;
 import com.amazon.aws.workbench.model.awsworkbench.BucketBuilder_s3;
@@ -39,36 +62,55 @@ import com.amazon.aws.workbench.model.awsworkbench.CloudFrontToApiGatewayBuilder
 import com.amazon.aws.workbench.model.awsworkbench.CloudFrontToApiGatewayToLambdaBuilder_cloudfrontapigatewaylambda;
 import com.amazon.aws.workbench.model.awsworkbench.CloudFrontToS3Builder_cloudfronts3;
 import com.amazon.aws.workbench.model.awsworkbench.CloudFrontWebDistributionPropsBuilder_cloudfront;
+import com.amazon.aws.workbench.model.awsworkbench.CloudMapNamespaceOptionsBuilder_ecs;
+import com.amazon.aws.workbench.model.awsworkbench.CloudMapOptionsBuilder_ecs;
+import com.amazon.aws.workbench.model.awsworkbench.ClusterBuilder_ecs;
 import com.amazon.aws.workbench.model.awsworkbench.CognitoOptionsBuilder_core;
 import com.amazon.aws.workbench.model.awsworkbench.CognitoToApiGatewayToLambdaBuilder_cognitoapigatewaylambda;
 import com.amazon.aws.workbench.model.awsworkbench.ConnectionType;
 import com.amazon.aws.workbench.model.awsworkbench.ContentHandling;
 import com.amazon.aws.workbench.model.awsworkbench.CorsOptionsBuilder_apigateway;
 import com.amazon.aws.workbench.model.awsworkbench.CorsRuleBuilder_s3;
+import com.amazon.aws.workbench.model.awsworkbench.CronOptionsBuilder_applicationautoscaling;
+import com.amazon.aws.workbench.model.awsworkbench.CronOptionsBuilder_events;
 import com.amazon.aws.workbench.model.awsworkbench.CustomOriginConfigBuilder_cloudfront;
 import com.amazon.aws.workbench.model.awsworkbench.DeadLetterQueueBuilder_sqs;
 import com.amazon.aws.workbench.model.awsworkbench.DefaultInstanceTenancy;
 import com.amazon.aws.workbench.model.awsworkbench.DefaultStackSynthesizerBuilder_core;
+import com.amazon.aws.workbench.model.awsworkbench.DnsRecordType;
 import com.amazon.aws.workbench.model.awsworkbench.DnsValidatedCertificateBuilder_certificatemanager;
+import com.amazon.aws.workbench.model.awsworkbench.DockerImageAssetBuilder_assets;
+import com.amazon.aws.workbench.model.awsworkbench.DockerVolumeConfigurationBuilder_ecs;
 import com.amazon.aws.workbench.model.awsworkbench.DomainNameOptionsBuilder_apigateway;
 import com.amazon.aws.workbench.model.awsworkbench.DynamoDBStreamToLambdaBuilder_dynamodbstreamlambda;
 import com.amazon.aws.workbench.model.awsworkbench.DynamoDBStreamToLambdaToElasticSearchAndKibanaBuilder_dynamodbstreamlambdaelasticsearchkibana;
+import com.amazon.aws.workbench.model.awsworkbench.Ec2TaskDefinitionBuilder_ecs;
 import com.amazon.aws.workbench.model.awsworkbench.Effect;
 import com.amazon.aws.workbench.model.awsworkbench.EmailSettingsBuilder_cognito;
 import com.amazon.aws.workbench.model.awsworkbench.EndpointConfigurationBuilder_apigateway;
 import com.amazon.aws.workbench.model.awsworkbench.EndpointType;
 import com.amazon.aws.workbench.model.awsworkbench.EnvironmentBuilder_core;
+import com.amazon.aws.workbench.model.awsworkbench.EventBusBuilder_events;
+import com.amazon.aws.workbench.model.awsworkbench.EventPatternBuilder_events;
 import com.amazon.aws.workbench.model.awsworkbench.EventsRuleToLambdaBuilder_eventsrulelambda;
 import com.amazon.aws.workbench.model.awsworkbench.EventsRuleToStepFunctionBuilder_eventsrulestepfunction;
+import com.amazon.aws.workbench.model.awsworkbench.FargatePlatformVersion;
+import com.amazon.aws.workbench.model.awsworkbench.FargateTaskDefinitionBuilder_ecs;
 import com.amazon.aws.workbench.model.awsworkbench.FlowLogOptionsBuilder_ec2;
 import com.amazon.aws.workbench.model.awsworkbench.FlowLogTrafficType;
+import com.amazon.aws.workbench.model.awsworkbench.FollowMode;
 import com.amazon.aws.workbench.model.awsworkbench.FunctionBuilder_lambda;
 import com.amazon.aws.workbench.model.awsworkbench.FunctionPropsBuilder_lambda;
 import com.amazon.aws.workbench.model.awsworkbench.GatewayVpcEndpointBuilder_ec2;
 import com.amazon.aws.workbench.model.awsworkbench.GroupBuilder_iam;
+import com.amazon.aws.workbench.model.awsworkbench.HealthCheckBuilder_ecs;
+import com.amazon.aws.workbench.model.awsworkbench.HostBuilder_ecs;
 import com.amazon.aws.workbench.model.awsworkbench.HostedZoneBuilder_route53;
 import com.amazon.aws.workbench.model.awsworkbench.HttpMethods;
+import com.amazon.aws.workbench.model.awsworkbench.HttpNamespaceBuilder_servicediscovery;
 import com.amazon.aws.workbench.model.awsworkbench.HttpVersion;
+import com.amazon.aws.workbench.model.awsworkbench.InstanceClass;
+import com.amazon.aws.workbench.model.awsworkbench.InstanceSize;
 import com.amazon.aws.workbench.model.awsworkbench.IntegrationBuilder_apigateway;
 import com.amazon.aws.workbench.model.awsworkbench.IntegrationOptionsBuilder_apigateway;
 import com.amazon.aws.workbench.model.awsworkbench.IntegrationResponseBuilder_apigateway;
@@ -76,6 +118,8 @@ import com.amazon.aws.workbench.model.awsworkbench.IntegrationType;
 import com.amazon.aws.workbench.model.awsworkbench.IotToKinesisFirehoseToS3Builder_iotkinesisfirehoses3;
 import com.amazon.aws.workbench.model.awsworkbench.IotToLambdaBuilder_iotlambda;
 import com.amazon.aws.workbench.model.awsworkbench.IotToLambdaToDynamoDBBuilder_iotlambdadynamodb;
+import com.amazon.aws.workbench.model.awsworkbench.IpAddressType;
+import com.amazon.aws.workbench.model.awsworkbench.IpcMode;
 import com.amazon.aws.workbench.model.awsworkbench.JsonSchemaBuilder_apigateway;
 import com.amazon.aws.workbench.model.awsworkbench.JsonSchemaType;
 import com.amazon.aws.workbench.model.awsworkbench.JsonSchemaVersion;
@@ -95,6 +139,7 @@ import com.amazon.aws.workbench.model.awsworkbench.LambdaToSqsBuilder_lambdasqs;
 import com.amazon.aws.workbench.model.awsworkbench.LambdaToStepFunctionBuilder_lambdastepfunction;
 import com.amazon.aws.workbench.model.awsworkbench.LayerVersionBuilder_lambda;
 import com.amazon.aws.workbench.model.awsworkbench.LifecycleRuleBuilder_s3;
+import com.amazon.aws.workbench.model.awsworkbench.LogGroupBuilder_logs;
 import com.amazon.aws.workbench.model.awsworkbench.LoggingConfigurationBuilder_cloudfront;
 import com.amazon.aws.workbench.model.awsworkbench.ManagedPolicyBuilder_iam;
 import com.amazon.aws.workbench.model.awsworkbench.MethodDeploymentOptionsBuilder_apigateway;
@@ -104,7 +149,16 @@ import com.amazon.aws.workbench.model.awsworkbench.MethodResponseBuilder_apigate
 import com.amazon.aws.workbench.model.awsworkbench.Mfa;
 import com.amazon.aws.workbench.model.awsworkbench.MfaSecondFactorBuilder_cognito;
 import com.amazon.aws.workbench.model.awsworkbench.ModelBuilder_apigateway;
+import com.amazon.aws.workbench.model.awsworkbench.NamespaceType;
+import com.amazon.aws.workbench.model.awsworkbench.NetworkLoadBalancedEc2ServiceBuilder_patterns;
+import com.amazon.aws.workbench.model.awsworkbench.NetworkLoadBalancedFargateServiceBuilder_patterns;
+import com.amazon.aws.workbench.model.awsworkbench.NetworkLoadBalancedTaskImageOptionsBuilder_patterns;
+import com.amazon.aws.workbench.model.awsworkbench.NetworkLoadBalancedTaskImagePropsBuilder_patterns;
 import com.amazon.aws.workbench.model.awsworkbench.NetworkLoadBalancerBuilder_elasticloadbalancingv2;
+import com.amazon.aws.workbench.model.awsworkbench.NetworkMode;
+import com.amazon.aws.workbench.model.awsworkbench.NetworkMultipleTargetGroupsEc2ServiceBuilder_patterns;
+import com.amazon.aws.workbench.model.awsworkbench.NetworkMultipleTargetGroupsFargateServiceBuilder_patterns;
+import com.amazon.aws.workbench.model.awsworkbench.NetworkTargetPropsBuilder_patterns;
 import com.amazon.aws.workbench.model.awsworkbench.NoncurrentVersionTransitionBuilder_s3;
 import com.amazon.aws.workbench.model.awsworkbench.OAuthFlowsBuilder_cognito;
 import com.amazon.aws.workbench.model.awsworkbench.OAuthSettingsBuilder_cognito;
@@ -113,11 +167,18 @@ import com.amazon.aws.workbench.model.awsworkbench.OriginProtocolPolicy;
 import com.amazon.aws.workbench.model.awsworkbench.OriginSslPolicy;
 import com.amazon.aws.workbench.model.awsworkbench.PassthroughBehavior;
 import com.amazon.aws.workbench.model.awsworkbench.PasswordPolicyBuilder_cognito;
+import com.amazon.aws.workbench.model.awsworkbench.PidMode;
 import com.amazon.aws.workbench.model.awsworkbench.PolicyDocumentBuilder_iam;
 import com.amazon.aws.workbench.model.awsworkbench.PolicyStatementBuilder_iam;
 import com.amazon.aws.workbench.model.awsworkbench.PriceClass;
+import com.amazon.aws.workbench.model.awsworkbench.PrivateDnsNamespaceBuilder_servicediscovery;
+import com.amazon.aws.workbench.model.awsworkbench.PropagatedTagSource;
+import com.amazon.aws.workbench.model.awsworkbench.Protocol;
+import com.amazon.aws.workbench.model.awsworkbench.PublicDnsNamespaceBuilder_servicediscovery;
 import com.amazon.aws.workbench.model.awsworkbench.QueueBuilder_sqs;
 import com.amazon.aws.workbench.model.awsworkbench.QueueEncryption;
+import com.amazon.aws.workbench.model.awsworkbench.QueueProcessingEc2ServiceBuilder_patterns;
+import com.amazon.aws.workbench.model.awsworkbench.QueueProcessingFargateServiceBuilder_patterns;
 import com.amazon.aws.workbench.model.awsworkbench.QueuePropsBuilder_sqs;
 import com.amazon.aws.workbench.model.awsworkbench.RedirectProtocol;
 import com.amazon.aws.workbench.model.awsworkbench.RedirectTargetBuilder_s3;
@@ -129,12 +190,25 @@ import com.amazon.aws.workbench.model.awsworkbench.RequiredAttributesBuilder_cog
 import com.amazon.aws.workbench.model.awsworkbench.RestApiPropsBuilder_apigateway;
 import com.amazon.aws.workbench.model.awsworkbench.RetentionDays;
 import com.amazon.aws.workbench.model.awsworkbench.RoleBuilder_iam;
+import com.amazon.aws.workbench.model.awsworkbench.RollingUpdateConfigurationBuilder_autoscaling;
 import com.amazon.aws.workbench.model.awsworkbench.RoutingRuleBuilder_s3;
 import com.amazon.aws.workbench.model.awsworkbench.RoutingRuleConditionBuilder_s3;
+import com.amazon.aws.workbench.model.awsworkbench.RulePropsBuilder_events;
 import com.amazon.aws.workbench.model.awsworkbench.S3OriginConfigBuilder_cloudfront;
 import com.amazon.aws.workbench.model.awsworkbench.S3ToLambdaBuilder_s3lambda;
 import com.amazon.aws.workbench.model.awsworkbench.S3ToStepFunctionBuilder_s3stepfunction;
 import com.amazon.aws.workbench.model.awsworkbench.SSLMethod;
+import com.amazon.aws.workbench.model.awsworkbench.ScalingIntervalBuilder_applicationautoscaling;
+import com.amazon.aws.workbench.model.awsworkbench.ScalingProcess;
+import com.amazon.aws.workbench.model.awsworkbench.ScheduledEc2TaskBuilder_patterns;
+import com.amazon.aws.workbench.model.awsworkbench.ScheduledEc2TaskDefinitionOptionsBuilder_patterns;
+import com.amazon.aws.workbench.model.awsworkbench.ScheduledEc2TaskImageOptionsBuilder_patterns;
+import com.amazon.aws.workbench.model.awsworkbench.ScheduledFargateTaskBuilder_patterns;
+import com.amazon.aws.workbench.model.awsworkbench.ScheduledFargateTaskDefinitionOptionsBuilder_patterns;
+import com.amazon.aws.workbench.model.awsworkbench.ScheduledFargateTaskImageOptionsBuilder_patterns;
+import com.amazon.aws.workbench.model.awsworkbench.Scope;
+import com.amazon.aws.workbench.model.awsworkbench.SecretBuilder_secretsmanager;
+import com.amazon.aws.workbench.model.awsworkbench.SecretStringGeneratorBuilder_secretsmanager;
 import com.amazon.aws.workbench.model.awsworkbench.SecurityGroupBuilder_ec2;
 import com.amazon.aws.workbench.model.awsworkbench.SecurityPolicy;
 import com.amazon.aws.workbench.model.awsworkbench.SecurityPolicyProtocol;
@@ -145,15 +219,20 @@ import com.amazon.aws.workbench.model.awsworkbench.SourceConfigurationBuilder_cl
 import com.amazon.aws.workbench.model.awsworkbench.SqsToLambdaBuilder_sqslambda;
 import com.amazon.aws.workbench.model.awsworkbench.StackBuilder_core;
 import com.amazon.aws.workbench.model.awsworkbench.StageOptionsBuilder_apigateway;
+import com.amazon.aws.workbench.model.awsworkbench.StateMachinePropsBuilder_stepfunctions;
+import com.amazon.aws.workbench.model.awsworkbench.StateMachineType;
 import com.amazon.aws.workbench.model.awsworkbench.StreamViewType;
 import com.amazon.aws.workbench.model.awsworkbench.SubnetBuilder_ec2;
 import com.amazon.aws.workbench.model.awsworkbench.SubnetSelectionBuilder_ec2;
 import com.amazon.aws.workbench.model.awsworkbench.SubnetType;
+import com.amazon.aws.workbench.model.awsworkbench.TableBuilder_dynamodb;
 import com.amazon.aws.workbench.model.awsworkbench.TableEncryption;
 import com.amazon.aws.workbench.model.awsworkbench.TablePropsBuilder_dynamodb;
 import com.amazon.aws.workbench.model.awsworkbench.TokenAuthorizerBuilder_apigateway;
+import com.amazon.aws.workbench.model.awsworkbench.TopicPropsBuilder_sns;
 import com.amazon.aws.workbench.model.awsworkbench.Tracing;
 import com.amazon.aws.workbench.model.awsworkbench.TransitionBuilder_s3;
+import com.amazon.aws.workbench.model.awsworkbench.UpdateType;
 import com.amazon.aws.workbench.model.awsworkbench.UserBuilder_iam;
 import com.amazon.aws.workbench.model.awsworkbench.UserInvitationConfigBuilder_cognito;
 import com.amazon.aws.workbench.model.awsworkbench.UserPoolBuilder_cognito;
@@ -166,6 +245,7 @@ import com.amazon.aws.workbench.model.awsworkbench.VerificationEmailStyle;
 import com.amazon.aws.workbench.model.awsworkbench.VersionBuilder_lambda;
 import com.amazon.aws.workbench.model.awsworkbench.VersionOptionsBuilder_lambda;
 import com.amazon.aws.workbench.model.awsworkbench.ViewerProtocolPolicy;
+import com.amazon.aws.workbench.model.awsworkbench.VolumeBuilder_ecs;
 import com.amazon.aws.workbench.model.awsworkbench.VpcBuilder_ec2;
 import com.amazon.aws.workbench.model.awsworkbench.VpcLinkBuilder_apigateway;
 
@@ -875,7 +955,42 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EClass eventBusBuilder_eventsEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass eventPatternBuilder_eventsEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass rulePropsBuilder_eventsEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass cronOptionsBuilder_eventsEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EClass eventsRuleToLambdaBuilder_eventsrulelambdaEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass stateMachinePropsBuilder_stepfunctionsEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -931,6 +1046,13 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EClass tableBuilder_dynamodbEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EClass lambdaToDynamoDBBuilder_lambdadynamodbEClass = null;
 
 	/**
@@ -946,6 +1068,13 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	 * @generated
 	 */
 	private EClass lambdaToS3Builder_lambdas3EClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass topicPropsBuilder_snsEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1051,6 +1180,370 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	 * @generated
 	 */
 	private EClass tablePropsBuilder_dynamodbEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass privateDnsNamespaceBuilder_servicediscoveryEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass publicDnsNamespaceBuilder_servicediscoveryEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass httpNamespaceBuilder_servicediscoveryEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass cloudMapOptionsBuilder_ecsEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass blockDeviceBuilder_autoscalingEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass healthCheckBuilder_ecsEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass amazonLinuxImageBuilder_ec2EClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass rollingUpdateConfigurationBuilder_autoscalingEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass addCapacityOptionsBuilder_ecsEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass cloudMapNamespaceOptionsBuilder_ecsEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass clusterBuilder_ecsEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass applicationLoadBalancerBuilder_elasticloadbalancingv2EClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass dockerImageAssetBuilder_assetsEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass assetImageBuilder_ecsEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass secretStringGeneratorBuilder_secretsmanagerEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass secretBuilder_secretsmanagerEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass awsLogDriverBuilder_ecsEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass logGroupBuilder_logsEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass awsLogDriverPropsBuilder_ecsEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass applicationLoadBalancedTaskImageOptionsBuilder_patternsEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass appMeshProxyConfigurationPropsBuilder_ecsEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass appMeshProxyConfigurationBuilder_ecsEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass hostBuilder_ecsEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass dockerVolumeConfigurationBuilder_ecsEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass volumeBuilder_ecsEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass ec2TaskDefinitionBuilder_ecsEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass applicationLoadBalancedEc2ServiceBuilder_patternsEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass fargateTaskDefinitionBuilder_ecsEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass applicationLoadBalancedFargateServiceBuilder_patternsEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass applicationMultipleTargetGroupsFargateServiceBuilder_patternsEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass applicationListenerPropsBuilder_patternsEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass applicationLoadBalancerPropsBuilder_patternsEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass applicationTargetPropsBuilder_patternsEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass applicationLoadBalancedTaskImagePropsBuilder_patternsEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass applicationMultipleTargetGroupsEc2ServiceBuilder_patternsEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass networkLoadBalancedTaskImageOptionsBuilder_patternsEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass networkLoadBalancedFargateServiceBuilder_patternsEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass networkLoadBalancedEc2ServiceBuilder_patternsEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass networkMultipleTargetGroupsEc2ServiceBuilder_patternsEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass networkTargetPropsBuilder_patternsEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass networkLoadBalancedTaskImagePropsBuilder_patternsEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass networkMultipleTargetGroupsFargateServiceBuilder_patternsEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass scalingIntervalBuilder_applicationautoscalingEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass queueProcessingFargateServiceBuilder_patternsEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass cronOptionsBuilder_applicationautoscalingEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass scheduledEc2TaskDefinitionOptionsBuilder_patternsEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass scheduledEc2TaskImageOptionsBuilder_patternsEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass scheduledEc2TaskBuilder_patternsEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass queueProcessingEc2ServiceBuilder_patternsEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass scheduledFargateTaskDefinitionOptionsBuilder_patternsEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass scheduledFargateTaskImageOptionsBuilder_patternsEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass scheduledFargateTaskBuilder_patternsEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1295,6 +1788,13 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EEnum stateMachineTypeEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EEnum effectEEnum = null;
 
 	/**
@@ -1331,6 +1831,146 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	 * @generated
 	 */
 	private EEnum billingModeEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum dnsRecordTypeEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum instanceClassEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum instanceSizeEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum amazonLinuxEditionEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum amazonLinuxGenerationEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum amazonLinuxStorageEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum amazonLinuxVirtEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum scalingProcessEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum updateTypeEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum namespaceTypeEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum ipAddressTypeEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum propagatedTagSourceEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum applicationProtocolEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum followModeEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum scopeEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum networkModeEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum ipcModeEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum pidModeEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum fargatePlatformVersionEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum protocolEEnum = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -13100,6 +13740,446 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	 * @generated
 	 */
 	@Override
+	public EClass getEventBusBuilder_events() {
+		return eventBusBuilder_eventsEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getEventBusBuilder_events_EventBusName_java_lang_String_() {
+		return (EAttribute) eventBusBuilder_eventsEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getEventBusBuilder_events_EventSourceName_java_lang_String_() {
+		return (EAttribute) eventBusBuilder_eventsEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getEventBusBuilder_events_GeneratedClassName() {
+		return (EAttribute) eventBusBuilder_eventsEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getEventBusBuilder_events_VarName() {
+		return (EAttribute) eventBusBuilder_eventsEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getEventBusBuilder_events_Identifier() {
+		return (EAttribute) eventBusBuilder_eventsEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getEventBusBuilder_events_AdditionalCode() {
+		return (EAttribute) eventBusBuilder_eventsEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getEventPatternBuilder_events() {
+		return eventPatternBuilder_eventsEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getEventPatternBuilder_events_Account_java_lang_String_AsList() {
+		return (EAttribute) eventPatternBuilder_eventsEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getEventPatternBuilder_events_Detail_java_lang_String__java_lang_Object_AsMap() {
+		return (EAttribute) eventPatternBuilder_eventsEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getEventPatternBuilder_events_DetailType_java_lang_String_AsList() {
+		return (EAttribute) eventPatternBuilder_eventsEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getEventPatternBuilder_events_Id_java_lang_String_AsList() {
+		return (EAttribute) eventPatternBuilder_eventsEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getEventPatternBuilder_events_Region_java_lang_String_AsList() {
+		return (EAttribute) eventPatternBuilder_eventsEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getEventPatternBuilder_events_Resources_java_lang_String_AsList() {
+		return (EAttribute) eventPatternBuilder_eventsEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getEventPatternBuilder_events_Source_java_lang_String_AsList() {
+		return (EAttribute) eventPatternBuilder_eventsEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getEventPatternBuilder_events_Time_java_lang_String_AsList() {
+		return (EAttribute) eventPatternBuilder_eventsEClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getEventPatternBuilder_events_Version_java_lang_String_AsList() {
+		return (EAttribute) eventPatternBuilder_eventsEClass.getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getEventPatternBuilder_events_GeneratedClassName() {
+		return (EAttribute) eventPatternBuilder_eventsEClass.getEStructuralFeatures().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getEventPatternBuilder_events_VarName() {
+		return (EAttribute) eventPatternBuilder_eventsEClass.getEStructuralFeatures().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getEventPatternBuilder_events_Identifier() {
+		return (EAttribute) eventPatternBuilder_eventsEClass.getEStructuralFeatures().get(11);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getEventPatternBuilder_events_AdditionalCode() {
+		return (EAttribute) eventPatternBuilder_eventsEClass.getEStructuralFeatures().get(12);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getRulePropsBuilder_events() {
+		return rulePropsBuilder_eventsEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getRulePropsBuilder_events_Description_java_lang_String_() {
+		return (EAttribute) rulePropsBuilder_eventsEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getRulePropsBuilder_events_Enabled_java_lang_Boolean_() {
+		return (EAttribute) rulePropsBuilder_eventsEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getRulePropsBuilder_events_EventBusWithIEventBus_software_amazon_awscdk_services_events_IEventBus_AsReference() {
+		return (EAttribute) rulePropsBuilder_eventsEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getRulePropsBuilder_events_EventPatternWithEventPattern_software_amazon_awscdk_services_events_EventPattern_AsReference() {
+		return (EAttribute) rulePropsBuilder_eventsEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getRulePropsBuilder_events_RuleName_java_lang_String_() {
+		return (EAttribute) rulePropsBuilder_eventsEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getRulePropsBuilder_events_ScheduleWithSchedule_software_amazon_awscdk_services_events_Schedule_AsReference() {
+		return (EAttribute) rulePropsBuilder_eventsEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getRulePropsBuilder_events_Targets_software_amazon_awscdk_services_events_IRuleTarget_AsList() {
+		return (EAttribute) rulePropsBuilder_eventsEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getRulePropsBuilder_events_GeneratedClassName() {
+		return (EAttribute) rulePropsBuilder_eventsEClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getRulePropsBuilder_events_VarName() {
+		return (EAttribute) rulePropsBuilder_eventsEClass.getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getRulePropsBuilder_events_Identifier() {
+		return (EAttribute) rulePropsBuilder_eventsEClass.getEStructuralFeatures().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getRulePropsBuilder_events_AdditionalCode() {
+		return (EAttribute) rulePropsBuilder_eventsEClass.getEStructuralFeatures().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getCronOptionsBuilder_events() {
+		return cronOptionsBuilder_eventsEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCronOptionsBuilder_events_Day_java_lang_String_() {
+		return (EAttribute) cronOptionsBuilder_eventsEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCronOptionsBuilder_events_Hour_java_lang_String_() {
+		return (EAttribute) cronOptionsBuilder_eventsEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCronOptionsBuilder_events_Minute_java_lang_String_() {
+		return (EAttribute) cronOptionsBuilder_eventsEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCronOptionsBuilder_events_Month_java_lang_String_() {
+		return (EAttribute) cronOptionsBuilder_eventsEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCronOptionsBuilder_events_WeekDay_java_lang_String_() {
+		return (EAttribute) cronOptionsBuilder_eventsEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCronOptionsBuilder_events_Year_java_lang_String_() {
+		return (EAttribute) cronOptionsBuilder_eventsEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCronOptionsBuilder_events_GeneratedClassName() {
+		return (EAttribute) cronOptionsBuilder_eventsEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCronOptionsBuilder_events_VarName() {
+		return (EAttribute) cronOptionsBuilder_eventsEClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCronOptionsBuilder_events_Identifier() {
+		return (EAttribute) cronOptionsBuilder_eventsEClass.getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCronOptionsBuilder_events_AdditionalCode() {
+		return (EAttribute) cronOptionsBuilder_eventsEClass.getEStructuralFeatures().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getEventsRuleToLambdaBuilder_eventsrulelambda() {
 		return eventsRuleToLambdaBuilder_eventsrulelambdaEClass;
 	}
@@ -13172,6 +14252,116 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	@Override
 	public EAttribute getEventsRuleToLambdaBuilder_eventsrulelambda_AdditionalCode() {
 		return (EAttribute) eventsRuleToLambdaBuilder_eventsrulelambdaEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getStateMachinePropsBuilder_stepfunctions() {
+		return stateMachinePropsBuilder_stepfunctionsEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getStateMachinePropsBuilder_stepfunctions_DefinitionWithIChainable_software_amazon_awscdk_services_stepfunctions_IChainable_AsReference() {
+		return (EAttribute) stateMachinePropsBuilder_stepfunctionsEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getStateMachinePropsBuilder_stepfunctions_LogsWithLogOptions_software_amazon_awscdk_services_stepfunctions_LogOptions_AsReference() {
+		return (EAttribute) stateMachinePropsBuilder_stepfunctionsEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getStateMachinePropsBuilder_stepfunctions_RoleWithIRole_software_amazon_awscdk_services_iam_IRole_AsReference() {
+		return (EAttribute) stateMachinePropsBuilder_stepfunctionsEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getStateMachinePropsBuilder_stepfunctions_StateMachineName_java_lang_String_() {
+		return (EAttribute) stateMachinePropsBuilder_stepfunctionsEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getStateMachinePropsBuilder_stepfunctions_StateMachineType_software_amazon_awscdk_services_stepfunctions_StateMachineType_() {
+		return (EAttribute) stateMachinePropsBuilder_stepfunctionsEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getStateMachinePropsBuilder_stepfunctions_TimeoutWithDuration_software_amazon_awscdk_core_Duration_AsReference() {
+		return (EAttribute) stateMachinePropsBuilder_stepfunctionsEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getStateMachinePropsBuilder_stepfunctions_GeneratedClassName() {
+		return (EAttribute) stateMachinePropsBuilder_stepfunctionsEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getStateMachinePropsBuilder_stepfunctions_VarName() {
+		return (EAttribute) stateMachinePropsBuilder_stepfunctionsEClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getStateMachinePropsBuilder_stepfunctions_Identifier() {
+		return (EAttribute) stateMachinePropsBuilder_stepfunctionsEClass.getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getStateMachinePropsBuilder_stepfunctions_AdditionalCode() {
+		return (EAttribute) stateMachinePropsBuilder_stepfunctionsEClass.getEStructuralFeatures().get(9);
 	}
 
 	/**
@@ -13794,6 +14984,196 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	 * @generated
 	 */
 	@Override
+	public EClass getTableBuilder_dynamodb() {
+		return tableBuilder_dynamodbEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getTableBuilder_dynamodb_PartitionKeyWithAttribute_software_amazon_awscdk_services_dynamodb_Attribute_AsReference() {
+		return (EAttribute) tableBuilder_dynamodbEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getTableBuilder_dynamodb_BillingMode_software_amazon_awscdk_services_dynamodb_BillingMode_() {
+		return (EAttribute) tableBuilder_dynamodbEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getTableBuilder_dynamodb_Encryption_software_amazon_awscdk_services_dynamodb_TableEncryption_() {
+		return (EAttribute) tableBuilder_dynamodbEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getTableBuilder_dynamodb_EncryptionKeyWithIKey_software_amazon_awscdk_services_kms_IKey_AsReference() {
+		return (EAttribute) tableBuilder_dynamodbEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getTableBuilder_dynamodb_PointInTimeRecovery_java_lang_Boolean_() {
+		return (EAttribute) tableBuilder_dynamodbEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getTableBuilder_dynamodb_ReadCapacity_java_lang_Number_() {
+		return (EAttribute) tableBuilder_dynamodbEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getTableBuilder_dynamodb_RemovalPolicy_software_amazon_awscdk_core_RemovalPolicy_() {
+		return (EAttribute) tableBuilder_dynamodbEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getTableBuilder_dynamodb_ReplicationRegions_java_lang_String_AsList() {
+		return (EAttribute) tableBuilder_dynamodbEClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getTableBuilder_dynamodb_ServerSideEncryption_java_lang_Boolean_() {
+		return (EAttribute) tableBuilder_dynamodbEClass.getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getTableBuilder_dynamodb_SortKeyWithAttribute_software_amazon_awscdk_services_dynamodb_Attribute_AsReference() {
+		return (EAttribute) tableBuilder_dynamodbEClass.getEStructuralFeatures().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getTableBuilder_dynamodb_Stream_software_amazon_awscdk_services_dynamodb_StreamViewType_() {
+		return (EAttribute) tableBuilder_dynamodbEClass.getEStructuralFeatures().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getTableBuilder_dynamodb_TimeToLiveAttribute_java_lang_String_() {
+		return (EAttribute) tableBuilder_dynamodbEClass.getEStructuralFeatures().get(11);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getTableBuilder_dynamodb_WriteCapacity_java_lang_Number_() {
+		return (EAttribute) tableBuilder_dynamodbEClass.getEStructuralFeatures().get(12);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getTableBuilder_dynamodb_TableName_java_lang_String_() {
+		return (EAttribute) tableBuilder_dynamodbEClass.getEStructuralFeatures().get(13);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getTableBuilder_dynamodb_GeneratedClassName() {
+		return (EAttribute) tableBuilder_dynamodbEClass.getEStructuralFeatures().get(14);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getTableBuilder_dynamodb_VarName() {
+		return (EAttribute) tableBuilder_dynamodbEClass.getEStructuralFeatures().get(15);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getTableBuilder_dynamodb_Identifier() {
+		return (EAttribute) tableBuilder_dynamodbEClass.getEStructuralFeatures().get(16);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getTableBuilder_dynamodb_AdditionalCode() {
+		return (EAttribute) tableBuilder_dynamodbEClass.getEStructuralFeatures().get(17);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getLambdaToDynamoDBBuilder_lambdadynamodb() {
 		return lambdaToDynamoDBBuilder_lambdadynamodbEClass;
 	}
@@ -14084,6 +15464,86 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	@Override
 	public EAttribute getLambdaToS3Builder_lambdas3_AdditionalCode() {
 		return (EAttribute) lambdaToS3Builder_lambdas3EClass.getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getTopicPropsBuilder_sns() {
+		return topicPropsBuilder_snsEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getTopicPropsBuilder_sns_DisplayName_java_lang_String_() {
+		return (EAttribute) topicPropsBuilder_snsEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getTopicPropsBuilder_sns_MasterKeyWithIKey_software_amazon_awscdk_services_kms_IKey_AsReference() {
+		return (EAttribute) topicPropsBuilder_snsEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getTopicPropsBuilder_sns_TopicName_java_lang_String_() {
+		return (EAttribute) topicPropsBuilder_snsEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getTopicPropsBuilder_sns_GeneratedClassName() {
+		return (EAttribute) topicPropsBuilder_snsEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getTopicPropsBuilder_sns_VarName() {
+		return (EAttribute) topicPropsBuilder_snsEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getTopicPropsBuilder_sns_Identifier() {
+		return (EAttribute) topicPropsBuilder_snsEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getTopicPropsBuilder_sns_AdditionalCode() {
+		return (EAttribute) topicPropsBuilder_snsEClass.getEStructuralFeatures().get(6);
 	}
 
 	/**
@@ -15762,6 +17222,7102 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	 * @generated
 	 */
 	@Override
+	public EClass getPrivateDnsNamespaceBuilder_servicediscovery() {
+		return privateDnsNamespaceBuilder_servicediscoveryEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getPrivateDnsNamespaceBuilder_servicediscovery_Name_java_lang_String_() {
+		return (EAttribute) privateDnsNamespaceBuilder_servicediscoveryEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getPrivateDnsNamespaceBuilder_servicediscovery_Description_java_lang_String_() {
+		return (EAttribute) privateDnsNamespaceBuilder_servicediscoveryEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getPrivateDnsNamespaceBuilder_servicediscovery_VpcWithIVpc_software_amazon_awscdk_services_ec2_IVpc_AsReference() {
+		return (EAttribute) privateDnsNamespaceBuilder_servicediscoveryEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getPrivateDnsNamespaceBuilder_servicediscovery_GeneratedClassName() {
+		return (EAttribute) privateDnsNamespaceBuilder_servicediscoveryEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getPrivateDnsNamespaceBuilder_servicediscovery_VarName() {
+		return (EAttribute) privateDnsNamespaceBuilder_servicediscoveryEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getPrivateDnsNamespaceBuilder_servicediscovery_Identifier() {
+		return (EAttribute) privateDnsNamespaceBuilder_servicediscoveryEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getPrivateDnsNamespaceBuilder_servicediscovery_AdditionalCode() {
+		return (EAttribute) privateDnsNamespaceBuilder_servicediscoveryEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getPublicDnsNamespaceBuilder_servicediscovery() {
+		return publicDnsNamespaceBuilder_servicediscoveryEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getPublicDnsNamespaceBuilder_servicediscovery_Name_java_lang_String_() {
+		return (EAttribute) publicDnsNamespaceBuilder_servicediscoveryEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getPublicDnsNamespaceBuilder_servicediscovery_Description_java_lang_String_() {
+		return (EAttribute) publicDnsNamespaceBuilder_servicediscoveryEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getPublicDnsNamespaceBuilder_servicediscovery_GeneratedClassName() {
+		return (EAttribute) publicDnsNamespaceBuilder_servicediscoveryEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getPublicDnsNamespaceBuilder_servicediscovery_VarName() {
+		return (EAttribute) publicDnsNamespaceBuilder_servicediscoveryEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getPublicDnsNamespaceBuilder_servicediscovery_Identifier() {
+		return (EAttribute) publicDnsNamespaceBuilder_servicediscoveryEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getPublicDnsNamespaceBuilder_servicediscovery_AdditionalCode() {
+		return (EAttribute) publicDnsNamespaceBuilder_servicediscoveryEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getHttpNamespaceBuilder_servicediscovery() {
+		return httpNamespaceBuilder_servicediscoveryEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getHttpNamespaceBuilder_servicediscovery_Name_java_lang_String_() {
+		return (EAttribute) httpNamespaceBuilder_servicediscoveryEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getHttpNamespaceBuilder_servicediscovery_Description_java_lang_String_() {
+		return (EAttribute) httpNamespaceBuilder_servicediscoveryEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getHttpNamespaceBuilder_servicediscovery_GeneratedClassName() {
+		return (EAttribute) httpNamespaceBuilder_servicediscoveryEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getHttpNamespaceBuilder_servicediscovery_VarName() {
+		return (EAttribute) httpNamespaceBuilder_servicediscoveryEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getHttpNamespaceBuilder_servicediscovery_Identifier() {
+		return (EAttribute) httpNamespaceBuilder_servicediscoveryEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getHttpNamespaceBuilder_servicediscovery_AdditionalCode() {
+		return (EAttribute) httpNamespaceBuilder_servicediscoveryEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getCloudMapOptionsBuilder_ecs() {
+		return cloudMapOptionsBuilder_ecsEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCloudMapOptionsBuilder_ecs_CloudMapNamespaceWithINamespace_software_amazon_awscdk_services_servicediscovery_INamespace_AsReference() {
+		return (EAttribute) cloudMapOptionsBuilder_ecsEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCloudMapOptionsBuilder_ecs_DnsRecordType_software_amazon_awscdk_services_servicediscovery_DnsRecordType_() {
+		return (EAttribute) cloudMapOptionsBuilder_ecsEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCloudMapOptionsBuilder_ecs_DnsTtlWithDuration_software_amazon_awscdk_core_Duration_AsReference() {
+		return (EAttribute) cloudMapOptionsBuilder_ecsEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCloudMapOptionsBuilder_ecs_FailureThreshold_java_lang_Number_() {
+		return (EAttribute) cloudMapOptionsBuilder_ecsEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCloudMapOptionsBuilder_ecs_Name_java_lang_String_() {
+		return (EAttribute) cloudMapOptionsBuilder_ecsEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCloudMapOptionsBuilder_ecs_GeneratedClassName() {
+		return (EAttribute) cloudMapOptionsBuilder_ecsEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCloudMapOptionsBuilder_ecs_VarName() {
+		return (EAttribute) cloudMapOptionsBuilder_ecsEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCloudMapOptionsBuilder_ecs_Identifier() {
+		return (EAttribute) cloudMapOptionsBuilder_ecsEClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCloudMapOptionsBuilder_ecs_AdditionalCode() {
+		return (EAttribute) cloudMapOptionsBuilder_ecsEClass.getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getBlockDeviceBuilder_autoscaling() {
+		return blockDeviceBuilder_autoscalingEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getBlockDeviceBuilder_autoscaling_DeviceName_java_lang_String_() {
+		return (EAttribute) blockDeviceBuilder_autoscalingEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getBlockDeviceBuilder_autoscaling_VolumeWithBlockDeviceVolume_software_amazon_awscdk_services_autoscaling_BlockDeviceVolume_AsReference() {
+		return (EAttribute) blockDeviceBuilder_autoscalingEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getBlockDeviceBuilder_autoscaling_MappingEnabled_java_lang_Boolean_() {
+		return (EAttribute) blockDeviceBuilder_autoscalingEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getBlockDeviceBuilder_autoscaling_GeneratedClassName() {
+		return (EAttribute) blockDeviceBuilder_autoscalingEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getBlockDeviceBuilder_autoscaling_VarName() {
+		return (EAttribute) blockDeviceBuilder_autoscalingEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getBlockDeviceBuilder_autoscaling_Identifier() {
+		return (EAttribute) blockDeviceBuilder_autoscalingEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getBlockDeviceBuilder_autoscaling_AdditionalCode() {
+		return (EAttribute) blockDeviceBuilder_autoscalingEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getHealthCheckBuilder_ecs() {
+		return healthCheckBuilder_ecsEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getHealthCheckBuilder_ecs_Command_java_lang_String_AsList() {
+		return (EAttribute) healthCheckBuilder_ecsEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getHealthCheckBuilder_ecs_IntervalWithDuration_software_amazon_awscdk_core_Duration_AsReference() {
+		return (EAttribute) healthCheckBuilder_ecsEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getHealthCheckBuilder_ecs_Retries_java_lang_Number_() {
+		return (EAttribute) healthCheckBuilder_ecsEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getHealthCheckBuilder_ecs_StartPeriodWithDuration_software_amazon_awscdk_core_Duration_AsReference() {
+		return (EAttribute) healthCheckBuilder_ecsEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getHealthCheckBuilder_ecs_TimeoutWithDuration_software_amazon_awscdk_core_Duration_AsReference() {
+		return (EAttribute) healthCheckBuilder_ecsEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getHealthCheckBuilder_ecs_GeneratedClassName() {
+		return (EAttribute) healthCheckBuilder_ecsEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getHealthCheckBuilder_ecs_VarName() {
+		return (EAttribute) healthCheckBuilder_ecsEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getHealthCheckBuilder_ecs_Identifier() {
+		return (EAttribute) healthCheckBuilder_ecsEClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getHealthCheckBuilder_ecs_AdditionalCode() {
+		return (EAttribute) healthCheckBuilder_ecsEClass.getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getAmazonLinuxImageBuilder_ec2() {
+		return amazonLinuxImageBuilder_ec2EClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAmazonLinuxImageBuilder_ec2_Edition_software_amazon_awscdk_services_ec2_AmazonLinuxEdition_() {
+		return (EAttribute) amazonLinuxImageBuilder_ec2EClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAmazonLinuxImageBuilder_ec2_Generation_software_amazon_awscdk_services_ec2_AmazonLinuxGeneration_() {
+		return (EAttribute) amazonLinuxImageBuilder_ec2EClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAmazonLinuxImageBuilder_ec2_Storage_software_amazon_awscdk_services_ec2_AmazonLinuxStorage_() {
+		return (EAttribute) amazonLinuxImageBuilder_ec2EClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAmazonLinuxImageBuilder_ec2_UserDataWithUserData_software_amazon_awscdk_services_ec2_UserData_AsReference() {
+		return (EAttribute) amazonLinuxImageBuilder_ec2EClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAmazonLinuxImageBuilder_ec2_Virtualization_software_amazon_awscdk_services_ec2_AmazonLinuxVirt_() {
+		return (EAttribute) amazonLinuxImageBuilder_ec2EClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAmazonLinuxImageBuilder_ec2_GeneratedClassName() {
+		return (EAttribute) amazonLinuxImageBuilder_ec2EClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAmazonLinuxImageBuilder_ec2_VarName() {
+		return (EAttribute) amazonLinuxImageBuilder_ec2EClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAmazonLinuxImageBuilder_ec2_Identifier() {
+		return (EAttribute) amazonLinuxImageBuilder_ec2EClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAmazonLinuxImageBuilder_ec2_AdditionalCode() {
+		return (EAttribute) amazonLinuxImageBuilder_ec2EClass.getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getRollingUpdateConfigurationBuilder_autoscaling() {
+		return rollingUpdateConfigurationBuilder_autoscalingEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getRollingUpdateConfigurationBuilder_autoscaling_MaxBatchSize_java_lang_Number_() {
+		return (EAttribute) rollingUpdateConfigurationBuilder_autoscalingEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getRollingUpdateConfigurationBuilder_autoscaling_MinInstancesInService_java_lang_Number_() {
+		return (EAttribute) rollingUpdateConfigurationBuilder_autoscalingEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getRollingUpdateConfigurationBuilder_autoscaling_MinSuccessfulInstancesPercent_java_lang_Number_() {
+		return (EAttribute) rollingUpdateConfigurationBuilder_autoscalingEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getRollingUpdateConfigurationBuilder_autoscaling_PauseTimeWithDuration_software_amazon_awscdk_core_Duration_AsReference() {
+		return (EAttribute) rollingUpdateConfigurationBuilder_autoscalingEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getRollingUpdateConfigurationBuilder_autoscaling_SuspendProcesses_software_amazon_awscdk_services_autoscaling_ScalingProcess_AsList() {
+		return (EAttribute) rollingUpdateConfigurationBuilder_autoscalingEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getRollingUpdateConfigurationBuilder_autoscaling_WaitOnResourceSignals_java_lang_Boolean_() {
+		return (EAttribute) rollingUpdateConfigurationBuilder_autoscalingEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getRollingUpdateConfigurationBuilder_autoscaling_GeneratedClassName() {
+		return (EAttribute) rollingUpdateConfigurationBuilder_autoscalingEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getRollingUpdateConfigurationBuilder_autoscaling_VarName() {
+		return (EAttribute) rollingUpdateConfigurationBuilder_autoscalingEClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getRollingUpdateConfigurationBuilder_autoscaling_Identifier() {
+		return (EAttribute) rollingUpdateConfigurationBuilder_autoscalingEClass.getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getRollingUpdateConfigurationBuilder_autoscaling_AdditionalCode() {
+		return (EAttribute) rollingUpdateConfigurationBuilder_autoscalingEClass.getEStructuralFeatures().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getAddCapacityOptionsBuilder_ecs() {
+		return addCapacityOptionsBuilder_ecsEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAddCapacityOptionsBuilder_ecs_InstanceTypeWithInstanceType_software_amazon_awscdk_services_ec2_InstanceType_AsReference() {
+		return (EAttribute) addCapacityOptionsBuilder_ecsEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAddCapacityOptionsBuilder_ecs_MachineImageWithIMachineImage_software_amazon_awscdk_services_ec2_IMachineImage_AsReference() {
+		return (EAttribute) addCapacityOptionsBuilder_ecsEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAddCapacityOptionsBuilder_ecs_CanContainersAccessInstanceRole_java_lang_Boolean_() {
+		return (EAttribute) addCapacityOptionsBuilder_ecsEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAddCapacityOptionsBuilder_ecs_SpotInstanceDraining_java_lang_Boolean_() {
+		return (EAttribute) addCapacityOptionsBuilder_ecsEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAddCapacityOptionsBuilder_ecs_TaskDrainTimeWithDuration_software_amazon_awscdk_core_Duration_AsReference() {
+		return (EAttribute) addCapacityOptionsBuilder_ecsEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAddCapacityOptionsBuilder_ecs_AllowAllOutbound_java_lang_Boolean_() {
+		return (EAttribute) addCapacityOptionsBuilder_ecsEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAddCapacityOptionsBuilder_ecs_AssociatePublicIpAddress_java_lang_Boolean_() {
+		return (EAttribute) addCapacityOptionsBuilder_ecsEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAddCapacityOptionsBuilder_ecs_BlockDevices_software_amazon_awscdk_services_autoscaling_BlockDevice_AsList() {
+		return (EAttribute) addCapacityOptionsBuilder_ecsEClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAddCapacityOptionsBuilder_ecs_CooldownWithDuration_software_amazon_awscdk_core_Duration_AsReference() {
+		return (EAttribute) addCapacityOptionsBuilder_ecsEClass.getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAddCapacityOptionsBuilder_ecs_DesiredCapacity_java_lang_Number_() {
+		return (EAttribute) addCapacityOptionsBuilder_ecsEClass.getEStructuralFeatures().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAddCapacityOptionsBuilder_ecs_HealthCheckWithHealthCheck_software_amazon_awscdk_services_ecs_HealthCheck_AsReference() {
+		return (EAttribute) addCapacityOptionsBuilder_ecsEClass.getEStructuralFeatures().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAddCapacityOptionsBuilder_ecs_IgnoreUnmodifiedSizeProperties_java_lang_Boolean_() {
+		return (EAttribute) addCapacityOptionsBuilder_ecsEClass.getEStructuralFeatures().get(11);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAddCapacityOptionsBuilder_ecs_KeyName_java_lang_String_() {
+		return (EAttribute) addCapacityOptionsBuilder_ecsEClass.getEStructuralFeatures().get(12);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAddCapacityOptionsBuilder_ecs_MaxCapacity_java_lang_Number_() {
+		return (EAttribute) addCapacityOptionsBuilder_ecsEClass.getEStructuralFeatures().get(13);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAddCapacityOptionsBuilder_ecs_MaxInstanceLifetimeWithDuration_software_amazon_awscdk_core_Duration_AsReference() {
+		return (EAttribute) addCapacityOptionsBuilder_ecsEClass.getEStructuralFeatures().get(14);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAddCapacityOptionsBuilder_ecs_MinCapacity_java_lang_Number_() {
+		return (EAttribute) addCapacityOptionsBuilder_ecsEClass.getEStructuralFeatures().get(15);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAddCapacityOptionsBuilder_ecs_NotificationsTopicWithITopic_software_amazon_awscdk_services_sns_ITopic_AsReference() {
+		return (EAttribute) addCapacityOptionsBuilder_ecsEClass.getEStructuralFeatures().get(16);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAddCapacityOptionsBuilder_ecs_ReplacingUpdateMinSuccessfulInstancesPercent_java_lang_Number_() {
+		return (EAttribute) addCapacityOptionsBuilder_ecsEClass.getEStructuralFeatures().get(17);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAddCapacityOptionsBuilder_ecs_ResourceSignalCount_java_lang_Number_() {
+		return (EAttribute) addCapacityOptionsBuilder_ecsEClass.getEStructuralFeatures().get(18);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAddCapacityOptionsBuilder_ecs_ResourceSignalTimeoutWithDuration_software_amazon_awscdk_core_Duration_AsReference() {
+		return (EAttribute) addCapacityOptionsBuilder_ecsEClass.getEStructuralFeatures().get(19);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAddCapacityOptionsBuilder_ecs_RollingUpdateConfigurationWithRollingUpdateConfiguration_software_amazon_awscdk_services_autoscaling_RollingUpdateConfiguration_AsReference() {
+		return (EAttribute) addCapacityOptionsBuilder_ecsEClass.getEStructuralFeatures().get(20);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAddCapacityOptionsBuilder_ecs_SpotPrice_java_lang_String_() {
+		return (EAttribute) addCapacityOptionsBuilder_ecsEClass.getEStructuralFeatures().get(21);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAddCapacityOptionsBuilder_ecs_UpdateType_software_amazon_awscdk_services_autoscaling_UpdateType_() {
+		return (EAttribute) addCapacityOptionsBuilder_ecsEClass.getEStructuralFeatures().get(22);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAddCapacityOptionsBuilder_ecs_VpcSubnetsWithSubnetSelection_software_amazon_awscdk_services_ec2_SubnetSelection_AsReference() {
+		return (EAttribute) addCapacityOptionsBuilder_ecsEClass.getEStructuralFeatures().get(23);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAddCapacityOptionsBuilder_ecs_GeneratedClassName() {
+		return (EAttribute) addCapacityOptionsBuilder_ecsEClass.getEStructuralFeatures().get(24);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAddCapacityOptionsBuilder_ecs_VarName() {
+		return (EAttribute) addCapacityOptionsBuilder_ecsEClass.getEStructuralFeatures().get(25);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAddCapacityOptionsBuilder_ecs_Identifier() {
+		return (EAttribute) addCapacityOptionsBuilder_ecsEClass.getEStructuralFeatures().get(26);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAddCapacityOptionsBuilder_ecs_AdditionalCode() {
+		return (EAttribute) addCapacityOptionsBuilder_ecsEClass.getEStructuralFeatures().get(27);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getCloudMapNamespaceOptionsBuilder_ecs() {
+		return cloudMapNamespaceOptionsBuilder_ecsEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCloudMapNamespaceOptionsBuilder_ecs_Name_java_lang_String_() {
+		return (EAttribute) cloudMapNamespaceOptionsBuilder_ecsEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCloudMapNamespaceOptionsBuilder_ecs_Type_software_amazon_awscdk_services_servicediscovery_NamespaceType_() {
+		return (EAttribute) cloudMapNamespaceOptionsBuilder_ecsEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCloudMapNamespaceOptionsBuilder_ecs_VpcWithIVpc_software_amazon_awscdk_services_ec2_IVpc_AsReference() {
+		return (EAttribute) cloudMapNamespaceOptionsBuilder_ecsEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCloudMapNamespaceOptionsBuilder_ecs_GeneratedClassName() {
+		return (EAttribute) cloudMapNamespaceOptionsBuilder_ecsEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCloudMapNamespaceOptionsBuilder_ecs_VarName() {
+		return (EAttribute) cloudMapNamespaceOptionsBuilder_ecsEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCloudMapNamespaceOptionsBuilder_ecs_Identifier() {
+		return (EAttribute) cloudMapNamespaceOptionsBuilder_ecsEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCloudMapNamespaceOptionsBuilder_ecs_AdditionalCode() {
+		return (EAttribute) cloudMapNamespaceOptionsBuilder_ecsEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getClusterBuilder_ecs() {
+		return clusterBuilder_ecsEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getClusterBuilder_ecs_CapacityWithAddCapacityOptions_software_amazon_awscdk_services_ecs_AddCapacityOptions_AsReference() {
+		return (EAttribute) clusterBuilder_ecsEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getClusterBuilder_ecs_ClusterName_java_lang_String_() {
+		return (EAttribute) clusterBuilder_ecsEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getClusterBuilder_ecs_ContainerInsights_java_lang_Boolean_() {
+		return (EAttribute) clusterBuilder_ecsEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getClusterBuilder_ecs_DefaultCloudMapNamespaceWithCloudMapNamespaceOptions_software_amazon_awscdk_services_ecs_CloudMapNamespaceOptions_AsReference() {
+		return (EAttribute) clusterBuilder_ecsEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getClusterBuilder_ecs_VpcWithIVpc_software_amazon_awscdk_services_ec2_IVpc_AsReference() {
+		return (EAttribute) clusterBuilder_ecsEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getClusterBuilder_ecs_GeneratedClassName() {
+		return (EAttribute) clusterBuilder_ecsEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getClusterBuilder_ecs_VarName() {
+		return (EAttribute) clusterBuilder_ecsEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getClusterBuilder_ecs_Identifier() {
+		return (EAttribute) clusterBuilder_ecsEClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getClusterBuilder_ecs_AdditionalCode() {
+		return (EAttribute) clusterBuilder_ecsEClass.getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getApplicationLoadBalancerBuilder_elasticloadbalancingv2() {
+		return applicationLoadBalancerBuilder_elasticloadbalancingv2EClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationLoadBalancerBuilder_elasticloadbalancingv2_VpcWithIVpc_software_amazon_awscdk_services_ec2_IVpc_AsReference() {
+		return (EAttribute) applicationLoadBalancerBuilder_elasticloadbalancingv2EClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationLoadBalancerBuilder_elasticloadbalancingv2_DeletionProtection_java_lang_Boolean_() {
+		return (EAttribute) applicationLoadBalancerBuilder_elasticloadbalancingv2EClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationLoadBalancerBuilder_elasticloadbalancingv2_InternetFacing_java_lang_Boolean_() {
+		return (EAttribute) applicationLoadBalancerBuilder_elasticloadbalancingv2EClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationLoadBalancerBuilder_elasticloadbalancingv2_LoadBalancerName_java_lang_String_() {
+		return (EAttribute) applicationLoadBalancerBuilder_elasticloadbalancingv2EClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationLoadBalancerBuilder_elasticloadbalancingv2_VpcSubnetsWithSubnetSelection_software_amazon_awscdk_services_ec2_SubnetSelection_AsReference() {
+		return (EAttribute) applicationLoadBalancerBuilder_elasticloadbalancingv2EClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationLoadBalancerBuilder_elasticloadbalancingv2_Http2Enabled_java_lang_Boolean_() {
+		return (EAttribute) applicationLoadBalancerBuilder_elasticloadbalancingv2EClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationLoadBalancerBuilder_elasticloadbalancingv2_IdleTimeoutWithDuration_software_amazon_awscdk_core_Duration_AsReference() {
+		return (EAttribute) applicationLoadBalancerBuilder_elasticloadbalancingv2EClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationLoadBalancerBuilder_elasticloadbalancingv2_IpAddressType_software_amazon_awscdk_services_elasticloadbalancingv2_IpAddressType_() {
+		return (EAttribute) applicationLoadBalancerBuilder_elasticloadbalancingv2EClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationLoadBalancerBuilder_elasticloadbalancingv2_SecurityGroupWithISecurityGroup_software_amazon_awscdk_services_ec2_ISecurityGroup_AsReference() {
+		return (EAttribute) applicationLoadBalancerBuilder_elasticloadbalancingv2EClass.getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationLoadBalancerBuilder_elasticloadbalancingv2_GeneratedClassName() {
+		return (EAttribute) applicationLoadBalancerBuilder_elasticloadbalancingv2EClass.getEStructuralFeatures().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationLoadBalancerBuilder_elasticloadbalancingv2_VarName() {
+		return (EAttribute) applicationLoadBalancerBuilder_elasticloadbalancingv2EClass.getEStructuralFeatures()
+				.get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationLoadBalancerBuilder_elasticloadbalancingv2_Identifier() {
+		return (EAttribute) applicationLoadBalancerBuilder_elasticloadbalancingv2EClass.getEStructuralFeatures()
+				.get(11);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationLoadBalancerBuilder_elasticloadbalancingv2_AdditionalCode() {
+		return (EAttribute) applicationLoadBalancerBuilder_elasticloadbalancingv2EClass.getEStructuralFeatures()
+				.get(12);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getDockerImageAssetBuilder_assets() {
+		return dockerImageAssetBuilder_assetsEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getDockerImageAssetBuilder_assets_Exclude_java_lang_String_AsList() {
+		return (EAttribute) dockerImageAssetBuilder_assetsEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getDockerImageAssetBuilder_assets_Follow_software_amazon_awscdk_assets_FollowMode_() {
+		return (EAttribute) dockerImageAssetBuilder_assetsEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getDockerImageAssetBuilder_assets_ExtraHash_java_lang_String_() {
+		return (EAttribute) dockerImageAssetBuilder_assetsEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getDockerImageAssetBuilder_assets_BuildArgs_java_lang_String__java_lang_String_AsMap() {
+		return (EAttribute) dockerImageAssetBuilder_assetsEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getDockerImageAssetBuilder_assets_File_java_lang_String_() {
+		return (EAttribute) dockerImageAssetBuilder_assetsEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getDockerImageAssetBuilder_assets_RepositoryName_java_lang_String_() {
+		return (EAttribute) dockerImageAssetBuilder_assetsEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getDockerImageAssetBuilder_assets_Target_java_lang_String_() {
+		return (EAttribute) dockerImageAssetBuilder_assetsEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getDockerImageAssetBuilder_assets_Directory_java_lang_String_() {
+		return (EAttribute) dockerImageAssetBuilder_assetsEClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getDockerImageAssetBuilder_assets_GeneratedClassName() {
+		return (EAttribute) dockerImageAssetBuilder_assetsEClass.getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getDockerImageAssetBuilder_assets_VarName() {
+		return (EAttribute) dockerImageAssetBuilder_assetsEClass.getEStructuralFeatures().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getDockerImageAssetBuilder_assets_Identifier() {
+		return (EAttribute) dockerImageAssetBuilder_assetsEClass.getEStructuralFeatures().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getDockerImageAssetBuilder_assets_AdditionalCode() {
+		return (EAttribute) dockerImageAssetBuilder_assetsEClass.getEStructuralFeatures().get(11);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getAssetImageBuilder_ecs() {
+		return assetImageBuilder_ecsEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAssetImageBuilder_ecs_Exclude_java_lang_String_AsList() {
+		return (EAttribute) assetImageBuilder_ecsEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAssetImageBuilder_ecs_Follow_software_amazon_awscdk_assets_FollowMode_() {
+		return (EAttribute) assetImageBuilder_ecsEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAssetImageBuilder_ecs_ExtraHash_java_lang_String_() {
+		return (EAttribute) assetImageBuilder_ecsEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAssetImageBuilder_ecs_BuildArgs_java_lang_String__java_lang_String_AsMap() {
+		return (EAttribute) assetImageBuilder_ecsEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAssetImageBuilder_ecs_File_java_lang_String_() {
+		return (EAttribute) assetImageBuilder_ecsEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAssetImageBuilder_ecs_RepositoryName_java_lang_String_() {
+		return (EAttribute) assetImageBuilder_ecsEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAssetImageBuilder_ecs_Target_java_lang_String_() {
+		return (EAttribute) assetImageBuilder_ecsEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAssetImageBuilder_ecs_GeneratedClassName() {
+		return (EAttribute) assetImageBuilder_ecsEClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAssetImageBuilder_ecs_VarName() {
+		return (EAttribute) assetImageBuilder_ecsEClass.getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAssetImageBuilder_ecs_Identifier() {
+		return (EAttribute) assetImageBuilder_ecsEClass.getEStructuralFeatures().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAssetImageBuilder_ecs_AdditionalCode() {
+		return (EAttribute) assetImageBuilder_ecsEClass.getEStructuralFeatures().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getSecretStringGeneratorBuilder_secretsmanager() {
+		return secretStringGeneratorBuilder_secretsmanagerEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getSecretStringGeneratorBuilder_secretsmanager_ExcludeCharacters_java_lang_String_() {
+		return (EAttribute) secretStringGeneratorBuilder_secretsmanagerEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getSecretStringGeneratorBuilder_secretsmanager_ExcludeLowercase_java_lang_Boolean_() {
+		return (EAttribute) secretStringGeneratorBuilder_secretsmanagerEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getSecretStringGeneratorBuilder_secretsmanager_ExcludeNumbers_java_lang_Boolean_() {
+		return (EAttribute) secretStringGeneratorBuilder_secretsmanagerEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getSecretStringGeneratorBuilder_secretsmanager_ExcludePunctuation_java_lang_Boolean_() {
+		return (EAttribute) secretStringGeneratorBuilder_secretsmanagerEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getSecretStringGeneratorBuilder_secretsmanager_ExcludeUppercase_java_lang_Boolean_() {
+		return (EAttribute) secretStringGeneratorBuilder_secretsmanagerEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getSecretStringGeneratorBuilder_secretsmanager_GenerateStringKey_java_lang_String_() {
+		return (EAttribute) secretStringGeneratorBuilder_secretsmanagerEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getSecretStringGeneratorBuilder_secretsmanager_IncludeSpace_java_lang_Boolean_() {
+		return (EAttribute) secretStringGeneratorBuilder_secretsmanagerEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getSecretStringGeneratorBuilder_secretsmanager_PasswordLength_java_lang_Number_() {
+		return (EAttribute) secretStringGeneratorBuilder_secretsmanagerEClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getSecretStringGeneratorBuilder_secretsmanager_RequireEachIncludedType_java_lang_Boolean_() {
+		return (EAttribute) secretStringGeneratorBuilder_secretsmanagerEClass.getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getSecretStringGeneratorBuilder_secretsmanager_SecretStringTemplate_java_lang_String_() {
+		return (EAttribute) secretStringGeneratorBuilder_secretsmanagerEClass.getEStructuralFeatures().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getSecretStringGeneratorBuilder_secretsmanager_GeneratedClassName() {
+		return (EAttribute) secretStringGeneratorBuilder_secretsmanagerEClass.getEStructuralFeatures().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getSecretStringGeneratorBuilder_secretsmanager_VarName() {
+		return (EAttribute) secretStringGeneratorBuilder_secretsmanagerEClass.getEStructuralFeatures().get(11);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getSecretStringGeneratorBuilder_secretsmanager_Identifier() {
+		return (EAttribute) secretStringGeneratorBuilder_secretsmanagerEClass.getEStructuralFeatures().get(12);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getSecretStringGeneratorBuilder_secretsmanager_AdditionalCode() {
+		return (EAttribute) secretStringGeneratorBuilder_secretsmanagerEClass.getEStructuralFeatures().get(13);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getSecretBuilder_secretsmanager() {
+		return secretBuilder_secretsmanagerEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getSecretBuilder_secretsmanager_Description_java_lang_String_() {
+		return (EAttribute) secretBuilder_secretsmanagerEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getSecretBuilder_secretsmanager_EncryptionKeyWithIKey_software_amazon_awscdk_services_kms_IKey_AsReference() {
+		return (EAttribute) secretBuilder_secretsmanagerEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getSecretBuilder_secretsmanager_GenerateSecretStringWithSecretStringGenerator_software_amazon_awscdk_services_secretsmanager_SecretStringGenerator_AsReference() {
+		return (EAttribute) secretBuilder_secretsmanagerEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getSecretBuilder_secretsmanager_SecretName_java_lang_String_() {
+		return (EAttribute) secretBuilder_secretsmanagerEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getSecretBuilder_secretsmanager_GeneratedClassName() {
+		return (EAttribute) secretBuilder_secretsmanagerEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getSecretBuilder_secretsmanager_VarName() {
+		return (EAttribute) secretBuilder_secretsmanagerEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getSecretBuilder_secretsmanager_Identifier() {
+		return (EAttribute) secretBuilder_secretsmanagerEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getSecretBuilder_secretsmanager_AdditionalCode() {
+		return (EAttribute) secretBuilder_secretsmanagerEClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getAwsLogDriverBuilder_ecs() {
+		return awsLogDriverBuilder_ecsEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAwsLogDriverBuilder_ecs_StreamPrefix_java_lang_String_() {
+		return (EAttribute) awsLogDriverBuilder_ecsEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAwsLogDriverBuilder_ecs_DatetimeFormat_java_lang_String_() {
+		return (EAttribute) awsLogDriverBuilder_ecsEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAwsLogDriverBuilder_ecs_LogGroupWithILogGroup_software_amazon_awscdk_services_logs_ILogGroup_AsReference() {
+		return (EAttribute) awsLogDriverBuilder_ecsEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAwsLogDriverBuilder_ecs_LogRetention_software_amazon_awscdk_services_logs_RetentionDays_() {
+		return (EAttribute) awsLogDriverBuilder_ecsEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAwsLogDriverBuilder_ecs_MultilinePattern_java_lang_String_() {
+		return (EAttribute) awsLogDriverBuilder_ecsEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAwsLogDriverBuilder_ecs_GeneratedClassName() {
+		return (EAttribute) awsLogDriverBuilder_ecsEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAwsLogDriverBuilder_ecs_VarName() {
+		return (EAttribute) awsLogDriverBuilder_ecsEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAwsLogDriverBuilder_ecs_Identifier() {
+		return (EAttribute) awsLogDriverBuilder_ecsEClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAwsLogDriverBuilder_ecs_AdditionalCode() {
+		return (EAttribute) awsLogDriverBuilder_ecsEClass.getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getLogGroupBuilder_logs() {
+		return logGroupBuilder_logsEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLogGroupBuilder_logs_LogGroupName_java_lang_String_() {
+		return (EAttribute) logGroupBuilder_logsEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLogGroupBuilder_logs_RemovalPolicy_software_amazon_awscdk_core_RemovalPolicy_() {
+		return (EAttribute) logGroupBuilder_logsEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLogGroupBuilder_logs_Retention_software_amazon_awscdk_services_logs_RetentionDays_() {
+		return (EAttribute) logGroupBuilder_logsEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLogGroupBuilder_logs_GeneratedClassName() {
+		return (EAttribute) logGroupBuilder_logsEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLogGroupBuilder_logs_VarName() {
+		return (EAttribute) logGroupBuilder_logsEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLogGroupBuilder_logs_Identifier() {
+		return (EAttribute) logGroupBuilder_logsEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLogGroupBuilder_logs_AdditionalCode() {
+		return (EAttribute) logGroupBuilder_logsEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getAwsLogDriverPropsBuilder_ecs() {
+		return awsLogDriverPropsBuilder_ecsEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAwsLogDriverPropsBuilder_ecs_StreamPrefix_java_lang_String_() {
+		return (EAttribute) awsLogDriverPropsBuilder_ecsEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAwsLogDriverPropsBuilder_ecs_DatetimeFormat_java_lang_String_() {
+		return (EAttribute) awsLogDriverPropsBuilder_ecsEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAwsLogDriverPropsBuilder_ecs_LogGroupWithILogGroup_software_amazon_awscdk_services_logs_ILogGroup_AsReference() {
+		return (EAttribute) awsLogDriverPropsBuilder_ecsEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAwsLogDriverPropsBuilder_ecs_LogRetention_software_amazon_awscdk_services_logs_RetentionDays_() {
+		return (EAttribute) awsLogDriverPropsBuilder_ecsEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAwsLogDriverPropsBuilder_ecs_MultilinePattern_java_lang_String_() {
+		return (EAttribute) awsLogDriverPropsBuilder_ecsEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAwsLogDriverPropsBuilder_ecs_GeneratedClassName() {
+		return (EAttribute) awsLogDriverPropsBuilder_ecsEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAwsLogDriverPropsBuilder_ecs_VarName() {
+		return (EAttribute) awsLogDriverPropsBuilder_ecsEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAwsLogDriverPropsBuilder_ecs_Identifier() {
+		return (EAttribute) awsLogDriverPropsBuilder_ecsEClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAwsLogDriverPropsBuilder_ecs_AdditionalCode() {
+		return (EAttribute) awsLogDriverPropsBuilder_ecsEClass.getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getApplicationLoadBalancedTaskImageOptionsBuilder_patterns() {
+		return applicationLoadBalancedTaskImageOptionsBuilder_patternsEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationLoadBalancedTaskImageOptionsBuilder_patterns_ImageWithContainerImage_software_amazon_awscdk_services_ecs_ContainerImage_AsReference() {
+		return (EAttribute) applicationLoadBalancedTaskImageOptionsBuilder_patternsEClass.getEStructuralFeatures()
+				.get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationLoadBalancedTaskImageOptionsBuilder_patterns_ContainerName_java_lang_String_() {
+		return (EAttribute) applicationLoadBalancedTaskImageOptionsBuilder_patternsEClass.getEStructuralFeatures()
+				.get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationLoadBalancedTaskImageOptionsBuilder_patterns_ContainerPort_java_lang_Number_() {
+		return (EAttribute) applicationLoadBalancedTaskImageOptionsBuilder_patternsEClass.getEStructuralFeatures()
+				.get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationLoadBalancedTaskImageOptionsBuilder_patterns_EnableLogging_java_lang_Boolean_() {
+		return (EAttribute) applicationLoadBalancedTaskImageOptionsBuilder_patternsEClass.getEStructuralFeatures()
+				.get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationLoadBalancedTaskImageOptionsBuilder_patterns_Environment_java_lang_String__java_lang_String_AsMap() {
+		return (EAttribute) applicationLoadBalancedTaskImageOptionsBuilder_patternsEClass.getEStructuralFeatures()
+				.get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationLoadBalancedTaskImageOptionsBuilder_patterns_ExecutionRoleWithIRole_software_amazon_awscdk_services_iam_IRole_AsReference() {
+		return (EAttribute) applicationLoadBalancedTaskImageOptionsBuilder_patternsEClass.getEStructuralFeatures()
+				.get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationLoadBalancedTaskImageOptionsBuilder_patterns_Family_java_lang_String_() {
+		return (EAttribute) applicationLoadBalancedTaskImageOptionsBuilder_patternsEClass.getEStructuralFeatures()
+				.get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationLoadBalancedTaskImageOptionsBuilder_patterns_LogDriverWithLogDriver_software_amazon_awscdk_services_ecs_LogDriver_AsReference() {
+		return (EAttribute) applicationLoadBalancedTaskImageOptionsBuilder_patternsEClass.getEStructuralFeatures()
+				.get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationLoadBalancedTaskImageOptionsBuilder_patterns_Secrets_java_lang_String__software_amazon_awscdk_services_ecs_Secret_AsMap() {
+		return (EAttribute) applicationLoadBalancedTaskImageOptionsBuilder_patternsEClass.getEStructuralFeatures()
+				.get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationLoadBalancedTaskImageOptionsBuilder_patterns_TaskRoleWithIRole_software_amazon_awscdk_services_iam_IRole_AsReference() {
+		return (EAttribute) applicationLoadBalancedTaskImageOptionsBuilder_patternsEClass.getEStructuralFeatures()
+				.get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationLoadBalancedTaskImageOptionsBuilder_patterns_GeneratedClassName() {
+		return (EAttribute) applicationLoadBalancedTaskImageOptionsBuilder_patternsEClass.getEStructuralFeatures()
+				.get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationLoadBalancedTaskImageOptionsBuilder_patterns_VarName() {
+		return (EAttribute) applicationLoadBalancedTaskImageOptionsBuilder_patternsEClass.getEStructuralFeatures()
+				.get(11);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationLoadBalancedTaskImageOptionsBuilder_patterns_Identifier() {
+		return (EAttribute) applicationLoadBalancedTaskImageOptionsBuilder_patternsEClass.getEStructuralFeatures()
+				.get(12);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationLoadBalancedTaskImageOptionsBuilder_patterns_AdditionalCode() {
+		return (EAttribute) applicationLoadBalancedTaskImageOptionsBuilder_patternsEClass.getEStructuralFeatures()
+				.get(13);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getAppMeshProxyConfigurationPropsBuilder_ecs() {
+		return appMeshProxyConfigurationPropsBuilder_ecsEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAppMeshProxyConfigurationPropsBuilder_ecs_AppPorts_java_lang_Number_AsList() {
+		return (EAttribute) appMeshProxyConfigurationPropsBuilder_ecsEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAppMeshProxyConfigurationPropsBuilder_ecs_ProxyEgressPort_java_lang_Number_() {
+		return (EAttribute) appMeshProxyConfigurationPropsBuilder_ecsEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAppMeshProxyConfigurationPropsBuilder_ecs_ProxyIngressPort_java_lang_Number_() {
+		return (EAttribute) appMeshProxyConfigurationPropsBuilder_ecsEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAppMeshProxyConfigurationPropsBuilder_ecs_EgressIgnoredIPs_java_lang_String_AsList() {
+		return (EAttribute) appMeshProxyConfigurationPropsBuilder_ecsEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAppMeshProxyConfigurationPropsBuilder_ecs_EgressIgnoredPorts_java_lang_Number_AsList() {
+		return (EAttribute) appMeshProxyConfigurationPropsBuilder_ecsEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAppMeshProxyConfigurationPropsBuilder_ecs_IgnoredGid_java_lang_Number_() {
+		return (EAttribute) appMeshProxyConfigurationPropsBuilder_ecsEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAppMeshProxyConfigurationPropsBuilder_ecs_IgnoredUid_java_lang_Number_() {
+		return (EAttribute) appMeshProxyConfigurationPropsBuilder_ecsEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAppMeshProxyConfigurationPropsBuilder_ecs_GeneratedClassName() {
+		return (EAttribute) appMeshProxyConfigurationPropsBuilder_ecsEClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAppMeshProxyConfigurationPropsBuilder_ecs_VarName() {
+		return (EAttribute) appMeshProxyConfigurationPropsBuilder_ecsEClass.getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAppMeshProxyConfigurationPropsBuilder_ecs_Identifier() {
+		return (EAttribute) appMeshProxyConfigurationPropsBuilder_ecsEClass.getEStructuralFeatures().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAppMeshProxyConfigurationPropsBuilder_ecs_AdditionalCode() {
+		return (EAttribute) appMeshProxyConfigurationPropsBuilder_ecsEClass.getEStructuralFeatures().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getAppMeshProxyConfigurationBuilder_ecs() {
+		return appMeshProxyConfigurationBuilder_ecsEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAppMeshProxyConfigurationBuilder_ecs_ContainerName_java_lang_String_() {
+		return (EAttribute) appMeshProxyConfigurationBuilder_ecsEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAppMeshProxyConfigurationBuilder_ecs_PropertiesWithAppMeshProxyConfigurationProps_software_amazon_awscdk_services_ecs_AppMeshProxyConfigurationProps_AsReference() {
+		return (EAttribute) appMeshProxyConfigurationBuilder_ecsEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAppMeshProxyConfigurationBuilder_ecs_GeneratedClassName() {
+		return (EAttribute) appMeshProxyConfigurationBuilder_ecsEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAppMeshProxyConfigurationBuilder_ecs_VarName() {
+		return (EAttribute) appMeshProxyConfigurationBuilder_ecsEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAppMeshProxyConfigurationBuilder_ecs_Identifier() {
+		return (EAttribute) appMeshProxyConfigurationBuilder_ecsEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAppMeshProxyConfigurationBuilder_ecs_AdditionalCode() {
+		return (EAttribute) appMeshProxyConfigurationBuilder_ecsEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getHostBuilder_ecs() {
+		return hostBuilder_ecsEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getHostBuilder_ecs_SourcePath_java_lang_String_() {
+		return (EAttribute) hostBuilder_ecsEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getHostBuilder_ecs_GeneratedClassName() {
+		return (EAttribute) hostBuilder_ecsEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getHostBuilder_ecs_VarName() {
+		return (EAttribute) hostBuilder_ecsEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getHostBuilder_ecs_Identifier() {
+		return (EAttribute) hostBuilder_ecsEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getHostBuilder_ecs_AdditionalCode() {
+		return (EAttribute) hostBuilder_ecsEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getDockerVolumeConfigurationBuilder_ecs() {
+		return dockerVolumeConfigurationBuilder_ecsEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getDockerVolumeConfigurationBuilder_ecs_Driver_java_lang_String_() {
+		return (EAttribute) dockerVolumeConfigurationBuilder_ecsEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getDockerVolumeConfigurationBuilder_ecs_Scope_software_amazon_awscdk_services_ecs_Scope_() {
+		return (EAttribute) dockerVolumeConfigurationBuilder_ecsEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getDockerVolumeConfigurationBuilder_ecs_Autoprovision_java_lang_Boolean_() {
+		return (EAttribute) dockerVolumeConfigurationBuilder_ecsEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getDockerVolumeConfigurationBuilder_ecs_DriverOpts_java_lang_String__java_lang_String_AsMap() {
+		return (EAttribute) dockerVolumeConfigurationBuilder_ecsEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getDockerVolumeConfigurationBuilder_ecs_Labels_java_lang_String_AsList() {
+		return (EAttribute) dockerVolumeConfigurationBuilder_ecsEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getDockerVolumeConfigurationBuilder_ecs_GeneratedClassName() {
+		return (EAttribute) dockerVolumeConfigurationBuilder_ecsEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getDockerVolumeConfigurationBuilder_ecs_VarName() {
+		return (EAttribute) dockerVolumeConfigurationBuilder_ecsEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getDockerVolumeConfigurationBuilder_ecs_Identifier() {
+		return (EAttribute) dockerVolumeConfigurationBuilder_ecsEClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getDockerVolumeConfigurationBuilder_ecs_AdditionalCode() {
+		return (EAttribute) dockerVolumeConfigurationBuilder_ecsEClass.getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getVolumeBuilder_ecs() {
+		return volumeBuilder_ecsEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getVolumeBuilder_ecs_Name_java_lang_String_() {
+		return (EAttribute) volumeBuilder_ecsEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getVolumeBuilder_ecs_DockerVolumeConfigurationWithDockerVolumeConfiguration_software_amazon_awscdk_services_ecs_DockerVolumeConfiguration_AsReference() {
+		return (EAttribute) volumeBuilder_ecsEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getVolumeBuilder_ecs_HostWithHost_software_amazon_awscdk_services_ecs_Host_AsReference() {
+		return (EAttribute) volumeBuilder_ecsEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getVolumeBuilder_ecs_GeneratedClassName() {
+		return (EAttribute) volumeBuilder_ecsEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getVolumeBuilder_ecs_VarName() {
+		return (EAttribute) volumeBuilder_ecsEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getVolumeBuilder_ecs_Identifier() {
+		return (EAttribute) volumeBuilder_ecsEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getVolumeBuilder_ecs_AdditionalCode() {
+		return (EAttribute) volumeBuilder_ecsEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getEc2TaskDefinitionBuilder_ecs() {
+		return ec2TaskDefinitionBuilder_ecsEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getEc2TaskDefinitionBuilder_ecs_ExecutionRoleWithIRole_software_amazon_awscdk_services_iam_IRole_AsReference() {
+		return (EAttribute) ec2TaskDefinitionBuilder_ecsEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getEc2TaskDefinitionBuilder_ecs_Family_java_lang_String_() {
+		return (EAttribute) ec2TaskDefinitionBuilder_ecsEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getEc2TaskDefinitionBuilder_ecs_ProxyConfigurationWithProxyConfiguration_software_amazon_awscdk_services_ecs_ProxyConfiguration_AsReference() {
+		return (EAttribute) ec2TaskDefinitionBuilder_ecsEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getEc2TaskDefinitionBuilder_ecs_TaskRoleWithIRole_software_amazon_awscdk_services_iam_IRole_AsReference() {
+		return (EAttribute) ec2TaskDefinitionBuilder_ecsEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getEc2TaskDefinitionBuilder_ecs_Volumes_software_amazon_awscdk_services_ecs_Volume_AsList() {
+		return (EAttribute) ec2TaskDefinitionBuilder_ecsEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getEc2TaskDefinitionBuilder_ecs_IpcMode_software_amazon_awscdk_services_ecs_IpcMode_() {
+		return (EAttribute) ec2TaskDefinitionBuilder_ecsEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getEc2TaskDefinitionBuilder_ecs_NetworkMode_software_amazon_awscdk_services_ecs_NetworkMode_() {
+		return (EAttribute) ec2TaskDefinitionBuilder_ecsEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getEc2TaskDefinitionBuilder_ecs_PidMode_software_amazon_awscdk_services_ecs_PidMode_() {
+		return (EAttribute) ec2TaskDefinitionBuilder_ecsEClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getEc2TaskDefinitionBuilder_ecs_PlacementConstraints_software_amazon_awscdk_services_ecs_PlacementConstraint_AsList() {
+		return (EAttribute) ec2TaskDefinitionBuilder_ecsEClass.getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getEc2TaskDefinitionBuilder_ecs_GeneratedClassName() {
+		return (EAttribute) ec2TaskDefinitionBuilder_ecsEClass.getEStructuralFeatures().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getEc2TaskDefinitionBuilder_ecs_VarName() {
+		return (EAttribute) ec2TaskDefinitionBuilder_ecsEClass.getEStructuralFeatures().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getEc2TaskDefinitionBuilder_ecs_Identifier() {
+		return (EAttribute) ec2TaskDefinitionBuilder_ecsEClass.getEStructuralFeatures().get(11);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getEc2TaskDefinitionBuilder_ecs_AdditionalCode() {
+		return (EAttribute) ec2TaskDefinitionBuilder_ecsEClass.getEStructuralFeatures().get(12);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getApplicationLoadBalancedEc2ServiceBuilder_patterns() {
+		return applicationLoadBalancedEc2ServiceBuilder_patternsEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationLoadBalancedEc2ServiceBuilder_patterns_CertificateWithICertificate_software_amazon_awscdk_services_certificatemanager_ICertificate_AsReference() {
+		return (EAttribute) applicationLoadBalancedEc2ServiceBuilder_patternsEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationLoadBalancedEc2ServiceBuilder_patterns_CloudMapOptionsWithCloudMapOptions_software_amazon_awscdk_services_ecs_CloudMapOptions_AsReference() {
+		return (EAttribute) applicationLoadBalancedEc2ServiceBuilder_patternsEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationLoadBalancedEc2ServiceBuilder_patterns_ClusterWithICluster_software_amazon_awscdk_services_ecs_ICluster_AsReference() {
+		return (EAttribute) applicationLoadBalancedEc2ServiceBuilder_patternsEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationLoadBalancedEc2ServiceBuilder_patterns_DesiredCount_java_lang_Number_() {
+		return (EAttribute) applicationLoadBalancedEc2ServiceBuilder_patternsEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationLoadBalancedEc2ServiceBuilder_patterns_DomainName_java_lang_String_() {
+		return (EAttribute) applicationLoadBalancedEc2ServiceBuilder_patternsEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationLoadBalancedEc2ServiceBuilder_patterns_DomainZoneWithIHostedZone_software_amazon_awscdk_services_route53_IHostedZone_AsReference() {
+		return (EAttribute) applicationLoadBalancedEc2ServiceBuilder_patternsEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationLoadBalancedEc2ServiceBuilder_patterns_EnableEcsManagedTags_java_lang_Boolean_() {
+		return (EAttribute) applicationLoadBalancedEc2ServiceBuilder_patternsEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationLoadBalancedEc2ServiceBuilder_patterns_HealthCheckGracePeriodWithDuration_software_amazon_awscdk_core_Duration_AsReference() {
+		return (EAttribute) applicationLoadBalancedEc2ServiceBuilder_patternsEClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationLoadBalancedEc2ServiceBuilder_patterns_ListenerPort_java_lang_Number_() {
+		return (EAttribute) applicationLoadBalancedEc2ServiceBuilder_patternsEClass.getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationLoadBalancedEc2ServiceBuilder_patterns_LoadBalancerWithIApplicationLoadBalancer_software_amazon_awscdk_services_elasticloadbalancingv2_IApplicationLoadBalancer_AsReference() {
+		return (EAttribute) applicationLoadBalancedEc2ServiceBuilder_patternsEClass.getEStructuralFeatures().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationLoadBalancedEc2ServiceBuilder_patterns_MaxHealthyPercent_java_lang_Number_() {
+		return (EAttribute) applicationLoadBalancedEc2ServiceBuilder_patternsEClass.getEStructuralFeatures().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationLoadBalancedEc2ServiceBuilder_patterns_MinHealthyPercent_java_lang_Number_() {
+		return (EAttribute) applicationLoadBalancedEc2ServiceBuilder_patternsEClass.getEStructuralFeatures().get(11);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationLoadBalancedEc2ServiceBuilder_patterns_PropagateTags_software_amazon_awscdk_services_ecs_PropagatedTagSource_() {
+		return (EAttribute) applicationLoadBalancedEc2ServiceBuilder_patternsEClass.getEStructuralFeatures().get(12);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationLoadBalancedEc2ServiceBuilder_patterns_Protocol_software_amazon_awscdk_services_elasticloadbalancingv2_ApplicationProtocol_() {
+		return (EAttribute) applicationLoadBalancedEc2ServiceBuilder_patternsEClass.getEStructuralFeatures().get(13);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationLoadBalancedEc2ServiceBuilder_patterns_PublicLoadBalancer_java_lang_Boolean_() {
+		return (EAttribute) applicationLoadBalancedEc2ServiceBuilder_patternsEClass.getEStructuralFeatures().get(14);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationLoadBalancedEc2ServiceBuilder_patterns_ServiceName_java_lang_String_() {
+		return (EAttribute) applicationLoadBalancedEc2ServiceBuilder_patternsEClass.getEStructuralFeatures().get(15);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationLoadBalancedEc2ServiceBuilder_patterns_TaskImageOptionsWithApplicationLoadBalancedTaskImageOptions_software_amazon_awscdk_services_ecs_patterns_ApplicationLoadBalancedTaskImageOptions_AsReference() {
+		return (EAttribute) applicationLoadBalancedEc2ServiceBuilder_patternsEClass.getEStructuralFeatures().get(16);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationLoadBalancedEc2ServiceBuilder_patterns_VpcWithIVpc_software_amazon_awscdk_services_ec2_IVpc_AsReference() {
+		return (EAttribute) applicationLoadBalancedEc2ServiceBuilder_patternsEClass.getEStructuralFeatures().get(17);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationLoadBalancedEc2ServiceBuilder_patterns_Cpu_java_lang_Number_() {
+		return (EAttribute) applicationLoadBalancedEc2ServiceBuilder_patternsEClass.getEStructuralFeatures().get(18);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationLoadBalancedEc2ServiceBuilder_patterns_MemoryLimitMiB_java_lang_Number_() {
+		return (EAttribute) applicationLoadBalancedEc2ServiceBuilder_patternsEClass.getEStructuralFeatures().get(19);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationLoadBalancedEc2ServiceBuilder_patterns_MemoryReservationMiB_java_lang_Number_() {
+		return (EAttribute) applicationLoadBalancedEc2ServiceBuilder_patternsEClass.getEStructuralFeatures().get(20);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationLoadBalancedEc2ServiceBuilder_patterns_TaskDefinitionWithEc2TaskDefinition_software_amazon_awscdk_services_ecs_Ec2TaskDefinition_AsReference() {
+		return (EAttribute) applicationLoadBalancedEc2ServiceBuilder_patternsEClass.getEStructuralFeatures().get(21);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationLoadBalancedEc2ServiceBuilder_patterns_GeneratedClassName() {
+		return (EAttribute) applicationLoadBalancedEc2ServiceBuilder_patternsEClass.getEStructuralFeatures().get(22);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationLoadBalancedEc2ServiceBuilder_patterns_VarName() {
+		return (EAttribute) applicationLoadBalancedEc2ServiceBuilder_patternsEClass.getEStructuralFeatures().get(23);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationLoadBalancedEc2ServiceBuilder_patterns_Identifier() {
+		return (EAttribute) applicationLoadBalancedEc2ServiceBuilder_patternsEClass.getEStructuralFeatures().get(24);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationLoadBalancedEc2ServiceBuilder_patterns_AdditionalCode() {
+		return (EAttribute) applicationLoadBalancedEc2ServiceBuilder_patternsEClass.getEStructuralFeatures().get(25);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getFargateTaskDefinitionBuilder_ecs() {
+		return fargateTaskDefinitionBuilder_ecsEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getFargateTaskDefinitionBuilder_ecs_ExecutionRoleWithIRole_software_amazon_awscdk_services_iam_IRole_AsReference() {
+		return (EAttribute) fargateTaskDefinitionBuilder_ecsEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getFargateTaskDefinitionBuilder_ecs_Family_java_lang_String_() {
+		return (EAttribute) fargateTaskDefinitionBuilder_ecsEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getFargateTaskDefinitionBuilder_ecs_ProxyConfigurationWithProxyConfiguration_software_amazon_awscdk_services_ecs_ProxyConfiguration_AsReference() {
+		return (EAttribute) fargateTaskDefinitionBuilder_ecsEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getFargateTaskDefinitionBuilder_ecs_TaskRoleWithIRole_software_amazon_awscdk_services_iam_IRole_AsReference() {
+		return (EAttribute) fargateTaskDefinitionBuilder_ecsEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getFargateTaskDefinitionBuilder_ecs_Volumes_software_amazon_awscdk_services_ecs_Volume_AsList() {
+		return (EAttribute) fargateTaskDefinitionBuilder_ecsEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getFargateTaskDefinitionBuilder_ecs_Cpu_java_lang_Number_() {
+		return (EAttribute) fargateTaskDefinitionBuilder_ecsEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getFargateTaskDefinitionBuilder_ecs_MemoryLimitMiB_java_lang_Number_() {
+		return (EAttribute) fargateTaskDefinitionBuilder_ecsEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getFargateTaskDefinitionBuilder_ecs_GeneratedClassName() {
+		return (EAttribute) fargateTaskDefinitionBuilder_ecsEClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getFargateTaskDefinitionBuilder_ecs_VarName() {
+		return (EAttribute) fargateTaskDefinitionBuilder_ecsEClass.getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getFargateTaskDefinitionBuilder_ecs_Identifier() {
+		return (EAttribute) fargateTaskDefinitionBuilder_ecsEClass.getEStructuralFeatures().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getFargateTaskDefinitionBuilder_ecs_AdditionalCode() {
+		return (EAttribute) fargateTaskDefinitionBuilder_ecsEClass.getEStructuralFeatures().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getApplicationLoadBalancedFargateServiceBuilder_patterns() {
+		return applicationLoadBalancedFargateServiceBuilder_patternsEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationLoadBalancedFargateServiceBuilder_patterns_CertificateWithICertificate_software_amazon_awscdk_services_certificatemanager_ICertificate_AsReference() {
+		return (EAttribute) applicationLoadBalancedFargateServiceBuilder_patternsEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationLoadBalancedFargateServiceBuilder_patterns_CloudMapOptionsWithCloudMapOptions_software_amazon_awscdk_services_ecs_CloudMapOptions_AsReference() {
+		return (EAttribute) applicationLoadBalancedFargateServiceBuilder_patternsEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationLoadBalancedFargateServiceBuilder_patterns_ClusterWithICluster_software_amazon_awscdk_services_ecs_ICluster_AsReference() {
+		return (EAttribute) applicationLoadBalancedFargateServiceBuilder_patternsEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationLoadBalancedFargateServiceBuilder_patterns_DesiredCount_java_lang_Number_() {
+		return (EAttribute) applicationLoadBalancedFargateServiceBuilder_patternsEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationLoadBalancedFargateServiceBuilder_patterns_DomainName_java_lang_String_() {
+		return (EAttribute) applicationLoadBalancedFargateServiceBuilder_patternsEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationLoadBalancedFargateServiceBuilder_patterns_DomainZoneWithIHostedZone_software_amazon_awscdk_services_route53_IHostedZone_AsReference() {
+		return (EAttribute) applicationLoadBalancedFargateServiceBuilder_patternsEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationLoadBalancedFargateServiceBuilder_patterns_EnableEcsManagedTags_java_lang_Boolean_() {
+		return (EAttribute) applicationLoadBalancedFargateServiceBuilder_patternsEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationLoadBalancedFargateServiceBuilder_patterns_HealthCheckGracePeriodWithDuration_software_amazon_awscdk_core_Duration_AsReference() {
+		return (EAttribute) applicationLoadBalancedFargateServiceBuilder_patternsEClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationLoadBalancedFargateServiceBuilder_patterns_ListenerPort_java_lang_Number_() {
+		return (EAttribute) applicationLoadBalancedFargateServiceBuilder_patternsEClass.getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationLoadBalancedFargateServiceBuilder_patterns_LoadBalancerWithIApplicationLoadBalancer_software_amazon_awscdk_services_elasticloadbalancingv2_IApplicationLoadBalancer_AsReference() {
+		return (EAttribute) applicationLoadBalancedFargateServiceBuilder_patternsEClass.getEStructuralFeatures().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationLoadBalancedFargateServiceBuilder_patterns_MaxHealthyPercent_java_lang_Number_() {
+		return (EAttribute) applicationLoadBalancedFargateServiceBuilder_patternsEClass.getEStructuralFeatures()
+				.get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationLoadBalancedFargateServiceBuilder_patterns_MinHealthyPercent_java_lang_Number_() {
+		return (EAttribute) applicationLoadBalancedFargateServiceBuilder_patternsEClass.getEStructuralFeatures()
+				.get(11);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationLoadBalancedFargateServiceBuilder_patterns_PropagateTags_software_amazon_awscdk_services_ecs_PropagatedTagSource_() {
+		return (EAttribute) applicationLoadBalancedFargateServiceBuilder_patternsEClass.getEStructuralFeatures()
+				.get(12);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationLoadBalancedFargateServiceBuilder_patterns_Protocol_software_amazon_awscdk_services_elasticloadbalancingv2_ApplicationProtocol_() {
+		return (EAttribute) applicationLoadBalancedFargateServiceBuilder_patternsEClass.getEStructuralFeatures()
+				.get(13);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationLoadBalancedFargateServiceBuilder_patterns_PublicLoadBalancer_java_lang_Boolean_() {
+		return (EAttribute) applicationLoadBalancedFargateServiceBuilder_patternsEClass.getEStructuralFeatures()
+				.get(14);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationLoadBalancedFargateServiceBuilder_patterns_ServiceName_java_lang_String_() {
+		return (EAttribute) applicationLoadBalancedFargateServiceBuilder_patternsEClass.getEStructuralFeatures()
+				.get(15);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationLoadBalancedFargateServiceBuilder_patterns_TaskImageOptionsWithApplicationLoadBalancedTaskImageOptions_software_amazon_awscdk_services_ecs_patterns_ApplicationLoadBalancedTaskImageOptions_AsReference() {
+		return (EAttribute) applicationLoadBalancedFargateServiceBuilder_patternsEClass.getEStructuralFeatures()
+				.get(16);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationLoadBalancedFargateServiceBuilder_patterns_VpcWithIVpc_software_amazon_awscdk_services_ec2_IVpc_AsReference() {
+		return (EAttribute) applicationLoadBalancedFargateServiceBuilder_patternsEClass.getEStructuralFeatures()
+				.get(17);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationLoadBalancedFargateServiceBuilder_patterns_AssignPublicIp_java_lang_Boolean_() {
+		return (EAttribute) applicationLoadBalancedFargateServiceBuilder_patternsEClass.getEStructuralFeatures()
+				.get(18);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationLoadBalancedFargateServiceBuilder_patterns_Cpu_java_lang_Number_() {
+		return (EAttribute) applicationLoadBalancedFargateServiceBuilder_patternsEClass.getEStructuralFeatures()
+				.get(19);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationLoadBalancedFargateServiceBuilder_patterns_MemoryLimitMiB_java_lang_Number_() {
+		return (EAttribute) applicationLoadBalancedFargateServiceBuilder_patternsEClass.getEStructuralFeatures()
+				.get(20);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationLoadBalancedFargateServiceBuilder_patterns_PlatformVersion_software_amazon_awscdk_services_ecs_FargatePlatformVersion_() {
+		return (EAttribute) applicationLoadBalancedFargateServiceBuilder_patternsEClass.getEStructuralFeatures()
+				.get(21);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationLoadBalancedFargateServiceBuilder_patterns_TaskDefinitionWithFargateTaskDefinition_software_amazon_awscdk_services_ecs_FargateTaskDefinition_AsReference() {
+		return (EAttribute) applicationLoadBalancedFargateServiceBuilder_patternsEClass.getEStructuralFeatures()
+				.get(22);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationLoadBalancedFargateServiceBuilder_patterns_GeneratedClassName() {
+		return (EAttribute) applicationLoadBalancedFargateServiceBuilder_patternsEClass.getEStructuralFeatures()
+				.get(23);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationLoadBalancedFargateServiceBuilder_patterns_VarName() {
+		return (EAttribute) applicationLoadBalancedFargateServiceBuilder_patternsEClass.getEStructuralFeatures()
+				.get(24);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationLoadBalancedFargateServiceBuilder_patterns_Identifier() {
+		return (EAttribute) applicationLoadBalancedFargateServiceBuilder_patternsEClass.getEStructuralFeatures()
+				.get(25);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationLoadBalancedFargateServiceBuilder_patterns_AdditionalCode() {
+		return (EAttribute) applicationLoadBalancedFargateServiceBuilder_patternsEClass.getEStructuralFeatures()
+				.get(26);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getApplicationMultipleTargetGroupsFargateServiceBuilder_patterns() {
+		return applicationMultipleTargetGroupsFargateServiceBuilder_patternsEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationMultipleTargetGroupsFargateServiceBuilder_patterns_CloudMapOptionsWithCloudMapOptions_software_amazon_awscdk_services_ecs_CloudMapOptions_AsReference() {
+		return (EAttribute) applicationMultipleTargetGroupsFargateServiceBuilder_patternsEClass.getEStructuralFeatures()
+				.get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationMultipleTargetGroupsFargateServiceBuilder_patterns_ClusterWithICluster_software_amazon_awscdk_services_ecs_ICluster_AsReference() {
+		return (EAttribute) applicationMultipleTargetGroupsFargateServiceBuilder_patternsEClass.getEStructuralFeatures()
+				.get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationMultipleTargetGroupsFargateServiceBuilder_patterns_DesiredCount_java_lang_Number_() {
+		return (EAttribute) applicationMultipleTargetGroupsFargateServiceBuilder_patternsEClass.getEStructuralFeatures()
+				.get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationMultipleTargetGroupsFargateServiceBuilder_patterns_EnableEcsManagedTags_java_lang_Boolean_() {
+		return (EAttribute) applicationMultipleTargetGroupsFargateServiceBuilder_patternsEClass.getEStructuralFeatures()
+				.get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationMultipleTargetGroupsFargateServiceBuilder_patterns_HealthCheckGracePeriodWithDuration_software_amazon_awscdk_core_Duration_AsReference() {
+		return (EAttribute) applicationMultipleTargetGroupsFargateServiceBuilder_patternsEClass.getEStructuralFeatures()
+				.get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationMultipleTargetGroupsFargateServiceBuilder_patterns_LoadBalancers_software_amazon_awscdk_services_ecs_patterns_ApplicationLoadBalancerProps_AsList() {
+		return (EAttribute) applicationMultipleTargetGroupsFargateServiceBuilder_patternsEClass.getEStructuralFeatures()
+				.get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationMultipleTargetGroupsFargateServiceBuilder_patterns_PropagateTags_software_amazon_awscdk_services_ecs_PropagatedTagSource_() {
+		return (EAttribute) applicationMultipleTargetGroupsFargateServiceBuilder_patternsEClass.getEStructuralFeatures()
+				.get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationMultipleTargetGroupsFargateServiceBuilder_patterns_ServiceName_java_lang_String_() {
+		return (EAttribute) applicationMultipleTargetGroupsFargateServiceBuilder_patternsEClass.getEStructuralFeatures()
+				.get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationMultipleTargetGroupsFargateServiceBuilder_patterns_TargetGroups_software_amazon_awscdk_services_ecs_patterns_ApplicationTargetProps_AsList() {
+		return (EAttribute) applicationMultipleTargetGroupsFargateServiceBuilder_patternsEClass.getEStructuralFeatures()
+				.get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationMultipleTargetGroupsFargateServiceBuilder_patterns_TaskImageOptionsWithApplicationLoadBalancedTaskImageProps_software_amazon_awscdk_services_ecs_patterns_ApplicationLoadBalancedTaskImageProps_AsReference() {
+		return (EAttribute) applicationMultipleTargetGroupsFargateServiceBuilder_patternsEClass.getEStructuralFeatures()
+				.get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationMultipleTargetGroupsFargateServiceBuilder_patterns_VpcWithIVpc_software_amazon_awscdk_services_ec2_IVpc_AsReference() {
+		return (EAttribute) applicationMultipleTargetGroupsFargateServiceBuilder_patternsEClass.getEStructuralFeatures()
+				.get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationMultipleTargetGroupsFargateServiceBuilder_patterns_AssignPublicIp_java_lang_Boolean_() {
+		return (EAttribute) applicationMultipleTargetGroupsFargateServiceBuilder_patternsEClass.getEStructuralFeatures()
+				.get(11);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationMultipleTargetGroupsFargateServiceBuilder_patterns_Cpu_java_lang_Number_() {
+		return (EAttribute) applicationMultipleTargetGroupsFargateServiceBuilder_patternsEClass.getEStructuralFeatures()
+				.get(12);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationMultipleTargetGroupsFargateServiceBuilder_patterns_MemoryLimitMiB_java_lang_Number_() {
+		return (EAttribute) applicationMultipleTargetGroupsFargateServiceBuilder_patternsEClass.getEStructuralFeatures()
+				.get(13);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationMultipleTargetGroupsFargateServiceBuilder_patterns_PlatformVersion_software_amazon_awscdk_services_ecs_FargatePlatformVersion_() {
+		return (EAttribute) applicationMultipleTargetGroupsFargateServiceBuilder_patternsEClass.getEStructuralFeatures()
+				.get(14);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationMultipleTargetGroupsFargateServiceBuilder_patterns_TaskDefinitionWithFargateTaskDefinition_software_amazon_awscdk_services_ecs_FargateTaskDefinition_AsReference() {
+		return (EAttribute) applicationMultipleTargetGroupsFargateServiceBuilder_patternsEClass.getEStructuralFeatures()
+				.get(15);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationMultipleTargetGroupsFargateServiceBuilder_patterns_GeneratedClassName() {
+		return (EAttribute) applicationMultipleTargetGroupsFargateServiceBuilder_patternsEClass.getEStructuralFeatures()
+				.get(16);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationMultipleTargetGroupsFargateServiceBuilder_patterns_VarName() {
+		return (EAttribute) applicationMultipleTargetGroupsFargateServiceBuilder_patternsEClass.getEStructuralFeatures()
+				.get(17);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationMultipleTargetGroupsFargateServiceBuilder_patterns_Identifier() {
+		return (EAttribute) applicationMultipleTargetGroupsFargateServiceBuilder_patternsEClass.getEStructuralFeatures()
+				.get(18);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationMultipleTargetGroupsFargateServiceBuilder_patterns_AdditionalCode() {
+		return (EAttribute) applicationMultipleTargetGroupsFargateServiceBuilder_patternsEClass.getEStructuralFeatures()
+				.get(19);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getApplicationListenerPropsBuilder_patterns() {
+		return applicationListenerPropsBuilder_patternsEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationListenerPropsBuilder_patterns_Name_java_lang_String_() {
+		return (EAttribute) applicationListenerPropsBuilder_patternsEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationListenerPropsBuilder_patterns_CertificateWithICertificate_software_amazon_awscdk_services_certificatemanager_ICertificate_AsReference() {
+		return (EAttribute) applicationListenerPropsBuilder_patternsEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationListenerPropsBuilder_patterns_Port_java_lang_Number_() {
+		return (EAttribute) applicationListenerPropsBuilder_patternsEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationListenerPropsBuilder_patterns_Protocol_software_amazon_awscdk_services_elasticloadbalancingv2_ApplicationProtocol_() {
+		return (EAttribute) applicationListenerPropsBuilder_patternsEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationListenerPropsBuilder_patterns_GeneratedClassName() {
+		return (EAttribute) applicationListenerPropsBuilder_patternsEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationListenerPropsBuilder_patterns_VarName() {
+		return (EAttribute) applicationListenerPropsBuilder_patternsEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationListenerPropsBuilder_patterns_Identifier() {
+		return (EAttribute) applicationListenerPropsBuilder_patternsEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationListenerPropsBuilder_patterns_AdditionalCode() {
+		return (EAttribute) applicationListenerPropsBuilder_patternsEClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getApplicationLoadBalancerPropsBuilder_patterns() {
+		return applicationLoadBalancerPropsBuilder_patternsEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationLoadBalancerPropsBuilder_patterns_Listeners_software_amazon_awscdk_services_ecs_patterns_ApplicationListenerProps_AsList() {
+		return (EAttribute) applicationLoadBalancerPropsBuilder_patternsEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationLoadBalancerPropsBuilder_patterns_Name_java_lang_String_() {
+		return (EAttribute) applicationLoadBalancerPropsBuilder_patternsEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationLoadBalancerPropsBuilder_patterns_DomainName_java_lang_String_() {
+		return (EAttribute) applicationLoadBalancerPropsBuilder_patternsEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationLoadBalancerPropsBuilder_patterns_DomainZoneWithIHostedZone_software_amazon_awscdk_services_route53_IHostedZone_AsReference() {
+		return (EAttribute) applicationLoadBalancerPropsBuilder_patternsEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationLoadBalancerPropsBuilder_patterns_PublicLoadBalancer_java_lang_Boolean_() {
+		return (EAttribute) applicationLoadBalancerPropsBuilder_patternsEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationLoadBalancerPropsBuilder_patterns_GeneratedClassName() {
+		return (EAttribute) applicationLoadBalancerPropsBuilder_patternsEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationLoadBalancerPropsBuilder_patterns_VarName() {
+		return (EAttribute) applicationLoadBalancerPropsBuilder_patternsEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationLoadBalancerPropsBuilder_patterns_Identifier() {
+		return (EAttribute) applicationLoadBalancerPropsBuilder_patternsEClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationLoadBalancerPropsBuilder_patterns_AdditionalCode() {
+		return (EAttribute) applicationLoadBalancerPropsBuilder_patternsEClass.getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getApplicationTargetPropsBuilder_patterns() {
+		return applicationTargetPropsBuilder_patternsEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationTargetPropsBuilder_patterns_ContainerPort_java_lang_Number_() {
+		return (EAttribute) applicationTargetPropsBuilder_patternsEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationTargetPropsBuilder_patterns_HostHeader_java_lang_String_() {
+		return (EAttribute) applicationTargetPropsBuilder_patternsEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationTargetPropsBuilder_patterns_Listener_java_lang_String_() {
+		return (EAttribute) applicationTargetPropsBuilder_patternsEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationTargetPropsBuilder_patterns_PathPattern_java_lang_String_() {
+		return (EAttribute) applicationTargetPropsBuilder_patternsEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationTargetPropsBuilder_patterns_Priority_java_lang_Number_() {
+		return (EAttribute) applicationTargetPropsBuilder_patternsEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationTargetPropsBuilder_patterns_Protocol_software_amazon_awscdk_services_ecs_Protocol_() {
+		return (EAttribute) applicationTargetPropsBuilder_patternsEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationTargetPropsBuilder_patterns_GeneratedClassName() {
+		return (EAttribute) applicationTargetPropsBuilder_patternsEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationTargetPropsBuilder_patterns_VarName() {
+		return (EAttribute) applicationTargetPropsBuilder_patternsEClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationTargetPropsBuilder_patterns_Identifier() {
+		return (EAttribute) applicationTargetPropsBuilder_patternsEClass.getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationTargetPropsBuilder_patterns_AdditionalCode() {
+		return (EAttribute) applicationTargetPropsBuilder_patternsEClass.getEStructuralFeatures().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getApplicationLoadBalancedTaskImagePropsBuilder_patterns() {
+		return applicationLoadBalancedTaskImagePropsBuilder_patternsEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationLoadBalancedTaskImagePropsBuilder_patterns_ImageWithContainerImage_software_amazon_awscdk_services_ecs_ContainerImage_AsReference() {
+		return (EAttribute) applicationLoadBalancedTaskImagePropsBuilder_patternsEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationLoadBalancedTaskImagePropsBuilder_patterns_ContainerName_java_lang_String_() {
+		return (EAttribute) applicationLoadBalancedTaskImagePropsBuilder_patternsEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationLoadBalancedTaskImagePropsBuilder_patterns_ContainerPorts_java_lang_Number_AsList() {
+		return (EAttribute) applicationLoadBalancedTaskImagePropsBuilder_patternsEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationLoadBalancedTaskImagePropsBuilder_patterns_EnableLogging_java_lang_Boolean_() {
+		return (EAttribute) applicationLoadBalancedTaskImagePropsBuilder_patternsEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationLoadBalancedTaskImagePropsBuilder_patterns_Environment_java_lang_String__java_lang_String_AsMap() {
+		return (EAttribute) applicationLoadBalancedTaskImagePropsBuilder_patternsEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationLoadBalancedTaskImagePropsBuilder_patterns_ExecutionRoleWithIRole_software_amazon_awscdk_services_iam_IRole_AsReference() {
+		return (EAttribute) applicationLoadBalancedTaskImagePropsBuilder_patternsEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationLoadBalancedTaskImagePropsBuilder_patterns_Family_java_lang_String_() {
+		return (EAttribute) applicationLoadBalancedTaskImagePropsBuilder_patternsEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationLoadBalancedTaskImagePropsBuilder_patterns_LogDriverWithLogDriver_software_amazon_awscdk_services_ecs_LogDriver_AsReference() {
+		return (EAttribute) applicationLoadBalancedTaskImagePropsBuilder_patternsEClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationLoadBalancedTaskImagePropsBuilder_patterns_Secrets_java_lang_String__software_amazon_awscdk_services_ecs_Secret_AsMap() {
+		return (EAttribute) applicationLoadBalancedTaskImagePropsBuilder_patternsEClass.getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationLoadBalancedTaskImagePropsBuilder_patterns_TaskRoleWithIRole_software_amazon_awscdk_services_iam_IRole_AsReference() {
+		return (EAttribute) applicationLoadBalancedTaskImagePropsBuilder_patternsEClass.getEStructuralFeatures().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationLoadBalancedTaskImagePropsBuilder_patterns_GeneratedClassName() {
+		return (EAttribute) applicationLoadBalancedTaskImagePropsBuilder_patternsEClass.getEStructuralFeatures()
+				.get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationLoadBalancedTaskImagePropsBuilder_patterns_VarName() {
+		return (EAttribute) applicationLoadBalancedTaskImagePropsBuilder_patternsEClass.getEStructuralFeatures()
+				.get(11);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationLoadBalancedTaskImagePropsBuilder_patterns_Identifier() {
+		return (EAttribute) applicationLoadBalancedTaskImagePropsBuilder_patternsEClass.getEStructuralFeatures()
+				.get(12);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationLoadBalancedTaskImagePropsBuilder_patterns_AdditionalCode() {
+		return (EAttribute) applicationLoadBalancedTaskImagePropsBuilder_patternsEClass.getEStructuralFeatures()
+				.get(13);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getApplicationMultipleTargetGroupsEc2ServiceBuilder_patterns() {
+		return applicationMultipleTargetGroupsEc2ServiceBuilder_patternsEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationMultipleTargetGroupsEc2ServiceBuilder_patterns_CloudMapOptionsWithCloudMapOptions_software_amazon_awscdk_services_ecs_CloudMapOptions_AsReference() {
+		return (EAttribute) applicationMultipleTargetGroupsEc2ServiceBuilder_patternsEClass.getEStructuralFeatures()
+				.get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationMultipleTargetGroupsEc2ServiceBuilder_patterns_ClusterWithICluster_software_amazon_awscdk_services_ecs_ICluster_AsReference() {
+		return (EAttribute) applicationMultipleTargetGroupsEc2ServiceBuilder_patternsEClass.getEStructuralFeatures()
+				.get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationMultipleTargetGroupsEc2ServiceBuilder_patterns_DesiredCount_java_lang_Number_() {
+		return (EAttribute) applicationMultipleTargetGroupsEc2ServiceBuilder_patternsEClass.getEStructuralFeatures()
+				.get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationMultipleTargetGroupsEc2ServiceBuilder_patterns_EnableEcsManagedTags_java_lang_Boolean_() {
+		return (EAttribute) applicationMultipleTargetGroupsEc2ServiceBuilder_patternsEClass.getEStructuralFeatures()
+				.get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationMultipleTargetGroupsEc2ServiceBuilder_patterns_HealthCheckGracePeriodWithDuration_software_amazon_awscdk_core_Duration_AsReference() {
+		return (EAttribute) applicationMultipleTargetGroupsEc2ServiceBuilder_patternsEClass.getEStructuralFeatures()
+				.get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationMultipleTargetGroupsEc2ServiceBuilder_patterns_LoadBalancers_software_amazon_awscdk_services_ecs_patterns_ApplicationLoadBalancerProps_AsList() {
+		return (EAttribute) applicationMultipleTargetGroupsEc2ServiceBuilder_patternsEClass.getEStructuralFeatures()
+				.get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationMultipleTargetGroupsEc2ServiceBuilder_patterns_PropagateTags_software_amazon_awscdk_services_ecs_PropagatedTagSource_() {
+		return (EAttribute) applicationMultipleTargetGroupsEc2ServiceBuilder_patternsEClass.getEStructuralFeatures()
+				.get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationMultipleTargetGroupsEc2ServiceBuilder_patterns_ServiceName_java_lang_String_() {
+		return (EAttribute) applicationMultipleTargetGroupsEc2ServiceBuilder_patternsEClass.getEStructuralFeatures()
+				.get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationMultipleTargetGroupsEc2ServiceBuilder_patterns_TargetGroups_software_amazon_awscdk_services_ecs_patterns_ApplicationTargetProps_AsList() {
+		return (EAttribute) applicationMultipleTargetGroupsEc2ServiceBuilder_patternsEClass.getEStructuralFeatures()
+				.get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationMultipleTargetGroupsEc2ServiceBuilder_patterns_TaskImageOptionsWithApplicationLoadBalancedTaskImageProps_software_amazon_awscdk_services_ecs_patterns_ApplicationLoadBalancedTaskImageProps_AsReference() {
+		return (EAttribute) applicationMultipleTargetGroupsEc2ServiceBuilder_patternsEClass.getEStructuralFeatures()
+				.get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationMultipleTargetGroupsEc2ServiceBuilder_patterns_VpcWithIVpc_software_amazon_awscdk_services_ec2_IVpc_AsReference() {
+		return (EAttribute) applicationMultipleTargetGroupsEc2ServiceBuilder_patternsEClass.getEStructuralFeatures()
+				.get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationMultipleTargetGroupsEc2ServiceBuilder_patterns_Cpu_java_lang_Number_() {
+		return (EAttribute) applicationMultipleTargetGroupsEc2ServiceBuilder_patternsEClass.getEStructuralFeatures()
+				.get(11);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationMultipleTargetGroupsEc2ServiceBuilder_patterns_MemoryLimitMiB_java_lang_Number_() {
+		return (EAttribute) applicationMultipleTargetGroupsEc2ServiceBuilder_patternsEClass.getEStructuralFeatures()
+				.get(12);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationMultipleTargetGroupsEc2ServiceBuilder_patterns_MemoryReservationMiB_java_lang_Number_() {
+		return (EAttribute) applicationMultipleTargetGroupsEc2ServiceBuilder_patternsEClass.getEStructuralFeatures()
+				.get(13);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationMultipleTargetGroupsEc2ServiceBuilder_patterns_TaskDefinitionWithEc2TaskDefinition_software_amazon_awscdk_services_ecs_Ec2TaskDefinition_AsReference() {
+		return (EAttribute) applicationMultipleTargetGroupsEc2ServiceBuilder_patternsEClass.getEStructuralFeatures()
+				.get(14);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationMultipleTargetGroupsEc2ServiceBuilder_patterns_GeneratedClassName() {
+		return (EAttribute) applicationMultipleTargetGroupsEc2ServiceBuilder_patternsEClass.getEStructuralFeatures()
+				.get(15);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationMultipleTargetGroupsEc2ServiceBuilder_patterns_VarName() {
+		return (EAttribute) applicationMultipleTargetGroupsEc2ServiceBuilder_patternsEClass.getEStructuralFeatures()
+				.get(16);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationMultipleTargetGroupsEc2ServiceBuilder_patterns_Identifier() {
+		return (EAttribute) applicationMultipleTargetGroupsEc2ServiceBuilder_patternsEClass.getEStructuralFeatures()
+				.get(17);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getApplicationMultipleTargetGroupsEc2ServiceBuilder_patterns_AdditionalCode() {
+		return (EAttribute) applicationMultipleTargetGroupsEc2ServiceBuilder_patternsEClass.getEStructuralFeatures()
+				.get(18);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getNetworkLoadBalancedTaskImageOptionsBuilder_patterns() {
+		return networkLoadBalancedTaskImageOptionsBuilder_patternsEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkLoadBalancedTaskImageOptionsBuilder_patterns_ImageWithContainerImage_software_amazon_awscdk_services_ecs_ContainerImage_AsReference() {
+		return (EAttribute) networkLoadBalancedTaskImageOptionsBuilder_patternsEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkLoadBalancedTaskImageOptionsBuilder_patterns_ContainerName_java_lang_String_() {
+		return (EAttribute) networkLoadBalancedTaskImageOptionsBuilder_patternsEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkLoadBalancedTaskImageOptionsBuilder_patterns_ContainerPort_java_lang_Number_() {
+		return (EAttribute) networkLoadBalancedTaskImageOptionsBuilder_patternsEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkLoadBalancedTaskImageOptionsBuilder_patterns_EnableLogging_java_lang_Boolean_() {
+		return (EAttribute) networkLoadBalancedTaskImageOptionsBuilder_patternsEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkLoadBalancedTaskImageOptionsBuilder_patterns_Environment_java_lang_String__java_lang_String_AsMap() {
+		return (EAttribute) networkLoadBalancedTaskImageOptionsBuilder_patternsEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkLoadBalancedTaskImageOptionsBuilder_patterns_ExecutionRoleWithIRole_software_amazon_awscdk_services_iam_IRole_AsReference() {
+		return (EAttribute) networkLoadBalancedTaskImageOptionsBuilder_patternsEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkLoadBalancedTaskImageOptionsBuilder_patterns_Family_java_lang_String_() {
+		return (EAttribute) networkLoadBalancedTaskImageOptionsBuilder_patternsEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkLoadBalancedTaskImageOptionsBuilder_patterns_LogDriverWithLogDriver_software_amazon_awscdk_services_ecs_LogDriver_AsReference() {
+		return (EAttribute) networkLoadBalancedTaskImageOptionsBuilder_patternsEClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkLoadBalancedTaskImageOptionsBuilder_patterns_Secrets_java_lang_String__software_amazon_awscdk_services_ecs_Secret_AsMap() {
+		return (EAttribute) networkLoadBalancedTaskImageOptionsBuilder_patternsEClass.getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkLoadBalancedTaskImageOptionsBuilder_patterns_TaskRoleWithIRole_software_amazon_awscdk_services_iam_IRole_AsReference() {
+		return (EAttribute) networkLoadBalancedTaskImageOptionsBuilder_patternsEClass.getEStructuralFeatures().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkLoadBalancedTaskImageOptionsBuilder_patterns_GeneratedClassName() {
+		return (EAttribute) networkLoadBalancedTaskImageOptionsBuilder_patternsEClass.getEStructuralFeatures().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkLoadBalancedTaskImageOptionsBuilder_patterns_VarName() {
+		return (EAttribute) networkLoadBalancedTaskImageOptionsBuilder_patternsEClass.getEStructuralFeatures().get(11);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkLoadBalancedTaskImageOptionsBuilder_patterns_Identifier() {
+		return (EAttribute) networkLoadBalancedTaskImageOptionsBuilder_patternsEClass.getEStructuralFeatures().get(12);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkLoadBalancedTaskImageOptionsBuilder_patterns_AdditionalCode() {
+		return (EAttribute) networkLoadBalancedTaskImageOptionsBuilder_patternsEClass.getEStructuralFeatures().get(13);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getNetworkLoadBalancedFargateServiceBuilder_patterns() {
+		return networkLoadBalancedFargateServiceBuilder_patternsEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkLoadBalancedFargateServiceBuilder_patterns_CloudMapOptionsWithCloudMapOptions_software_amazon_awscdk_services_ecs_CloudMapOptions_AsReference() {
+		return (EAttribute) networkLoadBalancedFargateServiceBuilder_patternsEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkLoadBalancedFargateServiceBuilder_patterns_ClusterWithICluster_software_amazon_awscdk_services_ecs_ICluster_AsReference() {
+		return (EAttribute) networkLoadBalancedFargateServiceBuilder_patternsEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkLoadBalancedFargateServiceBuilder_patterns_DesiredCount_java_lang_Number_() {
+		return (EAttribute) networkLoadBalancedFargateServiceBuilder_patternsEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkLoadBalancedFargateServiceBuilder_patterns_DomainName_java_lang_String_() {
+		return (EAttribute) networkLoadBalancedFargateServiceBuilder_patternsEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkLoadBalancedFargateServiceBuilder_patterns_DomainZoneWithIHostedZone_software_amazon_awscdk_services_route53_IHostedZone_AsReference() {
+		return (EAttribute) networkLoadBalancedFargateServiceBuilder_patternsEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkLoadBalancedFargateServiceBuilder_patterns_EnableEcsManagedTags_java_lang_Boolean_() {
+		return (EAttribute) networkLoadBalancedFargateServiceBuilder_patternsEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkLoadBalancedFargateServiceBuilder_patterns_HealthCheckGracePeriodWithDuration_software_amazon_awscdk_core_Duration_AsReference() {
+		return (EAttribute) networkLoadBalancedFargateServiceBuilder_patternsEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkLoadBalancedFargateServiceBuilder_patterns_ListenerPort_java_lang_Number_() {
+		return (EAttribute) networkLoadBalancedFargateServiceBuilder_patternsEClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkLoadBalancedFargateServiceBuilder_patterns_LoadBalancerWithINetworkLoadBalancer_software_amazon_awscdk_services_elasticloadbalancingv2_INetworkLoadBalancer_AsReference() {
+		return (EAttribute) networkLoadBalancedFargateServiceBuilder_patternsEClass.getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkLoadBalancedFargateServiceBuilder_patterns_MaxHealthyPercent_java_lang_Number_() {
+		return (EAttribute) networkLoadBalancedFargateServiceBuilder_patternsEClass.getEStructuralFeatures().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkLoadBalancedFargateServiceBuilder_patterns_MinHealthyPercent_java_lang_Number_() {
+		return (EAttribute) networkLoadBalancedFargateServiceBuilder_patternsEClass.getEStructuralFeatures().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkLoadBalancedFargateServiceBuilder_patterns_PropagateTags_software_amazon_awscdk_services_ecs_PropagatedTagSource_() {
+		return (EAttribute) networkLoadBalancedFargateServiceBuilder_patternsEClass.getEStructuralFeatures().get(11);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkLoadBalancedFargateServiceBuilder_patterns_PublicLoadBalancer_java_lang_Boolean_() {
+		return (EAttribute) networkLoadBalancedFargateServiceBuilder_patternsEClass.getEStructuralFeatures().get(12);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkLoadBalancedFargateServiceBuilder_patterns_ServiceName_java_lang_String_() {
+		return (EAttribute) networkLoadBalancedFargateServiceBuilder_patternsEClass.getEStructuralFeatures().get(13);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkLoadBalancedFargateServiceBuilder_patterns_TaskImageOptionsWithNetworkLoadBalancedTaskImageOptions_software_amazon_awscdk_services_ecs_patterns_NetworkLoadBalancedTaskImageOptions_AsReference() {
+		return (EAttribute) networkLoadBalancedFargateServiceBuilder_patternsEClass.getEStructuralFeatures().get(14);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkLoadBalancedFargateServiceBuilder_patterns_VpcWithIVpc_software_amazon_awscdk_services_ec2_IVpc_AsReference() {
+		return (EAttribute) networkLoadBalancedFargateServiceBuilder_patternsEClass.getEStructuralFeatures().get(15);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkLoadBalancedFargateServiceBuilder_patterns_AssignPublicIp_java_lang_Boolean_() {
+		return (EAttribute) networkLoadBalancedFargateServiceBuilder_patternsEClass.getEStructuralFeatures().get(16);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkLoadBalancedFargateServiceBuilder_patterns_Cpu_java_lang_Number_() {
+		return (EAttribute) networkLoadBalancedFargateServiceBuilder_patternsEClass.getEStructuralFeatures().get(17);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkLoadBalancedFargateServiceBuilder_patterns_MemoryLimitMiB_java_lang_Number_() {
+		return (EAttribute) networkLoadBalancedFargateServiceBuilder_patternsEClass.getEStructuralFeatures().get(18);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkLoadBalancedFargateServiceBuilder_patterns_PlatformVersion_software_amazon_awscdk_services_ecs_FargatePlatformVersion_() {
+		return (EAttribute) networkLoadBalancedFargateServiceBuilder_patternsEClass.getEStructuralFeatures().get(19);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkLoadBalancedFargateServiceBuilder_patterns_TaskDefinitionWithFargateTaskDefinition_software_amazon_awscdk_services_ecs_FargateTaskDefinition_AsReference() {
+		return (EAttribute) networkLoadBalancedFargateServiceBuilder_patternsEClass.getEStructuralFeatures().get(20);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkLoadBalancedFargateServiceBuilder_patterns_GeneratedClassName() {
+		return (EAttribute) networkLoadBalancedFargateServiceBuilder_patternsEClass.getEStructuralFeatures().get(21);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkLoadBalancedFargateServiceBuilder_patterns_VarName() {
+		return (EAttribute) networkLoadBalancedFargateServiceBuilder_patternsEClass.getEStructuralFeatures().get(22);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkLoadBalancedFargateServiceBuilder_patterns_Identifier() {
+		return (EAttribute) networkLoadBalancedFargateServiceBuilder_patternsEClass.getEStructuralFeatures().get(23);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkLoadBalancedFargateServiceBuilder_patterns_AdditionalCode() {
+		return (EAttribute) networkLoadBalancedFargateServiceBuilder_patternsEClass.getEStructuralFeatures().get(24);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getNetworkLoadBalancedEc2ServiceBuilder_patterns() {
+		return networkLoadBalancedEc2ServiceBuilder_patternsEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkLoadBalancedEc2ServiceBuilder_patterns_CloudMapOptionsWithCloudMapOptions_software_amazon_awscdk_services_ecs_CloudMapOptions_AsReference() {
+		return (EAttribute) networkLoadBalancedEc2ServiceBuilder_patternsEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkLoadBalancedEc2ServiceBuilder_patterns_ClusterWithICluster_software_amazon_awscdk_services_ecs_ICluster_AsReference() {
+		return (EAttribute) networkLoadBalancedEc2ServiceBuilder_patternsEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkLoadBalancedEc2ServiceBuilder_patterns_DesiredCount_java_lang_Number_() {
+		return (EAttribute) networkLoadBalancedEc2ServiceBuilder_patternsEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkLoadBalancedEc2ServiceBuilder_patterns_DomainName_java_lang_String_() {
+		return (EAttribute) networkLoadBalancedEc2ServiceBuilder_patternsEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkLoadBalancedEc2ServiceBuilder_patterns_DomainZoneWithIHostedZone_software_amazon_awscdk_services_route53_IHostedZone_AsReference() {
+		return (EAttribute) networkLoadBalancedEc2ServiceBuilder_patternsEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkLoadBalancedEc2ServiceBuilder_patterns_EnableEcsManagedTags_java_lang_Boolean_() {
+		return (EAttribute) networkLoadBalancedEc2ServiceBuilder_patternsEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkLoadBalancedEc2ServiceBuilder_patterns_HealthCheckGracePeriodWithDuration_software_amazon_awscdk_core_Duration_AsReference() {
+		return (EAttribute) networkLoadBalancedEc2ServiceBuilder_patternsEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkLoadBalancedEc2ServiceBuilder_patterns_ListenerPort_java_lang_Number_() {
+		return (EAttribute) networkLoadBalancedEc2ServiceBuilder_patternsEClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkLoadBalancedEc2ServiceBuilder_patterns_LoadBalancerWithINetworkLoadBalancer_software_amazon_awscdk_services_elasticloadbalancingv2_INetworkLoadBalancer_AsReference() {
+		return (EAttribute) networkLoadBalancedEc2ServiceBuilder_patternsEClass.getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkLoadBalancedEc2ServiceBuilder_patterns_MaxHealthyPercent_java_lang_Number_() {
+		return (EAttribute) networkLoadBalancedEc2ServiceBuilder_patternsEClass.getEStructuralFeatures().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkLoadBalancedEc2ServiceBuilder_patterns_MinHealthyPercent_java_lang_Number_() {
+		return (EAttribute) networkLoadBalancedEc2ServiceBuilder_patternsEClass.getEStructuralFeatures().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkLoadBalancedEc2ServiceBuilder_patterns_PropagateTags_software_amazon_awscdk_services_ecs_PropagatedTagSource_() {
+		return (EAttribute) networkLoadBalancedEc2ServiceBuilder_patternsEClass.getEStructuralFeatures().get(11);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkLoadBalancedEc2ServiceBuilder_patterns_PublicLoadBalancer_java_lang_Boolean_() {
+		return (EAttribute) networkLoadBalancedEc2ServiceBuilder_patternsEClass.getEStructuralFeatures().get(12);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkLoadBalancedEc2ServiceBuilder_patterns_ServiceName_java_lang_String_() {
+		return (EAttribute) networkLoadBalancedEc2ServiceBuilder_patternsEClass.getEStructuralFeatures().get(13);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkLoadBalancedEc2ServiceBuilder_patterns_TaskImageOptionsWithNetworkLoadBalancedTaskImageOptions_software_amazon_awscdk_services_ecs_patterns_NetworkLoadBalancedTaskImageOptions_AsReference() {
+		return (EAttribute) networkLoadBalancedEc2ServiceBuilder_patternsEClass.getEStructuralFeatures().get(14);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkLoadBalancedEc2ServiceBuilder_patterns_VpcWithIVpc_software_amazon_awscdk_services_ec2_IVpc_AsReference() {
+		return (EAttribute) networkLoadBalancedEc2ServiceBuilder_patternsEClass.getEStructuralFeatures().get(15);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkLoadBalancedEc2ServiceBuilder_patterns_Cpu_java_lang_Number_() {
+		return (EAttribute) networkLoadBalancedEc2ServiceBuilder_patternsEClass.getEStructuralFeatures().get(16);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkLoadBalancedEc2ServiceBuilder_patterns_MemoryLimitMiB_java_lang_Number_() {
+		return (EAttribute) networkLoadBalancedEc2ServiceBuilder_patternsEClass.getEStructuralFeatures().get(17);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkLoadBalancedEc2ServiceBuilder_patterns_MemoryReservationMiB_java_lang_Number_() {
+		return (EAttribute) networkLoadBalancedEc2ServiceBuilder_patternsEClass.getEStructuralFeatures().get(18);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkLoadBalancedEc2ServiceBuilder_patterns_TaskDefinitionWithEc2TaskDefinition_software_amazon_awscdk_services_ecs_Ec2TaskDefinition_AsReference() {
+		return (EAttribute) networkLoadBalancedEc2ServiceBuilder_patternsEClass.getEStructuralFeatures().get(19);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkLoadBalancedEc2ServiceBuilder_patterns_GeneratedClassName() {
+		return (EAttribute) networkLoadBalancedEc2ServiceBuilder_patternsEClass.getEStructuralFeatures().get(20);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkLoadBalancedEc2ServiceBuilder_patterns_VarName() {
+		return (EAttribute) networkLoadBalancedEc2ServiceBuilder_patternsEClass.getEStructuralFeatures().get(21);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkLoadBalancedEc2ServiceBuilder_patterns_Identifier() {
+		return (EAttribute) networkLoadBalancedEc2ServiceBuilder_patternsEClass.getEStructuralFeatures().get(22);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkLoadBalancedEc2ServiceBuilder_patterns_AdditionalCode() {
+		return (EAttribute) networkLoadBalancedEc2ServiceBuilder_patternsEClass.getEStructuralFeatures().get(23);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getNetworkMultipleTargetGroupsEc2ServiceBuilder_patterns() {
+		return networkMultipleTargetGroupsEc2ServiceBuilder_patternsEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkMultipleTargetGroupsEc2ServiceBuilder_patterns_CloudMapOptionsWithCloudMapOptions_software_amazon_awscdk_services_ecs_CloudMapOptions_AsReference() {
+		return (EAttribute) networkMultipleTargetGroupsEc2ServiceBuilder_patternsEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkMultipleTargetGroupsEc2ServiceBuilder_patterns_ClusterWithICluster_software_amazon_awscdk_services_ecs_ICluster_AsReference() {
+		return (EAttribute) networkMultipleTargetGroupsEc2ServiceBuilder_patternsEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkMultipleTargetGroupsEc2ServiceBuilder_patterns_DesiredCount_java_lang_Number_() {
+		return (EAttribute) networkMultipleTargetGroupsEc2ServiceBuilder_patternsEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkMultipleTargetGroupsEc2ServiceBuilder_patterns_EnableEcsManagedTags_java_lang_Boolean_() {
+		return (EAttribute) networkMultipleTargetGroupsEc2ServiceBuilder_patternsEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkMultipleTargetGroupsEc2ServiceBuilder_patterns_HealthCheckGracePeriodWithDuration_software_amazon_awscdk_core_Duration_AsReference() {
+		return (EAttribute) networkMultipleTargetGroupsEc2ServiceBuilder_patternsEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkMultipleTargetGroupsEc2ServiceBuilder_patterns_LoadBalancers_software_amazon_awscdk_services_ecs_patterns_NetworkLoadBalancerProps_AsList() {
+		return (EAttribute) networkMultipleTargetGroupsEc2ServiceBuilder_patternsEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkMultipleTargetGroupsEc2ServiceBuilder_patterns_PropagateTags_software_amazon_awscdk_services_ecs_PropagatedTagSource_() {
+		return (EAttribute) networkMultipleTargetGroupsEc2ServiceBuilder_patternsEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkMultipleTargetGroupsEc2ServiceBuilder_patterns_ServiceName_java_lang_String_() {
+		return (EAttribute) networkMultipleTargetGroupsEc2ServiceBuilder_patternsEClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkMultipleTargetGroupsEc2ServiceBuilder_patterns_TargetGroups_software_amazon_awscdk_services_ecs_patterns_NetworkTargetProps_AsList() {
+		return (EAttribute) networkMultipleTargetGroupsEc2ServiceBuilder_patternsEClass.getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkMultipleTargetGroupsEc2ServiceBuilder_patterns_TaskImageOptionsWithNetworkLoadBalancedTaskImageProps_software_amazon_awscdk_services_ecs_patterns_NetworkLoadBalancedTaskImageProps_AsReference() {
+		return (EAttribute) networkMultipleTargetGroupsEc2ServiceBuilder_patternsEClass.getEStructuralFeatures().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkMultipleTargetGroupsEc2ServiceBuilder_patterns_VpcWithIVpc_software_amazon_awscdk_services_ec2_IVpc_AsReference() {
+		return (EAttribute) networkMultipleTargetGroupsEc2ServiceBuilder_patternsEClass.getEStructuralFeatures()
+				.get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkMultipleTargetGroupsEc2ServiceBuilder_patterns_Cpu_java_lang_Number_() {
+		return (EAttribute) networkMultipleTargetGroupsEc2ServiceBuilder_patternsEClass.getEStructuralFeatures()
+				.get(11);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkMultipleTargetGroupsEc2ServiceBuilder_patterns_MemoryLimitMiB_java_lang_Number_() {
+		return (EAttribute) networkMultipleTargetGroupsEc2ServiceBuilder_patternsEClass.getEStructuralFeatures()
+				.get(12);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkMultipleTargetGroupsEc2ServiceBuilder_patterns_MemoryReservationMiB_java_lang_Number_() {
+		return (EAttribute) networkMultipleTargetGroupsEc2ServiceBuilder_patternsEClass.getEStructuralFeatures()
+				.get(13);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkMultipleTargetGroupsEc2ServiceBuilder_patterns_TaskDefinitionWithEc2TaskDefinition_software_amazon_awscdk_services_ecs_Ec2TaskDefinition_AsReference() {
+		return (EAttribute) networkMultipleTargetGroupsEc2ServiceBuilder_patternsEClass.getEStructuralFeatures()
+				.get(14);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkMultipleTargetGroupsEc2ServiceBuilder_patterns_GeneratedClassName() {
+		return (EAttribute) networkMultipleTargetGroupsEc2ServiceBuilder_patternsEClass.getEStructuralFeatures()
+				.get(15);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkMultipleTargetGroupsEc2ServiceBuilder_patterns_VarName() {
+		return (EAttribute) networkMultipleTargetGroupsEc2ServiceBuilder_patternsEClass.getEStructuralFeatures()
+				.get(16);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkMultipleTargetGroupsEc2ServiceBuilder_patterns_Identifier() {
+		return (EAttribute) networkMultipleTargetGroupsEc2ServiceBuilder_patternsEClass.getEStructuralFeatures()
+				.get(17);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkMultipleTargetGroupsEc2ServiceBuilder_patterns_AdditionalCode() {
+		return (EAttribute) networkMultipleTargetGroupsEc2ServiceBuilder_patternsEClass.getEStructuralFeatures()
+				.get(18);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getNetworkTargetPropsBuilder_patterns() {
+		return networkTargetPropsBuilder_patternsEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkTargetPropsBuilder_patterns_ContainerPort_java_lang_Number_() {
+		return (EAttribute) networkTargetPropsBuilder_patternsEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkTargetPropsBuilder_patterns_Listener_java_lang_String_() {
+		return (EAttribute) networkTargetPropsBuilder_patternsEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkTargetPropsBuilder_patterns_GeneratedClassName() {
+		return (EAttribute) networkTargetPropsBuilder_patternsEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkTargetPropsBuilder_patterns_VarName() {
+		return (EAttribute) networkTargetPropsBuilder_patternsEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkTargetPropsBuilder_patterns_Identifier() {
+		return (EAttribute) networkTargetPropsBuilder_patternsEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkTargetPropsBuilder_patterns_AdditionalCode() {
+		return (EAttribute) networkTargetPropsBuilder_patternsEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getNetworkLoadBalancedTaskImagePropsBuilder_patterns() {
+		return networkLoadBalancedTaskImagePropsBuilder_patternsEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkLoadBalancedTaskImagePropsBuilder_patterns_ImageWithContainerImage_software_amazon_awscdk_services_ecs_ContainerImage_AsReference() {
+		return (EAttribute) networkLoadBalancedTaskImagePropsBuilder_patternsEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkLoadBalancedTaskImagePropsBuilder_patterns_ContainerName_java_lang_String_() {
+		return (EAttribute) networkLoadBalancedTaskImagePropsBuilder_patternsEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkLoadBalancedTaskImagePropsBuilder_patterns_ContainerPorts_java_lang_Number_AsList() {
+		return (EAttribute) networkLoadBalancedTaskImagePropsBuilder_patternsEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkLoadBalancedTaskImagePropsBuilder_patterns_EnableLogging_java_lang_Boolean_() {
+		return (EAttribute) networkLoadBalancedTaskImagePropsBuilder_patternsEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkLoadBalancedTaskImagePropsBuilder_patterns_Environment_java_lang_String__java_lang_String_AsMap() {
+		return (EAttribute) networkLoadBalancedTaskImagePropsBuilder_patternsEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkLoadBalancedTaskImagePropsBuilder_patterns_ExecutionRoleWithIRole_software_amazon_awscdk_services_iam_IRole_AsReference() {
+		return (EAttribute) networkLoadBalancedTaskImagePropsBuilder_patternsEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkLoadBalancedTaskImagePropsBuilder_patterns_Family_java_lang_String_() {
+		return (EAttribute) networkLoadBalancedTaskImagePropsBuilder_patternsEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkLoadBalancedTaskImagePropsBuilder_patterns_LogDriverWithLogDriver_software_amazon_awscdk_services_ecs_LogDriver_AsReference() {
+		return (EAttribute) networkLoadBalancedTaskImagePropsBuilder_patternsEClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkLoadBalancedTaskImagePropsBuilder_patterns_Secrets_java_lang_String__software_amazon_awscdk_services_ecs_Secret_AsMap() {
+		return (EAttribute) networkLoadBalancedTaskImagePropsBuilder_patternsEClass.getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkLoadBalancedTaskImagePropsBuilder_patterns_TaskRoleWithIRole_software_amazon_awscdk_services_iam_IRole_AsReference() {
+		return (EAttribute) networkLoadBalancedTaskImagePropsBuilder_patternsEClass.getEStructuralFeatures().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkLoadBalancedTaskImagePropsBuilder_patterns_GeneratedClassName() {
+		return (EAttribute) networkLoadBalancedTaskImagePropsBuilder_patternsEClass.getEStructuralFeatures().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkLoadBalancedTaskImagePropsBuilder_patterns_VarName() {
+		return (EAttribute) networkLoadBalancedTaskImagePropsBuilder_patternsEClass.getEStructuralFeatures().get(11);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkLoadBalancedTaskImagePropsBuilder_patterns_Identifier() {
+		return (EAttribute) networkLoadBalancedTaskImagePropsBuilder_patternsEClass.getEStructuralFeatures().get(12);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkLoadBalancedTaskImagePropsBuilder_patterns_AdditionalCode() {
+		return (EAttribute) networkLoadBalancedTaskImagePropsBuilder_patternsEClass.getEStructuralFeatures().get(13);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getNetworkMultipleTargetGroupsFargateServiceBuilder_patterns() {
+		return networkMultipleTargetGroupsFargateServiceBuilder_patternsEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkMultipleTargetGroupsFargateServiceBuilder_patterns_CloudMapOptionsWithCloudMapOptions_software_amazon_awscdk_services_ecs_CloudMapOptions_AsReference() {
+		return (EAttribute) networkMultipleTargetGroupsFargateServiceBuilder_patternsEClass.getEStructuralFeatures()
+				.get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkMultipleTargetGroupsFargateServiceBuilder_patterns_ClusterWithICluster_software_amazon_awscdk_services_ecs_ICluster_AsReference() {
+		return (EAttribute) networkMultipleTargetGroupsFargateServiceBuilder_patternsEClass.getEStructuralFeatures()
+				.get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkMultipleTargetGroupsFargateServiceBuilder_patterns_DesiredCount_java_lang_Number_() {
+		return (EAttribute) networkMultipleTargetGroupsFargateServiceBuilder_patternsEClass.getEStructuralFeatures()
+				.get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkMultipleTargetGroupsFargateServiceBuilder_patterns_EnableEcsManagedTags_java_lang_Boolean_() {
+		return (EAttribute) networkMultipleTargetGroupsFargateServiceBuilder_patternsEClass.getEStructuralFeatures()
+				.get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkMultipleTargetGroupsFargateServiceBuilder_patterns_HealthCheckGracePeriodWithDuration_software_amazon_awscdk_core_Duration_AsReference() {
+		return (EAttribute) networkMultipleTargetGroupsFargateServiceBuilder_patternsEClass.getEStructuralFeatures()
+				.get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkMultipleTargetGroupsFargateServiceBuilder_patterns_LoadBalancers_software_amazon_awscdk_services_ecs_patterns_NetworkLoadBalancerProps_AsList() {
+		return (EAttribute) networkMultipleTargetGroupsFargateServiceBuilder_patternsEClass.getEStructuralFeatures()
+				.get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkMultipleTargetGroupsFargateServiceBuilder_patterns_PropagateTags_software_amazon_awscdk_services_ecs_PropagatedTagSource_() {
+		return (EAttribute) networkMultipleTargetGroupsFargateServiceBuilder_patternsEClass.getEStructuralFeatures()
+				.get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkMultipleTargetGroupsFargateServiceBuilder_patterns_ServiceName_java_lang_String_() {
+		return (EAttribute) networkMultipleTargetGroupsFargateServiceBuilder_patternsEClass.getEStructuralFeatures()
+				.get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkMultipleTargetGroupsFargateServiceBuilder_patterns_TargetGroups_software_amazon_awscdk_services_ecs_patterns_NetworkTargetProps_AsList() {
+		return (EAttribute) networkMultipleTargetGroupsFargateServiceBuilder_patternsEClass.getEStructuralFeatures()
+				.get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkMultipleTargetGroupsFargateServiceBuilder_patterns_TaskImageOptionsWithNetworkLoadBalancedTaskImageProps_software_amazon_awscdk_services_ecs_patterns_NetworkLoadBalancedTaskImageProps_AsReference() {
+		return (EAttribute) networkMultipleTargetGroupsFargateServiceBuilder_patternsEClass.getEStructuralFeatures()
+				.get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkMultipleTargetGroupsFargateServiceBuilder_patterns_VpcWithIVpc_software_amazon_awscdk_services_ec2_IVpc_AsReference() {
+		return (EAttribute) networkMultipleTargetGroupsFargateServiceBuilder_patternsEClass.getEStructuralFeatures()
+				.get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkMultipleTargetGroupsFargateServiceBuilder_patterns_AssignPublicIp_java_lang_Boolean_() {
+		return (EAttribute) networkMultipleTargetGroupsFargateServiceBuilder_patternsEClass.getEStructuralFeatures()
+				.get(11);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkMultipleTargetGroupsFargateServiceBuilder_patterns_Cpu_java_lang_Number_() {
+		return (EAttribute) networkMultipleTargetGroupsFargateServiceBuilder_patternsEClass.getEStructuralFeatures()
+				.get(12);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkMultipleTargetGroupsFargateServiceBuilder_patterns_MemoryLimitMiB_java_lang_Number_() {
+		return (EAttribute) networkMultipleTargetGroupsFargateServiceBuilder_patternsEClass.getEStructuralFeatures()
+				.get(13);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkMultipleTargetGroupsFargateServiceBuilder_patterns_PlatformVersion_software_amazon_awscdk_services_ecs_FargatePlatformVersion_() {
+		return (EAttribute) networkMultipleTargetGroupsFargateServiceBuilder_patternsEClass.getEStructuralFeatures()
+				.get(14);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkMultipleTargetGroupsFargateServiceBuilder_patterns_TaskDefinitionWithFargateTaskDefinition_software_amazon_awscdk_services_ecs_FargateTaskDefinition_AsReference() {
+		return (EAttribute) networkMultipleTargetGroupsFargateServiceBuilder_patternsEClass.getEStructuralFeatures()
+				.get(15);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkMultipleTargetGroupsFargateServiceBuilder_patterns_GeneratedClassName() {
+		return (EAttribute) networkMultipleTargetGroupsFargateServiceBuilder_patternsEClass.getEStructuralFeatures()
+				.get(16);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkMultipleTargetGroupsFargateServiceBuilder_patterns_VarName() {
+		return (EAttribute) networkMultipleTargetGroupsFargateServiceBuilder_patternsEClass.getEStructuralFeatures()
+				.get(17);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkMultipleTargetGroupsFargateServiceBuilder_patterns_Identifier() {
+		return (EAttribute) networkMultipleTargetGroupsFargateServiceBuilder_patternsEClass.getEStructuralFeatures()
+				.get(18);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getNetworkMultipleTargetGroupsFargateServiceBuilder_patterns_AdditionalCode() {
+		return (EAttribute) networkMultipleTargetGroupsFargateServiceBuilder_patternsEClass.getEStructuralFeatures()
+				.get(19);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getScalingIntervalBuilder_applicationautoscaling() {
+		return scalingIntervalBuilder_applicationautoscalingEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getScalingIntervalBuilder_applicationautoscaling_Change_java_lang_Number_() {
+		return (EAttribute) scalingIntervalBuilder_applicationautoscalingEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getScalingIntervalBuilder_applicationautoscaling_Lower_java_lang_Number_() {
+		return (EAttribute) scalingIntervalBuilder_applicationautoscalingEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getScalingIntervalBuilder_applicationautoscaling_Upper_java_lang_Number_() {
+		return (EAttribute) scalingIntervalBuilder_applicationautoscalingEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getScalingIntervalBuilder_applicationautoscaling_GeneratedClassName() {
+		return (EAttribute) scalingIntervalBuilder_applicationautoscalingEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getScalingIntervalBuilder_applicationautoscaling_VarName() {
+		return (EAttribute) scalingIntervalBuilder_applicationautoscalingEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getScalingIntervalBuilder_applicationautoscaling_Identifier() {
+		return (EAttribute) scalingIntervalBuilder_applicationautoscalingEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getScalingIntervalBuilder_applicationautoscaling_AdditionalCode() {
+		return (EAttribute) scalingIntervalBuilder_applicationautoscalingEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getQueueProcessingFargateServiceBuilder_patterns() {
+		return queueProcessingFargateServiceBuilder_patternsEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getQueueProcessingFargateServiceBuilder_patterns_ImageWithContainerImage_software_amazon_awscdk_services_ecs_ContainerImage_AsReference() {
+		return (EAttribute) queueProcessingFargateServiceBuilder_patternsEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getQueueProcessingFargateServiceBuilder_patterns_ClusterWithICluster_software_amazon_awscdk_services_ecs_ICluster_AsReference() {
+		return (EAttribute) queueProcessingFargateServiceBuilder_patternsEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getQueueProcessingFargateServiceBuilder_patterns_Command_java_lang_String_AsList() {
+		return (EAttribute) queueProcessingFargateServiceBuilder_patternsEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getQueueProcessingFargateServiceBuilder_patterns_DesiredTaskCount_java_lang_Number_() {
+		return (EAttribute) queueProcessingFargateServiceBuilder_patternsEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getQueueProcessingFargateServiceBuilder_patterns_EnableEcsManagedTags_java_lang_Boolean_() {
+		return (EAttribute) queueProcessingFargateServiceBuilder_patternsEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getQueueProcessingFargateServiceBuilder_patterns_EnableLogging_java_lang_Boolean_() {
+		return (EAttribute) queueProcessingFargateServiceBuilder_patternsEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getQueueProcessingFargateServiceBuilder_patterns_Environment_java_lang_String__java_lang_String_AsMap() {
+		return (EAttribute) queueProcessingFargateServiceBuilder_patternsEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getQueueProcessingFargateServiceBuilder_patterns_Family_java_lang_String_() {
+		return (EAttribute) queueProcessingFargateServiceBuilder_patternsEClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getQueueProcessingFargateServiceBuilder_patterns_LogDriverWithLogDriver_software_amazon_awscdk_services_ecs_LogDriver_AsReference() {
+		return (EAttribute) queueProcessingFargateServiceBuilder_patternsEClass.getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getQueueProcessingFargateServiceBuilder_patterns_MaxHealthyPercent_java_lang_Number_() {
+		return (EAttribute) queueProcessingFargateServiceBuilder_patternsEClass.getEStructuralFeatures().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getQueueProcessingFargateServiceBuilder_patterns_MaxReceiveCount_java_lang_Number_() {
+		return (EAttribute) queueProcessingFargateServiceBuilder_patternsEClass.getEStructuralFeatures().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getQueueProcessingFargateServiceBuilder_patterns_MaxScalingCapacity_java_lang_Number_() {
+		return (EAttribute) queueProcessingFargateServiceBuilder_patternsEClass.getEStructuralFeatures().get(11);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getQueueProcessingFargateServiceBuilder_patterns_MinHealthyPercent_java_lang_Number_() {
+		return (EAttribute) queueProcessingFargateServiceBuilder_patternsEClass.getEStructuralFeatures().get(12);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getQueueProcessingFargateServiceBuilder_patterns_PropagateTags_software_amazon_awscdk_services_ecs_PropagatedTagSource_() {
+		return (EAttribute) queueProcessingFargateServiceBuilder_patternsEClass.getEStructuralFeatures().get(13);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getQueueProcessingFargateServiceBuilder_patterns_QueueWithIQueue_software_amazon_awscdk_services_sqs_IQueue_AsReference() {
+		return (EAttribute) queueProcessingFargateServiceBuilder_patternsEClass.getEStructuralFeatures().get(14);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getQueueProcessingFargateServiceBuilder_patterns_RetentionPeriodWithDuration_software_amazon_awscdk_core_Duration_AsReference() {
+		return (EAttribute) queueProcessingFargateServiceBuilder_patternsEClass.getEStructuralFeatures().get(15);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getQueueProcessingFargateServiceBuilder_patterns_ScalingSteps_software_amazon_awscdk_services_applicationautoscaling_ScalingInterval_AsList() {
+		return (EAttribute) queueProcessingFargateServiceBuilder_patternsEClass.getEStructuralFeatures().get(16);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getQueueProcessingFargateServiceBuilder_patterns_Secrets_java_lang_String__software_amazon_awscdk_services_ecs_Secret_AsMap() {
+		return (EAttribute) queueProcessingFargateServiceBuilder_patternsEClass.getEStructuralFeatures().get(17);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getQueueProcessingFargateServiceBuilder_patterns_ServiceName_java_lang_String_() {
+		return (EAttribute) queueProcessingFargateServiceBuilder_patternsEClass.getEStructuralFeatures().get(18);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getQueueProcessingFargateServiceBuilder_patterns_VpcWithIVpc_software_amazon_awscdk_services_ec2_IVpc_AsReference() {
+		return (EAttribute) queueProcessingFargateServiceBuilder_patternsEClass.getEStructuralFeatures().get(19);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getQueueProcessingFargateServiceBuilder_patterns_Cpu_java_lang_Number_() {
+		return (EAttribute) queueProcessingFargateServiceBuilder_patternsEClass.getEStructuralFeatures().get(20);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getQueueProcessingFargateServiceBuilder_patterns_MemoryLimitMiB_java_lang_Number_() {
+		return (EAttribute) queueProcessingFargateServiceBuilder_patternsEClass.getEStructuralFeatures().get(21);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getQueueProcessingFargateServiceBuilder_patterns_PlatformVersion_software_amazon_awscdk_services_ecs_FargatePlatformVersion_() {
+		return (EAttribute) queueProcessingFargateServiceBuilder_patternsEClass.getEStructuralFeatures().get(22);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getQueueProcessingFargateServiceBuilder_patterns_GeneratedClassName() {
+		return (EAttribute) queueProcessingFargateServiceBuilder_patternsEClass.getEStructuralFeatures().get(23);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getQueueProcessingFargateServiceBuilder_patterns_VarName() {
+		return (EAttribute) queueProcessingFargateServiceBuilder_patternsEClass.getEStructuralFeatures().get(24);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getQueueProcessingFargateServiceBuilder_patterns_Identifier() {
+		return (EAttribute) queueProcessingFargateServiceBuilder_patternsEClass.getEStructuralFeatures().get(25);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getQueueProcessingFargateServiceBuilder_patterns_AdditionalCode() {
+		return (EAttribute) queueProcessingFargateServiceBuilder_patternsEClass.getEStructuralFeatures().get(26);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getCronOptionsBuilder_applicationautoscaling() {
+		return cronOptionsBuilder_applicationautoscalingEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCronOptionsBuilder_applicationautoscaling_Day_java_lang_String_() {
+		return (EAttribute) cronOptionsBuilder_applicationautoscalingEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCronOptionsBuilder_applicationautoscaling_Hour_java_lang_String_() {
+		return (EAttribute) cronOptionsBuilder_applicationautoscalingEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCronOptionsBuilder_applicationautoscaling_Minute_java_lang_String_() {
+		return (EAttribute) cronOptionsBuilder_applicationautoscalingEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCronOptionsBuilder_applicationautoscaling_Month_java_lang_String_() {
+		return (EAttribute) cronOptionsBuilder_applicationautoscalingEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCronOptionsBuilder_applicationautoscaling_WeekDay_java_lang_String_() {
+		return (EAttribute) cronOptionsBuilder_applicationautoscalingEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCronOptionsBuilder_applicationautoscaling_Year_java_lang_String_() {
+		return (EAttribute) cronOptionsBuilder_applicationautoscalingEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCronOptionsBuilder_applicationautoscaling_GeneratedClassName() {
+		return (EAttribute) cronOptionsBuilder_applicationautoscalingEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCronOptionsBuilder_applicationautoscaling_VarName() {
+		return (EAttribute) cronOptionsBuilder_applicationautoscalingEClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCronOptionsBuilder_applicationautoscaling_Identifier() {
+		return (EAttribute) cronOptionsBuilder_applicationautoscalingEClass.getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCronOptionsBuilder_applicationautoscaling_AdditionalCode() {
+		return (EAttribute) cronOptionsBuilder_applicationautoscalingEClass.getEStructuralFeatures().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getScheduledEc2TaskDefinitionOptionsBuilder_patterns() {
+		return scheduledEc2TaskDefinitionOptionsBuilder_patternsEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getScheduledEc2TaskDefinitionOptionsBuilder_patterns_TaskDefinitionWithEc2TaskDefinition_software_amazon_awscdk_services_ecs_Ec2TaskDefinition_AsReference() {
+		return (EAttribute) scheduledEc2TaskDefinitionOptionsBuilder_patternsEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getScheduledEc2TaskDefinitionOptionsBuilder_patterns_GeneratedClassName() {
+		return (EAttribute) scheduledEc2TaskDefinitionOptionsBuilder_patternsEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getScheduledEc2TaskDefinitionOptionsBuilder_patterns_VarName() {
+		return (EAttribute) scheduledEc2TaskDefinitionOptionsBuilder_patternsEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getScheduledEc2TaskDefinitionOptionsBuilder_patterns_Identifier() {
+		return (EAttribute) scheduledEc2TaskDefinitionOptionsBuilder_patternsEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getScheduledEc2TaskDefinitionOptionsBuilder_patterns_AdditionalCode() {
+		return (EAttribute) scheduledEc2TaskDefinitionOptionsBuilder_patternsEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getScheduledEc2TaskImageOptionsBuilder_patterns() {
+		return scheduledEc2TaskImageOptionsBuilder_patternsEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getScheduledEc2TaskImageOptionsBuilder_patterns_Cpu_java_lang_Number_() {
+		return (EAttribute) scheduledEc2TaskImageOptionsBuilder_patternsEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getScheduledEc2TaskImageOptionsBuilder_patterns_MemoryLimitMiB_java_lang_Number_() {
+		return (EAttribute) scheduledEc2TaskImageOptionsBuilder_patternsEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getScheduledEc2TaskImageOptionsBuilder_patterns_MemoryReservationMiB_java_lang_Number_() {
+		return (EAttribute) scheduledEc2TaskImageOptionsBuilder_patternsEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getScheduledEc2TaskImageOptionsBuilder_patterns_ImageWithContainerImage_software_amazon_awscdk_services_ecs_ContainerImage_AsReference() {
+		return (EAttribute) scheduledEc2TaskImageOptionsBuilder_patternsEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getScheduledEc2TaskImageOptionsBuilder_patterns_Command_java_lang_String_AsList() {
+		return (EAttribute) scheduledEc2TaskImageOptionsBuilder_patternsEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getScheduledEc2TaskImageOptionsBuilder_patterns_Environment_java_lang_String__java_lang_String_AsMap() {
+		return (EAttribute) scheduledEc2TaskImageOptionsBuilder_patternsEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getScheduledEc2TaskImageOptionsBuilder_patterns_LogDriverWithLogDriver_software_amazon_awscdk_services_ecs_LogDriver_AsReference() {
+		return (EAttribute) scheduledEc2TaskImageOptionsBuilder_patternsEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getScheduledEc2TaskImageOptionsBuilder_patterns_Secrets_java_lang_String__software_amazon_awscdk_services_ecs_Secret_AsMap() {
+		return (EAttribute) scheduledEc2TaskImageOptionsBuilder_patternsEClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getScheduledEc2TaskImageOptionsBuilder_patterns_GeneratedClassName() {
+		return (EAttribute) scheduledEc2TaskImageOptionsBuilder_patternsEClass.getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getScheduledEc2TaskImageOptionsBuilder_patterns_VarName() {
+		return (EAttribute) scheduledEc2TaskImageOptionsBuilder_patternsEClass.getEStructuralFeatures().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getScheduledEc2TaskImageOptionsBuilder_patterns_Identifier() {
+		return (EAttribute) scheduledEc2TaskImageOptionsBuilder_patternsEClass.getEStructuralFeatures().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getScheduledEc2TaskImageOptionsBuilder_patterns_AdditionalCode() {
+		return (EAttribute) scheduledEc2TaskImageOptionsBuilder_patternsEClass.getEStructuralFeatures().get(11);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getScheduledEc2TaskBuilder_patterns() {
+		return scheduledEc2TaskBuilder_patternsEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getScheduledEc2TaskBuilder_patterns_ScheduleWithSchedule_software_amazon_awscdk_services_applicationautoscaling_Schedule_AsReference() {
+		return (EAttribute) scheduledEc2TaskBuilder_patternsEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getScheduledEc2TaskBuilder_patterns_ClusterWithICluster_software_amazon_awscdk_services_ecs_ICluster_AsReference() {
+		return (EAttribute) scheduledEc2TaskBuilder_patternsEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getScheduledEc2TaskBuilder_patterns_DesiredTaskCount_java_lang_Number_() {
+		return (EAttribute) scheduledEc2TaskBuilder_patternsEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getScheduledEc2TaskBuilder_patterns_SubnetSelectionWithSubnetSelection_software_amazon_awscdk_services_ec2_SubnetSelection_AsReference() {
+		return (EAttribute) scheduledEc2TaskBuilder_patternsEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getScheduledEc2TaskBuilder_patterns_VpcWithIVpc_software_amazon_awscdk_services_ec2_IVpc_AsReference() {
+		return (EAttribute) scheduledEc2TaskBuilder_patternsEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getScheduledEc2TaskBuilder_patterns_ScheduledEc2TaskDefinitionOptionsWithScheduledEc2TaskDefinitionOptions_software_amazon_awscdk_services_ecs_patterns_ScheduledEc2TaskDefinitionOptions_AsReference() {
+		return (EAttribute) scheduledEc2TaskBuilder_patternsEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getScheduledEc2TaskBuilder_patterns_ScheduledEc2TaskImageOptionsWithScheduledEc2TaskImageOptions_software_amazon_awscdk_services_ecs_patterns_ScheduledEc2TaskImageOptions_AsReference() {
+		return (EAttribute) scheduledEc2TaskBuilder_patternsEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getScheduledEc2TaskBuilder_patterns_GeneratedClassName() {
+		return (EAttribute) scheduledEc2TaskBuilder_patternsEClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getScheduledEc2TaskBuilder_patterns_VarName() {
+		return (EAttribute) scheduledEc2TaskBuilder_patternsEClass.getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getScheduledEc2TaskBuilder_patterns_Identifier() {
+		return (EAttribute) scheduledEc2TaskBuilder_patternsEClass.getEStructuralFeatures().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getScheduledEc2TaskBuilder_patterns_AdditionalCode() {
+		return (EAttribute) scheduledEc2TaskBuilder_patternsEClass.getEStructuralFeatures().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getQueueProcessingEc2ServiceBuilder_patterns() {
+		return queueProcessingEc2ServiceBuilder_patternsEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getQueueProcessingEc2ServiceBuilder_patterns_ImageWithContainerImage_software_amazon_awscdk_services_ecs_ContainerImage_AsReference() {
+		return (EAttribute) queueProcessingEc2ServiceBuilder_patternsEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getQueueProcessingEc2ServiceBuilder_patterns_ClusterWithICluster_software_amazon_awscdk_services_ecs_ICluster_AsReference() {
+		return (EAttribute) queueProcessingEc2ServiceBuilder_patternsEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getQueueProcessingEc2ServiceBuilder_patterns_Command_java_lang_String_AsList() {
+		return (EAttribute) queueProcessingEc2ServiceBuilder_patternsEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getQueueProcessingEc2ServiceBuilder_patterns_DesiredTaskCount_java_lang_Number_() {
+		return (EAttribute) queueProcessingEc2ServiceBuilder_patternsEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getQueueProcessingEc2ServiceBuilder_patterns_EnableEcsManagedTags_java_lang_Boolean_() {
+		return (EAttribute) queueProcessingEc2ServiceBuilder_patternsEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getQueueProcessingEc2ServiceBuilder_patterns_EnableLogging_java_lang_Boolean_() {
+		return (EAttribute) queueProcessingEc2ServiceBuilder_patternsEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getQueueProcessingEc2ServiceBuilder_patterns_Environment_java_lang_String__java_lang_String_AsMap() {
+		return (EAttribute) queueProcessingEc2ServiceBuilder_patternsEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getQueueProcessingEc2ServiceBuilder_patterns_Family_java_lang_String_() {
+		return (EAttribute) queueProcessingEc2ServiceBuilder_patternsEClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getQueueProcessingEc2ServiceBuilder_patterns_LogDriverWithLogDriver_software_amazon_awscdk_services_ecs_LogDriver_AsReference() {
+		return (EAttribute) queueProcessingEc2ServiceBuilder_patternsEClass.getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getQueueProcessingEc2ServiceBuilder_patterns_MaxHealthyPercent_java_lang_Number_() {
+		return (EAttribute) queueProcessingEc2ServiceBuilder_patternsEClass.getEStructuralFeatures().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getQueueProcessingEc2ServiceBuilder_patterns_MaxReceiveCount_java_lang_Number_() {
+		return (EAttribute) queueProcessingEc2ServiceBuilder_patternsEClass.getEStructuralFeatures().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getQueueProcessingEc2ServiceBuilder_patterns_MaxScalingCapacity_java_lang_Number_() {
+		return (EAttribute) queueProcessingEc2ServiceBuilder_patternsEClass.getEStructuralFeatures().get(11);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getQueueProcessingEc2ServiceBuilder_patterns_MinHealthyPercent_java_lang_Number_() {
+		return (EAttribute) queueProcessingEc2ServiceBuilder_patternsEClass.getEStructuralFeatures().get(12);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getQueueProcessingEc2ServiceBuilder_patterns_PropagateTags_software_amazon_awscdk_services_ecs_PropagatedTagSource_() {
+		return (EAttribute) queueProcessingEc2ServiceBuilder_patternsEClass.getEStructuralFeatures().get(13);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getQueueProcessingEc2ServiceBuilder_patterns_QueueWithIQueue_software_amazon_awscdk_services_sqs_IQueue_AsReference() {
+		return (EAttribute) queueProcessingEc2ServiceBuilder_patternsEClass.getEStructuralFeatures().get(14);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getQueueProcessingEc2ServiceBuilder_patterns_RetentionPeriodWithDuration_software_amazon_awscdk_core_Duration_AsReference() {
+		return (EAttribute) queueProcessingEc2ServiceBuilder_patternsEClass.getEStructuralFeatures().get(15);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getQueueProcessingEc2ServiceBuilder_patterns_ScalingSteps_software_amazon_awscdk_services_applicationautoscaling_ScalingInterval_AsList() {
+		return (EAttribute) queueProcessingEc2ServiceBuilder_patternsEClass.getEStructuralFeatures().get(16);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getQueueProcessingEc2ServiceBuilder_patterns_Secrets_java_lang_String__software_amazon_awscdk_services_ecs_Secret_AsMap() {
+		return (EAttribute) queueProcessingEc2ServiceBuilder_patternsEClass.getEStructuralFeatures().get(17);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getQueueProcessingEc2ServiceBuilder_patterns_ServiceName_java_lang_String_() {
+		return (EAttribute) queueProcessingEc2ServiceBuilder_patternsEClass.getEStructuralFeatures().get(18);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getQueueProcessingEc2ServiceBuilder_patterns_VpcWithIVpc_software_amazon_awscdk_services_ec2_IVpc_AsReference() {
+		return (EAttribute) queueProcessingEc2ServiceBuilder_patternsEClass.getEStructuralFeatures().get(19);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getQueueProcessingEc2ServiceBuilder_patterns_Cpu_java_lang_Number_() {
+		return (EAttribute) queueProcessingEc2ServiceBuilder_patternsEClass.getEStructuralFeatures().get(20);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getQueueProcessingEc2ServiceBuilder_patterns_MemoryLimitMiB_java_lang_Number_() {
+		return (EAttribute) queueProcessingEc2ServiceBuilder_patternsEClass.getEStructuralFeatures().get(21);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getQueueProcessingEc2ServiceBuilder_patterns_MemoryReservationMiB_java_lang_Number_() {
+		return (EAttribute) queueProcessingEc2ServiceBuilder_patternsEClass.getEStructuralFeatures().get(22);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getQueueProcessingEc2ServiceBuilder_patterns_GeneratedClassName() {
+		return (EAttribute) queueProcessingEc2ServiceBuilder_patternsEClass.getEStructuralFeatures().get(23);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getQueueProcessingEc2ServiceBuilder_patterns_VarName() {
+		return (EAttribute) queueProcessingEc2ServiceBuilder_patternsEClass.getEStructuralFeatures().get(24);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getQueueProcessingEc2ServiceBuilder_patterns_Identifier() {
+		return (EAttribute) queueProcessingEc2ServiceBuilder_patternsEClass.getEStructuralFeatures().get(25);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getQueueProcessingEc2ServiceBuilder_patterns_AdditionalCode() {
+		return (EAttribute) queueProcessingEc2ServiceBuilder_patternsEClass.getEStructuralFeatures().get(26);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getScheduledFargateTaskDefinitionOptionsBuilder_patterns() {
+		return scheduledFargateTaskDefinitionOptionsBuilder_patternsEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getScheduledFargateTaskDefinitionOptionsBuilder_patterns_TaskDefinitionWithFargateTaskDefinition_software_amazon_awscdk_services_ecs_FargateTaskDefinition_AsReference() {
+		return (EAttribute) scheduledFargateTaskDefinitionOptionsBuilder_patternsEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getScheduledFargateTaskDefinitionOptionsBuilder_patterns_GeneratedClassName() {
+		return (EAttribute) scheduledFargateTaskDefinitionOptionsBuilder_patternsEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getScheduledFargateTaskDefinitionOptionsBuilder_patterns_VarName() {
+		return (EAttribute) scheduledFargateTaskDefinitionOptionsBuilder_patternsEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getScheduledFargateTaskDefinitionOptionsBuilder_patterns_Identifier() {
+		return (EAttribute) scheduledFargateTaskDefinitionOptionsBuilder_patternsEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getScheduledFargateTaskDefinitionOptionsBuilder_patterns_AdditionalCode() {
+		return (EAttribute) scheduledFargateTaskDefinitionOptionsBuilder_patternsEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getScheduledFargateTaskImageOptionsBuilder_patterns() {
+		return scheduledFargateTaskImageOptionsBuilder_patternsEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getScheduledFargateTaskImageOptionsBuilder_patterns_Cpu_java_lang_Number_() {
+		return (EAttribute) scheduledFargateTaskImageOptionsBuilder_patternsEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getScheduledFargateTaskImageOptionsBuilder_patterns_MemoryLimitMiB_java_lang_Number_() {
+		return (EAttribute) scheduledFargateTaskImageOptionsBuilder_patternsEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getScheduledFargateTaskImageOptionsBuilder_patterns_ImageWithContainerImage_software_amazon_awscdk_services_ecs_ContainerImage_AsReference() {
+		return (EAttribute) scheduledFargateTaskImageOptionsBuilder_patternsEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getScheduledFargateTaskImageOptionsBuilder_patterns_Command_java_lang_String_AsList() {
+		return (EAttribute) scheduledFargateTaskImageOptionsBuilder_patternsEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getScheduledFargateTaskImageOptionsBuilder_patterns_Environment_java_lang_String__java_lang_String_AsMap() {
+		return (EAttribute) scheduledFargateTaskImageOptionsBuilder_patternsEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getScheduledFargateTaskImageOptionsBuilder_patterns_LogDriverWithLogDriver_software_amazon_awscdk_services_ecs_LogDriver_AsReference() {
+		return (EAttribute) scheduledFargateTaskImageOptionsBuilder_patternsEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getScheduledFargateTaskImageOptionsBuilder_patterns_Secrets_java_lang_String__software_amazon_awscdk_services_ecs_Secret_AsMap() {
+		return (EAttribute) scheduledFargateTaskImageOptionsBuilder_patternsEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getScheduledFargateTaskImageOptionsBuilder_patterns_GeneratedClassName() {
+		return (EAttribute) scheduledFargateTaskImageOptionsBuilder_patternsEClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getScheduledFargateTaskImageOptionsBuilder_patterns_VarName() {
+		return (EAttribute) scheduledFargateTaskImageOptionsBuilder_patternsEClass.getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getScheduledFargateTaskImageOptionsBuilder_patterns_Identifier() {
+		return (EAttribute) scheduledFargateTaskImageOptionsBuilder_patternsEClass.getEStructuralFeatures().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getScheduledFargateTaskImageOptionsBuilder_patterns_AdditionalCode() {
+		return (EAttribute) scheduledFargateTaskImageOptionsBuilder_patternsEClass.getEStructuralFeatures().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getScheduledFargateTaskBuilder_patterns() {
+		return scheduledFargateTaskBuilder_patternsEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getScheduledFargateTaskBuilder_patterns_ScheduleWithSchedule_software_amazon_awscdk_services_applicationautoscaling_Schedule_AsReference() {
+		return (EAttribute) scheduledFargateTaskBuilder_patternsEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getScheduledFargateTaskBuilder_patterns_ClusterWithICluster_software_amazon_awscdk_services_ecs_ICluster_AsReference() {
+		return (EAttribute) scheduledFargateTaskBuilder_patternsEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getScheduledFargateTaskBuilder_patterns_DesiredTaskCount_java_lang_Number_() {
+		return (EAttribute) scheduledFargateTaskBuilder_patternsEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getScheduledFargateTaskBuilder_patterns_SubnetSelectionWithSubnetSelection_software_amazon_awscdk_services_ec2_SubnetSelection_AsReference() {
+		return (EAttribute) scheduledFargateTaskBuilder_patternsEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getScheduledFargateTaskBuilder_patterns_VpcWithIVpc_software_amazon_awscdk_services_ec2_IVpc_AsReference() {
+		return (EAttribute) scheduledFargateTaskBuilder_patternsEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getScheduledFargateTaskBuilder_patterns_ScheduledFargateTaskDefinitionOptionsWithScheduledFargateTaskDefinitionOptions_software_amazon_awscdk_services_ecs_patterns_ScheduledFargateTaskDefinitionOptions_AsReference() {
+		return (EAttribute) scheduledFargateTaskBuilder_patternsEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getScheduledFargateTaskBuilder_patterns_ScheduledFargateTaskImageOptionsWithScheduledFargateTaskImageOptions_software_amazon_awscdk_services_ecs_patterns_ScheduledFargateTaskImageOptions_AsReference() {
+		return (EAttribute) scheduledFargateTaskBuilder_patternsEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getScheduledFargateTaskBuilder_patterns_GeneratedClassName() {
+		return (EAttribute) scheduledFargateTaskBuilder_patternsEClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getScheduledFargateTaskBuilder_patterns_VarName() {
+		return (EAttribute) scheduledFargateTaskBuilder_patternsEClass.getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getScheduledFargateTaskBuilder_patterns_Identifier() {
+		return (EAttribute) scheduledFargateTaskBuilder_patternsEClass.getEStructuralFeatures().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getScheduledFargateTaskBuilder_patterns_AdditionalCode() {
+		return (EAttribute) scheduledFargateTaskBuilder_patternsEClass.getEStructuralFeatures().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EEnum getFlowLogTrafficType() {
 		return flowLogTrafficTypeEEnum;
 	}
@@ -16102,6 +24658,16 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	 * @generated
 	 */
 	@Override
+	public EEnum getStateMachineType() {
+		return stateMachineTypeEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EEnum getEffect() {
 		return effectEEnum;
 	}
@@ -16154,6 +24720,206 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	@Override
 	public EEnum getBillingMode() {
 		return billingModeEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EEnum getDnsRecordType() {
+		return dnsRecordTypeEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EEnum getInstanceClass() {
+		return instanceClassEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EEnum getInstanceSize() {
+		return instanceSizeEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EEnum getAmazonLinuxEdition() {
+		return amazonLinuxEditionEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EEnum getAmazonLinuxGeneration() {
+		return amazonLinuxGenerationEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EEnum getAmazonLinuxStorage() {
+		return amazonLinuxStorageEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EEnum getAmazonLinuxVirt() {
+		return amazonLinuxVirtEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EEnum getScalingProcess() {
+		return scalingProcessEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EEnum getUpdateType() {
+		return updateTypeEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EEnum getNamespaceType() {
+		return namespaceTypeEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EEnum getIpAddressType() {
+		return ipAddressTypeEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EEnum getPropagatedTagSource() {
+		return propagatedTagSourceEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EEnum getApplicationProtocol() {
+		return applicationProtocolEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EEnum getFollowMode() {
+		return followModeEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EEnum getScope() {
+		return scopeEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EEnum getNetworkMode() {
+		return networkModeEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EEnum getIpcMode() {
+		return ipcModeEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EEnum getPidMode() {
+		return pidModeEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EEnum getFargatePlatformVersion() {
+		return fargatePlatformVersionEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EEnum getProtocol() {
+		return protocolEEnum;
 	}
 
 	/**
@@ -18196,6 +26962,65 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 				dynamoDBStreamToLambdaToElasticSearchAndKibanaBuilder_dynamodbstreamlambdaelasticsearchkibanaEClass,
 				DYNAMO_DB_STREAM_TO_LAMBDA_TO_ELASTIC_SEARCH_AND_KIBANA_BUILDER_DYNAMODBSTREAMLAMBDAELASTICSEARCHKIBANA__ADDITIONAL_CODE);
 
+		eventBusBuilder_eventsEClass = createEClass(EVENT_BUS_BUILDER_EVENTS);
+		createEAttribute(eventBusBuilder_eventsEClass, EVENT_BUS_BUILDER_EVENTS__EVENT_BUS_NAME_JAVA_LANG_STRING_);
+		createEAttribute(eventBusBuilder_eventsEClass, EVENT_BUS_BUILDER_EVENTS__EVENT_SOURCE_NAME_JAVA_LANG_STRING_);
+		createEAttribute(eventBusBuilder_eventsEClass, EVENT_BUS_BUILDER_EVENTS__GENERATED_CLASS_NAME);
+		createEAttribute(eventBusBuilder_eventsEClass, EVENT_BUS_BUILDER_EVENTS__VAR_NAME);
+		createEAttribute(eventBusBuilder_eventsEClass, EVENT_BUS_BUILDER_EVENTS__IDENTIFIER);
+		createEAttribute(eventBusBuilder_eventsEClass, EVENT_BUS_BUILDER_EVENTS__ADDITIONAL_CODE);
+
+		eventPatternBuilder_eventsEClass = createEClass(EVENT_PATTERN_BUILDER_EVENTS);
+		createEAttribute(eventPatternBuilder_eventsEClass,
+				EVENT_PATTERN_BUILDER_EVENTS__ACCOUNT_JAVA_LANG_STRING_AS_LIST);
+		createEAttribute(eventPatternBuilder_eventsEClass,
+				EVENT_PATTERN_BUILDER_EVENTS__DETAIL_JAVA_LANG_STRING_JAVA_LANG_OBJECT_AS_MAP);
+		createEAttribute(eventPatternBuilder_eventsEClass,
+				EVENT_PATTERN_BUILDER_EVENTS__DETAIL_TYPE_JAVA_LANG_STRING_AS_LIST);
+		createEAttribute(eventPatternBuilder_eventsEClass, EVENT_PATTERN_BUILDER_EVENTS__ID_JAVA_LANG_STRING_AS_LIST);
+		createEAttribute(eventPatternBuilder_eventsEClass,
+				EVENT_PATTERN_BUILDER_EVENTS__REGION_JAVA_LANG_STRING_AS_LIST);
+		createEAttribute(eventPatternBuilder_eventsEClass,
+				EVENT_PATTERN_BUILDER_EVENTS__RESOURCES_JAVA_LANG_STRING_AS_LIST);
+		createEAttribute(eventPatternBuilder_eventsEClass,
+				EVENT_PATTERN_BUILDER_EVENTS__SOURCE_JAVA_LANG_STRING_AS_LIST);
+		createEAttribute(eventPatternBuilder_eventsEClass, EVENT_PATTERN_BUILDER_EVENTS__TIME_JAVA_LANG_STRING_AS_LIST);
+		createEAttribute(eventPatternBuilder_eventsEClass,
+				EVENT_PATTERN_BUILDER_EVENTS__VERSION_JAVA_LANG_STRING_AS_LIST);
+		createEAttribute(eventPatternBuilder_eventsEClass, EVENT_PATTERN_BUILDER_EVENTS__GENERATED_CLASS_NAME);
+		createEAttribute(eventPatternBuilder_eventsEClass, EVENT_PATTERN_BUILDER_EVENTS__VAR_NAME);
+		createEAttribute(eventPatternBuilder_eventsEClass, EVENT_PATTERN_BUILDER_EVENTS__IDENTIFIER);
+		createEAttribute(eventPatternBuilder_eventsEClass, EVENT_PATTERN_BUILDER_EVENTS__ADDITIONAL_CODE);
+
+		rulePropsBuilder_eventsEClass = createEClass(RULE_PROPS_BUILDER_EVENTS);
+		createEAttribute(rulePropsBuilder_eventsEClass, RULE_PROPS_BUILDER_EVENTS__DESCRIPTION_JAVA_LANG_STRING_);
+		createEAttribute(rulePropsBuilder_eventsEClass, RULE_PROPS_BUILDER_EVENTS__ENABLED_JAVA_LANG_BOOLEAN_);
+		createEAttribute(rulePropsBuilder_eventsEClass,
+				RULE_PROPS_BUILDER_EVENTS__EVENT_BUS_WITH_IEVENT_BUS_SOFTWARE_AMAZON_AWSCDK_SERVICES_EVENTS_IEVENT_BUS_AS_REFERENCE);
+		createEAttribute(rulePropsBuilder_eventsEClass,
+				RULE_PROPS_BUILDER_EVENTS__EVENT_PATTERN_WITH_EVENT_PATTERN_SOFTWARE_AMAZON_AWSCDK_SERVICES_EVENTS_EVENT_PATTERN_AS_REFERENCE);
+		createEAttribute(rulePropsBuilder_eventsEClass, RULE_PROPS_BUILDER_EVENTS__RULE_NAME_JAVA_LANG_STRING_);
+		createEAttribute(rulePropsBuilder_eventsEClass,
+				RULE_PROPS_BUILDER_EVENTS__SCHEDULE_WITH_SCHEDULE_SOFTWARE_AMAZON_AWSCDK_SERVICES_EVENTS_SCHEDULE_AS_REFERENCE);
+		createEAttribute(rulePropsBuilder_eventsEClass,
+				RULE_PROPS_BUILDER_EVENTS__TARGETS_SOFTWARE_AMAZON_AWSCDK_SERVICES_EVENTS_IRULE_TARGET_AS_LIST);
+		createEAttribute(rulePropsBuilder_eventsEClass, RULE_PROPS_BUILDER_EVENTS__GENERATED_CLASS_NAME);
+		createEAttribute(rulePropsBuilder_eventsEClass, RULE_PROPS_BUILDER_EVENTS__VAR_NAME);
+		createEAttribute(rulePropsBuilder_eventsEClass, RULE_PROPS_BUILDER_EVENTS__IDENTIFIER);
+		createEAttribute(rulePropsBuilder_eventsEClass, RULE_PROPS_BUILDER_EVENTS__ADDITIONAL_CODE);
+
+		cronOptionsBuilder_eventsEClass = createEClass(CRON_OPTIONS_BUILDER_EVENTS);
+		createEAttribute(cronOptionsBuilder_eventsEClass, CRON_OPTIONS_BUILDER_EVENTS__DAY_JAVA_LANG_STRING_);
+		createEAttribute(cronOptionsBuilder_eventsEClass, CRON_OPTIONS_BUILDER_EVENTS__HOUR_JAVA_LANG_STRING_);
+		createEAttribute(cronOptionsBuilder_eventsEClass, CRON_OPTIONS_BUILDER_EVENTS__MINUTE_JAVA_LANG_STRING_);
+		createEAttribute(cronOptionsBuilder_eventsEClass, CRON_OPTIONS_BUILDER_EVENTS__MONTH_JAVA_LANG_STRING_);
+		createEAttribute(cronOptionsBuilder_eventsEClass, CRON_OPTIONS_BUILDER_EVENTS__WEEK_DAY_JAVA_LANG_STRING_);
+		createEAttribute(cronOptionsBuilder_eventsEClass, CRON_OPTIONS_BUILDER_EVENTS__YEAR_JAVA_LANG_STRING_);
+		createEAttribute(cronOptionsBuilder_eventsEClass, CRON_OPTIONS_BUILDER_EVENTS__GENERATED_CLASS_NAME);
+		createEAttribute(cronOptionsBuilder_eventsEClass, CRON_OPTIONS_BUILDER_EVENTS__VAR_NAME);
+		createEAttribute(cronOptionsBuilder_eventsEClass, CRON_OPTIONS_BUILDER_EVENTS__IDENTIFIER);
+		createEAttribute(cronOptionsBuilder_eventsEClass, CRON_OPTIONS_BUILDER_EVENTS__ADDITIONAL_CODE);
+
 		eventsRuleToLambdaBuilder_eventsrulelambdaEClass = createEClass(EVENTS_RULE_TO_LAMBDA_BUILDER_EVENTSRULELAMBDA);
 		createEAttribute(eventsRuleToLambdaBuilder_eventsrulelambdaEClass,
 				EVENTS_RULE_TO_LAMBDA_BUILDER_EVENTSRULELAMBDA__EVENT_RULE_PROPS_WITH_RULE_PROPS_SOFTWARE_AMAZON_AWSCDK_SERVICES_EVENTS_RULE_PROPS_AS_REFERENCE);
@@ -18211,6 +27036,28 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 				EVENTS_RULE_TO_LAMBDA_BUILDER_EVENTSRULELAMBDA__IDENTIFIER);
 		createEAttribute(eventsRuleToLambdaBuilder_eventsrulelambdaEClass,
 				EVENTS_RULE_TO_LAMBDA_BUILDER_EVENTSRULELAMBDA__ADDITIONAL_CODE);
+
+		stateMachinePropsBuilder_stepfunctionsEClass = createEClass(STATE_MACHINE_PROPS_BUILDER_STEPFUNCTIONS);
+		createEAttribute(stateMachinePropsBuilder_stepfunctionsEClass,
+				STATE_MACHINE_PROPS_BUILDER_STEPFUNCTIONS__DEFINITION_WITH_ICHAINABLE_SOFTWARE_AMAZON_AWSCDK_SERVICES_STEPFUNCTIONS_ICHAINABLE_AS_REFERENCE);
+		createEAttribute(stateMachinePropsBuilder_stepfunctionsEClass,
+				STATE_MACHINE_PROPS_BUILDER_STEPFUNCTIONS__LOGS_WITH_LOG_OPTIONS_SOFTWARE_AMAZON_AWSCDK_SERVICES_STEPFUNCTIONS_LOG_OPTIONS_AS_REFERENCE);
+		createEAttribute(stateMachinePropsBuilder_stepfunctionsEClass,
+				STATE_MACHINE_PROPS_BUILDER_STEPFUNCTIONS__ROLE_WITH_IROLE_SOFTWARE_AMAZON_AWSCDK_SERVICES_IAM_IROLE_AS_REFERENCE);
+		createEAttribute(stateMachinePropsBuilder_stepfunctionsEClass,
+				STATE_MACHINE_PROPS_BUILDER_STEPFUNCTIONS__STATE_MACHINE_NAME_JAVA_LANG_STRING_);
+		createEAttribute(stateMachinePropsBuilder_stepfunctionsEClass,
+				STATE_MACHINE_PROPS_BUILDER_STEPFUNCTIONS__STATE_MACHINE_TYPE_SOFTWARE_AMAZON_AWSCDK_SERVICES_STEPFUNCTIONS_STATE_MACHINE_TYPE_);
+		createEAttribute(stateMachinePropsBuilder_stepfunctionsEClass,
+				STATE_MACHINE_PROPS_BUILDER_STEPFUNCTIONS__TIMEOUT_WITH_DURATION_SOFTWARE_AMAZON_AWSCDK_CORE_DURATION_AS_REFERENCE);
+		createEAttribute(stateMachinePropsBuilder_stepfunctionsEClass,
+				STATE_MACHINE_PROPS_BUILDER_STEPFUNCTIONS__GENERATED_CLASS_NAME);
+		createEAttribute(stateMachinePropsBuilder_stepfunctionsEClass,
+				STATE_MACHINE_PROPS_BUILDER_STEPFUNCTIONS__VAR_NAME);
+		createEAttribute(stateMachinePropsBuilder_stepfunctionsEClass,
+				STATE_MACHINE_PROPS_BUILDER_STEPFUNCTIONS__IDENTIFIER);
+		createEAttribute(stateMachinePropsBuilder_stepfunctionsEClass,
+				STATE_MACHINE_PROPS_BUILDER_STEPFUNCTIONS__ADDITIONAL_CODE);
 
 		eventsRuleToStepFunctionBuilder_eventsrulestepfunctionEClass = createEClass(
 				EVENTS_RULE_TO_STEP_FUNCTION_BUILDER_EVENTSRULESTEPFUNCTION);
@@ -18334,6 +27181,36 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 		createEAttribute(kinesisStreamsToLambdaBuilder_kinesisstreamslambdaEClass,
 				KINESIS_STREAMS_TO_LAMBDA_BUILDER_KINESISSTREAMSLAMBDA__ADDITIONAL_CODE);
 
+		tableBuilder_dynamodbEClass = createEClass(TABLE_BUILDER_DYNAMODB);
+		createEAttribute(tableBuilder_dynamodbEClass,
+				TABLE_BUILDER_DYNAMODB__PARTITION_KEY_WITH_ATTRIBUTE_SOFTWARE_AMAZON_AWSCDK_SERVICES_DYNAMODB_ATTRIBUTE_AS_REFERENCE);
+		createEAttribute(tableBuilder_dynamodbEClass,
+				TABLE_BUILDER_DYNAMODB__BILLING_MODE_SOFTWARE_AMAZON_AWSCDK_SERVICES_DYNAMODB_BILLING_MODE_);
+		createEAttribute(tableBuilder_dynamodbEClass,
+				TABLE_BUILDER_DYNAMODB__ENCRYPTION_SOFTWARE_AMAZON_AWSCDK_SERVICES_DYNAMODB_TABLE_ENCRYPTION_);
+		createEAttribute(tableBuilder_dynamodbEClass,
+				TABLE_BUILDER_DYNAMODB__ENCRYPTION_KEY_WITH_IKEY_SOFTWARE_AMAZON_AWSCDK_SERVICES_KMS_IKEY_AS_REFERENCE);
+		createEAttribute(tableBuilder_dynamodbEClass,
+				TABLE_BUILDER_DYNAMODB__POINT_IN_TIME_RECOVERY_JAVA_LANG_BOOLEAN_);
+		createEAttribute(tableBuilder_dynamodbEClass, TABLE_BUILDER_DYNAMODB__READ_CAPACITY_JAVA_LANG_NUMBER_);
+		createEAttribute(tableBuilder_dynamodbEClass,
+				TABLE_BUILDER_DYNAMODB__REMOVAL_POLICY_SOFTWARE_AMAZON_AWSCDK_CORE_REMOVAL_POLICY_);
+		createEAttribute(tableBuilder_dynamodbEClass,
+				TABLE_BUILDER_DYNAMODB__REPLICATION_REGIONS_JAVA_LANG_STRING_AS_LIST);
+		createEAttribute(tableBuilder_dynamodbEClass,
+				TABLE_BUILDER_DYNAMODB__SERVER_SIDE_ENCRYPTION_JAVA_LANG_BOOLEAN_);
+		createEAttribute(tableBuilder_dynamodbEClass,
+				TABLE_BUILDER_DYNAMODB__SORT_KEY_WITH_ATTRIBUTE_SOFTWARE_AMAZON_AWSCDK_SERVICES_DYNAMODB_ATTRIBUTE_AS_REFERENCE);
+		createEAttribute(tableBuilder_dynamodbEClass,
+				TABLE_BUILDER_DYNAMODB__STREAM_SOFTWARE_AMAZON_AWSCDK_SERVICES_DYNAMODB_STREAM_VIEW_TYPE_);
+		createEAttribute(tableBuilder_dynamodbEClass, TABLE_BUILDER_DYNAMODB__TIME_TO_LIVE_ATTRIBUTE_JAVA_LANG_STRING_);
+		createEAttribute(tableBuilder_dynamodbEClass, TABLE_BUILDER_DYNAMODB__WRITE_CAPACITY_JAVA_LANG_NUMBER_);
+		createEAttribute(tableBuilder_dynamodbEClass, TABLE_BUILDER_DYNAMODB__TABLE_NAME_JAVA_LANG_STRING_);
+		createEAttribute(tableBuilder_dynamodbEClass, TABLE_BUILDER_DYNAMODB__GENERATED_CLASS_NAME);
+		createEAttribute(tableBuilder_dynamodbEClass, TABLE_BUILDER_DYNAMODB__VAR_NAME);
+		createEAttribute(tableBuilder_dynamodbEClass, TABLE_BUILDER_DYNAMODB__IDENTIFIER);
+		createEAttribute(tableBuilder_dynamodbEClass, TABLE_BUILDER_DYNAMODB__ADDITIONAL_CODE);
+
 		lambdaToDynamoDBBuilder_lambdadynamodbEClass = createEClass(LAMBDA_TO_DYNAMO_DB_BUILDER_LAMBDADYNAMODB);
 		createEAttribute(lambdaToDynamoDBBuilder_lambdadynamodbEClass,
 				LAMBDA_TO_DYNAMO_DB_BUILDER_LAMBDADYNAMODB__DYNAMO_TABLE_PROPS_WITH_TABLE_PROPS_SOFTWARE_AMAZON_AWSCDK_SERVICES_DYNAMODB_TABLE_PROPS_AS_REFERENCE);
@@ -18388,6 +27265,16 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 		createEAttribute(lambdaToS3Builder_lambdas3EClass, LAMBDA_TO_S3_BUILDER_LAMBDAS3__VAR_NAME);
 		createEAttribute(lambdaToS3Builder_lambdas3EClass, LAMBDA_TO_S3_BUILDER_LAMBDAS3__IDENTIFIER);
 		createEAttribute(lambdaToS3Builder_lambdas3EClass, LAMBDA_TO_S3_BUILDER_LAMBDAS3__ADDITIONAL_CODE);
+
+		topicPropsBuilder_snsEClass = createEClass(TOPIC_PROPS_BUILDER_SNS);
+		createEAttribute(topicPropsBuilder_snsEClass, TOPIC_PROPS_BUILDER_SNS__DISPLAY_NAME_JAVA_LANG_STRING_);
+		createEAttribute(topicPropsBuilder_snsEClass,
+				TOPIC_PROPS_BUILDER_SNS__MASTER_KEY_WITH_IKEY_SOFTWARE_AMAZON_AWSCDK_SERVICES_KMS_IKEY_AS_REFERENCE);
+		createEAttribute(topicPropsBuilder_snsEClass, TOPIC_PROPS_BUILDER_SNS__TOPIC_NAME_JAVA_LANG_STRING_);
+		createEAttribute(topicPropsBuilder_snsEClass, TOPIC_PROPS_BUILDER_SNS__GENERATED_CLASS_NAME);
+		createEAttribute(topicPropsBuilder_snsEClass, TOPIC_PROPS_BUILDER_SNS__VAR_NAME);
+		createEAttribute(topicPropsBuilder_snsEClass, TOPIC_PROPS_BUILDER_SNS__IDENTIFIER);
+		createEAttribute(topicPropsBuilder_snsEClass, TOPIC_PROPS_BUILDER_SNS__ADDITIONAL_CODE);
 
 		lambdaToSnsBuilder_lambdasnsEClass = createEClass(LAMBDA_TO_SNS_BUILDER_LAMBDASNS);
 		createEAttribute(lambdaToSnsBuilder_lambdasnsEClass,
@@ -18656,6 +27543,1340 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 		createEAttribute(tablePropsBuilder_dynamodbEClass, TABLE_PROPS_BUILDER_DYNAMODB__IDENTIFIER);
 		createEAttribute(tablePropsBuilder_dynamodbEClass, TABLE_PROPS_BUILDER_DYNAMODB__ADDITIONAL_CODE);
 
+		privateDnsNamespaceBuilder_servicediscoveryEClass = createEClass(
+				PRIVATE_DNS_NAMESPACE_BUILDER_SERVICEDISCOVERY);
+		createEAttribute(privateDnsNamespaceBuilder_servicediscoveryEClass,
+				PRIVATE_DNS_NAMESPACE_BUILDER_SERVICEDISCOVERY__NAME_JAVA_LANG_STRING_);
+		createEAttribute(privateDnsNamespaceBuilder_servicediscoveryEClass,
+				PRIVATE_DNS_NAMESPACE_BUILDER_SERVICEDISCOVERY__DESCRIPTION_JAVA_LANG_STRING_);
+		createEAttribute(privateDnsNamespaceBuilder_servicediscoveryEClass,
+				PRIVATE_DNS_NAMESPACE_BUILDER_SERVICEDISCOVERY__VPC_WITH_IVPC_SOFTWARE_AMAZON_AWSCDK_SERVICES_EC2_IVPC_AS_REFERENCE);
+		createEAttribute(privateDnsNamespaceBuilder_servicediscoveryEClass,
+				PRIVATE_DNS_NAMESPACE_BUILDER_SERVICEDISCOVERY__GENERATED_CLASS_NAME);
+		createEAttribute(privateDnsNamespaceBuilder_servicediscoveryEClass,
+				PRIVATE_DNS_NAMESPACE_BUILDER_SERVICEDISCOVERY__VAR_NAME);
+		createEAttribute(privateDnsNamespaceBuilder_servicediscoveryEClass,
+				PRIVATE_DNS_NAMESPACE_BUILDER_SERVICEDISCOVERY__IDENTIFIER);
+		createEAttribute(privateDnsNamespaceBuilder_servicediscoveryEClass,
+				PRIVATE_DNS_NAMESPACE_BUILDER_SERVICEDISCOVERY__ADDITIONAL_CODE);
+
+		publicDnsNamespaceBuilder_servicediscoveryEClass = createEClass(PUBLIC_DNS_NAMESPACE_BUILDER_SERVICEDISCOVERY);
+		createEAttribute(publicDnsNamespaceBuilder_servicediscoveryEClass,
+				PUBLIC_DNS_NAMESPACE_BUILDER_SERVICEDISCOVERY__NAME_JAVA_LANG_STRING_);
+		createEAttribute(publicDnsNamespaceBuilder_servicediscoveryEClass,
+				PUBLIC_DNS_NAMESPACE_BUILDER_SERVICEDISCOVERY__DESCRIPTION_JAVA_LANG_STRING_);
+		createEAttribute(publicDnsNamespaceBuilder_servicediscoveryEClass,
+				PUBLIC_DNS_NAMESPACE_BUILDER_SERVICEDISCOVERY__GENERATED_CLASS_NAME);
+		createEAttribute(publicDnsNamespaceBuilder_servicediscoveryEClass,
+				PUBLIC_DNS_NAMESPACE_BUILDER_SERVICEDISCOVERY__VAR_NAME);
+		createEAttribute(publicDnsNamespaceBuilder_servicediscoveryEClass,
+				PUBLIC_DNS_NAMESPACE_BUILDER_SERVICEDISCOVERY__IDENTIFIER);
+		createEAttribute(publicDnsNamespaceBuilder_servicediscoveryEClass,
+				PUBLIC_DNS_NAMESPACE_BUILDER_SERVICEDISCOVERY__ADDITIONAL_CODE);
+
+		httpNamespaceBuilder_servicediscoveryEClass = createEClass(HTTP_NAMESPACE_BUILDER_SERVICEDISCOVERY);
+		createEAttribute(httpNamespaceBuilder_servicediscoveryEClass,
+				HTTP_NAMESPACE_BUILDER_SERVICEDISCOVERY__NAME_JAVA_LANG_STRING_);
+		createEAttribute(httpNamespaceBuilder_servicediscoveryEClass,
+				HTTP_NAMESPACE_BUILDER_SERVICEDISCOVERY__DESCRIPTION_JAVA_LANG_STRING_);
+		createEAttribute(httpNamespaceBuilder_servicediscoveryEClass,
+				HTTP_NAMESPACE_BUILDER_SERVICEDISCOVERY__GENERATED_CLASS_NAME);
+		createEAttribute(httpNamespaceBuilder_servicediscoveryEClass,
+				HTTP_NAMESPACE_BUILDER_SERVICEDISCOVERY__VAR_NAME);
+		createEAttribute(httpNamespaceBuilder_servicediscoveryEClass,
+				HTTP_NAMESPACE_BUILDER_SERVICEDISCOVERY__IDENTIFIER);
+		createEAttribute(httpNamespaceBuilder_servicediscoveryEClass,
+				HTTP_NAMESPACE_BUILDER_SERVICEDISCOVERY__ADDITIONAL_CODE);
+
+		cloudMapOptionsBuilder_ecsEClass = createEClass(CLOUD_MAP_OPTIONS_BUILDER_ECS);
+		createEAttribute(cloudMapOptionsBuilder_ecsEClass,
+				CLOUD_MAP_OPTIONS_BUILDER_ECS__CLOUD_MAP_NAMESPACE_WITH_INAMESPACE_SOFTWARE_AMAZON_AWSCDK_SERVICES_SERVICEDISCOVERY_INAMESPACE_AS_REFERENCE);
+		createEAttribute(cloudMapOptionsBuilder_ecsEClass,
+				CLOUD_MAP_OPTIONS_BUILDER_ECS__DNS_RECORD_TYPE_SOFTWARE_AMAZON_AWSCDK_SERVICES_SERVICEDISCOVERY_DNS_RECORD_TYPE_);
+		createEAttribute(cloudMapOptionsBuilder_ecsEClass,
+				CLOUD_MAP_OPTIONS_BUILDER_ECS__DNS_TTL_WITH_DURATION_SOFTWARE_AMAZON_AWSCDK_CORE_DURATION_AS_REFERENCE);
+		createEAttribute(cloudMapOptionsBuilder_ecsEClass,
+				CLOUD_MAP_OPTIONS_BUILDER_ECS__FAILURE_THRESHOLD_JAVA_LANG_NUMBER_);
+		createEAttribute(cloudMapOptionsBuilder_ecsEClass, CLOUD_MAP_OPTIONS_BUILDER_ECS__NAME_JAVA_LANG_STRING_);
+		createEAttribute(cloudMapOptionsBuilder_ecsEClass, CLOUD_MAP_OPTIONS_BUILDER_ECS__GENERATED_CLASS_NAME);
+		createEAttribute(cloudMapOptionsBuilder_ecsEClass, CLOUD_MAP_OPTIONS_BUILDER_ECS__VAR_NAME);
+		createEAttribute(cloudMapOptionsBuilder_ecsEClass, CLOUD_MAP_OPTIONS_BUILDER_ECS__IDENTIFIER);
+		createEAttribute(cloudMapOptionsBuilder_ecsEClass, CLOUD_MAP_OPTIONS_BUILDER_ECS__ADDITIONAL_CODE);
+
+		blockDeviceBuilder_autoscalingEClass = createEClass(BLOCK_DEVICE_BUILDER_AUTOSCALING);
+		createEAttribute(blockDeviceBuilder_autoscalingEClass,
+				BLOCK_DEVICE_BUILDER_AUTOSCALING__DEVICE_NAME_JAVA_LANG_STRING_);
+		createEAttribute(blockDeviceBuilder_autoscalingEClass,
+				BLOCK_DEVICE_BUILDER_AUTOSCALING__VOLUME_WITH_BLOCK_DEVICE_VOLUME_SOFTWARE_AMAZON_AWSCDK_SERVICES_AUTOSCALING_BLOCK_DEVICE_VOLUME_AS_REFERENCE);
+		createEAttribute(blockDeviceBuilder_autoscalingEClass,
+				BLOCK_DEVICE_BUILDER_AUTOSCALING__MAPPING_ENABLED_JAVA_LANG_BOOLEAN_);
+		createEAttribute(blockDeviceBuilder_autoscalingEClass, BLOCK_DEVICE_BUILDER_AUTOSCALING__GENERATED_CLASS_NAME);
+		createEAttribute(blockDeviceBuilder_autoscalingEClass, BLOCK_DEVICE_BUILDER_AUTOSCALING__VAR_NAME);
+		createEAttribute(blockDeviceBuilder_autoscalingEClass, BLOCK_DEVICE_BUILDER_AUTOSCALING__IDENTIFIER);
+		createEAttribute(blockDeviceBuilder_autoscalingEClass, BLOCK_DEVICE_BUILDER_AUTOSCALING__ADDITIONAL_CODE);
+
+		healthCheckBuilder_ecsEClass = createEClass(HEALTH_CHECK_BUILDER_ECS);
+		createEAttribute(healthCheckBuilder_ecsEClass, HEALTH_CHECK_BUILDER_ECS__COMMAND_JAVA_LANG_STRING_AS_LIST);
+		createEAttribute(healthCheckBuilder_ecsEClass,
+				HEALTH_CHECK_BUILDER_ECS__INTERVAL_WITH_DURATION_SOFTWARE_AMAZON_AWSCDK_CORE_DURATION_AS_REFERENCE);
+		createEAttribute(healthCheckBuilder_ecsEClass, HEALTH_CHECK_BUILDER_ECS__RETRIES_JAVA_LANG_NUMBER_);
+		createEAttribute(healthCheckBuilder_ecsEClass,
+				HEALTH_CHECK_BUILDER_ECS__START_PERIOD_WITH_DURATION_SOFTWARE_AMAZON_AWSCDK_CORE_DURATION_AS_REFERENCE);
+		createEAttribute(healthCheckBuilder_ecsEClass,
+				HEALTH_CHECK_BUILDER_ECS__TIMEOUT_WITH_DURATION_SOFTWARE_AMAZON_AWSCDK_CORE_DURATION_AS_REFERENCE);
+		createEAttribute(healthCheckBuilder_ecsEClass, HEALTH_CHECK_BUILDER_ECS__GENERATED_CLASS_NAME);
+		createEAttribute(healthCheckBuilder_ecsEClass, HEALTH_CHECK_BUILDER_ECS__VAR_NAME);
+		createEAttribute(healthCheckBuilder_ecsEClass, HEALTH_CHECK_BUILDER_ECS__IDENTIFIER);
+		createEAttribute(healthCheckBuilder_ecsEClass, HEALTH_CHECK_BUILDER_ECS__ADDITIONAL_CODE);
+
+		amazonLinuxImageBuilder_ec2EClass = createEClass(AMAZON_LINUX_IMAGE_BUILDER_EC2);
+		createEAttribute(amazonLinuxImageBuilder_ec2EClass,
+				AMAZON_LINUX_IMAGE_BUILDER_EC2__EDITION_SOFTWARE_AMAZON_AWSCDK_SERVICES_EC2_AMAZON_LINUX_EDITION_);
+		createEAttribute(amazonLinuxImageBuilder_ec2EClass,
+				AMAZON_LINUX_IMAGE_BUILDER_EC2__GENERATION_SOFTWARE_AMAZON_AWSCDK_SERVICES_EC2_AMAZON_LINUX_GENERATION_);
+		createEAttribute(amazonLinuxImageBuilder_ec2EClass,
+				AMAZON_LINUX_IMAGE_BUILDER_EC2__STORAGE_SOFTWARE_AMAZON_AWSCDK_SERVICES_EC2_AMAZON_LINUX_STORAGE_);
+		createEAttribute(amazonLinuxImageBuilder_ec2EClass,
+				AMAZON_LINUX_IMAGE_BUILDER_EC2__USER_DATA_WITH_USER_DATA_SOFTWARE_AMAZON_AWSCDK_SERVICES_EC2_USER_DATA_AS_REFERENCE);
+		createEAttribute(amazonLinuxImageBuilder_ec2EClass,
+				AMAZON_LINUX_IMAGE_BUILDER_EC2__VIRTUALIZATION_SOFTWARE_AMAZON_AWSCDK_SERVICES_EC2_AMAZON_LINUX_VIRT_);
+		createEAttribute(amazonLinuxImageBuilder_ec2EClass, AMAZON_LINUX_IMAGE_BUILDER_EC2__GENERATED_CLASS_NAME);
+		createEAttribute(amazonLinuxImageBuilder_ec2EClass, AMAZON_LINUX_IMAGE_BUILDER_EC2__VAR_NAME);
+		createEAttribute(amazonLinuxImageBuilder_ec2EClass, AMAZON_LINUX_IMAGE_BUILDER_EC2__IDENTIFIER);
+		createEAttribute(amazonLinuxImageBuilder_ec2EClass, AMAZON_LINUX_IMAGE_BUILDER_EC2__ADDITIONAL_CODE);
+
+		rollingUpdateConfigurationBuilder_autoscalingEClass = createEClass(
+				ROLLING_UPDATE_CONFIGURATION_BUILDER_AUTOSCALING);
+		createEAttribute(rollingUpdateConfigurationBuilder_autoscalingEClass,
+				ROLLING_UPDATE_CONFIGURATION_BUILDER_AUTOSCALING__MAX_BATCH_SIZE_JAVA_LANG_NUMBER_);
+		createEAttribute(rollingUpdateConfigurationBuilder_autoscalingEClass,
+				ROLLING_UPDATE_CONFIGURATION_BUILDER_AUTOSCALING__MIN_INSTANCES_IN_SERVICE_JAVA_LANG_NUMBER_);
+		createEAttribute(rollingUpdateConfigurationBuilder_autoscalingEClass,
+				ROLLING_UPDATE_CONFIGURATION_BUILDER_AUTOSCALING__MIN_SUCCESSFUL_INSTANCES_PERCENT_JAVA_LANG_NUMBER_);
+		createEAttribute(rollingUpdateConfigurationBuilder_autoscalingEClass,
+				ROLLING_UPDATE_CONFIGURATION_BUILDER_AUTOSCALING__PAUSE_TIME_WITH_DURATION_SOFTWARE_AMAZON_AWSCDK_CORE_DURATION_AS_REFERENCE);
+		createEAttribute(rollingUpdateConfigurationBuilder_autoscalingEClass,
+				ROLLING_UPDATE_CONFIGURATION_BUILDER_AUTOSCALING__SUSPEND_PROCESSES_SOFTWARE_AMAZON_AWSCDK_SERVICES_AUTOSCALING_SCALING_PROCESS_AS_LIST);
+		createEAttribute(rollingUpdateConfigurationBuilder_autoscalingEClass,
+				ROLLING_UPDATE_CONFIGURATION_BUILDER_AUTOSCALING__WAIT_ON_RESOURCE_SIGNALS_JAVA_LANG_BOOLEAN_);
+		createEAttribute(rollingUpdateConfigurationBuilder_autoscalingEClass,
+				ROLLING_UPDATE_CONFIGURATION_BUILDER_AUTOSCALING__GENERATED_CLASS_NAME);
+		createEAttribute(rollingUpdateConfigurationBuilder_autoscalingEClass,
+				ROLLING_UPDATE_CONFIGURATION_BUILDER_AUTOSCALING__VAR_NAME);
+		createEAttribute(rollingUpdateConfigurationBuilder_autoscalingEClass,
+				ROLLING_UPDATE_CONFIGURATION_BUILDER_AUTOSCALING__IDENTIFIER);
+		createEAttribute(rollingUpdateConfigurationBuilder_autoscalingEClass,
+				ROLLING_UPDATE_CONFIGURATION_BUILDER_AUTOSCALING__ADDITIONAL_CODE);
+
+		addCapacityOptionsBuilder_ecsEClass = createEClass(ADD_CAPACITY_OPTIONS_BUILDER_ECS);
+		createEAttribute(addCapacityOptionsBuilder_ecsEClass,
+				ADD_CAPACITY_OPTIONS_BUILDER_ECS__INSTANCE_TYPE_WITH_INSTANCE_TYPE_SOFTWARE_AMAZON_AWSCDK_SERVICES_EC2_INSTANCE_TYPE_AS_REFERENCE);
+		createEAttribute(addCapacityOptionsBuilder_ecsEClass,
+				ADD_CAPACITY_OPTIONS_BUILDER_ECS__MACHINE_IMAGE_WITH_IMACHINE_IMAGE_SOFTWARE_AMAZON_AWSCDK_SERVICES_EC2_IMACHINE_IMAGE_AS_REFERENCE);
+		createEAttribute(addCapacityOptionsBuilder_ecsEClass,
+				ADD_CAPACITY_OPTIONS_BUILDER_ECS__CAN_CONTAINERS_ACCESS_INSTANCE_ROLE_JAVA_LANG_BOOLEAN_);
+		createEAttribute(addCapacityOptionsBuilder_ecsEClass,
+				ADD_CAPACITY_OPTIONS_BUILDER_ECS__SPOT_INSTANCE_DRAINING_JAVA_LANG_BOOLEAN_);
+		createEAttribute(addCapacityOptionsBuilder_ecsEClass,
+				ADD_CAPACITY_OPTIONS_BUILDER_ECS__TASK_DRAIN_TIME_WITH_DURATION_SOFTWARE_AMAZON_AWSCDK_CORE_DURATION_AS_REFERENCE);
+		createEAttribute(addCapacityOptionsBuilder_ecsEClass,
+				ADD_CAPACITY_OPTIONS_BUILDER_ECS__ALLOW_ALL_OUTBOUND_JAVA_LANG_BOOLEAN_);
+		createEAttribute(addCapacityOptionsBuilder_ecsEClass,
+				ADD_CAPACITY_OPTIONS_BUILDER_ECS__ASSOCIATE_PUBLIC_IP_ADDRESS_JAVA_LANG_BOOLEAN_);
+		createEAttribute(addCapacityOptionsBuilder_ecsEClass,
+				ADD_CAPACITY_OPTIONS_BUILDER_ECS__BLOCK_DEVICES_SOFTWARE_AMAZON_AWSCDK_SERVICES_AUTOSCALING_BLOCK_DEVICE_AS_LIST);
+		createEAttribute(addCapacityOptionsBuilder_ecsEClass,
+				ADD_CAPACITY_OPTIONS_BUILDER_ECS__COOLDOWN_WITH_DURATION_SOFTWARE_AMAZON_AWSCDK_CORE_DURATION_AS_REFERENCE);
+		createEAttribute(addCapacityOptionsBuilder_ecsEClass,
+				ADD_CAPACITY_OPTIONS_BUILDER_ECS__DESIRED_CAPACITY_JAVA_LANG_NUMBER_);
+		createEAttribute(addCapacityOptionsBuilder_ecsEClass,
+				ADD_CAPACITY_OPTIONS_BUILDER_ECS__HEALTH_CHECK_WITH_HEALTH_CHECK_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_HEALTH_CHECK_AS_REFERENCE);
+		createEAttribute(addCapacityOptionsBuilder_ecsEClass,
+				ADD_CAPACITY_OPTIONS_BUILDER_ECS__IGNORE_UNMODIFIED_SIZE_PROPERTIES_JAVA_LANG_BOOLEAN_);
+		createEAttribute(addCapacityOptionsBuilder_ecsEClass,
+				ADD_CAPACITY_OPTIONS_BUILDER_ECS__KEY_NAME_JAVA_LANG_STRING_);
+		createEAttribute(addCapacityOptionsBuilder_ecsEClass,
+				ADD_CAPACITY_OPTIONS_BUILDER_ECS__MAX_CAPACITY_JAVA_LANG_NUMBER_);
+		createEAttribute(addCapacityOptionsBuilder_ecsEClass,
+				ADD_CAPACITY_OPTIONS_BUILDER_ECS__MAX_INSTANCE_LIFETIME_WITH_DURATION_SOFTWARE_AMAZON_AWSCDK_CORE_DURATION_AS_REFERENCE);
+		createEAttribute(addCapacityOptionsBuilder_ecsEClass,
+				ADD_CAPACITY_OPTIONS_BUILDER_ECS__MIN_CAPACITY_JAVA_LANG_NUMBER_);
+		createEAttribute(addCapacityOptionsBuilder_ecsEClass,
+				ADD_CAPACITY_OPTIONS_BUILDER_ECS__NOTIFICATIONS_TOPIC_WITH_ITOPIC_SOFTWARE_AMAZON_AWSCDK_SERVICES_SNS_ITOPIC_AS_REFERENCE);
+		createEAttribute(addCapacityOptionsBuilder_ecsEClass,
+				ADD_CAPACITY_OPTIONS_BUILDER_ECS__REPLACING_UPDATE_MIN_SUCCESSFUL_INSTANCES_PERCENT_JAVA_LANG_NUMBER_);
+		createEAttribute(addCapacityOptionsBuilder_ecsEClass,
+				ADD_CAPACITY_OPTIONS_BUILDER_ECS__RESOURCE_SIGNAL_COUNT_JAVA_LANG_NUMBER_);
+		createEAttribute(addCapacityOptionsBuilder_ecsEClass,
+				ADD_CAPACITY_OPTIONS_BUILDER_ECS__RESOURCE_SIGNAL_TIMEOUT_WITH_DURATION_SOFTWARE_AMAZON_AWSCDK_CORE_DURATION_AS_REFERENCE);
+		createEAttribute(addCapacityOptionsBuilder_ecsEClass,
+				ADD_CAPACITY_OPTIONS_BUILDER_ECS__ROLLING_UPDATE_CONFIGURATION_WITH_ROLLING_UPDATE_CONFIGURATION_SOFTWARE_AMAZON_AWSCDK_SERVICES_AUTOSCALING_ROLLING_UPDATE_CONFIGURATION_AS_REFERENCE);
+		createEAttribute(addCapacityOptionsBuilder_ecsEClass,
+				ADD_CAPACITY_OPTIONS_BUILDER_ECS__SPOT_PRICE_JAVA_LANG_STRING_);
+		createEAttribute(addCapacityOptionsBuilder_ecsEClass,
+				ADD_CAPACITY_OPTIONS_BUILDER_ECS__UPDATE_TYPE_SOFTWARE_AMAZON_AWSCDK_SERVICES_AUTOSCALING_UPDATE_TYPE_);
+		createEAttribute(addCapacityOptionsBuilder_ecsEClass,
+				ADD_CAPACITY_OPTIONS_BUILDER_ECS__VPC_SUBNETS_WITH_SUBNET_SELECTION_SOFTWARE_AMAZON_AWSCDK_SERVICES_EC2_SUBNET_SELECTION_AS_REFERENCE);
+		createEAttribute(addCapacityOptionsBuilder_ecsEClass, ADD_CAPACITY_OPTIONS_BUILDER_ECS__GENERATED_CLASS_NAME);
+		createEAttribute(addCapacityOptionsBuilder_ecsEClass, ADD_CAPACITY_OPTIONS_BUILDER_ECS__VAR_NAME);
+		createEAttribute(addCapacityOptionsBuilder_ecsEClass, ADD_CAPACITY_OPTIONS_BUILDER_ECS__IDENTIFIER);
+		createEAttribute(addCapacityOptionsBuilder_ecsEClass, ADD_CAPACITY_OPTIONS_BUILDER_ECS__ADDITIONAL_CODE);
+
+		cloudMapNamespaceOptionsBuilder_ecsEClass = createEClass(CLOUD_MAP_NAMESPACE_OPTIONS_BUILDER_ECS);
+		createEAttribute(cloudMapNamespaceOptionsBuilder_ecsEClass,
+				CLOUD_MAP_NAMESPACE_OPTIONS_BUILDER_ECS__NAME_JAVA_LANG_STRING_);
+		createEAttribute(cloudMapNamespaceOptionsBuilder_ecsEClass,
+				CLOUD_MAP_NAMESPACE_OPTIONS_BUILDER_ECS__TYPE_SOFTWARE_AMAZON_AWSCDK_SERVICES_SERVICEDISCOVERY_NAMESPACE_TYPE_);
+		createEAttribute(cloudMapNamespaceOptionsBuilder_ecsEClass,
+				CLOUD_MAP_NAMESPACE_OPTIONS_BUILDER_ECS__VPC_WITH_IVPC_SOFTWARE_AMAZON_AWSCDK_SERVICES_EC2_IVPC_AS_REFERENCE);
+		createEAttribute(cloudMapNamespaceOptionsBuilder_ecsEClass,
+				CLOUD_MAP_NAMESPACE_OPTIONS_BUILDER_ECS__GENERATED_CLASS_NAME);
+		createEAttribute(cloudMapNamespaceOptionsBuilder_ecsEClass, CLOUD_MAP_NAMESPACE_OPTIONS_BUILDER_ECS__VAR_NAME);
+		createEAttribute(cloudMapNamespaceOptionsBuilder_ecsEClass,
+				CLOUD_MAP_NAMESPACE_OPTIONS_BUILDER_ECS__IDENTIFIER);
+		createEAttribute(cloudMapNamespaceOptionsBuilder_ecsEClass,
+				CLOUD_MAP_NAMESPACE_OPTIONS_BUILDER_ECS__ADDITIONAL_CODE);
+
+		clusterBuilder_ecsEClass = createEClass(CLUSTER_BUILDER_ECS);
+		createEAttribute(clusterBuilder_ecsEClass,
+				CLUSTER_BUILDER_ECS__CAPACITY_WITH_ADD_CAPACITY_OPTIONS_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_ADD_CAPACITY_OPTIONS_AS_REFERENCE);
+		createEAttribute(clusterBuilder_ecsEClass, CLUSTER_BUILDER_ECS__CLUSTER_NAME_JAVA_LANG_STRING_);
+		createEAttribute(clusterBuilder_ecsEClass, CLUSTER_BUILDER_ECS__CONTAINER_INSIGHTS_JAVA_LANG_BOOLEAN_);
+		createEAttribute(clusterBuilder_ecsEClass,
+				CLUSTER_BUILDER_ECS__DEFAULT_CLOUD_MAP_NAMESPACE_WITH_CLOUD_MAP_NAMESPACE_OPTIONS_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_CLOUD_MAP_NAMESPACE_OPTIONS_AS_REFERENCE);
+		createEAttribute(clusterBuilder_ecsEClass,
+				CLUSTER_BUILDER_ECS__VPC_WITH_IVPC_SOFTWARE_AMAZON_AWSCDK_SERVICES_EC2_IVPC_AS_REFERENCE);
+		createEAttribute(clusterBuilder_ecsEClass, CLUSTER_BUILDER_ECS__GENERATED_CLASS_NAME);
+		createEAttribute(clusterBuilder_ecsEClass, CLUSTER_BUILDER_ECS__VAR_NAME);
+		createEAttribute(clusterBuilder_ecsEClass, CLUSTER_BUILDER_ECS__IDENTIFIER);
+		createEAttribute(clusterBuilder_ecsEClass, CLUSTER_BUILDER_ECS__ADDITIONAL_CODE);
+
+		applicationLoadBalancerBuilder_elasticloadbalancingv2EClass = createEClass(
+				APPLICATION_LOAD_BALANCER_BUILDER_ELASTICLOADBALANCINGV2);
+		createEAttribute(applicationLoadBalancerBuilder_elasticloadbalancingv2EClass,
+				APPLICATION_LOAD_BALANCER_BUILDER_ELASTICLOADBALANCINGV2__VPC_WITH_IVPC_SOFTWARE_AMAZON_AWSCDK_SERVICES_EC2_IVPC_AS_REFERENCE);
+		createEAttribute(applicationLoadBalancerBuilder_elasticloadbalancingv2EClass,
+				APPLICATION_LOAD_BALANCER_BUILDER_ELASTICLOADBALANCINGV2__DELETION_PROTECTION_JAVA_LANG_BOOLEAN_);
+		createEAttribute(applicationLoadBalancerBuilder_elasticloadbalancingv2EClass,
+				APPLICATION_LOAD_BALANCER_BUILDER_ELASTICLOADBALANCINGV2__INTERNET_FACING_JAVA_LANG_BOOLEAN_);
+		createEAttribute(applicationLoadBalancerBuilder_elasticloadbalancingv2EClass,
+				APPLICATION_LOAD_BALANCER_BUILDER_ELASTICLOADBALANCINGV2__LOAD_BALANCER_NAME_JAVA_LANG_STRING_);
+		createEAttribute(applicationLoadBalancerBuilder_elasticloadbalancingv2EClass,
+				APPLICATION_LOAD_BALANCER_BUILDER_ELASTICLOADBALANCINGV2__VPC_SUBNETS_WITH_SUBNET_SELECTION_SOFTWARE_AMAZON_AWSCDK_SERVICES_EC2_SUBNET_SELECTION_AS_REFERENCE);
+		createEAttribute(applicationLoadBalancerBuilder_elasticloadbalancingv2EClass,
+				APPLICATION_LOAD_BALANCER_BUILDER_ELASTICLOADBALANCINGV2__HTTP2_ENABLED_JAVA_LANG_BOOLEAN_);
+		createEAttribute(applicationLoadBalancerBuilder_elasticloadbalancingv2EClass,
+				APPLICATION_LOAD_BALANCER_BUILDER_ELASTICLOADBALANCINGV2__IDLE_TIMEOUT_WITH_DURATION_SOFTWARE_AMAZON_AWSCDK_CORE_DURATION_AS_REFERENCE);
+		createEAttribute(applicationLoadBalancerBuilder_elasticloadbalancingv2EClass,
+				APPLICATION_LOAD_BALANCER_BUILDER_ELASTICLOADBALANCINGV2__IP_ADDRESS_TYPE_SOFTWARE_AMAZON_AWSCDK_SERVICES_ELASTICLOADBALANCINGV2_IP_ADDRESS_TYPE_);
+		createEAttribute(applicationLoadBalancerBuilder_elasticloadbalancingv2EClass,
+				APPLICATION_LOAD_BALANCER_BUILDER_ELASTICLOADBALANCINGV2__SECURITY_GROUP_WITH_ISECURITY_GROUP_SOFTWARE_AMAZON_AWSCDK_SERVICES_EC2_ISECURITY_GROUP_AS_REFERENCE);
+		createEAttribute(applicationLoadBalancerBuilder_elasticloadbalancingv2EClass,
+				APPLICATION_LOAD_BALANCER_BUILDER_ELASTICLOADBALANCINGV2__GENERATED_CLASS_NAME);
+		createEAttribute(applicationLoadBalancerBuilder_elasticloadbalancingv2EClass,
+				APPLICATION_LOAD_BALANCER_BUILDER_ELASTICLOADBALANCINGV2__VAR_NAME);
+		createEAttribute(applicationLoadBalancerBuilder_elasticloadbalancingv2EClass,
+				APPLICATION_LOAD_BALANCER_BUILDER_ELASTICLOADBALANCINGV2__IDENTIFIER);
+		createEAttribute(applicationLoadBalancerBuilder_elasticloadbalancingv2EClass,
+				APPLICATION_LOAD_BALANCER_BUILDER_ELASTICLOADBALANCINGV2__ADDITIONAL_CODE);
+
+		dockerImageAssetBuilder_assetsEClass = createEClass(DOCKER_IMAGE_ASSET_BUILDER_ASSETS);
+		createEAttribute(dockerImageAssetBuilder_assetsEClass,
+				DOCKER_IMAGE_ASSET_BUILDER_ASSETS__EXCLUDE_JAVA_LANG_STRING_AS_LIST);
+		createEAttribute(dockerImageAssetBuilder_assetsEClass,
+				DOCKER_IMAGE_ASSET_BUILDER_ASSETS__FOLLOW_SOFTWARE_AMAZON_AWSCDK_ASSETS_FOLLOW_MODE_);
+		createEAttribute(dockerImageAssetBuilder_assetsEClass,
+				DOCKER_IMAGE_ASSET_BUILDER_ASSETS__EXTRA_HASH_JAVA_LANG_STRING_);
+		createEAttribute(dockerImageAssetBuilder_assetsEClass,
+				DOCKER_IMAGE_ASSET_BUILDER_ASSETS__BUILD_ARGS_JAVA_LANG_STRING_JAVA_LANG_STRING_AS_MAP);
+		createEAttribute(dockerImageAssetBuilder_assetsEClass,
+				DOCKER_IMAGE_ASSET_BUILDER_ASSETS__FILE_JAVA_LANG_STRING_);
+		createEAttribute(dockerImageAssetBuilder_assetsEClass,
+				DOCKER_IMAGE_ASSET_BUILDER_ASSETS__REPOSITORY_NAME_JAVA_LANG_STRING_);
+		createEAttribute(dockerImageAssetBuilder_assetsEClass,
+				DOCKER_IMAGE_ASSET_BUILDER_ASSETS__TARGET_JAVA_LANG_STRING_);
+		createEAttribute(dockerImageAssetBuilder_assetsEClass,
+				DOCKER_IMAGE_ASSET_BUILDER_ASSETS__DIRECTORY_JAVA_LANG_STRING_);
+		createEAttribute(dockerImageAssetBuilder_assetsEClass, DOCKER_IMAGE_ASSET_BUILDER_ASSETS__GENERATED_CLASS_NAME);
+		createEAttribute(dockerImageAssetBuilder_assetsEClass, DOCKER_IMAGE_ASSET_BUILDER_ASSETS__VAR_NAME);
+		createEAttribute(dockerImageAssetBuilder_assetsEClass, DOCKER_IMAGE_ASSET_BUILDER_ASSETS__IDENTIFIER);
+		createEAttribute(dockerImageAssetBuilder_assetsEClass, DOCKER_IMAGE_ASSET_BUILDER_ASSETS__ADDITIONAL_CODE);
+
+		assetImageBuilder_ecsEClass = createEClass(ASSET_IMAGE_BUILDER_ECS);
+		createEAttribute(assetImageBuilder_ecsEClass, ASSET_IMAGE_BUILDER_ECS__EXCLUDE_JAVA_LANG_STRING_AS_LIST);
+		createEAttribute(assetImageBuilder_ecsEClass,
+				ASSET_IMAGE_BUILDER_ECS__FOLLOW_SOFTWARE_AMAZON_AWSCDK_ASSETS_FOLLOW_MODE_);
+		createEAttribute(assetImageBuilder_ecsEClass, ASSET_IMAGE_BUILDER_ECS__EXTRA_HASH_JAVA_LANG_STRING_);
+		createEAttribute(assetImageBuilder_ecsEClass,
+				ASSET_IMAGE_BUILDER_ECS__BUILD_ARGS_JAVA_LANG_STRING_JAVA_LANG_STRING_AS_MAP);
+		createEAttribute(assetImageBuilder_ecsEClass, ASSET_IMAGE_BUILDER_ECS__FILE_JAVA_LANG_STRING_);
+		createEAttribute(assetImageBuilder_ecsEClass, ASSET_IMAGE_BUILDER_ECS__REPOSITORY_NAME_JAVA_LANG_STRING_);
+		createEAttribute(assetImageBuilder_ecsEClass, ASSET_IMAGE_BUILDER_ECS__TARGET_JAVA_LANG_STRING_);
+		createEAttribute(assetImageBuilder_ecsEClass, ASSET_IMAGE_BUILDER_ECS__GENERATED_CLASS_NAME);
+		createEAttribute(assetImageBuilder_ecsEClass, ASSET_IMAGE_BUILDER_ECS__VAR_NAME);
+		createEAttribute(assetImageBuilder_ecsEClass, ASSET_IMAGE_BUILDER_ECS__IDENTIFIER);
+		createEAttribute(assetImageBuilder_ecsEClass, ASSET_IMAGE_BUILDER_ECS__ADDITIONAL_CODE);
+
+		secretStringGeneratorBuilder_secretsmanagerEClass = createEClass(
+				SECRET_STRING_GENERATOR_BUILDER_SECRETSMANAGER);
+		createEAttribute(secretStringGeneratorBuilder_secretsmanagerEClass,
+				SECRET_STRING_GENERATOR_BUILDER_SECRETSMANAGER__EXCLUDE_CHARACTERS_JAVA_LANG_STRING_);
+		createEAttribute(secretStringGeneratorBuilder_secretsmanagerEClass,
+				SECRET_STRING_GENERATOR_BUILDER_SECRETSMANAGER__EXCLUDE_LOWERCASE_JAVA_LANG_BOOLEAN_);
+		createEAttribute(secretStringGeneratorBuilder_secretsmanagerEClass,
+				SECRET_STRING_GENERATOR_BUILDER_SECRETSMANAGER__EXCLUDE_NUMBERS_JAVA_LANG_BOOLEAN_);
+		createEAttribute(secretStringGeneratorBuilder_secretsmanagerEClass,
+				SECRET_STRING_GENERATOR_BUILDER_SECRETSMANAGER__EXCLUDE_PUNCTUATION_JAVA_LANG_BOOLEAN_);
+		createEAttribute(secretStringGeneratorBuilder_secretsmanagerEClass,
+				SECRET_STRING_GENERATOR_BUILDER_SECRETSMANAGER__EXCLUDE_UPPERCASE_JAVA_LANG_BOOLEAN_);
+		createEAttribute(secretStringGeneratorBuilder_secretsmanagerEClass,
+				SECRET_STRING_GENERATOR_BUILDER_SECRETSMANAGER__GENERATE_STRING_KEY_JAVA_LANG_STRING_);
+		createEAttribute(secretStringGeneratorBuilder_secretsmanagerEClass,
+				SECRET_STRING_GENERATOR_BUILDER_SECRETSMANAGER__INCLUDE_SPACE_JAVA_LANG_BOOLEAN_);
+		createEAttribute(secretStringGeneratorBuilder_secretsmanagerEClass,
+				SECRET_STRING_GENERATOR_BUILDER_SECRETSMANAGER__PASSWORD_LENGTH_JAVA_LANG_NUMBER_);
+		createEAttribute(secretStringGeneratorBuilder_secretsmanagerEClass,
+				SECRET_STRING_GENERATOR_BUILDER_SECRETSMANAGER__REQUIRE_EACH_INCLUDED_TYPE_JAVA_LANG_BOOLEAN_);
+		createEAttribute(secretStringGeneratorBuilder_secretsmanagerEClass,
+				SECRET_STRING_GENERATOR_BUILDER_SECRETSMANAGER__SECRET_STRING_TEMPLATE_JAVA_LANG_STRING_);
+		createEAttribute(secretStringGeneratorBuilder_secretsmanagerEClass,
+				SECRET_STRING_GENERATOR_BUILDER_SECRETSMANAGER__GENERATED_CLASS_NAME);
+		createEAttribute(secretStringGeneratorBuilder_secretsmanagerEClass,
+				SECRET_STRING_GENERATOR_BUILDER_SECRETSMANAGER__VAR_NAME);
+		createEAttribute(secretStringGeneratorBuilder_secretsmanagerEClass,
+				SECRET_STRING_GENERATOR_BUILDER_SECRETSMANAGER__IDENTIFIER);
+		createEAttribute(secretStringGeneratorBuilder_secretsmanagerEClass,
+				SECRET_STRING_GENERATOR_BUILDER_SECRETSMANAGER__ADDITIONAL_CODE);
+
+		secretBuilder_secretsmanagerEClass = createEClass(SECRET_BUILDER_SECRETSMANAGER);
+		createEAttribute(secretBuilder_secretsmanagerEClass,
+				SECRET_BUILDER_SECRETSMANAGER__DESCRIPTION_JAVA_LANG_STRING_);
+		createEAttribute(secretBuilder_secretsmanagerEClass,
+				SECRET_BUILDER_SECRETSMANAGER__ENCRYPTION_KEY_WITH_IKEY_SOFTWARE_AMAZON_AWSCDK_SERVICES_KMS_IKEY_AS_REFERENCE);
+		createEAttribute(secretBuilder_secretsmanagerEClass,
+				SECRET_BUILDER_SECRETSMANAGER__GENERATE_SECRET_STRING_WITH_SECRET_STRING_GENERATOR_SOFTWARE_AMAZON_AWSCDK_SERVICES_SECRETSMANAGER_SECRET_STRING_GENERATOR_AS_REFERENCE);
+		createEAttribute(secretBuilder_secretsmanagerEClass,
+				SECRET_BUILDER_SECRETSMANAGER__SECRET_NAME_JAVA_LANG_STRING_);
+		createEAttribute(secretBuilder_secretsmanagerEClass, SECRET_BUILDER_SECRETSMANAGER__GENERATED_CLASS_NAME);
+		createEAttribute(secretBuilder_secretsmanagerEClass, SECRET_BUILDER_SECRETSMANAGER__VAR_NAME);
+		createEAttribute(secretBuilder_secretsmanagerEClass, SECRET_BUILDER_SECRETSMANAGER__IDENTIFIER);
+		createEAttribute(secretBuilder_secretsmanagerEClass, SECRET_BUILDER_SECRETSMANAGER__ADDITIONAL_CODE);
+
+		awsLogDriverBuilder_ecsEClass = createEClass(AWS_LOG_DRIVER_BUILDER_ECS);
+		createEAttribute(awsLogDriverBuilder_ecsEClass, AWS_LOG_DRIVER_BUILDER_ECS__STREAM_PREFIX_JAVA_LANG_STRING_);
+		createEAttribute(awsLogDriverBuilder_ecsEClass, AWS_LOG_DRIVER_BUILDER_ECS__DATETIME_FORMAT_JAVA_LANG_STRING_);
+		createEAttribute(awsLogDriverBuilder_ecsEClass,
+				AWS_LOG_DRIVER_BUILDER_ECS__LOG_GROUP_WITH_ILOG_GROUP_SOFTWARE_AMAZON_AWSCDK_SERVICES_LOGS_ILOG_GROUP_AS_REFERENCE);
+		createEAttribute(awsLogDriverBuilder_ecsEClass,
+				AWS_LOG_DRIVER_BUILDER_ECS__LOG_RETENTION_SOFTWARE_AMAZON_AWSCDK_SERVICES_LOGS_RETENTION_DAYS_);
+		createEAttribute(awsLogDriverBuilder_ecsEClass,
+				AWS_LOG_DRIVER_BUILDER_ECS__MULTILINE_PATTERN_JAVA_LANG_STRING_);
+		createEAttribute(awsLogDriverBuilder_ecsEClass, AWS_LOG_DRIVER_BUILDER_ECS__GENERATED_CLASS_NAME);
+		createEAttribute(awsLogDriverBuilder_ecsEClass, AWS_LOG_DRIVER_BUILDER_ECS__VAR_NAME);
+		createEAttribute(awsLogDriverBuilder_ecsEClass, AWS_LOG_DRIVER_BUILDER_ECS__IDENTIFIER);
+		createEAttribute(awsLogDriverBuilder_ecsEClass, AWS_LOG_DRIVER_BUILDER_ECS__ADDITIONAL_CODE);
+
+		logGroupBuilder_logsEClass = createEClass(LOG_GROUP_BUILDER_LOGS);
+		createEAttribute(logGroupBuilder_logsEClass, LOG_GROUP_BUILDER_LOGS__LOG_GROUP_NAME_JAVA_LANG_STRING_);
+		createEAttribute(logGroupBuilder_logsEClass,
+				LOG_GROUP_BUILDER_LOGS__REMOVAL_POLICY_SOFTWARE_AMAZON_AWSCDK_CORE_REMOVAL_POLICY_);
+		createEAttribute(logGroupBuilder_logsEClass,
+				LOG_GROUP_BUILDER_LOGS__RETENTION_SOFTWARE_AMAZON_AWSCDK_SERVICES_LOGS_RETENTION_DAYS_);
+		createEAttribute(logGroupBuilder_logsEClass, LOG_GROUP_BUILDER_LOGS__GENERATED_CLASS_NAME);
+		createEAttribute(logGroupBuilder_logsEClass, LOG_GROUP_BUILDER_LOGS__VAR_NAME);
+		createEAttribute(logGroupBuilder_logsEClass, LOG_GROUP_BUILDER_LOGS__IDENTIFIER);
+		createEAttribute(logGroupBuilder_logsEClass, LOG_GROUP_BUILDER_LOGS__ADDITIONAL_CODE);
+
+		awsLogDriverPropsBuilder_ecsEClass = createEClass(AWS_LOG_DRIVER_PROPS_BUILDER_ECS);
+		createEAttribute(awsLogDriverPropsBuilder_ecsEClass,
+				AWS_LOG_DRIVER_PROPS_BUILDER_ECS__STREAM_PREFIX_JAVA_LANG_STRING_);
+		createEAttribute(awsLogDriverPropsBuilder_ecsEClass,
+				AWS_LOG_DRIVER_PROPS_BUILDER_ECS__DATETIME_FORMAT_JAVA_LANG_STRING_);
+		createEAttribute(awsLogDriverPropsBuilder_ecsEClass,
+				AWS_LOG_DRIVER_PROPS_BUILDER_ECS__LOG_GROUP_WITH_ILOG_GROUP_SOFTWARE_AMAZON_AWSCDK_SERVICES_LOGS_ILOG_GROUP_AS_REFERENCE);
+		createEAttribute(awsLogDriverPropsBuilder_ecsEClass,
+				AWS_LOG_DRIVER_PROPS_BUILDER_ECS__LOG_RETENTION_SOFTWARE_AMAZON_AWSCDK_SERVICES_LOGS_RETENTION_DAYS_);
+		createEAttribute(awsLogDriverPropsBuilder_ecsEClass,
+				AWS_LOG_DRIVER_PROPS_BUILDER_ECS__MULTILINE_PATTERN_JAVA_LANG_STRING_);
+		createEAttribute(awsLogDriverPropsBuilder_ecsEClass, AWS_LOG_DRIVER_PROPS_BUILDER_ECS__GENERATED_CLASS_NAME);
+		createEAttribute(awsLogDriverPropsBuilder_ecsEClass, AWS_LOG_DRIVER_PROPS_BUILDER_ECS__VAR_NAME);
+		createEAttribute(awsLogDriverPropsBuilder_ecsEClass, AWS_LOG_DRIVER_PROPS_BUILDER_ECS__IDENTIFIER);
+		createEAttribute(awsLogDriverPropsBuilder_ecsEClass, AWS_LOG_DRIVER_PROPS_BUILDER_ECS__ADDITIONAL_CODE);
+
+		applicationLoadBalancedTaskImageOptionsBuilder_patternsEClass = createEClass(
+				APPLICATION_LOAD_BALANCED_TASK_IMAGE_OPTIONS_BUILDER_PATTERNS);
+		createEAttribute(applicationLoadBalancedTaskImageOptionsBuilder_patternsEClass,
+				APPLICATION_LOAD_BALANCED_TASK_IMAGE_OPTIONS_BUILDER_PATTERNS__IMAGE_WITH_CONTAINER_IMAGE_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_CONTAINER_IMAGE_AS_REFERENCE);
+		createEAttribute(applicationLoadBalancedTaskImageOptionsBuilder_patternsEClass,
+				APPLICATION_LOAD_BALANCED_TASK_IMAGE_OPTIONS_BUILDER_PATTERNS__CONTAINER_NAME_JAVA_LANG_STRING_);
+		createEAttribute(applicationLoadBalancedTaskImageOptionsBuilder_patternsEClass,
+				APPLICATION_LOAD_BALANCED_TASK_IMAGE_OPTIONS_BUILDER_PATTERNS__CONTAINER_PORT_JAVA_LANG_NUMBER_);
+		createEAttribute(applicationLoadBalancedTaskImageOptionsBuilder_patternsEClass,
+				APPLICATION_LOAD_BALANCED_TASK_IMAGE_OPTIONS_BUILDER_PATTERNS__ENABLE_LOGGING_JAVA_LANG_BOOLEAN_);
+		createEAttribute(applicationLoadBalancedTaskImageOptionsBuilder_patternsEClass,
+				APPLICATION_LOAD_BALANCED_TASK_IMAGE_OPTIONS_BUILDER_PATTERNS__ENVIRONMENT_JAVA_LANG_STRING_JAVA_LANG_STRING_AS_MAP);
+		createEAttribute(applicationLoadBalancedTaskImageOptionsBuilder_patternsEClass,
+				APPLICATION_LOAD_BALANCED_TASK_IMAGE_OPTIONS_BUILDER_PATTERNS__EXECUTION_ROLE_WITH_IROLE_SOFTWARE_AMAZON_AWSCDK_SERVICES_IAM_IROLE_AS_REFERENCE);
+		createEAttribute(applicationLoadBalancedTaskImageOptionsBuilder_patternsEClass,
+				APPLICATION_LOAD_BALANCED_TASK_IMAGE_OPTIONS_BUILDER_PATTERNS__FAMILY_JAVA_LANG_STRING_);
+		createEAttribute(applicationLoadBalancedTaskImageOptionsBuilder_patternsEClass,
+				APPLICATION_LOAD_BALANCED_TASK_IMAGE_OPTIONS_BUILDER_PATTERNS__LOG_DRIVER_WITH_LOG_DRIVER_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_LOG_DRIVER_AS_REFERENCE);
+		createEAttribute(applicationLoadBalancedTaskImageOptionsBuilder_patternsEClass,
+				APPLICATION_LOAD_BALANCED_TASK_IMAGE_OPTIONS_BUILDER_PATTERNS__SECRETS_JAVA_LANG_STRING_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_SECRET_AS_MAP);
+		createEAttribute(applicationLoadBalancedTaskImageOptionsBuilder_patternsEClass,
+				APPLICATION_LOAD_BALANCED_TASK_IMAGE_OPTIONS_BUILDER_PATTERNS__TASK_ROLE_WITH_IROLE_SOFTWARE_AMAZON_AWSCDK_SERVICES_IAM_IROLE_AS_REFERENCE);
+		createEAttribute(applicationLoadBalancedTaskImageOptionsBuilder_patternsEClass,
+				APPLICATION_LOAD_BALANCED_TASK_IMAGE_OPTIONS_BUILDER_PATTERNS__GENERATED_CLASS_NAME);
+		createEAttribute(applicationLoadBalancedTaskImageOptionsBuilder_patternsEClass,
+				APPLICATION_LOAD_BALANCED_TASK_IMAGE_OPTIONS_BUILDER_PATTERNS__VAR_NAME);
+		createEAttribute(applicationLoadBalancedTaskImageOptionsBuilder_patternsEClass,
+				APPLICATION_LOAD_BALANCED_TASK_IMAGE_OPTIONS_BUILDER_PATTERNS__IDENTIFIER);
+		createEAttribute(applicationLoadBalancedTaskImageOptionsBuilder_patternsEClass,
+				APPLICATION_LOAD_BALANCED_TASK_IMAGE_OPTIONS_BUILDER_PATTERNS__ADDITIONAL_CODE);
+
+		appMeshProxyConfigurationPropsBuilder_ecsEClass = createEClass(APP_MESH_PROXY_CONFIGURATION_PROPS_BUILDER_ECS);
+		createEAttribute(appMeshProxyConfigurationPropsBuilder_ecsEClass,
+				APP_MESH_PROXY_CONFIGURATION_PROPS_BUILDER_ECS__APP_PORTS_JAVA_LANG_NUMBER_AS_LIST);
+		createEAttribute(appMeshProxyConfigurationPropsBuilder_ecsEClass,
+				APP_MESH_PROXY_CONFIGURATION_PROPS_BUILDER_ECS__PROXY_EGRESS_PORT_JAVA_LANG_NUMBER_);
+		createEAttribute(appMeshProxyConfigurationPropsBuilder_ecsEClass,
+				APP_MESH_PROXY_CONFIGURATION_PROPS_BUILDER_ECS__PROXY_INGRESS_PORT_JAVA_LANG_NUMBER_);
+		createEAttribute(appMeshProxyConfigurationPropsBuilder_ecsEClass,
+				APP_MESH_PROXY_CONFIGURATION_PROPS_BUILDER_ECS__EGRESS_IGNORED_IPS_JAVA_LANG_STRING_AS_LIST);
+		createEAttribute(appMeshProxyConfigurationPropsBuilder_ecsEClass,
+				APP_MESH_PROXY_CONFIGURATION_PROPS_BUILDER_ECS__EGRESS_IGNORED_PORTS_JAVA_LANG_NUMBER_AS_LIST);
+		createEAttribute(appMeshProxyConfigurationPropsBuilder_ecsEClass,
+				APP_MESH_PROXY_CONFIGURATION_PROPS_BUILDER_ECS__IGNORED_GID_JAVA_LANG_NUMBER_);
+		createEAttribute(appMeshProxyConfigurationPropsBuilder_ecsEClass,
+				APP_MESH_PROXY_CONFIGURATION_PROPS_BUILDER_ECS__IGNORED_UID_JAVA_LANG_NUMBER_);
+		createEAttribute(appMeshProxyConfigurationPropsBuilder_ecsEClass,
+				APP_MESH_PROXY_CONFIGURATION_PROPS_BUILDER_ECS__GENERATED_CLASS_NAME);
+		createEAttribute(appMeshProxyConfigurationPropsBuilder_ecsEClass,
+				APP_MESH_PROXY_CONFIGURATION_PROPS_BUILDER_ECS__VAR_NAME);
+		createEAttribute(appMeshProxyConfigurationPropsBuilder_ecsEClass,
+				APP_MESH_PROXY_CONFIGURATION_PROPS_BUILDER_ECS__IDENTIFIER);
+		createEAttribute(appMeshProxyConfigurationPropsBuilder_ecsEClass,
+				APP_MESH_PROXY_CONFIGURATION_PROPS_BUILDER_ECS__ADDITIONAL_CODE);
+
+		appMeshProxyConfigurationBuilder_ecsEClass = createEClass(APP_MESH_PROXY_CONFIGURATION_BUILDER_ECS);
+		createEAttribute(appMeshProxyConfigurationBuilder_ecsEClass,
+				APP_MESH_PROXY_CONFIGURATION_BUILDER_ECS__CONTAINER_NAME_JAVA_LANG_STRING_);
+		createEAttribute(appMeshProxyConfigurationBuilder_ecsEClass,
+				APP_MESH_PROXY_CONFIGURATION_BUILDER_ECS__PROPERTIES_WITH_APP_MESH_PROXY_CONFIGURATION_PROPS_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_APP_MESH_PROXY_CONFIGURATION_PROPS_AS_REFERENCE);
+		createEAttribute(appMeshProxyConfigurationBuilder_ecsEClass,
+				APP_MESH_PROXY_CONFIGURATION_BUILDER_ECS__GENERATED_CLASS_NAME);
+		createEAttribute(appMeshProxyConfigurationBuilder_ecsEClass,
+				APP_MESH_PROXY_CONFIGURATION_BUILDER_ECS__VAR_NAME);
+		createEAttribute(appMeshProxyConfigurationBuilder_ecsEClass,
+				APP_MESH_PROXY_CONFIGURATION_BUILDER_ECS__IDENTIFIER);
+		createEAttribute(appMeshProxyConfigurationBuilder_ecsEClass,
+				APP_MESH_PROXY_CONFIGURATION_BUILDER_ECS__ADDITIONAL_CODE);
+
+		hostBuilder_ecsEClass = createEClass(HOST_BUILDER_ECS);
+		createEAttribute(hostBuilder_ecsEClass, HOST_BUILDER_ECS__SOURCE_PATH_JAVA_LANG_STRING_);
+		createEAttribute(hostBuilder_ecsEClass, HOST_BUILDER_ECS__GENERATED_CLASS_NAME);
+		createEAttribute(hostBuilder_ecsEClass, HOST_BUILDER_ECS__VAR_NAME);
+		createEAttribute(hostBuilder_ecsEClass, HOST_BUILDER_ECS__IDENTIFIER);
+		createEAttribute(hostBuilder_ecsEClass, HOST_BUILDER_ECS__ADDITIONAL_CODE);
+
+		dockerVolumeConfigurationBuilder_ecsEClass = createEClass(DOCKER_VOLUME_CONFIGURATION_BUILDER_ECS);
+		createEAttribute(dockerVolumeConfigurationBuilder_ecsEClass,
+				DOCKER_VOLUME_CONFIGURATION_BUILDER_ECS__DRIVER_JAVA_LANG_STRING_);
+		createEAttribute(dockerVolumeConfigurationBuilder_ecsEClass,
+				DOCKER_VOLUME_CONFIGURATION_BUILDER_ECS__SCOPE_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_SCOPE_);
+		createEAttribute(dockerVolumeConfigurationBuilder_ecsEClass,
+				DOCKER_VOLUME_CONFIGURATION_BUILDER_ECS__AUTOPROVISION_JAVA_LANG_BOOLEAN_);
+		createEAttribute(dockerVolumeConfigurationBuilder_ecsEClass,
+				DOCKER_VOLUME_CONFIGURATION_BUILDER_ECS__DRIVER_OPTS_JAVA_LANG_STRING_JAVA_LANG_STRING_AS_MAP);
+		createEAttribute(dockerVolumeConfigurationBuilder_ecsEClass,
+				DOCKER_VOLUME_CONFIGURATION_BUILDER_ECS__LABELS_JAVA_LANG_STRING_AS_LIST);
+		createEAttribute(dockerVolumeConfigurationBuilder_ecsEClass,
+				DOCKER_VOLUME_CONFIGURATION_BUILDER_ECS__GENERATED_CLASS_NAME);
+		createEAttribute(dockerVolumeConfigurationBuilder_ecsEClass, DOCKER_VOLUME_CONFIGURATION_BUILDER_ECS__VAR_NAME);
+		createEAttribute(dockerVolumeConfigurationBuilder_ecsEClass,
+				DOCKER_VOLUME_CONFIGURATION_BUILDER_ECS__IDENTIFIER);
+		createEAttribute(dockerVolumeConfigurationBuilder_ecsEClass,
+				DOCKER_VOLUME_CONFIGURATION_BUILDER_ECS__ADDITIONAL_CODE);
+
+		volumeBuilder_ecsEClass = createEClass(VOLUME_BUILDER_ECS);
+		createEAttribute(volumeBuilder_ecsEClass, VOLUME_BUILDER_ECS__NAME_JAVA_LANG_STRING_);
+		createEAttribute(volumeBuilder_ecsEClass,
+				VOLUME_BUILDER_ECS__DOCKER_VOLUME_CONFIGURATION_WITH_DOCKER_VOLUME_CONFIGURATION_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_DOCKER_VOLUME_CONFIGURATION_AS_REFERENCE);
+		createEAttribute(volumeBuilder_ecsEClass,
+				VOLUME_BUILDER_ECS__HOST_WITH_HOST_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_HOST_AS_REFERENCE);
+		createEAttribute(volumeBuilder_ecsEClass, VOLUME_BUILDER_ECS__GENERATED_CLASS_NAME);
+		createEAttribute(volumeBuilder_ecsEClass, VOLUME_BUILDER_ECS__VAR_NAME);
+		createEAttribute(volumeBuilder_ecsEClass, VOLUME_BUILDER_ECS__IDENTIFIER);
+		createEAttribute(volumeBuilder_ecsEClass, VOLUME_BUILDER_ECS__ADDITIONAL_CODE);
+
+		ec2TaskDefinitionBuilder_ecsEClass = createEClass(EC2_TASK_DEFINITION_BUILDER_ECS);
+		createEAttribute(ec2TaskDefinitionBuilder_ecsEClass,
+				EC2_TASK_DEFINITION_BUILDER_ECS__EXECUTION_ROLE_WITH_IROLE_SOFTWARE_AMAZON_AWSCDK_SERVICES_IAM_IROLE_AS_REFERENCE);
+		createEAttribute(ec2TaskDefinitionBuilder_ecsEClass, EC2_TASK_DEFINITION_BUILDER_ECS__FAMILY_JAVA_LANG_STRING_);
+		createEAttribute(ec2TaskDefinitionBuilder_ecsEClass,
+				EC2_TASK_DEFINITION_BUILDER_ECS__PROXY_CONFIGURATION_WITH_PROXY_CONFIGURATION_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_PROXY_CONFIGURATION_AS_REFERENCE);
+		createEAttribute(ec2TaskDefinitionBuilder_ecsEClass,
+				EC2_TASK_DEFINITION_BUILDER_ECS__TASK_ROLE_WITH_IROLE_SOFTWARE_AMAZON_AWSCDK_SERVICES_IAM_IROLE_AS_REFERENCE);
+		createEAttribute(ec2TaskDefinitionBuilder_ecsEClass,
+				EC2_TASK_DEFINITION_BUILDER_ECS__VOLUMES_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_VOLUME_AS_LIST);
+		createEAttribute(ec2TaskDefinitionBuilder_ecsEClass,
+				EC2_TASK_DEFINITION_BUILDER_ECS__IPC_MODE_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_IPC_MODE_);
+		createEAttribute(ec2TaskDefinitionBuilder_ecsEClass,
+				EC2_TASK_DEFINITION_BUILDER_ECS__NETWORK_MODE_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_NETWORK_MODE_);
+		createEAttribute(ec2TaskDefinitionBuilder_ecsEClass,
+				EC2_TASK_DEFINITION_BUILDER_ECS__PID_MODE_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_PID_MODE_);
+		createEAttribute(ec2TaskDefinitionBuilder_ecsEClass,
+				EC2_TASK_DEFINITION_BUILDER_ECS__PLACEMENT_CONSTRAINTS_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_PLACEMENT_CONSTRAINT_AS_LIST);
+		createEAttribute(ec2TaskDefinitionBuilder_ecsEClass, EC2_TASK_DEFINITION_BUILDER_ECS__GENERATED_CLASS_NAME);
+		createEAttribute(ec2TaskDefinitionBuilder_ecsEClass, EC2_TASK_DEFINITION_BUILDER_ECS__VAR_NAME);
+		createEAttribute(ec2TaskDefinitionBuilder_ecsEClass, EC2_TASK_DEFINITION_BUILDER_ECS__IDENTIFIER);
+		createEAttribute(ec2TaskDefinitionBuilder_ecsEClass, EC2_TASK_DEFINITION_BUILDER_ECS__ADDITIONAL_CODE);
+
+		applicationLoadBalancedEc2ServiceBuilder_patternsEClass = createEClass(
+				APPLICATION_LOAD_BALANCED_EC2_SERVICE_BUILDER_PATTERNS);
+		createEAttribute(applicationLoadBalancedEc2ServiceBuilder_patternsEClass,
+				APPLICATION_LOAD_BALANCED_EC2_SERVICE_BUILDER_PATTERNS__CERTIFICATE_WITH_ICERTIFICATE_SOFTWARE_AMAZON_AWSCDK_SERVICES_CERTIFICATEMANAGER_ICERTIFICATE_AS_REFERENCE);
+		createEAttribute(applicationLoadBalancedEc2ServiceBuilder_patternsEClass,
+				APPLICATION_LOAD_BALANCED_EC2_SERVICE_BUILDER_PATTERNS__CLOUD_MAP_OPTIONS_WITH_CLOUD_MAP_OPTIONS_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_CLOUD_MAP_OPTIONS_AS_REFERENCE);
+		createEAttribute(applicationLoadBalancedEc2ServiceBuilder_patternsEClass,
+				APPLICATION_LOAD_BALANCED_EC2_SERVICE_BUILDER_PATTERNS__CLUSTER_WITH_ICLUSTER_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_ICLUSTER_AS_REFERENCE);
+		createEAttribute(applicationLoadBalancedEc2ServiceBuilder_patternsEClass,
+				APPLICATION_LOAD_BALANCED_EC2_SERVICE_BUILDER_PATTERNS__DESIRED_COUNT_JAVA_LANG_NUMBER_);
+		createEAttribute(applicationLoadBalancedEc2ServiceBuilder_patternsEClass,
+				APPLICATION_LOAD_BALANCED_EC2_SERVICE_BUILDER_PATTERNS__DOMAIN_NAME_JAVA_LANG_STRING_);
+		createEAttribute(applicationLoadBalancedEc2ServiceBuilder_patternsEClass,
+				APPLICATION_LOAD_BALANCED_EC2_SERVICE_BUILDER_PATTERNS__DOMAIN_ZONE_WITH_IHOSTED_ZONE_SOFTWARE_AMAZON_AWSCDK_SERVICES_ROUTE53_IHOSTED_ZONE_AS_REFERENCE);
+		createEAttribute(applicationLoadBalancedEc2ServiceBuilder_patternsEClass,
+				APPLICATION_LOAD_BALANCED_EC2_SERVICE_BUILDER_PATTERNS__ENABLE_ECS_MANAGED_TAGS_JAVA_LANG_BOOLEAN_);
+		createEAttribute(applicationLoadBalancedEc2ServiceBuilder_patternsEClass,
+				APPLICATION_LOAD_BALANCED_EC2_SERVICE_BUILDER_PATTERNS__HEALTH_CHECK_GRACE_PERIOD_WITH_DURATION_SOFTWARE_AMAZON_AWSCDK_CORE_DURATION_AS_REFERENCE);
+		createEAttribute(applicationLoadBalancedEc2ServiceBuilder_patternsEClass,
+				APPLICATION_LOAD_BALANCED_EC2_SERVICE_BUILDER_PATTERNS__LISTENER_PORT_JAVA_LANG_NUMBER_);
+		createEAttribute(applicationLoadBalancedEc2ServiceBuilder_patternsEClass,
+				APPLICATION_LOAD_BALANCED_EC2_SERVICE_BUILDER_PATTERNS__LOAD_BALANCER_WITH_IAPPLICATION_LOAD_BALANCER_SOFTWARE_AMAZON_AWSCDK_SERVICES_ELASTICLOADBALANCINGV2_IAPPLICATION_LOAD_BALANCER_AS_REFERENCE);
+		createEAttribute(applicationLoadBalancedEc2ServiceBuilder_patternsEClass,
+				APPLICATION_LOAD_BALANCED_EC2_SERVICE_BUILDER_PATTERNS__MAX_HEALTHY_PERCENT_JAVA_LANG_NUMBER_);
+		createEAttribute(applicationLoadBalancedEc2ServiceBuilder_patternsEClass,
+				APPLICATION_LOAD_BALANCED_EC2_SERVICE_BUILDER_PATTERNS__MIN_HEALTHY_PERCENT_JAVA_LANG_NUMBER_);
+		createEAttribute(applicationLoadBalancedEc2ServiceBuilder_patternsEClass,
+				APPLICATION_LOAD_BALANCED_EC2_SERVICE_BUILDER_PATTERNS__PROPAGATE_TAGS_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_PROPAGATED_TAG_SOURCE_);
+		createEAttribute(applicationLoadBalancedEc2ServiceBuilder_patternsEClass,
+				APPLICATION_LOAD_BALANCED_EC2_SERVICE_BUILDER_PATTERNS__PROTOCOL_SOFTWARE_AMAZON_AWSCDK_SERVICES_ELASTICLOADBALANCINGV2_APPLICATION_PROTOCOL_);
+		createEAttribute(applicationLoadBalancedEc2ServiceBuilder_patternsEClass,
+				APPLICATION_LOAD_BALANCED_EC2_SERVICE_BUILDER_PATTERNS__PUBLIC_LOAD_BALANCER_JAVA_LANG_BOOLEAN_);
+		createEAttribute(applicationLoadBalancedEc2ServiceBuilder_patternsEClass,
+				APPLICATION_LOAD_BALANCED_EC2_SERVICE_BUILDER_PATTERNS__SERVICE_NAME_JAVA_LANG_STRING_);
+		createEAttribute(applicationLoadBalancedEc2ServiceBuilder_patternsEClass,
+				APPLICATION_LOAD_BALANCED_EC2_SERVICE_BUILDER_PATTERNS__TASK_IMAGE_OPTIONS_WITH_APPLICATION_LOAD_BALANCED_TASK_IMAGE_OPTIONS_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_PATTERNS_APPLICATION_LOAD_BALANCED_TASK_IMAGE_OPTIONS_AS_REFERENCE);
+		createEAttribute(applicationLoadBalancedEc2ServiceBuilder_patternsEClass,
+				APPLICATION_LOAD_BALANCED_EC2_SERVICE_BUILDER_PATTERNS__VPC_WITH_IVPC_SOFTWARE_AMAZON_AWSCDK_SERVICES_EC2_IVPC_AS_REFERENCE);
+		createEAttribute(applicationLoadBalancedEc2ServiceBuilder_patternsEClass,
+				APPLICATION_LOAD_BALANCED_EC2_SERVICE_BUILDER_PATTERNS__CPU_JAVA_LANG_NUMBER_);
+		createEAttribute(applicationLoadBalancedEc2ServiceBuilder_patternsEClass,
+				APPLICATION_LOAD_BALANCED_EC2_SERVICE_BUILDER_PATTERNS__MEMORY_LIMIT_MI_BJAVA_LANG_NUMBER_);
+		createEAttribute(applicationLoadBalancedEc2ServiceBuilder_patternsEClass,
+				APPLICATION_LOAD_BALANCED_EC2_SERVICE_BUILDER_PATTERNS__MEMORY_RESERVATION_MI_BJAVA_LANG_NUMBER_);
+		createEAttribute(applicationLoadBalancedEc2ServiceBuilder_patternsEClass,
+				APPLICATION_LOAD_BALANCED_EC2_SERVICE_BUILDER_PATTERNS__TASK_DEFINITION_WITH_EC2_TASK_DEFINITION_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_EC2_TASK_DEFINITION_AS_REFERENCE);
+		createEAttribute(applicationLoadBalancedEc2ServiceBuilder_patternsEClass,
+				APPLICATION_LOAD_BALANCED_EC2_SERVICE_BUILDER_PATTERNS__GENERATED_CLASS_NAME);
+		createEAttribute(applicationLoadBalancedEc2ServiceBuilder_patternsEClass,
+				APPLICATION_LOAD_BALANCED_EC2_SERVICE_BUILDER_PATTERNS__VAR_NAME);
+		createEAttribute(applicationLoadBalancedEc2ServiceBuilder_patternsEClass,
+				APPLICATION_LOAD_BALANCED_EC2_SERVICE_BUILDER_PATTERNS__IDENTIFIER);
+		createEAttribute(applicationLoadBalancedEc2ServiceBuilder_patternsEClass,
+				APPLICATION_LOAD_BALANCED_EC2_SERVICE_BUILDER_PATTERNS__ADDITIONAL_CODE);
+
+		fargateTaskDefinitionBuilder_ecsEClass = createEClass(FARGATE_TASK_DEFINITION_BUILDER_ECS);
+		createEAttribute(fargateTaskDefinitionBuilder_ecsEClass,
+				FARGATE_TASK_DEFINITION_BUILDER_ECS__EXECUTION_ROLE_WITH_IROLE_SOFTWARE_AMAZON_AWSCDK_SERVICES_IAM_IROLE_AS_REFERENCE);
+		createEAttribute(fargateTaskDefinitionBuilder_ecsEClass,
+				FARGATE_TASK_DEFINITION_BUILDER_ECS__FAMILY_JAVA_LANG_STRING_);
+		createEAttribute(fargateTaskDefinitionBuilder_ecsEClass,
+				FARGATE_TASK_DEFINITION_BUILDER_ECS__PROXY_CONFIGURATION_WITH_PROXY_CONFIGURATION_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_PROXY_CONFIGURATION_AS_REFERENCE);
+		createEAttribute(fargateTaskDefinitionBuilder_ecsEClass,
+				FARGATE_TASK_DEFINITION_BUILDER_ECS__TASK_ROLE_WITH_IROLE_SOFTWARE_AMAZON_AWSCDK_SERVICES_IAM_IROLE_AS_REFERENCE);
+		createEAttribute(fargateTaskDefinitionBuilder_ecsEClass,
+				FARGATE_TASK_DEFINITION_BUILDER_ECS__VOLUMES_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_VOLUME_AS_LIST);
+		createEAttribute(fargateTaskDefinitionBuilder_ecsEClass,
+				FARGATE_TASK_DEFINITION_BUILDER_ECS__CPU_JAVA_LANG_NUMBER_);
+		createEAttribute(fargateTaskDefinitionBuilder_ecsEClass,
+				FARGATE_TASK_DEFINITION_BUILDER_ECS__MEMORY_LIMIT_MI_BJAVA_LANG_NUMBER_);
+		createEAttribute(fargateTaskDefinitionBuilder_ecsEClass,
+				FARGATE_TASK_DEFINITION_BUILDER_ECS__GENERATED_CLASS_NAME);
+		createEAttribute(fargateTaskDefinitionBuilder_ecsEClass, FARGATE_TASK_DEFINITION_BUILDER_ECS__VAR_NAME);
+		createEAttribute(fargateTaskDefinitionBuilder_ecsEClass, FARGATE_TASK_DEFINITION_BUILDER_ECS__IDENTIFIER);
+		createEAttribute(fargateTaskDefinitionBuilder_ecsEClass, FARGATE_TASK_DEFINITION_BUILDER_ECS__ADDITIONAL_CODE);
+
+		applicationLoadBalancedFargateServiceBuilder_patternsEClass = createEClass(
+				APPLICATION_LOAD_BALANCED_FARGATE_SERVICE_BUILDER_PATTERNS);
+		createEAttribute(applicationLoadBalancedFargateServiceBuilder_patternsEClass,
+				APPLICATION_LOAD_BALANCED_FARGATE_SERVICE_BUILDER_PATTERNS__CERTIFICATE_WITH_ICERTIFICATE_SOFTWARE_AMAZON_AWSCDK_SERVICES_CERTIFICATEMANAGER_ICERTIFICATE_AS_REFERENCE);
+		createEAttribute(applicationLoadBalancedFargateServiceBuilder_patternsEClass,
+				APPLICATION_LOAD_BALANCED_FARGATE_SERVICE_BUILDER_PATTERNS__CLOUD_MAP_OPTIONS_WITH_CLOUD_MAP_OPTIONS_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_CLOUD_MAP_OPTIONS_AS_REFERENCE);
+		createEAttribute(applicationLoadBalancedFargateServiceBuilder_patternsEClass,
+				APPLICATION_LOAD_BALANCED_FARGATE_SERVICE_BUILDER_PATTERNS__CLUSTER_WITH_ICLUSTER_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_ICLUSTER_AS_REFERENCE);
+		createEAttribute(applicationLoadBalancedFargateServiceBuilder_patternsEClass,
+				APPLICATION_LOAD_BALANCED_FARGATE_SERVICE_BUILDER_PATTERNS__DESIRED_COUNT_JAVA_LANG_NUMBER_);
+		createEAttribute(applicationLoadBalancedFargateServiceBuilder_patternsEClass,
+				APPLICATION_LOAD_BALANCED_FARGATE_SERVICE_BUILDER_PATTERNS__DOMAIN_NAME_JAVA_LANG_STRING_);
+		createEAttribute(applicationLoadBalancedFargateServiceBuilder_patternsEClass,
+				APPLICATION_LOAD_BALANCED_FARGATE_SERVICE_BUILDER_PATTERNS__DOMAIN_ZONE_WITH_IHOSTED_ZONE_SOFTWARE_AMAZON_AWSCDK_SERVICES_ROUTE53_IHOSTED_ZONE_AS_REFERENCE);
+		createEAttribute(applicationLoadBalancedFargateServiceBuilder_patternsEClass,
+				APPLICATION_LOAD_BALANCED_FARGATE_SERVICE_BUILDER_PATTERNS__ENABLE_ECS_MANAGED_TAGS_JAVA_LANG_BOOLEAN_);
+		createEAttribute(applicationLoadBalancedFargateServiceBuilder_patternsEClass,
+				APPLICATION_LOAD_BALANCED_FARGATE_SERVICE_BUILDER_PATTERNS__HEALTH_CHECK_GRACE_PERIOD_WITH_DURATION_SOFTWARE_AMAZON_AWSCDK_CORE_DURATION_AS_REFERENCE);
+		createEAttribute(applicationLoadBalancedFargateServiceBuilder_patternsEClass,
+				APPLICATION_LOAD_BALANCED_FARGATE_SERVICE_BUILDER_PATTERNS__LISTENER_PORT_JAVA_LANG_NUMBER_);
+		createEAttribute(applicationLoadBalancedFargateServiceBuilder_patternsEClass,
+				APPLICATION_LOAD_BALANCED_FARGATE_SERVICE_BUILDER_PATTERNS__LOAD_BALANCER_WITH_IAPPLICATION_LOAD_BALANCER_SOFTWARE_AMAZON_AWSCDK_SERVICES_ELASTICLOADBALANCINGV2_IAPPLICATION_LOAD_BALANCER_AS_REFERENCE);
+		createEAttribute(applicationLoadBalancedFargateServiceBuilder_patternsEClass,
+				APPLICATION_LOAD_BALANCED_FARGATE_SERVICE_BUILDER_PATTERNS__MAX_HEALTHY_PERCENT_JAVA_LANG_NUMBER_);
+		createEAttribute(applicationLoadBalancedFargateServiceBuilder_patternsEClass,
+				APPLICATION_LOAD_BALANCED_FARGATE_SERVICE_BUILDER_PATTERNS__MIN_HEALTHY_PERCENT_JAVA_LANG_NUMBER_);
+		createEAttribute(applicationLoadBalancedFargateServiceBuilder_patternsEClass,
+				APPLICATION_LOAD_BALANCED_FARGATE_SERVICE_BUILDER_PATTERNS__PROPAGATE_TAGS_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_PROPAGATED_TAG_SOURCE_);
+		createEAttribute(applicationLoadBalancedFargateServiceBuilder_patternsEClass,
+				APPLICATION_LOAD_BALANCED_FARGATE_SERVICE_BUILDER_PATTERNS__PROTOCOL_SOFTWARE_AMAZON_AWSCDK_SERVICES_ELASTICLOADBALANCINGV2_APPLICATION_PROTOCOL_);
+		createEAttribute(applicationLoadBalancedFargateServiceBuilder_patternsEClass,
+				APPLICATION_LOAD_BALANCED_FARGATE_SERVICE_BUILDER_PATTERNS__PUBLIC_LOAD_BALANCER_JAVA_LANG_BOOLEAN_);
+		createEAttribute(applicationLoadBalancedFargateServiceBuilder_patternsEClass,
+				APPLICATION_LOAD_BALANCED_FARGATE_SERVICE_BUILDER_PATTERNS__SERVICE_NAME_JAVA_LANG_STRING_);
+		createEAttribute(applicationLoadBalancedFargateServiceBuilder_patternsEClass,
+				APPLICATION_LOAD_BALANCED_FARGATE_SERVICE_BUILDER_PATTERNS__TASK_IMAGE_OPTIONS_WITH_APPLICATION_LOAD_BALANCED_TASK_IMAGE_OPTIONS_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_PATTERNS_APPLICATION_LOAD_BALANCED_TASK_IMAGE_OPTIONS_AS_REFERENCE);
+		createEAttribute(applicationLoadBalancedFargateServiceBuilder_patternsEClass,
+				APPLICATION_LOAD_BALANCED_FARGATE_SERVICE_BUILDER_PATTERNS__VPC_WITH_IVPC_SOFTWARE_AMAZON_AWSCDK_SERVICES_EC2_IVPC_AS_REFERENCE);
+		createEAttribute(applicationLoadBalancedFargateServiceBuilder_patternsEClass,
+				APPLICATION_LOAD_BALANCED_FARGATE_SERVICE_BUILDER_PATTERNS__ASSIGN_PUBLIC_IP_JAVA_LANG_BOOLEAN_);
+		createEAttribute(applicationLoadBalancedFargateServiceBuilder_patternsEClass,
+				APPLICATION_LOAD_BALANCED_FARGATE_SERVICE_BUILDER_PATTERNS__CPU_JAVA_LANG_NUMBER_);
+		createEAttribute(applicationLoadBalancedFargateServiceBuilder_patternsEClass,
+				APPLICATION_LOAD_BALANCED_FARGATE_SERVICE_BUILDER_PATTERNS__MEMORY_LIMIT_MI_BJAVA_LANG_NUMBER_);
+		createEAttribute(applicationLoadBalancedFargateServiceBuilder_patternsEClass,
+				APPLICATION_LOAD_BALANCED_FARGATE_SERVICE_BUILDER_PATTERNS__PLATFORM_VERSION_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_FARGATE_PLATFORM_VERSION_);
+		createEAttribute(applicationLoadBalancedFargateServiceBuilder_patternsEClass,
+				APPLICATION_LOAD_BALANCED_FARGATE_SERVICE_BUILDER_PATTERNS__TASK_DEFINITION_WITH_FARGATE_TASK_DEFINITION_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_FARGATE_TASK_DEFINITION_AS_REFERENCE);
+		createEAttribute(applicationLoadBalancedFargateServiceBuilder_patternsEClass,
+				APPLICATION_LOAD_BALANCED_FARGATE_SERVICE_BUILDER_PATTERNS__GENERATED_CLASS_NAME);
+		createEAttribute(applicationLoadBalancedFargateServiceBuilder_patternsEClass,
+				APPLICATION_LOAD_BALANCED_FARGATE_SERVICE_BUILDER_PATTERNS__VAR_NAME);
+		createEAttribute(applicationLoadBalancedFargateServiceBuilder_patternsEClass,
+				APPLICATION_LOAD_BALANCED_FARGATE_SERVICE_BUILDER_PATTERNS__IDENTIFIER);
+		createEAttribute(applicationLoadBalancedFargateServiceBuilder_patternsEClass,
+				APPLICATION_LOAD_BALANCED_FARGATE_SERVICE_BUILDER_PATTERNS__ADDITIONAL_CODE);
+
+		applicationMultipleTargetGroupsFargateServiceBuilder_patternsEClass = createEClass(
+				APPLICATION_MULTIPLE_TARGET_GROUPS_FARGATE_SERVICE_BUILDER_PATTERNS);
+		createEAttribute(applicationMultipleTargetGroupsFargateServiceBuilder_patternsEClass,
+				APPLICATION_MULTIPLE_TARGET_GROUPS_FARGATE_SERVICE_BUILDER_PATTERNS__CLOUD_MAP_OPTIONS_WITH_CLOUD_MAP_OPTIONS_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_CLOUD_MAP_OPTIONS_AS_REFERENCE);
+		createEAttribute(applicationMultipleTargetGroupsFargateServiceBuilder_patternsEClass,
+				APPLICATION_MULTIPLE_TARGET_GROUPS_FARGATE_SERVICE_BUILDER_PATTERNS__CLUSTER_WITH_ICLUSTER_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_ICLUSTER_AS_REFERENCE);
+		createEAttribute(applicationMultipleTargetGroupsFargateServiceBuilder_patternsEClass,
+				APPLICATION_MULTIPLE_TARGET_GROUPS_FARGATE_SERVICE_BUILDER_PATTERNS__DESIRED_COUNT_JAVA_LANG_NUMBER_);
+		createEAttribute(applicationMultipleTargetGroupsFargateServiceBuilder_patternsEClass,
+				APPLICATION_MULTIPLE_TARGET_GROUPS_FARGATE_SERVICE_BUILDER_PATTERNS__ENABLE_ECS_MANAGED_TAGS_JAVA_LANG_BOOLEAN_);
+		createEAttribute(applicationMultipleTargetGroupsFargateServiceBuilder_patternsEClass,
+				APPLICATION_MULTIPLE_TARGET_GROUPS_FARGATE_SERVICE_BUILDER_PATTERNS__HEALTH_CHECK_GRACE_PERIOD_WITH_DURATION_SOFTWARE_AMAZON_AWSCDK_CORE_DURATION_AS_REFERENCE);
+		createEAttribute(applicationMultipleTargetGroupsFargateServiceBuilder_patternsEClass,
+				APPLICATION_MULTIPLE_TARGET_GROUPS_FARGATE_SERVICE_BUILDER_PATTERNS__LOAD_BALANCERS_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_PATTERNS_APPLICATION_LOAD_BALANCER_PROPS_AS_LIST);
+		createEAttribute(applicationMultipleTargetGroupsFargateServiceBuilder_patternsEClass,
+				APPLICATION_MULTIPLE_TARGET_GROUPS_FARGATE_SERVICE_BUILDER_PATTERNS__PROPAGATE_TAGS_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_PROPAGATED_TAG_SOURCE_);
+		createEAttribute(applicationMultipleTargetGroupsFargateServiceBuilder_patternsEClass,
+				APPLICATION_MULTIPLE_TARGET_GROUPS_FARGATE_SERVICE_BUILDER_PATTERNS__SERVICE_NAME_JAVA_LANG_STRING_);
+		createEAttribute(applicationMultipleTargetGroupsFargateServiceBuilder_patternsEClass,
+				APPLICATION_MULTIPLE_TARGET_GROUPS_FARGATE_SERVICE_BUILDER_PATTERNS__TARGET_GROUPS_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_PATTERNS_APPLICATION_TARGET_PROPS_AS_LIST);
+		createEAttribute(applicationMultipleTargetGroupsFargateServiceBuilder_patternsEClass,
+				APPLICATION_MULTIPLE_TARGET_GROUPS_FARGATE_SERVICE_BUILDER_PATTERNS__TASK_IMAGE_OPTIONS_WITH_APPLICATION_LOAD_BALANCED_TASK_IMAGE_PROPS_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_PATTERNS_APPLICATION_LOAD_BALANCED_TASK_IMAGE_PROPS_AS_REFERENCE);
+		createEAttribute(applicationMultipleTargetGroupsFargateServiceBuilder_patternsEClass,
+				APPLICATION_MULTIPLE_TARGET_GROUPS_FARGATE_SERVICE_BUILDER_PATTERNS__VPC_WITH_IVPC_SOFTWARE_AMAZON_AWSCDK_SERVICES_EC2_IVPC_AS_REFERENCE);
+		createEAttribute(applicationMultipleTargetGroupsFargateServiceBuilder_patternsEClass,
+				APPLICATION_MULTIPLE_TARGET_GROUPS_FARGATE_SERVICE_BUILDER_PATTERNS__ASSIGN_PUBLIC_IP_JAVA_LANG_BOOLEAN_);
+		createEAttribute(applicationMultipleTargetGroupsFargateServiceBuilder_patternsEClass,
+				APPLICATION_MULTIPLE_TARGET_GROUPS_FARGATE_SERVICE_BUILDER_PATTERNS__CPU_JAVA_LANG_NUMBER_);
+		createEAttribute(applicationMultipleTargetGroupsFargateServiceBuilder_patternsEClass,
+				APPLICATION_MULTIPLE_TARGET_GROUPS_FARGATE_SERVICE_BUILDER_PATTERNS__MEMORY_LIMIT_MI_BJAVA_LANG_NUMBER_);
+		createEAttribute(applicationMultipleTargetGroupsFargateServiceBuilder_patternsEClass,
+				APPLICATION_MULTIPLE_TARGET_GROUPS_FARGATE_SERVICE_BUILDER_PATTERNS__PLATFORM_VERSION_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_FARGATE_PLATFORM_VERSION_);
+		createEAttribute(applicationMultipleTargetGroupsFargateServiceBuilder_patternsEClass,
+				APPLICATION_MULTIPLE_TARGET_GROUPS_FARGATE_SERVICE_BUILDER_PATTERNS__TASK_DEFINITION_WITH_FARGATE_TASK_DEFINITION_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_FARGATE_TASK_DEFINITION_AS_REFERENCE);
+		createEAttribute(applicationMultipleTargetGroupsFargateServiceBuilder_patternsEClass,
+				APPLICATION_MULTIPLE_TARGET_GROUPS_FARGATE_SERVICE_BUILDER_PATTERNS__GENERATED_CLASS_NAME);
+		createEAttribute(applicationMultipleTargetGroupsFargateServiceBuilder_patternsEClass,
+				APPLICATION_MULTIPLE_TARGET_GROUPS_FARGATE_SERVICE_BUILDER_PATTERNS__VAR_NAME);
+		createEAttribute(applicationMultipleTargetGroupsFargateServiceBuilder_patternsEClass,
+				APPLICATION_MULTIPLE_TARGET_GROUPS_FARGATE_SERVICE_BUILDER_PATTERNS__IDENTIFIER);
+		createEAttribute(applicationMultipleTargetGroupsFargateServiceBuilder_patternsEClass,
+				APPLICATION_MULTIPLE_TARGET_GROUPS_FARGATE_SERVICE_BUILDER_PATTERNS__ADDITIONAL_CODE);
+
+		applicationListenerPropsBuilder_patternsEClass = createEClass(APPLICATION_LISTENER_PROPS_BUILDER_PATTERNS);
+		createEAttribute(applicationListenerPropsBuilder_patternsEClass,
+				APPLICATION_LISTENER_PROPS_BUILDER_PATTERNS__NAME_JAVA_LANG_STRING_);
+		createEAttribute(applicationListenerPropsBuilder_patternsEClass,
+				APPLICATION_LISTENER_PROPS_BUILDER_PATTERNS__CERTIFICATE_WITH_ICERTIFICATE_SOFTWARE_AMAZON_AWSCDK_SERVICES_CERTIFICATEMANAGER_ICERTIFICATE_AS_REFERENCE);
+		createEAttribute(applicationListenerPropsBuilder_patternsEClass,
+				APPLICATION_LISTENER_PROPS_BUILDER_PATTERNS__PORT_JAVA_LANG_NUMBER_);
+		createEAttribute(applicationListenerPropsBuilder_patternsEClass,
+				APPLICATION_LISTENER_PROPS_BUILDER_PATTERNS__PROTOCOL_SOFTWARE_AMAZON_AWSCDK_SERVICES_ELASTICLOADBALANCINGV2_APPLICATION_PROTOCOL_);
+		createEAttribute(applicationListenerPropsBuilder_patternsEClass,
+				APPLICATION_LISTENER_PROPS_BUILDER_PATTERNS__GENERATED_CLASS_NAME);
+		createEAttribute(applicationListenerPropsBuilder_patternsEClass,
+				APPLICATION_LISTENER_PROPS_BUILDER_PATTERNS__VAR_NAME);
+		createEAttribute(applicationListenerPropsBuilder_patternsEClass,
+				APPLICATION_LISTENER_PROPS_BUILDER_PATTERNS__IDENTIFIER);
+		createEAttribute(applicationListenerPropsBuilder_patternsEClass,
+				APPLICATION_LISTENER_PROPS_BUILDER_PATTERNS__ADDITIONAL_CODE);
+
+		applicationLoadBalancerPropsBuilder_patternsEClass = createEClass(
+				APPLICATION_LOAD_BALANCER_PROPS_BUILDER_PATTERNS);
+		createEAttribute(applicationLoadBalancerPropsBuilder_patternsEClass,
+				APPLICATION_LOAD_BALANCER_PROPS_BUILDER_PATTERNS__LISTENERS_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_PATTERNS_APPLICATION_LISTENER_PROPS_AS_LIST);
+		createEAttribute(applicationLoadBalancerPropsBuilder_patternsEClass,
+				APPLICATION_LOAD_BALANCER_PROPS_BUILDER_PATTERNS__NAME_JAVA_LANG_STRING_);
+		createEAttribute(applicationLoadBalancerPropsBuilder_patternsEClass,
+				APPLICATION_LOAD_BALANCER_PROPS_BUILDER_PATTERNS__DOMAIN_NAME_JAVA_LANG_STRING_);
+		createEAttribute(applicationLoadBalancerPropsBuilder_patternsEClass,
+				APPLICATION_LOAD_BALANCER_PROPS_BUILDER_PATTERNS__DOMAIN_ZONE_WITH_IHOSTED_ZONE_SOFTWARE_AMAZON_AWSCDK_SERVICES_ROUTE53_IHOSTED_ZONE_AS_REFERENCE);
+		createEAttribute(applicationLoadBalancerPropsBuilder_patternsEClass,
+				APPLICATION_LOAD_BALANCER_PROPS_BUILDER_PATTERNS__PUBLIC_LOAD_BALANCER_JAVA_LANG_BOOLEAN_);
+		createEAttribute(applicationLoadBalancerPropsBuilder_patternsEClass,
+				APPLICATION_LOAD_BALANCER_PROPS_BUILDER_PATTERNS__GENERATED_CLASS_NAME);
+		createEAttribute(applicationLoadBalancerPropsBuilder_patternsEClass,
+				APPLICATION_LOAD_BALANCER_PROPS_BUILDER_PATTERNS__VAR_NAME);
+		createEAttribute(applicationLoadBalancerPropsBuilder_patternsEClass,
+				APPLICATION_LOAD_BALANCER_PROPS_BUILDER_PATTERNS__IDENTIFIER);
+		createEAttribute(applicationLoadBalancerPropsBuilder_patternsEClass,
+				APPLICATION_LOAD_BALANCER_PROPS_BUILDER_PATTERNS__ADDITIONAL_CODE);
+
+		applicationTargetPropsBuilder_patternsEClass = createEClass(APPLICATION_TARGET_PROPS_BUILDER_PATTERNS);
+		createEAttribute(applicationTargetPropsBuilder_patternsEClass,
+				APPLICATION_TARGET_PROPS_BUILDER_PATTERNS__CONTAINER_PORT_JAVA_LANG_NUMBER_);
+		createEAttribute(applicationTargetPropsBuilder_patternsEClass,
+				APPLICATION_TARGET_PROPS_BUILDER_PATTERNS__HOST_HEADER_JAVA_LANG_STRING_);
+		createEAttribute(applicationTargetPropsBuilder_patternsEClass,
+				APPLICATION_TARGET_PROPS_BUILDER_PATTERNS__LISTENER_JAVA_LANG_STRING_);
+		createEAttribute(applicationTargetPropsBuilder_patternsEClass,
+				APPLICATION_TARGET_PROPS_BUILDER_PATTERNS__PATH_PATTERN_JAVA_LANG_STRING_);
+		createEAttribute(applicationTargetPropsBuilder_patternsEClass,
+				APPLICATION_TARGET_PROPS_BUILDER_PATTERNS__PRIORITY_JAVA_LANG_NUMBER_);
+		createEAttribute(applicationTargetPropsBuilder_patternsEClass,
+				APPLICATION_TARGET_PROPS_BUILDER_PATTERNS__PROTOCOL_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_PROTOCOL_);
+		createEAttribute(applicationTargetPropsBuilder_patternsEClass,
+				APPLICATION_TARGET_PROPS_BUILDER_PATTERNS__GENERATED_CLASS_NAME);
+		createEAttribute(applicationTargetPropsBuilder_patternsEClass,
+				APPLICATION_TARGET_PROPS_BUILDER_PATTERNS__VAR_NAME);
+		createEAttribute(applicationTargetPropsBuilder_patternsEClass,
+				APPLICATION_TARGET_PROPS_BUILDER_PATTERNS__IDENTIFIER);
+		createEAttribute(applicationTargetPropsBuilder_patternsEClass,
+				APPLICATION_TARGET_PROPS_BUILDER_PATTERNS__ADDITIONAL_CODE);
+
+		applicationLoadBalancedTaskImagePropsBuilder_patternsEClass = createEClass(
+				APPLICATION_LOAD_BALANCED_TASK_IMAGE_PROPS_BUILDER_PATTERNS);
+		createEAttribute(applicationLoadBalancedTaskImagePropsBuilder_patternsEClass,
+				APPLICATION_LOAD_BALANCED_TASK_IMAGE_PROPS_BUILDER_PATTERNS__IMAGE_WITH_CONTAINER_IMAGE_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_CONTAINER_IMAGE_AS_REFERENCE);
+		createEAttribute(applicationLoadBalancedTaskImagePropsBuilder_patternsEClass,
+				APPLICATION_LOAD_BALANCED_TASK_IMAGE_PROPS_BUILDER_PATTERNS__CONTAINER_NAME_JAVA_LANG_STRING_);
+		createEAttribute(applicationLoadBalancedTaskImagePropsBuilder_patternsEClass,
+				APPLICATION_LOAD_BALANCED_TASK_IMAGE_PROPS_BUILDER_PATTERNS__CONTAINER_PORTS_JAVA_LANG_NUMBER_AS_LIST);
+		createEAttribute(applicationLoadBalancedTaskImagePropsBuilder_patternsEClass,
+				APPLICATION_LOAD_BALANCED_TASK_IMAGE_PROPS_BUILDER_PATTERNS__ENABLE_LOGGING_JAVA_LANG_BOOLEAN_);
+		createEAttribute(applicationLoadBalancedTaskImagePropsBuilder_patternsEClass,
+				APPLICATION_LOAD_BALANCED_TASK_IMAGE_PROPS_BUILDER_PATTERNS__ENVIRONMENT_JAVA_LANG_STRING_JAVA_LANG_STRING_AS_MAP);
+		createEAttribute(applicationLoadBalancedTaskImagePropsBuilder_patternsEClass,
+				APPLICATION_LOAD_BALANCED_TASK_IMAGE_PROPS_BUILDER_PATTERNS__EXECUTION_ROLE_WITH_IROLE_SOFTWARE_AMAZON_AWSCDK_SERVICES_IAM_IROLE_AS_REFERENCE);
+		createEAttribute(applicationLoadBalancedTaskImagePropsBuilder_patternsEClass,
+				APPLICATION_LOAD_BALANCED_TASK_IMAGE_PROPS_BUILDER_PATTERNS__FAMILY_JAVA_LANG_STRING_);
+		createEAttribute(applicationLoadBalancedTaskImagePropsBuilder_patternsEClass,
+				APPLICATION_LOAD_BALANCED_TASK_IMAGE_PROPS_BUILDER_PATTERNS__LOG_DRIVER_WITH_LOG_DRIVER_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_LOG_DRIVER_AS_REFERENCE);
+		createEAttribute(applicationLoadBalancedTaskImagePropsBuilder_patternsEClass,
+				APPLICATION_LOAD_BALANCED_TASK_IMAGE_PROPS_BUILDER_PATTERNS__SECRETS_JAVA_LANG_STRING_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_SECRET_AS_MAP);
+		createEAttribute(applicationLoadBalancedTaskImagePropsBuilder_patternsEClass,
+				APPLICATION_LOAD_BALANCED_TASK_IMAGE_PROPS_BUILDER_PATTERNS__TASK_ROLE_WITH_IROLE_SOFTWARE_AMAZON_AWSCDK_SERVICES_IAM_IROLE_AS_REFERENCE);
+		createEAttribute(applicationLoadBalancedTaskImagePropsBuilder_patternsEClass,
+				APPLICATION_LOAD_BALANCED_TASK_IMAGE_PROPS_BUILDER_PATTERNS__GENERATED_CLASS_NAME);
+		createEAttribute(applicationLoadBalancedTaskImagePropsBuilder_patternsEClass,
+				APPLICATION_LOAD_BALANCED_TASK_IMAGE_PROPS_BUILDER_PATTERNS__VAR_NAME);
+		createEAttribute(applicationLoadBalancedTaskImagePropsBuilder_patternsEClass,
+				APPLICATION_LOAD_BALANCED_TASK_IMAGE_PROPS_BUILDER_PATTERNS__IDENTIFIER);
+		createEAttribute(applicationLoadBalancedTaskImagePropsBuilder_patternsEClass,
+				APPLICATION_LOAD_BALANCED_TASK_IMAGE_PROPS_BUILDER_PATTERNS__ADDITIONAL_CODE);
+
+		applicationMultipleTargetGroupsEc2ServiceBuilder_patternsEClass = createEClass(
+				APPLICATION_MULTIPLE_TARGET_GROUPS_EC2_SERVICE_BUILDER_PATTERNS);
+		createEAttribute(applicationMultipleTargetGroupsEc2ServiceBuilder_patternsEClass,
+				APPLICATION_MULTIPLE_TARGET_GROUPS_EC2_SERVICE_BUILDER_PATTERNS__CLOUD_MAP_OPTIONS_WITH_CLOUD_MAP_OPTIONS_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_CLOUD_MAP_OPTIONS_AS_REFERENCE);
+		createEAttribute(applicationMultipleTargetGroupsEc2ServiceBuilder_patternsEClass,
+				APPLICATION_MULTIPLE_TARGET_GROUPS_EC2_SERVICE_BUILDER_PATTERNS__CLUSTER_WITH_ICLUSTER_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_ICLUSTER_AS_REFERENCE);
+		createEAttribute(applicationMultipleTargetGroupsEc2ServiceBuilder_patternsEClass,
+				APPLICATION_MULTIPLE_TARGET_GROUPS_EC2_SERVICE_BUILDER_PATTERNS__DESIRED_COUNT_JAVA_LANG_NUMBER_);
+		createEAttribute(applicationMultipleTargetGroupsEc2ServiceBuilder_patternsEClass,
+				APPLICATION_MULTIPLE_TARGET_GROUPS_EC2_SERVICE_BUILDER_PATTERNS__ENABLE_ECS_MANAGED_TAGS_JAVA_LANG_BOOLEAN_);
+		createEAttribute(applicationMultipleTargetGroupsEc2ServiceBuilder_patternsEClass,
+				APPLICATION_MULTIPLE_TARGET_GROUPS_EC2_SERVICE_BUILDER_PATTERNS__HEALTH_CHECK_GRACE_PERIOD_WITH_DURATION_SOFTWARE_AMAZON_AWSCDK_CORE_DURATION_AS_REFERENCE);
+		createEAttribute(applicationMultipleTargetGroupsEc2ServiceBuilder_patternsEClass,
+				APPLICATION_MULTIPLE_TARGET_GROUPS_EC2_SERVICE_BUILDER_PATTERNS__LOAD_BALANCERS_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_PATTERNS_APPLICATION_LOAD_BALANCER_PROPS_AS_LIST);
+		createEAttribute(applicationMultipleTargetGroupsEc2ServiceBuilder_patternsEClass,
+				APPLICATION_MULTIPLE_TARGET_GROUPS_EC2_SERVICE_BUILDER_PATTERNS__PROPAGATE_TAGS_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_PROPAGATED_TAG_SOURCE_);
+		createEAttribute(applicationMultipleTargetGroupsEc2ServiceBuilder_patternsEClass,
+				APPLICATION_MULTIPLE_TARGET_GROUPS_EC2_SERVICE_BUILDER_PATTERNS__SERVICE_NAME_JAVA_LANG_STRING_);
+		createEAttribute(applicationMultipleTargetGroupsEc2ServiceBuilder_patternsEClass,
+				APPLICATION_MULTIPLE_TARGET_GROUPS_EC2_SERVICE_BUILDER_PATTERNS__TARGET_GROUPS_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_PATTERNS_APPLICATION_TARGET_PROPS_AS_LIST);
+		createEAttribute(applicationMultipleTargetGroupsEc2ServiceBuilder_patternsEClass,
+				APPLICATION_MULTIPLE_TARGET_GROUPS_EC2_SERVICE_BUILDER_PATTERNS__TASK_IMAGE_OPTIONS_WITH_APPLICATION_LOAD_BALANCED_TASK_IMAGE_PROPS_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_PATTERNS_APPLICATION_LOAD_BALANCED_TASK_IMAGE_PROPS_AS_REFERENCE);
+		createEAttribute(applicationMultipleTargetGroupsEc2ServiceBuilder_patternsEClass,
+				APPLICATION_MULTIPLE_TARGET_GROUPS_EC2_SERVICE_BUILDER_PATTERNS__VPC_WITH_IVPC_SOFTWARE_AMAZON_AWSCDK_SERVICES_EC2_IVPC_AS_REFERENCE);
+		createEAttribute(applicationMultipleTargetGroupsEc2ServiceBuilder_patternsEClass,
+				APPLICATION_MULTIPLE_TARGET_GROUPS_EC2_SERVICE_BUILDER_PATTERNS__CPU_JAVA_LANG_NUMBER_);
+		createEAttribute(applicationMultipleTargetGroupsEc2ServiceBuilder_patternsEClass,
+				APPLICATION_MULTIPLE_TARGET_GROUPS_EC2_SERVICE_BUILDER_PATTERNS__MEMORY_LIMIT_MI_BJAVA_LANG_NUMBER_);
+		createEAttribute(applicationMultipleTargetGroupsEc2ServiceBuilder_patternsEClass,
+				APPLICATION_MULTIPLE_TARGET_GROUPS_EC2_SERVICE_BUILDER_PATTERNS__MEMORY_RESERVATION_MI_BJAVA_LANG_NUMBER_);
+		createEAttribute(applicationMultipleTargetGroupsEc2ServiceBuilder_patternsEClass,
+				APPLICATION_MULTIPLE_TARGET_GROUPS_EC2_SERVICE_BUILDER_PATTERNS__TASK_DEFINITION_WITH_EC2_TASK_DEFINITION_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_EC2_TASK_DEFINITION_AS_REFERENCE);
+		createEAttribute(applicationMultipleTargetGroupsEc2ServiceBuilder_patternsEClass,
+				APPLICATION_MULTIPLE_TARGET_GROUPS_EC2_SERVICE_BUILDER_PATTERNS__GENERATED_CLASS_NAME);
+		createEAttribute(applicationMultipleTargetGroupsEc2ServiceBuilder_patternsEClass,
+				APPLICATION_MULTIPLE_TARGET_GROUPS_EC2_SERVICE_BUILDER_PATTERNS__VAR_NAME);
+		createEAttribute(applicationMultipleTargetGroupsEc2ServiceBuilder_patternsEClass,
+				APPLICATION_MULTIPLE_TARGET_GROUPS_EC2_SERVICE_BUILDER_PATTERNS__IDENTIFIER);
+		createEAttribute(applicationMultipleTargetGroupsEc2ServiceBuilder_patternsEClass,
+				APPLICATION_MULTIPLE_TARGET_GROUPS_EC2_SERVICE_BUILDER_PATTERNS__ADDITIONAL_CODE);
+
+		networkLoadBalancedTaskImageOptionsBuilder_patternsEClass = createEClass(
+				NETWORK_LOAD_BALANCED_TASK_IMAGE_OPTIONS_BUILDER_PATTERNS);
+		createEAttribute(networkLoadBalancedTaskImageOptionsBuilder_patternsEClass,
+				NETWORK_LOAD_BALANCED_TASK_IMAGE_OPTIONS_BUILDER_PATTERNS__IMAGE_WITH_CONTAINER_IMAGE_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_CONTAINER_IMAGE_AS_REFERENCE);
+		createEAttribute(networkLoadBalancedTaskImageOptionsBuilder_patternsEClass,
+				NETWORK_LOAD_BALANCED_TASK_IMAGE_OPTIONS_BUILDER_PATTERNS__CONTAINER_NAME_JAVA_LANG_STRING_);
+		createEAttribute(networkLoadBalancedTaskImageOptionsBuilder_patternsEClass,
+				NETWORK_LOAD_BALANCED_TASK_IMAGE_OPTIONS_BUILDER_PATTERNS__CONTAINER_PORT_JAVA_LANG_NUMBER_);
+		createEAttribute(networkLoadBalancedTaskImageOptionsBuilder_patternsEClass,
+				NETWORK_LOAD_BALANCED_TASK_IMAGE_OPTIONS_BUILDER_PATTERNS__ENABLE_LOGGING_JAVA_LANG_BOOLEAN_);
+		createEAttribute(networkLoadBalancedTaskImageOptionsBuilder_patternsEClass,
+				NETWORK_LOAD_BALANCED_TASK_IMAGE_OPTIONS_BUILDER_PATTERNS__ENVIRONMENT_JAVA_LANG_STRING_JAVA_LANG_STRING_AS_MAP);
+		createEAttribute(networkLoadBalancedTaskImageOptionsBuilder_patternsEClass,
+				NETWORK_LOAD_BALANCED_TASK_IMAGE_OPTIONS_BUILDER_PATTERNS__EXECUTION_ROLE_WITH_IROLE_SOFTWARE_AMAZON_AWSCDK_SERVICES_IAM_IROLE_AS_REFERENCE);
+		createEAttribute(networkLoadBalancedTaskImageOptionsBuilder_patternsEClass,
+				NETWORK_LOAD_BALANCED_TASK_IMAGE_OPTIONS_BUILDER_PATTERNS__FAMILY_JAVA_LANG_STRING_);
+		createEAttribute(networkLoadBalancedTaskImageOptionsBuilder_patternsEClass,
+				NETWORK_LOAD_BALANCED_TASK_IMAGE_OPTIONS_BUILDER_PATTERNS__LOG_DRIVER_WITH_LOG_DRIVER_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_LOG_DRIVER_AS_REFERENCE);
+		createEAttribute(networkLoadBalancedTaskImageOptionsBuilder_patternsEClass,
+				NETWORK_LOAD_BALANCED_TASK_IMAGE_OPTIONS_BUILDER_PATTERNS__SECRETS_JAVA_LANG_STRING_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_SECRET_AS_MAP);
+		createEAttribute(networkLoadBalancedTaskImageOptionsBuilder_patternsEClass,
+				NETWORK_LOAD_BALANCED_TASK_IMAGE_OPTIONS_BUILDER_PATTERNS__TASK_ROLE_WITH_IROLE_SOFTWARE_AMAZON_AWSCDK_SERVICES_IAM_IROLE_AS_REFERENCE);
+		createEAttribute(networkLoadBalancedTaskImageOptionsBuilder_patternsEClass,
+				NETWORK_LOAD_BALANCED_TASK_IMAGE_OPTIONS_BUILDER_PATTERNS__GENERATED_CLASS_NAME);
+		createEAttribute(networkLoadBalancedTaskImageOptionsBuilder_patternsEClass,
+				NETWORK_LOAD_BALANCED_TASK_IMAGE_OPTIONS_BUILDER_PATTERNS__VAR_NAME);
+		createEAttribute(networkLoadBalancedTaskImageOptionsBuilder_patternsEClass,
+				NETWORK_LOAD_BALANCED_TASK_IMAGE_OPTIONS_BUILDER_PATTERNS__IDENTIFIER);
+		createEAttribute(networkLoadBalancedTaskImageOptionsBuilder_patternsEClass,
+				NETWORK_LOAD_BALANCED_TASK_IMAGE_OPTIONS_BUILDER_PATTERNS__ADDITIONAL_CODE);
+
+		networkLoadBalancedFargateServiceBuilder_patternsEClass = createEClass(
+				NETWORK_LOAD_BALANCED_FARGATE_SERVICE_BUILDER_PATTERNS);
+		createEAttribute(networkLoadBalancedFargateServiceBuilder_patternsEClass,
+				NETWORK_LOAD_BALANCED_FARGATE_SERVICE_BUILDER_PATTERNS__CLOUD_MAP_OPTIONS_WITH_CLOUD_MAP_OPTIONS_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_CLOUD_MAP_OPTIONS_AS_REFERENCE);
+		createEAttribute(networkLoadBalancedFargateServiceBuilder_patternsEClass,
+				NETWORK_LOAD_BALANCED_FARGATE_SERVICE_BUILDER_PATTERNS__CLUSTER_WITH_ICLUSTER_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_ICLUSTER_AS_REFERENCE);
+		createEAttribute(networkLoadBalancedFargateServiceBuilder_patternsEClass,
+				NETWORK_LOAD_BALANCED_FARGATE_SERVICE_BUILDER_PATTERNS__DESIRED_COUNT_JAVA_LANG_NUMBER_);
+		createEAttribute(networkLoadBalancedFargateServiceBuilder_patternsEClass,
+				NETWORK_LOAD_BALANCED_FARGATE_SERVICE_BUILDER_PATTERNS__DOMAIN_NAME_JAVA_LANG_STRING_);
+		createEAttribute(networkLoadBalancedFargateServiceBuilder_patternsEClass,
+				NETWORK_LOAD_BALANCED_FARGATE_SERVICE_BUILDER_PATTERNS__DOMAIN_ZONE_WITH_IHOSTED_ZONE_SOFTWARE_AMAZON_AWSCDK_SERVICES_ROUTE53_IHOSTED_ZONE_AS_REFERENCE);
+		createEAttribute(networkLoadBalancedFargateServiceBuilder_patternsEClass,
+				NETWORK_LOAD_BALANCED_FARGATE_SERVICE_BUILDER_PATTERNS__ENABLE_ECS_MANAGED_TAGS_JAVA_LANG_BOOLEAN_);
+		createEAttribute(networkLoadBalancedFargateServiceBuilder_patternsEClass,
+				NETWORK_LOAD_BALANCED_FARGATE_SERVICE_BUILDER_PATTERNS__HEALTH_CHECK_GRACE_PERIOD_WITH_DURATION_SOFTWARE_AMAZON_AWSCDK_CORE_DURATION_AS_REFERENCE);
+		createEAttribute(networkLoadBalancedFargateServiceBuilder_patternsEClass,
+				NETWORK_LOAD_BALANCED_FARGATE_SERVICE_BUILDER_PATTERNS__LISTENER_PORT_JAVA_LANG_NUMBER_);
+		createEAttribute(networkLoadBalancedFargateServiceBuilder_patternsEClass,
+				NETWORK_LOAD_BALANCED_FARGATE_SERVICE_BUILDER_PATTERNS__LOAD_BALANCER_WITH_INETWORK_LOAD_BALANCER_SOFTWARE_AMAZON_AWSCDK_SERVICES_ELASTICLOADBALANCINGV2_INETWORK_LOAD_BALANCER_AS_REFERENCE);
+		createEAttribute(networkLoadBalancedFargateServiceBuilder_patternsEClass,
+				NETWORK_LOAD_BALANCED_FARGATE_SERVICE_BUILDER_PATTERNS__MAX_HEALTHY_PERCENT_JAVA_LANG_NUMBER_);
+		createEAttribute(networkLoadBalancedFargateServiceBuilder_patternsEClass,
+				NETWORK_LOAD_BALANCED_FARGATE_SERVICE_BUILDER_PATTERNS__MIN_HEALTHY_PERCENT_JAVA_LANG_NUMBER_);
+		createEAttribute(networkLoadBalancedFargateServiceBuilder_patternsEClass,
+				NETWORK_LOAD_BALANCED_FARGATE_SERVICE_BUILDER_PATTERNS__PROPAGATE_TAGS_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_PROPAGATED_TAG_SOURCE_);
+		createEAttribute(networkLoadBalancedFargateServiceBuilder_patternsEClass,
+				NETWORK_LOAD_BALANCED_FARGATE_SERVICE_BUILDER_PATTERNS__PUBLIC_LOAD_BALANCER_JAVA_LANG_BOOLEAN_);
+		createEAttribute(networkLoadBalancedFargateServiceBuilder_patternsEClass,
+				NETWORK_LOAD_BALANCED_FARGATE_SERVICE_BUILDER_PATTERNS__SERVICE_NAME_JAVA_LANG_STRING_);
+		createEAttribute(networkLoadBalancedFargateServiceBuilder_patternsEClass,
+				NETWORK_LOAD_BALANCED_FARGATE_SERVICE_BUILDER_PATTERNS__TASK_IMAGE_OPTIONS_WITH_NETWORK_LOAD_BALANCED_TASK_IMAGE_OPTIONS_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_PATTERNS_NETWORK_LOAD_BALANCED_TASK_IMAGE_OPTIONS_AS_REFERENCE);
+		createEAttribute(networkLoadBalancedFargateServiceBuilder_patternsEClass,
+				NETWORK_LOAD_BALANCED_FARGATE_SERVICE_BUILDER_PATTERNS__VPC_WITH_IVPC_SOFTWARE_AMAZON_AWSCDK_SERVICES_EC2_IVPC_AS_REFERENCE);
+		createEAttribute(networkLoadBalancedFargateServiceBuilder_patternsEClass,
+				NETWORK_LOAD_BALANCED_FARGATE_SERVICE_BUILDER_PATTERNS__ASSIGN_PUBLIC_IP_JAVA_LANG_BOOLEAN_);
+		createEAttribute(networkLoadBalancedFargateServiceBuilder_patternsEClass,
+				NETWORK_LOAD_BALANCED_FARGATE_SERVICE_BUILDER_PATTERNS__CPU_JAVA_LANG_NUMBER_);
+		createEAttribute(networkLoadBalancedFargateServiceBuilder_patternsEClass,
+				NETWORK_LOAD_BALANCED_FARGATE_SERVICE_BUILDER_PATTERNS__MEMORY_LIMIT_MI_BJAVA_LANG_NUMBER_);
+		createEAttribute(networkLoadBalancedFargateServiceBuilder_patternsEClass,
+				NETWORK_LOAD_BALANCED_FARGATE_SERVICE_BUILDER_PATTERNS__PLATFORM_VERSION_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_FARGATE_PLATFORM_VERSION_);
+		createEAttribute(networkLoadBalancedFargateServiceBuilder_patternsEClass,
+				NETWORK_LOAD_BALANCED_FARGATE_SERVICE_BUILDER_PATTERNS__TASK_DEFINITION_WITH_FARGATE_TASK_DEFINITION_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_FARGATE_TASK_DEFINITION_AS_REFERENCE);
+		createEAttribute(networkLoadBalancedFargateServiceBuilder_patternsEClass,
+				NETWORK_LOAD_BALANCED_FARGATE_SERVICE_BUILDER_PATTERNS__GENERATED_CLASS_NAME);
+		createEAttribute(networkLoadBalancedFargateServiceBuilder_patternsEClass,
+				NETWORK_LOAD_BALANCED_FARGATE_SERVICE_BUILDER_PATTERNS__VAR_NAME);
+		createEAttribute(networkLoadBalancedFargateServiceBuilder_patternsEClass,
+				NETWORK_LOAD_BALANCED_FARGATE_SERVICE_BUILDER_PATTERNS__IDENTIFIER);
+		createEAttribute(networkLoadBalancedFargateServiceBuilder_patternsEClass,
+				NETWORK_LOAD_BALANCED_FARGATE_SERVICE_BUILDER_PATTERNS__ADDITIONAL_CODE);
+
+		networkLoadBalancedEc2ServiceBuilder_patternsEClass = createEClass(
+				NETWORK_LOAD_BALANCED_EC2_SERVICE_BUILDER_PATTERNS);
+		createEAttribute(networkLoadBalancedEc2ServiceBuilder_patternsEClass,
+				NETWORK_LOAD_BALANCED_EC2_SERVICE_BUILDER_PATTERNS__CLOUD_MAP_OPTIONS_WITH_CLOUD_MAP_OPTIONS_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_CLOUD_MAP_OPTIONS_AS_REFERENCE);
+		createEAttribute(networkLoadBalancedEc2ServiceBuilder_patternsEClass,
+				NETWORK_LOAD_BALANCED_EC2_SERVICE_BUILDER_PATTERNS__CLUSTER_WITH_ICLUSTER_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_ICLUSTER_AS_REFERENCE);
+		createEAttribute(networkLoadBalancedEc2ServiceBuilder_patternsEClass,
+				NETWORK_LOAD_BALANCED_EC2_SERVICE_BUILDER_PATTERNS__DESIRED_COUNT_JAVA_LANG_NUMBER_);
+		createEAttribute(networkLoadBalancedEc2ServiceBuilder_patternsEClass,
+				NETWORK_LOAD_BALANCED_EC2_SERVICE_BUILDER_PATTERNS__DOMAIN_NAME_JAVA_LANG_STRING_);
+		createEAttribute(networkLoadBalancedEc2ServiceBuilder_patternsEClass,
+				NETWORK_LOAD_BALANCED_EC2_SERVICE_BUILDER_PATTERNS__DOMAIN_ZONE_WITH_IHOSTED_ZONE_SOFTWARE_AMAZON_AWSCDK_SERVICES_ROUTE53_IHOSTED_ZONE_AS_REFERENCE);
+		createEAttribute(networkLoadBalancedEc2ServiceBuilder_patternsEClass,
+				NETWORK_LOAD_BALANCED_EC2_SERVICE_BUILDER_PATTERNS__ENABLE_ECS_MANAGED_TAGS_JAVA_LANG_BOOLEAN_);
+		createEAttribute(networkLoadBalancedEc2ServiceBuilder_patternsEClass,
+				NETWORK_LOAD_BALANCED_EC2_SERVICE_BUILDER_PATTERNS__HEALTH_CHECK_GRACE_PERIOD_WITH_DURATION_SOFTWARE_AMAZON_AWSCDK_CORE_DURATION_AS_REFERENCE);
+		createEAttribute(networkLoadBalancedEc2ServiceBuilder_patternsEClass,
+				NETWORK_LOAD_BALANCED_EC2_SERVICE_BUILDER_PATTERNS__LISTENER_PORT_JAVA_LANG_NUMBER_);
+		createEAttribute(networkLoadBalancedEc2ServiceBuilder_patternsEClass,
+				NETWORK_LOAD_BALANCED_EC2_SERVICE_BUILDER_PATTERNS__LOAD_BALANCER_WITH_INETWORK_LOAD_BALANCER_SOFTWARE_AMAZON_AWSCDK_SERVICES_ELASTICLOADBALANCINGV2_INETWORK_LOAD_BALANCER_AS_REFERENCE);
+		createEAttribute(networkLoadBalancedEc2ServiceBuilder_patternsEClass,
+				NETWORK_LOAD_BALANCED_EC2_SERVICE_BUILDER_PATTERNS__MAX_HEALTHY_PERCENT_JAVA_LANG_NUMBER_);
+		createEAttribute(networkLoadBalancedEc2ServiceBuilder_patternsEClass,
+				NETWORK_LOAD_BALANCED_EC2_SERVICE_BUILDER_PATTERNS__MIN_HEALTHY_PERCENT_JAVA_LANG_NUMBER_);
+		createEAttribute(networkLoadBalancedEc2ServiceBuilder_patternsEClass,
+				NETWORK_LOAD_BALANCED_EC2_SERVICE_BUILDER_PATTERNS__PROPAGATE_TAGS_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_PROPAGATED_TAG_SOURCE_);
+		createEAttribute(networkLoadBalancedEc2ServiceBuilder_patternsEClass,
+				NETWORK_LOAD_BALANCED_EC2_SERVICE_BUILDER_PATTERNS__PUBLIC_LOAD_BALANCER_JAVA_LANG_BOOLEAN_);
+		createEAttribute(networkLoadBalancedEc2ServiceBuilder_patternsEClass,
+				NETWORK_LOAD_BALANCED_EC2_SERVICE_BUILDER_PATTERNS__SERVICE_NAME_JAVA_LANG_STRING_);
+		createEAttribute(networkLoadBalancedEc2ServiceBuilder_patternsEClass,
+				NETWORK_LOAD_BALANCED_EC2_SERVICE_BUILDER_PATTERNS__TASK_IMAGE_OPTIONS_WITH_NETWORK_LOAD_BALANCED_TASK_IMAGE_OPTIONS_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_PATTERNS_NETWORK_LOAD_BALANCED_TASK_IMAGE_OPTIONS_AS_REFERENCE);
+		createEAttribute(networkLoadBalancedEc2ServiceBuilder_patternsEClass,
+				NETWORK_LOAD_BALANCED_EC2_SERVICE_BUILDER_PATTERNS__VPC_WITH_IVPC_SOFTWARE_AMAZON_AWSCDK_SERVICES_EC2_IVPC_AS_REFERENCE);
+		createEAttribute(networkLoadBalancedEc2ServiceBuilder_patternsEClass,
+				NETWORK_LOAD_BALANCED_EC2_SERVICE_BUILDER_PATTERNS__CPU_JAVA_LANG_NUMBER_);
+		createEAttribute(networkLoadBalancedEc2ServiceBuilder_patternsEClass,
+				NETWORK_LOAD_BALANCED_EC2_SERVICE_BUILDER_PATTERNS__MEMORY_LIMIT_MI_BJAVA_LANG_NUMBER_);
+		createEAttribute(networkLoadBalancedEc2ServiceBuilder_patternsEClass,
+				NETWORK_LOAD_BALANCED_EC2_SERVICE_BUILDER_PATTERNS__MEMORY_RESERVATION_MI_BJAVA_LANG_NUMBER_);
+		createEAttribute(networkLoadBalancedEc2ServiceBuilder_patternsEClass,
+				NETWORK_LOAD_BALANCED_EC2_SERVICE_BUILDER_PATTERNS__TASK_DEFINITION_WITH_EC2_TASK_DEFINITION_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_EC2_TASK_DEFINITION_AS_REFERENCE);
+		createEAttribute(networkLoadBalancedEc2ServiceBuilder_patternsEClass,
+				NETWORK_LOAD_BALANCED_EC2_SERVICE_BUILDER_PATTERNS__GENERATED_CLASS_NAME);
+		createEAttribute(networkLoadBalancedEc2ServiceBuilder_patternsEClass,
+				NETWORK_LOAD_BALANCED_EC2_SERVICE_BUILDER_PATTERNS__VAR_NAME);
+		createEAttribute(networkLoadBalancedEc2ServiceBuilder_patternsEClass,
+				NETWORK_LOAD_BALANCED_EC2_SERVICE_BUILDER_PATTERNS__IDENTIFIER);
+		createEAttribute(networkLoadBalancedEc2ServiceBuilder_patternsEClass,
+				NETWORK_LOAD_BALANCED_EC2_SERVICE_BUILDER_PATTERNS__ADDITIONAL_CODE);
+
+		networkMultipleTargetGroupsEc2ServiceBuilder_patternsEClass = createEClass(
+				NETWORK_MULTIPLE_TARGET_GROUPS_EC2_SERVICE_BUILDER_PATTERNS);
+		createEAttribute(networkMultipleTargetGroupsEc2ServiceBuilder_patternsEClass,
+				NETWORK_MULTIPLE_TARGET_GROUPS_EC2_SERVICE_BUILDER_PATTERNS__CLOUD_MAP_OPTIONS_WITH_CLOUD_MAP_OPTIONS_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_CLOUD_MAP_OPTIONS_AS_REFERENCE);
+		createEAttribute(networkMultipleTargetGroupsEc2ServiceBuilder_patternsEClass,
+				NETWORK_MULTIPLE_TARGET_GROUPS_EC2_SERVICE_BUILDER_PATTERNS__CLUSTER_WITH_ICLUSTER_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_ICLUSTER_AS_REFERENCE);
+		createEAttribute(networkMultipleTargetGroupsEc2ServiceBuilder_patternsEClass,
+				NETWORK_MULTIPLE_TARGET_GROUPS_EC2_SERVICE_BUILDER_PATTERNS__DESIRED_COUNT_JAVA_LANG_NUMBER_);
+		createEAttribute(networkMultipleTargetGroupsEc2ServiceBuilder_patternsEClass,
+				NETWORK_MULTIPLE_TARGET_GROUPS_EC2_SERVICE_BUILDER_PATTERNS__ENABLE_ECS_MANAGED_TAGS_JAVA_LANG_BOOLEAN_);
+		createEAttribute(networkMultipleTargetGroupsEc2ServiceBuilder_patternsEClass,
+				NETWORK_MULTIPLE_TARGET_GROUPS_EC2_SERVICE_BUILDER_PATTERNS__HEALTH_CHECK_GRACE_PERIOD_WITH_DURATION_SOFTWARE_AMAZON_AWSCDK_CORE_DURATION_AS_REFERENCE);
+		createEAttribute(networkMultipleTargetGroupsEc2ServiceBuilder_patternsEClass,
+				NETWORK_MULTIPLE_TARGET_GROUPS_EC2_SERVICE_BUILDER_PATTERNS__LOAD_BALANCERS_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_PATTERNS_NETWORK_LOAD_BALANCER_PROPS_AS_LIST);
+		createEAttribute(networkMultipleTargetGroupsEc2ServiceBuilder_patternsEClass,
+				NETWORK_MULTIPLE_TARGET_GROUPS_EC2_SERVICE_BUILDER_PATTERNS__PROPAGATE_TAGS_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_PROPAGATED_TAG_SOURCE_);
+		createEAttribute(networkMultipleTargetGroupsEc2ServiceBuilder_patternsEClass,
+				NETWORK_MULTIPLE_TARGET_GROUPS_EC2_SERVICE_BUILDER_PATTERNS__SERVICE_NAME_JAVA_LANG_STRING_);
+		createEAttribute(networkMultipleTargetGroupsEc2ServiceBuilder_patternsEClass,
+				NETWORK_MULTIPLE_TARGET_GROUPS_EC2_SERVICE_BUILDER_PATTERNS__TARGET_GROUPS_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_PATTERNS_NETWORK_TARGET_PROPS_AS_LIST);
+		createEAttribute(networkMultipleTargetGroupsEc2ServiceBuilder_patternsEClass,
+				NETWORK_MULTIPLE_TARGET_GROUPS_EC2_SERVICE_BUILDER_PATTERNS__TASK_IMAGE_OPTIONS_WITH_NETWORK_LOAD_BALANCED_TASK_IMAGE_PROPS_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_PATTERNS_NETWORK_LOAD_BALANCED_TASK_IMAGE_PROPS_AS_REFERENCE);
+		createEAttribute(networkMultipleTargetGroupsEc2ServiceBuilder_patternsEClass,
+				NETWORK_MULTIPLE_TARGET_GROUPS_EC2_SERVICE_BUILDER_PATTERNS__VPC_WITH_IVPC_SOFTWARE_AMAZON_AWSCDK_SERVICES_EC2_IVPC_AS_REFERENCE);
+		createEAttribute(networkMultipleTargetGroupsEc2ServiceBuilder_patternsEClass,
+				NETWORK_MULTIPLE_TARGET_GROUPS_EC2_SERVICE_BUILDER_PATTERNS__CPU_JAVA_LANG_NUMBER_);
+		createEAttribute(networkMultipleTargetGroupsEc2ServiceBuilder_patternsEClass,
+				NETWORK_MULTIPLE_TARGET_GROUPS_EC2_SERVICE_BUILDER_PATTERNS__MEMORY_LIMIT_MI_BJAVA_LANG_NUMBER_);
+		createEAttribute(networkMultipleTargetGroupsEc2ServiceBuilder_patternsEClass,
+				NETWORK_MULTIPLE_TARGET_GROUPS_EC2_SERVICE_BUILDER_PATTERNS__MEMORY_RESERVATION_MI_BJAVA_LANG_NUMBER_);
+		createEAttribute(networkMultipleTargetGroupsEc2ServiceBuilder_patternsEClass,
+				NETWORK_MULTIPLE_TARGET_GROUPS_EC2_SERVICE_BUILDER_PATTERNS__TASK_DEFINITION_WITH_EC2_TASK_DEFINITION_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_EC2_TASK_DEFINITION_AS_REFERENCE);
+		createEAttribute(networkMultipleTargetGroupsEc2ServiceBuilder_patternsEClass,
+				NETWORK_MULTIPLE_TARGET_GROUPS_EC2_SERVICE_BUILDER_PATTERNS__GENERATED_CLASS_NAME);
+		createEAttribute(networkMultipleTargetGroupsEc2ServiceBuilder_patternsEClass,
+				NETWORK_MULTIPLE_TARGET_GROUPS_EC2_SERVICE_BUILDER_PATTERNS__VAR_NAME);
+		createEAttribute(networkMultipleTargetGroupsEc2ServiceBuilder_patternsEClass,
+				NETWORK_MULTIPLE_TARGET_GROUPS_EC2_SERVICE_BUILDER_PATTERNS__IDENTIFIER);
+		createEAttribute(networkMultipleTargetGroupsEc2ServiceBuilder_patternsEClass,
+				NETWORK_MULTIPLE_TARGET_GROUPS_EC2_SERVICE_BUILDER_PATTERNS__ADDITIONAL_CODE);
+
+		networkTargetPropsBuilder_patternsEClass = createEClass(NETWORK_TARGET_PROPS_BUILDER_PATTERNS);
+		createEAttribute(networkTargetPropsBuilder_patternsEClass,
+				NETWORK_TARGET_PROPS_BUILDER_PATTERNS__CONTAINER_PORT_JAVA_LANG_NUMBER_);
+		createEAttribute(networkTargetPropsBuilder_patternsEClass,
+				NETWORK_TARGET_PROPS_BUILDER_PATTERNS__LISTENER_JAVA_LANG_STRING_);
+		createEAttribute(networkTargetPropsBuilder_patternsEClass,
+				NETWORK_TARGET_PROPS_BUILDER_PATTERNS__GENERATED_CLASS_NAME);
+		createEAttribute(networkTargetPropsBuilder_patternsEClass, NETWORK_TARGET_PROPS_BUILDER_PATTERNS__VAR_NAME);
+		createEAttribute(networkTargetPropsBuilder_patternsEClass, NETWORK_TARGET_PROPS_BUILDER_PATTERNS__IDENTIFIER);
+		createEAttribute(networkTargetPropsBuilder_patternsEClass,
+				NETWORK_TARGET_PROPS_BUILDER_PATTERNS__ADDITIONAL_CODE);
+
+		networkLoadBalancedTaskImagePropsBuilder_patternsEClass = createEClass(
+				NETWORK_LOAD_BALANCED_TASK_IMAGE_PROPS_BUILDER_PATTERNS);
+		createEAttribute(networkLoadBalancedTaskImagePropsBuilder_patternsEClass,
+				NETWORK_LOAD_BALANCED_TASK_IMAGE_PROPS_BUILDER_PATTERNS__IMAGE_WITH_CONTAINER_IMAGE_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_CONTAINER_IMAGE_AS_REFERENCE);
+		createEAttribute(networkLoadBalancedTaskImagePropsBuilder_patternsEClass,
+				NETWORK_LOAD_BALANCED_TASK_IMAGE_PROPS_BUILDER_PATTERNS__CONTAINER_NAME_JAVA_LANG_STRING_);
+		createEAttribute(networkLoadBalancedTaskImagePropsBuilder_patternsEClass,
+				NETWORK_LOAD_BALANCED_TASK_IMAGE_PROPS_BUILDER_PATTERNS__CONTAINER_PORTS_JAVA_LANG_NUMBER_AS_LIST);
+		createEAttribute(networkLoadBalancedTaskImagePropsBuilder_patternsEClass,
+				NETWORK_LOAD_BALANCED_TASK_IMAGE_PROPS_BUILDER_PATTERNS__ENABLE_LOGGING_JAVA_LANG_BOOLEAN_);
+		createEAttribute(networkLoadBalancedTaskImagePropsBuilder_patternsEClass,
+				NETWORK_LOAD_BALANCED_TASK_IMAGE_PROPS_BUILDER_PATTERNS__ENVIRONMENT_JAVA_LANG_STRING_JAVA_LANG_STRING_AS_MAP);
+		createEAttribute(networkLoadBalancedTaskImagePropsBuilder_patternsEClass,
+				NETWORK_LOAD_BALANCED_TASK_IMAGE_PROPS_BUILDER_PATTERNS__EXECUTION_ROLE_WITH_IROLE_SOFTWARE_AMAZON_AWSCDK_SERVICES_IAM_IROLE_AS_REFERENCE);
+		createEAttribute(networkLoadBalancedTaskImagePropsBuilder_patternsEClass,
+				NETWORK_LOAD_BALANCED_TASK_IMAGE_PROPS_BUILDER_PATTERNS__FAMILY_JAVA_LANG_STRING_);
+		createEAttribute(networkLoadBalancedTaskImagePropsBuilder_patternsEClass,
+				NETWORK_LOAD_BALANCED_TASK_IMAGE_PROPS_BUILDER_PATTERNS__LOG_DRIVER_WITH_LOG_DRIVER_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_LOG_DRIVER_AS_REFERENCE);
+		createEAttribute(networkLoadBalancedTaskImagePropsBuilder_patternsEClass,
+				NETWORK_LOAD_BALANCED_TASK_IMAGE_PROPS_BUILDER_PATTERNS__SECRETS_JAVA_LANG_STRING_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_SECRET_AS_MAP);
+		createEAttribute(networkLoadBalancedTaskImagePropsBuilder_patternsEClass,
+				NETWORK_LOAD_BALANCED_TASK_IMAGE_PROPS_BUILDER_PATTERNS__TASK_ROLE_WITH_IROLE_SOFTWARE_AMAZON_AWSCDK_SERVICES_IAM_IROLE_AS_REFERENCE);
+		createEAttribute(networkLoadBalancedTaskImagePropsBuilder_patternsEClass,
+				NETWORK_LOAD_BALANCED_TASK_IMAGE_PROPS_BUILDER_PATTERNS__GENERATED_CLASS_NAME);
+		createEAttribute(networkLoadBalancedTaskImagePropsBuilder_patternsEClass,
+				NETWORK_LOAD_BALANCED_TASK_IMAGE_PROPS_BUILDER_PATTERNS__VAR_NAME);
+		createEAttribute(networkLoadBalancedTaskImagePropsBuilder_patternsEClass,
+				NETWORK_LOAD_BALANCED_TASK_IMAGE_PROPS_BUILDER_PATTERNS__IDENTIFIER);
+		createEAttribute(networkLoadBalancedTaskImagePropsBuilder_patternsEClass,
+				NETWORK_LOAD_BALANCED_TASK_IMAGE_PROPS_BUILDER_PATTERNS__ADDITIONAL_CODE);
+
+		networkMultipleTargetGroupsFargateServiceBuilder_patternsEClass = createEClass(
+				NETWORK_MULTIPLE_TARGET_GROUPS_FARGATE_SERVICE_BUILDER_PATTERNS);
+		createEAttribute(networkMultipleTargetGroupsFargateServiceBuilder_patternsEClass,
+				NETWORK_MULTIPLE_TARGET_GROUPS_FARGATE_SERVICE_BUILDER_PATTERNS__CLOUD_MAP_OPTIONS_WITH_CLOUD_MAP_OPTIONS_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_CLOUD_MAP_OPTIONS_AS_REFERENCE);
+		createEAttribute(networkMultipleTargetGroupsFargateServiceBuilder_patternsEClass,
+				NETWORK_MULTIPLE_TARGET_GROUPS_FARGATE_SERVICE_BUILDER_PATTERNS__CLUSTER_WITH_ICLUSTER_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_ICLUSTER_AS_REFERENCE);
+		createEAttribute(networkMultipleTargetGroupsFargateServiceBuilder_patternsEClass,
+				NETWORK_MULTIPLE_TARGET_GROUPS_FARGATE_SERVICE_BUILDER_PATTERNS__DESIRED_COUNT_JAVA_LANG_NUMBER_);
+		createEAttribute(networkMultipleTargetGroupsFargateServiceBuilder_patternsEClass,
+				NETWORK_MULTIPLE_TARGET_GROUPS_FARGATE_SERVICE_BUILDER_PATTERNS__ENABLE_ECS_MANAGED_TAGS_JAVA_LANG_BOOLEAN_);
+		createEAttribute(networkMultipleTargetGroupsFargateServiceBuilder_patternsEClass,
+				NETWORK_MULTIPLE_TARGET_GROUPS_FARGATE_SERVICE_BUILDER_PATTERNS__HEALTH_CHECK_GRACE_PERIOD_WITH_DURATION_SOFTWARE_AMAZON_AWSCDK_CORE_DURATION_AS_REFERENCE);
+		createEAttribute(networkMultipleTargetGroupsFargateServiceBuilder_patternsEClass,
+				NETWORK_MULTIPLE_TARGET_GROUPS_FARGATE_SERVICE_BUILDER_PATTERNS__LOAD_BALANCERS_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_PATTERNS_NETWORK_LOAD_BALANCER_PROPS_AS_LIST);
+		createEAttribute(networkMultipleTargetGroupsFargateServiceBuilder_patternsEClass,
+				NETWORK_MULTIPLE_TARGET_GROUPS_FARGATE_SERVICE_BUILDER_PATTERNS__PROPAGATE_TAGS_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_PROPAGATED_TAG_SOURCE_);
+		createEAttribute(networkMultipleTargetGroupsFargateServiceBuilder_patternsEClass,
+				NETWORK_MULTIPLE_TARGET_GROUPS_FARGATE_SERVICE_BUILDER_PATTERNS__SERVICE_NAME_JAVA_LANG_STRING_);
+		createEAttribute(networkMultipleTargetGroupsFargateServiceBuilder_patternsEClass,
+				NETWORK_MULTIPLE_TARGET_GROUPS_FARGATE_SERVICE_BUILDER_PATTERNS__TARGET_GROUPS_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_PATTERNS_NETWORK_TARGET_PROPS_AS_LIST);
+		createEAttribute(networkMultipleTargetGroupsFargateServiceBuilder_patternsEClass,
+				NETWORK_MULTIPLE_TARGET_GROUPS_FARGATE_SERVICE_BUILDER_PATTERNS__TASK_IMAGE_OPTIONS_WITH_NETWORK_LOAD_BALANCED_TASK_IMAGE_PROPS_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_PATTERNS_NETWORK_LOAD_BALANCED_TASK_IMAGE_PROPS_AS_REFERENCE);
+		createEAttribute(networkMultipleTargetGroupsFargateServiceBuilder_patternsEClass,
+				NETWORK_MULTIPLE_TARGET_GROUPS_FARGATE_SERVICE_BUILDER_PATTERNS__VPC_WITH_IVPC_SOFTWARE_AMAZON_AWSCDK_SERVICES_EC2_IVPC_AS_REFERENCE);
+		createEAttribute(networkMultipleTargetGroupsFargateServiceBuilder_patternsEClass,
+				NETWORK_MULTIPLE_TARGET_GROUPS_FARGATE_SERVICE_BUILDER_PATTERNS__ASSIGN_PUBLIC_IP_JAVA_LANG_BOOLEAN_);
+		createEAttribute(networkMultipleTargetGroupsFargateServiceBuilder_patternsEClass,
+				NETWORK_MULTIPLE_TARGET_GROUPS_FARGATE_SERVICE_BUILDER_PATTERNS__CPU_JAVA_LANG_NUMBER_);
+		createEAttribute(networkMultipleTargetGroupsFargateServiceBuilder_patternsEClass,
+				NETWORK_MULTIPLE_TARGET_GROUPS_FARGATE_SERVICE_BUILDER_PATTERNS__MEMORY_LIMIT_MI_BJAVA_LANG_NUMBER_);
+		createEAttribute(networkMultipleTargetGroupsFargateServiceBuilder_patternsEClass,
+				NETWORK_MULTIPLE_TARGET_GROUPS_FARGATE_SERVICE_BUILDER_PATTERNS__PLATFORM_VERSION_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_FARGATE_PLATFORM_VERSION_);
+		createEAttribute(networkMultipleTargetGroupsFargateServiceBuilder_patternsEClass,
+				NETWORK_MULTIPLE_TARGET_GROUPS_FARGATE_SERVICE_BUILDER_PATTERNS__TASK_DEFINITION_WITH_FARGATE_TASK_DEFINITION_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_FARGATE_TASK_DEFINITION_AS_REFERENCE);
+		createEAttribute(networkMultipleTargetGroupsFargateServiceBuilder_patternsEClass,
+				NETWORK_MULTIPLE_TARGET_GROUPS_FARGATE_SERVICE_BUILDER_PATTERNS__GENERATED_CLASS_NAME);
+		createEAttribute(networkMultipleTargetGroupsFargateServiceBuilder_patternsEClass,
+				NETWORK_MULTIPLE_TARGET_GROUPS_FARGATE_SERVICE_BUILDER_PATTERNS__VAR_NAME);
+		createEAttribute(networkMultipleTargetGroupsFargateServiceBuilder_patternsEClass,
+				NETWORK_MULTIPLE_TARGET_GROUPS_FARGATE_SERVICE_BUILDER_PATTERNS__IDENTIFIER);
+		createEAttribute(networkMultipleTargetGroupsFargateServiceBuilder_patternsEClass,
+				NETWORK_MULTIPLE_TARGET_GROUPS_FARGATE_SERVICE_BUILDER_PATTERNS__ADDITIONAL_CODE);
+
+		scalingIntervalBuilder_applicationautoscalingEClass = createEClass(
+				SCALING_INTERVAL_BUILDER_APPLICATIONAUTOSCALING);
+		createEAttribute(scalingIntervalBuilder_applicationautoscalingEClass,
+				SCALING_INTERVAL_BUILDER_APPLICATIONAUTOSCALING__CHANGE_JAVA_LANG_NUMBER_);
+		createEAttribute(scalingIntervalBuilder_applicationautoscalingEClass,
+				SCALING_INTERVAL_BUILDER_APPLICATIONAUTOSCALING__LOWER_JAVA_LANG_NUMBER_);
+		createEAttribute(scalingIntervalBuilder_applicationautoscalingEClass,
+				SCALING_INTERVAL_BUILDER_APPLICATIONAUTOSCALING__UPPER_JAVA_LANG_NUMBER_);
+		createEAttribute(scalingIntervalBuilder_applicationautoscalingEClass,
+				SCALING_INTERVAL_BUILDER_APPLICATIONAUTOSCALING__GENERATED_CLASS_NAME);
+		createEAttribute(scalingIntervalBuilder_applicationautoscalingEClass,
+				SCALING_INTERVAL_BUILDER_APPLICATIONAUTOSCALING__VAR_NAME);
+		createEAttribute(scalingIntervalBuilder_applicationautoscalingEClass,
+				SCALING_INTERVAL_BUILDER_APPLICATIONAUTOSCALING__IDENTIFIER);
+		createEAttribute(scalingIntervalBuilder_applicationautoscalingEClass,
+				SCALING_INTERVAL_BUILDER_APPLICATIONAUTOSCALING__ADDITIONAL_CODE);
+
+		queueProcessingFargateServiceBuilder_patternsEClass = createEClass(
+				QUEUE_PROCESSING_FARGATE_SERVICE_BUILDER_PATTERNS);
+		createEAttribute(queueProcessingFargateServiceBuilder_patternsEClass,
+				QUEUE_PROCESSING_FARGATE_SERVICE_BUILDER_PATTERNS__IMAGE_WITH_CONTAINER_IMAGE_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_CONTAINER_IMAGE_AS_REFERENCE);
+		createEAttribute(queueProcessingFargateServiceBuilder_patternsEClass,
+				QUEUE_PROCESSING_FARGATE_SERVICE_BUILDER_PATTERNS__CLUSTER_WITH_ICLUSTER_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_ICLUSTER_AS_REFERENCE);
+		createEAttribute(queueProcessingFargateServiceBuilder_patternsEClass,
+				QUEUE_PROCESSING_FARGATE_SERVICE_BUILDER_PATTERNS__COMMAND_JAVA_LANG_STRING_AS_LIST);
+		createEAttribute(queueProcessingFargateServiceBuilder_patternsEClass,
+				QUEUE_PROCESSING_FARGATE_SERVICE_BUILDER_PATTERNS__DESIRED_TASK_COUNT_JAVA_LANG_NUMBER_);
+		createEAttribute(queueProcessingFargateServiceBuilder_patternsEClass,
+				QUEUE_PROCESSING_FARGATE_SERVICE_BUILDER_PATTERNS__ENABLE_ECS_MANAGED_TAGS_JAVA_LANG_BOOLEAN_);
+		createEAttribute(queueProcessingFargateServiceBuilder_patternsEClass,
+				QUEUE_PROCESSING_FARGATE_SERVICE_BUILDER_PATTERNS__ENABLE_LOGGING_JAVA_LANG_BOOLEAN_);
+		createEAttribute(queueProcessingFargateServiceBuilder_patternsEClass,
+				QUEUE_PROCESSING_FARGATE_SERVICE_BUILDER_PATTERNS__ENVIRONMENT_JAVA_LANG_STRING_JAVA_LANG_STRING_AS_MAP);
+		createEAttribute(queueProcessingFargateServiceBuilder_patternsEClass,
+				QUEUE_PROCESSING_FARGATE_SERVICE_BUILDER_PATTERNS__FAMILY_JAVA_LANG_STRING_);
+		createEAttribute(queueProcessingFargateServiceBuilder_patternsEClass,
+				QUEUE_PROCESSING_FARGATE_SERVICE_BUILDER_PATTERNS__LOG_DRIVER_WITH_LOG_DRIVER_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_LOG_DRIVER_AS_REFERENCE);
+		createEAttribute(queueProcessingFargateServiceBuilder_patternsEClass,
+				QUEUE_PROCESSING_FARGATE_SERVICE_BUILDER_PATTERNS__MAX_HEALTHY_PERCENT_JAVA_LANG_NUMBER_);
+		createEAttribute(queueProcessingFargateServiceBuilder_patternsEClass,
+				QUEUE_PROCESSING_FARGATE_SERVICE_BUILDER_PATTERNS__MAX_RECEIVE_COUNT_JAVA_LANG_NUMBER_);
+		createEAttribute(queueProcessingFargateServiceBuilder_patternsEClass,
+				QUEUE_PROCESSING_FARGATE_SERVICE_BUILDER_PATTERNS__MAX_SCALING_CAPACITY_JAVA_LANG_NUMBER_);
+		createEAttribute(queueProcessingFargateServiceBuilder_patternsEClass,
+				QUEUE_PROCESSING_FARGATE_SERVICE_BUILDER_PATTERNS__MIN_HEALTHY_PERCENT_JAVA_LANG_NUMBER_);
+		createEAttribute(queueProcessingFargateServiceBuilder_patternsEClass,
+				QUEUE_PROCESSING_FARGATE_SERVICE_BUILDER_PATTERNS__PROPAGATE_TAGS_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_PROPAGATED_TAG_SOURCE_);
+		createEAttribute(queueProcessingFargateServiceBuilder_patternsEClass,
+				QUEUE_PROCESSING_FARGATE_SERVICE_BUILDER_PATTERNS__QUEUE_WITH_IQUEUE_SOFTWARE_AMAZON_AWSCDK_SERVICES_SQS_IQUEUE_AS_REFERENCE);
+		createEAttribute(queueProcessingFargateServiceBuilder_patternsEClass,
+				QUEUE_PROCESSING_FARGATE_SERVICE_BUILDER_PATTERNS__RETENTION_PERIOD_WITH_DURATION_SOFTWARE_AMAZON_AWSCDK_CORE_DURATION_AS_REFERENCE);
+		createEAttribute(queueProcessingFargateServiceBuilder_patternsEClass,
+				QUEUE_PROCESSING_FARGATE_SERVICE_BUILDER_PATTERNS__SCALING_STEPS_SOFTWARE_AMAZON_AWSCDK_SERVICES_APPLICATIONAUTOSCALING_SCALING_INTERVAL_AS_LIST);
+		createEAttribute(queueProcessingFargateServiceBuilder_patternsEClass,
+				QUEUE_PROCESSING_FARGATE_SERVICE_BUILDER_PATTERNS__SECRETS_JAVA_LANG_STRING_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_SECRET_AS_MAP);
+		createEAttribute(queueProcessingFargateServiceBuilder_patternsEClass,
+				QUEUE_PROCESSING_FARGATE_SERVICE_BUILDER_PATTERNS__SERVICE_NAME_JAVA_LANG_STRING_);
+		createEAttribute(queueProcessingFargateServiceBuilder_patternsEClass,
+				QUEUE_PROCESSING_FARGATE_SERVICE_BUILDER_PATTERNS__VPC_WITH_IVPC_SOFTWARE_AMAZON_AWSCDK_SERVICES_EC2_IVPC_AS_REFERENCE);
+		createEAttribute(queueProcessingFargateServiceBuilder_patternsEClass,
+				QUEUE_PROCESSING_FARGATE_SERVICE_BUILDER_PATTERNS__CPU_JAVA_LANG_NUMBER_);
+		createEAttribute(queueProcessingFargateServiceBuilder_patternsEClass,
+				QUEUE_PROCESSING_FARGATE_SERVICE_BUILDER_PATTERNS__MEMORY_LIMIT_MI_BJAVA_LANG_NUMBER_);
+		createEAttribute(queueProcessingFargateServiceBuilder_patternsEClass,
+				QUEUE_PROCESSING_FARGATE_SERVICE_BUILDER_PATTERNS__PLATFORM_VERSION_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_FARGATE_PLATFORM_VERSION_);
+		createEAttribute(queueProcessingFargateServiceBuilder_patternsEClass,
+				QUEUE_PROCESSING_FARGATE_SERVICE_BUILDER_PATTERNS__GENERATED_CLASS_NAME);
+		createEAttribute(queueProcessingFargateServiceBuilder_patternsEClass,
+				QUEUE_PROCESSING_FARGATE_SERVICE_BUILDER_PATTERNS__VAR_NAME);
+		createEAttribute(queueProcessingFargateServiceBuilder_patternsEClass,
+				QUEUE_PROCESSING_FARGATE_SERVICE_BUILDER_PATTERNS__IDENTIFIER);
+		createEAttribute(queueProcessingFargateServiceBuilder_patternsEClass,
+				QUEUE_PROCESSING_FARGATE_SERVICE_BUILDER_PATTERNS__ADDITIONAL_CODE);
+
+		cronOptionsBuilder_applicationautoscalingEClass = createEClass(CRON_OPTIONS_BUILDER_APPLICATIONAUTOSCALING);
+		createEAttribute(cronOptionsBuilder_applicationautoscalingEClass,
+				CRON_OPTIONS_BUILDER_APPLICATIONAUTOSCALING__DAY_JAVA_LANG_STRING_);
+		createEAttribute(cronOptionsBuilder_applicationautoscalingEClass,
+				CRON_OPTIONS_BUILDER_APPLICATIONAUTOSCALING__HOUR_JAVA_LANG_STRING_);
+		createEAttribute(cronOptionsBuilder_applicationautoscalingEClass,
+				CRON_OPTIONS_BUILDER_APPLICATIONAUTOSCALING__MINUTE_JAVA_LANG_STRING_);
+		createEAttribute(cronOptionsBuilder_applicationautoscalingEClass,
+				CRON_OPTIONS_BUILDER_APPLICATIONAUTOSCALING__MONTH_JAVA_LANG_STRING_);
+		createEAttribute(cronOptionsBuilder_applicationautoscalingEClass,
+				CRON_OPTIONS_BUILDER_APPLICATIONAUTOSCALING__WEEK_DAY_JAVA_LANG_STRING_);
+		createEAttribute(cronOptionsBuilder_applicationautoscalingEClass,
+				CRON_OPTIONS_BUILDER_APPLICATIONAUTOSCALING__YEAR_JAVA_LANG_STRING_);
+		createEAttribute(cronOptionsBuilder_applicationautoscalingEClass,
+				CRON_OPTIONS_BUILDER_APPLICATIONAUTOSCALING__GENERATED_CLASS_NAME);
+		createEAttribute(cronOptionsBuilder_applicationautoscalingEClass,
+				CRON_OPTIONS_BUILDER_APPLICATIONAUTOSCALING__VAR_NAME);
+		createEAttribute(cronOptionsBuilder_applicationautoscalingEClass,
+				CRON_OPTIONS_BUILDER_APPLICATIONAUTOSCALING__IDENTIFIER);
+		createEAttribute(cronOptionsBuilder_applicationautoscalingEClass,
+				CRON_OPTIONS_BUILDER_APPLICATIONAUTOSCALING__ADDITIONAL_CODE);
+
+		scheduledEc2TaskDefinitionOptionsBuilder_patternsEClass = createEClass(
+				SCHEDULED_EC2_TASK_DEFINITION_OPTIONS_BUILDER_PATTERNS);
+		createEAttribute(scheduledEc2TaskDefinitionOptionsBuilder_patternsEClass,
+				SCHEDULED_EC2_TASK_DEFINITION_OPTIONS_BUILDER_PATTERNS__TASK_DEFINITION_WITH_EC2_TASK_DEFINITION_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_EC2_TASK_DEFINITION_AS_REFERENCE);
+		createEAttribute(scheduledEc2TaskDefinitionOptionsBuilder_patternsEClass,
+				SCHEDULED_EC2_TASK_DEFINITION_OPTIONS_BUILDER_PATTERNS__GENERATED_CLASS_NAME);
+		createEAttribute(scheduledEc2TaskDefinitionOptionsBuilder_patternsEClass,
+				SCHEDULED_EC2_TASK_DEFINITION_OPTIONS_BUILDER_PATTERNS__VAR_NAME);
+		createEAttribute(scheduledEc2TaskDefinitionOptionsBuilder_patternsEClass,
+				SCHEDULED_EC2_TASK_DEFINITION_OPTIONS_BUILDER_PATTERNS__IDENTIFIER);
+		createEAttribute(scheduledEc2TaskDefinitionOptionsBuilder_patternsEClass,
+				SCHEDULED_EC2_TASK_DEFINITION_OPTIONS_BUILDER_PATTERNS__ADDITIONAL_CODE);
+
+		scheduledEc2TaskImageOptionsBuilder_patternsEClass = createEClass(
+				SCHEDULED_EC2_TASK_IMAGE_OPTIONS_BUILDER_PATTERNS);
+		createEAttribute(scheduledEc2TaskImageOptionsBuilder_patternsEClass,
+				SCHEDULED_EC2_TASK_IMAGE_OPTIONS_BUILDER_PATTERNS__CPU_JAVA_LANG_NUMBER_);
+		createEAttribute(scheduledEc2TaskImageOptionsBuilder_patternsEClass,
+				SCHEDULED_EC2_TASK_IMAGE_OPTIONS_BUILDER_PATTERNS__MEMORY_LIMIT_MI_BJAVA_LANG_NUMBER_);
+		createEAttribute(scheduledEc2TaskImageOptionsBuilder_patternsEClass,
+				SCHEDULED_EC2_TASK_IMAGE_OPTIONS_BUILDER_PATTERNS__MEMORY_RESERVATION_MI_BJAVA_LANG_NUMBER_);
+		createEAttribute(scheduledEc2TaskImageOptionsBuilder_patternsEClass,
+				SCHEDULED_EC2_TASK_IMAGE_OPTIONS_BUILDER_PATTERNS__IMAGE_WITH_CONTAINER_IMAGE_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_CONTAINER_IMAGE_AS_REFERENCE);
+		createEAttribute(scheduledEc2TaskImageOptionsBuilder_patternsEClass,
+				SCHEDULED_EC2_TASK_IMAGE_OPTIONS_BUILDER_PATTERNS__COMMAND_JAVA_LANG_STRING_AS_LIST);
+		createEAttribute(scheduledEc2TaskImageOptionsBuilder_patternsEClass,
+				SCHEDULED_EC2_TASK_IMAGE_OPTIONS_BUILDER_PATTERNS__ENVIRONMENT_JAVA_LANG_STRING_JAVA_LANG_STRING_AS_MAP);
+		createEAttribute(scheduledEc2TaskImageOptionsBuilder_patternsEClass,
+				SCHEDULED_EC2_TASK_IMAGE_OPTIONS_BUILDER_PATTERNS__LOG_DRIVER_WITH_LOG_DRIVER_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_LOG_DRIVER_AS_REFERENCE);
+		createEAttribute(scheduledEc2TaskImageOptionsBuilder_patternsEClass,
+				SCHEDULED_EC2_TASK_IMAGE_OPTIONS_BUILDER_PATTERNS__SECRETS_JAVA_LANG_STRING_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_SECRET_AS_MAP);
+		createEAttribute(scheduledEc2TaskImageOptionsBuilder_patternsEClass,
+				SCHEDULED_EC2_TASK_IMAGE_OPTIONS_BUILDER_PATTERNS__GENERATED_CLASS_NAME);
+		createEAttribute(scheduledEc2TaskImageOptionsBuilder_patternsEClass,
+				SCHEDULED_EC2_TASK_IMAGE_OPTIONS_BUILDER_PATTERNS__VAR_NAME);
+		createEAttribute(scheduledEc2TaskImageOptionsBuilder_patternsEClass,
+				SCHEDULED_EC2_TASK_IMAGE_OPTIONS_BUILDER_PATTERNS__IDENTIFIER);
+		createEAttribute(scheduledEc2TaskImageOptionsBuilder_patternsEClass,
+				SCHEDULED_EC2_TASK_IMAGE_OPTIONS_BUILDER_PATTERNS__ADDITIONAL_CODE);
+
+		scheduledEc2TaskBuilder_patternsEClass = createEClass(SCHEDULED_EC2_TASK_BUILDER_PATTERNS);
+		createEAttribute(scheduledEc2TaskBuilder_patternsEClass,
+				SCHEDULED_EC2_TASK_BUILDER_PATTERNS__SCHEDULE_WITH_SCHEDULE_SOFTWARE_AMAZON_AWSCDK_SERVICES_APPLICATIONAUTOSCALING_SCHEDULE_AS_REFERENCE);
+		createEAttribute(scheduledEc2TaskBuilder_patternsEClass,
+				SCHEDULED_EC2_TASK_BUILDER_PATTERNS__CLUSTER_WITH_ICLUSTER_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_ICLUSTER_AS_REFERENCE);
+		createEAttribute(scheduledEc2TaskBuilder_patternsEClass,
+				SCHEDULED_EC2_TASK_BUILDER_PATTERNS__DESIRED_TASK_COUNT_JAVA_LANG_NUMBER_);
+		createEAttribute(scheduledEc2TaskBuilder_patternsEClass,
+				SCHEDULED_EC2_TASK_BUILDER_PATTERNS__SUBNET_SELECTION_WITH_SUBNET_SELECTION_SOFTWARE_AMAZON_AWSCDK_SERVICES_EC2_SUBNET_SELECTION_AS_REFERENCE);
+		createEAttribute(scheduledEc2TaskBuilder_patternsEClass,
+				SCHEDULED_EC2_TASK_BUILDER_PATTERNS__VPC_WITH_IVPC_SOFTWARE_AMAZON_AWSCDK_SERVICES_EC2_IVPC_AS_REFERENCE);
+		createEAttribute(scheduledEc2TaskBuilder_patternsEClass,
+				SCHEDULED_EC2_TASK_BUILDER_PATTERNS__SCHEDULED_EC2_TASK_DEFINITION_OPTIONS_WITH_SCHEDULED_EC2_TASK_DEFINITION_OPTIONS_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_PATTERNS_SCHEDULED_EC2_TASK_DEFINITION_OPTIONS_AS_REFERENCE);
+		createEAttribute(scheduledEc2TaskBuilder_patternsEClass,
+				SCHEDULED_EC2_TASK_BUILDER_PATTERNS__SCHEDULED_EC2_TASK_IMAGE_OPTIONS_WITH_SCHEDULED_EC2_TASK_IMAGE_OPTIONS_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_PATTERNS_SCHEDULED_EC2_TASK_IMAGE_OPTIONS_AS_REFERENCE);
+		createEAttribute(scheduledEc2TaskBuilder_patternsEClass,
+				SCHEDULED_EC2_TASK_BUILDER_PATTERNS__GENERATED_CLASS_NAME);
+		createEAttribute(scheduledEc2TaskBuilder_patternsEClass, SCHEDULED_EC2_TASK_BUILDER_PATTERNS__VAR_NAME);
+		createEAttribute(scheduledEc2TaskBuilder_patternsEClass, SCHEDULED_EC2_TASK_BUILDER_PATTERNS__IDENTIFIER);
+		createEAttribute(scheduledEc2TaskBuilder_patternsEClass, SCHEDULED_EC2_TASK_BUILDER_PATTERNS__ADDITIONAL_CODE);
+
+		queueProcessingEc2ServiceBuilder_patternsEClass = createEClass(QUEUE_PROCESSING_EC2_SERVICE_BUILDER_PATTERNS);
+		createEAttribute(queueProcessingEc2ServiceBuilder_patternsEClass,
+				QUEUE_PROCESSING_EC2_SERVICE_BUILDER_PATTERNS__IMAGE_WITH_CONTAINER_IMAGE_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_CONTAINER_IMAGE_AS_REFERENCE);
+		createEAttribute(queueProcessingEc2ServiceBuilder_patternsEClass,
+				QUEUE_PROCESSING_EC2_SERVICE_BUILDER_PATTERNS__CLUSTER_WITH_ICLUSTER_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_ICLUSTER_AS_REFERENCE);
+		createEAttribute(queueProcessingEc2ServiceBuilder_patternsEClass,
+				QUEUE_PROCESSING_EC2_SERVICE_BUILDER_PATTERNS__COMMAND_JAVA_LANG_STRING_AS_LIST);
+		createEAttribute(queueProcessingEc2ServiceBuilder_patternsEClass,
+				QUEUE_PROCESSING_EC2_SERVICE_BUILDER_PATTERNS__DESIRED_TASK_COUNT_JAVA_LANG_NUMBER_);
+		createEAttribute(queueProcessingEc2ServiceBuilder_patternsEClass,
+				QUEUE_PROCESSING_EC2_SERVICE_BUILDER_PATTERNS__ENABLE_ECS_MANAGED_TAGS_JAVA_LANG_BOOLEAN_);
+		createEAttribute(queueProcessingEc2ServiceBuilder_patternsEClass,
+				QUEUE_PROCESSING_EC2_SERVICE_BUILDER_PATTERNS__ENABLE_LOGGING_JAVA_LANG_BOOLEAN_);
+		createEAttribute(queueProcessingEc2ServiceBuilder_patternsEClass,
+				QUEUE_PROCESSING_EC2_SERVICE_BUILDER_PATTERNS__ENVIRONMENT_JAVA_LANG_STRING_JAVA_LANG_STRING_AS_MAP);
+		createEAttribute(queueProcessingEc2ServiceBuilder_patternsEClass,
+				QUEUE_PROCESSING_EC2_SERVICE_BUILDER_PATTERNS__FAMILY_JAVA_LANG_STRING_);
+		createEAttribute(queueProcessingEc2ServiceBuilder_patternsEClass,
+				QUEUE_PROCESSING_EC2_SERVICE_BUILDER_PATTERNS__LOG_DRIVER_WITH_LOG_DRIVER_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_LOG_DRIVER_AS_REFERENCE);
+		createEAttribute(queueProcessingEc2ServiceBuilder_patternsEClass,
+				QUEUE_PROCESSING_EC2_SERVICE_BUILDER_PATTERNS__MAX_HEALTHY_PERCENT_JAVA_LANG_NUMBER_);
+		createEAttribute(queueProcessingEc2ServiceBuilder_patternsEClass,
+				QUEUE_PROCESSING_EC2_SERVICE_BUILDER_PATTERNS__MAX_RECEIVE_COUNT_JAVA_LANG_NUMBER_);
+		createEAttribute(queueProcessingEc2ServiceBuilder_patternsEClass,
+				QUEUE_PROCESSING_EC2_SERVICE_BUILDER_PATTERNS__MAX_SCALING_CAPACITY_JAVA_LANG_NUMBER_);
+		createEAttribute(queueProcessingEc2ServiceBuilder_patternsEClass,
+				QUEUE_PROCESSING_EC2_SERVICE_BUILDER_PATTERNS__MIN_HEALTHY_PERCENT_JAVA_LANG_NUMBER_);
+		createEAttribute(queueProcessingEc2ServiceBuilder_patternsEClass,
+				QUEUE_PROCESSING_EC2_SERVICE_BUILDER_PATTERNS__PROPAGATE_TAGS_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_PROPAGATED_TAG_SOURCE_);
+		createEAttribute(queueProcessingEc2ServiceBuilder_patternsEClass,
+				QUEUE_PROCESSING_EC2_SERVICE_BUILDER_PATTERNS__QUEUE_WITH_IQUEUE_SOFTWARE_AMAZON_AWSCDK_SERVICES_SQS_IQUEUE_AS_REFERENCE);
+		createEAttribute(queueProcessingEc2ServiceBuilder_patternsEClass,
+				QUEUE_PROCESSING_EC2_SERVICE_BUILDER_PATTERNS__RETENTION_PERIOD_WITH_DURATION_SOFTWARE_AMAZON_AWSCDK_CORE_DURATION_AS_REFERENCE);
+		createEAttribute(queueProcessingEc2ServiceBuilder_patternsEClass,
+				QUEUE_PROCESSING_EC2_SERVICE_BUILDER_PATTERNS__SCALING_STEPS_SOFTWARE_AMAZON_AWSCDK_SERVICES_APPLICATIONAUTOSCALING_SCALING_INTERVAL_AS_LIST);
+		createEAttribute(queueProcessingEc2ServiceBuilder_patternsEClass,
+				QUEUE_PROCESSING_EC2_SERVICE_BUILDER_PATTERNS__SECRETS_JAVA_LANG_STRING_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_SECRET_AS_MAP);
+		createEAttribute(queueProcessingEc2ServiceBuilder_patternsEClass,
+				QUEUE_PROCESSING_EC2_SERVICE_BUILDER_PATTERNS__SERVICE_NAME_JAVA_LANG_STRING_);
+		createEAttribute(queueProcessingEc2ServiceBuilder_patternsEClass,
+				QUEUE_PROCESSING_EC2_SERVICE_BUILDER_PATTERNS__VPC_WITH_IVPC_SOFTWARE_AMAZON_AWSCDK_SERVICES_EC2_IVPC_AS_REFERENCE);
+		createEAttribute(queueProcessingEc2ServiceBuilder_patternsEClass,
+				QUEUE_PROCESSING_EC2_SERVICE_BUILDER_PATTERNS__CPU_JAVA_LANG_NUMBER_);
+		createEAttribute(queueProcessingEc2ServiceBuilder_patternsEClass,
+				QUEUE_PROCESSING_EC2_SERVICE_BUILDER_PATTERNS__MEMORY_LIMIT_MI_BJAVA_LANG_NUMBER_);
+		createEAttribute(queueProcessingEc2ServiceBuilder_patternsEClass,
+				QUEUE_PROCESSING_EC2_SERVICE_BUILDER_PATTERNS__MEMORY_RESERVATION_MI_BJAVA_LANG_NUMBER_);
+		createEAttribute(queueProcessingEc2ServiceBuilder_patternsEClass,
+				QUEUE_PROCESSING_EC2_SERVICE_BUILDER_PATTERNS__GENERATED_CLASS_NAME);
+		createEAttribute(queueProcessingEc2ServiceBuilder_patternsEClass,
+				QUEUE_PROCESSING_EC2_SERVICE_BUILDER_PATTERNS__VAR_NAME);
+		createEAttribute(queueProcessingEc2ServiceBuilder_patternsEClass,
+				QUEUE_PROCESSING_EC2_SERVICE_BUILDER_PATTERNS__IDENTIFIER);
+		createEAttribute(queueProcessingEc2ServiceBuilder_patternsEClass,
+				QUEUE_PROCESSING_EC2_SERVICE_BUILDER_PATTERNS__ADDITIONAL_CODE);
+
+		scheduledFargateTaskDefinitionOptionsBuilder_patternsEClass = createEClass(
+				SCHEDULED_FARGATE_TASK_DEFINITION_OPTIONS_BUILDER_PATTERNS);
+		createEAttribute(scheduledFargateTaskDefinitionOptionsBuilder_patternsEClass,
+				SCHEDULED_FARGATE_TASK_DEFINITION_OPTIONS_BUILDER_PATTERNS__TASK_DEFINITION_WITH_FARGATE_TASK_DEFINITION_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_FARGATE_TASK_DEFINITION_AS_REFERENCE);
+		createEAttribute(scheduledFargateTaskDefinitionOptionsBuilder_patternsEClass,
+				SCHEDULED_FARGATE_TASK_DEFINITION_OPTIONS_BUILDER_PATTERNS__GENERATED_CLASS_NAME);
+		createEAttribute(scheduledFargateTaskDefinitionOptionsBuilder_patternsEClass,
+				SCHEDULED_FARGATE_TASK_DEFINITION_OPTIONS_BUILDER_PATTERNS__VAR_NAME);
+		createEAttribute(scheduledFargateTaskDefinitionOptionsBuilder_patternsEClass,
+				SCHEDULED_FARGATE_TASK_DEFINITION_OPTIONS_BUILDER_PATTERNS__IDENTIFIER);
+		createEAttribute(scheduledFargateTaskDefinitionOptionsBuilder_patternsEClass,
+				SCHEDULED_FARGATE_TASK_DEFINITION_OPTIONS_BUILDER_PATTERNS__ADDITIONAL_CODE);
+
+		scheduledFargateTaskImageOptionsBuilder_patternsEClass = createEClass(
+				SCHEDULED_FARGATE_TASK_IMAGE_OPTIONS_BUILDER_PATTERNS);
+		createEAttribute(scheduledFargateTaskImageOptionsBuilder_patternsEClass,
+				SCHEDULED_FARGATE_TASK_IMAGE_OPTIONS_BUILDER_PATTERNS__CPU_JAVA_LANG_NUMBER_);
+		createEAttribute(scheduledFargateTaskImageOptionsBuilder_patternsEClass,
+				SCHEDULED_FARGATE_TASK_IMAGE_OPTIONS_BUILDER_PATTERNS__MEMORY_LIMIT_MI_BJAVA_LANG_NUMBER_);
+		createEAttribute(scheduledFargateTaskImageOptionsBuilder_patternsEClass,
+				SCHEDULED_FARGATE_TASK_IMAGE_OPTIONS_BUILDER_PATTERNS__IMAGE_WITH_CONTAINER_IMAGE_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_CONTAINER_IMAGE_AS_REFERENCE);
+		createEAttribute(scheduledFargateTaskImageOptionsBuilder_patternsEClass,
+				SCHEDULED_FARGATE_TASK_IMAGE_OPTIONS_BUILDER_PATTERNS__COMMAND_JAVA_LANG_STRING_AS_LIST);
+		createEAttribute(scheduledFargateTaskImageOptionsBuilder_patternsEClass,
+				SCHEDULED_FARGATE_TASK_IMAGE_OPTIONS_BUILDER_PATTERNS__ENVIRONMENT_JAVA_LANG_STRING_JAVA_LANG_STRING_AS_MAP);
+		createEAttribute(scheduledFargateTaskImageOptionsBuilder_patternsEClass,
+				SCHEDULED_FARGATE_TASK_IMAGE_OPTIONS_BUILDER_PATTERNS__LOG_DRIVER_WITH_LOG_DRIVER_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_LOG_DRIVER_AS_REFERENCE);
+		createEAttribute(scheduledFargateTaskImageOptionsBuilder_patternsEClass,
+				SCHEDULED_FARGATE_TASK_IMAGE_OPTIONS_BUILDER_PATTERNS__SECRETS_JAVA_LANG_STRING_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_SECRET_AS_MAP);
+		createEAttribute(scheduledFargateTaskImageOptionsBuilder_patternsEClass,
+				SCHEDULED_FARGATE_TASK_IMAGE_OPTIONS_BUILDER_PATTERNS__GENERATED_CLASS_NAME);
+		createEAttribute(scheduledFargateTaskImageOptionsBuilder_patternsEClass,
+				SCHEDULED_FARGATE_TASK_IMAGE_OPTIONS_BUILDER_PATTERNS__VAR_NAME);
+		createEAttribute(scheduledFargateTaskImageOptionsBuilder_patternsEClass,
+				SCHEDULED_FARGATE_TASK_IMAGE_OPTIONS_BUILDER_PATTERNS__IDENTIFIER);
+		createEAttribute(scheduledFargateTaskImageOptionsBuilder_patternsEClass,
+				SCHEDULED_FARGATE_TASK_IMAGE_OPTIONS_BUILDER_PATTERNS__ADDITIONAL_CODE);
+
+		scheduledFargateTaskBuilder_patternsEClass = createEClass(SCHEDULED_FARGATE_TASK_BUILDER_PATTERNS);
+		createEAttribute(scheduledFargateTaskBuilder_patternsEClass,
+				SCHEDULED_FARGATE_TASK_BUILDER_PATTERNS__SCHEDULE_WITH_SCHEDULE_SOFTWARE_AMAZON_AWSCDK_SERVICES_APPLICATIONAUTOSCALING_SCHEDULE_AS_REFERENCE);
+		createEAttribute(scheduledFargateTaskBuilder_patternsEClass,
+				SCHEDULED_FARGATE_TASK_BUILDER_PATTERNS__CLUSTER_WITH_ICLUSTER_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_ICLUSTER_AS_REFERENCE);
+		createEAttribute(scheduledFargateTaskBuilder_patternsEClass,
+				SCHEDULED_FARGATE_TASK_BUILDER_PATTERNS__DESIRED_TASK_COUNT_JAVA_LANG_NUMBER_);
+		createEAttribute(scheduledFargateTaskBuilder_patternsEClass,
+				SCHEDULED_FARGATE_TASK_BUILDER_PATTERNS__SUBNET_SELECTION_WITH_SUBNET_SELECTION_SOFTWARE_AMAZON_AWSCDK_SERVICES_EC2_SUBNET_SELECTION_AS_REFERENCE);
+		createEAttribute(scheduledFargateTaskBuilder_patternsEClass,
+				SCHEDULED_FARGATE_TASK_BUILDER_PATTERNS__VPC_WITH_IVPC_SOFTWARE_AMAZON_AWSCDK_SERVICES_EC2_IVPC_AS_REFERENCE);
+		createEAttribute(scheduledFargateTaskBuilder_patternsEClass,
+				SCHEDULED_FARGATE_TASK_BUILDER_PATTERNS__SCHEDULED_FARGATE_TASK_DEFINITION_OPTIONS_WITH_SCHEDULED_FARGATE_TASK_DEFINITION_OPTIONS_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_PATTERNS_SCHEDULED_FARGATE_TASK_DEFINITION_OPTIONS_AS_REFERENCE);
+		createEAttribute(scheduledFargateTaskBuilder_patternsEClass,
+				SCHEDULED_FARGATE_TASK_BUILDER_PATTERNS__SCHEDULED_FARGATE_TASK_IMAGE_OPTIONS_WITH_SCHEDULED_FARGATE_TASK_IMAGE_OPTIONS_SOFTWARE_AMAZON_AWSCDK_SERVICES_ECS_PATTERNS_SCHEDULED_FARGATE_TASK_IMAGE_OPTIONS_AS_REFERENCE);
+		createEAttribute(scheduledFargateTaskBuilder_patternsEClass,
+				SCHEDULED_FARGATE_TASK_BUILDER_PATTERNS__GENERATED_CLASS_NAME);
+		createEAttribute(scheduledFargateTaskBuilder_patternsEClass, SCHEDULED_FARGATE_TASK_BUILDER_PATTERNS__VAR_NAME);
+		createEAttribute(scheduledFargateTaskBuilder_patternsEClass,
+				SCHEDULED_FARGATE_TASK_BUILDER_PATTERNS__IDENTIFIER);
+		createEAttribute(scheduledFargateTaskBuilder_patternsEClass,
+				SCHEDULED_FARGATE_TASK_BUILDER_PATTERNS__ADDITIONAL_CODE);
+
 		// Create enums
 		flowLogTrafficTypeEEnum = createEEnum(FLOW_LOG_TRAFFIC_TYPE);
 		defaultInstanceTenancyEEnum = createEEnum(DEFAULT_INSTANCE_TENANCY);
@@ -18691,12 +28912,33 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 		sslMethodEEnum = createEEnum(SSL_METHOD);
 		mfaEEnum = createEEnum(MFA);
 		verificationEmailStyleEEnum = createEEnum(VERIFICATION_EMAIL_STYLE);
+		stateMachineTypeEEnum = createEEnum(STATE_MACHINE_TYPE);
 		effectEEnum = createEEnum(EFFECT);
 		attributeTypeEEnum = createEEnum(ATTRIBUTE_TYPE);
 		streamViewTypeEEnum = createEEnum(STREAM_VIEW_TYPE);
 		removalPolicyEEnum = createEEnum(REMOVAL_POLICY);
 		tableEncryptionEEnum = createEEnum(TABLE_ENCRYPTION);
 		billingModeEEnum = createEEnum(BILLING_MODE);
+		dnsRecordTypeEEnum = createEEnum(DNS_RECORD_TYPE);
+		instanceClassEEnum = createEEnum(INSTANCE_CLASS);
+		instanceSizeEEnum = createEEnum(INSTANCE_SIZE);
+		amazonLinuxEditionEEnum = createEEnum(AMAZON_LINUX_EDITION);
+		amazonLinuxGenerationEEnum = createEEnum(AMAZON_LINUX_GENERATION);
+		amazonLinuxStorageEEnum = createEEnum(AMAZON_LINUX_STORAGE);
+		amazonLinuxVirtEEnum = createEEnum(AMAZON_LINUX_VIRT);
+		scalingProcessEEnum = createEEnum(SCALING_PROCESS);
+		updateTypeEEnum = createEEnum(UPDATE_TYPE);
+		namespaceTypeEEnum = createEEnum(NAMESPACE_TYPE);
+		ipAddressTypeEEnum = createEEnum(IP_ADDRESS_TYPE);
+		propagatedTagSourceEEnum = createEEnum(PROPAGATED_TAG_SOURCE);
+		applicationProtocolEEnum = createEEnum(APPLICATION_PROTOCOL);
+		followModeEEnum = createEEnum(FOLLOW_MODE);
+		scopeEEnum = createEEnum(SCOPE);
+		networkModeEEnum = createEEnum(NETWORK_MODE);
+		ipcModeEEnum = createEEnum(IPC_MODE);
+		pidModeEEnum = createEEnum(PID_MODE);
+		fargatePlatformVersionEEnum = createEEnum(FARGATE_PLATFORM_VERSION);
+		protocolEEnum = createEEnum(PROTOCOL);
 	}
 
 	/**
@@ -23410,6 +33652,151 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 				DynamoDBStreamToLambdaToElasticSearchAndKibanaBuilder_dynamodbstreamlambdaelasticsearchkibana.class,
 				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
+		initEClass(eventBusBuilder_eventsEClass, EventBusBuilder_events.class, "EventBusBuilder_events", !IS_ABSTRACT,
+				!IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getEventBusBuilder_events_EventBusName_java_lang_String_(), ecorePackage.getEString(),
+				"eventBusName_java_lang_String_", null, 0, 1, EventBusBuilder_events.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getEventBusBuilder_events_EventSourceName_java_lang_String_(), ecorePackage.getEString(),
+				"eventSourceName_java_lang_String_", null, 0, 1, EventBusBuilder_events.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getEventBusBuilder_events_GeneratedClassName(), ecorePackage.getEString(), "generatedClassName",
+				"software.amazon.awscdk.services.events.EventBus", 0, 1, EventBusBuilder_events.class, !IS_TRANSIENT,
+				!IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getEventBusBuilder_events_VarName(), ecorePackage.getEString(), "varName", null, 0, 1,
+				EventBusBuilder_events.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getEventBusBuilder_events_Identifier(), ecorePackage.getEString(), "identifier", null, 0, 1,
+				EventBusBuilder_events.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getEventBusBuilder_events_AdditionalCode(), ecorePackage.getEString(), "additionalCode", null, 0,
+				1, EventBusBuilder_events.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(eventPatternBuilder_eventsEClass, EventPatternBuilder_events.class, "EventPatternBuilder_events",
+				!IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getEventPatternBuilder_events_Account_java_lang_String_AsList(), ecorePackage.getEString(),
+				"account_java_lang_String_AsList", null, 0, 1, EventPatternBuilder_events.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getEventPatternBuilder_events_Detail_java_lang_String__java_lang_Object_AsMap(),
+				ecorePackage.getEString(), "detail_java_lang_String__java_lang_Object_AsMap", null, 0, 1,
+				EventPatternBuilder_events.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getEventPatternBuilder_events_DetailType_java_lang_String_AsList(), ecorePackage.getEString(),
+				"detailType_java_lang_String_AsList", null, 0, 1, EventPatternBuilder_events.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getEventPatternBuilder_events_Id_java_lang_String_AsList(), ecorePackage.getEString(),
+				"id_java_lang_String_AsList", null, 0, 1, EventPatternBuilder_events.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getEventPatternBuilder_events_Region_java_lang_String_AsList(), ecorePackage.getEString(),
+				"region_java_lang_String_AsList", null, 0, 1, EventPatternBuilder_events.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getEventPatternBuilder_events_Resources_java_lang_String_AsList(), ecorePackage.getEString(),
+				"resources_java_lang_String_AsList", null, 0, 1, EventPatternBuilder_events.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getEventPatternBuilder_events_Source_java_lang_String_AsList(), ecorePackage.getEString(),
+				"source_java_lang_String_AsList", null, 0, 1, EventPatternBuilder_events.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getEventPatternBuilder_events_Time_java_lang_String_AsList(), ecorePackage.getEString(),
+				"time_java_lang_String_AsList", null, 0, 1, EventPatternBuilder_events.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getEventPatternBuilder_events_Version_java_lang_String_AsList(), ecorePackage.getEString(),
+				"version_java_lang_String_AsList", null, 0, 1, EventPatternBuilder_events.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getEventPatternBuilder_events_GeneratedClassName(), ecorePackage.getEString(),
+				"generatedClassName", "software.amazon.awscdk.services.events.EventPattern", 0, 1,
+				EventPatternBuilder_events.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getEventPatternBuilder_events_VarName(), ecorePackage.getEString(), "varName", null, 0, 1,
+				EventPatternBuilder_events.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getEventPatternBuilder_events_Identifier(), ecorePackage.getEString(), "identifier", null, 0, 1,
+				EventPatternBuilder_events.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getEventPatternBuilder_events_AdditionalCode(), ecorePackage.getEString(), "additionalCode",
+				null, 0, 1, EventPatternBuilder_events.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(rulePropsBuilder_eventsEClass, RulePropsBuilder_events.class, "RulePropsBuilder_events",
+				!IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getRulePropsBuilder_events_Description_java_lang_String_(), ecorePackage.getEString(),
+				"description_java_lang_String_", null, 0, 1, RulePropsBuilder_events.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getRulePropsBuilder_events_Enabled_java_lang_Boolean_(), ecorePackage.getEBooleanObject(),
+				"enabled_java_lang_Boolean_", null, 0, 1, RulePropsBuilder_events.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getRulePropsBuilder_events_EventBusWithIEventBus_software_amazon_awscdk_services_events_IEventBus_AsReference(),
+				ecorePackage.getEString(),
+				"eventBusWithIEventBus_software_amazon_awscdk_services_events_IEventBus_AsReference", null, 0, 1,
+				RulePropsBuilder_events.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getRulePropsBuilder_events_EventPatternWithEventPattern_software_amazon_awscdk_services_events_EventPattern_AsReference(),
+				ecorePackage.getEString(),
+				"eventPatternWithEventPattern_software_amazon_awscdk_services_events_EventPattern_AsReference", null, 0,
+				1, RulePropsBuilder_events.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getRulePropsBuilder_events_RuleName_java_lang_String_(), ecorePackage.getEString(),
+				"ruleName_java_lang_String_", null, 0, 1, RulePropsBuilder_events.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getRulePropsBuilder_events_ScheduleWithSchedule_software_amazon_awscdk_services_events_Schedule_AsReference(),
+				ecorePackage.getEString(),
+				"scheduleWithSchedule_software_amazon_awscdk_services_events_Schedule_AsReference", null, 0, 1,
+				RulePropsBuilder_events.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getRulePropsBuilder_events_Targets_software_amazon_awscdk_services_events_IRuleTarget_AsList(),
+				ecorePackage.getEString(), "targets_software_amazon_awscdk_services_events_IRuleTarget_AsList", null, 0,
+				1, RulePropsBuilder_events.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getRulePropsBuilder_events_GeneratedClassName(), ecorePackage.getEString(), "generatedClassName",
+				"software.amazon.awscdk.services.events.RuleProps", 0, 1, RulePropsBuilder_events.class, !IS_TRANSIENT,
+				!IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getRulePropsBuilder_events_VarName(), ecorePackage.getEString(), "varName", null, 0, 1,
+				RulePropsBuilder_events.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getRulePropsBuilder_events_Identifier(), ecorePackage.getEString(), "identifier", null, 0, 1,
+				RulePropsBuilder_events.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getRulePropsBuilder_events_AdditionalCode(), ecorePackage.getEString(), "additionalCode", null,
+				0, 1, RulePropsBuilder_events.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(cronOptionsBuilder_eventsEClass, CronOptionsBuilder_events.class, "CronOptionsBuilder_events",
+				!IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getCronOptionsBuilder_events_Day_java_lang_String_(), ecorePackage.getEString(),
+				"day_java_lang_String_", null, 0, 1, CronOptionsBuilder_events.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCronOptionsBuilder_events_Hour_java_lang_String_(), ecorePackage.getEString(),
+				"hour_java_lang_String_", null, 0, 1, CronOptionsBuilder_events.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCronOptionsBuilder_events_Minute_java_lang_String_(), ecorePackage.getEString(),
+				"minute_java_lang_String_", null, 0, 1, CronOptionsBuilder_events.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCronOptionsBuilder_events_Month_java_lang_String_(), ecorePackage.getEString(),
+				"month_java_lang_String_", null, 0, 1, CronOptionsBuilder_events.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCronOptionsBuilder_events_WeekDay_java_lang_String_(), ecorePackage.getEString(),
+				"weekDay_java_lang_String_", null, 0, 1, CronOptionsBuilder_events.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCronOptionsBuilder_events_Year_java_lang_String_(), ecorePackage.getEString(),
+				"year_java_lang_String_", null, 0, 1, CronOptionsBuilder_events.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCronOptionsBuilder_events_GeneratedClassName(), ecorePackage.getEString(),
+				"generatedClassName", "software.amazon.awscdk.services.events.CronOptions", 0, 1,
+				CronOptionsBuilder_events.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCronOptionsBuilder_events_VarName(), ecorePackage.getEString(), "varName", null, 0, 1,
+				CronOptionsBuilder_events.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCronOptionsBuilder_events_Identifier(), ecorePackage.getEString(), "identifier", null, 0, 1,
+				CronOptionsBuilder_events.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCronOptionsBuilder_events_AdditionalCode(), ecorePackage.getEString(), "additionalCode", null,
+				0, 1, CronOptionsBuilder_events.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
 		initEClass(eventsRuleToLambdaBuilder_eventsrulelambdaEClass, EventsRuleToLambdaBuilder_eventsrulelambda.class,
 				"EventsRuleToLambdaBuilder_eventsrulelambda", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(
@@ -23444,6 +33831,54 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 		initEAttribute(getEventsRuleToLambdaBuilder_eventsrulelambda_AdditionalCode(), ecorePackage.getEString(),
 				"additionalCode", null, 0, 1, EventsRuleToLambdaBuilder_eventsrulelambda.class, !IS_TRANSIENT,
 				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(stateMachinePropsBuilder_stepfunctionsEClass, StateMachinePropsBuilder_stepfunctions.class,
+				"StateMachinePropsBuilder_stepfunctions", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(
+				getStateMachinePropsBuilder_stepfunctions_DefinitionWithIChainable_software_amazon_awscdk_services_stepfunctions_IChainable_AsReference(),
+				ecorePackage.getEString(),
+				"definitionWithIChainable_software_amazon_awscdk_services_stepfunctions_IChainable_AsReference", null,
+				0, 1, StateMachinePropsBuilder_stepfunctions.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getStateMachinePropsBuilder_stepfunctions_LogsWithLogOptions_software_amazon_awscdk_services_stepfunctions_LogOptions_AsReference(),
+				ecorePackage.getEString(),
+				"logsWithLogOptions_software_amazon_awscdk_services_stepfunctions_LogOptions_AsReference", null, 0, 1,
+				StateMachinePropsBuilder_stepfunctions.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getStateMachinePropsBuilder_stepfunctions_RoleWithIRole_software_amazon_awscdk_services_iam_IRole_AsReference(),
+				ecorePackage.getEString(), "roleWithIRole_software_amazon_awscdk_services_iam_IRole_AsReference", null,
+				0, 1, StateMachinePropsBuilder_stepfunctions.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getStateMachinePropsBuilder_stepfunctions_StateMachineName_java_lang_String_(),
+				ecorePackage.getEString(), "stateMachineName_java_lang_String_", null, 0, 1,
+				StateMachinePropsBuilder_stepfunctions.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getStateMachinePropsBuilder_stepfunctions_StateMachineType_software_amazon_awscdk_services_stepfunctions_StateMachineType_(),
+				this.getStateMachineType(),
+				"stateMachineType_software_amazon_awscdk_services_stepfunctions_StateMachineType_", null, 0, 1,
+				StateMachinePropsBuilder_stepfunctions.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getStateMachinePropsBuilder_stepfunctions_TimeoutWithDuration_software_amazon_awscdk_core_Duration_AsReference(),
+				ecorePackage.getEString(), "timeoutWithDuration_software_amazon_awscdk_core_Duration_AsReference", null,
+				0, 1, StateMachinePropsBuilder_stepfunctions.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getStateMachinePropsBuilder_stepfunctions_GeneratedClassName(), ecorePackage.getEString(),
+				"generatedClassName", "software.amazon.awscdk.services.stepfunctions.StateMachineProps", 0, 1,
+				StateMachinePropsBuilder_stepfunctions.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getStateMachinePropsBuilder_stepfunctions_VarName(), ecorePackage.getEString(), "varName", null,
+				0, 1, StateMachinePropsBuilder_stepfunctions.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getStateMachinePropsBuilder_stepfunctions_Identifier(), ecorePackage.getEString(), "identifier",
+				null, 0, 1, StateMachinePropsBuilder_stepfunctions.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getStateMachinePropsBuilder_stepfunctions_AdditionalCode(), ecorePackage.getEString(),
+				"additionalCode", null, 0, 1, StateMachinePropsBuilder_stepfunctions.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(eventsRuleToStepFunctionBuilder_eventsrulestepfunctionEClass,
 				EventsRuleToStepFunctionBuilder_eventsrulestepfunction.class,
@@ -23716,6 +34151,77 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 				KinesisStreamsToLambdaBuilder_kinesisstreamslambda.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
 				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
+		initEClass(tableBuilder_dynamodbEClass, TableBuilder_dynamodb.class, "TableBuilder_dynamodb", !IS_ABSTRACT,
+				!IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(
+				getTableBuilder_dynamodb_PartitionKeyWithAttribute_software_amazon_awscdk_services_dynamodb_Attribute_AsReference(),
+				ecorePackage.getEString(),
+				"partitionKeyWithAttribute_software_amazon_awscdk_services_dynamodb_Attribute_AsReference", null, 0, 1,
+				TableBuilder_dynamodb.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getTableBuilder_dynamodb_BillingMode_software_amazon_awscdk_services_dynamodb_BillingMode_(),
+				this.getBillingMode(), "billingMode_software_amazon_awscdk_services_dynamodb_BillingMode_", null, 0, 1,
+				TableBuilder_dynamodb.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getTableBuilder_dynamodb_Encryption_software_amazon_awscdk_services_dynamodb_TableEncryption_(),
+				this.getTableEncryption(), "encryption_software_amazon_awscdk_services_dynamodb_TableEncryption_", null,
+				0, 1, TableBuilder_dynamodb.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getTableBuilder_dynamodb_EncryptionKeyWithIKey_software_amazon_awscdk_services_kms_IKey_AsReference(),
+				ecorePackage.getEString(), "encryptionKeyWithIKey_software_amazon_awscdk_services_kms_IKey_AsReference",
+				null, 0, 1, TableBuilder_dynamodb.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getTableBuilder_dynamodb_PointInTimeRecovery_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "pointInTimeRecovery_java_lang_Boolean_", null, 0, 1,
+				TableBuilder_dynamodb.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getTableBuilder_dynamodb_ReadCapacity_java_lang_Number_(), ecorePackage.getEInt(),
+				"readCapacity_java_lang_Number_", null, 0, 1, TableBuilder_dynamodb.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getTableBuilder_dynamodb_RemovalPolicy_software_amazon_awscdk_core_RemovalPolicy_(),
+				this.getRemovalPolicy(), "removalPolicy_software_amazon_awscdk_core_RemovalPolicy_", null, 0, 1,
+				TableBuilder_dynamodb.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getTableBuilder_dynamodb_ReplicationRegions_java_lang_String_AsList(), ecorePackage.getEString(),
+				"replicationRegions_java_lang_String_AsList", null, 0, 1, TableBuilder_dynamodb.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getTableBuilder_dynamodb_ServerSideEncryption_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "serverSideEncryption_java_lang_Boolean_", null, 0, 1,
+				TableBuilder_dynamodb.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getTableBuilder_dynamodb_SortKeyWithAttribute_software_amazon_awscdk_services_dynamodb_Attribute_AsReference(),
+				ecorePackage.getEString(),
+				"sortKeyWithAttribute_software_amazon_awscdk_services_dynamodb_Attribute_AsReference", null, 0, 1,
+				TableBuilder_dynamodb.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getTableBuilder_dynamodb_Stream_software_amazon_awscdk_services_dynamodb_StreamViewType_(),
+				this.getStreamViewType(), "stream_software_amazon_awscdk_services_dynamodb_StreamViewType_", null, 0, 1,
+				TableBuilder_dynamodb.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getTableBuilder_dynamodb_TimeToLiveAttribute_java_lang_String_(), ecorePackage.getEString(),
+				"timeToLiveAttribute_java_lang_String_", null, 0, 1, TableBuilder_dynamodb.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getTableBuilder_dynamodb_WriteCapacity_java_lang_Number_(), ecorePackage.getEInt(),
+				"writeCapacity_java_lang_Number_", null, 0, 1, TableBuilder_dynamodb.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getTableBuilder_dynamodb_TableName_java_lang_String_(), ecorePackage.getEString(),
+				"tableName_java_lang_String_", null, 0, 1, TableBuilder_dynamodb.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getTableBuilder_dynamodb_GeneratedClassName(), ecorePackage.getEString(), "generatedClassName",
+				"software.amazon.awscdk.services.dynamodb.Table", 0, 1, TableBuilder_dynamodb.class, !IS_TRANSIENT,
+				!IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getTableBuilder_dynamodb_VarName(), ecorePackage.getEString(), "varName", null, 0, 1,
+				TableBuilder_dynamodb.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getTableBuilder_dynamodb_Identifier(), ecorePackage.getEString(), "identifier", null, 0, 1,
+				TableBuilder_dynamodb.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getTableBuilder_dynamodb_AdditionalCode(), ecorePackage.getEString(), "additionalCode", null, 0,
+				1, TableBuilder_dynamodb.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
 		initEClass(lambdaToDynamoDBBuilder_lambdadynamodbEClass, LambdaToDynamoDBBuilder_lambdadynamodb.class,
 				"LambdaToDynamoDBBuilder_lambdadynamodb", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(
@@ -23848,6 +34354,32 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 		initEAttribute(getLambdaToS3Builder_lambdas3_AdditionalCode(), ecorePackage.getEString(), "additionalCode",
 				null, 0, 1, LambdaToS3Builder_lambdas3.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
 				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(topicPropsBuilder_snsEClass, TopicPropsBuilder_sns.class, "TopicPropsBuilder_sns", !IS_ABSTRACT,
+				!IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getTopicPropsBuilder_sns_DisplayName_java_lang_String_(), ecorePackage.getEString(),
+				"displayName_java_lang_String_", null, 0, 1, TopicPropsBuilder_sns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getTopicPropsBuilder_sns_MasterKeyWithIKey_software_amazon_awscdk_services_kms_IKey_AsReference(),
+				ecorePackage.getEString(), "masterKeyWithIKey_software_amazon_awscdk_services_kms_IKey_AsReference",
+				null, 0, 1, TopicPropsBuilder_sns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getTopicPropsBuilder_sns_TopicName_java_lang_String_(), ecorePackage.getEString(),
+				"topicName_java_lang_String_", null, 0, 1, TopicPropsBuilder_sns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getTopicPropsBuilder_sns_GeneratedClassName(), ecorePackage.getEString(), "generatedClassName",
+				"software.amazon.awscdk.services.sns.TopicProps", 0, 1, TopicPropsBuilder_sns.class, !IS_TRANSIENT,
+				!IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getTopicPropsBuilder_sns_VarName(), ecorePackage.getEString(), "varName", null, 0, 1,
+				TopicPropsBuilder_sns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getTopicPropsBuilder_sns_Identifier(), ecorePackage.getEString(), "identifier", null, 0, 1,
+				TopicPropsBuilder_sns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getTopicPropsBuilder_sns_AdditionalCode(), ecorePackage.getEString(), "additionalCode", null, 0,
+				1, TopicPropsBuilder_sns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(lambdaToSnsBuilder_lambdasnsEClass, LambdaToSnsBuilder_lambdasns.class,
 				"LambdaToSnsBuilder_lambdasns", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -24499,6 +35031,2955 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 				null, 0, 1, TablePropsBuilder_dynamodb.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
 				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
+		initEClass(privateDnsNamespaceBuilder_servicediscoveryEClass, PrivateDnsNamespaceBuilder_servicediscovery.class,
+				"PrivateDnsNamespaceBuilder_servicediscovery", !IS_ABSTRACT, !IS_INTERFACE,
+				IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getPrivateDnsNamespaceBuilder_servicediscovery_Name_java_lang_String_(),
+				ecorePackage.getEString(), "name_java_lang_String_", null, 0, 1,
+				PrivateDnsNamespaceBuilder_servicediscovery.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPrivateDnsNamespaceBuilder_servicediscovery_Description_java_lang_String_(),
+				ecorePackage.getEString(), "description_java_lang_String_", null, 0, 1,
+				PrivateDnsNamespaceBuilder_servicediscovery.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getPrivateDnsNamespaceBuilder_servicediscovery_VpcWithIVpc_software_amazon_awscdk_services_ec2_IVpc_AsReference(),
+				ecorePackage.getEString(), "vpcWithIVpc_software_amazon_awscdk_services_ec2_IVpc_AsReference", null, 0,
+				1, PrivateDnsNamespaceBuilder_servicediscovery.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPrivateDnsNamespaceBuilder_servicediscovery_GeneratedClassName(), ecorePackage.getEString(),
+				"generatedClassName", "software.amazon.awscdk.services.servicediscovery.PrivateDnsNamespace", 0, 1,
+				PrivateDnsNamespaceBuilder_servicediscovery.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPrivateDnsNamespaceBuilder_servicediscovery_VarName(), ecorePackage.getEString(), "varName",
+				null, 0, 1, PrivateDnsNamespaceBuilder_servicediscovery.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPrivateDnsNamespaceBuilder_servicediscovery_Identifier(), ecorePackage.getEString(),
+				"identifier", null, 0, 1, PrivateDnsNamespaceBuilder_servicediscovery.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPrivateDnsNamespaceBuilder_servicediscovery_AdditionalCode(), ecorePackage.getEString(),
+				"additionalCode", null, 0, 1, PrivateDnsNamespaceBuilder_servicediscovery.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(publicDnsNamespaceBuilder_servicediscoveryEClass, PublicDnsNamespaceBuilder_servicediscovery.class,
+				"PublicDnsNamespaceBuilder_servicediscovery", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getPublicDnsNamespaceBuilder_servicediscovery_Name_java_lang_String_(),
+				ecorePackage.getEString(), "name_java_lang_String_", null, 0, 1,
+				PublicDnsNamespaceBuilder_servicediscovery.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPublicDnsNamespaceBuilder_servicediscovery_Description_java_lang_String_(),
+				ecorePackage.getEString(), "description_java_lang_String_", null, 0, 1,
+				PublicDnsNamespaceBuilder_servicediscovery.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPublicDnsNamespaceBuilder_servicediscovery_GeneratedClassName(), ecorePackage.getEString(),
+				"generatedClassName", "software.amazon.awscdk.services.servicediscovery.PublicDnsNamespace", 0, 1,
+				PublicDnsNamespaceBuilder_servicediscovery.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPublicDnsNamespaceBuilder_servicediscovery_VarName(), ecorePackage.getEString(), "varName",
+				null, 0, 1, PublicDnsNamespaceBuilder_servicediscovery.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPublicDnsNamespaceBuilder_servicediscovery_Identifier(), ecorePackage.getEString(),
+				"identifier", null, 0, 1, PublicDnsNamespaceBuilder_servicediscovery.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPublicDnsNamespaceBuilder_servicediscovery_AdditionalCode(), ecorePackage.getEString(),
+				"additionalCode", null, 0, 1, PublicDnsNamespaceBuilder_servicediscovery.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(httpNamespaceBuilder_servicediscoveryEClass, HttpNamespaceBuilder_servicediscovery.class,
+				"HttpNamespaceBuilder_servicediscovery", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getHttpNamespaceBuilder_servicediscovery_Name_java_lang_String_(), ecorePackage.getEString(),
+				"name_java_lang_String_", null, 0, 1, HttpNamespaceBuilder_servicediscovery.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getHttpNamespaceBuilder_servicediscovery_Description_java_lang_String_(),
+				ecorePackage.getEString(), "description_java_lang_String_", null, 0, 1,
+				HttpNamespaceBuilder_servicediscovery.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getHttpNamespaceBuilder_servicediscovery_GeneratedClassName(), ecorePackage.getEString(),
+				"generatedClassName", "software.amazon.awscdk.services.servicediscovery.HttpNamespace", 0, 1,
+				HttpNamespaceBuilder_servicediscovery.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getHttpNamespaceBuilder_servicediscovery_VarName(), ecorePackage.getEString(), "varName", null,
+				0, 1, HttpNamespaceBuilder_servicediscovery.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getHttpNamespaceBuilder_servicediscovery_Identifier(), ecorePackage.getEString(), "identifier",
+				null, 0, 1, HttpNamespaceBuilder_servicediscovery.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getHttpNamespaceBuilder_servicediscovery_AdditionalCode(), ecorePackage.getEString(),
+				"additionalCode", null, 0, 1, HttpNamespaceBuilder_servicediscovery.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(cloudMapOptionsBuilder_ecsEClass, CloudMapOptionsBuilder_ecs.class, "CloudMapOptionsBuilder_ecs",
+				!IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(
+				getCloudMapOptionsBuilder_ecs_CloudMapNamespaceWithINamespace_software_amazon_awscdk_services_servicediscovery_INamespace_AsReference(),
+				ecorePackage.getEString(),
+				"cloudMapNamespaceWithINamespace_software_amazon_awscdk_services_servicediscovery_INamespace_AsReference",
+				null, 0, 1, CloudMapOptionsBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getCloudMapOptionsBuilder_ecs_DnsRecordType_software_amazon_awscdk_services_servicediscovery_DnsRecordType_(),
+				this.getDnsRecordType(),
+				"dnsRecordType_software_amazon_awscdk_services_servicediscovery_DnsRecordType_", null, 0, 1,
+				CloudMapOptionsBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getCloudMapOptionsBuilder_ecs_DnsTtlWithDuration_software_amazon_awscdk_core_Duration_AsReference(),
+				ecorePackage.getEString(), "dnsTtlWithDuration_software_amazon_awscdk_core_Duration_AsReference", null,
+				0, 1, CloudMapOptionsBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCloudMapOptionsBuilder_ecs_FailureThreshold_java_lang_Number_(), ecorePackage.getEInt(),
+				"failureThreshold_java_lang_Number_", null, 0, 1, CloudMapOptionsBuilder_ecs.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCloudMapOptionsBuilder_ecs_Name_java_lang_String_(), ecorePackage.getEString(),
+				"name_java_lang_String_", null, 0, 1, CloudMapOptionsBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCloudMapOptionsBuilder_ecs_GeneratedClassName(), ecorePackage.getEString(),
+				"generatedClassName", "software.amazon.awscdk.services.ecs.CloudMapOptions", 0, 1,
+				CloudMapOptionsBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCloudMapOptionsBuilder_ecs_VarName(), ecorePackage.getEString(), "varName", null, 0, 1,
+				CloudMapOptionsBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCloudMapOptionsBuilder_ecs_Identifier(), ecorePackage.getEString(), "identifier", null, 0, 1,
+				CloudMapOptionsBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCloudMapOptionsBuilder_ecs_AdditionalCode(), ecorePackage.getEString(), "additionalCode",
+				null, 0, 1, CloudMapOptionsBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(blockDeviceBuilder_autoscalingEClass, BlockDeviceBuilder_autoscaling.class,
+				"BlockDeviceBuilder_autoscaling", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getBlockDeviceBuilder_autoscaling_DeviceName_java_lang_String_(), ecorePackage.getEString(),
+				"deviceName_java_lang_String_", null, 0, 1, BlockDeviceBuilder_autoscaling.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getBlockDeviceBuilder_autoscaling_VolumeWithBlockDeviceVolume_software_amazon_awscdk_services_autoscaling_BlockDeviceVolume_AsReference(),
+				ecorePackage.getEString(),
+				"volumeWithBlockDeviceVolume_software_amazon_awscdk_services_autoscaling_BlockDeviceVolume_AsReference",
+				null, 0, 1, BlockDeviceBuilder_autoscaling.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getBlockDeviceBuilder_autoscaling_MappingEnabled_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "mappingEnabled_java_lang_Boolean_", null, 0, 1,
+				BlockDeviceBuilder_autoscaling.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getBlockDeviceBuilder_autoscaling_GeneratedClassName(), ecorePackage.getEString(),
+				"generatedClassName", "software.amazon.awscdk.services.autoscaling.BlockDevice", 0, 1,
+				BlockDeviceBuilder_autoscaling.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getBlockDeviceBuilder_autoscaling_VarName(), ecorePackage.getEString(), "varName", null, 0, 1,
+				BlockDeviceBuilder_autoscaling.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getBlockDeviceBuilder_autoscaling_Identifier(), ecorePackage.getEString(), "identifier", null, 0,
+				1, BlockDeviceBuilder_autoscaling.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getBlockDeviceBuilder_autoscaling_AdditionalCode(), ecorePackage.getEString(), "additionalCode",
+				null, 0, 1, BlockDeviceBuilder_autoscaling.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(healthCheckBuilder_ecsEClass, HealthCheckBuilder_ecs.class, "HealthCheckBuilder_ecs", !IS_ABSTRACT,
+				!IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getHealthCheckBuilder_ecs_Command_java_lang_String_AsList(), ecorePackage.getEString(),
+				"command_java_lang_String_AsList", null, 0, 1, HealthCheckBuilder_ecs.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getHealthCheckBuilder_ecs_IntervalWithDuration_software_amazon_awscdk_core_Duration_AsReference(),
+				ecorePackage.getEString(), "intervalWithDuration_software_amazon_awscdk_core_Duration_AsReference",
+				null, 0, 1, HealthCheckBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getHealthCheckBuilder_ecs_Retries_java_lang_Number_(), ecorePackage.getEInt(),
+				"retries_java_lang_Number_", null, 0, 1, HealthCheckBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getHealthCheckBuilder_ecs_StartPeriodWithDuration_software_amazon_awscdk_core_Duration_AsReference(),
+				ecorePackage.getEString(), "startPeriodWithDuration_software_amazon_awscdk_core_Duration_AsReference",
+				null, 0, 1, HealthCheckBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getHealthCheckBuilder_ecs_TimeoutWithDuration_software_amazon_awscdk_core_Duration_AsReference(),
+				ecorePackage.getEString(), "timeoutWithDuration_software_amazon_awscdk_core_Duration_AsReference", null,
+				0, 1, HealthCheckBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getHealthCheckBuilder_ecs_GeneratedClassName(), ecorePackage.getEString(), "generatedClassName",
+				"software.amazon.awscdk.services.ecs.HealthCheck", 0, 1, HealthCheckBuilder_ecs.class, !IS_TRANSIENT,
+				!IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getHealthCheckBuilder_ecs_VarName(), ecorePackage.getEString(), "varName", null, 0, 1,
+				HealthCheckBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getHealthCheckBuilder_ecs_Identifier(), ecorePackage.getEString(), "identifier", null, 0, 1,
+				HealthCheckBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getHealthCheckBuilder_ecs_AdditionalCode(), ecorePackage.getEString(), "additionalCode", null, 0,
+				1, HealthCheckBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(amazonLinuxImageBuilder_ec2EClass, AmazonLinuxImageBuilder_ec2.class, "AmazonLinuxImageBuilder_ec2",
+				!IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getAmazonLinuxImageBuilder_ec2_Edition_software_amazon_awscdk_services_ec2_AmazonLinuxEdition_(),
+				this.getAmazonLinuxEdition(), "edition_software_amazon_awscdk_services_ec2_AmazonLinuxEdition_", null,
+				0, 1, AmazonLinuxImageBuilder_ec2.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getAmazonLinuxImageBuilder_ec2_Generation_software_amazon_awscdk_services_ec2_AmazonLinuxGeneration_(),
+				this.getAmazonLinuxGeneration(),
+				"generation_software_amazon_awscdk_services_ec2_AmazonLinuxGeneration_", null, 0, 1,
+				AmazonLinuxImageBuilder_ec2.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAmazonLinuxImageBuilder_ec2_Storage_software_amazon_awscdk_services_ec2_AmazonLinuxStorage_(),
+				this.getAmazonLinuxStorage(), "storage_software_amazon_awscdk_services_ec2_AmazonLinuxStorage_", null,
+				0, 1, AmazonLinuxImageBuilder_ec2.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getAmazonLinuxImageBuilder_ec2_UserDataWithUserData_software_amazon_awscdk_services_ec2_UserData_AsReference(),
+				ecorePackage.getEString(),
+				"userDataWithUserData_software_amazon_awscdk_services_ec2_UserData_AsReference", null, 0, 1,
+				AmazonLinuxImageBuilder_ec2.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getAmazonLinuxImageBuilder_ec2_Virtualization_software_amazon_awscdk_services_ec2_AmazonLinuxVirt_(),
+				this.getAmazonLinuxVirt(), "virtualization_software_amazon_awscdk_services_ec2_AmazonLinuxVirt_", null,
+				0, 1, AmazonLinuxImageBuilder_ec2.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAmazonLinuxImageBuilder_ec2_GeneratedClassName(), ecorePackage.getEString(),
+				"generatedClassName", "software.amazon.awscdk.services.ec2.AmazonLinuxImage", 0, 1,
+				AmazonLinuxImageBuilder_ec2.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAmazonLinuxImageBuilder_ec2_VarName(), ecorePackage.getEString(), "varName", null, 0, 1,
+				AmazonLinuxImageBuilder_ec2.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAmazonLinuxImageBuilder_ec2_Identifier(), ecorePackage.getEString(), "identifier", null, 0, 1,
+				AmazonLinuxImageBuilder_ec2.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAmazonLinuxImageBuilder_ec2_AdditionalCode(), ecorePackage.getEString(), "additionalCode",
+				null, 0, 1, AmazonLinuxImageBuilder_ec2.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(rollingUpdateConfigurationBuilder_autoscalingEClass,
+				RollingUpdateConfigurationBuilder_autoscaling.class, "RollingUpdateConfigurationBuilder_autoscaling",
+				!IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getRollingUpdateConfigurationBuilder_autoscaling_MaxBatchSize_java_lang_Number_(),
+				ecorePackage.getEInt(), "maxBatchSize_java_lang_Number_", null, 0, 1,
+				RollingUpdateConfigurationBuilder_autoscaling.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getRollingUpdateConfigurationBuilder_autoscaling_MinInstancesInService_java_lang_Number_(),
+				ecorePackage.getEInt(), "minInstancesInService_java_lang_Number_", null, 0, 1,
+				RollingUpdateConfigurationBuilder_autoscaling.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getRollingUpdateConfigurationBuilder_autoscaling_MinSuccessfulInstancesPercent_java_lang_Number_(),
+				ecorePackage.getEInt(), "minSuccessfulInstancesPercent_java_lang_Number_", null, 0, 1,
+				RollingUpdateConfigurationBuilder_autoscaling.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getRollingUpdateConfigurationBuilder_autoscaling_PauseTimeWithDuration_software_amazon_awscdk_core_Duration_AsReference(),
+				ecorePackage.getEString(), "pauseTimeWithDuration_software_amazon_awscdk_core_Duration_AsReference",
+				null, 0, 1, RollingUpdateConfigurationBuilder_autoscaling.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getRollingUpdateConfigurationBuilder_autoscaling_SuspendProcesses_software_amazon_awscdk_services_autoscaling_ScalingProcess_AsList(),
+				ecorePackage.getEString(),
+				"suspendProcesses_software_amazon_awscdk_services_autoscaling_ScalingProcess_AsList", null, 0, 1,
+				RollingUpdateConfigurationBuilder_autoscaling.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getRollingUpdateConfigurationBuilder_autoscaling_WaitOnResourceSignals_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "waitOnResourceSignals_java_lang_Boolean_", null, 0, 1,
+				RollingUpdateConfigurationBuilder_autoscaling.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getRollingUpdateConfigurationBuilder_autoscaling_GeneratedClassName(), ecorePackage.getEString(),
+				"generatedClassName", "software.amazon.awscdk.services.autoscaling.RollingUpdateConfiguration", 0, 1,
+				RollingUpdateConfigurationBuilder_autoscaling.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getRollingUpdateConfigurationBuilder_autoscaling_VarName(), ecorePackage.getEString(), "varName",
+				null, 0, 1, RollingUpdateConfigurationBuilder_autoscaling.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getRollingUpdateConfigurationBuilder_autoscaling_Identifier(), ecorePackage.getEString(),
+				"identifier", null, 0, 1, RollingUpdateConfigurationBuilder_autoscaling.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getRollingUpdateConfigurationBuilder_autoscaling_AdditionalCode(), ecorePackage.getEString(),
+				"additionalCode", null, 0, 1, RollingUpdateConfigurationBuilder_autoscaling.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(addCapacityOptionsBuilder_ecsEClass, AddCapacityOptionsBuilder_ecs.class,
+				"AddCapacityOptionsBuilder_ecs", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(
+				getAddCapacityOptionsBuilder_ecs_InstanceTypeWithInstanceType_software_amazon_awscdk_services_ec2_InstanceType_AsReference(),
+				ecorePackage.getEString(),
+				"instanceTypeWithInstanceType_software_amazon_awscdk_services_ec2_InstanceType_AsReference", null, 0, 1,
+				AddCapacityOptionsBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getAddCapacityOptionsBuilder_ecs_MachineImageWithIMachineImage_software_amazon_awscdk_services_ec2_IMachineImage_AsReference(),
+				ecorePackage.getEString(),
+				"machineImageWithIMachineImage_software_amazon_awscdk_services_ec2_IMachineImage_AsReference", null, 0,
+				1, AddCapacityOptionsBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAddCapacityOptionsBuilder_ecs_CanContainersAccessInstanceRole_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "canContainersAccessInstanceRole_java_lang_Boolean_", null, 0, 1,
+				AddCapacityOptionsBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAddCapacityOptionsBuilder_ecs_SpotInstanceDraining_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "spotInstanceDraining_java_lang_Boolean_", null, 0, 1,
+				AddCapacityOptionsBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getAddCapacityOptionsBuilder_ecs_TaskDrainTimeWithDuration_software_amazon_awscdk_core_Duration_AsReference(),
+				ecorePackage.getEString(), "taskDrainTimeWithDuration_software_amazon_awscdk_core_Duration_AsReference",
+				null, 0, 1, AddCapacityOptionsBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAddCapacityOptionsBuilder_ecs_AllowAllOutbound_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "allowAllOutbound_java_lang_Boolean_", null, 0, 1,
+				AddCapacityOptionsBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAddCapacityOptionsBuilder_ecs_AssociatePublicIpAddress_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "associatePublicIpAddress_java_lang_Boolean_", null, 0, 1,
+				AddCapacityOptionsBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getAddCapacityOptionsBuilder_ecs_BlockDevices_software_amazon_awscdk_services_autoscaling_BlockDevice_AsList(),
+				ecorePackage.getEString(),
+				"blockDevices_software_amazon_awscdk_services_autoscaling_BlockDevice_AsList", null, 0, 1,
+				AddCapacityOptionsBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getAddCapacityOptionsBuilder_ecs_CooldownWithDuration_software_amazon_awscdk_core_Duration_AsReference(),
+				ecorePackage.getEString(), "cooldownWithDuration_software_amazon_awscdk_core_Duration_AsReference",
+				null, 0, 1, AddCapacityOptionsBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAddCapacityOptionsBuilder_ecs_DesiredCapacity_java_lang_Number_(), ecorePackage.getEInt(),
+				"desiredCapacity_java_lang_Number_", null, 0, 1, AddCapacityOptionsBuilder_ecs.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getAddCapacityOptionsBuilder_ecs_HealthCheckWithHealthCheck_software_amazon_awscdk_services_ecs_HealthCheck_AsReference(),
+				ecorePackage.getEString(),
+				"healthCheckWithHealthCheck_software_amazon_awscdk_services_ecs_HealthCheck_AsReference", null, 0, 1,
+				AddCapacityOptionsBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAddCapacityOptionsBuilder_ecs_IgnoreUnmodifiedSizeProperties_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "ignoreUnmodifiedSizeProperties_java_lang_Boolean_", null, 0, 1,
+				AddCapacityOptionsBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAddCapacityOptionsBuilder_ecs_KeyName_java_lang_String_(), ecorePackage.getEString(),
+				"keyName_java_lang_String_", null, 0, 1, AddCapacityOptionsBuilder_ecs.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAddCapacityOptionsBuilder_ecs_MaxCapacity_java_lang_Number_(), ecorePackage.getEInt(),
+				"maxCapacity_java_lang_Number_", null, 0, 1, AddCapacityOptionsBuilder_ecs.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getAddCapacityOptionsBuilder_ecs_MaxInstanceLifetimeWithDuration_software_amazon_awscdk_core_Duration_AsReference(),
+				ecorePackage.getEString(),
+				"maxInstanceLifetimeWithDuration_software_amazon_awscdk_core_Duration_AsReference", null, 0, 1,
+				AddCapacityOptionsBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAddCapacityOptionsBuilder_ecs_MinCapacity_java_lang_Number_(), ecorePackage.getEInt(),
+				"minCapacity_java_lang_Number_", null, 0, 1, AddCapacityOptionsBuilder_ecs.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getAddCapacityOptionsBuilder_ecs_NotificationsTopicWithITopic_software_amazon_awscdk_services_sns_ITopic_AsReference(),
+				ecorePackage.getEString(),
+				"notificationsTopicWithITopic_software_amazon_awscdk_services_sns_ITopic_AsReference", null, 0, 1,
+				AddCapacityOptionsBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getAddCapacityOptionsBuilder_ecs_ReplacingUpdateMinSuccessfulInstancesPercent_java_lang_Number_(),
+				ecorePackage.getEInt(), "replacingUpdateMinSuccessfulInstancesPercent_java_lang_Number_", null, 0, 1,
+				AddCapacityOptionsBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAddCapacityOptionsBuilder_ecs_ResourceSignalCount_java_lang_Number_(), ecorePackage.getEInt(),
+				"resourceSignalCount_java_lang_Number_", null, 0, 1, AddCapacityOptionsBuilder_ecs.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getAddCapacityOptionsBuilder_ecs_ResourceSignalTimeoutWithDuration_software_amazon_awscdk_core_Duration_AsReference(),
+				ecorePackage.getEString(),
+				"resourceSignalTimeoutWithDuration_software_amazon_awscdk_core_Duration_AsReference", null, 0, 1,
+				AddCapacityOptionsBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getAddCapacityOptionsBuilder_ecs_RollingUpdateConfigurationWithRollingUpdateConfiguration_software_amazon_awscdk_services_autoscaling_RollingUpdateConfiguration_AsReference(),
+				ecorePackage.getEString(),
+				"rollingUpdateConfigurationWithRollingUpdateConfiguration_software_amazon_awscdk_services_autoscaling_RollingUpdateConfiguration_AsReference",
+				null, 0, 1, AddCapacityOptionsBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAddCapacityOptionsBuilder_ecs_SpotPrice_java_lang_String_(), ecorePackage.getEString(),
+				"spotPrice_java_lang_String_", null, 0, 1, AddCapacityOptionsBuilder_ecs.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getAddCapacityOptionsBuilder_ecs_UpdateType_software_amazon_awscdk_services_autoscaling_UpdateType_(),
+				this.getUpdateType(), "updateType_software_amazon_awscdk_services_autoscaling_UpdateType_", null, 0, 1,
+				AddCapacityOptionsBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getAddCapacityOptionsBuilder_ecs_VpcSubnetsWithSubnetSelection_software_amazon_awscdk_services_ec2_SubnetSelection_AsReference(),
+				ecorePackage.getEString(),
+				"vpcSubnetsWithSubnetSelection_software_amazon_awscdk_services_ec2_SubnetSelection_AsReference", null,
+				0, 1, AddCapacityOptionsBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAddCapacityOptionsBuilder_ecs_GeneratedClassName(), ecorePackage.getEString(),
+				"generatedClassName", "software.amazon.awscdk.services.ecs.AddCapacityOptions", 0, 1,
+				AddCapacityOptionsBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAddCapacityOptionsBuilder_ecs_VarName(), ecorePackage.getEString(), "varName", null, 0, 1,
+				AddCapacityOptionsBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAddCapacityOptionsBuilder_ecs_Identifier(), ecorePackage.getEString(), "identifier", null, 0,
+				1, AddCapacityOptionsBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAddCapacityOptionsBuilder_ecs_AdditionalCode(), ecorePackage.getEString(), "additionalCode",
+				null, 0, 1, AddCapacityOptionsBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(cloudMapNamespaceOptionsBuilder_ecsEClass, CloudMapNamespaceOptionsBuilder_ecs.class,
+				"CloudMapNamespaceOptionsBuilder_ecs", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getCloudMapNamespaceOptionsBuilder_ecs_Name_java_lang_String_(), ecorePackage.getEString(),
+				"name_java_lang_String_", null, 0, 1, CloudMapNamespaceOptionsBuilder_ecs.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getCloudMapNamespaceOptionsBuilder_ecs_Type_software_amazon_awscdk_services_servicediscovery_NamespaceType_(),
+				this.getNamespaceType(), "type_software_amazon_awscdk_services_servicediscovery_NamespaceType_", null,
+				0, 1, CloudMapNamespaceOptionsBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getCloudMapNamespaceOptionsBuilder_ecs_VpcWithIVpc_software_amazon_awscdk_services_ec2_IVpc_AsReference(),
+				ecorePackage.getEString(), "vpcWithIVpc_software_amazon_awscdk_services_ec2_IVpc_AsReference", null, 0,
+				1, CloudMapNamespaceOptionsBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCloudMapNamespaceOptionsBuilder_ecs_GeneratedClassName(), ecorePackage.getEString(),
+				"generatedClassName", "software.amazon.awscdk.services.ecs.CloudMapNamespaceOptions", 0, 1,
+				CloudMapNamespaceOptionsBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCloudMapNamespaceOptionsBuilder_ecs_VarName(), ecorePackage.getEString(), "varName", null, 0,
+				1, CloudMapNamespaceOptionsBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCloudMapNamespaceOptionsBuilder_ecs_Identifier(), ecorePackage.getEString(), "identifier",
+				null, 0, 1, CloudMapNamespaceOptionsBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCloudMapNamespaceOptionsBuilder_ecs_AdditionalCode(), ecorePackage.getEString(),
+				"additionalCode", null, 0, 1, CloudMapNamespaceOptionsBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(clusterBuilder_ecsEClass, ClusterBuilder_ecs.class, "ClusterBuilder_ecs", !IS_ABSTRACT,
+				!IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(
+				getClusterBuilder_ecs_CapacityWithAddCapacityOptions_software_amazon_awscdk_services_ecs_AddCapacityOptions_AsReference(),
+				ecorePackage.getEString(),
+				"capacityWithAddCapacityOptions_software_amazon_awscdk_services_ecs_AddCapacityOptions_AsReference",
+				null, 0, 1, ClusterBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getClusterBuilder_ecs_ClusterName_java_lang_String_(), ecorePackage.getEString(),
+				"clusterName_java_lang_String_", null, 0, 1, ClusterBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getClusterBuilder_ecs_ContainerInsights_java_lang_Boolean_(), ecorePackage.getEBooleanObject(),
+				"containerInsights_java_lang_Boolean_", null, 0, 1, ClusterBuilder_ecs.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getClusterBuilder_ecs_DefaultCloudMapNamespaceWithCloudMapNamespaceOptions_software_amazon_awscdk_services_ecs_CloudMapNamespaceOptions_AsReference(),
+				ecorePackage.getEString(),
+				"defaultCloudMapNamespaceWithCloudMapNamespaceOptions_software_amazon_awscdk_services_ecs_CloudMapNamespaceOptions_AsReference",
+				null, 0, 1, ClusterBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getClusterBuilder_ecs_VpcWithIVpc_software_amazon_awscdk_services_ec2_IVpc_AsReference(),
+				ecorePackage.getEString(), "vpcWithIVpc_software_amazon_awscdk_services_ec2_IVpc_AsReference", null, 0,
+				1, ClusterBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getClusterBuilder_ecs_GeneratedClassName(), ecorePackage.getEString(), "generatedClassName",
+				"software.amazon.awscdk.services.ecs.Cluster", 0, 1, ClusterBuilder_ecs.class, !IS_TRANSIENT,
+				!IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getClusterBuilder_ecs_VarName(), ecorePackage.getEString(), "varName", null, 0, 1,
+				ClusterBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+				!IS_DERIVED, IS_ORDERED);
+		initEAttribute(getClusterBuilder_ecs_Identifier(), ecorePackage.getEString(), "identifier", null, 0, 1,
+				ClusterBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+				!IS_DERIVED, IS_ORDERED);
+		initEAttribute(getClusterBuilder_ecs_AdditionalCode(), ecorePackage.getEString(), "additionalCode", null, 0, 1,
+				ClusterBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+				!IS_DERIVED, IS_ORDERED);
+
+		initEClass(applicationLoadBalancerBuilder_elasticloadbalancingv2EClass,
+				ApplicationLoadBalancerBuilder_elasticloadbalancingv2.class,
+				"ApplicationLoadBalancerBuilder_elasticloadbalancingv2", !IS_ABSTRACT, !IS_INTERFACE,
+				IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(
+				getApplicationLoadBalancerBuilder_elasticloadbalancingv2_VpcWithIVpc_software_amazon_awscdk_services_ec2_IVpc_AsReference(),
+				ecorePackage.getEString(), "vpcWithIVpc_software_amazon_awscdk_services_ec2_IVpc_AsReference", null, 0,
+				1, ApplicationLoadBalancerBuilder_elasticloadbalancingv2.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getApplicationLoadBalancerBuilder_elasticloadbalancingv2_DeletionProtection_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "deletionProtection_java_lang_Boolean_", null, 0, 1,
+				ApplicationLoadBalancerBuilder_elasticloadbalancingv2.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getApplicationLoadBalancerBuilder_elasticloadbalancingv2_InternetFacing_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "internetFacing_java_lang_Boolean_", null, 0, 1,
+				ApplicationLoadBalancerBuilder_elasticloadbalancingv2.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getApplicationLoadBalancerBuilder_elasticloadbalancingv2_LoadBalancerName_java_lang_String_(),
+				ecorePackage.getEString(), "loadBalancerName_java_lang_String_", null, 0, 1,
+				ApplicationLoadBalancerBuilder_elasticloadbalancingv2.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getApplicationLoadBalancerBuilder_elasticloadbalancingv2_VpcSubnetsWithSubnetSelection_software_amazon_awscdk_services_ec2_SubnetSelection_AsReference(),
+				ecorePackage.getEString(),
+				"vpcSubnetsWithSubnetSelection_software_amazon_awscdk_services_ec2_SubnetSelection_AsReference", null,
+				0, 1, ApplicationLoadBalancerBuilder_elasticloadbalancingv2.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getApplicationLoadBalancerBuilder_elasticloadbalancingv2_Http2Enabled_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "http2Enabled_java_lang_Boolean_", null, 0, 1,
+				ApplicationLoadBalancerBuilder_elasticloadbalancingv2.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getApplicationLoadBalancerBuilder_elasticloadbalancingv2_IdleTimeoutWithDuration_software_amazon_awscdk_core_Duration_AsReference(),
+				ecorePackage.getEString(), "idleTimeoutWithDuration_software_amazon_awscdk_core_Duration_AsReference",
+				null, 0, 1, ApplicationLoadBalancerBuilder_elasticloadbalancingv2.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getApplicationLoadBalancerBuilder_elasticloadbalancingv2_IpAddressType_software_amazon_awscdk_services_elasticloadbalancingv2_IpAddressType_(),
+				this.getIpAddressType(),
+				"ipAddressType_software_amazon_awscdk_services_elasticloadbalancingv2_IpAddressType_", null, 0, 1,
+				ApplicationLoadBalancerBuilder_elasticloadbalancingv2.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getApplicationLoadBalancerBuilder_elasticloadbalancingv2_SecurityGroupWithISecurityGroup_software_amazon_awscdk_services_ec2_ISecurityGroup_AsReference(),
+				ecorePackage.getEString(),
+				"securityGroupWithISecurityGroup_software_amazon_awscdk_services_ec2_ISecurityGroup_AsReference", null,
+				0, 1, ApplicationLoadBalancerBuilder_elasticloadbalancingv2.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getApplicationLoadBalancerBuilder_elasticloadbalancingv2_GeneratedClassName(),
+				ecorePackage.getEString(), "generatedClassName",
+				"software.amazon.awscdk.services.elasticloadbalancingv2.ApplicationLoadBalancer", 0, 1,
+				ApplicationLoadBalancerBuilder_elasticloadbalancingv2.class, !IS_TRANSIENT, !IS_VOLATILE,
+				!IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getApplicationLoadBalancerBuilder_elasticloadbalancingv2_VarName(), ecorePackage.getEString(),
+				"varName", null, 0, 1, ApplicationLoadBalancerBuilder_elasticloadbalancingv2.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getApplicationLoadBalancerBuilder_elasticloadbalancingv2_Identifier(), ecorePackage.getEString(),
+				"identifier", null, 0, 1, ApplicationLoadBalancerBuilder_elasticloadbalancingv2.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getApplicationLoadBalancerBuilder_elasticloadbalancingv2_AdditionalCode(),
+				ecorePackage.getEString(), "additionalCode", null, 0, 1,
+				ApplicationLoadBalancerBuilder_elasticloadbalancingv2.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(dockerImageAssetBuilder_assetsEClass, DockerImageAssetBuilder_assets.class,
+				"DockerImageAssetBuilder_assets", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getDockerImageAssetBuilder_assets_Exclude_java_lang_String_AsList(), ecorePackage.getEString(),
+				"exclude_java_lang_String_AsList", null, 0, 1, DockerImageAssetBuilder_assets.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getDockerImageAssetBuilder_assets_Follow_software_amazon_awscdk_assets_FollowMode_(),
+				this.getFollowMode(), "follow_software_amazon_awscdk_assets_FollowMode_", null, 0, 1,
+				DockerImageAssetBuilder_assets.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getDockerImageAssetBuilder_assets_ExtraHash_java_lang_String_(), ecorePackage.getEString(),
+				"extraHash_java_lang_String_", null, 0, 1, DockerImageAssetBuilder_assets.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getDockerImageAssetBuilder_assets_BuildArgs_java_lang_String__java_lang_String_AsMap(),
+				ecorePackage.getEString(), "buildArgs_java_lang_String__java_lang_String_AsMap", null, 0, 1,
+				DockerImageAssetBuilder_assets.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getDockerImageAssetBuilder_assets_File_java_lang_String_(), ecorePackage.getEString(),
+				"file_java_lang_String_", null, 0, 1, DockerImageAssetBuilder_assets.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getDockerImageAssetBuilder_assets_RepositoryName_java_lang_String_(), ecorePackage.getEString(),
+				"repositoryName_java_lang_String_", null, 0, 1, DockerImageAssetBuilder_assets.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getDockerImageAssetBuilder_assets_Target_java_lang_String_(), ecorePackage.getEString(),
+				"target_java_lang_String_", null, 0, 1, DockerImageAssetBuilder_assets.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getDockerImageAssetBuilder_assets_Directory_java_lang_String_(), ecorePackage.getEString(),
+				"directory_java_lang_String_", null, 0, 1, DockerImageAssetBuilder_assets.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getDockerImageAssetBuilder_assets_GeneratedClassName(), ecorePackage.getEString(),
+				"generatedClassName", "software.amazon.awscdk.services.ecr.assets.DockerImageAsset", 0, 1,
+				DockerImageAssetBuilder_assets.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getDockerImageAssetBuilder_assets_VarName(), ecorePackage.getEString(), "varName", null, 0, 1,
+				DockerImageAssetBuilder_assets.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getDockerImageAssetBuilder_assets_Identifier(), ecorePackage.getEString(), "identifier", null, 0,
+				1, DockerImageAssetBuilder_assets.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getDockerImageAssetBuilder_assets_AdditionalCode(), ecorePackage.getEString(), "additionalCode",
+				null, 0, 1, DockerImageAssetBuilder_assets.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(assetImageBuilder_ecsEClass, AssetImageBuilder_ecs.class, "AssetImageBuilder_ecs", !IS_ABSTRACT,
+				!IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getAssetImageBuilder_ecs_Exclude_java_lang_String_AsList(), ecorePackage.getEString(),
+				"exclude_java_lang_String_AsList", null, 0, 1, AssetImageBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAssetImageBuilder_ecs_Follow_software_amazon_awscdk_assets_FollowMode_(),
+				this.getFollowMode(), "follow_software_amazon_awscdk_assets_FollowMode_", null, 0, 1,
+				AssetImageBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAssetImageBuilder_ecs_ExtraHash_java_lang_String_(), ecorePackage.getEString(),
+				"extraHash_java_lang_String_", null, 0, 1, AssetImageBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAssetImageBuilder_ecs_BuildArgs_java_lang_String__java_lang_String_AsMap(),
+				ecorePackage.getEString(), "buildArgs_java_lang_String__java_lang_String_AsMap", null, 0, 1,
+				AssetImageBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAssetImageBuilder_ecs_File_java_lang_String_(), ecorePackage.getEString(),
+				"file_java_lang_String_", null, 0, 1, AssetImageBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAssetImageBuilder_ecs_RepositoryName_java_lang_String_(), ecorePackage.getEString(),
+				"repositoryName_java_lang_String_", null, 0, 1, AssetImageBuilder_ecs.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAssetImageBuilder_ecs_Target_java_lang_String_(), ecorePackage.getEString(),
+				"target_java_lang_String_", null, 0, 1, AssetImageBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAssetImageBuilder_ecs_GeneratedClassName(), ecorePackage.getEString(), "generatedClassName",
+				"software.amazon.awscdk.services.ecs.AssetImage", 0, 1, AssetImageBuilder_ecs.class, !IS_TRANSIENT,
+				!IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAssetImageBuilder_ecs_VarName(), ecorePackage.getEString(), "varName", null, 0, 1,
+				AssetImageBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAssetImageBuilder_ecs_Identifier(), ecorePackage.getEString(), "identifier", null, 0, 1,
+				AssetImageBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAssetImageBuilder_ecs_AdditionalCode(), ecorePackage.getEString(), "additionalCode", null, 0,
+				1, AssetImageBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(secretStringGeneratorBuilder_secretsmanagerEClass, SecretStringGeneratorBuilder_secretsmanager.class,
+				"SecretStringGeneratorBuilder_secretsmanager", !IS_ABSTRACT, !IS_INTERFACE,
+				IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getSecretStringGeneratorBuilder_secretsmanager_ExcludeCharacters_java_lang_String_(),
+				ecorePackage.getEString(), "excludeCharacters_java_lang_String_", null, 0, 1,
+				SecretStringGeneratorBuilder_secretsmanager.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getSecretStringGeneratorBuilder_secretsmanager_ExcludeLowercase_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "excludeLowercase_java_lang_Boolean_", null, 0, 1,
+				SecretStringGeneratorBuilder_secretsmanager.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getSecretStringGeneratorBuilder_secretsmanager_ExcludeNumbers_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "excludeNumbers_java_lang_Boolean_", null, 0, 1,
+				SecretStringGeneratorBuilder_secretsmanager.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getSecretStringGeneratorBuilder_secretsmanager_ExcludePunctuation_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "excludePunctuation_java_lang_Boolean_", null, 0, 1,
+				SecretStringGeneratorBuilder_secretsmanager.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getSecretStringGeneratorBuilder_secretsmanager_ExcludeUppercase_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "excludeUppercase_java_lang_Boolean_", null, 0, 1,
+				SecretStringGeneratorBuilder_secretsmanager.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getSecretStringGeneratorBuilder_secretsmanager_GenerateStringKey_java_lang_String_(),
+				ecorePackage.getEString(), "generateStringKey_java_lang_String_", null, 0, 1,
+				SecretStringGeneratorBuilder_secretsmanager.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getSecretStringGeneratorBuilder_secretsmanager_IncludeSpace_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "includeSpace_java_lang_Boolean_", null, 0, 1,
+				SecretStringGeneratorBuilder_secretsmanager.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getSecretStringGeneratorBuilder_secretsmanager_PasswordLength_java_lang_Number_(),
+				ecorePackage.getEInt(), "passwordLength_java_lang_Number_", null, 0, 1,
+				SecretStringGeneratorBuilder_secretsmanager.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getSecretStringGeneratorBuilder_secretsmanager_RequireEachIncludedType_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "requireEachIncludedType_java_lang_Boolean_", null, 0, 1,
+				SecretStringGeneratorBuilder_secretsmanager.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getSecretStringGeneratorBuilder_secretsmanager_SecretStringTemplate_java_lang_String_(),
+				ecorePackage.getEString(), "secretStringTemplate_java_lang_String_", null, 0, 1,
+				SecretStringGeneratorBuilder_secretsmanager.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getSecretStringGeneratorBuilder_secretsmanager_GeneratedClassName(), ecorePackage.getEString(),
+				"generatedClassName", "software.amazon.awscdk.services.secretsmanager.SecretStringGenerator", 0, 1,
+				SecretStringGeneratorBuilder_secretsmanager.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getSecretStringGeneratorBuilder_secretsmanager_VarName(), ecorePackage.getEString(), "varName",
+				null, 0, 1, SecretStringGeneratorBuilder_secretsmanager.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getSecretStringGeneratorBuilder_secretsmanager_Identifier(), ecorePackage.getEString(),
+				"identifier", null, 0, 1, SecretStringGeneratorBuilder_secretsmanager.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getSecretStringGeneratorBuilder_secretsmanager_AdditionalCode(), ecorePackage.getEString(),
+				"additionalCode", null, 0, 1, SecretStringGeneratorBuilder_secretsmanager.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(secretBuilder_secretsmanagerEClass, SecretBuilder_secretsmanager.class,
+				"SecretBuilder_secretsmanager", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getSecretBuilder_secretsmanager_Description_java_lang_String_(), ecorePackage.getEString(),
+				"description_java_lang_String_", null, 0, 1, SecretBuilder_secretsmanager.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getSecretBuilder_secretsmanager_EncryptionKeyWithIKey_software_amazon_awscdk_services_kms_IKey_AsReference(),
+				ecorePackage.getEString(), "encryptionKeyWithIKey_software_amazon_awscdk_services_kms_IKey_AsReference",
+				null, 0, 1, SecretBuilder_secretsmanager.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getSecretBuilder_secretsmanager_GenerateSecretStringWithSecretStringGenerator_software_amazon_awscdk_services_secretsmanager_SecretStringGenerator_AsReference(),
+				ecorePackage.getEString(),
+				"generateSecretStringWithSecretStringGenerator_software_amazon_awscdk_services_secretsmanager_SecretStringGenerator_AsReference",
+				null, 0, 1, SecretBuilder_secretsmanager.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getSecretBuilder_secretsmanager_SecretName_java_lang_String_(), ecorePackage.getEString(),
+				"secretName_java_lang_String_", null, 0, 1, SecretBuilder_secretsmanager.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getSecretBuilder_secretsmanager_GeneratedClassName(), ecorePackage.getEString(),
+				"generatedClassName", "software.amazon.awscdk.services.secretsmanager.Secret", 0, 1,
+				SecretBuilder_secretsmanager.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getSecretBuilder_secretsmanager_VarName(), ecorePackage.getEString(), "varName", null, 0, 1,
+				SecretBuilder_secretsmanager.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getSecretBuilder_secretsmanager_Identifier(), ecorePackage.getEString(), "identifier", null, 0,
+				1, SecretBuilder_secretsmanager.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getSecretBuilder_secretsmanager_AdditionalCode(), ecorePackage.getEString(), "additionalCode",
+				null, 0, 1, SecretBuilder_secretsmanager.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(awsLogDriverBuilder_ecsEClass, AwsLogDriverBuilder_ecs.class, "AwsLogDriverBuilder_ecs",
+				!IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getAwsLogDriverBuilder_ecs_StreamPrefix_java_lang_String_(), ecorePackage.getEString(),
+				"streamPrefix_java_lang_String_", null, 0, 1, AwsLogDriverBuilder_ecs.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAwsLogDriverBuilder_ecs_DatetimeFormat_java_lang_String_(), ecorePackage.getEString(),
+				"datetimeFormat_java_lang_String_", null, 0, 1, AwsLogDriverBuilder_ecs.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getAwsLogDriverBuilder_ecs_LogGroupWithILogGroup_software_amazon_awscdk_services_logs_ILogGroup_AsReference(),
+				ecorePackage.getEString(),
+				"logGroupWithILogGroup_software_amazon_awscdk_services_logs_ILogGroup_AsReference", null, 0, 1,
+				AwsLogDriverBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAwsLogDriverBuilder_ecs_LogRetention_software_amazon_awscdk_services_logs_RetentionDays_(),
+				this.getRetentionDays(), "logRetention_software_amazon_awscdk_services_logs_RetentionDays_", null, 0, 1,
+				AwsLogDriverBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAwsLogDriverBuilder_ecs_MultilinePattern_java_lang_String_(), ecorePackage.getEString(),
+				"multilinePattern_java_lang_String_", null, 0, 1, AwsLogDriverBuilder_ecs.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAwsLogDriverBuilder_ecs_GeneratedClassName(), ecorePackage.getEString(), "generatedClassName",
+				"software.amazon.awscdk.services.ecs.AwsLogDriver", 0, 1, AwsLogDriverBuilder_ecs.class, !IS_TRANSIENT,
+				!IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAwsLogDriverBuilder_ecs_VarName(), ecorePackage.getEString(), "varName", null, 0, 1,
+				AwsLogDriverBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAwsLogDriverBuilder_ecs_Identifier(), ecorePackage.getEString(), "identifier", null, 0, 1,
+				AwsLogDriverBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAwsLogDriverBuilder_ecs_AdditionalCode(), ecorePackage.getEString(), "additionalCode", null,
+				0, 1, AwsLogDriverBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(logGroupBuilder_logsEClass, LogGroupBuilder_logs.class, "LogGroupBuilder_logs", !IS_ABSTRACT,
+				!IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getLogGroupBuilder_logs_LogGroupName_java_lang_String_(), ecorePackage.getEString(),
+				"logGroupName_java_lang_String_", null, 0, 1, LogGroupBuilder_logs.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getLogGroupBuilder_logs_RemovalPolicy_software_amazon_awscdk_core_RemovalPolicy_(),
+				this.getRemovalPolicy(), "removalPolicy_software_amazon_awscdk_core_RemovalPolicy_", null, 0, 1,
+				LogGroupBuilder_logs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getLogGroupBuilder_logs_Retention_software_amazon_awscdk_services_logs_RetentionDays_(),
+				this.getRetentionDays(), "retention_software_amazon_awscdk_services_logs_RetentionDays_", null, 0, 1,
+				LogGroupBuilder_logs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getLogGroupBuilder_logs_GeneratedClassName(), ecorePackage.getEString(), "generatedClassName",
+				"software.amazon.awscdk.services.logs.LogGroup", 0, 1, LogGroupBuilder_logs.class, !IS_TRANSIENT,
+				!IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getLogGroupBuilder_logs_VarName(), ecorePackage.getEString(), "varName", null, 0, 1,
+				LogGroupBuilder_logs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getLogGroupBuilder_logs_Identifier(), ecorePackage.getEString(), "identifier", null, 0, 1,
+				LogGroupBuilder_logs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getLogGroupBuilder_logs_AdditionalCode(), ecorePackage.getEString(), "additionalCode", null, 0,
+				1, LogGroupBuilder_logs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(awsLogDriverPropsBuilder_ecsEClass, AwsLogDriverPropsBuilder_ecs.class,
+				"AwsLogDriverPropsBuilder_ecs", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getAwsLogDriverPropsBuilder_ecs_StreamPrefix_java_lang_String_(), ecorePackage.getEString(),
+				"streamPrefix_java_lang_String_", null, 0, 1, AwsLogDriverPropsBuilder_ecs.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAwsLogDriverPropsBuilder_ecs_DatetimeFormat_java_lang_String_(), ecorePackage.getEString(),
+				"datetimeFormat_java_lang_String_", null, 0, 1, AwsLogDriverPropsBuilder_ecs.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getAwsLogDriverPropsBuilder_ecs_LogGroupWithILogGroup_software_amazon_awscdk_services_logs_ILogGroup_AsReference(),
+				ecorePackage.getEString(),
+				"logGroupWithILogGroup_software_amazon_awscdk_services_logs_ILogGroup_AsReference", null, 0, 1,
+				AwsLogDriverPropsBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getAwsLogDriverPropsBuilder_ecs_LogRetention_software_amazon_awscdk_services_logs_RetentionDays_(),
+				this.getRetentionDays(), "logRetention_software_amazon_awscdk_services_logs_RetentionDays_", null, 0, 1,
+				AwsLogDriverPropsBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAwsLogDriverPropsBuilder_ecs_MultilinePattern_java_lang_String_(), ecorePackage.getEString(),
+				"multilinePattern_java_lang_String_", null, 0, 1, AwsLogDriverPropsBuilder_ecs.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAwsLogDriverPropsBuilder_ecs_GeneratedClassName(), ecorePackage.getEString(),
+				"generatedClassName", "software.amazon.awscdk.services.ecs.AwsLogDriverProps", 0, 1,
+				AwsLogDriverPropsBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAwsLogDriverPropsBuilder_ecs_VarName(), ecorePackage.getEString(), "varName", null, 0, 1,
+				AwsLogDriverPropsBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAwsLogDriverPropsBuilder_ecs_Identifier(), ecorePackage.getEString(), "identifier", null, 0,
+				1, AwsLogDriverPropsBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAwsLogDriverPropsBuilder_ecs_AdditionalCode(), ecorePackage.getEString(), "additionalCode",
+				null, 0, 1, AwsLogDriverPropsBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(applicationLoadBalancedTaskImageOptionsBuilder_patternsEClass,
+				ApplicationLoadBalancedTaskImageOptionsBuilder_patterns.class,
+				"ApplicationLoadBalancedTaskImageOptionsBuilder_patterns", !IS_ABSTRACT, !IS_INTERFACE,
+				IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(
+				getApplicationLoadBalancedTaskImageOptionsBuilder_patterns_ImageWithContainerImage_software_amazon_awscdk_services_ecs_ContainerImage_AsReference(),
+				ecorePackage.getEString(),
+				"imageWithContainerImage_software_amazon_awscdk_services_ecs_ContainerImage_AsReference", null, 0, 1,
+				ApplicationLoadBalancedTaskImageOptionsBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getApplicationLoadBalancedTaskImageOptionsBuilder_patterns_ContainerName_java_lang_String_(),
+				ecorePackage.getEString(), "containerName_java_lang_String_", null, 0, 1,
+				ApplicationLoadBalancedTaskImageOptionsBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getApplicationLoadBalancedTaskImageOptionsBuilder_patterns_ContainerPort_java_lang_Number_(),
+				ecorePackage.getEInt(), "containerPort_java_lang_Number_", null, 0, 1,
+				ApplicationLoadBalancedTaskImageOptionsBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getApplicationLoadBalancedTaskImageOptionsBuilder_patterns_EnableLogging_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "enableLogging_java_lang_Boolean_", null, 0, 1,
+				ApplicationLoadBalancedTaskImageOptionsBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getApplicationLoadBalancedTaskImageOptionsBuilder_patterns_Environment_java_lang_String__java_lang_String_AsMap(),
+				ecorePackage.getEString(), "environment_java_lang_String__java_lang_String_AsMap", null, 0, 1,
+				ApplicationLoadBalancedTaskImageOptionsBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getApplicationLoadBalancedTaskImageOptionsBuilder_patterns_ExecutionRoleWithIRole_software_amazon_awscdk_services_iam_IRole_AsReference(),
+				ecorePackage.getEString(),
+				"executionRoleWithIRole_software_amazon_awscdk_services_iam_IRole_AsReference", null, 0, 1,
+				ApplicationLoadBalancedTaskImageOptionsBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getApplicationLoadBalancedTaskImageOptionsBuilder_patterns_Family_java_lang_String_(),
+				ecorePackage.getEString(), "family_java_lang_String_", null, 0, 1,
+				ApplicationLoadBalancedTaskImageOptionsBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getApplicationLoadBalancedTaskImageOptionsBuilder_patterns_LogDriverWithLogDriver_software_amazon_awscdk_services_ecs_LogDriver_AsReference(),
+				ecorePackage.getEString(),
+				"logDriverWithLogDriver_software_amazon_awscdk_services_ecs_LogDriver_AsReference", null, 0, 1,
+				ApplicationLoadBalancedTaskImageOptionsBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getApplicationLoadBalancedTaskImageOptionsBuilder_patterns_Secrets_java_lang_String__software_amazon_awscdk_services_ecs_Secret_AsMap(),
+				ecorePackage.getEString(), "secrets_java_lang_String__software_amazon_awscdk_services_ecs_Secret_AsMap",
+				null, 0, 1, ApplicationLoadBalancedTaskImageOptionsBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getApplicationLoadBalancedTaskImageOptionsBuilder_patterns_TaskRoleWithIRole_software_amazon_awscdk_services_iam_IRole_AsReference(),
+				ecorePackage.getEString(), "taskRoleWithIRole_software_amazon_awscdk_services_iam_IRole_AsReference",
+				null, 0, 1, ApplicationLoadBalancedTaskImageOptionsBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getApplicationLoadBalancedTaskImageOptionsBuilder_patterns_GeneratedClassName(),
+				ecorePackage.getEString(), "generatedClassName",
+				"software.amazon.awscdk.services.ecs.patterns.ApplicationLoadBalancedTaskImageOptions", 0, 1,
+				ApplicationLoadBalancedTaskImageOptionsBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				!IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getApplicationLoadBalancedTaskImageOptionsBuilder_patterns_VarName(), ecorePackage.getEString(),
+				"varName", null, 0, 1, ApplicationLoadBalancedTaskImageOptionsBuilder_patterns.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getApplicationLoadBalancedTaskImageOptionsBuilder_patterns_Identifier(),
+				ecorePackage.getEString(), "identifier", null, 0, 1,
+				ApplicationLoadBalancedTaskImageOptionsBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getApplicationLoadBalancedTaskImageOptionsBuilder_patterns_AdditionalCode(),
+				ecorePackage.getEString(), "additionalCode", null, 0, 1,
+				ApplicationLoadBalancedTaskImageOptionsBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(appMeshProxyConfigurationPropsBuilder_ecsEClass, AppMeshProxyConfigurationPropsBuilder_ecs.class,
+				"AppMeshProxyConfigurationPropsBuilder_ecs", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getAppMeshProxyConfigurationPropsBuilder_ecs_AppPorts_java_lang_Number_AsList(),
+				ecorePackage.getEString(), "appPorts_java_lang_Number_AsList", null, 0, 1,
+				AppMeshProxyConfigurationPropsBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAppMeshProxyConfigurationPropsBuilder_ecs_ProxyEgressPort_java_lang_Number_(),
+				ecorePackage.getEInt(), "proxyEgressPort_java_lang_Number_", null, 0, 1,
+				AppMeshProxyConfigurationPropsBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAppMeshProxyConfigurationPropsBuilder_ecs_ProxyIngressPort_java_lang_Number_(),
+				ecorePackage.getEInt(), "proxyIngressPort_java_lang_Number_", null, 0, 1,
+				AppMeshProxyConfigurationPropsBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAppMeshProxyConfigurationPropsBuilder_ecs_EgressIgnoredIPs_java_lang_String_AsList(),
+				ecorePackage.getEString(), "egressIgnoredIPs_java_lang_String_AsList", null, 0, 1,
+				AppMeshProxyConfigurationPropsBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAppMeshProxyConfigurationPropsBuilder_ecs_EgressIgnoredPorts_java_lang_Number_AsList(),
+				ecorePackage.getEString(), "egressIgnoredPorts_java_lang_Number_AsList", null, 0, 1,
+				AppMeshProxyConfigurationPropsBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAppMeshProxyConfigurationPropsBuilder_ecs_IgnoredGid_java_lang_Number_(),
+				ecorePackage.getEInt(), "ignoredGid_java_lang_Number_", null, 0, 1,
+				AppMeshProxyConfigurationPropsBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAppMeshProxyConfigurationPropsBuilder_ecs_IgnoredUid_java_lang_Number_(),
+				ecorePackage.getEInt(), "ignoredUid_java_lang_Number_", null, 0, 1,
+				AppMeshProxyConfigurationPropsBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAppMeshProxyConfigurationPropsBuilder_ecs_GeneratedClassName(), ecorePackage.getEString(),
+				"generatedClassName", "software.amazon.awscdk.services.ecs.AppMeshProxyConfigurationProps", 0, 1,
+				AppMeshProxyConfigurationPropsBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAppMeshProxyConfigurationPropsBuilder_ecs_VarName(), ecorePackage.getEString(), "varName",
+				null, 0, 1, AppMeshProxyConfigurationPropsBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAppMeshProxyConfigurationPropsBuilder_ecs_Identifier(), ecorePackage.getEString(),
+				"identifier", null, 0, 1, AppMeshProxyConfigurationPropsBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAppMeshProxyConfigurationPropsBuilder_ecs_AdditionalCode(), ecorePackage.getEString(),
+				"additionalCode", null, 0, 1, AppMeshProxyConfigurationPropsBuilder_ecs.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(appMeshProxyConfigurationBuilder_ecsEClass, AppMeshProxyConfigurationBuilder_ecs.class,
+				"AppMeshProxyConfigurationBuilder_ecs", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getAppMeshProxyConfigurationBuilder_ecs_ContainerName_java_lang_String_(),
+				ecorePackage.getEString(), "containerName_java_lang_String_", null, 0, 1,
+				AppMeshProxyConfigurationBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getAppMeshProxyConfigurationBuilder_ecs_PropertiesWithAppMeshProxyConfigurationProps_software_amazon_awscdk_services_ecs_AppMeshProxyConfigurationProps_AsReference(),
+				ecorePackage.getEString(),
+				"propertiesWithAppMeshProxyConfigurationProps_software_amazon_awscdk_services_ecs_AppMeshProxyConfigurationProps_AsReference",
+				null, 0, 1, AppMeshProxyConfigurationBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAppMeshProxyConfigurationBuilder_ecs_GeneratedClassName(), ecorePackage.getEString(),
+				"generatedClassName", "software.amazon.awscdk.services.ecs.AppMeshProxyConfiguration", 0, 1,
+				AppMeshProxyConfigurationBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAppMeshProxyConfigurationBuilder_ecs_VarName(), ecorePackage.getEString(), "varName", null, 0,
+				1, AppMeshProxyConfigurationBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAppMeshProxyConfigurationBuilder_ecs_Identifier(), ecorePackage.getEString(), "identifier",
+				null, 0, 1, AppMeshProxyConfigurationBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAppMeshProxyConfigurationBuilder_ecs_AdditionalCode(), ecorePackage.getEString(),
+				"additionalCode", null, 0, 1, AppMeshProxyConfigurationBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(hostBuilder_ecsEClass, HostBuilder_ecs.class, "HostBuilder_ecs", !IS_ABSTRACT, !IS_INTERFACE,
+				IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getHostBuilder_ecs_SourcePath_java_lang_String_(), ecorePackage.getEString(),
+				"sourcePath_java_lang_String_", null, 0, 1, HostBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getHostBuilder_ecs_GeneratedClassName(), ecorePackage.getEString(), "generatedClassName",
+				"software.amazon.awscdk.services.ecs.Host", 0, 1, HostBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE,
+				!IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getHostBuilder_ecs_VarName(), ecorePackage.getEString(), "varName", null, 0, 1,
+				HostBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+				!IS_DERIVED, IS_ORDERED);
+		initEAttribute(getHostBuilder_ecs_Identifier(), ecorePackage.getEString(), "identifier", null, 0, 1,
+				HostBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+				!IS_DERIVED, IS_ORDERED);
+		initEAttribute(getHostBuilder_ecs_AdditionalCode(), ecorePackage.getEString(), "additionalCode", null, 0, 1,
+				HostBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+				!IS_DERIVED, IS_ORDERED);
+
+		initEClass(dockerVolumeConfigurationBuilder_ecsEClass, DockerVolumeConfigurationBuilder_ecs.class,
+				"DockerVolumeConfigurationBuilder_ecs", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getDockerVolumeConfigurationBuilder_ecs_Driver_java_lang_String_(), ecorePackage.getEString(),
+				"driver_java_lang_String_", null, 0, 1, DockerVolumeConfigurationBuilder_ecs.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getDockerVolumeConfigurationBuilder_ecs_Scope_software_amazon_awscdk_services_ecs_Scope_(),
+				this.getScope(), "scope_software_amazon_awscdk_services_ecs_Scope_", null, 0, 1,
+				DockerVolumeConfigurationBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getDockerVolumeConfigurationBuilder_ecs_Autoprovision_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "autoprovision_java_lang_Boolean_", null, 0, 1,
+				DockerVolumeConfigurationBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getDockerVolumeConfigurationBuilder_ecs_DriverOpts_java_lang_String__java_lang_String_AsMap(),
+				ecorePackage.getEString(), "driverOpts_java_lang_String__java_lang_String_AsMap", null, 0, 1,
+				DockerVolumeConfigurationBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getDockerVolumeConfigurationBuilder_ecs_Labels_java_lang_String_AsList(),
+				ecorePackage.getEString(), "labels_java_lang_String_AsList", null, 0, 1,
+				DockerVolumeConfigurationBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getDockerVolumeConfigurationBuilder_ecs_GeneratedClassName(), ecorePackage.getEString(),
+				"generatedClassName", "software.amazon.awscdk.services.ecs.DockerVolumeConfiguration", 0, 1,
+				DockerVolumeConfigurationBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getDockerVolumeConfigurationBuilder_ecs_VarName(), ecorePackage.getEString(), "varName", null, 0,
+				1, DockerVolumeConfigurationBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getDockerVolumeConfigurationBuilder_ecs_Identifier(), ecorePackage.getEString(), "identifier",
+				null, 0, 1, DockerVolumeConfigurationBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getDockerVolumeConfigurationBuilder_ecs_AdditionalCode(), ecorePackage.getEString(),
+				"additionalCode", null, 0, 1, DockerVolumeConfigurationBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(volumeBuilder_ecsEClass, VolumeBuilder_ecs.class, "VolumeBuilder_ecs", !IS_ABSTRACT, !IS_INTERFACE,
+				IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getVolumeBuilder_ecs_Name_java_lang_String_(), ecorePackage.getEString(),
+				"name_java_lang_String_", null, 0, 1, VolumeBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getVolumeBuilder_ecs_DockerVolumeConfigurationWithDockerVolumeConfiguration_software_amazon_awscdk_services_ecs_DockerVolumeConfiguration_AsReference(),
+				ecorePackage.getEString(),
+				"dockerVolumeConfigurationWithDockerVolumeConfiguration_software_amazon_awscdk_services_ecs_DockerVolumeConfiguration_AsReference",
+				null, 0, 1, VolumeBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getVolumeBuilder_ecs_HostWithHost_software_amazon_awscdk_services_ecs_Host_AsReference(),
+				ecorePackage.getEString(), "hostWithHost_software_amazon_awscdk_services_ecs_Host_AsReference", null, 0,
+				1, VolumeBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getVolumeBuilder_ecs_GeneratedClassName(), ecorePackage.getEString(), "generatedClassName",
+				"software.amazon.awscdk.services.ecs.Volume", 0, 1, VolumeBuilder_ecs.class, !IS_TRANSIENT,
+				!IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getVolumeBuilder_ecs_VarName(), ecorePackage.getEString(), "varName", null, 0, 1,
+				VolumeBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+				!IS_DERIVED, IS_ORDERED);
+		initEAttribute(getVolumeBuilder_ecs_Identifier(), ecorePackage.getEString(), "identifier", null, 0, 1,
+				VolumeBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+				!IS_DERIVED, IS_ORDERED);
+		initEAttribute(getVolumeBuilder_ecs_AdditionalCode(), ecorePackage.getEString(), "additionalCode", null, 0, 1,
+				VolumeBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+				!IS_DERIVED, IS_ORDERED);
+
+		initEClass(ec2TaskDefinitionBuilder_ecsEClass, Ec2TaskDefinitionBuilder_ecs.class,
+				"Ec2TaskDefinitionBuilder_ecs", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(
+				getEc2TaskDefinitionBuilder_ecs_ExecutionRoleWithIRole_software_amazon_awscdk_services_iam_IRole_AsReference(),
+				ecorePackage.getEString(),
+				"executionRoleWithIRole_software_amazon_awscdk_services_iam_IRole_AsReference", null, 0, 1,
+				Ec2TaskDefinitionBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getEc2TaskDefinitionBuilder_ecs_Family_java_lang_String_(), ecorePackage.getEString(),
+				"family_java_lang_String_", null, 0, 1, Ec2TaskDefinitionBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getEc2TaskDefinitionBuilder_ecs_ProxyConfigurationWithProxyConfiguration_software_amazon_awscdk_services_ecs_ProxyConfiguration_AsReference(),
+				ecorePackage.getEString(),
+				"proxyConfigurationWithProxyConfiguration_software_amazon_awscdk_services_ecs_ProxyConfiguration_AsReference",
+				null, 0, 1, Ec2TaskDefinitionBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getEc2TaskDefinitionBuilder_ecs_TaskRoleWithIRole_software_amazon_awscdk_services_iam_IRole_AsReference(),
+				ecorePackage.getEString(), "taskRoleWithIRole_software_amazon_awscdk_services_iam_IRole_AsReference",
+				null, 0, 1, Ec2TaskDefinitionBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getEc2TaskDefinitionBuilder_ecs_Volumes_software_amazon_awscdk_services_ecs_Volume_AsList(),
+				ecorePackage.getEString(), "volumes_software_amazon_awscdk_services_ecs_Volume_AsList", null, 0, 1,
+				Ec2TaskDefinitionBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getEc2TaskDefinitionBuilder_ecs_IpcMode_software_amazon_awscdk_services_ecs_IpcMode_(),
+				this.getIpcMode(), "ipcMode_software_amazon_awscdk_services_ecs_IpcMode_", null, 0, 1,
+				Ec2TaskDefinitionBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getEc2TaskDefinitionBuilder_ecs_NetworkMode_software_amazon_awscdk_services_ecs_NetworkMode_(),
+				this.getNetworkMode(), "networkMode_software_amazon_awscdk_services_ecs_NetworkMode_", null, 0, 1,
+				Ec2TaskDefinitionBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getEc2TaskDefinitionBuilder_ecs_PidMode_software_amazon_awscdk_services_ecs_PidMode_(),
+				this.getPidMode(), "pidMode_software_amazon_awscdk_services_ecs_PidMode_", null, 0, 1,
+				Ec2TaskDefinitionBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getEc2TaskDefinitionBuilder_ecs_PlacementConstraints_software_amazon_awscdk_services_ecs_PlacementConstraint_AsList(),
+				ecorePackage.getEString(),
+				"placementConstraints_software_amazon_awscdk_services_ecs_PlacementConstraint_AsList", null, 0, 1,
+				Ec2TaskDefinitionBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getEc2TaskDefinitionBuilder_ecs_GeneratedClassName(), ecorePackage.getEString(),
+				"generatedClassName", "software.amazon.awscdk.services.ecs.Ec2TaskDefinition", 0, 1,
+				Ec2TaskDefinitionBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getEc2TaskDefinitionBuilder_ecs_VarName(), ecorePackage.getEString(), "varName", null, 0, 1,
+				Ec2TaskDefinitionBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getEc2TaskDefinitionBuilder_ecs_Identifier(), ecorePackage.getEString(), "identifier", null, 0,
+				1, Ec2TaskDefinitionBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getEc2TaskDefinitionBuilder_ecs_AdditionalCode(), ecorePackage.getEString(), "additionalCode",
+				null, 0, 1, Ec2TaskDefinitionBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(applicationLoadBalancedEc2ServiceBuilder_patternsEClass,
+				ApplicationLoadBalancedEc2ServiceBuilder_patterns.class,
+				"ApplicationLoadBalancedEc2ServiceBuilder_patterns", !IS_ABSTRACT, !IS_INTERFACE,
+				IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(
+				getApplicationLoadBalancedEc2ServiceBuilder_patterns_CertificateWithICertificate_software_amazon_awscdk_services_certificatemanager_ICertificate_AsReference(),
+				ecorePackage.getEString(),
+				"certificateWithICertificate_software_amazon_awscdk_services_certificatemanager_ICertificate_AsReference",
+				null, 0, 1, ApplicationLoadBalancedEc2ServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getApplicationLoadBalancedEc2ServiceBuilder_patterns_CloudMapOptionsWithCloudMapOptions_software_amazon_awscdk_services_ecs_CloudMapOptions_AsReference(),
+				ecorePackage.getEString(),
+				"cloudMapOptionsWithCloudMapOptions_software_amazon_awscdk_services_ecs_CloudMapOptions_AsReference",
+				null, 0, 1, ApplicationLoadBalancedEc2ServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getApplicationLoadBalancedEc2ServiceBuilder_patterns_ClusterWithICluster_software_amazon_awscdk_services_ecs_ICluster_AsReference(),
+				ecorePackage.getEString(),
+				"clusterWithICluster_software_amazon_awscdk_services_ecs_ICluster_AsReference", null, 0, 1,
+				ApplicationLoadBalancedEc2ServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getApplicationLoadBalancedEc2ServiceBuilder_patterns_DesiredCount_java_lang_Number_(),
+				ecorePackage.getEInt(), "desiredCount_java_lang_Number_", null, 0, 1,
+				ApplicationLoadBalancedEc2ServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getApplicationLoadBalancedEc2ServiceBuilder_patterns_DomainName_java_lang_String_(),
+				ecorePackage.getEString(), "domainName_java_lang_String_", null, 0, 1,
+				ApplicationLoadBalancedEc2ServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getApplicationLoadBalancedEc2ServiceBuilder_patterns_DomainZoneWithIHostedZone_software_amazon_awscdk_services_route53_IHostedZone_AsReference(),
+				ecorePackage.getEString(),
+				"domainZoneWithIHostedZone_software_amazon_awscdk_services_route53_IHostedZone_AsReference", null, 0, 1,
+				ApplicationLoadBalancedEc2ServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getApplicationLoadBalancedEc2ServiceBuilder_patterns_EnableEcsManagedTags_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "enableEcsManagedTags_java_lang_Boolean_", null, 0, 1,
+				ApplicationLoadBalancedEc2ServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getApplicationLoadBalancedEc2ServiceBuilder_patterns_HealthCheckGracePeriodWithDuration_software_amazon_awscdk_core_Duration_AsReference(),
+				ecorePackage.getEString(),
+				"healthCheckGracePeriodWithDuration_software_amazon_awscdk_core_Duration_AsReference", null, 0, 1,
+				ApplicationLoadBalancedEc2ServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getApplicationLoadBalancedEc2ServiceBuilder_patterns_ListenerPort_java_lang_Number_(),
+				ecorePackage.getEInt(), "listenerPort_java_lang_Number_", null, 0, 1,
+				ApplicationLoadBalancedEc2ServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getApplicationLoadBalancedEc2ServiceBuilder_patterns_LoadBalancerWithIApplicationLoadBalancer_software_amazon_awscdk_services_elasticloadbalancingv2_IApplicationLoadBalancer_AsReference(),
+				ecorePackage.getEString(),
+				"loadBalancerWithIApplicationLoadBalancer_software_amazon_awscdk_services_elasticloadbalancingv2_IApplicationLoadBalancer_AsReference",
+				null, 0, 1, ApplicationLoadBalancedEc2ServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getApplicationLoadBalancedEc2ServiceBuilder_patterns_MaxHealthyPercent_java_lang_Number_(),
+				ecorePackage.getEInt(), "maxHealthyPercent_java_lang_Number_", null, 0, 1,
+				ApplicationLoadBalancedEc2ServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getApplicationLoadBalancedEc2ServiceBuilder_patterns_MinHealthyPercent_java_lang_Number_(),
+				ecorePackage.getEInt(), "minHealthyPercent_java_lang_Number_", null, 0, 1,
+				ApplicationLoadBalancedEc2ServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getApplicationLoadBalancedEc2ServiceBuilder_patterns_PropagateTags_software_amazon_awscdk_services_ecs_PropagatedTagSource_(),
+				this.getPropagatedTagSource(), "propagateTags_software_amazon_awscdk_services_ecs_PropagatedTagSource_",
+				null, 0, 1, ApplicationLoadBalancedEc2ServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getApplicationLoadBalancedEc2ServiceBuilder_patterns_Protocol_software_amazon_awscdk_services_elasticloadbalancingv2_ApplicationProtocol_(),
+				this.getApplicationProtocol(),
+				"protocol_software_amazon_awscdk_services_elasticloadbalancingv2_ApplicationProtocol_", null, 0, 1,
+				ApplicationLoadBalancedEc2ServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getApplicationLoadBalancedEc2ServiceBuilder_patterns_PublicLoadBalancer_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "publicLoadBalancer_java_lang_Boolean_", null, 0, 1,
+				ApplicationLoadBalancedEc2ServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getApplicationLoadBalancedEc2ServiceBuilder_patterns_ServiceName_java_lang_String_(),
+				ecorePackage.getEString(), "serviceName_java_lang_String_", null, 0, 1,
+				ApplicationLoadBalancedEc2ServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getApplicationLoadBalancedEc2ServiceBuilder_patterns_TaskImageOptionsWithApplicationLoadBalancedTaskImageOptions_software_amazon_awscdk_services_ecs_patterns_ApplicationLoadBalancedTaskImageOptions_AsReference(),
+				ecorePackage.getEString(),
+				"taskImageOptionsWithApplicationLoadBalancedTaskImageOptions_software_amazon_awscdk_services_ecs_patterns_ApplicationLoadBalancedTaskImageOptions_AsReference",
+				null, 0, 1, ApplicationLoadBalancedEc2ServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getApplicationLoadBalancedEc2ServiceBuilder_patterns_VpcWithIVpc_software_amazon_awscdk_services_ec2_IVpc_AsReference(),
+				ecorePackage.getEString(), "vpcWithIVpc_software_amazon_awscdk_services_ec2_IVpc_AsReference", null, 0,
+				1, ApplicationLoadBalancedEc2ServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getApplicationLoadBalancedEc2ServiceBuilder_patterns_Cpu_java_lang_Number_(),
+				ecorePackage.getEInt(), "cpu_java_lang_Number_", null, 0, 1,
+				ApplicationLoadBalancedEc2ServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getApplicationLoadBalancedEc2ServiceBuilder_patterns_MemoryLimitMiB_java_lang_Number_(),
+				ecorePackage.getEInt(), "memoryLimitMiB_java_lang_Number_", null, 0, 1,
+				ApplicationLoadBalancedEc2ServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getApplicationLoadBalancedEc2ServiceBuilder_patterns_MemoryReservationMiB_java_lang_Number_(),
+				ecorePackage.getEInt(), "memoryReservationMiB_java_lang_Number_", null, 0, 1,
+				ApplicationLoadBalancedEc2ServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getApplicationLoadBalancedEc2ServiceBuilder_patterns_TaskDefinitionWithEc2TaskDefinition_software_amazon_awscdk_services_ecs_Ec2TaskDefinition_AsReference(),
+				ecorePackage.getEString(),
+				"taskDefinitionWithEc2TaskDefinition_software_amazon_awscdk_services_ecs_Ec2TaskDefinition_AsReference",
+				null, 0, 1, ApplicationLoadBalancedEc2ServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getApplicationLoadBalancedEc2ServiceBuilder_patterns_GeneratedClassName(),
+				ecorePackage.getEString(), "generatedClassName",
+				"software.amazon.awscdk.services.ecs.patterns.ApplicationLoadBalancedEc2Service", 0, 1,
+				ApplicationLoadBalancedEc2ServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getApplicationLoadBalancedEc2ServiceBuilder_patterns_VarName(), ecorePackage.getEString(),
+				"varName", null, 0, 1, ApplicationLoadBalancedEc2ServiceBuilder_patterns.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getApplicationLoadBalancedEc2ServiceBuilder_patterns_Identifier(), ecorePackage.getEString(),
+				"identifier", null, 0, 1, ApplicationLoadBalancedEc2ServiceBuilder_patterns.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getApplicationLoadBalancedEc2ServiceBuilder_patterns_AdditionalCode(), ecorePackage.getEString(),
+				"additionalCode", null, 0, 1, ApplicationLoadBalancedEc2ServiceBuilder_patterns.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(fargateTaskDefinitionBuilder_ecsEClass, FargateTaskDefinitionBuilder_ecs.class,
+				"FargateTaskDefinitionBuilder_ecs", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(
+				getFargateTaskDefinitionBuilder_ecs_ExecutionRoleWithIRole_software_amazon_awscdk_services_iam_IRole_AsReference(),
+				ecorePackage.getEString(),
+				"executionRoleWithIRole_software_amazon_awscdk_services_iam_IRole_AsReference", null, 0, 1,
+				FargateTaskDefinitionBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getFargateTaskDefinitionBuilder_ecs_Family_java_lang_String_(), ecorePackage.getEString(),
+				"family_java_lang_String_", null, 0, 1, FargateTaskDefinitionBuilder_ecs.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getFargateTaskDefinitionBuilder_ecs_ProxyConfigurationWithProxyConfiguration_software_amazon_awscdk_services_ecs_ProxyConfiguration_AsReference(),
+				ecorePackage.getEString(),
+				"proxyConfigurationWithProxyConfiguration_software_amazon_awscdk_services_ecs_ProxyConfiguration_AsReference",
+				null, 0, 1, FargateTaskDefinitionBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getFargateTaskDefinitionBuilder_ecs_TaskRoleWithIRole_software_amazon_awscdk_services_iam_IRole_AsReference(),
+				ecorePackage.getEString(), "taskRoleWithIRole_software_amazon_awscdk_services_iam_IRole_AsReference",
+				null, 0, 1, FargateTaskDefinitionBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getFargateTaskDefinitionBuilder_ecs_Volumes_software_amazon_awscdk_services_ecs_Volume_AsList(),
+				ecorePackage.getEString(), "volumes_software_amazon_awscdk_services_ecs_Volume_AsList", null, 0, 1,
+				FargateTaskDefinitionBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getFargateTaskDefinitionBuilder_ecs_Cpu_java_lang_Number_(), ecorePackage.getEInt(),
+				"cpu_java_lang_Number_", null, 0, 1, FargateTaskDefinitionBuilder_ecs.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getFargateTaskDefinitionBuilder_ecs_MemoryLimitMiB_java_lang_Number_(), ecorePackage.getEInt(),
+				"memoryLimitMiB_java_lang_Number_", null, 0, 1, FargateTaskDefinitionBuilder_ecs.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getFargateTaskDefinitionBuilder_ecs_GeneratedClassName(), ecorePackage.getEString(),
+				"generatedClassName", "software.amazon.awscdk.services.ecs.FargateTaskDefinition", 0, 1,
+				FargateTaskDefinitionBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getFargateTaskDefinitionBuilder_ecs_VarName(), ecorePackage.getEString(), "varName", null, 0, 1,
+				FargateTaskDefinitionBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getFargateTaskDefinitionBuilder_ecs_Identifier(), ecorePackage.getEString(), "identifier", null,
+				0, 1, FargateTaskDefinitionBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getFargateTaskDefinitionBuilder_ecs_AdditionalCode(), ecorePackage.getEString(),
+				"additionalCode", null, 0, 1, FargateTaskDefinitionBuilder_ecs.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(applicationLoadBalancedFargateServiceBuilder_patternsEClass,
+				ApplicationLoadBalancedFargateServiceBuilder_patterns.class,
+				"ApplicationLoadBalancedFargateServiceBuilder_patterns", !IS_ABSTRACT, !IS_INTERFACE,
+				IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(
+				getApplicationLoadBalancedFargateServiceBuilder_patterns_CertificateWithICertificate_software_amazon_awscdk_services_certificatemanager_ICertificate_AsReference(),
+				ecorePackage.getEString(),
+				"certificateWithICertificate_software_amazon_awscdk_services_certificatemanager_ICertificate_AsReference",
+				null, 0, 1, ApplicationLoadBalancedFargateServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getApplicationLoadBalancedFargateServiceBuilder_patterns_CloudMapOptionsWithCloudMapOptions_software_amazon_awscdk_services_ecs_CloudMapOptions_AsReference(),
+				ecorePackage.getEString(),
+				"cloudMapOptionsWithCloudMapOptions_software_amazon_awscdk_services_ecs_CloudMapOptions_AsReference",
+				null, 0, 1, ApplicationLoadBalancedFargateServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getApplicationLoadBalancedFargateServiceBuilder_patterns_ClusterWithICluster_software_amazon_awscdk_services_ecs_ICluster_AsReference(),
+				ecorePackage.getEString(),
+				"clusterWithICluster_software_amazon_awscdk_services_ecs_ICluster_AsReference", null, 0, 1,
+				ApplicationLoadBalancedFargateServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getApplicationLoadBalancedFargateServiceBuilder_patterns_DesiredCount_java_lang_Number_(),
+				ecorePackage.getEInt(), "desiredCount_java_lang_Number_", null, 0, 1,
+				ApplicationLoadBalancedFargateServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getApplicationLoadBalancedFargateServiceBuilder_patterns_DomainName_java_lang_String_(),
+				ecorePackage.getEString(), "domainName_java_lang_String_", null, 0, 1,
+				ApplicationLoadBalancedFargateServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getApplicationLoadBalancedFargateServiceBuilder_patterns_DomainZoneWithIHostedZone_software_amazon_awscdk_services_route53_IHostedZone_AsReference(),
+				ecorePackage.getEString(),
+				"domainZoneWithIHostedZone_software_amazon_awscdk_services_route53_IHostedZone_AsReference", null, 0, 1,
+				ApplicationLoadBalancedFargateServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getApplicationLoadBalancedFargateServiceBuilder_patterns_EnableEcsManagedTags_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "enableEcsManagedTags_java_lang_Boolean_", null, 0, 1,
+				ApplicationLoadBalancedFargateServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getApplicationLoadBalancedFargateServiceBuilder_patterns_HealthCheckGracePeriodWithDuration_software_amazon_awscdk_core_Duration_AsReference(),
+				ecorePackage.getEString(),
+				"healthCheckGracePeriodWithDuration_software_amazon_awscdk_core_Duration_AsReference", null, 0, 1,
+				ApplicationLoadBalancedFargateServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getApplicationLoadBalancedFargateServiceBuilder_patterns_ListenerPort_java_lang_Number_(),
+				ecorePackage.getEInt(), "listenerPort_java_lang_Number_", null, 0, 1,
+				ApplicationLoadBalancedFargateServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getApplicationLoadBalancedFargateServiceBuilder_patterns_LoadBalancerWithIApplicationLoadBalancer_software_amazon_awscdk_services_elasticloadbalancingv2_IApplicationLoadBalancer_AsReference(),
+				ecorePackage.getEString(),
+				"loadBalancerWithIApplicationLoadBalancer_software_amazon_awscdk_services_elasticloadbalancingv2_IApplicationLoadBalancer_AsReference",
+				null, 0, 1, ApplicationLoadBalancedFargateServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getApplicationLoadBalancedFargateServiceBuilder_patterns_MaxHealthyPercent_java_lang_Number_(),
+				ecorePackage.getEInt(), "maxHealthyPercent_java_lang_Number_", null, 0, 1,
+				ApplicationLoadBalancedFargateServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getApplicationLoadBalancedFargateServiceBuilder_patterns_MinHealthyPercent_java_lang_Number_(),
+				ecorePackage.getEInt(), "minHealthyPercent_java_lang_Number_", null, 0, 1,
+				ApplicationLoadBalancedFargateServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getApplicationLoadBalancedFargateServiceBuilder_patterns_PropagateTags_software_amazon_awscdk_services_ecs_PropagatedTagSource_(),
+				this.getPropagatedTagSource(), "propagateTags_software_amazon_awscdk_services_ecs_PropagatedTagSource_",
+				null, 0, 1, ApplicationLoadBalancedFargateServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getApplicationLoadBalancedFargateServiceBuilder_patterns_Protocol_software_amazon_awscdk_services_elasticloadbalancingv2_ApplicationProtocol_(),
+				this.getApplicationProtocol(),
+				"protocol_software_amazon_awscdk_services_elasticloadbalancingv2_ApplicationProtocol_", null, 0, 1,
+				ApplicationLoadBalancedFargateServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getApplicationLoadBalancedFargateServiceBuilder_patterns_PublicLoadBalancer_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "publicLoadBalancer_java_lang_Boolean_", null, 0, 1,
+				ApplicationLoadBalancedFargateServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getApplicationLoadBalancedFargateServiceBuilder_patterns_ServiceName_java_lang_String_(),
+				ecorePackage.getEString(), "serviceName_java_lang_String_", null, 0, 1,
+				ApplicationLoadBalancedFargateServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getApplicationLoadBalancedFargateServiceBuilder_patterns_TaskImageOptionsWithApplicationLoadBalancedTaskImageOptions_software_amazon_awscdk_services_ecs_patterns_ApplicationLoadBalancedTaskImageOptions_AsReference(),
+				ecorePackage.getEString(),
+				"taskImageOptionsWithApplicationLoadBalancedTaskImageOptions_software_amazon_awscdk_services_ecs_patterns_ApplicationLoadBalancedTaskImageOptions_AsReference",
+				null, 0, 1, ApplicationLoadBalancedFargateServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getApplicationLoadBalancedFargateServiceBuilder_patterns_VpcWithIVpc_software_amazon_awscdk_services_ec2_IVpc_AsReference(),
+				ecorePackage.getEString(), "vpcWithIVpc_software_amazon_awscdk_services_ec2_IVpc_AsReference", null, 0,
+				1, ApplicationLoadBalancedFargateServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getApplicationLoadBalancedFargateServiceBuilder_patterns_AssignPublicIp_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "assignPublicIp_java_lang_Boolean_", null, 0, 1,
+				ApplicationLoadBalancedFargateServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getApplicationLoadBalancedFargateServiceBuilder_patterns_Cpu_java_lang_Number_(),
+				ecorePackage.getEInt(), "cpu_java_lang_Number_", null, 0, 1,
+				ApplicationLoadBalancedFargateServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getApplicationLoadBalancedFargateServiceBuilder_patterns_MemoryLimitMiB_java_lang_Number_(),
+				ecorePackage.getEInt(), "memoryLimitMiB_java_lang_Number_", null, 0, 1,
+				ApplicationLoadBalancedFargateServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getApplicationLoadBalancedFargateServiceBuilder_patterns_PlatformVersion_software_amazon_awscdk_services_ecs_FargatePlatformVersion_(),
+				this.getFargatePlatformVersion(),
+				"platformVersion_software_amazon_awscdk_services_ecs_FargatePlatformVersion_", null, 0, 1,
+				ApplicationLoadBalancedFargateServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getApplicationLoadBalancedFargateServiceBuilder_patterns_TaskDefinitionWithFargateTaskDefinition_software_amazon_awscdk_services_ecs_FargateTaskDefinition_AsReference(),
+				ecorePackage.getEString(),
+				"taskDefinitionWithFargateTaskDefinition_software_amazon_awscdk_services_ecs_FargateTaskDefinition_AsReference",
+				null, 0, 1, ApplicationLoadBalancedFargateServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getApplicationLoadBalancedFargateServiceBuilder_patterns_GeneratedClassName(),
+				ecorePackage.getEString(), "generatedClassName",
+				"software.amazon.awscdk.services.ecs.patterns.ApplicationLoadBalancedFargateService", 0, 1,
+				ApplicationLoadBalancedFargateServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				!IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getApplicationLoadBalancedFargateServiceBuilder_patterns_VarName(), ecorePackage.getEString(),
+				"varName", null, 0, 1, ApplicationLoadBalancedFargateServiceBuilder_patterns.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getApplicationLoadBalancedFargateServiceBuilder_patterns_Identifier(), ecorePackage.getEString(),
+				"identifier", null, 0, 1, ApplicationLoadBalancedFargateServiceBuilder_patterns.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getApplicationLoadBalancedFargateServiceBuilder_patterns_AdditionalCode(),
+				ecorePackage.getEString(), "additionalCode", null, 0, 1,
+				ApplicationLoadBalancedFargateServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(applicationMultipleTargetGroupsFargateServiceBuilder_patternsEClass,
+				ApplicationMultipleTargetGroupsFargateServiceBuilder_patterns.class,
+				"ApplicationMultipleTargetGroupsFargateServiceBuilder_patterns", !IS_ABSTRACT, !IS_INTERFACE,
+				IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(
+				getApplicationMultipleTargetGroupsFargateServiceBuilder_patterns_CloudMapOptionsWithCloudMapOptions_software_amazon_awscdk_services_ecs_CloudMapOptions_AsReference(),
+				ecorePackage.getEString(),
+				"cloudMapOptionsWithCloudMapOptions_software_amazon_awscdk_services_ecs_CloudMapOptions_AsReference",
+				null, 0, 1, ApplicationMultipleTargetGroupsFargateServiceBuilder_patterns.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getApplicationMultipleTargetGroupsFargateServiceBuilder_patterns_ClusterWithICluster_software_amazon_awscdk_services_ecs_ICluster_AsReference(),
+				ecorePackage.getEString(),
+				"clusterWithICluster_software_amazon_awscdk_services_ecs_ICluster_AsReference", null, 0, 1,
+				ApplicationMultipleTargetGroupsFargateServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getApplicationMultipleTargetGroupsFargateServiceBuilder_patterns_DesiredCount_java_lang_Number_(),
+				ecorePackage.getEInt(), "desiredCount_java_lang_Number_", null, 0, 1,
+				ApplicationMultipleTargetGroupsFargateServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getApplicationMultipleTargetGroupsFargateServiceBuilder_patterns_EnableEcsManagedTags_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "enableEcsManagedTags_java_lang_Boolean_", null, 0, 1,
+				ApplicationMultipleTargetGroupsFargateServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getApplicationMultipleTargetGroupsFargateServiceBuilder_patterns_HealthCheckGracePeriodWithDuration_software_amazon_awscdk_core_Duration_AsReference(),
+				ecorePackage.getEString(),
+				"healthCheckGracePeriodWithDuration_software_amazon_awscdk_core_Duration_AsReference", null, 0, 1,
+				ApplicationMultipleTargetGroupsFargateServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getApplicationMultipleTargetGroupsFargateServiceBuilder_patterns_LoadBalancers_software_amazon_awscdk_services_ecs_patterns_ApplicationLoadBalancerProps_AsList(),
+				ecorePackage.getEString(),
+				"loadBalancers_software_amazon_awscdk_services_ecs_patterns_ApplicationLoadBalancerProps_AsList", null,
+				0, 1, ApplicationMultipleTargetGroupsFargateServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getApplicationMultipleTargetGroupsFargateServiceBuilder_patterns_PropagateTags_software_amazon_awscdk_services_ecs_PropagatedTagSource_(),
+				this.getPropagatedTagSource(), "propagateTags_software_amazon_awscdk_services_ecs_PropagatedTagSource_",
+				null, 0, 1, ApplicationMultipleTargetGroupsFargateServiceBuilder_patterns.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getApplicationMultipleTargetGroupsFargateServiceBuilder_patterns_ServiceName_java_lang_String_(),
+				ecorePackage.getEString(), "serviceName_java_lang_String_", null, 0, 1,
+				ApplicationMultipleTargetGroupsFargateServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getApplicationMultipleTargetGroupsFargateServiceBuilder_patterns_TargetGroups_software_amazon_awscdk_services_ecs_patterns_ApplicationTargetProps_AsList(),
+				ecorePackage.getEString(),
+				"targetGroups_software_amazon_awscdk_services_ecs_patterns_ApplicationTargetProps_AsList", null, 0, 1,
+				ApplicationMultipleTargetGroupsFargateServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getApplicationMultipleTargetGroupsFargateServiceBuilder_patterns_TaskImageOptionsWithApplicationLoadBalancedTaskImageProps_software_amazon_awscdk_services_ecs_patterns_ApplicationLoadBalancedTaskImageProps_AsReference(),
+				ecorePackage.getEString(),
+				"taskImageOptionsWithApplicationLoadBalancedTaskImageProps_software_amazon_awscdk_services_ecs_patterns_ApplicationLoadBalancedTaskImageProps_AsReference",
+				null, 0, 1, ApplicationMultipleTargetGroupsFargateServiceBuilder_patterns.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getApplicationMultipleTargetGroupsFargateServiceBuilder_patterns_VpcWithIVpc_software_amazon_awscdk_services_ec2_IVpc_AsReference(),
+				ecorePackage.getEString(), "vpcWithIVpc_software_amazon_awscdk_services_ec2_IVpc_AsReference", null, 0,
+				1, ApplicationMultipleTargetGroupsFargateServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getApplicationMultipleTargetGroupsFargateServiceBuilder_patterns_AssignPublicIp_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "assignPublicIp_java_lang_Boolean_", null, 0, 1,
+				ApplicationMultipleTargetGroupsFargateServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getApplicationMultipleTargetGroupsFargateServiceBuilder_patterns_Cpu_java_lang_Number_(),
+				ecorePackage.getEInt(), "cpu_java_lang_Number_", null, 0, 1,
+				ApplicationMultipleTargetGroupsFargateServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getApplicationMultipleTargetGroupsFargateServiceBuilder_patterns_MemoryLimitMiB_java_lang_Number_(),
+				ecorePackage.getEInt(), "memoryLimitMiB_java_lang_Number_", null, 0, 1,
+				ApplicationMultipleTargetGroupsFargateServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getApplicationMultipleTargetGroupsFargateServiceBuilder_patterns_PlatformVersion_software_amazon_awscdk_services_ecs_FargatePlatformVersion_(),
+				this.getFargatePlatformVersion(),
+				"platformVersion_software_amazon_awscdk_services_ecs_FargatePlatformVersion_", null, 0, 1,
+				ApplicationMultipleTargetGroupsFargateServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getApplicationMultipleTargetGroupsFargateServiceBuilder_patterns_TaskDefinitionWithFargateTaskDefinition_software_amazon_awscdk_services_ecs_FargateTaskDefinition_AsReference(),
+				ecorePackage.getEString(),
+				"taskDefinitionWithFargateTaskDefinition_software_amazon_awscdk_services_ecs_FargateTaskDefinition_AsReference",
+				null, 0, 1, ApplicationMultipleTargetGroupsFargateServiceBuilder_patterns.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getApplicationMultipleTargetGroupsFargateServiceBuilder_patterns_GeneratedClassName(),
+				ecorePackage.getEString(), "generatedClassName",
+				"software.amazon.awscdk.services.ecs.patterns.ApplicationMultipleTargetGroupsFargateService", 0, 1,
+				ApplicationMultipleTargetGroupsFargateServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				!IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getApplicationMultipleTargetGroupsFargateServiceBuilder_patterns_VarName(),
+				ecorePackage.getEString(), "varName", null, 0, 1,
+				ApplicationMultipleTargetGroupsFargateServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getApplicationMultipleTargetGroupsFargateServiceBuilder_patterns_Identifier(),
+				ecorePackage.getEString(), "identifier", null, 0, 1,
+				ApplicationMultipleTargetGroupsFargateServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getApplicationMultipleTargetGroupsFargateServiceBuilder_patterns_AdditionalCode(),
+				ecorePackage.getEString(), "additionalCode", null, 0, 1,
+				ApplicationMultipleTargetGroupsFargateServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(applicationListenerPropsBuilder_patternsEClass, ApplicationListenerPropsBuilder_patterns.class,
+				"ApplicationListenerPropsBuilder_patterns", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getApplicationListenerPropsBuilder_patterns_Name_java_lang_String_(), ecorePackage.getEString(),
+				"name_java_lang_String_", null, 0, 1, ApplicationListenerPropsBuilder_patterns.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getApplicationListenerPropsBuilder_patterns_CertificateWithICertificate_software_amazon_awscdk_services_certificatemanager_ICertificate_AsReference(),
+				ecorePackage.getEString(),
+				"certificateWithICertificate_software_amazon_awscdk_services_certificatemanager_ICertificate_AsReference",
+				null, 0, 1, ApplicationListenerPropsBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getApplicationListenerPropsBuilder_patterns_Port_java_lang_Number_(), ecorePackage.getEInt(),
+				"port_java_lang_Number_", null, 0, 1, ApplicationListenerPropsBuilder_patterns.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getApplicationListenerPropsBuilder_patterns_Protocol_software_amazon_awscdk_services_elasticloadbalancingv2_ApplicationProtocol_(),
+				this.getApplicationProtocol(),
+				"protocol_software_amazon_awscdk_services_elasticloadbalancingv2_ApplicationProtocol_", null, 0, 1,
+				ApplicationListenerPropsBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getApplicationListenerPropsBuilder_patterns_GeneratedClassName(), ecorePackage.getEString(),
+				"generatedClassName", "software.amazon.awscdk.services.ecs.patterns.ApplicationListenerProps", 0, 1,
+				ApplicationListenerPropsBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getApplicationListenerPropsBuilder_patterns_VarName(), ecorePackage.getEString(), "varName",
+				null, 0, 1, ApplicationListenerPropsBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getApplicationListenerPropsBuilder_patterns_Identifier(), ecorePackage.getEString(),
+				"identifier", null, 0, 1, ApplicationListenerPropsBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getApplicationListenerPropsBuilder_patterns_AdditionalCode(), ecorePackage.getEString(),
+				"additionalCode", null, 0, 1, ApplicationListenerPropsBuilder_patterns.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(applicationLoadBalancerPropsBuilder_patternsEClass,
+				ApplicationLoadBalancerPropsBuilder_patterns.class, "ApplicationLoadBalancerPropsBuilder_patterns",
+				!IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(
+				getApplicationLoadBalancerPropsBuilder_patterns_Listeners_software_amazon_awscdk_services_ecs_patterns_ApplicationListenerProps_AsList(),
+				ecorePackage.getEString(),
+				"listeners_software_amazon_awscdk_services_ecs_patterns_ApplicationListenerProps_AsList", null, 0, 1,
+				ApplicationLoadBalancerPropsBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getApplicationLoadBalancerPropsBuilder_patterns_Name_java_lang_String_(),
+				ecorePackage.getEString(), "name_java_lang_String_", null, 0, 1,
+				ApplicationLoadBalancerPropsBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getApplicationLoadBalancerPropsBuilder_patterns_DomainName_java_lang_String_(),
+				ecorePackage.getEString(), "domainName_java_lang_String_", null, 0, 1,
+				ApplicationLoadBalancerPropsBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getApplicationLoadBalancerPropsBuilder_patterns_DomainZoneWithIHostedZone_software_amazon_awscdk_services_route53_IHostedZone_AsReference(),
+				ecorePackage.getEString(),
+				"domainZoneWithIHostedZone_software_amazon_awscdk_services_route53_IHostedZone_AsReference", null, 0, 1,
+				ApplicationLoadBalancerPropsBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getApplicationLoadBalancerPropsBuilder_patterns_PublicLoadBalancer_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "publicLoadBalancer_java_lang_Boolean_", null, 0, 1,
+				ApplicationLoadBalancerPropsBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getApplicationLoadBalancerPropsBuilder_patterns_GeneratedClassName(), ecorePackage.getEString(),
+				"generatedClassName", "software.amazon.awscdk.services.ecs.patterns.ApplicationLoadBalancerProps", 0, 1,
+				ApplicationLoadBalancerPropsBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getApplicationLoadBalancerPropsBuilder_patterns_VarName(), ecorePackage.getEString(), "varName",
+				null, 0, 1, ApplicationLoadBalancerPropsBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getApplicationLoadBalancerPropsBuilder_patterns_Identifier(), ecorePackage.getEString(),
+				"identifier", null, 0, 1, ApplicationLoadBalancerPropsBuilder_patterns.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getApplicationLoadBalancerPropsBuilder_patterns_AdditionalCode(), ecorePackage.getEString(),
+				"additionalCode", null, 0, 1, ApplicationLoadBalancerPropsBuilder_patterns.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(applicationTargetPropsBuilder_patternsEClass, ApplicationTargetPropsBuilder_patterns.class,
+				"ApplicationTargetPropsBuilder_patterns", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getApplicationTargetPropsBuilder_patterns_ContainerPort_java_lang_Number_(),
+				ecorePackage.getEInt(), "containerPort_java_lang_Number_", null, 0, 1,
+				ApplicationTargetPropsBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getApplicationTargetPropsBuilder_patterns_HostHeader_java_lang_String_(),
+				ecorePackage.getEString(), "hostHeader_java_lang_String_", null, 0, 1,
+				ApplicationTargetPropsBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getApplicationTargetPropsBuilder_patterns_Listener_java_lang_String_(),
+				ecorePackage.getEString(), "listener_java_lang_String_", null, 0, 1,
+				ApplicationTargetPropsBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getApplicationTargetPropsBuilder_patterns_PathPattern_java_lang_String_(),
+				ecorePackage.getEString(), "pathPattern_java_lang_String_", null, 0, 1,
+				ApplicationTargetPropsBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getApplicationTargetPropsBuilder_patterns_Priority_java_lang_Number_(), ecorePackage.getEInt(),
+				"priority_java_lang_Number_", null, 0, 1, ApplicationTargetPropsBuilder_patterns.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getApplicationTargetPropsBuilder_patterns_Protocol_software_amazon_awscdk_services_ecs_Protocol_(),
+				this.getProtocol(), "protocol_software_amazon_awscdk_services_ecs_Protocol_", null, 0, 1,
+				ApplicationTargetPropsBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getApplicationTargetPropsBuilder_patterns_GeneratedClassName(), ecorePackage.getEString(),
+				"generatedClassName", "software.amazon.awscdk.services.ecs.patterns.ApplicationTargetProps", 0, 1,
+				ApplicationTargetPropsBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getApplicationTargetPropsBuilder_patterns_VarName(), ecorePackage.getEString(), "varName", null,
+				0, 1, ApplicationTargetPropsBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getApplicationTargetPropsBuilder_patterns_Identifier(), ecorePackage.getEString(), "identifier",
+				null, 0, 1, ApplicationTargetPropsBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getApplicationTargetPropsBuilder_patterns_AdditionalCode(), ecorePackage.getEString(),
+				"additionalCode", null, 0, 1, ApplicationTargetPropsBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(applicationLoadBalancedTaskImagePropsBuilder_patternsEClass,
+				ApplicationLoadBalancedTaskImagePropsBuilder_patterns.class,
+				"ApplicationLoadBalancedTaskImagePropsBuilder_patterns", !IS_ABSTRACT, !IS_INTERFACE,
+				IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(
+				getApplicationLoadBalancedTaskImagePropsBuilder_patterns_ImageWithContainerImage_software_amazon_awscdk_services_ecs_ContainerImage_AsReference(),
+				ecorePackage.getEString(),
+				"imageWithContainerImage_software_amazon_awscdk_services_ecs_ContainerImage_AsReference", null, 0, 1,
+				ApplicationLoadBalancedTaskImagePropsBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getApplicationLoadBalancedTaskImagePropsBuilder_patterns_ContainerName_java_lang_String_(),
+				ecorePackage.getEString(), "containerName_java_lang_String_", null, 0, 1,
+				ApplicationLoadBalancedTaskImagePropsBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getApplicationLoadBalancedTaskImagePropsBuilder_patterns_ContainerPorts_java_lang_Number_AsList(),
+				ecorePackage.getEString(), "containerPorts_java_lang_Number_AsList", null, 0, 1,
+				ApplicationLoadBalancedTaskImagePropsBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getApplicationLoadBalancedTaskImagePropsBuilder_patterns_EnableLogging_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "enableLogging_java_lang_Boolean_", null, 0, 1,
+				ApplicationLoadBalancedTaskImagePropsBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getApplicationLoadBalancedTaskImagePropsBuilder_patterns_Environment_java_lang_String__java_lang_String_AsMap(),
+				ecorePackage.getEString(), "environment_java_lang_String__java_lang_String_AsMap", null, 0, 1,
+				ApplicationLoadBalancedTaskImagePropsBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getApplicationLoadBalancedTaskImagePropsBuilder_patterns_ExecutionRoleWithIRole_software_amazon_awscdk_services_iam_IRole_AsReference(),
+				ecorePackage.getEString(),
+				"executionRoleWithIRole_software_amazon_awscdk_services_iam_IRole_AsReference", null, 0, 1,
+				ApplicationLoadBalancedTaskImagePropsBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getApplicationLoadBalancedTaskImagePropsBuilder_patterns_Family_java_lang_String_(),
+				ecorePackage.getEString(), "family_java_lang_String_", null, 0, 1,
+				ApplicationLoadBalancedTaskImagePropsBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getApplicationLoadBalancedTaskImagePropsBuilder_patterns_LogDriverWithLogDriver_software_amazon_awscdk_services_ecs_LogDriver_AsReference(),
+				ecorePackage.getEString(),
+				"logDriverWithLogDriver_software_amazon_awscdk_services_ecs_LogDriver_AsReference", null, 0, 1,
+				ApplicationLoadBalancedTaskImagePropsBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getApplicationLoadBalancedTaskImagePropsBuilder_patterns_Secrets_java_lang_String__software_amazon_awscdk_services_ecs_Secret_AsMap(),
+				ecorePackage.getEString(), "secrets_java_lang_String__software_amazon_awscdk_services_ecs_Secret_AsMap",
+				null, 0, 1, ApplicationLoadBalancedTaskImagePropsBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getApplicationLoadBalancedTaskImagePropsBuilder_patterns_TaskRoleWithIRole_software_amazon_awscdk_services_iam_IRole_AsReference(),
+				ecorePackage.getEString(), "taskRoleWithIRole_software_amazon_awscdk_services_iam_IRole_AsReference",
+				null, 0, 1, ApplicationLoadBalancedTaskImagePropsBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getApplicationLoadBalancedTaskImagePropsBuilder_patterns_GeneratedClassName(),
+				ecorePackage.getEString(), "generatedClassName",
+				"software.amazon.awscdk.services.ecs.patterns.ApplicationLoadBalancedTaskImageProps", 0, 1,
+				ApplicationLoadBalancedTaskImagePropsBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				!IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getApplicationLoadBalancedTaskImagePropsBuilder_patterns_VarName(), ecorePackage.getEString(),
+				"varName", null, 0, 1, ApplicationLoadBalancedTaskImagePropsBuilder_patterns.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getApplicationLoadBalancedTaskImagePropsBuilder_patterns_Identifier(), ecorePackage.getEString(),
+				"identifier", null, 0, 1, ApplicationLoadBalancedTaskImagePropsBuilder_patterns.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getApplicationLoadBalancedTaskImagePropsBuilder_patterns_AdditionalCode(),
+				ecorePackage.getEString(), "additionalCode", null, 0, 1,
+				ApplicationLoadBalancedTaskImagePropsBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(applicationMultipleTargetGroupsEc2ServiceBuilder_patternsEClass,
+				ApplicationMultipleTargetGroupsEc2ServiceBuilder_patterns.class,
+				"ApplicationMultipleTargetGroupsEc2ServiceBuilder_patterns", !IS_ABSTRACT, !IS_INTERFACE,
+				IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(
+				getApplicationMultipleTargetGroupsEc2ServiceBuilder_patterns_CloudMapOptionsWithCloudMapOptions_software_amazon_awscdk_services_ecs_CloudMapOptions_AsReference(),
+				ecorePackage.getEString(),
+				"cloudMapOptionsWithCloudMapOptions_software_amazon_awscdk_services_ecs_CloudMapOptions_AsReference",
+				null, 0, 1, ApplicationMultipleTargetGroupsEc2ServiceBuilder_patterns.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getApplicationMultipleTargetGroupsEc2ServiceBuilder_patterns_ClusterWithICluster_software_amazon_awscdk_services_ecs_ICluster_AsReference(),
+				ecorePackage.getEString(),
+				"clusterWithICluster_software_amazon_awscdk_services_ecs_ICluster_AsReference", null, 0, 1,
+				ApplicationMultipleTargetGroupsEc2ServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getApplicationMultipleTargetGroupsEc2ServiceBuilder_patterns_DesiredCount_java_lang_Number_(),
+				ecorePackage.getEInt(), "desiredCount_java_lang_Number_", null, 0, 1,
+				ApplicationMultipleTargetGroupsEc2ServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getApplicationMultipleTargetGroupsEc2ServiceBuilder_patterns_EnableEcsManagedTags_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "enableEcsManagedTags_java_lang_Boolean_", null, 0, 1,
+				ApplicationMultipleTargetGroupsEc2ServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getApplicationMultipleTargetGroupsEc2ServiceBuilder_patterns_HealthCheckGracePeriodWithDuration_software_amazon_awscdk_core_Duration_AsReference(),
+				ecorePackage.getEString(),
+				"healthCheckGracePeriodWithDuration_software_amazon_awscdk_core_Duration_AsReference", null, 0, 1,
+				ApplicationMultipleTargetGroupsEc2ServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getApplicationMultipleTargetGroupsEc2ServiceBuilder_patterns_LoadBalancers_software_amazon_awscdk_services_ecs_patterns_ApplicationLoadBalancerProps_AsList(),
+				ecorePackage.getEString(),
+				"loadBalancers_software_amazon_awscdk_services_ecs_patterns_ApplicationLoadBalancerProps_AsList", null,
+				0, 1, ApplicationMultipleTargetGroupsEc2ServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getApplicationMultipleTargetGroupsEc2ServiceBuilder_patterns_PropagateTags_software_amazon_awscdk_services_ecs_PropagatedTagSource_(),
+				this.getPropagatedTagSource(), "propagateTags_software_amazon_awscdk_services_ecs_PropagatedTagSource_",
+				null, 0, 1, ApplicationMultipleTargetGroupsEc2ServiceBuilder_patterns.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		doThis();
+	}
+	
+	public void doThis() {
+		initEAttribute(getApplicationMultipleTargetGroupsEc2ServiceBuilder_patterns_ServiceName_java_lang_String_(),
+				ecorePackage.getEString(), "serviceName_java_lang_String_", null, 0, 1,
+				ApplicationMultipleTargetGroupsEc2ServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getApplicationMultipleTargetGroupsEc2ServiceBuilder_patterns_TargetGroups_software_amazon_awscdk_services_ecs_patterns_ApplicationTargetProps_AsList(),
+				ecorePackage.getEString(),
+				"targetGroups_software_amazon_awscdk_services_ecs_patterns_ApplicationTargetProps_AsList", null, 0, 1,
+				ApplicationMultipleTargetGroupsEc2ServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getApplicationMultipleTargetGroupsEc2ServiceBuilder_patterns_TaskImageOptionsWithApplicationLoadBalancedTaskImageProps_software_amazon_awscdk_services_ecs_patterns_ApplicationLoadBalancedTaskImageProps_AsReference(),
+				ecorePackage.getEString(),
+				"taskImageOptionsWithApplicationLoadBalancedTaskImageProps_software_amazon_awscdk_services_ecs_patterns_ApplicationLoadBalancedTaskImageProps_AsReference",
+				null, 0, 1, ApplicationMultipleTargetGroupsEc2ServiceBuilder_patterns.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getApplicationMultipleTargetGroupsEc2ServiceBuilder_patterns_VpcWithIVpc_software_amazon_awscdk_services_ec2_IVpc_AsReference(),
+				ecorePackage.getEString(), "vpcWithIVpc_software_amazon_awscdk_services_ec2_IVpc_AsReference", null, 0,
+				1, ApplicationMultipleTargetGroupsEc2ServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getApplicationMultipleTargetGroupsEc2ServiceBuilder_patterns_Cpu_java_lang_Number_(),
+				ecorePackage.getEInt(), "cpu_java_lang_Number_", null, 0, 1,
+				ApplicationMultipleTargetGroupsEc2ServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getApplicationMultipleTargetGroupsEc2ServiceBuilder_patterns_MemoryLimitMiB_java_lang_Number_(),
+				ecorePackage.getEInt(), "memoryLimitMiB_java_lang_Number_", null, 0, 1,
+				ApplicationMultipleTargetGroupsEc2ServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getApplicationMultipleTargetGroupsEc2ServiceBuilder_patterns_MemoryReservationMiB_java_lang_Number_(),
+				ecorePackage.getEInt(), "memoryReservationMiB_java_lang_Number_", null, 0, 1,
+				ApplicationMultipleTargetGroupsEc2ServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getApplicationMultipleTargetGroupsEc2ServiceBuilder_patterns_TaskDefinitionWithEc2TaskDefinition_software_amazon_awscdk_services_ecs_Ec2TaskDefinition_AsReference(),
+				ecorePackage.getEString(),
+				"taskDefinitionWithEc2TaskDefinition_software_amazon_awscdk_services_ecs_Ec2TaskDefinition_AsReference",
+				null, 0, 1, ApplicationMultipleTargetGroupsEc2ServiceBuilder_patterns.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getApplicationMultipleTargetGroupsEc2ServiceBuilder_patterns_GeneratedClassName(),
+				ecorePackage.getEString(), "generatedClassName",
+				"software.amazon.awscdk.services.ecs.patterns.ApplicationMultipleTargetGroupsEc2Service", 0, 1,
+				ApplicationMultipleTargetGroupsEc2ServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				!IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getApplicationMultipleTargetGroupsEc2ServiceBuilder_patterns_VarName(),
+				ecorePackage.getEString(), "varName", null, 0, 1,
+				ApplicationMultipleTargetGroupsEc2ServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getApplicationMultipleTargetGroupsEc2ServiceBuilder_patterns_Identifier(),
+				ecorePackage.getEString(), "identifier", null, 0, 1,
+				ApplicationMultipleTargetGroupsEc2ServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getApplicationMultipleTargetGroupsEc2ServiceBuilder_patterns_AdditionalCode(),
+				ecorePackage.getEString(), "additionalCode", null, 0, 1,
+				ApplicationMultipleTargetGroupsEc2ServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(networkLoadBalancedTaskImageOptionsBuilder_patternsEClass,
+				NetworkLoadBalancedTaskImageOptionsBuilder_patterns.class,
+				"NetworkLoadBalancedTaskImageOptionsBuilder_patterns", !IS_ABSTRACT, !IS_INTERFACE,
+				IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(
+				getNetworkLoadBalancedTaskImageOptionsBuilder_patterns_ImageWithContainerImage_software_amazon_awscdk_services_ecs_ContainerImage_AsReference(),
+				ecorePackage.getEString(),
+				"imageWithContainerImage_software_amazon_awscdk_services_ecs_ContainerImage_AsReference", null, 0, 1,
+				NetworkLoadBalancedTaskImageOptionsBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getNetworkLoadBalancedTaskImageOptionsBuilder_patterns_ContainerName_java_lang_String_(),
+				ecorePackage.getEString(), "containerName_java_lang_String_", null, 0, 1,
+				NetworkLoadBalancedTaskImageOptionsBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getNetworkLoadBalancedTaskImageOptionsBuilder_patterns_ContainerPort_java_lang_Number_(),
+				ecorePackage.getEInt(), "containerPort_java_lang_Number_", null, 0, 1,
+				NetworkLoadBalancedTaskImageOptionsBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getNetworkLoadBalancedTaskImageOptionsBuilder_patterns_EnableLogging_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "enableLogging_java_lang_Boolean_", null, 0, 1,
+				NetworkLoadBalancedTaskImageOptionsBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getNetworkLoadBalancedTaskImageOptionsBuilder_patterns_Environment_java_lang_String__java_lang_String_AsMap(),
+				ecorePackage.getEString(), "environment_java_lang_String__java_lang_String_AsMap", null, 0, 1,
+				NetworkLoadBalancedTaskImageOptionsBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getNetworkLoadBalancedTaskImageOptionsBuilder_patterns_ExecutionRoleWithIRole_software_amazon_awscdk_services_iam_IRole_AsReference(),
+				ecorePackage.getEString(),
+				"executionRoleWithIRole_software_amazon_awscdk_services_iam_IRole_AsReference", null, 0, 1,
+				NetworkLoadBalancedTaskImageOptionsBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getNetworkLoadBalancedTaskImageOptionsBuilder_patterns_Family_java_lang_String_(),
+				ecorePackage.getEString(), "family_java_lang_String_", null, 0, 1,
+				NetworkLoadBalancedTaskImageOptionsBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getNetworkLoadBalancedTaskImageOptionsBuilder_patterns_LogDriverWithLogDriver_software_amazon_awscdk_services_ecs_LogDriver_AsReference(),
+				ecorePackage.getEString(),
+				"logDriverWithLogDriver_software_amazon_awscdk_services_ecs_LogDriver_AsReference", null, 0, 1,
+				NetworkLoadBalancedTaskImageOptionsBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getNetworkLoadBalancedTaskImageOptionsBuilder_patterns_Secrets_java_lang_String__software_amazon_awscdk_services_ecs_Secret_AsMap(),
+				ecorePackage.getEString(), "secrets_java_lang_String__software_amazon_awscdk_services_ecs_Secret_AsMap",
+				null, 0, 1, NetworkLoadBalancedTaskImageOptionsBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getNetworkLoadBalancedTaskImageOptionsBuilder_patterns_TaskRoleWithIRole_software_amazon_awscdk_services_iam_IRole_AsReference(),
+				ecorePackage.getEString(), "taskRoleWithIRole_software_amazon_awscdk_services_iam_IRole_AsReference",
+				null, 0, 1, NetworkLoadBalancedTaskImageOptionsBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getNetworkLoadBalancedTaskImageOptionsBuilder_patterns_GeneratedClassName(),
+				ecorePackage.getEString(), "generatedClassName",
+				"software.amazon.awscdk.services.ecs.patterns.NetworkLoadBalancedTaskImageOptions", 0, 1,
+				NetworkLoadBalancedTaskImageOptionsBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getNetworkLoadBalancedTaskImageOptionsBuilder_patterns_VarName(), ecorePackage.getEString(),
+				"varName", null, 0, 1, NetworkLoadBalancedTaskImageOptionsBuilder_patterns.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getNetworkLoadBalancedTaskImageOptionsBuilder_patterns_Identifier(), ecorePackage.getEString(),
+				"identifier", null, 0, 1, NetworkLoadBalancedTaskImageOptionsBuilder_patterns.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getNetworkLoadBalancedTaskImageOptionsBuilder_patterns_AdditionalCode(),
+				ecorePackage.getEString(), "additionalCode", null, 0, 1,
+				NetworkLoadBalancedTaskImageOptionsBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(networkLoadBalancedFargateServiceBuilder_patternsEClass,
+				NetworkLoadBalancedFargateServiceBuilder_patterns.class,
+				"NetworkLoadBalancedFargateServiceBuilder_patterns", !IS_ABSTRACT, !IS_INTERFACE,
+				IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(
+				getNetworkLoadBalancedFargateServiceBuilder_patterns_CloudMapOptionsWithCloudMapOptions_software_amazon_awscdk_services_ecs_CloudMapOptions_AsReference(),
+				ecorePackage.getEString(),
+				"cloudMapOptionsWithCloudMapOptions_software_amazon_awscdk_services_ecs_CloudMapOptions_AsReference",
+				null, 0, 1, NetworkLoadBalancedFargateServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getNetworkLoadBalancedFargateServiceBuilder_patterns_ClusterWithICluster_software_amazon_awscdk_services_ecs_ICluster_AsReference(),
+				ecorePackage.getEString(),
+				"clusterWithICluster_software_amazon_awscdk_services_ecs_ICluster_AsReference", null, 0, 1,
+				NetworkLoadBalancedFargateServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getNetworkLoadBalancedFargateServiceBuilder_patterns_DesiredCount_java_lang_Number_(),
+				ecorePackage.getEInt(), "desiredCount_java_lang_Number_", null, 0, 1,
+				NetworkLoadBalancedFargateServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getNetworkLoadBalancedFargateServiceBuilder_patterns_DomainName_java_lang_String_(),
+				ecorePackage.getEString(), "domainName_java_lang_String_", null, 0, 1,
+				NetworkLoadBalancedFargateServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getNetworkLoadBalancedFargateServiceBuilder_patterns_DomainZoneWithIHostedZone_software_amazon_awscdk_services_route53_IHostedZone_AsReference(),
+				ecorePackage.getEString(),
+				"domainZoneWithIHostedZone_software_amazon_awscdk_services_route53_IHostedZone_AsReference", null, 0, 1,
+				NetworkLoadBalancedFargateServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getNetworkLoadBalancedFargateServiceBuilder_patterns_EnableEcsManagedTags_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "enableEcsManagedTags_java_lang_Boolean_", null, 0, 1,
+				NetworkLoadBalancedFargateServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getNetworkLoadBalancedFargateServiceBuilder_patterns_HealthCheckGracePeriodWithDuration_software_amazon_awscdk_core_Duration_AsReference(),
+				ecorePackage.getEString(),
+				"healthCheckGracePeriodWithDuration_software_amazon_awscdk_core_Duration_AsReference", null, 0, 1,
+				NetworkLoadBalancedFargateServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getNetworkLoadBalancedFargateServiceBuilder_patterns_ListenerPort_java_lang_Number_(),
+				ecorePackage.getEInt(), "listenerPort_java_lang_Number_", null, 0, 1,
+				NetworkLoadBalancedFargateServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getNetworkLoadBalancedFargateServiceBuilder_patterns_LoadBalancerWithINetworkLoadBalancer_software_amazon_awscdk_services_elasticloadbalancingv2_INetworkLoadBalancer_AsReference(),
+				ecorePackage.getEString(),
+				"loadBalancerWithINetworkLoadBalancer_software_amazon_awscdk_services_elasticloadbalancingv2_INetworkLoadBalancer_AsReference",
+				null, 0, 1, NetworkLoadBalancedFargateServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getNetworkLoadBalancedFargateServiceBuilder_patterns_MaxHealthyPercent_java_lang_Number_(),
+				ecorePackage.getEInt(), "maxHealthyPercent_java_lang_Number_", null, 0, 1,
+				NetworkLoadBalancedFargateServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getNetworkLoadBalancedFargateServiceBuilder_patterns_MinHealthyPercent_java_lang_Number_(),
+				ecorePackage.getEInt(), "minHealthyPercent_java_lang_Number_", null, 0, 1,
+				NetworkLoadBalancedFargateServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getNetworkLoadBalancedFargateServiceBuilder_patterns_PropagateTags_software_amazon_awscdk_services_ecs_PropagatedTagSource_(),
+				this.getPropagatedTagSource(), "propagateTags_software_amazon_awscdk_services_ecs_PropagatedTagSource_",
+				null, 0, 1, NetworkLoadBalancedFargateServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getNetworkLoadBalancedFargateServiceBuilder_patterns_PublicLoadBalancer_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "publicLoadBalancer_java_lang_Boolean_", null, 0, 1,
+				NetworkLoadBalancedFargateServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getNetworkLoadBalancedFargateServiceBuilder_patterns_ServiceName_java_lang_String_(),
+				ecorePackage.getEString(), "serviceName_java_lang_String_", null, 0, 1,
+				NetworkLoadBalancedFargateServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getNetworkLoadBalancedFargateServiceBuilder_patterns_TaskImageOptionsWithNetworkLoadBalancedTaskImageOptions_software_amazon_awscdk_services_ecs_patterns_NetworkLoadBalancedTaskImageOptions_AsReference(),
+				ecorePackage.getEString(),
+				"taskImageOptionsWithNetworkLoadBalancedTaskImageOptions_software_amazon_awscdk_services_ecs_patterns_NetworkLoadBalancedTaskImageOptions_AsReference",
+				null, 0, 1, NetworkLoadBalancedFargateServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getNetworkLoadBalancedFargateServiceBuilder_patterns_VpcWithIVpc_software_amazon_awscdk_services_ec2_IVpc_AsReference(),
+				ecorePackage.getEString(), "vpcWithIVpc_software_amazon_awscdk_services_ec2_IVpc_AsReference", null, 0,
+				1, NetworkLoadBalancedFargateServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getNetworkLoadBalancedFargateServiceBuilder_patterns_AssignPublicIp_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "assignPublicIp_java_lang_Boolean_", null, 0, 1,
+				NetworkLoadBalancedFargateServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getNetworkLoadBalancedFargateServiceBuilder_patterns_Cpu_java_lang_Number_(),
+				ecorePackage.getEInt(), "cpu_java_lang_Number_", null, 0, 1,
+				NetworkLoadBalancedFargateServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getNetworkLoadBalancedFargateServiceBuilder_patterns_MemoryLimitMiB_java_lang_Number_(),
+				ecorePackage.getEInt(), "memoryLimitMiB_java_lang_Number_", null, 0, 1,
+				NetworkLoadBalancedFargateServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getNetworkLoadBalancedFargateServiceBuilder_patterns_PlatformVersion_software_amazon_awscdk_services_ecs_FargatePlatformVersion_(),
+				this.getFargatePlatformVersion(),
+				"platformVersion_software_amazon_awscdk_services_ecs_FargatePlatformVersion_", null, 0, 1,
+				NetworkLoadBalancedFargateServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getNetworkLoadBalancedFargateServiceBuilder_patterns_TaskDefinitionWithFargateTaskDefinition_software_amazon_awscdk_services_ecs_FargateTaskDefinition_AsReference(),
+				ecorePackage.getEString(),
+				"taskDefinitionWithFargateTaskDefinition_software_amazon_awscdk_services_ecs_FargateTaskDefinition_AsReference",
+				null, 0, 1, NetworkLoadBalancedFargateServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getNetworkLoadBalancedFargateServiceBuilder_patterns_GeneratedClassName(),
+				ecorePackage.getEString(), "generatedClassName",
+				"software.amazon.awscdk.services.ecs.patterns.NetworkLoadBalancedFargateService", 0, 1,
+				NetworkLoadBalancedFargateServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getNetworkLoadBalancedFargateServiceBuilder_patterns_VarName(), ecorePackage.getEString(),
+				"varName", null, 0, 1, NetworkLoadBalancedFargateServiceBuilder_patterns.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getNetworkLoadBalancedFargateServiceBuilder_patterns_Identifier(), ecorePackage.getEString(),
+				"identifier", null, 0, 1, NetworkLoadBalancedFargateServiceBuilder_patterns.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getNetworkLoadBalancedFargateServiceBuilder_patterns_AdditionalCode(), ecorePackage.getEString(),
+				"additionalCode", null, 0, 1, NetworkLoadBalancedFargateServiceBuilder_patterns.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(networkLoadBalancedEc2ServiceBuilder_patternsEClass,
+				NetworkLoadBalancedEc2ServiceBuilder_patterns.class, "NetworkLoadBalancedEc2ServiceBuilder_patterns",
+				!IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(
+				getNetworkLoadBalancedEc2ServiceBuilder_patterns_CloudMapOptionsWithCloudMapOptions_software_amazon_awscdk_services_ecs_CloudMapOptions_AsReference(),
+				ecorePackage.getEString(),
+				"cloudMapOptionsWithCloudMapOptions_software_amazon_awscdk_services_ecs_CloudMapOptions_AsReference",
+				null, 0, 1, NetworkLoadBalancedEc2ServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getNetworkLoadBalancedEc2ServiceBuilder_patterns_ClusterWithICluster_software_amazon_awscdk_services_ecs_ICluster_AsReference(),
+				ecorePackage.getEString(),
+				"clusterWithICluster_software_amazon_awscdk_services_ecs_ICluster_AsReference", null, 0, 1,
+				NetworkLoadBalancedEc2ServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getNetworkLoadBalancedEc2ServiceBuilder_patterns_DesiredCount_java_lang_Number_(),
+				ecorePackage.getEInt(), "desiredCount_java_lang_Number_", null, 0, 1,
+				NetworkLoadBalancedEc2ServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getNetworkLoadBalancedEc2ServiceBuilder_patterns_DomainName_java_lang_String_(),
+				ecorePackage.getEString(), "domainName_java_lang_String_", null, 0, 1,
+				NetworkLoadBalancedEc2ServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getNetworkLoadBalancedEc2ServiceBuilder_patterns_DomainZoneWithIHostedZone_software_amazon_awscdk_services_route53_IHostedZone_AsReference(),
+				ecorePackage.getEString(),
+				"domainZoneWithIHostedZone_software_amazon_awscdk_services_route53_IHostedZone_AsReference", null, 0, 1,
+				NetworkLoadBalancedEc2ServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getNetworkLoadBalancedEc2ServiceBuilder_patterns_EnableEcsManagedTags_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "enableEcsManagedTags_java_lang_Boolean_", null, 0, 1,
+				NetworkLoadBalancedEc2ServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getNetworkLoadBalancedEc2ServiceBuilder_patterns_HealthCheckGracePeriodWithDuration_software_amazon_awscdk_core_Duration_AsReference(),
+				ecorePackage.getEString(),
+				"healthCheckGracePeriodWithDuration_software_amazon_awscdk_core_Duration_AsReference", null, 0, 1,
+				NetworkLoadBalancedEc2ServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getNetworkLoadBalancedEc2ServiceBuilder_patterns_ListenerPort_java_lang_Number_(),
+				ecorePackage.getEInt(), "listenerPort_java_lang_Number_", null, 0, 1,
+				NetworkLoadBalancedEc2ServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getNetworkLoadBalancedEc2ServiceBuilder_patterns_LoadBalancerWithINetworkLoadBalancer_software_amazon_awscdk_services_elasticloadbalancingv2_INetworkLoadBalancer_AsReference(),
+				ecorePackage.getEString(),
+				"loadBalancerWithINetworkLoadBalancer_software_amazon_awscdk_services_elasticloadbalancingv2_INetworkLoadBalancer_AsReference",
+				null, 0, 1, NetworkLoadBalancedEc2ServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getNetworkLoadBalancedEc2ServiceBuilder_patterns_MaxHealthyPercent_java_lang_Number_(),
+				ecorePackage.getEInt(), "maxHealthyPercent_java_lang_Number_", null, 0, 1,
+				NetworkLoadBalancedEc2ServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getNetworkLoadBalancedEc2ServiceBuilder_patterns_MinHealthyPercent_java_lang_Number_(),
+				ecorePackage.getEInt(), "minHealthyPercent_java_lang_Number_", null, 0, 1,
+				NetworkLoadBalancedEc2ServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getNetworkLoadBalancedEc2ServiceBuilder_patterns_PropagateTags_software_amazon_awscdk_services_ecs_PropagatedTagSource_(),
+				this.getPropagatedTagSource(), "propagateTags_software_amazon_awscdk_services_ecs_PropagatedTagSource_",
+				null, 0, 1, NetworkLoadBalancedEc2ServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getNetworkLoadBalancedEc2ServiceBuilder_patterns_PublicLoadBalancer_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "publicLoadBalancer_java_lang_Boolean_", null, 0, 1,
+				NetworkLoadBalancedEc2ServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getNetworkLoadBalancedEc2ServiceBuilder_patterns_ServiceName_java_lang_String_(),
+				ecorePackage.getEString(), "serviceName_java_lang_String_", null, 0, 1,
+				NetworkLoadBalancedEc2ServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getNetworkLoadBalancedEc2ServiceBuilder_patterns_TaskImageOptionsWithNetworkLoadBalancedTaskImageOptions_software_amazon_awscdk_services_ecs_patterns_NetworkLoadBalancedTaskImageOptions_AsReference(),
+				ecorePackage.getEString(),
+				"taskImageOptionsWithNetworkLoadBalancedTaskImageOptions_software_amazon_awscdk_services_ecs_patterns_NetworkLoadBalancedTaskImageOptions_AsReference",
+				null, 0, 1, NetworkLoadBalancedEc2ServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getNetworkLoadBalancedEc2ServiceBuilder_patterns_VpcWithIVpc_software_amazon_awscdk_services_ec2_IVpc_AsReference(),
+				ecorePackage.getEString(), "vpcWithIVpc_software_amazon_awscdk_services_ec2_IVpc_AsReference", null, 0,
+				1, NetworkLoadBalancedEc2ServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getNetworkLoadBalancedEc2ServiceBuilder_patterns_Cpu_java_lang_Number_(), ecorePackage.getEInt(),
+				"cpu_java_lang_Number_", null, 0, 1, NetworkLoadBalancedEc2ServiceBuilder_patterns.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getNetworkLoadBalancedEc2ServiceBuilder_patterns_MemoryLimitMiB_java_lang_Number_(),
+				ecorePackage.getEInt(), "memoryLimitMiB_java_lang_Number_", null, 0, 1,
+				NetworkLoadBalancedEc2ServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getNetworkLoadBalancedEc2ServiceBuilder_patterns_MemoryReservationMiB_java_lang_Number_(),
+				ecorePackage.getEInt(), "memoryReservationMiB_java_lang_Number_", null, 0, 1,
+				NetworkLoadBalancedEc2ServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getNetworkLoadBalancedEc2ServiceBuilder_patterns_TaskDefinitionWithEc2TaskDefinition_software_amazon_awscdk_services_ecs_Ec2TaskDefinition_AsReference(),
+				ecorePackage.getEString(),
+				"taskDefinitionWithEc2TaskDefinition_software_amazon_awscdk_services_ecs_Ec2TaskDefinition_AsReference",
+				null, 0, 1, NetworkLoadBalancedEc2ServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getNetworkLoadBalancedEc2ServiceBuilder_patterns_GeneratedClassName(), ecorePackage.getEString(),
+				"generatedClassName", "software.amazon.awscdk.services.ecs.patterns.NetworkLoadBalancedEc2Service", 0,
+				1, NetworkLoadBalancedEc2ServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getNetworkLoadBalancedEc2ServiceBuilder_patterns_VarName(), ecorePackage.getEString(), "varName",
+				null, 0, 1, NetworkLoadBalancedEc2ServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getNetworkLoadBalancedEc2ServiceBuilder_patterns_Identifier(), ecorePackage.getEString(),
+				"identifier", null, 0, 1, NetworkLoadBalancedEc2ServiceBuilder_patterns.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getNetworkLoadBalancedEc2ServiceBuilder_patterns_AdditionalCode(), ecorePackage.getEString(),
+				"additionalCode", null, 0, 1, NetworkLoadBalancedEc2ServiceBuilder_patterns.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(networkMultipleTargetGroupsEc2ServiceBuilder_patternsEClass,
+				NetworkMultipleTargetGroupsEc2ServiceBuilder_patterns.class,
+				"NetworkMultipleTargetGroupsEc2ServiceBuilder_patterns", !IS_ABSTRACT, !IS_INTERFACE,
+				IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(
+				getNetworkMultipleTargetGroupsEc2ServiceBuilder_patterns_CloudMapOptionsWithCloudMapOptions_software_amazon_awscdk_services_ecs_CloudMapOptions_AsReference(),
+				ecorePackage.getEString(),
+				"cloudMapOptionsWithCloudMapOptions_software_amazon_awscdk_services_ecs_CloudMapOptions_AsReference",
+				null, 0, 1, NetworkMultipleTargetGroupsEc2ServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getNetworkMultipleTargetGroupsEc2ServiceBuilder_patterns_ClusterWithICluster_software_amazon_awscdk_services_ecs_ICluster_AsReference(),
+				ecorePackage.getEString(),
+				"clusterWithICluster_software_amazon_awscdk_services_ecs_ICluster_AsReference", null, 0, 1,
+				NetworkMultipleTargetGroupsEc2ServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getNetworkMultipleTargetGroupsEc2ServiceBuilder_patterns_DesiredCount_java_lang_Number_(),
+				ecorePackage.getEInt(), "desiredCount_java_lang_Number_", null, 0, 1,
+				NetworkMultipleTargetGroupsEc2ServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getNetworkMultipleTargetGroupsEc2ServiceBuilder_patterns_EnableEcsManagedTags_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "enableEcsManagedTags_java_lang_Boolean_", null, 0, 1,
+				NetworkMultipleTargetGroupsEc2ServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getNetworkMultipleTargetGroupsEc2ServiceBuilder_patterns_HealthCheckGracePeriodWithDuration_software_amazon_awscdk_core_Duration_AsReference(),
+				ecorePackage.getEString(),
+				"healthCheckGracePeriodWithDuration_software_amazon_awscdk_core_Duration_AsReference", null, 0, 1,
+				NetworkMultipleTargetGroupsEc2ServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getNetworkMultipleTargetGroupsEc2ServiceBuilder_patterns_LoadBalancers_software_amazon_awscdk_services_ecs_patterns_NetworkLoadBalancerProps_AsList(),
+				ecorePackage.getEString(),
+				"loadBalancers_software_amazon_awscdk_services_ecs_patterns_NetworkLoadBalancerProps_AsList", null, 0,
+				1, NetworkMultipleTargetGroupsEc2ServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getNetworkMultipleTargetGroupsEc2ServiceBuilder_patterns_PropagateTags_software_amazon_awscdk_services_ecs_PropagatedTagSource_(),
+				this.getPropagatedTagSource(), "propagateTags_software_amazon_awscdk_services_ecs_PropagatedTagSource_",
+				null, 0, 1, NetworkMultipleTargetGroupsEc2ServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getNetworkMultipleTargetGroupsEc2ServiceBuilder_patterns_ServiceName_java_lang_String_(),
+				ecorePackage.getEString(), "serviceName_java_lang_String_", null, 0, 1,
+				NetworkMultipleTargetGroupsEc2ServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getNetworkMultipleTargetGroupsEc2ServiceBuilder_patterns_TargetGroups_software_amazon_awscdk_services_ecs_patterns_NetworkTargetProps_AsList(),
+				ecorePackage.getEString(),
+				"targetGroups_software_amazon_awscdk_services_ecs_patterns_NetworkTargetProps_AsList", null, 0, 1,
+				NetworkMultipleTargetGroupsEc2ServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getNetworkMultipleTargetGroupsEc2ServiceBuilder_patterns_TaskImageOptionsWithNetworkLoadBalancedTaskImageProps_software_amazon_awscdk_services_ecs_patterns_NetworkLoadBalancedTaskImageProps_AsReference(),
+				ecorePackage.getEString(),
+				"taskImageOptionsWithNetworkLoadBalancedTaskImageProps_software_amazon_awscdk_services_ecs_patterns_NetworkLoadBalancedTaskImageProps_AsReference",
+				null, 0, 1, NetworkMultipleTargetGroupsEc2ServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getNetworkMultipleTargetGroupsEc2ServiceBuilder_patterns_VpcWithIVpc_software_amazon_awscdk_services_ec2_IVpc_AsReference(),
+				ecorePackage.getEString(), "vpcWithIVpc_software_amazon_awscdk_services_ec2_IVpc_AsReference", null, 0,
+				1, NetworkMultipleTargetGroupsEc2ServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getNetworkMultipleTargetGroupsEc2ServiceBuilder_patterns_Cpu_java_lang_Number_(),
+				ecorePackage.getEInt(), "cpu_java_lang_Number_", null, 0, 1,
+				NetworkMultipleTargetGroupsEc2ServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getNetworkMultipleTargetGroupsEc2ServiceBuilder_patterns_MemoryLimitMiB_java_lang_Number_(),
+				ecorePackage.getEInt(), "memoryLimitMiB_java_lang_Number_", null, 0, 1,
+				NetworkMultipleTargetGroupsEc2ServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getNetworkMultipleTargetGroupsEc2ServiceBuilder_patterns_MemoryReservationMiB_java_lang_Number_(),
+				ecorePackage.getEInt(), "memoryReservationMiB_java_lang_Number_", null, 0, 1,
+				NetworkMultipleTargetGroupsEc2ServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getNetworkMultipleTargetGroupsEc2ServiceBuilder_patterns_TaskDefinitionWithEc2TaskDefinition_software_amazon_awscdk_services_ecs_Ec2TaskDefinition_AsReference(),
+				ecorePackage.getEString(),
+				"taskDefinitionWithEc2TaskDefinition_software_amazon_awscdk_services_ecs_Ec2TaskDefinition_AsReference",
+				null, 0, 1, NetworkMultipleTargetGroupsEc2ServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getNetworkMultipleTargetGroupsEc2ServiceBuilder_patterns_GeneratedClassName(),
+				ecorePackage.getEString(), "generatedClassName",
+				"software.amazon.awscdk.services.ecs.patterns.NetworkMultipleTargetGroupsEc2Service", 0, 1,
+				NetworkMultipleTargetGroupsEc2ServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				!IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getNetworkMultipleTargetGroupsEc2ServiceBuilder_patterns_VarName(), ecorePackage.getEString(),
+				"varName", null, 0, 1, NetworkMultipleTargetGroupsEc2ServiceBuilder_patterns.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getNetworkMultipleTargetGroupsEc2ServiceBuilder_patterns_Identifier(), ecorePackage.getEString(),
+				"identifier", null, 0, 1, NetworkMultipleTargetGroupsEc2ServiceBuilder_patterns.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getNetworkMultipleTargetGroupsEc2ServiceBuilder_patterns_AdditionalCode(),
+				ecorePackage.getEString(), "additionalCode", null, 0, 1,
+				NetworkMultipleTargetGroupsEc2ServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(networkTargetPropsBuilder_patternsEClass, NetworkTargetPropsBuilder_patterns.class,
+				"NetworkTargetPropsBuilder_patterns", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getNetworkTargetPropsBuilder_patterns_ContainerPort_java_lang_Number_(), ecorePackage.getEInt(),
+				"containerPort_java_lang_Number_", null, 0, 1, NetworkTargetPropsBuilder_patterns.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getNetworkTargetPropsBuilder_patterns_Listener_java_lang_String_(), ecorePackage.getEString(),
+				"listener_java_lang_String_", null, 0, 1, NetworkTargetPropsBuilder_patterns.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getNetworkTargetPropsBuilder_patterns_GeneratedClassName(), ecorePackage.getEString(),
+				"generatedClassName", "software.amazon.awscdk.services.ecs.patterns.NetworkTargetProps", 0, 1,
+				NetworkTargetPropsBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getNetworkTargetPropsBuilder_patterns_VarName(), ecorePackage.getEString(), "varName", null, 0,
+				1, NetworkTargetPropsBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getNetworkTargetPropsBuilder_patterns_Identifier(), ecorePackage.getEString(), "identifier",
+				null, 0, 1, NetworkTargetPropsBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getNetworkTargetPropsBuilder_patterns_AdditionalCode(), ecorePackage.getEString(),
+				"additionalCode", null, 0, 1, NetworkTargetPropsBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(networkLoadBalancedTaskImagePropsBuilder_patternsEClass,
+				NetworkLoadBalancedTaskImagePropsBuilder_patterns.class,
+				"NetworkLoadBalancedTaskImagePropsBuilder_patterns", !IS_ABSTRACT, !IS_INTERFACE,
+				IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(
+				getNetworkLoadBalancedTaskImagePropsBuilder_patterns_ImageWithContainerImage_software_amazon_awscdk_services_ecs_ContainerImage_AsReference(),
+				ecorePackage.getEString(),
+				"imageWithContainerImage_software_amazon_awscdk_services_ecs_ContainerImage_AsReference", null, 0, 1,
+				NetworkLoadBalancedTaskImagePropsBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getNetworkLoadBalancedTaskImagePropsBuilder_patterns_ContainerName_java_lang_String_(),
+				ecorePackage.getEString(), "containerName_java_lang_String_", null, 0, 1,
+				NetworkLoadBalancedTaskImagePropsBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getNetworkLoadBalancedTaskImagePropsBuilder_patterns_ContainerPorts_java_lang_Number_AsList(),
+				ecorePackage.getEString(), "containerPorts_java_lang_Number_AsList", null, 0, 1,
+				NetworkLoadBalancedTaskImagePropsBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getNetworkLoadBalancedTaskImagePropsBuilder_patterns_EnableLogging_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "enableLogging_java_lang_Boolean_", null, 0, 1,
+				NetworkLoadBalancedTaskImagePropsBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getNetworkLoadBalancedTaskImagePropsBuilder_patterns_Environment_java_lang_String__java_lang_String_AsMap(),
+				ecorePackage.getEString(), "environment_java_lang_String__java_lang_String_AsMap", null, 0, 1,
+				NetworkLoadBalancedTaskImagePropsBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getNetworkLoadBalancedTaskImagePropsBuilder_patterns_ExecutionRoleWithIRole_software_amazon_awscdk_services_iam_IRole_AsReference(),
+				ecorePackage.getEString(),
+				"executionRoleWithIRole_software_amazon_awscdk_services_iam_IRole_AsReference", null, 0, 1,
+				NetworkLoadBalancedTaskImagePropsBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getNetworkLoadBalancedTaskImagePropsBuilder_patterns_Family_java_lang_String_(),
+				ecorePackage.getEString(), "family_java_lang_String_", null, 0, 1,
+				NetworkLoadBalancedTaskImagePropsBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getNetworkLoadBalancedTaskImagePropsBuilder_patterns_LogDriverWithLogDriver_software_amazon_awscdk_services_ecs_LogDriver_AsReference(),
+				ecorePackage.getEString(),
+				"logDriverWithLogDriver_software_amazon_awscdk_services_ecs_LogDriver_AsReference", null, 0, 1,
+				NetworkLoadBalancedTaskImagePropsBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getNetworkLoadBalancedTaskImagePropsBuilder_patterns_Secrets_java_lang_String__software_amazon_awscdk_services_ecs_Secret_AsMap(),
+				ecorePackage.getEString(), "secrets_java_lang_String__software_amazon_awscdk_services_ecs_Secret_AsMap",
+				null, 0, 1, NetworkLoadBalancedTaskImagePropsBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getNetworkLoadBalancedTaskImagePropsBuilder_patterns_TaskRoleWithIRole_software_amazon_awscdk_services_iam_IRole_AsReference(),
+				ecorePackage.getEString(), "taskRoleWithIRole_software_amazon_awscdk_services_iam_IRole_AsReference",
+				null, 0, 1, NetworkLoadBalancedTaskImagePropsBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getNetworkLoadBalancedTaskImagePropsBuilder_patterns_GeneratedClassName(),
+				ecorePackage.getEString(), "generatedClassName",
+				"software.amazon.awscdk.services.ecs.patterns.NetworkLoadBalancedTaskImageProps", 0, 1,
+				NetworkLoadBalancedTaskImagePropsBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getNetworkLoadBalancedTaskImagePropsBuilder_patterns_VarName(), ecorePackage.getEString(),
+				"varName", null, 0, 1, NetworkLoadBalancedTaskImagePropsBuilder_patterns.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getNetworkLoadBalancedTaskImagePropsBuilder_patterns_Identifier(), ecorePackage.getEString(),
+				"identifier", null, 0, 1, NetworkLoadBalancedTaskImagePropsBuilder_patterns.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getNetworkLoadBalancedTaskImagePropsBuilder_patterns_AdditionalCode(), ecorePackage.getEString(),
+				"additionalCode", null, 0, 1, NetworkLoadBalancedTaskImagePropsBuilder_patterns.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(networkMultipleTargetGroupsFargateServiceBuilder_patternsEClass,
+				NetworkMultipleTargetGroupsFargateServiceBuilder_patterns.class,
+				"NetworkMultipleTargetGroupsFargateServiceBuilder_patterns", !IS_ABSTRACT, !IS_INTERFACE,
+				IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(
+				getNetworkMultipleTargetGroupsFargateServiceBuilder_patterns_CloudMapOptionsWithCloudMapOptions_software_amazon_awscdk_services_ecs_CloudMapOptions_AsReference(),
+				ecorePackage.getEString(),
+				"cloudMapOptionsWithCloudMapOptions_software_amazon_awscdk_services_ecs_CloudMapOptions_AsReference",
+				null, 0, 1, NetworkMultipleTargetGroupsFargateServiceBuilder_patterns.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getNetworkMultipleTargetGroupsFargateServiceBuilder_patterns_ClusterWithICluster_software_amazon_awscdk_services_ecs_ICluster_AsReference(),
+				ecorePackage.getEString(),
+				"clusterWithICluster_software_amazon_awscdk_services_ecs_ICluster_AsReference", null, 0, 1,
+				NetworkMultipleTargetGroupsFargateServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getNetworkMultipleTargetGroupsFargateServiceBuilder_patterns_DesiredCount_java_lang_Number_(),
+				ecorePackage.getEInt(), "desiredCount_java_lang_Number_", null, 0, 1,
+				NetworkMultipleTargetGroupsFargateServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getNetworkMultipleTargetGroupsFargateServiceBuilder_patterns_EnableEcsManagedTags_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "enableEcsManagedTags_java_lang_Boolean_", null, 0, 1,
+				NetworkMultipleTargetGroupsFargateServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getNetworkMultipleTargetGroupsFargateServiceBuilder_patterns_HealthCheckGracePeriodWithDuration_software_amazon_awscdk_core_Duration_AsReference(),
+				ecorePackage.getEString(),
+				"healthCheckGracePeriodWithDuration_software_amazon_awscdk_core_Duration_AsReference", null, 0, 1,
+				NetworkMultipleTargetGroupsFargateServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getNetworkMultipleTargetGroupsFargateServiceBuilder_patterns_LoadBalancers_software_amazon_awscdk_services_ecs_patterns_NetworkLoadBalancerProps_AsList(),
+				ecorePackage.getEString(),
+				"loadBalancers_software_amazon_awscdk_services_ecs_patterns_NetworkLoadBalancerProps_AsList", null, 0,
+				1, NetworkMultipleTargetGroupsFargateServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getNetworkMultipleTargetGroupsFargateServiceBuilder_patterns_PropagateTags_software_amazon_awscdk_services_ecs_PropagatedTagSource_(),
+				this.getPropagatedTagSource(), "propagateTags_software_amazon_awscdk_services_ecs_PropagatedTagSource_",
+				null, 0, 1, NetworkMultipleTargetGroupsFargateServiceBuilder_patterns.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getNetworkMultipleTargetGroupsFargateServiceBuilder_patterns_ServiceName_java_lang_String_(),
+				ecorePackage.getEString(), "serviceName_java_lang_String_", null, 0, 1,
+				NetworkMultipleTargetGroupsFargateServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getNetworkMultipleTargetGroupsFargateServiceBuilder_patterns_TargetGroups_software_amazon_awscdk_services_ecs_patterns_NetworkTargetProps_AsList(),
+				ecorePackage.getEString(),
+				"targetGroups_software_amazon_awscdk_services_ecs_patterns_NetworkTargetProps_AsList", null, 0, 1,
+				NetworkMultipleTargetGroupsFargateServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getNetworkMultipleTargetGroupsFargateServiceBuilder_patterns_TaskImageOptionsWithNetworkLoadBalancedTaskImageProps_software_amazon_awscdk_services_ecs_patterns_NetworkLoadBalancedTaskImageProps_AsReference(),
+				ecorePackage.getEString(),
+				"taskImageOptionsWithNetworkLoadBalancedTaskImageProps_software_amazon_awscdk_services_ecs_patterns_NetworkLoadBalancedTaskImageProps_AsReference",
+				null, 0, 1, NetworkMultipleTargetGroupsFargateServiceBuilder_patterns.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getNetworkMultipleTargetGroupsFargateServiceBuilder_patterns_VpcWithIVpc_software_amazon_awscdk_services_ec2_IVpc_AsReference(),
+				ecorePackage.getEString(), "vpcWithIVpc_software_amazon_awscdk_services_ec2_IVpc_AsReference", null, 0,
+				1, NetworkMultipleTargetGroupsFargateServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getNetworkMultipleTargetGroupsFargateServiceBuilder_patterns_AssignPublicIp_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "assignPublicIp_java_lang_Boolean_", null, 0, 1,
+				NetworkMultipleTargetGroupsFargateServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getNetworkMultipleTargetGroupsFargateServiceBuilder_patterns_Cpu_java_lang_Number_(),
+				ecorePackage.getEInt(), "cpu_java_lang_Number_", null, 0, 1,
+				NetworkMultipleTargetGroupsFargateServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getNetworkMultipleTargetGroupsFargateServiceBuilder_patterns_MemoryLimitMiB_java_lang_Number_(),
+				ecorePackage.getEInt(), "memoryLimitMiB_java_lang_Number_", null, 0, 1,
+				NetworkMultipleTargetGroupsFargateServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getNetworkMultipleTargetGroupsFargateServiceBuilder_patterns_PlatformVersion_software_amazon_awscdk_services_ecs_FargatePlatformVersion_(),
+				this.getFargatePlatformVersion(),
+				"platformVersion_software_amazon_awscdk_services_ecs_FargatePlatformVersion_", null, 0, 1,
+				NetworkMultipleTargetGroupsFargateServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getNetworkMultipleTargetGroupsFargateServiceBuilder_patterns_TaskDefinitionWithFargateTaskDefinition_software_amazon_awscdk_services_ecs_FargateTaskDefinition_AsReference(),
+				ecorePackage.getEString(),
+				"taskDefinitionWithFargateTaskDefinition_software_amazon_awscdk_services_ecs_FargateTaskDefinition_AsReference",
+				null, 0, 1, NetworkMultipleTargetGroupsFargateServiceBuilder_patterns.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getNetworkMultipleTargetGroupsFargateServiceBuilder_patterns_GeneratedClassName(),
+				ecorePackage.getEString(), "generatedClassName",
+				"software.amazon.awscdk.services.ecs.patterns.NetworkMultipleTargetGroupsFargateService", 0, 1,
+				NetworkMultipleTargetGroupsFargateServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				!IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getNetworkMultipleTargetGroupsFargateServiceBuilder_patterns_VarName(),
+				ecorePackage.getEString(), "varName", null, 0, 1,
+				NetworkMultipleTargetGroupsFargateServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getNetworkMultipleTargetGroupsFargateServiceBuilder_patterns_Identifier(),
+				ecorePackage.getEString(), "identifier", null, 0, 1,
+				NetworkMultipleTargetGroupsFargateServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getNetworkMultipleTargetGroupsFargateServiceBuilder_patterns_AdditionalCode(),
+				ecorePackage.getEString(), "additionalCode", null, 0, 1,
+				NetworkMultipleTargetGroupsFargateServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(scalingIntervalBuilder_applicationautoscalingEClass,
+				ScalingIntervalBuilder_applicationautoscaling.class, "ScalingIntervalBuilder_applicationautoscaling",
+				!IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getScalingIntervalBuilder_applicationautoscaling_Change_java_lang_Number_(),
+				ecorePackage.getEInt(), "change_java_lang_Number_", null, 0, 1,
+				ScalingIntervalBuilder_applicationautoscaling.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getScalingIntervalBuilder_applicationautoscaling_Lower_java_lang_Number_(),
+				ecorePackage.getEInt(), "lower_java_lang_Number_", null, 0, 1,
+				ScalingIntervalBuilder_applicationautoscaling.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getScalingIntervalBuilder_applicationautoscaling_Upper_java_lang_Number_(),
+				ecorePackage.getEInt(), "upper_java_lang_Number_", null, 0, 1,
+				ScalingIntervalBuilder_applicationautoscaling.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getScalingIntervalBuilder_applicationautoscaling_GeneratedClassName(), ecorePackage.getEString(),
+				"generatedClassName", "software.amazon.awscdk.services.applicationautoscaling.ScalingInterval", 0, 1,
+				ScalingIntervalBuilder_applicationautoscaling.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getScalingIntervalBuilder_applicationautoscaling_VarName(), ecorePackage.getEString(), "varName",
+				null, 0, 1, ScalingIntervalBuilder_applicationautoscaling.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getScalingIntervalBuilder_applicationautoscaling_Identifier(), ecorePackage.getEString(),
+				"identifier", null, 0, 1, ScalingIntervalBuilder_applicationautoscaling.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getScalingIntervalBuilder_applicationautoscaling_AdditionalCode(), ecorePackage.getEString(),
+				"additionalCode", null, 0, 1, ScalingIntervalBuilder_applicationautoscaling.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(queueProcessingFargateServiceBuilder_patternsEClass,
+				QueueProcessingFargateServiceBuilder_patterns.class, "QueueProcessingFargateServiceBuilder_patterns",
+				!IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(
+				getQueueProcessingFargateServiceBuilder_patterns_ImageWithContainerImage_software_amazon_awscdk_services_ecs_ContainerImage_AsReference(),
+				ecorePackage.getEString(),
+				"imageWithContainerImage_software_amazon_awscdk_services_ecs_ContainerImage_AsReference", null, 0, 1,
+				QueueProcessingFargateServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getQueueProcessingFargateServiceBuilder_patterns_ClusterWithICluster_software_amazon_awscdk_services_ecs_ICluster_AsReference(),
+				ecorePackage.getEString(),
+				"clusterWithICluster_software_amazon_awscdk_services_ecs_ICluster_AsReference", null, 0, 1,
+				QueueProcessingFargateServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getQueueProcessingFargateServiceBuilder_patterns_Command_java_lang_String_AsList(),
+				ecorePackage.getEString(), "command_java_lang_String_AsList", null, 0, 1,
+				QueueProcessingFargateServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getQueueProcessingFargateServiceBuilder_patterns_DesiredTaskCount_java_lang_Number_(),
+				ecorePackage.getEInt(), "desiredTaskCount_java_lang_Number_", null, 0, 1,
+				QueueProcessingFargateServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getQueueProcessingFargateServiceBuilder_patterns_EnableEcsManagedTags_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "enableEcsManagedTags_java_lang_Boolean_", null, 0, 1,
+				QueueProcessingFargateServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getQueueProcessingFargateServiceBuilder_patterns_EnableLogging_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "enableLogging_java_lang_Boolean_", null, 0, 1,
+				QueueProcessingFargateServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getQueueProcessingFargateServiceBuilder_patterns_Environment_java_lang_String__java_lang_String_AsMap(),
+				ecorePackage.getEString(), "environment_java_lang_String__java_lang_String_AsMap", null, 0, 1,
+				QueueProcessingFargateServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getQueueProcessingFargateServiceBuilder_patterns_Family_java_lang_String_(),
+				ecorePackage.getEString(), "family_java_lang_String_", null, 0, 1,
+				QueueProcessingFargateServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getQueueProcessingFargateServiceBuilder_patterns_LogDriverWithLogDriver_software_amazon_awscdk_services_ecs_LogDriver_AsReference(),
+				ecorePackage.getEString(),
+				"logDriverWithLogDriver_software_amazon_awscdk_services_ecs_LogDriver_AsReference", null, 0, 1,
+				QueueProcessingFargateServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getQueueProcessingFargateServiceBuilder_patterns_MaxHealthyPercent_java_lang_Number_(),
+				ecorePackage.getEInt(), "maxHealthyPercent_java_lang_Number_", null, 0, 1,
+				QueueProcessingFargateServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getQueueProcessingFargateServiceBuilder_patterns_MaxReceiveCount_java_lang_Number_(),
+				ecorePackage.getEInt(), "maxReceiveCount_java_lang_Number_", null, 0, 1,
+				QueueProcessingFargateServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getQueueProcessingFargateServiceBuilder_patterns_MaxScalingCapacity_java_lang_Number_(),
+				ecorePackage.getEInt(), "maxScalingCapacity_java_lang_Number_", null, 0, 1,
+				QueueProcessingFargateServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getQueueProcessingFargateServiceBuilder_patterns_MinHealthyPercent_java_lang_Number_(),
+				ecorePackage.getEInt(), "minHealthyPercent_java_lang_Number_", null, 0, 1,
+				QueueProcessingFargateServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getQueueProcessingFargateServiceBuilder_patterns_PropagateTags_software_amazon_awscdk_services_ecs_PropagatedTagSource_(),
+				this.getPropagatedTagSource(), "propagateTags_software_amazon_awscdk_services_ecs_PropagatedTagSource_",
+				null, 0, 1, QueueProcessingFargateServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getQueueProcessingFargateServiceBuilder_patterns_QueueWithIQueue_software_amazon_awscdk_services_sqs_IQueue_AsReference(),
+				ecorePackage.getEString(), "queueWithIQueue_software_amazon_awscdk_services_sqs_IQueue_AsReference",
+				null, 0, 1, QueueProcessingFargateServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getQueueProcessingFargateServiceBuilder_patterns_RetentionPeriodWithDuration_software_amazon_awscdk_core_Duration_AsReference(),
+				ecorePackage.getEString(),
+				"retentionPeriodWithDuration_software_amazon_awscdk_core_Duration_AsReference", null, 0, 1,
+				QueueProcessingFargateServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getQueueProcessingFargateServiceBuilder_patterns_ScalingSteps_software_amazon_awscdk_services_applicationautoscaling_ScalingInterval_AsList(),
+				ecorePackage.getEString(),
+				"scalingSteps_software_amazon_awscdk_services_applicationautoscaling_ScalingInterval_AsList", null, 0,
+				1, QueueProcessingFargateServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getQueueProcessingFargateServiceBuilder_patterns_Secrets_java_lang_String__software_amazon_awscdk_services_ecs_Secret_AsMap(),
+				ecorePackage.getEString(), "secrets_java_lang_String__software_amazon_awscdk_services_ecs_Secret_AsMap",
+				null, 0, 1, QueueProcessingFargateServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getQueueProcessingFargateServiceBuilder_patterns_ServiceName_java_lang_String_(),
+				ecorePackage.getEString(), "serviceName_java_lang_String_", null, 0, 1,
+				QueueProcessingFargateServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getQueueProcessingFargateServiceBuilder_patterns_VpcWithIVpc_software_amazon_awscdk_services_ec2_IVpc_AsReference(),
+				ecorePackage.getEString(), "vpcWithIVpc_software_amazon_awscdk_services_ec2_IVpc_AsReference", null, 0,
+				1, QueueProcessingFargateServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getQueueProcessingFargateServiceBuilder_patterns_Cpu_java_lang_Number_(), ecorePackage.getEInt(),
+				"cpu_java_lang_Number_", null, 0, 1, QueueProcessingFargateServiceBuilder_patterns.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getQueueProcessingFargateServiceBuilder_patterns_MemoryLimitMiB_java_lang_Number_(),
+				ecorePackage.getEInt(), "memoryLimitMiB_java_lang_Number_", null, 0, 1,
+				QueueProcessingFargateServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getQueueProcessingFargateServiceBuilder_patterns_PlatformVersion_software_amazon_awscdk_services_ecs_FargatePlatformVersion_(),
+				this.getFargatePlatformVersion(),
+				"platformVersion_software_amazon_awscdk_services_ecs_FargatePlatformVersion_", null, 0, 1,
+				QueueProcessingFargateServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getQueueProcessingFargateServiceBuilder_patterns_GeneratedClassName(), ecorePackage.getEString(),
+				"generatedClassName", "software.amazon.awscdk.services.ecs.patterns.QueueProcessingFargateService", 0,
+				1, QueueProcessingFargateServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getQueueProcessingFargateServiceBuilder_patterns_VarName(), ecorePackage.getEString(), "varName",
+				null, 0, 1, QueueProcessingFargateServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getQueueProcessingFargateServiceBuilder_patterns_Identifier(), ecorePackage.getEString(),
+				"identifier", null, 0, 1, QueueProcessingFargateServiceBuilder_patterns.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getQueueProcessingFargateServiceBuilder_patterns_AdditionalCode(), ecorePackage.getEString(),
+				"additionalCode", null, 0, 1, QueueProcessingFargateServiceBuilder_patterns.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(cronOptionsBuilder_applicationautoscalingEClass, CronOptionsBuilder_applicationautoscaling.class,
+				"CronOptionsBuilder_applicationautoscaling", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getCronOptionsBuilder_applicationautoscaling_Day_java_lang_String_(), ecorePackage.getEString(),
+				"day_java_lang_String_", null, 0, 1, CronOptionsBuilder_applicationautoscaling.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCronOptionsBuilder_applicationautoscaling_Hour_java_lang_String_(), ecorePackage.getEString(),
+				"hour_java_lang_String_", null, 0, 1, CronOptionsBuilder_applicationautoscaling.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCronOptionsBuilder_applicationautoscaling_Minute_java_lang_String_(),
+				ecorePackage.getEString(), "minute_java_lang_String_", null, 0, 1,
+				CronOptionsBuilder_applicationautoscaling.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCronOptionsBuilder_applicationautoscaling_Month_java_lang_String_(),
+				ecorePackage.getEString(), "month_java_lang_String_", null, 0, 1,
+				CronOptionsBuilder_applicationautoscaling.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCronOptionsBuilder_applicationautoscaling_WeekDay_java_lang_String_(),
+				ecorePackage.getEString(), "weekDay_java_lang_String_", null, 0, 1,
+				CronOptionsBuilder_applicationautoscaling.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCronOptionsBuilder_applicationautoscaling_Year_java_lang_String_(), ecorePackage.getEString(),
+				"year_java_lang_String_", null, 0, 1, CronOptionsBuilder_applicationautoscaling.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCronOptionsBuilder_applicationautoscaling_GeneratedClassName(), ecorePackage.getEString(),
+				"generatedClassName", "software.amazon.awscdk.services.applicationautoscaling.CronOptions", 0, 1,
+				CronOptionsBuilder_applicationautoscaling.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCronOptionsBuilder_applicationautoscaling_VarName(), ecorePackage.getEString(), "varName",
+				null, 0, 1, CronOptionsBuilder_applicationautoscaling.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCronOptionsBuilder_applicationautoscaling_Identifier(), ecorePackage.getEString(),
+				"identifier", null, 0, 1, CronOptionsBuilder_applicationautoscaling.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCronOptionsBuilder_applicationautoscaling_AdditionalCode(), ecorePackage.getEString(),
+				"additionalCode", null, 0, 1, CronOptionsBuilder_applicationautoscaling.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(scheduledEc2TaskDefinitionOptionsBuilder_patternsEClass,
+				ScheduledEc2TaskDefinitionOptionsBuilder_patterns.class,
+				"ScheduledEc2TaskDefinitionOptionsBuilder_patterns", !IS_ABSTRACT, !IS_INTERFACE,
+				IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(
+				getScheduledEc2TaskDefinitionOptionsBuilder_patterns_TaskDefinitionWithEc2TaskDefinition_software_amazon_awscdk_services_ecs_Ec2TaskDefinition_AsReference(),
+				ecorePackage.getEString(),
+				"taskDefinitionWithEc2TaskDefinition_software_amazon_awscdk_services_ecs_Ec2TaskDefinition_AsReference",
+				null, 0, 1, ScheduledEc2TaskDefinitionOptionsBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getScheduledEc2TaskDefinitionOptionsBuilder_patterns_GeneratedClassName(),
+				ecorePackage.getEString(), "generatedClassName",
+				"software.amazon.awscdk.services.ecs.patterns.ScheduledEc2TaskDefinitionOptions", 0, 1,
+				ScheduledEc2TaskDefinitionOptionsBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getScheduledEc2TaskDefinitionOptionsBuilder_patterns_VarName(), ecorePackage.getEString(),
+				"varName", null, 0, 1, ScheduledEc2TaskDefinitionOptionsBuilder_patterns.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getScheduledEc2TaskDefinitionOptionsBuilder_patterns_Identifier(), ecorePackage.getEString(),
+				"identifier", null, 0, 1, ScheduledEc2TaskDefinitionOptionsBuilder_patterns.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getScheduledEc2TaskDefinitionOptionsBuilder_patterns_AdditionalCode(), ecorePackage.getEString(),
+				"additionalCode", null, 0, 1, ScheduledEc2TaskDefinitionOptionsBuilder_patterns.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(scheduledEc2TaskImageOptionsBuilder_patternsEClass,
+				ScheduledEc2TaskImageOptionsBuilder_patterns.class, "ScheduledEc2TaskImageOptionsBuilder_patterns",
+				!IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getScheduledEc2TaskImageOptionsBuilder_patterns_Cpu_java_lang_Number_(), ecorePackage.getEInt(),
+				"cpu_java_lang_Number_", null, 0, 1, ScheduledEc2TaskImageOptionsBuilder_patterns.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getScheduledEc2TaskImageOptionsBuilder_patterns_MemoryLimitMiB_java_lang_Number_(),
+				ecorePackage.getEInt(), "memoryLimitMiB_java_lang_Number_", null, 0, 1,
+				ScheduledEc2TaskImageOptionsBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getScheduledEc2TaskImageOptionsBuilder_patterns_MemoryReservationMiB_java_lang_Number_(),
+				ecorePackage.getEInt(), "memoryReservationMiB_java_lang_Number_", null, 0, 1,
+				ScheduledEc2TaskImageOptionsBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getScheduledEc2TaskImageOptionsBuilder_patterns_ImageWithContainerImage_software_amazon_awscdk_services_ecs_ContainerImage_AsReference(),
+				ecorePackage.getEString(),
+				"imageWithContainerImage_software_amazon_awscdk_services_ecs_ContainerImage_AsReference", null, 0, 1,
+				ScheduledEc2TaskImageOptionsBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getScheduledEc2TaskImageOptionsBuilder_patterns_Command_java_lang_String_AsList(),
+				ecorePackage.getEString(), "command_java_lang_String_AsList", null, 0, 1,
+				ScheduledEc2TaskImageOptionsBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getScheduledEc2TaskImageOptionsBuilder_patterns_Environment_java_lang_String__java_lang_String_AsMap(),
+				ecorePackage.getEString(), "environment_java_lang_String__java_lang_String_AsMap", null, 0, 1,
+				ScheduledEc2TaskImageOptionsBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getScheduledEc2TaskImageOptionsBuilder_patterns_LogDriverWithLogDriver_software_amazon_awscdk_services_ecs_LogDriver_AsReference(),
+				ecorePackage.getEString(),
+				"logDriverWithLogDriver_software_amazon_awscdk_services_ecs_LogDriver_AsReference", null, 0, 1,
+				ScheduledEc2TaskImageOptionsBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getScheduledEc2TaskImageOptionsBuilder_patterns_Secrets_java_lang_String__software_amazon_awscdk_services_ecs_Secret_AsMap(),
+				ecorePackage.getEString(), "secrets_java_lang_String__software_amazon_awscdk_services_ecs_Secret_AsMap",
+				null, 0, 1, ScheduledEc2TaskImageOptionsBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getScheduledEc2TaskImageOptionsBuilder_patterns_GeneratedClassName(), ecorePackage.getEString(),
+				"generatedClassName", "software.amazon.awscdk.services.ecs.patterns.ScheduledEc2TaskImageOptions", 0, 1,
+				ScheduledEc2TaskImageOptionsBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getScheduledEc2TaskImageOptionsBuilder_patterns_VarName(), ecorePackage.getEString(), "varName",
+				null, 0, 1, ScheduledEc2TaskImageOptionsBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getScheduledEc2TaskImageOptionsBuilder_patterns_Identifier(), ecorePackage.getEString(),
+				"identifier", null, 0, 1, ScheduledEc2TaskImageOptionsBuilder_patterns.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getScheduledEc2TaskImageOptionsBuilder_patterns_AdditionalCode(), ecorePackage.getEString(),
+				"additionalCode", null, 0, 1, ScheduledEc2TaskImageOptionsBuilder_patterns.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(scheduledEc2TaskBuilder_patternsEClass, ScheduledEc2TaskBuilder_patterns.class,
+				"ScheduledEc2TaskBuilder_patterns", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(
+				getScheduledEc2TaskBuilder_patterns_ScheduleWithSchedule_software_amazon_awscdk_services_applicationautoscaling_Schedule_AsReference(),
+				ecorePackage.getEString(),
+				"scheduleWithSchedule_software_amazon_awscdk_services_applicationautoscaling_Schedule_AsReference",
+				null, 0, 1, ScheduledEc2TaskBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getScheduledEc2TaskBuilder_patterns_ClusterWithICluster_software_amazon_awscdk_services_ecs_ICluster_AsReference(),
+				ecorePackage.getEString(),
+				"clusterWithICluster_software_amazon_awscdk_services_ecs_ICluster_AsReference", null, 0, 1,
+				ScheduledEc2TaskBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getScheduledEc2TaskBuilder_patterns_DesiredTaskCount_java_lang_Number_(), ecorePackage.getEInt(),
+				"desiredTaskCount_java_lang_Number_", null, 0, 1, ScheduledEc2TaskBuilder_patterns.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getScheduledEc2TaskBuilder_patterns_SubnetSelectionWithSubnetSelection_software_amazon_awscdk_services_ec2_SubnetSelection_AsReference(),
+				ecorePackage.getEString(),
+				"subnetSelectionWithSubnetSelection_software_amazon_awscdk_services_ec2_SubnetSelection_AsReference",
+				null, 0, 1, ScheduledEc2TaskBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getScheduledEc2TaskBuilder_patterns_VpcWithIVpc_software_amazon_awscdk_services_ec2_IVpc_AsReference(),
+				ecorePackage.getEString(), "vpcWithIVpc_software_amazon_awscdk_services_ec2_IVpc_AsReference", null, 0,
+				1, ScheduledEc2TaskBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getScheduledEc2TaskBuilder_patterns_ScheduledEc2TaskDefinitionOptionsWithScheduledEc2TaskDefinitionOptions_software_amazon_awscdk_services_ecs_patterns_ScheduledEc2TaskDefinitionOptions_AsReference(),
+				ecorePackage.getEString(),
+				"scheduledEc2TaskDefinitionOptionsWithScheduledEc2TaskDefinitionOptions_software_amazon_awscdk_services_ecs_patterns_ScheduledEc2TaskDefinitionOptions_AsReference",
+				null, 0, 1, ScheduledEc2TaskBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getScheduledEc2TaskBuilder_patterns_ScheduledEc2TaskImageOptionsWithScheduledEc2TaskImageOptions_software_amazon_awscdk_services_ecs_patterns_ScheduledEc2TaskImageOptions_AsReference(),
+				ecorePackage.getEString(),
+				"scheduledEc2TaskImageOptionsWithScheduledEc2TaskImageOptions_software_amazon_awscdk_services_ecs_patterns_ScheduledEc2TaskImageOptions_AsReference",
+				null, 0, 1, ScheduledEc2TaskBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getScheduledEc2TaskBuilder_patterns_GeneratedClassName(), ecorePackage.getEString(),
+				"generatedClassName", "software.amazon.awscdk.services.ecs.patterns.ScheduledEc2Task", 0, 1,
+				ScheduledEc2TaskBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getScheduledEc2TaskBuilder_patterns_VarName(), ecorePackage.getEString(), "varName", null, 0, 1,
+				ScheduledEc2TaskBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getScheduledEc2TaskBuilder_patterns_Identifier(), ecorePackage.getEString(), "identifier", null,
+				0, 1, ScheduledEc2TaskBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getScheduledEc2TaskBuilder_patterns_AdditionalCode(), ecorePackage.getEString(),
+				"additionalCode", null, 0, 1, ScheduledEc2TaskBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(queueProcessingEc2ServiceBuilder_patternsEClass, QueueProcessingEc2ServiceBuilder_patterns.class,
+				"QueueProcessingEc2ServiceBuilder_patterns", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(
+				getQueueProcessingEc2ServiceBuilder_patterns_ImageWithContainerImage_software_amazon_awscdk_services_ecs_ContainerImage_AsReference(),
+				ecorePackage.getEString(),
+				"imageWithContainerImage_software_amazon_awscdk_services_ecs_ContainerImage_AsReference", null, 0, 1,
+				QueueProcessingEc2ServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getQueueProcessingEc2ServiceBuilder_patterns_ClusterWithICluster_software_amazon_awscdk_services_ecs_ICluster_AsReference(),
+				ecorePackage.getEString(),
+				"clusterWithICluster_software_amazon_awscdk_services_ecs_ICluster_AsReference", null, 0, 1,
+				QueueProcessingEc2ServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getQueueProcessingEc2ServiceBuilder_patterns_Command_java_lang_String_AsList(),
+				ecorePackage.getEString(), "command_java_lang_String_AsList", null, 0, 1,
+				QueueProcessingEc2ServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getQueueProcessingEc2ServiceBuilder_patterns_DesiredTaskCount_java_lang_Number_(),
+				ecorePackage.getEInt(), "desiredTaskCount_java_lang_Number_", null, 0, 1,
+				QueueProcessingEc2ServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getQueueProcessingEc2ServiceBuilder_patterns_EnableEcsManagedTags_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "enableEcsManagedTags_java_lang_Boolean_", null, 0, 1,
+				QueueProcessingEc2ServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getQueueProcessingEc2ServiceBuilder_patterns_EnableLogging_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "enableLogging_java_lang_Boolean_", null, 0, 1,
+				QueueProcessingEc2ServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getQueueProcessingEc2ServiceBuilder_patterns_Environment_java_lang_String__java_lang_String_AsMap(),
+				ecorePackage.getEString(), "environment_java_lang_String__java_lang_String_AsMap", null, 0, 1,
+				QueueProcessingEc2ServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getQueueProcessingEc2ServiceBuilder_patterns_Family_java_lang_String_(),
+				ecorePackage.getEString(), "family_java_lang_String_", null, 0, 1,
+				QueueProcessingEc2ServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getQueueProcessingEc2ServiceBuilder_patterns_LogDriverWithLogDriver_software_amazon_awscdk_services_ecs_LogDriver_AsReference(),
+				ecorePackage.getEString(),
+				"logDriverWithLogDriver_software_amazon_awscdk_services_ecs_LogDriver_AsReference", null, 0, 1,
+				QueueProcessingEc2ServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getQueueProcessingEc2ServiceBuilder_patterns_MaxHealthyPercent_java_lang_Number_(),
+				ecorePackage.getEInt(), "maxHealthyPercent_java_lang_Number_", null, 0, 1,
+				QueueProcessingEc2ServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getQueueProcessingEc2ServiceBuilder_patterns_MaxReceiveCount_java_lang_Number_(),
+				ecorePackage.getEInt(), "maxReceiveCount_java_lang_Number_", null, 0, 1,
+				QueueProcessingEc2ServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getQueueProcessingEc2ServiceBuilder_patterns_MaxScalingCapacity_java_lang_Number_(),
+				ecorePackage.getEInt(), "maxScalingCapacity_java_lang_Number_", null, 0, 1,
+				QueueProcessingEc2ServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getQueueProcessingEc2ServiceBuilder_patterns_MinHealthyPercent_java_lang_Number_(),
+				ecorePackage.getEInt(), "minHealthyPercent_java_lang_Number_", null, 0, 1,
+				QueueProcessingEc2ServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getQueueProcessingEc2ServiceBuilder_patterns_PropagateTags_software_amazon_awscdk_services_ecs_PropagatedTagSource_(),
+				this.getPropagatedTagSource(), "propagateTags_software_amazon_awscdk_services_ecs_PropagatedTagSource_",
+				null, 0, 1, QueueProcessingEc2ServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getQueueProcessingEc2ServiceBuilder_patterns_QueueWithIQueue_software_amazon_awscdk_services_sqs_IQueue_AsReference(),
+				ecorePackage.getEString(), "queueWithIQueue_software_amazon_awscdk_services_sqs_IQueue_AsReference",
+				null, 0, 1, QueueProcessingEc2ServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getQueueProcessingEc2ServiceBuilder_patterns_RetentionPeriodWithDuration_software_amazon_awscdk_core_Duration_AsReference(),
+				ecorePackage.getEString(),
+				"retentionPeriodWithDuration_software_amazon_awscdk_core_Duration_AsReference", null, 0, 1,
+				QueueProcessingEc2ServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getQueueProcessingEc2ServiceBuilder_patterns_ScalingSteps_software_amazon_awscdk_services_applicationautoscaling_ScalingInterval_AsList(),
+				ecorePackage.getEString(),
+				"scalingSteps_software_amazon_awscdk_services_applicationautoscaling_ScalingInterval_AsList", null, 0,
+				1, QueueProcessingEc2ServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getQueueProcessingEc2ServiceBuilder_patterns_Secrets_java_lang_String__software_amazon_awscdk_services_ecs_Secret_AsMap(),
+				ecorePackage.getEString(), "secrets_java_lang_String__software_amazon_awscdk_services_ecs_Secret_AsMap",
+				null, 0, 1, QueueProcessingEc2ServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getQueueProcessingEc2ServiceBuilder_patterns_ServiceName_java_lang_String_(),
+				ecorePackage.getEString(), "serviceName_java_lang_String_", null, 0, 1,
+				QueueProcessingEc2ServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getQueueProcessingEc2ServiceBuilder_patterns_VpcWithIVpc_software_amazon_awscdk_services_ec2_IVpc_AsReference(),
+				ecorePackage.getEString(), "vpcWithIVpc_software_amazon_awscdk_services_ec2_IVpc_AsReference", null, 0,
+				1, QueueProcessingEc2ServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getQueueProcessingEc2ServiceBuilder_patterns_Cpu_java_lang_Number_(), ecorePackage.getEInt(),
+				"cpu_java_lang_Number_", null, 0, 1, QueueProcessingEc2ServiceBuilder_patterns.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getQueueProcessingEc2ServiceBuilder_patterns_MemoryLimitMiB_java_lang_Number_(),
+				ecorePackage.getEInt(), "memoryLimitMiB_java_lang_Number_", null, 0, 1,
+				QueueProcessingEc2ServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getQueueProcessingEc2ServiceBuilder_patterns_MemoryReservationMiB_java_lang_Number_(),
+				ecorePackage.getEInt(), "memoryReservationMiB_java_lang_Number_", null, 0, 1,
+				QueueProcessingEc2ServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getQueueProcessingEc2ServiceBuilder_patterns_GeneratedClassName(), ecorePackage.getEString(),
+				"generatedClassName", "software.amazon.awscdk.services.ecs.patterns.QueueProcessingEc2Service", 0, 1,
+				QueueProcessingEc2ServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getQueueProcessingEc2ServiceBuilder_patterns_VarName(), ecorePackage.getEString(), "varName",
+				null, 0, 1, QueueProcessingEc2ServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getQueueProcessingEc2ServiceBuilder_patterns_Identifier(), ecorePackage.getEString(),
+				"identifier", null, 0, 1, QueueProcessingEc2ServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getQueueProcessingEc2ServiceBuilder_patterns_AdditionalCode(), ecorePackage.getEString(),
+				"additionalCode", null, 0, 1, QueueProcessingEc2ServiceBuilder_patterns.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(scheduledFargateTaskDefinitionOptionsBuilder_patternsEClass,
+				ScheduledFargateTaskDefinitionOptionsBuilder_patterns.class,
+				"ScheduledFargateTaskDefinitionOptionsBuilder_patterns", !IS_ABSTRACT, !IS_INTERFACE,
+				IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(
+				getScheduledFargateTaskDefinitionOptionsBuilder_patterns_TaskDefinitionWithFargateTaskDefinition_software_amazon_awscdk_services_ecs_FargateTaskDefinition_AsReference(),
+				ecorePackage.getEString(),
+				"taskDefinitionWithFargateTaskDefinition_software_amazon_awscdk_services_ecs_FargateTaskDefinition_AsReference",
+				null, 0, 1, ScheduledFargateTaskDefinitionOptionsBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getScheduledFargateTaskDefinitionOptionsBuilder_patterns_GeneratedClassName(),
+				ecorePackage.getEString(), "generatedClassName",
+				"software.amazon.awscdk.services.ecs.patterns.ScheduledFargateTaskDefinitionOptions", 0, 1,
+				ScheduledFargateTaskDefinitionOptionsBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				!IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getScheduledFargateTaskDefinitionOptionsBuilder_patterns_VarName(), ecorePackage.getEString(),
+				"varName", null, 0, 1, ScheduledFargateTaskDefinitionOptionsBuilder_patterns.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getScheduledFargateTaskDefinitionOptionsBuilder_patterns_Identifier(), ecorePackage.getEString(),
+				"identifier", null, 0, 1, ScheduledFargateTaskDefinitionOptionsBuilder_patterns.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getScheduledFargateTaskDefinitionOptionsBuilder_patterns_AdditionalCode(),
+				ecorePackage.getEString(), "additionalCode", null, 0, 1,
+				ScheduledFargateTaskDefinitionOptionsBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(scheduledFargateTaskImageOptionsBuilder_patternsEClass,
+				ScheduledFargateTaskImageOptionsBuilder_patterns.class,
+				"ScheduledFargateTaskImageOptionsBuilder_patterns", !IS_ABSTRACT, !IS_INTERFACE,
+				IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getScheduledFargateTaskImageOptionsBuilder_patterns_Cpu_java_lang_Number_(),
+				ecorePackage.getEInt(), "cpu_java_lang_Number_", null, 0, 1,
+				ScheduledFargateTaskImageOptionsBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getScheduledFargateTaskImageOptionsBuilder_patterns_MemoryLimitMiB_java_lang_Number_(),
+				ecorePackage.getEInt(), "memoryLimitMiB_java_lang_Number_", null, 0, 1,
+				ScheduledFargateTaskImageOptionsBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getScheduledFargateTaskImageOptionsBuilder_patterns_ImageWithContainerImage_software_amazon_awscdk_services_ecs_ContainerImage_AsReference(),
+				ecorePackage.getEString(),
+				"imageWithContainerImage_software_amazon_awscdk_services_ecs_ContainerImage_AsReference", null, 0, 1,
+				ScheduledFargateTaskImageOptionsBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getScheduledFargateTaskImageOptionsBuilder_patterns_Command_java_lang_String_AsList(),
+				ecorePackage.getEString(), "command_java_lang_String_AsList", null, 0, 1,
+				ScheduledFargateTaskImageOptionsBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getScheduledFargateTaskImageOptionsBuilder_patterns_Environment_java_lang_String__java_lang_String_AsMap(),
+				ecorePackage.getEString(), "environment_java_lang_String__java_lang_String_AsMap", null, 0, 1,
+				ScheduledFargateTaskImageOptionsBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getScheduledFargateTaskImageOptionsBuilder_patterns_LogDriverWithLogDriver_software_amazon_awscdk_services_ecs_LogDriver_AsReference(),
+				ecorePackage.getEString(),
+				"logDriverWithLogDriver_software_amazon_awscdk_services_ecs_LogDriver_AsReference", null, 0, 1,
+				ScheduledFargateTaskImageOptionsBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getScheduledFargateTaskImageOptionsBuilder_patterns_Secrets_java_lang_String__software_amazon_awscdk_services_ecs_Secret_AsMap(),
+				ecorePackage.getEString(), "secrets_java_lang_String__software_amazon_awscdk_services_ecs_Secret_AsMap",
+				null, 0, 1, ScheduledFargateTaskImageOptionsBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getScheduledFargateTaskImageOptionsBuilder_patterns_GeneratedClassName(),
+				ecorePackage.getEString(), "generatedClassName",
+				"software.amazon.awscdk.services.ecs.patterns.ScheduledFargateTaskImageOptions", 0, 1,
+				ScheduledFargateTaskImageOptionsBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getScheduledFargateTaskImageOptionsBuilder_patterns_VarName(), ecorePackage.getEString(),
+				"varName", null, 0, 1, ScheduledFargateTaskImageOptionsBuilder_patterns.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getScheduledFargateTaskImageOptionsBuilder_patterns_Identifier(), ecorePackage.getEString(),
+				"identifier", null, 0, 1, ScheduledFargateTaskImageOptionsBuilder_patterns.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getScheduledFargateTaskImageOptionsBuilder_patterns_AdditionalCode(), ecorePackage.getEString(),
+				"additionalCode", null, 0, 1, ScheduledFargateTaskImageOptionsBuilder_patterns.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(scheduledFargateTaskBuilder_patternsEClass, ScheduledFargateTaskBuilder_patterns.class,
+				"ScheduledFargateTaskBuilder_patterns", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(
+				getScheduledFargateTaskBuilder_patterns_ScheduleWithSchedule_software_amazon_awscdk_services_applicationautoscaling_Schedule_AsReference(),
+				ecorePackage.getEString(),
+				"scheduleWithSchedule_software_amazon_awscdk_services_applicationautoscaling_Schedule_AsReference",
+				null, 0, 1, ScheduledFargateTaskBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getScheduledFargateTaskBuilder_patterns_ClusterWithICluster_software_amazon_awscdk_services_ecs_ICluster_AsReference(),
+				ecorePackage.getEString(),
+				"clusterWithICluster_software_amazon_awscdk_services_ecs_ICluster_AsReference", null, 0, 1,
+				ScheduledFargateTaskBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getScheduledFargateTaskBuilder_patterns_DesiredTaskCount_java_lang_Number_(),
+				ecorePackage.getEInt(), "desiredTaskCount_java_lang_Number_", null, 0, 1,
+				ScheduledFargateTaskBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getScheduledFargateTaskBuilder_patterns_SubnetSelectionWithSubnetSelection_software_amazon_awscdk_services_ec2_SubnetSelection_AsReference(),
+				ecorePackage.getEString(),
+				"subnetSelectionWithSubnetSelection_software_amazon_awscdk_services_ec2_SubnetSelection_AsReference",
+				null, 0, 1, ScheduledFargateTaskBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getScheduledFargateTaskBuilder_patterns_VpcWithIVpc_software_amazon_awscdk_services_ec2_IVpc_AsReference(),
+				ecorePackage.getEString(), "vpcWithIVpc_software_amazon_awscdk_services_ec2_IVpc_AsReference", null, 0,
+				1, ScheduledFargateTaskBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getScheduledFargateTaskBuilder_patterns_ScheduledFargateTaskDefinitionOptionsWithScheduledFargateTaskDefinitionOptions_software_amazon_awscdk_services_ecs_patterns_ScheduledFargateTaskDefinitionOptions_AsReference(),
+				ecorePackage.getEString(),
+				"scheduledFargateTaskDefinitionOptionsWithScheduledFargateTaskDefinitionOptions_software_amazon_awscdk_services_ecs_patterns_ScheduledFargateTaskDefinitionOptions_AsReference",
+				null, 0, 1, ScheduledFargateTaskBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getScheduledFargateTaskBuilder_patterns_ScheduledFargateTaskImageOptionsWithScheduledFargateTaskImageOptions_software_amazon_awscdk_services_ecs_patterns_ScheduledFargateTaskImageOptions_AsReference(),
+				ecorePackage.getEString(),
+				"scheduledFargateTaskImageOptionsWithScheduledFargateTaskImageOptions_software_amazon_awscdk_services_ecs_patterns_ScheduledFargateTaskImageOptions_AsReference",
+				null, 0, 1, ScheduledFargateTaskBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getScheduledFargateTaskBuilder_patterns_GeneratedClassName(), ecorePackage.getEString(),
+				"generatedClassName", "software.amazon.awscdk.services.ecs.patterns.ScheduledFargateTask", 0, 1,
+				ScheduledFargateTaskBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getScheduledFargateTaskBuilder_patterns_VarName(), ecorePackage.getEString(), "varName", null, 0,
+				1, ScheduledFargateTaskBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getScheduledFargateTaskBuilder_patterns_Identifier(), ecorePackage.getEString(), "identifier",
+				null, 0, 1, ScheduledFargateTaskBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getScheduledFargateTaskBuilder_patterns_AdditionalCode(), ecorePackage.getEString(),
+				"additionalCode", null, 0, 1, ScheduledFargateTaskBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
 		// Initialize enums and add enum literals
 		initEEnum(flowLogTrafficTypeEEnum, FlowLogTrafficType.class, "FlowLogTrafficType");
 		addEEnumLiteral(flowLogTrafficTypeEEnum, FlowLogTrafficType.ACCEPT);
@@ -24693,6 +38174,10 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 		addEEnumLiteral(verificationEmailStyleEEnum, VerificationEmailStyle.CODE);
 		addEEnumLiteral(verificationEmailStyleEEnum, VerificationEmailStyle.LINK);
 
+		initEEnum(stateMachineTypeEEnum, StateMachineType.class, "StateMachineType");
+		addEEnumLiteral(stateMachineTypeEEnum, StateMachineType.EXPRESS);
+		addEEnumLiteral(stateMachineTypeEEnum, StateMachineType.STANDARD);
+
 		initEEnum(effectEEnum, Effect.class, "Effect");
 		addEEnumLiteral(effectEEnum, Effect.ALLOW);
 		addEEnumLiteral(effectEEnum, Effect.DENY);
@@ -24720,6 +38205,157 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 		initEEnum(billingModeEEnum, BillingMode.class, "BillingMode");
 		addEEnumLiteral(billingModeEEnum, BillingMode.PAY_PER_REQUEST);
 		addEEnumLiteral(billingModeEEnum, BillingMode.PROVISIONED);
+
+		initEEnum(dnsRecordTypeEEnum, DnsRecordType.class, "DnsRecordType");
+		addEEnumLiteral(dnsRecordTypeEEnum, DnsRecordType.A);
+		addEEnumLiteral(dnsRecordTypeEEnum, DnsRecordType.AAAA);
+		addEEnumLiteral(dnsRecordTypeEEnum, DnsRecordType.AAAAA);
+		addEEnumLiteral(dnsRecordTypeEEnum, DnsRecordType.SRV);
+		addEEnumLiteral(dnsRecordTypeEEnum, DnsRecordType.CNAME);
+
+		initEEnum(instanceClassEEnum, InstanceClass.class, "InstanceClass");
+		addEEnumLiteral(instanceClassEEnum, InstanceClass.STANDARD3);
+		addEEnumLiteral(instanceClassEEnum, InstanceClass.STANDARD4);
+		addEEnumLiteral(instanceClassEEnum, InstanceClass.STANDARD5);
+		addEEnumLiteral(instanceClassEEnum, InstanceClass.STANDARD5_NVME_DRIVE);
+		addEEnumLiteral(instanceClassEEnum, InstanceClass.STANDARD5_AMD);
+		addEEnumLiteral(instanceClassEEnum, InstanceClass.STANDARD5_AMD_NVME_DRIVE);
+		addEEnumLiteral(instanceClassEEnum, InstanceClass.MEMORY3);
+		addEEnumLiteral(instanceClassEEnum, InstanceClass.MEMORY4);
+		addEEnumLiteral(instanceClassEEnum, InstanceClass.MEMORY5);
+		addEEnumLiteral(instanceClassEEnum, InstanceClass.MEMORY5_HIGH_PERFORMANCE);
+		addEEnumLiteral(instanceClassEEnum, InstanceClass.MEMORY5_NVME_DRIVE);
+		addEEnumLiteral(instanceClassEEnum, InstanceClass.MEMORY5_NVME_DRIVE_HIGH_PERFORMANCE);
+		addEEnumLiteral(instanceClassEEnum, InstanceClass.MEMORY5_AMD);
+		addEEnumLiteral(instanceClassEEnum, InstanceClass.COMPUTE3);
+		addEEnumLiteral(instanceClassEEnum, InstanceClass.COMPUTE4);
+		addEEnumLiteral(instanceClassEEnum, InstanceClass.COMPUTE5);
+		addEEnumLiteral(instanceClassEEnum, InstanceClass.COMPUTE5_NVME_DRIVE);
+		addEEnumLiteral(instanceClassEEnum, InstanceClass.COMPUTE5_HIGH_PERFORMANCE);
+		addEEnumLiteral(instanceClassEEnum, InstanceClass.STORAGE2);
+		addEEnumLiteral(instanceClassEEnum, InstanceClass.STORAGE_COMPUTE_1);
+		addEEnumLiteral(instanceClassEEnum, InstanceClass.IO3);
+		addEEnumLiteral(instanceClassEEnum, InstanceClass.IO3_DENSE_NVME_DRIVE);
+		addEEnumLiteral(instanceClassEEnum, InstanceClass.BURSTABLE2);
+		addEEnumLiteral(instanceClassEEnum, InstanceClass.BURSTABLE3);
+		addEEnumLiteral(instanceClassEEnum, InstanceClass.BURSTABLE3_AMD);
+		addEEnumLiteral(instanceClassEEnum, InstanceClass.MEMORY_INTENSIVE_1);
+		addEEnumLiteral(instanceClassEEnum, InstanceClass.MEMORY_INTENSIVE_1EXTENDED);
+		addEEnumLiteral(instanceClassEEnum, InstanceClass.FPGA1);
+		addEEnumLiteral(instanceClassEEnum, InstanceClass.GRAPHICS3);
+		addEEnumLiteral(instanceClassEEnum, InstanceClass.GRAPHICS4_NVME_DRIVE_HIGH_PERFORMANCE);
+		addEEnumLiteral(instanceClassEEnum, InstanceClass.PARALLEL2);
+		addEEnumLiteral(instanceClassEEnum, InstanceClass.PARALLEL3);
+		addEEnumLiteral(instanceClassEEnum, InstanceClass.ARM1);
+		addEEnumLiteral(instanceClassEEnum, InstanceClass.STANDARD6_GRAVITON);
+		addEEnumLiteral(instanceClassEEnum, InstanceClass.HIGH_COMPUTE_MEMORY1);
+		addEEnumLiteral(instanceClassEEnum, InstanceClass.INFERENCE1);
+
+		initEEnum(instanceSizeEEnum, InstanceSize.class, "InstanceSize");
+		addEEnumLiteral(instanceSizeEEnum, InstanceSize.NANO);
+		addEEnumLiteral(instanceSizeEEnum, InstanceSize.MICRO);
+		addEEnumLiteral(instanceSizeEEnum, InstanceSize.SMALL);
+		addEEnumLiteral(instanceSizeEEnum, InstanceSize.MEDIUM);
+		addEEnumLiteral(instanceSizeEEnum, InstanceSize.LARGE);
+		addEEnumLiteral(instanceSizeEEnum, InstanceSize.XLARGE);
+		addEEnumLiteral(instanceSizeEEnum, InstanceSize.XLARGE2);
+		addEEnumLiteral(instanceSizeEEnum, InstanceSize.XLARGE4);
+		addEEnumLiteral(instanceSizeEEnum, InstanceSize.XLARGE8);
+		addEEnumLiteral(instanceSizeEEnum, InstanceSize.XLARGE9);
+		addEEnumLiteral(instanceSizeEEnum, InstanceSize.XLARGE10);
+		addEEnumLiteral(instanceSizeEEnum, InstanceSize.XLARGE12);
+		addEEnumLiteral(instanceSizeEEnum, InstanceSize.XLARGE16);
+		addEEnumLiteral(instanceSizeEEnum, InstanceSize.XLARGE18);
+		addEEnumLiteral(instanceSizeEEnum, InstanceSize.XLARGE24);
+		addEEnumLiteral(instanceSizeEEnum, InstanceSize.XLARGE32);
+		addEEnumLiteral(instanceSizeEEnum, InstanceSize.METAL);
+
+		initEEnum(amazonLinuxEditionEEnum, AmazonLinuxEdition.class, "AmazonLinuxEdition");
+		addEEnumLiteral(amazonLinuxEditionEEnum, AmazonLinuxEdition.STANDARD);
+		addEEnumLiteral(amazonLinuxEditionEEnum, AmazonLinuxEdition.MINIMAL);
+
+		initEEnum(amazonLinuxGenerationEEnum, AmazonLinuxGeneration.class, "AmazonLinuxGeneration");
+		addEEnumLiteral(amazonLinuxGenerationEEnum, AmazonLinuxGeneration.AMAZON_LINUX);
+		addEEnumLiteral(amazonLinuxGenerationEEnum, AmazonLinuxGeneration.AMAZON_LINUX_2);
+
+		initEEnum(amazonLinuxStorageEEnum, AmazonLinuxStorage.class, "AmazonLinuxStorage");
+		addEEnumLiteral(amazonLinuxStorageEEnum, AmazonLinuxStorage.EBS);
+		addEEnumLiteral(amazonLinuxStorageEEnum, AmazonLinuxStorage.GENERAL_PURPOSE);
+
+		initEEnum(amazonLinuxVirtEEnum, AmazonLinuxVirt.class, "AmazonLinuxVirt");
+		addEEnumLiteral(amazonLinuxVirtEEnum, AmazonLinuxVirt.HVM);
+		addEEnumLiteral(amazonLinuxVirtEEnum, AmazonLinuxVirt.PV);
+
+		initEEnum(scalingProcessEEnum, ScalingProcess.class, "ScalingProcess");
+		addEEnumLiteral(scalingProcessEEnum, ScalingProcess.LAUNCH);
+		addEEnumLiteral(scalingProcessEEnum, ScalingProcess.TERMINATE);
+		addEEnumLiteral(scalingProcessEEnum, ScalingProcess.HEALTH_CHECK);
+		addEEnumLiteral(scalingProcessEEnum, ScalingProcess.REPLACE_UNHEALTHY);
+		addEEnumLiteral(scalingProcessEEnum, ScalingProcess.AZ_REBALANCE);
+		addEEnumLiteral(scalingProcessEEnum, ScalingProcess.ALARM_NOTIFICATION);
+		addEEnumLiteral(scalingProcessEEnum, ScalingProcess.SCHEDULED_ACTIONS);
+		addEEnumLiteral(scalingProcessEEnum, ScalingProcess.ADD_TO_LOAD_BALANCER);
+
+		initEEnum(updateTypeEEnum, UpdateType.class, "UpdateType");
+		addEEnumLiteral(updateTypeEEnum, UpdateType.NONE);
+		addEEnumLiteral(updateTypeEEnum, UpdateType.REPLACING_UPDATE);
+		addEEnumLiteral(updateTypeEEnum, UpdateType.ROLLING_UPDATE);
+
+		initEEnum(namespaceTypeEEnum, NamespaceType.class, "NamespaceType");
+		addEEnumLiteral(namespaceTypeEEnum, NamespaceType.HTTP);
+		addEEnumLiteral(namespaceTypeEEnum, NamespaceType.DNS_PRIVATE);
+		addEEnumLiteral(namespaceTypeEEnum, NamespaceType.DNS_PUBLIC);
+
+		initEEnum(ipAddressTypeEEnum, IpAddressType.class, "IpAddressType");
+		addEEnumLiteral(ipAddressTypeEEnum, IpAddressType.IPV4);
+		addEEnumLiteral(ipAddressTypeEEnum, IpAddressType.DUAL_STACK);
+
+		initEEnum(propagatedTagSourceEEnum, PropagatedTagSource.class, "PropagatedTagSource");
+		addEEnumLiteral(propagatedTagSourceEEnum, PropagatedTagSource.SERVICE);
+		addEEnumLiteral(propagatedTagSourceEEnum, PropagatedTagSource.TASK_DEFINITION);
+		addEEnumLiteral(propagatedTagSourceEEnum, PropagatedTagSource.NONE);
+
+		initEEnum(applicationProtocolEEnum, ApplicationProtocol.class, "ApplicationProtocol");
+		addEEnumLiteral(applicationProtocolEEnum, ApplicationProtocol.HTTP);
+		addEEnumLiteral(applicationProtocolEEnum, ApplicationProtocol.HTTPS);
+
+		initEEnum(followModeEEnum, FollowMode.class, "FollowMode");
+		addEEnumLiteral(followModeEEnum, FollowMode.NEVER);
+		addEEnumLiteral(followModeEEnum, FollowMode.ALWAYS);
+		addEEnumLiteral(followModeEEnum, FollowMode.EXTERNAL);
+		addEEnumLiteral(followModeEEnum, FollowMode.BLOCK_EXTERNAL);
+
+		initEEnum(scopeEEnum, Scope.class, "Scope");
+		addEEnumLiteral(scopeEEnum, Scope.TASK);
+		addEEnumLiteral(scopeEEnum, Scope.SHARED);
+
+		initEEnum(networkModeEEnum, NetworkMode.class, "NetworkMode");
+		addEEnumLiteral(networkModeEEnum, NetworkMode.NONE);
+		addEEnumLiteral(networkModeEEnum, NetworkMode.BRIDGE);
+		addEEnumLiteral(networkModeEEnum, NetworkMode.AWS_VPC);
+		addEEnumLiteral(networkModeEEnum, NetworkMode.HOST);
+		addEEnumLiteral(networkModeEEnum, NetworkMode.NAT);
+
+		initEEnum(ipcModeEEnum, IpcMode.class, "IpcMode");
+		addEEnumLiteral(ipcModeEEnum, IpcMode.NONE);
+		addEEnumLiteral(ipcModeEEnum, IpcMode.HOST);
+		addEEnumLiteral(ipcModeEEnum, IpcMode.TASK);
+
+		initEEnum(pidModeEEnum, PidMode.class, "PidMode");
+		addEEnumLiteral(pidModeEEnum, PidMode.HOST);
+		addEEnumLiteral(pidModeEEnum, PidMode.TASK);
+
+		initEEnum(fargatePlatformVersionEEnum, FargatePlatformVersion.class, "FargatePlatformVersion");
+		addEEnumLiteral(fargatePlatformVersionEEnum, FargatePlatformVersion.LATEST);
+		addEEnumLiteral(fargatePlatformVersionEEnum, FargatePlatformVersion.VERSION1_4);
+		addEEnumLiteral(fargatePlatformVersionEEnum, FargatePlatformVersion.VERSION1_3);
+		addEEnumLiteral(fargatePlatformVersionEEnum, FargatePlatformVersion.VERSION1_2);
+		addEEnumLiteral(fargatePlatformVersionEEnum, FargatePlatformVersion.VERSION1_1);
+		addEEnumLiteral(fargatePlatformVersionEEnum, FargatePlatformVersion.VERSION1_0);
+
+		initEEnum(protocolEEnum, Protocol.class, "Protocol");
+		addEEnumLiteral(protocolEEnum, Protocol.TCP);
+		addEEnumLiteral(protocolEEnum, Protocol.UDP);
 
 		// Create resource
 		createResource(eNS_URI);

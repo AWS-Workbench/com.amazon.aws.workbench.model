@@ -568,9 +568,34 @@ public class AwsworkbenchAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseEventBusBuilder_events(EventBusBuilder_events object) {
+			return createEventBusBuilder_eventsAdapter();
+		}
+
+		@Override
+		public Adapter caseEventPatternBuilder_events(EventPatternBuilder_events object) {
+			return createEventPatternBuilder_eventsAdapter();
+		}
+
+		@Override
+		public Adapter caseRulePropsBuilder_events(RulePropsBuilder_events object) {
+			return createRulePropsBuilder_eventsAdapter();
+		}
+
+		@Override
+		public Adapter caseCronOptionsBuilder_events(CronOptionsBuilder_events object) {
+			return createCronOptionsBuilder_eventsAdapter();
+		}
+
+		@Override
 		public Adapter caseEventsRuleToLambdaBuilder_eventsrulelambda(
 				EventsRuleToLambdaBuilder_eventsrulelambda object) {
 			return createEventsRuleToLambdaBuilder_eventsrulelambdaAdapter();
+		}
+
+		@Override
+		public Adapter caseStateMachinePropsBuilder_stepfunctions(StateMachinePropsBuilder_stepfunctions object) {
+			return createStateMachinePropsBuilder_stepfunctionsAdapter();
 		}
 
 		@Override
@@ -615,6 +640,11 @@ public class AwsworkbenchAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseTableBuilder_dynamodb(TableBuilder_dynamodb object) {
+			return createTableBuilder_dynamodbAdapter();
+		}
+
+		@Override
 		public Adapter caseLambdaToDynamoDBBuilder_lambdadynamodb(LambdaToDynamoDBBuilder_lambdadynamodb object) {
 			return createLambdaToDynamoDBBuilder_lambdadynamodbAdapter();
 		}
@@ -628,6 +658,11 @@ public class AwsworkbenchAdapterFactory extends AdapterFactoryImpl {
 		@Override
 		public Adapter caseLambdaToS3Builder_lambdas3(LambdaToS3Builder_lambdas3 object) {
 			return createLambdaToS3Builder_lambdas3Adapter();
+		}
+
+		@Override
+		public Adapter caseTopicPropsBuilder_sns(TopicPropsBuilder_sns object) {
+			return createTopicPropsBuilder_snsAdapter();
 		}
 
 		@Override
@@ -704,6 +739,290 @@ public class AwsworkbenchAdapterFactory extends AdapterFactoryImpl {
 		@Override
 		public Adapter caseTablePropsBuilder_dynamodb(TablePropsBuilder_dynamodb object) {
 			return createTablePropsBuilder_dynamodbAdapter();
+		}
+
+		@Override
+		public Adapter casePrivateDnsNamespaceBuilder_servicediscovery(
+				PrivateDnsNamespaceBuilder_servicediscovery object) {
+			return createPrivateDnsNamespaceBuilder_servicediscoveryAdapter();
+		}
+
+		@Override
+		public Adapter casePublicDnsNamespaceBuilder_servicediscovery(
+				PublicDnsNamespaceBuilder_servicediscovery object) {
+			return createPublicDnsNamespaceBuilder_servicediscoveryAdapter();
+		}
+
+		@Override
+		public Adapter caseHttpNamespaceBuilder_servicediscovery(HttpNamespaceBuilder_servicediscovery object) {
+			return createHttpNamespaceBuilder_servicediscoveryAdapter();
+		}
+
+		@Override
+		public Adapter caseCloudMapOptionsBuilder_ecs(CloudMapOptionsBuilder_ecs object) {
+			return createCloudMapOptionsBuilder_ecsAdapter();
+		}
+
+		@Override
+		public Adapter caseBlockDeviceBuilder_autoscaling(BlockDeviceBuilder_autoscaling object) {
+			return createBlockDeviceBuilder_autoscalingAdapter();
+		}
+
+		@Override
+		public Adapter caseHealthCheckBuilder_ecs(HealthCheckBuilder_ecs object) {
+			return createHealthCheckBuilder_ecsAdapter();
+		}
+
+		@Override
+		public Adapter caseAmazonLinuxImageBuilder_ec2(AmazonLinuxImageBuilder_ec2 object) {
+			return createAmazonLinuxImageBuilder_ec2Adapter();
+		}
+
+		@Override
+		public Adapter caseRollingUpdateConfigurationBuilder_autoscaling(
+				RollingUpdateConfigurationBuilder_autoscaling object) {
+			return createRollingUpdateConfigurationBuilder_autoscalingAdapter();
+		}
+
+		@Override
+		public Adapter caseAddCapacityOptionsBuilder_ecs(AddCapacityOptionsBuilder_ecs object) {
+			return createAddCapacityOptionsBuilder_ecsAdapter();
+		}
+
+		@Override
+		public Adapter caseCloudMapNamespaceOptionsBuilder_ecs(CloudMapNamespaceOptionsBuilder_ecs object) {
+			return createCloudMapNamespaceOptionsBuilder_ecsAdapter();
+		}
+
+		@Override
+		public Adapter caseClusterBuilder_ecs(ClusterBuilder_ecs object) {
+			return createClusterBuilder_ecsAdapter();
+		}
+
+		@Override
+		public Adapter caseApplicationLoadBalancerBuilder_elasticloadbalancingv2(
+				ApplicationLoadBalancerBuilder_elasticloadbalancingv2 object) {
+			return createApplicationLoadBalancerBuilder_elasticloadbalancingv2Adapter();
+		}
+
+		@Override
+		public Adapter caseDockerImageAssetBuilder_assets(DockerImageAssetBuilder_assets object) {
+			return createDockerImageAssetBuilder_assetsAdapter();
+		}
+
+		@Override
+		public Adapter caseAssetImageBuilder_ecs(AssetImageBuilder_ecs object) {
+			return createAssetImageBuilder_ecsAdapter();
+		}
+
+		@Override
+		public Adapter caseSecretStringGeneratorBuilder_secretsmanager(
+				SecretStringGeneratorBuilder_secretsmanager object) {
+			return createSecretStringGeneratorBuilder_secretsmanagerAdapter();
+		}
+
+		@Override
+		public Adapter caseSecretBuilder_secretsmanager(SecretBuilder_secretsmanager object) {
+			return createSecretBuilder_secretsmanagerAdapter();
+		}
+
+		@Override
+		public Adapter caseAwsLogDriverBuilder_ecs(AwsLogDriverBuilder_ecs object) {
+			return createAwsLogDriverBuilder_ecsAdapter();
+		}
+
+		@Override
+		public Adapter caseLogGroupBuilder_logs(LogGroupBuilder_logs object) {
+			return createLogGroupBuilder_logsAdapter();
+		}
+
+		@Override
+		public Adapter caseAwsLogDriverPropsBuilder_ecs(AwsLogDriverPropsBuilder_ecs object) {
+			return createAwsLogDriverPropsBuilder_ecsAdapter();
+		}
+
+		@Override
+		public Adapter caseApplicationLoadBalancedTaskImageOptionsBuilder_patterns(
+				ApplicationLoadBalancedTaskImageOptionsBuilder_patterns object) {
+			return createApplicationLoadBalancedTaskImageOptionsBuilder_patternsAdapter();
+		}
+
+		@Override
+		public Adapter caseAppMeshProxyConfigurationPropsBuilder_ecs(AppMeshProxyConfigurationPropsBuilder_ecs object) {
+			return createAppMeshProxyConfigurationPropsBuilder_ecsAdapter();
+		}
+
+		@Override
+		public Adapter caseAppMeshProxyConfigurationBuilder_ecs(AppMeshProxyConfigurationBuilder_ecs object) {
+			return createAppMeshProxyConfigurationBuilder_ecsAdapter();
+		}
+
+		@Override
+		public Adapter caseHostBuilder_ecs(HostBuilder_ecs object) {
+			return createHostBuilder_ecsAdapter();
+		}
+
+		@Override
+		public Adapter caseDockerVolumeConfigurationBuilder_ecs(DockerVolumeConfigurationBuilder_ecs object) {
+			return createDockerVolumeConfigurationBuilder_ecsAdapter();
+		}
+
+		@Override
+		public Adapter caseVolumeBuilder_ecs(VolumeBuilder_ecs object) {
+			return createVolumeBuilder_ecsAdapter();
+		}
+
+		@Override
+		public Adapter caseEc2TaskDefinitionBuilder_ecs(Ec2TaskDefinitionBuilder_ecs object) {
+			return createEc2TaskDefinitionBuilder_ecsAdapter();
+		}
+
+		@Override
+		public Adapter caseApplicationLoadBalancedEc2ServiceBuilder_patterns(
+				ApplicationLoadBalancedEc2ServiceBuilder_patterns object) {
+			return createApplicationLoadBalancedEc2ServiceBuilder_patternsAdapter();
+		}
+
+		@Override
+		public Adapter caseFargateTaskDefinitionBuilder_ecs(FargateTaskDefinitionBuilder_ecs object) {
+			return createFargateTaskDefinitionBuilder_ecsAdapter();
+		}
+
+		@Override
+		public Adapter caseApplicationLoadBalancedFargateServiceBuilder_patterns(
+				ApplicationLoadBalancedFargateServiceBuilder_patterns object) {
+			return createApplicationLoadBalancedFargateServiceBuilder_patternsAdapter();
+		}
+
+		@Override
+		public Adapter caseApplicationMultipleTargetGroupsFargateServiceBuilder_patterns(
+				ApplicationMultipleTargetGroupsFargateServiceBuilder_patterns object) {
+			return createApplicationMultipleTargetGroupsFargateServiceBuilder_patternsAdapter();
+		}
+
+		@Override
+		public Adapter caseApplicationListenerPropsBuilder_patterns(ApplicationListenerPropsBuilder_patterns object) {
+			return createApplicationListenerPropsBuilder_patternsAdapter();
+		}
+
+		@Override
+		public Adapter caseApplicationLoadBalancerPropsBuilder_patterns(
+				ApplicationLoadBalancerPropsBuilder_patterns object) {
+			return createApplicationLoadBalancerPropsBuilder_patternsAdapter();
+		}
+
+		@Override
+		public Adapter caseApplicationTargetPropsBuilder_patterns(ApplicationTargetPropsBuilder_patterns object) {
+			return createApplicationTargetPropsBuilder_patternsAdapter();
+		}
+
+		@Override
+		public Adapter caseApplicationLoadBalancedTaskImagePropsBuilder_patterns(
+				ApplicationLoadBalancedTaskImagePropsBuilder_patterns object) {
+			return createApplicationLoadBalancedTaskImagePropsBuilder_patternsAdapter();
+		}
+
+		@Override
+		public Adapter caseApplicationMultipleTargetGroupsEc2ServiceBuilder_patterns(
+				ApplicationMultipleTargetGroupsEc2ServiceBuilder_patterns object) {
+			return createApplicationMultipleTargetGroupsEc2ServiceBuilder_patternsAdapter();
+		}
+
+		@Override
+		public Adapter caseNetworkLoadBalancedTaskImageOptionsBuilder_patterns(
+				NetworkLoadBalancedTaskImageOptionsBuilder_patterns object) {
+			return createNetworkLoadBalancedTaskImageOptionsBuilder_patternsAdapter();
+		}
+
+		@Override
+		public Adapter caseNetworkLoadBalancedFargateServiceBuilder_patterns(
+				NetworkLoadBalancedFargateServiceBuilder_patterns object) {
+			return createNetworkLoadBalancedFargateServiceBuilder_patternsAdapter();
+		}
+
+		@Override
+		public Adapter caseNetworkLoadBalancedEc2ServiceBuilder_patterns(
+				NetworkLoadBalancedEc2ServiceBuilder_patterns object) {
+			return createNetworkLoadBalancedEc2ServiceBuilder_patternsAdapter();
+		}
+
+		@Override
+		public Adapter caseNetworkMultipleTargetGroupsEc2ServiceBuilder_patterns(
+				NetworkMultipleTargetGroupsEc2ServiceBuilder_patterns object) {
+			return createNetworkMultipleTargetGroupsEc2ServiceBuilder_patternsAdapter();
+		}
+
+		@Override
+		public Adapter caseNetworkTargetPropsBuilder_patterns(NetworkTargetPropsBuilder_patterns object) {
+			return createNetworkTargetPropsBuilder_patternsAdapter();
+		}
+
+		@Override
+		public Adapter caseNetworkLoadBalancedTaskImagePropsBuilder_patterns(
+				NetworkLoadBalancedTaskImagePropsBuilder_patterns object) {
+			return createNetworkLoadBalancedTaskImagePropsBuilder_patternsAdapter();
+		}
+
+		@Override
+		public Adapter caseNetworkMultipleTargetGroupsFargateServiceBuilder_patterns(
+				NetworkMultipleTargetGroupsFargateServiceBuilder_patterns object) {
+			return createNetworkMultipleTargetGroupsFargateServiceBuilder_patternsAdapter();
+		}
+
+		@Override
+		public Adapter caseScalingIntervalBuilder_applicationautoscaling(
+				ScalingIntervalBuilder_applicationautoscaling object) {
+			return createScalingIntervalBuilder_applicationautoscalingAdapter();
+		}
+
+		@Override
+		public Adapter caseQueueProcessingFargateServiceBuilder_patterns(
+				QueueProcessingFargateServiceBuilder_patterns object) {
+			return createQueueProcessingFargateServiceBuilder_patternsAdapter();
+		}
+
+		@Override
+		public Adapter caseCronOptionsBuilder_applicationautoscaling(CronOptionsBuilder_applicationautoscaling object) {
+			return createCronOptionsBuilder_applicationautoscalingAdapter();
+		}
+
+		@Override
+		public Adapter caseScheduledEc2TaskDefinitionOptionsBuilder_patterns(
+				ScheduledEc2TaskDefinitionOptionsBuilder_patterns object) {
+			return createScheduledEc2TaskDefinitionOptionsBuilder_patternsAdapter();
+		}
+
+		@Override
+		public Adapter caseScheduledEc2TaskImageOptionsBuilder_patterns(
+				ScheduledEc2TaskImageOptionsBuilder_patterns object) {
+			return createScheduledEc2TaskImageOptionsBuilder_patternsAdapter();
+		}
+
+		@Override
+		public Adapter caseScheduledEc2TaskBuilder_patterns(ScheduledEc2TaskBuilder_patterns object) {
+			return createScheduledEc2TaskBuilder_patternsAdapter();
+		}
+
+		@Override
+		public Adapter caseQueueProcessingEc2ServiceBuilder_patterns(QueueProcessingEc2ServiceBuilder_patterns object) {
+			return createQueueProcessingEc2ServiceBuilder_patternsAdapter();
+		}
+
+		@Override
+		public Adapter caseScheduledFargateTaskDefinitionOptionsBuilder_patterns(
+				ScheduledFargateTaskDefinitionOptionsBuilder_patterns object) {
+			return createScheduledFargateTaskDefinitionOptionsBuilder_patternsAdapter();
+		}
+
+		@Override
+		public Adapter caseScheduledFargateTaskImageOptionsBuilder_patterns(
+				ScheduledFargateTaskImageOptionsBuilder_patterns object) {
+			return createScheduledFargateTaskImageOptionsBuilder_patternsAdapter();
+		}
+
+		@Override
+		public Adapter caseScheduledFargateTaskBuilder_patterns(ScheduledFargateTaskBuilder_patterns object) {
+			return createScheduledFargateTaskBuilder_patternsAdapter();
 		}
 
 		@Override
@@ -2098,6 +2417,62 @@ public class AwsworkbenchAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.EventBusBuilder_events <em>Event Bus Builder events</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.EventBusBuilder_events
+	 * @generated
+	 */
+	public Adapter createEventBusBuilder_eventsAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.EventPatternBuilder_events <em>Event Pattern Builder events</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.EventPatternBuilder_events
+	 * @generated
+	 */
+	public Adapter createEventPatternBuilder_eventsAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.RulePropsBuilder_events <em>Rule Props Builder events</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.RulePropsBuilder_events
+	 * @generated
+	 */
+	public Adapter createRulePropsBuilder_eventsAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.CronOptionsBuilder_events <em>Cron Options Builder events</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.CronOptionsBuilder_events
+	 * @generated
+	 */
+	public Adapter createCronOptionsBuilder_eventsAdapter() {
+		return null;
+	}
+
+	/**
 	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.EventsRuleToLambdaBuilder_eventsrulelambda <em>Events Rule To Lambda Builder eventsrulelambda</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -2108,6 +2483,20 @@ public class AwsworkbenchAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createEventsRuleToLambdaBuilder_eventsrulelambdaAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.StateMachinePropsBuilder_stepfunctions <em>State Machine Props Builder stepfunctions</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.StateMachinePropsBuilder_stepfunctions
+	 * @generated
+	 */
+	public Adapter createStateMachinePropsBuilder_stepfunctionsAdapter() {
 		return null;
 	}
 
@@ -2210,6 +2599,20 @@ public class AwsworkbenchAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.TableBuilder_dynamodb <em>Table Builder dynamodb</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.TableBuilder_dynamodb
+	 * @generated
+	 */
+	public Adapter createTableBuilder_dynamodbAdapter() {
+		return null;
+	}
+
+	/**
 	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.LambdaToDynamoDBBuilder_lambdadynamodb <em>Lambda To Dynamo DB Builder lambdadynamodb</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -2248,6 +2651,20 @@ public class AwsworkbenchAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createLambdaToS3Builder_lambdas3Adapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.TopicPropsBuilder_sns <em>Topic Props Builder sns</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.TopicPropsBuilder_sns
+	 * @generated
+	 */
+	public Adapter createTopicPropsBuilder_snsAdapter() {
 		return null;
 	}
 
@@ -2458,6 +2875,734 @@ public class AwsworkbenchAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createTablePropsBuilder_dynamodbAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.PrivateDnsNamespaceBuilder_servicediscovery <em>Private Dns Namespace Builder servicediscovery</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.PrivateDnsNamespaceBuilder_servicediscovery
+	 * @generated
+	 */
+	public Adapter createPrivateDnsNamespaceBuilder_servicediscoveryAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.PublicDnsNamespaceBuilder_servicediscovery <em>Public Dns Namespace Builder servicediscovery</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.PublicDnsNamespaceBuilder_servicediscovery
+	 * @generated
+	 */
+	public Adapter createPublicDnsNamespaceBuilder_servicediscoveryAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.HttpNamespaceBuilder_servicediscovery <em>Http Namespace Builder servicediscovery</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.HttpNamespaceBuilder_servicediscovery
+	 * @generated
+	 */
+	public Adapter createHttpNamespaceBuilder_servicediscoveryAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.CloudMapOptionsBuilder_ecs <em>Cloud Map Options Builder ecs</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.CloudMapOptionsBuilder_ecs
+	 * @generated
+	 */
+	public Adapter createCloudMapOptionsBuilder_ecsAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.BlockDeviceBuilder_autoscaling <em>Block Device Builder autoscaling</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.BlockDeviceBuilder_autoscaling
+	 * @generated
+	 */
+	public Adapter createBlockDeviceBuilder_autoscalingAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.HealthCheckBuilder_ecs <em>Health Check Builder ecs</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.HealthCheckBuilder_ecs
+	 * @generated
+	 */
+	public Adapter createHealthCheckBuilder_ecsAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.AmazonLinuxImageBuilder_ec2 <em>Amazon Linux Image Builder ec2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AmazonLinuxImageBuilder_ec2
+	 * @generated
+	 */
+	public Adapter createAmazonLinuxImageBuilder_ec2Adapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.RollingUpdateConfigurationBuilder_autoscaling <em>Rolling Update Configuration Builder autoscaling</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.RollingUpdateConfigurationBuilder_autoscaling
+	 * @generated
+	 */
+	public Adapter createRollingUpdateConfigurationBuilder_autoscalingAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.AddCapacityOptionsBuilder_ecs <em>Add Capacity Options Builder ecs</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AddCapacityOptionsBuilder_ecs
+	 * @generated
+	 */
+	public Adapter createAddCapacityOptionsBuilder_ecsAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.CloudMapNamespaceOptionsBuilder_ecs <em>Cloud Map Namespace Options Builder ecs</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.CloudMapNamespaceOptionsBuilder_ecs
+	 * @generated
+	 */
+	public Adapter createCloudMapNamespaceOptionsBuilder_ecsAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.ClusterBuilder_ecs <em>Cluster Builder ecs</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.ClusterBuilder_ecs
+	 * @generated
+	 */
+	public Adapter createClusterBuilder_ecsAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.ApplicationLoadBalancerBuilder_elasticloadbalancingv2 <em>Application Load Balancer Builder elasticloadbalancingv2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.ApplicationLoadBalancerBuilder_elasticloadbalancingv2
+	 * @generated
+	 */
+	public Adapter createApplicationLoadBalancerBuilder_elasticloadbalancingv2Adapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.DockerImageAssetBuilder_assets <em>Docker Image Asset Builder assets</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.DockerImageAssetBuilder_assets
+	 * @generated
+	 */
+	public Adapter createDockerImageAssetBuilder_assetsAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.AssetImageBuilder_ecs <em>Asset Image Builder ecs</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AssetImageBuilder_ecs
+	 * @generated
+	 */
+	public Adapter createAssetImageBuilder_ecsAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.SecretStringGeneratorBuilder_secretsmanager <em>Secret String Generator Builder secretsmanager</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.SecretStringGeneratorBuilder_secretsmanager
+	 * @generated
+	 */
+	public Adapter createSecretStringGeneratorBuilder_secretsmanagerAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.SecretBuilder_secretsmanager <em>Secret Builder secretsmanager</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.SecretBuilder_secretsmanager
+	 * @generated
+	 */
+	public Adapter createSecretBuilder_secretsmanagerAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.AwsLogDriverBuilder_ecs <em>Aws Log Driver Builder ecs</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsLogDriverBuilder_ecs
+	 * @generated
+	 */
+	public Adapter createAwsLogDriverBuilder_ecsAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.LogGroupBuilder_logs <em>Log Group Builder logs</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.LogGroupBuilder_logs
+	 * @generated
+	 */
+	public Adapter createLogGroupBuilder_logsAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.AwsLogDriverPropsBuilder_ecs <em>Aws Log Driver Props Builder ecs</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsLogDriverPropsBuilder_ecs
+	 * @generated
+	 */
+	public Adapter createAwsLogDriverPropsBuilder_ecsAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.ApplicationLoadBalancedTaskImageOptionsBuilder_patterns <em>Application Load Balanced Task Image Options Builder patterns</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.ApplicationLoadBalancedTaskImageOptionsBuilder_patterns
+	 * @generated
+	 */
+	public Adapter createApplicationLoadBalancedTaskImageOptionsBuilder_patternsAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.AppMeshProxyConfigurationPropsBuilder_ecs <em>App Mesh Proxy Configuration Props Builder ecs</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AppMeshProxyConfigurationPropsBuilder_ecs
+	 * @generated
+	 */
+	public Adapter createAppMeshProxyConfigurationPropsBuilder_ecsAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.AppMeshProxyConfigurationBuilder_ecs <em>App Mesh Proxy Configuration Builder ecs</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AppMeshProxyConfigurationBuilder_ecs
+	 * @generated
+	 */
+	public Adapter createAppMeshProxyConfigurationBuilder_ecsAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.HostBuilder_ecs <em>Host Builder ecs</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.HostBuilder_ecs
+	 * @generated
+	 */
+	public Adapter createHostBuilder_ecsAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.DockerVolumeConfigurationBuilder_ecs <em>Docker Volume Configuration Builder ecs</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.DockerVolumeConfigurationBuilder_ecs
+	 * @generated
+	 */
+	public Adapter createDockerVolumeConfigurationBuilder_ecsAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.VolumeBuilder_ecs <em>Volume Builder ecs</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.VolumeBuilder_ecs
+	 * @generated
+	 */
+	public Adapter createVolumeBuilder_ecsAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.Ec2TaskDefinitionBuilder_ecs <em>Ec2 Task Definition Builder ecs</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.Ec2TaskDefinitionBuilder_ecs
+	 * @generated
+	 */
+	public Adapter createEc2TaskDefinitionBuilder_ecsAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.ApplicationLoadBalancedEc2ServiceBuilder_patterns <em>Application Load Balanced Ec2 Service Builder patterns</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.ApplicationLoadBalancedEc2ServiceBuilder_patterns
+	 * @generated
+	 */
+	public Adapter createApplicationLoadBalancedEc2ServiceBuilder_patternsAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.FargateTaskDefinitionBuilder_ecs <em>Fargate Task Definition Builder ecs</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.FargateTaskDefinitionBuilder_ecs
+	 * @generated
+	 */
+	public Adapter createFargateTaskDefinitionBuilder_ecsAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.ApplicationLoadBalancedFargateServiceBuilder_patterns <em>Application Load Balanced Fargate Service Builder patterns</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.ApplicationLoadBalancedFargateServiceBuilder_patterns
+	 * @generated
+	 */
+	public Adapter createApplicationLoadBalancedFargateServiceBuilder_patternsAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.ApplicationMultipleTargetGroupsFargateServiceBuilder_patterns <em>Application Multiple Target Groups Fargate Service Builder patterns</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.ApplicationMultipleTargetGroupsFargateServiceBuilder_patterns
+	 * @generated
+	 */
+	public Adapter createApplicationMultipleTargetGroupsFargateServiceBuilder_patternsAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.ApplicationListenerPropsBuilder_patterns <em>Application Listener Props Builder patterns</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.ApplicationListenerPropsBuilder_patterns
+	 * @generated
+	 */
+	public Adapter createApplicationListenerPropsBuilder_patternsAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.ApplicationLoadBalancerPropsBuilder_patterns <em>Application Load Balancer Props Builder patterns</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.ApplicationLoadBalancerPropsBuilder_patterns
+	 * @generated
+	 */
+	public Adapter createApplicationLoadBalancerPropsBuilder_patternsAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.ApplicationTargetPropsBuilder_patterns <em>Application Target Props Builder patterns</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.ApplicationTargetPropsBuilder_patterns
+	 * @generated
+	 */
+	public Adapter createApplicationTargetPropsBuilder_patternsAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.ApplicationLoadBalancedTaskImagePropsBuilder_patterns <em>Application Load Balanced Task Image Props Builder patterns</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.ApplicationLoadBalancedTaskImagePropsBuilder_patterns
+	 * @generated
+	 */
+	public Adapter createApplicationLoadBalancedTaskImagePropsBuilder_patternsAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.ApplicationMultipleTargetGroupsEc2ServiceBuilder_patterns <em>Application Multiple Target Groups Ec2 Service Builder patterns</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.ApplicationMultipleTargetGroupsEc2ServiceBuilder_patterns
+	 * @generated
+	 */
+	public Adapter createApplicationMultipleTargetGroupsEc2ServiceBuilder_patternsAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.NetworkLoadBalancedTaskImageOptionsBuilder_patterns <em>Network Load Balanced Task Image Options Builder patterns</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.NetworkLoadBalancedTaskImageOptionsBuilder_patterns
+	 * @generated
+	 */
+	public Adapter createNetworkLoadBalancedTaskImageOptionsBuilder_patternsAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.NetworkLoadBalancedFargateServiceBuilder_patterns <em>Network Load Balanced Fargate Service Builder patterns</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.NetworkLoadBalancedFargateServiceBuilder_patterns
+	 * @generated
+	 */
+	public Adapter createNetworkLoadBalancedFargateServiceBuilder_patternsAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.NetworkLoadBalancedEc2ServiceBuilder_patterns <em>Network Load Balanced Ec2 Service Builder patterns</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.NetworkLoadBalancedEc2ServiceBuilder_patterns
+	 * @generated
+	 */
+	public Adapter createNetworkLoadBalancedEc2ServiceBuilder_patternsAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.NetworkMultipleTargetGroupsEc2ServiceBuilder_patterns <em>Network Multiple Target Groups Ec2 Service Builder patterns</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.NetworkMultipleTargetGroupsEc2ServiceBuilder_patterns
+	 * @generated
+	 */
+	public Adapter createNetworkMultipleTargetGroupsEc2ServiceBuilder_patternsAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.NetworkTargetPropsBuilder_patterns <em>Network Target Props Builder patterns</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.NetworkTargetPropsBuilder_patterns
+	 * @generated
+	 */
+	public Adapter createNetworkTargetPropsBuilder_patternsAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.NetworkLoadBalancedTaskImagePropsBuilder_patterns <em>Network Load Balanced Task Image Props Builder patterns</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.NetworkLoadBalancedTaskImagePropsBuilder_patterns
+	 * @generated
+	 */
+	public Adapter createNetworkLoadBalancedTaskImagePropsBuilder_patternsAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.NetworkMultipleTargetGroupsFargateServiceBuilder_patterns <em>Network Multiple Target Groups Fargate Service Builder patterns</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.NetworkMultipleTargetGroupsFargateServiceBuilder_patterns
+	 * @generated
+	 */
+	public Adapter createNetworkMultipleTargetGroupsFargateServiceBuilder_patternsAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.ScalingIntervalBuilder_applicationautoscaling <em>Scaling Interval Builder applicationautoscaling</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.ScalingIntervalBuilder_applicationautoscaling
+	 * @generated
+	 */
+	public Adapter createScalingIntervalBuilder_applicationautoscalingAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.QueueProcessingFargateServiceBuilder_patterns <em>Queue Processing Fargate Service Builder patterns</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.QueueProcessingFargateServiceBuilder_patterns
+	 * @generated
+	 */
+	public Adapter createQueueProcessingFargateServiceBuilder_patternsAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.CronOptionsBuilder_applicationautoscaling <em>Cron Options Builder applicationautoscaling</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.CronOptionsBuilder_applicationautoscaling
+	 * @generated
+	 */
+	public Adapter createCronOptionsBuilder_applicationautoscalingAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.ScheduledEc2TaskDefinitionOptionsBuilder_patterns <em>Scheduled Ec2 Task Definition Options Builder patterns</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.ScheduledEc2TaskDefinitionOptionsBuilder_patterns
+	 * @generated
+	 */
+	public Adapter createScheduledEc2TaskDefinitionOptionsBuilder_patternsAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.ScheduledEc2TaskImageOptionsBuilder_patterns <em>Scheduled Ec2 Task Image Options Builder patterns</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.ScheduledEc2TaskImageOptionsBuilder_patterns
+	 * @generated
+	 */
+	public Adapter createScheduledEc2TaskImageOptionsBuilder_patternsAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.ScheduledEc2TaskBuilder_patterns <em>Scheduled Ec2 Task Builder patterns</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.ScheduledEc2TaskBuilder_patterns
+	 * @generated
+	 */
+	public Adapter createScheduledEc2TaskBuilder_patternsAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.QueueProcessingEc2ServiceBuilder_patterns <em>Queue Processing Ec2 Service Builder patterns</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.QueueProcessingEc2ServiceBuilder_patterns
+	 * @generated
+	 */
+	public Adapter createQueueProcessingEc2ServiceBuilder_patternsAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.ScheduledFargateTaskDefinitionOptionsBuilder_patterns <em>Scheduled Fargate Task Definition Options Builder patterns</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.ScheduledFargateTaskDefinitionOptionsBuilder_patterns
+	 * @generated
+	 */
+	public Adapter createScheduledFargateTaskDefinitionOptionsBuilder_patternsAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.ScheduledFargateTaskImageOptionsBuilder_patterns <em>Scheduled Fargate Task Image Options Builder patterns</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.ScheduledFargateTaskImageOptionsBuilder_patterns
+	 * @generated
+	 */
+	public Adapter createScheduledFargateTaskImageOptionsBuilder_patternsAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.ScheduledFargateTaskBuilder_patterns <em>Scheduled Fargate Task Builder patterns</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.ScheduledFargateTaskBuilder_patterns
+	 * @generated
+	 */
+	public Adapter createScheduledFargateTaskBuilder_patternsAdapter() {
 		return null;
 	}
 

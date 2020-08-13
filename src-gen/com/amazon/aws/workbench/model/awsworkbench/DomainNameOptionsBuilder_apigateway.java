@@ -2,8 +2,6 @@
  */
 package com.amazon.aws.workbench.model.awsworkbench;
 
-import org.eclipse.emf.ecore.EObject;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Domain Name Options Builder apigateway</b></em>'.
@@ -27,7 +25,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface DomainNameOptionsBuilder_apigateway extends EObject {
+public interface DomainNameOptionsBuilder_apigateway extends ServiceResources {
 	/**
 	 * Returns the value of the '<em><b>Certificate With ICertificate software amazon awscdk services certificatemanager ICertificate As Reference</b></em>' attribute.
 	 * <!-- begin-user-doc -->

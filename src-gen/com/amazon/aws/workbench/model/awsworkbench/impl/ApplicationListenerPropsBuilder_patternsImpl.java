@@ -11,7 +11,6 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -33,7 +32,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class ApplicationListenerPropsBuilder_patternsImpl extends MinimalEObjectImpl.Container
+public class ApplicationListenerPropsBuilder_patternsImpl extends ServiceResourcesImpl
 		implements ApplicationListenerPropsBuilder_patterns {
 	/**
 	 * The default value of the '{@link #getName_java_lang_String_() <em>Name java lang String </em>}' attribute.

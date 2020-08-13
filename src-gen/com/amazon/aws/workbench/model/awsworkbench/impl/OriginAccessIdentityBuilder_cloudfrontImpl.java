@@ -10,7 +10,6 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -29,7 +28,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class OriginAccessIdentityBuilder_cloudfrontImpl extends MinimalEObjectImpl.Container
+public class OriginAccessIdentityBuilder_cloudfrontImpl extends ServiceResourcesImpl
 		implements OriginAccessIdentityBuilder_cloudfront {
 	/**
 	 * The default value of the '{@link #getComment_java_lang_String_() <em>Comment java lang String </em>}' attribute.

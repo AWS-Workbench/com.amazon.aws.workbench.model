@@ -10,7 +10,6 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -35,7 +34,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class AppMeshProxyConfigurationPropsBuilder_ecsImpl extends MinimalEObjectImpl.Container
+public class AppMeshProxyConfigurationPropsBuilder_ecsImpl extends ServiceResourcesImpl
 		implements AppMeshProxyConfigurationPropsBuilder_ecs {
 	/**
 	 * The default value of the '{@link #getAppPorts_java_lang_Number_AsList() <em>App Ports java lang Number As List</em>}' attribute.

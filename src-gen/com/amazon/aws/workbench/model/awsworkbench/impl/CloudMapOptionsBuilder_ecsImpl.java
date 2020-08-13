@@ -11,7 +11,6 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -34,7 +33,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class CloudMapOptionsBuilder_ecsImpl extends MinimalEObjectImpl.Container implements CloudMapOptionsBuilder_ecs {
+public class CloudMapOptionsBuilder_ecsImpl extends ServiceResourcesImpl implements CloudMapOptionsBuilder_ecs {
 	/**
 	 * The default value of the '{@link #getCloudMapNamespaceWithINamespace_software_amazon_awscdk_services_servicediscovery_INamespace_AsReference() <em>Cloud Map Namespace With INamespace software amazon awscdk services servicediscovery INamespace As Reference</em>}' attribute.
 	 * <!-- begin-user-doc -->

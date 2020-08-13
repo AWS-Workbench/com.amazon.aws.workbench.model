@@ -10,7 +10,6 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -31,7 +30,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class BucketMetricsBuilder_s3Impl extends MinimalEObjectImpl.Container implements BucketMetricsBuilder_s3 {
+public class BucketMetricsBuilder_s3Impl extends ServiceResourcesImpl implements BucketMetricsBuilder_s3 {
 	/**
 	 * The default value of the '{@link #getId_java_lang_String_() <em>Id java lang String </em>}' attribute.
 	 * <!-- begin-user-doc -->

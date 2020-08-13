@@ -2,8 +2,6 @@
  */
 package com.amazon.aws.workbench.model.awsworkbench;
 
-import org.eclipse.emf.ecore.EObject;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>State Machine Props Builder stepfunctions</b></em>'.
@@ -29,7 +27,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface StateMachinePropsBuilder_stepfunctions extends EObject {
+public interface StateMachinePropsBuilder_stepfunctions extends ServiceResources {
 	/**
 	 * Returns the value of the '<em><b>Definition With IChainable software amazon awscdk services stepfunctions IChainable As Reference</b></em>' attribute.
 	 * <!-- begin-user-doc -->

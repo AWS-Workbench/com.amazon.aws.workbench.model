@@ -2,8 +2,6 @@
  */
 package com.amazon.aws.workbench.model.awsworkbench;
 
-import org.eclipse.emf.ecore.EObject;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Required Attributes Builder cognito</b></em>'.
@@ -40,7 +38,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface RequiredAttributesBuilder_cognito extends EObject {
+public interface RequiredAttributesBuilder_cognito extends ServiceResources {
 	/**
 	 * Returns the value of the '<em><b>Address java lang Boolean </b></em>' attribute.
 	 * <!-- begin-user-doc -->

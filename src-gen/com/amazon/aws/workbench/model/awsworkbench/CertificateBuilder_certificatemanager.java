@@ -2,8 +2,6 @@
  */
 package com.amazon.aws.workbench.model.awsworkbench;
 
-import org.eclipse.emf.ecore.EObject;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Certificate Builder certificatemanager</b></em>'.
@@ -27,7 +25,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface CertificateBuilder_certificatemanager extends EObject {
+public interface CertificateBuilder_certificatemanager extends ServiceResources {
 	/**
 	 * Returns the value of the '<em><b>Domain Name java lang String </b></em>' attribute.
 	 * <!-- begin-user-doc -->

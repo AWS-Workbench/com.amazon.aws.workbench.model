@@ -2,8 +2,6 @@
  */
 package com.amazon.aws.workbench.model.awsworkbench;
 
-import org.eclipse.emf.ecore.EObject;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Lambda To Step Function Builder lambdastepfunction</b></em>'.
@@ -26,7 +24,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface LambdaToStepFunctionBuilder_lambdastepfunction extends EObject {
+public interface LambdaToStepFunctionBuilder_lambdastepfunction extends ServiceResources {
 	/**
 	 * Returns the value of the '<em><b>State Machine Props With State Machine Props software amazon awscdk services stepfunctions State Machine Props As Reference</b></em>' attribute.
 	 * <!-- begin-user-doc -->

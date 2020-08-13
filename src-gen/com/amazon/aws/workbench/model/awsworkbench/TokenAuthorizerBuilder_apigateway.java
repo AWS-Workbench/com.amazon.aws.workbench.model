@@ -2,8 +2,6 @@
  */
 package com.amazon.aws.workbench.model.awsworkbench;
 
-import org.eclipse.emf.ecore.EObject;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Token Authorizer Builder apigateway</b></em>'.
@@ -29,7 +27,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface TokenAuthorizerBuilder_apigateway extends EObject {
+public interface TokenAuthorizerBuilder_apigateway extends ServiceResources {
 	/**
 	 * Returns the value of the '<em><b>Handler With IFunction software amazon awscdk services lambda IFunction As Reference</b></em>' attribute.
 	 * <!-- begin-user-doc -->

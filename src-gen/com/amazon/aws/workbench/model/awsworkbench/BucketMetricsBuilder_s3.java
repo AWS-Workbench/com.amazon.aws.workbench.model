@@ -2,8 +2,6 @@
  */
 package com.amazon.aws.workbench.model.awsworkbench;
 
-import org.eclipse.emf.ecore.EObject;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Bucket Metrics Builder s3</b></em>'.
@@ -26,7 +24,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface BucketMetricsBuilder_s3 extends EObject {
+public interface BucketMetricsBuilder_s3 extends ServiceResources {
 	/**
 	 * Returns the value of the '<em><b>Id java lang String </b></em>' attribute.
 	 * <!-- begin-user-doc -->

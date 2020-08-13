@@ -2,8 +2,6 @@
  */
 package com.amazon.aws.workbench.model.awsworkbench;
 
-import org.eclipse.emf.ecore.EObject;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Logging Configuration Builder cloudfront</b></em>'.
@@ -26,7 +24,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface LoggingConfigurationBuilder_cloudfront extends EObject {
+public interface LoggingConfigurationBuilder_cloudfront extends ServiceResources {
 	/**
 	 * Returns the value of the '<em><b>Bucket With IBucket software amazon awscdk services s3 IBucket As Reference</b></em>' attribute.
 	 * <!-- begin-user-doc -->

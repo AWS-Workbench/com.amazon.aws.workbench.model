@@ -2,8 +2,6 @@
  */
 package com.amazon.aws.workbench.model.awsworkbench;
 
-import org.eclipse.emf.ecore.EObject;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Kinesis Streams To Lambda Builder kinesisstreamslambda</b></em>'.
@@ -27,7 +25,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface KinesisStreamsToLambdaBuilder_kinesisstreamslambda extends EObject {
+public interface KinesisStreamsToLambdaBuilder_kinesisstreamslambda extends ServiceResources {
 	/**
 	 * Returns the value of the '<em><b>Event Source Props java lang Object </b></em>' attribute.
 	 * <!-- begin-user-doc -->

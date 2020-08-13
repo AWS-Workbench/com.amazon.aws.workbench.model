@@ -2,8 +2,6 @@
  */
 package com.amazon.aws.workbench.model.awsworkbench;
 
-import org.eclipse.emf.ecore.EObject;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Cognito Options Builder core</b></em>'.
@@ -26,7 +24,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface CognitoOptionsBuilder_core extends EObject {
+public interface CognitoOptionsBuilder_core extends ServiceResources {
 	/**
 	 * Returns the value of the '<em><b>Identitypool With Cfn Identity Pool software amazon awscdk services cognito Cfn Identity Pool As Reference</b></em>' attribute.
 	 * <!-- begin-user-doc -->

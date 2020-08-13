@@ -2,8 +2,6 @@
  */
 package com.amazon.aws.workbench.model.awsworkbench;
 
-import org.eclipse.emf.ecore.EObject;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Build Topic Props Builder core</b></em>'.
@@ -26,7 +24,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface BuildTopicPropsBuilder_core extends EObject {
+public interface BuildTopicPropsBuilder_core extends ServiceResources {
 	/**
 	 * Returns the value of the '<em><b>Enable Encryption java lang Boolean </b></em>' attribute.
 	 * <!-- begin-user-doc -->

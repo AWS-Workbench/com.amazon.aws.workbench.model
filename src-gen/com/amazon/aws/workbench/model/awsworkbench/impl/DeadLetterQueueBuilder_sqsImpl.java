@@ -10,7 +10,6 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -30,7 +29,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class DeadLetterQueueBuilder_sqsImpl extends MinimalEObjectImpl.Container implements DeadLetterQueueBuilder_sqs {
+public class DeadLetterQueueBuilder_sqsImpl extends ServiceResourcesImpl implements DeadLetterQueueBuilder_sqs {
 	/**
 	 * The default value of the '{@link #getMaxReceiveCount_java_lang_Number_() <em>Max Receive Count java lang Number </em>}' attribute.
 	 * <!-- begin-user-doc -->

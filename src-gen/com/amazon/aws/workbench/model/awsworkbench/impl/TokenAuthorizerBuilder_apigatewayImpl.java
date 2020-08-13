@@ -10,7 +10,6 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -34,7 +33,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class TokenAuthorizerBuilder_apigatewayImpl extends MinimalEObjectImpl.Container
+public class TokenAuthorizerBuilder_apigatewayImpl extends ServiceResourcesImpl
 		implements TokenAuthorizerBuilder_apigateway {
 	/**
 	 * The default value of the '{@link #getHandlerWithIFunction_software_amazon_awscdk_services_lambda_IFunction_AsReference() <em>Handler With IFunction software amazon awscdk services lambda IFunction As Reference</em>}' attribute.

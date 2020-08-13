@@ -2,8 +2,6 @@
  */
 package com.amazon.aws.workbench.model.awsworkbench;
 
-import org.eclipse.emf.ecore.EObject;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Iot To Lambda Builder iotlambda</b></em>'.
@@ -26,7 +24,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface IotToLambdaBuilder_iotlambda extends EObject {
+public interface IotToLambdaBuilder_iotlambda extends ServiceResources {
 	/**
 	 * Returns the value of the '<em><b>Iot Topic Rule Props With Cfn Topic Rule Props software amazon awscdk services iot Cfn Topic Rule Props As Reference</b></em>' attribute.
 	 * <!-- begin-user-doc -->

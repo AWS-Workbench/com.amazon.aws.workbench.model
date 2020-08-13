@@ -2,8 +2,6 @@
  */
 package com.amazon.aws.workbench.model.awsworkbench;
 
-import org.eclipse.emf.ecore.EObject;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Managed Policy Builder iam</b></em>'.
@@ -31,7 +29,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface ManagedPolicyBuilder_iam extends EObject {
+public interface ManagedPolicyBuilder_iam extends ServiceResources {
 	/**
 	 * Returns the value of the '<em><b>Description java lang String </b></em>' attribute.
 	 * <!-- begin-user-doc -->

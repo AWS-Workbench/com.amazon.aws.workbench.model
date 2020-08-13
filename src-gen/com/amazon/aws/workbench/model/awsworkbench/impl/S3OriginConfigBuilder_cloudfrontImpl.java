@@ -10,7 +10,6 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -30,7 +29,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class S3OriginConfigBuilder_cloudfrontImpl extends MinimalEObjectImpl.Container
+public class S3OriginConfigBuilder_cloudfrontImpl extends ServiceResourcesImpl
 		implements S3OriginConfigBuilder_cloudfront {
 	/**
 	 * The default value of the '{@link #getS3BucketSourceWithIBucket_software_amazon_awscdk_services_s3_IBucket_AsReference() <em>S3 Bucket Source With IBucket software amazon awscdk services s3 IBucket As Reference</em>}' attribute.

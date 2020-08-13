@@ -2,8 +2,6 @@
  */
 package com.amazon.aws.workbench.model.awsworkbench;
 
-import org.eclipse.emf.ecore.EObject;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Cloud Map Options Builder ecs</b></em>'.
@@ -28,7 +26,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface CloudMapOptionsBuilder_ecs extends EObject {
+public interface CloudMapOptionsBuilder_ecs extends ServiceResources {
 	/**
 	 * Returns the value of the '<em><b>Cloud Map Namespace With INamespace software amazon awscdk services servicediscovery INamespace As Reference</b></em>' attribute.
 	 * <!-- begin-user-doc -->

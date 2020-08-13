@@ -2,8 +2,6 @@
  */
 package com.amazon.aws.workbench.model.awsworkbench;
 
-import org.eclipse.emf.ecore.EObject;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Cluster Builder ecs</b></em>'.
@@ -28,7 +26,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface ClusterBuilder_ecs extends EObject {
+public interface ClusterBuilder_ecs extends ServiceResources {
 	/**
 	 * Returns the value of the '<em><b>Capacity With Add Capacity Options software amazon awscdk services ecs Add Capacity Options As Reference</b></em>' attribute.
 	 * <!-- begin-user-doc -->

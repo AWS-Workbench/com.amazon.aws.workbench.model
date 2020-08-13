@@ -2,8 +2,6 @@
  */
 package com.amazon.aws.workbench.model.awsworkbench;
 
-import org.eclipse.emf.ecore.EObject;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Alias Configuration Builder cloudfront</b></em>'.
@@ -27,7 +25,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface AliasConfigurationBuilder_cloudfront extends EObject {
+public interface AliasConfigurationBuilder_cloudfront extends ServiceResources {
 	/**
 	 * Returns the value of the '<em><b>Acm Cert Ref java lang String </b></em>' attribute.
 	 * <!-- begin-user-doc -->

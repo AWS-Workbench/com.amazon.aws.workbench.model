@@ -2,8 +2,6 @@
  */
 package com.amazon.aws.workbench.model.awsworkbench;
 
-import org.eclipse.emf.ecore.EObject;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>App Mesh Proxy Configuration Props Builder ecs</b></em>'.
@@ -30,7 +28,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface AppMeshProxyConfigurationPropsBuilder_ecs extends EObject {
+public interface AppMeshProxyConfigurationPropsBuilder_ecs extends ServiceResources {
 	/**
 	 * Returns the value of the '<em><b>App Ports java lang Number As List</b></em>' attribute.
 	 * <!-- begin-user-doc -->

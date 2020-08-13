@@ -10,7 +10,6 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -35,8 +34,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class SqsToLambdaBuilder_sqslambdaImpl extends MinimalEObjectImpl.Container
-		implements SqsToLambdaBuilder_sqslambda {
+public class SqsToLambdaBuilder_sqslambdaImpl extends ServiceResourcesImpl implements SqsToLambdaBuilder_sqslambda {
 	/**
 	 * The default value of the '{@link #getDeadLetterQueuePropsWithQueueProps_software_amazon_awscdk_services_sqs_QueueProps_AsReference() <em>Dead Letter Queue Props With Queue Props software amazon awscdk services sqs Queue Props As Reference</em>}' attribute.
 	 * <!-- begin-user-doc -->

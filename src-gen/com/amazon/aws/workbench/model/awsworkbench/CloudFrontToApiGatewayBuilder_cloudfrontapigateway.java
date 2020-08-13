@@ -2,8 +2,6 @@
  */
 package com.amazon.aws.workbench.model.awsworkbench;
 
-import org.eclipse.emf.ecore.EObject;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Cloud Front To Api Gateway Builder cloudfrontapigateway</b></em>'.
@@ -26,7 +24,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface CloudFrontToApiGatewayBuilder_cloudfrontapigateway extends EObject {
+public interface CloudFrontToApiGatewayBuilder_cloudfrontapigateway extends ServiceResources {
 	/**
 	 * Returns the value of the '<em><b>Existing Api Gateway Obj With Rest Api software amazon awscdk services apigateway Rest Api As Reference</b></em>' attribute.
 	 * <!-- begin-user-doc -->

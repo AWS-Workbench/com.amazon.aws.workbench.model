@@ -2,8 +2,6 @@
  */
 package com.amazon.aws.workbench.model.awsworkbench;
 
-import org.eclipse.emf.ecore.EObject;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Policy Statement Builder iam</b></em>'.
@@ -32,7 +30,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface PolicyStatementBuilder_iam extends EObject {
+public interface PolicyStatementBuilder_iam extends ServiceResources {
 	/**
 	 * Returns the value of the '<em><b>Actions java lang String As List</b></em>' attribute.
 	 * <!-- begin-user-doc -->

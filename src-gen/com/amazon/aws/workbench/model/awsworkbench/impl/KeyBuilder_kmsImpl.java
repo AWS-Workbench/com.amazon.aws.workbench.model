@@ -11,7 +11,6 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -36,7 +35,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class KeyBuilder_kmsImpl extends MinimalEObjectImpl.Container implements KeyBuilder_kms {
+public class KeyBuilder_kmsImpl extends ServiceResourcesImpl implements KeyBuilder_kms {
 	/**
 	 * The default value of the '{@link #getAlias_java_lang_String_() <em>Alias java lang String </em>}' attribute.
 	 * <!-- begin-user-doc -->

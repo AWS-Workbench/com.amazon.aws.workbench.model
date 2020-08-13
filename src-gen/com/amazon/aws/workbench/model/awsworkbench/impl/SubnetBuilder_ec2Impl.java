@@ -10,7 +10,6 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -32,7 +31,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class SubnetBuilder_ec2Impl extends MinimalEObjectImpl.Container implements SubnetBuilder_ec2 {
+public class SubnetBuilder_ec2Impl extends ServiceResourcesImpl implements SubnetBuilder_ec2 {
 	/**
 	 * The default value of the '{@link #getAvailabilityZone_java_lang_String_() <em>Availability Zone java lang String </em>}' attribute.
 	 * <!-- begin-user-doc -->

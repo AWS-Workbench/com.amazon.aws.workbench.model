@@ -2,8 +2,6 @@
  */
 package com.amazon.aws.workbench.model.awsworkbench;
 
-import org.eclipse.emf.ecore.EObject;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Cloud Front Web Distribution Props Builder cloudfront</b></em>'.
@@ -36,7 +34,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface CloudFrontWebDistributionPropsBuilder_cloudfront extends EObject {
+public interface CloudFrontWebDistributionPropsBuilder_cloudfront extends ServiceResources {
 	/**
 	 * Returns the value of the '<em><b>Origin Configs software amazon awscdk services cloudfront Source Configuration As List</b></em>' attribute.
 	 * <!-- begin-user-doc -->

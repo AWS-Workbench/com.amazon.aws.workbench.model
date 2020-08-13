@@ -12,7 +12,6 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -68,8 +67,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class JsonSchemaBuilder_apigatewayImpl extends MinimalEObjectImpl.Container
-		implements JsonSchemaBuilder_apigateway {
+public class JsonSchemaBuilder_apigatewayImpl extends ServiceResourcesImpl implements JsonSchemaBuilder_apigateway {
 	/**
 	 * The default value of the '{@link #getAdditionalItems_software_amazon_awscdk_services_apigateway_JsonSchema_AsList() <em>Additional Items software amazon awscdk services apigateway Json Schema As List</em>}' attribute.
 	 * <!-- begin-user-doc -->

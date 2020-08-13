@@ -2,8 +2,6 @@
  */
 package com.amazon.aws.workbench.model.awsworkbench;
 
-import org.eclipse.emf.ecore.EObject;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>User Builder iam</b></em>'.
@@ -30,7 +28,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface UserBuilder_iam extends EObject {
+public interface UserBuilder_iam extends ServiceResources {
 	/**
 	 * Returns the value of the '<em><b>Groups software amazon awscdk services iam IGroup As List</b></em>' attribute.
 	 * <!-- begin-user-doc -->

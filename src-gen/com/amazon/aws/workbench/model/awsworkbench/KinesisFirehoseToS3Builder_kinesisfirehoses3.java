@@ -2,8 +2,6 @@
  */
 package com.amazon.aws.workbench.model.awsworkbench;
 
-import org.eclipse.emf.ecore.EObject;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Kinesis Firehose To S3 Builder kinesisfirehoses3</b></em>'.
@@ -26,7 +24,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface KinesisFirehoseToS3Builder_kinesisfirehoses3 extends EObject {
+public interface KinesisFirehoseToS3Builder_kinesisfirehoses3 extends ServiceResources {
 	/**
 	 * Returns the value of the '<em><b>Bucket Props With Bucket Props software amazon awscdk services s3 Bucket Props As Reference</b></em>' attribute.
 	 * <!-- begin-user-doc -->

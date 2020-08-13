@@ -10,7 +10,6 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -31,7 +30,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class ScalingIntervalBuilder_applicationautoscalingImpl extends MinimalEObjectImpl.Container
+public class ScalingIntervalBuilder_applicationautoscalingImpl extends ServiceResourcesImpl
 		implements ScalingIntervalBuilder_applicationautoscaling {
 	/**
 	 * The default value of the '{@link #getChange_java_lang_Number_() <em>Change java lang Number </em>}' attribute.

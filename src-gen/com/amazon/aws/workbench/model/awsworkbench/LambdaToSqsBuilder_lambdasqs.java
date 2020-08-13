@@ -2,8 +2,6 @@
  */
 package com.amazon.aws.workbench.model.awsworkbench;
 
-import org.eclipse.emf.ecore.EObject;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Lambda To Sqs Builder lambdasqs</b></em>'.
@@ -31,7 +29,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface LambdaToSqsBuilder_lambdasqs extends EObject {
+public interface LambdaToSqsBuilder_lambdasqs extends ServiceResources {
 	/**
 	 * Returns the value of the '<em><b>Dead Letter Queue Props With Queue Props software amazon awscdk services sqs Queue Props As Reference</b></em>' attribute.
 	 * <!-- begin-user-doc -->

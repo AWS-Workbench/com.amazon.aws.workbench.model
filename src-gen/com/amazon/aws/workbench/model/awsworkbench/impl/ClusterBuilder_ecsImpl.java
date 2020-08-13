@@ -10,7 +10,6 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -33,7 +32,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class ClusterBuilder_ecsImpl extends MinimalEObjectImpl.Container implements ClusterBuilder_ecs {
+public class ClusterBuilder_ecsImpl extends ServiceResourcesImpl implements ClusterBuilder_ecs {
 	/**
 	 * The default value of the '{@link #getCapacityWithAddCapacityOptions_software_amazon_awscdk_services_ecs_AddCapacityOptions_AsReference() <em>Capacity With Add Capacity Options software amazon awscdk services ecs Add Capacity Options As Reference</em>}' attribute.
 	 * <!-- begin-user-doc -->

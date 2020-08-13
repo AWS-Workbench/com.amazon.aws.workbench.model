@@ -14,7 +14,6 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -46,7 +45,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class TableBuilder_dynamodbImpl extends MinimalEObjectImpl.Container implements TableBuilder_dynamodb {
+public class TableBuilder_dynamodbImpl extends ServiceResourcesImpl implements TableBuilder_dynamodb {
 	/**
 	 * The default value of the '{@link #getPartitionKeyWithAttribute_software_amazon_awscdk_services_dynamodb_Attribute_AsReference() <em>Partition Key With Attribute software amazon awscdk services dynamodb Attribute As Reference</em>}' attribute.
 	 * <!-- begin-user-doc -->

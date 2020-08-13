@@ -10,7 +10,6 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -36,8 +35,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class CorsOptionsBuilder_apigatewayImpl extends MinimalEObjectImpl.Container
-		implements CorsOptionsBuilder_apigateway {
+public class CorsOptionsBuilder_apigatewayImpl extends ServiceResourcesImpl implements CorsOptionsBuilder_apigateway {
 	/**
 	 * The default value of the '{@link #getAllowOrigins_java_lang_String_AsList() <em>Allow Origins java lang String As List</em>}' attribute.
 	 * <!-- begin-user-doc -->

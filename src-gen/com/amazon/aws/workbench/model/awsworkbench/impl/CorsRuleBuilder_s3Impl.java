@@ -10,7 +10,6 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -34,7 +33,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class CorsRuleBuilder_s3Impl extends MinimalEObjectImpl.Container implements CorsRuleBuilder_s3 {
+public class CorsRuleBuilder_s3Impl extends ServiceResourcesImpl implements CorsRuleBuilder_s3 {
 	/**
 	 * The default value of the '{@link #getAllowedMethods_software_amazon_awscdk_services_s3_HttpMethods_AsList() <em>Allowed Methods software amazon awscdk services s3 Http Methods As List</em>}' attribute.
 	 * <!-- begin-user-doc -->

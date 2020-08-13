@@ -2,8 +2,6 @@
  */
 package com.amazon.aws.workbench.model.awsworkbench;
 
-import org.eclipse.emf.ecore.EObject;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Integration Options Builder apigateway</b></em>'.
@@ -34,7 +32,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface IntegrationOptionsBuilder_apigateway extends EObject {
+public interface IntegrationOptionsBuilder_apigateway extends ServiceResources {
 	/**
 	 * Returns the value of the '<em><b>Cache Key Parameters java lang String As List</b></em>' attribute.
 	 * <!-- begin-user-doc -->

@@ -2,8 +2,6 @@
  */
 package com.amazon.aws.workbench.model.awsworkbench;
 
-import org.eclipse.emf.ecore.EObject;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Application Load Balancer Builder elasticloadbalancingv2</b></em>'.
@@ -32,7 +30,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface ApplicationLoadBalancerBuilder_elasticloadbalancingv2 extends EObject {
+public interface ApplicationLoadBalancerBuilder_elasticloadbalancingv2 extends ServiceResources {
 	/**
 	 * Returns the value of the '<em><b>Vpc With IVpc software amazon awscdk services ec2 IVpc As Reference</b></em>' attribute.
 	 * <!-- begin-user-doc -->

@@ -10,7 +10,6 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -32,7 +31,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class KinesisStreamsToLambdaBuilder_kinesisstreamslambdaImpl extends MinimalEObjectImpl.Container
+public class KinesisStreamsToLambdaBuilder_kinesisstreamslambdaImpl extends ServiceResourcesImpl
 		implements KinesisStreamsToLambdaBuilder_kinesisstreamslambda {
 	/**
 	 * The default value of the '{@link #getEventSourceProps_java_lang_Object_() <em>Event Source Props java lang Object </em>}' attribute.

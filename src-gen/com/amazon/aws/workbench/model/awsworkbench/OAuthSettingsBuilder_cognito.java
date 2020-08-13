@@ -2,8 +2,6 @@
  */
 package com.amazon.aws.workbench.model.awsworkbench;
 
-import org.eclipse.emf.ecore.EObject;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>OAuth Settings Builder cognito</b></em>'.
@@ -26,7 +24,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface OAuthSettingsBuilder_cognito extends EObject {
+public interface OAuthSettingsBuilder_cognito extends ServiceResources {
 	/**
 	 * Returns the value of the '<em><b>Callback Urls java lang String As List</b></em>' attribute.
 	 * <!-- begin-user-doc -->

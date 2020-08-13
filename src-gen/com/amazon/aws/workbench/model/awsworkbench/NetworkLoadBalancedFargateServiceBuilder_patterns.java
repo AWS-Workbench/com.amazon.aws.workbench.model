@@ -2,8 +2,6 @@
  */
 package com.amazon.aws.workbench.model.awsworkbench;
 
-import org.eclipse.emf.ecore.EObject;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Network Load Balanced Fargate Service Builder patterns</b></em>'.
@@ -44,7 +42,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface NetworkLoadBalancedFargateServiceBuilder_patterns extends EObject {
+public interface NetworkLoadBalancedFargateServiceBuilder_patterns extends ServiceResources {
 	/**
 	 * Returns the value of the '<em><b>Cloud Map Options With Cloud Map Options software amazon awscdk services ecs Cloud Map Options As Reference</b></em>' attribute.
 	 * <!-- begin-user-doc -->

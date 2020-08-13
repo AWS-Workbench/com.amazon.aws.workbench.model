@@ -10,7 +10,6 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -30,8 +29,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class RoutingRuleConditionBuilder_s3Impl extends MinimalEObjectImpl.Container
-		implements RoutingRuleConditionBuilder_s3 {
+public class RoutingRuleConditionBuilder_s3Impl extends ServiceResourcesImpl implements RoutingRuleConditionBuilder_s3 {
 	/**
 	 * The default value of the '{@link #getHttpErrorCodeReturnedEquals_java_lang_String_() <em>Http Error Code Returned Equals java lang String </em>}' attribute.
 	 * <!-- begin-user-doc -->

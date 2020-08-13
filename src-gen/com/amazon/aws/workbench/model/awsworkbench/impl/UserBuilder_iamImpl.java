@@ -10,7 +10,6 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -35,7 +34,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class UserBuilder_iamImpl extends MinimalEObjectImpl.Container implements UserBuilder_iam {
+public class UserBuilder_iamImpl extends ServiceResourcesImpl implements UserBuilder_iam {
 	/**
 	 * The default value of the '{@link #getGroups_software_amazon_awscdk_services_iam_IGroup_AsList() <em>Groups software amazon awscdk services iam IGroup As List</em>}' attribute.
 	 * <!-- begin-user-doc -->

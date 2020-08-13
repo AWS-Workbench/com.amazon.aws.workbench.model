@@ -2,8 +2,6 @@
  */
 package com.amazon.aws.workbench.model.awsworkbench;
 
-import org.eclipse.emf.ecore.EObject;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Source Configuration Builder cloudfront</b></em>'.
@@ -28,7 +26,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface SourceConfigurationBuilder_cloudfront extends EObject {
+public interface SourceConfigurationBuilder_cloudfront extends ServiceResources {
 	/**
 	 * Returns the value of the '<em><b>Behaviors software amazon awscdk services cloudfront Behavior As List</b></em>' attribute.
 	 * <!-- begin-user-doc -->

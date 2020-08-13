@@ -11,7 +11,6 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -38,7 +37,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class ApplicationLoadBalancerBuilder_elasticloadbalancingv2Impl extends MinimalEObjectImpl.Container
+public class ApplicationLoadBalancerBuilder_elasticloadbalancingv2Impl extends ServiceResourcesImpl
 		implements ApplicationLoadBalancerBuilder_elasticloadbalancingv2 {
 	/**
 	 * The default value of the '{@link #getVpcWithIVpc_software_amazon_awscdk_services_ec2_IVpc_AsReference() <em>Vpc With IVpc software amazon awscdk services ec2 IVpc As Reference</em>}' attribute.

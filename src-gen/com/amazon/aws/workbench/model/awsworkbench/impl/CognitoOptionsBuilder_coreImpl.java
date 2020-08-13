@@ -10,7 +10,6 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -31,7 +30,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class CognitoOptionsBuilder_coreImpl extends MinimalEObjectImpl.Container implements CognitoOptionsBuilder_core {
+public class CognitoOptionsBuilder_coreImpl extends ServiceResourcesImpl implements CognitoOptionsBuilder_core {
 	/**
 	 * The default value of the '{@link #getIdentitypoolWithCfnIdentityPool_software_amazon_awscdk_services_cognito_CfnIdentityPool_AsReference() <em>Identitypool With Cfn Identity Pool software amazon awscdk services cognito Cfn Identity Pool As Reference</em>}' attribute.
 	 * <!-- begin-user-doc -->

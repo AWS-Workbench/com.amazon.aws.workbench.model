@@ -10,7 +10,6 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -33,7 +32,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class SourceConfigurationBuilder_cloudfrontImpl extends MinimalEObjectImpl.Container
+public class SourceConfigurationBuilder_cloudfrontImpl extends ServiceResourcesImpl
 		implements SourceConfigurationBuilder_cloudfront {
 	/**
 	 * The default value of the '{@link #getBehaviors_software_amazon_awscdk_services_cloudfront_Behavior_AsList() <em>Behaviors software amazon awscdk services cloudfront Behavior As List</em>}' attribute.

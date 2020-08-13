@@ -2,8 +2,6 @@
  */
 package com.amazon.aws.workbench.model.awsworkbench;
 
-import org.eclipse.emf.ecore.EObject;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Rest Api Props Builder apigateway</b></em>'.
@@ -43,7 +41,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface RestApiPropsBuilder_apigateway extends EObject {
+public interface RestApiPropsBuilder_apigateway extends ServiceResources {
 	/**
 	 * Returns the value of the '<em><b>Api Key Source Type software amazon awscdk services apigateway Api Key Source Type </b></em>' attribute.
 	 * The literals are from the enumeration {@link com.amazon.aws.workbench.model.awsworkbench.ApiKeySourceType}.

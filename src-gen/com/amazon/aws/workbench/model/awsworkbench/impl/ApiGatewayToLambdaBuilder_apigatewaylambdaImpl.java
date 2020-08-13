@@ -10,7 +10,6 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -31,7 +30,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class ApiGatewayToLambdaBuilder_apigatewaylambdaImpl extends MinimalEObjectImpl.Container
+public class ApiGatewayToLambdaBuilder_apigatewaylambdaImpl extends ServiceResourcesImpl
 		implements ApiGatewayToLambdaBuilder_apigatewaylambda {
 	/**
 	 * The default value of the '{@link #getApiGatewayProps_java_lang_Object_() <em>Api Gateway Props java lang Object </em>}' attribute.

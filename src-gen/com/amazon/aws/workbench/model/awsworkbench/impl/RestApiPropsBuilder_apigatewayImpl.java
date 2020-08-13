@@ -11,7 +11,6 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -49,8 +48,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class RestApiPropsBuilder_apigatewayImpl extends MinimalEObjectImpl.Container
-		implements RestApiPropsBuilder_apigateway {
+public class RestApiPropsBuilder_apigatewayImpl extends ServiceResourcesImpl implements RestApiPropsBuilder_apigateway {
 	/**
 	 * The default value of the '{@link #getApiKeySourceType_software_amazon_awscdk_services_apigateway_ApiKeySourceType_() <em>Api Key Source Type software amazon awscdk services apigateway Api Key Source Type </em>}' attribute.
 	 * <!-- begin-user-doc -->

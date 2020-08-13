@@ -10,7 +10,6 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -33,7 +32,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class LayerVersionBuilder_lambdaImpl extends MinimalEObjectImpl.Container implements LayerVersionBuilder_lambda {
+public class LayerVersionBuilder_lambdaImpl extends ServiceResourcesImpl implements LayerVersionBuilder_lambda {
 	/**
 	 * The default value of the '{@link #getCodeWithCode_software_amazon_awscdk_services_lambda_Code_AsReference() <em>Code With Code software amazon awscdk services lambda Code As Reference</em>}' attribute.
 	 * <!-- begin-user-doc -->

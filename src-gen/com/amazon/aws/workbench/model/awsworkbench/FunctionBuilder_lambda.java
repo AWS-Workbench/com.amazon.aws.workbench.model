@@ -2,8 +2,6 @@
  */
 package com.amazon.aws.workbench.model.awsworkbench;
 
-import org.eclipse.emf.ecore.EObject;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Function Builder lambda</b></em>'.
@@ -51,7 +49,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface FunctionBuilder_lambda extends EObject {
+public interface FunctionBuilder_lambda extends ServiceResources {
 	/**
 	 * Returns the value of the '<em><b>Max Event Age With Duration software amazon awscdk core Duration As Reference</b></em>' attribute.
 	 * <!-- begin-user-doc -->

@@ -2,8 +2,6 @@
  */
 package com.amazon.aws.workbench.model.awsworkbench;
 
-import org.eclipse.emf.ecore.EObject;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Events Rule To Lambda Builder eventsrulelambda</b></em>'.
@@ -26,7 +24,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface EventsRuleToLambdaBuilder_eventsrulelambda extends EObject {
+public interface EventsRuleToLambdaBuilder_eventsrulelambda extends ServiceResources {
 	/**
 	 * Returns the value of the '<em><b>Event Rule Props With Rule Props software amazon awscdk services events Rule Props As Reference</b></em>' attribute.
 	 * <!-- begin-user-doc -->

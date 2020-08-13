@@ -12,7 +12,6 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -46,7 +45,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class NetworkMultipleTargetGroupsFargateServiceBuilder_patternsImpl extends MinimalEObjectImpl.Container
+public class NetworkMultipleTargetGroupsFargateServiceBuilder_patternsImpl extends ServiceResourcesImpl
 		implements NetworkMultipleTargetGroupsFargateServiceBuilder_patterns {
 	/**
 	 * The default value of the '{@link #getCloudMapOptionsWithCloudMapOptions_software_amazon_awscdk_services_ecs_CloudMapOptions_AsReference() <em>Cloud Map Options With Cloud Map Options software amazon awscdk services ecs Cloud Map Options As Reference</em>}' attribute.

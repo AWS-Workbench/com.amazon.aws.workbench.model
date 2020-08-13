@@ -2,8 +2,6 @@
  */
 package com.amazon.aws.workbench.model.awsworkbench;
 
-import org.eclipse.emf.ecore.EObject;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Build Kinesis Analytics App Props Builder core</b></em>'.
@@ -25,7 +23,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface BuildKinesisAnalyticsAppPropsBuilder_core extends EObject {
+public interface BuildKinesisAnalyticsAppPropsBuilder_core extends ServiceResources {
 	/**
 	 * Returns the value of the '<em><b>Kinesis Firehose With Cfn Delivery Stream software amazon awscdk services kinesisfirehose Cfn Delivery Stream As Reference</b></em>' attribute.
 	 * <!-- begin-user-doc -->

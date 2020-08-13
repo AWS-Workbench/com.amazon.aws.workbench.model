@@ -10,7 +10,6 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -33,7 +32,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class CloudFrontToApiGatewayToLambdaBuilder_cloudfrontapigatewaylambdaImpl extends MinimalEObjectImpl.Container
+public class CloudFrontToApiGatewayToLambdaBuilder_cloudfrontapigatewaylambdaImpl extends ServiceResourcesImpl
 		implements CloudFrontToApiGatewayToLambdaBuilder_cloudfrontapigatewaylambda {
 	/**
 	 * The default value of the '{@link #getApiGatewayPropsWithLambdaRestApiProps_software_amazon_awscdk_services_apigateway_LambdaRestApiProps_AsReference() <em>Api Gateway Props With Lambda Rest Api Props software amazon awscdk services apigateway Lambda Rest Api Props As Reference</em>}' attribute.

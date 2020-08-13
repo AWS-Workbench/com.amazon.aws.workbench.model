@@ -10,7 +10,6 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -33,7 +32,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class ApplicationLoadBalancerPropsBuilder_patternsImpl extends MinimalEObjectImpl.Container
+public class ApplicationLoadBalancerPropsBuilder_patternsImpl extends ServiceResourcesImpl
 		implements ApplicationLoadBalancerPropsBuilder_patterns {
 	/**
 	 * The default value of the '{@link #getListeners_software_amazon_awscdk_services_ecs_patterns_ApplicationListenerProps_AsList() <em>Listeners software amazon awscdk services ecs patterns Application Listener Props As List</em>}' attribute.

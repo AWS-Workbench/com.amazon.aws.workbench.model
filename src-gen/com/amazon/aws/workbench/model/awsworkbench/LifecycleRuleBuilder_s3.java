@@ -2,8 +2,6 @@
  */
 package com.amazon.aws.workbench.model.awsworkbench;
 
-import org.eclipse.emf.ecore.EObject;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Lifecycle Rule Builder s3</b></em>'.
@@ -33,7 +31,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface LifecycleRuleBuilder_s3 extends EObject {
+public interface LifecycleRuleBuilder_s3 extends ServiceResources {
 	/**
 	 * Returns the value of the '<em><b>Abort Incomplete Multipart Upload After With Duration software amazon awscdk core Duration As Reference</b></em>' attribute.
 	 * <!-- begin-user-doc -->

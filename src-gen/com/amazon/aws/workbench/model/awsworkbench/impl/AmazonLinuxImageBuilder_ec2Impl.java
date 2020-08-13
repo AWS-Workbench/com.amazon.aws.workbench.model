@@ -14,7 +14,6 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -37,8 +36,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class AmazonLinuxImageBuilder_ec2Impl extends MinimalEObjectImpl.Container
-		implements AmazonLinuxImageBuilder_ec2 {
+public class AmazonLinuxImageBuilder_ec2Impl extends ServiceResourcesImpl implements AmazonLinuxImageBuilder_ec2 {
 	/**
 	 * The default value of the '{@link #getEdition_software_amazon_awscdk_services_ec2_AmazonLinuxEdition_() <em>Edition software amazon awscdk services ec2 Amazon Linux Edition </em>}' attribute.
 	 * <!-- begin-user-doc -->

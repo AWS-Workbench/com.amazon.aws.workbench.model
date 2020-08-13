@@ -2,8 +2,6 @@
  */
 package com.amazon.aws.workbench.model.awsworkbench;
 
-import org.eclipse.emf.ecore.EObject;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Build Dynamo DB Table Props Builder core</b></em>'.
@@ -25,7 +23,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface BuildDynamoDBTablePropsBuilder_core extends EObject {
+public interface BuildDynamoDBTablePropsBuilder_core extends ServiceResources {
 	/**
 	 * Returns the value of the '<em><b>Dynamo Table Props With Table Props software amazon awscdk services dynamodb Table Props As Reference</b></em>' attribute.
 	 * <!-- begin-user-doc -->

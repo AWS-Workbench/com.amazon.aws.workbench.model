@@ -2,8 +2,6 @@
  */
 package com.amazon.aws.workbench.model.awsworkbench;
 
-import org.eclipse.emf.ecore.EObject;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Iot To Kinesis Firehose To S3 Builder iotkinesisfirehoses3</b></em>'.
@@ -27,7 +25,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface IotToKinesisFirehoseToS3Builder_iotkinesisfirehoses3 extends EObject {
+public interface IotToKinesisFirehoseToS3Builder_iotkinesisfirehoses3 extends ServiceResources {
 	/**
 	 * Returns the value of the '<em><b>Iot Topic Rule Props With Cfn Topic Rule Props software amazon awscdk services iot Cfn Topic Rule Props As Reference</b></em>' attribute.
 	 * <!-- begin-user-doc -->

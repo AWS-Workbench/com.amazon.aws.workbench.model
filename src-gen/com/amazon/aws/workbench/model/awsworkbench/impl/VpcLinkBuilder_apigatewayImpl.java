@@ -10,7 +10,6 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -31,7 +30,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class VpcLinkBuilder_apigatewayImpl extends MinimalEObjectImpl.Container implements VpcLinkBuilder_apigateway {
+public class VpcLinkBuilder_apigatewayImpl extends ServiceResourcesImpl implements VpcLinkBuilder_apigateway {
 	/**
 	 * The default value of the '{@link #getDescription_java_lang_String_() <em>Description java lang String </em>}' attribute.
 	 * <!-- begin-user-doc -->

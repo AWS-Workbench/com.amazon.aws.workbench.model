@@ -2,8 +2,6 @@
  */
 package com.amazon.aws.workbench.model.awsworkbench;
 
-import org.eclipse.emf.ecore.EObject;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Events Rule To Step Function Builder eventsrulestepfunction</b></em>'.
@@ -25,7 +23,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface EventsRuleToStepFunctionBuilder_eventsrulestepfunction extends EObject {
+public interface EventsRuleToStepFunctionBuilder_eventsrulestepfunction extends ServiceResources {
 	/**
 	 * Returns the value of the '<em><b>Event Rule Props With Rule Props software amazon awscdk services events Rule Props As Reference</b></em>' attribute.
 	 * <!-- begin-user-doc -->

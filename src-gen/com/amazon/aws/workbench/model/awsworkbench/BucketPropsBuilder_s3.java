@@ -2,8 +2,6 @@
  */
 package com.amazon.aws.workbench.model.awsworkbench;
 
-import org.eclipse.emf.ecore.EObject;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Bucket Props Builder s3</b></em>'.
@@ -40,7 +38,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface BucketPropsBuilder_s3 extends EObject {
+public interface BucketPropsBuilder_s3 extends ServiceResources {
 	/**
 	 * Returns the value of the '<em><b>Access Control software amazon awscdk services s3 Bucket Access Control </b></em>' attribute.
 	 * The literals are from the enumeration {@link com.amazon.aws.workbench.model.awsworkbench.BucketAccessControl}.

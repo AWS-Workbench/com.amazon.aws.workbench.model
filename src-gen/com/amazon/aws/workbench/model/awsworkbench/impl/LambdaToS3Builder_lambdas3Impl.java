@@ -10,7 +10,6 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -33,7 +32,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class LambdaToS3Builder_lambdas3Impl extends MinimalEObjectImpl.Container implements LambdaToS3Builder_lambdas3 {
+public class LambdaToS3Builder_lambdas3Impl extends ServiceResourcesImpl implements LambdaToS3Builder_lambdas3 {
 	/**
 	 * The default value of the '{@link #getBucketPermissions_java_lang_String_AsList() <em>Bucket Permissions java lang String As List</em>}' attribute.
 	 * <!-- begin-user-doc -->

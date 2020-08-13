@@ -2,8 +2,6 @@
  */
 package com.amazon.aws.workbench.model.awsworkbench;
 
-import org.eclipse.emf.ecore.EObject;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Block Public Access Builder s3</b></em>'.
@@ -27,7 +25,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface BlockPublicAccessBuilder_s3 extends EObject {
+public interface BlockPublicAccessBuilder_s3 extends ServiceResources {
 	/**
 	 * Returns the value of the '<em><b>Block Public Acls java lang Boolean </b></em>' attribute.
 	 * <!-- begin-user-doc -->

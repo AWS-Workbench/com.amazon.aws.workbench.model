@@ -2,8 +2,6 @@
  */
 package com.amazon.aws.workbench.model.awsworkbench;
 
-import org.eclipse.emf.ecore.EObject;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Redirect Target Builder s3</b></em>'.
@@ -25,7 +23,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface RedirectTargetBuilder_s3 extends EObject {
+public interface RedirectTargetBuilder_s3 extends ServiceResources {
 	/**
 	 * Returns the value of the '<em><b>Host Name java lang String </b></em>' attribute.
 	 * <!-- begin-user-doc -->

@@ -10,7 +10,6 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -36,7 +35,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class ApiGatewayToSqsBuilder_apigatewaysqsImpl extends MinimalEObjectImpl.Container
+public class ApiGatewayToSqsBuilder_apigatewaysqsImpl extends ServiceResourcesImpl
 		implements ApiGatewayToSqsBuilder_apigatewaysqs {
 	/**
 	 * The default value of the '{@link #getAllowCreateOperation_java_lang_Boolean_() <em>Allow Create Operation java lang Boolean </em>}' attribute.

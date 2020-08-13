@@ -10,7 +10,6 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -31,7 +30,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class UserInvitationConfigBuilder_cognitoImpl extends MinimalEObjectImpl.Container
+public class UserInvitationConfigBuilder_cognitoImpl extends ServiceResourcesImpl
 		implements UserInvitationConfigBuilder_cognito {
 	/**
 	 * The default value of the '{@link #getEmailBody_java_lang_String_() <em>Email Body java lang String </em>}' attribute.

@@ -2,8 +2,6 @@
  */
 package com.amazon.aws.workbench.model.awsworkbench;
 
-import org.eclipse.emf.ecore.EObject;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Asset Image Builder ecs</b></em>'.
@@ -30,7 +28,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface AssetImageBuilder_ecs extends EObject {
+public interface AssetImageBuilder_ecs extends ServiceResources {
 	/**
 	 * Returns the value of the '<em><b>Exclude java lang String As List</b></em>' attribute.
 	 * <!-- begin-user-doc -->

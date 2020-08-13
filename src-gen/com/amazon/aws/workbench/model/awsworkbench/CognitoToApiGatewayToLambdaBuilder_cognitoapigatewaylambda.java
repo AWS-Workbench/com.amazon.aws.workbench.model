@@ -2,8 +2,6 @@
  */
 package com.amazon.aws.workbench.model.awsworkbench;
 
-import org.eclipse.emf.ecore.EObject;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Cognito To Api Gateway To Lambda Builder cognitoapigatewaylambda</b></em>'.
@@ -28,7 +26,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface CognitoToApiGatewayToLambdaBuilder_cognitoapigatewaylambda extends EObject {
+public interface CognitoToApiGatewayToLambdaBuilder_cognitoapigatewaylambda extends ServiceResources {
 	/**
 	 * Returns the value of the '<em><b>Api Gateway Props java lang Object </b></em>' attribute.
 	 * <!-- begin-user-doc -->

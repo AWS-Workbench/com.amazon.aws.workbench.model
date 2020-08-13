@@ -13,7 +13,6 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -48,7 +47,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class BucketBuilder_s3Impl extends MinimalEObjectImpl.Container implements BucketBuilder_s3 {
+public class BucketBuilder_s3Impl extends ServiceResourcesImpl implements BucketBuilder_s3 {
 	/**
 	 * The default value of the '{@link #getAccessControl_software_amazon_awscdk_services_s3_BucketAccessControl_() <em>Access Control software amazon awscdk services s3 Bucket Access Control </em>}' attribute.
 	 * <!-- begin-user-doc -->

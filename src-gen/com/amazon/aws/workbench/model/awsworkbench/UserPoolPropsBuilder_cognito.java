@@ -2,8 +2,6 @@
  */
 package com.amazon.aws.workbench.model.awsworkbench;
 
-import org.eclipse.emf.ecore.EObject;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>User Pool Props Builder cognito</b></em>'.
@@ -39,7 +37,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface UserPoolPropsBuilder_cognito extends EObject {
+public interface UserPoolPropsBuilder_cognito extends ServiceResources {
 	/**
 	 * Returns the value of the '<em><b>Auto Verify With Auto Verified Attrs software amazon awscdk services cognito Auto Verified Attrs As Reference</b></em>' attribute.
 	 * <!-- begin-user-doc -->

@@ -2,8 +2,6 @@
  */
 package com.amazon.aws.workbench.model.awsworkbench;
 
-import org.eclipse.emf.ecore.EObject;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Amazon Linux Image Builder ec2</b></em>'.
@@ -28,7 +26,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface AmazonLinuxImageBuilder_ec2 extends EObject {
+public interface AmazonLinuxImageBuilder_ec2 extends ServiceResources {
 	/**
 	 * Returns the value of the '<em><b>Edition software amazon awscdk services ec2 Amazon Linux Edition </b></em>' attribute.
 	 * The literals are from the enumeration {@link com.amazon.aws.workbench.model.awsworkbench.AmazonLinuxEdition}.

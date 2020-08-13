@@ -2,8 +2,6 @@
  */
 package com.amazon.aws.workbench.model.awsworkbench;
 
-import org.eclipse.emf.ecore.EObject;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Stage Options Builder apigateway</b></em>'.
@@ -42,7 +40,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface StageOptionsBuilder_apigateway extends EObject {
+public interface StageOptionsBuilder_apigateway extends ServiceResources {
 	/**
 	 * Returns the value of the '<em><b>Access Log Destination With IAccess Log Destination software amazon awscdk services apigateway IAccess Log Destination As Reference</b></em>' attribute.
 	 * <!-- begin-user-doc -->

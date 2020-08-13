@@ -2,8 +2,6 @@
  */
 package com.amazon.aws.workbench.model.awsworkbench;
 
-import org.eclipse.emf.ecore.EObject;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Lambda To S3 Builder lambdas3</b></em>'.
@@ -28,7 +26,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface LambdaToS3Builder_lambdas3 extends EObject {
+public interface LambdaToS3Builder_lambdas3 extends ServiceResources {
 	/**
 	 * Returns the value of the '<em><b>Bucket Permissions java lang String As List</b></em>' attribute.
 	 * <!-- begin-user-doc -->

@@ -2,8 +2,6 @@
  */
 package com.amazon.aws.workbench.model.awsworkbench;
 
-import org.eclipse.emf.ecore.EObject;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Build Queue Props Builder core</b></em>'.
@@ -26,7 +24,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface BuildQueuePropsBuilder_core extends EObject {
+public interface BuildQueuePropsBuilder_core extends ServiceResources {
 	/**
 	 * Returns the value of the '<em><b>Dead Letter Queue With Dead Letter Queue software amazon awscdk services sqs Dead Letter Queue As Reference</b></em>' attribute.
 	 * <!-- begin-user-doc -->

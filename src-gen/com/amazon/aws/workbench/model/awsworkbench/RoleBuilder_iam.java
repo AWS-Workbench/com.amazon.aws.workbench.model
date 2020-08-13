@@ -2,8 +2,6 @@
  */
 package com.amazon.aws.workbench.model.awsworkbench;
 
-import org.eclipse.emf.ecore.EObject;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Role Builder iam</b></em>'.
@@ -33,7 +31,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface RoleBuilder_iam extends EObject {
+public interface RoleBuilder_iam extends ServiceResources {
 	/**
 	 * Returns the value of the '<em><b>Assumed By With IPrincipal software amazon awscdk services iam IPrincipal As Reference</b></em>' attribute.
 	 * <!-- begin-user-doc -->

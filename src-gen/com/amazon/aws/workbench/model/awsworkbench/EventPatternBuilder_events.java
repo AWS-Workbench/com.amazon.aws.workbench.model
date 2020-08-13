@@ -2,8 +2,6 @@
  */
 package com.amazon.aws.workbench.model.awsworkbench;
 
-import org.eclipse.emf.ecore.EObject;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Event Pattern Builder events</b></em>'.
@@ -32,7 +30,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface EventPatternBuilder_events extends EObject {
+public interface EventPatternBuilder_events extends ServiceResources {
 	/**
 	 * Returns the value of the '<em><b>Account java lang String As List</b></em>' attribute.
 	 * <!-- begin-user-doc -->

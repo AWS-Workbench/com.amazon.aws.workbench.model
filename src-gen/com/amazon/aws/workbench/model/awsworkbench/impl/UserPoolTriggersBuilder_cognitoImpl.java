@@ -10,7 +10,6 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -38,7 +37,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class UserPoolTriggersBuilder_cognitoImpl extends MinimalEObjectImpl.Container
+public class UserPoolTriggersBuilder_cognitoImpl extends ServiceResourcesImpl
 		implements UserPoolTriggersBuilder_cognito {
 	/**
 	 * The default value of the '{@link #getCreateAuthChallengeWithIFunction_software_amazon_awscdk_services_lambda_IFunction_AsReference() <em>Create Auth Challenge With IFunction software amazon awscdk services lambda IFunction As Reference</em>}' attribute.

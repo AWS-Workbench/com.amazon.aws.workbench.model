@@ -2,8 +2,6 @@
  */
 package com.amazon.aws.workbench.model.awsworkbench;
 
-import org.eclipse.emf.ecore.EObject;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Cloud Map Namespace Options Builder ecs</b></em>'.
@@ -26,7 +24,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface CloudMapNamespaceOptionsBuilder_ecs extends EObject {
+public interface CloudMapNamespaceOptionsBuilder_ecs extends ServiceResources {
 	/**
 	 * Returns the value of the '<em><b>Name java lang String </b></em>' attribute.
 	 * <!-- begin-user-doc -->

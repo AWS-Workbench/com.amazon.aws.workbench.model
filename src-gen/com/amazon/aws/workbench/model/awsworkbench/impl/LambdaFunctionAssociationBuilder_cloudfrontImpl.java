@@ -11,7 +11,6 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -31,7 +30,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class LambdaFunctionAssociationBuilder_cloudfrontImpl extends MinimalEObjectImpl.Container
+public class LambdaFunctionAssociationBuilder_cloudfrontImpl extends ServiceResourcesImpl
 		implements LambdaFunctionAssociationBuilder_cloudfront {
 	/**
 	 * The default value of the '{@link #getEventType_software_amazon_awscdk_services_cloudfront_LambdaEdgeEventType_() <em>Event Type software amazon awscdk services cloudfront Lambda Edge Event Type </em>}' attribute.

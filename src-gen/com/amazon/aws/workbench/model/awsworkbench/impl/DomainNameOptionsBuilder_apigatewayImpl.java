@@ -12,7 +12,6 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -34,7 +33,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class DomainNameOptionsBuilder_apigatewayImpl extends MinimalEObjectImpl.Container
+public class DomainNameOptionsBuilder_apigatewayImpl extends ServiceResourcesImpl
 		implements DomainNameOptionsBuilder_apigateway {
 	/**
 	 * The default value of the '{@link #getCertificateWithICertificate_software_amazon_awscdk_services_certificatemanager_ICertificate_AsReference() <em>Certificate With ICertificate software amazon awscdk services certificatemanager ICertificate As Reference</em>}' attribute.

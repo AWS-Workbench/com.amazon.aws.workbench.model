@@ -10,7 +10,6 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -32,7 +31,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class DynamoDBStreamToLambdaBuilder_dynamodbstreamlambdaImpl extends MinimalEObjectImpl.Container
+public class DynamoDBStreamToLambdaBuilder_dynamodbstreamlambdaImpl extends ServiceResourcesImpl
 		implements DynamoDBStreamToLambdaBuilder_dynamodbstreamlambda {
 	/**
 	 * The default value of the '{@link #getDynamoTablePropsWithTableProps_software_amazon_awscdk_services_dynamodb_TableProps_AsReference() <em>Dynamo Table Props With Table Props software amazon awscdk services dynamodb Table Props As Reference</em>}' attribute.

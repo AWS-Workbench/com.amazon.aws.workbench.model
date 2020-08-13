@@ -10,7 +10,6 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -31,7 +30,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class LambdaToStepFunctionBuilder_lambdastepfunctionImpl extends MinimalEObjectImpl.Container
+public class LambdaToStepFunctionBuilder_lambdastepfunctionImpl extends ServiceResourcesImpl
 		implements LambdaToStepFunctionBuilder_lambdastepfunction {
 	/**
 	 * The default value of the '{@link #getStateMachinePropsWithStateMachineProps_software_amazon_awscdk_services_stepfunctions_StateMachineProps_AsReference() <em>State Machine Props With State Machine Props software amazon awscdk services stepfunctions State Machine Props As Reference</em>}' attribute.

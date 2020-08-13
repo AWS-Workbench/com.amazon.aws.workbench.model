@@ -10,7 +10,6 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -29,7 +28,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class ScheduledEc2TaskDefinitionOptionsBuilder_patternsImpl extends MinimalEObjectImpl.Container
+public class ScheduledEc2TaskDefinitionOptionsBuilder_patternsImpl extends ServiceResourcesImpl
 		implements ScheduledEc2TaskDefinitionOptionsBuilder_patterns {
 	/**
 	 * The default value of the '{@link #getTaskDefinitionWithEc2TaskDefinition_software_amazon_awscdk_services_ecs_Ec2TaskDefinition_AsReference() <em>Task Definition With Ec2 Task Definition software amazon awscdk services ecs Ec2 Task Definition As Reference</em>}' attribute.

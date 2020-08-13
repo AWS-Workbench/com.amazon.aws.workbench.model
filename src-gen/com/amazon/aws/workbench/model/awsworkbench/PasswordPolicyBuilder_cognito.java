@@ -2,8 +2,6 @@
  */
 package com.amazon.aws.workbench.model.awsworkbench;
 
-import org.eclipse.emf.ecore.EObject;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Password Policy Builder cognito</b></em>'.
@@ -29,7 +27,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface PasswordPolicyBuilder_cognito extends EObject {
+public interface PasswordPolicyBuilder_cognito extends ServiceResources {
 	/**
 	 * Returns the value of the '<em><b>Min Length java lang Number </b></em>' attribute.
 	 * <!-- begin-user-doc -->

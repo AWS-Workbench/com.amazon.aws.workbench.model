@@ -12,7 +12,6 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -58,8 +57,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class FunctionPropsBuilder_lambdaImpl extends MinimalEObjectImpl.Container
-		implements FunctionPropsBuilder_lambda {
+public class FunctionPropsBuilder_lambdaImpl extends ServiceResourcesImpl implements FunctionPropsBuilder_lambda {
 	/**
 	 * The default value of the '{@link #getCodeWithCode_software_amazon_awscdk_services_lambda_Code_AsReference() <em>Code With Code software amazon awscdk services lambda Code As Reference</em>}' attribute.
 	 * <!-- begin-user-doc -->

@@ -2,8 +2,6 @@
  */
 package com.amazon.aws.workbench.model.awsworkbench;
 
-import org.eclipse.emf.ecore.EObject;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Scheduled Ec2 Task Definition Options Builder patterns</b></em>'.
@@ -24,7 +22,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface ScheduledEc2TaskDefinitionOptionsBuilder_patterns extends EObject {
+public interface ScheduledEc2TaskDefinitionOptionsBuilder_patterns extends ServiceResources {
 	/**
 	 * Returns the value of the '<em><b>Task Definition With Ec2 Task Definition software amazon awscdk services ecs Ec2 Task Definition As Reference</b></em>' attribute.
 	 * <!-- begin-user-doc -->

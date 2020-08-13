@@ -10,7 +10,6 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -31,8 +30,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class GatewayVpcEndpointBuilder_ec2Impl extends MinimalEObjectImpl.Container
-		implements GatewayVpcEndpointBuilder_ec2 {
+public class GatewayVpcEndpointBuilder_ec2Impl extends ServiceResourcesImpl implements GatewayVpcEndpointBuilder_ec2 {
 	/**
 	 * The default value of the '{@link #getServiceWithIGatewayVpcEndpointService_software_amazon_awscdk_services_ec2_IGatewayVpcEndpointService_AsReference() <em>Service With IGateway Vpc Endpoint Service software amazon awscdk services ec2 IGateway Vpc Endpoint Service As Reference</em>}' attribute.
 	 * <!-- begin-user-doc -->

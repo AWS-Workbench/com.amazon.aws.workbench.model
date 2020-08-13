@@ -2,8 +2,6 @@
  */
 package com.amazon.aws.workbench.model.awsworkbench;
 
-import org.eclipse.emf.ecore.EObject;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Noncurrent Version Transition Builder s3</b></em>'.
@@ -25,7 +23,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface NoncurrentVersionTransitionBuilder_s3 extends EObject {
+public interface NoncurrentVersionTransitionBuilder_s3 extends ServiceResources {
 	/**
 	 * Returns the value of the '<em><b>Storage Class With Storage Class software amazon awscdk services s3 Storage Class As Reference</b></em>' attribute.
 	 * <!-- begin-user-doc -->

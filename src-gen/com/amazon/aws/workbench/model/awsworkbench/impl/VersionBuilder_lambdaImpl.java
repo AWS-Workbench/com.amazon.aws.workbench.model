@@ -11,7 +11,6 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -38,7 +37,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class VersionBuilder_lambdaImpl extends MinimalEObjectImpl.Container implements VersionBuilder_lambda {
+public class VersionBuilder_lambdaImpl extends ServiceResourcesImpl implements VersionBuilder_lambda {
 	/**
 	 * The default value of the '{@link #getMaxEventAgeWithDuration_software_amazon_awscdk_core_Duration_AsReference() <em>Max Event Age With Duration software amazon awscdk core Duration As Reference</em>}' attribute.
 	 * <!-- begin-user-doc -->

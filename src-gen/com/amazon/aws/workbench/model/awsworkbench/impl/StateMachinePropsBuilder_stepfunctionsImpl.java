@@ -11,7 +11,6 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -35,7 +34,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class StateMachinePropsBuilder_stepfunctionsImpl extends MinimalEObjectImpl.Container
+public class StateMachinePropsBuilder_stepfunctionsImpl extends ServiceResourcesImpl
 		implements StateMachinePropsBuilder_stepfunctions {
 	/**
 	 * The default value of the '{@link #getDefinitionWithIChainable_software_amazon_awscdk_services_stepfunctions_IChainable_AsReference() <em>Definition With IChainable software amazon awscdk services stepfunctions IChainable As Reference</em>}' attribute.

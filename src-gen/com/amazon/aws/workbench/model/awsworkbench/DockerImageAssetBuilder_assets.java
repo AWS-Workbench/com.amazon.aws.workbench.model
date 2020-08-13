@@ -2,8 +2,6 @@
  */
 package com.amazon.aws.workbench.model.awsworkbench;
 
-import org.eclipse.emf.ecore.EObject;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Docker Image Asset Builder assets</b></em>'.
@@ -31,7 +29,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface DockerImageAssetBuilder_assets extends EObject {
+public interface DockerImageAssetBuilder_assets extends ServiceResources {
 	/**
 	 * Returns the value of the '<em><b>Exclude java lang String As List</b></em>' attribute.
 	 * <!-- begin-user-doc -->

@@ -10,7 +10,6 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -35,7 +34,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class ScheduledFargateTaskBuilder_patternsImpl extends MinimalEObjectImpl.Container
+public class ScheduledFargateTaskBuilder_patternsImpl extends ServiceResourcesImpl
 		implements ScheduledFargateTaskBuilder_patterns {
 	/**
 	 * The default value of the '{@link #getScheduleWithSchedule_software_amazon_awscdk_services_applicationautoscaling_Schedule_AsReference() <em>Schedule With Schedule software amazon awscdk services applicationautoscaling Schedule As Reference</em>}' attribute.

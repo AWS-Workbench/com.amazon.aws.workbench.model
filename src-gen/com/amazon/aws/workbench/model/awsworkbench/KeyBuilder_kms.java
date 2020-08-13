@@ -2,8 +2,6 @@
  */
 package com.amazon.aws.workbench.model.awsworkbench;
 
-import org.eclipse.emf.ecore.EObject;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Key Builder kms</b></em>'.
@@ -30,7 +28,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface KeyBuilder_kms extends EObject {
+public interface KeyBuilder_kms extends ServiceResources {
 	/**
 	 * Returns the value of the '<em><b>Alias java lang String </b></em>' attribute.
 	 * <!-- begin-user-doc -->

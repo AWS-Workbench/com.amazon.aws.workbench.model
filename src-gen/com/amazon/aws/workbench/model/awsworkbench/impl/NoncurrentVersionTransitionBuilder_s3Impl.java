@@ -10,7 +10,6 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -30,7 +29,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class NoncurrentVersionTransitionBuilder_s3Impl extends MinimalEObjectImpl.Container
+public class NoncurrentVersionTransitionBuilder_s3Impl extends ServiceResourcesImpl
 		implements NoncurrentVersionTransitionBuilder_s3 {
 	/**
 	 * The default value of the '{@link #getStorageClassWithStorageClass_software_amazon_awscdk_services_s3_StorageClass_AsReference() <em>Storage Class With Storage Class software amazon awscdk services s3 Storage Class As Reference</em>}' attribute.

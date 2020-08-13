@@ -10,7 +10,6 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -36,7 +35,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class ManagedPolicyBuilder_iamImpl extends MinimalEObjectImpl.Container implements ManagedPolicyBuilder_iam {
+public class ManagedPolicyBuilder_iamImpl extends ServiceResourcesImpl implements ManagedPolicyBuilder_iam {
 	/**
 	 * The default value of the '{@link #getDescription_java_lang_String_() <em>Description java lang String </em>}' attribute.
 	 * <!-- begin-user-doc -->

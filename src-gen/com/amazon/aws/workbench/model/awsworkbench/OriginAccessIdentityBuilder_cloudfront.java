@@ -2,8 +2,6 @@
  */
 package com.amazon.aws.workbench.model.awsworkbench;
 
-import org.eclipse.emf.ecore.EObject;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Origin Access Identity Builder cloudfront</b></em>'.
@@ -24,7 +22,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface OriginAccessIdentityBuilder_cloudfront extends EObject {
+public interface OriginAccessIdentityBuilder_cloudfront extends ServiceResources {
 	/**
 	 * Returns the value of the '<em><b>Comment java lang String </b></em>' attribute.
 	 * <!-- begin-user-doc -->

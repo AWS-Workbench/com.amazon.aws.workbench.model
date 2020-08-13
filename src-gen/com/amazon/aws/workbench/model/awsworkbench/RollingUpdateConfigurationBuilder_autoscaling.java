@@ -2,8 +2,6 @@
  */
 package com.amazon.aws.workbench.model.awsworkbench;
 
-import org.eclipse.emf.ecore.EObject;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Rolling Update Configuration Builder autoscaling</b></em>'.
@@ -29,7 +27,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface RollingUpdateConfigurationBuilder_autoscaling extends EObject {
+public interface RollingUpdateConfigurationBuilder_autoscaling extends ServiceResources {
 	/**
 	 * Returns the value of the '<em><b>Max Batch Size java lang Number </b></em>' attribute.
 	 * <!-- begin-user-doc -->

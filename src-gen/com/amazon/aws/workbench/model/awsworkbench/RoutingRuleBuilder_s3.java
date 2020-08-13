@@ -2,8 +2,6 @@
  */
 package com.amazon.aws.workbench.model.awsworkbench;
 
-import org.eclipse.emf.ecore.EObject;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Routing Rule Builder s3</b></em>'.
@@ -28,7 +26,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface RoutingRuleBuilder_s3 extends EObject {
+public interface RoutingRuleBuilder_s3 extends ServiceResources {
 	/**
 	 * Returns the value of the '<em><b>Condition With Routing Rule Condition software amazon awscdk services s3 Routing Rule Condition As Reference</b></em>' attribute.
 	 * <!-- begin-user-doc -->

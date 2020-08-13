@@ -2,8 +2,6 @@
  */
 package com.amazon.aws.workbench.model.awsworkbench;
 
-import org.eclipse.emf.ecore.EObject;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Email Settings Builder cognito</b></em>'.
@@ -25,7 +23,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface EmailSettingsBuilder_cognito extends EObject {
+public interface EmailSettingsBuilder_cognito extends ServiceResources {
 	/**
 	 * Returns the value of the '<em><b>From java lang String </b></em>' attribute.
 	 * <!-- begin-user-doc -->

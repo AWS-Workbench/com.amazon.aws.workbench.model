@@ -10,7 +10,6 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -31,7 +30,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class LoggingConfigurationBuilder_cloudfrontImpl extends MinimalEObjectImpl.Container
+public class LoggingConfigurationBuilder_cloudfrontImpl extends ServiceResourcesImpl
 		implements LoggingConfigurationBuilder_cloudfront {
 	/**
 	 * The default value of the '{@link #getBucketWithIBucket_software_amazon_awscdk_services_s3_IBucket_AsReference() <em>Bucket With IBucket software amazon awscdk services s3 IBucket As Reference</em>}' attribute.

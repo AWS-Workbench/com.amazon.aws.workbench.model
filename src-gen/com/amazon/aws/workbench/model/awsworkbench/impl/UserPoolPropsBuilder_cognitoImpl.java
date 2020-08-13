@@ -11,7 +11,6 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -45,8 +44,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class UserPoolPropsBuilder_cognitoImpl extends MinimalEObjectImpl.Container
-		implements UserPoolPropsBuilder_cognito {
+public class UserPoolPropsBuilder_cognitoImpl extends ServiceResourcesImpl implements UserPoolPropsBuilder_cognito {
 	/**
 	 * The default value of the '{@link #getAutoVerifyWithAutoVerifiedAttrs_software_amazon_awscdk_services_cognito_AutoVerifiedAttrs_AsReference() <em>Auto Verify With Auto Verified Attrs software amazon awscdk services cognito Auto Verified Attrs As Reference</em>}' attribute.
 	 * <!-- begin-user-doc -->

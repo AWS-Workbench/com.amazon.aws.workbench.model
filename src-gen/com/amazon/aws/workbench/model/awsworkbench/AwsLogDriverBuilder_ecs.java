@@ -2,8 +2,6 @@
  */
 package com.amazon.aws.workbench.model.awsworkbench;
 
-import org.eclipse.emf.ecore.EObject;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Aws Log Driver Builder ecs</b></em>'.
@@ -28,7 +26,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface AwsLogDriverBuilder_ecs extends EObject {
+public interface AwsLogDriverBuilder_ecs extends ServiceResources {
 	/**
 	 * Returns the value of the '<em><b>Stream Prefix java lang String </b></em>' attribute.
 	 * <!-- begin-user-doc -->

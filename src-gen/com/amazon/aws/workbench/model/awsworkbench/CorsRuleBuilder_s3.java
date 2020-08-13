@@ -2,8 +2,6 @@
  */
 package com.amazon.aws.workbench.model.awsworkbench;
 
-import org.eclipse.emf.ecore.EObject;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Cors Rule Builder s3</b></em>'.
@@ -29,7 +27,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface CorsRuleBuilder_s3 extends EObject {
+public interface CorsRuleBuilder_s3 extends ServiceResources {
 	/**
 	 * Returns the value of the '<em><b>Allowed Methods software amazon awscdk services s3 Http Methods As List</b></em>' attribute.
 	 * <!-- begin-user-doc -->

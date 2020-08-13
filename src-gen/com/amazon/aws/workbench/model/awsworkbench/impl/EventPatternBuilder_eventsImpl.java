@@ -10,7 +10,6 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -37,7 +36,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class EventPatternBuilder_eventsImpl extends MinimalEObjectImpl.Container implements EventPatternBuilder_events {
+public class EventPatternBuilder_eventsImpl extends ServiceResourcesImpl implements EventPatternBuilder_events {
 	/**
 	 * The default value of the '{@link #getAccount_java_lang_String_AsList() <em>Account java lang String As List</em>}' attribute.
 	 * <!-- begin-user-doc -->

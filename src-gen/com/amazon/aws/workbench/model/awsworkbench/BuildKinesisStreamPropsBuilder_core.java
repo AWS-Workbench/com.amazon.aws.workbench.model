@@ -2,8 +2,6 @@
  */
 package com.amazon.aws.workbench.model.awsworkbench;
 
-import org.eclipse.emf.ecore.EObject;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Build Kinesis Stream Props Builder core</b></em>'.
@@ -24,7 +22,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface BuildKinesisStreamPropsBuilder_core extends EObject {
+public interface BuildKinesisStreamPropsBuilder_core extends ServiceResources {
 	/**
 	 * Returns the value of the '<em><b>Kinesis Stream Props java lang Object </b></em>' attribute.
 	 * <!-- begin-user-doc -->

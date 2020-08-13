@@ -2,8 +2,6 @@
  */
 package com.amazon.aws.workbench.model.awsworkbench;
 
-import org.eclipse.emf.ecore.EObject;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Lambda Rest Api Builder apigateway</b></em>'.
@@ -46,7 +44,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface LambdaRestApiBuilder_apigateway extends EObject {
+public interface LambdaRestApiBuilder_apigateway extends ServiceResources {
 	/**
 	 * Returns the value of the '<em><b>Default Cors Preflight Options With Cors Options software amazon awscdk services apigateway Cors Options As Reference</b></em>' attribute.
 	 * <!-- begin-user-doc -->

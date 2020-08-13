@@ -10,7 +10,6 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -33,7 +32,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class HealthCheckBuilder_ecsImpl extends MinimalEObjectImpl.Container implements HealthCheckBuilder_ecs {
+public class HealthCheckBuilder_ecsImpl extends ServiceResourcesImpl implements HealthCheckBuilder_ecs {
 	/**
 	 * The default value of the '{@link #getCommand_java_lang_String_AsList() <em>Command java lang String As List</em>}' attribute.
 	 * <!-- begin-user-doc -->

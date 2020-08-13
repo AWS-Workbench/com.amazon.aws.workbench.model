@@ -2,8 +2,6 @@
  */
 package com.amazon.aws.workbench.model.awsworkbench;
 
-import org.eclipse.emf.ecore.EObject;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Dead Letter Queue Builder sqs</b></em>'.
@@ -25,7 +23,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface DeadLetterQueueBuilder_sqs extends EObject {
+public interface DeadLetterQueueBuilder_sqs extends ServiceResources {
 	/**
 	 * Returns the value of the '<em><b>Max Receive Count java lang Number </b></em>' attribute.
 	 * <!-- begin-user-doc -->

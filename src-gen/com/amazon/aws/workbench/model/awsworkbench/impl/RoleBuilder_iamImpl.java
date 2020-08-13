@@ -10,7 +10,6 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -38,7 +37,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class RoleBuilder_iamImpl extends MinimalEObjectImpl.Container implements RoleBuilder_iam {
+public class RoleBuilder_iamImpl extends ServiceResourcesImpl implements RoleBuilder_iam {
 	/**
 	 * The default value of the '{@link #getAssumedByWithIPrincipal_software_amazon_awscdk_services_iam_IPrincipal_AsReference() <em>Assumed By With IPrincipal software amazon awscdk services iam IPrincipal As Reference</em>}' attribute.
 	 * <!-- begin-user-doc -->

@@ -2,8 +2,6 @@
  */
 package com.amazon.aws.workbench.model.awsworkbench;
 
-import org.eclipse.emf.ecore.EObject;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Queue Processing Fargate Service Builder patterns</b></em>'.
@@ -46,7 +44,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface QueueProcessingFargateServiceBuilder_patterns extends EObject {
+public interface QueueProcessingFargateServiceBuilder_patterns extends ServiceResources {
 	/**
 	 * Returns the value of the '<em><b>Image With Container Image software amazon awscdk services ecs Container Image As Reference</b></em>' attribute.
 	 * <!-- begin-user-doc -->

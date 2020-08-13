@@ -2,8 +2,6 @@
  */
 package com.amazon.aws.workbench.model.awsworkbench;
 
-import org.eclipse.emf.ecore.EObject;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Auth Flow Builder cognito</b></em>'.
@@ -28,7 +26,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface AuthFlowBuilder_cognito extends EObject {
+public interface AuthFlowBuilder_cognito extends ServiceResources {
 	/**
 	 * Returns the value of the '<em><b>Admin User Password java lang Boolean </b></em>' attribute.
 	 * <!-- begin-user-doc -->

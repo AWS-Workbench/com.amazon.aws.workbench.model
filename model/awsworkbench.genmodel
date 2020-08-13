@@ -385,7 +385,9 @@
       <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//Protocol/TCP"/>
       <genEnumLiterals ecoreEnumLiteral="awsworkbench.ecore#//Protocol/UDP"/>
     </genEnums>
-    <genClasses ecoreClass="awsworkbench.ecore#//ServiceResources"/>
+    <genClasses ecoreClass="awsworkbench.ecore#//ServiceResources">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference awsworkbench.ecore#//ServiceResources/dependsON"/>
+    </genClasses>
     <genClasses ecoreClass="awsworkbench.ecore#//AppBuilder_core">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AppBuilder_core/autoSynth_java_lang_Boolean_"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AppBuilder_core/context_java_lang_String__java_lang_String_AsMap"/>
@@ -400,6 +402,8 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference awsworkbench.ecore#//AppBuilder_core/environmentbuilder_core"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference awsworkbench.ecore#//AppBuilder_core/defaultstacksynthesizerbuilder_core"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference awsworkbench.ecore#//AppBuilder_core/stackbuilder_core"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AppBuilder_core/projectName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AppBuilder_core/packageName"/>
     </genClasses>
     <genClasses ecoreClass="awsworkbench.ecore#//DefaultStackSynthesizerBuilder_core">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//DefaultStackSynthesizerBuilder_core/assetPublishingExternalId_java_lang_String_"/>

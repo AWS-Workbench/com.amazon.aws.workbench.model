@@ -10,7 +10,6 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -29,7 +28,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class ScheduledFargateTaskDefinitionOptionsBuilder_patternsImpl extends MinimalEObjectImpl.Container
+public class ScheduledFargateTaskDefinitionOptionsBuilder_patternsImpl extends ServiceResourcesImpl
 		implements ScheduledFargateTaskDefinitionOptionsBuilder_patterns {
 	/**
 	 * The default value of the '{@link #getTaskDefinitionWithFargateTaskDefinition_software_amazon_awscdk_services_ecs_FargateTaskDefinition_AsReference() <em>Task Definition With Fargate Task Definition software amazon awscdk services ecs Fargate Task Definition As Reference</em>}' attribute.

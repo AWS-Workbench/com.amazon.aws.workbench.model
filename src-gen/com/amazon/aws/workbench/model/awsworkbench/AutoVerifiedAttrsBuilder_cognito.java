@@ -2,8 +2,6 @@
  */
 package com.amazon.aws.workbench.model.awsworkbench;
 
-import org.eclipse.emf.ecore.EObject;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Auto Verified Attrs Builder cognito</b></em>'.
@@ -25,7 +23,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface AutoVerifiedAttrsBuilder_cognito extends EObject {
+public interface AutoVerifiedAttrsBuilder_cognito extends ServiceResources {
 	/**
 	 * Returns the value of the '<em><b>Email java lang Boolean </b></em>' attribute.
 	 * <!-- begin-user-doc -->

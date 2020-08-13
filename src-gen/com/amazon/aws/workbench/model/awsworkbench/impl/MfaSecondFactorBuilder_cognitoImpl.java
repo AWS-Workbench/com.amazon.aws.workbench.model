@@ -10,7 +10,6 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -30,8 +29,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class MfaSecondFactorBuilder_cognitoImpl extends MinimalEObjectImpl.Container
-		implements MfaSecondFactorBuilder_cognito {
+public class MfaSecondFactorBuilder_cognitoImpl extends ServiceResourcesImpl implements MfaSecondFactorBuilder_cognito {
 	/**
 	 * The default value of the '{@link #getOtp_java_lang_Boolean_() <em>Otp java lang Boolean </em>}' attribute.
 	 * <!-- begin-user-doc -->

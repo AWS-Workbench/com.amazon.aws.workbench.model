@@ -11,7 +11,6 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -38,7 +37,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class PolicyStatementBuilder_iamImpl extends MinimalEObjectImpl.Container implements PolicyStatementBuilder_iam {
+public class PolicyStatementBuilder_iamImpl extends ServiceResourcesImpl implements PolicyStatementBuilder_iam {
 	/**
 	 * The default value of the '{@link #getActions_java_lang_String_AsList() <em>Actions java lang String As List</em>}' attribute.
 	 * <!-- begin-user-doc -->

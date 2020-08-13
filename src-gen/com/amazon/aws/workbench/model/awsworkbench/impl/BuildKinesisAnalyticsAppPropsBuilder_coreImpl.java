@@ -10,7 +10,6 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -30,7 +29,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class BuildKinesisAnalyticsAppPropsBuilder_coreImpl extends MinimalEObjectImpl.Container
+public class BuildKinesisAnalyticsAppPropsBuilder_coreImpl extends ServiceResourcesImpl
 		implements BuildKinesisAnalyticsAppPropsBuilder_core {
 	/**
 	 * The default value of the '{@link #getKinesisFirehoseWithCfnDeliveryStream_software_amazon_awscdk_services_kinesisfirehose_CfnDeliveryStream_AsReference() <em>Kinesis Firehose With Cfn Delivery Stream software amazon awscdk services kinesisfirehose Cfn Delivery Stream As Reference</em>}' attribute.

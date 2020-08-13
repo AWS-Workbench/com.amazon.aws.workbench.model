@@ -10,7 +10,6 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -36,7 +35,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class ScheduledEc2TaskImageOptionsBuilder_patternsImpl extends MinimalEObjectImpl.Container
+public class ScheduledEc2TaskImageOptionsBuilder_patternsImpl extends ServiceResourcesImpl
 		implements ScheduledEc2TaskImageOptionsBuilder_patterns {
 	/**
 	 * The default value of the '{@link #getCpu_java_lang_Number_() <em>Cpu java lang Number </em>}' attribute.

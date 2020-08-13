@@ -12,7 +12,6 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -41,7 +40,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class BehaviorBuilder_cloudfrontImpl extends MinimalEObjectImpl.Container implements BehaviorBuilder_cloudfront {
+public class BehaviorBuilder_cloudfrontImpl extends ServiceResourcesImpl implements BehaviorBuilder_cloudfront {
 	/**
 	 * The default value of the '{@link #getAllowedMethods_software_amazon_awscdk_services_cloudfront_CloudFrontAllowedMethods_() <em>Allowed Methods software amazon awscdk services cloudfront Cloud Front Allowed Methods </em>}' attribute.
 	 * <!-- begin-user-doc -->

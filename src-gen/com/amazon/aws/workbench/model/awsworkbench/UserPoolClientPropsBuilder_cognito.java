@@ -2,8 +2,6 @@
  */
 package com.amazon.aws.workbench.model.awsworkbench;
 
-import org.eclipse.emf.ecore.EObject;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>User Pool Client Props Builder cognito</b></em>'.
@@ -29,7 +27,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface UserPoolClientPropsBuilder_cognito extends EObject {
+public interface UserPoolClientPropsBuilder_cognito extends ServiceResources {
 	/**
 	 * Returns the value of the '<em><b>User Pool With IUser Pool software amazon awscdk services cognito IUser Pool As Reference</b></em>' attribute.
 	 * <!-- begin-user-doc -->

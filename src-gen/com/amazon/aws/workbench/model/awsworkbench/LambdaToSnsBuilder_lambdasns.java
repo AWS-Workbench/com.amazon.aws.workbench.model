@@ -2,8 +2,6 @@
  */
 package com.amazon.aws.workbench.model.awsworkbench;
 
-import org.eclipse.emf.ecore.EObject;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Lambda To Sns Builder lambdasns</b></em>'.
@@ -28,7 +26,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface LambdaToSnsBuilder_lambdasns extends EObject {
+public interface LambdaToSnsBuilder_lambdasns extends ServiceResources {
 	/**
 	 * Returns the value of the '<em><b>Enable Encryption java lang Boolean </b></em>' attribute.
 	 * <!-- begin-user-doc -->

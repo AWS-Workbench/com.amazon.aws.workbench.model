@@ -28,6 +28,8 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.AppBuilder_core#getEnvironmentbuilder_core <em>Environmentbuilder core</em>}</li>
  *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.AppBuilder_core#getDefaultstacksynthesizerbuilder_core <em>Defaultstacksynthesizerbuilder core</em>}</li>
  *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.AppBuilder_core#getStackbuilder_core <em>Stackbuilder core</em>}</li>
+ *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.AppBuilder_core#getProjectName <em>Project Name</em>}</li>
+ *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.AppBuilder_core#getPackageName <em>Package Name</em>}</li>
  * </ul>
  *
  * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getAppBuilder_core()
@@ -280,5 +282,49 @@ public interface AppBuilder_core extends EObject {
 	 * @generated
 	 */
 	EList<StackBuilder_core> getStackbuilder_core();
+
+	/**
+	 * Returns the value of the '<em><b>Project Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Project Name</em>' attribute.
+	 * @see #setProjectName(String)
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getAppBuilder_core_ProjectName()
+	 * @model
+	 * @generated
+	 */
+	String getProjectName();
+
+	/**
+	 * Sets the value of the '{@link com.amazon.aws.workbench.model.awsworkbench.AppBuilder_core#getProjectName <em>Project Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Project Name</em>' attribute.
+	 * @see #getProjectName()
+	 * @generated
+	 */
+	void setProjectName(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Package Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Package Name</em>' attribute.
+	 * @see #setPackageName(String)
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getAppBuilder_core_PackageName()
+	 * @model
+	 * @generated
+	 */
+	String getPackageName();
+
+	/**
+	 * Sets the value of the '{@link com.amazon.aws.workbench.model.awsworkbench.AppBuilder_core#getPackageName <em>Package Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Package Name</em>' attribute.
+	 * @see #getPackageName()
+	 * @generated
+	 */
+	void setPackageName(String value);
 
 } // AppBuilder_core

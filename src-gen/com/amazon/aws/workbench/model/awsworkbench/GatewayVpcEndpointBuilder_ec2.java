@@ -2,8 +2,6 @@
  */
 package com.amazon.aws.workbench.model.awsworkbench;
 
-import org.eclipse.emf.ecore.EObject;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Gateway Vpc Endpoint Builder ec2</b></em>'.
@@ -26,7 +24,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface GatewayVpcEndpointBuilder_ec2 extends EObject {
+public interface GatewayVpcEndpointBuilder_ec2 extends ServiceResources {
 	/**
 	 * Returns the value of the '<em><b>Service With IGateway Vpc Endpoint Service software amazon awscdk services ec2 IGateway Vpc Endpoint Service As Reference</b></em>' attribute.
 	 * <!-- begin-user-doc -->

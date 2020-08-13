@@ -2,8 +2,6 @@
  */
 package com.amazon.aws.workbench.model.awsworkbench;
 
-import org.eclipse.emf.ecore.EObject;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Dynamo DB Stream To Lambda To Elastic Search And Kibana Builder dynamodbstreamlambdaelasticsearchkibana</b></em>'.
@@ -30,7 +28,7 @@ import org.eclipse.emf.ecore.EObject;
  * @generated
  */
 public interface DynamoDBStreamToLambdaToElasticSearchAndKibanaBuilder_dynamodbstreamlambdaelasticsearchkibana
-		extends EObject {
+		extends ServiceResources {
 	/**
 	 * Returns the value of the '<em><b>Domain Name java lang String </b></em>' attribute.
 	 * <!-- begin-user-doc -->

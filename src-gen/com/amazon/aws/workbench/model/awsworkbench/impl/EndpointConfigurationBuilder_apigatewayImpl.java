@@ -10,7 +10,6 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -30,7 +29,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class EndpointConfigurationBuilder_apigatewayImpl extends MinimalEObjectImpl.Container
+public class EndpointConfigurationBuilder_apigatewayImpl extends ServiceResourcesImpl
 		implements EndpointConfigurationBuilder_apigateway {
 	/**
 	 * The default value of the '{@link #getTypes_software_amazon_awscdk_services_apigateway_EndpointType_AsList() <em>Types software amazon awscdk services apigateway Endpoint Type As List</em>}' attribute.

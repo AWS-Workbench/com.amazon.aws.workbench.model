@@ -45,6 +45,8 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.AppBuilder_coreImpl#getEnvironmentbuilder_core <em>Environmentbuilder core</em>}</li>
  *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.AppBuilder_coreImpl#getDefaultstacksynthesizerbuilder_core <em>Defaultstacksynthesizerbuilder core</em>}</li>
  *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.AppBuilder_coreImpl#getStackbuilder_core <em>Stackbuilder core</em>}</li>
+ *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.AppBuilder_coreImpl#getProjectName <em>Project Name</em>}</li>
+ *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.AppBuilder_coreImpl#getPackageName <em>Package Name</em>}</li>
  * </ul>
  *
  * @generated
@@ -279,6 +281,46 @@ public class AppBuilder_coreImpl extends MinimalEObjectImpl.Container implements
 	 * @ordered
 	 */
 	protected EList<StackBuilder_core> stackbuilder_core;
+
+	/**
+	 * The default value of the '{@link #getProjectName() <em>Project Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getProjectName()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String PROJECT_NAME_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getProjectName() <em>Project Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getProjectName()
+	 * @generated
+	 * @ordered
+	 */
+	protected String projectName = PROJECT_NAME_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getPackageName() <em>Package Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getPackageName()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String PACKAGE_NAME_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getPackageName() <em>Package Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getPackageName()
+	 * @generated
+	 * @ordered
+	 */
+	protected String packageName = PACKAGE_NAME_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -582,6 +624,54 @@ public class AppBuilder_coreImpl extends MinimalEObjectImpl.Container implements
 	 * @generated
 	 */
 	@Override
+	public String getProjectName() {
+		return projectName;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setProjectName(String newProjectName) {
+		String oldProjectName = projectName;
+		projectName = newProjectName;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, AwsworkbenchPackage.APP_BUILDER_CORE__PROJECT_NAME,
+					oldProjectName, projectName));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String getPackageName() {
+		return packageName;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setPackageName(String newPackageName) {
+		String oldPackageName = packageName;
+		packageName = newPackageName;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, AwsworkbenchPackage.APP_BUILDER_CORE__PACKAGE_NAME,
+					oldPackageName, packageName));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 		case AwsworkbenchPackage.APP_BUILDER_CORE__ENVIRONMENTBUILDER_CORE:
@@ -628,6 +718,10 @@ public class AppBuilder_coreImpl extends MinimalEObjectImpl.Container implements
 			return getDefaultstacksynthesizerbuilder_core();
 		case AwsworkbenchPackage.APP_BUILDER_CORE__STACKBUILDER_CORE:
 			return getStackbuilder_core();
+		case AwsworkbenchPackage.APP_BUILDER_CORE__PROJECT_NAME:
+			return getProjectName();
+		case AwsworkbenchPackage.APP_BUILDER_CORE__PACKAGE_NAME:
+			return getPackageName();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -681,6 +775,12 @@ public class AppBuilder_coreImpl extends MinimalEObjectImpl.Container implements
 			getStackbuilder_core().clear();
 			getStackbuilder_core().addAll((Collection<? extends StackBuilder_core>) newValue);
 			return;
+		case AwsworkbenchPackage.APP_BUILDER_CORE__PROJECT_NAME:
+			setProjectName((String) newValue);
+			return;
+		case AwsworkbenchPackage.APP_BUILDER_CORE__PACKAGE_NAME:
+			setPackageName((String) newValue);
+			return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -730,6 +830,12 @@ public class AppBuilder_coreImpl extends MinimalEObjectImpl.Container implements
 		case AwsworkbenchPackage.APP_BUILDER_CORE__STACKBUILDER_CORE:
 			getStackbuilder_core().clear();
 			return;
+		case AwsworkbenchPackage.APP_BUILDER_CORE__PROJECT_NAME:
+			setProjectName(PROJECT_NAME_EDEFAULT);
+			return;
+		case AwsworkbenchPackage.APP_BUILDER_CORE__PACKAGE_NAME:
+			setPackageName(PACKAGE_NAME_EDEFAULT);
+			return;
 		}
 		super.eUnset(featureID);
 	}
@@ -778,6 +884,10 @@ public class AppBuilder_coreImpl extends MinimalEObjectImpl.Container implements
 			return defaultstacksynthesizerbuilder_core != null && !defaultstacksynthesizerbuilder_core.isEmpty();
 		case AwsworkbenchPackage.APP_BUILDER_CORE__STACKBUILDER_CORE:
 			return stackbuilder_core != null && !stackbuilder_core.isEmpty();
+		case AwsworkbenchPackage.APP_BUILDER_CORE__PROJECT_NAME:
+			return PROJECT_NAME_EDEFAULT == null ? projectName != null : !PROJECT_NAME_EDEFAULT.equals(projectName);
+		case AwsworkbenchPackage.APP_BUILDER_CORE__PACKAGE_NAME:
+			return PACKAGE_NAME_EDEFAULT == null ? packageName != null : !PACKAGE_NAME_EDEFAULT.equals(packageName);
 		}
 		return super.eIsSet(featureID);
 	}
@@ -813,6 +923,10 @@ public class AppBuilder_coreImpl extends MinimalEObjectImpl.Container implements
 		result.append(identifier);
 		result.append(", additionalCode: ");
 		result.append(additionalCode);
+		result.append(", projectName: ");
+		result.append(projectName);
+		result.append(", packageName: ");
+		result.append(packageName);
 		result.append(')');
 		return result.toString();
 	}

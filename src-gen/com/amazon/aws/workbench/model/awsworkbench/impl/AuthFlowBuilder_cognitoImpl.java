@@ -10,7 +10,6 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -33,7 +32,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class AuthFlowBuilder_cognitoImpl extends MinimalEObjectImpl.Container implements AuthFlowBuilder_cognito {
+public class AuthFlowBuilder_cognitoImpl extends ServiceResourcesImpl implements AuthFlowBuilder_cognito {
 	/**
 	 * The default value of the '{@link #getAdminUserPassword_java_lang_Boolean_() <em>Admin User Password java lang Boolean </em>}' attribute.
 	 * <!-- begin-user-doc -->

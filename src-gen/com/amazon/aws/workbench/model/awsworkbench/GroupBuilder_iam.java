@@ -2,8 +2,6 @@
  */
 package com.amazon.aws.workbench.model.awsworkbench;
 
-import org.eclipse.emf.ecore.EObject;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Group Builder iam</b></em>'.
@@ -26,7 +24,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface GroupBuilder_iam extends EObject {
+public interface GroupBuilder_iam extends ServiceResources {
 	/**
 	 * Returns the value of the '<em><b>Group Name java lang String </b></em>' attribute.
 	 * <!-- begin-user-doc -->

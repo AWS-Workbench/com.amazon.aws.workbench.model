@@ -11,7 +11,6 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -48,8 +47,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class StageOptionsBuilder_apigatewayImpl extends MinimalEObjectImpl.Container
-		implements StageOptionsBuilder_apigateway {
+public class StageOptionsBuilder_apigatewayImpl extends ServiceResourcesImpl implements StageOptionsBuilder_apigateway {
 	/**
 	 * The default value of the '{@link #getAccessLogDestinationWithIAccessLogDestination_software_amazon_awscdk_services_apigateway_IAccessLogDestination_AsReference() <em>Access Log Destination With IAccess Log Destination software amazon awscdk services apigateway IAccess Log Destination As Reference</em>}' attribute.
 	 * <!-- begin-user-doc -->

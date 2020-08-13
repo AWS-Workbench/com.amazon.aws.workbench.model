@@ -10,7 +10,6 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -31,8 +30,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class BlockDeviceBuilder_autoscalingImpl extends MinimalEObjectImpl.Container
-		implements BlockDeviceBuilder_autoscaling {
+public class BlockDeviceBuilder_autoscalingImpl extends ServiceResourcesImpl implements BlockDeviceBuilder_autoscaling {
 	/**
 	 * The default value of the '{@link #getDeviceName_java_lang_String_() <em>Device Name java lang String </em>}' attribute.
 	 * <!-- begin-user-doc -->

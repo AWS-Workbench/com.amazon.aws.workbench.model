@@ -10,7 +10,6 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -33,7 +32,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class IotToLambdaToDynamoDBBuilder_iotlambdadynamodbImpl extends MinimalEObjectImpl.Container
+public class IotToLambdaToDynamoDBBuilder_iotlambdadynamodbImpl extends ServiceResourcesImpl
 		implements IotToLambdaToDynamoDBBuilder_iotlambdadynamodb {
 	/**
 	 * The default value of the '{@link #getIotTopicRulePropsWithCfnTopicRuleProps_software_amazon_awscdk_services_iot_CfnTopicRuleProps_AsReference() <em>Iot Topic Rule Props With Cfn Topic Rule Props software amazon awscdk services iot Cfn Topic Rule Props As Reference</em>}' attribute.

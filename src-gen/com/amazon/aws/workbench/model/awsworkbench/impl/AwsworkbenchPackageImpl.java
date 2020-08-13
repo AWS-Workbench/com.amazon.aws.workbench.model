@@ -2052,6 +2052,16 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	 * @generated
 	 */
 	@Override
+	public EReference getServiceResources_DependsON() {
+		return (EReference) serviceResourcesEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getAppBuilder_core() {
 		return appBuilder_coreEClass;
 	}
@@ -2184,6 +2194,26 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	@Override
 	public EReference getAppBuilder_core_Stackbuilder_core() {
 		return (EReference) appBuilder_coreEClass.getEStructuralFeatures().get(12);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAppBuilder_core_ProjectName() {
+		return (EAttribute) appBuilder_coreEClass.getEStructuralFeatures().get(13);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAppBuilder_core_PackageName() {
+		return (EAttribute) appBuilder_coreEClass.getEStructuralFeatures().get(14);
 	}
 
 	/**
@@ -24953,6 +24983,7 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 
 		// Create classes and their features
 		serviceResourcesEClass = createEClass(SERVICE_RESOURCES);
+		createEReference(serviceResourcesEClass, SERVICE_RESOURCES__DEPENDS_ON);
 
 		appBuilder_coreEClass = createEClass(APP_BUILDER_CORE);
 		createEAttribute(appBuilder_coreEClass, APP_BUILDER_CORE__AUTO_SYNTH_JAVA_LANG_BOOLEAN_);
@@ -24968,6 +24999,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 		createEReference(appBuilder_coreEClass, APP_BUILDER_CORE__ENVIRONMENTBUILDER_CORE);
 		createEReference(appBuilder_coreEClass, APP_BUILDER_CORE__DEFAULTSTACKSYNTHESIZERBUILDER_CORE);
 		createEReference(appBuilder_coreEClass, APP_BUILDER_CORE__STACKBUILDER_CORE);
+		createEAttribute(appBuilder_coreEClass, APP_BUILDER_CORE__PROJECT_NAME);
+		createEAttribute(appBuilder_coreEClass, APP_BUILDER_CORE__PACKAGE_NAME);
 
 		defaultStackSynthesizerBuilder_coreEClass = createEClass(DEFAULT_STACK_SYNTHESIZER_BUILDER_CORE);
 		createEAttribute(defaultStackSynthesizerBuilder_coreEClass,
@@ -28970,11 +29003,199 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
+		flowLogOptionsBuilder_ec2EClass.getESuperTypes().add(this.getServiceResources());
 		vpcBuilder_ec2EClass.getESuperTypes().add(this.getServiceResources());
+		subnetBuilder_ec2EClass.getESuperTypes().add(this.getServiceResources());
+		subnetSelectionBuilder_ec2EClass.getESuperTypes().add(this.getServiceResources());
+		gatewayVpcEndpointBuilder_ec2EClass.getESuperTypes().add(this.getServiceResources());
+		methodDeploymentOptionsBuilder_apigatewayEClass.getESuperTypes().add(this.getServiceResources());
+		endpointConfigurationBuilder_apigatewayEClass.getESuperTypes().add(this.getServiceResources());
+		stageOptionsBuilder_apigatewayEClass.getESuperTypes().add(this.getServiceResources());
+		hostedZoneBuilder_route53EClass.getESuperTypes().add(this.getServiceResources());
+		dnsValidatedCertificateBuilder_certificatemanagerEClass.getESuperTypes().add(this.getServiceResources());
+		integrationResponseBuilder_apigatewayEClass.getESuperTypes().add(this.getServiceResources());
+		certificateBuilder_certificatemanagerEClass.getESuperTypes().add(this.getServiceResources());
+		domainNameOptionsBuilder_apigatewayEClass.getESuperTypes().add(this.getServiceResources());
+		networkLoadBalancerBuilder_elasticloadbalancingv2EClass.getESuperTypes().add(this.getServiceResources());
+		vpcLinkBuilder_apigatewayEClass.getESuperTypes().add(this.getServiceResources());
+		integrationOptionsBuilder_apigatewayEClass.getESuperTypes().add(this.getServiceResources());
+		integrationBuilder_apigatewayEClass.getESuperTypes().add(this.getServiceResources());
+		corsOptionsBuilder_apigatewayEClass.getESuperTypes().add(this.getServiceResources());
+		keyBuilder_kmsEClass.getESuperTypes().add(this.getServiceResources());
+		deadLetterQueueBuilder_sqsEClass.getESuperTypes().add(this.getServiceResources());
+		queueBuilder_sqsEClass.getESuperTypes().add(this.getServiceResources());
+		versionOptionsBuilder_lambdaEClass.getESuperTypes().add(this.getServiceResources());
+		layerVersionBuilder_lambdaEClass.getESuperTypes().add(this.getServiceResources());
+		securityGroupBuilder_ec2EClass.getESuperTypes().add(this.getServiceResources());
+		functionPropsBuilder_lambdaEClass.getESuperTypes().add(this.getServiceResources());
+		functionBuilder_lambdaEClass.getESuperTypes().add(this.getServiceResources());
+		requestAuthorizerBuilder_apigatewayEClass.getESuperTypes().add(this.getServiceResources());
+		tokenAuthorizerBuilder_apigatewayEClass.getESuperTypes().add(this.getServiceResources());
+		jsonSchemaBuilder_apigatewayEClass.getESuperTypes().add(this.getServiceResources());
+		modelBuilder_apigatewayEClass.getESuperTypes().add(this.getServiceResources());
+		requestValidatorOptionsBuilder_apigatewayEClass.getESuperTypes().add(this.getServiceResources());
+		requestValidatorBuilder_apigatewayEClass.getESuperTypes().add(this.getServiceResources());
+		methodResponseBuilder_apigatewayEClass.getESuperTypes().add(this.getServiceResources());
+		methodOptionsBuilder_apigatewayEClass.getESuperTypes().add(this.getServiceResources());
+		restApiPropsBuilder_apigatewayEClass.getESuperTypes().add(this.getServiceResources());
+		apiGatewayToDynamoDBBuilder_apigatewaydynamodbEClass.getESuperTypes().add(this.getServiceResources());
+		lambdaRestApiPropsBuilder_apigatewayEClass.getESuperTypes().add(this.getServiceResources());
+		lambdaRestApiBuilder_apigatewayEClass.getESuperTypes().add(this.getServiceResources());
+		apiGatewayToLambdaBuilder_apigatewaylambdaEClass.getESuperTypes().add(this.getServiceResources());
+		queuePropsBuilder_sqsEClass.getESuperTypes().add(this.getServiceResources());
+		apiGatewayToSqsBuilder_apigatewaysqsEClass.getESuperTypes().add(this.getServiceResources());
+		versionBuilder_lambdaEClass.getESuperTypes().add(this.getServiceResources());
+		lambdaFunctionAssociationBuilder_cloudfrontEClass.getESuperTypes().add(this.getServiceResources());
+		behaviorBuilder_cloudfrontEClass.getESuperTypes().add(this.getServiceResources());
+		customOriginConfigBuilder_cloudfrontEClass.getESuperTypes().add(this.getServiceResources());
+		blockPublicAccessBuilder_s3EClass.getESuperTypes().add(this.getServiceResources());
+		corsRuleBuilder_s3EClass.getESuperTypes().add(this.getServiceResources());
+		noncurrentVersionTransitionBuilder_s3EClass.getESuperTypes().add(this.getServiceResources());
+		transitionBuilder_s3EClass.getESuperTypes().add(this.getServiceResources());
+		lifecycleRuleBuilder_s3EClass.getESuperTypes().add(this.getServiceResources());
+		bucketMetricsBuilder_s3EClass.getESuperTypes().add(this.getServiceResources());
+		redirectTargetBuilder_s3EClass.getESuperTypes().add(this.getServiceResources());
+		routingRuleConditionBuilder_s3EClass.getESuperTypes().add(this.getServiceResources());
+		routingRuleBuilder_s3EClass.getESuperTypes().add(this.getServiceResources());
+		bucketBuilder_s3EClass.getESuperTypes().add(this.getServiceResources());
+		bucketPropsBuilder_s3EClass.getESuperTypes().add(this.getServiceResources());
+		originAccessIdentityBuilder_cloudfrontEClass.getESuperTypes().add(this.getServiceResources());
+		s3OriginConfigBuilder_cloudfrontEClass.getESuperTypes().add(this.getServiceResources());
+		sourceConfigurationBuilder_cloudfrontEClass.getESuperTypes().add(this.getServiceResources());
+		aliasConfigurationBuilder_cloudfrontEClass.getESuperTypes().add(this.getServiceResources());
+		loggingConfigurationBuilder_cloudfrontEClass.getESuperTypes().add(this.getServiceResources());
+		cloudFrontWebDistributionPropsBuilder_cloudfrontEClass.getESuperTypes().add(this.getServiceResources());
+		cloudFrontToApiGatewayBuilder_cloudfrontapigatewayEClass.getESuperTypes().add(this.getServiceResources());
+		cloudFrontToApiGatewayToLambdaBuilder_cloudfrontapigatewaylambdaEClass.getESuperTypes()
+				.add(this.getServiceResources());
+		cloudFrontToS3Builder_cloudfronts3EClass.getESuperTypes().add(this.getServiceResources());
+		autoVerifiedAttrsBuilder_cognitoEClass.getESuperTypes().add(this.getServiceResources());
+		userPoolTriggersBuilder_cognitoEClass.getESuperTypes().add(this.getServiceResources());
+		emailSettingsBuilder_cognitoEClass.getESuperTypes().add(this.getServiceResources());
+		passwordPolicyBuilder_cognitoEClass.getESuperTypes().add(this.getServiceResources());
+		mfaSecondFactorBuilder_cognitoEClass.getESuperTypes().add(this.getServiceResources());
+		requiredAttributesBuilder_cognitoEClass.getESuperTypes().add(this.getServiceResources());
+		signInAliasesBuilder_cognitoEClass.getESuperTypes().add(this.getServiceResources());
+		userInvitationConfigBuilder_cognitoEClass.getESuperTypes().add(this.getServiceResources());
+		userVerificationConfigBuilder_cognitoEClass.getESuperTypes().add(this.getServiceResources());
+		userPoolPropsBuilder_cognitoEClass.getESuperTypes().add(this.getServiceResources());
+		userPoolBuilder_cognitoEClass.getESuperTypes().add(this.getServiceResources());
+		authFlowBuilder_cognitoEClass.getESuperTypes().add(this.getServiceResources());
+		oAuthFlowsBuilder_cognitoEClass.getESuperTypes().add(this.getServiceResources());
+		oAuthSettingsBuilder_cognitoEClass.getESuperTypes().add(this.getServiceResources());
+		userPoolClientPropsBuilder_cognitoEClass.getESuperTypes().add(this.getServiceResources());
+		cognitoToApiGatewayToLambdaBuilder_cognitoapigatewaylambdaEClass.getESuperTypes()
+				.add(this.getServiceResources());
+		buildDeadLetterQueuePropsBuilder_coreEClass.getESuperTypes().add(this.getServiceResources());
+		buildQueuePropsBuilder_coreEClass.getESuperTypes().add(this.getServiceResources());
+		buildS3BucketPropsBuilder_coreEClass.getESuperTypes().add(this.getServiceResources());
+		buildEncryptionKeyPropsBuilder_coreEClass.getESuperTypes().add(this.getServiceResources());
+		cognitoOptionsBuilder_coreEClass.getESuperTypes().add(this.getServiceResources());
+		buildKinesisStreamPropsBuilder_coreEClass.getESuperTypes().add(this.getServiceResources());
+		buildKinesisAnalyticsAppPropsBuilder_coreEClass.getESuperTypes().add(this.getServiceResources());
+		buildLambdaFunctionPropsBuilder_coreEClass.getESuperTypes().add(this.getServiceResources());
+		buildDynamoDBTablePropsBuilder_coreEClass.getESuperTypes().add(this.getServiceResources());
+		buildTopicPropsBuilder_coreEClass.getESuperTypes().add(this.getServiceResources());
+		dynamoDBStreamToLambdaBuilder_dynamodbstreamlambdaEClass.getESuperTypes().add(this.getServiceResources());
+		dynamoDBStreamToLambdaToElasticSearchAndKibanaBuilder_dynamodbstreamlambdaelasticsearchkibanaEClass
+				.getESuperTypes().add(this.getServiceResources());
+		eventBusBuilder_eventsEClass.getESuperTypes().add(this.getServiceResources());
+		eventPatternBuilder_eventsEClass.getESuperTypes().add(this.getServiceResources());
+		rulePropsBuilder_eventsEClass.getESuperTypes().add(this.getServiceResources());
+		cronOptionsBuilder_eventsEClass.getESuperTypes().add(this.getServiceResources());
+		eventsRuleToLambdaBuilder_eventsrulelambdaEClass.getESuperTypes().add(this.getServiceResources());
+		stateMachinePropsBuilder_stepfunctionsEClass.getESuperTypes().add(this.getServiceResources());
+		eventsRuleToStepFunctionBuilder_eventsrulestepfunctionEClass.getESuperTypes().add(this.getServiceResources());
+		iotToKinesisFirehoseToS3Builder_iotkinesisfirehoses3EClass.getESuperTypes().add(this.getServiceResources());
+		iotToLambdaBuilder_iotlambdaEClass.getESuperTypes().add(this.getServiceResources());
+		iotToLambdaToDynamoDBBuilder_iotlambdadynamodbEClass.getESuperTypes().add(this.getServiceResources());
+		kinesisFirehoseToS3Builder_kinesisfirehoses3EClass.getESuperTypes().add(this.getServiceResources());
+		kinesisFirehoseToAnalyticsAndS3Builder_kinesisfirehoses3kinesisanalyticsEClass.getESuperTypes()
+				.add(this.getServiceResources());
+		kinesisStreamsToLambdaBuilder_kinesisstreamslambdaEClass.getESuperTypes().add(this.getServiceResources());
+		tableBuilder_dynamodbEClass.getESuperTypes().add(this.getServiceResources());
+		lambdaToDynamoDBBuilder_lambdadynamodbEClass.getESuperTypes().add(this.getServiceResources());
+		lambdaToElasticSearchAndKibanaBuilder_lambdaelasticsearchkibanaEClass.getESuperTypes()
+				.add(this.getServiceResources());
+		lambdaToS3Builder_lambdas3EClass.getESuperTypes().add(this.getServiceResources());
+		topicPropsBuilder_snsEClass.getESuperTypes().add(this.getServiceResources());
+		lambdaToSnsBuilder_lambdasnsEClass.getESuperTypes().add(this.getServiceResources());
+		lambdaToSqsBuilder_lambdasqsEClass.getESuperTypes().add(this.getServiceResources());
+		lambdaToStepFunctionBuilder_lambdastepfunctionEClass.getESuperTypes().add(this.getServiceResources());
+		s3ToLambdaBuilder_s3lambdaEClass.getESuperTypes().add(this.getServiceResources());
+		s3ToStepFunctionBuilder_s3stepfunctionEClass.getESuperTypes().add(this.getServiceResources());
+		snsToLambdaBuilder_snslambdaEClass.getESuperTypes().add(this.getServiceResources());
+		managedPolicyBuilder_iamEClass.getESuperTypes().add(this.getServiceResources());
+		userBuilder_iamEClass.getESuperTypes().add(this.getServiceResources());
+		groupBuilder_iamEClass.getESuperTypes().add(this.getServiceResources());
+		roleBuilder_iamEClass.getESuperTypes().add(this.getServiceResources());
+		policyStatementBuilder_iamEClass.getESuperTypes().add(this.getServiceResources());
+		policyDocumentBuilder_iamEClass.getESuperTypes().add(this.getServiceResources());
+		sqsToLambdaBuilder_sqslambdaEClass.getESuperTypes().add(this.getServiceResources());
+		attributeBuilder_dynamodbEClass.getESuperTypes().add(this.getServiceResources());
+		tablePropsBuilder_dynamodbEClass.getESuperTypes().add(this.getServiceResources());
+		privateDnsNamespaceBuilder_servicediscoveryEClass.getESuperTypes().add(this.getServiceResources());
+		publicDnsNamespaceBuilder_servicediscoveryEClass.getESuperTypes().add(this.getServiceResources());
+		httpNamespaceBuilder_servicediscoveryEClass.getESuperTypes().add(this.getServiceResources());
+		cloudMapOptionsBuilder_ecsEClass.getESuperTypes().add(this.getServiceResources());
+		blockDeviceBuilder_autoscalingEClass.getESuperTypes().add(this.getServiceResources());
+		healthCheckBuilder_ecsEClass.getESuperTypes().add(this.getServiceResources());
+		amazonLinuxImageBuilder_ec2EClass.getESuperTypes().add(this.getServiceResources());
+		rollingUpdateConfigurationBuilder_autoscalingEClass.getESuperTypes().add(this.getServiceResources());
+		addCapacityOptionsBuilder_ecsEClass.getESuperTypes().add(this.getServiceResources());
+		cloudMapNamespaceOptionsBuilder_ecsEClass.getESuperTypes().add(this.getServiceResources());
+		clusterBuilder_ecsEClass.getESuperTypes().add(this.getServiceResources());
+		applicationLoadBalancerBuilder_elasticloadbalancingv2EClass.getESuperTypes().add(this.getServiceResources());
+		dockerImageAssetBuilder_assetsEClass.getESuperTypes().add(this.getServiceResources());
+		assetImageBuilder_ecsEClass.getESuperTypes().add(this.getServiceResources());
+		secretStringGeneratorBuilder_secretsmanagerEClass.getESuperTypes().add(this.getServiceResources());
+		secretBuilder_secretsmanagerEClass.getESuperTypes().add(this.getServiceResources());
+		awsLogDriverBuilder_ecsEClass.getESuperTypes().add(this.getServiceResources());
+		logGroupBuilder_logsEClass.getESuperTypes().add(this.getServiceResources());
+		awsLogDriverPropsBuilder_ecsEClass.getESuperTypes().add(this.getServiceResources());
+		applicationLoadBalancedTaskImageOptionsBuilder_patternsEClass.getESuperTypes().add(this.getServiceResources());
+		appMeshProxyConfigurationPropsBuilder_ecsEClass.getESuperTypes().add(this.getServiceResources());
+		appMeshProxyConfigurationBuilder_ecsEClass.getESuperTypes().add(this.getServiceResources());
+		hostBuilder_ecsEClass.getESuperTypes().add(this.getServiceResources());
+		dockerVolumeConfigurationBuilder_ecsEClass.getESuperTypes().add(this.getServiceResources());
+		volumeBuilder_ecsEClass.getESuperTypes().add(this.getServiceResources());
+		ec2TaskDefinitionBuilder_ecsEClass.getESuperTypes().add(this.getServiceResources());
+		applicationLoadBalancedEc2ServiceBuilder_patternsEClass.getESuperTypes().add(this.getServiceResources());
+		fargateTaskDefinitionBuilder_ecsEClass.getESuperTypes().add(this.getServiceResources());
+		applicationLoadBalancedFargateServiceBuilder_patternsEClass.getESuperTypes().add(this.getServiceResources());
+		applicationMultipleTargetGroupsFargateServiceBuilder_patternsEClass.getESuperTypes()
+				.add(this.getServiceResources());
+		applicationListenerPropsBuilder_patternsEClass.getESuperTypes().add(this.getServiceResources());
+		applicationLoadBalancerPropsBuilder_patternsEClass.getESuperTypes().add(this.getServiceResources());
+		applicationTargetPropsBuilder_patternsEClass.getESuperTypes().add(this.getServiceResources());
+		applicationLoadBalancedTaskImagePropsBuilder_patternsEClass.getESuperTypes().add(this.getServiceResources());
+		applicationMultipleTargetGroupsEc2ServiceBuilder_patternsEClass.getESuperTypes()
+				.add(this.getServiceResources());
+		networkLoadBalancedTaskImageOptionsBuilder_patternsEClass.getESuperTypes().add(this.getServiceResources());
+		networkLoadBalancedFargateServiceBuilder_patternsEClass.getESuperTypes().add(this.getServiceResources());
+		networkLoadBalancedEc2ServiceBuilder_patternsEClass.getESuperTypes().add(this.getServiceResources());
+		networkMultipleTargetGroupsEc2ServiceBuilder_patternsEClass.getESuperTypes().add(this.getServiceResources());
+		networkTargetPropsBuilder_patternsEClass.getESuperTypes().add(this.getServiceResources());
+		networkLoadBalancedTaskImagePropsBuilder_patternsEClass.getESuperTypes().add(this.getServiceResources());
+		networkMultipleTargetGroupsFargateServiceBuilder_patternsEClass.getESuperTypes()
+				.add(this.getServiceResources());
+		scalingIntervalBuilder_applicationautoscalingEClass.getESuperTypes().add(this.getServiceResources());
+		queueProcessingFargateServiceBuilder_patternsEClass.getESuperTypes().add(this.getServiceResources());
+		cronOptionsBuilder_applicationautoscalingEClass.getESuperTypes().add(this.getServiceResources());
+		scheduledEc2TaskDefinitionOptionsBuilder_patternsEClass.getESuperTypes().add(this.getServiceResources());
+		scheduledEc2TaskImageOptionsBuilder_patternsEClass.getESuperTypes().add(this.getServiceResources());
+		scheduledEc2TaskBuilder_patternsEClass.getESuperTypes().add(this.getServiceResources());
+		queueProcessingEc2ServiceBuilder_patternsEClass.getESuperTypes().add(this.getServiceResources());
+		scheduledFargateTaskDefinitionOptionsBuilder_patternsEClass.getESuperTypes().add(this.getServiceResources());
+		scheduledFargateTaskImageOptionsBuilder_patternsEClass.getESuperTypes().add(this.getServiceResources());
+		scheduledFargateTaskBuilder_patternsEClass.getESuperTypes().add(this.getServiceResources());
 
 		// Initialize classes, features, and operations; add parameters
 		initEClass(serviceResourcesEClass, ServiceResources.class, "ServiceResources", IS_ABSTRACT, !IS_INTERFACE,
 				IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getServiceResources_DependsON(), this.getServiceResources(), null, "dependsON", null, 0, -1,
+				ServiceResources.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES,
+				!IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(appBuilder_coreEClass, AppBuilder_core.class, "AppBuilder_core", !IS_ABSTRACT, !IS_INTERFACE,
 				IS_GENERATED_INSTANCE_CLASS);
@@ -29018,6 +29239,12 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 		initEReference(getAppBuilder_core_Stackbuilder_core(), this.getStackBuilder_core(), null, "stackbuilder_core",
 				null, 0, -1, AppBuilder_core.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE,
 				!IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAppBuilder_core_ProjectName(), ecorePackage.getEString(), "projectName", null, 0, 1,
+				AppBuilder_core.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+				!IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAppBuilder_core_PackageName(), ecorePackage.getEString(), "packageName", null, 0, 1,
+				AppBuilder_core.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+				!IS_DERIVED, IS_ORDERED);
 
 		initEClass(defaultStackSynthesizerBuilder_coreEClass, DefaultStackSynthesizerBuilder_core.class,
 				"DefaultStackSynthesizerBuilder_core", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -34073,6 +34300,12 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 				KinesisFirehoseToAnalyticsAndS3Builder_kinesisfirehoses3kinesisanalytics.class,
 				"KinesisFirehoseToAnalyticsAndS3Builder_kinesisfirehoses3kinesisanalytics", !IS_ABSTRACT, !IS_INTERFACE,
 				IS_GENERATED_INSTANCE_CLASS);
+		initializePackageContents2();
+		
+	}
+	
+	public void initializePackageContents2()
+	{
 		initEAttribute(
 				getKinesisFirehoseToAnalyticsAndS3Builder_kinesisfirehoses3kinesisanalytics_BucketPropsWithBucketProps_software_amazon_awscdk_services_s3_BucketProps_AsReference(),
 				ecorePackage.getEString(),
@@ -36743,10 +36976,6 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 				this.getPropagatedTagSource(), "propagateTags_software_amazon_awscdk_services_ecs_PropagatedTagSource_",
 				null, 0, 1, ApplicationMultipleTargetGroupsEc2ServiceBuilder_patterns.class, !IS_TRANSIENT,
 				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		doThis();
-	}
-	
-	public void doThis() {
 		initEAttribute(getApplicationMultipleTargetGroupsEc2ServiceBuilder_patterns_ServiceName_java_lang_String_(),
 				ecorePackage.getEString(), "serviceName_java_lang_String_", null, 0, 1,
 				ApplicationMultipleTargetGroupsEc2ServiceBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,

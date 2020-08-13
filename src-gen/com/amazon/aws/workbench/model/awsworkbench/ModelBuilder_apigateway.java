@@ -2,8 +2,6 @@
  */
 package com.amazon.aws.workbench.model.awsworkbench;
 
-import org.eclipse.emf.ecore.EObject;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Model Builder apigateway</b></em>'.
@@ -28,7 +26,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface ModelBuilder_apigateway extends EObject {
+public interface ModelBuilder_apigateway extends ServiceResources {
 	/**
 	 * Returns the value of the '<em><b>Schema With Json Schema software amazon awscdk services apigateway Json Schema As Reference</b></em>' attribute.
 	 * <!-- begin-user-doc -->

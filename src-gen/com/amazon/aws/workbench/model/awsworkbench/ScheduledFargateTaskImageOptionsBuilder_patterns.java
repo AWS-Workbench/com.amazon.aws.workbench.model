@@ -2,8 +2,6 @@
  */
 package com.amazon.aws.workbench.model.awsworkbench;
 
-import org.eclipse.emf.ecore.EObject;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Scheduled Fargate Task Image Options Builder patterns</b></em>'.
@@ -30,7 +28,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface ScheduledFargateTaskImageOptionsBuilder_patterns extends EObject {
+public interface ScheduledFargateTaskImageOptionsBuilder_patterns extends ServiceResources {
 	/**
 	 * Returns the value of the '<em><b>Cpu java lang Number </b></em>' attribute.
 	 * <!-- begin-user-doc -->

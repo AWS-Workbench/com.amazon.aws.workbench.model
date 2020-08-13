@@ -10,7 +10,6 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -30,7 +29,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class PolicyDocumentBuilder_iamImpl extends MinimalEObjectImpl.Container implements PolicyDocumentBuilder_iam {
+public class PolicyDocumentBuilder_iamImpl extends ServiceResourcesImpl implements PolicyDocumentBuilder_iam {
 	/**
 	 * The default value of the '{@link #getAssignSids_java_lang_Boolean_() <em>Assign Sids java lang Boolean </em>}' attribute.
 	 * <!-- begin-user-doc -->

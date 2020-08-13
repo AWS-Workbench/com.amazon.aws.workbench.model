@@ -10,7 +10,6 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -31,7 +30,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class GroupBuilder_iamImpl extends MinimalEObjectImpl.Container implements GroupBuilder_iam {
+public class GroupBuilder_iamImpl extends ServiceResourcesImpl implements GroupBuilder_iam {
 	/**
 	 * The default value of the '{@link #getGroupName_java_lang_String_() <em>Group Name java lang String </em>}' attribute.
 	 * <!-- begin-user-doc -->

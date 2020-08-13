@@ -2,8 +2,6 @@
  */
 package com.amazon.aws.workbench.model.awsworkbench;
 
-import org.eclipse.emf.ecore.EObject;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>User Pool Triggers Builder cognito</b></em>'.
@@ -33,7 +31,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface UserPoolTriggersBuilder_cognito extends EObject {
+public interface UserPoolTriggersBuilder_cognito extends ServiceResources {
 	/**
 	 * Returns the value of the '<em><b>Create Auth Challenge With IFunction software amazon awscdk services lambda IFunction As Reference</b></em>' attribute.
 	 * <!-- begin-user-doc -->

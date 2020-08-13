@@ -2,8 +2,6 @@
  */
 package com.amazon.aws.workbench.model.awsworkbench;
 
-import org.eclipse.emf.ecore.EObject;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Routing Rule Condition Builder s3</b></em>'.
@@ -25,7 +23,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface RoutingRuleConditionBuilder_s3 extends EObject {
+public interface RoutingRuleConditionBuilder_s3 extends ServiceResources {
 	/**
 	 * Returns the value of the '<em><b>Http Error Code Returned Equals java lang String </b></em>' attribute.
 	 * <!-- begin-user-doc -->

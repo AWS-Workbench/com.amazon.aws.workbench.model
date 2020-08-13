@@ -11,7 +11,6 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -52,7 +51,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class QueueProcessingEc2ServiceBuilder_patternsImpl extends MinimalEObjectImpl.Container
+public class QueueProcessingEc2ServiceBuilder_patternsImpl extends ServiceResourcesImpl
 		implements QueueProcessingEc2ServiceBuilder_patterns {
 	/**
 	 * The default value of the '{@link #getImageWithContainerImage_software_amazon_awscdk_services_ecs_ContainerImage_AsReference() <em>Image With Container Image software amazon awscdk services ecs Container Image As Reference</em>}' attribute.

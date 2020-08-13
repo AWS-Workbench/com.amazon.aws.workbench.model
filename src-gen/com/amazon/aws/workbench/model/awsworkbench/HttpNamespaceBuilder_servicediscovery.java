@@ -2,8 +2,6 @@
  */
 package com.amazon.aws.workbench.model.awsworkbench;
 
-import org.eclipse.emf.ecore.EObject;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Http Namespace Builder servicediscovery</b></em>'.
@@ -25,7 +23,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface HttpNamespaceBuilder_servicediscovery extends EObject {
+public interface HttpNamespaceBuilder_servicediscovery extends ServiceResources {
 	/**
 	 * Returns the value of the '<em><b>Name java lang String </b></em>' attribute.
 	 * <!-- begin-user-doc -->

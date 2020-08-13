@@ -2,8 +2,6 @@
  */
 package com.amazon.aws.workbench.model.awsworkbench;
 
-import org.eclipse.emf.ecore.EObject;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Ec2 Task Definition Builder ecs</b></em>'.
@@ -32,7 +30,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface Ec2TaskDefinitionBuilder_ecs extends EObject {
+public interface Ec2TaskDefinitionBuilder_ecs extends ServiceResources {
 	/**
 	 * Returns the value of the '<em><b>Execution Role With IRole software amazon awscdk services iam IRole As Reference</b></em>' attribute.
 	 * <!-- begin-user-doc -->

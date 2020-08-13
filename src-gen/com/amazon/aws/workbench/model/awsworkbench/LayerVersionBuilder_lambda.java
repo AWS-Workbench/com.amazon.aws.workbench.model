@@ -2,8 +2,6 @@
  */
 package com.amazon.aws.workbench.model.awsworkbench;
 
-import org.eclipse.emf.ecore.EObject;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Layer Version Builder lambda</b></em>'.
@@ -28,7 +26,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface LayerVersionBuilder_lambda extends EObject {
+public interface LayerVersionBuilder_lambda extends ServiceResources {
 	/**
 	 * Returns the value of the '<em><b>Code With Code software amazon awscdk services lambda Code As Reference</b></em>' attribute.
 	 * <!-- begin-user-doc -->

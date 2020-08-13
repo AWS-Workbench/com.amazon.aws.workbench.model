@@ -2,8 +2,6 @@
  */
 package com.amazon.aws.workbench.model.awsworkbench;
 
-import org.eclipse.emf.ecore.EObject;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Integration Builder apigateway</b></em>'.
@@ -27,7 +25,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface IntegrationBuilder_apigateway extends EObject {
+public interface IntegrationBuilder_apigateway extends ServiceResources {
 	/**
 	 * Returns the value of the '<em><b>Type software amazon awscdk services apigateway Integration Type </b></em>' attribute.
 	 * The literals are from the enumeration {@link com.amazon.aws.workbench.model.awsworkbench.IntegrationType}.

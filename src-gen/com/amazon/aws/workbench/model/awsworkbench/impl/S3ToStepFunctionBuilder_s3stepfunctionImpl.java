@@ -10,7 +10,6 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -33,7 +32,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class S3ToStepFunctionBuilder_s3stepfunctionImpl extends MinimalEObjectImpl.Container
+public class S3ToStepFunctionBuilder_s3stepfunctionImpl extends ServiceResourcesImpl
 		implements S3ToStepFunctionBuilder_s3stepfunction {
 	/**
 	 * The default value of the '{@link #getStateMachinePropsWithStateMachineProps_software_amazon_awscdk_services_stepfunctions_StateMachineProps_AsReference() <em>State Machine Props With State Machine Props software amazon awscdk services stepfunctions State Machine Props As Reference</em>}' attribute.

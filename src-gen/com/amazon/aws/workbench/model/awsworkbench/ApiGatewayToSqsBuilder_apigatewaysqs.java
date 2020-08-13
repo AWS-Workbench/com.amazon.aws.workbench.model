@@ -2,8 +2,6 @@
  */
 package com.amazon.aws.workbench.model.awsworkbench;
 
-import org.eclipse.emf.ecore.EObject;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Api Gateway To Sqs Builder apigatewaysqs</b></em>'.
@@ -31,7 +29,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface ApiGatewayToSqsBuilder_apigatewaysqs extends EObject {
+public interface ApiGatewayToSqsBuilder_apigatewaysqs extends ServiceResources {
 	/**
 	 * Returns the value of the '<em><b>Allow Create Operation java lang Boolean </b></em>' attribute.
 	 * <!-- begin-user-doc -->

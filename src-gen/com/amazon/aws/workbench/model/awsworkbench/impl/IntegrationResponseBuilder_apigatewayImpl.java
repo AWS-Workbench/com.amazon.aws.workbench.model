@@ -11,7 +11,6 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -34,7 +33,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class IntegrationResponseBuilder_apigatewayImpl extends MinimalEObjectImpl.Container
+public class IntegrationResponseBuilder_apigatewayImpl extends ServiceResourcesImpl
 		implements IntegrationResponseBuilder_apigateway {
 	/**
 	 * The default value of the '{@link #getStatusCode_java_lang_String_() <em>Status Code java lang String </em>}' attribute.

@@ -11,7 +11,6 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -53,8 +52,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class AddCapacityOptionsBuilder_ecsImpl extends MinimalEObjectImpl.Container
-		implements AddCapacityOptionsBuilder_ecs {
+public class AddCapacityOptionsBuilder_ecsImpl extends ServiceResourcesImpl implements AddCapacityOptionsBuilder_ecs {
 	/**
 	 * The default value of the '{@link #getInstanceTypeWithInstanceType_software_amazon_awscdk_services_ec2_InstanceType_AsReference() <em>Instance Type With Instance Type software amazon awscdk services ec2 Instance Type As Reference</em>}' attribute.
 	 * <!-- begin-user-doc -->

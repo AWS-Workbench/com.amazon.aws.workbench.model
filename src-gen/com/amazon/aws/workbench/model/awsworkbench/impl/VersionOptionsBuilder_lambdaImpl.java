@@ -11,7 +11,6 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -37,8 +36,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class VersionOptionsBuilder_lambdaImpl extends MinimalEObjectImpl.Container
-		implements VersionOptionsBuilder_lambda {
+public class VersionOptionsBuilder_lambdaImpl extends ServiceResourcesImpl implements VersionOptionsBuilder_lambda {
 	/**
 	 * The default value of the '{@link #getCodeSha256_java_lang_String_() <em>Code Sha256 java lang String </em>}' attribute.
 	 * <!-- begin-user-doc -->

@@ -10,7 +10,6 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -31,8 +30,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class BuildQueuePropsBuilder_coreImpl extends MinimalEObjectImpl.Container
-		implements BuildQueuePropsBuilder_core {
+public class BuildQueuePropsBuilder_coreImpl extends ServiceResourcesImpl implements BuildQueuePropsBuilder_core {
 	/**
 	 * The default value of the '{@link #getDeadLetterQueueWithDeadLetterQueue_software_amazon_awscdk_services_sqs_DeadLetterQueue_AsReference() <em>Dead Letter Queue With Dead Letter Queue software amazon awscdk services sqs Dead Letter Queue As Reference</em>}' attribute.
 	 * <!-- begin-user-doc -->

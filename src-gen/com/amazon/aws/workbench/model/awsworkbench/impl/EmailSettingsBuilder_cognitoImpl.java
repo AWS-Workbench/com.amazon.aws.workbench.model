@@ -10,7 +10,6 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -30,8 +29,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class EmailSettingsBuilder_cognitoImpl extends MinimalEObjectImpl.Container
-		implements EmailSettingsBuilder_cognito {
+public class EmailSettingsBuilder_cognitoImpl extends ServiceResourcesImpl implements EmailSettingsBuilder_cognito {
 	/**
 	 * The default value of the '{@link #getFrom_java_lang_String_() <em>From java lang String </em>}' attribute.
 	 * <!-- begin-user-doc -->

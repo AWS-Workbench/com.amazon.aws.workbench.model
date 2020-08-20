@@ -240,13 +240,22 @@ public interface AwsworkbenchPackage extends EPackage {
 	int APP_BUILDER_CORE__PACKAGE_NAME = 14;
 
 	/**
+	 * The feature id for the '<em><b>Main Class Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APP_BUILDER_CORE__MAIN_CLASS_NAME = 15;
+
+	/**
 	 * The number of structural features of the '<em>App Builder core</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int APP_BUILDER_CORE_FEATURE_COUNT = 15;
+	int APP_BUILDER_CORE_FEATURE_COUNT = 16;
 
 	/**
 	 * The number of operations of the '<em>App Builder core</em>' class.
@@ -26887,6 +26896,17 @@ public interface AwsworkbenchPackage extends EPackage {
 	EAttribute getAppBuilder_core_PackageName();
 
 	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.AppBuilder_core#getMainClassName <em>Main Class Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Main Class Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AppBuilder_core#getMainClassName()
+	 * @see #getAppBuilder_core()
+	 * @generated
+	 */
+	EAttribute getAppBuilder_core_MainClassName();
+
+	/**
 	 * Returns the meta object for class '{@link com.amazon.aws.workbench.model.awsworkbench.DefaultStackSynthesizerBuilder_core <em>Default Stack Synthesizer Builder core</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -51658,6 +51678,14 @@ public interface AwsworkbenchPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute APP_BUILDER_CORE__PACKAGE_NAME = eINSTANCE.getAppBuilder_core_PackageName();
+
+		/**
+		 * The meta object literal for the '<em><b>Main Class Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute APP_BUILDER_CORE__MAIN_CLASS_NAME = eINSTANCE.getAppBuilder_core_MainClassName();
 
 		/**
 		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.DefaultStackSynthesizerBuilder_coreImpl <em>Default Stack Synthesizer Builder core</em>}' class.

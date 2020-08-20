@@ -258,1730 +258,1730 @@ import org.eclipse.emf.ecore.EReference;
 import org.eclipse.emf.ecore.impl.EPackageImpl;
 
 /**
- * <!-- begin-user-doc -->
- * An implementation of the model <b>Package</b>.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model <b>Package</b>. <!--
+ * end-user-doc -->
+ * 
  * @generated
  */
 public class AwsworkbenchPackageImpl extends EPackageImpl implements AwsworkbenchPackage {
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass serviceResourcesEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass appBuilder_coreEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass defaultStackSynthesizerBuilder_coreEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass environmentBuilder_coreEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass flowLogOptionsBuilder_ec2EClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass stackBuilder_coreEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass vpcBuilder_ec2EClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass subnetBuilder_ec2EClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass subnetSelectionBuilder_ec2EClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass gatewayVpcEndpointBuilder_ec2EClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass methodDeploymentOptionsBuilder_apigatewayEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass endpointConfigurationBuilder_apigatewayEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass stageOptionsBuilder_apigatewayEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass hostedZoneBuilder_route53EClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass dnsValidatedCertificateBuilder_certificatemanagerEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass integrationResponseBuilder_apigatewayEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass certificateBuilder_certificatemanagerEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass domainNameOptionsBuilder_apigatewayEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass networkLoadBalancerBuilder_elasticloadbalancingv2EClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass vpcLinkBuilder_apigatewayEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass integrationOptionsBuilder_apigatewayEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass integrationBuilder_apigatewayEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass corsOptionsBuilder_apigatewayEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass keyBuilder_kmsEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass deadLetterQueueBuilder_sqsEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass queueBuilder_sqsEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass versionOptionsBuilder_lambdaEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass layerVersionBuilder_lambdaEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass securityGroupBuilder_ec2EClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass functionPropsBuilder_lambdaEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass functionBuilder_lambdaEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass requestAuthorizerBuilder_apigatewayEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass tokenAuthorizerBuilder_apigatewayEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass jsonSchemaBuilder_apigatewayEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass modelBuilder_apigatewayEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass requestValidatorOptionsBuilder_apigatewayEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass requestValidatorBuilder_apigatewayEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass methodResponseBuilder_apigatewayEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass methodOptionsBuilder_apigatewayEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass restApiPropsBuilder_apigatewayEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass apiGatewayToDynamoDBBuilder_apigatewaydynamodbEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass lambdaRestApiPropsBuilder_apigatewayEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass lambdaRestApiBuilder_apigatewayEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass apiGatewayToLambdaBuilder_apigatewaylambdaEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass queuePropsBuilder_sqsEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass apiGatewayToSqsBuilder_apigatewaysqsEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass versionBuilder_lambdaEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass lambdaFunctionAssociationBuilder_cloudfrontEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass behaviorBuilder_cloudfrontEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass customOriginConfigBuilder_cloudfrontEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass blockPublicAccessBuilder_s3EClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass corsRuleBuilder_s3EClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass noncurrentVersionTransitionBuilder_s3EClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass transitionBuilder_s3EClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass lifecycleRuleBuilder_s3EClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass bucketMetricsBuilder_s3EClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass redirectTargetBuilder_s3EClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass routingRuleConditionBuilder_s3EClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass routingRuleBuilder_s3EClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass bucketBuilder_s3EClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass bucketPropsBuilder_s3EClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass originAccessIdentityBuilder_cloudfrontEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass s3OriginConfigBuilder_cloudfrontEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass sourceConfigurationBuilder_cloudfrontEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass aliasConfigurationBuilder_cloudfrontEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass loggingConfigurationBuilder_cloudfrontEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass cloudFrontWebDistributionPropsBuilder_cloudfrontEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass cloudFrontToApiGatewayBuilder_cloudfrontapigatewayEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass cloudFrontToApiGatewayToLambdaBuilder_cloudfrontapigatewaylambdaEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass cloudFrontToS3Builder_cloudfronts3EClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass autoVerifiedAttrsBuilder_cognitoEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass userPoolTriggersBuilder_cognitoEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass emailSettingsBuilder_cognitoEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass passwordPolicyBuilder_cognitoEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass mfaSecondFactorBuilder_cognitoEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass requiredAttributesBuilder_cognitoEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass signInAliasesBuilder_cognitoEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass userInvitationConfigBuilder_cognitoEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass userVerificationConfigBuilder_cognitoEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass userPoolPropsBuilder_cognitoEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass userPoolBuilder_cognitoEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass authFlowBuilder_cognitoEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass oAuthFlowsBuilder_cognitoEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass oAuthSettingsBuilder_cognitoEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass userPoolClientPropsBuilder_cognitoEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass cognitoToApiGatewayToLambdaBuilder_cognitoapigatewaylambdaEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass buildDeadLetterQueuePropsBuilder_coreEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass buildQueuePropsBuilder_coreEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass buildS3BucketPropsBuilder_coreEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass buildEncryptionKeyPropsBuilder_coreEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass cognitoOptionsBuilder_coreEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass buildKinesisStreamPropsBuilder_coreEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass buildKinesisAnalyticsAppPropsBuilder_coreEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass buildLambdaFunctionPropsBuilder_coreEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass buildDynamoDBTablePropsBuilder_coreEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass buildTopicPropsBuilder_coreEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass dynamoDBStreamToLambdaBuilder_dynamodbstreamlambdaEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass dynamoDBStreamToLambdaToElasticSearchAndKibanaBuilder_dynamodbstreamlambdaelasticsearchkibanaEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass eventBusBuilder_eventsEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass eventPatternBuilder_eventsEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass rulePropsBuilder_eventsEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass cronOptionsBuilder_eventsEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass eventsRuleToLambdaBuilder_eventsrulelambdaEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass stateMachinePropsBuilder_stepfunctionsEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass eventsRuleToStepFunctionBuilder_eventsrulestepfunctionEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass iotToKinesisFirehoseToS3Builder_iotkinesisfirehoses3EClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass iotToLambdaBuilder_iotlambdaEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass iotToLambdaToDynamoDBBuilder_iotlambdadynamodbEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass kinesisFirehoseToS3Builder_kinesisfirehoses3EClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass kinesisFirehoseToAnalyticsAndS3Builder_kinesisfirehoses3kinesisanalyticsEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass kinesisStreamsToLambdaBuilder_kinesisstreamslambdaEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass tableBuilder_dynamodbEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass lambdaToDynamoDBBuilder_lambdadynamodbEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass lambdaToElasticSearchAndKibanaBuilder_lambdaelasticsearchkibanaEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass lambdaToS3Builder_lambdas3EClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass topicPropsBuilder_snsEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass lambdaToSnsBuilder_lambdasnsEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass lambdaToSqsBuilder_lambdasqsEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass lambdaToStepFunctionBuilder_lambdastepfunctionEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass s3ToLambdaBuilder_s3lambdaEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass s3ToStepFunctionBuilder_s3stepfunctionEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass snsToLambdaBuilder_snslambdaEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass managedPolicyBuilder_iamEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass userBuilder_iamEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass groupBuilder_iamEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass roleBuilder_iamEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass policyStatementBuilder_iamEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass policyDocumentBuilder_iamEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass sqsToLambdaBuilder_sqslambdaEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass attributeBuilder_dynamodbEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass tablePropsBuilder_dynamodbEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass privateDnsNamespaceBuilder_servicediscoveryEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass publicDnsNamespaceBuilder_servicediscoveryEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass httpNamespaceBuilder_servicediscoveryEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass cloudMapOptionsBuilder_ecsEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass blockDeviceBuilder_autoscalingEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass healthCheckBuilder_ecsEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass amazonLinuxImageBuilder_ec2EClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass rollingUpdateConfigurationBuilder_autoscalingEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass addCapacityOptionsBuilder_ecsEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass cloudMapNamespaceOptionsBuilder_ecsEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass clusterBuilder_ecsEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass applicationLoadBalancerBuilder_elasticloadbalancingv2EClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass dockerImageAssetBuilder_assetsEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass assetImageBuilder_ecsEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass secretStringGeneratorBuilder_secretsmanagerEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass secretBuilder_secretsmanagerEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass awsLogDriverBuilder_ecsEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass logGroupBuilder_logsEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass awsLogDriverPropsBuilder_ecsEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass applicationLoadBalancedTaskImageOptionsBuilder_patternsEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass appMeshProxyConfigurationPropsBuilder_ecsEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass appMeshProxyConfigurationBuilder_ecsEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass hostBuilder_ecsEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass dockerVolumeConfigurationBuilder_ecsEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass volumeBuilder_ecsEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass ec2TaskDefinitionBuilder_ecsEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass applicationLoadBalancedEc2ServiceBuilder_patternsEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass fargateTaskDefinitionBuilder_ecsEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass applicationLoadBalancedFargateServiceBuilder_patternsEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass applicationMultipleTargetGroupsFargateServiceBuilder_patternsEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass applicationListenerPropsBuilder_patternsEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass applicationLoadBalancerPropsBuilder_patternsEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass applicationTargetPropsBuilder_patternsEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass applicationLoadBalancedTaskImagePropsBuilder_patternsEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass applicationMultipleTargetGroupsEc2ServiceBuilder_patternsEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass networkLoadBalancedTaskImageOptionsBuilder_patternsEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass networkLoadBalancedFargateServiceBuilder_patternsEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass networkLoadBalancedEc2ServiceBuilder_patternsEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass networkMultipleTargetGroupsEc2ServiceBuilder_patternsEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass networkTargetPropsBuilder_patternsEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass networkLoadBalancedTaskImagePropsBuilder_patternsEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass networkMultipleTargetGroupsFargateServiceBuilder_patternsEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass scalingIntervalBuilder_applicationautoscalingEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass queueProcessingFargateServiceBuilder_patternsEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass cronOptionsBuilder_applicationautoscalingEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass scheduledEc2TaskDefinitionOptionsBuilder_patternsEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass scheduledEc2TaskImageOptionsBuilder_patternsEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass scheduledEc2TaskBuilder_patternsEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass queueProcessingEc2ServiceBuilder_patternsEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass scheduledFargateTaskDefinitionOptionsBuilder_patternsEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass scheduledFargateTaskImageOptionsBuilder_patternsEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass scheduledFargateTaskBuilder_patternsEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EEnum flowLogTrafficTypeEEnum = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EEnum defaultInstanceTenancyEEnum = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EEnum subnetTypeEEnum = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EEnum apiKeySourceTypeEEnum = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EEnum endpointTypeEEnum = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EEnum methodLoggingLevelEEnum = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EEnum validationMethodEEnum = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EEnum securityPolicyEEnum = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EEnum integrationTypeEEnum = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EEnum contentHandlingEEnum = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EEnum connectionTypeEEnum = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EEnum passthroughBehaviorEEnum = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EEnum queueEncryptionEEnum = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EEnum retentionDaysEEnum = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EEnum tracingEEnum = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EEnum authorizationTypeEEnum = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EEnum jsonSchemaVersionEEnum = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EEnum jsonSchemaTypeEEnum = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EEnum cloudFrontAllowedCachedMethodsEEnum = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EEnum cloudFrontAllowedMethodsEEnum = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EEnum lambdaEdgeEventTypeEEnum = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EEnum originSslPolicyEEnum = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EEnum originProtocolPolicyEEnum = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EEnum bucketAccessControlEEnum = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EEnum httpMethodsEEnum = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EEnum bucketEncryptionEEnum = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EEnum redirectProtocolEEnum = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EEnum httpVersionEEnum = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EEnum priceClassEEnum = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EEnum viewerProtocolPolicyEEnum = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EEnum securityPolicyProtocolEEnum = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EEnum sslMethodEEnum = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EEnum mfaEEnum = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EEnum verificationEmailStyleEEnum = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EEnum stateMachineTypeEEnum = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EEnum effectEEnum = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EEnum attributeTypeEEnum = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EEnum streamViewTypeEEnum = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EEnum removalPolicyEEnum = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EEnum tableEncryptionEEnum = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EEnum billingModeEEnum = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EEnum dnsRecordTypeEEnum = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EEnum instanceClassEEnum = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EEnum instanceSizeEEnum = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EEnum amazonLinuxEditionEEnum = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EEnum amazonLinuxGenerationEEnum = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EEnum amazonLinuxStorageEEnum = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EEnum amazonLinuxVirtEEnum = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EEnum scalingProcessEEnum = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EEnum updateTypeEEnum = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EEnum namespaceTypeEEnum = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EEnum ipAddressTypeEEnum = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EEnum propagatedTagSourceEEnum = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EEnum applicationProtocolEEnum = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EEnum followModeEEnum = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EEnum scopeEEnum = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EEnum networkModeEEnum = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EEnum ipcModeEEnum = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EEnum pidModeEEnum = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EEnum fargatePlatformVersionEEnum = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EEnum protocolEEnum = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
-	 * {@link org.eclipse.emf.ecore.EPackage.Registry EPackage.Registry} by the package
-	 * package URI value.
-	 * <p>Note: the correct way to create the package is via the static
-	 * factory method {@link #init init()}, which also performs
-	 * initialization of the package, or returns the registered package,
-	 * if one already exists.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * {@link org.eclipse.emf.ecore.EPackage.Registry EPackage.Registry} by the
+	 * package package URI value.
+	 * <p>
+	 * Note: the correct way to create the package is via the static factory method
+	 * {@link #init init()}, which also performs initialization of the package, or
+	 * returns the registered package, if one already exists. <!-- begin-user-doc
+	 * --> <!-- end-user-doc -->
+	 * 
 	 * @see org.eclipse.emf.ecore.EPackage.Registry
 	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#eNS_URI
 	 * @see #init()
@@ -1992,19 +1992,22 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private static boolean isInited = false;
 
 	/**
-	 * Creates, registers, and initializes the <b>Package</b> for this model, and for any others upon which it depends.
+	 * Creates, registers, and initializes the <b>Package</b> for this model, and
+	 * for any others upon which it depends.
 	 *
-	 * <p>This method is used to initialize {@link AwsworkbenchPackage#eINSTANCE} when that field is accessed.
-	 * Clients should not invoke it directly. Instead, they should simply access that field to obtain the package.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <p>
+	 * This method is used to initialize {@link AwsworkbenchPackage#eINSTANCE} when
+	 * that field is accessed. Clients should not invoke it directly. Instead, they
+	 * should simply access that field to obtain the package. <!-- begin-user-doc
+	 * --> <!-- end-user-doc -->
+	 * 
 	 * @see #eNS_URI
 	 * @see #createPackageContents()
 	 * @see #initializePackageContents()
@@ -2037,8 +2040,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -2047,8 +2050,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -2057,8 +2060,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -2067,8 +2070,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -2077,8 +2080,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -2087,8 +2090,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -2097,8 +2100,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -2107,8 +2110,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -2117,8 +2120,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -2127,8 +2130,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -2137,8 +2140,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -2147,8 +2150,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -2157,8 +2160,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -2167,8 +2170,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -2177,8 +2180,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -2187,8 +2190,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -2197,8 +2200,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -2207,8 +2210,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -2217,8 +2220,18 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAppBuilder_core_MainClassName() {
+		return (EAttribute) appBuilder_coreEClass.getEStructuralFeatures().get(15);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -2227,8 +2240,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -2237,8 +2250,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -2247,8 +2260,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -2257,8 +2270,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -2267,8 +2280,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -2277,8 +2290,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -2287,8 +2300,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -2297,8 +2310,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -2307,8 +2320,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -2317,8 +2330,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -2327,8 +2340,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -2337,8 +2350,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -2347,8 +2360,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -2357,8 +2370,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -2367,8 +2380,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -2377,8 +2390,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -2387,8 +2400,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -2397,8 +2410,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -2407,8 +2420,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -2417,8 +2430,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -2427,8 +2440,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -2437,8 +2450,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -2447,8 +2460,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -2457,8 +2470,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -2467,8 +2480,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -2477,8 +2490,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -2487,8 +2500,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -2497,8 +2510,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -2507,8 +2520,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -2517,8 +2530,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -2527,8 +2540,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -2537,8 +2550,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -2547,8 +2560,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -2557,8 +2570,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -2567,8 +2580,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -2577,8 +2590,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -2587,8 +2600,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -2597,8 +2610,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -2607,8 +2620,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -2617,8 +2630,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -2627,8 +2640,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -2637,8 +2650,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -2647,8 +2660,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -2657,8 +2670,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -2667,8 +2680,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -2677,8 +2690,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -2687,8 +2700,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -2697,8 +2710,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -2707,8 +2720,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -2717,8 +2730,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -2727,8 +2740,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -2737,8 +2750,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -2747,8 +2760,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -2757,8 +2770,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -2767,8 +2780,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -2777,8 +2790,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -2787,8 +2800,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -2797,8 +2810,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -2807,8 +2820,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -2817,8 +2830,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -2827,8 +2840,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -2837,8 +2850,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -2847,8 +2860,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -2857,8 +2870,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -2867,8 +2880,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -2877,8 +2890,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -2887,8 +2900,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -2897,8 +2910,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -2907,8 +2920,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -2917,8 +2930,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -2927,8 +2940,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -2937,8 +2950,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -2947,8 +2960,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -2957,8 +2970,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -2967,8 +2980,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -2977,8 +2990,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -2987,8 +3000,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -2997,8 +3010,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -3007,8 +3020,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -3017,8 +3030,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -3027,8 +3040,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -3037,8 +3050,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -3047,8 +3060,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -3057,8 +3070,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -3067,8 +3080,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -3077,8 +3090,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -3087,8 +3100,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -3097,8 +3110,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -3107,8 +3120,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -3117,8 +3130,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -3127,8 +3140,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -3137,8 +3150,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -3147,8 +3160,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -3157,8 +3170,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -3167,8 +3180,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -3177,8 +3190,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -3187,8 +3200,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -3197,8 +3210,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -3207,8 +3220,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -3217,8 +3230,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -3227,8 +3240,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -3237,8 +3250,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -3247,8 +3260,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -3257,8 +3270,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -3267,8 +3280,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -3277,8 +3290,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -3287,8 +3300,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -3297,8 +3310,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -3307,8 +3320,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -3317,8 +3330,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -3327,8 +3340,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -3337,8 +3350,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -3347,8 +3360,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -3357,8 +3370,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -3367,8 +3380,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -3377,8 +3390,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -3387,8 +3400,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -3397,8 +3410,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -3407,8 +3420,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -3417,8 +3430,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -3427,8 +3440,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -3437,8 +3450,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -3447,8 +3460,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -3457,8 +3470,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -3467,8 +3480,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -3477,8 +3490,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -3487,8 +3500,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -3497,8 +3510,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -3507,8 +3520,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -3517,8 +3530,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -3527,8 +3540,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -3537,8 +3550,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -3547,8 +3560,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -3557,8 +3570,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -3567,8 +3580,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -3577,8 +3590,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -3587,8 +3600,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -3597,8 +3610,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -3607,8 +3620,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -3617,8 +3630,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -3627,8 +3640,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -3637,8 +3650,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -3647,8 +3660,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -3657,8 +3670,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -3667,8 +3680,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -3677,8 +3690,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -3687,8 +3700,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -3697,8 +3710,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -3707,8 +3720,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -3717,8 +3730,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -3727,8 +3740,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -3737,8 +3750,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -3747,8 +3760,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -3757,8 +3770,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -3767,8 +3780,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -3777,8 +3790,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -3787,8 +3800,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -3797,8 +3810,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -3807,8 +3820,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -3817,8 +3830,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -3827,8 +3840,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -3837,8 +3850,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -3847,8 +3860,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -3857,8 +3870,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -3867,8 +3880,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -3877,8 +3890,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -3887,8 +3900,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -3897,8 +3910,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -3907,8 +3920,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -3917,8 +3930,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -3927,8 +3940,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -3937,8 +3950,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -3947,8 +3960,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -3957,8 +3970,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -3967,8 +3980,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -3977,8 +3990,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -3987,8 +4000,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -3997,8 +4010,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -4007,8 +4020,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -4017,8 +4030,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -4027,8 +4040,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -4037,8 +4050,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -4047,8 +4060,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -4057,8 +4070,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -4067,8 +4080,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -4077,8 +4090,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -4087,8 +4100,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -4097,8 +4110,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -4107,8 +4120,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -4117,8 +4130,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -4127,8 +4140,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -4137,8 +4150,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -4147,8 +4160,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -4157,8 +4170,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -4167,8 +4180,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -4177,8 +4190,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -4187,8 +4200,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -4197,8 +4210,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -4207,8 +4220,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -4217,8 +4230,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -4227,8 +4240,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -4237,8 +4250,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -4247,8 +4260,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -4257,8 +4270,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -4267,8 +4280,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -4277,8 +4290,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -4287,8 +4300,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -4297,8 +4310,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -4307,8 +4320,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -4317,8 +4330,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -4327,8 +4340,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -4337,8 +4350,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -4347,8 +4360,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -4357,8 +4370,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -4367,8 +4380,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -4377,8 +4390,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -4387,8 +4400,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -4397,8 +4410,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -4407,8 +4420,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -4417,8 +4430,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -4427,8 +4440,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -4437,8 +4450,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -4447,8 +4460,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -4457,8 +4470,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -4467,8 +4480,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -4477,8 +4490,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -4487,8 +4500,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -4497,8 +4510,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -4507,8 +4520,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -4517,8 +4530,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -4527,8 +4540,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -4537,8 +4550,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -4547,8 +4560,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -4557,8 +4570,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -4567,8 +4580,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -4577,8 +4590,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -4587,8 +4600,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -4597,8 +4610,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -4607,8 +4620,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -4617,8 +4630,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -4627,8 +4640,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -4637,8 +4650,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -4647,8 +4660,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -4657,8 +4670,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -4667,8 +4680,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -4677,8 +4690,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -4687,8 +4700,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -4697,8 +4710,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -4707,8 +4720,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -4717,8 +4730,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -4727,8 +4740,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -4737,8 +4750,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -4747,8 +4760,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -4757,8 +4770,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -4767,8 +4780,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -4777,8 +4790,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -4787,8 +4800,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -4797,8 +4810,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -4807,8 +4820,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -4817,8 +4830,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -4827,8 +4840,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -4837,8 +4850,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -4847,8 +4860,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -4857,8 +4870,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -4867,8 +4880,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -4877,8 +4890,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -4887,8 +4900,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -4897,8 +4910,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -4907,8 +4920,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -4917,8 +4930,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -4927,8 +4940,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -4937,8 +4950,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -4947,8 +4960,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -4957,8 +4970,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -4967,8 +4980,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -4977,8 +4990,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -4987,8 +5000,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -4997,8 +5010,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -5007,8 +5020,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -5017,8 +5030,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -5027,8 +5040,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -5037,8 +5050,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -5047,8 +5060,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -5057,8 +5070,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -5067,8 +5080,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -5077,8 +5090,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -5087,8 +5100,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -5097,8 +5110,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -5107,8 +5120,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -5117,8 +5130,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -5127,8 +5140,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -5137,8 +5150,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -5147,8 +5160,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -5157,8 +5170,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -5167,8 +5180,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -5177,8 +5190,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -5187,8 +5200,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -5197,8 +5210,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -5207,8 +5220,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -5217,8 +5230,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -5227,8 +5240,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -5237,8 +5250,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -5247,8 +5260,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -5257,8 +5270,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -5267,8 +5280,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -5277,8 +5290,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -5287,8 +5300,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -5297,8 +5310,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -5307,8 +5320,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -5317,8 +5330,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -5327,8 +5340,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -5337,8 +5350,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -5347,8 +5360,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -5357,8 +5370,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -5367,8 +5380,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -5377,8 +5390,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -5387,8 +5400,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -5397,8 +5410,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -5407,8 +5420,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -5417,8 +5430,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -5427,8 +5440,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -5437,8 +5450,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -5447,8 +5460,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -5457,8 +5470,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -5467,8 +5480,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -5477,8 +5490,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -5487,8 +5500,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -5497,8 +5510,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -5507,8 +5520,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -5517,8 +5530,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -5527,8 +5540,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -5537,8 +5550,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -5547,8 +5560,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -5557,8 +5570,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -5567,8 +5580,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -5577,8 +5590,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -5587,8 +5600,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -5597,8 +5610,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -5607,8 +5620,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -5617,8 +5630,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -5627,8 +5640,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -5637,8 +5650,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -5647,8 +5660,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -5657,8 +5670,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -5667,8 +5680,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -5677,8 +5690,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -5687,8 +5700,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -5697,8 +5710,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -5707,8 +5720,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -5717,8 +5730,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -5727,8 +5740,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -5737,8 +5750,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -5747,8 +5760,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -5757,8 +5770,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -5767,8 +5780,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -5777,8 +5790,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -5787,8 +5800,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -5797,8 +5810,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -5807,8 +5820,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -5817,8 +5830,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -5827,8 +5840,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -5837,8 +5850,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -5847,8 +5860,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -5857,8 +5870,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -5867,8 +5880,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -5877,8 +5890,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -5887,8 +5900,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -5897,8 +5910,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -5907,8 +5920,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -5917,8 +5930,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -5927,8 +5940,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -5937,8 +5950,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -5947,8 +5960,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -5957,8 +5970,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -5967,8 +5980,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -5977,8 +5990,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -5987,8 +6000,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -5997,8 +6010,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -6007,8 +6020,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -6017,8 +6030,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -6027,8 +6040,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -6037,8 +6050,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -6047,8 +6060,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -6057,8 +6070,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -6067,8 +6080,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -6077,8 +6090,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -6087,8 +6100,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -6097,8 +6110,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -6107,8 +6120,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -6117,8 +6130,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -6127,8 +6140,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -6137,8 +6150,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -6147,8 +6160,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -6157,8 +6170,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -6167,8 +6180,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -6177,8 +6190,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -6187,8 +6200,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -6197,8 +6210,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -6207,8 +6220,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -6217,8 +6230,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -6227,8 +6240,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -6237,8 +6250,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -6247,8 +6260,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -6257,8 +6270,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -6267,8 +6280,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -6277,8 +6290,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -6287,8 +6300,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -6297,8 +6310,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -6307,8 +6320,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -6317,8 +6330,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -6327,8 +6340,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -6337,8 +6350,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -6347,8 +6360,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -6357,8 +6370,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -6367,8 +6380,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -6377,8 +6390,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -6387,8 +6400,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -6397,8 +6410,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -6407,8 +6420,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -6417,8 +6430,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -6427,8 +6440,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -6437,8 +6450,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -6447,8 +6460,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -6457,8 +6470,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -6467,8 +6480,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -6477,8 +6490,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -6487,8 +6500,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -6497,8 +6510,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -6507,8 +6520,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -6517,8 +6530,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -6527,8 +6540,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -6537,8 +6550,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -6547,8 +6560,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -6557,8 +6570,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -6567,8 +6580,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -6577,8 +6590,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -6587,8 +6600,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -6597,8 +6610,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -6607,8 +6620,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -6617,8 +6630,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -6627,8 +6640,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -6637,8 +6650,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -6647,8 +6660,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -6657,8 +6670,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -6667,8 +6680,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -6677,8 +6690,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -6687,8 +6700,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -6697,8 +6710,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -6707,8 +6720,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -6717,8 +6730,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -6727,8 +6740,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -6737,8 +6750,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -6747,8 +6760,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -6757,8 +6770,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -6767,8 +6780,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -6777,8 +6790,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -6787,8 +6800,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -6797,8 +6810,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -6807,8 +6820,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -6817,8 +6830,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -6827,8 +6840,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -6837,8 +6850,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -6847,8 +6860,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -6857,8 +6870,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -6867,8 +6880,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -6877,8 +6890,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -6887,8 +6900,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -6897,8 +6910,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -6907,8 +6920,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -6917,8 +6930,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -6927,8 +6940,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -6937,8 +6950,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -6947,8 +6960,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -6957,8 +6970,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -6967,8 +6980,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -6977,8 +6990,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -6987,8 +7000,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -6997,8 +7010,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -7007,8 +7020,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -7017,8 +7030,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -7027,8 +7040,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -7037,8 +7050,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -7047,8 +7060,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -7057,8 +7070,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -7067,8 +7080,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -7077,8 +7090,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -7087,8 +7100,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -7097,8 +7110,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -7107,8 +7120,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -7117,8 +7130,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -7127,8 +7140,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -7137,8 +7150,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -7147,8 +7160,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -7157,8 +7170,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -7167,8 +7180,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -7177,8 +7190,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -7187,8 +7200,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -7197,8 +7210,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -7207,8 +7220,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -7217,8 +7230,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -7227,8 +7240,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -7237,8 +7250,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -7247,8 +7260,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -7257,8 +7270,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -7267,8 +7280,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -7277,8 +7290,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -7287,8 +7300,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -7297,8 +7310,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -7307,8 +7320,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -7317,8 +7330,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -7327,8 +7340,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -7337,8 +7350,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -7347,8 +7360,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -7357,8 +7370,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -7367,8 +7380,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -7377,8 +7390,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -7387,8 +7400,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -7397,8 +7410,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -7407,8 +7420,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -7417,8 +7430,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -7427,8 +7440,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -7437,8 +7450,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -7447,8 +7460,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -7457,8 +7470,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -7467,8 +7480,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -7477,8 +7490,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -7487,8 +7500,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -7497,8 +7510,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -7507,8 +7520,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -7517,8 +7530,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -7527,8 +7540,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -7537,8 +7550,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -7547,8 +7560,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -7557,8 +7570,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -7567,8 +7580,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -7577,8 +7590,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -7587,8 +7600,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -7597,8 +7610,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -7607,8 +7620,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -7617,8 +7630,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -7627,8 +7640,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -7637,8 +7650,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -7647,8 +7660,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -7657,8 +7670,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -7667,8 +7680,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -7677,8 +7690,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -7687,8 +7700,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -7697,8 +7710,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -7707,8 +7720,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -7717,8 +7730,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -7727,8 +7740,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -7737,8 +7750,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -7747,8 +7760,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -7757,8 +7770,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -7767,8 +7780,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -7777,8 +7790,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -7787,8 +7800,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -7797,8 +7810,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -7807,8 +7820,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -7817,8 +7830,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -7827,8 +7840,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -7837,8 +7850,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -7847,8 +7860,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -7857,8 +7870,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -7867,8 +7880,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -7877,8 +7890,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -7887,8 +7900,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -7897,8 +7910,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -7907,8 +7920,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -7917,8 +7930,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -7927,8 +7940,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -7937,8 +7950,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -7947,8 +7960,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -7957,8 +7970,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -7967,8 +7980,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -7977,8 +7990,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -7987,8 +8000,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -7997,8 +8010,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -8007,8 +8020,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -8017,8 +8030,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -8027,8 +8040,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -8037,8 +8050,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -8047,8 +8060,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -8057,8 +8070,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -8067,8 +8080,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -8077,8 +8090,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -8087,8 +8100,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -8097,8 +8110,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -8107,8 +8120,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -8117,8 +8130,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -8127,8 +8140,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -8137,8 +8150,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -8147,8 +8160,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -8157,8 +8170,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -8167,8 +8180,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -8177,8 +8190,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -8187,8 +8200,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -8197,8 +8210,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -8207,8 +8220,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -8217,8 +8230,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -8227,8 +8240,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -8237,8 +8250,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -8247,8 +8260,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -8257,8 +8270,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -8267,8 +8280,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -8277,8 +8290,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -8287,8 +8300,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -8297,8 +8310,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -8307,8 +8320,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -8317,8 +8330,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -8327,8 +8340,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -8337,8 +8350,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -8347,8 +8360,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -8357,8 +8370,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -8367,8 +8380,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -8377,8 +8390,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -8387,8 +8400,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -8397,8 +8410,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -8407,8 +8420,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -8417,8 +8430,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -8427,8 +8440,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -8437,8 +8450,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -8447,8 +8460,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -8457,8 +8470,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -8467,8 +8480,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -8477,8 +8490,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -8487,8 +8500,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -8497,8 +8510,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -8507,8 +8520,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -8517,8 +8530,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -8527,8 +8540,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -8537,8 +8550,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -8547,8 +8560,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -8557,8 +8570,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -8567,8 +8580,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -8577,8 +8590,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -8587,8 +8600,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -8597,8 +8610,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -8607,8 +8620,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -8617,8 +8630,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -8627,8 +8640,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -8637,8 +8650,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -8647,8 +8660,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -8657,8 +8670,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -8667,8 +8680,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -8677,8 +8690,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -8687,8 +8700,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -8697,8 +8710,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -8707,8 +8720,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -8717,8 +8730,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -8727,8 +8740,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -8737,8 +8750,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -8747,8 +8760,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -8757,8 +8770,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -8767,8 +8780,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -8777,8 +8790,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -8787,8 +8800,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -8797,8 +8810,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -8807,8 +8820,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -8817,8 +8830,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -8827,8 +8840,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -8837,8 +8850,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -8847,8 +8860,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -8857,8 +8870,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -8867,8 +8880,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -8877,8 +8890,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -8887,8 +8900,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -8897,8 +8910,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -8907,8 +8920,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -8917,8 +8930,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -8927,8 +8940,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -8937,8 +8950,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -8947,8 +8960,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -8957,8 +8970,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -8967,8 +8980,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -8977,8 +8990,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -8987,8 +9000,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -8997,8 +9010,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -9007,8 +9020,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -9017,8 +9030,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -9027,8 +9040,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -9037,8 +9050,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -9047,8 +9060,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -9057,8 +9070,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -9067,8 +9080,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -9077,8 +9090,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -9087,8 +9100,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -9097,8 +9110,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -9107,8 +9120,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -9117,8 +9130,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -9127,8 +9140,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -9137,8 +9150,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -9147,8 +9160,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -9157,8 +9170,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -9167,8 +9180,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -9177,8 +9190,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -9187,8 +9200,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -9197,8 +9210,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -9207,8 +9220,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -9217,8 +9230,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -9227,8 +9240,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -9237,8 +9250,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -9247,8 +9260,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -9257,8 +9270,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -9267,8 +9280,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -9277,8 +9290,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -9287,8 +9300,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -9297,8 +9310,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -9307,8 +9320,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -9317,8 +9330,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -9327,8 +9340,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -9337,8 +9350,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -9347,8 +9360,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -9357,8 +9370,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -9367,8 +9380,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -9377,8 +9390,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -9387,8 +9400,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -9397,8 +9410,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -9407,8 +9420,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -9417,8 +9430,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -9427,8 +9440,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -9437,8 +9450,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -9447,8 +9460,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -9457,8 +9470,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -9467,8 +9480,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -9477,8 +9490,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -9487,8 +9500,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -9497,8 +9510,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -9507,8 +9520,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -9517,8 +9530,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -9527,8 +9540,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -9537,8 +9550,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -9547,8 +9560,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -9557,8 +9570,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -9567,8 +9580,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -9577,8 +9590,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -9587,8 +9600,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -9597,8 +9610,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -9607,8 +9620,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -9617,8 +9630,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -9627,8 +9640,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -9637,8 +9650,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -9647,8 +9660,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -9657,8 +9670,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -9667,8 +9680,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -9677,8 +9690,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -9687,8 +9700,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -9697,8 +9710,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -9707,8 +9720,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -9717,8 +9730,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -9727,8 +9740,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -9737,8 +9750,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -9747,8 +9760,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -9757,8 +9770,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -9767,8 +9780,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -9777,8 +9790,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -9787,8 +9800,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -9797,8 +9810,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -9807,8 +9820,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -9817,8 +9830,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -9827,8 +9840,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -9837,8 +9850,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -9847,8 +9860,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -9857,8 +9870,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -9867,8 +9880,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -9877,8 +9890,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -9887,8 +9900,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -9897,8 +9910,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -9907,8 +9920,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -9917,8 +9930,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -9927,8 +9940,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -9937,8 +9950,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -9947,8 +9960,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -9957,8 +9970,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -9967,8 +9980,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -9977,8 +9990,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -9987,8 +10000,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -9997,8 +10010,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -10007,8 +10020,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -10017,8 +10030,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -10027,8 +10040,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -10037,8 +10050,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -10047,8 +10060,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -10057,8 +10070,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -10067,8 +10080,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -10077,8 +10090,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -10087,8 +10100,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -10097,8 +10110,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -10107,8 +10120,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -10117,8 +10130,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -10127,8 +10140,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -10137,8 +10150,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -10147,8 +10160,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -10157,8 +10170,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -10167,8 +10180,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -10177,8 +10190,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -10187,8 +10200,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -10197,8 +10210,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -10207,8 +10220,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -10217,8 +10230,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -10227,8 +10240,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -10237,8 +10250,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -10247,8 +10260,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -10257,8 +10270,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -10267,8 +10280,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -10277,8 +10290,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -10287,8 +10300,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -10297,8 +10310,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -10307,8 +10320,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -10317,8 +10330,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -10327,8 +10340,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -10337,8 +10350,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -10347,8 +10360,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -10357,8 +10370,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -10367,8 +10380,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -10377,8 +10390,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -10387,8 +10400,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -10397,8 +10410,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -10407,8 +10420,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -10417,8 +10430,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -10427,8 +10440,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -10437,8 +10450,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -10447,8 +10460,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -10457,8 +10470,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -10467,8 +10480,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -10477,8 +10490,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -10487,8 +10500,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -10497,8 +10510,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -10507,8 +10520,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -10517,8 +10530,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -10527,8 +10540,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -10537,8 +10550,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -10547,8 +10560,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -10557,8 +10570,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -10567,8 +10580,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -10577,8 +10590,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -10587,8 +10600,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -10597,8 +10610,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -10607,8 +10620,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -10617,8 +10630,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -10627,8 +10640,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -10637,8 +10650,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -10647,8 +10660,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -10657,8 +10670,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -10667,8 +10680,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -10677,8 +10690,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -10687,8 +10700,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -10697,8 +10710,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -10707,8 +10720,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -10717,8 +10730,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -10727,8 +10740,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -10737,8 +10750,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -10747,8 +10760,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -10757,8 +10770,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -10767,8 +10780,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -10777,8 +10790,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -10787,8 +10800,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -10797,8 +10810,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -10807,8 +10820,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -10818,8 +10831,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -10829,8 +10842,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -10840,8 +10853,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -10851,8 +10864,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -10862,8 +10875,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -10873,8 +10886,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -10884,8 +10897,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -10895,8 +10908,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -10906,8 +10919,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -10916,8 +10929,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -10926,8 +10939,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -10936,8 +10949,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -10946,8 +10959,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -10956,8 +10969,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -10966,8 +10979,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -10976,8 +10989,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -10986,8 +10999,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -10996,8 +11009,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -11006,8 +11019,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -11016,8 +11029,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -11026,8 +11039,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -11036,8 +11049,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -11046,8 +11059,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -11056,8 +11069,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -11066,8 +11079,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -11076,8 +11089,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -11086,8 +11099,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -11096,8 +11109,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -11106,8 +11119,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -11116,8 +11129,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -11126,8 +11139,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -11136,8 +11149,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -11146,8 +11159,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -11156,8 +11169,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -11166,8 +11179,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -11176,8 +11189,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -11186,8 +11199,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -11196,8 +11209,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -11206,8 +11219,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -11216,8 +11229,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -11226,8 +11239,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -11236,8 +11249,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -11246,8 +11259,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -11256,8 +11269,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -11266,8 +11279,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -11276,8 +11289,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -11286,8 +11299,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -11296,8 +11309,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -11306,8 +11319,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -11316,8 +11329,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -11326,8 +11339,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -11336,8 +11349,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -11346,8 +11359,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -11356,8 +11369,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -11366,8 +11379,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -11376,8 +11389,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -11386,8 +11399,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -11396,8 +11409,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -11406,8 +11419,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -11416,8 +11429,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -11426,8 +11439,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -11436,8 +11449,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -11446,8 +11459,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -11456,8 +11469,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -11466,8 +11479,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -11476,8 +11489,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -11486,8 +11499,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -11496,8 +11509,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -11506,8 +11519,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -11516,8 +11529,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -11526,8 +11539,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -11536,8 +11549,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -11546,8 +11559,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -11556,8 +11569,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -11566,8 +11579,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -11576,8 +11589,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -11586,8 +11599,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -11596,8 +11609,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -11606,8 +11619,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -11616,8 +11629,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -11626,8 +11639,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -11636,8 +11649,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -11646,8 +11659,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -11656,8 +11669,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -11666,8 +11679,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -11676,8 +11689,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -11686,8 +11699,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -11696,8 +11709,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -11706,8 +11719,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -11716,8 +11729,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -11726,8 +11739,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -11736,8 +11749,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -11746,8 +11759,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -11756,8 +11769,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -11766,8 +11779,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -11776,8 +11789,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -11786,8 +11799,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -11796,8 +11809,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -11806,8 +11819,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -11816,8 +11829,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -11826,8 +11839,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -11836,8 +11849,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -11846,8 +11859,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -11856,8 +11869,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -11866,8 +11879,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -11876,8 +11889,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -11886,8 +11899,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -11896,8 +11909,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -11906,8 +11919,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -11916,8 +11929,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -11926,8 +11939,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -11936,8 +11949,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -11946,8 +11959,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -11956,8 +11969,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -11966,8 +11979,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -11976,8 +11989,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -11986,8 +11999,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -11996,8 +12009,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -12006,8 +12019,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -12016,8 +12029,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -12026,8 +12039,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -12036,8 +12049,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -12046,8 +12059,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -12056,8 +12069,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -12066,8 +12079,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -12076,8 +12089,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -12086,8 +12099,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -12096,8 +12109,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -12106,8 +12119,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -12116,8 +12129,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -12126,8 +12139,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -12136,8 +12149,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -12146,8 +12159,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -12156,8 +12169,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -12166,8 +12179,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -12176,8 +12189,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -12186,8 +12199,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -12196,8 +12209,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -12206,8 +12219,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -12216,8 +12229,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -12226,8 +12239,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -12236,8 +12249,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -12246,8 +12259,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -12256,8 +12269,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -12266,8 +12279,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -12276,8 +12289,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -12286,8 +12299,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -12296,8 +12309,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -12306,8 +12319,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -12316,8 +12329,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -12326,8 +12339,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -12336,8 +12349,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -12346,8 +12359,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -12356,8 +12369,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -12366,8 +12379,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -12376,8 +12389,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -12386,8 +12399,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -12396,8 +12409,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -12406,8 +12419,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -12416,8 +12429,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -12426,8 +12439,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -12436,8 +12449,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -12446,8 +12459,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -12456,8 +12469,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -12466,8 +12479,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -12476,8 +12489,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -12486,8 +12499,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -12496,8 +12509,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -12506,8 +12519,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -12516,8 +12529,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -12526,8 +12539,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -12536,8 +12549,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -12546,8 +12559,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -12556,8 +12569,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -12566,8 +12579,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -12576,8 +12589,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -12586,8 +12599,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -12596,8 +12609,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -12606,8 +12619,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -12616,8 +12629,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -12626,8 +12639,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -12636,8 +12649,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -12646,8 +12659,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -12656,8 +12669,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -12666,8 +12679,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -12676,8 +12689,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -12686,8 +12699,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -12696,8 +12709,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -12706,8 +12719,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -12716,8 +12729,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -12726,8 +12739,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -12736,8 +12749,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -12746,8 +12759,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -12757,8 +12770,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -12768,8 +12781,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -12779,8 +12792,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -12790,8 +12803,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -12801,8 +12814,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -12812,8 +12825,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -12823,8 +12836,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -12834,8 +12847,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -12845,8 +12858,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -12855,8 +12868,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -12865,8 +12878,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -12875,8 +12888,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -12885,8 +12898,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -12895,8 +12908,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -12905,8 +12918,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -12915,8 +12928,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -12925,8 +12938,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -12935,8 +12948,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -12945,8 +12958,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -12955,8 +12968,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -12965,8 +12978,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -12975,8 +12988,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -12985,8 +12998,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -12995,8 +13008,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -13005,8 +13018,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -13015,8 +13028,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -13025,8 +13038,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -13035,8 +13048,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -13045,8 +13058,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -13055,8 +13068,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -13065,8 +13078,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -13075,8 +13088,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -13085,8 +13098,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -13095,8 +13108,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -13105,8 +13118,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -13115,8 +13128,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -13125,8 +13138,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -13135,8 +13148,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -13145,8 +13158,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -13155,8 +13168,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -13165,8 +13178,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -13175,8 +13188,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -13185,8 +13198,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -13195,8 +13208,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -13205,8 +13218,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -13215,8 +13228,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -13225,8 +13238,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -13235,8 +13248,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -13245,8 +13258,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -13255,8 +13268,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -13265,8 +13278,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -13275,8 +13288,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -13285,8 +13298,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -13295,8 +13308,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -13305,8 +13318,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -13315,8 +13328,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -13325,8 +13338,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -13335,8 +13348,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -13345,8 +13358,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -13355,8 +13368,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -13365,8 +13378,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -13375,8 +13388,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -13385,8 +13398,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -13395,8 +13408,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -13405,8 +13418,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -13415,8 +13428,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -13425,8 +13438,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -13435,8 +13448,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -13445,8 +13458,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -13455,8 +13468,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -13465,8 +13478,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -13475,8 +13488,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -13485,8 +13498,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -13495,8 +13508,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -13505,8 +13518,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -13515,8 +13528,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -13525,8 +13538,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -13535,8 +13548,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -13545,8 +13558,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -13555,8 +13568,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -13565,8 +13578,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -13575,8 +13588,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -13585,8 +13598,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -13595,8 +13608,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -13605,8 +13618,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -13615,8 +13628,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -13625,8 +13638,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -13635,8 +13648,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -13645,8 +13658,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -13655,8 +13668,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -13666,8 +13679,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -13677,8 +13690,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -13688,8 +13701,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -13699,8 +13712,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -13710,8 +13723,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -13721,8 +13734,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -13732,8 +13745,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -13743,8 +13756,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -13754,8 +13767,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -13765,8 +13778,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -13775,8 +13788,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -13785,8 +13798,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -13795,8 +13808,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -13805,8 +13818,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -13815,8 +13828,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -13825,8 +13838,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -13835,8 +13848,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -13845,8 +13858,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -13855,8 +13868,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -13865,8 +13878,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -13875,8 +13888,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -13885,8 +13898,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -13895,8 +13908,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -13905,8 +13918,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -13915,8 +13928,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -13925,8 +13938,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -13935,8 +13948,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -13945,8 +13958,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -13955,8 +13968,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -13965,8 +13978,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -13975,8 +13988,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -13985,8 +13998,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -13995,8 +14008,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -14005,8 +14018,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -14015,8 +14028,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -14025,8 +14038,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -14035,8 +14048,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -14045,8 +14058,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -14055,8 +14068,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -14065,8 +14078,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -14075,8 +14088,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -14085,8 +14098,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -14095,8 +14108,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -14105,8 +14118,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -14115,8 +14128,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -14125,8 +14138,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -14135,8 +14148,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -14145,8 +14158,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -14155,8 +14168,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -14165,8 +14178,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -14175,8 +14188,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -14185,8 +14198,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -14195,8 +14208,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -14205,8 +14218,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -14215,8 +14228,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -14225,8 +14238,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -14235,8 +14248,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -14245,8 +14258,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -14255,8 +14268,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -14265,8 +14278,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -14275,8 +14288,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -14285,8 +14298,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -14295,8 +14308,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -14305,8 +14318,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -14315,8 +14328,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -14325,8 +14338,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -14335,8 +14348,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -14345,8 +14358,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -14355,8 +14368,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -14365,8 +14378,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -14375,8 +14388,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -14385,8 +14398,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -14395,8 +14408,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -14405,8 +14418,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -14416,8 +14429,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -14427,8 +14440,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -14438,8 +14451,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -14449,8 +14462,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -14460,8 +14473,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -14471,8 +14484,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -14481,8 +14494,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -14491,8 +14504,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -14501,8 +14514,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -14511,8 +14524,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -14521,8 +14534,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -14531,8 +14544,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -14541,8 +14554,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -14551,8 +14564,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -14561,8 +14574,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -14571,8 +14584,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -14581,8 +14594,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -14591,8 +14604,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -14601,8 +14614,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -14611,8 +14624,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -14621,8 +14634,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -14631,8 +14644,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -14641,8 +14654,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -14651,8 +14664,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -14661,8 +14674,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -14671,8 +14684,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -14681,8 +14694,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -14691,8 +14704,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -14701,8 +14714,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -14711,8 +14724,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -14721,8 +14734,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -14731,8 +14744,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -14741,8 +14754,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -14751,8 +14764,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -14761,8 +14774,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -14771,8 +14784,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -14781,8 +14794,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -14791,8 +14804,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -14801,8 +14814,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -14811,8 +14824,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -14821,8 +14834,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -14831,8 +14844,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -14842,8 +14855,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -14853,8 +14866,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -14864,8 +14877,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -14875,8 +14888,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -14886,8 +14899,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -14897,8 +14910,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -14908,8 +14921,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -14919,8 +14932,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -14929,8 +14942,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -14939,8 +14952,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -14949,8 +14962,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -14959,8 +14972,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -14969,8 +14982,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -14979,8 +14992,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -14989,8 +15002,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -14999,8 +15012,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -15009,8 +15022,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -15019,8 +15032,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -15029,8 +15042,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -15039,8 +15052,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -15049,8 +15062,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -15059,8 +15072,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -15069,8 +15082,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -15079,8 +15092,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -15089,8 +15102,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -15099,8 +15112,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -15109,8 +15122,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -15119,8 +15132,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -15129,8 +15142,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -15139,8 +15152,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -15149,8 +15162,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -15159,8 +15172,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -15169,8 +15182,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -15179,8 +15192,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -15189,8 +15202,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -15199,8 +15212,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -15209,8 +15222,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -15219,8 +15232,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -15229,8 +15242,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -15239,8 +15252,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -15249,8 +15262,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -15259,8 +15272,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -15269,8 +15282,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -15279,8 +15292,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -15289,8 +15302,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -15299,8 +15312,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -15309,8 +15322,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -15320,8 +15333,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -15331,8 +15344,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -15342,8 +15355,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -15353,8 +15366,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -15364,8 +15377,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -15375,8 +15388,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -15386,8 +15399,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -15397,8 +15410,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -15407,8 +15420,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -15417,8 +15430,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -15427,8 +15440,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -15437,8 +15450,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -15447,8 +15460,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -15457,8 +15470,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -15467,8 +15480,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -15477,8 +15490,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -15487,8 +15500,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -15497,8 +15510,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -15507,8 +15520,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -15517,8 +15530,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -15527,8 +15540,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -15537,8 +15550,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -15547,8 +15560,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -15557,8 +15570,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -15567,8 +15580,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -15577,8 +15590,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -15587,8 +15600,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -15597,8 +15610,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -15607,8 +15620,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -15617,8 +15630,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -15627,8 +15640,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -15637,8 +15650,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -15647,8 +15660,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -15657,8 +15670,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -15667,8 +15680,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -15677,8 +15690,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -15687,8 +15700,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -15697,8 +15710,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -15707,8 +15720,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -15717,8 +15730,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -15727,8 +15740,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -15737,8 +15750,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -15747,8 +15760,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -15757,8 +15770,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -15767,8 +15780,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -15777,8 +15790,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -15787,8 +15800,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -15797,8 +15810,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -15807,8 +15820,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -15817,8 +15830,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -15827,8 +15840,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -15837,8 +15850,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -15847,8 +15860,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -15857,8 +15870,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -15867,8 +15880,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -15877,8 +15890,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -15887,8 +15900,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -15897,8 +15910,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -15907,8 +15920,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -15917,8 +15930,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -15927,8 +15940,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -15937,8 +15950,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -15947,8 +15960,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -15957,8 +15970,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -15967,8 +15980,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -15977,8 +15990,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -15987,8 +16000,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -15997,8 +16010,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -16007,8 +16020,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -16017,8 +16030,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -16027,8 +16040,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -16037,8 +16050,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -16047,8 +16060,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -16057,8 +16070,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -16067,8 +16080,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -16077,8 +16090,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -16087,8 +16100,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -16097,8 +16110,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -16107,8 +16120,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -16117,8 +16130,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -16127,8 +16140,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -16137,8 +16150,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -16147,8 +16160,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -16157,8 +16170,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -16167,8 +16180,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -16177,8 +16190,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -16187,8 +16200,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -16197,8 +16210,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -16207,8 +16220,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -16217,8 +16230,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -16227,8 +16240,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -16237,8 +16250,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -16247,8 +16260,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -16257,8 +16270,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -16267,8 +16280,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -16277,8 +16290,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -16287,8 +16300,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -16297,8 +16310,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -16307,8 +16320,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -16317,8 +16330,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -16327,8 +16340,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -16337,8 +16350,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -16347,8 +16360,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -16357,8 +16370,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -16367,8 +16380,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -16377,8 +16390,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -16387,8 +16400,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -16397,8 +16410,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -16407,8 +16420,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -16417,8 +16430,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -16427,8 +16440,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -16437,8 +16450,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -16447,8 +16460,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -16457,8 +16470,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -16467,8 +16480,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -16477,8 +16490,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -16487,8 +16500,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -16497,8 +16510,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -16507,8 +16520,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -16517,8 +16530,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -16527,8 +16540,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -16537,8 +16550,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -16547,8 +16560,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -16557,8 +16570,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -16567,8 +16580,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -16577,8 +16590,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -16587,8 +16600,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -16597,8 +16610,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -16607,8 +16620,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -16617,8 +16630,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -16627,8 +16640,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -16637,8 +16650,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -16647,8 +16660,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -16657,8 +16670,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -16667,8 +16680,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -16677,8 +16690,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -16687,8 +16700,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -16697,8 +16710,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -16707,8 +16720,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -16717,8 +16730,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -16727,8 +16740,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -16737,8 +16750,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -16747,8 +16760,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -16757,8 +16770,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -16767,8 +16780,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -16777,8 +16790,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -16787,8 +16800,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -16797,8 +16810,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -16807,8 +16820,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -16817,8 +16830,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -16827,8 +16840,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -16837,8 +16850,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -16847,8 +16860,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -16857,8 +16870,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -16867,8 +16880,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -16877,8 +16890,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -16887,8 +16900,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -16897,8 +16910,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -16907,8 +16920,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -16917,8 +16930,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -16927,8 +16940,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -16937,8 +16950,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -16947,8 +16960,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -16957,8 +16970,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -16967,8 +16980,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -16977,8 +16990,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -16987,8 +17000,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -16997,8 +17010,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -17007,8 +17020,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -17017,8 +17030,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -17027,8 +17040,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -17037,8 +17050,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -17047,8 +17060,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -17057,8 +17070,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -17067,8 +17080,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -17077,8 +17090,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -17087,8 +17100,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -17097,8 +17110,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -17107,8 +17120,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -17117,8 +17130,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -17127,8 +17140,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -17137,8 +17150,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -17147,8 +17160,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -17157,8 +17170,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -17167,8 +17180,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -17177,8 +17190,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -17187,8 +17200,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -17197,8 +17210,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -17207,8 +17220,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -17217,8 +17230,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -17227,8 +17240,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -17237,8 +17250,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -17247,8 +17260,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -17257,8 +17270,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -17267,8 +17280,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -17277,8 +17290,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -17287,8 +17300,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -17297,8 +17310,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -17307,8 +17320,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -17317,8 +17330,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -17327,8 +17340,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -17337,8 +17350,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -17347,8 +17360,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -17357,8 +17370,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -17367,8 +17380,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -17377,8 +17390,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -17387,8 +17400,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -17397,8 +17410,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -17407,8 +17420,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -17417,8 +17430,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -17427,8 +17440,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -17437,8 +17450,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -17447,8 +17460,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -17457,8 +17470,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -17467,8 +17480,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -17477,8 +17490,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -17487,8 +17500,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -17497,8 +17510,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -17507,8 +17520,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -17517,8 +17530,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -17527,8 +17540,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -17537,8 +17550,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -17547,8 +17560,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -17557,8 +17570,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -17567,8 +17580,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -17577,8 +17590,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -17587,8 +17600,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -17597,8 +17610,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -17607,8 +17620,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -17617,8 +17630,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -17627,8 +17640,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -17637,8 +17650,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -17647,8 +17660,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -17657,8 +17670,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -17667,8 +17680,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -17677,8 +17690,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -17687,8 +17700,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -17697,8 +17710,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -17707,8 +17720,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -17717,8 +17730,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -17727,8 +17740,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -17737,8 +17750,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -17747,8 +17760,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -17757,8 +17770,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -17767,8 +17780,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -17777,8 +17790,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -17787,8 +17800,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -17797,8 +17810,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -17807,8 +17820,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -17817,8 +17830,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -17827,8 +17840,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -17837,8 +17850,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -17847,8 +17860,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -17857,8 +17870,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -17867,8 +17880,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -17877,8 +17890,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -17887,8 +17900,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -17897,8 +17910,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -17907,8 +17920,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -17917,8 +17930,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -17927,8 +17940,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -17937,8 +17950,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -17947,8 +17960,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -17957,8 +17970,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -17967,8 +17980,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -17977,8 +17990,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -17987,8 +18000,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -17997,8 +18010,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -18007,8 +18020,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -18017,8 +18030,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -18027,8 +18040,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -18037,8 +18050,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -18047,8 +18060,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -18057,8 +18070,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -18067,8 +18080,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -18077,8 +18090,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -18087,8 +18100,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -18097,8 +18110,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -18107,8 +18120,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -18117,8 +18130,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -18127,8 +18140,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -18137,8 +18150,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -18147,8 +18160,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -18157,8 +18170,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -18167,8 +18180,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -18177,8 +18190,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -18187,8 +18200,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -18197,8 +18210,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -18207,8 +18220,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -18217,8 +18230,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -18227,8 +18240,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -18237,8 +18250,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -18247,8 +18260,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -18257,8 +18270,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -18267,8 +18280,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -18277,8 +18290,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -18287,8 +18300,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -18297,8 +18310,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -18307,8 +18320,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -18317,8 +18330,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -18327,8 +18340,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -18337,8 +18350,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -18347,8 +18360,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -18357,8 +18370,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -18367,8 +18380,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -18377,8 +18390,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -18387,8 +18400,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -18397,8 +18410,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -18407,8 +18420,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -18417,8 +18430,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -18427,8 +18440,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -18437,8 +18450,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -18447,8 +18460,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -18457,8 +18470,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -18467,8 +18480,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -18477,8 +18490,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -18487,8 +18500,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -18497,8 +18510,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -18507,8 +18520,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -18517,8 +18530,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -18527,8 +18540,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -18537,8 +18550,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -18548,8 +18561,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -18559,8 +18572,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -18570,8 +18583,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -18580,8 +18593,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -18590,8 +18603,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -18600,8 +18613,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -18610,8 +18623,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -18620,8 +18633,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -18630,8 +18643,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -18640,8 +18653,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -18650,8 +18663,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -18660,8 +18673,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -18670,8 +18683,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -18680,8 +18693,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -18690,8 +18703,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -18700,8 +18713,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -18710,8 +18723,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -18720,8 +18733,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -18730,8 +18743,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -18740,8 +18753,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -18750,8 +18763,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -18760,8 +18773,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -18770,8 +18783,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -18780,8 +18793,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -18790,8 +18803,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -18800,8 +18813,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -18810,8 +18823,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -18820,8 +18833,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -18830,8 +18843,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -18840,8 +18853,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -18850,8 +18863,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -18860,8 +18873,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -18870,8 +18883,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -18880,8 +18893,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -18890,8 +18903,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -18900,8 +18913,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -18910,8 +18923,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -18920,8 +18933,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -18930,8 +18943,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -18940,8 +18953,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -18950,8 +18963,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -18960,8 +18973,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -18970,8 +18983,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -18980,8 +18993,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -18990,8 +19003,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -19000,8 +19013,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -19010,8 +19023,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -19020,8 +19033,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -19030,8 +19043,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -19040,8 +19053,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -19050,8 +19063,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -19060,8 +19073,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -19070,8 +19083,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -19080,8 +19093,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -19090,8 +19103,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -19100,8 +19113,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -19110,8 +19123,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -19120,8 +19133,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -19130,8 +19143,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -19140,8 +19153,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -19150,8 +19163,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -19160,8 +19173,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -19170,8 +19183,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -19180,8 +19193,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -19190,8 +19203,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -19200,8 +19213,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -19210,8 +19223,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -19220,8 +19233,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -19230,8 +19243,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -19240,8 +19253,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -19250,8 +19263,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -19260,8 +19273,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -19270,8 +19283,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -19280,8 +19293,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -19290,8 +19303,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -19300,8 +19313,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -19310,8 +19323,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -19320,8 +19333,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -19330,8 +19343,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -19340,8 +19353,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -19350,8 +19363,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -19361,8 +19374,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -19372,8 +19385,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -19383,8 +19396,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -19394,8 +19407,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -19405,8 +19418,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -19416,8 +19429,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -19427,8 +19440,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -19438,8 +19451,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -19449,8 +19462,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -19460,8 +19473,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -19471,8 +19484,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -19482,8 +19495,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -19493,8 +19506,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -19504,8 +19517,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -19514,8 +19527,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -19524,8 +19537,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -19534,8 +19547,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -19544,8 +19557,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -19554,8 +19567,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -19564,8 +19577,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -19574,8 +19587,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -19584,8 +19597,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -19594,8 +19607,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -19604,8 +19617,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -19614,8 +19627,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -19624,8 +19637,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -19634,8 +19647,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -19644,8 +19657,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -19654,8 +19667,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -19664,8 +19677,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -19674,8 +19687,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -19684,8 +19697,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -19694,8 +19707,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -19704,8 +19717,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -19714,8 +19727,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -19724,8 +19737,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -19734,8 +19747,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -19744,8 +19757,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -19754,8 +19767,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -19764,8 +19777,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -19774,8 +19787,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -19784,8 +19797,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -19794,8 +19807,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -19804,8 +19817,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -19814,8 +19827,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -19824,8 +19837,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -19834,8 +19847,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -19844,8 +19857,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -19854,8 +19867,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -19864,8 +19877,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -19874,8 +19887,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -19884,8 +19897,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -19894,8 +19907,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -19904,8 +19917,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -19914,8 +19927,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -19924,8 +19937,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -19934,8 +19947,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -19944,8 +19957,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -19954,8 +19967,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -19964,8 +19977,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -19974,8 +19987,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -19984,8 +19997,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -19994,8 +20007,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -20004,8 +20017,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -20014,8 +20027,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -20024,8 +20037,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -20034,8 +20047,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -20044,8 +20057,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -20054,8 +20067,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -20064,8 +20077,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -20074,8 +20087,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -20084,8 +20097,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -20094,8 +20107,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -20104,8 +20117,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -20114,8 +20127,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -20124,8 +20137,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -20134,8 +20147,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -20144,8 +20157,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -20154,8 +20167,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -20164,8 +20177,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -20174,8 +20187,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -20184,8 +20197,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -20194,8 +20207,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -20204,8 +20217,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -20214,8 +20227,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -20224,8 +20237,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -20234,8 +20247,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -20244,8 +20257,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -20254,8 +20267,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -20264,8 +20277,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -20274,8 +20287,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -20284,8 +20297,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -20294,8 +20307,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -20304,8 +20317,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -20314,8 +20327,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -20324,8 +20337,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -20334,8 +20347,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -20344,8 +20357,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -20354,8 +20367,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -20364,8 +20377,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -20374,8 +20387,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -20384,8 +20397,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -20394,8 +20407,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -20404,8 +20417,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -20414,8 +20427,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -20424,8 +20437,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -20434,8 +20447,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -20444,8 +20457,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -20454,8 +20467,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -20464,8 +20477,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -20474,8 +20487,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -20484,8 +20497,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -20494,8 +20507,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -20504,8 +20517,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -20514,8 +20527,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -20524,8 +20537,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -20534,8 +20547,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -20544,8 +20557,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -20554,8 +20567,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -20564,8 +20577,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -20574,8 +20587,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -20585,8 +20598,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -20596,8 +20609,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -20607,8 +20620,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -20618,8 +20631,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -20629,8 +20642,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -20640,8 +20653,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -20651,8 +20664,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -20662,8 +20675,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -20673,8 +20686,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -20684,8 +20697,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -20695,8 +20708,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -20706,8 +20719,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -20717,8 +20730,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -20728,8 +20741,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -20739,8 +20752,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -20750,8 +20763,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -20761,8 +20774,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -20771,8 +20784,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -20782,8 +20795,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -20793,8 +20806,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -20804,8 +20817,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -20815,8 +20828,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -20826,8 +20839,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -20837,8 +20850,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -20848,8 +20861,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -20859,8 +20872,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -20870,8 +20883,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -20881,8 +20894,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -20892,8 +20905,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -20903,8 +20916,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -20914,8 +20927,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -20925,8 +20938,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -20936,8 +20949,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -20947,8 +20960,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -20958,8 +20971,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -20969,8 +20982,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -20980,8 +20993,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -20991,8 +21004,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -21001,8 +21014,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -21011,8 +21024,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -21021,8 +21034,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -21031,8 +21044,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -21041,8 +21054,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -21051,8 +21064,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -21061,8 +21074,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -21071,8 +21084,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -21081,8 +21094,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -21091,8 +21104,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -21101,8 +21114,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -21111,8 +21124,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -21121,8 +21134,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -21131,8 +21144,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -21141,8 +21154,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -21151,8 +21164,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -21161,8 +21174,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -21171,8 +21184,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -21181,8 +21194,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -21191,8 +21204,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -21201,8 +21214,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -21211,8 +21224,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -21221,8 +21234,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -21231,8 +21244,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -21241,8 +21254,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -21251,8 +21264,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -21261,8 +21274,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -21271,8 +21284,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -21281,8 +21294,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -21291,8 +21304,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -21301,8 +21314,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -21311,8 +21324,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -21321,8 +21334,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -21331,8 +21344,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -21341,8 +21354,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -21351,8 +21364,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -21361,8 +21374,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -21371,8 +21384,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -21381,8 +21394,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -21391,8 +21404,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -21401,8 +21414,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -21412,8 +21425,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -21423,8 +21436,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -21434,8 +21447,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -21445,8 +21458,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -21455,8 +21468,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -21466,8 +21479,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -21477,8 +21490,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -21488,8 +21501,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -21499,8 +21512,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -21510,8 +21523,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -21521,8 +21534,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -21532,8 +21545,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -21543,8 +21556,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -21554,8 +21567,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -21565,8 +21578,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -21576,8 +21589,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -21587,8 +21600,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -21598,8 +21611,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -21609,8 +21622,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -21620,8 +21633,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -21631,8 +21644,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -21642,8 +21655,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -21653,8 +21666,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -21664,8 +21677,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -21674,8 +21687,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -21684,8 +21697,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -21694,8 +21707,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -21704,8 +21717,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -21714,8 +21727,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -21724,8 +21737,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -21734,8 +21747,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -21744,8 +21757,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -21754,8 +21767,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -21764,8 +21777,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -21774,8 +21787,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -21784,8 +21797,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -21794,8 +21807,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -21804,8 +21817,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -21814,8 +21827,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -21824,8 +21837,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -21834,8 +21847,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -21844,8 +21857,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -21854,8 +21867,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -21864,8 +21877,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -21874,8 +21887,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -21884,8 +21897,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -21894,8 +21907,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -21904,8 +21917,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -21914,8 +21927,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -21924,8 +21937,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -21934,8 +21947,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -21944,8 +21957,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -21954,8 +21967,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -21964,8 +21977,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -21974,8 +21987,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -21984,8 +21997,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -21994,8 +22007,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -22004,8 +22017,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -22014,8 +22027,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -22024,8 +22037,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -22034,8 +22047,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -22044,8 +22057,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -22054,8 +22067,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -22064,8 +22077,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -22074,8 +22087,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -22084,8 +22097,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -22094,8 +22107,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -22104,8 +22117,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -22114,8 +22127,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -22124,8 +22137,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -22134,8 +22147,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -22144,8 +22157,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -22154,8 +22167,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -22164,8 +22177,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -22174,8 +22187,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -22184,8 +22197,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -22194,8 +22207,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -22204,8 +22217,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -22214,8 +22227,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -22224,8 +22237,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -22234,8 +22247,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -22244,8 +22257,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -22254,8 +22267,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -22264,8 +22277,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -22274,8 +22287,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -22284,8 +22297,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -22294,8 +22307,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -22304,8 +22317,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -22314,8 +22327,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -22324,8 +22337,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -22334,8 +22347,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -22344,8 +22357,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -22354,8 +22367,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -22364,8 +22377,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -22374,8 +22387,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -22384,8 +22397,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -22394,8 +22407,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -22404,8 +22417,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -22414,8 +22427,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -22424,8 +22437,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -22434,8 +22447,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -22445,8 +22458,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -22456,8 +22469,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -22467,8 +22480,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -22478,8 +22491,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -22489,8 +22502,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -22500,8 +22513,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -22511,8 +22524,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -22522,8 +22535,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -22533,8 +22546,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -22543,8 +22556,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -22553,8 +22566,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -22563,8 +22576,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -22573,8 +22586,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -22583,8 +22596,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -22593,8 +22606,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -22603,8 +22616,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -22613,8 +22626,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -22623,8 +22636,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -22633,8 +22646,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -22643,8 +22656,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -22653,8 +22666,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -22663,8 +22676,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -22673,8 +22686,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -22683,8 +22696,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -22693,8 +22706,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -22703,8 +22716,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -22713,8 +22726,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -22723,8 +22736,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -22733,8 +22746,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -22743,8 +22756,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -22753,8 +22766,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -22763,8 +22776,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -22774,8 +22787,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -22785,8 +22798,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -22796,8 +22809,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -22807,8 +22820,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -22818,8 +22831,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -22829,8 +22842,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -22840,8 +22853,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -22851,8 +22864,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -22862,8 +22875,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -22873,8 +22886,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -22884,8 +22897,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -22895,8 +22908,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -22906,8 +22919,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -22917,8 +22930,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -22928,8 +22941,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -22939,8 +22952,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -22950,8 +22963,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -22961,8 +22974,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -22972,8 +22985,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -22983,8 +22996,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -22993,8 +23006,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -23003,8 +23016,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -23013,8 +23026,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -23023,8 +23036,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -23033,8 +23046,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -23043,8 +23056,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -23053,8 +23066,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -23063,8 +23076,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -23073,8 +23086,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -23083,8 +23096,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -23093,8 +23106,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -23103,8 +23116,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -23113,8 +23126,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -23123,8 +23136,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -23133,8 +23146,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -23143,8 +23156,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -23153,8 +23166,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -23163,8 +23176,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -23173,8 +23186,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -23183,8 +23196,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -23193,8 +23206,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -23203,8 +23216,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -23213,8 +23226,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -23223,8 +23236,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -23233,8 +23246,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -23243,8 +23256,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -23253,8 +23266,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -23263,8 +23276,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -23273,8 +23286,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -23283,8 +23296,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -23293,8 +23306,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -23303,8 +23316,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -23313,8 +23326,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -23323,8 +23336,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -23333,8 +23346,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -23343,8 +23356,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -23353,8 +23366,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -23363,8 +23376,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -23373,8 +23386,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -23383,8 +23396,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -23393,8 +23406,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -23403,8 +23416,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -23413,8 +23426,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -23423,8 +23436,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -23433,8 +23446,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -23443,8 +23456,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -23453,8 +23466,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -23463,8 +23476,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -23473,8 +23486,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -23483,8 +23496,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -23493,8 +23506,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -23503,8 +23516,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -23513,8 +23526,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -23523,8 +23536,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -23533,8 +23546,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -23543,8 +23556,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -23553,8 +23566,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -23563,8 +23576,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -23573,8 +23586,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -23583,8 +23596,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -23593,8 +23606,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -23603,8 +23616,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -23613,8 +23626,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -23623,8 +23636,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -23633,8 +23646,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -23643,8 +23656,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -23653,8 +23666,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -23663,8 +23676,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -23673,8 +23686,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -23683,8 +23696,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -23693,8 +23706,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -23703,8 +23716,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -23713,8 +23726,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -23723,8 +23736,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -23733,8 +23746,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -23743,8 +23756,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -23753,8 +23766,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -23763,8 +23776,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -23773,8 +23786,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -23783,8 +23796,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -23793,8 +23806,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -23803,8 +23816,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -23813,8 +23826,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -23823,8 +23836,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -23833,8 +23846,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -23843,8 +23856,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -23853,8 +23866,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -23863,8 +23876,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -23873,8 +23886,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -23883,8 +23896,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -23893,8 +23906,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -23903,8 +23916,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -23913,8 +23926,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -23923,8 +23936,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -23933,8 +23946,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -23943,8 +23956,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -23953,8 +23966,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -23963,8 +23976,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -23973,8 +23986,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -23983,8 +23996,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -23993,8 +24006,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -24003,8 +24016,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -24013,8 +24026,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -24023,8 +24036,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -24033,8 +24046,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -24043,8 +24056,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -24053,8 +24066,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -24063,8 +24076,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -24073,8 +24086,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -24083,8 +24096,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -24093,8 +24106,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -24103,8 +24116,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -24113,8 +24126,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -24123,8 +24136,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -24133,8 +24146,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -24143,8 +24156,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -24153,8 +24166,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -24163,8 +24176,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -24173,8 +24186,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -24183,8 +24196,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -24193,8 +24206,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -24203,8 +24216,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -24213,8 +24226,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -24223,8 +24236,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -24233,8 +24246,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -24243,8 +24256,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -24253,8 +24266,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -24263,8 +24276,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -24273,8 +24286,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -24283,8 +24296,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -24293,8 +24306,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -24303,8 +24316,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -24313,8 +24326,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -24323,8 +24336,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -24333,8 +24346,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -24343,8 +24356,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -24353,8 +24366,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -24363,8 +24376,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -24373,8 +24386,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -24383,8 +24396,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -24393,8 +24406,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -24403,8 +24416,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -24413,8 +24426,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -24423,8 +24436,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -24433,8 +24446,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -24443,8 +24456,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -24453,8 +24466,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -24463,8 +24476,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -24473,8 +24486,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -24483,8 +24496,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -24493,8 +24506,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -24503,8 +24516,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -24513,8 +24526,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -24523,8 +24536,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -24533,8 +24546,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -24543,8 +24556,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -24553,8 +24566,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -24563,8 +24576,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -24573,8 +24586,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -24583,8 +24596,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -24593,8 +24606,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -24603,8 +24616,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -24613,8 +24626,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -24623,8 +24636,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -24633,8 +24646,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -24643,8 +24656,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -24653,8 +24666,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -24663,8 +24676,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -24673,8 +24686,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -24683,8 +24696,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -24693,8 +24706,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -24703,8 +24716,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -24713,8 +24726,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -24723,8 +24736,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -24733,8 +24746,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -24743,8 +24756,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -24753,8 +24766,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -24763,8 +24776,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -24773,8 +24786,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -24783,8 +24796,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -24793,8 +24806,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -24803,8 +24816,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -24813,8 +24826,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -24823,8 +24836,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -24833,8 +24846,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -24843,8 +24856,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -24853,8 +24866,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -24863,8 +24876,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -24873,8 +24886,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -24883,8 +24896,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -24893,8 +24906,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -24903,8 +24916,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -24913,8 +24926,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -24923,8 +24936,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -24933,8 +24946,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -24943,8 +24956,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -24953,8 +24966,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -24963,17 +24976,17 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private boolean isCreated = false;
 
 	/**
-	 * Creates the meta-model objects for the package.  This method is
-	 * guarded to have no affect on any invocation but its first.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Creates the meta-model objects for the package. This method is guarded to
+	 * have no affect on any invocation but its first. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public void createPackageContents() {
@@ -25001,6 +25014,7 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 		createEReference(appBuilder_coreEClass, APP_BUILDER_CORE__STACKBUILDER_CORE);
 		createEAttribute(appBuilder_coreEClass, APP_BUILDER_CORE__PROJECT_NAME);
 		createEAttribute(appBuilder_coreEClass, APP_BUILDER_CORE__PACKAGE_NAME);
+		createEAttribute(appBuilder_coreEClass, APP_BUILDER_CORE__MAIN_CLASS_NAME);
 
 		defaultStackSynthesizerBuilder_coreEClass = createEClass(DEFAULT_STACK_SYNTHESIZER_BUILDER_CORE);
 		createEAttribute(defaultStackSynthesizerBuilder_coreEClass,
@@ -28975,17 +28989,17 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private boolean isInitialized = false;
 
 	/**
-	 * Complete the initialization of the package and its meta-model.  This
-	 * method is guarded to have no affect on any invocation but its first.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Complete the initialization of the package and its meta-model. This method is
+	 * guarded to have no affect on any invocation but its first. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public void initializePackageContents() {
@@ -29243,6 +29257,9 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 				AppBuilder_core.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
 				!IS_DERIVED, IS_ORDERED);
 		initEAttribute(getAppBuilder_core_PackageName(), ecorePackage.getEString(), "packageName", null, 0, 1,
+				AppBuilder_core.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+				!IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAppBuilder_core_MainClassName(), ecorePackage.getEString(), "mainClassName", null, 0, 1,
 				AppBuilder_core.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
 				!IS_DERIVED, IS_ORDERED);
 
@@ -34300,12 +34317,6 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 				KinesisFirehoseToAnalyticsAndS3Builder_kinesisfirehoses3kinesisanalytics.class,
 				"KinesisFirehoseToAnalyticsAndS3Builder_kinesisfirehoses3kinesisanalytics", !IS_ABSTRACT, !IS_INTERFACE,
 				IS_GENERATED_INSTANCE_CLASS);
-		initializePackageContents2();
-		
-	}
-	
-	public void initializePackageContents2()
-	{
 		initEAttribute(
 				getKinesisFirehoseToAnalyticsAndS3Builder_kinesisfirehoses3kinesisanalytics_BucketPropsWithBucketProps_software_amazon_awscdk_services_s3_BucketProps_AsReference(),
 				ecorePackage.getEString(),
@@ -35000,6 +35011,10 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 		initEAttribute(getRoleBuilder_iam_ExternalIds_java_lang_String_AsList(), ecorePackage.getEString(),
 				"externalIds_java_lang_String_AsList", null, 0, 1, RoleBuilder_iam.class, !IS_TRANSIENT, !IS_VOLATILE,
 				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initializeContents2();
+	}
+
+	public void initializeContents2() {
 		initEAttribute(
 				getRoleBuilder_iam_InlinePolicies_java_lang_String__software_amazon_awscdk_services_iam_PolicyDocument_AsMap(),
 				ecorePackage.getEString(),
@@ -38588,6 +38603,7 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 
 		// Create resource
 		createResource(eNS_URI);
+
 	}
 
-} //AwsworkbenchPackageImpl
+} // AwsworkbenchPackageImpl

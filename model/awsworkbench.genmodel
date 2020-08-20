@@ -404,6 +404,7 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference awsworkbench.ecore#//AppBuilder_core/stackbuilder_core"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AppBuilder_core/projectName"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AppBuilder_core/packageName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AppBuilder_core/mainClassName"/>
     </genClasses>
     <genClasses ecoreClass="awsworkbench.ecore#//DefaultStackSynthesizerBuilder_core">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//DefaultStackSynthesizerBuilder_core/assetPublishingExternalId_java_lang_String_"/>

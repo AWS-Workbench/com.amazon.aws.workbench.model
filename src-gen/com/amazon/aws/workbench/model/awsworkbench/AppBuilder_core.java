@@ -30,6 +30,7 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.AppBuilder_core#getStackbuilder_core <em>Stackbuilder core</em>}</li>
  *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.AppBuilder_core#getProjectName <em>Project Name</em>}</li>
  *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.AppBuilder_core#getPackageName <em>Package Name</em>}</li>
+ *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.AppBuilder_core#getMainClassName <em>Main Class Name</em>}</li>
  * </ul>
  *
  * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getAppBuilder_core()
@@ -326,5 +327,27 @@ public interface AppBuilder_core extends EObject {
 	 * @generated
 	 */
 	void setPackageName(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Main Class Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Main Class Name</em>' attribute.
+	 * @see #setMainClassName(String)
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getAppBuilder_core_MainClassName()
+	 * @model
+	 * @generated
+	 */
+	String getMainClassName();
+
+	/**
+	 * Sets the value of the '{@link com.amazon.aws.workbench.model.awsworkbench.AppBuilder_core#getMainClassName <em>Main Class Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Main Class Name</em>' attribute.
+	 * @see #getMainClassName()
+	 * @generated
+	 */
+	void setMainClassName(String value);
 
 } // AppBuilder_core

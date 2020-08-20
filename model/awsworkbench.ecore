@@ -3,7 +3,7 @@
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="awsworkbench" nsURI="http://www.amazon.com/awsworkbench" nsPrefix="awsworkbench">
   <eClassifiers xsi:type="ecore:EClass" name="ServiceResources" abstract="true">
     <eStructuralFeatures xsi:type="ecore:EReference" name="dependsON" upperBound="-1"
-        eType="#//ServiceResources" containment="false"/>
+        eType="#//ServiceResources"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="AppBuilder_core">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="autoSynth_java_lang_Boolean_"
@@ -31,6 +31,7 @@
         eType="#//StackBuilder_core" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="projectName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="packageName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="mainClassName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="DefaultStackSynthesizerBuilder_core">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="assetPublishingExternalId_java_lang_String_"

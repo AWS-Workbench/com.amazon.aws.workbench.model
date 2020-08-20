@@ -47,6 +47,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.AppBuilder_coreImpl#getStackbuilder_core <em>Stackbuilder core</em>}</li>
  *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.AppBuilder_coreImpl#getProjectName <em>Project Name</em>}</li>
  *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.AppBuilder_coreImpl#getPackageName <em>Package Name</em>}</li>
+ *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.AppBuilder_coreImpl#getMainClassName <em>Main Class Name</em>}</li>
  * </ul>
  *
  * @generated
@@ -321,6 +322,26 @@ public class AppBuilder_coreImpl extends MinimalEObjectImpl.Container implements
 	 * @ordered
 	 */
 	protected String packageName = PACKAGE_NAME_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getMainClassName() <em>Main Class Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getMainClassName()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String MAIN_CLASS_NAME_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getMainClassName() <em>Main Class Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getMainClassName()
+	 * @generated
+	 * @ordered
+	 */
+	protected String mainClassName = MAIN_CLASS_NAME_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -672,6 +693,30 @@ public class AppBuilder_coreImpl extends MinimalEObjectImpl.Container implements
 	 * @generated
 	 */
 	@Override
+	public String getMainClassName() {
+		return mainClassName;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setMainClassName(String newMainClassName) {
+		String oldMainClassName = mainClassName;
+		mainClassName = newMainClassName;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, AwsworkbenchPackage.APP_BUILDER_CORE__MAIN_CLASS_NAME,
+					oldMainClassName, mainClassName));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 		case AwsworkbenchPackage.APP_BUILDER_CORE__ENVIRONMENTBUILDER_CORE:
@@ -722,6 +767,8 @@ public class AppBuilder_coreImpl extends MinimalEObjectImpl.Container implements
 			return getProjectName();
 		case AwsworkbenchPackage.APP_BUILDER_CORE__PACKAGE_NAME:
 			return getPackageName();
+		case AwsworkbenchPackage.APP_BUILDER_CORE__MAIN_CLASS_NAME:
+			return getMainClassName();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -781,6 +828,9 @@ public class AppBuilder_coreImpl extends MinimalEObjectImpl.Container implements
 		case AwsworkbenchPackage.APP_BUILDER_CORE__PACKAGE_NAME:
 			setPackageName((String) newValue);
 			return;
+		case AwsworkbenchPackage.APP_BUILDER_CORE__MAIN_CLASS_NAME:
+			setMainClassName((String) newValue);
+			return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -836,6 +886,9 @@ public class AppBuilder_coreImpl extends MinimalEObjectImpl.Container implements
 		case AwsworkbenchPackage.APP_BUILDER_CORE__PACKAGE_NAME:
 			setPackageName(PACKAGE_NAME_EDEFAULT);
 			return;
+		case AwsworkbenchPackage.APP_BUILDER_CORE__MAIN_CLASS_NAME:
+			setMainClassName(MAIN_CLASS_NAME_EDEFAULT);
+			return;
 		}
 		super.eUnset(featureID);
 	}
@@ -888,6 +941,9 @@ public class AppBuilder_coreImpl extends MinimalEObjectImpl.Container implements
 			return PROJECT_NAME_EDEFAULT == null ? projectName != null : !PROJECT_NAME_EDEFAULT.equals(projectName);
 		case AwsworkbenchPackage.APP_BUILDER_CORE__PACKAGE_NAME:
 			return PACKAGE_NAME_EDEFAULT == null ? packageName != null : !PACKAGE_NAME_EDEFAULT.equals(packageName);
+		case AwsworkbenchPackage.APP_BUILDER_CORE__MAIN_CLASS_NAME:
+			return MAIN_CLASS_NAME_EDEFAULT == null ? mainClassName != null
+					: !MAIN_CLASS_NAME_EDEFAULT.equals(mainClassName);
 		}
 		return super.eIsSet(featureID);
 	}
@@ -927,6 +983,8 @@ public class AppBuilder_coreImpl extends MinimalEObjectImpl.Container implements
 		result.append(projectName);
 		result.append(", packageName: ");
 		result.append(packageName);
+		result.append(", mainClassName: ");
+		result.append(mainClassName);
 		result.append(')');
 		return result.toString();
 	}

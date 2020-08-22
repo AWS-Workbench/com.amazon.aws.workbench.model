@@ -3,6 +3,7 @@
 package com.amazon.aws.workbench.model.awsworkbench.impl;
 
 import com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage;
+import com.amazon.aws.workbench.model.awsworkbench.Block;
 import com.amazon.aws.workbench.model.awsworkbench.ServiceResources;
 import com.amazon.aws.workbench.model.awsworkbench.StackBuilder_core;
 
@@ -41,6 +42,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.StackBuilder_coreImpl#getIdentifier <em>Identifier</em>}</li>
  *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.StackBuilder_coreImpl#getAdditionalCode <em>Additional Code</em>}</li>
  *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.StackBuilder_coreImpl#getServiceresources <em>Serviceresources</em>}</li>
+ *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.StackBuilder_coreImpl#getStackblocks <em>Stackblocks</em>}</li>
  * </ul>
  *
  * @generated
@@ -255,6 +257,16 @@ public class StackBuilder_coreImpl extends MinimalEObjectImpl.Container implemen
 	 * @ordered
 	 */
 	protected EList<ServiceResources> serviceresources;
+
+	/**
+	 * The cached value of the '{@link #getStackblocks() <em>Stackblocks</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getStackblocks()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<Block> stackblocks;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -532,10 +544,26 @@ public class StackBuilder_coreImpl extends MinimalEObjectImpl.Container implemen
 	 * @generated
 	 */
 	@Override
+	public EList<Block> getStackblocks() {
+		if (stackblocks == null) {
+			stackblocks = new EObjectContainmentEList<Block>(Block.class, this,
+					AwsworkbenchPackage.STACK_BUILDER_CORE__STACKBLOCKS);
+		}
+		return stackblocks;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 		case AwsworkbenchPackage.STACK_BUILDER_CORE__SERVICERESOURCES:
 			return ((InternalEList<?>) getServiceresources()).basicRemove(otherEnd, msgs);
+		case AwsworkbenchPackage.STACK_BUILDER_CORE__STACKBLOCKS:
+			return ((InternalEList<?>) getStackblocks()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -570,6 +598,8 @@ public class StackBuilder_coreImpl extends MinimalEObjectImpl.Container implemen
 			return getAdditionalCode();
 		case AwsworkbenchPackage.STACK_BUILDER_CORE__SERVICERESOURCES:
 			return getServiceresources();
+		case AwsworkbenchPackage.STACK_BUILDER_CORE__STACKBLOCKS:
+			return getStackblocks();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -615,6 +645,10 @@ public class StackBuilder_coreImpl extends MinimalEObjectImpl.Container implemen
 			getServiceresources().clear();
 			getServiceresources().addAll((Collection<? extends ServiceResources>) newValue);
 			return;
+		case AwsworkbenchPackage.STACK_BUILDER_CORE__STACKBLOCKS:
+			getStackblocks().clear();
+			getStackblocks().addAll((Collection<? extends Block>) newValue);
+			return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -658,6 +692,9 @@ public class StackBuilder_coreImpl extends MinimalEObjectImpl.Container implemen
 			return;
 		case AwsworkbenchPackage.STACK_BUILDER_CORE__SERVICERESOURCES:
 			getServiceresources().clear();
+			return;
+		case AwsworkbenchPackage.STACK_BUILDER_CORE__STACKBLOCKS:
+			getStackblocks().clear();
 			return;
 		}
 		super.eUnset(featureID);
@@ -709,6 +746,8 @@ public class StackBuilder_coreImpl extends MinimalEObjectImpl.Container implemen
 					: !ADDITIONAL_CODE_EDEFAULT.equals(additionalCode);
 		case AwsworkbenchPackage.STACK_BUILDER_CORE__SERVICERESOURCES:
 			return serviceresources != null && !serviceresources.isEmpty();
+		case AwsworkbenchPackage.STACK_BUILDER_CORE__STACKBLOCKS:
+			return stackblocks != null && !stackblocks.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}

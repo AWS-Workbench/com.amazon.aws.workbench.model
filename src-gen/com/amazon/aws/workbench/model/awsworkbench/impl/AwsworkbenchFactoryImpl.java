@@ -421,6 +421,8 @@ public class AwsworkbenchFactoryImpl extends EFactoryImpl implements Awsworkbenc
 			return createScheduledFargateTaskImageOptionsBuilder_patterns();
 		case AwsworkbenchPackage.SCHEDULED_FARGATE_TASK_BUILDER_PATTERNS:
 			return createScheduledFargateTaskBuilder_patterns();
+		case AwsworkbenchPackage.BLOCK:
+			return createBlock();
 		default:
 			throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -2696,6 +2698,17 @@ public class AwsworkbenchFactoryImpl extends EFactoryImpl implements Awsworkbenc
 	public ScheduledFargateTaskBuilder_patterns createScheduledFargateTaskBuilder_patterns() {
 		ScheduledFargateTaskBuilder_patternsImpl scheduledFargateTaskBuilder_patterns = new ScheduledFargateTaskBuilder_patternsImpl();
 		return scheduledFargateTaskBuilder_patterns;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Block createBlock() {
+		BlockImpl block = new BlockImpl();
+		return block;
 	}
 
 	/**

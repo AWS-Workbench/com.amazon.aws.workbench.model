@@ -1660,6 +1660,15 @@ public interface AwsworkbenchFactory extends EFactory {
 	ScheduledFargateTaskBuilder_patterns createScheduledFargateTaskBuilder_patterns();
 
 	/**
+	 * Returns a new object of class '<em>Block</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Block</em>'.
+	 * @generated
+	 */
+	Block createBlock();
+
+	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

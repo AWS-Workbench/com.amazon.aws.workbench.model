@@ -678,13 +678,22 @@ public interface AwsworkbenchPackage extends EPackage {
 	int STACK_BUILDER_CORE__SERVICERESOURCES = 10;
 
 	/**
+	 * The feature id for the '<em><b>Stackblocks</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STACK_BUILDER_CORE__STACKBLOCKS = 11;
+
+	/**
 	 * The number of structural features of the '<em>Stack Builder core</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int STACK_BUILDER_CORE_FEATURE_COUNT = 11;
+	int STACK_BUILDER_CORE_FEATURE_COUNT = 12;
 
 	/**
 	 * The number of operations of the '<em>Stack Builder core</em>' class.
@@ -26090,6 +26099,88 @@ public interface AwsworkbenchPackage extends EPackage {
 	int SCHEDULED_FARGATE_TASK_BUILDER_PATTERNS_OPERATION_COUNT = SERVICE_RESOURCES_OPERATION_COUNT + 0;
 
 	/**
+	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.BlockImpl <em>Block</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.BlockImpl
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getBlock()
+	 * @generated
+	 */
+	int BLOCK = 183;
+
+	/**
+	 * The feature id for the '<em><b>Label</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BLOCK__LABEL = 0;
+
+	/**
+	 * The feature id for the '<em><b>Description</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BLOCK__DESCRIPTION = 1;
+
+	/**
+	 * The feature id for the '<em><b>Notes</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BLOCK__NOTES = 2;
+
+	/**
+	 * The feature id for the '<em><b>Is Draft</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BLOCK__IS_DRAFT = 3;
+
+	/**
+	 * The feature id for the '<em><b>Blockresources</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BLOCK__BLOCKRESOURCES = 4;
+
+	/**
+	 * The feature id for the '<em><b>Subblocks</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BLOCK__SUBBLOCKS = 5;
+
+	/**
+	 * The number of structural features of the '<em>Block</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BLOCK_FEATURE_COUNT = 6;
+
+	/**
+	 * The number of operations of the '<em>Block</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BLOCK_OPERATION_COUNT = 0;
+
+	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.FlowLogTrafficType <em>Flow Log Traffic Type</em>}' enum.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -26097,7 +26188,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getFlowLogTrafficType()
 	 * @generated
 	 */
-	int FLOW_LOG_TRAFFIC_TYPE = 183;
+	int FLOW_LOG_TRAFFIC_TYPE = 184;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.DefaultInstanceTenancy <em>Default Instance Tenancy</em>}' enum.
@@ -26107,7 +26198,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getDefaultInstanceTenancy()
 	 * @generated
 	 */
-	int DEFAULT_INSTANCE_TENANCY = 184;
+	int DEFAULT_INSTANCE_TENANCY = 185;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.SubnetType <em>Subnet Type</em>}' enum.
@@ -26117,7 +26208,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getSubnetType()
 	 * @generated
 	 */
-	int SUBNET_TYPE = 185;
+	int SUBNET_TYPE = 186;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.ApiKeySourceType <em>Api Key Source Type</em>}' enum.
@@ -26127,7 +26218,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getApiKeySourceType()
 	 * @generated
 	 */
-	int API_KEY_SOURCE_TYPE = 186;
+	int API_KEY_SOURCE_TYPE = 187;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.EndpointType <em>Endpoint Type</em>}' enum.
@@ -26137,7 +26228,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getEndpointType()
 	 * @generated
 	 */
-	int ENDPOINT_TYPE = 187;
+	int ENDPOINT_TYPE = 188;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.MethodLoggingLevel <em>Method Logging Level</em>}' enum.
@@ -26147,7 +26238,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getMethodLoggingLevel()
 	 * @generated
 	 */
-	int METHOD_LOGGING_LEVEL = 188;
+	int METHOD_LOGGING_LEVEL = 189;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.ValidationMethod <em>Validation Method</em>}' enum.
@@ -26157,7 +26248,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getValidationMethod()
 	 * @generated
 	 */
-	int VALIDATION_METHOD = 189;
+	int VALIDATION_METHOD = 190;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.SecurityPolicy <em>Security Policy</em>}' enum.
@@ -26167,7 +26258,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getSecurityPolicy()
 	 * @generated
 	 */
-	int SECURITY_POLICY = 190;
+	int SECURITY_POLICY = 191;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.IntegrationType <em>Integration Type</em>}' enum.
@@ -26177,7 +26268,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getIntegrationType()
 	 * @generated
 	 */
-	int INTEGRATION_TYPE = 191;
+	int INTEGRATION_TYPE = 192;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.ContentHandling <em>Content Handling</em>}' enum.
@@ -26187,7 +26278,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getContentHandling()
 	 * @generated
 	 */
-	int CONTENT_HANDLING = 192;
+	int CONTENT_HANDLING = 193;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.ConnectionType <em>Connection Type</em>}' enum.
@@ -26197,7 +26288,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getConnectionType()
 	 * @generated
 	 */
-	int CONNECTION_TYPE = 193;
+	int CONNECTION_TYPE = 194;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.PassthroughBehavior <em>Passthrough Behavior</em>}' enum.
@@ -26207,7 +26298,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getPassthroughBehavior()
 	 * @generated
 	 */
-	int PASSTHROUGH_BEHAVIOR = 194;
+	int PASSTHROUGH_BEHAVIOR = 195;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.QueueEncryption <em>Queue Encryption</em>}' enum.
@@ -26217,7 +26308,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getQueueEncryption()
 	 * @generated
 	 */
-	int QUEUE_ENCRYPTION = 195;
+	int QUEUE_ENCRYPTION = 196;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.RetentionDays <em>Retention Days</em>}' enum.
@@ -26227,7 +26318,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getRetentionDays()
 	 * @generated
 	 */
-	int RETENTION_DAYS = 196;
+	int RETENTION_DAYS = 197;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.Tracing <em>Tracing</em>}' enum.
@@ -26237,7 +26328,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getTracing()
 	 * @generated
 	 */
-	int TRACING = 197;
+	int TRACING = 198;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.AuthorizationType <em>Authorization Type</em>}' enum.
@@ -26247,7 +26338,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getAuthorizationType()
 	 * @generated
 	 */
-	int AUTHORIZATION_TYPE = 198;
+	int AUTHORIZATION_TYPE = 199;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.JsonSchemaVersion <em>Json Schema Version</em>}' enum.
@@ -26257,7 +26348,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getJsonSchemaVersion()
 	 * @generated
 	 */
-	int JSON_SCHEMA_VERSION = 199;
+	int JSON_SCHEMA_VERSION = 200;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.JsonSchemaType <em>Json Schema Type</em>}' enum.
@@ -26267,7 +26358,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getJsonSchemaType()
 	 * @generated
 	 */
-	int JSON_SCHEMA_TYPE = 200;
+	int JSON_SCHEMA_TYPE = 201;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.CloudFrontAllowedCachedMethods <em>Cloud Front Allowed Cached Methods</em>}' enum.
@@ -26277,7 +26368,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getCloudFrontAllowedCachedMethods()
 	 * @generated
 	 */
-	int CLOUD_FRONT_ALLOWED_CACHED_METHODS = 201;
+	int CLOUD_FRONT_ALLOWED_CACHED_METHODS = 202;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.CloudFrontAllowedMethods <em>Cloud Front Allowed Methods</em>}' enum.
@@ -26287,7 +26378,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getCloudFrontAllowedMethods()
 	 * @generated
 	 */
-	int CLOUD_FRONT_ALLOWED_METHODS = 202;
+	int CLOUD_FRONT_ALLOWED_METHODS = 203;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.LambdaEdgeEventType <em>Lambda Edge Event Type</em>}' enum.
@@ -26297,7 +26388,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getLambdaEdgeEventType()
 	 * @generated
 	 */
-	int LAMBDA_EDGE_EVENT_TYPE = 203;
+	int LAMBDA_EDGE_EVENT_TYPE = 204;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.OriginSslPolicy <em>Origin Ssl Policy</em>}' enum.
@@ -26307,7 +26398,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getOriginSslPolicy()
 	 * @generated
 	 */
-	int ORIGIN_SSL_POLICY = 204;
+	int ORIGIN_SSL_POLICY = 205;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.OriginProtocolPolicy <em>Origin Protocol Policy</em>}' enum.
@@ -26317,7 +26408,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getOriginProtocolPolicy()
 	 * @generated
 	 */
-	int ORIGIN_PROTOCOL_POLICY = 205;
+	int ORIGIN_PROTOCOL_POLICY = 206;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.BucketAccessControl <em>Bucket Access Control</em>}' enum.
@@ -26327,7 +26418,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getBucketAccessControl()
 	 * @generated
 	 */
-	int BUCKET_ACCESS_CONTROL = 206;
+	int BUCKET_ACCESS_CONTROL = 207;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.HttpMethods <em>Http Methods</em>}' enum.
@@ -26337,7 +26428,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getHttpMethods()
 	 * @generated
 	 */
-	int HTTP_METHODS = 207;
+	int HTTP_METHODS = 208;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.BucketEncryption <em>Bucket Encryption</em>}' enum.
@@ -26347,7 +26438,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getBucketEncryption()
 	 * @generated
 	 */
-	int BUCKET_ENCRYPTION = 208;
+	int BUCKET_ENCRYPTION = 209;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.RedirectProtocol <em>Redirect Protocol</em>}' enum.
@@ -26357,7 +26448,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getRedirectProtocol()
 	 * @generated
 	 */
-	int REDIRECT_PROTOCOL = 209;
+	int REDIRECT_PROTOCOL = 210;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.HttpVersion <em>Http Version</em>}' enum.
@@ -26367,7 +26458,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getHttpVersion()
 	 * @generated
 	 */
-	int HTTP_VERSION = 210;
+	int HTTP_VERSION = 211;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.PriceClass <em>Price Class</em>}' enum.
@@ -26377,7 +26468,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getPriceClass()
 	 * @generated
 	 */
-	int PRICE_CLASS = 211;
+	int PRICE_CLASS = 212;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.ViewerProtocolPolicy <em>Viewer Protocol Policy</em>}' enum.
@@ -26387,7 +26478,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getViewerProtocolPolicy()
 	 * @generated
 	 */
-	int VIEWER_PROTOCOL_POLICY = 212;
+	int VIEWER_PROTOCOL_POLICY = 213;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.SecurityPolicyProtocol <em>Security Policy Protocol</em>}' enum.
@@ -26397,7 +26488,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getSecurityPolicyProtocol()
 	 * @generated
 	 */
-	int SECURITY_POLICY_PROTOCOL = 213;
+	int SECURITY_POLICY_PROTOCOL = 214;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.SSLMethod <em>SSL Method</em>}' enum.
@@ -26407,7 +26498,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getSSLMethod()
 	 * @generated
 	 */
-	int SSL_METHOD = 214;
+	int SSL_METHOD = 215;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.Mfa <em>Mfa</em>}' enum.
@@ -26417,7 +26508,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getMfa()
 	 * @generated
 	 */
-	int MFA = 215;
+	int MFA = 216;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.VerificationEmailStyle <em>Verification Email Style</em>}' enum.
@@ -26427,7 +26518,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getVerificationEmailStyle()
 	 * @generated
 	 */
-	int VERIFICATION_EMAIL_STYLE = 216;
+	int VERIFICATION_EMAIL_STYLE = 217;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.StateMachineType <em>State Machine Type</em>}' enum.
@@ -26437,7 +26528,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getStateMachineType()
 	 * @generated
 	 */
-	int STATE_MACHINE_TYPE = 217;
+	int STATE_MACHINE_TYPE = 218;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.Effect <em>Effect</em>}' enum.
@@ -26447,7 +26538,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getEffect()
 	 * @generated
 	 */
-	int EFFECT = 218;
+	int EFFECT = 219;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.AttributeType <em>Attribute Type</em>}' enum.
@@ -26457,7 +26548,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getAttributeType()
 	 * @generated
 	 */
-	int ATTRIBUTE_TYPE = 219;
+	int ATTRIBUTE_TYPE = 220;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.StreamViewType <em>Stream View Type</em>}' enum.
@@ -26467,7 +26558,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getStreamViewType()
 	 * @generated
 	 */
-	int STREAM_VIEW_TYPE = 220;
+	int STREAM_VIEW_TYPE = 221;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.RemovalPolicy <em>Removal Policy</em>}' enum.
@@ -26477,7 +26568,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getRemovalPolicy()
 	 * @generated
 	 */
-	int REMOVAL_POLICY = 221;
+	int REMOVAL_POLICY = 222;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.TableEncryption <em>Table Encryption</em>}' enum.
@@ -26487,7 +26578,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getTableEncryption()
 	 * @generated
 	 */
-	int TABLE_ENCRYPTION = 222;
+	int TABLE_ENCRYPTION = 223;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.BillingMode <em>Billing Mode</em>}' enum.
@@ -26497,7 +26588,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getBillingMode()
 	 * @generated
 	 */
-	int BILLING_MODE = 223;
+	int BILLING_MODE = 224;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.DnsRecordType <em>Dns Record Type</em>}' enum.
@@ -26507,7 +26598,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getDnsRecordType()
 	 * @generated
 	 */
-	int DNS_RECORD_TYPE = 224;
+	int DNS_RECORD_TYPE = 225;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.InstanceClass <em>Instance Class</em>}' enum.
@@ -26517,7 +26608,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getInstanceClass()
 	 * @generated
 	 */
-	int INSTANCE_CLASS = 225;
+	int INSTANCE_CLASS = 226;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.InstanceSize <em>Instance Size</em>}' enum.
@@ -26527,7 +26618,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getInstanceSize()
 	 * @generated
 	 */
-	int INSTANCE_SIZE = 226;
+	int INSTANCE_SIZE = 227;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.AmazonLinuxEdition <em>Amazon Linux Edition</em>}' enum.
@@ -26537,7 +26628,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getAmazonLinuxEdition()
 	 * @generated
 	 */
-	int AMAZON_LINUX_EDITION = 227;
+	int AMAZON_LINUX_EDITION = 228;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.AmazonLinuxGeneration <em>Amazon Linux Generation</em>}' enum.
@@ -26547,7 +26638,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getAmazonLinuxGeneration()
 	 * @generated
 	 */
-	int AMAZON_LINUX_GENERATION = 228;
+	int AMAZON_LINUX_GENERATION = 229;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.AmazonLinuxStorage <em>Amazon Linux Storage</em>}' enum.
@@ -26557,7 +26648,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getAmazonLinuxStorage()
 	 * @generated
 	 */
-	int AMAZON_LINUX_STORAGE = 229;
+	int AMAZON_LINUX_STORAGE = 230;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.AmazonLinuxVirt <em>Amazon Linux Virt</em>}' enum.
@@ -26567,7 +26658,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getAmazonLinuxVirt()
 	 * @generated
 	 */
-	int AMAZON_LINUX_VIRT = 230;
+	int AMAZON_LINUX_VIRT = 231;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.ScalingProcess <em>Scaling Process</em>}' enum.
@@ -26577,7 +26668,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getScalingProcess()
 	 * @generated
 	 */
-	int SCALING_PROCESS = 231;
+	int SCALING_PROCESS = 232;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.UpdateType <em>Update Type</em>}' enum.
@@ -26587,7 +26678,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getUpdateType()
 	 * @generated
 	 */
-	int UPDATE_TYPE = 232;
+	int UPDATE_TYPE = 233;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.NamespaceType <em>Namespace Type</em>}' enum.
@@ -26597,7 +26688,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getNamespaceType()
 	 * @generated
 	 */
-	int NAMESPACE_TYPE = 233;
+	int NAMESPACE_TYPE = 234;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.IpAddressType <em>Ip Address Type</em>}' enum.
@@ -26607,7 +26698,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getIpAddressType()
 	 * @generated
 	 */
-	int IP_ADDRESS_TYPE = 234;
+	int IP_ADDRESS_TYPE = 235;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.PropagatedTagSource <em>Propagated Tag Source</em>}' enum.
@@ -26617,7 +26708,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getPropagatedTagSource()
 	 * @generated
 	 */
-	int PROPAGATED_TAG_SOURCE = 235;
+	int PROPAGATED_TAG_SOURCE = 236;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.ApplicationProtocol <em>Application Protocol</em>}' enum.
@@ -26627,7 +26718,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getApplicationProtocol()
 	 * @generated
 	 */
-	int APPLICATION_PROTOCOL = 236;
+	int APPLICATION_PROTOCOL = 237;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.FollowMode <em>Follow Mode</em>}' enum.
@@ -26637,7 +26728,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getFollowMode()
 	 * @generated
 	 */
-	int FOLLOW_MODE = 237;
+	int FOLLOW_MODE = 238;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.Scope <em>Scope</em>}' enum.
@@ -26647,7 +26738,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getScope()
 	 * @generated
 	 */
-	int SCOPE = 238;
+	int SCOPE = 239;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.NetworkMode <em>Network Mode</em>}' enum.
@@ -26657,7 +26748,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getNetworkMode()
 	 * @generated
 	 */
-	int NETWORK_MODE = 239;
+	int NETWORK_MODE = 240;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.IpcMode <em>Ipc Mode</em>}' enum.
@@ -26667,7 +26758,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getIpcMode()
 	 * @generated
 	 */
-	int IPC_MODE = 240;
+	int IPC_MODE = 241;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.PidMode <em>Pid Mode</em>}' enum.
@@ -26677,7 +26768,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getPidMode()
 	 * @generated
 	 */
-	int PID_MODE = 241;
+	int PID_MODE = 242;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.FargatePlatformVersion <em>Fargate Platform Version</em>}' enum.
@@ -26687,7 +26778,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getFargatePlatformVersion()
 	 * @generated
 	 */
-	int FARGATE_PLATFORM_VERSION = 242;
+	int FARGATE_PLATFORM_VERSION = 243;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.Protocol <em>Protocol</em>}' enum.
@@ -26697,7 +26788,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getProtocol()
 	 * @generated
 	 */
-	int PROTOCOL = 243;
+	int PROTOCOL = 244;
 
 	/**
 	 * Returns the meta object for class '{@link com.amazon.aws.workbench.model.awsworkbench.ServiceResources <em>Service Resources</em>}'.
@@ -27319,6 +27410,17 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getStackBuilder_core_Serviceresources();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link com.amazon.aws.workbench.model.awsworkbench.StackBuilder_core#getStackblocks <em>Stackblocks</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Stackblocks</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.StackBuilder_core#getStackblocks()
+	 * @see #getStackBuilder_core()
+	 * @generated
+	 */
+	EReference getStackBuilder_core_Stackblocks();
 
 	/**
 	 * Returns the meta object for class '{@link com.amazon.aws.workbench.model.awsworkbench.VpcBuilder_ec2 <em>Vpc Builder ec2</em>}'.
@@ -50893,6 +50995,82 @@ public interface AwsworkbenchPackage extends EPackage {
 	EAttribute getScheduledFargateTaskBuilder_patterns_AdditionalCode();
 
 	/**
+	 * Returns the meta object for class '{@link com.amazon.aws.workbench.model.awsworkbench.Block <em>Block</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Block</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.Block
+	 * @generated
+	 */
+	EClass getBlock();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.Block#getLabel <em>Label</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Label</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.Block#getLabel()
+	 * @see #getBlock()
+	 * @generated
+	 */
+	EAttribute getBlock_Label();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.Block#getDescription <em>Description</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Description</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.Block#getDescription()
+	 * @see #getBlock()
+	 * @generated
+	 */
+	EAttribute getBlock_Description();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.Block#getNotes <em>Notes</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Notes</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.Block#getNotes()
+	 * @see #getBlock()
+	 * @generated
+	 */
+	EAttribute getBlock_Notes();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.Block#isIsDraft <em>Is Draft</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Is Draft</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.Block#isIsDraft()
+	 * @see #getBlock()
+	 * @generated
+	 */
+	EAttribute getBlock_IsDraft();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link com.amazon.aws.workbench.model.awsworkbench.Block#getBlockresources <em>Blockresources</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Blockresources</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.Block#getBlockresources()
+	 * @see #getBlock()
+	 * @generated
+	 */
+	EReference getBlock_Blockresources();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link com.amazon.aws.workbench.model.awsworkbench.Block#getSubblocks <em>Subblocks</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Subblocks</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.Block#getSubblocks()
+	 * @see #getBlock()
+	 * @generated
+	 */
+	EReference getBlock_Subblocks();
+
+	/**
 	 * Returns the meta object for enum '{@link com.amazon.aws.workbench.model.awsworkbench.FlowLogTrafficType <em>Flow Log Traffic Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -52022,6 +52200,14 @@ public interface AwsworkbenchPackage extends EPackage {
 		 * @generated
 		 */
 		EReference STACK_BUILDER_CORE__SERVICERESOURCES = eINSTANCE.getStackBuilder_core_Serviceresources();
+
+		/**
+		 * The meta object literal for the '<em><b>Stackblocks</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference STACK_BUILDER_CORE__STACKBLOCKS = eINSTANCE.getStackBuilder_core_Stackblocks();
 
 		/**
 		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.VpcBuilder_ec2Impl <em>Vpc Builder ec2</em>}' class.
@@ -71467,6 +71653,64 @@ public interface AwsworkbenchPackage extends EPackage {
 		 */
 		EAttribute SCHEDULED_FARGATE_TASK_BUILDER_PATTERNS__ADDITIONAL_CODE = eINSTANCE
 				.getScheduledFargateTaskBuilder_patterns_AdditionalCode();
+
+		/**
+		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.BlockImpl <em>Block</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.BlockImpl
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getBlock()
+		 * @generated
+		 */
+		EClass BLOCK = eINSTANCE.getBlock();
+
+		/**
+		 * The meta object literal for the '<em><b>Label</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BLOCK__LABEL = eINSTANCE.getBlock_Label();
+
+		/**
+		 * The meta object literal for the '<em><b>Description</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BLOCK__DESCRIPTION = eINSTANCE.getBlock_Description();
+
+		/**
+		 * The meta object literal for the '<em><b>Notes</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BLOCK__NOTES = eINSTANCE.getBlock_Notes();
+
+		/**
+		 * The meta object literal for the '<em><b>Is Draft</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BLOCK__IS_DRAFT = eINSTANCE.getBlock_IsDraft();
+
+		/**
+		 * The meta object literal for the '<em><b>Blockresources</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference BLOCK__BLOCKRESOURCES = eINSTANCE.getBlock_Blockresources();
+
+		/**
+		 * The meta object literal for the '<em><b>Subblocks</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference BLOCK__SUBBLOCKS = eINSTANCE.getBlock_Subblocks();
 
 		/**
 		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.FlowLogTrafficType <em>Flow Log Traffic Type</em>}' enum.

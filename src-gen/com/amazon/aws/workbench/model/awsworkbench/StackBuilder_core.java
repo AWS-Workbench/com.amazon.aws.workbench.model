@@ -26,6 +26,7 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.StackBuilder_core#getIdentifier <em>Identifier</em>}</li>
  *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.StackBuilder_core#getAdditionalCode <em>Additional Code</em>}</li>
  *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.StackBuilder_core#getServiceresources <em>Serviceresources</em>}</li>
+ *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.StackBuilder_core#getStackblocks <em>Stackblocks</em>}</li>
  * </ul>
  *
  * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getStackBuilder_core()
@@ -254,5 +255,17 @@ public interface StackBuilder_core extends EObject {
 	 * @generated
 	 */
 	EList<ServiceResources> getServiceresources();
+
+	/**
+	 * Returns the value of the '<em><b>Stackblocks</b></em>' containment reference list.
+	 * The list contents are of type {@link com.amazon.aws.workbench.model.awsworkbench.Block}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Stackblocks</em>' containment reference list.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getStackBuilder_core_Stackblocks()
+	 * @model containment="true"
+	 * @generated
+	 */
+	EList<Block> getStackblocks();
 
 } // StackBuilder_core

@@ -39,6 +39,7 @@ import com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchFactory;
 import com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage;
 import com.amazon.aws.workbench.model.awsworkbench.BehaviorBuilder_cloudfront;
 import com.amazon.aws.workbench.model.awsworkbench.BillingMode;
+import com.amazon.aws.workbench.model.awsworkbench.Block;
 import com.amazon.aws.workbench.model.awsworkbench.BlockDeviceBuilder_autoscaling;
 import com.amazon.aws.workbench.model.awsworkbench.BlockPublicAccessBuilder_s3;
 import com.amazon.aws.workbench.model.awsworkbench.BucketAccessControl;
@@ -1550,6 +1551,13 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	 * 
 	 * @generated
 	 */
+	private EClass blockEClass = null;
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
 	private EEnum flowLogTrafficTypeEEnum = null;
 
 	/**
@@ -2607,6 +2615,16 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	@Override
 	public EReference getStackBuilder_core_Serviceresources() {
 		return (EReference) stackBuilder_coreEClass.getEStructuralFeatures().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EReference getStackBuilder_core_Stackblocks() {
+		return (EReference) stackBuilder_coreEClass.getEStructuralFeatures().get(11);
 	}
 
 	/**
@@ -24361,6 +24379,76 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	 * @generated
 	 */
 	@Override
+	public EClass getBlock() {
+		return blockEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getBlock_Label() {
+		return (EAttribute) blockEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getBlock_Description() {
+		return (EAttribute) blockEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getBlock_Notes() {
+		return (EAttribute) blockEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getBlock_IsDraft() {
+		return (EAttribute) blockEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EReference getBlock_Blockresources() {
+		return (EReference) blockEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EReference getBlock_Subblocks() {
+		return (EReference) blockEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
 	public EEnum getFlowLogTrafficType() {
 		return flowLogTrafficTypeEEnum;
 	}
@@ -25070,6 +25158,7 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 		createEAttribute(stackBuilder_coreEClass, STACK_BUILDER_CORE__IDENTIFIER);
 		createEAttribute(stackBuilder_coreEClass, STACK_BUILDER_CORE__ADDITIONAL_CODE);
 		createEReference(stackBuilder_coreEClass, STACK_BUILDER_CORE__SERVICERESOURCES);
+		createEReference(stackBuilder_coreEClass, STACK_BUILDER_CORE__STACKBLOCKS);
 
 		vpcBuilder_ec2EClass = createEClass(VPC_BUILDER_EC2);
 		createEAttribute(vpcBuilder_ec2EClass, VPC_BUILDER_EC2__CIDR_JAVA_LANG_STRING_);
@@ -28924,6 +29013,14 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 		createEAttribute(scheduledFargateTaskBuilder_patternsEClass,
 				SCHEDULED_FARGATE_TASK_BUILDER_PATTERNS__ADDITIONAL_CODE);
 
+		blockEClass = createEClass(BLOCK);
+		createEAttribute(blockEClass, BLOCK__LABEL);
+		createEAttribute(blockEClass, BLOCK__DESCRIPTION);
+		createEAttribute(blockEClass, BLOCK__NOTES);
+		createEAttribute(blockEClass, BLOCK__IS_DRAFT);
+		createEReference(blockEClass, BLOCK__BLOCKRESOURCES);
+		createEReference(blockEClass, BLOCK__SUBBLOCKS);
+
 		// Create enums
 		flowLogTrafficTypeEEnum = createEEnum(FLOW_LOG_TRAFFIC_TYPE);
 		defaultInstanceTenancyEEnum = createEEnum(DEFAULT_INSTANCE_TENANCY);
@@ -29394,6 +29491,9 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 		initEReference(getStackBuilder_core_Serviceresources(), this.getServiceResources(), null, "serviceresources",
 				null, 0, -1, StackBuilder_core.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE,
 				!IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getStackBuilder_core_Stackblocks(), this.getBlock(), null, "stackblocks", null, 0, -1,
+				StackBuilder_core.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES,
+				!IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(vpcBuilder_ec2EClass, VpcBuilder_ec2.class, "VpcBuilder_ec2", !IS_ABSTRACT, !IS_INTERFACE,
 				IS_GENERATED_INSTANCE_CLASS);
@@ -33926,6 +34026,11 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 				ecorePackage.getEString(), "detail_java_lang_String__java_lang_Object_AsMap", null, 0, 1,
 				EventPatternBuilder_events.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
 				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initializeContents2();
+	}
+
+	public void initializeContents2() {
 		initEAttribute(getEventPatternBuilder_events_DetailType_java_lang_String_AsList(), ecorePackage.getEString(),
 				"detailType_java_lang_String_AsList", null, 0, 1, EventPatternBuilder_events.class, !IS_TRANSIENT,
 				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -35011,10 +35116,6 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 		initEAttribute(getRoleBuilder_iam_ExternalIds_java_lang_String_AsList(), ecorePackage.getEString(),
 				"externalIds_java_lang_String_AsList", null, 0, 1, RoleBuilder_iam.class, !IS_TRANSIENT, !IS_VOLATILE,
 				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initializeContents2();
-	}
-
-	public void initializeContents2() {
 		initEAttribute(
 				getRoleBuilder_iam_InlinePolicies_java_lang_String__software_amazon_awscdk_services_iam_PolicyDocument_AsMap(),
 				ecorePackage.getEString(),
@@ -38224,6 +38325,22 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 				"additionalCode", null, 0, 1, ScheduledFargateTaskBuilder_patterns.class, !IS_TRANSIENT, !IS_VOLATILE,
 				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
+		initEClass(blockEClass, Block.class, "Block", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getBlock_Label(), ecorePackage.getEString(), "label", null, 0, 1, Block.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getBlock_Description(), ecorePackage.getEString(), "description", null, 0, 1, Block.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getBlock_Notes(), ecorePackage.getEString(), "notes", null, 0, 1, Block.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getBlock_IsDraft(), ecorePackage.getEBoolean(), "isDraft", null, 0, 1, Block.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getBlock_Blockresources(), this.getServiceResources(), null, "blockresources", null, 0, -1,
+				Block.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES,
+				!IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getBlock_Subblocks(), this.getBlock(), null, "subblocks", null, 0, -1, Block.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
 		// Initialize enums and add enum literals
 		initEEnum(flowLogTrafficTypeEEnum, FlowLogTrafficType.class, "FlowLogTrafficType");
 		addEEnumLiteral(flowLogTrafficTypeEEnum, FlowLogTrafficType.ACCEPT);
@@ -38605,5 +38722,4 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 		createResource(eNS_URI);
 
 	}
-
 } // AwsworkbenchPackageImpl

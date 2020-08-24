@@ -4,7 +4,6 @@ package com.amazon.aws.workbench.model.awsworkbench.impl;
 
 import com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage;
 import com.amazon.aws.workbench.model.awsworkbench.Block;
-import com.amazon.aws.workbench.model.awsworkbench.ServiceResources;
 import com.amazon.aws.workbench.model.awsworkbench.StackBuilder_core;
 
 import java.util.Collection;
@@ -41,7 +40,6 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.StackBuilder_coreImpl#getVarName <em>Var Name</em>}</li>
  *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.StackBuilder_coreImpl#getIdentifier <em>Identifier</em>}</li>
  *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.StackBuilder_coreImpl#getAdditionalCode <em>Additional Code</em>}</li>
- *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.StackBuilder_coreImpl#getServiceresources <em>Serviceresources</em>}</li>
  *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.StackBuilder_coreImpl#getStackblocks <em>Stackblocks</em>}</li>
  * </ul>
  *
@@ -247,16 +245,6 @@ public class StackBuilder_coreImpl extends MinimalEObjectImpl.Container implemen
 	 * @ordered
 	 */
 	protected String additionalCode = ADDITIONAL_CODE_EDEFAULT;
-
-	/**
-	 * The cached value of the '{@link #getServiceresources() <em>Serviceresources</em>}' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getServiceresources()
-	 * @generated
-	 * @ordered
-	 */
-	protected EList<ServiceResources> serviceresources;
 
 	/**
 	 * The cached value of the '{@link #getStackblocks() <em>Stackblocks</em>}' containment reference list.
@@ -530,20 +518,6 @@ public class StackBuilder_coreImpl extends MinimalEObjectImpl.Container implemen
 	 * @generated
 	 */
 	@Override
-	public EList<ServiceResources> getServiceresources() {
-		if (serviceresources == null) {
-			serviceresources = new EObjectContainmentEList<ServiceResources>(ServiceResources.class, this,
-					AwsworkbenchPackage.STACK_BUILDER_CORE__SERVICERESOURCES);
-		}
-		return serviceresources;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EList<Block> getStackblocks() {
 		if (stackblocks == null) {
 			stackblocks = new EObjectContainmentEList<Block>(Block.class, this,
@@ -560,8 +534,6 @@ public class StackBuilder_coreImpl extends MinimalEObjectImpl.Container implemen
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-		case AwsworkbenchPackage.STACK_BUILDER_CORE__SERVICERESOURCES:
-			return ((InternalEList<?>) getServiceresources()).basicRemove(otherEnd, msgs);
 		case AwsworkbenchPackage.STACK_BUILDER_CORE__STACKBLOCKS:
 			return ((InternalEList<?>) getStackblocks()).basicRemove(otherEnd, msgs);
 		}
@@ -596,8 +568,6 @@ public class StackBuilder_coreImpl extends MinimalEObjectImpl.Container implemen
 			return getIdentifier();
 		case AwsworkbenchPackage.STACK_BUILDER_CORE__ADDITIONAL_CODE:
 			return getAdditionalCode();
-		case AwsworkbenchPackage.STACK_BUILDER_CORE__SERVICERESOURCES:
-			return getServiceresources();
 		case AwsworkbenchPackage.STACK_BUILDER_CORE__STACKBLOCKS:
 			return getStackblocks();
 		}
@@ -640,10 +610,6 @@ public class StackBuilder_coreImpl extends MinimalEObjectImpl.Container implemen
 			return;
 		case AwsworkbenchPackage.STACK_BUILDER_CORE__ADDITIONAL_CODE:
 			setAdditionalCode((String) newValue);
-			return;
-		case AwsworkbenchPackage.STACK_BUILDER_CORE__SERVICERESOURCES:
-			getServiceresources().clear();
-			getServiceresources().addAll((Collection<? extends ServiceResources>) newValue);
 			return;
 		case AwsworkbenchPackage.STACK_BUILDER_CORE__STACKBLOCKS:
 			getStackblocks().clear();
@@ -689,9 +655,6 @@ public class StackBuilder_coreImpl extends MinimalEObjectImpl.Container implemen
 			return;
 		case AwsworkbenchPackage.STACK_BUILDER_CORE__ADDITIONAL_CODE:
 			setAdditionalCode(ADDITIONAL_CODE_EDEFAULT);
-			return;
-		case AwsworkbenchPackage.STACK_BUILDER_CORE__SERVICERESOURCES:
-			getServiceresources().clear();
 			return;
 		case AwsworkbenchPackage.STACK_BUILDER_CORE__STACKBLOCKS:
 			getStackblocks().clear();
@@ -744,8 +707,6 @@ public class StackBuilder_coreImpl extends MinimalEObjectImpl.Container implemen
 		case AwsworkbenchPackage.STACK_BUILDER_CORE__ADDITIONAL_CODE:
 			return ADDITIONAL_CODE_EDEFAULT == null ? additionalCode != null
 					: !ADDITIONAL_CODE_EDEFAULT.equals(additionalCode);
-		case AwsworkbenchPackage.STACK_BUILDER_CORE__SERVICERESOURCES:
-			return serviceresources != null && !serviceresources.isEmpty();
 		case AwsworkbenchPackage.STACK_BUILDER_CORE__STACKBLOCKS:
 			return stackblocks != null && !stackblocks.isEmpty();
 		}

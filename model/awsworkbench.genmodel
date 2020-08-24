@@ -446,7 +446,6 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//StackBuilder_core/varName"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//StackBuilder_core/identifier"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//StackBuilder_core/additionalCode"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference awsworkbench.ecore#//StackBuilder_core/serviceresources"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference awsworkbench.ecore#//StackBuilder_core/stackblocks"/>
     </genClasses>
     <genClasses ecoreClass="awsworkbench.ecore#//VpcBuilder_ec2">

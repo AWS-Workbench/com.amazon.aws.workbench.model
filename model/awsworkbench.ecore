@@ -99,8 +99,6 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="varName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="identifier" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="additionalCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="serviceresources" upperBound="-1"
-        eType="#//ServiceResources" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="stackblocks" upperBound="-1"
         eType="#//Block" containment="true"/>
   </eClassifiers>

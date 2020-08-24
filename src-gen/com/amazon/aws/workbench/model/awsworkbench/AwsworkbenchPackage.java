@@ -669,22 +669,13 @@ public interface AwsworkbenchPackage extends EPackage {
 	int STACK_BUILDER_CORE__ADDITIONAL_CODE = 9;
 
 	/**
-	 * The feature id for the '<em><b>Serviceresources</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int STACK_BUILDER_CORE__SERVICERESOURCES = 10;
-
-	/**
 	 * The feature id for the '<em><b>Stackblocks</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int STACK_BUILDER_CORE__STACKBLOCKS = 11;
+	int STACK_BUILDER_CORE__STACKBLOCKS = 10;
 
 	/**
 	 * The number of structural features of the '<em>Stack Builder core</em>' class.
@@ -693,7 +684,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int STACK_BUILDER_CORE_FEATURE_COUNT = 12;
+	int STACK_BUILDER_CORE_FEATURE_COUNT = 11;
 
 	/**
 	 * The number of operations of the '<em>Stack Builder core</em>' class.
@@ -27401,17 +27392,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	EAttribute getStackBuilder_core_AdditionalCode();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link com.amazon.aws.workbench.model.awsworkbench.StackBuilder_core#getServiceresources <em>Serviceresources</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Serviceresources</em>'.
-	 * @see com.amazon.aws.workbench.model.awsworkbench.StackBuilder_core#getServiceresources()
-	 * @see #getStackBuilder_core()
-	 * @generated
-	 */
-	EReference getStackBuilder_core_Serviceresources();
-
-	/**
 	 * Returns the meta object for the containment reference list '{@link com.amazon.aws.workbench.model.awsworkbench.StackBuilder_core#getStackblocks <em>Stackblocks</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -52192,14 +52172,6 @@ public interface AwsworkbenchPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute STACK_BUILDER_CORE__ADDITIONAL_CODE = eINSTANCE.getStackBuilder_core_AdditionalCode();
-
-		/**
-		 * The meta object literal for the '<em><b>Serviceresources</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference STACK_BUILDER_CORE__SERVICERESOURCES = eINSTANCE.getStackBuilder_core_Serviceresources();
 
 		/**
 		 * The meta object literal for the '<em><b>Stackblocks</b></em>' containment reference list feature.

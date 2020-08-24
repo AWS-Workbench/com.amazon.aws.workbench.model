@@ -6,7 +6,7 @@
     <semanticResources>awsworkbench.genmodel</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_VofkoLm_EeqNlJ9l2PQxgA">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']"/>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_pJFiU7wjEeqJNPEghFFMTw" name="awsworkbench" repPath="#_pJDGELwjEeqJNPEghFFMTw" changeId="6ec341af-5cbb-49ec-9e8e-fe4c62025a61">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_pJFiU7wjEeqJNPEghFFMTw" name="awsworkbench" repPath="#_pJDGELwjEeqJNPEghFFMTw" changeId="c12c3769-daf2-435e-ba53-e66d20985ce3">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']"/>
         <target xmi:type="ecore:EPackage" href="awsworkbench.ecore#/"/>
       </ownedRepresentationDescriptors>
@@ -401,22 +401,6 @@
           <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zHxlIMi9Eeq-_MO14gHidA" id="(0.21140939597315436,1.0)"/>
           <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zHxlIci9Eeq-_MO14gHidA" id="(0.17802197802197803,0.0)"/>
         </edges>
-        <edges xmi:type="notation:Edge" xmi:id="_7AnJoMi9Eeq-_MO14gHidA" type="4001" element="_7AZuTMi9Eeq-_MO14gHidA" source="_sMAF0Mi9Eeq-_MO14gHidA" target="_RPc5YL-1EeqFj5uQ5v2tyQ">
-          <children xmi:type="notation:Node" xmi:id="_7AnJpMi9Eeq-_MO14gHidA" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7AnJpci9Eeq-_MO14gHidA" x="3" y="-10"/>
-          </children>
-          <children xmi:type="notation:Node" xmi:id="_7AnwsMi9Eeq-_MO14gHidA" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7Anwsci9Eeq-_MO14gHidA" x="-12" y="-4"/>
-          </children>
-          <children xmi:type="notation:Node" xmi:id="_7Anwssi9Eeq-_MO14gHidA" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7Anws8i9Eeq-_MO14gHidA" x="5" y="10"/>
-          </children>
-          <styles xmi:type="notation:ConnectorStyle" xmi:id="_7AnJoci9Eeq-_MO14gHidA" routing="Rectilinear"/>
-          <styles xmi:type="notation:FontStyle" xmi:id="_7AnJosi9Eeq-_MO14gHidA" fontColor="7490599" fontName=".AppleSystemUIFont" fontHeight="8"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_7AnJo8i9Eeq-_MO14gHidA" points="[95, 36, -215, 14]$[226, 36, -84, 14]"/>
-          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_7AnwtMi9Eeq-_MO14gHidA" id="(0.7912087912087912,1.0)"/>
-          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_7Anwtci9Eeq-_MO14gHidA" id="(0.711864406779661,0.0)"/>
-        </edges>
         <edges xmi:type="notation:Edge" xmi:id="_G_GU4Mi-Eeq-_MO14gHidA" visible="false" type="4001" element="_G-3rYMi-Eeq-_MO14gHidA" source="_BIS5kMi-Eeq-_MO14gHidA" target="_RPc5YL-1EeqFj5uQ5v2tyQ">
           <children xmi:type="notation:Node" xmi:id="_G_GU5Mi-Eeq-_MO14gHidA" type="6001">
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_G_GU5ci-Eeq-_MO14gHidA" y="-10"/>
@@ -499,7 +483,7 @@
         </edges>
       </data>
     </ownedAnnotationEntries>
-    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_RPNBwL-1EeqFj5uQ5v2tyQ" name="ServiceResources" tooltipText="" outgoingEdges="_3gCnPN1IEeq2UrGepXVt7Q" incomingEdges="_7AZuTMi9Eeq-_MO14gHidA _G-3rYMi-Eeq-_MO14gHidA _3gCnPN1IEeq2UrGepXVt7Q _GGXxjORnEeqbQL2HGSL0Zw" width="12" height="10">
+    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_RPNBwL-1EeqFj5uQ5v2tyQ" name="ServiceResources" tooltipText="" outgoingEdges="_3gCnPN1IEeq2UrGepXVt7Q" incomingEdges="_G-3rYMi-Eeq-_MO14gHidA _3gCnPN1IEeq2UrGepXVt7Q _GGXxjORnEeqbQL2HGSL0Zw" width="12" height="10">
       <target xmi:type="ecore:EClass" href="awsworkbench.ecore#//ServiceResources"/>
       <semanticElements xmi:type="ecore:EClass" href="awsworkbench.ecore#//ServiceResources"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -810,7 +794,7 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC_EReference']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_sL2U0Mi9Eeq-_MO14gHidA" name="StackBuilder_core" tooltipText="" outgoingEdges="_7AZuTMi9Eeq-_MO14gHidA _EnDT0ORnEeqbQL2HGSL0Zw" incomingEdges="_zHlX4Mi9Eeq-_MO14gHidA" width="12" height="10">
+    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_sL2U0Mi9Eeq-_MO14gHidA" name="StackBuilder_core" tooltipText="" outgoingEdges="_EnDT0ORnEeqbQL2HGSL0Zw" incomingEdges="_zHlX4Mi9Eeq-_MO14gHidA" width="12" height="10">
       <target xmi:type="ecore:EClass" href="awsworkbench.ecore#//StackBuilder_core"/>
       <semanticElements xmi:type="ecore:EClass" href="awsworkbench.ecore#//StackBuilder_core"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -909,19 +893,6 @@
           <customFeatures>labelSize</customFeatures>
         </centerLabelStyle>
         <endLabelStyle xmi:type="diagram:EndLabelStyle" uid="_zHlX4si9Eeq-_MO14gHidA" showIcon="false" labelColor="39,76,114">
-          <customFeatures>labelSize</customFeatures>
-        </endLabelStyle>
-      </ownedStyle>
-      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC_EReference']"/>
-    </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_7AZuTMi9Eeq-_MO14gHidA" name="[0..*] serviceresources" sourceNode="_sL2U0Mi9Eeq-_MO14gHidA" targetNode="_RPNBwL-1EeqFj5uQ5v2tyQ">
-      <target xmi:type="ecore:EReference" href="awsworkbench.ecore#//StackBuilder_core/serviceresources"/>
-      <semanticElements xmi:type="ecore:EReference" href="awsworkbench.ecore#//StackBuilder_core/serviceresources"/>
-      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_7AaVUMi9Eeq-_MO14gHidA" description="_eh_M4Mi9Eeq-_MO14gHidA" sourceArrow="FillDiamond" routingStyle="manhattan" strokeColor="0,0,0">
-        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_7AaVUsi9Eeq-_MO14gHidA" showIcon="false">
-          <customFeatures>labelSize</customFeatures>
-        </centerLabelStyle>
-        <endLabelStyle xmi:type="diagram:EndLabelStyle" uid="_7AaVUci9Eeq-_MO14gHidA" showIcon="false" labelColor="39,76,114">
           <customFeatures>labelSize</customFeatures>
         </endLabelStyle>
       </ownedStyle>

@@ -25,7 +25,6 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.StackBuilder_core#getVarName <em>Var Name</em>}</li>
  *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.StackBuilder_core#getIdentifier <em>Identifier</em>}</li>
  *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.StackBuilder_core#getAdditionalCode <em>Additional Code</em>}</li>
- *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.StackBuilder_core#getServiceresources <em>Serviceresources</em>}</li>
  *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.StackBuilder_core#getStackblocks <em>Stackblocks</em>}</li>
  * </ul>
  *
@@ -243,18 +242,6 @@ public interface StackBuilder_core extends EObject {
 	 * @generated
 	 */
 	void setAdditionalCode(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Serviceresources</b></em>' containment reference list.
-	 * The list contents are of type {@link com.amazon.aws.workbench.model.awsworkbench.ServiceResources}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Serviceresources</em>' containment reference list.
-	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getStackBuilder_core_Serviceresources()
-	 * @model containment="true"
-	 * @generated
-	 */
-	EList<ServiceResources> getServiceresources();
 
 	/**
 	 * Returns the value of the '<em><b>Stackblocks</b></em>' containment reference list.

@@ -18,9 +18,9 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.Block#getLabel <em>Label</em>}</li>
  *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.Block#getDescription <em>Description</em>}</li>
  *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.Block#getNotes <em>Notes</em>}</li>
- *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.Block#isIsDraft <em>Is Draft</em>}</li>
  *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.Block#getBlockresources <em>Blockresources</em>}</li>
  *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.Block#getSubblocks <em>Subblocks</em>}</li>
+ *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.Block#isCanDeploy <em>Can Deploy</em>}</li>
  * </ul>
  *
  * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getBlock()
@@ -95,28 +95,6 @@ public interface Block extends EObject {
 	void setNotes(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Is Draft</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Is Draft</em>' attribute.
-	 * @see #setIsDraft(boolean)
-	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getBlock_IsDraft()
-	 * @model
-	 * @generated
-	 */
-	boolean isIsDraft();
-
-	/**
-	 * Sets the value of the '{@link com.amazon.aws.workbench.model.awsworkbench.Block#isIsDraft <em>Is Draft</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Is Draft</em>' attribute.
-	 * @see #isIsDraft()
-	 * @generated
-	 */
-	void setIsDraft(boolean value);
-
-	/**
 	 * Returns the value of the '<em><b>Blockresources</b></em>' containment reference list.
 	 * The list contents are of type {@link com.amazon.aws.workbench.model.awsworkbench.ServiceResources}.
 	 * <!-- begin-user-doc -->
@@ -139,5 +117,27 @@ public interface Block extends EObject {
 	 * @generated
 	 */
 	EList<Block> getSubblocks();
+
+	/**
+	 * Returns the value of the '<em><b>Can Deploy</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Can Deploy</em>' attribute.
+	 * @see #setCanDeploy(boolean)
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getBlock_CanDeploy()
+	 * @model
+	 * @generated
+	 */
+	boolean isCanDeploy();
+
+	/**
+	 * Sets the value of the '{@link com.amazon.aws.workbench.model.awsworkbench.Block#isCanDeploy <em>Can Deploy</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Can Deploy</em>' attribute.
+	 * @see #isCanDeploy()
+	 * @generated
+	 */
+	void setCanDeploy(boolean value);
 
 } // Block

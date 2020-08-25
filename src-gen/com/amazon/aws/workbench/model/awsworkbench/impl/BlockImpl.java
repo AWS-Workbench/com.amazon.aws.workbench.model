@@ -33,9 +33,9 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.BlockImpl#getLabel <em>Label</em>}</li>
  *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.BlockImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.BlockImpl#getNotes <em>Notes</em>}</li>
- *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.BlockImpl#isIsDraft <em>Is Draft</em>}</li>
  *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.BlockImpl#getBlockresources <em>Blockresources</em>}</li>
  *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.BlockImpl#getSubblocks <em>Subblocks</em>}</li>
+ *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.BlockImpl#isCanDeploy <em>Can Deploy</em>}</li>
  * </ul>
  *
  * @generated
@@ -102,26 +102,6 @@ public class BlockImpl extends MinimalEObjectImpl.Container implements Block {
 	protected String notes = NOTES_EDEFAULT;
 
 	/**
-	 * The default value of the '{@link #isIsDraft() <em>Is Draft</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #isIsDraft()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final boolean IS_DRAFT_EDEFAULT = false;
-
-	/**
-	 * The cached value of the '{@link #isIsDraft() <em>Is Draft</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #isIsDraft()
-	 * @generated
-	 * @ordered
-	 */
-	protected boolean isDraft = IS_DRAFT_EDEFAULT;
-
-	/**
 	 * The cached value of the '{@link #getBlockresources() <em>Blockresources</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -140,6 +120,26 @@ public class BlockImpl extends MinimalEObjectImpl.Container implements Block {
 	 * @ordered
 	 */
 	protected EList<Block> subblocks;
+
+	/**
+	 * The default value of the '{@link #isCanDeploy() <em>Can Deploy</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #isCanDeploy()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final boolean CAN_DEPLOY_EDEFAULT = false;
+
+	/**
+	 * The cached value of the '{@link #isCanDeploy() <em>Can Deploy</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #isCanDeploy()
+	 * @generated
+	 * @ordered
+	 */
+	protected boolean canDeploy = CAN_DEPLOY_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -236,30 +236,6 @@ public class BlockImpl extends MinimalEObjectImpl.Container implements Block {
 	 * @generated
 	 */
 	@Override
-	public boolean isIsDraft() {
-		return isDraft;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setIsDraft(boolean newIsDraft) {
-		boolean oldIsDraft = isDraft;
-		isDraft = newIsDraft;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, AwsworkbenchPackage.BLOCK__IS_DRAFT, oldIsDraft,
-					isDraft));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EList<ServiceResources> getBlockresources() {
 		if (blockresources == null) {
 			blockresources = new EObjectContainmentEList<ServiceResources>(ServiceResources.class, this,
@@ -279,6 +255,30 @@ public class BlockImpl extends MinimalEObjectImpl.Container implements Block {
 			subblocks = new EObjectContainmentEList<Block>(Block.class, this, AwsworkbenchPackage.BLOCK__SUBBLOCKS);
 		}
 		return subblocks;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean isCanDeploy() {
+		return canDeploy;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setCanDeploy(boolean newCanDeploy) {
+		boolean oldCanDeploy = canDeploy;
+		canDeploy = newCanDeploy;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, AwsworkbenchPackage.BLOCK__CAN_DEPLOY, oldCanDeploy,
+					canDeploy));
 	}
 
 	/**
@@ -311,12 +311,12 @@ public class BlockImpl extends MinimalEObjectImpl.Container implements Block {
 			return getDescription();
 		case AwsworkbenchPackage.BLOCK__NOTES:
 			return getNotes();
-		case AwsworkbenchPackage.BLOCK__IS_DRAFT:
-			return isIsDraft();
 		case AwsworkbenchPackage.BLOCK__BLOCKRESOURCES:
 			return getBlockresources();
 		case AwsworkbenchPackage.BLOCK__SUBBLOCKS:
 			return getSubblocks();
+		case AwsworkbenchPackage.BLOCK__CAN_DEPLOY:
+			return isCanDeploy();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -339,9 +339,6 @@ public class BlockImpl extends MinimalEObjectImpl.Container implements Block {
 		case AwsworkbenchPackage.BLOCK__NOTES:
 			setNotes((String) newValue);
 			return;
-		case AwsworkbenchPackage.BLOCK__IS_DRAFT:
-			setIsDraft((Boolean) newValue);
-			return;
 		case AwsworkbenchPackage.BLOCK__BLOCKRESOURCES:
 			getBlockresources().clear();
 			getBlockresources().addAll((Collection<? extends ServiceResources>) newValue);
@@ -349,6 +346,9 @@ public class BlockImpl extends MinimalEObjectImpl.Container implements Block {
 		case AwsworkbenchPackage.BLOCK__SUBBLOCKS:
 			getSubblocks().clear();
 			getSubblocks().addAll((Collection<? extends Block>) newValue);
+			return;
+		case AwsworkbenchPackage.BLOCK__CAN_DEPLOY:
+			setCanDeploy((Boolean) newValue);
 			return;
 		}
 		super.eSet(featureID, newValue);
@@ -371,14 +371,14 @@ public class BlockImpl extends MinimalEObjectImpl.Container implements Block {
 		case AwsworkbenchPackage.BLOCK__NOTES:
 			setNotes(NOTES_EDEFAULT);
 			return;
-		case AwsworkbenchPackage.BLOCK__IS_DRAFT:
-			setIsDraft(IS_DRAFT_EDEFAULT);
-			return;
 		case AwsworkbenchPackage.BLOCK__BLOCKRESOURCES:
 			getBlockresources().clear();
 			return;
 		case AwsworkbenchPackage.BLOCK__SUBBLOCKS:
 			getSubblocks().clear();
+			return;
+		case AwsworkbenchPackage.BLOCK__CAN_DEPLOY:
+			setCanDeploy(CAN_DEPLOY_EDEFAULT);
 			return;
 		}
 		super.eUnset(featureID);
@@ -398,12 +398,12 @@ public class BlockImpl extends MinimalEObjectImpl.Container implements Block {
 			return DESCRIPTION_EDEFAULT == null ? description != null : !DESCRIPTION_EDEFAULT.equals(description);
 		case AwsworkbenchPackage.BLOCK__NOTES:
 			return NOTES_EDEFAULT == null ? notes != null : !NOTES_EDEFAULT.equals(notes);
-		case AwsworkbenchPackage.BLOCK__IS_DRAFT:
-			return isDraft != IS_DRAFT_EDEFAULT;
 		case AwsworkbenchPackage.BLOCK__BLOCKRESOURCES:
 			return blockresources != null && !blockresources.isEmpty();
 		case AwsworkbenchPackage.BLOCK__SUBBLOCKS:
 			return subblocks != null && !subblocks.isEmpty();
+		case AwsworkbenchPackage.BLOCK__CAN_DEPLOY:
+			return canDeploy != CAN_DEPLOY_EDEFAULT;
 		}
 		return super.eIsSet(featureID);
 	}
@@ -425,8 +425,8 @@ public class BlockImpl extends MinimalEObjectImpl.Container implements Block {
 		result.append(description);
 		result.append(", notes: ");
 		result.append(notes);
-		result.append(", isDraft: ");
-		result.append(isDraft);
+		result.append(", canDeploy: ");
+		result.append(canDeploy);
 		result.append(')');
 		return result.toString();
 	}

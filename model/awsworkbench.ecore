@@ -4,6 +4,7 @@
   <eClassifiers xsi:type="ecore:EClass" name="ServiceResources" abstract="true">
     <eStructuralFeatures xsi:type="ecore:EReference" name="dependsON" upperBound="-1"
         eType="#//ServiceResources"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="exportResource" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="AppBuilder_core">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="autoSynth_java_lang_Boolean_"
@@ -4344,10 +4345,10 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="label" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="notes" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="isDraft" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="blockresources" upperBound="-1"
         eType="#//ServiceResources" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="subblocks" upperBound="-1"
         eType="#//Block" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="canDeploy" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
   </eClassifiers>
 </ecore:EPackage>

@@ -387,6 +387,7 @@
     </genEnums>
     <genClasses ecoreClass="awsworkbench.ecore#//ServiceResources">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference awsworkbench.ecore#//ServiceResources/dependsON"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ServiceResources/exportResource"/>
     </genClasses>
     <genClasses ecoreClass="awsworkbench.ecore#//AppBuilder_core">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AppBuilder_core/autoSynth_java_lang_Boolean_"/>
@@ -2788,9 +2789,9 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//Block/label"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//Block/description"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//Block/notes"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//Block/isDraft"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference awsworkbench.ecore#//Block/blockresources"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference awsworkbench.ecore#//Block/subblocks"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//Block/canDeploy"/>
     </genClasses>
   </genPackages>
 </genmodel:GenModel>

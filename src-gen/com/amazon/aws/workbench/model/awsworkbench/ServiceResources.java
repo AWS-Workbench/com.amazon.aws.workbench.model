@@ -16,6 +16,7 @@ import org.eclipse.emf.ecore.EObject;
  * </p>
  * <ul>
  *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.ServiceResources#getDependsON <em>Depends ON</em>}</li>
+ *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.ServiceResources#isExportResource <em>Export Resource</em>}</li>
  * </ul>
  *
  * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getServiceResources()
@@ -34,5 +35,27 @@ public interface ServiceResources extends EObject {
 	 * @generated
 	 */
 	EList<ServiceResources> getDependsON();
+
+	/**
+	 * Returns the value of the '<em><b>Export Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Export Resource</em>' attribute.
+	 * @see #setExportResource(boolean)
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getServiceResources_ExportResource()
+	 * @model
+	 * @generated
+	 */
+	boolean isExportResource();
+
+	/**
+	 * Sets the value of the '{@link com.amazon.aws.workbench.model.awsworkbench.ServiceResources#isExportResource <em>Export Resource</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Export Resource</em>' attribute.
+	 * @see #isExportResource()
+	 * @generated
+	 */
+	void setExportResource(boolean value);
 
 } // ServiceResources

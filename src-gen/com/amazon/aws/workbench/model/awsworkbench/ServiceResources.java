@@ -17,6 +17,7 @@ import org.eclipse.emf.ecore.EObject;
  * <ul>
  *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.ServiceResources#getDependsON <em>Depends ON</em>}</li>
  *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.ServiceResources#isExportResource <em>Export Resource</em>}</li>
+ *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.ServiceResources#getImportExistingResource <em>Import Existing Resource</em>}</li>
  * </ul>
  *
  * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getServiceResources()
@@ -57,5 +58,27 @@ public interface ServiceResources extends EObject {
 	 * @generated
 	 */
 	void setExportResource(boolean value);
+
+	/**
+	 * Returns the value of the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Import Existing Resource</em>' attribute.
+	 * @see #setImportExistingResource(String)
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getServiceResources_ImportExistingResource()
+	 * @model
+	 * @generated
+	 */
+	String getImportExistingResource();
+
+	/**
+	 * Sets the value of the '{@link com.amazon.aws.workbench.model.awsworkbench.ServiceResources#getImportExistingResource <em>Import Existing Resource</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Import Existing Resource</em>' attribute.
+	 * @see #getImportExistingResource()
+	 * @generated
+	 */
+	void setImportExistingResource(String value);
 
 } // ServiceResources

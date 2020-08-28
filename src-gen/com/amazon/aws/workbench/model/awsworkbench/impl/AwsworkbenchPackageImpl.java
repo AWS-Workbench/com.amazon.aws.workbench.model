@@ -2083,6 +2083,16 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	 * @generated
 	 */
 	@Override
+	public EAttribute getServiceResources_ImportExistingResource() {
+		return (EAttribute) serviceResourcesEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
 	public EClass getAppBuilder_core() {
 		return appBuilder_coreEClass;
 	}
@@ -25086,6 +25096,7 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 		serviceResourcesEClass = createEClass(SERVICE_RESOURCES);
 		createEReference(serviceResourcesEClass, SERVICE_RESOURCES__DEPENDS_ON);
 		createEAttribute(serviceResourcesEClass, SERVICE_RESOURCES__EXPORT_RESOURCE);
+		createEAttribute(serviceResourcesEClass, SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE);
 
 		appBuilder_coreEClass = createEClass(APP_BUILDER_CORE);
 		createEAttribute(appBuilder_coreEClass, APP_BUILDER_CORE__AUTO_SYNTH_JAVA_LANG_BOOLEAN_);
@@ -29310,6 +29321,9 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 		initEAttribute(getServiceResources_ExportResource(), ecorePackage.getEBoolean(), "exportResource", null, 0, 1,
 				ServiceResources.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
 				!IS_DERIVED, IS_ORDERED);
+		initEAttribute(getServiceResources_ImportExistingResource(), ecorePackage.getEString(),
+				"importExistingResource", null, 0, 1, ServiceResources.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(appBuilder_coreEClass, AppBuilder_core.class, "AppBuilder_core", !IS_ABSTRACT, !IS_INTERFACE,
 				IS_GENERATED_INSTANCE_CLASS);
@@ -34001,11 +34015,6 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 		initEAttribute(getEventBusBuilder_events_EventBusName_java_lang_String_(), ecorePackage.getEString(),
 				"eventBusName_java_lang_String_", null, 0, 1, EventBusBuilder_events.class, !IS_TRANSIENT, !IS_VOLATILE,
 				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initializeContents2();
-
-	}
-
-	public void initializeContents2() {
 		initEAttribute(getEventBusBuilder_events_EventSourceName_java_lang_String_(), ecorePackage.getEString(),
 				"eventSourceName_java_lang_String_", null, 0, 1, EventBusBuilder_events.class, !IS_TRANSIENT,
 				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -34031,6 +34040,12 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 				ecorePackage.getEString(), "detail_java_lang_String__java_lang_Object_AsMap", null, 0, 1,
 				EventPatternBuilder_events.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
 				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initializeContents2();
+
+	}
+
+	public void initializeContents2() {
 		initEAttribute(getEventPatternBuilder_events_DetailType_java_lang_String_AsList(), ecorePackage.getEString(),
 				"detailType_java_lang_String_AsList", null, 0, 1, EventPatternBuilder_events.class, !IS_TRANSIENT,
 				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

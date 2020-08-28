@@ -86,13 +86,22 @@ public interface AwsworkbenchPackage extends EPackage {
 	int SERVICE_RESOURCES__EXPORT_RESOURCE = 1;
 
 	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE = 2;
+
+	/**
 	 * The number of structural features of the '<em>Service Resources</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_RESOURCES_FEATURE_COUNT = 2;
+	int SERVICE_RESOURCES_FEATURE_COUNT = 3;
 
 	/**
 	 * The number of operations of the '<em>Service Resources</em>' class.
@@ -513,6 +522,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	int FLOW_LOG_OPTIONS_BUILDER_EC2__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FLOW_LOG_OPTIONS_BUILDER_EC2__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
 	 * The feature id for the '<em><b>Destination With Flow Log Destination software amazon awscdk services ec2 Flow Log Destination As Reference</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -742,6 +760,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	int VPC_BUILDER_EC2__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VPC_BUILDER_EC2__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
 	 * The feature id for the '<em><b>Cidr java lang String </b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -967,6 +994,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	int SUBNET_BUILDER_EC2__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUBNET_BUILDER_EC2__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
 	 * The feature id for the '<em><b>Availability Zone java lang String </b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1083,6 +1119,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int SUBNET_SELECTION_BUILDER_EC2__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUBNET_SELECTION_BUILDER_EC2__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Availability Zones java lang String As List</b></em>' attribute.
@@ -1223,6 +1268,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	int GATEWAY_VPC_ENDPOINT_BUILDER_EC2__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GATEWAY_VPC_ENDPOINT_BUILDER_EC2__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
 	 * The feature id for the '<em><b>Service With IGateway Vpc Endpoint Service software amazon awscdk services ec2 IGateway Vpc Endpoint Service As Reference</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1333,6 +1387,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int METHOD_DEPLOYMENT_OPTIONS_BUILDER_APIGATEWAY__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int METHOD_DEPLOYMENT_OPTIONS_BUILDER_APIGATEWAY__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Cache Data Encrypted java lang Boolean </b></em>' attribute.
@@ -1497,6 +1560,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	int ENDPOINT_CONFIGURATION_BUILDER_APIGATEWAY__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ENDPOINT_CONFIGURATION_BUILDER_APIGATEWAY__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
 	 * The feature id for the '<em><b>Types software amazon awscdk services apigateway Endpoint Type As List</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1597,6 +1669,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int STAGE_OPTIONS_BUILDER_APIGATEWAY__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STAGE_OPTIONS_BUILDER_APIGATEWAY__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Access Log Destination With IAccess Log Destination software amazon awscdk services apigateway IAccess Log Destination As Reference</b></em>' attribute.
@@ -1862,6 +1943,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	int HOSTED_ZONE_BUILDER_ROUTE53__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HOSTED_ZONE_BUILDER_ROUTE53__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
 	 * The feature id for the '<em><b>Zone Name java lang String </b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1979,6 +2069,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int DNS_VALIDATED_CERTIFICATE_BUILDER_CERTIFICATEMANAGER__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DNS_VALIDATED_CERTIFICATE_BUILDER_CERTIFICATEMANAGER__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Domain Name java lang String </b></em>' attribute.
@@ -2144,6 +2243,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	int INTEGRATION_RESPONSE_BUILDER_APIGATEWAY__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTEGRATION_RESPONSE_BUILDER_APIGATEWAY__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
 	 * The feature id for the '<em><b>Status Code java lang String </b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2275,6 +2383,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	int CERTIFICATE_BUILDER_CERTIFICATEMANAGER__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CERTIFICATE_BUILDER_CERTIFICATEMANAGER__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
 	 * The feature id for the '<em><b>Domain Name java lang String </b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2396,6 +2513,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	int DOMAIN_NAME_OPTIONS_BUILDER_APIGATEWAY__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_NAME_OPTIONS_BUILDER_APIGATEWAY__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
 	 * The feature id for the '<em><b>Certificate With ICertificate software amazon awscdk services certificatemanager ICertificate As Reference</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2515,6 +2641,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int NETWORK_LOAD_BALANCER_BUILDER_ELASTICLOADBALANCINGV2__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NETWORK_LOAD_BALANCER_BUILDER_ELASTICLOADBALANCINGV2__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Vpc With IVpc software amazon awscdk services ec2 IVpc As Reference</b></em>' attribute.
@@ -2660,6 +2795,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	int VPC_LINK_BUILDER_APIGATEWAY__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VPC_LINK_BUILDER_APIGATEWAY__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
 	 * The feature id for the '<em><b>Description java lang String </b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2768,6 +2912,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int INTEGRATION_OPTIONS_BUILDER_APIGATEWAY__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTEGRATION_OPTIONS_BUILDER_APIGATEWAY__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Cache Key Parameters java lang String As List</b></em>' attribute.
@@ -2961,6 +3114,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	int INTEGRATION_BUILDER_APIGATEWAY__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTEGRATION_BUILDER_APIGATEWAY__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
 	 * The feature id for the '<em><b>Type software amazon awscdk services apigateway Integration Type </b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3079,6 +3241,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int CORS_OPTIONS_BUILDER_APIGATEWAY__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORS_OPTIONS_BUILDER_APIGATEWAY__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Allow Origins java lang String As List</b></em>' attribute.
@@ -3236,6 +3407,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	int KEY_BUILDER_KMS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int KEY_BUILDER_KMS__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
 	 * The feature id for the '<em><b>Alias java lang String </b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3383,6 +3563,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	int DEAD_LETTER_QUEUE_BUILDER_SQS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DEAD_LETTER_QUEUE_BUILDER_SQS__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
 	 * The feature id for the '<em><b>Max Receive Count java lang Number </b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3482,6 +3671,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int QUEUE_BUILDER_SQS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int QUEUE_BUILDER_SQS__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Content Based Deduplication java lang Boolean </b></em>' attribute.
@@ -3682,6 +3880,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	int VERSION_OPTIONS_BUILDER_LAMBDA__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VERSION_OPTIONS_BUILDER_LAMBDA__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
 	 * The feature id for the '<em><b>Code Sha256 java lang String </b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3841,6 +4048,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	int LAYER_VERSION_BUILDER_LAMBDA__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LAYER_VERSION_BUILDER_LAMBDA__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
 	 * The feature id for the '<em><b>Code With Code software amazon awscdk services lambda Code As Reference</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3970,6 +4186,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	int SECURITY_GROUP_BUILDER_EC2__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SECURITY_GROUP_BUILDER_EC2__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
 	 * The feature id for the '<em><b>Vpc With IVpc software amazon awscdk services ec2 IVpc As Reference</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -4087,6 +4312,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int FUNCTION_PROPS_BUILDER_LAMBDA__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FUNCTION_PROPS_BUILDER_LAMBDA__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Code With Code software amazon awscdk services lambda Code As Reference</b></em>' attribute.
@@ -4445,6 +4679,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	int FUNCTION_BUILDER_LAMBDA__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FUNCTION_BUILDER_LAMBDA__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
 	 * The feature id for the '<em><b>Max Event Age With Duration software amazon awscdk core Duration As Reference</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -4800,6 +5043,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	int REQUEST_AUTHORIZER_BUILDER_APIGATEWAY__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REQUEST_AUTHORIZER_BUILDER_APIGATEWAY__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
 	 * The feature id for the '<em><b>Handler With IFunction software amazon awscdk services lambda IFunction As Reference</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -4929,6 +5181,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int TOKEN_AUTHORIZER_BUILDER_APIGATEWAY__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TOKEN_AUTHORIZER_BUILDER_APIGATEWAY__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Handler With IFunction software amazon awscdk services lambda IFunction As Reference</b></em>' attribute.
@@ -5068,6 +5329,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int JSON_SCHEMA_BUILDER_APIGATEWAY__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int JSON_SCHEMA_BUILDER_APIGATEWAY__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Additional Items software amazon awscdk services apigateway Json Schema As List</b></em>' attribute.
@@ -5511,6 +5781,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	int MODEL_BUILDER_APIGATEWAY__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MODEL_BUILDER_APIGATEWAY__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
 	 * The feature id for the '<em><b>Schema With Json Schema software amazon awscdk services apigateway Json Schema As Reference</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -5640,6 +5919,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	int REQUEST_VALIDATOR_OPTIONS_BUILDER_APIGATEWAY__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REQUEST_VALIDATOR_OPTIONS_BUILDER_APIGATEWAY__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
 	 * The feature id for the '<em><b>Request Validator Name java lang String </b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -5750,6 +6038,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int REQUEST_VALIDATOR_BUILDER_APIGATEWAY__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REQUEST_VALIDATOR_BUILDER_APIGATEWAY__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Request Validator Name java lang String </b></em>' attribute.
@@ -5874,6 +6171,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	int METHOD_RESPONSE_BUILDER_APIGATEWAY__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int METHOD_RESPONSE_BUILDER_APIGATEWAY__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
 	 * The feature id for the '<em><b>Status Code java lang String </b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -5983,6 +6289,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int METHOD_OPTIONS_BUILDER_APIGATEWAY__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int METHOD_OPTIONS_BUILDER_APIGATEWAY__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Api Key Required java lang Boolean </b></em>' attribute.
@@ -6163,6 +6478,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int REST_API_PROPS_BUILDER_APIGATEWAY__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REST_API_PROPS_BUILDER_APIGATEWAY__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Api Key Source Type software amazon awscdk services apigateway Api Key Source Type </b></em>' attribute.
@@ -6441,6 +6765,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	int API_GATEWAY_TO_DYNAMO_DB_BUILDER_APIGATEWAYDYNAMODB__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int API_GATEWAY_TO_DYNAMO_DB_BUILDER_APIGATEWAYDYNAMODB__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
 	 * The feature id for the '<em><b>Allow Create Operation java lang Boolean </b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -6601,6 +6934,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int LAMBDA_REST_API_PROPS_BUILDER_APIGATEWAY__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LAMBDA_REST_API_PROPS_BUILDER_APIGATEWAY__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Handler With IFunction software amazon awscdk services lambda IFunction As Reference</b></em>' attribute.
@@ -6912,6 +7254,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	int LAMBDA_REST_API_BUILDER_APIGATEWAY__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LAMBDA_REST_API_BUILDER_APIGATEWAY__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
 	 * The feature id for the '<em><b>Default Cors Preflight Options With Cors Options software amazon awscdk services apigateway Cors Options As Reference</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -7218,6 +7569,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	int API_GATEWAY_TO_LAMBDA_BUILDER_APIGATEWAYLAMBDA__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int API_GATEWAY_TO_LAMBDA_BUILDER_APIGATEWAYLAMBDA__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
 	 * The feature id for the '<em><b>Api Gateway Props java lang Object </b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -7328,6 +7688,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int QUEUE_PROPS_BUILDER_SQS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int QUEUE_PROPS_BUILDER_SQS__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Content Based Deduplication java lang Boolean </b></em>' attribute.
@@ -7528,6 +7897,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	int API_GATEWAY_TO_SQS_BUILDER_APIGATEWAYSQS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int API_GATEWAY_TO_SQS_BUILDER_APIGATEWAYSQS__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
 	 * The feature id for the '<em><b>Allow Create Operation java lang Boolean </b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -7687,6 +8065,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int VERSION_BUILDER_LAMBDA__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VERSION_BUILDER_LAMBDA__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Max Event Age With Duration software amazon awscdk core Duration As Reference</b></em>' attribute.
@@ -7858,6 +8245,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	int LAMBDA_FUNCTION_ASSOCIATION_BUILDER_CLOUDFRONT__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LAMBDA_FUNCTION_ASSOCIATION_BUILDER_CLOUDFRONT__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
 	 * The feature id for the '<em><b>Event Type software amazon awscdk services cloudfront Lambda Edge Event Type </b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -7958,6 +8354,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int BEHAVIOR_BUILDER_CLOUDFRONT__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BEHAVIOR_BUILDER_CLOUDFRONT__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Allowed Methods software amazon awscdk services cloudfront Cloud Front Allowed Methods </b></em>' attribute.
@@ -8148,6 +8553,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	int CUSTOM_ORIGIN_CONFIG_BUILDER_CLOUDFRONT__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CUSTOM_ORIGIN_CONFIG_BUILDER_CLOUDFRONT__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
 	 * The feature id for the '<em><b>Domain Name java lang String </b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -8297,6 +8711,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	int BLOCK_PUBLIC_ACCESS_BUILDER_S3__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BLOCK_PUBLIC_ACCESS_BUILDER_S3__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
 	 * The feature id for the '<em><b>Block Public Acls java lang Boolean </b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -8414,6 +8837,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int CORS_RULE_BUILDER_S3__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CORS_RULE_BUILDER_S3__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Allowed Methods software amazon awscdk services s3 Http Methods As List</b></em>' attribute.
@@ -8553,6 +8985,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	int NONCURRENT_VERSION_TRANSITION_BUILDER_S3__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NONCURRENT_VERSION_TRANSITION_BUILDER_S3__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
 	 * The feature id for the '<em><b>Storage Class With Storage Class software amazon awscdk services s3 Storage Class As Reference</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -8653,6 +9094,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int TRANSITION_BUILDER_S3__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRANSITION_BUILDER_S3__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Storage Class With Storage Class software amazon awscdk services s3 Storage Class As Reference</b></em>' attribute.
@@ -8765,6 +9215,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int LIFECYCLE_RULE_BUILDER_S3__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LIFECYCLE_RULE_BUILDER_S3__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Abort Incomplete Multipart Upload After With Duration software amazon awscdk core Duration As Reference</b></em>' attribute.
@@ -8946,6 +9405,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	int BUCKET_METRICS_BUILDER_S3__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BUCKET_METRICS_BUILDER_S3__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
 	 * The feature id for the '<em><b>Id java lang String </b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -9056,6 +9524,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	int REDIRECT_TARGET_BUILDER_S3__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REDIRECT_TARGET_BUILDER_S3__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
 	 * The feature id for the '<em><b>Host Name java lang String </b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -9157,6 +9634,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	int ROUTING_RULE_CONDITION_BUILDER_S3__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ROUTING_RULE_CONDITION_BUILDER_S3__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
 	 * The feature id for the '<em><b>Http Error Code Returned Equals java lang String </b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -9256,6 +9742,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int ROUTING_RULE_BUILDER_S3__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ROUTING_RULE_BUILDER_S3__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Condition With Routing Rule Condition software amazon awscdk services s3 Routing Rule Condition As Reference</b></em>' attribute.
@@ -9386,6 +9881,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int BUCKET_BUILDER_S3__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BUCKET_BUILDER_S3__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Access Control software amazon awscdk services s3 Bucket Access Control </b></em>' attribute.
@@ -9634,6 +10138,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	int BUCKET_PROPS_BUILDER_S3__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BUCKET_PROPS_BUILDER_S3__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
 	 * The feature id for the '<em><b>Access Control software amazon awscdk services s3 Bucket Access Control </b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -9880,6 +10393,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	int ORIGIN_ACCESS_IDENTITY_BUILDER_CLOUDFRONT__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ORIGIN_ACCESS_IDENTITY_BUILDER_CLOUDFRONT__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
 	 * The feature id for the '<em><b>Comment java lang String </b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -9969,6 +10491,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int S3_ORIGIN_CONFIG_BUILDER_CLOUDFRONT__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int S3_ORIGIN_CONFIG_BUILDER_CLOUDFRONT__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>S3 Bucket Source With IBucket software amazon awscdk services s3 IBucket As Reference</b></em>' attribute.
@@ -10071,6 +10602,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int SOURCE_CONFIGURATION_BUILDER_CLOUDFRONT__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SOURCE_CONFIGURATION_BUILDER_CLOUDFRONT__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Behaviors software amazon awscdk services cloudfront Behavior As List</b></em>' attribute.
@@ -10204,6 +10744,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	int ALIAS_CONFIGURATION_BUILDER_CLOUDFRONT__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ALIAS_CONFIGURATION_BUILDER_CLOUDFRONT__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
 	 * The feature id for the '<em><b>Acm Cert Ref java lang String </b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -10324,6 +10873,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	int LOGGING_CONFIGURATION_BUILDER_CLOUDFRONT__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LOGGING_CONFIGURATION_BUILDER_CLOUDFRONT__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
 	 * The feature id for the '<em><b>Bucket With IBucket software amazon awscdk services s3 IBucket As Reference</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -10433,6 +10991,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int CLOUD_FRONT_WEB_DISTRIBUTION_PROPS_BUILDER_CLOUDFRONT__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CLOUD_FRONT_WEB_DISTRIBUTION_PROPS_BUILDER_CLOUDFRONT__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Origin Configs software amazon awscdk services cloudfront Source Configuration As List</b></em>' attribute.
@@ -10648,6 +11215,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	int CLOUD_FRONT_TO_API_GATEWAY_BUILDER_CLOUDFRONTAPIGATEWAY__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CLOUD_FRONT_TO_API_GATEWAY_BUILDER_CLOUDFRONTAPIGATEWAY__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
 	 * The feature id for the '<em><b>Existing Api Gateway Obj With Rest Api software amazon awscdk services apigateway Rest Api As Reference</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -10759,6 +11335,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int CLOUD_FRONT_TO_API_GATEWAY_TO_LAMBDA_BUILDER_CLOUDFRONTAPIGATEWAYLAMBDA__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CLOUD_FRONT_TO_API_GATEWAY_TO_LAMBDA_BUILDER_CLOUDFRONTAPIGATEWAYLAMBDA__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Api Gateway Props With Lambda Rest Api Props software amazon awscdk services apigateway Lambda Rest Api Props As Reference</b></em>' attribute.
@@ -10899,6 +11484,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	int CLOUD_FRONT_TO_S3_BUILDER_CLOUDFRONTS3__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CLOUD_FRONT_TO_S3_BUILDER_CLOUDFRONTS3__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
 	 * The feature id for the '<em><b>Bucket Props With Bucket Props software amazon awscdk services s3 Bucket Props As Reference</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -11021,6 +11615,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	int AUTO_VERIFIED_ATTRS_BUILDER_COGNITO__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int AUTO_VERIFIED_ATTRS_BUILDER_COGNITO__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
 	 * The feature id for the '<em><b>Email java lang Boolean </b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -11119,6 +11722,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int USER_POOL_TRIGGERS_BUILDER_COGNITO__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_POOL_TRIGGERS_BUILDER_COGNITO__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Create Auth Challenge With IFunction software amazon awscdk services lambda IFunction As Reference</b></em>' attribute.
@@ -11303,6 +11915,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	int EMAIL_SETTINGS_BUILDER_COGNITO__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EMAIL_SETTINGS_BUILDER_COGNITO__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
 	 * The feature id for the '<em><b>From java lang String </b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -11401,6 +12022,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int PASSWORD_POLICY_BUILDER_COGNITO__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PASSWORD_POLICY_BUILDER_COGNITO__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Min Length java lang Number </b></em>' attribute.
@@ -11540,6 +12170,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	int MFA_SECOND_FACTOR_BUILDER_COGNITO__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MFA_SECOND_FACTOR_BUILDER_COGNITO__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
 	 * The feature id for the '<em><b>Otp java lang Boolean </b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -11638,6 +12277,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int REQUIRED_ATTRIBUTES_BUILDER_COGNITO__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REQUIRED_ATTRIBUTES_BUILDER_COGNITO__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Address java lang Boolean </b></em>' attribute.
@@ -11876,6 +12524,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	int SIGN_IN_ALIASES_BUILDER_COGNITO__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SIGN_IN_ALIASES_BUILDER_COGNITO__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
 	 * The feature id for the '<em><b>Email java lang Boolean </b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -11994,6 +12651,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	int USER_INVITATION_CONFIG_BUILDER_COGNITO__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_INVITATION_CONFIG_BUILDER_COGNITO__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
 	 * The feature id for the '<em><b>Email Body java lang String </b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -12101,6 +12767,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int USER_VERIFICATION_CONFIG_BUILDER_COGNITO__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_VERIFICATION_CONFIG_BUILDER_COGNITO__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Email Body java lang String </b></em>' attribute.
@@ -12220,6 +12895,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int USER_POOL_PROPS_BUILDER_COGNITO__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_POOL_PROPS_BUILDER_COGNITO__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Auto Verify With Auto Verified Attrs software amazon awscdk services cognito Auto Verified Attrs As Reference</b></em>' attribute.
@@ -12461,6 +13145,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	int USER_POOL_BUILDER_COGNITO__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_POOL_BUILDER_COGNITO__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
 	 * The feature id for the '<em><b>Auto Verify With Auto Verified Attrs software amazon awscdk services cognito Auto Verified Attrs As Reference</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -12699,6 +13392,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	int AUTH_FLOW_BUILDER_COGNITO__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int AUTH_FLOW_BUILDER_COGNITO__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
 	 * The feature id for the '<em><b>Admin User Password java lang Boolean </b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -12826,6 +13528,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	int OAUTH_FLOWS_BUILDER_COGNITO__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OAUTH_FLOWS_BUILDER_COGNITO__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
 	 * The feature id for the '<em><b>Authorization Code Grant java lang Boolean </b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -12933,6 +13644,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int OAUTH_SETTINGS_BUILDER_COGNITO__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OAUTH_SETTINGS_BUILDER_COGNITO__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Callback Urls java lang String As List</b></em>' attribute.
@@ -13044,6 +13764,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int USER_POOL_CLIENT_PROPS_BUILDER_COGNITO__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_POOL_CLIENT_PROPS_BUILDER_COGNITO__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>User Pool With IUser Pool software amazon awscdk services cognito IUser Pool As Reference</b></em>' attribute.
@@ -13188,6 +13917,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	int COGNITO_TO_API_GATEWAY_TO_LAMBDA_BUILDER_COGNITOAPIGATEWAYLAMBDA__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COGNITO_TO_API_GATEWAY_TO_LAMBDA_BUILDER_COGNITOAPIGATEWAYLAMBDA__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
 	 * The feature id for the '<em><b>Api Gateway Props java lang Object </b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -13326,6 +14064,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	int BUILD_DEAD_LETTER_QUEUE_PROPS_BUILDER_CORE__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BUILD_DEAD_LETTER_QUEUE_PROPS_BUILDER_CORE__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
 	 * The feature id for the '<em><b>Dead Letter Queue With Queue software amazon awscdk services sqs Queue As Reference</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -13426,6 +14173,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int BUILD_QUEUE_PROPS_BUILDER_CORE__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BUILD_QUEUE_PROPS_BUILDER_CORE__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Dead Letter Queue With Dead Letter Queue software amazon awscdk services sqs Dead Letter Queue As Reference</b></em>' attribute.
@@ -13540,6 +14296,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	int BUILD_S3_BUCKET_PROPS_BUILDER_CORE__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BUILD_S3_BUCKET_PROPS_BUILDER_CORE__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
 	 * The feature id for the '<em><b>Bucket Props With Bucket Props software amazon awscdk services s3 Bucket Props As Reference</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -13642,6 +14407,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	int BUILD_ENCRYPTION_KEY_PROPS_BUILDER_CORE__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BUILD_ENCRYPTION_KEY_PROPS_BUILDER_CORE__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
 	 * The feature id for the '<em><b>Encryption Key Props java lang Object </b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -13732,6 +14506,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int COGNITO_OPTIONS_BUILDER_CORE__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COGNITO_OPTIONS_BUILDER_CORE__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Identitypool With Cfn Identity Pool software amazon awscdk services cognito Cfn Identity Pool As Reference</b></em>' attribute.
@@ -13846,6 +14629,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	int BUILD_KINESIS_STREAM_PROPS_BUILDER_CORE__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BUILD_KINESIS_STREAM_PROPS_BUILDER_CORE__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
 	 * The feature id for the '<em><b>Kinesis Stream Props java lang Object </b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -13936,6 +14728,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int BUILD_KINESIS_ANALYTICS_APP_PROPS_BUILDER_CORE__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BUILD_KINESIS_ANALYTICS_APP_PROPS_BUILDER_CORE__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Kinesis Firehose With Cfn Delivery Stream software amazon awscdk services kinesisfirehose Cfn Delivery Stream As Reference</b></em>' attribute.
@@ -14040,6 +14841,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	int BUILD_LAMBDA_FUNCTION_PROPS_BUILDER_CORE__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BUILD_LAMBDA_FUNCTION_PROPS_BUILDER_CORE__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
 	 * The feature id for the '<em><b>Existing Lambda Obj With Function software amazon awscdk services lambda Function As Reference</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -14142,6 +14952,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	int BUILD_DYNAMO_DB_TABLE_PROPS_BUILDER_CORE__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BUILD_DYNAMO_DB_TABLE_PROPS_BUILDER_CORE__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
 	 * The feature id for the '<em><b>Dynamo Table Props With Table Props software amazon awscdk services dynamodb Table Props As Reference</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -14242,6 +15061,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int BUILD_TOPIC_PROPS_BUILDER_CORE__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BUILD_TOPIC_PROPS_BUILDER_CORE__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Enable Encryption java lang Boolean </b></em>' attribute.
@@ -14352,6 +15180,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int DYNAMO_DB_STREAM_TO_LAMBDA_BUILDER_DYNAMODBSTREAMLAMBDA__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DYNAMO_DB_STREAM_TO_LAMBDA_BUILDER_DYNAMODBSTREAMLAMBDA__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Dynamo Table Props With Table Props software amazon awscdk services dynamodb Table Props As Reference</b></em>' attribute.
@@ -14475,6 +15312,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int DYNAMO_DB_STREAM_TO_LAMBDA_TO_ELASTIC_SEARCH_AND_KIBANA_BUILDER_DYNAMODBSTREAMLAMBDAELASTICSEARCHKIBANA__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DYNAMO_DB_STREAM_TO_LAMBDA_TO_ELASTIC_SEARCH_AND_KIBANA_BUILDER_DYNAMODBSTREAMLAMBDAELASTICSEARCHKIBANA__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Domain Name java lang String </b></em>' attribute.
@@ -14625,6 +15471,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	int EVENT_BUS_BUILDER_EVENTS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EVENT_BUS_BUILDER_EVENTS__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
 	 * The feature id for the '<em><b>Event Bus Name java lang String </b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -14723,6 +15578,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int EVENT_PATTERN_BUILDER_EVENTS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EVENT_PATTERN_BUILDER_EVENTS__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Account java lang String As List</b></em>' attribute.
@@ -14889,6 +15753,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	int RULE_PROPS_BUILDER_EVENTS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RULE_PROPS_BUILDER_EVENTS__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
 	 * The feature id for the '<em><b>Description java lang String </b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -15038,6 +15911,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	int CRON_OPTIONS_BUILDER_EVENTS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CRON_OPTIONS_BUILDER_EVENTS__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
 	 * The feature id for the '<em><b>Day java lang String </b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -15174,6 +16056,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	int EVENTS_RULE_TO_LAMBDA_BUILDER_EVENTSRULELAMBDA__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EVENTS_RULE_TO_LAMBDA_BUILDER_EVENTSRULELAMBDA__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
 	 * The feature id for the '<em><b>Event Rule Props With Rule Props software amazon awscdk services events Rule Props As Reference</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -15284,6 +16175,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int STATE_MACHINE_PROPS_BUILDER_STEPFUNCTIONS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STATE_MACHINE_PROPS_BUILDER_STEPFUNCTIONS__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Definition With IChainable software amazon awscdk services stepfunctions IChainable As Reference</b></em>' attribute.
@@ -15428,6 +16328,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	int EVENTS_RULE_TO_STEP_FUNCTION_BUILDER_EVENTSRULESTEPFUNCTION__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EVENTS_RULE_TO_STEP_FUNCTION_BUILDER_EVENTSRULESTEPFUNCTION__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
 	 * The feature id for the '<em><b>Event Rule Props With Rule Props software amazon awscdk services events Rule Props As Reference</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -15531,6 +16440,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int IOT_TO_KINESIS_FIREHOSE_TO_S3_BUILDER_IOTKINESISFIREHOSES3__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IOT_TO_KINESIS_FIREHOSE_TO_S3_BUILDER_IOTKINESISFIREHOSES3__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Iot Topic Rule Props With Cfn Topic Rule Props software amazon awscdk services iot Cfn Topic Rule Props As Reference</b></em>' attribute.
@@ -15658,6 +16576,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	int IOT_TO_LAMBDA_BUILDER_IOTLAMBDA__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IOT_TO_LAMBDA_BUILDER_IOTLAMBDA__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
 	 * The feature id for the '<em><b>Iot Topic Rule Props With Cfn Topic Rule Props software amazon awscdk services iot Cfn Topic Rule Props As Reference</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -15768,6 +16695,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int IOT_TO_LAMBDA_TO_DYNAMO_DB_BUILDER_IOTLAMBDADYNAMODB__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IOT_TO_LAMBDA_TO_DYNAMO_DB_BUILDER_IOTLAMBDADYNAMODB__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Iot Topic Rule Props With Cfn Topic Rule Props software amazon awscdk services iot Cfn Topic Rule Props As Reference</b></em>' attribute.
@@ -15903,6 +16839,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	int KINESIS_FIREHOSE_TO_S3_BUILDER_KINESISFIREHOSES3__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int KINESIS_FIREHOSE_TO_S3_BUILDER_KINESISFIREHOSES3__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
 	 * The feature id for the '<em><b>Bucket Props With Bucket Props software amazon awscdk services s3 Bucket Props As Reference</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -16013,6 +16958,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int KINESIS_FIREHOSE_TO_ANALYTICS_AND_S3_BUILDER_KINESISFIREHOSES3KINESISANALYTICS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int KINESIS_FIREHOSE_TO_ANALYTICS_AND_S3_BUILDER_KINESISFIREHOSES3KINESISANALYTICS__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Bucket Props With Bucket Props software amazon awscdk services s3 Bucket Props As Reference</b></em>' attribute.
@@ -16143,6 +17097,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	int KINESIS_STREAMS_TO_LAMBDA_BUILDER_KINESISSTREAMSLAMBDA__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int KINESIS_STREAMS_TO_LAMBDA_BUILDER_KINESISSTREAMSLAMBDA__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
 	 * The feature id for the '<em><b>Event Source Props java lang Object </b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -16264,6 +17227,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int TABLE_BUILDER_DYNAMODB__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TABLE_BUILDER_DYNAMODB__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Partition Key With Attribute software amazon awscdk services dynamodb Attribute As Reference</b></em>' attribute.
@@ -16481,6 +17453,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	int LAMBDA_TO_DYNAMO_DB_BUILDER_LAMBDADYNAMODB__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LAMBDA_TO_DYNAMO_DB_BUILDER_LAMBDADYNAMODB__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
 	 * The feature id for the '<em><b>Dynamo Table Props With Table Props software amazon awscdk services dynamodb Table Props As Reference</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -16613,6 +17594,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	int LAMBDA_TO_ELASTIC_SEARCH_AND_KIBANA_BUILDER_LAMBDAELASTICSEARCHKIBANA__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LAMBDA_TO_ELASTIC_SEARCH_AND_KIBANA_BUILDER_LAMBDAELASTICSEARCHKIBANA__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
 	 * The feature id for the '<em><b>Domain Name java lang String </b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -16739,6 +17729,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int LAMBDA_TO_S3_BUILDER_LAMBDAS3__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LAMBDA_TO_S3_BUILDER_LAMBDAS3__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Bucket Permissions java lang String As List</b></em>' attribute.
@@ -16873,6 +17872,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	int TOPIC_PROPS_BUILDER_SNS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TOPIC_PROPS_BUILDER_SNS__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
 	 * The feature id for the '<em><b>Display Name java lang String </b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -16981,6 +17989,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int LAMBDA_TO_SNS_BUILDER_LAMBDASNS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LAMBDA_TO_SNS_BUILDER_LAMBDASNS__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Enable Encryption java lang Boolean </b></em>' attribute.
@@ -17110,6 +18127,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int LAMBDA_TO_SQS_BUILDER_LAMBDASQS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LAMBDA_TO_SQS_BUILDER_LAMBDASQS__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Dead Letter Queue Props With Queue Props software amazon awscdk services sqs Queue Props As Reference</b></em>' attribute.
@@ -17272,6 +18298,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	int LAMBDA_TO_STEP_FUNCTION_BUILDER_LAMBDASTEPFUNCTION__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LAMBDA_TO_STEP_FUNCTION_BUILDER_LAMBDASTEPFUNCTION__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
 	 * The feature id for the '<em><b>State Machine Props With State Machine Props software amazon awscdk services stepfunctions State Machine Props As Reference</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -17382,6 +18417,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int S3_TO_LAMBDA_BUILDER_S3LAMBDA__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int S3_TO_LAMBDA_BUILDER_S3LAMBDA__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Bucket Props With Bucket Props software amazon awscdk services s3 Bucket Props As Reference</b></em>' attribute.
@@ -17504,6 +18548,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int S3_TO_STEP_FUNCTION_BUILDER_S3STEPFUNCTION__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int S3_TO_STEP_FUNCTION_BUILDER_S3STEPFUNCTION__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>State Machine Props With State Machine Props software amazon awscdk services stepfunctions State Machine Props As Reference</b></em>' attribute.
@@ -17638,6 +18691,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	int SNS_TO_LAMBDA_BUILDER_SNSLAMBDA__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SNS_TO_LAMBDA_BUILDER_SNSLAMBDA__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
 	 * The feature id for the '<em><b>Enable Encryption java lang Boolean </b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -17765,6 +18827,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int MANAGED_POLICY_BUILDER_IAM__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MANAGED_POLICY_BUILDER_IAM__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Description java lang String </b></em>' attribute.
@@ -17926,6 +18997,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	int USER_BUILDER_IAM__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_BUILDER_IAM__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
 	 * The feature id for the '<em><b>Groups software amazon awscdk services iam IGroup As List</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -18075,6 +19155,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	int GROUP_BUILDER_IAM__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GROUP_BUILDER_IAM__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
 	 * The feature id for the '<em><b>Group Name java lang String </b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -18183,6 +19272,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int ROLE_BUILDER_IAM__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ROLE_BUILDER_IAM__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Assumed By With IPrincipal software amazon awscdk services iam IPrincipal As Reference</b></em>' attribute.
@@ -18362,6 +19460,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	int POLICY_STATEMENT_BUILDER_IAM__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POLICY_STATEMENT_BUILDER_IAM__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
 	 * The feature id for the '<em><b>Actions java lang String As List</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -18529,6 +19636,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	int POLICY_DOCUMENT_BUILDER_IAM__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POLICY_DOCUMENT_BUILDER_IAM__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
 	 * The feature id for the '<em><b>Assign Sids java lang Boolean </b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -18628,6 +19744,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int SQS_TO_LAMBDA_BUILDER_SQSLAMBDA__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SQS_TO_LAMBDA_BUILDER_SQSLAMBDA__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Dead Letter Queue Props With Queue Props software amazon awscdk services sqs Queue Props As Reference</b></em>' attribute.
@@ -18781,6 +19906,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	int ATTRIBUTE_BUILDER_DYNAMODB__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ATTRIBUTE_BUILDER_DYNAMODB__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
 	 * The feature id for the '<em><b>Name java lang String </b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -18880,6 +20014,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int TABLE_PROPS_BUILDER_DYNAMODB__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TABLE_PROPS_BUILDER_DYNAMODB__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Table Name java lang String </b></em>' attribute.
@@ -19098,6 +20241,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	int PRIVATE_DNS_NAMESPACE_BUILDER_SERVICEDISCOVERY__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRIVATE_DNS_NAMESPACE_BUILDER_SERVICEDISCOVERY__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
 	 * The feature id for the '<em><b>Name java lang String </b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -19209,6 +20361,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	int PUBLIC_DNS_NAMESPACE_BUILDER_SERVICEDISCOVERY__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PUBLIC_DNS_NAMESPACE_BUILDER_SERVICEDISCOVERY__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
 	 * The feature id for the '<em><b>Name java lang String </b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -19310,6 +20471,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	int HTTP_NAMESPACE_BUILDER_SERVICEDISCOVERY__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HTTP_NAMESPACE_BUILDER_SERVICEDISCOVERY__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
 	 * The feature id for the '<em><b>Name java lang String </b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -19408,6 +20578,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int CLOUD_MAP_OPTIONS_BUILDER_ECS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CLOUD_MAP_OPTIONS_BUILDER_ECS__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Cloud Map Namespace With INamespace software amazon awscdk services servicediscovery INamespace As Reference</b></em>' attribute.
@@ -19540,6 +20719,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	int BLOCK_DEVICE_BUILDER_AUTOSCALING__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BLOCK_DEVICE_BUILDER_AUTOSCALING__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
 	 * The feature id for the '<em><b>Device Name java lang String </b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -19648,6 +20836,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int HEALTH_CHECK_BUILDER_ECS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HEALTH_CHECK_BUILDER_ECS__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Command java lang String As List</b></em>' attribute.
@@ -19780,6 +20977,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	int AMAZON_LINUX_IMAGE_BUILDER_EC2__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int AMAZON_LINUX_IMAGE_BUILDER_EC2__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
 	 * The feature id for the '<em><b>Edition software amazon awscdk services ec2 Amazon Linux Edition </b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -19910,6 +21116,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int ROLLING_UPDATE_CONFIGURATION_BUILDER_AUTOSCALING__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ROLLING_UPDATE_CONFIGURATION_BUILDER_AUTOSCALING__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Max Batch Size java lang Number </b></em>' attribute.
@@ -20052,6 +21267,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int ADD_CAPACITY_OPTIONS_BUILDER_ECS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADD_CAPACITY_OPTIONS_BUILDER_ECS__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Instance Type With Instance Type software amazon awscdk services ec2 Instance Type As Reference</b></em>' attribute.
@@ -20370,6 +21594,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	int CLOUD_MAP_NAMESPACE_OPTIONS_BUILDER_ECS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CLOUD_MAP_NAMESPACE_OPTIONS_BUILDER_ECS__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
 	 * The feature id for the '<em><b>Name java lang String </b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -20479,6 +21712,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int CLUSTER_BUILDER_ECS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CLUSTER_BUILDER_ECS__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Capacity With Add Capacity Options software amazon awscdk services ecs Add Capacity Options As Reference</b></em>' attribute.
@@ -20609,6 +21851,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int APPLICATION_LOAD_BALANCER_BUILDER_ELASTICLOADBALANCINGV2__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_LOAD_BALANCER_BUILDER_ELASTICLOADBALANCINGV2__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Vpc With IVpc software amazon awscdk services ec2 IVpc As Reference</b></em>' attribute.
@@ -20786,6 +22037,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	int DOCKER_IMAGE_ASSET_BUILDER_ASSETS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOCKER_IMAGE_ASSET_BUILDER_ASSETS__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
 	 * The feature id for the '<em><b>Exclude java lang String As List</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -20942,6 +22202,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	int ASSET_IMAGE_BUILDER_ECS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ASSET_IMAGE_BUILDER_ECS__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
 	 * The feature id for the '<em><b>Exclude java lang String As List</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -21087,6 +22356,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int SECRET_STRING_GENERATOR_BUILDER_SECRETSMANAGER__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SECRET_STRING_GENERATOR_BUILDER_SECRETSMANAGER__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Exclude Characters java lang String </b></em>' attribute.
@@ -21271,6 +22549,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	int SECRET_BUILDER_SECRETSMANAGER__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SECRET_BUILDER_SECRETSMANAGER__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
 	 * The feature id for the '<em><b>Description java lang String </b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -21389,6 +22676,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int AWS_LOG_DRIVER_BUILDER_ECS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int AWS_LOG_DRIVER_BUILDER_ECS__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Stream Prefix java lang String </b></em>' attribute.
@@ -21520,6 +22816,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	int LOG_GROUP_BUILDER_LOGS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LOG_GROUP_BUILDER_LOGS__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
 	 * The feature id for the '<em><b>Log Group Name java lang String </b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -21629,6 +22934,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int AWS_LOG_DRIVER_PROPS_BUILDER_ECS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int AWS_LOG_DRIVER_PROPS_BUILDER_ECS__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Stream Prefix java lang String </b></em>' attribute.
@@ -21758,6 +23072,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int APPLICATION_LOAD_BALANCED_TASK_IMAGE_OPTIONS_BUILDER_PATTERNS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_LOAD_BALANCED_TASK_IMAGE_OPTIONS_BUILDER_PATTERNS__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Image With Container Image software amazon awscdk services ecs Container Image As Reference</b></em>' attribute.
@@ -21947,6 +23270,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	int APP_MESH_PROXY_CONFIGURATION_PROPS_BUILDER_ECS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APP_MESH_PROXY_CONFIGURATION_PROPS_BUILDER_ECS__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
 	 * The feature id for the '<em><b>App Ports java lang Number As List</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -22099,6 +23431,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	int APP_MESH_PROXY_CONFIGURATION_BUILDER_ECS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APP_MESH_PROXY_CONFIGURATION_BUILDER_ECS__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
 	 * The feature id for the '<em><b>Container Name java lang String </b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -22201,6 +23542,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	int HOST_BUILDER_ECS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HOST_BUILDER_ECS__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
 	 * The feature id for the '<em><b>Source Path java lang String </b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -22290,6 +23640,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int DOCKER_VOLUME_CONFIGURATION_BUILDER_ECS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOCKER_VOLUME_CONFIGURATION_BUILDER_ECS__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Driver java lang String </b></em>' attribute.
@@ -22421,6 +23780,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	int VOLUME_BUILDER_ECS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VOLUME_BUILDER_ECS__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
 	 * The feature id for the '<em><b>Name java lang String </b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -22530,6 +23898,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int EC2_TASK_DEFINITION_BUILDER_ECS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EC2_TASK_DEFINITION_BUILDER_ECS__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Execution Role With IRole software amazon awscdk services iam IRole As Reference</b></em>' attribute.
@@ -22701,6 +24078,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int APPLICATION_LOAD_BALANCED_EC2_SERVICE_BUILDER_PATTERNS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_LOAD_BALANCED_EC2_SERVICE_BUILDER_PATTERNS__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Certificate With ICertificate software amazon awscdk services certificatemanager ICertificate As Reference</b></em>' attribute.
@@ -23006,6 +24392,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	int FARGATE_TASK_DEFINITION_BUILDER_ECS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FARGATE_TASK_DEFINITION_BUILDER_ECS__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
 	 * The feature id for the '<em><b>Execution Role With IRole software amazon awscdk services iam IRole As Reference</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -23153,6 +24548,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int APPLICATION_LOAD_BALANCED_FARGATE_SERVICE_BUILDER_PATTERNS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_LOAD_BALANCED_FARGATE_SERVICE_BUILDER_PATTERNS__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Certificate With ICertificate software amazon awscdk services certificatemanager ICertificate As Reference</b></em>' attribute.
@@ -23470,6 +24874,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	int APPLICATION_MULTIPLE_TARGET_GROUPS_FARGATE_SERVICE_BUILDER_PATTERNS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_MULTIPLE_TARGET_GROUPS_FARGATE_SERVICE_BUILDER_PATTERNS__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
 	 * The feature id for the '<em><b>Cloud Map Options With Cloud Map Options software amazon awscdk services ecs Cloud Map Options As Reference</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -23718,6 +25131,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	int APPLICATION_LISTENER_PROPS_BUILDER_PATTERNS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_LISTENER_PROPS_BUILDER_PATTERNS__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
 	 * The feature id for the '<em><b>Name java lang String </b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -23836,6 +25258,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int APPLICATION_LOAD_BALANCER_PROPS_BUILDER_PATTERNS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_LOAD_BALANCER_PROPS_BUILDER_PATTERNS__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Listeners software amazon awscdk services ecs patterns Application Listener Props As List</b></em>' attribute.
@@ -23967,6 +25398,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int APPLICATION_TARGET_PROPS_BUILDER_PATTERNS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_TARGET_PROPS_BUILDER_PATTERNS__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Container Port java lang Number </b></em>' attribute.
@@ -24105,6 +25545,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int APPLICATION_LOAD_BALANCED_TASK_IMAGE_PROPS_BUILDER_PATTERNS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_LOAD_BALANCED_TASK_IMAGE_PROPS_BUILDER_PATTERNS__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Image With Container Image software amazon awscdk services ecs Container Image As Reference</b></em>' attribute.
@@ -24291,6 +25740,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int APPLICATION_MULTIPLE_TARGET_GROUPS_EC2_SERVICE_BUILDER_PATTERNS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int APPLICATION_MULTIPLE_TARGET_GROUPS_EC2_SERVICE_BUILDER_PATTERNS__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Cloud Map Options With Cloud Map Options software amazon awscdk services ecs Cloud Map Options As Reference</b></em>' attribute.
@@ -24531,6 +25989,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	int NETWORK_LOAD_BALANCED_TASK_IMAGE_OPTIONS_BUILDER_PATTERNS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NETWORK_LOAD_BALANCED_TASK_IMAGE_OPTIONS_BUILDER_PATTERNS__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
 	 * The feature id for the '<em><b>Image With Container Image software amazon awscdk services ecs Container Image As Reference</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -24714,6 +26181,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int NETWORK_LOAD_BALANCED_FARGATE_SERVICE_BUILDER_PATTERNS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NETWORK_LOAD_BALANCED_FARGATE_SERVICE_BUILDER_PATTERNS__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Cloud Map Options With Cloud Map Options software amazon awscdk services ecs Cloud Map Options As Reference</b></em>' attribute.
@@ -25009,6 +26485,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	int NETWORK_LOAD_BALANCED_EC2_SERVICE_BUILDER_PATTERNS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NETWORK_LOAD_BALANCED_EC2_SERVICE_BUILDER_PATTERNS__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
 	 * The feature id for the '<em><b>Cloud Map Options With Cloud Map Options software amazon awscdk services ecs Cloud Map Options As Reference</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -25291,6 +26776,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	int NETWORK_MULTIPLE_TARGET_GROUPS_EC2_SERVICE_BUILDER_PATTERNS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NETWORK_MULTIPLE_TARGET_GROUPS_EC2_SERVICE_BUILDER_PATTERNS__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
 	 * The feature id for the '<em><b>Cloud Map Options With Cloud Map Options software amazon awscdk services ecs Cloud Map Options As Reference</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -25527,6 +27021,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	int NETWORK_TARGET_PROPS_BUILDER_PATTERNS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NETWORK_TARGET_PROPS_BUILDER_PATTERNS__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
 	 * The feature id for the '<em><b>Container Port java lang Number </b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -25625,6 +27128,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int NETWORK_LOAD_BALANCED_TASK_IMAGE_PROPS_BUILDER_PATTERNS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NETWORK_LOAD_BALANCED_TASK_IMAGE_PROPS_BUILDER_PATTERNS__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Image With Container Image software amazon awscdk services ecs Container Image As Reference</b></em>' attribute.
@@ -25808,6 +27320,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int NETWORK_MULTIPLE_TARGET_GROUPS_FARGATE_SERVICE_BUILDER_PATTERNS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NETWORK_MULTIPLE_TARGET_GROUPS_FARGATE_SERVICE_BUILDER_PATTERNS__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Cloud Map Options With Cloud Map Options software amazon awscdk services ecs Cloud Map Options As Reference</b></em>' attribute.
@@ -26058,6 +27579,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	int SCALING_INTERVAL_BUILDER_APPLICATIONAUTOSCALING__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SCALING_INTERVAL_BUILDER_APPLICATIONAUTOSCALING__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
 	 * The feature id for the '<em><b>Change java lang Number </b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -26165,6 +27695,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int QUEUE_PROCESSING_FARGATE_SERVICE_BUILDER_PATTERNS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int QUEUE_PROCESSING_FARGATE_SERVICE_BUILDER_PATTERNS__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Image With Container Image software amazon awscdk services ecs Container Image As Reference</b></em>' attribute.
@@ -26478,6 +28017,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	int CRON_OPTIONS_BUILDER_APPLICATIONAUTOSCALING__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CRON_OPTIONS_BUILDER_APPLICATIONAUTOSCALING__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
 	 * The feature id for the '<em><b>Day java lang String </b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -26614,6 +28162,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	int SCHEDULED_EC2_TASK_DEFINITION_OPTIONS_BUILDER_PATTERNS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SCHEDULED_EC2_TASK_DEFINITION_OPTIONS_BUILDER_PATTERNS__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
 	 * The feature id for the '<em><b>Task Definition With Ec2 Task Definition software amazon awscdk services ecs Ec2 Task Definition As Reference</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -26705,6 +28262,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int SCHEDULED_EC2_TASK_IMAGE_OPTIONS_BUILDER_PATTERNS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SCHEDULED_EC2_TASK_IMAGE_OPTIONS_BUILDER_PATTERNS__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Cpu java lang Number </b></em>' attribute.
@@ -26868,6 +28434,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	int SCHEDULED_EC2_TASK_BUILDER_PATTERNS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SCHEDULED_EC2_TASK_BUILDER_PATTERNS__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
 	 * The feature id for the '<em><b>Schedule With Schedule software amazon awscdk services applicationautoscaling Schedule As Reference</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -27017,6 +28592,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int QUEUE_PROCESSING_EC2_SERVICE_BUILDER_PATTERNS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int QUEUE_PROCESSING_EC2_SERVICE_BUILDER_PATTERNS__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Image With Container Image software amazon awscdk services ecs Container Image As Reference</b></em>' attribute.
@@ -27329,6 +28913,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	int SCHEDULED_FARGATE_TASK_DEFINITION_OPTIONS_BUILDER_PATTERNS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SCHEDULED_FARGATE_TASK_DEFINITION_OPTIONS_BUILDER_PATTERNS__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
 	 * The feature id for the '<em><b>Task Definition With Fargate Task Definition software amazon awscdk services ecs Fargate Task Definition As Reference</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -27422,6 +29015,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int SCHEDULED_FARGATE_TASK_IMAGE_OPTIONS_BUILDER_PATTERNS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SCHEDULED_FARGATE_TASK_IMAGE_OPTIONS_BUILDER_PATTERNS__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Cpu java lang Number </b></em>' attribute.
@@ -27575,6 +29177,15 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int SCHEDULED_FARGATE_TASK_BUILDER_PATTERNS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SCHEDULED_FARGATE_TASK_BUILDER_PATTERNS__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Schedule With Schedule software amazon awscdk services applicationautoscaling Schedule As Reference</b></em>' attribute.
@@ -28423,6 +30034,17 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getServiceResources_ExportResource();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.ServiceResources#getImportExistingResource <em>Import Existing Resource</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Import Existing Resource</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.ServiceResources#getImportExistingResource()
+	 * @see #getServiceResources()
+	 * @generated
+	 */
+	EAttribute getServiceResources_ImportExistingResource();
 
 	/**
 	 * Returns the meta object for class '{@link com.amazon.aws.workbench.model.awsworkbench.AppBuilder_core <em>App Builder core</em>}'.
@@ -53330,6 +54952,14 @@ public interface AwsworkbenchPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute SERVICE_RESOURCES__EXPORT_RESOURCE = eINSTANCE.getServiceResources_ExportResource();
+
+		/**
+		 * The meta object literal for the '<em><b>Import Existing Resource</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE = eINSTANCE.getServiceResources_ImportExistingResource();
 
 		/**
 		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.AppBuilder_coreImpl <em>App Builder core</em>}' class.

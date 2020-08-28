@@ -5,6 +5,8 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="dependsON" upperBound="-1"
         eType="#//ServiceResources"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="exportResource" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="importExistingResource"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="AppBuilder_core">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="autoSynth_java_lang_Boolean_"

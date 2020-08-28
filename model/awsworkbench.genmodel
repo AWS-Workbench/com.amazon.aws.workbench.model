@@ -388,6 +388,7 @@
     <genClasses ecoreClass="awsworkbench.ecore#//ServiceResources">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference awsworkbench.ecore#//ServiceResources/dependsON"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ServiceResources/exportResource"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//ServiceResources/importExistingResource"/>
     </genClasses>
     <genClasses ecoreClass="awsworkbench.ecore#//AppBuilder_core">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AppBuilder_core/autoSynth_java_lang_Boolean_"/>

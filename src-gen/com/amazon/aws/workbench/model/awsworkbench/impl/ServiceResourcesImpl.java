@@ -28,6 +28,7 @@ import org.eclipse.emf.ecore.util.EObjectResolvingEList;
  * <ul>
  *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.ServiceResourcesImpl#getDependsON <em>Depends ON</em>}</li>
  *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.ServiceResourcesImpl#isExportResource <em>Export Resource</em>}</li>
+ *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.ServiceResourcesImpl#getImportExistingResource <em>Import Existing Resource</em>}</li>
  * </ul>
  *
  * @generated
@@ -62,6 +63,26 @@ public abstract class ServiceResourcesImpl extends MinimalEObjectImpl.Container 
 	 * @ordered
 	 */
 	protected boolean exportResource = EXPORT_RESOURCE_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getImportExistingResource() <em>Import Existing Resource</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getImportExistingResource()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String IMPORT_EXISTING_RESOURCE_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getImportExistingResource() <em>Import Existing Resource</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getImportExistingResource()
+	 * @generated
+	 * @ordered
+	 */
+	protected String importExistingResource = IMPORT_EXISTING_RESOURCE_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -126,12 +147,39 @@ public abstract class ServiceResourcesImpl extends MinimalEObjectImpl.Container 
 	 * @generated
 	 */
 	@Override
+	public String getImportExistingResource() {
+		return importExistingResource;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setImportExistingResource(String newImportExistingResource) {
+		String oldImportExistingResource = importExistingResource;
+		importExistingResource = newImportExistingResource;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					AwsworkbenchPackage.SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE, oldImportExistingResource,
+					importExistingResource));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 		case AwsworkbenchPackage.SERVICE_RESOURCES__DEPENDS_ON:
 			return getDependsON();
 		case AwsworkbenchPackage.SERVICE_RESOURCES__EXPORT_RESOURCE:
 			return isExportResource();
+		case AwsworkbenchPackage.SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE:
+			return getImportExistingResource();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -152,6 +200,9 @@ public abstract class ServiceResourcesImpl extends MinimalEObjectImpl.Container 
 		case AwsworkbenchPackage.SERVICE_RESOURCES__EXPORT_RESOURCE:
 			setExportResource((Boolean) newValue);
 			return;
+		case AwsworkbenchPackage.SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE:
+			setImportExistingResource((String) newValue);
+			return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -170,6 +221,9 @@ public abstract class ServiceResourcesImpl extends MinimalEObjectImpl.Container 
 		case AwsworkbenchPackage.SERVICE_RESOURCES__EXPORT_RESOURCE:
 			setExportResource(EXPORT_RESOURCE_EDEFAULT);
 			return;
+		case AwsworkbenchPackage.SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE:
+			setImportExistingResource(IMPORT_EXISTING_RESOURCE_EDEFAULT);
+			return;
 		}
 		super.eUnset(featureID);
 	}
@@ -186,6 +240,9 @@ public abstract class ServiceResourcesImpl extends MinimalEObjectImpl.Container 
 			return dependsON != null && !dependsON.isEmpty();
 		case AwsworkbenchPackage.SERVICE_RESOURCES__EXPORT_RESOURCE:
 			return exportResource != EXPORT_RESOURCE_EDEFAULT;
+		case AwsworkbenchPackage.SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE:
+			return IMPORT_EXISTING_RESOURCE_EDEFAULT == null ? importExistingResource != null
+					: !IMPORT_EXISTING_RESOURCE_EDEFAULT.equals(importExistingResource);
 		}
 		return super.eIsSet(featureID);
 	}
@@ -203,6 +260,8 @@ public abstract class ServiceResourcesImpl extends MinimalEObjectImpl.Container 
 		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (exportResource: ");
 		result.append(exportResource);
+		result.append(", importExistingResource: ");
+		result.append(importExistingResource);
 		result.append(')');
 		return result.toString();
 	}

@@ -29151,6 +29151,2783 @@ public interface AwsworkbenchPackage extends EPackage {
 	int SCHEDULED_FARGATE_TASK_IMAGE_OPTIONS_BUILDER_PATTERNS_OPERATION_COUNT = SERVICE_RESOURCES_OPERATION_COUNT + 0;
 
 	/**
+	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.TopicBuilder_snsImpl <em>Topic Builder sns</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.TopicBuilder_snsImpl
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getTopicBuilder_sns()
+	 * @generated
+	 */
+	int TOPIC_BUILDER_SNS = 182;
+
+	/**
+	 * The feature id for the '<em><b>Depends ON</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TOPIC_BUILDER_SNS__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
+
+	/**
+	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TOPIC_BUILDER_SNS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TOPIC_BUILDER_SNS__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Display Name java lang String </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TOPIC_BUILDER_SNS__DISPLAY_NAME_JAVA_LANG_STRING_ = SERVICE_RESOURCES_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Master Key With IKey software amazon awscdk services kms IKey As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TOPIC_BUILDER_SNS__MASTER_KEY_WITH_IKEY_SOFTWARE_AMAZON_AWSCDK_SERVICES_KMS_IKEY_AS_REFERENCE = SERVICE_RESOURCES_FEATURE_COUNT
+			+ 1;
+
+	/**
+	 * The feature id for the '<em><b>Topic Name java lang String </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TOPIC_BUILDER_SNS__TOPIC_NAME_JAVA_LANG_STRING_ = SERVICE_RESOURCES_FEATURE_COUNT + 2;
+
+	/**
+	 * The feature id for the '<em><b>Generated Class Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TOPIC_BUILDER_SNS__GENERATED_CLASS_NAME = SERVICE_RESOURCES_FEATURE_COUNT + 3;
+
+	/**
+	 * The feature id for the '<em><b>Var Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TOPIC_BUILDER_SNS__VAR_NAME = SERVICE_RESOURCES_FEATURE_COUNT + 4;
+
+	/**
+	 * The feature id for the '<em><b>Identifier</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TOPIC_BUILDER_SNS__IDENTIFIER = SERVICE_RESOURCES_FEATURE_COUNT + 5;
+
+	/**
+	 * The feature id for the '<em><b>Additional Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TOPIC_BUILDER_SNS__ADDITIONAL_CODE = SERVICE_RESOURCES_FEATURE_COUNT + 6;
+
+	/**
+	 * The number of structural features of the '<em>Topic Builder sns</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TOPIC_BUILDER_SNS_FEATURE_COUNT = SERVICE_RESOURCES_FEATURE_COUNT + 7;
+
+	/**
+	 * The number of operations of the '<em>Topic Builder sns</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TOPIC_BUILDER_SNS_OPERATION_COUNT = SERVICE_RESOURCES_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.Ec2HealthCheckOptionsBuilder_autoscalingImpl <em>Ec2 Health Check Options Builder autoscaling</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.Ec2HealthCheckOptionsBuilder_autoscalingImpl
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getEc2HealthCheckOptionsBuilder_autoscaling()
+	 * @generated
+	 */
+	int EC2_HEALTH_CHECK_OPTIONS_BUILDER_AUTOSCALING = 183;
+
+	/**
+	 * The feature id for the '<em><b>Depends ON</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EC2_HEALTH_CHECK_OPTIONS_BUILDER_AUTOSCALING__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
+
+	/**
+	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EC2_HEALTH_CHECK_OPTIONS_BUILDER_AUTOSCALING__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EC2_HEALTH_CHECK_OPTIONS_BUILDER_AUTOSCALING__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Grace With Duration software amazon awscdk core Duration As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EC2_HEALTH_CHECK_OPTIONS_BUILDER_AUTOSCALING__GRACE_WITH_DURATION_SOFTWARE_AMAZON_AWSCDK_CORE_DURATION_AS_REFERENCE = SERVICE_RESOURCES_FEATURE_COUNT
+			+ 0;
+
+	/**
+	 * The feature id for the '<em><b>Generated Class Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EC2_HEALTH_CHECK_OPTIONS_BUILDER_AUTOSCALING__GENERATED_CLASS_NAME = SERVICE_RESOURCES_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Var Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EC2_HEALTH_CHECK_OPTIONS_BUILDER_AUTOSCALING__VAR_NAME = SERVICE_RESOURCES_FEATURE_COUNT + 2;
+
+	/**
+	 * The feature id for the '<em><b>Identifier</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EC2_HEALTH_CHECK_OPTIONS_BUILDER_AUTOSCALING__IDENTIFIER = SERVICE_RESOURCES_FEATURE_COUNT + 3;
+
+	/**
+	 * The feature id for the '<em><b>Additional Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EC2_HEALTH_CHECK_OPTIONS_BUILDER_AUTOSCALING__ADDITIONAL_CODE = SERVICE_RESOURCES_FEATURE_COUNT + 4;
+
+	/**
+	 * The number of structural features of the '<em>Ec2 Health Check Options Builder autoscaling</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EC2_HEALTH_CHECK_OPTIONS_BUILDER_AUTOSCALING_FEATURE_COUNT = SERVICE_RESOURCES_FEATURE_COUNT + 5;
+
+	/**
+	 * The number of operations of the '<em>Ec2 Health Check Options Builder autoscaling</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EC2_HEALTH_CHECK_OPTIONS_BUILDER_AUTOSCALING_OPERATION_COUNT = SERVICE_RESOURCES_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.AutoScalingGroupBuilder_autoscalingImpl <em>Auto Scaling Group Builder autoscaling</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AutoScalingGroupBuilder_autoscalingImpl
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getAutoScalingGroupBuilder_autoscaling()
+	 * @generated
+	 */
+	int AUTO_SCALING_GROUP_BUILDER_AUTOSCALING = 184;
+
+	/**
+	 * The feature id for the '<em><b>Depends ON</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int AUTO_SCALING_GROUP_BUILDER_AUTOSCALING__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
+
+	/**
+	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int AUTO_SCALING_GROUP_BUILDER_AUTOSCALING__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int AUTO_SCALING_GROUP_BUILDER_AUTOSCALING__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Allow All Outbound java lang Boolean </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int AUTO_SCALING_GROUP_BUILDER_AUTOSCALING__ALLOW_ALL_OUTBOUND_JAVA_LANG_BOOLEAN_ = SERVICE_RESOURCES_FEATURE_COUNT
+			+ 0;
+
+	/**
+	 * The feature id for the '<em><b>Associate Public Ip Address java lang Boolean </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int AUTO_SCALING_GROUP_BUILDER_AUTOSCALING__ASSOCIATE_PUBLIC_IP_ADDRESS_JAVA_LANG_BOOLEAN_ = SERVICE_RESOURCES_FEATURE_COUNT
+			+ 1;
+
+	/**
+	 * The feature id for the '<em><b>Block Devices software amazon awscdk services autoscaling Block Device As List</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int AUTO_SCALING_GROUP_BUILDER_AUTOSCALING__BLOCK_DEVICES_SOFTWARE_AMAZON_AWSCDK_SERVICES_AUTOSCALING_BLOCK_DEVICE_AS_LIST = SERVICE_RESOURCES_FEATURE_COUNT
+			+ 2;
+
+	/**
+	 * The feature id for the '<em><b>Cooldown With Duration software amazon awscdk core Duration As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int AUTO_SCALING_GROUP_BUILDER_AUTOSCALING__COOLDOWN_WITH_DURATION_SOFTWARE_AMAZON_AWSCDK_CORE_DURATION_AS_REFERENCE = SERVICE_RESOURCES_FEATURE_COUNT
+			+ 3;
+
+	/**
+	 * The feature id for the '<em><b>Desired Capacity java lang Number </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int AUTO_SCALING_GROUP_BUILDER_AUTOSCALING__DESIRED_CAPACITY_JAVA_LANG_NUMBER_ = SERVICE_RESOURCES_FEATURE_COUNT
+			+ 4;
+
+	/**
+	 * The feature id for the '<em><b>Health Check With Health Check software amazon awscdk services autoscaling Health Check As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int AUTO_SCALING_GROUP_BUILDER_AUTOSCALING__HEALTH_CHECK_WITH_HEALTH_CHECK_SOFTWARE_AMAZON_AWSCDK_SERVICES_AUTOSCALING_HEALTH_CHECK_AS_REFERENCE = SERVICE_RESOURCES_FEATURE_COUNT
+			+ 5;
+
+	/**
+	 * The feature id for the '<em><b>Ignore Unmodified Size Properties java lang Boolean </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int AUTO_SCALING_GROUP_BUILDER_AUTOSCALING__IGNORE_UNMODIFIED_SIZE_PROPERTIES_JAVA_LANG_BOOLEAN_ = SERVICE_RESOURCES_FEATURE_COUNT
+			+ 6;
+
+	/**
+	 * The feature id for the '<em><b>Key Name java lang String </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int AUTO_SCALING_GROUP_BUILDER_AUTOSCALING__KEY_NAME_JAVA_LANG_STRING_ = SERVICE_RESOURCES_FEATURE_COUNT + 7;
+
+	/**
+	 * The feature id for the '<em><b>Max Capacity java lang Number </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int AUTO_SCALING_GROUP_BUILDER_AUTOSCALING__MAX_CAPACITY_JAVA_LANG_NUMBER_ = SERVICE_RESOURCES_FEATURE_COUNT + 8;
+
+	/**
+	 * The feature id for the '<em><b>Max Instance Lifetime With Duration software amazon awscdk core Duration As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int AUTO_SCALING_GROUP_BUILDER_AUTOSCALING__MAX_INSTANCE_LIFETIME_WITH_DURATION_SOFTWARE_AMAZON_AWSCDK_CORE_DURATION_AS_REFERENCE = SERVICE_RESOURCES_FEATURE_COUNT
+			+ 9;
+
+	/**
+	 * The feature id for the '<em><b>Min Capacity java lang Number </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int AUTO_SCALING_GROUP_BUILDER_AUTOSCALING__MIN_CAPACITY_JAVA_LANG_NUMBER_ = SERVICE_RESOURCES_FEATURE_COUNT + 10;
+
+	/**
+	 * The feature id for the '<em><b>Notifications Topic With ITopic software amazon awscdk services sns ITopic As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int AUTO_SCALING_GROUP_BUILDER_AUTOSCALING__NOTIFICATIONS_TOPIC_WITH_ITOPIC_SOFTWARE_AMAZON_AWSCDK_SERVICES_SNS_ITOPIC_AS_REFERENCE = SERVICE_RESOURCES_FEATURE_COUNT
+			+ 11;
+
+	/**
+	 * The feature id for the '<em><b>Replacing Update Min Successful Instances Percent java lang Number </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int AUTO_SCALING_GROUP_BUILDER_AUTOSCALING__REPLACING_UPDATE_MIN_SUCCESSFUL_INSTANCES_PERCENT_JAVA_LANG_NUMBER_ = SERVICE_RESOURCES_FEATURE_COUNT
+			+ 12;
+
+	/**
+	 * The feature id for the '<em><b>Resource Signal Count java lang Number </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int AUTO_SCALING_GROUP_BUILDER_AUTOSCALING__RESOURCE_SIGNAL_COUNT_JAVA_LANG_NUMBER_ = SERVICE_RESOURCES_FEATURE_COUNT
+			+ 13;
+
+	/**
+	 * The feature id for the '<em><b>Resource Signal Timeout With Duration software amazon awscdk core Duration As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int AUTO_SCALING_GROUP_BUILDER_AUTOSCALING__RESOURCE_SIGNAL_TIMEOUT_WITH_DURATION_SOFTWARE_AMAZON_AWSCDK_CORE_DURATION_AS_REFERENCE = SERVICE_RESOURCES_FEATURE_COUNT
+			+ 14;
+
+	/**
+	 * The feature id for the '<em><b>Rolling Update Configuration With Rolling Update Configuration software amazon awscdk services autoscaling Rolling Update Configuration As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int AUTO_SCALING_GROUP_BUILDER_AUTOSCALING__ROLLING_UPDATE_CONFIGURATION_WITH_ROLLING_UPDATE_CONFIGURATION_SOFTWARE_AMAZON_AWSCDK_SERVICES_AUTOSCALING_ROLLING_UPDATE_CONFIGURATION_AS_REFERENCE = SERVICE_RESOURCES_FEATURE_COUNT
+			+ 15;
+
+	/**
+	 * The feature id for the '<em><b>Spot Price java lang String </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int AUTO_SCALING_GROUP_BUILDER_AUTOSCALING__SPOT_PRICE_JAVA_LANG_STRING_ = SERVICE_RESOURCES_FEATURE_COUNT + 16;
+
+	/**
+	 * The feature id for the '<em><b>Update Type software amazon awscdk services autoscaling Update Type </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int AUTO_SCALING_GROUP_BUILDER_AUTOSCALING__UPDATE_TYPE_SOFTWARE_AMAZON_AWSCDK_SERVICES_AUTOSCALING_UPDATE_TYPE_ = SERVICE_RESOURCES_FEATURE_COUNT
+			+ 17;
+
+	/**
+	 * The feature id for the '<em><b>Vpc Subnets With Subnet Selection software amazon awscdk services ec2 Subnet Selection As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int AUTO_SCALING_GROUP_BUILDER_AUTOSCALING__VPC_SUBNETS_WITH_SUBNET_SELECTION_SOFTWARE_AMAZON_AWSCDK_SERVICES_EC2_SUBNET_SELECTION_AS_REFERENCE = SERVICE_RESOURCES_FEATURE_COUNT
+			+ 18;
+
+	/**
+	 * The feature id for the '<em><b>Instance Type With Instance Type software amazon awscdk services ec2 Instance Type As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int AUTO_SCALING_GROUP_BUILDER_AUTOSCALING__INSTANCE_TYPE_WITH_INSTANCE_TYPE_SOFTWARE_AMAZON_AWSCDK_SERVICES_EC2_INSTANCE_TYPE_AS_REFERENCE = SERVICE_RESOURCES_FEATURE_COUNT
+			+ 19;
+
+	/**
+	 * The feature id for the '<em><b>Machine Image With IMachine Image software amazon awscdk services ec2 IMachine Image As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int AUTO_SCALING_GROUP_BUILDER_AUTOSCALING__MACHINE_IMAGE_WITH_IMACHINE_IMAGE_SOFTWARE_AMAZON_AWSCDK_SERVICES_EC2_IMACHINE_IMAGE_AS_REFERENCE = SERVICE_RESOURCES_FEATURE_COUNT
+			+ 20;
+
+	/**
+	 * The feature id for the '<em><b>Vpc With IVpc software amazon awscdk services ec2 IVpc As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int AUTO_SCALING_GROUP_BUILDER_AUTOSCALING__VPC_WITH_IVPC_SOFTWARE_AMAZON_AWSCDK_SERVICES_EC2_IVPC_AS_REFERENCE = SERVICE_RESOURCES_FEATURE_COUNT
+			+ 21;
+
+	/**
+	 * The feature id for the '<em><b>Role With IRole software amazon awscdk services iam IRole As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int AUTO_SCALING_GROUP_BUILDER_AUTOSCALING__ROLE_WITH_IROLE_SOFTWARE_AMAZON_AWSCDK_SERVICES_IAM_IROLE_AS_REFERENCE = SERVICE_RESOURCES_FEATURE_COUNT
+			+ 22;
+
+	/**
+	 * The feature id for the '<em><b>User Data With User Data software amazon awscdk services ec2 User Data As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int AUTO_SCALING_GROUP_BUILDER_AUTOSCALING__USER_DATA_WITH_USER_DATA_SOFTWARE_AMAZON_AWSCDK_SERVICES_EC2_USER_DATA_AS_REFERENCE = SERVICE_RESOURCES_FEATURE_COUNT
+			+ 23;
+
+	/**
+	 * The feature id for the '<em><b>Generated Class Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int AUTO_SCALING_GROUP_BUILDER_AUTOSCALING__GENERATED_CLASS_NAME = SERVICE_RESOURCES_FEATURE_COUNT + 24;
+
+	/**
+	 * The feature id for the '<em><b>Var Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int AUTO_SCALING_GROUP_BUILDER_AUTOSCALING__VAR_NAME = SERVICE_RESOURCES_FEATURE_COUNT + 25;
+
+	/**
+	 * The feature id for the '<em><b>Identifier</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int AUTO_SCALING_GROUP_BUILDER_AUTOSCALING__IDENTIFIER = SERVICE_RESOURCES_FEATURE_COUNT + 26;
+
+	/**
+	 * The feature id for the '<em><b>Additional Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int AUTO_SCALING_GROUP_BUILDER_AUTOSCALING__ADDITIONAL_CODE = SERVICE_RESOURCES_FEATURE_COUNT + 27;
+
+	/**
+	 * The number of structural features of the '<em>Auto Scaling Group Builder autoscaling</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int AUTO_SCALING_GROUP_BUILDER_AUTOSCALING_FEATURE_COUNT = SERVICE_RESOURCES_FEATURE_COUNT + 28;
+
+	/**
+	 * The number of operations of the '<em>Auto Scaling Group Builder autoscaling</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int AUTO_SCALING_GROUP_BUILDER_AUTOSCALING_OPERATION_COUNT = SERVICE_RESOURCES_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.OptionConfigurationBuilder_rdsImpl <em>Option Configuration Builder rds</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.OptionConfigurationBuilder_rdsImpl
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getOptionConfigurationBuilder_rds()
+	 * @generated
+	 */
+	int OPTION_CONFIGURATION_BUILDER_RDS = 185;
+
+	/**
+	 * The feature id for the '<em><b>Depends ON</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OPTION_CONFIGURATION_BUILDER_RDS__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
+
+	/**
+	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OPTION_CONFIGURATION_BUILDER_RDS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OPTION_CONFIGURATION_BUILDER_RDS__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Name java lang String </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OPTION_CONFIGURATION_BUILDER_RDS__NAME_JAVA_LANG_STRING_ = SERVICE_RESOURCES_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Port java lang Number </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OPTION_CONFIGURATION_BUILDER_RDS__PORT_JAVA_LANG_NUMBER_ = SERVICE_RESOURCES_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Settings java lang String java lang String As Map</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OPTION_CONFIGURATION_BUILDER_RDS__SETTINGS_JAVA_LANG_STRING_JAVA_LANG_STRING_AS_MAP = SERVICE_RESOURCES_FEATURE_COUNT
+			+ 2;
+
+	/**
+	 * The feature id for the '<em><b>Version java lang String </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OPTION_CONFIGURATION_BUILDER_RDS__VERSION_JAVA_LANG_STRING_ = SERVICE_RESOURCES_FEATURE_COUNT + 3;
+
+	/**
+	 * The feature id for the '<em><b>Vpc With IVpc software amazon awscdk services ec2 IVpc As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OPTION_CONFIGURATION_BUILDER_RDS__VPC_WITH_IVPC_SOFTWARE_AMAZON_AWSCDK_SERVICES_EC2_IVPC_AS_REFERENCE = SERVICE_RESOURCES_FEATURE_COUNT
+			+ 4;
+
+	/**
+	 * The feature id for the '<em><b>Generated Class Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OPTION_CONFIGURATION_BUILDER_RDS__GENERATED_CLASS_NAME = SERVICE_RESOURCES_FEATURE_COUNT + 5;
+
+	/**
+	 * The feature id for the '<em><b>Var Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OPTION_CONFIGURATION_BUILDER_RDS__VAR_NAME = SERVICE_RESOURCES_FEATURE_COUNT + 6;
+
+	/**
+	 * The feature id for the '<em><b>Identifier</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OPTION_CONFIGURATION_BUILDER_RDS__IDENTIFIER = SERVICE_RESOURCES_FEATURE_COUNT + 7;
+
+	/**
+	 * The feature id for the '<em><b>Additional Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OPTION_CONFIGURATION_BUILDER_RDS__ADDITIONAL_CODE = SERVICE_RESOURCES_FEATURE_COUNT + 8;
+
+	/**
+	 * The number of structural features of the '<em>Option Configuration Builder rds</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OPTION_CONFIGURATION_BUILDER_RDS_FEATURE_COUNT = SERVICE_RESOURCES_FEATURE_COUNT + 9;
+
+	/**
+	 * The number of operations of the '<em>Option Configuration Builder rds</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OPTION_CONFIGURATION_BUILDER_RDS_OPERATION_COUNT = SERVICE_RESOURCES_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.OptionGroupBuilder_rdsImpl <em>Option Group Builder rds</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.OptionGroupBuilder_rdsImpl
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getOptionGroupBuilder_rds()
+	 * @generated
+	 */
+	int OPTION_GROUP_BUILDER_RDS = 186;
+
+	/**
+	 * The feature id for the '<em><b>Depends ON</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OPTION_GROUP_BUILDER_RDS__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
+
+	/**
+	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OPTION_GROUP_BUILDER_RDS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OPTION_GROUP_BUILDER_RDS__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Configurations software amazon awscdk services rds Option Configuration As List</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OPTION_GROUP_BUILDER_RDS__CONFIGURATIONS_SOFTWARE_AMAZON_AWSCDK_SERVICES_RDS_OPTION_CONFIGURATION_AS_LIST = SERVICE_RESOURCES_FEATURE_COUNT
+			+ 0;
+
+	/**
+	 * The feature id for the '<em><b>Engine With IInstance Engine software amazon awscdk services rds IInstance Engine As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OPTION_GROUP_BUILDER_RDS__ENGINE_WITH_IINSTANCE_ENGINE_SOFTWARE_AMAZON_AWSCDK_SERVICES_RDS_IINSTANCE_ENGINE_AS_REFERENCE = SERVICE_RESOURCES_FEATURE_COUNT
+			+ 1;
+
+	/**
+	 * The feature id for the '<em><b>Description java lang String </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OPTION_GROUP_BUILDER_RDS__DESCRIPTION_JAVA_LANG_STRING_ = SERVICE_RESOURCES_FEATURE_COUNT + 2;
+
+	/**
+	 * The feature id for the '<em><b>Generated Class Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OPTION_GROUP_BUILDER_RDS__GENERATED_CLASS_NAME = SERVICE_RESOURCES_FEATURE_COUNT + 3;
+
+	/**
+	 * The feature id for the '<em><b>Var Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OPTION_GROUP_BUILDER_RDS__VAR_NAME = SERVICE_RESOURCES_FEATURE_COUNT + 4;
+
+	/**
+	 * The feature id for the '<em><b>Identifier</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OPTION_GROUP_BUILDER_RDS__IDENTIFIER = SERVICE_RESOURCES_FEATURE_COUNT + 5;
+
+	/**
+	 * The feature id for the '<em><b>Additional Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OPTION_GROUP_BUILDER_RDS__ADDITIONAL_CODE = SERVICE_RESOURCES_FEATURE_COUNT + 6;
+
+	/**
+	 * The number of structural features of the '<em>Option Group Builder rds</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OPTION_GROUP_BUILDER_RDS_FEATURE_COUNT = SERVICE_RESOURCES_FEATURE_COUNT + 7;
+
+	/**
+	 * The number of operations of the '<em>Option Group Builder rds</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OPTION_GROUP_BUILDER_RDS_OPERATION_COUNT = SERVICE_RESOURCES_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.PortBuilder_ec2Impl <em>Port Builder ec2</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.PortBuilder_ec2Impl
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getPortBuilder_ec2()
+	 * @generated
+	 */
+	int PORT_BUILDER_EC2 = 187;
+
+	/**
+	 * The feature id for the '<em><b>Depends ON</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PORT_BUILDER_EC2__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
+
+	/**
+	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PORT_BUILDER_EC2__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PORT_BUILDER_EC2__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Protocol software amazon awscdk services ec2 Protocol </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PORT_BUILDER_EC2__PROTOCOL_SOFTWARE_AMAZON_AWSCDK_SERVICES_EC2_PROTOCOL_ = SERVICE_RESOURCES_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>String Representation java lang String </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PORT_BUILDER_EC2__STRING_REPRESENTATION_JAVA_LANG_STRING_ = SERVICE_RESOURCES_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>From Port java lang Number </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PORT_BUILDER_EC2__FROM_PORT_JAVA_LANG_NUMBER_ = SERVICE_RESOURCES_FEATURE_COUNT + 2;
+
+	/**
+	 * The feature id for the '<em><b>To Port java lang Number </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PORT_BUILDER_EC2__TO_PORT_JAVA_LANG_NUMBER_ = SERVICE_RESOURCES_FEATURE_COUNT + 3;
+
+	/**
+	 * The feature id for the '<em><b>Generated Class Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PORT_BUILDER_EC2__GENERATED_CLASS_NAME = SERVICE_RESOURCES_FEATURE_COUNT + 4;
+
+	/**
+	 * The feature id for the '<em><b>Var Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PORT_BUILDER_EC2__VAR_NAME = SERVICE_RESOURCES_FEATURE_COUNT + 5;
+
+	/**
+	 * The feature id for the '<em><b>Identifier</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PORT_BUILDER_EC2__IDENTIFIER = SERVICE_RESOURCES_FEATURE_COUNT + 6;
+
+	/**
+	 * The feature id for the '<em><b>Additional Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PORT_BUILDER_EC2__ADDITIONAL_CODE = SERVICE_RESOURCES_FEATURE_COUNT + 7;
+
+	/**
+	 * The number of structural features of the '<em>Port Builder ec2</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PORT_BUILDER_EC2_FEATURE_COUNT = SERVICE_RESOURCES_FEATURE_COUNT + 8;
+
+	/**
+	 * The number of operations of the '<em>Port Builder ec2</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PORT_BUILDER_EC2_OPERATION_COUNT = SERVICE_RESOURCES_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.ProcessorFeaturesBuilder_rdsImpl <em>Processor Features Builder rds</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.ProcessorFeaturesBuilder_rdsImpl
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getProcessorFeaturesBuilder_rds()
+	 * @generated
+	 */
+	int PROCESSOR_FEATURES_BUILDER_RDS = 188;
+
+	/**
+	 * The feature id for the '<em><b>Depends ON</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCESSOR_FEATURES_BUILDER_RDS__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
+
+	/**
+	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCESSOR_FEATURES_BUILDER_RDS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCESSOR_FEATURES_BUILDER_RDS__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Core Count java lang Number </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCESSOR_FEATURES_BUILDER_RDS__CORE_COUNT_JAVA_LANG_NUMBER_ = SERVICE_RESOURCES_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Threads Per Core java lang Number </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCESSOR_FEATURES_BUILDER_RDS__THREADS_PER_CORE_JAVA_LANG_NUMBER_ = SERVICE_RESOURCES_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Generated Class Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCESSOR_FEATURES_BUILDER_RDS__GENERATED_CLASS_NAME = SERVICE_RESOURCES_FEATURE_COUNT + 2;
+
+	/**
+	 * The feature id for the '<em><b>Var Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCESSOR_FEATURES_BUILDER_RDS__VAR_NAME = SERVICE_RESOURCES_FEATURE_COUNT + 3;
+
+	/**
+	 * The feature id for the '<em><b>Identifier</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCESSOR_FEATURES_BUILDER_RDS__IDENTIFIER = SERVICE_RESOURCES_FEATURE_COUNT + 4;
+
+	/**
+	 * The feature id for the '<em><b>Additional Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCESSOR_FEATURES_BUILDER_RDS__ADDITIONAL_CODE = SERVICE_RESOURCES_FEATURE_COUNT + 5;
+
+	/**
+	 * The number of structural features of the '<em>Processor Features Builder rds</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCESSOR_FEATURES_BUILDER_RDS_FEATURE_COUNT = SERVICE_RESOURCES_FEATURE_COUNT + 6;
+
+	/**
+	 * The number of operations of the '<em>Processor Features Builder rds</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROCESSOR_FEATURES_BUILDER_RDS_OPERATION_COUNT = SERVICE_RESOURCES_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.OracleEeInstanceEnginePropsBuilder_rdsImpl <em>Oracle Ee Instance Engine Props Builder rds</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.OracleEeInstanceEnginePropsBuilder_rdsImpl
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getOracleEeInstanceEnginePropsBuilder_rds()
+	 * @generated
+	 */
+	int ORACLE_EE_INSTANCE_ENGINE_PROPS_BUILDER_RDS = 189;
+
+	/**
+	 * The feature id for the '<em><b>Depends ON</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ORACLE_EE_INSTANCE_ENGINE_PROPS_BUILDER_RDS__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
+
+	/**
+	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ORACLE_EE_INSTANCE_ENGINE_PROPS_BUILDER_RDS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ORACLE_EE_INSTANCE_ENGINE_PROPS_BUILDER_RDS__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Version With Oracle Engine Version software amazon awscdk services rds Oracle Engine Version As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ORACLE_EE_INSTANCE_ENGINE_PROPS_BUILDER_RDS__VERSION_WITH_ORACLE_ENGINE_VERSION_SOFTWARE_AMAZON_AWSCDK_SERVICES_RDS_ORACLE_ENGINE_VERSION_AS_REFERENCE = SERVICE_RESOURCES_FEATURE_COUNT
+			+ 0;
+
+	/**
+	 * The feature id for the '<em><b>Generated Class Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ORACLE_EE_INSTANCE_ENGINE_PROPS_BUILDER_RDS__GENERATED_CLASS_NAME = SERVICE_RESOURCES_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Var Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ORACLE_EE_INSTANCE_ENGINE_PROPS_BUILDER_RDS__VAR_NAME = SERVICE_RESOURCES_FEATURE_COUNT + 2;
+
+	/**
+	 * The feature id for the '<em><b>Identifier</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ORACLE_EE_INSTANCE_ENGINE_PROPS_BUILDER_RDS__IDENTIFIER = SERVICE_RESOURCES_FEATURE_COUNT + 3;
+
+	/**
+	 * The feature id for the '<em><b>Additional Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ORACLE_EE_INSTANCE_ENGINE_PROPS_BUILDER_RDS__ADDITIONAL_CODE = SERVICE_RESOURCES_FEATURE_COUNT + 4;
+
+	/**
+	 * The number of structural features of the '<em>Oracle Ee Instance Engine Props Builder rds</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ORACLE_EE_INSTANCE_ENGINE_PROPS_BUILDER_RDS_FEATURE_COUNT = SERVICE_RESOURCES_FEATURE_COUNT + 5;
+
+	/**
+	 * The number of operations of the '<em>Oracle Ee Instance Engine Props Builder rds</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ORACLE_EE_INSTANCE_ENGINE_PROPS_BUILDER_RDS_OPERATION_COUNT = SERVICE_RESOURCES_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.OracleSe1InstanceEnginePropsBuilder_rdsImpl <em>Oracle Se1 Instance Engine Props Builder rds</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.OracleSe1InstanceEnginePropsBuilder_rdsImpl
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getOracleSe1InstanceEnginePropsBuilder_rds()
+	 * @generated
+	 */
+	int ORACLE_SE1_INSTANCE_ENGINE_PROPS_BUILDER_RDS = 190;
+
+	/**
+	 * The feature id for the '<em><b>Depends ON</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ORACLE_SE1_INSTANCE_ENGINE_PROPS_BUILDER_RDS__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
+
+	/**
+	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ORACLE_SE1_INSTANCE_ENGINE_PROPS_BUILDER_RDS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ORACLE_SE1_INSTANCE_ENGINE_PROPS_BUILDER_RDS__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Version With Oracle Legacy Engine Version software amazon awscdk services rds Oracle Legacy Engine Version As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ORACLE_SE1_INSTANCE_ENGINE_PROPS_BUILDER_RDS__VERSION_WITH_ORACLE_LEGACY_ENGINE_VERSION_SOFTWARE_AMAZON_AWSCDK_SERVICES_RDS_ORACLE_LEGACY_ENGINE_VERSION_AS_REFERENCE = SERVICE_RESOURCES_FEATURE_COUNT
+			+ 0;
+
+	/**
+	 * The feature id for the '<em><b>Generated Class Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ORACLE_SE1_INSTANCE_ENGINE_PROPS_BUILDER_RDS__GENERATED_CLASS_NAME = SERVICE_RESOURCES_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Var Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ORACLE_SE1_INSTANCE_ENGINE_PROPS_BUILDER_RDS__VAR_NAME = SERVICE_RESOURCES_FEATURE_COUNT + 2;
+
+	/**
+	 * The feature id for the '<em><b>Identifier</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ORACLE_SE1_INSTANCE_ENGINE_PROPS_BUILDER_RDS__IDENTIFIER = SERVICE_RESOURCES_FEATURE_COUNT + 3;
+
+	/**
+	 * The feature id for the '<em><b>Additional Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ORACLE_SE1_INSTANCE_ENGINE_PROPS_BUILDER_RDS__ADDITIONAL_CODE = SERVICE_RESOURCES_FEATURE_COUNT + 4;
+
+	/**
+	 * The number of structural features of the '<em>Oracle Se1 Instance Engine Props Builder rds</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ORACLE_SE1_INSTANCE_ENGINE_PROPS_BUILDER_RDS_FEATURE_COUNT = SERVICE_RESOURCES_FEATURE_COUNT + 5;
+
+	/**
+	 * The number of operations of the '<em>Oracle Se1 Instance Engine Props Builder rds</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ORACLE_SE1_INSTANCE_ENGINE_PROPS_BUILDER_RDS_OPERATION_COUNT = SERVICE_RESOURCES_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.OracleSe2InstanceEnginePropsBuilder_rdsImpl <em>Oracle Se2 Instance Engine Props Builder rds</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.OracleSe2InstanceEnginePropsBuilder_rdsImpl
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getOracleSe2InstanceEnginePropsBuilder_rds()
+	 * @generated
+	 */
+	int ORACLE_SE2_INSTANCE_ENGINE_PROPS_BUILDER_RDS = 191;
+
+	/**
+	 * The feature id for the '<em><b>Depends ON</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ORACLE_SE2_INSTANCE_ENGINE_PROPS_BUILDER_RDS__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
+
+	/**
+	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ORACLE_SE2_INSTANCE_ENGINE_PROPS_BUILDER_RDS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ORACLE_SE2_INSTANCE_ENGINE_PROPS_BUILDER_RDS__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Version With Oracle Engine Version software amazon awscdk services rds Oracle Engine Version As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ORACLE_SE2_INSTANCE_ENGINE_PROPS_BUILDER_RDS__VERSION_WITH_ORACLE_ENGINE_VERSION_SOFTWARE_AMAZON_AWSCDK_SERVICES_RDS_ORACLE_ENGINE_VERSION_AS_REFERENCE = SERVICE_RESOURCES_FEATURE_COUNT
+			+ 0;
+
+	/**
+	 * The feature id for the '<em><b>Generated Class Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ORACLE_SE2_INSTANCE_ENGINE_PROPS_BUILDER_RDS__GENERATED_CLASS_NAME = SERVICE_RESOURCES_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Var Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ORACLE_SE2_INSTANCE_ENGINE_PROPS_BUILDER_RDS__VAR_NAME = SERVICE_RESOURCES_FEATURE_COUNT + 2;
+
+	/**
+	 * The feature id for the '<em><b>Identifier</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ORACLE_SE2_INSTANCE_ENGINE_PROPS_BUILDER_RDS__IDENTIFIER = SERVICE_RESOURCES_FEATURE_COUNT + 3;
+
+	/**
+	 * The feature id for the '<em><b>Additional Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ORACLE_SE2_INSTANCE_ENGINE_PROPS_BUILDER_RDS__ADDITIONAL_CODE = SERVICE_RESOURCES_FEATURE_COUNT + 4;
+
+	/**
+	 * The number of structural features of the '<em>Oracle Se2 Instance Engine Props Builder rds</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ORACLE_SE2_INSTANCE_ENGINE_PROPS_BUILDER_RDS_FEATURE_COUNT = SERVICE_RESOURCES_FEATURE_COUNT + 5;
+
+	/**
+	 * The number of operations of the '<em>Oracle Se2 Instance Engine Props Builder rds</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ORACLE_SE2_INSTANCE_ENGINE_PROPS_BUILDER_RDS_OPERATION_COUNT = SERVICE_RESOURCES_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.OracleSeInstanceEnginePropsBuilder_rdsImpl <em>Oracle Se Instance Engine Props Builder rds</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.OracleSeInstanceEnginePropsBuilder_rdsImpl
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getOracleSeInstanceEnginePropsBuilder_rds()
+	 * @generated
+	 */
+	int ORACLE_SE_INSTANCE_ENGINE_PROPS_BUILDER_RDS = 192;
+
+	/**
+	 * The feature id for the '<em><b>Depends ON</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ORACLE_SE_INSTANCE_ENGINE_PROPS_BUILDER_RDS__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
+
+	/**
+	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ORACLE_SE_INSTANCE_ENGINE_PROPS_BUILDER_RDS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ORACLE_SE_INSTANCE_ENGINE_PROPS_BUILDER_RDS__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Version With Oracle Legacy Engine Version software amazon awscdk services rds Oracle Legacy Engine Version As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ORACLE_SE_INSTANCE_ENGINE_PROPS_BUILDER_RDS__VERSION_WITH_ORACLE_LEGACY_ENGINE_VERSION_SOFTWARE_AMAZON_AWSCDK_SERVICES_RDS_ORACLE_LEGACY_ENGINE_VERSION_AS_REFERENCE = SERVICE_RESOURCES_FEATURE_COUNT
+			+ 0;
+
+	/**
+	 * The feature id for the '<em><b>Generated Class Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ORACLE_SE_INSTANCE_ENGINE_PROPS_BUILDER_RDS__GENERATED_CLASS_NAME = SERVICE_RESOURCES_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Var Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ORACLE_SE_INSTANCE_ENGINE_PROPS_BUILDER_RDS__VAR_NAME = SERVICE_RESOURCES_FEATURE_COUNT + 2;
+
+	/**
+	 * The feature id for the '<em><b>Identifier</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ORACLE_SE_INSTANCE_ENGINE_PROPS_BUILDER_RDS__IDENTIFIER = SERVICE_RESOURCES_FEATURE_COUNT + 3;
+
+	/**
+	 * The feature id for the '<em><b>Additional Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ORACLE_SE_INSTANCE_ENGINE_PROPS_BUILDER_RDS__ADDITIONAL_CODE = SERVICE_RESOURCES_FEATURE_COUNT + 4;
+
+	/**
+	 * The number of structural features of the '<em>Oracle Se Instance Engine Props Builder rds</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ORACLE_SE_INSTANCE_ENGINE_PROPS_BUILDER_RDS_FEATURE_COUNT = SERVICE_RESOURCES_FEATURE_COUNT + 5;
+
+	/**
+	 * The number of operations of the '<em>Oracle Se Instance Engine Props Builder rds</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ORACLE_SE_INSTANCE_ENGINE_PROPS_BUILDER_RDS_OPERATION_COUNT = SERVICE_RESOURCES_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.PostgresInstanceEnginePropsBuilder_rdsImpl <em>Postgres Instance Engine Props Builder rds</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.PostgresInstanceEnginePropsBuilder_rdsImpl
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getPostgresInstanceEnginePropsBuilder_rds()
+	 * @generated
+	 */
+	int POSTGRES_INSTANCE_ENGINE_PROPS_BUILDER_RDS = 193;
+
+	/**
+	 * The feature id for the '<em><b>Depends ON</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POSTGRES_INSTANCE_ENGINE_PROPS_BUILDER_RDS__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
+
+	/**
+	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POSTGRES_INSTANCE_ENGINE_PROPS_BUILDER_RDS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POSTGRES_INSTANCE_ENGINE_PROPS_BUILDER_RDS__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Version With Postgres Engine Version software amazon awscdk services rds Postgres Engine Version As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POSTGRES_INSTANCE_ENGINE_PROPS_BUILDER_RDS__VERSION_WITH_POSTGRES_ENGINE_VERSION_SOFTWARE_AMAZON_AWSCDK_SERVICES_RDS_POSTGRES_ENGINE_VERSION_AS_REFERENCE = SERVICE_RESOURCES_FEATURE_COUNT
+			+ 0;
+
+	/**
+	 * The feature id for the '<em><b>Generated Class Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POSTGRES_INSTANCE_ENGINE_PROPS_BUILDER_RDS__GENERATED_CLASS_NAME = SERVICE_RESOURCES_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Var Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POSTGRES_INSTANCE_ENGINE_PROPS_BUILDER_RDS__VAR_NAME = SERVICE_RESOURCES_FEATURE_COUNT + 2;
+
+	/**
+	 * The feature id for the '<em><b>Identifier</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POSTGRES_INSTANCE_ENGINE_PROPS_BUILDER_RDS__IDENTIFIER = SERVICE_RESOURCES_FEATURE_COUNT + 3;
+
+	/**
+	 * The feature id for the '<em><b>Additional Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POSTGRES_INSTANCE_ENGINE_PROPS_BUILDER_RDS__ADDITIONAL_CODE = SERVICE_RESOURCES_FEATURE_COUNT + 4;
+
+	/**
+	 * The number of structural features of the '<em>Postgres Instance Engine Props Builder rds</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POSTGRES_INSTANCE_ENGINE_PROPS_BUILDER_RDS_FEATURE_COUNT = SERVICE_RESOURCES_FEATURE_COUNT + 5;
+
+	/**
+	 * The number of operations of the '<em>Postgres Instance Engine Props Builder rds</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POSTGRES_INSTANCE_ENGINE_PROPS_BUILDER_RDS_OPERATION_COUNT = SERVICE_RESOURCES_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.SqlServerEeInstanceEnginePropsBuilder_rdsImpl <em>Sql Server Ee Instance Engine Props Builder rds</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.SqlServerEeInstanceEnginePropsBuilder_rdsImpl
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getSqlServerEeInstanceEnginePropsBuilder_rds()
+	 * @generated
+	 */
+	int SQL_SERVER_EE_INSTANCE_ENGINE_PROPS_BUILDER_RDS = 194;
+
+	/**
+	 * The feature id for the '<em><b>Depends ON</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SQL_SERVER_EE_INSTANCE_ENGINE_PROPS_BUILDER_RDS__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
+
+	/**
+	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SQL_SERVER_EE_INSTANCE_ENGINE_PROPS_BUILDER_RDS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SQL_SERVER_EE_INSTANCE_ENGINE_PROPS_BUILDER_RDS__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Version With Sql Server Engine Version software amazon awscdk services rds Sql Server Engine Version As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SQL_SERVER_EE_INSTANCE_ENGINE_PROPS_BUILDER_RDS__VERSION_WITH_SQL_SERVER_ENGINE_VERSION_SOFTWARE_AMAZON_AWSCDK_SERVICES_RDS_SQL_SERVER_ENGINE_VERSION_AS_REFERENCE = SERVICE_RESOURCES_FEATURE_COUNT
+			+ 0;
+
+	/**
+	 * The feature id for the '<em><b>Generated Class Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SQL_SERVER_EE_INSTANCE_ENGINE_PROPS_BUILDER_RDS__GENERATED_CLASS_NAME = SERVICE_RESOURCES_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Var Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SQL_SERVER_EE_INSTANCE_ENGINE_PROPS_BUILDER_RDS__VAR_NAME = SERVICE_RESOURCES_FEATURE_COUNT + 2;
+
+	/**
+	 * The feature id for the '<em><b>Identifier</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SQL_SERVER_EE_INSTANCE_ENGINE_PROPS_BUILDER_RDS__IDENTIFIER = SERVICE_RESOURCES_FEATURE_COUNT + 3;
+
+	/**
+	 * The feature id for the '<em><b>Additional Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SQL_SERVER_EE_INSTANCE_ENGINE_PROPS_BUILDER_RDS__ADDITIONAL_CODE = SERVICE_RESOURCES_FEATURE_COUNT + 4;
+
+	/**
+	 * The number of structural features of the '<em>Sql Server Ee Instance Engine Props Builder rds</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SQL_SERVER_EE_INSTANCE_ENGINE_PROPS_BUILDER_RDS_FEATURE_COUNT = SERVICE_RESOURCES_FEATURE_COUNT + 5;
+
+	/**
+	 * The number of operations of the '<em>Sql Server Ee Instance Engine Props Builder rds</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SQL_SERVER_EE_INSTANCE_ENGINE_PROPS_BUILDER_RDS_OPERATION_COUNT = SERVICE_RESOURCES_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.SqlServerExInstanceEnginePropsBuilder_rdsImpl <em>Sql Server Ex Instance Engine Props Builder rds</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.SqlServerExInstanceEnginePropsBuilder_rdsImpl
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getSqlServerExInstanceEnginePropsBuilder_rds()
+	 * @generated
+	 */
+	int SQL_SERVER_EX_INSTANCE_ENGINE_PROPS_BUILDER_RDS = 195;
+
+	/**
+	 * The feature id for the '<em><b>Depends ON</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SQL_SERVER_EX_INSTANCE_ENGINE_PROPS_BUILDER_RDS__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
+
+	/**
+	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SQL_SERVER_EX_INSTANCE_ENGINE_PROPS_BUILDER_RDS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SQL_SERVER_EX_INSTANCE_ENGINE_PROPS_BUILDER_RDS__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Version With Sql Server Engine Version software amazon awscdk services rds Sql Server Engine Version As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SQL_SERVER_EX_INSTANCE_ENGINE_PROPS_BUILDER_RDS__VERSION_WITH_SQL_SERVER_ENGINE_VERSION_SOFTWARE_AMAZON_AWSCDK_SERVICES_RDS_SQL_SERVER_ENGINE_VERSION_AS_REFERENCE = SERVICE_RESOURCES_FEATURE_COUNT
+			+ 0;
+
+	/**
+	 * The feature id for the '<em><b>Generated Class Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SQL_SERVER_EX_INSTANCE_ENGINE_PROPS_BUILDER_RDS__GENERATED_CLASS_NAME = SERVICE_RESOURCES_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Var Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SQL_SERVER_EX_INSTANCE_ENGINE_PROPS_BUILDER_RDS__VAR_NAME = SERVICE_RESOURCES_FEATURE_COUNT + 2;
+
+	/**
+	 * The feature id for the '<em><b>Identifier</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SQL_SERVER_EX_INSTANCE_ENGINE_PROPS_BUILDER_RDS__IDENTIFIER = SERVICE_RESOURCES_FEATURE_COUNT + 3;
+
+	/**
+	 * The feature id for the '<em><b>Additional Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SQL_SERVER_EX_INSTANCE_ENGINE_PROPS_BUILDER_RDS__ADDITIONAL_CODE = SERVICE_RESOURCES_FEATURE_COUNT + 4;
+
+	/**
+	 * The number of structural features of the '<em>Sql Server Ex Instance Engine Props Builder rds</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SQL_SERVER_EX_INSTANCE_ENGINE_PROPS_BUILDER_RDS_FEATURE_COUNT = SERVICE_RESOURCES_FEATURE_COUNT + 5;
+
+	/**
+	 * The number of operations of the '<em>Sql Server Ex Instance Engine Props Builder rds</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SQL_SERVER_EX_INSTANCE_ENGINE_PROPS_BUILDER_RDS_OPERATION_COUNT = SERVICE_RESOURCES_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.SqlServerSeInstanceEnginePropsBuilder_rdsImpl <em>Sql Server Se Instance Engine Props Builder rds</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.SqlServerSeInstanceEnginePropsBuilder_rdsImpl
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getSqlServerSeInstanceEnginePropsBuilder_rds()
+	 * @generated
+	 */
+	int SQL_SERVER_SE_INSTANCE_ENGINE_PROPS_BUILDER_RDS = 196;
+
+	/**
+	 * The feature id for the '<em><b>Depends ON</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SQL_SERVER_SE_INSTANCE_ENGINE_PROPS_BUILDER_RDS__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
+
+	/**
+	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SQL_SERVER_SE_INSTANCE_ENGINE_PROPS_BUILDER_RDS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SQL_SERVER_SE_INSTANCE_ENGINE_PROPS_BUILDER_RDS__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Version With Sql Server Engine Version software amazon awscdk services rds Sql Server Engine Version As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SQL_SERVER_SE_INSTANCE_ENGINE_PROPS_BUILDER_RDS__VERSION_WITH_SQL_SERVER_ENGINE_VERSION_SOFTWARE_AMAZON_AWSCDK_SERVICES_RDS_SQL_SERVER_ENGINE_VERSION_AS_REFERENCE = SERVICE_RESOURCES_FEATURE_COUNT
+			+ 0;
+
+	/**
+	 * The feature id for the '<em><b>Generated Class Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SQL_SERVER_SE_INSTANCE_ENGINE_PROPS_BUILDER_RDS__GENERATED_CLASS_NAME = SERVICE_RESOURCES_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Var Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SQL_SERVER_SE_INSTANCE_ENGINE_PROPS_BUILDER_RDS__VAR_NAME = SERVICE_RESOURCES_FEATURE_COUNT + 2;
+
+	/**
+	 * The feature id for the '<em><b>Identifier</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SQL_SERVER_SE_INSTANCE_ENGINE_PROPS_BUILDER_RDS__IDENTIFIER = SERVICE_RESOURCES_FEATURE_COUNT + 3;
+
+	/**
+	 * The feature id for the '<em><b>Additional Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SQL_SERVER_SE_INSTANCE_ENGINE_PROPS_BUILDER_RDS__ADDITIONAL_CODE = SERVICE_RESOURCES_FEATURE_COUNT + 4;
+
+	/**
+	 * The number of structural features of the '<em>Sql Server Se Instance Engine Props Builder rds</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SQL_SERVER_SE_INSTANCE_ENGINE_PROPS_BUILDER_RDS_FEATURE_COUNT = SERVICE_RESOURCES_FEATURE_COUNT + 5;
+
+	/**
+	 * The number of operations of the '<em>Sql Server Se Instance Engine Props Builder rds</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SQL_SERVER_SE_INSTANCE_ENGINE_PROPS_BUILDER_RDS_OPERATION_COUNT = SERVICE_RESOURCES_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.SqlServerWebInstanceEnginePropsBuilder_rdsImpl <em>Sql Server Web Instance Engine Props Builder rds</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.SqlServerWebInstanceEnginePropsBuilder_rdsImpl
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getSqlServerWebInstanceEnginePropsBuilder_rds()
+	 * @generated
+	 */
+	int SQL_SERVER_WEB_INSTANCE_ENGINE_PROPS_BUILDER_RDS = 197;
+
+	/**
+	 * The feature id for the '<em><b>Depends ON</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SQL_SERVER_WEB_INSTANCE_ENGINE_PROPS_BUILDER_RDS__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
+
+	/**
+	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SQL_SERVER_WEB_INSTANCE_ENGINE_PROPS_BUILDER_RDS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SQL_SERVER_WEB_INSTANCE_ENGINE_PROPS_BUILDER_RDS__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Version With Sql Server Engine Version software amazon awscdk services rds Sql Server Engine Version As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SQL_SERVER_WEB_INSTANCE_ENGINE_PROPS_BUILDER_RDS__VERSION_WITH_SQL_SERVER_ENGINE_VERSION_SOFTWARE_AMAZON_AWSCDK_SERVICES_RDS_SQL_SERVER_ENGINE_VERSION_AS_REFERENCE = SERVICE_RESOURCES_FEATURE_COUNT
+			+ 0;
+
+	/**
+	 * The feature id for the '<em><b>Generated Class Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SQL_SERVER_WEB_INSTANCE_ENGINE_PROPS_BUILDER_RDS__GENERATED_CLASS_NAME = SERVICE_RESOURCES_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Var Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SQL_SERVER_WEB_INSTANCE_ENGINE_PROPS_BUILDER_RDS__VAR_NAME = SERVICE_RESOURCES_FEATURE_COUNT + 2;
+
+	/**
+	 * The feature id for the '<em><b>Identifier</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SQL_SERVER_WEB_INSTANCE_ENGINE_PROPS_BUILDER_RDS__IDENTIFIER = SERVICE_RESOURCES_FEATURE_COUNT + 3;
+
+	/**
+	 * The feature id for the '<em><b>Additional Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SQL_SERVER_WEB_INSTANCE_ENGINE_PROPS_BUILDER_RDS__ADDITIONAL_CODE = SERVICE_RESOURCES_FEATURE_COUNT + 4;
+
+	/**
+	 * The number of structural features of the '<em>Sql Server Web Instance Engine Props Builder rds</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SQL_SERVER_WEB_INSTANCE_ENGINE_PROPS_BUILDER_RDS_FEATURE_COUNT = SERVICE_RESOURCES_FEATURE_COUNT + 5;
+
+	/**
+	 * The number of operations of the '<em>Sql Server Web Instance Engine Props Builder rds</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SQL_SERVER_WEB_INSTANCE_ENGINE_PROPS_BUILDER_RDS_OPERATION_COUNT = SERVICE_RESOURCES_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.MySqlInstanceEnginePropsBuilder_rdsImpl <em>My Sql Instance Engine Props Builder rds</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.MySqlInstanceEnginePropsBuilder_rdsImpl
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getMySqlInstanceEnginePropsBuilder_rds()
+	 * @generated
+	 */
+	int MY_SQL_INSTANCE_ENGINE_PROPS_BUILDER_RDS = 198;
+
+	/**
+	 * The feature id for the '<em><b>Depends ON</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MY_SQL_INSTANCE_ENGINE_PROPS_BUILDER_RDS__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
+
+	/**
+	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MY_SQL_INSTANCE_ENGINE_PROPS_BUILDER_RDS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MY_SQL_INSTANCE_ENGINE_PROPS_BUILDER_RDS__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Version With Mysql Engine Version software amazon awscdk services rds Mysql Engine Version As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MY_SQL_INSTANCE_ENGINE_PROPS_BUILDER_RDS__VERSION_WITH_MYSQL_ENGINE_VERSION_SOFTWARE_AMAZON_AWSCDK_SERVICES_RDS_MYSQL_ENGINE_VERSION_AS_REFERENCE = SERVICE_RESOURCES_FEATURE_COUNT
+			+ 0;
+
+	/**
+	 * The feature id for the '<em><b>Generated Class Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MY_SQL_INSTANCE_ENGINE_PROPS_BUILDER_RDS__GENERATED_CLASS_NAME = SERVICE_RESOURCES_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Var Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MY_SQL_INSTANCE_ENGINE_PROPS_BUILDER_RDS__VAR_NAME = SERVICE_RESOURCES_FEATURE_COUNT + 2;
+
+	/**
+	 * The feature id for the '<em><b>Identifier</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MY_SQL_INSTANCE_ENGINE_PROPS_BUILDER_RDS__IDENTIFIER = SERVICE_RESOURCES_FEATURE_COUNT + 3;
+
+	/**
+	 * The feature id for the '<em><b>Additional Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MY_SQL_INSTANCE_ENGINE_PROPS_BUILDER_RDS__ADDITIONAL_CODE = SERVICE_RESOURCES_FEATURE_COUNT + 4;
+
+	/**
+	 * The number of structural features of the '<em>My Sql Instance Engine Props Builder rds</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MY_SQL_INSTANCE_ENGINE_PROPS_BUILDER_RDS_FEATURE_COUNT = SERVICE_RESOURCES_FEATURE_COUNT + 5;
+
+	/**
+	 * The number of operations of the '<em>My Sql Instance Engine Props Builder rds</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MY_SQL_INSTANCE_ENGINE_PROPS_BUILDER_RDS_OPERATION_COUNT = SERVICE_RESOURCES_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.MariaDbInstanceEnginePropsBuilder_rdsImpl <em>Maria Db Instance Engine Props Builder rds</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.MariaDbInstanceEnginePropsBuilder_rdsImpl
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getMariaDbInstanceEnginePropsBuilder_rds()
+	 * @generated
+	 */
+	int MARIA_DB_INSTANCE_ENGINE_PROPS_BUILDER_RDS = 199;
+
+	/**
+	 * The feature id for the '<em><b>Depends ON</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MARIA_DB_INSTANCE_ENGINE_PROPS_BUILDER_RDS__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
+
+	/**
+	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MARIA_DB_INSTANCE_ENGINE_PROPS_BUILDER_RDS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MARIA_DB_INSTANCE_ENGINE_PROPS_BUILDER_RDS__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Version With Maria Db Engine Version software amazon awscdk services rds Maria Db Engine Version As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MARIA_DB_INSTANCE_ENGINE_PROPS_BUILDER_RDS__VERSION_WITH_MARIA_DB_ENGINE_VERSION_SOFTWARE_AMAZON_AWSCDK_SERVICES_RDS_MARIA_DB_ENGINE_VERSION_AS_REFERENCE = SERVICE_RESOURCES_FEATURE_COUNT
+			+ 0;
+
+	/**
+	 * The feature id for the '<em><b>Generated Class Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MARIA_DB_INSTANCE_ENGINE_PROPS_BUILDER_RDS__GENERATED_CLASS_NAME = SERVICE_RESOURCES_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Var Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MARIA_DB_INSTANCE_ENGINE_PROPS_BUILDER_RDS__VAR_NAME = SERVICE_RESOURCES_FEATURE_COUNT + 2;
+
+	/**
+	 * The feature id for the '<em><b>Identifier</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MARIA_DB_INSTANCE_ENGINE_PROPS_BUILDER_RDS__IDENTIFIER = SERVICE_RESOURCES_FEATURE_COUNT + 3;
+
+	/**
+	 * The feature id for the '<em><b>Additional Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MARIA_DB_INSTANCE_ENGINE_PROPS_BUILDER_RDS__ADDITIONAL_CODE = SERVICE_RESOURCES_FEATURE_COUNT + 4;
+
+	/**
+	 * The number of structural features of the '<em>Maria Db Instance Engine Props Builder rds</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MARIA_DB_INSTANCE_ENGINE_PROPS_BUILDER_RDS_FEATURE_COUNT = SERVICE_RESOURCES_FEATURE_COUNT + 5;
+
+	/**
+	 * The number of operations of the '<em>Maria Db Instance Engine Props Builder rds</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MARIA_DB_INSTANCE_ENGINE_PROPS_BUILDER_RDS_OPERATION_COUNT = SERVICE_RESOURCES_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.ParameterGroupBuilder_rdsImpl <em>Parameter Group Builder rds</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.ParameterGroupBuilder_rdsImpl
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getParameterGroupBuilder_rds()
+	 * @generated
+	 */
+	int PARAMETER_GROUP_BUILDER_RDS = 200;
+
+	/**
+	 * The feature id for the '<em><b>Depends ON</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PARAMETER_GROUP_BUILDER_RDS__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
+
+	/**
+	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PARAMETER_GROUP_BUILDER_RDS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PARAMETER_GROUP_BUILDER_RDS__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Engine With IEngine software amazon awscdk services rds IEngine As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PARAMETER_GROUP_BUILDER_RDS__ENGINE_WITH_IENGINE_SOFTWARE_AMAZON_AWSCDK_SERVICES_RDS_IENGINE_AS_REFERENCE = SERVICE_RESOURCES_FEATURE_COUNT
+			+ 0;
+
+	/**
+	 * The feature id for the '<em><b>Description java lang String </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PARAMETER_GROUP_BUILDER_RDS__DESCRIPTION_JAVA_LANG_STRING_ = SERVICE_RESOURCES_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Parameters java lang String java lang String As Map</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PARAMETER_GROUP_BUILDER_RDS__PARAMETERS_JAVA_LANG_STRING_JAVA_LANG_STRING_AS_MAP = SERVICE_RESOURCES_FEATURE_COUNT
+			+ 2;
+
+	/**
+	 * The feature id for the '<em><b>Generated Class Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PARAMETER_GROUP_BUILDER_RDS__GENERATED_CLASS_NAME = SERVICE_RESOURCES_FEATURE_COUNT + 3;
+
+	/**
+	 * The feature id for the '<em><b>Var Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PARAMETER_GROUP_BUILDER_RDS__VAR_NAME = SERVICE_RESOURCES_FEATURE_COUNT + 4;
+
+	/**
+	 * The feature id for the '<em><b>Identifier</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PARAMETER_GROUP_BUILDER_RDS__IDENTIFIER = SERVICE_RESOURCES_FEATURE_COUNT + 5;
+
+	/**
+	 * The feature id for the '<em><b>Additional Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PARAMETER_GROUP_BUILDER_RDS__ADDITIONAL_CODE = SERVICE_RESOURCES_FEATURE_COUNT + 6;
+
+	/**
+	 * The number of structural features of the '<em>Parameter Group Builder rds</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PARAMETER_GROUP_BUILDER_RDS_FEATURE_COUNT = SERVICE_RESOURCES_FEATURE_COUNT + 7;
+
+	/**
+	 * The number of operations of the '<em>Parameter Group Builder rds</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PARAMETER_GROUP_BUILDER_RDS_OPERATION_COUNT = SERVICE_RESOURCES_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.DatabaseInstanceBuilder_rdsImpl <em>Database Instance Builder rds</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.DatabaseInstanceBuilder_rdsImpl
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getDatabaseInstanceBuilder_rds()
+	 * @generated
+	 */
+	int DATABASE_INSTANCE_BUILDER_RDS = 201;
+
+	/**
+	 * The feature id for the '<em><b>Depends ON</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATABASE_INSTANCE_BUILDER_RDS__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
+
+	/**
+	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATABASE_INSTANCE_BUILDER_RDS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATABASE_INSTANCE_BUILDER_RDS__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Vpc With IVpc software amazon awscdk services ec2 IVpc As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATABASE_INSTANCE_BUILDER_RDS__VPC_WITH_IVPC_SOFTWARE_AMAZON_AWSCDK_SERVICES_EC2_IVPC_AS_REFERENCE = SERVICE_RESOURCES_FEATURE_COUNT
+			+ 0;
+
+	/**
+	 * The feature id for the '<em><b>Auto Minor Version Upgrade java lang Boolean </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATABASE_INSTANCE_BUILDER_RDS__AUTO_MINOR_VERSION_UPGRADE_JAVA_LANG_BOOLEAN_ = SERVICE_RESOURCES_FEATURE_COUNT
+			+ 1;
+
+	/**
+	 * The feature id for the '<em><b>Availability Zone java lang String </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATABASE_INSTANCE_BUILDER_RDS__AVAILABILITY_ZONE_JAVA_LANG_STRING_ = SERVICE_RESOURCES_FEATURE_COUNT + 2;
+
+	/**
+	 * The feature id for the '<em><b>Backup Retention With Duration software amazon awscdk core Duration As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATABASE_INSTANCE_BUILDER_RDS__BACKUP_RETENTION_WITH_DURATION_SOFTWARE_AMAZON_AWSCDK_CORE_DURATION_AS_REFERENCE = SERVICE_RESOURCES_FEATURE_COUNT
+			+ 3;
+
+	/**
+	 * The feature id for the '<em><b>Cloudwatch Logs Exports java lang String As List</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATABASE_INSTANCE_BUILDER_RDS__CLOUDWATCH_LOGS_EXPORTS_JAVA_LANG_STRING_AS_LIST = SERVICE_RESOURCES_FEATURE_COUNT
+			+ 4;
+
+	/**
+	 * The feature id for the '<em><b>Cloudwatch Logs Retention software amazon awscdk services logs Retention Days </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATABASE_INSTANCE_BUILDER_RDS__CLOUDWATCH_LOGS_RETENTION_SOFTWARE_AMAZON_AWSCDK_SERVICES_LOGS_RETENTION_DAYS_ = SERVICE_RESOURCES_FEATURE_COUNT
+			+ 5;
+
+	/**
+	 * The feature id for the '<em><b>Cloudwatch Logs Retention Role With IRole software amazon awscdk services iam IRole As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATABASE_INSTANCE_BUILDER_RDS__CLOUDWATCH_LOGS_RETENTION_ROLE_WITH_IROLE_SOFTWARE_AMAZON_AWSCDK_SERVICES_IAM_IROLE_AS_REFERENCE = SERVICE_RESOURCES_FEATURE_COUNT
+			+ 6;
+
+	/**
+	 * The feature id for the '<em><b>Copy Tags To Snapshot java lang Boolean </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATABASE_INSTANCE_BUILDER_RDS__COPY_TAGS_TO_SNAPSHOT_JAVA_LANG_BOOLEAN_ = SERVICE_RESOURCES_FEATURE_COUNT + 7;
+
+	/**
+	 * The feature id for the '<em><b>Delete Automated Backups java lang Boolean </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATABASE_INSTANCE_BUILDER_RDS__DELETE_AUTOMATED_BACKUPS_JAVA_LANG_BOOLEAN_ = SERVICE_RESOURCES_FEATURE_COUNT
+			+ 8;
+
+	/**
+	 * The feature id for the '<em><b>Deletion Protection java lang Boolean </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATABASE_INSTANCE_BUILDER_RDS__DELETION_PROTECTION_JAVA_LANG_BOOLEAN_ = SERVICE_RESOURCES_FEATURE_COUNT + 9;
+
+	/**
+	 * The feature id for the '<em><b>Enable Performance Insights java lang Boolean </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATABASE_INSTANCE_BUILDER_RDS__ENABLE_PERFORMANCE_INSIGHTS_JAVA_LANG_BOOLEAN_ = SERVICE_RESOURCES_FEATURE_COUNT
+			+ 10;
+
+	/**
+	 * The feature id for the '<em><b>Iam Authentication java lang Boolean </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATABASE_INSTANCE_BUILDER_RDS__IAM_AUTHENTICATION_JAVA_LANG_BOOLEAN_ = SERVICE_RESOURCES_FEATURE_COUNT + 11;
+
+	/**
+	 * The feature id for the '<em><b>Instance Identifier java lang String </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATABASE_INSTANCE_BUILDER_RDS__INSTANCE_IDENTIFIER_JAVA_LANG_STRING_ = SERVICE_RESOURCES_FEATURE_COUNT + 12;
+
+	/**
+	 * The feature id for the '<em><b>Iops java lang Number </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATABASE_INSTANCE_BUILDER_RDS__IOPS_JAVA_LANG_NUMBER_ = SERVICE_RESOURCES_FEATURE_COUNT + 13;
+
+	/**
+	 * The feature id for the '<em><b>Max Allocated Storage java lang Number </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATABASE_INSTANCE_BUILDER_RDS__MAX_ALLOCATED_STORAGE_JAVA_LANG_NUMBER_ = SERVICE_RESOURCES_FEATURE_COUNT + 14;
+
+	/**
+	 * The feature id for the '<em><b>Monitoring Interval With Duration software amazon awscdk core Duration As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATABASE_INSTANCE_BUILDER_RDS__MONITORING_INTERVAL_WITH_DURATION_SOFTWARE_AMAZON_AWSCDK_CORE_DURATION_AS_REFERENCE = SERVICE_RESOURCES_FEATURE_COUNT
+			+ 15;
+
+	/**
+	 * The feature id for the '<em><b>Monitoring Role With IRole software amazon awscdk services iam IRole As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATABASE_INSTANCE_BUILDER_RDS__MONITORING_ROLE_WITH_IROLE_SOFTWARE_AMAZON_AWSCDK_SERVICES_IAM_IROLE_AS_REFERENCE = SERVICE_RESOURCES_FEATURE_COUNT
+			+ 16;
+
+	/**
+	 * The feature id for the '<em><b>Multi Az java lang Boolean </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATABASE_INSTANCE_BUILDER_RDS__MULTI_AZ_JAVA_LANG_BOOLEAN_ = SERVICE_RESOURCES_FEATURE_COUNT + 17;
+
+	/**
+	 * The feature id for the '<em><b>Option Group With IOption Group software amazon awscdk services rds IOption Group As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATABASE_INSTANCE_BUILDER_RDS__OPTION_GROUP_WITH_IOPTION_GROUP_SOFTWARE_AMAZON_AWSCDK_SERVICES_RDS_IOPTION_GROUP_AS_REFERENCE = SERVICE_RESOURCES_FEATURE_COUNT
+			+ 18;
+
+	/**
+	 * The feature id for the '<em><b>Performance Insight Encryption Key With IKey software amazon awscdk services kms IKey As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATABASE_INSTANCE_BUILDER_RDS__PERFORMANCE_INSIGHT_ENCRYPTION_KEY_WITH_IKEY_SOFTWARE_AMAZON_AWSCDK_SERVICES_KMS_IKEY_AS_REFERENCE = SERVICE_RESOURCES_FEATURE_COUNT
+			+ 19;
+
+	/**
+	 * The feature id for the '<em><b>Performance Insight Retention software amazon awscdk services rds Performance Insight Retention </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATABASE_INSTANCE_BUILDER_RDS__PERFORMANCE_INSIGHT_RETENTION_SOFTWARE_AMAZON_AWSCDK_SERVICES_RDS_PERFORMANCE_INSIGHT_RETENTION_ = SERVICE_RESOURCES_FEATURE_COUNT
+			+ 20;
+
+	/**
+	 * The feature id for the '<em><b>Port java lang Number </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATABASE_INSTANCE_BUILDER_RDS__PORT_JAVA_LANG_NUMBER_ = SERVICE_RESOURCES_FEATURE_COUNT + 21;
+
+	/**
+	 * The feature id for the '<em><b>Preferred Backup Window java lang String </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATABASE_INSTANCE_BUILDER_RDS__PREFERRED_BACKUP_WINDOW_JAVA_LANG_STRING_ = SERVICE_RESOURCES_FEATURE_COUNT + 22;
+
+	/**
+	 * The feature id for the '<em><b>Preferred Maintenance Window java lang String </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATABASE_INSTANCE_BUILDER_RDS__PREFERRED_MAINTENANCE_WINDOW_JAVA_LANG_STRING_ = SERVICE_RESOURCES_FEATURE_COUNT
+			+ 23;
+
+	/**
+	 * The feature id for the '<em><b>Processor Features With Processor Features software amazon awscdk services rds Processor Features As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATABASE_INSTANCE_BUILDER_RDS__PROCESSOR_FEATURES_WITH_PROCESSOR_FEATURES_SOFTWARE_AMAZON_AWSCDK_SERVICES_RDS_PROCESSOR_FEATURES_AS_REFERENCE = SERVICE_RESOURCES_FEATURE_COUNT
+			+ 24;
+
+	/**
+	 * The feature id for the '<em><b>Removal Policy software amazon awscdk core Removal Policy </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATABASE_INSTANCE_BUILDER_RDS__REMOVAL_POLICY_SOFTWARE_AMAZON_AWSCDK_CORE_REMOVAL_POLICY_ = SERVICE_RESOURCES_FEATURE_COUNT
+			+ 25;
+
+	/**
+	 * The feature id for the '<em><b>Security Groups software amazon awscdk services ec2 ISecurity Group As List</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATABASE_INSTANCE_BUILDER_RDS__SECURITY_GROUPS_SOFTWARE_AMAZON_AWSCDK_SERVICES_EC2_ISECURITY_GROUP_AS_LIST = SERVICE_RESOURCES_FEATURE_COUNT
+			+ 26;
+
+	/**
+	 * The feature id for the '<em><b>Storage Type software amazon awscdk services rds Storage Type </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATABASE_INSTANCE_BUILDER_RDS__STORAGE_TYPE_SOFTWARE_AMAZON_AWSCDK_SERVICES_RDS_STORAGE_TYPE_ = SERVICE_RESOURCES_FEATURE_COUNT
+			+ 27;
+
+	/**
+	 * The feature id for the '<em><b>Vpc Placement With Subnet Selection software amazon awscdk services ec2 Subnet Selection As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATABASE_INSTANCE_BUILDER_RDS__VPC_PLACEMENT_WITH_SUBNET_SELECTION_SOFTWARE_AMAZON_AWSCDK_SERVICES_EC2_SUBNET_SELECTION_AS_REFERENCE = SERVICE_RESOURCES_FEATURE_COUNT
+			+ 28;
+
+	/**
+	 * The feature id for the '<em><b>Engine With IInstance Engine software amazon awscdk services rds IInstance Engine As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATABASE_INSTANCE_BUILDER_RDS__ENGINE_WITH_IINSTANCE_ENGINE_SOFTWARE_AMAZON_AWSCDK_SERVICES_RDS_IINSTANCE_ENGINE_AS_REFERENCE = SERVICE_RESOURCES_FEATURE_COUNT
+			+ 29;
+
+	/**
+	 * The feature id for the '<em><b>Allocated Storage java lang Number </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATABASE_INSTANCE_BUILDER_RDS__ALLOCATED_STORAGE_JAVA_LANG_NUMBER_ = SERVICE_RESOURCES_FEATURE_COUNT + 30;
+
+	/**
+	 * The feature id for the '<em><b>Allow Major Version Upgrade java lang Boolean </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATABASE_INSTANCE_BUILDER_RDS__ALLOW_MAJOR_VERSION_UPGRADE_JAVA_LANG_BOOLEAN_ = SERVICE_RESOURCES_FEATURE_COUNT
+			+ 31;
+
+	/**
+	 * The feature id for the '<em><b>Database Name java lang String </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATABASE_INSTANCE_BUILDER_RDS__DATABASE_NAME_JAVA_LANG_STRING_ = SERVICE_RESOURCES_FEATURE_COUNT + 32;
+
+	/**
+	 * The feature id for the '<em><b>Instance Type With Instance Type software amazon awscdk services ec2 Instance Type As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATABASE_INSTANCE_BUILDER_RDS__INSTANCE_TYPE_WITH_INSTANCE_TYPE_SOFTWARE_AMAZON_AWSCDK_SERVICES_EC2_INSTANCE_TYPE_AS_REFERENCE = SERVICE_RESOURCES_FEATURE_COUNT
+			+ 33;
+
+	/**
+	 * The feature id for the '<em><b>License Model software amazon awscdk services rds License Model </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATABASE_INSTANCE_BUILDER_RDS__LICENSE_MODEL_SOFTWARE_AMAZON_AWSCDK_SERVICES_RDS_LICENSE_MODEL_ = SERVICE_RESOURCES_FEATURE_COUNT
+			+ 34;
+
+	/**
+	 * The feature id for the '<em><b>Master User Password With Secret Value software amazon awscdk core Secret Value As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATABASE_INSTANCE_BUILDER_RDS__MASTER_USER_PASSWORD_WITH_SECRET_VALUE_SOFTWARE_AMAZON_AWSCDK_CORE_SECRET_VALUE_AS_REFERENCE = SERVICE_RESOURCES_FEATURE_COUNT
+			+ 35;
+
+	/**
+	 * The feature id for the '<em><b>Master User Password Encryption Key With IKey software amazon awscdk services kms IKey As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATABASE_INSTANCE_BUILDER_RDS__MASTER_USER_PASSWORD_ENCRYPTION_KEY_WITH_IKEY_SOFTWARE_AMAZON_AWSCDK_SERVICES_KMS_IKEY_AS_REFERENCE = SERVICE_RESOURCES_FEATURE_COUNT
+			+ 36;
+
+	/**
+	 * The feature id for the '<em><b>Parameter Group With IParameter Group software amazon awscdk services rds IParameter Group As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATABASE_INSTANCE_BUILDER_RDS__PARAMETER_GROUP_WITH_IPARAMETER_GROUP_SOFTWARE_AMAZON_AWSCDK_SERVICES_RDS_IPARAMETER_GROUP_AS_REFERENCE = SERVICE_RESOURCES_FEATURE_COUNT
+			+ 37;
+
+	/**
+	 * The feature id for the '<em><b>Timezone java lang String </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATABASE_INSTANCE_BUILDER_RDS__TIMEZONE_JAVA_LANG_STRING_ = SERVICE_RESOURCES_FEATURE_COUNT + 38;
+
+	/**
+	 * The feature id for the '<em><b>Master Username java lang String </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATABASE_INSTANCE_BUILDER_RDS__MASTER_USERNAME_JAVA_LANG_STRING_ = SERVICE_RESOURCES_FEATURE_COUNT + 39;
+
+	/**
+	 * The feature id for the '<em><b>Character Set Name java lang String </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATABASE_INSTANCE_BUILDER_RDS__CHARACTER_SET_NAME_JAVA_LANG_STRING_ = SERVICE_RESOURCES_FEATURE_COUNT + 40;
+
+	/**
+	 * The feature id for the '<em><b>Storage Encrypted java lang Boolean </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATABASE_INSTANCE_BUILDER_RDS__STORAGE_ENCRYPTED_JAVA_LANG_BOOLEAN_ = SERVICE_RESOURCES_FEATURE_COUNT + 41;
+
+	/**
+	 * The feature id for the '<em><b>Storage Encryption Key With IKey software amazon awscdk services kms IKey As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATABASE_INSTANCE_BUILDER_RDS__STORAGE_ENCRYPTION_KEY_WITH_IKEY_SOFTWARE_AMAZON_AWSCDK_SERVICES_KMS_IKEY_AS_REFERENCE = SERVICE_RESOURCES_FEATURE_COUNT
+			+ 42;
+
+	/**
+	 * The feature id for the '<em><b>Generated Class Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATABASE_INSTANCE_BUILDER_RDS__GENERATED_CLASS_NAME = SERVICE_RESOURCES_FEATURE_COUNT + 43;
+
+	/**
+	 * The feature id for the '<em><b>Var Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATABASE_INSTANCE_BUILDER_RDS__VAR_NAME = SERVICE_RESOURCES_FEATURE_COUNT + 44;
+
+	/**
+	 * The feature id for the '<em><b>Identifier</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATABASE_INSTANCE_BUILDER_RDS__IDENTIFIER = SERVICE_RESOURCES_FEATURE_COUNT + 45;
+
+	/**
+	 * The feature id for the '<em><b>Additional Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATABASE_INSTANCE_BUILDER_RDS__ADDITIONAL_CODE = SERVICE_RESOURCES_FEATURE_COUNT + 46;
+
+	/**
+	 * The number of structural features of the '<em>Database Instance Builder rds</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATABASE_INSTANCE_BUILDER_RDS_FEATURE_COUNT = SERVICE_RESOURCES_FEATURE_COUNT + 47;
+
+	/**
+	 * The number of operations of the '<em>Database Instance Builder rds</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATABASE_INSTANCE_BUILDER_RDS_OPERATION_COUNT = SERVICE_RESOURCES_OPERATION_COUNT + 0;
+
+	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.ScheduledFargateTaskBuilder_patternsImpl <em>Scheduled Fargate Task Builder patterns</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -29158,7 +31935,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getScheduledFargateTaskBuilder_patterns()
 	 * @generated
 	 */
-	int SCHEDULED_FARGATE_TASK_BUILDER_PATTERNS = 182;
+	int SCHEDULED_FARGATE_TASK_BUILDER_PATTERNS = 202;
 
 	/**
 	 * The feature id for the '<em><b>Depends ON</b></em>' reference list.
@@ -29319,7 +32096,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getBlock()
 	 * @generated
 	 */
-	int BLOCK = 183;
+	int BLOCK = 203;
 
 	/**
 	 * The feature id for the '<em><b>Label</b></em>' attribute.
@@ -29401,7 +32178,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getFlowLogTrafficType()
 	 * @generated
 	 */
-	int FLOW_LOG_TRAFFIC_TYPE = 184;
+	int FLOW_LOG_TRAFFIC_TYPE = 204;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.DefaultInstanceTenancy <em>Default Instance Tenancy</em>}' enum.
@@ -29411,7 +32188,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getDefaultInstanceTenancy()
 	 * @generated
 	 */
-	int DEFAULT_INSTANCE_TENANCY = 185;
+	int DEFAULT_INSTANCE_TENANCY = 205;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.SubnetType <em>Subnet Type</em>}' enum.
@@ -29421,7 +32198,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getSubnetType()
 	 * @generated
 	 */
-	int SUBNET_TYPE = 186;
+	int SUBNET_TYPE = 206;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.ApiKeySourceType <em>Api Key Source Type</em>}' enum.
@@ -29431,7 +32208,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getApiKeySourceType()
 	 * @generated
 	 */
-	int API_KEY_SOURCE_TYPE = 187;
+	int API_KEY_SOURCE_TYPE = 207;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.EndpointType <em>Endpoint Type</em>}' enum.
@@ -29441,7 +32218,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getEndpointType()
 	 * @generated
 	 */
-	int ENDPOINT_TYPE = 188;
+	int ENDPOINT_TYPE = 208;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.MethodLoggingLevel <em>Method Logging Level</em>}' enum.
@@ -29451,7 +32228,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getMethodLoggingLevel()
 	 * @generated
 	 */
-	int METHOD_LOGGING_LEVEL = 189;
+	int METHOD_LOGGING_LEVEL = 209;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.ValidationMethod <em>Validation Method</em>}' enum.
@@ -29461,7 +32238,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getValidationMethod()
 	 * @generated
 	 */
-	int VALIDATION_METHOD = 190;
+	int VALIDATION_METHOD = 210;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.SecurityPolicy <em>Security Policy</em>}' enum.
@@ -29471,7 +32248,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getSecurityPolicy()
 	 * @generated
 	 */
-	int SECURITY_POLICY = 191;
+	int SECURITY_POLICY = 211;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.IntegrationType <em>Integration Type</em>}' enum.
@@ -29481,7 +32258,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getIntegrationType()
 	 * @generated
 	 */
-	int INTEGRATION_TYPE = 192;
+	int INTEGRATION_TYPE = 212;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.ContentHandling <em>Content Handling</em>}' enum.
@@ -29491,7 +32268,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getContentHandling()
 	 * @generated
 	 */
-	int CONTENT_HANDLING = 193;
+	int CONTENT_HANDLING = 213;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.ConnectionType <em>Connection Type</em>}' enum.
@@ -29501,7 +32278,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getConnectionType()
 	 * @generated
 	 */
-	int CONNECTION_TYPE = 194;
+	int CONNECTION_TYPE = 214;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.PassthroughBehavior <em>Passthrough Behavior</em>}' enum.
@@ -29511,7 +32288,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getPassthroughBehavior()
 	 * @generated
 	 */
-	int PASSTHROUGH_BEHAVIOR = 195;
+	int PASSTHROUGH_BEHAVIOR = 215;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.QueueEncryption <em>Queue Encryption</em>}' enum.
@@ -29521,7 +32298,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getQueueEncryption()
 	 * @generated
 	 */
-	int QUEUE_ENCRYPTION = 196;
+	int QUEUE_ENCRYPTION = 216;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.RetentionDays <em>Retention Days</em>}' enum.
@@ -29531,7 +32308,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getRetentionDays()
 	 * @generated
 	 */
-	int RETENTION_DAYS = 197;
+	int RETENTION_DAYS = 217;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.Tracing <em>Tracing</em>}' enum.
@@ -29541,7 +32318,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getTracing()
 	 * @generated
 	 */
-	int TRACING = 198;
+	int TRACING = 218;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.AuthorizationType <em>Authorization Type</em>}' enum.
@@ -29551,7 +32328,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getAuthorizationType()
 	 * @generated
 	 */
-	int AUTHORIZATION_TYPE = 199;
+	int AUTHORIZATION_TYPE = 219;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.JsonSchemaVersion <em>Json Schema Version</em>}' enum.
@@ -29561,7 +32338,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getJsonSchemaVersion()
 	 * @generated
 	 */
-	int JSON_SCHEMA_VERSION = 200;
+	int JSON_SCHEMA_VERSION = 220;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.JsonSchemaType <em>Json Schema Type</em>}' enum.
@@ -29571,7 +32348,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getJsonSchemaType()
 	 * @generated
 	 */
-	int JSON_SCHEMA_TYPE = 201;
+	int JSON_SCHEMA_TYPE = 221;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.CloudFrontAllowedCachedMethods <em>Cloud Front Allowed Cached Methods</em>}' enum.
@@ -29581,7 +32358,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getCloudFrontAllowedCachedMethods()
 	 * @generated
 	 */
-	int CLOUD_FRONT_ALLOWED_CACHED_METHODS = 202;
+	int CLOUD_FRONT_ALLOWED_CACHED_METHODS = 222;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.CloudFrontAllowedMethods <em>Cloud Front Allowed Methods</em>}' enum.
@@ -29591,7 +32368,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getCloudFrontAllowedMethods()
 	 * @generated
 	 */
-	int CLOUD_FRONT_ALLOWED_METHODS = 203;
+	int CLOUD_FRONT_ALLOWED_METHODS = 223;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.LambdaEdgeEventType <em>Lambda Edge Event Type</em>}' enum.
@@ -29601,7 +32378,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getLambdaEdgeEventType()
 	 * @generated
 	 */
-	int LAMBDA_EDGE_EVENT_TYPE = 204;
+	int LAMBDA_EDGE_EVENT_TYPE = 224;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.OriginSslPolicy <em>Origin Ssl Policy</em>}' enum.
@@ -29611,7 +32388,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getOriginSslPolicy()
 	 * @generated
 	 */
-	int ORIGIN_SSL_POLICY = 205;
+	int ORIGIN_SSL_POLICY = 225;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.OriginProtocolPolicy <em>Origin Protocol Policy</em>}' enum.
@@ -29621,7 +32398,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getOriginProtocolPolicy()
 	 * @generated
 	 */
-	int ORIGIN_PROTOCOL_POLICY = 206;
+	int ORIGIN_PROTOCOL_POLICY = 226;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.BucketAccessControl <em>Bucket Access Control</em>}' enum.
@@ -29631,7 +32408,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getBucketAccessControl()
 	 * @generated
 	 */
-	int BUCKET_ACCESS_CONTROL = 207;
+	int BUCKET_ACCESS_CONTROL = 227;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.HttpMethods <em>Http Methods</em>}' enum.
@@ -29641,7 +32418,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getHttpMethods()
 	 * @generated
 	 */
-	int HTTP_METHODS = 208;
+	int HTTP_METHODS = 228;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.BucketEncryption <em>Bucket Encryption</em>}' enum.
@@ -29651,7 +32428,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getBucketEncryption()
 	 * @generated
 	 */
-	int BUCKET_ENCRYPTION = 209;
+	int BUCKET_ENCRYPTION = 229;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.RedirectProtocol <em>Redirect Protocol</em>}' enum.
@@ -29661,7 +32438,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getRedirectProtocol()
 	 * @generated
 	 */
-	int REDIRECT_PROTOCOL = 210;
+	int REDIRECT_PROTOCOL = 230;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.HttpVersion <em>Http Version</em>}' enum.
@@ -29671,7 +32448,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getHttpVersion()
 	 * @generated
 	 */
-	int HTTP_VERSION = 211;
+	int HTTP_VERSION = 231;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.PriceClass <em>Price Class</em>}' enum.
@@ -29681,7 +32458,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getPriceClass()
 	 * @generated
 	 */
-	int PRICE_CLASS = 212;
+	int PRICE_CLASS = 232;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.ViewerProtocolPolicy <em>Viewer Protocol Policy</em>}' enum.
@@ -29691,7 +32468,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getViewerProtocolPolicy()
 	 * @generated
 	 */
-	int VIEWER_PROTOCOL_POLICY = 213;
+	int VIEWER_PROTOCOL_POLICY = 233;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.SecurityPolicyProtocol <em>Security Policy Protocol</em>}' enum.
@@ -29701,7 +32478,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getSecurityPolicyProtocol()
 	 * @generated
 	 */
-	int SECURITY_POLICY_PROTOCOL = 214;
+	int SECURITY_POLICY_PROTOCOL = 234;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.SSLMethod <em>SSL Method</em>}' enum.
@@ -29711,7 +32488,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getSSLMethod()
 	 * @generated
 	 */
-	int SSL_METHOD = 215;
+	int SSL_METHOD = 235;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.Mfa <em>Mfa</em>}' enum.
@@ -29721,7 +32498,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getMfa()
 	 * @generated
 	 */
-	int MFA = 216;
+	int MFA = 236;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.VerificationEmailStyle <em>Verification Email Style</em>}' enum.
@@ -29731,7 +32508,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getVerificationEmailStyle()
 	 * @generated
 	 */
-	int VERIFICATION_EMAIL_STYLE = 217;
+	int VERIFICATION_EMAIL_STYLE = 237;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.StateMachineType <em>State Machine Type</em>}' enum.
@@ -29741,7 +32518,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getStateMachineType()
 	 * @generated
 	 */
-	int STATE_MACHINE_TYPE = 218;
+	int STATE_MACHINE_TYPE = 238;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.Effect <em>Effect</em>}' enum.
@@ -29751,7 +32528,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getEffect()
 	 * @generated
 	 */
-	int EFFECT = 219;
+	int EFFECT = 239;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.AttributeType <em>Attribute Type</em>}' enum.
@@ -29761,7 +32538,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getAttributeType()
 	 * @generated
 	 */
-	int ATTRIBUTE_TYPE = 220;
+	int ATTRIBUTE_TYPE = 240;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.StreamViewType <em>Stream View Type</em>}' enum.
@@ -29771,7 +32548,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getStreamViewType()
 	 * @generated
 	 */
-	int STREAM_VIEW_TYPE = 221;
+	int STREAM_VIEW_TYPE = 241;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.RemovalPolicy <em>Removal Policy</em>}' enum.
@@ -29781,7 +32558,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getRemovalPolicy()
 	 * @generated
 	 */
-	int REMOVAL_POLICY = 222;
+	int REMOVAL_POLICY = 242;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.TableEncryption <em>Table Encryption</em>}' enum.
@@ -29791,7 +32568,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getTableEncryption()
 	 * @generated
 	 */
-	int TABLE_ENCRYPTION = 223;
+	int TABLE_ENCRYPTION = 243;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.BillingMode <em>Billing Mode</em>}' enum.
@@ -29801,7 +32578,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getBillingMode()
 	 * @generated
 	 */
-	int BILLING_MODE = 224;
+	int BILLING_MODE = 244;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.DnsRecordType <em>Dns Record Type</em>}' enum.
@@ -29811,7 +32588,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getDnsRecordType()
 	 * @generated
 	 */
-	int DNS_RECORD_TYPE = 225;
+	int DNS_RECORD_TYPE = 245;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.InstanceClass <em>Instance Class</em>}' enum.
@@ -29821,7 +32598,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getInstanceClass()
 	 * @generated
 	 */
-	int INSTANCE_CLASS = 226;
+	int INSTANCE_CLASS = 246;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.InstanceSize <em>Instance Size</em>}' enum.
@@ -29831,7 +32608,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getInstanceSize()
 	 * @generated
 	 */
-	int INSTANCE_SIZE = 227;
+	int INSTANCE_SIZE = 247;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.AmazonLinuxEdition <em>Amazon Linux Edition</em>}' enum.
@@ -29841,7 +32618,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getAmazonLinuxEdition()
 	 * @generated
 	 */
-	int AMAZON_LINUX_EDITION = 228;
+	int AMAZON_LINUX_EDITION = 248;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.AmazonLinuxGeneration <em>Amazon Linux Generation</em>}' enum.
@@ -29851,7 +32628,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getAmazonLinuxGeneration()
 	 * @generated
 	 */
-	int AMAZON_LINUX_GENERATION = 229;
+	int AMAZON_LINUX_GENERATION = 249;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.AmazonLinuxStorage <em>Amazon Linux Storage</em>}' enum.
@@ -29861,7 +32638,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getAmazonLinuxStorage()
 	 * @generated
 	 */
-	int AMAZON_LINUX_STORAGE = 230;
+	int AMAZON_LINUX_STORAGE = 250;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.AmazonLinuxVirt <em>Amazon Linux Virt</em>}' enum.
@@ -29871,7 +32648,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getAmazonLinuxVirt()
 	 * @generated
 	 */
-	int AMAZON_LINUX_VIRT = 231;
+	int AMAZON_LINUX_VIRT = 251;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.ScalingProcess <em>Scaling Process</em>}' enum.
@@ -29881,7 +32658,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getScalingProcess()
 	 * @generated
 	 */
-	int SCALING_PROCESS = 232;
+	int SCALING_PROCESS = 252;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.UpdateType <em>Update Type</em>}' enum.
@@ -29891,7 +32668,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getUpdateType()
 	 * @generated
 	 */
-	int UPDATE_TYPE = 233;
+	int UPDATE_TYPE = 253;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.NamespaceType <em>Namespace Type</em>}' enum.
@@ -29901,7 +32678,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getNamespaceType()
 	 * @generated
 	 */
-	int NAMESPACE_TYPE = 234;
+	int NAMESPACE_TYPE = 254;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.IpAddressType <em>Ip Address Type</em>}' enum.
@@ -29911,7 +32688,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getIpAddressType()
 	 * @generated
 	 */
-	int IP_ADDRESS_TYPE = 235;
+	int IP_ADDRESS_TYPE = 255;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.PropagatedTagSource <em>Propagated Tag Source</em>}' enum.
@@ -29921,7 +32698,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getPropagatedTagSource()
 	 * @generated
 	 */
-	int PROPAGATED_TAG_SOURCE = 236;
+	int PROPAGATED_TAG_SOURCE = 256;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.ApplicationProtocol <em>Application Protocol</em>}' enum.
@@ -29931,7 +32708,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getApplicationProtocol()
 	 * @generated
 	 */
-	int APPLICATION_PROTOCOL = 237;
+	int APPLICATION_PROTOCOL = 257;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.FollowMode <em>Follow Mode</em>}' enum.
@@ -29941,7 +32718,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getFollowMode()
 	 * @generated
 	 */
-	int FOLLOW_MODE = 238;
+	int FOLLOW_MODE = 258;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.Scope <em>Scope</em>}' enum.
@@ -29951,7 +32728,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getScope()
 	 * @generated
 	 */
-	int SCOPE = 239;
+	int SCOPE = 259;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.NetworkMode <em>Network Mode</em>}' enum.
@@ -29961,7 +32738,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getNetworkMode()
 	 * @generated
 	 */
-	int NETWORK_MODE = 240;
+	int NETWORK_MODE = 260;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.IpcMode <em>Ipc Mode</em>}' enum.
@@ -29971,7 +32748,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getIpcMode()
 	 * @generated
 	 */
-	int IPC_MODE = 241;
+	int IPC_MODE = 261;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.PidMode <em>Pid Mode</em>}' enum.
@@ -29981,7 +32758,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getPidMode()
 	 * @generated
 	 */
-	int PID_MODE = 242;
+	int PID_MODE = 262;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.FargatePlatformVersion <em>Fargate Platform Version</em>}' enum.
@@ -29991,7 +32768,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getFargatePlatformVersion()
 	 * @generated
 	 */
-	int FARGATE_PLATFORM_VERSION = 243;
+	int FARGATE_PLATFORM_VERSION = 263;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.Protocol <em>Protocol</em>}' enum.
@@ -30001,7 +32778,37 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getProtocol()
 	 * @generated
 	 */
-	int PROTOCOL = 244;
+	int PROTOCOL = 264;
+
+	/**
+	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.PerformanceInsightRetention <em>Performance Insight Retention</em>}' enum.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.amazon.aws.workbench.model.awsworkbench.PerformanceInsightRetention
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getPerformanceInsightRetention()
+	 * @generated
+	 */
+	int PERFORMANCE_INSIGHT_RETENTION = 265;
+
+	/**
+	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.StorageType <em>Storage Type</em>}' enum.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.amazon.aws.workbench.model.awsworkbench.StorageType
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getStorageType()
+	 * @generated
+	 */
+	int STORAGE_TYPE = 266;
+
+	/**
+	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.LicenseModel <em>License Model</em>}' enum.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.amazon.aws.workbench.model.awsworkbench.LicenseModel
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getLicenseModel()
+	 * @generated
+	 */
+	int LICENSE_MODEL = 267;
 
 	/**
 	 * Returns the meta object for class '{@link com.amazon.aws.workbench.model.awsworkbench.ServiceResources <em>Service Resources</em>}'.
@@ -54088,6 +56895,2175 @@ public interface AwsworkbenchPackage extends EPackage {
 	EAttribute getScheduledFargateTaskImageOptionsBuilder_patterns_AdditionalCode();
 
 	/**
+	 * Returns the meta object for class '{@link com.amazon.aws.workbench.model.awsworkbench.TopicBuilder_sns <em>Topic Builder sns</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Topic Builder sns</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.TopicBuilder_sns
+	 * @generated
+	 */
+	EClass getTopicBuilder_sns();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.TopicBuilder_sns#getDisplayName_java_lang_String_ <em>Display Name java lang String </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Display Name java lang String </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.TopicBuilder_sns#getDisplayName_java_lang_String_()
+	 * @see #getTopicBuilder_sns()
+	 * @generated
+	 */
+	EAttribute getTopicBuilder_sns_DisplayName_java_lang_String_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.TopicBuilder_sns#getMasterKeyWithIKey_software_amazon_awscdk_services_kms_IKey_AsReference <em>Master Key With IKey software amazon awscdk services kms IKey As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Master Key With IKey software amazon awscdk services kms IKey As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.TopicBuilder_sns#getMasterKeyWithIKey_software_amazon_awscdk_services_kms_IKey_AsReference()
+	 * @see #getTopicBuilder_sns()
+	 * @generated
+	 */
+	EAttribute getTopicBuilder_sns_MasterKeyWithIKey_software_amazon_awscdk_services_kms_IKey_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.TopicBuilder_sns#getTopicName_java_lang_String_ <em>Topic Name java lang String </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Topic Name java lang String </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.TopicBuilder_sns#getTopicName_java_lang_String_()
+	 * @see #getTopicBuilder_sns()
+	 * @generated
+	 */
+	EAttribute getTopicBuilder_sns_TopicName_java_lang_String_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.TopicBuilder_sns#getGeneratedClassName <em>Generated Class Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Generated Class Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.TopicBuilder_sns#getGeneratedClassName()
+	 * @see #getTopicBuilder_sns()
+	 * @generated
+	 */
+	EAttribute getTopicBuilder_sns_GeneratedClassName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.TopicBuilder_sns#getVarName <em>Var Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Var Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.TopicBuilder_sns#getVarName()
+	 * @see #getTopicBuilder_sns()
+	 * @generated
+	 */
+	EAttribute getTopicBuilder_sns_VarName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.TopicBuilder_sns#getIdentifier <em>Identifier</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Identifier</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.TopicBuilder_sns#getIdentifier()
+	 * @see #getTopicBuilder_sns()
+	 * @generated
+	 */
+	EAttribute getTopicBuilder_sns_Identifier();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.TopicBuilder_sns#getAdditionalCode <em>Additional Code</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Additional Code</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.TopicBuilder_sns#getAdditionalCode()
+	 * @see #getTopicBuilder_sns()
+	 * @generated
+	 */
+	EAttribute getTopicBuilder_sns_AdditionalCode();
+
+	/**
+	 * Returns the meta object for class '{@link com.amazon.aws.workbench.model.awsworkbench.Ec2HealthCheckOptionsBuilder_autoscaling <em>Ec2 Health Check Options Builder autoscaling</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Ec2 Health Check Options Builder autoscaling</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.Ec2HealthCheckOptionsBuilder_autoscaling
+	 * @generated
+	 */
+	EClass getEc2HealthCheckOptionsBuilder_autoscaling();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.Ec2HealthCheckOptionsBuilder_autoscaling#getGraceWithDuration_software_amazon_awscdk_core_Duration_AsReference <em>Grace With Duration software amazon awscdk core Duration As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Grace With Duration software amazon awscdk core Duration As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.Ec2HealthCheckOptionsBuilder_autoscaling#getGraceWithDuration_software_amazon_awscdk_core_Duration_AsReference()
+	 * @see #getEc2HealthCheckOptionsBuilder_autoscaling()
+	 * @generated
+	 */
+	EAttribute getEc2HealthCheckOptionsBuilder_autoscaling_GraceWithDuration_software_amazon_awscdk_core_Duration_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.Ec2HealthCheckOptionsBuilder_autoscaling#getGeneratedClassName <em>Generated Class Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Generated Class Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.Ec2HealthCheckOptionsBuilder_autoscaling#getGeneratedClassName()
+	 * @see #getEc2HealthCheckOptionsBuilder_autoscaling()
+	 * @generated
+	 */
+	EAttribute getEc2HealthCheckOptionsBuilder_autoscaling_GeneratedClassName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.Ec2HealthCheckOptionsBuilder_autoscaling#getVarName <em>Var Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Var Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.Ec2HealthCheckOptionsBuilder_autoscaling#getVarName()
+	 * @see #getEc2HealthCheckOptionsBuilder_autoscaling()
+	 * @generated
+	 */
+	EAttribute getEc2HealthCheckOptionsBuilder_autoscaling_VarName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.Ec2HealthCheckOptionsBuilder_autoscaling#getIdentifier <em>Identifier</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Identifier</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.Ec2HealthCheckOptionsBuilder_autoscaling#getIdentifier()
+	 * @see #getEc2HealthCheckOptionsBuilder_autoscaling()
+	 * @generated
+	 */
+	EAttribute getEc2HealthCheckOptionsBuilder_autoscaling_Identifier();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.Ec2HealthCheckOptionsBuilder_autoscaling#getAdditionalCode <em>Additional Code</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Additional Code</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.Ec2HealthCheckOptionsBuilder_autoscaling#getAdditionalCode()
+	 * @see #getEc2HealthCheckOptionsBuilder_autoscaling()
+	 * @generated
+	 */
+	EAttribute getEc2HealthCheckOptionsBuilder_autoscaling_AdditionalCode();
+
+	/**
+	 * Returns the meta object for class '{@link com.amazon.aws.workbench.model.awsworkbench.AutoScalingGroupBuilder_autoscaling <em>Auto Scaling Group Builder autoscaling</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Auto Scaling Group Builder autoscaling</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AutoScalingGroupBuilder_autoscaling
+	 * @generated
+	 */
+	EClass getAutoScalingGroupBuilder_autoscaling();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.AutoScalingGroupBuilder_autoscaling#getAllowAllOutbound_java_lang_Boolean_ <em>Allow All Outbound java lang Boolean </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Allow All Outbound java lang Boolean </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AutoScalingGroupBuilder_autoscaling#getAllowAllOutbound_java_lang_Boolean_()
+	 * @see #getAutoScalingGroupBuilder_autoscaling()
+	 * @generated
+	 */
+	EAttribute getAutoScalingGroupBuilder_autoscaling_AllowAllOutbound_java_lang_Boolean_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.AutoScalingGroupBuilder_autoscaling#getAssociatePublicIpAddress_java_lang_Boolean_ <em>Associate Public Ip Address java lang Boolean </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Associate Public Ip Address java lang Boolean </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AutoScalingGroupBuilder_autoscaling#getAssociatePublicIpAddress_java_lang_Boolean_()
+	 * @see #getAutoScalingGroupBuilder_autoscaling()
+	 * @generated
+	 */
+	EAttribute getAutoScalingGroupBuilder_autoscaling_AssociatePublicIpAddress_java_lang_Boolean_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.AutoScalingGroupBuilder_autoscaling#getBlockDevices_software_amazon_awscdk_services_autoscaling_BlockDevice_AsList <em>Block Devices software amazon awscdk services autoscaling Block Device As List</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Block Devices software amazon awscdk services autoscaling Block Device As List</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AutoScalingGroupBuilder_autoscaling#getBlockDevices_software_amazon_awscdk_services_autoscaling_BlockDevice_AsList()
+	 * @see #getAutoScalingGroupBuilder_autoscaling()
+	 * @generated
+	 */
+	EAttribute getAutoScalingGroupBuilder_autoscaling_BlockDevices_software_amazon_awscdk_services_autoscaling_BlockDevice_AsList();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.AutoScalingGroupBuilder_autoscaling#getCooldownWithDuration_software_amazon_awscdk_core_Duration_AsReference <em>Cooldown With Duration software amazon awscdk core Duration As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Cooldown With Duration software amazon awscdk core Duration As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AutoScalingGroupBuilder_autoscaling#getCooldownWithDuration_software_amazon_awscdk_core_Duration_AsReference()
+	 * @see #getAutoScalingGroupBuilder_autoscaling()
+	 * @generated
+	 */
+	EAttribute getAutoScalingGroupBuilder_autoscaling_CooldownWithDuration_software_amazon_awscdk_core_Duration_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.AutoScalingGroupBuilder_autoscaling#getDesiredCapacity_java_lang_Number_ <em>Desired Capacity java lang Number </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Desired Capacity java lang Number </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AutoScalingGroupBuilder_autoscaling#getDesiredCapacity_java_lang_Number_()
+	 * @see #getAutoScalingGroupBuilder_autoscaling()
+	 * @generated
+	 */
+	EAttribute getAutoScalingGroupBuilder_autoscaling_DesiredCapacity_java_lang_Number_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.AutoScalingGroupBuilder_autoscaling#getHealthCheckWithHealthCheck_software_amazon_awscdk_services_autoscaling_HealthCheck_AsReference <em>Health Check With Health Check software amazon awscdk services autoscaling Health Check As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Health Check With Health Check software amazon awscdk services autoscaling Health Check As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AutoScalingGroupBuilder_autoscaling#getHealthCheckWithHealthCheck_software_amazon_awscdk_services_autoscaling_HealthCheck_AsReference()
+	 * @see #getAutoScalingGroupBuilder_autoscaling()
+	 * @generated
+	 */
+	EAttribute getAutoScalingGroupBuilder_autoscaling_HealthCheckWithHealthCheck_software_amazon_awscdk_services_autoscaling_HealthCheck_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.AutoScalingGroupBuilder_autoscaling#getIgnoreUnmodifiedSizeProperties_java_lang_Boolean_ <em>Ignore Unmodified Size Properties java lang Boolean </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Ignore Unmodified Size Properties java lang Boolean </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AutoScalingGroupBuilder_autoscaling#getIgnoreUnmodifiedSizeProperties_java_lang_Boolean_()
+	 * @see #getAutoScalingGroupBuilder_autoscaling()
+	 * @generated
+	 */
+	EAttribute getAutoScalingGroupBuilder_autoscaling_IgnoreUnmodifiedSizeProperties_java_lang_Boolean_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.AutoScalingGroupBuilder_autoscaling#getKeyName_java_lang_String_ <em>Key Name java lang String </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Key Name java lang String </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AutoScalingGroupBuilder_autoscaling#getKeyName_java_lang_String_()
+	 * @see #getAutoScalingGroupBuilder_autoscaling()
+	 * @generated
+	 */
+	EAttribute getAutoScalingGroupBuilder_autoscaling_KeyName_java_lang_String_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.AutoScalingGroupBuilder_autoscaling#getMaxCapacity_java_lang_Number_ <em>Max Capacity java lang Number </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Max Capacity java lang Number </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AutoScalingGroupBuilder_autoscaling#getMaxCapacity_java_lang_Number_()
+	 * @see #getAutoScalingGroupBuilder_autoscaling()
+	 * @generated
+	 */
+	EAttribute getAutoScalingGroupBuilder_autoscaling_MaxCapacity_java_lang_Number_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.AutoScalingGroupBuilder_autoscaling#getMaxInstanceLifetimeWithDuration_software_amazon_awscdk_core_Duration_AsReference <em>Max Instance Lifetime With Duration software amazon awscdk core Duration As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Max Instance Lifetime With Duration software amazon awscdk core Duration As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AutoScalingGroupBuilder_autoscaling#getMaxInstanceLifetimeWithDuration_software_amazon_awscdk_core_Duration_AsReference()
+	 * @see #getAutoScalingGroupBuilder_autoscaling()
+	 * @generated
+	 */
+	EAttribute getAutoScalingGroupBuilder_autoscaling_MaxInstanceLifetimeWithDuration_software_amazon_awscdk_core_Duration_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.AutoScalingGroupBuilder_autoscaling#getMinCapacity_java_lang_Number_ <em>Min Capacity java lang Number </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Min Capacity java lang Number </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AutoScalingGroupBuilder_autoscaling#getMinCapacity_java_lang_Number_()
+	 * @see #getAutoScalingGroupBuilder_autoscaling()
+	 * @generated
+	 */
+	EAttribute getAutoScalingGroupBuilder_autoscaling_MinCapacity_java_lang_Number_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.AutoScalingGroupBuilder_autoscaling#getNotificationsTopicWithITopic_software_amazon_awscdk_services_sns_ITopic_AsReference <em>Notifications Topic With ITopic software amazon awscdk services sns ITopic As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Notifications Topic With ITopic software amazon awscdk services sns ITopic As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AutoScalingGroupBuilder_autoscaling#getNotificationsTopicWithITopic_software_amazon_awscdk_services_sns_ITopic_AsReference()
+	 * @see #getAutoScalingGroupBuilder_autoscaling()
+	 * @generated
+	 */
+	EAttribute getAutoScalingGroupBuilder_autoscaling_NotificationsTopicWithITopic_software_amazon_awscdk_services_sns_ITopic_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.AutoScalingGroupBuilder_autoscaling#getReplacingUpdateMinSuccessfulInstancesPercent_java_lang_Number_ <em>Replacing Update Min Successful Instances Percent java lang Number </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Replacing Update Min Successful Instances Percent java lang Number </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AutoScalingGroupBuilder_autoscaling#getReplacingUpdateMinSuccessfulInstancesPercent_java_lang_Number_()
+	 * @see #getAutoScalingGroupBuilder_autoscaling()
+	 * @generated
+	 */
+	EAttribute getAutoScalingGroupBuilder_autoscaling_ReplacingUpdateMinSuccessfulInstancesPercent_java_lang_Number_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.AutoScalingGroupBuilder_autoscaling#getResourceSignalCount_java_lang_Number_ <em>Resource Signal Count java lang Number </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Resource Signal Count java lang Number </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AutoScalingGroupBuilder_autoscaling#getResourceSignalCount_java_lang_Number_()
+	 * @see #getAutoScalingGroupBuilder_autoscaling()
+	 * @generated
+	 */
+	EAttribute getAutoScalingGroupBuilder_autoscaling_ResourceSignalCount_java_lang_Number_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.AutoScalingGroupBuilder_autoscaling#getResourceSignalTimeoutWithDuration_software_amazon_awscdk_core_Duration_AsReference <em>Resource Signal Timeout With Duration software amazon awscdk core Duration As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Resource Signal Timeout With Duration software amazon awscdk core Duration As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AutoScalingGroupBuilder_autoscaling#getResourceSignalTimeoutWithDuration_software_amazon_awscdk_core_Duration_AsReference()
+	 * @see #getAutoScalingGroupBuilder_autoscaling()
+	 * @generated
+	 */
+	EAttribute getAutoScalingGroupBuilder_autoscaling_ResourceSignalTimeoutWithDuration_software_amazon_awscdk_core_Duration_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.AutoScalingGroupBuilder_autoscaling#getRollingUpdateConfigurationWithRollingUpdateConfiguration_software_amazon_awscdk_services_autoscaling_RollingUpdateConfiguration_AsReference <em>Rolling Update Configuration With Rolling Update Configuration software amazon awscdk services autoscaling Rolling Update Configuration As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Rolling Update Configuration With Rolling Update Configuration software amazon awscdk services autoscaling Rolling Update Configuration As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AutoScalingGroupBuilder_autoscaling#getRollingUpdateConfigurationWithRollingUpdateConfiguration_software_amazon_awscdk_services_autoscaling_RollingUpdateConfiguration_AsReference()
+	 * @see #getAutoScalingGroupBuilder_autoscaling()
+	 * @generated
+	 */
+	EAttribute getAutoScalingGroupBuilder_autoscaling_RollingUpdateConfigurationWithRollingUpdateConfiguration_software_amazon_awscdk_services_autoscaling_RollingUpdateConfiguration_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.AutoScalingGroupBuilder_autoscaling#getSpotPrice_java_lang_String_ <em>Spot Price java lang String </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Spot Price java lang String </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AutoScalingGroupBuilder_autoscaling#getSpotPrice_java_lang_String_()
+	 * @see #getAutoScalingGroupBuilder_autoscaling()
+	 * @generated
+	 */
+	EAttribute getAutoScalingGroupBuilder_autoscaling_SpotPrice_java_lang_String_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.AutoScalingGroupBuilder_autoscaling#getUpdateType_software_amazon_awscdk_services_autoscaling_UpdateType_ <em>Update Type software amazon awscdk services autoscaling Update Type </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Update Type software amazon awscdk services autoscaling Update Type </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AutoScalingGroupBuilder_autoscaling#getUpdateType_software_amazon_awscdk_services_autoscaling_UpdateType_()
+	 * @see #getAutoScalingGroupBuilder_autoscaling()
+	 * @generated
+	 */
+	EAttribute getAutoScalingGroupBuilder_autoscaling_UpdateType_software_amazon_awscdk_services_autoscaling_UpdateType_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.AutoScalingGroupBuilder_autoscaling#getVpcSubnetsWithSubnetSelection_software_amazon_awscdk_services_ec2_SubnetSelection_AsReference <em>Vpc Subnets With Subnet Selection software amazon awscdk services ec2 Subnet Selection As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Vpc Subnets With Subnet Selection software amazon awscdk services ec2 Subnet Selection As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AutoScalingGroupBuilder_autoscaling#getVpcSubnetsWithSubnetSelection_software_amazon_awscdk_services_ec2_SubnetSelection_AsReference()
+	 * @see #getAutoScalingGroupBuilder_autoscaling()
+	 * @generated
+	 */
+	EAttribute getAutoScalingGroupBuilder_autoscaling_VpcSubnetsWithSubnetSelection_software_amazon_awscdk_services_ec2_SubnetSelection_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.AutoScalingGroupBuilder_autoscaling#getInstanceTypeWithInstanceType_software_amazon_awscdk_services_ec2_InstanceType_AsReference <em>Instance Type With Instance Type software amazon awscdk services ec2 Instance Type As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Instance Type With Instance Type software amazon awscdk services ec2 Instance Type As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AutoScalingGroupBuilder_autoscaling#getInstanceTypeWithInstanceType_software_amazon_awscdk_services_ec2_InstanceType_AsReference()
+	 * @see #getAutoScalingGroupBuilder_autoscaling()
+	 * @generated
+	 */
+	EAttribute getAutoScalingGroupBuilder_autoscaling_InstanceTypeWithInstanceType_software_amazon_awscdk_services_ec2_InstanceType_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.AutoScalingGroupBuilder_autoscaling#getMachineImageWithIMachineImage_software_amazon_awscdk_services_ec2_IMachineImage_AsReference <em>Machine Image With IMachine Image software amazon awscdk services ec2 IMachine Image As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Machine Image With IMachine Image software amazon awscdk services ec2 IMachine Image As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AutoScalingGroupBuilder_autoscaling#getMachineImageWithIMachineImage_software_amazon_awscdk_services_ec2_IMachineImage_AsReference()
+	 * @see #getAutoScalingGroupBuilder_autoscaling()
+	 * @generated
+	 */
+	EAttribute getAutoScalingGroupBuilder_autoscaling_MachineImageWithIMachineImage_software_amazon_awscdk_services_ec2_IMachineImage_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.AutoScalingGroupBuilder_autoscaling#getVpcWithIVpc_software_amazon_awscdk_services_ec2_IVpc_AsReference <em>Vpc With IVpc software amazon awscdk services ec2 IVpc As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Vpc With IVpc software amazon awscdk services ec2 IVpc As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AutoScalingGroupBuilder_autoscaling#getVpcWithIVpc_software_amazon_awscdk_services_ec2_IVpc_AsReference()
+	 * @see #getAutoScalingGroupBuilder_autoscaling()
+	 * @generated
+	 */
+	EAttribute getAutoScalingGroupBuilder_autoscaling_VpcWithIVpc_software_amazon_awscdk_services_ec2_IVpc_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.AutoScalingGroupBuilder_autoscaling#getRoleWithIRole_software_amazon_awscdk_services_iam_IRole_AsReference <em>Role With IRole software amazon awscdk services iam IRole As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Role With IRole software amazon awscdk services iam IRole As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AutoScalingGroupBuilder_autoscaling#getRoleWithIRole_software_amazon_awscdk_services_iam_IRole_AsReference()
+	 * @see #getAutoScalingGroupBuilder_autoscaling()
+	 * @generated
+	 */
+	EAttribute getAutoScalingGroupBuilder_autoscaling_RoleWithIRole_software_amazon_awscdk_services_iam_IRole_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.AutoScalingGroupBuilder_autoscaling#getUserDataWithUserData_software_amazon_awscdk_services_ec2_UserData_AsReference <em>User Data With User Data software amazon awscdk services ec2 User Data As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>User Data With User Data software amazon awscdk services ec2 User Data As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AutoScalingGroupBuilder_autoscaling#getUserDataWithUserData_software_amazon_awscdk_services_ec2_UserData_AsReference()
+	 * @see #getAutoScalingGroupBuilder_autoscaling()
+	 * @generated
+	 */
+	EAttribute getAutoScalingGroupBuilder_autoscaling_UserDataWithUserData_software_amazon_awscdk_services_ec2_UserData_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.AutoScalingGroupBuilder_autoscaling#getGeneratedClassName <em>Generated Class Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Generated Class Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AutoScalingGroupBuilder_autoscaling#getGeneratedClassName()
+	 * @see #getAutoScalingGroupBuilder_autoscaling()
+	 * @generated
+	 */
+	EAttribute getAutoScalingGroupBuilder_autoscaling_GeneratedClassName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.AutoScalingGroupBuilder_autoscaling#getVarName <em>Var Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Var Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AutoScalingGroupBuilder_autoscaling#getVarName()
+	 * @see #getAutoScalingGroupBuilder_autoscaling()
+	 * @generated
+	 */
+	EAttribute getAutoScalingGroupBuilder_autoscaling_VarName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.AutoScalingGroupBuilder_autoscaling#getIdentifier <em>Identifier</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Identifier</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AutoScalingGroupBuilder_autoscaling#getIdentifier()
+	 * @see #getAutoScalingGroupBuilder_autoscaling()
+	 * @generated
+	 */
+	EAttribute getAutoScalingGroupBuilder_autoscaling_Identifier();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.AutoScalingGroupBuilder_autoscaling#getAdditionalCode <em>Additional Code</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Additional Code</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AutoScalingGroupBuilder_autoscaling#getAdditionalCode()
+	 * @see #getAutoScalingGroupBuilder_autoscaling()
+	 * @generated
+	 */
+	EAttribute getAutoScalingGroupBuilder_autoscaling_AdditionalCode();
+
+	/**
+	 * Returns the meta object for class '{@link com.amazon.aws.workbench.model.awsworkbench.OptionConfigurationBuilder_rds <em>Option Configuration Builder rds</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Option Configuration Builder rds</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.OptionConfigurationBuilder_rds
+	 * @generated
+	 */
+	EClass getOptionConfigurationBuilder_rds();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.OptionConfigurationBuilder_rds#getName_java_lang_String_ <em>Name java lang String </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Name java lang String </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.OptionConfigurationBuilder_rds#getName_java_lang_String_()
+	 * @see #getOptionConfigurationBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getOptionConfigurationBuilder_rds_Name_java_lang_String_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.OptionConfigurationBuilder_rds#getPort_java_lang_Number_ <em>Port java lang Number </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Port java lang Number </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.OptionConfigurationBuilder_rds#getPort_java_lang_Number_()
+	 * @see #getOptionConfigurationBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getOptionConfigurationBuilder_rds_Port_java_lang_Number_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.OptionConfigurationBuilder_rds#getSettings_java_lang_String__java_lang_String_AsMap <em>Settings java lang String java lang String As Map</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Settings java lang String java lang String As Map</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.OptionConfigurationBuilder_rds#getSettings_java_lang_String__java_lang_String_AsMap()
+	 * @see #getOptionConfigurationBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getOptionConfigurationBuilder_rds_Settings_java_lang_String__java_lang_String_AsMap();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.OptionConfigurationBuilder_rds#getVersion_java_lang_String_ <em>Version java lang String </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Version java lang String </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.OptionConfigurationBuilder_rds#getVersion_java_lang_String_()
+	 * @see #getOptionConfigurationBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getOptionConfigurationBuilder_rds_Version_java_lang_String_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.OptionConfigurationBuilder_rds#getVpcWithIVpc_software_amazon_awscdk_services_ec2_IVpc_AsReference <em>Vpc With IVpc software amazon awscdk services ec2 IVpc As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Vpc With IVpc software amazon awscdk services ec2 IVpc As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.OptionConfigurationBuilder_rds#getVpcWithIVpc_software_amazon_awscdk_services_ec2_IVpc_AsReference()
+	 * @see #getOptionConfigurationBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getOptionConfigurationBuilder_rds_VpcWithIVpc_software_amazon_awscdk_services_ec2_IVpc_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.OptionConfigurationBuilder_rds#getGeneratedClassName <em>Generated Class Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Generated Class Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.OptionConfigurationBuilder_rds#getGeneratedClassName()
+	 * @see #getOptionConfigurationBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getOptionConfigurationBuilder_rds_GeneratedClassName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.OptionConfigurationBuilder_rds#getVarName <em>Var Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Var Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.OptionConfigurationBuilder_rds#getVarName()
+	 * @see #getOptionConfigurationBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getOptionConfigurationBuilder_rds_VarName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.OptionConfigurationBuilder_rds#getIdentifier <em>Identifier</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Identifier</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.OptionConfigurationBuilder_rds#getIdentifier()
+	 * @see #getOptionConfigurationBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getOptionConfigurationBuilder_rds_Identifier();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.OptionConfigurationBuilder_rds#getAdditionalCode <em>Additional Code</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Additional Code</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.OptionConfigurationBuilder_rds#getAdditionalCode()
+	 * @see #getOptionConfigurationBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getOptionConfigurationBuilder_rds_AdditionalCode();
+
+	/**
+	 * Returns the meta object for class '{@link com.amazon.aws.workbench.model.awsworkbench.OptionGroupBuilder_rds <em>Option Group Builder rds</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Option Group Builder rds</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.OptionGroupBuilder_rds
+	 * @generated
+	 */
+	EClass getOptionGroupBuilder_rds();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.OptionGroupBuilder_rds#getConfigurations_software_amazon_awscdk_services_rds_OptionConfiguration_AsList <em>Configurations software amazon awscdk services rds Option Configuration As List</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Configurations software amazon awscdk services rds Option Configuration As List</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.OptionGroupBuilder_rds#getConfigurations_software_amazon_awscdk_services_rds_OptionConfiguration_AsList()
+	 * @see #getOptionGroupBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getOptionGroupBuilder_rds_Configurations_software_amazon_awscdk_services_rds_OptionConfiguration_AsList();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.OptionGroupBuilder_rds#getEngineWithIInstanceEngine_software_amazon_awscdk_services_rds_IInstanceEngine_AsReference <em>Engine With IInstance Engine software amazon awscdk services rds IInstance Engine As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Engine With IInstance Engine software amazon awscdk services rds IInstance Engine As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.OptionGroupBuilder_rds#getEngineWithIInstanceEngine_software_amazon_awscdk_services_rds_IInstanceEngine_AsReference()
+	 * @see #getOptionGroupBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getOptionGroupBuilder_rds_EngineWithIInstanceEngine_software_amazon_awscdk_services_rds_IInstanceEngine_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.OptionGroupBuilder_rds#getDescription_java_lang_String_ <em>Description java lang String </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Description java lang String </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.OptionGroupBuilder_rds#getDescription_java_lang_String_()
+	 * @see #getOptionGroupBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getOptionGroupBuilder_rds_Description_java_lang_String_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.OptionGroupBuilder_rds#getGeneratedClassName <em>Generated Class Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Generated Class Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.OptionGroupBuilder_rds#getGeneratedClassName()
+	 * @see #getOptionGroupBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getOptionGroupBuilder_rds_GeneratedClassName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.OptionGroupBuilder_rds#getVarName <em>Var Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Var Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.OptionGroupBuilder_rds#getVarName()
+	 * @see #getOptionGroupBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getOptionGroupBuilder_rds_VarName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.OptionGroupBuilder_rds#getIdentifier <em>Identifier</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Identifier</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.OptionGroupBuilder_rds#getIdentifier()
+	 * @see #getOptionGroupBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getOptionGroupBuilder_rds_Identifier();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.OptionGroupBuilder_rds#getAdditionalCode <em>Additional Code</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Additional Code</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.OptionGroupBuilder_rds#getAdditionalCode()
+	 * @see #getOptionGroupBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getOptionGroupBuilder_rds_AdditionalCode();
+
+	/**
+	 * Returns the meta object for class '{@link com.amazon.aws.workbench.model.awsworkbench.PortBuilder_ec2 <em>Port Builder ec2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Port Builder ec2</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.PortBuilder_ec2
+	 * @generated
+	 */
+	EClass getPortBuilder_ec2();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.PortBuilder_ec2#getProtocol_software_amazon_awscdk_services_ec2_Protocol_ <em>Protocol software amazon awscdk services ec2 Protocol </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Protocol software amazon awscdk services ec2 Protocol </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.PortBuilder_ec2#getProtocol_software_amazon_awscdk_services_ec2_Protocol_()
+	 * @see #getPortBuilder_ec2()
+	 * @generated
+	 */
+	EAttribute getPortBuilder_ec2_Protocol_software_amazon_awscdk_services_ec2_Protocol_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.PortBuilder_ec2#getStringRepresentation_java_lang_String_ <em>String Representation java lang String </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>String Representation java lang String </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.PortBuilder_ec2#getStringRepresentation_java_lang_String_()
+	 * @see #getPortBuilder_ec2()
+	 * @generated
+	 */
+	EAttribute getPortBuilder_ec2_StringRepresentation_java_lang_String_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.PortBuilder_ec2#getFromPort_java_lang_Number_ <em>From Port java lang Number </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>From Port java lang Number </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.PortBuilder_ec2#getFromPort_java_lang_Number_()
+	 * @see #getPortBuilder_ec2()
+	 * @generated
+	 */
+	EAttribute getPortBuilder_ec2_FromPort_java_lang_Number_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.PortBuilder_ec2#getToPort_java_lang_Number_ <em>To Port java lang Number </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>To Port java lang Number </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.PortBuilder_ec2#getToPort_java_lang_Number_()
+	 * @see #getPortBuilder_ec2()
+	 * @generated
+	 */
+	EAttribute getPortBuilder_ec2_ToPort_java_lang_Number_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.PortBuilder_ec2#getGeneratedClassName <em>Generated Class Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Generated Class Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.PortBuilder_ec2#getGeneratedClassName()
+	 * @see #getPortBuilder_ec2()
+	 * @generated
+	 */
+	EAttribute getPortBuilder_ec2_GeneratedClassName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.PortBuilder_ec2#getVarName <em>Var Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Var Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.PortBuilder_ec2#getVarName()
+	 * @see #getPortBuilder_ec2()
+	 * @generated
+	 */
+	EAttribute getPortBuilder_ec2_VarName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.PortBuilder_ec2#getIdentifier <em>Identifier</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Identifier</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.PortBuilder_ec2#getIdentifier()
+	 * @see #getPortBuilder_ec2()
+	 * @generated
+	 */
+	EAttribute getPortBuilder_ec2_Identifier();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.PortBuilder_ec2#getAdditionalCode <em>Additional Code</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Additional Code</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.PortBuilder_ec2#getAdditionalCode()
+	 * @see #getPortBuilder_ec2()
+	 * @generated
+	 */
+	EAttribute getPortBuilder_ec2_AdditionalCode();
+
+	/**
+	 * Returns the meta object for class '{@link com.amazon.aws.workbench.model.awsworkbench.ProcessorFeaturesBuilder_rds <em>Processor Features Builder rds</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Processor Features Builder rds</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.ProcessorFeaturesBuilder_rds
+	 * @generated
+	 */
+	EClass getProcessorFeaturesBuilder_rds();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.ProcessorFeaturesBuilder_rds#getCoreCount_java_lang_Number_ <em>Core Count java lang Number </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Core Count java lang Number </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.ProcessorFeaturesBuilder_rds#getCoreCount_java_lang_Number_()
+	 * @see #getProcessorFeaturesBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getProcessorFeaturesBuilder_rds_CoreCount_java_lang_Number_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.ProcessorFeaturesBuilder_rds#getThreadsPerCore_java_lang_Number_ <em>Threads Per Core java lang Number </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Threads Per Core java lang Number </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.ProcessorFeaturesBuilder_rds#getThreadsPerCore_java_lang_Number_()
+	 * @see #getProcessorFeaturesBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getProcessorFeaturesBuilder_rds_ThreadsPerCore_java_lang_Number_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.ProcessorFeaturesBuilder_rds#getGeneratedClassName <em>Generated Class Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Generated Class Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.ProcessorFeaturesBuilder_rds#getGeneratedClassName()
+	 * @see #getProcessorFeaturesBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getProcessorFeaturesBuilder_rds_GeneratedClassName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.ProcessorFeaturesBuilder_rds#getVarName <em>Var Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Var Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.ProcessorFeaturesBuilder_rds#getVarName()
+	 * @see #getProcessorFeaturesBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getProcessorFeaturesBuilder_rds_VarName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.ProcessorFeaturesBuilder_rds#getIdentifier <em>Identifier</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Identifier</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.ProcessorFeaturesBuilder_rds#getIdentifier()
+	 * @see #getProcessorFeaturesBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getProcessorFeaturesBuilder_rds_Identifier();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.ProcessorFeaturesBuilder_rds#getAdditionalCode <em>Additional Code</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Additional Code</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.ProcessorFeaturesBuilder_rds#getAdditionalCode()
+	 * @see #getProcessorFeaturesBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getProcessorFeaturesBuilder_rds_AdditionalCode();
+
+	/**
+	 * Returns the meta object for class '{@link com.amazon.aws.workbench.model.awsworkbench.OracleEeInstanceEnginePropsBuilder_rds <em>Oracle Ee Instance Engine Props Builder rds</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Oracle Ee Instance Engine Props Builder rds</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.OracleEeInstanceEnginePropsBuilder_rds
+	 * @generated
+	 */
+	EClass getOracleEeInstanceEnginePropsBuilder_rds();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.OracleEeInstanceEnginePropsBuilder_rds#getVersionWithOracleEngineVersion_software_amazon_awscdk_services_rds_OracleEngineVersion_AsReference <em>Version With Oracle Engine Version software amazon awscdk services rds Oracle Engine Version As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Version With Oracle Engine Version software amazon awscdk services rds Oracle Engine Version As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.OracleEeInstanceEnginePropsBuilder_rds#getVersionWithOracleEngineVersion_software_amazon_awscdk_services_rds_OracleEngineVersion_AsReference()
+	 * @see #getOracleEeInstanceEnginePropsBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getOracleEeInstanceEnginePropsBuilder_rds_VersionWithOracleEngineVersion_software_amazon_awscdk_services_rds_OracleEngineVersion_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.OracleEeInstanceEnginePropsBuilder_rds#getGeneratedClassName <em>Generated Class Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Generated Class Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.OracleEeInstanceEnginePropsBuilder_rds#getGeneratedClassName()
+	 * @see #getOracleEeInstanceEnginePropsBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getOracleEeInstanceEnginePropsBuilder_rds_GeneratedClassName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.OracleEeInstanceEnginePropsBuilder_rds#getVarName <em>Var Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Var Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.OracleEeInstanceEnginePropsBuilder_rds#getVarName()
+	 * @see #getOracleEeInstanceEnginePropsBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getOracleEeInstanceEnginePropsBuilder_rds_VarName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.OracleEeInstanceEnginePropsBuilder_rds#getIdentifier <em>Identifier</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Identifier</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.OracleEeInstanceEnginePropsBuilder_rds#getIdentifier()
+	 * @see #getOracleEeInstanceEnginePropsBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getOracleEeInstanceEnginePropsBuilder_rds_Identifier();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.OracleEeInstanceEnginePropsBuilder_rds#getAdditionalCode <em>Additional Code</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Additional Code</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.OracleEeInstanceEnginePropsBuilder_rds#getAdditionalCode()
+	 * @see #getOracleEeInstanceEnginePropsBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getOracleEeInstanceEnginePropsBuilder_rds_AdditionalCode();
+
+	/**
+	 * Returns the meta object for class '{@link com.amazon.aws.workbench.model.awsworkbench.OracleSe1InstanceEnginePropsBuilder_rds <em>Oracle Se1 Instance Engine Props Builder rds</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Oracle Se1 Instance Engine Props Builder rds</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.OracleSe1InstanceEnginePropsBuilder_rds
+	 * @generated
+	 */
+	EClass getOracleSe1InstanceEnginePropsBuilder_rds();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.OracleSe1InstanceEnginePropsBuilder_rds#getVersionWithOracleLegacyEngineVersion_software_amazon_awscdk_services_rds_OracleLegacyEngineVersion_AsReference <em>Version With Oracle Legacy Engine Version software amazon awscdk services rds Oracle Legacy Engine Version As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Version With Oracle Legacy Engine Version software amazon awscdk services rds Oracle Legacy Engine Version As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.OracleSe1InstanceEnginePropsBuilder_rds#getVersionWithOracleLegacyEngineVersion_software_amazon_awscdk_services_rds_OracleLegacyEngineVersion_AsReference()
+	 * @see #getOracleSe1InstanceEnginePropsBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getOracleSe1InstanceEnginePropsBuilder_rds_VersionWithOracleLegacyEngineVersion_software_amazon_awscdk_services_rds_OracleLegacyEngineVersion_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.OracleSe1InstanceEnginePropsBuilder_rds#getGeneratedClassName <em>Generated Class Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Generated Class Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.OracleSe1InstanceEnginePropsBuilder_rds#getGeneratedClassName()
+	 * @see #getOracleSe1InstanceEnginePropsBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getOracleSe1InstanceEnginePropsBuilder_rds_GeneratedClassName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.OracleSe1InstanceEnginePropsBuilder_rds#getVarName <em>Var Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Var Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.OracleSe1InstanceEnginePropsBuilder_rds#getVarName()
+	 * @see #getOracleSe1InstanceEnginePropsBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getOracleSe1InstanceEnginePropsBuilder_rds_VarName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.OracleSe1InstanceEnginePropsBuilder_rds#getIdentifier <em>Identifier</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Identifier</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.OracleSe1InstanceEnginePropsBuilder_rds#getIdentifier()
+	 * @see #getOracleSe1InstanceEnginePropsBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getOracleSe1InstanceEnginePropsBuilder_rds_Identifier();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.OracleSe1InstanceEnginePropsBuilder_rds#getAdditionalCode <em>Additional Code</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Additional Code</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.OracleSe1InstanceEnginePropsBuilder_rds#getAdditionalCode()
+	 * @see #getOracleSe1InstanceEnginePropsBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getOracleSe1InstanceEnginePropsBuilder_rds_AdditionalCode();
+
+	/**
+	 * Returns the meta object for class '{@link com.amazon.aws.workbench.model.awsworkbench.OracleSe2InstanceEnginePropsBuilder_rds <em>Oracle Se2 Instance Engine Props Builder rds</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Oracle Se2 Instance Engine Props Builder rds</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.OracleSe2InstanceEnginePropsBuilder_rds
+	 * @generated
+	 */
+	EClass getOracleSe2InstanceEnginePropsBuilder_rds();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.OracleSe2InstanceEnginePropsBuilder_rds#getVersionWithOracleEngineVersion_software_amazon_awscdk_services_rds_OracleEngineVersion_AsReference <em>Version With Oracle Engine Version software amazon awscdk services rds Oracle Engine Version As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Version With Oracle Engine Version software amazon awscdk services rds Oracle Engine Version As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.OracleSe2InstanceEnginePropsBuilder_rds#getVersionWithOracleEngineVersion_software_amazon_awscdk_services_rds_OracleEngineVersion_AsReference()
+	 * @see #getOracleSe2InstanceEnginePropsBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getOracleSe2InstanceEnginePropsBuilder_rds_VersionWithOracleEngineVersion_software_amazon_awscdk_services_rds_OracleEngineVersion_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.OracleSe2InstanceEnginePropsBuilder_rds#getGeneratedClassName <em>Generated Class Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Generated Class Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.OracleSe2InstanceEnginePropsBuilder_rds#getGeneratedClassName()
+	 * @see #getOracleSe2InstanceEnginePropsBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getOracleSe2InstanceEnginePropsBuilder_rds_GeneratedClassName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.OracleSe2InstanceEnginePropsBuilder_rds#getVarName <em>Var Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Var Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.OracleSe2InstanceEnginePropsBuilder_rds#getVarName()
+	 * @see #getOracleSe2InstanceEnginePropsBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getOracleSe2InstanceEnginePropsBuilder_rds_VarName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.OracleSe2InstanceEnginePropsBuilder_rds#getIdentifier <em>Identifier</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Identifier</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.OracleSe2InstanceEnginePropsBuilder_rds#getIdentifier()
+	 * @see #getOracleSe2InstanceEnginePropsBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getOracleSe2InstanceEnginePropsBuilder_rds_Identifier();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.OracleSe2InstanceEnginePropsBuilder_rds#getAdditionalCode <em>Additional Code</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Additional Code</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.OracleSe2InstanceEnginePropsBuilder_rds#getAdditionalCode()
+	 * @see #getOracleSe2InstanceEnginePropsBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getOracleSe2InstanceEnginePropsBuilder_rds_AdditionalCode();
+
+	/**
+	 * Returns the meta object for class '{@link com.amazon.aws.workbench.model.awsworkbench.OracleSeInstanceEnginePropsBuilder_rds <em>Oracle Se Instance Engine Props Builder rds</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Oracle Se Instance Engine Props Builder rds</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.OracleSeInstanceEnginePropsBuilder_rds
+	 * @generated
+	 */
+	EClass getOracleSeInstanceEnginePropsBuilder_rds();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.OracleSeInstanceEnginePropsBuilder_rds#getVersionWithOracleLegacyEngineVersion_software_amazon_awscdk_services_rds_OracleLegacyEngineVersion_AsReference <em>Version With Oracle Legacy Engine Version software amazon awscdk services rds Oracle Legacy Engine Version As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Version With Oracle Legacy Engine Version software amazon awscdk services rds Oracle Legacy Engine Version As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.OracleSeInstanceEnginePropsBuilder_rds#getVersionWithOracleLegacyEngineVersion_software_amazon_awscdk_services_rds_OracleLegacyEngineVersion_AsReference()
+	 * @see #getOracleSeInstanceEnginePropsBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getOracleSeInstanceEnginePropsBuilder_rds_VersionWithOracleLegacyEngineVersion_software_amazon_awscdk_services_rds_OracleLegacyEngineVersion_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.OracleSeInstanceEnginePropsBuilder_rds#getGeneratedClassName <em>Generated Class Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Generated Class Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.OracleSeInstanceEnginePropsBuilder_rds#getGeneratedClassName()
+	 * @see #getOracleSeInstanceEnginePropsBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getOracleSeInstanceEnginePropsBuilder_rds_GeneratedClassName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.OracleSeInstanceEnginePropsBuilder_rds#getVarName <em>Var Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Var Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.OracleSeInstanceEnginePropsBuilder_rds#getVarName()
+	 * @see #getOracleSeInstanceEnginePropsBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getOracleSeInstanceEnginePropsBuilder_rds_VarName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.OracleSeInstanceEnginePropsBuilder_rds#getIdentifier <em>Identifier</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Identifier</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.OracleSeInstanceEnginePropsBuilder_rds#getIdentifier()
+	 * @see #getOracleSeInstanceEnginePropsBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getOracleSeInstanceEnginePropsBuilder_rds_Identifier();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.OracleSeInstanceEnginePropsBuilder_rds#getAdditionalCode <em>Additional Code</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Additional Code</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.OracleSeInstanceEnginePropsBuilder_rds#getAdditionalCode()
+	 * @see #getOracleSeInstanceEnginePropsBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getOracleSeInstanceEnginePropsBuilder_rds_AdditionalCode();
+
+	/**
+	 * Returns the meta object for class '{@link com.amazon.aws.workbench.model.awsworkbench.PostgresInstanceEnginePropsBuilder_rds <em>Postgres Instance Engine Props Builder rds</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Postgres Instance Engine Props Builder rds</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.PostgresInstanceEnginePropsBuilder_rds
+	 * @generated
+	 */
+	EClass getPostgresInstanceEnginePropsBuilder_rds();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.PostgresInstanceEnginePropsBuilder_rds#getVersionWithPostgresEngineVersion_software_amazon_awscdk_services_rds_PostgresEngineVersion_AsReference <em>Version With Postgres Engine Version software amazon awscdk services rds Postgres Engine Version As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Version With Postgres Engine Version software amazon awscdk services rds Postgres Engine Version As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.PostgresInstanceEnginePropsBuilder_rds#getVersionWithPostgresEngineVersion_software_amazon_awscdk_services_rds_PostgresEngineVersion_AsReference()
+	 * @see #getPostgresInstanceEnginePropsBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getPostgresInstanceEnginePropsBuilder_rds_VersionWithPostgresEngineVersion_software_amazon_awscdk_services_rds_PostgresEngineVersion_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.PostgresInstanceEnginePropsBuilder_rds#getGeneratedClassName <em>Generated Class Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Generated Class Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.PostgresInstanceEnginePropsBuilder_rds#getGeneratedClassName()
+	 * @see #getPostgresInstanceEnginePropsBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getPostgresInstanceEnginePropsBuilder_rds_GeneratedClassName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.PostgresInstanceEnginePropsBuilder_rds#getVarName <em>Var Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Var Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.PostgresInstanceEnginePropsBuilder_rds#getVarName()
+	 * @see #getPostgresInstanceEnginePropsBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getPostgresInstanceEnginePropsBuilder_rds_VarName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.PostgresInstanceEnginePropsBuilder_rds#getIdentifier <em>Identifier</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Identifier</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.PostgresInstanceEnginePropsBuilder_rds#getIdentifier()
+	 * @see #getPostgresInstanceEnginePropsBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getPostgresInstanceEnginePropsBuilder_rds_Identifier();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.PostgresInstanceEnginePropsBuilder_rds#getAdditionalCode <em>Additional Code</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Additional Code</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.PostgresInstanceEnginePropsBuilder_rds#getAdditionalCode()
+	 * @see #getPostgresInstanceEnginePropsBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getPostgresInstanceEnginePropsBuilder_rds_AdditionalCode();
+
+	/**
+	 * Returns the meta object for class '{@link com.amazon.aws.workbench.model.awsworkbench.SqlServerEeInstanceEnginePropsBuilder_rds <em>Sql Server Ee Instance Engine Props Builder rds</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Sql Server Ee Instance Engine Props Builder rds</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.SqlServerEeInstanceEnginePropsBuilder_rds
+	 * @generated
+	 */
+	EClass getSqlServerEeInstanceEnginePropsBuilder_rds();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.SqlServerEeInstanceEnginePropsBuilder_rds#getVersionWithSqlServerEngineVersion_software_amazon_awscdk_services_rds_SqlServerEngineVersion_AsReference <em>Version With Sql Server Engine Version software amazon awscdk services rds Sql Server Engine Version As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Version With Sql Server Engine Version software amazon awscdk services rds Sql Server Engine Version As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.SqlServerEeInstanceEnginePropsBuilder_rds#getVersionWithSqlServerEngineVersion_software_amazon_awscdk_services_rds_SqlServerEngineVersion_AsReference()
+	 * @see #getSqlServerEeInstanceEnginePropsBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getSqlServerEeInstanceEnginePropsBuilder_rds_VersionWithSqlServerEngineVersion_software_amazon_awscdk_services_rds_SqlServerEngineVersion_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.SqlServerEeInstanceEnginePropsBuilder_rds#getGeneratedClassName <em>Generated Class Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Generated Class Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.SqlServerEeInstanceEnginePropsBuilder_rds#getGeneratedClassName()
+	 * @see #getSqlServerEeInstanceEnginePropsBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getSqlServerEeInstanceEnginePropsBuilder_rds_GeneratedClassName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.SqlServerEeInstanceEnginePropsBuilder_rds#getVarName <em>Var Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Var Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.SqlServerEeInstanceEnginePropsBuilder_rds#getVarName()
+	 * @see #getSqlServerEeInstanceEnginePropsBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getSqlServerEeInstanceEnginePropsBuilder_rds_VarName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.SqlServerEeInstanceEnginePropsBuilder_rds#getIdentifier <em>Identifier</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Identifier</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.SqlServerEeInstanceEnginePropsBuilder_rds#getIdentifier()
+	 * @see #getSqlServerEeInstanceEnginePropsBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getSqlServerEeInstanceEnginePropsBuilder_rds_Identifier();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.SqlServerEeInstanceEnginePropsBuilder_rds#getAdditionalCode <em>Additional Code</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Additional Code</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.SqlServerEeInstanceEnginePropsBuilder_rds#getAdditionalCode()
+	 * @see #getSqlServerEeInstanceEnginePropsBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getSqlServerEeInstanceEnginePropsBuilder_rds_AdditionalCode();
+
+	/**
+	 * Returns the meta object for class '{@link com.amazon.aws.workbench.model.awsworkbench.SqlServerExInstanceEnginePropsBuilder_rds <em>Sql Server Ex Instance Engine Props Builder rds</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Sql Server Ex Instance Engine Props Builder rds</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.SqlServerExInstanceEnginePropsBuilder_rds
+	 * @generated
+	 */
+	EClass getSqlServerExInstanceEnginePropsBuilder_rds();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.SqlServerExInstanceEnginePropsBuilder_rds#getVersionWithSqlServerEngineVersion_software_amazon_awscdk_services_rds_SqlServerEngineVersion_AsReference <em>Version With Sql Server Engine Version software amazon awscdk services rds Sql Server Engine Version As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Version With Sql Server Engine Version software amazon awscdk services rds Sql Server Engine Version As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.SqlServerExInstanceEnginePropsBuilder_rds#getVersionWithSqlServerEngineVersion_software_amazon_awscdk_services_rds_SqlServerEngineVersion_AsReference()
+	 * @see #getSqlServerExInstanceEnginePropsBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getSqlServerExInstanceEnginePropsBuilder_rds_VersionWithSqlServerEngineVersion_software_amazon_awscdk_services_rds_SqlServerEngineVersion_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.SqlServerExInstanceEnginePropsBuilder_rds#getGeneratedClassName <em>Generated Class Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Generated Class Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.SqlServerExInstanceEnginePropsBuilder_rds#getGeneratedClassName()
+	 * @see #getSqlServerExInstanceEnginePropsBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getSqlServerExInstanceEnginePropsBuilder_rds_GeneratedClassName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.SqlServerExInstanceEnginePropsBuilder_rds#getVarName <em>Var Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Var Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.SqlServerExInstanceEnginePropsBuilder_rds#getVarName()
+	 * @see #getSqlServerExInstanceEnginePropsBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getSqlServerExInstanceEnginePropsBuilder_rds_VarName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.SqlServerExInstanceEnginePropsBuilder_rds#getIdentifier <em>Identifier</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Identifier</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.SqlServerExInstanceEnginePropsBuilder_rds#getIdentifier()
+	 * @see #getSqlServerExInstanceEnginePropsBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getSqlServerExInstanceEnginePropsBuilder_rds_Identifier();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.SqlServerExInstanceEnginePropsBuilder_rds#getAdditionalCode <em>Additional Code</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Additional Code</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.SqlServerExInstanceEnginePropsBuilder_rds#getAdditionalCode()
+	 * @see #getSqlServerExInstanceEnginePropsBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getSqlServerExInstanceEnginePropsBuilder_rds_AdditionalCode();
+
+	/**
+	 * Returns the meta object for class '{@link com.amazon.aws.workbench.model.awsworkbench.SqlServerSeInstanceEnginePropsBuilder_rds <em>Sql Server Se Instance Engine Props Builder rds</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Sql Server Se Instance Engine Props Builder rds</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.SqlServerSeInstanceEnginePropsBuilder_rds
+	 * @generated
+	 */
+	EClass getSqlServerSeInstanceEnginePropsBuilder_rds();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.SqlServerSeInstanceEnginePropsBuilder_rds#getVersionWithSqlServerEngineVersion_software_amazon_awscdk_services_rds_SqlServerEngineVersion_AsReference <em>Version With Sql Server Engine Version software amazon awscdk services rds Sql Server Engine Version As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Version With Sql Server Engine Version software amazon awscdk services rds Sql Server Engine Version As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.SqlServerSeInstanceEnginePropsBuilder_rds#getVersionWithSqlServerEngineVersion_software_amazon_awscdk_services_rds_SqlServerEngineVersion_AsReference()
+	 * @see #getSqlServerSeInstanceEnginePropsBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getSqlServerSeInstanceEnginePropsBuilder_rds_VersionWithSqlServerEngineVersion_software_amazon_awscdk_services_rds_SqlServerEngineVersion_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.SqlServerSeInstanceEnginePropsBuilder_rds#getGeneratedClassName <em>Generated Class Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Generated Class Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.SqlServerSeInstanceEnginePropsBuilder_rds#getGeneratedClassName()
+	 * @see #getSqlServerSeInstanceEnginePropsBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getSqlServerSeInstanceEnginePropsBuilder_rds_GeneratedClassName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.SqlServerSeInstanceEnginePropsBuilder_rds#getVarName <em>Var Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Var Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.SqlServerSeInstanceEnginePropsBuilder_rds#getVarName()
+	 * @see #getSqlServerSeInstanceEnginePropsBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getSqlServerSeInstanceEnginePropsBuilder_rds_VarName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.SqlServerSeInstanceEnginePropsBuilder_rds#getIdentifier <em>Identifier</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Identifier</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.SqlServerSeInstanceEnginePropsBuilder_rds#getIdentifier()
+	 * @see #getSqlServerSeInstanceEnginePropsBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getSqlServerSeInstanceEnginePropsBuilder_rds_Identifier();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.SqlServerSeInstanceEnginePropsBuilder_rds#getAdditionalCode <em>Additional Code</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Additional Code</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.SqlServerSeInstanceEnginePropsBuilder_rds#getAdditionalCode()
+	 * @see #getSqlServerSeInstanceEnginePropsBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getSqlServerSeInstanceEnginePropsBuilder_rds_AdditionalCode();
+
+	/**
+	 * Returns the meta object for class '{@link com.amazon.aws.workbench.model.awsworkbench.SqlServerWebInstanceEnginePropsBuilder_rds <em>Sql Server Web Instance Engine Props Builder rds</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Sql Server Web Instance Engine Props Builder rds</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.SqlServerWebInstanceEnginePropsBuilder_rds
+	 * @generated
+	 */
+	EClass getSqlServerWebInstanceEnginePropsBuilder_rds();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.SqlServerWebInstanceEnginePropsBuilder_rds#getVersionWithSqlServerEngineVersion_software_amazon_awscdk_services_rds_SqlServerEngineVersion_AsReference <em>Version With Sql Server Engine Version software amazon awscdk services rds Sql Server Engine Version As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Version With Sql Server Engine Version software amazon awscdk services rds Sql Server Engine Version As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.SqlServerWebInstanceEnginePropsBuilder_rds#getVersionWithSqlServerEngineVersion_software_amazon_awscdk_services_rds_SqlServerEngineVersion_AsReference()
+	 * @see #getSqlServerWebInstanceEnginePropsBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getSqlServerWebInstanceEnginePropsBuilder_rds_VersionWithSqlServerEngineVersion_software_amazon_awscdk_services_rds_SqlServerEngineVersion_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.SqlServerWebInstanceEnginePropsBuilder_rds#getGeneratedClassName <em>Generated Class Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Generated Class Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.SqlServerWebInstanceEnginePropsBuilder_rds#getGeneratedClassName()
+	 * @see #getSqlServerWebInstanceEnginePropsBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getSqlServerWebInstanceEnginePropsBuilder_rds_GeneratedClassName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.SqlServerWebInstanceEnginePropsBuilder_rds#getVarName <em>Var Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Var Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.SqlServerWebInstanceEnginePropsBuilder_rds#getVarName()
+	 * @see #getSqlServerWebInstanceEnginePropsBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getSqlServerWebInstanceEnginePropsBuilder_rds_VarName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.SqlServerWebInstanceEnginePropsBuilder_rds#getIdentifier <em>Identifier</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Identifier</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.SqlServerWebInstanceEnginePropsBuilder_rds#getIdentifier()
+	 * @see #getSqlServerWebInstanceEnginePropsBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getSqlServerWebInstanceEnginePropsBuilder_rds_Identifier();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.SqlServerWebInstanceEnginePropsBuilder_rds#getAdditionalCode <em>Additional Code</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Additional Code</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.SqlServerWebInstanceEnginePropsBuilder_rds#getAdditionalCode()
+	 * @see #getSqlServerWebInstanceEnginePropsBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getSqlServerWebInstanceEnginePropsBuilder_rds_AdditionalCode();
+
+	/**
+	 * Returns the meta object for class '{@link com.amazon.aws.workbench.model.awsworkbench.MySqlInstanceEnginePropsBuilder_rds <em>My Sql Instance Engine Props Builder rds</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>My Sql Instance Engine Props Builder rds</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.MySqlInstanceEnginePropsBuilder_rds
+	 * @generated
+	 */
+	EClass getMySqlInstanceEnginePropsBuilder_rds();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.MySqlInstanceEnginePropsBuilder_rds#getVersionWithMysqlEngineVersion_software_amazon_awscdk_services_rds_MysqlEngineVersion_AsReference <em>Version With Mysql Engine Version software amazon awscdk services rds Mysql Engine Version As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Version With Mysql Engine Version software amazon awscdk services rds Mysql Engine Version As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.MySqlInstanceEnginePropsBuilder_rds#getVersionWithMysqlEngineVersion_software_amazon_awscdk_services_rds_MysqlEngineVersion_AsReference()
+	 * @see #getMySqlInstanceEnginePropsBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getMySqlInstanceEnginePropsBuilder_rds_VersionWithMysqlEngineVersion_software_amazon_awscdk_services_rds_MysqlEngineVersion_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.MySqlInstanceEnginePropsBuilder_rds#getGeneratedClassName <em>Generated Class Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Generated Class Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.MySqlInstanceEnginePropsBuilder_rds#getGeneratedClassName()
+	 * @see #getMySqlInstanceEnginePropsBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getMySqlInstanceEnginePropsBuilder_rds_GeneratedClassName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.MySqlInstanceEnginePropsBuilder_rds#getVarName <em>Var Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Var Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.MySqlInstanceEnginePropsBuilder_rds#getVarName()
+	 * @see #getMySqlInstanceEnginePropsBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getMySqlInstanceEnginePropsBuilder_rds_VarName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.MySqlInstanceEnginePropsBuilder_rds#getIdentifier <em>Identifier</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Identifier</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.MySqlInstanceEnginePropsBuilder_rds#getIdentifier()
+	 * @see #getMySqlInstanceEnginePropsBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getMySqlInstanceEnginePropsBuilder_rds_Identifier();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.MySqlInstanceEnginePropsBuilder_rds#getAdditionalCode <em>Additional Code</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Additional Code</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.MySqlInstanceEnginePropsBuilder_rds#getAdditionalCode()
+	 * @see #getMySqlInstanceEnginePropsBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getMySqlInstanceEnginePropsBuilder_rds_AdditionalCode();
+
+	/**
+	 * Returns the meta object for class '{@link com.amazon.aws.workbench.model.awsworkbench.MariaDbInstanceEnginePropsBuilder_rds <em>Maria Db Instance Engine Props Builder rds</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Maria Db Instance Engine Props Builder rds</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.MariaDbInstanceEnginePropsBuilder_rds
+	 * @generated
+	 */
+	EClass getMariaDbInstanceEnginePropsBuilder_rds();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.MariaDbInstanceEnginePropsBuilder_rds#getVersionWithMariaDbEngineVersion_software_amazon_awscdk_services_rds_MariaDbEngineVersion_AsReference <em>Version With Maria Db Engine Version software amazon awscdk services rds Maria Db Engine Version As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Version With Maria Db Engine Version software amazon awscdk services rds Maria Db Engine Version As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.MariaDbInstanceEnginePropsBuilder_rds#getVersionWithMariaDbEngineVersion_software_amazon_awscdk_services_rds_MariaDbEngineVersion_AsReference()
+	 * @see #getMariaDbInstanceEnginePropsBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getMariaDbInstanceEnginePropsBuilder_rds_VersionWithMariaDbEngineVersion_software_amazon_awscdk_services_rds_MariaDbEngineVersion_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.MariaDbInstanceEnginePropsBuilder_rds#getGeneratedClassName <em>Generated Class Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Generated Class Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.MariaDbInstanceEnginePropsBuilder_rds#getGeneratedClassName()
+	 * @see #getMariaDbInstanceEnginePropsBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getMariaDbInstanceEnginePropsBuilder_rds_GeneratedClassName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.MariaDbInstanceEnginePropsBuilder_rds#getVarName <em>Var Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Var Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.MariaDbInstanceEnginePropsBuilder_rds#getVarName()
+	 * @see #getMariaDbInstanceEnginePropsBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getMariaDbInstanceEnginePropsBuilder_rds_VarName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.MariaDbInstanceEnginePropsBuilder_rds#getIdentifier <em>Identifier</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Identifier</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.MariaDbInstanceEnginePropsBuilder_rds#getIdentifier()
+	 * @see #getMariaDbInstanceEnginePropsBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getMariaDbInstanceEnginePropsBuilder_rds_Identifier();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.MariaDbInstanceEnginePropsBuilder_rds#getAdditionalCode <em>Additional Code</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Additional Code</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.MariaDbInstanceEnginePropsBuilder_rds#getAdditionalCode()
+	 * @see #getMariaDbInstanceEnginePropsBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getMariaDbInstanceEnginePropsBuilder_rds_AdditionalCode();
+
+	/**
+	 * Returns the meta object for class '{@link com.amazon.aws.workbench.model.awsworkbench.ParameterGroupBuilder_rds <em>Parameter Group Builder rds</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Parameter Group Builder rds</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.ParameterGroupBuilder_rds
+	 * @generated
+	 */
+	EClass getParameterGroupBuilder_rds();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.ParameterGroupBuilder_rds#getEngineWithIEngine_software_amazon_awscdk_services_rds_IEngine_AsReference <em>Engine With IEngine software amazon awscdk services rds IEngine As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Engine With IEngine software amazon awscdk services rds IEngine As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.ParameterGroupBuilder_rds#getEngineWithIEngine_software_amazon_awscdk_services_rds_IEngine_AsReference()
+	 * @see #getParameterGroupBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getParameterGroupBuilder_rds_EngineWithIEngine_software_amazon_awscdk_services_rds_IEngine_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.ParameterGroupBuilder_rds#getDescription_java_lang_String_ <em>Description java lang String </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Description java lang String </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.ParameterGroupBuilder_rds#getDescription_java_lang_String_()
+	 * @see #getParameterGroupBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getParameterGroupBuilder_rds_Description_java_lang_String_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.ParameterGroupBuilder_rds#getParameters_java_lang_String__java_lang_String_AsMap <em>Parameters java lang String java lang String As Map</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Parameters java lang String java lang String As Map</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.ParameterGroupBuilder_rds#getParameters_java_lang_String__java_lang_String_AsMap()
+	 * @see #getParameterGroupBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getParameterGroupBuilder_rds_Parameters_java_lang_String__java_lang_String_AsMap();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.ParameterGroupBuilder_rds#getGeneratedClassName <em>Generated Class Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Generated Class Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.ParameterGroupBuilder_rds#getGeneratedClassName()
+	 * @see #getParameterGroupBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getParameterGroupBuilder_rds_GeneratedClassName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.ParameterGroupBuilder_rds#getVarName <em>Var Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Var Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.ParameterGroupBuilder_rds#getVarName()
+	 * @see #getParameterGroupBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getParameterGroupBuilder_rds_VarName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.ParameterGroupBuilder_rds#getIdentifier <em>Identifier</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Identifier</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.ParameterGroupBuilder_rds#getIdentifier()
+	 * @see #getParameterGroupBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getParameterGroupBuilder_rds_Identifier();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.ParameterGroupBuilder_rds#getAdditionalCode <em>Additional Code</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Additional Code</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.ParameterGroupBuilder_rds#getAdditionalCode()
+	 * @see #getParameterGroupBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getParameterGroupBuilder_rds_AdditionalCode();
+
+	/**
+	 * Returns the meta object for class '{@link com.amazon.aws.workbench.model.awsworkbench.DatabaseInstanceBuilder_rds <em>Database Instance Builder rds</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Database Instance Builder rds</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.DatabaseInstanceBuilder_rds
+	 * @generated
+	 */
+	EClass getDatabaseInstanceBuilder_rds();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.DatabaseInstanceBuilder_rds#getVpcWithIVpc_software_amazon_awscdk_services_ec2_IVpc_AsReference <em>Vpc With IVpc software amazon awscdk services ec2 IVpc As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Vpc With IVpc software amazon awscdk services ec2 IVpc As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.DatabaseInstanceBuilder_rds#getVpcWithIVpc_software_amazon_awscdk_services_ec2_IVpc_AsReference()
+	 * @see #getDatabaseInstanceBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getDatabaseInstanceBuilder_rds_VpcWithIVpc_software_amazon_awscdk_services_ec2_IVpc_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.DatabaseInstanceBuilder_rds#getAutoMinorVersionUpgrade_java_lang_Boolean_ <em>Auto Minor Version Upgrade java lang Boolean </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Auto Minor Version Upgrade java lang Boolean </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.DatabaseInstanceBuilder_rds#getAutoMinorVersionUpgrade_java_lang_Boolean_()
+	 * @see #getDatabaseInstanceBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getDatabaseInstanceBuilder_rds_AutoMinorVersionUpgrade_java_lang_Boolean_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.DatabaseInstanceBuilder_rds#getAvailabilityZone_java_lang_String_ <em>Availability Zone java lang String </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Availability Zone java lang String </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.DatabaseInstanceBuilder_rds#getAvailabilityZone_java_lang_String_()
+	 * @see #getDatabaseInstanceBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getDatabaseInstanceBuilder_rds_AvailabilityZone_java_lang_String_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.DatabaseInstanceBuilder_rds#getBackupRetentionWithDuration_software_amazon_awscdk_core_Duration_AsReference <em>Backup Retention With Duration software amazon awscdk core Duration As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Backup Retention With Duration software amazon awscdk core Duration As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.DatabaseInstanceBuilder_rds#getBackupRetentionWithDuration_software_amazon_awscdk_core_Duration_AsReference()
+	 * @see #getDatabaseInstanceBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getDatabaseInstanceBuilder_rds_BackupRetentionWithDuration_software_amazon_awscdk_core_Duration_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.DatabaseInstanceBuilder_rds#getCloudwatchLogsExports_java_lang_String_AsList <em>Cloudwatch Logs Exports java lang String As List</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Cloudwatch Logs Exports java lang String As List</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.DatabaseInstanceBuilder_rds#getCloudwatchLogsExports_java_lang_String_AsList()
+	 * @see #getDatabaseInstanceBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getDatabaseInstanceBuilder_rds_CloudwatchLogsExports_java_lang_String_AsList();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.DatabaseInstanceBuilder_rds#getCloudwatchLogsRetention_software_amazon_awscdk_services_logs_RetentionDays_ <em>Cloudwatch Logs Retention software amazon awscdk services logs Retention Days </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Cloudwatch Logs Retention software amazon awscdk services logs Retention Days </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.DatabaseInstanceBuilder_rds#getCloudwatchLogsRetention_software_amazon_awscdk_services_logs_RetentionDays_()
+	 * @see #getDatabaseInstanceBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getDatabaseInstanceBuilder_rds_CloudwatchLogsRetention_software_amazon_awscdk_services_logs_RetentionDays_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.DatabaseInstanceBuilder_rds#getCloudwatchLogsRetentionRoleWithIRole_software_amazon_awscdk_services_iam_IRole_AsReference <em>Cloudwatch Logs Retention Role With IRole software amazon awscdk services iam IRole As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Cloudwatch Logs Retention Role With IRole software amazon awscdk services iam IRole As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.DatabaseInstanceBuilder_rds#getCloudwatchLogsRetentionRoleWithIRole_software_amazon_awscdk_services_iam_IRole_AsReference()
+	 * @see #getDatabaseInstanceBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getDatabaseInstanceBuilder_rds_CloudwatchLogsRetentionRoleWithIRole_software_amazon_awscdk_services_iam_IRole_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.DatabaseInstanceBuilder_rds#getCopyTagsToSnapshot_java_lang_Boolean_ <em>Copy Tags To Snapshot java lang Boolean </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Copy Tags To Snapshot java lang Boolean </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.DatabaseInstanceBuilder_rds#getCopyTagsToSnapshot_java_lang_Boolean_()
+	 * @see #getDatabaseInstanceBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getDatabaseInstanceBuilder_rds_CopyTagsToSnapshot_java_lang_Boolean_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.DatabaseInstanceBuilder_rds#getDeleteAutomatedBackups_java_lang_Boolean_ <em>Delete Automated Backups java lang Boolean </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Delete Automated Backups java lang Boolean </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.DatabaseInstanceBuilder_rds#getDeleteAutomatedBackups_java_lang_Boolean_()
+	 * @see #getDatabaseInstanceBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getDatabaseInstanceBuilder_rds_DeleteAutomatedBackups_java_lang_Boolean_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.DatabaseInstanceBuilder_rds#getDeletionProtection_java_lang_Boolean_ <em>Deletion Protection java lang Boolean </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Deletion Protection java lang Boolean </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.DatabaseInstanceBuilder_rds#getDeletionProtection_java_lang_Boolean_()
+	 * @see #getDatabaseInstanceBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getDatabaseInstanceBuilder_rds_DeletionProtection_java_lang_Boolean_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.DatabaseInstanceBuilder_rds#getEnablePerformanceInsights_java_lang_Boolean_ <em>Enable Performance Insights java lang Boolean </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Enable Performance Insights java lang Boolean </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.DatabaseInstanceBuilder_rds#getEnablePerformanceInsights_java_lang_Boolean_()
+	 * @see #getDatabaseInstanceBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getDatabaseInstanceBuilder_rds_EnablePerformanceInsights_java_lang_Boolean_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.DatabaseInstanceBuilder_rds#getIamAuthentication_java_lang_Boolean_ <em>Iam Authentication java lang Boolean </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Iam Authentication java lang Boolean </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.DatabaseInstanceBuilder_rds#getIamAuthentication_java_lang_Boolean_()
+	 * @see #getDatabaseInstanceBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getDatabaseInstanceBuilder_rds_IamAuthentication_java_lang_Boolean_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.DatabaseInstanceBuilder_rds#getInstanceIdentifier_java_lang_String_ <em>Instance Identifier java lang String </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Instance Identifier java lang String </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.DatabaseInstanceBuilder_rds#getInstanceIdentifier_java_lang_String_()
+	 * @see #getDatabaseInstanceBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getDatabaseInstanceBuilder_rds_InstanceIdentifier_java_lang_String_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.DatabaseInstanceBuilder_rds#getIops_java_lang_Number_ <em>Iops java lang Number </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Iops java lang Number </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.DatabaseInstanceBuilder_rds#getIops_java_lang_Number_()
+	 * @see #getDatabaseInstanceBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getDatabaseInstanceBuilder_rds_Iops_java_lang_Number_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.DatabaseInstanceBuilder_rds#getMaxAllocatedStorage_java_lang_Number_ <em>Max Allocated Storage java lang Number </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Max Allocated Storage java lang Number </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.DatabaseInstanceBuilder_rds#getMaxAllocatedStorage_java_lang_Number_()
+	 * @see #getDatabaseInstanceBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getDatabaseInstanceBuilder_rds_MaxAllocatedStorage_java_lang_Number_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.DatabaseInstanceBuilder_rds#getMonitoringIntervalWithDuration_software_amazon_awscdk_core_Duration_AsReference <em>Monitoring Interval With Duration software amazon awscdk core Duration As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Monitoring Interval With Duration software amazon awscdk core Duration As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.DatabaseInstanceBuilder_rds#getMonitoringIntervalWithDuration_software_amazon_awscdk_core_Duration_AsReference()
+	 * @see #getDatabaseInstanceBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getDatabaseInstanceBuilder_rds_MonitoringIntervalWithDuration_software_amazon_awscdk_core_Duration_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.DatabaseInstanceBuilder_rds#getMonitoringRoleWithIRole_software_amazon_awscdk_services_iam_IRole_AsReference <em>Monitoring Role With IRole software amazon awscdk services iam IRole As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Monitoring Role With IRole software amazon awscdk services iam IRole As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.DatabaseInstanceBuilder_rds#getMonitoringRoleWithIRole_software_amazon_awscdk_services_iam_IRole_AsReference()
+	 * @see #getDatabaseInstanceBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getDatabaseInstanceBuilder_rds_MonitoringRoleWithIRole_software_amazon_awscdk_services_iam_IRole_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.DatabaseInstanceBuilder_rds#getMultiAz_java_lang_Boolean_ <em>Multi Az java lang Boolean </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Multi Az java lang Boolean </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.DatabaseInstanceBuilder_rds#getMultiAz_java_lang_Boolean_()
+	 * @see #getDatabaseInstanceBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getDatabaseInstanceBuilder_rds_MultiAz_java_lang_Boolean_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.DatabaseInstanceBuilder_rds#getOptionGroupWithIOptionGroup_software_amazon_awscdk_services_rds_IOptionGroup_AsReference <em>Option Group With IOption Group software amazon awscdk services rds IOption Group As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Option Group With IOption Group software amazon awscdk services rds IOption Group As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.DatabaseInstanceBuilder_rds#getOptionGroupWithIOptionGroup_software_amazon_awscdk_services_rds_IOptionGroup_AsReference()
+	 * @see #getDatabaseInstanceBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getDatabaseInstanceBuilder_rds_OptionGroupWithIOptionGroup_software_amazon_awscdk_services_rds_IOptionGroup_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.DatabaseInstanceBuilder_rds#getPerformanceInsightEncryptionKeyWithIKey_software_amazon_awscdk_services_kms_IKey_AsReference <em>Performance Insight Encryption Key With IKey software amazon awscdk services kms IKey As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Performance Insight Encryption Key With IKey software amazon awscdk services kms IKey As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.DatabaseInstanceBuilder_rds#getPerformanceInsightEncryptionKeyWithIKey_software_amazon_awscdk_services_kms_IKey_AsReference()
+	 * @see #getDatabaseInstanceBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getDatabaseInstanceBuilder_rds_PerformanceInsightEncryptionKeyWithIKey_software_amazon_awscdk_services_kms_IKey_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.DatabaseInstanceBuilder_rds#getPerformanceInsightRetention_software_amazon_awscdk_services_rds_PerformanceInsightRetention_ <em>Performance Insight Retention software amazon awscdk services rds Performance Insight Retention </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Performance Insight Retention software amazon awscdk services rds Performance Insight Retention </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.DatabaseInstanceBuilder_rds#getPerformanceInsightRetention_software_amazon_awscdk_services_rds_PerformanceInsightRetention_()
+	 * @see #getDatabaseInstanceBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getDatabaseInstanceBuilder_rds_PerformanceInsightRetention_software_amazon_awscdk_services_rds_PerformanceInsightRetention_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.DatabaseInstanceBuilder_rds#getPort_java_lang_Number_ <em>Port java lang Number </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Port java lang Number </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.DatabaseInstanceBuilder_rds#getPort_java_lang_Number_()
+	 * @see #getDatabaseInstanceBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getDatabaseInstanceBuilder_rds_Port_java_lang_Number_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.DatabaseInstanceBuilder_rds#getPreferredBackupWindow_java_lang_String_ <em>Preferred Backup Window java lang String </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Preferred Backup Window java lang String </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.DatabaseInstanceBuilder_rds#getPreferredBackupWindow_java_lang_String_()
+	 * @see #getDatabaseInstanceBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getDatabaseInstanceBuilder_rds_PreferredBackupWindow_java_lang_String_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.DatabaseInstanceBuilder_rds#getPreferredMaintenanceWindow_java_lang_String_ <em>Preferred Maintenance Window java lang String </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Preferred Maintenance Window java lang String </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.DatabaseInstanceBuilder_rds#getPreferredMaintenanceWindow_java_lang_String_()
+	 * @see #getDatabaseInstanceBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getDatabaseInstanceBuilder_rds_PreferredMaintenanceWindow_java_lang_String_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.DatabaseInstanceBuilder_rds#getProcessorFeaturesWithProcessorFeatures_software_amazon_awscdk_services_rds_ProcessorFeatures_AsReference <em>Processor Features With Processor Features software amazon awscdk services rds Processor Features As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Processor Features With Processor Features software amazon awscdk services rds Processor Features As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.DatabaseInstanceBuilder_rds#getProcessorFeaturesWithProcessorFeatures_software_amazon_awscdk_services_rds_ProcessorFeatures_AsReference()
+	 * @see #getDatabaseInstanceBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getDatabaseInstanceBuilder_rds_ProcessorFeaturesWithProcessorFeatures_software_amazon_awscdk_services_rds_ProcessorFeatures_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.DatabaseInstanceBuilder_rds#getRemovalPolicy_software_amazon_awscdk_core_RemovalPolicy_ <em>Removal Policy software amazon awscdk core Removal Policy </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Removal Policy software amazon awscdk core Removal Policy </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.DatabaseInstanceBuilder_rds#getRemovalPolicy_software_amazon_awscdk_core_RemovalPolicy_()
+	 * @see #getDatabaseInstanceBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getDatabaseInstanceBuilder_rds_RemovalPolicy_software_amazon_awscdk_core_RemovalPolicy_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.DatabaseInstanceBuilder_rds#getSecurityGroups_software_amazon_awscdk_services_ec2_ISecurityGroup_AsList <em>Security Groups software amazon awscdk services ec2 ISecurity Group As List</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Security Groups software amazon awscdk services ec2 ISecurity Group As List</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.DatabaseInstanceBuilder_rds#getSecurityGroups_software_amazon_awscdk_services_ec2_ISecurityGroup_AsList()
+	 * @see #getDatabaseInstanceBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getDatabaseInstanceBuilder_rds_SecurityGroups_software_amazon_awscdk_services_ec2_ISecurityGroup_AsList();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.DatabaseInstanceBuilder_rds#getStorageType_software_amazon_awscdk_services_rds_StorageType_ <em>Storage Type software amazon awscdk services rds Storage Type </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Storage Type software amazon awscdk services rds Storage Type </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.DatabaseInstanceBuilder_rds#getStorageType_software_amazon_awscdk_services_rds_StorageType_()
+	 * @see #getDatabaseInstanceBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getDatabaseInstanceBuilder_rds_StorageType_software_amazon_awscdk_services_rds_StorageType_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.DatabaseInstanceBuilder_rds#getVpcPlacementWithSubnetSelection_software_amazon_awscdk_services_ec2_SubnetSelection_AsReference <em>Vpc Placement With Subnet Selection software amazon awscdk services ec2 Subnet Selection As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Vpc Placement With Subnet Selection software amazon awscdk services ec2 Subnet Selection As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.DatabaseInstanceBuilder_rds#getVpcPlacementWithSubnetSelection_software_amazon_awscdk_services_ec2_SubnetSelection_AsReference()
+	 * @see #getDatabaseInstanceBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getDatabaseInstanceBuilder_rds_VpcPlacementWithSubnetSelection_software_amazon_awscdk_services_ec2_SubnetSelection_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.DatabaseInstanceBuilder_rds#getEngineWithIInstanceEngine_software_amazon_awscdk_services_rds_IInstanceEngine_AsReference <em>Engine With IInstance Engine software amazon awscdk services rds IInstance Engine As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Engine With IInstance Engine software amazon awscdk services rds IInstance Engine As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.DatabaseInstanceBuilder_rds#getEngineWithIInstanceEngine_software_amazon_awscdk_services_rds_IInstanceEngine_AsReference()
+	 * @see #getDatabaseInstanceBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getDatabaseInstanceBuilder_rds_EngineWithIInstanceEngine_software_amazon_awscdk_services_rds_IInstanceEngine_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.DatabaseInstanceBuilder_rds#getAllocatedStorage_java_lang_Number_ <em>Allocated Storage java lang Number </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Allocated Storage java lang Number </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.DatabaseInstanceBuilder_rds#getAllocatedStorage_java_lang_Number_()
+	 * @see #getDatabaseInstanceBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getDatabaseInstanceBuilder_rds_AllocatedStorage_java_lang_Number_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.DatabaseInstanceBuilder_rds#getAllowMajorVersionUpgrade_java_lang_Boolean_ <em>Allow Major Version Upgrade java lang Boolean </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Allow Major Version Upgrade java lang Boolean </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.DatabaseInstanceBuilder_rds#getAllowMajorVersionUpgrade_java_lang_Boolean_()
+	 * @see #getDatabaseInstanceBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getDatabaseInstanceBuilder_rds_AllowMajorVersionUpgrade_java_lang_Boolean_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.DatabaseInstanceBuilder_rds#getDatabaseName_java_lang_String_ <em>Database Name java lang String </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Database Name java lang String </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.DatabaseInstanceBuilder_rds#getDatabaseName_java_lang_String_()
+	 * @see #getDatabaseInstanceBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getDatabaseInstanceBuilder_rds_DatabaseName_java_lang_String_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.DatabaseInstanceBuilder_rds#getInstanceTypeWithInstanceType_software_amazon_awscdk_services_ec2_InstanceType_AsReference <em>Instance Type With Instance Type software amazon awscdk services ec2 Instance Type As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Instance Type With Instance Type software amazon awscdk services ec2 Instance Type As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.DatabaseInstanceBuilder_rds#getInstanceTypeWithInstanceType_software_amazon_awscdk_services_ec2_InstanceType_AsReference()
+	 * @see #getDatabaseInstanceBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getDatabaseInstanceBuilder_rds_InstanceTypeWithInstanceType_software_amazon_awscdk_services_ec2_InstanceType_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.DatabaseInstanceBuilder_rds#getLicenseModel_software_amazon_awscdk_services_rds_LicenseModel_ <em>License Model software amazon awscdk services rds License Model </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>License Model software amazon awscdk services rds License Model </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.DatabaseInstanceBuilder_rds#getLicenseModel_software_amazon_awscdk_services_rds_LicenseModel_()
+	 * @see #getDatabaseInstanceBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getDatabaseInstanceBuilder_rds_LicenseModel_software_amazon_awscdk_services_rds_LicenseModel_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.DatabaseInstanceBuilder_rds#getMasterUserPasswordWithSecretValue_software_amazon_awscdk_core_SecretValue_AsReference <em>Master User Password With Secret Value software amazon awscdk core Secret Value As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Master User Password With Secret Value software amazon awscdk core Secret Value As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.DatabaseInstanceBuilder_rds#getMasterUserPasswordWithSecretValue_software_amazon_awscdk_core_SecretValue_AsReference()
+	 * @see #getDatabaseInstanceBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getDatabaseInstanceBuilder_rds_MasterUserPasswordWithSecretValue_software_amazon_awscdk_core_SecretValue_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.DatabaseInstanceBuilder_rds#getMasterUserPasswordEncryptionKeyWithIKey_software_amazon_awscdk_services_kms_IKey_AsReference <em>Master User Password Encryption Key With IKey software amazon awscdk services kms IKey As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Master User Password Encryption Key With IKey software amazon awscdk services kms IKey As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.DatabaseInstanceBuilder_rds#getMasterUserPasswordEncryptionKeyWithIKey_software_amazon_awscdk_services_kms_IKey_AsReference()
+	 * @see #getDatabaseInstanceBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getDatabaseInstanceBuilder_rds_MasterUserPasswordEncryptionKeyWithIKey_software_amazon_awscdk_services_kms_IKey_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.DatabaseInstanceBuilder_rds#getParameterGroupWithIParameterGroup_software_amazon_awscdk_services_rds_IParameterGroup_AsReference <em>Parameter Group With IParameter Group software amazon awscdk services rds IParameter Group As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Parameter Group With IParameter Group software amazon awscdk services rds IParameter Group As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.DatabaseInstanceBuilder_rds#getParameterGroupWithIParameterGroup_software_amazon_awscdk_services_rds_IParameterGroup_AsReference()
+	 * @see #getDatabaseInstanceBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getDatabaseInstanceBuilder_rds_ParameterGroupWithIParameterGroup_software_amazon_awscdk_services_rds_IParameterGroup_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.DatabaseInstanceBuilder_rds#getTimezone_java_lang_String_ <em>Timezone java lang String </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Timezone java lang String </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.DatabaseInstanceBuilder_rds#getTimezone_java_lang_String_()
+	 * @see #getDatabaseInstanceBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getDatabaseInstanceBuilder_rds_Timezone_java_lang_String_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.DatabaseInstanceBuilder_rds#getMasterUsername_java_lang_String_ <em>Master Username java lang String </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Master Username java lang String </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.DatabaseInstanceBuilder_rds#getMasterUsername_java_lang_String_()
+	 * @see #getDatabaseInstanceBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getDatabaseInstanceBuilder_rds_MasterUsername_java_lang_String_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.DatabaseInstanceBuilder_rds#getCharacterSetName_java_lang_String_ <em>Character Set Name java lang String </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Character Set Name java lang String </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.DatabaseInstanceBuilder_rds#getCharacterSetName_java_lang_String_()
+	 * @see #getDatabaseInstanceBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getDatabaseInstanceBuilder_rds_CharacterSetName_java_lang_String_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.DatabaseInstanceBuilder_rds#getStorageEncrypted_java_lang_Boolean_ <em>Storage Encrypted java lang Boolean </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Storage Encrypted java lang Boolean </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.DatabaseInstanceBuilder_rds#getStorageEncrypted_java_lang_Boolean_()
+	 * @see #getDatabaseInstanceBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getDatabaseInstanceBuilder_rds_StorageEncrypted_java_lang_Boolean_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.DatabaseInstanceBuilder_rds#getStorageEncryptionKeyWithIKey_software_amazon_awscdk_services_kms_IKey_AsReference <em>Storage Encryption Key With IKey software amazon awscdk services kms IKey As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Storage Encryption Key With IKey software amazon awscdk services kms IKey As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.DatabaseInstanceBuilder_rds#getStorageEncryptionKeyWithIKey_software_amazon_awscdk_services_kms_IKey_AsReference()
+	 * @see #getDatabaseInstanceBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getDatabaseInstanceBuilder_rds_StorageEncryptionKeyWithIKey_software_amazon_awscdk_services_kms_IKey_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.DatabaseInstanceBuilder_rds#getGeneratedClassName <em>Generated Class Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Generated Class Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.DatabaseInstanceBuilder_rds#getGeneratedClassName()
+	 * @see #getDatabaseInstanceBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getDatabaseInstanceBuilder_rds_GeneratedClassName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.DatabaseInstanceBuilder_rds#getVarName <em>Var Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Var Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.DatabaseInstanceBuilder_rds#getVarName()
+	 * @see #getDatabaseInstanceBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getDatabaseInstanceBuilder_rds_VarName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.DatabaseInstanceBuilder_rds#getIdentifier <em>Identifier</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Identifier</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.DatabaseInstanceBuilder_rds#getIdentifier()
+	 * @see #getDatabaseInstanceBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getDatabaseInstanceBuilder_rds_Identifier();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.DatabaseInstanceBuilder_rds#getAdditionalCode <em>Additional Code</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Additional Code</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.DatabaseInstanceBuilder_rds#getAdditionalCode()
+	 * @see #getDatabaseInstanceBuilder_rds()
+	 * @generated
+	 */
+	EAttribute getDatabaseInstanceBuilder_rds_AdditionalCode();
+
+	/**
 	 * Returns the meta object for class '{@link com.amazon.aws.workbench.model.awsworkbench.ScheduledFargateTaskBuilder_patterns <em>Scheduled Fargate Task Builder patterns</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -54903,6 +59879,36 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @generated
 	 */
 	EEnum getProtocol();
+
+	/**
+	 * Returns the meta object for enum '{@link com.amazon.aws.workbench.model.awsworkbench.PerformanceInsightRetention <em>Performance Insight Retention</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for enum '<em>Performance Insight Retention</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.PerformanceInsightRetention
+	 * @generated
+	 */
+	EEnum getPerformanceInsightRetention();
+
+	/**
+	 * Returns the meta object for enum '{@link com.amazon.aws.workbench.model.awsworkbench.StorageType <em>Storage Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for enum '<em>Storage Type</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.StorageType
+	 * @generated
+	 */
+	EEnum getStorageType();
+
+	/**
+	 * Returns the meta object for enum '{@link com.amazon.aws.workbench.model.awsworkbench.LicenseModel <em>License Model</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for enum '<em>License Model</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.LicenseModel
+	 * @generated
+	 */
+	EEnum getLicenseModel();
 
 	/**
 	 * Returns the factory that creates the instances of the model.
@@ -74778,6 +79784,1803 @@ public interface AwsworkbenchPackage extends EPackage {
 				.getScheduledFargateTaskImageOptionsBuilder_patterns_AdditionalCode();
 
 		/**
+		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.TopicBuilder_snsImpl <em>Topic Builder sns</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.TopicBuilder_snsImpl
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getTopicBuilder_sns()
+		 * @generated
+		 */
+		EClass TOPIC_BUILDER_SNS = eINSTANCE.getTopicBuilder_sns();
+
+		/**
+		 * The meta object literal for the '<em><b>Display Name java lang String </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TOPIC_BUILDER_SNS__DISPLAY_NAME_JAVA_LANG_STRING_ = eINSTANCE
+				.getTopicBuilder_sns_DisplayName_java_lang_String_();
+
+		/**
+		 * The meta object literal for the '<em><b>Master Key With IKey software amazon awscdk services kms IKey As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TOPIC_BUILDER_SNS__MASTER_KEY_WITH_IKEY_SOFTWARE_AMAZON_AWSCDK_SERVICES_KMS_IKEY_AS_REFERENCE = eINSTANCE
+				.getTopicBuilder_sns_MasterKeyWithIKey_software_amazon_awscdk_services_kms_IKey_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Topic Name java lang String </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TOPIC_BUILDER_SNS__TOPIC_NAME_JAVA_LANG_STRING_ = eINSTANCE
+				.getTopicBuilder_sns_TopicName_java_lang_String_();
+
+		/**
+		 * The meta object literal for the '<em><b>Generated Class Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TOPIC_BUILDER_SNS__GENERATED_CLASS_NAME = eINSTANCE.getTopicBuilder_sns_GeneratedClassName();
+
+		/**
+		 * The meta object literal for the '<em><b>Var Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TOPIC_BUILDER_SNS__VAR_NAME = eINSTANCE.getTopicBuilder_sns_VarName();
+
+		/**
+		 * The meta object literal for the '<em><b>Identifier</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TOPIC_BUILDER_SNS__IDENTIFIER = eINSTANCE.getTopicBuilder_sns_Identifier();
+
+		/**
+		 * The meta object literal for the '<em><b>Additional Code</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TOPIC_BUILDER_SNS__ADDITIONAL_CODE = eINSTANCE.getTopicBuilder_sns_AdditionalCode();
+
+		/**
+		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.Ec2HealthCheckOptionsBuilder_autoscalingImpl <em>Ec2 Health Check Options Builder autoscaling</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.Ec2HealthCheckOptionsBuilder_autoscalingImpl
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getEc2HealthCheckOptionsBuilder_autoscaling()
+		 * @generated
+		 */
+		EClass EC2_HEALTH_CHECK_OPTIONS_BUILDER_AUTOSCALING = eINSTANCE.getEc2HealthCheckOptionsBuilder_autoscaling();
+
+		/**
+		 * The meta object literal for the '<em><b>Grace With Duration software amazon awscdk core Duration As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute EC2_HEALTH_CHECK_OPTIONS_BUILDER_AUTOSCALING__GRACE_WITH_DURATION_SOFTWARE_AMAZON_AWSCDK_CORE_DURATION_AS_REFERENCE = eINSTANCE
+				.getEc2HealthCheckOptionsBuilder_autoscaling_GraceWithDuration_software_amazon_awscdk_core_Duration_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Generated Class Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute EC2_HEALTH_CHECK_OPTIONS_BUILDER_AUTOSCALING__GENERATED_CLASS_NAME = eINSTANCE
+				.getEc2HealthCheckOptionsBuilder_autoscaling_GeneratedClassName();
+
+		/**
+		 * The meta object literal for the '<em><b>Var Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute EC2_HEALTH_CHECK_OPTIONS_BUILDER_AUTOSCALING__VAR_NAME = eINSTANCE
+				.getEc2HealthCheckOptionsBuilder_autoscaling_VarName();
+
+		/**
+		 * The meta object literal for the '<em><b>Identifier</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute EC2_HEALTH_CHECK_OPTIONS_BUILDER_AUTOSCALING__IDENTIFIER = eINSTANCE
+				.getEc2HealthCheckOptionsBuilder_autoscaling_Identifier();
+
+		/**
+		 * The meta object literal for the '<em><b>Additional Code</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute EC2_HEALTH_CHECK_OPTIONS_BUILDER_AUTOSCALING__ADDITIONAL_CODE = eINSTANCE
+				.getEc2HealthCheckOptionsBuilder_autoscaling_AdditionalCode();
+
+		/**
+		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.AutoScalingGroupBuilder_autoscalingImpl <em>Auto Scaling Group Builder autoscaling</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AutoScalingGroupBuilder_autoscalingImpl
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getAutoScalingGroupBuilder_autoscaling()
+		 * @generated
+		 */
+		EClass AUTO_SCALING_GROUP_BUILDER_AUTOSCALING = eINSTANCE.getAutoScalingGroupBuilder_autoscaling();
+
+		/**
+		 * The meta object literal for the '<em><b>Allow All Outbound java lang Boolean </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute AUTO_SCALING_GROUP_BUILDER_AUTOSCALING__ALLOW_ALL_OUTBOUND_JAVA_LANG_BOOLEAN_ = eINSTANCE
+				.getAutoScalingGroupBuilder_autoscaling_AllowAllOutbound_java_lang_Boolean_();
+
+		/**
+		 * The meta object literal for the '<em><b>Associate Public Ip Address java lang Boolean </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute AUTO_SCALING_GROUP_BUILDER_AUTOSCALING__ASSOCIATE_PUBLIC_IP_ADDRESS_JAVA_LANG_BOOLEAN_ = eINSTANCE
+				.getAutoScalingGroupBuilder_autoscaling_AssociatePublicIpAddress_java_lang_Boolean_();
+
+		/**
+		 * The meta object literal for the '<em><b>Block Devices software amazon awscdk services autoscaling Block Device As List</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute AUTO_SCALING_GROUP_BUILDER_AUTOSCALING__BLOCK_DEVICES_SOFTWARE_AMAZON_AWSCDK_SERVICES_AUTOSCALING_BLOCK_DEVICE_AS_LIST = eINSTANCE
+				.getAutoScalingGroupBuilder_autoscaling_BlockDevices_software_amazon_awscdk_services_autoscaling_BlockDevice_AsList();
+
+		/**
+		 * The meta object literal for the '<em><b>Cooldown With Duration software amazon awscdk core Duration As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute AUTO_SCALING_GROUP_BUILDER_AUTOSCALING__COOLDOWN_WITH_DURATION_SOFTWARE_AMAZON_AWSCDK_CORE_DURATION_AS_REFERENCE = eINSTANCE
+				.getAutoScalingGroupBuilder_autoscaling_CooldownWithDuration_software_amazon_awscdk_core_Duration_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Desired Capacity java lang Number </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute AUTO_SCALING_GROUP_BUILDER_AUTOSCALING__DESIRED_CAPACITY_JAVA_LANG_NUMBER_ = eINSTANCE
+				.getAutoScalingGroupBuilder_autoscaling_DesiredCapacity_java_lang_Number_();
+
+		/**
+		 * The meta object literal for the '<em><b>Health Check With Health Check software amazon awscdk services autoscaling Health Check As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute AUTO_SCALING_GROUP_BUILDER_AUTOSCALING__HEALTH_CHECK_WITH_HEALTH_CHECK_SOFTWARE_AMAZON_AWSCDK_SERVICES_AUTOSCALING_HEALTH_CHECK_AS_REFERENCE = eINSTANCE
+				.getAutoScalingGroupBuilder_autoscaling_HealthCheckWithHealthCheck_software_amazon_awscdk_services_autoscaling_HealthCheck_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Ignore Unmodified Size Properties java lang Boolean </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute AUTO_SCALING_GROUP_BUILDER_AUTOSCALING__IGNORE_UNMODIFIED_SIZE_PROPERTIES_JAVA_LANG_BOOLEAN_ = eINSTANCE
+				.getAutoScalingGroupBuilder_autoscaling_IgnoreUnmodifiedSizeProperties_java_lang_Boolean_();
+
+		/**
+		 * The meta object literal for the '<em><b>Key Name java lang String </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute AUTO_SCALING_GROUP_BUILDER_AUTOSCALING__KEY_NAME_JAVA_LANG_STRING_ = eINSTANCE
+				.getAutoScalingGroupBuilder_autoscaling_KeyName_java_lang_String_();
+
+		/**
+		 * The meta object literal for the '<em><b>Max Capacity java lang Number </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute AUTO_SCALING_GROUP_BUILDER_AUTOSCALING__MAX_CAPACITY_JAVA_LANG_NUMBER_ = eINSTANCE
+				.getAutoScalingGroupBuilder_autoscaling_MaxCapacity_java_lang_Number_();
+
+		/**
+		 * The meta object literal for the '<em><b>Max Instance Lifetime With Duration software amazon awscdk core Duration As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute AUTO_SCALING_GROUP_BUILDER_AUTOSCALING__MAX_INSTANCE_LIFETIME_WITH_DURATION_SOFTWARE_AMAZON_AWSCDK_CORE_DURATION_AS_REFERENCE = eINSTANCE
+				.getAutoScalingGroupBuilder_autoscaling_MaxInstanceLifetimeWithDuration_software_amazon_awscdk_core_Duration_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Min Capacity java lang Number </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute AUTO_SCALING_GROUP_BUILDER_AUTOSCALING__MIN_CAPACITY_JAVA_LANG_NUMBER_ = eINSTANCE
+				.getAutoScalingGroupBuilder_autoscaling_MinCapacity_java_lang_Number_();
+
+		/**
+		 * The meta object literal for the '<em><b>Notifications Topic With ITopic software amazon awscdk services sns ITopic As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute AUTO_SCALING_GROUP_BUILDER_AUTOSCALING__NOTIFICATIONS_TOPIC_WITH_ITOPIC_SOFTWARE_AMAZON_AWSCDK_SERVICES_SNS_ITOPIC_AS_REFERENCE = eINSTANCE
+				.getAutoScalingGroupBuilder_autoscaling_NotificationsTopicWithITopic_software_amazon_awscdk_services_sns_ITopic_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Replacing Update Min Successful Instances Percent java lang Number </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute AUTO_SCALING_GROUP_BUILDER_AUTOSCALING__REPLACING_UPDATE_MIN_SUCCESSFUL_INSTANCES_PERCENT_JAVA_LANG_NUMBER_ = eINSTANCE
+				.getAutoScalingGroupBuilder_autoscaling_ReplacingUpdateMinSuccessfulInstancesPercent_java_lang_Number_();
+
+		/**
+		 * The meta object literal for the '<em><b>Resource Signal Count java lang Number </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute AUTO_SCALING_GROUP_BUILDER_AUTOSCALING__RESOURCE_SIGNAL_COUNT_JAVA_LANG_NUMBER_ = eINSTANCE
+				.getAutoScalingGroupBuilder_autoscaling_ResourceSignalCount_java_lang_Number_();
+
+		/**
+		 * The meta object literal for the '<em><b>Resource Signal Timeout With Duration software amazon awscdk core Duration As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute AUTO_SCALING_GROUP_BUILDER_AUTOSCALING__RESOURCE_SIGNAL_TIMEOUT_WITH_DURATION_SOFTWARE_AMAZON_AWSCDK_CORE_DURATION_AS_REFERENCE = eINSTANCE
+				.getAutoScalingGroupBuilder_autoscaling_ResourceSignalTimeoutWithDuration_software_amazon_awscdk_core_Duration_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Rolling Update Configuration With Rolling Update Configuration software amazon awscdk services autoscaling Rolling Update Configuration As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute AUTO_SCALING_GROUP_BUILDER_AUTOSCALING__ROLLING_UPDATE_CONFIGURATION_WITH_ROLLING_UPDATE_CONFIGURATION_SOFTWARE_AMAZON_AWSCDK_SERVICES_AUTOSCALING_ROLLING_UPDATE_CONFIGURATION_AS_REFERENCE = eINSTANCE
+				.getAutoScalingGroupBuilder_autoscaling_RollingUpdateConfigurationWithRollingUpdateConfiguration_software_amazon_awscdk_services_autoscaling_RollingUpdateConfiguration_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Spot Price java lang String </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute AUTO_SCALING_GROUP_BUILDER_AUTOSCALING__SPOT_PRICE_JAVA_LANG_STRING_ = eINSTANCE
+				.getAutoScalingGroupBuilder_autoscaling_SpotPrice_java_lang_String_();
+
+		/**
+		 * The meta object literal for the '<em><b>Update Type software amazon awscdk services autoscaling Update Type </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute AUTO_SCALING_GROUP_BUILDER_AUTOSCALING__UPDATE_TYPE_SOFTWARE_AMAZON_AWSCDK_SERVICES_AUTOSCALING_UPDATE_TYPE_ = eINSTANCE
+				.getAutoScalingGroupBuilder_autoscaling_UpdateType_software_amazon_awscdk_services_autoscaling_UpdateType_();
+
+		/**
+		 * The meta object literal for the '<em><b>Vpc Subnets With Subnet Selection software amazon awscdk services ec2 Subnet Selection As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute AUTO_SCALING_GROUP_BUILDER_AUTOSCALING__VPC_SUBNETS_WITH_SUBNET_SELECTION_SOFTWARE_AMAZON_AWSCDK_SERVICES_EC2_SUBNET_SELECTION_AS_REFERENCE = eINSTANCE
+				.getAutoScalingGroupBuilder_autoscaling_VpcSubnetsWithSubnetSelection_software_amazon_awscdk_services_ec2_SubnetSelection_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Instance Type With Instance Type software amazon awscdk services ec2 Instance Type As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute AUTO_SCALING_GROUP_BUILDER_AUTOSCALING__INSTANCE_TYPE_WITH_INSTANCE_TYPE_SOFTWARE_AMAZON_AWSCDK_SERVICES_EC2_INSTANCE_TYPE_AS_REFERENCE = eINSTANCE
+				.getAutoScalingGroupBuilder_autoscaling_InstanceTypeWithInstanceType_software_amazon_awscdk_services_ec2_InstanceType_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Machine Image With IMachine Image software amazon awscdk services ec2 IMachine Image As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute AUTO_SCALING_GROUP_BUILDER_AUTOSCALING__MACHINE_IMAGE_WITH_IMACHINE_IMAGE_SOFTWARE_AMAZON_AWSCDK_SERVICES_EC2_IMACHINE_IMAGE_AS_REFERENCE = eINSTANCE
+				.getAutoScalingGroupBuilder_autoscaling_MachineImageWithIMachineImage_software_amazon_awscdk_services_ec2_IMachineImage_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Vpc With IVpc software amazon awscdk services ec2 IVpc As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute AUTO_SCALING_GROUP_BUILDER_AUTOSCALING__VPC_WITH_IVPC_SOFTWARE_AMAZON_AWSCDK_SERVICES_EC2_IVPC_AS_REFERENCE = eINSTANCE
+				.getAutoScalingGroupBuilder_autoscaling_VpcWithIVpc_software_amazon_awscdk_services_ec2_IVpc_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Role With IRole software amazon awscdk services iam IRole As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute AUTO_SCALING_GROUP_BUILDER_AUTOSCALING__ROLE_WITH_IROLE_SOFTWARE_AMAZON_AWSCDK_SERVICES_IAM_IROLE_AS_REFERENCE = eINSTANCE
+				.getAutoScalingGroupBuilder_autoscaling_RoleWithIRole_software_amazon_awscdk_services_iam_IRole_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>User Data With User Data software amazon awscdk services ec2 User Data As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute AUTO_SCALING_GROUP_BUILDER_AUTOSCALING__USER_DATA_WITH_USER_DATA_SOFTWARE_AMAZON_AWSCDK_SERVICES_EC2_USER_DATA_AS_REFERENCE = eINSTANCE
+				.getAutoScalingGroupBuilder_autoscaling_UserDataWithUserData_software_amazon_awscdk_services_ec2_UserData_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Generated Class Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute AUTO_SCALING_GROUP_BUILDER_AUTOSCALING__GENERATED_CLASS_NAME = eINSTANCE
+				.getAutoScalingGroupBuilder_autoscaling_GeneratedClassName();
+
+		/**
+		 * The meta object literal for the '<em><b>Var Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute AUTO_SCALING_GROUP_BUILDER_AUTOSCALING__VAR_NAME = eINSTANCE
+				.getAutoScalingGroupBuilder_autoscaling_VarName();
+
+		/**
+		 * The meta object literal for the '<em><b>Identifier</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute AUTO_SCALING_GROUP_BUILDER_AUTOSCALING__IDENTIFIER = eINSTANCE
+				.getAutoScalingGroupBuilder_autoscaling_Identifier();
+
+		/**
+		 * The meta object literal for the '<em><b>Additional Code</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute AUTO_SCALING_GROUP_BUILDER_AUTOSCALING__ADDITIONAL_CODE = eINSTANCE
+				.getAutoScalingGroupBuilder_autoscaling_AdditionalCode();
+
+		/**
+		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.OptionConfigurationBuilder_rdsImpl <em>Option Configuration Builder rds</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.OptionConfigurationBuilder_rdsImpl
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getOptionConfigurationBuilder_rds()
+		 * @generated
+		 */
+		EClass OPTION_CONFIGURATION_BUILDER_RDS = eINSTANCE.getOptionConfigurationBuilder_rds();
+
+		/**
+		 * The meta object literal for the '<em><b>Name java lang String </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute OPTION_CONFIGURATION_BUILDER_RDS__NAME_JAVA_LANG_STRING_ = eINSTANCE
+				.getOptionConfigurationBuilder_rds_Name_java_lang_String_();
+
+		/**
+		 * The meta object literal for the '<em><b>Port java lang Number </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute OPTION_CONFIGURATION_BUILDER_RDS__PORT_JAVA_LANG_NUMBER_ = eINSTANCE
+				.getOptionConfigurationBuilder_rds_Port_java_lang_Number_();
+
+		/**
+		 * The meta object literal for the '<em><b>Settings java lang String java lang String As Map</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute OPTION_CONFIGURATION_BUILDER_RDS__SETTINGS_JAVA_LANG_STRING_JAVA_LANG_STRING_AS_MAP = eINSTANCE
+				.getOptionConfigurationBuilder_rds_Settings_java_lang_String__java_lang_String_AsMap();
+
+		/**
+		 * The meta object literal for the '<em><b>Version java lang String </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute OPTION_CONFIGURATION_BUILDER_RDS__VERSION_JAVA_LANG_STRING_ = eINSTANCE
+				.getOptionConfigurationBuilder_rds_Version_java_lang_String_();
+
+		/**
+		 * The meta object literal for the '<em><b>Vpc With IVpc software amazon awscdk services ec2 IVpc As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute OPTION_CONFIGURATION_BUILDER_RDS__VPC_WITH_IVPC_SOFTWARE_AMAZON_AWSCDK_SERVICES_EC2_IVPC_AS_REFERENCE = eINSTANCE
+				.getOptionConfigurationBuilder_rds_VpcWithIVpc_software_amazon_awscdk_services_ec2_IVpc_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Generated Class Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute OPTION_CONFIGURATION_BUILDER_RDS__GENERATED_CLASS_NAME = eINSTANCE
+				.getOptionConfigurationBuilder_rds_GeneratedClassName();
+
+		/**
+		 * The meta object literal for the '<em><b>Var Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute OPTION_CONFIGURATION_BUILDER_RDS__VAR_NAME = eINSTANCE.getOptionConfigurationBuilder_rds_VarName();
+
+		/**
+		 * The meta object literal for the '<em><b>Identifier</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute OPTION_CONFIGURATION_BUILDER_RDS__IDENTIFIER = eINSTANCE
+				.getOptionConfigurationBuilder_rds_Identifier();
+
+		/**
+		 * The meta object literal for the '<em><b>Additional Code</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute OPTION_CONFIGURATION_BUILDER_RDS__ADDITIONAL_CODE = eINSTANCE
+				.getOptionConfigurationBuilder_rds_AdditionalCode();
+
+		/**
+		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.OptionGroupBuilder_rdsImpl <em>Option Group Builder rds</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.OptionGroupBuilder_rdsImpl
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getOptionGroupBuilder_rds()
+		 * @generated
+		 */
+		EClass OPTION_GROUP_BUILDER_RDS = eINSTANCE.getOptionGroupBuilder_rds();
+
+		/**
+		 * The meta object literal for the '<em><b>Configurations software amazon awscdk services rds Option Configuration As List</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute OPTION_GROUP_BUILDER_RDS__CONFIGURATIONS_SOFTWARE_AMAZON_AWSCDK_SERVICES_RDS_OPTION_CONFIGURATION_AS_LIST = eINSTANCE
+				.getOptionGroupBuilder_rds_Configurations_software_amazon_awscdk_services_rds_OptionConfiguration_AsList();
+
+		/**
+		 * The meta object literal for the '<em><b>Engine With IInstance Engine software amazon awscdk services rds IInstance Engine As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute OPTION_GROUP_BUILDER_RDS__ENGINE_WITH_IINSTANCE_ENGINE_SOFTWARE_AMAZON_AWSCDK_SERVICES_RDS_IINSTANCE_ENGINE_AS_REFERENCE = eINSTANCE
+				.getOptionGroupBuilder_rds_EngineWithIInstanceEngine_software_amazon_awscdk_services_rds_IInstanceEngine_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Description java lang String </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute OPTION_GROUP_BUILDER_RDS__DESCRIPTION_JAVA_LANG_STRING_ = eINSTANCE
+				.getOptionGroupBuilder_rds_Description_java_lang_String_();
+
+		/**
+		 * The meta object literal for the '<em><b>Generated Class Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute OPTION_GROUP_BUILDER_RDS__GENERATED_CLASS_NAME = eINSTANCE
+				.getOptionGroupBuilder_rds_GeneratedClassName();
+
+		/**
+		 * The meta object literal for the '<em><b>Var Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute OPTION_GROUP_BUILDER_RDS__VAR_NAME = eINSTANCE.getOptionGroupBuilder_rds_VarName();
+
+		/**
+		 * The meta object literal for the '<em><b>Identifier</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute OPTION_GROUP_BUILDER_RDS__IDENTIFIER = eINSTANCE.getOptionGroupBuilder_rds_Identifier();
+
+		/**
+		 * The meta object literal for the '<em><b>Additional Code</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute OPTION_GROUP_BUILDER_RDS__ADDITIONAL_CODE = eINSTANCE.getOptionGroupBuilder_rds_AdditionalCode();
+
+		/**
+		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.PortBuilder_ec2Impl <em>Port Builder ec2</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.PortBuilder_ec2Impl
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getPortBuilder_ec2()
+		 * @generated
+		 */
+		EClass PORT_BUILDER_EC2 = eINSTANCE.getPortBuilder_ec2();
+
+		/**
+		 * The meta object literal for the '<em><b>Protocol software amazon awscdk services ec2 Protocol </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PORT_BUILDER_EC2__PROTOCOL_SOFTWARE_AMAZON_AWSCDK_SERVICES_EC2_PROTOCOL_ = eINSTANCE
+				.getPortBuilder_ec2_Protocol_software_amazon_awscdk_services_ec2_Protocol_();
+
+		/**
+		 * The meta object literal for the '<em><b>String Representation java lang String </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PORT_BUILDER_EC2__STRING_REPRESENTATION_JAVA_LANG_STRING_ = eINSTANCE
+				.getPortBuilder_ec2_StringRepresentation_java_lang_String_();
+
+		/**
+		 * The meta object literal for the '<em><b>From Port java lang Number </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PORT_BUILDER_EC2__FROM_PORT_JAVA_LANG_NUMBER_ = eINSTANCE
+				.getPortBuilder_ec2_FromPort_java_lang_Number_();
+
+		/**
+		 * The meta object literal for the '<em><b>To Port java lang Number </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PORT_BUILDER_EC2__TO_PORT_JAVA_LANG_NUMBER_ = eINSTANCE
+				.getPortBuilder_ec2_ToPort_java_lang_Number_();
+
+		/**
+		 * The meta object literal for the '<em><b>Generated Class Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PORT_BUILDER_EC2__GENERATED_CLASS_NAME = eINSTANCE.getPortBuilder_ec2_GeneratedClassName();
+
+		/**
+		 * The meta object literal for the '<em><b>Var Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PORT_BUILDER_EC2__VAR_NAME = eINSTANCE.getPortBuilder_ec2_VarName();
+
+		/**
+		 * The meta object literal for the '<em><b>Identifier</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PORT_BUILDER_EC2__IDENTIFIER = eINSTANCE.getPortBuilder_ec2_Identifier();
+
+		/**
+		 * The meta object literal for the '<em><b>Additional Code</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PORT_BUILDER_EC2__ADDITIONAL_CODE = eINSTANCE.getPortBuilder_ec2_AdditionalCode();
+
+		/**
+		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.ProcessorFeaturesBuilder_rdsImpl <em>Processor Features Builder rds</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.ProcessorFeaturesBuilder_rdsImpl
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getProcessorFeaturesBuilder_rds()
+		 * @generated
+		 */
+		EClass PROCESSOR_FEATURES_BUILDER_RDS = eINSTANCE.getProcessorFeaturesBuilder_rds();
+
+		/**
+		 * The meta object literal for the '<em><b>Core Count java lang Number </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PROCESSOR_FEATURES_BUILDER_RDS__CORE_COUNT_JAVA_LANG_NUMBER_ = eINSTANCE
+				.getProcessorFeaturesBuilder_rds_CoreCount_java_lang_Number_();
+
+		/**
+		 * The meta object literal for the '<em><b>Threads Per Core java lang Number </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PROCESSOR_FEATURES_BUILDER_RDS__THREADS_PER_CORE_JAVA_LANG_NUMBER_ = eINSTANCE
+				.getProcessorFeaturesBuilder_rds_ThreadsPerCore_java_lang_Number_();
+
+		/**
+		 * The meta object literal for the '<em><b>Generated Class Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PROCESSOR_FEATURES_BUILDER_RDS__GENERATED_CLASS_NAME = eINSTANCE
+				.getProcessorFeaturesBuilder_rds_GeneratedClassName();
+
+		/**
+		 * The meta object literal for the '<em><b>Var Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PROCESSOR_FEATURES_BUILDER_RDS__VAR_NAME = eINSTANCE.getProcessorFeaturesBuilder_rds_VarName();
+
+		/**
+		 * The meta object literal for the '<em><b>Identifier</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PROCESSOR_FEATURES_BUILDER_RDS__IDENTIFIER = eINSTANCE.getProcessorFeaturesBuilder_rds_Identifier();
+
+		/**
+		 * The meta object literal for the '<em><b>Additional Code</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PROCESSOR_FEATURES_BUILDER_RDS__ADDITIONAL_CODE = eINSTANCE
+				.getProcessorFeaturesBuilder_rds_AdditionalCode();
+
+		/**
+		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.OracleEeInstanceEnginePropsBuilder_rdsImpl <em>Oracle Ee Instance Engine Props Builder rds</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.OracleEeInstanceEnginePropsBuilder_rdsImpl
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getOracleEeInstanceEnginePropsBuilder_rds()
+		 * @generated
+		 */
+		EClass ORACLE_EE_INSTANCE_ENGINE_PROPS_BUILDER_RDS = eINSTANCE.getOracleEeInstanceEnginePropsBuilder_rds();
+
+		/**
+		 * The meta object literal for the '<em><b>Version With Oracle Engine Version software amazon awscdk services rds Oracle Engine Version As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ORACLE_EE_INSTANCE_ENGINE_PROPS_BUILDER_RDS__VERSION_WITH_ORACLE_ENGINE_VERSION_SOFTWARE_AMAZON_AWSCDK_SERVICES_RDS_ORACLE_ENGINE_VERSION_AS_REFERENCE = eINSTANCE
+				.getOracleEeInstanceEnginePropsBuilder_rds_VersionWithOracleEngineVersion_software_amazon_awscdk_services_rds_OracleEngineVersion_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Generated Class Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ORACLE_EE_INSTANCE_ENGINE_PROPS_BUILDER_RDS__GENERATED_CLASS_NAME = eINSTANCE
+				.getOracleEeInstanceEnginePropsBuilder_rds_GeneratedClassName();
+
+		/**
+		 * The meta object literal for the '<em><b>Var Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ORACLE_EE_INSTANCE_ENGINE_PROPS_BUILDER_RDS__VAR_NAME = eINSTANCE
+				.getOracleEeInstanceEnginePropsBuilder_rds_VarName();
+
+		/**
+		 * The meta object literal for the '<em><b>Identifier</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ORACLE_EE_INSTANCE_ENGINE_PROPS_BUILDER_RDS__IDENTIFIER = eINSTANCE
+				.getOracleEeInstanceEnginePropsBuilder_rds_Identifier();
+
+		/**
+		 * The meta object literal for the '<em><b>Additional Code</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ORACLE_EE_INSTANCE_ENGINE_PROPS_BUILDER_RDS__ADDITIONAL_CODE = eINSTANCE
+				.getOracleEeInstanceEnginePropsBuilder_rds_AdditionalCode();
+
+		/**
+		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.OracleSe1InstanceEnginePropsBuilder_rdsImpl <em>Oracle Se1 Instance Engine Props Builder rds</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.OracleSe1InstanceEnginePropsBuilder_rdsImpl
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getOracleSe1InstanceEnginePropsBuilder_rds()
+		 * @generated
+		 */
+		EClass ORACLE_SE1_INSTANCE_ENGINE_PROPS_BUILDER_RDS = eINSTANCE.getOracleSe1InstanceEnginePropsBuilder_rds();
+
+		/**
+		 * The meta object literal for the '<em><b>Version With Oracle Legacy Engine Version software amazon awscdk services rds Oracle Legacy Engine Version As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ORACLE_SE1_INSTANCE_ENGINE_PROPS_BUILDER_RDS__VERSION_WITH_ORACLE_LEGACY_ENGINE_VERSION_SOFTWARE_AMAZON_AWSCDK_SERVICES_RDS_ORACLE_LEGACY_ENGINE_VERSION_AS_REFERENCE = eINSTANCE
+				.getOracleSe1InstanceEnginePropsBuilder_rds_VersionWithOracleLegacyEngineVersion_software_amazon_awscdk_services_rds_OracleLegacyEngineVersion_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Generated Class Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ORACLE_SE1_INSTANCE_ENGINE_PROPS_BUILDER_RDS__GENERATED_CLASS_NAME = eINSTANCE
+				.getOracleSe1InstanceEnginePropsBuilder_rds_GeneratedClassName();
+
+		/**
+		 * The meta object literal for the '<em><b>Var Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ORACLE_SE1_INSTANCE_ENGINE_PROPS_BUILDER_RDS__VAR_NAME = eINSTANCE
+				.getOracleSe1InstanceEnginePropsBuilder_rds_VarName();
+
+		/**
+		 * The meta object literal for the '<em><b>Identifier</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ORACLE_SE1_INSTANCE_ENGINE_PROPS_BUILDER_RDS__IDENTIFIER = eINSTANCE
+				.getOracleSe1InstanceEnginePropsBuilder_rds_Identifier();
+
+		/**
+		 * The meta object literal for the '<em><b>Additional Code</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ORACLE_SE1_INSTANCE_ENGINE_PROPS_BUILDER_RDS__ADDITIONAL_CODE = eINSTANCE
+				.getOracleSe1InstanceEnginePropsBuilder_rds_AdditionalCode();
+
+		/**
+		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.OracleSe2InstanceEnginePropsBuilder_rdsImpl <em>Oracle Se2 Instance Engine Props Builder rds</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.OracleSe2InstanceEnginePropsBuilder_rdsImpl
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getOracleSe2InstanceEnginePropsBuilder_rds()
+		 * @generated
+		 */
+		EClass ORACLE_SE2_INSTANCE_ENGINE_PROPS_BUILDER_RDS = eINSTANCE.getOracleSe2InstanceEnginePropsBuilder_rds();
+
+		/**
+		 * The meta object literal for the '<em><b>Version With Oracle Engine Version software amazon awscdk services rds Oracle Engine Version As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ORACLE_SE2_INSTANCE_ENGINE_PROPS_BUILDER_RDS__VERSION_WITH_ORACLE_ENGINE_VERSION_SOFTWARE_AMAZON_AWSCDK_SERVICES_RDS_ORACLE_ENGINE_VERSION_AS_REFERENCE = eINSTANCE
+				.getOracleSe2InstanceEnginePropsBuilder_rds_VersionWithOracleEngineVersion_software_amazon_awscdk_services_rds_OracleEngineVersion_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Generated Class Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ORACLE_SE2_INSTANCE_ENGINE_PROPS_BUILDER_RDS__GENERATED_CLASS_NAME = eINSTANCE
+				.getOracleSe2InstanceEnginePropsBuilder_rds_GeneratedClassName();
+
+		/**
+		 * The meta object literal for the '<em><b>Var Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ORACLE_SE2_INSTANCE_ENGINE_PROPS_BUILDER_RDS__VAR_NAME = eINSTANCE
+				.getOracleSe2InstanceEnginePropsBuilder_rds_VarName();
+
+		/**
+		 * The meta object literal for the '<em><b>Identifier</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ORACLE_SE2_INSTANCE_ENGINE_PROPS_BUILDER_RDS__IDENTIFIER = eINSTANCE
+				.getOracleSe2InstanceEnginePropsBuilder_rds_Identifier();
+
+		/**
+		 * The meta object literal for the '<em><b>Additional Code</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ORACLE_SE2_INSTANCE_ENGINE_PROPS_BUILDER_RDS__ADDITIONAL_CODE = eINSTANCE
+				.getOracleSe2InstanceEnginePropsBuilder_rds_AdditionalCode();
+
+		/**
+		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.OracleSeInstanceEnginePropsBuilder_rdsImpl <em>Oracle Se Instance Engine Props Builder rds</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.OracleSeInstanceEnginePropsBuilder_rdsImpl
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getOracleSeInstanceEnginePropsBuilder_rds()
+		 * @generated
+		 */
+		EClass ORACLE_SE_INSTANCE_ENGINE_PROPS_BUILDER_RDS = eINSTANCE.getOracleSeInstanceEnginePropsBuilder_rds();
+
+		/**
+		 * The meta object literal for the '<em><b>Version With Oracle Legacy Engine Version software amazon awscdk services rds Oracle Legacy Engine Version As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ORACLE_SE_INSTANCE_ENGINE_PROPS_BUILDER_RDS__VERSION_WITH_ORACLE_LEGACY_ENGINE_VERSION_SOFTWARE_AMAZON_AWSCDK_SERVICES_RDS_ORACLE_LEGACY_ENGINE_VERSION_AS_REFERENCE = eINSTANCE
+				.getOracleSeInstanceEnginePropsBuilder_rds_VersionWithOracleLegacyEngineVersion_software_amazon_awscdk_services_rds_OracleLegacyEngineVersion_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Generated Class Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ORACLE_SE_INSTANCE_ENGINE_PROPS_BUILDER_RDS__GENERATED_CLASS_NAME = eINSTANCE
+				.getOracleSeInstanceEnginePropsBuilder_rds_GeneratedClassName();
+
+		/**
+		 * The meta object literal for the '<em><b>Var Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ORACLE_SE_INSTANCE_ENGINE_PROPS_BUILDER_RDS__VAR_NAME = eINSTANCE
+				.getOracleSeInstanceEnginePropsBuilder_rds_VarName();
+
+		/**
+		 * The meta object literal for the '<em><b>Identifier</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ORACLE_SE_INSTANCE_ENGINE_PROPS_BUILDER_RDS__IDENTIFIER = eINSTANCE
+				.getOracleSeInstanceEnginePropsBuilder_rds_Identifier();
+
+		/**
+		 * The meta object literal for the '<em><b>Additional Code</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ORACLE_SE_INSTANCE_ENGINE_PROPS_BUILDER_RDS__ADDITIONAL_CODE = eINSTANCE
+				.getOracleSeInstanceEnginePropsBuilder_rds_AdditionalCode();
+
+		/**
+		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.PostgresInstanceEnginePropsBuilder_rdsImpl <em>Postgres Instance Engine Props Builder rds</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.PostgresInstanceEnginePropsBuilder_rdsImpl
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getPostgresInstanceEnginePropsBuilder_rds()
+		 * @generated
+		 */
+		EClass POSTGRES_INSTANCE_ENGINE_PROPS_BUILDER_RDS = eINSTANCE.getPostgresInstanceEnginePropsBuilder_rds();
+
+		/**
+		 * The meta object literal for the '<em><b>Version With Postgres Engine Version software amazon awscdk services rds Postgres Engine Version As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute POSTGRES_INSTANCE_ENGINE_PROPS_BUILDER_RDS__VERSION_WITH_POSTGRES_ENGINE_VERSION_SOFTWARE_AMAZON_AWSCDK_SERVICES_RDS_POSTGRES_ENGINE_VERSION_AS_REFERENCE = eINSTANCE
+				.getPostgresInstanceEnginePropsBuilder_rds_VersionWithPostgresEngineVersion_software_amazon_awscdk_services_rds_PostgresEngineVersion_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Generated Class Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute POSTGRES_INSTANCE_ENGINE_PROPS_BUILDER_RDS__GENERATED_CLASS_NAME = eINSTANCE
+				.getPostgresInstanceEnginePropsBuilder_rds_GeneratedClassName();
+
+		/**
+		 * The meta object literal for the '<em><b>Var Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute POSTGRES_INSTANCE_ENGINE_PROPS_BUILDER_RDS__VAR_NAME = eINSTANCE
+				.getPostgresInstanceEnginePropsBuilder_rds_VarName();
+
+		/**
+		 * The meta object literal for the '<em><b>Identifier</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute POSTGRES_INSTANCE_ENGINE_PROPS_BUILDER_RDS__IDENTIFIER = eINSTANCE
+				.getPostgresInstanceEnginePropsBuilder_rds_Identifier();
+
+		/**
+		 * The meta object literal for the '<em><b>Additional Code</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute POSTGRES_INSTANCE_ENGINE_PROPS_BUILDER_RDS__ADDITIONAL_CODE = eINSTANCE
+				.getPostgresInstanceEnginePropsBuilder_rds_AdditionalCode();
+
+		/**
+		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.SqlServerEeInstanceEnginePropsBuilder_rdsImpl <em>Sql Server Ee Instance Engine Props Builder rds</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.SqlServerEeInstanceEnginePropsBuilder_rdsImpl
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getSqlServerEeInstanceEnginePropsBuilder_rds()
+		 * @generated
+		 */
+		EClass SQL_SERVER_EE_INSTANCE_ENGINE_PROPS_BUILDER_RDS = eINSTANCE
+				.getSqlServerEeInstanceEnginePropsBuilder_rds();
+
+		/**
+		 * The meta object literal for the '<em><b>Version With Sql Server Engine Version software amazon awscdk services rds Sql Server Engine Version As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SQL_SERVER_EE_INSTANCE_ENGINE_PROPS_BUILDER_RDS__VERSION_WITH_SQL_SERVER_ENGINE_VERSION_SOFTWARE_AMAZON_AWSCDK_SERVICES_RDS_SQL_SERVER_ENGINE_VERSION_AS_REFERENCE = eINSTANCE
+				.getSqlServerEeInstanceEnginePropsBuilder_rds_VersionWithSqlServerEngineVersion_software_amazon_awscdk_services_rds_SqlServerEngineVersion_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Generated Class Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SQL_SERVER_EE_INSTANCE_ENGINE_PROPS_BUILDER_RDS__GENERATED_CLASS_NAME = eINSTANCE
+				.getSqlServerEeInstanceEnginePropsBuilder_rds_GeneratedClassName();
+
+		/**
+		 * The meta object literal for the '<em><b>Var Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SQL_SERVER_EE_INSTANCE_ENGINE_PROPS_BUILDER_RDS__VAR_NAME = eINSTANCE
+				.getSqlServerEeInstanceEnginePropsBuilder_rds_VarName();
+
+		/**
+		 * The meta object literal for the '<em><b>Identifier</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SQL_SERVER_EE_INSTANCE_ENGINE_PROPS_BUILDER_RDS__IDENTIFIER = eINSTANCE
+				.getSqlServerEeInstanceEnginePropsBuilder_rds_Identifier();
+
+		/**
+		 * The meta object literal for the '<em><b>Additional Code</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SQL_SERVER_EE_INSTANCE_ENGINE_PROPS_BUILDER_RDS__ADDITIONAL_CODE = eINSTANCE
+				.getSqlServerEeInstanceEnginePropsBuilder_rds_AdditionalCode();
+
+		/**
+		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.SqlServerExInstanceEnginePropsBuilder_rdsImpl <em>Sql Server Ex Instance Engine Props Builder rds</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.SqlServerExInstanceEnginePropsBuilder_rdsImpl
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getSqlServerExInstanceEnginePropsBuilder_rds()
+		 * @generated
+		 */
+		EClass SQL_SERVER_EX_INSTANCE_ENGINE_PROPS_BUILDER_RDS = eINSTANCE
+				.getSqlServerExInstanceEnginePropsBuilder_rds();
+
+		/**
+		 * The meta object literal for the '<em><b>Version With Sql Server Engine Version software amazon awscdk services rds Sql Server Engine Version As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SQL_SERVER_EX_INSTANCE_ENGINE_PROPS_BUILDER_RDS__VERSION_WITH_SQL_SERVER_ENGINE_VERSION_SOFTWARE_AMAZON_AWSCDK_SERVICES_RDS_SQL_SERVER_ENGINE_VERSION_AS_REFERENCE = eINSTANCE
+				.getSqlServerExInstanceEnginePropsBuilder_rds_VersionWithSqlServerEngineVersion_software_amazon_awscdk_services_rds_SqlServerEngineVersion_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Generated Class Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SQL_SERVER_EX_INSTANCE_ENGINE_PROPS_BUILDER_RDS__GENERATED_CLASS_NAME = eINSTANCE
+				.getSqlServerExInstanceEnginePropsBuilder_rds_GeneratedClassName();
+
+		/**
+		 * The meta object literal for the '<em><b>Var Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SQL_SERVER_EX_INSTANCE_ENGINE_PROPS_BUILDER_RDS__VAR_NAME = eINSTANCE
+				.getSqlServerExInstanceEnginePropsBuilder_rds_VarName();
+
+		/**
+		 * The meta object literal for the '<em><b>Identifier</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SQL_SERVER_EX_INSTANCE_ENGINE_PROPS_BUILDER_RDS__IDENTIFIER = eINSTANCE
+				.getSqlServerExInstanceEnginePropsBuilder_rds_Identifier();
+
+		/**
+		 * The meta object literal for the '<em><b>Additional Code</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SQL_SERVER_EX_INSTANCE_ENGINE_PROPS_BUILDER_RDS__ADDITIONAL_CODE = eINSTANCE
+				.getSqlServerExInstanceEnginePropsBuilder_rds_AdditionalCode();
+
+		/**
+		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.SqlServerSeInstanceEnginePropsBuilder_rdsImpl <em>Sql Server Se Instance Engine Props Builder rds</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.SqlServerSeInstanceEnginePropsBuilder_rdsImpl
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getSqlServerSeInstanceEnginePropsBuilder_rds()
+		 * @generated
+		 */
+		EClass SQL_SERVER_SE_INSTANCE_ENGINE_PROPS_BUILDER_RDS = eINSTANCE
+				.getSqlServerSeInstanceEnginePropsBuilder_rds();
+
+		/**
+		 * The meta object literal for the '<em><b>Version With Sql Server Engine Version software amazon awscdk services rds Sql Server Engine Version As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SQL_SERVER_SE_INSTANCE_ENGINE_PROPS_BUILDER_RDS__VERSION_WITH_SQL_SERVER_ENGINE_VERSION_SOFTWARE_AMAZON_AWSCDK_SERVICES_RDS_SQL_SERVER_ENGINE_VERSION_AS_REFERENCE = eINSTANCE
+				.getSqlServerSeInstanceEnginePropsBuilder_rds_VersionWithSqlServerEngineVersion_software_amazon_awscdk_services_rds_SqlServerEngineVersion_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Generated Class Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SQL_SERVER_SE_INSTANCE_ENGINE_PROPS_BUILDER_RDS__GENERATED_CLASS_NAME = eINSTANCE
+				.getSqlServerSeInstanceEnginePropsBuilder_rds_GeneratedClassName();
+
+		/**
+		 * The meta object literal for the '<em><b>Var Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SQL_SERVER_SE_INSTANCE_ENGINE_PROPS_BUILDER_RDS__VAR_NAME = eINSTANCE
+				.getSqlServerSeInstanceEnginePropsBuilder_rds_VarName();
+
+		/**
+		 * The meta object literal for the '<em><b>Identifier</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SQL_SERVER_SE_INSTANCE_ENGINE_PROPS_BUILDER_RDS__IDENTIFIER = eINSTANCE
+				.getSqlServerSeInstanceEnginePropsBuilder_rds_Identifier();
+
+		/**
+		 * The meta object literal for the '<em><b>Additional Code</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SQL_SERVER_SE_INSTANCE_ENGINE_PROPS_BUILDER_RDS__ADDITIONAL_CODE = eINSTANCE
+				.getSqlServerSeInstanceEnginePropsBuilder_rds_AdditionalCode();
+
+		/**
+		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.SqlServerWebInstanceEnginePropsBuilder_rdsImpl <em>Sql Server Web Instance Engine Props Builder rds</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.SqlServerWebInstanceEnginePropsBuilder_rdsImpl
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getSqlServerWebInstanceEnginePropsBuilder_rds()
+		 * @generated
+		 */
+		EClass SQL_SERVER_WEB_INSTANCE_ENGINE_PROPS_BUILDER_RDS = eINSTANCE
+				.getSqlServerWebInstanceEnginePropsBuilder_rds();
+
+		/**
+		 * The meta object literal for the '<em><b>Version With Sql Server Engine Version software amazon awscdk services rds Sql Server Engine Version As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SQL_SERVER_WEB_INSTANCE_ENGINE_PROPS_BUILDER_RDS__VERSION_WITH_SQL_SERVER_ENGINE_VERSION_SOFTWARE_AMAZON_AWSCDK_SERVICES_RDS_SQL_SERVER_ENGINE_VERSION_AS_REFERENCE = eINSTANCE
+				.getSqlServerWebInstanceEnginePropsBuilder_rds_VersionWithSqlServerEngineVersion_software_amazon_awscdk_services_rds_SqlServerEngineVersion_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Generated Class Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SQL_SERVER_WEB_INSTANCE_ENGINE_PROPS_BUILDER_RDS__GENERATED_CLASS_NAME = eINSTANCE
+				.getSqlServerWebInstanceEnginePropsBuilder_rds_GeneratedClassName();
+
+		/**
+		 * The meta object literal for the '<em><b>Var Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SQL_SERVER_WEB_INSTANCE_ENGINE_PROPS_BUILDER_RDS__VAR_NAME = eINSTANCE
+				.getSqlServerWebInstanceEnginePropsBuilder_rds_VarName();
+
+		/**
+		 * The meta object literal for the '<em><b>Identifier</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SQL_SERVER_WEB_INSTANCE_ENGINE_PROPS_BUILDER_RDS__IDENTIFIER = eINSTANCE
+				.getSqlServerWebInstanceEnginePropsBuilder_rds_Identifier();
+
+		/**
+		 * The meta object literal for the '<em><b>Additional Code</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SQL_SERVER_WEB_INSTANCE_ENGINE_PROPS_BUILDER_RDS__ADDITIONAL_CODE = eINSTANCE
+				.getSqlServerWebInstanceEnginePropsBuilder_rds_AdditionalCode();
+
+		/**
+		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.MySqlInstanceEnginePropsBuilder_rdsImpl <em>My Sql Instance Engine Props Builder rds</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.MySqlInstanceEnginePropsBuilder_rdsImpl
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getMySqlInstanceEnginePropsBuilder_rds()
+		 * @generated
+		 */
+		EClass MY_SQL_INSTANCE_ENGINE_PROPS_BUILDER_RDS = eINSTANCE.getMySqlInstanceEnginePropsBuilder_rds();
+
+		/**
+		 * The meta object literal for the '<em><b>Version With Mysql Engine Version software amazon awscdk services rds Mysql Engine Version As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MY_SQL_INSTANCE_ENGINE_PROPS_BUILDER_RDS__VERSION_WITH_MYSQL_ENGINE_VERSION_SOFTWARE_AMAZON_AWSCDK_SERVICES_RDS_MYSQL_ENGINE_VERSION_AS_REFERENCE = eINSTANCE
+				.getMySqlInstanceEnginePropsBuilder_rds_VersionWithMysqlEngineVersion_software_amazon_awscdk_services_rds_MysqlEngineVersion_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Generated Class Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MY_SQL_INSTANCE_ENGINE_PROPS_BUILDER_RDS__GENERATED_CLASS_NAME = eINSTANCE
+				.getMySqlInstanceEnginePropsBuilder_rds_GeneratedClassName();
+
+		/**
+		 * The meta object literal for the '<em><b>Var Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MY_SQL_INSTANCE_ENGINE_PROPS_BUILDER_RDS__VAR_NAME = eINSTANCE
+				.getMySqlInstanceEnginePropsBuilder_rds_VarName();
+
+		/**
+		 * The meta object literal for the '<em><b>Identifier</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MY_SQL_INSTANCE_ENGINE_PROPS_BUILDER_RDS__IDENTIFIER = eINSTANCE
+				.getMySqlInstanceEnginePropsBuilder_rds_Identifier();
+
+		/**
+		 * The meta object literal for the '<em><b>Additional Code</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MY_SQL_INSTANCE_ENGINE_PROPS_BUILDER_RDS__ADDITIONAL_CODE = eINSTANCE
+				.getMySqlInstanceEnginePropsBuilder_rds_AdditionalCode();
+
+		/**
+		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.MariaDbInstanceEnginePropsBuilder_rdsImpl <em>Maria Db Instance Engine Props Builder rds</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.MariaDbInstanceEnginePropsBuilder_rdsImpl
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getMariaDbInstanceEnginePropsBuilder_rds()
+		 * @generated
+		 */
+		EClass MARIA_DB_INSTANCE_ENGINE_PROPS_BUILDER_RDS = eINSTANCE.getMariaDbInstanceEnginePropsBuilder_rds();
+
+		/**
+		 * The meta object literal for the '<em><b>Version With Maria Db Engine Version software amazon awscdk services rds Maria Db Engine Version As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MARIA_DB_INSTANCE_ENGINE_PROPS_BUILDER_RDS__VERSION_WITH_MARIA_DB_ENGINE_VERSION_SOFTWARE_AMAZON_AWSCDK_SERVICES_RDS_MARIA_DB_ENGINE_VERSION_AS_REFERENCE = eINSTANCE
+				.getMariaDbInstanceEnginePropsBuilder_rds_VersionWithMariaDbEngineVersion_software_amazon_awscdk_services_rds_MariaDbEngineVersion_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Generated Class Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MARIA_DB_INSTANCE_ENGINE_PROPS_BUILDER_RDS__GENERATED_CLASS_NAME = eINSTANCE
+				.getMariaDbInstanceEnginePropsBuilder_rds_GeneratedClassName();
+
+		/**
+		 * The meta object literal for the '<em><b>Var Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MARIA_DB_INSTANCE_ENGINE_PROPS_BUILDER_RDS__VAR_NAME = eINSTANCE
+				.getMariaDbInstanceEnginePropsBuilder_rds_VarName();
+
+		/**
+		 * The meta object literal for the '<em><b>Identifier</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MARIA_DB_INSTANCE_ENGINE_PROPS_BUILDER_RDS__IDENTIFIER = eINSTANCE
+				.getMariaDbInstanceEnginePropsBuilder_rds_Identifier();
+
+		/**
+		 * The meta object literal for the '<em><b>Additional Code</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MARIA_DB_INSTANCE_ENGINE_PROPS_BUILDER_RDS__ADDITIONAL_CODE = eINSTANCE
+				.getMariaDbInstanceEnginePropsBuilder_rds_AdditionalCode();
+
+		/**
+		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.ParameterGroupBuilder_rdsImpl <em>Parameter Group Builder rds</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.ParameterGroupBuilder_rdsImpl
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getParameterGroupBuilder_rds()
+		 * @generated
+		 */
+		EClass PARAMETER_GROUP_BUILDER_RDS = eINSTANCE.getParameterGroupBuilder_rds();
+
+		/**
+		 * The meta object literal for the '<em><b>Engine With IEngine software amazon awscdk services rds IEngine As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PARAMETER_GROUP_BUILDER_RDS__ENGINE_WITH_IENGINE_SOFTWARE_AMAZON_AWSCDK_SERVICES_RDS_IENGINE_AS_REFERENCE = eINSTANCE
+				.getParameterGroupBuilder_rds_EngineWithIEngine_software_amazon_awscdk_services_rds_IEngine_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Description java lang String </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PARAMETER_GROUP_BUILDER_RDS__DESCRIPTION_JAVA_LANG_STRING_ = eINSTANCE
+				.getParameterGroupBuilder_rds_Description_java_lang_String_();
+
+		/**
+		 * The meta object literal for the '<em><b>Parameters java lang String java lang String As Map</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PARAMETER_GROUP_BUILDER_RDS__PARAMETERS_JAVA_LANG_STRING_JAVA_LANG_STRING_AS_MAP = eINSTANCE
+				.getParameterGroupBuilder_rds_Parameters_java_lang_String__java_lang_String_AsMap();
+
+		/**
+		 * The meta object literal for the '<em><b>Generated Class Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PARAMETER_GROUP_BUILDER_RDS__GENERATED_CLASS_NAME = eINSTANCE
+				.getParameterGroupBuilder_rds_GeneratedClassName();
+
+		/**
+		 * The meta object literal for the '<em><b>Var Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PARAMETER_GROUP_BUILDER_RDS__VAR_NAME = eINSTANCE.getParameterGroupBuilder_rds_VarName();
+
+		/**
+		 * The meta object literal for the '<em><b>Identifier</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PARAMETER_GROUP_BUILDER_RDS__IDENTIFIER = eINSTANCE.getParameterGroupBuilder_rds_Identifier();
+
+		/**
+		 * The meta object literal for the '<em><b>Additional Code</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PARAMETER_GROUP_BUILDER_RDS__ADDITIONAL_CODE = eINSTANCE
+				.getParameterGroupBuilder_rds_AdditionalCode();
+
+		/**
+		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.DatabaseInstanceBuilder_rdsImpl <em>Database Instance Builder rds</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.DatabaseInstanceBuilder_rdsImpl
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getDatabaseInstanceBuilder_rds()
+		 * @generated
+		 */
+		EClass DATABASE_INSTANCE_BUILDER_RDS = eINSTANCE.getDatabaseInstanceBuilder_rds();
+
+		/**
+		 * The meta object literal for the '<em><b>Vpc With IVpc software amazon awscdk services ec2 IVpc As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DATABASE_INSTANCE_BUILDER_RDS__VPC_WITH_IVPC_SOFTWARE_AMAZON_AWSCDK_SERVICES_EC2_IVPC_AS_REFERENCE = eINSTANCE
+				.getDatabaseInstanceBuilder_rds_VpcWithIVpc_software_amazon_awscdk_services_ec2_IVpc_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Auto Minor Version Upgrade java lang Boolean </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DATABASE_INSTANCE_BUILDER_RDS__AUTO_MINOR_VERSION_UPGRADE_JAVA_LANG_BOOLEAN_ = eINSTANCE
+				.getDatabaseInstanceBuilder_rds_AutoMinorVersionUpgrade_java_lang_Boolean_();
+
+		/**
+		 * The meta object literal for the '<em><b>Availability Zone java lang String </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DATABASE_INSTANCE_BUILDER_RDS__AVAILABILITY_ZONE_JAVA_LANG_STRING_ = eINSTANCE
+				.getDatabaseInstanceBuilder_rds_AvailabilityZone_java_lang_String_();
+
+		/**
+		 * The meta object literal for the '<em><b>Backup Retention With Duration software amazon awscdk core Duration As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DATABASE_INSTANCE_BUILDER_RDS__BACKUP_RETENTION_WITH_DURATION_SOFTWARE_AMAZON_AWSCDK_CORE_DURATION_AS_REFERENCE = eINSTANCE
+				.getDatabaseInstanceBuilder_rds_BackupRetentionWithDuration_software_amazon_awscdk_core_Duration_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Cloudwatch Logs Exports java lang String As List</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DATABASE_INSTANCE_BUILDER_RDS__CLOUDWATCH_LOGS_EXPORTS_JAVA_LANG_STRING_AS_LIST = eINSTANCE
+				.getDatabaseInstanceBuilder_rds_CloudwatchLogsExports_java_lang_String_AsList();
+
+		/**
+		 * The meta object literal for the '<em><b>Cloudwatch Logs Retention software amazon awscdk services logs Retention Days </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DATABASE_INSTANCE_BUILDER_RDS__CLOUDWATCH_LOGS_RETENTION_SOFTWARE_AMAZON_AWSCDK_SERVICES_LOGS_RETENTION_DAYS_ = eINSTANCE
+				.getDatabaseInstanceBuilder_rds_CloudwatchLogsRetention_software_amazon_awscdk_services_logs_RetentionDays_();
+
+		/**
+		 * The meta object literal for the '<em><b>Cloudwatch Logs Retention Role With IRole software amazon awscdk services iam IRole As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DATABASE_INSTANCE_BUILDER_RDS__CLOUDWATCH_LOGS_RETENTION_ROLE_WITH_IROLE_SOFTWARE_AMAZON_AWSCDK_SERVICES_IAM_IROLE_AS_REFERENCE = eINSTANCE
+				.getDatabaseInstanceBuilder_rds_CloudwatchLogsRetentionRoleWithIRole_software_amazon_awscdk_services_iam_IRole_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Copy Tags To Snapshot java lang Boolean </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DATABASE_INSTANCE_BUILDER_RDS__COPY_TAGS_TO_SNAPSHOT_JAVA_LANG_BOOLEAN_ = eINSTANCE
+				.getDatabaseInstanceBuilder_rds_CopyTagsToSnapshot_java_lang_Boolean_();
+
+		/**
+		 * The meta object literal for the '<em><b>Delete Automated Backups java lang Boolean </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DATABASE_INSTANCE_BUILDER_RDS__DELETE_AUTOMATED_BACKUPS_JAVA_LANG_BOOLEAN_ = eINSTANCE
+				.getDatabaseInstanceBuilder_rds_DeleteAutomatedBackups_java_lang_Boolean_();
+
+		/**
+		 * The meta object literal for the '<em><b>Deletion Protection java lang Boolean </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DATABASE_INSTANCE_BUILDER_RDS__DELETION_PROTECTION_JAVA_LANG_BOOLEAN_ = eINSTANCE
+				.getDatabaseInstanceBuilder_rds_DeletionProtection_java_lang_Boolean_();
+
+		/**
+		 * The meta object literal for the '<em><b>Enable Performance Insights java lang Boolean </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DATABASE_INSTANCE_BUILDER_RDS__ENABLE_PERFORMANCE_INSIGHTS_JAVA_LANG_BOOLEAN_ = eINSTANCE
+				.getDatabaseInstanceBuilder_rds_EnablePerformanceInsights_java_lang_Boolean_();
+
+		/**
+		 * The meta object literal for the '<em><b>Iam Authentication java lang Boolean </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DATABASE_INSTANCE_BUILDER_RDS__IAM_AUTHENTICATION_JAVA_LANG_BOOLEAN_ = eINSTANCE
+				.getDatabaseInstanceBuilder_rds_IamAuthentication_java_lang_Boolean_();
+
+		/**
+		 * The meta object literal for the '<em><b>Instance Identifier java lang String </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DATABASE_INSTANCE_BUILDER_RDS__INSTANCE_IDENTIFIER_JAVA_LANG_STRING_ = eINSTANCE
+				.getDatabaseInstanceBuilder_rds_InstanceIdentifier_java_lang_String_();
+
+		/**
+		 * The meta object literal for the '<em><b>Iops java lang Number </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DATABASE_INSTANCE_BUILDER_RDS__IOPS_JAVA_LANG_NUMBER_ = eINSTANCE
+				.getDatabaseInstanceBuilder_rds_Iops_java_lang_Number_();
+
+		/**
+		 * The meta object literal for the '<em><b>Max Allocated Storage java lang Number </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DATABASE_INSTANCE_BUILDER_RDS__MAX_ALLOCATED_STORAGE_JAVA_LANG_NUMBER_ = eINSTANCE
+				.getDatabaseInstanceBuilder_rds_MaxAllocatedStorage_java_lang_Number_();
+
+		/**
+		 * The meta object literal for the '<em><b>Monitoring Interval With Duration software amazon awscdk core Duration As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DATABASE_INSTANCE_BUILDER_RDS__MONITORING_INTERVAL_WITH_DURATION_SOFTWARE_AMAZON_AWSCDK_CORE_DURATION_AS_REFERENCE = eINSTANCE
+				.getDatabaseInstanceBuilder_rds_MonitoringIntervalWithDuration_software_amazon_awscdk_core_Duration_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Monitoring Role With IRole software amazon awscdk services iam IRole As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DATABASE_INSTANCE_BUILDER_RDS__MONITORING_ROLE_WITH_IROLE_SOFTWARE_AMAZON_AWSCDK_SERVICES_IAM_IROLE_AS_REFERENCE = eINSTANCE
+				.getDatabaseInstanceBuilder_rds_MonitoringRoleWithIRole_software_amazon_awscdk_services_iam_IRole_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Multi Az java lang Boolean </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DATABASE_INSTANCE_BUILDER_RDS__MULTI_AZ_JAVA_LANG_BOOLEAN_ = eINSTANCE
+				.getDatabaseInstanceBuilder_rds_MultiAz_java_lang_Boolean_();
+
+		/**
+		 * The meta object literal for the '<em><b>Option Group With IOption Group software amazon awscdk services rds IOption Group As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DATABASE_INSTANCE_BUILDER_RDS__OPTION_GROUP_WITH_IOPTION_GROUP_SOFTWARE_AMAZON_AWSCDK_SERVICES_RDS_IOPTION_GROUP_AS_REFERENCE = eINSTANCE
+				.getDatabaseInstanceBuilder_rds_OptionGroupWithIOptionGroup_software_amazon_awscdk_services_rds_IOptionGroup_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Performance Insight Encryption Key With IKey software amazon awscdk services kms IKey As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DATABASE_INSTANCE_BUILDER_RDS__PERFORMANCE_INSIGHT_ENCRYPTION_KEY_WITH_IKEY_SOFTWARE_AMAZON_AWSCDK_SERVICES_KMS_IKEY_AS_REFERENCE = eINSTANCE
+				.getDatabaseInstanceBuilder_rds_PerformanceInsightEncryptionKeyWithIKey_software_amazon_awscdk_services_kms_IKey_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Performance Insight Retention software amazon awscdk services rds Performance Insight Retention </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DATABASE_INSTANCE_BUILDER_RDS__PERFORMANCE_INSIGHT_RETENTION_SOFTWARE_AMAZON_AWSCDK_SERVICES_RDS_PERFORMANCE_INSIGHT_RETENTION_ = eINSTANCE
+				.getDatabaseInstanceBuilder_rds_PerformanceInsightRetention_software_amazon_awscdk_services_rds_PerformanceInsightRetention_();
+
+		/**
+		 * The meta object literal for the '<em><b>Port java lang Number </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DATABASE_INSTANCE_BUILDER_RDS__PORT_JAVA_LANG_NUMBER_ = eINSTANCE
+				.getDatabaseInstanceBuilder_rds_Port_java_lang_Number_();
+
+		/**
+		 * The meta object literal for the '<em><b>Preferred Backup Window java lang String </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DATABASE_INSTANCE_BUILDER_RDS__PREFERRED_BACKUP_WINDOW_JAVA_LANG_STRING_ = eINSTANCE
+				.getDatabaseInstanceBuilder_rds_PreferredBackupWindow_java_lang_String_();
+
+		/**
+		 * The meta object literal for the '<em><b>Preferred Maintenance Window java lang String </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DATABASE_INSTANCE_BUILDER_RDS__PREFERRED_MAINTENANCE_WINDOW_JAVA_LANG_STRING_ = eINSTANCE
+				.getDatabaseInstanceBuilder_rds_PreferredMaintenanceWindow_java_lang_String_();
+
+		/**
+		 * The meta object literal for the '<em><b>Processor Features With Processor Features software amazon awscdk services rds Processor Features As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DATABASE_INSTANCE_BUILDER_RDS__PROCESSOR_FEATURES_WITH_PROCESSOR_FEATURES_SOFTWARE_AMAZON_AWSCDK_SERVICES_RDS_PROCESSOR_FEATURES_AS_REFERENCE = eINSTANCE
+				.getDatabaseInstanceBuilder_rds_ProcessorFeaturesWithProcessorFeatures_software_amazon_awscdk_services_rds_ProcessorFeatures_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Removal Policy software amazon awscdk core Removal Policy </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DATABASE_INSTANCE_BUILDER_RDS__REMOVAL_POLICY_SOFTWARE_AMAZON_AWSCDK_CORE_REMOVAL_POLICY_ = eINSTANCE
+				.getDatabaseInstanceBuilder_rds_RemovalPolicy_software_amazon_awscdk_core_RemovalPolicy_();
+
+		/**
+		 * The meta object literal for the '<em><b>Security Groups software amazon awscdk services ec2 ISecurity Group As List</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DATABASE_INSTANCE_BUILDER_RDS__SECURITY_GROUPS_SOFTWARE_AMAZON_AWSCDK_SERVICES_EC2_ISECURITY_GROUP_AS_LIST = eINSTANCE
+				.getDatabaseInstanceBuilder_rds_SecurityGroups_software_amazon_awscdk_services_ec2_ISecurityGroup_AsList();
+
+		/**
+		 * The meta object literal for the '<em><b>Storage Type software amazon awscdk services rds Storage Type </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DATABASE_INSTANCE_BUILDER_RDS__STORAGE_TYPE_SOFTWARE_AMAZON_AWSCDK_SERVICES_RDS_STORAGE_TYPE_ = eINSTANCE
+				.getDatabaseInstanceBuilder_rds_StorageType_software_amazon_awscdk_services_rds_StorageType_();
+
+		/**
+		 * The meta object literal for the '<em><b>Vpc Placement With Subnet Selection software amazon awscdk services ec2 Subnet Selection As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DATABASE_INSTANCE_BUILDER_RDS__VPC_PLACEMENT_WITH_SUBNET_SELECTION_SOFTWARE_AMAZON_AWSCDK_SERVICES_EC2_SUBNET_SELECTION_AS_REFERENCE = eINSTANCE
+				.getDatabaseInstanceBuilder_rds_VpcPlacementWithSubnetSelection_software_amazon_awscdk_services_ec2_SubnetSelection_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Engine With IInstance Engine software amazon awscdk services rds IInstance Engine As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DATABASE_INSTANCE_BUILDER_RDS__ENGINE_WITH_IINSTANCE_ENGINE_SOFTWARE_AMAZON_AWSCDK_SERVICES_RDS_IINSTANCE_ENGINE_AS_REFERENCE = eINSTANCE
+				.getDatabaseInstanceBuilder_rds_EngineWithIInstanceEngine_software_amazon_awscdk_services_rds_IInstanceEngine_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Allocated Storage java lang Number </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DATABASE_INSTANCE_BUILDER_RDS__ALLOCATED_STORAGE_JAVA_LANG_NUMBER_ = eINSTANCE
+				.getDatabaseInstanceBuilder_rds_AllocatedStorage_java_lang_Number_();
+
+		/**
+		 * The meta object literal for the '<em><b>Allow Major Version Upgrade java lang Boolean </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DATABASE_INSTANCE_BUILDER_RDS__ALLOW_MAJOR_VERSION_UPGRADE_JAVA_LANG_BOOLEAN_ = eINSTANCE
+				.getDatabaseInstanceBuilder_rds_AllowMajorVersionUpgrade_java_lang_Boolean_();
+
+		/**
+		 * The meta object literal for the '<em><b>Database Name java lang String </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DATABASE_INSTANCE_BUILDER_RDS__DATABASE_NAME_JAVA_LANG_STRING_ = eINSTANCE
+				.getDatabaseInstanceBuilder_rds_DatabaseName_java_lang_String_();
+
+		/**
+		 * The meta object literal for the '<em><b>Instance Type With Instance Type software amazon awscdk services ec2 Instance Type As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DATABASE_INSTANCE_BUILDER_RDS__INSTANCE_TYPE_WITH_INSTANCE_TYPE_SOFTWARE_AMAZON_AWSCDK_SERVICES_EC2_INSTANCE_TYPE_AS_REFERENCE = eINSTANCE
+				.getDatabaseInstanceBuilder_rds_InstanceTypeWithInstanceType_software_amazon_awscdk_services_ec2_InstanceType_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>License Model software amazon awscdk services rds License Model </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DATABASE_INSTANCE_BUILDER_RDS__LICENSE_MODEL_SOFTWARE_AMAZON_AWSCDK_SERVICES_RDS_LICENSE_MODEL_ = eINSTANCE
+				.getDatabaseInstanceBuilder_rds_LicenseModel_software_amazon_awscdk_services_rds_LicenseModel_();
+
+		/**
+		 * The meta object literal for the '<em><b>Master User Password With Secret Value software amazon awscdk core Secret Value As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DATABASE_INSTANCE_BUILDER_RDS__MASTER_USER_PASSWORD_WITH_SECRET_VALUE_SOFTWARE_AMAZON_AWSCDK_CORE_SECRET_VALUE_AS_REFERENCE = eINSTANCE
+				.getDatabaseInstanceBuilder_rds_MasterUserPasswordWithSecretValue_software_amazon_awscdk_core_SecretValue_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Master User Password Encryption Key With IKey software amazon awscdk services kms IKey As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DATABASE_INSTANCE_BUILDER_RDS__MASTER_USER_PASSWORD_ENCRYPTION_KEY_WITH_IKEY_SOFTWARE_AMAZON_AWSCDK_SERVICES_KMS_IKEY_AS_REFERENCE = eINSTANCE
+				.getDatabaseInstanceBuilder_rds_MasterUserPasswordEncryptionKeyWithIKey_software_amazon_awscdk_services_kms_IKey_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Parameter Group With IParameter Group software amazon awscdk services rds IParameter Group As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DATABASE_INSTANCE_BUILDER_RDS__PARAMETER_GROUP_WITH_IPARAMETER_GROUP_SOFTWARE_AMAZON_AWSCDK_SERVICES_RDS_IPARAMETER_GROUP_AS_REFERENCE = eINSTANCE
+				.getDatabaseInstanceBuilder_rds_ParameterGroupWithIParameterGroup_software_amazon_awscdk_services_rds_IParameterGroup_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Timezone java lang String </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DATABASE_INSTANCE_BUILDER_RDS__TIMEZONE_JAVA_LANG_STRING_ = eINSTANCE
+				.getDatabaseInstanceBuilder_rds_Timezone_java_lang_String_();
+
+		/**
+		 * The meta object literal for the '<em><b>Master Username java lang String </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DATABASE_INSTANCE_BUILDER_RDS__MASTER_USERNAME_JAVA_LANG_STRING_ = eINSTANCE
+				.getDatabaseInstanceBuilder_rds_MasterUsername_java_lang_String_();
+
+		/**
+		 * The meta object literal for the '<em><b>Character Set Name java lang String </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DATABASE_INSTANCE_BUILDER_RDS__CHARACTER_SET_NAME_JAVA_LANG_STRING_ = eINSTANCE
+				.getDatabaseInstanceBuilder_rds_CharacterSetName_java_lang_String_();
+
+		/**
+		 * The meta object literal for the '<em><b>Storage Encrypted java lang Boolean </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DATABASE_INSTANCE_BUILDER_RDS__STORAGE_ENCRYPTED_JAVA_LANG_BOOLEAN_ = eINSTANCE
+				.getDatabaseInstanceBuilder_rds_StorageEncrypted_java_lang_Boolean_();
+
+		/**
+		 * The meta object literal for the '<em><b>Storage Encryption Key With IKey software amazon awscdk services kms IKey As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DATABASE_INSTANCE_BUILDER_RDS__STORAGE_ENCRYPTION_KEY_WITH_IKEY_SOFTWARE_AMAZON_AWSCDK_SERVICES_KMS_IKEY_AS_REFERENCE = eINSTANCE
+				.getDatabaseInstanceBuilder_rds_StorageEncryptionKeyWithIKey_software_amazon_awscdk_services_kms_IKey_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Generated Class Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DATABASE_INSTANCE_BUILDER_RDS__GENERATED_CLASS_NAME = eINSTANCE
+				.getDatabaseInstanceBuilder_rds_GeneratedClassName();
+
+		/**
+		 * The meta object literal for the '<em><b>Var Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DATABASE_INSTANCE_BUILDER_RDS__VAR_NAME = eINSTANCE.getDatabaseInstanceBuilder_rds_VarName();
+
+		/**
+		 * The meta object literal for the '<em><b>Identifier</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DATABASE_INSTANCE_BUILDER_RDS__IDENTIFIER = eINSTANCE.getDatabaseInstanceBuilder_rds_Identifier();
+
+		/**
+		 * The meta object literal for the '<em><b>Additional Code</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DATABASE_INSTANCE_BUILDER_RDS__ADDITIONAL_CODE = eINSTANCE
+				.getDatabaseInstanceBuilder_rds_AdditionalCode();
+
+		/**
 		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.ScheduledFargateTaskBuilder_patternsImpl <em>Scheduled Fargate Task Builder patterns</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -75553,6 +82356,36 @@ public interface AwsworkbenchPackage extends EPackage {
 		 * @generated
 		 */
 		EEnum PROTOCOL = eINSTANCE.getProtocol();
+
+		/**
+		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.PerformanceInsightRetention <em>Performance Insight Retention</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.amazon.aws.workbench.model.awsworkbench.PerformanceInsightRetention
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getPerformanceInsightRetention()
+		 * @generated
+		 */
+		EEnum PERFORMANCE_INSIGHT_RETENTION = eINSTANCE.getPerformanceInsightRetention();
+
+		/**
+		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.StorageType <em>Storage Type</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.amazon.aws.workbench.model.awsworkbench.StorageType
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getStorageType()
+		 * @generated
+		 */
+		EEnum STORAGE_TYPE = eINSTANCE.getStorageType();
+
+		/**
+		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.LicenseModel <em>License Model</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.amazon.aws.workbench.model.awsworkbench.LicenseModel
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getLicenseModel()
+		 * @generated
+		 */
+		EEnum LICENSE_MODEL = eINSTANCE.getLicenseModel();
 
 	}
 

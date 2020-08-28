@@ -1651,6 +1651,186 @@ public interface AwsworkbenchFactory extends EFactory {
 	ScheduledFargateTaskImageOptionsBuilder_patterns createScheduledFargateTaskImageOptionsBuilder_patterns();
 
 	/**
+	 * Returns a new object of class '<em>Topic Builder sns</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Topic Builder sns</em>'.
+	 * @generated
+	 */
+	TopicBuilder_sns createTopicBuilder_sns();
+
+	/**
+	 * Returns a new object of class '<em>Ec2 Health Check Options Builder autoscaling</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Ec2 Health Check Options Builder autoscaling</em>'.
+	 * @generated
+	 */
+	Ec2HealthCheckOptionsBuilder_autoscaling createEc2HealthCheckOptionsBuilder_autoscaling();
+
+	/**
+	 * Returns a new object of class '<em>Auto Scaling Group Builder autoscaling</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Auto Scaling Group Builder autoscaling</em>'.
+	 * @generated
+	 */
+	AutoScalingGroupBuilder_autoscaling createAutoScalingGroupBuilder_autoscaling();
+
+	/**
+	 * Returns a new object of class '<em>Option Configuration Builder rds</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Option Configuration Builder rds</em>'.
+	 * @generated
+	 */
+	OptionConfigurationBuilder_rds createOptionConfigurationBuilder_rds();
+
+	/**
+	 * Returns a new object of class '<em>Option Group Builder rds</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Option Group Builder rds</em>'.
+	 * @generated
+	 */
+	OptionGroupBuilder_rds createOptionGroupBuilder_rds();
+
+	/**
+	 * Returns a new object of class '<em>Port Builder ec2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Port Builder ec2</em>'.
+	 * @generated
+	 */
+	PortBuilder_ec2 createPortBuilder_ec2();
+
+	/**
+	 * Returns a new object of class '<em>Processor Features Builder rds</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Processor Features Builder rds</em>'.
+	 * @generated
+	 */
+	ProcessorFeaturesBuilder_rds createProcessorFeaturesBuilder_rds();
+
+	/**
+	 * Returns a new object of class '<em>Oracle Ee Instance Engine Props Builder rds</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Oracle Ee Instance Engine Props Builder rds</em>'.
+	 * @generated
+	 */
+	OracleEeInstanceEnginePropsBuilder_rds createOracleEeInstanceEnginePropsBuilder_rds();
+
+	/**
+	 * Returns a new object of class '<em>Oracle Se1 Instance Engine Props Builder rds</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Oracle Se1 Instance Engine Props Builder rds</em>'.
+	 * @generated
+	 */
+	OracleSe1InstanceEnginePropsBuilder_rds createOracleSe1InstanceEnginePropsBuilder_rds();
+
+	/**
+	 * Returns a new object of class '<em>Oracle Se2 Instance Engine Props Builder rds</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Oracle Se2 Instance Engine Props Builder rds</em>'.
+	 * @generated
+	 */
+	OracleSe2InstanceEnginePropsBuilder_rds createOracleSe2InstanceEnginePropsBuilder_rds();
+
+	/**
+	 * Returns a new object of class '<em>Oracle Se Instance Engine Props Builder rds</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Oracle Se Instance Engine Props Builder rds</em>'.
+	 * @generated
+	 */
+	OracleSeInstanceEnginePropsBuilder_rds createOracleSeInstanceEnginePropsBuilder_rds();
+
+	/**
+	 * Returns a new object of class '<em>Postgres Instance Engine Props Builder rds</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Postgres Instance Engine Props Builder rds</em>'.
+	 * @generated
+	 */
+	PostgresInstanceEnginePropsBuilder_rds createPostgresInstanceEnginePropsBuilder_rds();
+
+	/**
+	 * Returns a new object of class '<em>Sql Server Ee Instance Engine Props Builder rds</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Sql Server Ee Instance Engine Props Builder rds</em>'.
+	 * @generated
+	 */
+	SqlServerEeInstanceEnginePropsBuilder_rds createSqlServerEeInstanceEnginePropsBuilder_rds();
+
+	/**
+	 * Returns a new object of class '<em>Sql Server Ex Instance Engine Props Builder rds</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Sql Server Ex Instance Engine Props Builder rds</em>'.
+	 * @generated
+	 */
+	SqlServerExInstanceEnginePropsBuilder_rds createSqlServerExInstanceEnginePropsBuilder_rds();
+
+	/**
+	 * Returns a new object of class '<em>Sql Server Se Instance Engine Props Builder rds</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Sql Server Se Instance Engine Props Builder rds</em>'.
+	 * @generated
+	 */
+	SqlServerSeInstanceEnginePropsBuilder_rds createSqlServerSeInstanceEnginePropsBuilder_rds();
+
+	/**
+	 * Returns a new object of class '<em>Sql Server Web Instance Engine Props Builder rds</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Sql Server Web Instance Engine Props Builder rds</em>'.
+	 * @generated
+	 */
+	SqlServerWebInstanceEnginePropsBuilder_rds createSqlServerWebInstanceEnginePropsBuilder_rds();
+
+	/**
+	 * Returns a new object of class '<em>My Sql Instance Engine Props Builder rds</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>My Sql Instance Engine Props Builder rds</em>'.
+	 * @generated
+	 */
+	MySqlInstanceEnginePropsBuilder_rds createMySqlInstanceEnginePropsBuilder_rds();
+
+	/**
+	 * Returns a new object of class '<em>Maria Db Instance Engine Props Builder rds</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Maria Db Instance Engine Props Builder rds</em>'.
+	 * @generated
+	 */
+	MariaDbInstanceEnginePropsBuilder_rds createMariaDbInstanceEnginePropsBuilder_rds();
+
+	/**
+	 * Returns a new object of class '<em>Parameter Group Builder rds</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Parameter Group Builder rds</em>'.
+	 * @generated
+	 */
+	ParameterGroupBuilder_rds createParameterGroupBuilder_rds();
+
+	/**
+	 * Returns a new object of class '<em>Database Instance Builder rds</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Database Instance Builder rds</em>'.
+	 * @generated
+	 */
+	DatabaseInstanceBuilder_rds createDatabaseInstanceBuilder_rds();
+
+	/**
 	 * Returns a new object of class '<em>Scheduled Fargate Task Builder patterns</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

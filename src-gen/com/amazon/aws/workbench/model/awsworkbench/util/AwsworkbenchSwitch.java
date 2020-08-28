@@ -1726,6 +1726,186 @@ public class AwsworkbenchSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
+		case AwsworkbenchPackage.TOPIC_BUILDER_SNS: {
+			TopicBuilder_sns topicBuilder_sns = (TopicBuilder_sns) theEObject;
+			T result = caseTopicBuilder_sns(topicBuilder_sns);
+			if (result == null)
+				result = caseServiceResources(topicBuilder_sns);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.EC2_HEALTH_CHECK_OPTIONS_BUILDER_AUTOSCALING: {
+			Ec2HealthCheckOptionsBuilder_autoscaling ec2HealthCheckOptionsBuilder_autoscaling = (Ec2HealthCheckOptionsBuilder_autoscaling) theEObject;
+			T result = caseEc2HealthCheckOptionsBuilder_autoscaling(ec2HealthCheckOptionsBuilder_autoscaling);
+			if (result == null)
+				result = caseServiceResources(ec2HealthCheckOptionsBuilder_autoscaling);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.AUTO_SCALING_GROUP_BUILDER_AUTOSCALING: {
+			AutoScalingGroupBuilder_autoscaling autoScalingGroupBuilder_autoscaling = (AutoScalingGroupBuilder_autoscaling) theEObject;
+			T result = caseAutoScalingGroupBuilder_autoscaling(autoScalingGroupBuilder_autoscaling);
+			if (result == null)
+				result = caseServiceResources(autoScalingGroupBuilder_autoscaling);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.OPTION_CONFIGURATION_BUILDER_RDS: {
+			OptionConfigurationBuilder_rds optionConfigurationBuilder_rds = (OptionConfigurationBuilder_rds) theEObject;
+			T result = caseOptionConfigurationBuilder_rds(optionConfigurationBuilder_rds);
+			if (result == null)
+				result = caseServiceResources(optionConfigurationBuilder_rds);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.OPTION_GROUP_BUILDER_RDS: {
+			OptionGroupBuilder_rds optionGroupBuilder_rds = (OptionGroupBuilder_rds) theEObject;
+			T result = caseOptionGroupBuilder_rds(optionGroupBuilder_rds);
+			if (result == null)
+				result = caseServiceResources(optionGroupBuilder_rds);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.PORT_BUILDER_EC2: {
+			PortBuilder_ec2 portBuilder_ec2 = (PortBuilder_ec2) theEObject;
+			T result = casePortBuilder_ec2(portBuilder_ec2);
+			if (result == null)
+				result = caseServiceResources(portBuilder_ec2);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.PROCESSOR_FEATURES_BUILDER_RDS: {
+			ProcessorFeaturesBuilder_rds processorFeaturesBuilder_rds = (ProcessorFeaturesBuilder_rds) theEObject;
+			T result = caseProcessorFeaturesBuilder_rds(processorFeaturesBuilder_rds);
+			if (result == null)
+				result = caseServiceResources(processorFeaturesBuilder_rds);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.ORACLE_EE_INSTANCE_ENGINE_PROPS_BUILDER_RDS: {
+			OracleEeInstanceEnginePropsBuilder_rds oracleEeInstanceEnginePropsBuilder_rds = (OracleEeInstanceEnginePropsBuilder_rds) theEObject;
+			T result = caseOracleEeInstanceEnginePropsBuilder_rds(oracleEeInstanceEnginePropsBuilder_rds);
+			if (result == null)
+				result = caseServiceResources(oracleEeInstanceEnginePropsBuilder_rds);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.ORACLE_SE1_INSTANCE_ENGINE_PROPS_BUILDER_RDS: {
+			OracleSe1InstanceEnginePropsBuilder_rds oracleSe1InstanceEnginePropsBuilder_rds = (OracleSe1InstanceEnginePropsBuilder_rds) theEObject;
+			T result = caseOracleSe1InstanceEnginePropsBuilder_rds(oracleSe1InstanceEnginePropsBuilder_rds);
+			if (result == null)
+				result = caseServiceResources(oracleSe1InstanceEnginePropsBuilder_rds);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.ORACLE_SE2_INSTANCE_ENGINE_PROPS_BUILDER_RDS: {
+			OracleSe2InstanceEnginePropsBuilder_rds oracleSe2InstanceEnginePropsBuilder_rds = (OracleSe2InstanceEnginePropsBuilder_rds) theEObject;
+			T result = caseOracleSe2InstanceEnginePropsBuilder_rds(oracleSe2InstanceEnginePropsBuilder_rds);
+			if (result == null)
+				result = caseServiceResources(oracleSe2InstanceEnginePropsBuilder_rds);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.ORACLE_SE_INSTANCE_ENGINE_PROPS_BUILDER_RDS: {
+			OracleSeInstanceEnginePropsBuilder_rds oracleSeInstanceEnginePropsBuilder_rds = (OracleSeInstanceEnginePropsBuilder_rds) theEObject;
+			T result = caseOracleSeInstanceEnginePropsBuilder_rds(oracleSeInstanceEnginePropsBuilder_rds);
+			if (result == null)
+				result = caseServiceResources(oracleSeInstanceEnginePropsBuilder_rds);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.POSTGRES_INSTANCE_ENGINE_PROPS_BUILDER_RDS: {
+			PostgresInstanceEnginePropsBuilder_rds postgresInstanceEnginePropsBuilder_rds = (PostgresInstanceEnginePropsBuilder_rds) theEObject;
+			T result = casePostgresInstanceEnginePropsBuilder_rds(postgresInstanceEnginePropsBuilder_rds);
+			if (result == null)
+				result = caseServiceResources(postgresInstanceEnginePropsBuilder_rds);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.SQL_SERVER_EE_INSTANCE_ENGINE_PROPS_BUILDER_RDS: {
+			SqlServerEeInstanceEnginePropsBuilder_rds sqlServerEeInstanceEnginePropsBuilder_rds = (SqlServerEeInstanceEnginePropsBuilder_rds) theEObject;
+			T result = caseSqlServerEeInstanceEnginePropsBuilder_rds(sqlServerEeInstanceEnginePropsBuilder_rds);
+			if (result == null)
+				result = caseServiceResources(sqlServerEeInstanceEnginePropsBuilder_rds);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.SQL_SERVER_EX_INSTANCE_ENGINE_PROPS_BUILDER_RDS: {
+			SqlServerExInstanceEnginePropsBuilder_rds sqlServerExInstanceEnginePropsBuilder_rds = (SqlServerExInstanceEnginePropsBuilder_rds) theEObject;
+			T result = caseSqlServerExInstanceEnginePropsBuilder_rds(sqlServerExInstanceEnginePropsBuilder_rds);
+			if (result == null)
+				result = caseServiceResources(sqlServerExInstanceEnginePropsBuilder_rds);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.SQL_SERVER_SE_INSTANCE_ENGINE_PROPS_BUILDER_RDS: {
+			SqlServerSeInstanceEnginePropsBuilder_rds sqlServerSeInstanceEnginePropsBuilder_rds = (SqlServerSeInstanceEnginePropsBuilder_rds) theEObject;
+			T result = caseSqlServerSeInstanceEnginePropsBuilder_rds(sqlServerSeInstanceEnginePropsBuilder_rds);
+			if (result == null)
+				result = caseServiceResources(sqlServerSeInstanceEnginePropsBuilder_rds);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.SQL_SERVER_WEB_INSTANCE_ENGINE_PROPS_BUILDER_RDS: {
+			SqlServerWebInstanceEnginePropsBuilder_rds sqlServerWebInstanceEnginePropsBuilder_rds = (SqlServerWebInstanceEnginePropsBuilder_rds) theEObject;
+			T result = caseSqlServerWebInstanceEnginePropsBuilder_rds(sqlServerWebInstanceEnginePropsBuilder_rds);
+			if (result == null)
+				result = caseServiceResources(sqlServerWebInstanceEnginePropsBuilder_rds);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.MY_SQL_INSTANCE_ENGINE_PROPS_BUILDER_RDS: {
+			MySqlInstanceEnginePropsBuilder_rds mySqlInstanceEnginePropsBuilder_rds = (MySqlInstanceEnginePropsBuilder_rds) theEObject;
+			T result = caseMySqlInstanceEnginePropsBuilder_rds(mySqlInstanceEnginePropsBuilder_rds);
+			if (result == null)
+				result = caseServiceResources(mySqlInstanceEnginePropsBuilder_rds);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.MARIA_DB_INSTANCE_ENGINE_PROPS_BUILDER_RDS: {
+			MariaDbInstanceEnginePropsBuilder_rds mariaDbInstanceEnginePropsBuilder_rds = (MariaDbInstanceEnginePropsBuilder_rds) theEObject;
+			T result = caseMariaDbInstanceEnginePropsBuilder_rds(mariaDbInstanceEnginePropsBuilder_rds);
+			if (result == null)
+				result = caseServiceResources(mariaDbInstanceEnginePropsBuilder_rds);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.PARAMETER_GROUP_BUILDER_RDS: {
+			ParameterGroupBuilder_rds parameterGroupBuilder_rds = (ParameterGroupBuilder_rds) theEObject;
+			T result = caseParameterGroupBuilder_rds(parameterGroupBuilder_rds);
+			if (result == null)
+				result = caseServiceResources(parameterGroupBuilder_rds);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.DATABASE_INSTANCE_BUILDER_RDS: {
+			DatabaseInstanceBuilder_rds databaseInstanceBuilder_rds = (DatabaseInstanceBuilder_rds) theEObject;
+			T result = caseDatabaseInstanceBuilder_rds(databaseInstanceBuilder_rds);
+			if (result == null)
+				result = caseServiceResources(databaseInstanceBuilder_rds);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
 		case AwsworkbenchPackage.SCHEDULED_FARGATE_TASK_BUILDER_PATTERNS: {
 			ScheduledFargateTaskBuilder_patterns scheduledFargateTaskBuilder_patterns = (ScheduledFargateTaskBuilder_patterns) theEObject;
 			T result = caseScheduledFargateTaskBuilder_patterns(scheduledFargateTaskBuilder_patterns);
@@ -4502,6 +4682,306 @@ public class AwsworkbenchSwitch<T> extends Switch<T> {
 	 */
 	public T caseScheduledFargateTaskImageOptionsBuilder_patterns(
 			ScheduledFargateTaskImageOptionsBuilder_patterns object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Topic Builder sns</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Topic Builder sns</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseTopicBuilder_sns(TopicBuilder_sns object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Ec2 Health Check Options Builder autoscaling</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Ec2 Health Check Options Builder autoscaling</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseEc2HealthCheckOptionsBuilder_autoscaling(Ec2HealthCheckOptionsBuilder_autoscaling object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Auto Scaling Group Builder autoscaling</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Auto Scaling Group Builder autoscaling</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseAutoScalingGroupBuilder_autoscaling(AutoScalingGroupBuilder_autoscaling object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Option Configuration Builder rds</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Option Configuration Builder rds</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseOptionConfigurationBuilder_rds(OptionConfigurationBuilder_rds object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Option Group Builder rds</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Option Group Builder rds</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseOptionGroupBuilder_rds(OptionGroupBuilder_rds object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Port Builder ec2</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Port Builder ec2</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T casePortBuilder_ec2(PortBuilder_ec2 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Processor Features Builder rds</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Processor Features Builder rds</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseProcessorFeaturesBuilder_rds(ProcessorFeaturesBuilder_rds object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Oracle Ee Instance Engine Props Builder rds</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Oracle Ee Instance Engine Props Builder rds</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseOracleEeInstanceEnginePropsBuilder_rds(OracleEeInstanceEnginePropsBuilder_rds object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Oracle Se1 Instance Engine Props Builder rds</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Oracle Se1 Instance Engine Props Builder rds</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseOracleSe1InstanceEnginePropsBuilder_rds(OracleSe1InstanceEnginePropsBuilder_rds object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Oracle Se2 Instance Engine Props Builder rds</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Oracle Se2 Instance Engine Props Builder rds</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseOracleSe2InstanceEnginePropsBuilder_rds(OracleSe2InstanceEnginePropsBuilder_rds object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Oracle Se Instance Engine Props Builder rds</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Oracle Se Instance Engine Props Builder rds</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseOracleSeInstanceEnginePropsBuilder_rds(OracleSeInstanceEnginePropsBuilder_rds object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Postgres Instance Engine Props Builder rds</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Postgres Instance Engine Props Builder rds</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T casePostgresInstanceEnginePropsBuilder_rds(PostgresInstanceEnginePropsBuilder_rds object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Sql Server Ee Instance Engine Props Builder rds</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Sql Server Ee Instance Engine Props Builder rds</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseSqlServerEeInstanceEnginePropsBuilder_rds(SqlServerEeInstanceEnginePropsBuilder_rds object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Sql Server Ex Instance Engine Props Builder rds</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Sql Server Ex Instance Engine Props Builder rds</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseSqlServerExInstanceEnginePropsBuilder_rds(SqlServerExInstanceEnginePropsBuilder_rds object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Sql Server Se Instance Engine Props Builder rds</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Sql Server Se Instance Engine Props Builder rds</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseSqlServerSeInstanceEnginePropsBuilder_rds(SqlServerSeInstanceEnginePropsBuilder_rds object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Sql Server Web Instance Engine Props Builder rds</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Sql Server Web Instance Engine Props Builder rds</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseSqlServerWebInstanceEnginePropsBuilder_rds(SqlServerWebInstanceEnginePropsBuilder_rds object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>My Sql Instance Engine Props Builder rds</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>My Sql Instance Engine Props Builder rds</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseMySqlInstanceEnginePropsBuilder_rds(MySqlInstanceEnginePropsBuilder_rds object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Maria Db Instance Engine Props Builder rds</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Maria Db Instance Engine Props Builder rds</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseMariaDbInstanceEnginePropsBuilder_rds(MariaDbInstanceEnginePropsBuilder_rds object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Parameter Group Builder rds</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Parameter Group Builder rds</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseParameterGroupBuilder_rds(ParameterGroupBuilder_rds object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Database Instance Builder rds</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Database Instance Builder rds</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseDatabaseInstanceBuilder_rds(DatabaseInstanceBuilder_rds object) {
 		return null;
 	}
 

@@ -32,6 +32,7 @@ import com.amazon.aws.workbench.model.awsworkbench.AttributeBuilder_dynamodb;
 import com.amazon.aws.workbench.model.awsworkbench.AttributeType;
 import com.amazon.aws.workbench.model.awsworkbench.AuthFlowBuilder_cognito;
 import com.amazon.aws.workbench.model.awsworkbench.AuthorizationType;
+import com.amazon.aws.workbench.model.awsworkbench.AutoScalingGroupBuilder_autoscaling;
 import com.amazon.aws.workbench.model.awsworkbench.AutoVerifiedAttrsBuilder_cognito;
 import com.amazon.aws.workbench.model.awsworkbench.AwsLogDriverBuilder_ecs;
 import com.amazon.aws.workbench.model.awsworkbench.AwsLogDriverPropsBuilder_ecs;
@@ -75,6 +76,7 @@ import com.amazon.aws.workbench.model.awsworkbench.CorsRuleBuilder_s3;
 import com.amazon.aws.workbench.model.awsworkbench.CronOptionsBuilder_applicationautoscaling;
 import com.amazon.aws.workbench.model.awsworkbench.CronOptionsBuilder_events;
 import com.amazon.aws.workbench.model.awsworkbench.CustomOriginConfigBuilder_cloudfront;
+import com.amazon.aws.workbench.model.awsworkbench.DatabaseInstanceBuilder_rds;
 import com.amazon.aws.workbench.model.awsworkbench.DeadLetterQueueBuilder_sqs;
 import com.amazon.aws.workbench.model.awsworkbench.DefaultInstanceTenancy;
 import com.amazon.aws.workbench.model.awsworkbench.DefaultStackSynthesizerBuilder_core;
@@ -85,6 +87,7 @@ import com.amazon.aws.workbench.model.awsworkbench.DockerVolumeConfigurationBuil
 import com.amazon.aws.workbench.model.awsworkbench.DomainNameOptionsBuilder_apigateway;
 import com.amazon.aws.workbench.model.awsworkbench.DynamoDBStreamToLambdaBuilder_dynamodbstreamlambda;
 import com.amazon.aws.workbench.model.awsworkbench.DynamoDBStreamToLambdaToElasticSearchAndKibanaBuilder_dynamodbstreamlambdaelasticsearchkibana;
+import com.amazon.aws.workbench.model.awsworkbench.Ec2HealthCheckOptionsBuilder_autoscaling;
 import com.amazon.aws.workbench.model.awsworkbench.Ec2TaskDefinitionBuilder_ecs;
 import com.amazon.aws.workbench.model.awsworkbench.Effect;
 import com.amazon.aws.workbench.model.awsworkbench.EmailSettingsBuilder_cognito;
@@ -139,10 +142,12 @@ import com.amazon.aws.workbench.model.awsworkbench.LambdaToSnsBuilder_lambdasns;
 import com.amazon.aws.workbench.model.awsworkbench.LambdaToSqsBuilder_lambdasqs;
 import com.amazon.aws.workbench.model.awsworkbench.LambdaToStepFunctionBuilder_lambdastepfunction;
 import com.amazon.aws.workbench.model.awsworkbench.LayerVersionBuilder_lambda;
+import com.amazon.aws.workbench.model.awsworkbench.LicenseModel;
 import com.amazon.aws.workbench.model.awsworkbench.LifecycleRuleBuilder_s3;
 import com.amazon.aws.workbench.model.awsworkbench.LogGroupBuilder_logs;
 import com.amazon.aws.workbench.model.awsworkbench.LoggingConfigurationBuilder_cloudfront;
 import com.amazon.aws.workbench.model.awsworkbench.ManagedPolicyBuilder_iam;
+import com.amazon.aws.workbench.model.awsworkbench.MariaDbInstanceEnginePropsBuilder_rds;
 import com.amazon.aws.workbench.model.awsworkbench.MethodDeploymentOptionsBuilder_apigateway;
 import com.amazon.aws.workbench.model.awsworkbench.MethodLoggingLevel;
 import com.amazon.aws.workbench.model.awsworkbench.MethodOptionsBuilder_apigateway;
@@ -150,6 +155,7 @@ import com.amazon.aws.workbench.model.awsworkbench.MethodResponseBuilder_apigate
 import com.amazon.aws.workbench.model.awsworkbench.Mfa;
 import com.amazon.aws.workbench.model.awsworkbench.MfaSecondFactorBuilder_cognito;
 import com.amazon.aws.workbench.model.awsworkbench.ModelBuilder_apigateway;
+import com.amazon.aws.workbench.model.awsworkbench.MySqlInstanceEnginePropsBuilder_rds;
 import com.amazon.aws.workbench.model.awsworkbench.NamespaceType;
 import com.amazon.aws.workbench.model.awsworkbench.NetworkLoadBalancedEc2ServiceBuilder_patterns;
 import com.amazon.aws.workbench.model.awsworkbench.NetworkLoadBalancedFargateServiceBuilder_patterns;
@@ -163,16 +169,27 @@ import com.amazon.aws.workbench.model.awsworkbench.NetworkTargetPropsBuilder_pat
 import com.amazon.aws.workbench.model.awsworkbench.NoncurrentVersionTransitionBuilder_s3;
 import com.amazon.aws.workbench.model.awsworkbench.OAuthFlowsBuilder_cognito;
 import com.amazon.aws.workbench.model.awsworkbench.OAuthSettingsBuilder_cognito;
+import com.amazon.aws.workbench.model.awsworkbench.OptionConfigurationBuilder_rds;
+import com.amazon.aws.workbench.model.awsworkbench.OptionGroupBuilder_rds;
+import com.amazon.aws.workbench.model.awsworkbench.OracleEeInstanceEnginePropsBuilder_rds;
+import com.amazon.aws.workbench.model.awsworkbench.OracleSe1InstanceEnginePropsBuilder_rds;
+import com.amazon.aws.workbench.model.awsworkbench.OracleSe2InstanceEnginePropsBuilder_rds;
+import com.amazon.aws.workbench.model.awsworkbench.OracleSeInstanceEnginePropsBuilder_rds;
 import com.amazon.aws.workbench.model.awsworkbench.OriginAccessIdentityBuilder_cloudfront;
 import com.amazon.aws.workbench.model.awsworkbench.OriginProtocolPolicy;
 import com.amazon.aws.workbench.model.awsworkbench.OriginSslPolicy;
+import com.amazon.aws.workbench.model.awsworkbench.ParameterGroupBuilder_rds;
 import com.amazon.aws.workbench.model.awsworkbench.PassthroughBehavior;
 import com.amazon.aws.workbench.model.awsworkbench.PasswordPolicyBuilder_cognito;
+import com.amazon.aws.workbench.model.awsworkbench.PerformanceInsightRetention;
 import com.amazon.aws.workbench.model.awsworkbench.PidMode;
 import com.amazon.aws.workbench.model.awsworkbench.PolicyDocumentBuilder_iam;
 import com.amazon.aws.workbench.model.awsworkbench.PolicyStatementBuilder_iam;
+import com.amazon.aws.workbench.model.awsworkbench.PortBuilder_ec2;
+import com.amazon.aws.workbench.model.awsworkbench.PostgresInstanceEnginePropsBuilder_rds;
 import com.amazon.aws.workbench.model.awsworkbench.PriceClass;
 import com.amazon.aws.workbench.model.awsworkbench.PrivateDnsNamespaceBuilder_servicediscovery;
+import com.amazon.aws.workbench.model.awsworkbench.ProcessorFeaturesBuilder_rds;
 import com.amazon.aws.workbench.model.awsworkbench.PropagatedTagSource;
 import com.amazon.aws.workbench.model.awsworkbench.Protocol;
 import com.amazon.aws.workbench.model.awsworkbench.PublicDnsNamespaceBuilder_servicediscovery;
@@ -217,11 +234,16 @@ import com.amazon.aws.workbench.model.awsworkbench.ServiceResources;
 import com.amazon.aws.workbench.model.awsworkbench.SignInAliasesBuilder_cognito;
 import com.amazon.aws.workbench.model.awsworkbench.SnsToLambdaBuilder_snslambda;
 import com.amazon.aws.workbench.model.awsworkbench.SourceConfigurationBuilder_cloudfront;
+import com.amazon.aws.workbench.model.awsworkbench.SqlServerEeInstanceEnginePropsBuilder_rds;
+import com.amazon.aws.workbench.model.awsworkbench.SqlServerExInstanceEnginePropsBuilder_rds;
+import com.amazon.aws.workbench.model.awsworkbench.SqlServerSeInstanceEnginePropsBuilder_rds;
+import com.amazon.aws.workbench.model.awsworkbench.SqlServerWebInstanceEnginePropsBuilder_rds;
 import com.amazon.aws.workbench.model.awsworkbench.SqsToLambdaBuilder_sqslambda;
 import com.amazon.aws.workbench.model.awsworkbench.StackBuilder_core;
 import com.amazon.aws.workbench.model.awsworkbench.StageOptionsBuilder_apigateway;
 import com.amazon.aws.workbench.model.awsworkbench.StateMachinePropsBuilder_stepfunctions;
 import com.amazon.aws.workbench.model.awsworkbench.StateMachineType;
+import com.amazon.aws.workbench.model.awsworkbench.StorageType;
 import com.amazon.aws.workbench.model.awsworkbench.StreamViewType;
 import com.amazon.aws.workbench.model.awsworkbench.SubnetBuilder_ec2;
 import com.amazon.aws.workbench.model.awsworkbench.SubnetSelectionBuilder_ec2;
@@ -230,6 +252,7 @@ import com.amazon.aws.workbench.model.awsworkbench.TableBuilder_dynamodb;
 import com.amazon.aws.workbench.model.awsworkbench.TableEncryption;
 import com.amazon.aws.workbench.model.awsworkbench.TablePropsBuilder_dynamodb;
 import com.amazon.aws.workbench.model.awsworkbench.TokenAuthorizerBuilder_apigateway;
+import com.amazon.aws.workbench.model.awsworkbench.TopicBuilder_sns;
 import com.amazon.aws.workbench.model.awsworkbench.TopicPropsBuilder_sns;
 import com.amazon.aws.workbench.model.awsworkbench.Tracing;
 import com.amazon.aws.workbench.model.awsworkbench.TransitionBuilder_s3;
@@ -1544,6 +1567,146 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	 * 
 	 * @generated
 	 */
+	private EClass topicBuilder_snsEClass = null;
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	private EClass ec2HealthCheckOptionsBuilder_autoscalingEClass = null;
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	private EClass autoScalingGroupBuilder_autoscalingEClass = null;
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	private EClass optionConfigurationBuilder_rdsEClass = null;
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	private EClass optionGroupBuilder_rdsEClass = null;
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	private EClass portBuilder_ec2EClass = null;
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	private EClass processorFeaturesBuilder_rdsEClass = null;
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	private EClass oracleEeInstanceEnginePropsBuilder_rdsEClass = null;
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	private EClass oracleSe1InstanceEnginePropsBuilder_rdsEClass = null;
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	private EClass oracleSe2InstanceEnginePropsBuilder_rdsEClass = null;
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	private EClass oracleSeInstanceEnginePropsBuilder_rdsEClass = null;
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	private EClass postgresInstanceEnginePropsBuilder_rdsEClass = null;
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	private EClass sqlServerEeInstanceEnginePropsBuilder_rdsEClass = null;
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	private EClass sqlServerExInstanceEnginePropsBuilder_rdsEClass = null;
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	private EClass sqlServerSeInstanceEnginePropsBuilder_rdsEClass = null;
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	private EClass sqlServerWebInstanceEnginePropsBuilder_rdsEClass = null;
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	private EClass mySqlInstanceEnginePropsBuilder_rdsEClass = null;
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	private EClass mariaDbInstanceEnginePropsBuilder_rdsEClass = null;
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	private EClass parameterGroupBuilder_rdsEClass = null;
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	private EClass databaseInstanceBuilder_rdsEClass = null;
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
 	private EClass scheduledFargateTaskBuilder_patternsEClass = null;
 
 	/**
@@ -1979,6 +2142,27 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	 * @generated
 	 */
 	private EEnum protocolEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	private EEnum performanceInsightRetentionEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	private EEnum storageTypeEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	private EEnum licenseModelEEnum = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -24269,6 +24453,1996 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	 * @generated
 	 */
 	@Override
+	public EClass getTopicBuilder_sns() {
+		return topicBuilder_snsEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getTopicBuilder_sns_DisplayName_java_lang_String_() {
+		return (EAttribute) topicBuilder_snsEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getTopicBuilder_sns_MasterKeyWithIKey_software_amazon_awscdk_services_kms_IKey_AsReference() {
+		return (EAttribute) topicBuilder_snsEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getTopicBuilder_sns_TopicName_java_lang_String_() {
+		return (EAttribute) topicBuilder_snsEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getTopicBuilder_sns_GeneratedClassName() {
+		return (EAttribute) topicBuilder_snsEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getTopicBuilder_sns_VarName() {
+		return (EAttribute) topicBuilder_snsEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getTopicBuilder_sns_Identifier() {
+		return (EAttribute) topicBuilder_snsEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getTopicBuilder_sns_AdditionalCode() {
+		return (EAttribute) topicBuilder_snsEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EClass getEc2HealthCheckOptionsBuilder_autoscaling() {
+		return ec2HealthCheckOptionsBuilder_autoscalingEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getEc2HealthCheckOptionsBuilder_autoscaling_GraceWithDuration_software_amazon_awscdk_core_Duration_AsReference() {
+		return (EAttribute) ec2HealthCheckOptionsBuilder_autoscalingEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getEc2HealthCheckOptionsBuilder_autoscaling_GeneratedClassName() {
+		return (EAttribute) ec2HealthCheckOptionsBuilder_autoscalingEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getEc2HealthCheckOptionsBuilder_autoscaling_VarName() {
+		return (EAttribute) ec2HealthCheckOptionsBuilder_autoscalingEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getEc2HealthCheckOptionsBuilder_autoscaling_Identifier() {
+		return (EAttribute) ec2HealthCheckOptionsBuilder_autoscalingEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getEc2HealthCheckOptionsBuilder_autoscaling_AdditionalCode() {
+		return (EAttribute) ec2HealthCheckOptionsBuilder_autoscalingEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EClass getAutoScalingGroupBuilder_autoscaling() {
+		return autoScalingGroupBuilder_autoscalingEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAutoScalingGroupBuilder_autoscaling_AllowAllOutbound_java_lang_Boolean_() {
+		return (EAttribute) autoScalingGroupBuilder_autoscalingEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAutoScalingGroupBuilder_autoscaling_AssociatePublicIpAddress_java_lang_Boolean_() {
+		return (EAttribute) autoScalingGroupBuilder_autoscalingEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAutoScalingGroupBuilder_autoscaling_BlockDevices_software_amazon_awscdk_services_autoscaling_BlockDevice_AsList() {
+		return (EAttribute) autoScalingGroupBuilder_autoscalingEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAutoScalingGroupBuilder_autoscaling_CooldownWithDuration_software_amazon_awscdk_core_Duration_AsReference() {
+		return (EAttribute) autoScalingGroupBuilder_autoscalingEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAutoScalingGroupBuilder_autoscaling_DesiredCapacity_java_lang_Number_() {
+		return (EAttribute) autoScalingGroupBuilder_autoscalingEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAutoScalingGroupBuilder_autoscaling_HealthCheckWithHealthCheck_software_amazon_awscdk_services_autoscaling_HealthCheck_AsReference() {
+		return (EAttribute) autoScalingGroupBuilder_autoscalingEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAutoScalingGroupBuilder_autoscaling_IgnoreUnmodifiedSizeProperties_java_lang_Boolean_() {
+		return (EAttribute) autoScalingGroupBuilder_autoscalingEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAutoScalingGroupBuilder_autoscaling_KeyName_java_lang_String_() {
+		return (EAttribute) autoScalingGroupBuilder_autoscalingEClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAutoScalingGroupBuilder_autoscaling_MaxCapacity_java_lang_Number_() {
+		return (EAttribute) autoScalingGroupBuilder_autoscalingEClass.getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAutoScalingGroupBuilder_autoscaling_MaxInstanceLifetimeWithDuration_software_amazon_awscdk_core_Duration_AsReference() {
+		return (EAttribute) autoScalingGroupBuilder_autoscalingEClass.getEStructuralFeatures().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAutoScalingGroupBuilder_autoscaling_MinCapacity_java_lang_Number_() {
+		return (EAttribute) autoScalingGroupBuilder_autoscalingEClass.getEStructuralFeatures().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAutoScalingGroupBuilder_autoscaling_NotificationsTopicWithITopic_software_amazon_awscdk_services_sns_ITopic_AsReference() {
+		return (EAttribute) autoScalingGroupBuilder_autoscalingEClass.getEStructuralFeatures().get(11);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAutoScalingGroupBuilder_autoscaling_ReplacingUpdateMinSuccessfulInstancesPercent_java_lang_Number_() {
+		return (EAttribute) autoScalingGroupBuilder_autoscalingEClass.getEStructuralFeatures().get(12);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAutoScalingGroupBuilder_autoscaling_ResourceSignalCount_java_lang_Number_() {
+		return (EAttribute) autoScalingGroupBuilder_autoscalingEClass.getEStructuralFeatures().get(13);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAutoScalingGroupBuilder_autoscaling_ResourceSignalTimeoutWithDuration_software_amazon_awscdk_core_Duration_AsReference() {
+		return (EAttribute) autoScalingGroupBuilder_autoscalingEClass.getEStructuralFeatures().get(14);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAutoScalingGroupBuilder_autoscaling_RollingUpdateConfigurationWithRollingUpdateConfiguration_software_amazon_awscdk_services_autoscaling_RollingUpdateConfiguration_AsReference() {
+		return (EAttribute) autoScalingGroupBuilder_autoscalingEClass.getEStructuralFeatures().get(15);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAutoScalingGroupBuilder_autoscaling_SpotPrice_java_lang_String_() {
+		return (EAttribute) autoScalingGroupBuilder_autoscalingEClass.getEStructuralFeatures().get(16);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAutoScalingGroupBuilder_autoscaling_UpdateType_software_amazon_awscdk_services_autoscaling_UpdateType_() {
+		return (EAttribute) autoScalingGroupBuilder_autoscalingEClass.getEStructuralFeatures().get(17);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAutoScalingGroupBuilder_autoscaling_VpcSubnetsWithSubnetSelection_software_amazon_awscdk_services_ec2_SubnetSelection_AsReference() {
+		return (EAttribute) autoScalingGroupBuilder_autoscalingEClass.getEStructuralFeatures().get(18);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAutoScalingGroupBuilder_autoscaling_InstanceTypeWithInstanceType_software_amazon_awscdk_services_ec2_InstanceType_AsReference() {
+		return (EAttribute) autoScalingGroupBuilder_autoscalingEClass.getEStructuralFeatures().get(19);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAutoScalingGroupBuilder_autoscaling_MachineImageWithIMachineImage_software_amazon_awscdk_services_ec2_IMachineImage_AsReference() {
+		return (EAttribute) autoScalingGroupBuilder_autoscalingEClass.getEStructuralFeatures().get(20);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAutoScalingGroupBuilder_autoscaling_VpcWithIVpc_software_amazon_awscdk_services_ec2_IVpc_AsReference() {
+		return (EAttribute) autoScalingGroupBuilder_autoscalingEClass.getEStructuralFeatures().get(21);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAutoScalingGroupBuilder_autoscaling_RoleWithIRole_software_amazon_awscdk_services_iam_IRole_AsReference() {
+		return (EAttribute) autoScalingGroupBuilder_autoscalingEClass.getEStructuralFeatures().get(22);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAutoScalingGroupBuilder_autoscaling_UserDataWithUserData_software_amazon_awscdk_services_ec2_UserData_AsReference() {
+		return (EAttribute) autoScalingGroupBuilder_autoscalingEClass.getEStructuralFeatures().get(23);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAutoScalingGroupBuilder_autoscaling_GeneratedClassName() {
+		return (EAttribute) autoScalingGroupBuilder_autoscalingEClass.getEStructuralFeatures().get(24);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAutoScalingGroupBuilder_autoscaling_VarName() {
+		return (EAttribute) autoScalingGroupBuilder_autoscalingEClass.getEStructuralFeatures().get(25);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAutoScalingGroupBuilder_autoscaling_Identifier() {
+		return (EAttribute) autoScalingGroupBuilder_autoscalingEClass.getEStructuralFeatures().get(26);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAutoScalingGroupBuilder_autoscaling_AdditionalCode() {
+		return (EAttribute) autoScalingGroupBuilder_autoscalingEClass.getEStructuralFeatures().get(27);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EClass getOptionConfigurationBuilder_rds() {
+		return optionConfigurationBuilder_rdsEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getOptionConfigurationBuilder_rds_Name_java_lang_String_() {
+		return (EAttribute) optionConfigurationBuilder_rdsEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getOptionConfigurationBuilder_rds_Port_java_lang_Number_() {
+		return (EAttribute) optionConfigurationBuilder_rdsEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getOptionConfigurationBuilder_rds_Settings_java_lang_String__java_lang_String_AsMap() {
+		return (EAttribute) optionConfigurationBuilder_rdsEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getOptionConfigurationBuilder_rds_Version_java_lang_String_() {
+		return (EAttribute) optionConfigurationBuilder_rdsEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getOptionConfigurationBuilder_rds_VpcWithIVpc_software_amazon_awscdk_services_ec2_IVpc_AsReference() {
+		return (EAttribute) optionConfigurationBuilder_rdsEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getOptionConfigurationBuilder_rds_GeneratedClassName() {
+		return (EAttribute) optionConfigurationBuilder_rdsEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getOptionConfigurationBuilder_rds_VarName() {
+		return (EAttribute) optionConfigurationBuilder_rdsEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getOptionConfigurationBuilder_rds_Identifier() {
+		return (EAttribute) optionConfigurationBuilder_rdsEClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getOptionConfigurationBuilder_rds_AdditionalCode() {
+		return (EAttribute) optionConfigurationBuilder_rdsEClass.getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EClass getOptionGroupBuilder_rds() {
+		return optionGroupBuilder_rdsEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getOptionGroupBuilder_rds_Configurations_software_amazon_awscdk_services_rds_OptionConfiguration_AsList() {
+		return (EAttribute) optionGroupBuilder_rdsEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getOptionGroupBuilder_rds_EngineWithIInstanceEngine_software_amazon_awscdk_services_rds_IInstanceEngine_AsReference() {
+		return (EAttribute) optionGroupBuilder_rdsEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getOptionGroupBuilder_rds_Description_java_lang_String_() {
+		return (EAttribute) optionGroupBuilder_rdsEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getOptionGroupBuilder_rds_GeneratedClassName() {
+		return (EAttribute) optionGroupBuilder_rdsEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getOptionGroupBuilder_rds_VarName() {
+		return (EAttribute) optionGroupBuilder_rdsEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getOptionGroupBuilder_rds_Identifier() {
+		return (EAttribute) optionGroupBuilder_rdsEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getOptionGroupBuilder_rds_AdditionalCode() {
+		return (EAttribute) optionGroupBuilder_rdsEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EClass getPortBuilder_ec2() {
+		return portBuilder_ec2EClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getPortBuilder_ec2_Protocol_software_amazon_awscdk_services_ec2_Protocol_() {
+		return (EAttribute) portBuilder_ec2EClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getPortBuilder_ec2_StringRepresentation_java_lang_String_() {
+		return (EAttribute) portBuilder_ec2EClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getPortBuilder_ec2_FromPort_java_lang_Number_() {
+		return (EAttribute) portBuilder_ec2EClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getPortBuilder_ec2_ToPort_java_lang_Number_() {
+		return (EAttribute) portBuilder_ec2EClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getPortBuilder_ec2_GeneratedClassName() {
+		return (EAttribute) portBuilder_ec2EClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getPortBuilder_ec2_VarName() {
+		return (EAttribute) portBuilder_ec2EClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getPortBuilder_ec2_Identifier() {
+		return (EAttribute) portBuilder_ec2EClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getPortBuilder_ec2_AdditionalCode() {
+		return (EAttribute) portBuilder_ec2EClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EClass getProcessorFeaturesBuilder_rds() {
+		return processorFeaturesBuilder_rdsEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getProcessorFeaturesBuilder_rds_CoreCount_java_lang_Number_() {
+		return (EAttribute) processorFeaturesBuilder_rdsEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getProcessorFeaturesBuilder_rds_ThreadsPerCore_java_lang_Number_() {
+		return (EAttribute) processorFeaturesBuilder_rdsEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getProcessorFeaturesBuilder_rds_GeneratedClassName() {
+		return (EAttribute) processorFeaturesBuilder_rdsEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getProcessorFeaturesBuilder_rds_VarName() {
+		return (EAttribute) processorFeaturesBuilder_rdsEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getProcessorFeaturesBuilder_rds_Identifier() {
+		return (EAttribute) processorFeaturesBuilder_rdsEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getProcessorFeaturesBuilder_rds_AdditionalCode() {
+		return (EAttribute) processorFeaturesBuilder_rdsEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EClass getOracleEeInstanceEnginePropsBuilder_rds() {
+		return oracleEeInstanceEnginePropsBuilder_rdsEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getOracleEeInstanceEnginePropsBuilder_rds_VersionWithOracleEngineVersion_software_amazon_awscdk_services_rds_OracleEngineVersion_AsReference() {
+		return (EAttribute) oracleEeInstanceEnginePropsBuilder_rdsEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getOracleEeInstanceEnginePropsBuilder_rds_GeneratedClassName() {
+		return (EAttribute) oracleEeInstanceEnginePropsBuilder_rdsEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getOracleEeInstanceEnginePropsBuilder_rds_VarName() {
+		return (EAttribute) oracleEeInstanceEnginePropsBuilder_rdsEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getOracleEeInstanceEnginePropsBuilder_rds_Identifier() {
+		return (EAttribute) oracleEeInstanceEnginePropsBuilder_rdsEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getOracleEeInstanceEnginePropsBuilder_rds_AdditionalCode() {
+		return (EAttribute) oracleEeInstanceEnginePropsBuilder_rdsEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EClass getOracleSe1InstanceEnginePropsBuilder_rds() {
+		return oracleSe1InstanceEnginePropsBuilder_rdsEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getOracleSe1InstanceEnginePropsBuilder_rds_VersionWithOracleLegacyEngineVersion_software_amazon_awscdk_services_rds_OracleLegacyEngineVersion_AsReference() {
+		return (EAttribute) oracleSe1InstanceEnginePropsBuilder_rdsEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getOracleSe1InstanceEnginePropsBuilder_rds_GeneratedClassName() {
+		return (EAttribute) oracleSe1InstanceEnginePropsBuilder_rdsEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getOracleSe1InstanceEnginePropsBuilder_rds_VarName() {
+		return (EAttribute) oracleSe1InstanceEnginePropsBuilder_rdsEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getOracleSe1InstanceEnginePropsBuilder_rds_Identifier() {
+		return (EAttribute) oracleSe1InstanceEnginePropsBuilder_rdsEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getOracleSe1InstanceEnginePropsBuilder_rds_AdditionalCode() {
+		return (EAttribute) oracleSe1InstanceEnginePropsBuilder_rdsEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EClass getOracleSe2InstanceEnginePropsBuilder_rds() {
+		return oracleSe2InstanceEnginePropsBuilder_rdsEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getOracleSe2InstanceEnginePropsBuilder_rds_VersionWithOracleEngineVersion_software_amazon_awscdk_services_rds_OracleEngineVersion_AsReference() {
+		return (EAttribute) oracleSe2InstanceEnginePropsBuilder_rdsEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getOracleSe2InstanceEnginePropsBuilder_rds_GeneratedClassName() {
+		return (EAttribute) oracleSe2InstanceEnginePropsBuilder_rdsEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getOracleSe2InstanceEnginePropsBuilder_rds_VarName() {
+		return (EAttribute) oracleSe2InstanceEnginePropsBuilder_rdsEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getOracleSe2InstanceEnginePropsBuilder_rds_Identifier() {
+		return (EAttribute) oracleSe2InstanceEnginePropsBuilder_rdsEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getOracleSe2InstanceEnginePropsBuilder_rds_AdditionalCode() {
+		return (EAttribute) oracleSe2InstanceEnginePropsBuilder_rdsEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EClass getOracleSeInstanceEnginePropsBuilder_rds() {
+		return oracleSeInstanceEnginePropsBuilder_rdsEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getOracleSeInstanceEnginePropsBuilder_rds_VersionWithOracleLegacyEngineVersion_software_amazon_awscdk_services_rds_OracleLegacyEngineVersion_AsReference() {
+		return (EAttribute) oracleSeInstanceEnginePropsBuilder_rdsEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getOracleSeInstanceEnginePropsBuilder_rds_GeneratedClassName() {
+		return (EAttribute) oracleSeInstanceEnginePropsBuilder_rdsEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getOracleSeInstanceEnginePropsBuilder_rds_VarName() {
+		return (EAttribute) oracleSeInstanceEnginePropsBuilder_rdsEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getOracleSeInstanceEnginePropsBuilder_rds_Identifier() {
+		return (EAttribute) oracleSeInstanceEnginePropsBuilder_rdsEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getOracleSeInstanceEnginePropsBuilder_rds_AdditionalCode() {
+		return (EAttribute) oracleSeInstanceEnginePropsBuilder_rdsEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EClass getPostgresInstanceEnginePropsBuilder_rds() {
+		return postgresInstanceEnginePropsBuilder_rdsEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getPostgresInstanceEnginePropsBuilder_rds_VersionWithPostgresEngineVersion_software_amazon_awscdk_services_rds_PostgresEngineVersion_AsReference() {
+		return (EAttribute) postgresInstanceEnginePropsBuilder_rdsEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getPostgresInstanceEnginePropsBuilder_rds_GeneratedClassName() {
+		return (EAttribute) postgresInstanceEnginePropsBuilder_rdsEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getPostgresInstanceEnginePropsBuilder_rds_VarName() {
+		return (EAttribute) postgresInstanceEnginePropsBuilder_rdsEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getPostgresInstanceEnginePropsBuilder_rds_Identifier() {
+		return (EAttribute) postgresInstanceEnginePropsBuilder_rdsEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getPostgresInstanceEnginePropsBuilder_rds_AdditionalCode() {
+		return (EAttribute) postgresInstanceEnginePropsBuilder_rdsEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EClass getSqlServerEeInstanceEnginePropsBuilder_rds() {
+		return sqlServerEeInstanceEnginePropsBuilder_rdsEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getSqlServerEeInstanceEnginePropsBuilder_rds_VersionWithSqlServerEngineVersion_software_amazon_awscdk_services_rds_SqlServerEngineVersion_AsReference() {
+		return (EAttribute) sqlServerEeInstanceEnginePropsBuilder_rdsEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getSqlServerEeInstanceEnginePropsBuilder_rds_GeneratedClassName() {
+		return (EAttribute) sqlServerEeInstanceEnginePropsBuilder_rdsEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getSqlServerEeInstanceEnginePropsBuilder_rds_VarName() {
+		return (EAttribute) sqlServerEeInstanceEnginePropsBuilder_rdsEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getSqlServerEeInstanceEnginePropsBuilder_rds_Identifier() {
+		return (EAttribute) sqlServerEeInstanceEnginePropsBuilder_rdsEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getSqlServerEeInstanceEnginePropsBuilder_rds_AdditionalCode() {
+		return (EAttribute) sqlServerEeInstanceEnginePropsBuilder_rdsEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EClass getSqlServerExInstanceEnginePropsBuilder_rds() {
+		return sqlServerExInstanceEnginePropsBuilder_rdsEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getSqlServerExInstanceEnginePropsBuilder_rds_VersionWithSqlServerEngineVersion_software_amazon_awscdk_services_rds_SqlServerEngineVersion_AsReference() {
+		return (EAttribute) sqlServerExInstanceEnginePropsBuilder_rdsEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getSqlServerExInstanceEnginePropsBuilder_rds_GeneratedClassName() {
+		return (EAttribute) sqlServerExInstanceEnginePropsBuilder_rdsEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getSqlServerExInstanceEnginePropsBuilder_rds_VarName() {
+		return (EAttribute) sqlServerExInstanceEnginePropsBuilder_rdsEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getSqlServerExInstanceEnginePropsBuilder_rds_Identifier() {
+		return (EAttribute) sqlServerExInstanceEnginePropsBuilder_rdsEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getSqlServerExInstanceEnginePropsBuilder_rds_AdditionalCode() {
+		return (EAttribute) sqlServerExInstanceEnginePropsBuilder_rdsEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EClass getSqlServerSeInstanceEnginePropsBuilder_rds() {
+		return sqlServerSeInstanceEnginePropsBuilder_rdsEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getSqlServerSeInstanceEnginePropsBuilder_rds_VersionWithSqlServerEngineVersion_software_amazon_awscdk_services_rds_SqlServerEngineVersion_AsReference() {
+		return (EAttribute) sqlServerSeInstanceEnginePropsBuilder_rdsEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getSqlServerSeInstanceEnginePropsBuilder_rds_GeneratedClassName() {
+		return (EAttribute) sqlServerSeInstanceEnginePropsBuilder_rdsEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getSqlServerSeInstanceEnginePropsBuilder_rds_VarName() {
+		return (EAttribute) sqlServerSeInstanceEnginePropsBuilder_rdsEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getSqlServerSeInstanceEnginePropsBuilder_rds_Identifier() {
+		return (EAttribute) sqlServerSeInstanceEnginePropsBuilder_rdsEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getSqlServerSeInstanceEnginePropsBuilder_rds_AdditionalCode() {
+		return (EAttribute) sqlServerSeInstanceEnginePropsBuilder_rdsEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EClass getSqlServerWebInstanceEnginePropsBuilder_rds() {
+		return sqlServerWebInstanceEnginePropsBuilder_rdsEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getSqlServerWebInstanceEnginePropsBuilder_rds_VersionWithSqlServerEngineVersion_software_amazon_awscdk_services_rds_SqlServerEngineVersion_AsReference() {
+		return (EAttribute) sqlServerWebInstanceEnginePropsBuilder_rdsEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getSqlServerWebInstanceEnginePropsBuilder_rds_GeneratedClassName() {
+		return (EAttribute) sqlServerWebInstanceEnginePropsBuilder_rdsEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getSqlServerWebInstanceEnginePropsBuilder_rds_VarName() {
+		return (EAttribute) sqlServerWebInstanceEnginePropsBuilder_rdsEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getSqlServerWebInstanceEnginePropsBuilder_rds_Identifier() {
+		return (EAttribute) sqlServerWebInstanceEnginePropsBuilder_rdsEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getSqlServerWebInstanceEnginePropsBuilder_rds_AdditionalCode() {
+		return (EAttribute) sqlServerWebInstanceEnginePropsBuilder_rdsEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EClass getMySqlInstanceEnginePropsBuilder_rds() {
+		return mySqlInstanceEnginePropsBuilder_rdsEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getMySqlInstanceEnginePropsBuilder_rds_VersionWithMysqlEngineVersion_software_amazon_awscdk_services_rds_MysqlEngineVersion_AsReference() {
+		return (EAttribute) mySqlInstanceEnginePropsBuilder_rdsEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getMySqlInstanceEnginePropsBuilder_rds_GeneratedClassName() {
+		return (EAttribute) mySqlInstanceEnginePropsBuilder_rdsEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getMySqlInstanceEnginePropsBuilder_rds_VarName() {
+		return (EAttribute) mySqlInstanceEnginePropsBuilder_rdsEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getMySqlInstanceEnginePropsBuilder_rds_Identifier() {
+		return (EAttribute) mySqlInstanceEnginePropsBuilder_rdsEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getMySqlInstanceEnginePropsBuilder_rds_AdditionalCode() {
+		return (EAttribute) mySqlInstanceEnginePropsBuilder_rdsEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EClass getMariaDbInstanceEnginePropsBuilder_rds() {
+		return mariaDbInstanceEnginePropsBuilder_rdsEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getMariaDbInstanceEnginePropsBuilder_rds_VersionWithMariaDbEngineVersion_software_amazon_awscdk_services_rds_MariaDbEngineVersion_AsReference() {
+		return (EAttribute) mariaDbInstanceEnginePropsBuilder_rdsEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getMariaDbInstanceEnginePropsBuilder_rds_GeneratedClassName() {
+		return (EAttribute) mariaDbInstanceEnginePropsBuilder_rdsEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getMariaDbInstanceEnginePropsBuilder_rds_VarName() {
+		return (EAttribute) mariaDbInstanceEnginePropsBuilder_rdsEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getMariaDbInstanceEnginePropsBuilder_rds_Identifier() {
+		return (EAttribute) mariaDbInstanceEnginePropsBuilder_rdsEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getMariaDbInstanceEnginePropsBuilder_rds_AdditionalCode() {
+		return (EAttribute) mariaDbInstanceEnginePropsBuilder_rdsEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EClass getParameterGroupBuilder_rds() {
+		return parameterGroupBuilder_rdsEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getParameterGroupBuilder_rds_EngineWithIEngine_software_amazon_awscdk_services_rds_IEngine_AsReference() {
+		return (EAttribute) parameterGroupBuilder_rdsEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getParameterGroupBuilder_rds_Description_java_lang_String_() {
+		return (EAttribute) parameterGroupBuilder_rdsEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getParameterGroupBuilder_rds_Parameters_java_lang_String__java_lang_String_AsMap() {
+		return (EAttribute) parameterGroupBuilder_rdsEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getParameterGroupBuilder_rds_GeneratedClassName() {
+		return (EAttribute) parameterGroupBuilder_rdsEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getParameterGroupBuilder_rds_VarName() {
+		return (EAttribute) parameterGroupBuilder_rdsEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getParameterGroupBuilder_rds_Identifier() {
+		return (EAttribute) parameterGroupBuilder_rdsEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getParameterGroupBuilder_rds_AdditionalCode() {
+		return (EAttribute) parameterGroupBuilder_rdsEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EClass getDatabaseInstanceBuilder_rds() {
+		return databaseInstanceBuilder_rdsEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getDatabaseInstanceBuilder_rds_VpcWithIVpc_software_amazon_awscdk_services_ec2_IVpc_AsReference() {
+		return (EAttribute) databaseInstanceBuilder_rdsEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getDatabaseInstanceBuilder_rds_AutoMinorVersionUpgrade_java_lang_Boolean_() {
+		return (EAttribute) databaseInstanceBuilder_rdsEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getDatabaseInstanceBuilder_rds_AvailabilityZone_java_lang_String_() {
+		return (EAttribute) databaseInstanceBuilder_rdsEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getDatabaseInstanceBuilder_rds_BackupRetentionWithDuration_software_amazon_awscdk_core_Duration_AsReference() {
+		return (EAttribute) databaseInstanceBuilder_rdsEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getDatabaseInstanceBuilder_rds_CloudwatchLogsExports_java_lang_String_AsList() {
+		return (EAttribute) databaseInstanceBuilder_rdsEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getDatabaseInstanceBuilder_rds_CloudwatchLogsRetention_software_amazon_awscdk_services_logs_RetentionDays_() {
+		return (EAttribute) databaseInstanceBuilder_rdsEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getDatabaseInstanceBuilder_rds_CloudwatchLogsRetentionRoleWithIRole_software_amazon_awscdk_services_iam_IRole_AsReference() {
+		return (EAttribute) databaseInstanceBuilder_rdsEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getDatabaseInstanceBuilder_rds_CopyTagsToSnapshot_java_lang_Boolean_() {
+		return (EAttribute) databaseInstanceBuilder_rdsEClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getDatabaseInstanceBuilder_rds_DeleteAutomatedBackups_java_lang_Boolean_() {
+		return (EAttribute) databaseInstanceBuilder_rdsEClass.getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getDatabaseInstanceBuilder_rds_DeletionProtection_java_lang_Boolean_() {
+		return (EAttribute) databaseInstanceBuilder_rdsEClass.getEStructuralFeatures().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getDatabaseInstanceBuilder_rds_EnablePerformanceInsights_java_lang_Boolean_() {
+		return (EAttribute) databaseInstanceBuilder_rdsEClass.getEStructuralFeatures().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getDatabaseInstanceBuilder_rds_IamAuthentication_java_lang_Boolean_() {
+		return (EAttribute) databaseInstanceBuilder_rdsEClass.getEStructuralFeatures().get(11);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getDatabaseInstanceBuilder_rds_InstanceIdentifier_java_lang_String_() {
+		return (EAttribute) databaseInstanceBuilder_rdsEClass.getEStructuralFeatures().get(12);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getDatabaseInstanceBuilder_rds_Iops_java_lang_Number_() {
+		return (EAttribute) databaseInstanceBuilder_rdsEClass.getEStructuralFeatures().get(13);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getDatabaseInstanceBuilder_rds_MaxAllocatedStorage_java_lang_Number_() {
+		return (EAttribute) databaseInstanceBuilder_rdsEClass.getEStructuralFeatures().get(14);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getDatabaseInstanceBuilder_rds_MonitoringIntervalWithDuration_software_amazon_awscdk_core_Duration_AsReference() {
+		return (EAttribute) databaseInstanceBuilder_rdsEClass.getEStructuralFeatures().get(15);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getDatabaseInstanceBuilder_rds_MonitoringRoleWithIRole_software_amazon_awscdk_services_iam_IRole_AsReference() {
+		return (EAttribute) databaseInstanceBuilder_rdsEClass.getEStructuralFeatures().get(16);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getDatabaseInstanceBuilder_rds_MultiAz_java_lang_Boolean_() {
+		return (EAttribute) databaseInstanceBuilder_rdsEClass.getEStructuralFeatures().get(17);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getDatabaseInstanceBuilder_rds_OptionGroupWithIOptionGroup_software_amazon_awscdk_services_rds_IOptionGroup_AsReference() {
+		return (EAttribute) databaseInstanceBuilder_rdsEClass.getEStructuralFeatures().get(18);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getDatabaseInstanceBuilder_rds_PerformanceInsightEncryptionKeyWithIKey_software_amazon_awscdk_services_kms_IKey_AsReference() {
+		return (EAttribute) databaseInstanceBuilder_rdsEClass.getEStructuralFeatures().get(19);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getDatabaseInstanceBuilder_rds_PerformanceInsightRetention_software_amazon_awscdk_services_rds_PerformanceInsightRetention_() {
+		return (EAttribute) databaseInstanceBuilder_rdsEClass.getEStructuralFeatures().get(20);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getDatabaseInstanceBuilder_rds_Port_java_lang_Number_() {
+		return (EAttribute) databaseInstanceBuilder_rdsEClass.getEStructuralFeatures().get(21);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getDatabaseInstanceBuilder_rds_PreferredBackupWindow_java_lang_String_() {
+		return (EAttribute) databaseInstanceBuilder_rdsEClass.getEStructuralFeatures().get(22);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getDatabaseInstanceBuilder_rds_PreferredMaintenanceWindow_java_lang_String_() {
+		return (EAttribute) databaseInstanceBuilder_rdsEClass.getEStructuralFeatures().get(23);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getDatabaseInstanceBuilder_rds_ProcessorFeaturesWithProcessorFeatures_software_amazon_awscdk_services_rds_ProcessorFeatures_AsReference() {
+		return (EAttribute) databaseInstanceBuilder_rdsEClass.getEStructuralFeatures().get(24);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getDatabaseInstanceBuilder_rds_RemovalPolicy_software_amazon_awscdk_core_RemovalPolicy_() {
+		return (EAttribute) databaseInstanceBuilder_rdsEClass.getEStructuralFeatures().get(25);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getDatabaseInstanceBuilder_rds_SecurityGroups_software_amazon_awscdk_services_ec2_ISecurityGroup_AsList() {
+		return (EAttribute) databaseInstanceBuilder_rdsEClass.getEStructuralFeatures().get(26);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getDatabaseInstanceBuilder_rds_StorageType_software_amazon_awscdk_services_rds_StorageType_() {
+		return (EAttribute) databaseInstanceBuilder_rdsEClass.getEStructuralFeatures().get(27);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getDatabaseInstanceBuilder_rds_VpcPlacementWithSubnetSelection_software_amazon_awscdk_services_ec2_SubnetSelection_AsReference() {
+		return (EAttribute) databaseInstanceBuilder_rdsEClass.getEStructuralFeatures().get(28);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getDatabaseInstanceBuilder_rds_EngineWithIInstanceEngine_software_amazon_awscdk_services_rds_IInstanceEngine_AsReference() {
+		return (EAttribute) databaseInstanceBuilder_rdsEClass.getEStructuralFeatures().get(29);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getDatabaseInstanceBuilder_rds_AllocatedStorage_java_lang_Number_() {
+		return (EAttribute) databaseInstanceBuilder_rdsEClass.getEStructuralFeatures().get(30);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getDatabaseInstanceBuilder_rds_AllowMajorVersionUpgrade_java_lang_Boolean_() {
+		return (EAttribute) databaseInstanceBuilder_rdsEClass.getEStructuralFeatures().get(31);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getDatabaseInstanceBuilder_rds_DatabaseName_java_lang_String_() {
+		return (EAttribute) databaseInstanceBuilder_rdsEClass.getEStructuralFeatures().get(32);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getDatabaseInstanceBuilder_rds_InstanceTypeWithInstanceType_software_amazon_awscdk_services_ec2_InstanceType_AsReference() {
+		return (EAttribute) databaseInstanceBuilder_rdsEClass.getEStructuralFeatures().get(33);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getDatabaseInstanceBuilder_rds_LicenseModel_software_amazon_awscdk_services_rds_LicenseModel_() {
+		return (EAttribute) databaseInstanceBuilder_rdsEClass.getEStructuralFeatures().get(34);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getDatabaseInstanceBuilder_rds_MasterUserPasswordWithSecretValue_software_amazon_awscdk_core_SecretValue_AsReference() {
+		return (EAttribute) databaseInstanceBuilder_rdsEClass.getEStructuralFeatures().get(35);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getDatabaseInstanceBuilder_rds_MasterUserPasswordEncryptionKeyWithIKey_software_amazon_awscdk_services_kms_IKey_AsReference() {
+		return (EAttribute) databaseInstanceBuilder_rdsEClass.getEStructuralFeatures().get(36);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getDatabaseInstanceBuilder_rds_ParameterGroupWithIParameterGroup_software_amazon_awscdk_services_rds_IParameterGroup_AsReference() {
+		return (EAttribute) databaseInstanceBuilder_rdsEClass.getEStructuralFeatures().get(37);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getDatabaseInstanceBuilder_rds_Timezone_java_lang_String_() {
+		return (EAttribute) databaseInstanceBuilder_rdsEClass.getEStructuralFeatures().get(38);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getDatabaseInstanceBuilder_rds_MasterUsername_java_lang_String_() {
+		return (EAttribute) databaseInstanceBuilder_rdsEClass.getEStructuralFeatures().get(39);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getDatabaseInstanceBuilder_rds_CharacterSetName_java_lang_String_() {
+		return (EAttribute) databaseInstanceBuilder_rdsEClass.getEStructuralFeatures().get(40);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getDatabaseInstanceBuilder_rds_StorageEncrypted_java_lang_Boolean_() {
+		return (EAttribute) databaseInstanceBuilder_rdsEClass.getEStructuralFeatures().get(41);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getDatabaseInstanceBuilder_rds_StorageEncryptionKeyWithIKey_software_amazon_awscdk_services_kms_IKey_AsReference() {
+		return (EAttribute) databaseInstanceBuilder_rdsEClass.getEStructuralFeatures().get(42);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getDatabaseInstanceBuilder_rds_GeneratedClassName() {
+		return (EAttribute) databaseInstanceBuilder_rdsEClass.getEStructuralFeatures().get(43);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getDatabaseInstanceBuilder_rds_VarName() {
+		return (EAttribute) databaseInstanceBuilder_rdsEClass.getEStructuralFeatures().get(44);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getDatabaseInstanceBuilder_rds_Identifier() {
+		return (EAttribute) databaseInstanceBuilder_rdsEClass.getEStructuralFeatures().get(45);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getDatabaseInstanceBuilder_rds_AdditionalCode() {
+		return (EAttribute) databaseInstanceBuilder_rdsEClass.getEStructuralFeatures().get(46);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
 	public EClass getScheduledFargateTaskBuilder_patterns() {
 		return scheduledFargateTaskBuilder_patternsEClass;
 	}
@@ -25061,6 +27235,36 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	@Override
 	public EEnum getProtocol() {
 		return protocolEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EEnum getPerformanceInsightRetention() {
+		return performanceInsightRetentionEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EEnum getStorageType() {
+		return storageTypeEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EEnum getLicenseModel() {
+		return licenseModelEEnum;
 	}
 
 	/**
@@ -29001,6 +31205,363 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 		createEAttribute(scheduledFargateTaskImageOptionsBuilder_patternsEClass,
 				SCHEDULED_FARGATE_TASK_IMAGE_OPTIONS_BUILDER_PATTERNS__ADDITIONAL_CODE);
 
+		topicBuilder_snsEClass = createEClass(TOPIC_BUILDER_SNS);
+		createEAttribute(topicBuilder_snsEClass, TOPIC_BUILDER_SNS__DISPLAY_NAME_JAVA_LANG_STRING_);
+		createEAttribute(topicBuilder_snsEClass,
+				TOPIC_BUILDER_SNS__MASTER_KEY_WITH_IKEY_SOFTWARE_AMAZON_AWSCDK_SERVICES_KMS_IKEY_AS_REFERENCE);
+		createEAttribute(topicBuilder_snsEClass, TOPIC_BUILDER_SNS__TOPIC_NAME_JAVA_LANG_STRING_);
+		createEAttribute(topicBuilder_snsEClass, TOPIC_BUILDER_SNS__GENERATED_CLASS_NAME);
+		createEAttribute(topicBuilder_snsEClass, TOPIC_BUILDER_SNS__VAR_NAME);
+		createEAttribute(topicBuilder_snsEClass, TOPIC_BUILDER_SNS__IDENTIFIER);
+		createEAttribute(topicBuilder_snsEClass, TOPIC_BUILDER_SNS__ADDITIONAL_CODE);
+
+		ec2HealthCheckOptionsBuilder_autoscalingEClass = createEClass(EC2_HEALTH_CHECK_OPTIONS_BUILDER_AUTOSCALING);
+		createEAttribute(ec2HealthCheckOptionsBuilder_autoscalingEClass,
+				EC2_HEALTH_CHECK_OPTIONS_BUILDER_AUTOSCALING__GRACE_WITH_DURATION_SOFTWARE_AMAZON_AWSCDK_CORE_DURATION_AS_REFERENCE);
+		createEAttribute(ec2HealthCheckOptionsBuilder_autoscalingEClass,
+				EC2_HEALTH_CHECK_OPTIONS_BUILDER_AUTOSCALING__GENERATED_CLASS_NAME);
+		createEAttribute(ec2HealthCheckOptionsBuilder_autoscalingEClass,
+				EC2_HEALTH_CHECK_OPTIONS_BUILDER_AUTOSCALING__VAR_NAME);
+		createEAttribute(ec2HealthCheckOptionsBuilder_autoscalingEClass,
+				EC2_HEALTH_CHECK_OPTIONS_BUILDER_AUTOSCALING__IDENTIFIER);
+		createEAttribute(ec2HealthCheckOptionsBuilder_autoscalingEClass,
+				EC2_HEALTH_CHECK_OPTIONS_BUILDER_AUTOSCALING__ADDITIONAL_CODE);
+
+		autoScalingGroupBuilder_autoscalingEClass = createEClass(AUTO_SCALING_GROUP_BUILDER_AUTOSCALING);
+		createEAttribute(autoScalingGroupBuilder_autoscalingEClass,
+				AUTO_SCALING_GROUP_BUILDER_AUTOSCALING__ALLOW_ALL_OUTBOUND_JAVA_LANG_BOOLEAN_);
+		createEAttribute(autoScalingGroupBuilder_autoscalingEClass,
+				AUTO_SCALING_GROUP_BUILDER_AUTOSCALING__ASSOCIATE_PUBLIC_IP_ADDRESS_JAVA_LANG_BOOLEAN_);
+		createEAttribute(autoScalingGroupBuilder_autoscalingEClass,
+				AUTO_SCALING_GROUP_BUILDER_AUTOSCALING__BLOCK_DEVICES_SOFTWARE_AMAZON_AWSCDK_SERVICES_AUTOSCALING_BLOCK_DEVICE_AS_LIST);
+		createEAttribute(autoScalingGroupBuilder_autoscalingEClass,
+				AUTO_SCALING_GROUP_BUILDER_AUTOSCALING__COOLDOWN_WITH_DURATION_SOFTWARE_AMAZON_AWSCDK_CORE_DURATION_AS_REFERENCE);
+		createEAttribute(autoScalingGroupBuilder_autoscalingEClass,
+				AUTO_SCALING_GROUP_BUILDER_AUTOSCALING__DESIRED_CAPACITY_JAVA_LANG_NUMBER_);
+		createEAttribute(autoScalingGroupBuilder_autoscalingEClass,
+				AUTO_SCALING_GROUP_BUILDER_AUTOSCALING__HEALTH_CHECK_WITH_HEALTH_CHECK_SOFTWARE_AMAZON_AWSCDK_SERVICES_AUTOSCALING_HEALTH_CHECK_AS_REFERENCE);
+		createEAttribute(autoScalingGroupBuilder_autoscalingEClass,
+				AUTO_SCALING_GROUP_BUILDER_AUTOSCALING__IGNORE_UNMODIFIED_SIZE_PROPERTIES_JAVA_LANG_BOOLEAN_);
+		createEAttribute(autoScalingGroupBuilder_autoscalingEClass,
+				AUTO_SCALING_GROUP_BUILDER_AUTOSCALING__KEY_NAME_JAVA_LANG_STRING_);
+		createEAttribute(autoScalingGroupBuilder_autoscalingEClass,
+				AUTO_SCALING_GROUP_BUILDER_AUTOSCALING__MAX_CAPACITY_JAVA_LANG_NUMBER_);
+		createEAttribute(autoScalingGroupBuilder_autoscalingEClass,
+				AUTO_SCALING_GROUP_BUILDER_AUTOSCALING__MAX_INSTANCE_LIFETIME_WITH_DURATION_SOFTWARE_AMAZON_AWSCDK_CORE_DURATION_AS_REFERENCE);
+		createEAttribute(autoScalingGroupBuilder_autoscalingEClass,
+				AUTO_SCALING_GROUP_BUILDER_AUTOSCALING__MIN_CAPACITY_JAVA_LANG_NUMBER_);
+		createEAttribute(autoScalingGroupBuilder_autoscalingEClass,
+				AUTO_SCALING_GROUP_BUILDER_AUTOSCALING__NOTIFICATIONS_TOPIC_WITH_ITOPIC_SOFTWARE_AMAZON_AWSCDK_SERVICES_SNS_ITOPIC_AS_REFERENCE);
+		createEAttribute(autoScalingGroupBuilder_autoscalingEClass,
+				AUTO_SCALING_GROUP_BUILDER_AUTOSCALING__REPLACING_UPDATE_MIN_SUCCESSFUL_INSTANCES_PERCENT_JAVA_LANG_NUMBER_);
+		createEAttribute(autoScalingGroupBuilder_autoscalingEClass,
+				AUTO_SCALING_GROUP_BUILDER_AUTOSCALING__RESOURCE_SIGNAL_COUNT_JAVA_LANG_NUMBER_);
+		createEAttribute(autoScalingGroupBuilder_autoscalingEClass,
+				AUTO_SCALING_GROUP_BUILDER_AUTOSCALING__RESOURCE_SIGNAL_TIMEOUT_WITH_DURATION_SOFTWARE_AMAZON_AWSCDK_CORE_DURATION_AS_REFERENCE);
+		createEAttribute(autoScalingGroupBuilder_autoscalingEClass,
+				AUTO_SCALING_GROUP_BUILDER_AUTOSCALING__ROLLING_UPDATE_CONFIGURATION_WITH_ROLLING_UPDATE_CONFIGURATION_SOFTWARE_AMAZON_AWSCDK_SERVICES_AUTOSCALING_ROLLING_UPDATE_CONFIGURATION_AS_REFERENCE);
+		createEAttribute(autoScalingGroupBuilder_autoscalingEClass,
+				AUTO_SCALING_GROUP_BUILDER_AUTOSCALING__SPOT_PRICE_JAVA_LANG_STRING_);
+		createEAttribute(autoScalingGroupBuilder_autoscalingEClass,
+				AUTO_SCALING_GROUP_BUILDER_AUTOSCALING__UPDATE_TYPE_SOFTWARE_AMAZON_AWSCDK_SERVICES_AUTOSCALING_UPDATE_TYPE_);
+		createEAttribute(autoScalingGroupBuilder_autoscalingEClass,
+				AUTO_SCALING_GROUP_BUILDER_AUTOSCALING__VPC_SUBNETS_WITH_SUBNET_SELECTION_SOFTWARE_AMAZON_AWSCDK_SERVICES_EC2_SUBNET_SELECTION_AS_REFERENCE);
+		createEAttribute(autoScalingGroupBuilder_autoscalingEClass,
+				AUTO_SCALING_GROUP_BUILDER_AUTOSCALING__INSTANCE_TYPE_WITH_INSTANCE_TYPE_SOFTWARE_AMAZON_AWSCDK_SERVICES_EC2_INSTANCE_TYPE_AS_REFERENCE);
+		createEAttribute(autoScalingGroupBuilder_autoscalingEClass,
+				AUTO_SCALING_GROUP_BUILDER_AUTOSCALING__MACHINE_IMAGE_WITH_IMACHINE_IMAGE_SOFTWARE_AMAZON_AWSCDK_SERVICES_EC2_IMACHINE_IMAGE_AS_REFERENCE);
+		createEAttribute(autoScalingGroupBuilder_autoscalingEClass,
+				AUTO_SCALING_GROUP_BUILDER_AUTOSCALING__VPC_WITH_IVPC_SOFTWARE_AMAZON_AWSCDK_SERVICES_EC2_IVPC_AS_REFERENCE);
+		createEAttribute(autoScalingGroupBuilder_autoscalingEClass,
+				AUTO_SCALING_GROUP_BUILDER_AUTOSCALING__ROLE_WITH_IROLE_SOFTWARE_AMAZON_AWSCDK_SERVICES_IAM_IROLE_AS_REFERENCE);
+		createEAttribute(autoScalingGroupBuilder_autoscalingEClass,
+				AUTO_SCALING_GROUP_BUILDER_AUTOSCALING__USER_DATA_WITH_USER_DATA_SOFTWARE_AMAZON_AWSCDK_SERVICES_EC2_USER_DATA_AS_REFERENCE);
+		createEAttribute(autoScalingGroupBuilder_autoscalingEClass,
+				AUTO_SCALING_GROUP_BUILDER_AUTOSCALING__GENERATED_CLASS_NAME);
+		createEAttribute(autoScalingGroupBuilder_autoscalingEClass, AUTO_SCALING_GROUP_BUILDER_AUTOSCALING__VAR_NAME);
+		createEAttribute(autoScalingGroupBuilder_autoscalingEClass, AUTO_SCALING_GROUP_BUILDER_AUTOSCALING__IDENTIFIER);
+		createEAttribute(autoScalingGroupBuilder_autoscalingEClass,
+				AUTO_SCALING_GROUP_BUILDER_AUTOSCALING__ADDITIONAL_CODE);
+
+		optionConfigurationBuilder_rdsEClass = createEClass(OPTION_CONFIGURATION_BUILDER_RDS);
+		createEAttribute(optionConfigurationBuilder_rdsEClass,
+				OPTION_CONFIGURATION_BUILDER_RDS__NAME_JAVA_LANG_STRING_);
+		createEAttribute(optionConfigurationBuilder_rdsEClass,
+				OPTION_CONFIGURATION_BUILDER_RDS__PORT_JAVA_LANG_NUMBER_);
+		createEAttribute(optionConfigurationBuilder_rdsEClass,
+				OPTION_CONFIGURATION_BUILDER_RDS__SETTINGS_JAVA_LANG_STRING_JAVA_LANG_STRING_AS_MAP);
+		createEAttribute(optionConfigurationBuilder_rdsEClass,
+				OPTION_CONFIGURATION_BUILDER_RDS__VERSION_JAVA_LANG_STRING_);
+		createEAttribute(optionConfigurationBuilder_rdsEClass,
+				OPTION_CONFIGURATION_BUILDER_RDS__VPC_WITH_IVPC_SOFTWARE_AMAZON_AWSCDK_SERVICES_EC2_IVPC_AS_REFERENCE);
+		createEAttribute(optionConfigurationBuilder_rdsEClass, OPTION_CONFIGURATION_BUILDER_RDS__GENERATED_CLASS_NAME);
+		createEAttribute(optionConfigurationBuilder_rdsEClass, OPTION_CONFIGURATION_BUILDER_RDS__VAR_NAME);
+		createEAttribute(optionConfigurationBuilder_rdsEClass, OPTION_CONFIGURATION_BUILDER_RDS__IDENTIFIER);
+		createEAttribute(optionConfigurationBuilder_rdsEClass, OPTION_CONFIGURATION_BUILDER_RDS__ADDITIONAL_CODE);
+
+		optionGroupBuilder_rdsEClass = createEClass(OPTION_GROUP_BUILDER_RDS);
+		createEAttribute(optionGroupBuilder_rdsEClass,
+				OPTION_GROUP_BUILDER_RDS__CONFIGURATIONS_SOFTWARE_AMAZON_AWSCDK_SERVICES_RDS_OPTION_CONFIGURATION_AS_LIST);
+		createEAttribute(optionGroupBuilder_rdsEClass,
+				OPTION_GROUP_BUILDER_RDS__ENGINE_WITH_IINSTANCE_ENGINE_SOFTWARE_AMAZON_AWSCDK_SERVICES_RDS_IINSTANCE_ENGINE_AS_REFERENCE);
+		createEAttribute(optionGroupBuilder_rdsEClass, OPTION_GROUP_BUILDER_RDS__DESCRIPTION_JAVA_LANG_STRING_);
+		createEAttribute(optionGroupBuilder_rdsEClass, OPTION_GROUP_BUILDER_RDS__GENERATED_CLASS_NAME);
+		createEAttribute(optionGroupBuilder_rdsEClass, OPTION_GROUP_BUILDER_RDS__VAR_NAME);
+		createEAttribute(optionGroupBuilder_rdsEClass, OPTION_GROUP_BUILDER_RDS__IDENTIFIER);
+		createEAttribute(optionGroupBuilder_rdsEClass, OPTION_GROUP_BUILDER_RDS__ADDITIONAL_CODE);
+
+		portBuilder_ec2EClass = createEClass(PORT_BUILDER_EC2);
+		createEAttribute(portBuilder_ec2EClass,
+				PORT_BUILDER_EC2__PROTOCOL_SOFTWARE_AMAZON_AWSCDK_SERVICES_EC2_PROTOCOL_);
+		createEAttribute(portBuilder_ec2EClass, PORT_BUILDER_EC2__STRING_REPRESENTATION_JAVA_LANG_STRING_);
+		createEAttribute(portBuilder_ec2EClass, PORT_BUILDER_EC2__FROM_PORT_JAVA_LANG_NUMBER_);
+		createEAttribute(portBuilder_ec2EClass, PORT_BUILDER_EC2__TO_PORT_JAVA_LANG_NUMBER_);
+		createEAttribute(portBuilder_ec2EClass, PORT_BUILDER_EC2__GENERATED_CLASS_NAME);
+		createEAttribute(portBuilder_ec2EClass, PORT_BUILDER_EC2__VAR_NAME);
+		createEAttribute(portBuilder_ec2EClass, PORT_BUILDER_EC2__IDENTIFIER);
+		createEAttribute(portBuilder_ec2EClass, PORT_BUILDER_EC2__ADDITIONAL_CODE);
+
+		processorFeaturesBuilder_rdsEClass = createEClass(PROCESSOR_FEATURES_BUILDER_RDS);
+		createEAttribute(processorFeaturesBuilder_rdsEClass,
+				PROCESSOR_FEATURES_BUILDER_RDS__CORE_COUNT_JAVA_LANG_NUMBER_);
+		createEAttribute(processorFeaturesBuilder_rdsEClass,
+				PROCESSOR_FEATURES_BUILDER_RDS__THREADS_PER_CORE_JAVA_LANG_NUMBER_);
+		createEAttribute(processorFeaturesBuilder_rdsEClass, PROCESSOR_FEATURES_BUILDER_RDS__GENERATED_CLASS_NAME);
+		createEAttribute(processorFeaturesBuilder_rdsEClass, PROCESSOR_FEATURES_BUILDER_RDS__VAR_NAME);
+		createEAttribute(processorFeaturesBuilder_rdsEClass, PROCESSOR_FEATURES_BUILDER_RDS__IDENTIFIER);
+		createEAttribute(processorFeaturesBuilder_rdsEClass, PROCESSOR_FEATURES_BUILDER_RDS__ADDITIONAL_CODE);
+
+		oracleEeInstanceEnginePropsBuilder_rdsEClass = createEClass(ORACLE_EE_INSTANCE_ENGINE_PROPS_BUILDER_RDS);
+		createEAttribute(oracleEeInstanceEnginePropsBuilder_rdsEClass,
+				ORACLE_EE_INSTANCE_ENGINE_PROPS_BUILDER_RDS__VERSION_WITH_ORACLE_ENGINE_VERSION_SOFTWARE_AMAZON_AWSCDK_SERVICES_RDS_ORACLE_ENGINE_VERSION_AS_REFERENCE);
+		createEAttribute(oracleEeInstanceEnginePropsBuilder_rdsEClass,
+				ORACLE_EE_INSTANCE_ENGINE_PROPS_BUILDER_RDS__GENERATED_CLASS_NAME);
+		createEAttribute(oracleEeInstanceEnginePropsBuilder_rdsEClass,
+				ORACLE_EE_INSTANCE_ENGINE_PROPS_BUILDER_RDS__VAR_NAME);
+		createEAttribute(oracleEeInstanceEnginePropsBuilder_rdsEClass,
+				ORACLE_EE_INSTANCE_ENGINE_PROPS_BUILDER_RDS__IDENTIFIER);
+		createEAttribute(oracleEeInstanceEnginePropsBuilder_rdsEClass,
+				ORACLE_EE_INSTANCE_ENGINE_PROPS_BUILDER_RDS__ADDITIONAL_CODE);
+
+		oracleSe1InstanceEnginePropsBuilder_rdsEClass = createEClass(ORACLE_SE1_INSTANCE_ENGINE_PROPS_BUILDER_RDS);
+		createEAttribute(oracleSe1InstanceEnginePropsBuilder_rdsEClass,
+				ORACLE_SE1_INSTANCE_ENGINE_PROPS_BUILDER_RDS__VERSION_WITH_ORACLE_LEGACY_ENGINE_VERSION_SOFTWARE_AMAZON_AWSCDK_SERVICES_RDS_ORACLE_LEGACY_ENGINE_VERSION_AS_REFERENCE);
+		createEAttribute(oracleSe1InstanceEnginePropsBuilder_rdsEClass,
+				ORACLE_SE1_INSTANCE_ENGINE_PROPS_BUILDER_RDS__GENERATED_CLASS_NAME);
+		createEAttribute(oracleSe1InstanceEnginePropsBuilder_rdsEClass,
+				ORACLE_SE1_INSTANCE_ENGINE_PROPS_BUILDER_RDS__VAR_NAME);
+		createEAttribute(oracleSe1InstanceEnginePropsBuilder_rdsEClass,
+				ORACLE_SE1_INSTANCE_ENGINE_PROPS_BUILDER_RDS__IDENTIFIER);
+		createEAttribute(oracleSe1InstanceEnginePropsBuilder_rdsEClass,
+				ORACLE_SE1_INSTANCE_ENGINE_PROPS_BUILDER_RDS__ADDITIONAL_CODE);
+
+		oracleSe2InstanceEnginePropsBuilder_rdsEClass = createEClass(ORACLE_SE2_INSTANCE_ENGINE_PROPS_BUILDER_RDS);
+		createEAttribute(oracleSe2InstanceEnginePropsBuilder_rdsEClass,
+				ORACLE_SE2_INSTANCE_ENGINE_PROPS_BUILDER_RDS__VERSION_WITH_ORACLE_ENGINE_VERSION_SOFTWARE_AMAZON_AWSCDK_SERVICES_RDS_ORACLE_ENGINE_VERSION_AS_REFERENCE);
+		createEAttribute(oracleSe2InstanceEnginePropsBuilder_rdsEClass,
+				ORACLE_SE2_INSTANCE_ENGINE_PROPS_BUILDER_RDS__GENERATED_CLASS_NAME);
+		createEAttribute(oracleSe2InstanceEnginePropsBuilder_rdsEClass,
+				ORACLE_SE2_INSTANCE_ENGINE_PROPS_BUILDER_RDS__VAR_NAME);
+		createEAttribute(oracleSe2InstanceEnginePropsBuilder_rdsEClass,
+				ORACLE_SE2_INSTANCE_ENGINE_PROPS_BUILDER_RDS__IDENTIFIER);
+		createEAttribute(oracleSe2InstanceEnginePropsBuilder_rdsEClass,
+				ORACLE_SE2_INSTANCE_ENGINE_PROPS_BUILDER_RDS__ADDITIONAL_CODE);
+
+		oracleSeInstanceEnginePropsBuilder_rdsEClass = createEClass(ORACLE_SE_INSTANCE_ENGINE_PROPS_BUILDER_RDS);
+		createEAttribute(oracleSeInstanceEnginePropsBuilder_rdsEClass,
+				ORACLE_SE_INSTANCE_ENGINE_PROPS_BUILDER_RDS__VERSION_WITH_ORACLE_LEGACY_ENGINE_VERSION_SOFTWARE_AMAZON_AWSCDK_SERVICES_RDS_ORACLE_LEGACY_ENGINE_VERSION_AS_REFERENCE);
+		createEAttribute(oracleSeInstanceEnginePropsBuilder_rdsEClass,
+				ORACLE_SE_INSTANCE_ENGINE_PROPS_BUILDER_RDS__GENERATED_CLASS_NAME);
+		createEAttribute(oracleSeInstanceEnginePropsBuilder_rdsEClass,
+				ORACLE_SE_INSTANCE_ENGINE_PROPS_BUILDER_RDS__VAR_NAME);
+		createEAttribute(oracleSeInstanceEnginePropsBuilder_rdsEClass,
+				ORACLE_SE_INSTANCE_ENGINE_PROPS_BUILDER_RDS__IDENTIFIER);
+		createEAttribute(oracleSeInstanceEnginePropsBuilder_rdsEClass,
+				ORACLE_SE_INSTANCE_ENGINE_PROPS_BUILDER_RDS__ADDITIONAL_CODE);
+
+		postgresInstanceEnginePropsBuilder_rdsEClass = createEClass(POSTGRES_INSTANCE_ENGINE_PROPS_BUILDER_RDS);
+		createEAttribute(postgresInstanceEnginePropsBuilder_rdsEClass,
+				POSTGRES_INSTANCE_ENGINE_PROPS_BUILDER_RDS__VERSION_WITH_POSTGRES_ENGINE_VERSION_SOFTWARE_AMAZON_AWSCDK_SERVICES_RDS_POSTGRES_ENGINE_VERSION_AS_REFERENCE);
+		createEAttribute(postgresInstanceEnginePropsBuilder_rdsEClass,
+				POSTGRES_INSTANCE_ENGINE_PROPS_BUILDER_RDS__GENERATED_CLASS_NAME);
+		createEAttribute(postgresInstanceEnginePropsBuilder_rdsEClass,
+				POSTGRES_INSTANCE_ENGINE_PROPS_BUILDER_RDS__VAR_NAME);
+		createEAttribute(postgresInstanceEnginePropsBuilder_rdsEClass,
+				POSTGRES_INSTANCE_ENGINE_PROPS_BUILDER_RDS__IDENTIFIER);
+		createEAttribute(postgresInstanceEnginePropsBuilder_rdsEClass,
+				POSTGRES_INSTANCE_ENGINE_PROPS_BUILDER_RDS__ADDITIONAL_CODE);
+
+		sqlServerEeInstanceEnginePropsBuilder_rdsEClass = createEClass(SQL_SERVER_EE_INSTANCE_ENGINE_PROPS_BUILDER_RDS);
+		createEAttribute(sqlServerEeInstanceEnginePropsBuilder_rdsEClass,
+				SQL_SERVER_EE_INSTANCE_ENGINE_PROPS_BUILDER_RDS__VERSION_WITH_SQL_SERVER_ENGINE_VERSION_SOFTWARE_AMAZON_AWSCDK_SERVICES_RDS_SQL_SERVER_ENGINE_VERSION_AS_REFERENCE);
+		createEAttribute(sqlServerEeInstanceEnginePropsBuilder_rdsEClass,
+				SQL_SERVER_EE_INSTANCE_ENGINE_PROPS_BUILDER_RDS__GENERATED_CLASS_NAME);
+		createEAttribute(sqlServerEeInstanceEnginePropsBuilder_rdsEClass,
+				SQL_SERVER_EE_INSTANCE_ENGINE_PROPS_BUILDER_RDS__VAR_NAME);
+		createEAttribute(sqlServerEeInstanceEnginePropsBuilder_rdsEClass,
+				SQL_SERVER_EE_INSTANCE_ENGINE_PROPS_BUILDER_RDS__IDENTIFIER);
+		createEAttribute(sqlServerEeInstanceEnginePropsBuilder_rdsEClass,
+				SQL_SERVER_EE_INSTANCE_ENGINE_PROPS_BUILDER_RDS__ADDITIONAL_CODE);
+
+		sqlServerExInstanceEnginePropsBuilder_rdsEClass = createEClass(SQL_SERVER_EX_INSTANCE_ENGINE_PROPS_BUILDER_RDS);
+		createEAttribute(sqlServerExInstanceEnginePropsBuilder_rdsEClass,
+				SQL_SERVER_EX_INSTANCE_ENGINE_PROPS_BUILDER_RDS__VERSION_WITH_SQL_SERVER_ENGINE_VERSION_SOFTWARE_AMAZON_AWSCDK_SERVICES_RDS_SQL_SERVER_ENGINE_VERSION_AS_REFERENCE);
+		createEAttribute(sqlServerExInstanceEnginePropsBuilder_rdsEClass,
+				SQL_SERVER_EX_INSTANCE_ENGINE_PROPS_BUILDER_RDS__GENERATED_CLASS_NAME);
+		createEAttribute(sqlServerExInstanceEnginePropsBuilder_rdsEClass,
+				SQL_SERVER_EX_INSTANCE_ENGINE_PROPS_BUILDER_RDS__VAR_NAME);
+		createEAttribute(sqlServerExInstanceEnginePropsBuilder_rdsEClass,
+				SQL_SERVER_EX_INSTANCE_ENGINE_PROPS_BUILDER_RDS__IDENTIFIER);
+		createEAttribute(sqlServerExInstanceEnginePropsBuilder_rdsEClass,
+				SQL_SERVER_EX_INSTANCE_ENGINE_PROPS_BUILDER_RDS__ADDITIONAL_CODE);
+
+		sqlServerSeInstanceEnginePropsBuilder_rdsEClass = createEClass(SQL_SERVER_SE_INSTANCE_ENGINE_PROPS_BUILDER_RDS);
+		createEAttribute(sqlServerSeInstanceEnginePropsBuilder_rdsEClass,
+				SQL_SERVER_SE_INSTANCE_ENGINE_PROPS_BUILDER_RDS__VERSION_WITH_SQL_SERVER_ENGINE_VERSION_SOFTWARE_AMAZON_AWSCDK_SERVICES_RDS_SQL_SERVER_ENGINE_VERSION_AS_REFERENCE);
+		createEAttribute(sqlServerSeInstanceEnginePropsBuilder_rdsEClass,
+				SQL_SERVER_SE_INSTANCE_ENGINE_PROPS_BUILDER_RDS__GENERATED_CLASS_NAME);
+		createEAttribute(sqlServerSeInstanceEnginePropsBuilder_rdsEClass,
+				SQL_SERVER_SE_INSTANCE_ENGINE_PROPS_BUILDER_RDS__VAR_NAME);
+		createEAttribute(sqlServerSeInstanceEnginePropsBuilder_rdsEClass,
+				SQL_SERVER_SE_INSTANCE_ENGINE_PROPS_BUILDER_RDS__IDENTIFIER);
+		createEAttribute(sqlServerSeInstanceEnginePropsBuilder_rdsEClass,
+				SQL_SERVER_SE_INSTANCE_ENGINE_PROPS_BUILDER_RDS__ADDITIONAL_CODE);
+
+		sqlServerWebInstanceEnginePropsBuilder_rdsEClass = createEClass(
+				SQL_SERVER_WEB_INSTANCE_ENGINE_PROPS_BUILDER_RDS);
+		createEAttribute(sqlServerWebInstanceEnginePropsBuilder_rdsEClass,
+				SQL_SERVER_WEB_INSTANCE_ENGINE_PROPS_BUILDER_RDS__VERSION_WITH_SQL_SERVER_ENGINE_VERSION_SOFTWARE_AMAZON_AWSCDK_SERVICES_RDS_SQL_SERVER_ENGINE_VERSION_AS_REFERENCE);
+		createEAttribute(sqlServerWebInstanceEnginePropsBuilder_rdsEClass,
+				SQL_SERVER_WEB_INSTANCE_ENGINE_PROPS_BUILDER_RDS__GENERATED_CLASS_NAME);
+		createEAttribute(sqlServerWebInstanceEnginePropsBuilder_rdsEClass,
+				SQL_SERVER_WEB_INSTANCE_ENGINE_PROPS_BUILDER_RDS__VAR_NAME);
+		createEAttribute(sqlServerWebInstanceEnginePropsBuilder_rdsEClass,
+				SQL_SERVER_WEB_INSTANCE_ENGINE_PROPS_BUILDER_RDS__IDENTIFIER);
+		createEAttribute(sqlServerWebInstanceEnginePropsBuilder_rdsEClass,
+				SQL_SERVER_WEB_INSTANCE_ENGINE_PROPS_BUILDER_RDS__ADDITIONAL_CODE);
+
+		mySqlInstanceEnginePropsBuilder_rdsEClass = createEClass(MY_SQL_INSTANCE_ENGINE_PROPS_BUILDER_RDS);
+		createEAttribute(mySqlInstanceEnginePropsBuilder_rdsEClass,
+				MY_SQL_INSTANCE_ENGINE_PROPS_BUILDER_RDS__VERSION_WITH_MYSQL_ENGINE_VERSION_SOFTWARE_AMAZON_AWSCDK_SERVICES_RDS_MYSQL_ENGINE_VERSION_AS_REFERENCE);
+		createEAttribute(mySqlInstanceEnginePropsBuilder_rdsEClass,
+				MY_SQL_INSTANCE_ENGINE_PROPS_BUILDER_RDS__GENERATED_CLASS_NAME);
+		createEAttribute(mySqlInstanceEnginePropsBuilder_rdsEClass, MY_SQL_INSTANCE_ENGINE_PROPS_BUILDER_RDS__VAR_NAME);
+		createEAttribute(mySqlInstanceEnginePropsBuilder_rdsEClass,
+				MY_SQL_INSTANCE_ENGINE_PROPS_BUILDER_RDS__IDENTIFIER);
+		createEAttribute(mySqlInstanceEnginePropsBuilder_rdsEClass,
+				MY_SQL_INSTANCE_ENGINE_PROPS_BUILDER_RDS__ADDITIONAL_CODE);
+
+		mariaDbInstanceEnginePropsBuilder_rdsEClass = createEClass(MARIA_DB_INSTANCE_ENGINE_PROPS_BUILDER_RDS);
+		createEAttribute(mariaDbInstanceEnginePropsBuilder_rdsEClass,
+				MARIA_DB_INSTANCE_ENGINE_PROPS_BUILDER_RDS__VERSION_WITH_MARIA_DB_ENGINE_VERSION_SOFTWARE_AMAZON_AWSCDK_SERVICES_RDS_MARIA_DB_ENGINE_VERSION_AS_REFERENCE);
+		createEAttribute(mariaDbInstanceEnginePropsBuilder_rdsEClass,
+				MARIA_DB_INSTANCE_ENGINE_PROPS_BUILDER_RDS__GENERATED_CLASS_NAME);
+		createEAttribute(mariaDbInstanceEnginePropsBuilder_rdsEClass,
+				MARIA_DB_INSTANCE_ENGINE_PROPS_BUILDER_RDS__VAR_NAME);
+		createEAttribute(mariaDbInstanceEnginePropsBuilder_rdsEClass,
+				MARIA_DB_INSTANCE_ENGINE_PROPS_BUILDER_RDS__IDENTIFIER);
+		createEAttribute(mariaDbInstanceEnginePropsBuilder_rdsEClass,
+				MARIA_DB_INSTANCE_ENGINE_PROPS_BUILDER_RDS__ADDITIONAL_CODE);
+
+		parameterGroupBuilder_rdsEClass = createEClass(PARAMETER_GROUP_BUILDER_RDS);
+		createEAttribute(parameterGroupBuilder_rdsEClass,
+				PARAMETER_GROUP_BUILDER_RDS__ENGINE_WITH_IENGINE_SOFTWARE_AMAZON_AWSCDK_SERVICES_RDS_IENGINE_AS_REFERENCE);
+		createEAttribute(parameterGroupBuilder_rdsEClass, PARAMETER_GROUP_BUILDER_RDS__DESCRIPTION_JAVA_LANG_STRING_);
+		createEAttribute(parameterGroupBuilder_rdsEClass,
+				PARAMETER_GROUP_BUILDER_RDS__PARAMETERS_JAVA_LANG_STRING_JAVA_LANG_STRING_AS_MAP);
+		createEAttribute(parameterGroupBuilder_rdsEClass, PARAMETER_GROUP_BUILDER_RDS__GENERATED_CLASS_NAME);
+		createEAttribute(parameterGroupBuilder_rdsEClass, PARAMETER_GROUP_BUILDER_RDS__VAR_NAME);
+		createEAttribute(parameterGroupBuilder_rdsEClass, PARAMETER_GROUP_BUILDER_RDS__IDENTIFIER);
+		createEAttribute(parameterGroupBuilder_rdsEClass, PARAMETER_GROUP_BUILDER_RDS__ADDITIONAL_CODE);
+
+		databaseInstanceBuilder_rdsEClass = createEClass(DATABASE_INSTANCE_BUILDER_RDS);
+		createEAttribute(databaseInstanceBuilder_rdsEClass,
+				DATABASE_INSTANCE_BUILDER_RDS__VPC_WITH_IVPC_SOFTWARE_AMAZON_AWSCDK_SERVICES_EC2_IVPC_AS_REFERENCE);
+		createEAttribute(databaseInstanceBuilder_rdsEClass,
+				DATABASE_INSTANCE_BUILDER_RDS__AUTO_MINOR_VERSION_UPGRADE_JAVA_LANG_BOOLEAN_);
+		createEAttribute(databaseInstanceBuilder_rdsEClass,
+				DATABASE_INSTANCE_BUILDER_RDS__AVAILABILITY_ZONE_JAVA_LANG_STRING_);
+		createEAttribute(databaseInstanceBuilder_rdsEClass,
+				DATABASE_INSTANCE_BUILDER_RDS__BACKUP_RETENTION_WITH_DURATION_SOFTWARE_AMAZON_AWSCDK_CORE_DURATION_AS_REFERENCE);
+		createEAttribute(databaseInstanceBuilder_rdsEClass,
+				DATABASE_INSTANCE_BUILDER_RDS__CLOUDWATCH_LOGS_EXPORTS_JAVA_LANG_STRING_AS_LIST);
+		createEAttribute(databaseInstanceBuilder_rdsEClass,
+				DATABASE_INSTANCE_BUILDER_RDS__CLOUDWATCH_LOGS_RETENTION_SOFTWARE_AMAZON_AWSCDK_SERVICES_LOGS_RETENTION_DAYS_);
+		createEAttribute(databaseInstanceBuilder_rdsEClass,
+				DATABASE_INSTANCE_BUILDER_RDS__CLOUDWATCH_LOGS_RETENTION_ROLE_WITH_IROLE_SOFTWARE_AMAZON_AWSCDK_SERVICES_IAM_IROLE_AS_REFERENCE);
+		createEAttribute(databaseInstanceBuilder_rdsEClass,
+				DATABASE_INSTANCE_BUILDER_RDS__COPY_TAGS_TO_SNAPSHOT_JAVA_LANG_BOOLEAN_);
+		createEAttribute(databaseInstanceBuilder_rdsEClass,
+				DATABASE_INSTANCE_BUILDER_RDS__DELETE_AUTOMATED_BACKUPS_JAVA_LANG_BOOLEAN_);
+		createEAttribute(databaseInstanceBuilder_rdsEClass,
+				DATABASE_INSTANCE_BUILDER_RDS__DELETION_PROTECTION_JAVA_LANG_BOOLEAN_);
+		createEAttribute(databaseInstanceBuilder_rdsEClass,
+				DATABASE_INSTANCE_BUILDER_RDS__ENABLE_PERFORMANCE_INSIGHTS_JAVA_LANG_BOOLEAN_);
+		createEAttribute(databaseInstanceBuilder_rdsEClass,
+				DATABASE_INSTANCE_BUILDER_RDS__IAM_AUTHENTICATION_JAVA_LANG_BOOLEAN_);
+		createEAttribute(databaseInstanceBuilder_rdsEClass,
+				DATABASE_INSTANCE_BUILDER_RDS__INSTANCE_IDENTIFIER_JAVA_LANG_STRING_);
+		createEAttribute(databaseInstanceBuilder_rdsEClass, DATABASE_INSTANCE_BUILDER_RDS__IOPS_JAVA_LANG_NUMBER_);
+		createEAttribute(databaseInstanceBuilder_rdsEClass,
+				DATABASE_INSTANCE_BUILDER_RDS__MAX_ALLOCATED_STORAGE_JAVA_LANG_NUMBER_);
+		createEAttribute(databaseInstanceBuilder_rdsEClass,
+				DATABASE_INSTANCE_BUILDER_RDS__MONITORING_INTERVAL_WITH_DURATION_SOFTWARE_AMAZON_AWSCDK_CORE_DURATION_AS_REFERENCE);
+		createEAttribute(databaseInstanceBuilder_rdsEClass,
+				DATABASE_INSTANCE_BUILDER_RDS__MONITORING_ROLE_WITH_IROLE_SOFTWARE_AMAZON_AWSCDK_SERVICES_IAM_IROLE_AS_REFERENCE);
+		createEAttribute(databaseInstanceBuilder_rdsEClass, DATABASE_INSTANCE_BUILDER_RDS__MULTI_AZ_JAVA_LANG_BOOLEAN_);
+		createEAttribute(databaseInstanceBuilder_rdsEClass,
+				DATABASE_INSTANCE_BUILDER_RDS__OPTION_GROUP_WITH_IOPTION_GROUP_SOFTWARE_AMAZON_AWSCDK_SERVICES_RDS_IOPTION_GROUP_AS_REFERENCE);
+		createEAttribute(databaseInstanceBuilder_rdsEClass,
+				DATABASE_INSTANCE_BUILDER_RDS__PERFORMANCE_INSIGHT_ENCRYPTION_KEY_WITH_IKEY_SOFTWARE_AMAZON_AWSCDK_SERVICES_KMS_IKEY_AS_REFERENCE);
+		createEAttribute(databaseInstanceBuilder_rdsEClass,
+				DATABASE_INSTANCE_BUILDER_RDS__PERFORMANCE_INSIGHT_RETENTION_SOFTWARE_AMAZON_AWSCDK_SERVICES_RDS_PERFORMANCE_INSIGHT_RETENTION_);
+		createEAttribute(databaseInstanceBuilder_rdsEClass, DATABASE_INSTANCE_BUILDER_RDS__PORT_JAVA_LANG_NUMBER_);
+		createEAttribute(databaseInstanceBuilder_rdsEClass,
+				DATABASE_INSTANCE_BUILDER_RDS__PREFERRED_BACKUP_WINDOW_JAVA_LANG_STRING_);
+		createEAttribute(databaseInstanceBuilder_rdsEClass,
+				DATABASE_INSTANCE_BUILDER_RDS__PREFERRED_MAINTENANCE_WINDOW_JAVA_LANG_STRING_);
+		createEAttribute(databaseInstanceBuilder_rdsEClass,
+				DATABASE_INSTANCE_BUILDER_RDS__PROCESSOR_FEATURES_WITH_PROCESSOR_FEATURES_SOFTWARE_AMAZON_AWSCDK_SERVICES_RDS_PROCESSOR_FEATURES_AS_REFERENCE);
+		createEAttribute(databaseInstanceBuilder_rdsEClass,
+				DATABASE_INSTANCE_BUILDER_RDS__REMOVAL_POLICY_SOFTWARE_AMAZON_AWSCDK_CORE_REMOVAL_POLICY_);
+		createEAttribute(databaseInstanceBuilder_rdsEClass,
+				DATABASE_INSTANCE_BUILDER_RDS__SECURITY_GROUPS_SOFTWARE_AMAZON_AWSCDK_SERVICES_EC2_ISECURITY_GROUP_AS_LIST);
+		createEAttribute(databaseInstanceBuilder_rdsEClass,
+				DATABASE_INSTANCE_BUILDER_RDS__STORAGE_TYPE_SOFTWARE_AMAZON_AWSCDK_SERVICES_RDS_STORAGE_TYPE_);
+		createEAttribute(databaseInstanceBuilder_rdsEClass,
+				DATABASE_INSTANCE_BUILDER_RDS__VPC_PLACEMENT_WITH_SUBNET_SELECTION_SOFTWARE_AMAZON_AWSCDK_SERVICES_EC2_SUBNET_SELECTION_AS_REFERENCE);
+		createEAttribute(databaseInstanceBuilder_rdsEClass,
+				DATABASE_INSTANCE_BUILDER_RDS__ENGINE_WITH_IINSTANCE_ENGINE_SOFTWARE_AMAZON_AWSCDK_SERVICES_RDS_IINSTANCE_ENGINE_AS_REFERENCE);
+		createEAttribute(databaseInstanceBuilder_rdsEClass,
+				DATABASE_INSTANCE_BUILDER_RDS__ALLOCATED_STORAGE_JAVA_LANG_NUMBER_);
+		createEAttribute(databaseInstanceBuilder_rdsEClass,
+				DATABASE_INSTANCE_BUILDER_RDS__ALLOW_MAJOR_VERSION_UPGRADE_JAVA_LANG_BOOLEAN_);
+		createEAttribute(databaseInstanceBuilder_rdsEClass,
+				DATABASE_INSTANCE_BUILDER_RDS__DATABASE_NAME_JAVA_LANG_STRING_);
+		createEAttribute(databaseInstanceBuilder_rdsEClass,
+				DATABASE_INSTANCE_BUILDER_RDS__INSTANCE_TYPE_WITH_INSTANCE_TYPE_SOFTWARE_AMAZON_AWSCDK_SERVICES_EC2_INSTANCE_TYPE_AS_REFERENCE);
+		createEAttribute(databaseInstanceBuilder_rdsEClass,
+				DATABASE_INSTANCE_BUILDER_RDS__LICENSE_MODEL_SOFTWARE_AMAZON_AWSCDK_SERVICES_RDS_LICENSE_MODEL_);
+		createEAttribute(databaseInstanceBuilder_rdsEClass,
+				DATABASE_INSTANCE_BUILDER_RDS__MASTER_USER_PASSWORD_WITH_SECRET_VALUE_SOFTWARE_AMAZON_AWSCDK_CORE_SECRET_VALUE_AS_REFERENCE);
+		createEAttribute(databaseInstanceBuilder_rdsEClass,
+				DATABASE_INSTANCE_BUILDER_RDS__MASTER_USER_PASSWORD_ENCRYPTION_KEY_WITH_IKEY_SOFTWARE_AMAZON_AWSCDK_SERVICES_KMS_IKEY_AS_REFERENCE);
+		createEAttribute(databaseInstanceBuilder_rdsEClass,
+				DATABASE_INSTANCE_BUILDER_RDS__PARAMETER_GROUP_WITH_IPARAMETER_GROUP_SOFTWARE_AMAZON_AWSCDK_SERVICES_RDS_IPARAMETER_GROUP_AS_REFERENCE);
+		createEAttribute(databaseInstanceBuilder_rdsEClass, DATABASE_INSTANCE_BUILDER_RDS__TIMEZONE_JAVA_LANG_STRING_);
+		createEAttribute(databaseInstanceBuilder_rdsEClass,
+				DATABASE_INSTANCE_BUILDER_RDS__MASTER_USERNAME_JAVA_LANG_STRING_);
+		createEAttribute(databaseInstanceBuilder_rdsEClass,
+				DATABASE_INSTANCE_BUILDER_RDS__CHARACTER_SET_NAME_JAVA_LANG_STRING_);
+		createEAttribute(databaseInstanceBuilder_rdsEClass,
+				DATABASE_INSTANCE_BUILDER_RDS__STORAGE_ENCRYPTED_JAVA_LANG_BOOLEAN_);
+		createEAttribute(databaseInstanceBuilder_rdsEClass,
+				DATABASE_INSTANCE_BUILDER_RDS__STORAGE_ENCRYPTION_KEY_WITH_IKEY_SOFTWARE_AMAZON_AWSCDK_SERVICES_KMS_IKEY_AS_REFERENCE);
+		createEAttribute(databaseInstanceBuilder_rdsEClass, DATABASE_INSTANCE_BUILDER_RDS__GENERATED_CLASS_NAME);
+		createEAttribute(databaseInstanceBuilder_rdsEClass, DATABASE_INSTANCE_BUILDER_RDS__VAR_NAME);
+		createEAttribute(databaseInstanceBuilder_rdsEClass, DATABASE_INSTANCE_BUILDER_RDS__IDENTIFIER);
+		createEAttribute(databaseInstanceBuilder_rdsEClass, DATABASE_INSTANCE_BUILDER_RDS__ADDITIONAL_CODE);
+
 		scheduledFargateTaskBuilder_patternsEClass = createEClass(SCHEDULED_FARGATE_TASK_BUILDER_PATTERNS);
 		createEAttribute(scheduledFargateTaskBuilder_patternsEClass,
 				SCHEDULED_FARGATE_TASK_BUILDER_PATTERNS__SCHEDULE_WITH_SCHEDULE_SOFTWARE_AMAZON_AWSCDK_SERVICES_APPLICATIONAUTOSCALING_SCHEDULE_AS_REFERENCE);
@@ -29094,6 +31655,9 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 		pidModeEEnum = createEEnum(PID_MODE);
 		fargatePlatformVersionEEnum = createEEnum(FARGATE_PLATFORM_VERSION);
 		protocolEEnum = createEEnum(PROTOCOL);
+		performanceInsightRetentionEEnum = createEEnum(PERFORMANCE_INSIGHT_RETENTION);
+		storageTypeEEnum = createEEnum(STORAGE_TYPE);
+		licenseModelEEnum = createEEnum(LICENSE_MODEL);
 	}
 
 	/**
@@ -29310,6 +31874,26 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 		queueProcessingEc2ServiceBuilder_patternsEClass.getESuperTypes().add(this.getServiceResources());
 		scheduledFargateTaskDefinitionOptionsBuilder_patternsEClass.getESuperTypes().add(this.getServiceResources());
 		scheduledFargateTaskImageOptionsBuilder_patternsEClass.getESuperTypes().add(this.getServiceResources());
+		topicBuilder_snsEClass.getESuperTypes().add(this.getServiceResources());
+		ec2HealthCheckOptionsBuilder_autoscalingEClass.getESuperTypes().add(this.getServiceResources());
+		autoScalingGroupBuilder_autoscalingEClass.getESuperTypes().add(this.getServiceResources());
+		optionConfigurationBuilder_rdsEClass.getESuperTypes().add(this.getServiceResources());
+		optionGroupBuilder_rdsEClass.getESuperTypes().add(this.getServiceResources());
+		portBuilder_ec2EClass.getESuperTypes().add(this.getServiceResources());
+		processorFeaturesBuilder_rdsEClass.getESuperTypes().add(this.getServiceResources());
+		oracleEeInstanceEnginePropsBuilder_rdsEClass.getESuperTypes().add(this.getServiceResources());
+		oracleSe1InstanceEnginePropsBuilder_rdsEClass.getESuperTypes().add(this.getServiceResources());
+		oracleSe2InstanceEnginePropsBuilder_rdsEClass.getESuperTypes().add(this.getServiceResources());
+		oracleSeInstanceEnginePropsBuilder_rdsEClass.getESuperTypes().add(this.getServiceResources());
+		postgresInstanceEnginePropsBuilder_rdsEClass.getESuperTypes().add(this.getServiceResources());
+		sqlServerEeInstanceEnginePropsBuilder_rdsEClass.getESuperTypes().add(this.getServiceResources());
+		sqlServerExInstanceEnginePropsBuilder_rdsEClass.getESuperTypes().add(this.getServiceResources());
+		sqlServerSeInstanceEnginePropsBuilder_rdsEClass.getESuperTypes().add(this.getServiceResources());
+		sqlServerWebInstanceEnginePropsBuilder_rdsEClass.getESuperTypes().add(this.getServiceResources());
+		mySqlInstanceEnginePropsBuilder_rdsEClass.getESuperTypes().add(this.getServiceResources());
+		mariaDbInstanceEnginePropsBuilder_rdsEClass.getESuperTypes().add(this.getServiceResources());
+		parameterGroupBuilder_rdsEClass.getESuperTypes().add(this.getServiceResources());
+		databaseInstanceBuilder_rdsEClass.getESuperTypes().add(this.getServiceResources());
 		scheduledFargateTaskBuilder_patternsEClass.getESuperTypes().add(this.getServiceResources());
 
 		// Initialize classes, features, and operations; add parameters
@@ -34040,12 +36624,6 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 				ecorePackage.getEString(), "detail_java_lang_String__java_lang_Object_AsMap", null, 0, 1,
 				EventPatternBuilder_events.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
 				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initializeContents2();
-
-	}
-
-	public void initializeContents2() {
 		initEAttribute(getEventPatternBuilder_events_DetailType_java_lang_String_AsList(), ecorePackage.getEString(),
 				"detailType_java_lang_String_AsList", null, 0, 1, EventPatternBuilder_events.class, !IS_TRANSIENT,
 				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -34061,6 +36639,12 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 		initEAttribute(getEventPatternBuilder_events_Source_java_lang_String_AsList(), ecorePackage.getEString(),
 				"source_java_lang_String_AsList", null, 0, 1, EventPatternBuilder_events.class, !IS_TRANSIENT,
 				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initializeContents2();
+
+	}
+
+	public void initializeContents2() {
 		initEAttribute(getEventPatternBuilder_events_Time_java_lang_String_AsList(), ecorePackage.getEString(),
 				"time_java_lang_String_AsList", null, 0, 1, EventPatternBuilder_events.class, !IS_TRANSIENT,
 				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -38285,6 +40869,778 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 				"additionalCode", null, 0, 1, ScheduledFargateTaskImageOptionsBuilder_patterns.class, !IS_TRANSIENT,
 				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
+		initEClass(topicBuilder_snsEClass, TopicBuilder_sns.class, "TopicBuilder_sns", !IS_ABSTRACT, !IS_INTERFACE,
+				IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getTopicBuilder_sns_DisplayName_java_lang_String_(), ecorePackage.getEString(),
+				"displayName_java_lang_String_", null, 0, 1, TopicBuilder_sns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getTopicBuilder_sns_MasterKeyWithIKey_software_amazon_awscdk_services_kms_IKey_AsReference(),
+				ecorePackage.getEString(), "masterKeyWithIKey_software_amazon_awscdk_services_kms_IKey_AsReference",
+				null, 0, 1, TopicBuilder_sns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getTopicBuilder_sns_TopicName_java_lang_String_(), ecorePackage.getEString(),
+				"topicName_java_lang_String_", null, 0, 1, TopicBuilder_sns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getTopicBuilder_sns_GeneratedClassName(), ecorePackage.getEString(), "generatedClassName",
+				"software.amazon.awscdk.services.sns.Topic", 0, 1, TopicBuilder_sns.class, !IS_TRANSIENT, !IS_VOLATILE,
+				!IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getTopicBuilder_sns_VarName(), ecorePackage.getEString(), "varName", null, 0, 1,
+				TopicBuilder_sns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+				!IS_DERIVED, IS_ORDERED);
+		initEAttribute(getTopicBuilder_sns_Identifier(), ecorePackage.getEString(), "identifier", null, 0, 1,
+				TopicBuilder_sns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+				!IS_DERIVED, IS_ORDERED);
+		initEAttribute(getTopicBuilder_sns_AdditionalCode(), ecorePackage.getEString(), "additionalCode", null, 0, 1,
+				TopicBuilder_sns.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+				!IS_DERIVED, IS_ORDERED);
+
+		initEClass(ec2HealthCheckOptionsBuilder_autoscalingEClass, Ec2HealthCheckOptionsBuilder_autoscaling.class,
+				"Ec2HealthCheckOptionsBuilder_autoscaling", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(
+				getEc2HealthCheckOptionsBuilder_autoscaling_GraceWithDuration_software_amazon_awscdk_core_Duration_AsReference(),
+				ecorePackage.getEString(), "graceWithDuration_software_amazon_awscdk_core_Duration_AsReference", null,
+				0, 1, Ec2HealthCheckOptionsBuilder_autoscaling.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getEc2HealthCheckOptionsBuilder_autoscaling_GeneratedClassName(), ecorePackage.getEString(),
+				"generatedClassName", "software.amazon.awscdk.services.autoscaling.Ec2HealthCheckOptions", 0, 1,
+				Ec2HealthCheckOptionsBuilder_autoscaling.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getEc2HealthCheckOptionsBuilder_autoscaling_VarName(), ecorePackage.getEString(), "varName",
+				null, 0, 1, Ec2HealthCheckOptionsBuilder_autoscaling.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getEc2HealthCheckOptionsBuilder_autoscaling_Identifier(), ecorePackage.getEString(),
+				"identifier", null, 0, 1, Ec2HealthCheckOptionsBuilder_autoscaling.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getEc2HealthCheckOptionsBuilder_autoscaling_AdditionalCode(), ecorePackage.getEString(),
+				"additionalCode", null, 0, 1, Ec2HealthCheckOptionsBuilder_autoscaling.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(autoScalingGroupBuilder_autoscalingEClass, AutoScalingGroupBuilder_autoscaling.class,
+				"AutoScalingGroupBuilder_autoscaling", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getAutoScalingGroupBuilder_autoscaling_AllowAllOutbound_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "allowAllOutbound_java_lang_Boolean_", null, 0, 1,
+				AutoScalingGroupBuilder_autoscaling.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAutoScalingGroupBuilder_autoscaling_AssociatePublicIpAddress_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "associatePublicIpAddress_java_lang_Boolean_", null, 0, 1,
+				AutoScalingGroupBuilder_autoscaling.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getAutoScalingGroupBuilder_autoscaling_BlockDevices_software_amazon_awscdk_services_autoscaling_BlockDevice_AsList(),
+				ecorePackage.getEString(),
+				"blockDevices_software_amazon_awscdk_services_autoscaling_BlockDevice_AsList", null, 0, 1,
+				AutoScalingGroupBuilder_autoscaling.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getAutoScalingGroupBuilder_autoscaling_CooldownWithDuration_software_amazon_awscdk_core_Duration_AsReference(),
+				ecorePackage.getEString(), "cooldownWithDuration_software_amazon_awscdk_core_Duration_AsReference",
+				null, 0, 1, AutoScalingGroupBuilder_autoscaling.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAutoScalingGroupBuilder_autoscaling_DesiredCapacity_java_lang_Number_(),
+				ecorePackage.getEInt(), "desiredCapacity_java_lang_Number_", null, 0, 1,
+				AutoScalingGroupBuilder_autoscaling.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getAutoScalingGroupBuilder_autoscaling_HealthCheckWithHealthCheck_software_amazon_awscdk_services_autoscaling_HealthCheck_AsReference(),
+				ecorePackage.getEString(),
+				"healthCheckWithHealthCheck_software_amazon_awscdk_services_autoscaling_HealthCheck_AsReference", null,
+				0, 1, AutoScalingGroupBuilder_autoscaling.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAutoScalingGroupBuilder_autoscaling_IgnoreUnmodifiedSizeProperties_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "ignoreUnmodifiedSizeProperties_java_lang_Boolean_", null, 0, 1,
+				AutoScalingGroupBuilder_autoscaling.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAutoScalingGroupBuilder_autoscaling_KeyName_java_lang_String_(), ecorePackage.getEString(),
+				"keyName_java_lang_String_", null, 0, 1, AutoScalingGroupBuilder_autoscaling.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAutoScalingGroupBuilder_autoscaling_MaxCapacity_java_lang_Number_(), ecorePackage.getEInt(),
+				"maxCapacity_java_lang_Number_", null, 0, 1, AutoScalingGroupBuilder_autoscaling.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getAutoScalingGroupBuilder_autoscaling_MaxInstanceLifetimeWithDuration_software_amazon_awscdk_core_Duration_AsReference(),
+				ecorePackage.getEString(),
+				"maxInstanceLifetimeWithDuration_software_amazon_awscdk_core_Duration_AsReference", null, 0, 1,
+				AutoScalingGroupBuilder_autoscaling.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAutoScalingGroupBuilder_autoscaling_MinCapacity_java_lang_Number_(), ecorePackage.getEInt(),
+				"minCapacity_java_lang_Number_", null, 0, 1, AutoScalingGroupBuilder_autoscaling.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getAutoScalingGroupBuilder_autoscaling_NotificationsTopicWithITopic_software_amazon_awscdk_services_sns_ITopic_AsReference(),
+				ecorePackage.getEString(),
+				"notificationsTopicWithITopic_software_amazon_awscdk_services_sns_ITopic_AsReference", null, 0, 1,
+				AutoScalingGroupBuilder_autoscaling.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getAutoScalingGroupBuilder_autoscaling_ReplacingUpdateMinSuccessfulInstancesPercent_java_lang_Number_(),
+				ecorePackage.getEInt(), "replacingUpdateMinSuccessfulInstancesPercent_java_lang_Number_", null, 0, 1,
+				AutoScalingGroupBuilder_autoscaling.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAutoScalingGroupBuilder_autoscaling_ResourceSignalCount_java_lang_Number_(),
+				ecorePackage.getEInt(), "resourceSignalCount_java_lang_Number_", null, 0, 1,
+				AutoScalingGroupBuilder_autoscaling.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getAutoScalingGroupBuilder_autoscaling_ResourceSignalTimeoutWithDuration_software_amazon_awscdk_core_Duration_AsReference(),
+				ecorePackage.getEString(),
+				"resourceSignalTimeoutWithDuration_software_amazon_awscdk_core_Duration_AsReference", null, 0, 1,
+				AutoScalingGroupBuilder_autoscaling.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getAutoScalingGroupBuilder_autoscaling_RollingUpdateConfigurationWithRollingUpdateConfiguration_software_amazon_awscdk_services_autoscaling_RollingUpdateConfiguration_AsReference(),
+				ecorePackage.getEString(),
+				"rollingUpdateConfigurationWithRollingUpdateConfiguration_software_amazon_awscdk_services_autoscaling_RollingUpdateConfiguration_AsReference",
+				null, 0, 1, AutoScalingGroupBuilder_autoscaling.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAutoScalingGroupBuilder_autoscaling_SpotPrice_java_lang_String_(), ecorePackage.getEString(),
+				"spotPrice_java_lang_String_", null, 0, 1, AutoScalingGroupBuilder_autoscaling.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getAutoScalingGroupBuilder_autoscaling_UpdateType_software_amazon_awscdk_services_autoscaling_UpdateType_(),
+				this.getUpdateType(), "updateType_software_amazon_awscdk_services_autoscaling_UpdateType_", null, 0, 1,
+				AutoScalingGroupBuilder_autoscaling.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getAutoScalingGroupBuilder_autoscaling_VpcSubnetsWithSubnetSelection_software_amazon_awscdk_services_ec2_SubnetSelection_AsReference(),
+				ecorePackage.getEString(),
+				"vpcSubnetsWithSubnetSelection_software_amazon_awscdk_services_ec2_SubnetSelection_AsReference", null,
+				0, 1, AutoScalingGroupBuilder_autoscaling.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getAutoScalingGroupBuilder_autoscaling_InstanceTypeWithInstanceType_software_amazon_awscdk_services_ec2_InstanceType_AsReference(),
+				ecorePackage.getEString(),
+				"instanceTypeWithInstanceType_software_amazon_awscdk_services_ec2_InstanceType_AsReference", null, 0, 1,
+				AutoScalingGroupBuilder_autoscaling.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getAutoScalingGroupBuilder_autoscaling_MachineImageWithIMachineImage_software_amazon_awscdk_services_ec2_IMachineImage_AsReference(),
+				ecorePackage.getEString(),
+				"machineImageWithIMachineImage_software_amazon_awscdk_services_ec2_IMachineImage_AsReference", null, 0,
+				1, AutoScalingGroupBuilder_autoscaling.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getAutoScalingGroupBuilder_autoscaling_VpcWithIVpc_software_amazon_awscdk_services_ec2_IVpc_AsReference(),
+				ecorePackage.getEString(), "vpcWithIVpc_software_amazon_awscdk_services_ec2_IVpc_AsReference", null, 0,
+				1, AutoScalingGroupBuilder_autoscaling.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getAutoScalingGroupBuilder_autoscaling_RoleWithIRole_software_amazon_awscdk_services_iam_IRole_AsReference(),
+				ecorePackage.getEString(), "roleWithIRole_software_amazon_awscdk_services_iam_IRole_AsReference", null,
+				0, 1, AutoScalingGroupBuilder_autoscaling.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getAutoScalingGroupBuilder_autoscaling_UserDataWithUserData_software_amazon_awscdk_services_ec2_UserData_AsReference(),
+				ecorePackage.getEString(),
+				"userDataWithUserData_software_amazon_awscdk_services_ec2_UserData_AsReference", null, 0, 1,
+				AutoScalingGroupBuilder_autoscaling.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAutoScalingGroupBuilder_autoscaling_GeneratedClassName(), ecorePackage.getEString(),
+				"generatedClassName", "software.amazon.awscdk.services.autoscaling.AutoScalingGroup", 0, 1,
+				AutoScalingGroupBuilder_autoscaling.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAutoScalingGroupBuilder_autoscaling_VarName(), ecorePackage.getEString(), "varName", null, 0,
+				1, AutoScalingGroupBuilder_autoscaling.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAutoScalingGroupBuilder_autoscaling_Identifier(), ecorePackage.getEString(), "identifier",
+				null, 0, 1, AutoScalingGroupBuilder_autoscaling.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAutoScalingGroupBuilder_autoscaling_AdditionalCode(), ecorePackage.getEString(),
+				"additionalCode", null, 0, 1, AutoScalingGroupBuilder_autoscaling.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(optionConfigurationBuilder_rdsEClass, OptionConfigurationBuilder_rds.class,
+				"OptionConfigurationBuilder_rds", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getOptionConfigurationBuilder_rds_Name_java_lang_String_(), ecorePackage.getEString(),
+				"name_java_lang_String_", null, 0, 1, OptionConfigurationBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getOptionConfigurationBuilder_rds_Port_java_lang_Number_(), ecorePackage.getEInt(),
+				"port_java_lang_Number_", null, 0, 1, OptionConfigurationBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getOptionConfigurationBuilder_rds_Settings_java_lang_String__java_lang_String_AsMap(),
+				ecorePackage.getEString(), "settings_java_lang_String__java_lang_String_AsMap", null, 0, 1,
+				OptionConfigurationBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getOptionConfigurationBuilder_rds_Version_java_lang_String_(), ecorePackage.getEString(),
+				"version_java_lang_String_", null, 0, 1, OptionConfigurationBuilder_rds.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getOptionConfigurationBuilder_rds_VpcWithIVpc_software_amazon_awscdk_services_ec2_IVpc_AsReference(),
+				ecorePackage.getEString(), "vpcWithIVpc_software_amazon_awscdk_services_ec2_IVpc_AsReference", null, 0,
+				1, OptionConfigurationBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getOptionConfigurationBuilder_rds_GeneratedClassName(), ecorePackage.getEString(),
+				"generatedClassName", "software.amazon.awscdk.services.rds.OptionConfiguration", 0, 1,
+				OptionConfigurationBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getOptionConfigurationBuilder_rds_VarName(), ecorePackage.getEString(), "varName", null, 0, 1,
+				OptionConfigurationBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getOptionConfigurationBuilder_rds_Identifier(), ecorePackage.getEString(), "identifier", null, 0,
+				1, OptionConfigurationBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getOptionConfigurationBuilder_rds_AdditionalCode(), ecorePackage.getEString(), "additionalCode",
+				null, 0, 1, OptionConfigurationBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(optionGroupBuilder_rdsEClass, OptionGroupBuilder_rds.class, "OptionGroupBuilder_rds", !IS_ABSTRACT,
+				!IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(
+				getOptionGroupBuilder_rds_Configurations_software_amazon_awscdk_services_rds_OptionConfiguration_AsList(),
+				ecorePackage.getEString(),
+				"configurations_software_amazon_awscdk_services_rds_OptionConfiguration_AsList", null, 0, 1,
+				OptionGroupBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getOptionGroupBuilder_rds_EngineWithIInstanceEngine_software_amazon_awscdk_services_rds_IInstanceEngine_AsReference(),
+				ecorePackage.getEString(),
+				"engineWithIInstanceEngine_software_amazon_awscdk_services_rds_IInstanceEngine_AsReference", null, 0, 1,
+				OptionGroupBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getOptionGroupBuilder_rds_Description_java_lang_String_(), ecorePackage.getEString(),
+				"description_java_lang_String_", null, 0, 1, OptionGroupBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getOptionGroupBuilder_rds_GeneratedClassName(), ecorePackage.getEString(), "generatedClassName",
+				"software.amazon.awscdk.services.rds.OptionGroup", 0, 1, OptionGroupBuilder_rds.class, !IS_TRANSIENT,
+				!IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getOptionGroupBuilder_rds_VarName(), ecorePackage.getEString(), "varName", null, 0, 1,
+				OptionGroupBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getOptionGroupBuilder_rds_Identifier(), ecorePackage.getEString(), "identifier", null, 0, 1,
+				OptionGroupBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getOptionGroupBuilder_rds_AdditionalCode(), ecorePackage.getEString(), "additionalCode", null, 0,
+				1, OptionGroupBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(portBuilder_ec2EClass, PortBuilder_ec2.class, "PortBuilder_ec2", !IS_ABSTRACT, !IS_INTERFACE,
+				IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getPortBuilder_ec2_Protocol_software_amazon_awscdk_services_ec2_Protocol_(), this.getProtocol(),
+				"protocol_software_amazon_awscdk_services_ec2_Protocol_", null, 0, 1, PortBuilder_ec2.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPortBuilder_ec2_StringRepresentation_java_lang_String_(), ecorePackage.getEString(),
+				"stringRepresentation_java_lang_String_", null, 0, 1, PortBuilder_ec2.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPortBuilder_ec2_FromPort_java_lang_Number_(), ecorePackage.getEInt(),
+				"fromPort_java_lang_Number_", null, 0, 1, PortBuilder_ec2.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPortBuilder_ec2_ToPort_java_lang_Number_(), ecorePackage.getEInt(),
+				"toPort_java_lang_Number_", null, 0, 1, PortBuilder_ec2.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPortBuilder_ec2_GeneratedClassName(), ecorePackage.getEString(), "generatedClassName",
+				"software.amazon.awscdk.services.ec2.Port", 0, 1, PortBuilder_ec2.class, !IS_TRANSIENT, !IS_VOLATILE,
+				!IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPortBuilder_ec2_VarName(), ecorePackage.getEString(), "varName", null, 0, 1,
+				PortBuilder_ec2.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+				!IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPortBuilder_ec2_Identifier(), ecorePackage.getEString(), "identifier", null, 0, 1,
+				PortBuilder_ec2.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+				!IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPortBuilder_ec2_AdditionalCode(), ecorePackage.getEString(), "additionalCode", null, 0, 1,
+				PortBuilder_ec2.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+				!IS_DERIVED, IS_ORDERED);
+
+		initEClass(processorFeaturesBuilder_rdsEClass, ProcessorFeaturesBuilder_rds.class,
+				"ProcessorFeaturesBuilder_rds", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getProcessorFeaturesBuilder_rds_CoreCount_java_lang_Number_(), ecorePackage.getEInt(),
+				"coreCount_java_lang_Number_", null, 0, 1, ProcessorFeaturesBuilder_rds.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getProcessorFeaturesBuilder_rds_ThreadsPerCore_java_lang_Number_(), ecorePackage.getEInt(),
+				"threadsPerCore_java_lang_Number_", null, 0, 1, ProcessorFeaturesBuilder_rds.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getProcessorFeaturesBuilder_rds_GeneratedClassName(), ecorePackage.getEString(),
+				"generatedClassName", "software.amazon.awscdk.services.rds.ProcessorFeatures", 0, 1,
+				ProcessorFeaturesBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getProcessorFeaturesBuilder_rds_VarName(), ecorePackage.getEString(), "varName", null, 0, 1,
+				ProcessorFeaturesBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getProcessorFeaturesBuilder_rds_Identifier(), ecorePackage.getEString(), "identifier", null, 0,
+				1, ProcessorFeaturesBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getProcessorFeaturesBuilder_rds_AdditionalCode(), ecorePackage.getEString(), "additionalCode",
+				null, 0, 1, ProcessorFeaturesBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(oracleEeInstanceEnginePropsBuilder_rdsEClass, OracleEeInstanceEnginePropsBuilder_rds.class,
+				"OracleEeInstanceEnginePropsBuilder_rds", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(
+				getOracleEeInstanceEnginePropsBuilder_rds_VersionWithOracleEngineVersion_software_amazon_awscdk_services_rds_OracleEngineVersion_AsReference(),
+				ecorePackage.getEString(),
+				"versionWithOracleEngineVersion_software_amazon_awscdk_services_rds_OracleEngineVersion_AsReference",
+				null, 0, 1, OracleEeInstanceEnginePropsBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getOracleEeInstanceEnginePropsBuilder_rds_GeneratedClassName(), ecorePackage.getEString(),
+				"generatedClassName", "software.amazon.awscdk.services.rds.OracleEeInstanceEngineProps", 0, 1,
+				OracleEeInstanceEnginePropsBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getOracleEeInstanceEnginePropsBuilder_rds_VarName(), ecorePackage.getEString(), "varName", null,
+				0, 1, OracleEeInstanceEnginePropsBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getOracleEeInstanceEnginePropsBuilder_rds_Identifier(), ecorePackage.getEString(), "identifier",
+				null, 0, 1, OracleEeInstanceEnginePropsBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getOracleEeInstanceEnginePropsBuilder_rds_AdditionalCode(), ecorePackage.getEString(),
+				"additionalCode", null, 0, 1, OracleEeInstanceEnginePropsBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(oracleSe1InstanceEnginePropsBuilder_rdsEClass, OracleSe1InstanceEnginePropsBuilder_rds.class,
+				"OracleSe1InstanceEnginePropsBuilder_rds", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(
+				getOracleSe1InstanceEnginePropsBuilder_rds_VersionWithOracleLegacyEngineVersion_software_amazon_awscdk_services_rds_OracleLegacyEngineVersion_AsReference(),
+				ecorePackage.getEString(),
+				"versionWithOracleLegacyEngineVersion_software_amazon_awscdk_services_rds_OracleLegacyEngineVersion_AsReference",
+				null, 0, 1, OracleSe1InstanceEnginePropsBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getOracleSe1InstanceEnginePropsBuilder_rds_GeneratedClassName(), ecorePackage.getEString(),
+				"generatedClassName", "software.amazon.awscdk.services.rds.OracleSe1InstanceEngineProps", 0, 1,
+				OracleSe1InstanceEnginePropsBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getOracleSe1InstanceEnginePropsBuilder_rds_VarName(), ecorePackage.getEString(), "varName", null,
+				0, 1, OracleSe1InstanceEnginePropsBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getOracleSe1InstanceEnginePropsBuilder_rds_Identifier(), ecorePackage.getEString(), "identifier",
+				null, 0, 1, OracleSe1InstanceEnginePropsBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getOracleSe1InstanceEnginePropsBuilder_rds_AdditionalCode(), ecorePackage.getEString(),
+				"additionalCode", null, 0, 1, OracleSe1InstanceEnginePropsBuilder_rds.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(oracleSe2InstanceEnginePropsBuilder_rdsEClass, OracleSe2InstanceEnginePropsBuilder_rds.class,
+				"OracleSe2InstanceEnginePropsBuilder_rds", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(
+				getOracleSe2InstanceEnginePropsBuilder_rds_VersionWithOracleEngineVersion_software_amazon_awscdk_services_rds_OracleEngineVersion_AsReference(),
+				ecorePackage.getEString(),
+				"versionWithOracleEngineVersion_software_amazon_awscdk_services_rds_OracleEngineVersion_AsReference",
+				null, 0, 1, OracleSe2InstanceEnginePropsBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getOracleSe2InstanceEnginePropsBuilder_rds_GeneratedClassName(), ecorePackage.getEString(),
+				"generatedClassName", "software.amazon.awscdk.services.rds.OracleSe2InstanceEngineProps", 0, 1,
+				OracleSe2InstanceEnginePropsBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getOracleSe2InstanceEnginePropsBuilder_rds_VarName(), ecorePackage.getEString(), "varName", null,
+				0, 1, OracleSe2InstanceEnginePropsBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getOracleSe2InstanceEnginePropsBuilder_rds_Identifier(), ecorePackage.getEString(), "identifier",
+				null, 0, 1, OracleSe2InstanceEnginePropsBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getOracleSe2InstanceEnginePropsBuilder_rds_AdditionalCode(), ecorePackage.getEString(),
+				"additionalCode", null, 0, 1, OracleSe2InstanceEnginePropsBuilder_rds.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(oracleSeInstanceEnginePropsBuilder_rdsEClass, OracleSeInstanceEnginePropsBuilder_rds.class,
+				"OracleSeInstanceEnginePropsBuilder_rds", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(
+				getOracleSeInstanceEnginePropsBuilder_rds_VersionWithOracleLegacyEngineVersion_software_amazon_awscdk_services_rds_OracleLegacyEngineVersion_AsReference(),
+				ecorePackage.getEString(),
+				"versionWithOracleLegacyEngineVersion_software_amazon_awscdk_services_rds_OracleLegacyEngineVersion_AsReference",
+				null, 0, 1, OracleSeInstanceEnginePropsBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getOracleSeInstanceEnginePropsBuilder_rds_GeneratedClassName(), ecorePackage.getEString(),
+				"generatedClassName", "software.amazon.awscdk.services.rds.OracleSeInstanceEngineProps", 0, 1,
+				OracleSeInstanceEnginePropsBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getOracleSeInstanceEnginePropsBuilder_rds_VarName(), ecorePackage.getEString(), "varName", null,
+				0, 1, OracleSeInstanceEnginePropsBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getOracleSeInstanceEnginePropsBuilder_rds_Identifier(), ecorePackage.getEString(), "identifier",
+				null, 0, 1, OracleSeInstanceEnginePropsBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getOracleSeInstanceEnginePropsBuilder_rds_AdditionalCode(), ecorePackage.getEString(),
+				"additionalCode", null, 0, 1, OracleSeInstanceEnginePropsBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(postgresInstanceEnginePropsBuilder_rdsEClass, PostgresInstanceEnginePropsBuilder_rds.class,
+				"PostgresInstanceEnginePropsBuilder_rds", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(
+				getPostgresInstanceEnginePropsBuilder_rds_VersionWithPostgresEngineVersion_software_amazon_awscdk_services_rds_PostgresEngineVersion_AsReference(),
+				ecorePackage.getEString(),
+				"versionWithPostgresEngineVersion_software_amazon_awscdk_services_rds_PostgresEngineVersion_AsReference",
+				null, 0, 1, PostgresInstanceEnginePropsBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPostgresInstanceEnginePropsBuilder_rds_GeneratedClassName(), ecorePackage.getEString(),
+				"generatedClassName", "software.amazon.awscdk.services.rds.PostgresInstanceEngineProps", 0, 1,
+				PostgresInstanceEnginePropsBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPostgresInstanceEnginePropsBuilder_rds_VarName(), ecorePackage.getEString(), "varName", null,
+				0, 1, PostgresInstanceEnginePropsBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPostgresInstanceEnginePropsBuilder_rds_Identifier(), ecorePackage.getEString(), "identifier",
+				null, 0, 1, PostgresInstanceEnginePropsBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPostgresInstanceEnginePropsBuilder_rds_AdditionalCode(), ecorePackage.getEString(),
+				"additionalCode", null, 0, 1, PostgresInstanceEnginePropsBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(sqlServerEeInstanceEnginePropsBuilder_rdsEClass, SqlServerEeInstanceEnginePropsBuilder_rds.class,
+				"SqlServerEeInstanceEnginePropsBuilder_rds", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(
+				getSqlServerEeInstanceEnginePropsBuilder_rds_VersionWithSqlServerEngineVersion_software_amazon_awscdk_services_rds_SqlServerEngineVersion_AsReference(),
+				ecorePackage.getEString(),
+				"versionWithSqlServerEngineVersion_software_amazon_awscdk_services_rds_SqlServerEngineVersion_AsReference",
+				null, 0, 1, SqlServerEeInstanceEnginePropsBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getSqlServerEeInstanceEnginePropsBuilder_rds_GeneratedClassName(), ecorePackage.getEString(),
+				"generatedClassName", "software.amazon.awscdk.services.rds.SqlServerEeInstanceEngineProps", 0, 1,
+				SqlServerEeInstanceEnginePropsBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getSqlServerEeInstanceEnginePropsBuilder_rds_VarName(), ecorePackage.getEString(), "varName",
+				null, 0, 1, SqlServerEeInstanceEnginePropsBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getSqlServerEeInstanceEnginePropsBuilder_rds_Identifier(), ecorePackage.getEString(),
+				"identifier", null, 0, 1, SqlServerEeInstanceEnginePropsBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getSqlServerEeInstanceEnginePropsBuilder_rds_AdditionalCode(), ecorePackage.getEString(),
+				"additionalCode", null, 0, 1, SqlServerEeInstanceEnginePropsBuilder_rds.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(sqlServerExInstanceEnginePropsBuilder_rdsEClass, SqlServerExInstanceEnginePropsBuilder_rds.class,
+				"SqlServerExInstanceEnginePropsBuilder_rds", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(
+				getSqlServerExInstanceEnginePropsBuilder_rds_VersionWithSqlServerEngineVersion_software_amazon_awscdk_services_rds_SqlServerEngineVersion_AsReference(),
+				ecorePackage.getEString(),
+				"versionWithSqlServerEngineVersion_software_amazon_awscdk_services_rds_SqlServerEngineVersion_AsReference",
+				null, 0, 1, SqlServerExInstanceEnginePropsBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getSqlServerExInstanceEnginePropsBuilder_rds_GeneratedClassName(), ecorePackage.getEString(),
+				"generatedClassName", "software.amazon.awscdk.services.rds.SqlServerExInstanceEngineProps", 0, 1,
+				SqlServerExInstanceEnginePropsBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getSqlServerExInstanceEnginePropsBuilder_rds_VarName(), ecorePackage.getEString(), "varName",
+				null, 0, 1, SqlServerExInstanceEnginePropsBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getSqlServerExInstanceEnginePropsBuilder_rds_Identifier(), ecorePackage.getEString(),
+				"identifier", null, 0, 1, SqlServerExInstanceEnginePropsBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getSqlServerExInstanceEnginePropsBuilder_rds_AdditionalCode(), ecorePackage.getEString(),
+				"additionalCode", null, 0, 1, SqlServerExInstanceEnginePropsBuilder_rds.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(sqlServerSeInstanceEnginePropsBuilder_rdsEClass, SqlServerSeInstanceEnginePropsBuilder_rds.class,
+				"SqlServerSeInstanceEnginePropsBuilder_rds", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(
+				getSqlServerSeInstanceEnginePropsBuilder_rds_VersionWithSqlServerEngineVersion_software_amazon_awscdk_services_rds_SqlServerEngineVersion_AsReference(),
+				ecorePackage.getEString(),
+				"versionWithSqlServerEngineVersion_software_amazon_awscdk_services_rds_SqlServerEngineVersion_AsReference",
+				null, 0, 1, SqlServerSeInstanceEnginePropsBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getSqlServerSeInstanceEnginePropsBuilder_rds_GeneratedClassName(), ecorePackage.getEString(),
+				"generatedClassName", "software.amazon.awscdk.services.rds.SqlServerSeInstanceEngineProps", 0, 1,
+				SqlServerSeInstanceEnginePropsBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getSqlServerSeInstanceEnginePropsBuilder_rds_VarName(), ecorePackage.getEString(), "varName",
+				null, 0, 1, SqlServerSeInstanceEnginePropsBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getSqlServerSeInstanceEnginePropsBuilder_rds_Identifier(), ecorePackage.getEString(),
+				"identifier", null, 0, 1, SqlServerSeInstanceEnginePropsBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getSqlServerSeInstanceEnginePropsBuilder_rds_AdditionalCode(), ecorePackage.getEString(),
+				"additionalCode", null, 0, 1, SqlServerSeInstanceEnginePropsBuilder_rds.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(sqlServerWebInstanceEnginePropsBuilder_rdsEClass, SqlServerWebInstanceEnginePropsBuilder_rds.class,
+				"SqlServerWebInstanceEnginePropsBuilder_rds", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(
+				getSqlServerWebInstanceEnginePropsBuilder_rds_VersionWithSqlServerEngineVersion_software_amazon_awscdk_services_rds_SqlServerEngineVersion_AsReference(),
+				ecorePackage.getEString(),
+				"versionWithSqlServerEngineVersion_software_amazon_awscdk_services_rds_SqlServerEngineVersion_AsReference",
+				null, 0, 1, SqlServerWebInstanceEnginePropsBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getSqlServerWebInstanceEnginePropsBuilder_rds_GeneratedClassName(), ecorePackage.getEString(),
+				"generatedClassName", "software.amazon.awscdk.services.rds.SqlServerWebInstanceEngineProps", 0, 1,
+				SqlServerWebInstanceEnginePropsBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getSqlServerWebInstanceEnginePropsBuilder_rds_VarName(), ecorePackage.getEString(), "varName",
+				null, 0, 1, SqlServerWebInstanceEnginePropsBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getSqlServerWebInstanceEnginePropsBuilder_rds_Identifier(), ecorePackage.getEString(),
+				"identifier", null, 0, 1, SqlServerWebInstanceEnginePropsBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getSqlServerWebInstanceEnginePropsBuilder_rds_AdditionalCode(), ecorePackage.getEString(),
+				"additionalCode", null, 0, 1, SqlServerWebInstanceEnginePropsBuilder_rds.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(mySqlInstanceEnginePropsBuilder_rdsEClass, MySqlInstanceEnginePropsBuilder_rds.class,
+				"MySqlInstanceEnginePropsBuilder_rds", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(
+				getMySqlInstanceEnginePropsBuilder_rds_VersionWithMysqlEngineVersion_software_amazon_awscdk_services_rds_MysqlEngineVersion_AsReference(),
+				ecorePackage.getEString(),
+				"versionWithMysqlEngineVersion_software_amazon_awscdk_services_rds_MysqlEngineVersion_AsReference",
+				null, 0, 1, MySqlInstanceEnginePropsBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getMySqlInstanceEnginePropsBuilder_rds_GeneratedClassName(), ecorePackage.getEString(),
+				"generatedClassName", "software.amazon.awscdk.services.rds.MySqlInstanceEngineProps", 0, 1,
+				MySqlInstanceEnginePropsBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getMySqlInstanceEnginePropsBuilder_rds_VarName(), ecorePackage.getEString(), "varName", null, 0,
+				1, MySqlInstanceEnginePropsBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getMySqlInstanceEnginePropsBuilder_rds_Identifier(), ecorePackage.getEString(), "identifier",
+				null, 0, 1, MySqlInstanceEnginePropsBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getMySqlInstanceEnginePropsBuilder_rds_AdditionalCode(), ecorePackage.getEString(),
+				"additionalCode", null, 0, 1, MySqlInstanceEnginePropsBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(mariaDbInstanceEnginePropsBuilder_rdsEClass, MariaDbInstanceEnginePropsBuilder_rds.class,
+				"MariaDbInstanceEnginePropsBuilder_rds", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(
+				getMariaDbInstanceEnginePropsBuilder_rds_VersionWithMariaDbEngineVersion_software_amazon_awscdk_services_rds_MariaDbEngineVersion_AsReference(),
+				ecorePackage.getEString(),
+				"versionWithMariaDbEngineVersion_software_amazon_awscdk_services_rds_MariaDbEngineVersion_AsReference",
+				null, 0, 1, MariaDbInstanceEnginePropsBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getMariaDbInstanceEnginePropsBuilder_rds_GeneratedClassName(), ecorePackage.getEString(),
+				"generatedClassName", "software.amazon.awscdk.services.rds.MariaDbInstanceEngineProps", 0, 1,
+				MariaDbInstanceEnginePropsBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getMariaDbInstanceEnginePropsBuilder_rds_VarName(), ecorePackage.getEString(), "varName", null,
+				0, 1, MariaDbInstanceEnginePropsBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getMariaDbInstanceEnginePropsBuilder_rds_Identifier(), ecorePackage.getEString(), "identifier",
+				null, 0, 1, MariaDbInstanceEnginePropsBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getMariaDbInstanceEnginePropsBuilder_rds_AdditionalCode(), ecorePackage.getEString(),
+				"additionalCode", null, 0, 1, MariaDbInstanceEnginePropsBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(parameterGroupBuilder_rdsEClass, ParameterGroupBuilder_rds.class, "ParameterGroupBuilder_rds",
+				!IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(
+				getParameterGroupBuilder_rds_EngineWithIEngine_software_amazon_awscdk_services_rds_IEngine_AsReference(),
+				ecorePackage.getEString(), "engineWithIEngine_software_amazon_awscdk_services_rds_IEngine_AsReference",
+				null, 0, 1, ParameterGroupBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getParameterGroupBuilder_rds_Description_java_lang_String_(), ecorePackage.getEString(),
+				"description_java_lang_String_", null, 0, 1, ParameterGroupBuilder_rds.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getParameterGroupBuilder_rds_Parameters_java_lang_String__java_lang_String_AsMap(),
+				ecorePackage.getEString(), "parameters_java_lang_String__java_lang_String_AsMap", null, 0, 1,
+				ParameterGroupBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getParameterGroupBuilder_rds_GeneratedClassName(), ecorePackage.getEString(),
+				"generatedClassName", "software.amazon.awscdk.services.rds.ParameterGroup", 0, 1,
+				ParameterGroupBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getParameterGroupBuilder_rds_VarName(), ecorePackage.getEString(), "varName", null, 0, 1,
+				ParameterGroupBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getParameterGroupBuilder_rds_Identifier(), ecorePackage.getEString(), "identifier", null, 0, 1,
+				ParameterGroupBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getParameterGroupBuilder_rds_AdditionalCode(), ecorePackage.getEString(), "additionalCode", null,
+				0, 1, ParameterGroupBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(databaseInstanceBuilder_rdsEClass, DatabaseInstanceBuilder_rds.class, "DatabaseInstanceBuilder_rds",
+				!IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(
+				getDatabaseInstanceBuilder_rds_VpcWithIVpc_software_amazon_awscdk_services_ec2_IVpc_AsReference(),
+				ecorePackage.getEString(), "vpcWithIVpc_software_amazon_awscdk_services_ec2_IVpc_AsReference", null, 0,
+				1, DatabaseInstanceBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getDatabaseInstanceBuilder_rds_AutoMinorVersionUpgrade_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "autoMinorVersionUpgrade_java_lang_Boolean_", null, 0, 1,
+				DatabaseInstanceBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getDatabaseInstanceBuilder_rds_AvailabilityZone_java_lang_String_(), ecorePackage.getEString(),
+				"availabilityZone_java_lang_String_", null, 0, 1, DatabaseInstanceBuilder_rds.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getDatabaseInstanceBuilder_rds_BackupRetentionWithDuration_software_amazon_awscdk_core_Duration_AsReference(),
+				ecorePackage.getEString(),
+				"backupRetentionWithDuration_software_amazon_awscdk_core_Duration_AsReference", null, 0, 1,
+				DatabaseInstanceBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getDatabaseInstanceBuilder_rds_CloudwatchLogsExports_java_lang_String_AsList(),
+				ecorePackage.getEString(), "cloudwatchLogsExports_java_lang_String_AsList", null, 0, 1,
+				DatabaseInstanceBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getDatabaseInstanceBuilder_rds_CloudwatchLogsRetention_software_amazon_awscdk_services_logs_RetentionDays_(),
+				this.getRetentionDays(), "cloudwatchLogsRetention_software_amazon_awscdk_services_logs_RetentionDays_",
+				null, 0, 1, DatabaseInstanceBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getDatabaseInstanceBuilder_rds_CloudwatchLogsRetentionRoleWithIRole_software_amazon_awscdk_services_iam_IRole_AsReference(),
+				ecorePackage.getEString(),
+				"cloudwatchLogsRetentionRoleWithIRole_software_amazon_awscdk_services_iam_IRole_AsReference", null, 0,
+				1, DatabaseInstanceBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getDatabaseInstanceBuilder_rds_CopyTagsToSnapshot_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "copyTagsToSnapshot_java_lang_Boolean_", null, 0, 1,
+				DatabaseInstanceBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getDatabaseInstanceBuilder_rds_DeleteAutomatedBackups_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "deleteAutomatedBackups_java_lang_Boolean_", null, 0, 1,
+				DatabaseInstanceBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getDatabaseInstanceBuilder_rds_DeletionProtection_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "deletionProtection_java_lang_Boolean_", null, 0, 1,
+				DatabaseInstanceBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getDatabaseInstanceBuilder_rds_EnablePerformanceInsights_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "enablePerformanceInsights_java_lang_Boolean_", null, 0, 1,
+				DatabaseInstanceBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getDatabaseInstanceBuilder_rds_IamAuthentication_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "iamAuthentication_java_lang_Boolean_", null, 0, 1,
+				DatabaseInstanceBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getDatabaseInstanceBuilder_rds_InstanceIdentifier_java_lang_String_(), ecorePackage.getEString(),
+				"instanceIdentifier_java_lang_String_", null, 0, 1, DatabaseInstanceBuilder_rds.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getDatabaseInstanceBuilder_rds_Iops_java_lang_Number_(), ecorePackage.getEInt(),
+				"iops_java_lang_Number_", null, 0, 1, DatabaseInstanceBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getDatabaseInstanceBuilder_rds_MaxAllocatedStorage_java_lang_Number_(), ecorePackage.getEInt(),
+				"maxAllocatedStorage_java_lang_Number_", null, 0, 1, DatabaseInstanceBuilder_rds.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getDatabaseInstanceBuilder_rds_MonitoringIntervalWithDuration_software_amazon_awscdk_core_Duration_AsReference(),
+				ecorePackage.getEString(),
+				"monitoringIntervalWithDuration_software_amazon_awscdk_core_Duration_AsReference", null, 0, 1,
+				DatabaseInstanceBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getDatabaseInstanceBuilder_rds_MonitoringRoleWithIRole_software_amazon_awscdk_services_iam_IRole_AsReference(),
+				ecorePackage.getEString(),
+				"monitoringRoleWithIRole_software_amazon_awscdk_services_iam_IRole_AsReference", null, 0, 1,
+				DatabaseInstanceBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getDatabaseInstanceBuilder_rds_MultiAz_java_lang_Boolean_(), ecorePackage.getEBooleanObject(),
+				"multiAz_java_lang_Boolean_", null, 0, 1, DatabaseInstanceBuilder_rds.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getDatabaseInstanceBuilder_rds_OptionGroupWithIOptionGroup_software_amazon_awscdk_services_rds_IOptionGroup_AsReference(),
+				ecorePackage.getEString(),
+				"optionGroupWithIOptionGroup_software_amazon_awscdk_services_rds_IOptionGroup_AsReference", null, 0, 1,
+				DatabaseInstanceBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getDatabaseInstanceBuilder_rds_PerformanceInsightEncryptionKeyWithIKey_software_amazon_awscdk_services_kms_IKey_AsReference(),
+				ecorePackage.getEString(),
+				"performanceInsightEncryptionKeyWithIKey_software_amazon_awscdk_services_kms_IKey_AsReference", null, 0,
+				1, DatabaseInstanceBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getDatabaseInstanceBuilder_rds_PerformanceInsightRetention_software_amazon_awscdk_services_rds_PerformanceInsightRetention_(),
+				this.getPerformanceInsightRetention(),
+				"performanceInsightRetention_software_amazon_awscdk_services_rds_PerformanceInsightRetention_", null, 0,
+				1, DatabaseInstanceBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getDatabaseInstanceBuilder_rds_Port_java_lang_Number_(), ecorePackage.getEInt(),
+				"port_java_lang_Number_", null, 0, 1, DatabaseInstanceBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getDatabaseInstanceBuilder_rds_PreferredBackupWindow_java_lang_String_(),
+				ecorePackage.getEString(), "preferredBackupWindow_java_lang_String_", null, 0, 1,
+				DatabaseInstanceBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getDatabaseInstanceBuilder_rds_PreferredMaintenanceWindow_java_lang_String_(),
+				ecorePackage.getEString(), "preferredMaintenanceWindow_java_lang_String_", null, 0, 1,
+				DatabaseInstanceBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getDatabaseInstanceBuilder_rds_ProcessorFeaturesWithProcessorFeatures_software_amazon_awscdk_services_rds_ProcessorFeatures_AsReference(),
+				ecorePackage.getEString(),
+				"processorFeaturesWithProcessorFeatures_software_amazon_awscdk_services_rds_ProcessorFeatures_AsReference",
+				null, 0, 1, DatabaseInstanceBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getDatabaseInstanceBuilder_rds_RemovalPolicy_software_amazon_awscdk_core_RemovalPolicy_(),
+				this.getRemovalPolicy(), "removalPolicy_software_amazon_awscdk_core_RemovalPolicy_", null, 0, 1,
+				DatabaseInstanceBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getDatabaseInstanceBuilder_rds_SecurityGroups_software_amazon_awscdk_services_ec2_ISecurityGroup_AsList(),
+				ecorePackage.getEString(), "securityGroups_software_amazon_awscdk_services_ec2_ISecurityGroup_AsList",
+				null, 0, 1, DatabaseInstanceBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getDatabaseInstanceBuilder_rds_StorageType_software_amazon_awscdk_services_rds_StorageType_(),
+				this.getStorageType(), "storageType_software_amazon_awscdk_services_rds_StorageType_", null, 0, 1,
+				DatabaseInstanceBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getDatabaseInstanceBuilder_rds_VpcPlacementWithSubnetSelection_software_amazon_awscdk_services_ec2_SubnetSelection_AsReference(),
+				ecorePackage.getEString(),
+				"vpcPlacementWithSubnetSelection_software_amazon_awscdk_services_ec2_SubnetSelection_AsReference", null,
+				0, 1, DatabaseInstanceBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getDatabaseInstanceBuilder_rds_EngineWithIInstanceEngine_software_amazon_awscdk_services_rds_IInstanceEngine_AsReference(),
+				ecorePackage.getEString(),
+				"engineWithIInstanceEngine_software_amazon_awscdk_services_rds_IInstanceEngine_AsReference", null, 0, 1,
+				DatabaseInstanceBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getDatabaseInstanceBuilder_rds_AllocatedStorage_java_lang_Number_(), ecorePackage.getEInt(),
+				"allocatedStorage_java_lang_Number_", null, 0, 1, DatabaseInstanceBuilder_rds.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getDatabaseInstanceBuilder_rds_AllowMajorVersionUpgrade_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "allowMajorVersionUpgrade_java_lang_Boolean_", null, 0, 1,
+				DatabaseInstanceBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getDatabaseInstanceBuilder_rds_DatabaseName_java_lang_String_(), ecorePackage.getEString(),
+				"databaseName_java_lang_String_", null, 0, 1, DatabaseInstanceBuilder_rds.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getDatabaseInstanceBuilder_rds_InstanceTypeWithInstanceType_software_amazon_awscdk_services_ec2_InstanceType_AsReference(),
+				ecorePackage.getEString(),
+				"instanceTypeWithInstanceType_software_amazon_awscdk_services_ec2_InstanceType_AsReference", null, 0, 1,
+				DatabaseInstanceBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getDatabaseInstanceBuilder_rds_LicenseModel_software_amazon_awscdk_services_rds_LicenseModel_(),
+				this.getLicenseModel(), "licenseModel_software_amazon_awscdk_services_rds_LicenseModel_", null, 0, 1,
+				DatabaseInstanceBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getDatabaseInstanceBuilder_rds_MasterUserPasswordWithSecretValue_software_amazon_awscdk_core_SecretValue_AsReference(),
+				ecorePackage.getEString(),
+				"masterUserPasswordWithSecretValue_software_amazon_awscdk_core_SecretValue_AsReference", null, 0, 1,
+				DatabaseInstanceBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getDatabaseInstanceBuilder_rds_MasterUserPasswordEncryptionKeyWithIKey_software_amazon_awscdk_services_kms_IKey_AsReference(),
+				ecorePackage.getEString(),
+				"masterUserPasswordEncryptionKeyWithIKey_software_amazon_awscdk_services_kms_IKey_AsReference", null, 0,
+				1, DatabaseInstanceBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getDatabaseInstanceBuilder_rds_ParameterGroupWithIParameterGroup_software_amazon_awscdk_services_rds_IParameterGroup_AsReference(),
+				ecorePackage.getEString(),
+				"parameterGroupWithIParameterGroup_software_amazon_awscdk_services_rds_IParameterGroup_AsReference",
+				null, 0, 1, DatabaseInstanceBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getDatabaseInstanceBuilder_rds_Timezone_java_lang_String_(), ecorePackage.getEString(),
+				"timezone_java_lang_String_", null, 0, 1, DatabaseInstanceBuilder_rds.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getDatabaseInstanceBuilder_rds_MasterUsername_java_lang_String_(), ecorePackage.getEString(),
+				"masterUsername_java_lang_String_", null, 0, 1, DatabaseInstanceBuilder_rds.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getDatabaseInstanceBuilder_rds_CharacterSetName_java_lang_String_(), ecorePackage.getEString(),
+				"characterSetName_java_lang_String_", null, 0, 1, DatabaseInstanceBuilder_rds.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getDatabaseInstanceBuilder_rds_StorageEncrypted_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "storageEncrypted_java_lang_Boolean_", null, 0, 1,
+				DatabaseInstanceBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getDatabaseInstanceBuilder_rds_StorageEncryptionKeyWithIKey_software_amazon_awscdk_services_kms_IKey_AsReference(),
+				ecorePackage.getEString(),
+				"storageEncryptionKeyWithIKey_software_amazon_awscdk_services_kms_IKey_AsReference", null, 0, 1,
+				DatabaseInstanceBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getDatabaseInstanceBuilder_rds_GeneratedClassName(), ecorePackage.getEString(),
+				"generatedClassName", "software.amazon.awscdk.services.rds.DatabaseInstance", 0, 1,
+				DatabaseInstanceBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getDatabaseInstanceBuilder_rds_VarName(), ecorePackage.getEString(), "varName", null, 0, 1,
+				DatabaseInstanceBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getDatabaseInstanceBuilder_rds_Identifier(), ecorePackage.getEString(), "identifier", null, 0, 1,
+				DatabaseInstanceBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getDatabaseInstanceBuilder_rds_AdditionalCode(), ecorePackage.getEString(), "additionalCode",
+				null, 0, 1, DatabaseInstanceBuilder_rds.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
 		initEClass(scheduledFargateTaskBuilder_patternsEClass, ScheduledFargateTaskBuilder_patterns.class,
 				"ScheduledFargateTaskBuilder_patterns", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(
@@ -38732,6 +42088,20 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 		initEEnum(protocolEEnum, Protocol.class, "Protocol");
 		addEEnumLiteral(protocolEEnum, Protocol.TCP);
 		addEEnumLiteral(protocolEEnum, Protocol.UDP);
+
+		initEEnum(performanceInsightRetentionEEnum, PerformanceInsightRetention.class, "PerformanceInsightRetention");
+		addEEnumLiteral(performanceInsightRetentionEEnum, PerformanceInsightRetention.DEFAULT);
+		addEEnumLiteral(performanceInsightRetentionEEnum, PerformanceInsightRetention.LONG_TERM);
+
+		initEEnum(storageTypeEEnum, StorageType.class, "StorageType");
+		addEEnumLiteral(storageTypeEEnum, StorageType.STANDARD);
+		addEEnumLiteral(storageTypeEEnum, StorageType.GP2);
+		addEEnumLiteral(storageTypeEEnum, StorageType.IO1);
+
+		initEEnum(licenseModelEEnum, LicenseModel.class, "LicenseModel");
+		addEEnumLiteral(licenseModelEEnum, LicenseModel.LICENSE_INCLUDED);
+		addEEnumLiteral(licenseModelEEnum, LicenseModel.BRING_YOUR_OWN_LICENSE);
+		addEEnumLiteral(licenseModelEEnum, LicenseModel.GENERAL_PUBLIC_LICENSE);
 
 		// Create resource
 		createResource(eNS_URI);

@@ -419,6 +419,46 @@ public class AwsworkbenchFactoryImpl extends EFactoryImpl implements Awsworkbenc
 			return createScheduledFargateTaskDefinitionOptionsBuilder_patterns();
 		case AwsworkbenchPackage.SCHEDULED_FARGATE_TASK_IMAGE_OPTIONS_BUILDER_PATTERNS:
 			return createScheduledFargateTaskImageOptionsBuilder_patterns();
+		case AwsworkbenchPackage.TOPIC_BUILDER_SNS:
+			return createTopicBuilder_sns();
+		case AwsworkbenchPackage.EC2_HEALTH_CHECK_OPTIONS_BUILDER_AUTOSCALING:
+			return createEc2HealthCheckOptionsBuilder_autoscaling();
+		case AwsworkbenchPackage.AUTO_SCALING_GROUP_BUILDER_AUTOSCALING:
+			return createAutoScalingGroupBuilder_autoscaling();
+		case AwsworkbenchPackage.OPTION_CONFIGURATION_BUILDER_RDS:
+			return createOptionConfigurationBuilder_rds();
+		case AwsworkbenchPackage.OPTION_GROUP_BUILDER_RDS:
+			return createOptionGroupBuilder_rds();
+		case AwsworkbenchPackage.PORT_BUILDER_EC2:
+			return createPortBuilder_ec2();
+		case AwsworkbenchPackage.PROCESSOR_FEATURES_BUILDER_RDS:
+			return createProcessorFeaturesBuilder_rds();
+		case AwsworkbenchPackage.ORACLE_EE_INSTANCE_ENGINE_PROPS_BUILDER_RDS:
+			return createOracleEeInstanceEnginePropsBuilder_rds();
+		case AwsworkbenchPackage.ORACLE_SE1_INSTANCE_ENGINE_PROPS_BUILDER_RDS:
+			return createOracleSe1InstanceEnginePropsBuilder_rds();
+		case AwsworkbenchPackage.ORACLE_SE2_INSTANCE_ENGINE_PROPS_BUILDER_RDS:
+			return createOracleSe2InstanceEnginePropsBuilder_rds();
+		case AwsworkbenchPackage.ORACLE_SE_INSTANCE_ENGINE_PROPS_BUILDER_RDS:
+			return createOracleSeInstanceEnginePropsBuilder_rds();
+		case AwsworkbenchPackage.POSTGRES_INSTANCE_ENGINE_PROPS_BUILDER_RDS:
+			return createPostgresInstanceEnginePropsBuilder_rds();
+		case AwsworkbenchPackage.SQL_SERVER_EE_INSTANCE_ENGINE_PROPS_BUILDER_RDS:
+			return createSqlServerEeInstanceEnginePropsBuilder_rds();
+		case AwsworkbenchPackage.SQL_SERVER_EX_INSTANCE_ENGINE_PROPS_BUILDER_RDS:
+			return createSqlServerExInstanceEnginePropsBuilder_rds();
+		case AwsworkbenchPackage.SQL_SERVER_SE_INSTANCE_ENGINE_PROPS_BUILDER_RDS:
+			return createSqlServerSeInstanceEnginePropsBuilder_rds();
+		case AwsworkbenchPackage.SQL_SERVER_WEB_INSTANCE_ENGINE_PROPS_BUILDER_RDS:
+			return createSqlServerWebInstanceEnginePropsBuilder_rds();
+		case AwsworkbenchPackage.MY_SQL_INSTANCE_ENGINE_PROPS_BUILDER_RDS:
+			return createMySqlInstanceEnginePropsBuilder_rds();
+		case AwsworkbenchPackage.MARIA_DB_INSTANCE_ENGINE_PROPS_BUILDER_RDS:
+			return createMariaDbInstanceEnginePropsBuilder_rds();
+		case AwsworkbenchPackage.PARAMETER_GROUP_BUILDER_RDS:
+			return createParameterGroupBuilder_rds();
+		case AwsworkbenchPackage.DATABASE_INSTANCE_BUILDER_RDS:
+			return createDatabaseInstanceBuilder_rds();
 		case AwsworkbenchPackage.SCHEDULED_FARGATE_TASK_BUILDER_PATTERNS:
 			return createScheduledFargateTaskBuilder_patterns();
 		case AwsworkbenchPackage.BLOCK:
@@ -558,6 +598,12 @@ public class AwsworkbenchFactoryImpl extends EFactoryImpl implements Awsworkbenc
 			return createFargatePlatformVersionFromString(eDataType, initialValue);
 		case AwsworkbenchPackage.PROTOCOL:
 			return createProtocolFromString(eDataType, initialValue);
+		case AwsworkbenchPackage.PERFORMANCE_INSIGHT_RETENTION:
+			return createPerformanceInsightRetentionFromString(eDataType, initialValue);
+		case AwsworkbenchPackage.STORAGE_TYPE:
+			return createStorageTypeFromString(eDataType, initialValue);
+		case AwsworkbenchPackage.LICENSE_MODEL:
+			return createLicenseModelFromString(eDataType, initialValue);
 		default:
 			throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
 		}
@@ -693,6 +739,12 @@ public class AwsworkbenchFactoryImpl extends EFactoryImpl implements Awsworkbenc
 			return convertFargatePlatformVersionToString(eDataType, instanceValue);
 		case AwsworkbenchPackage.PROTOCOL:
 			return convertProtocolToString(eDataType, instanceValue);
+		case AwsworkbenchPackage.PERFORMANCE_INSIGHT_RETENTION:
+			return convertPerformanceInsightRetentionToString(eDataType, instanceValue);
+		case AwsworkbenchPackage.STORAGE_TYPE:
+			return convertStorageTypeToString(eDataType, instanceValue);
+		case AwsworkbenchPackage.LICENSE_MODEL:
+			return convertLicenseModelToString(eDataType, instanceValue);
 		default:
 			throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
 		}
@@ -2695,6 +2747,226 @@ public class AwsworkbenchFactoryImpl extends EFactoryImpl implements Awsworkbenc
 	 * @generated
 	 */
 	@Override
+	public TopicBuilder_sns createTopicBuilder_sns() {
+		TopicBuilder_snsImpl topicBuilder_sns = new TopicBuilder_snsImpl();
+		return topicBuilder_sns;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Ec2HealthCheckOptionsBuilder_autoscaling createEc2HealthCheckOptionsBuilder_autoscaling() {
+		Ec2HealthCheckOptionsBuilder_autoscalingImpl ec2HealthCheckOptionsBuilder_autoscaling = new Ec2HealthCheckOptionsBuilder_autoscalingImpl();
+		return ec2HealthCheckOptionsBuilder_autoscaling;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public AutoScalingGroupBuilder_autoscaling createAutoScalingGroupBuilder_autoscaling() {
+		AutoScalingGroupBuilder_autoscalingImpl autoScalingGroupBuilder_autoscaling = new AutoScalingGroupBuilder_autoscalingImpl();
+		return autoScalingGroupBuilder_autoscaling;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public OptionConfigurationBuilder_rds createOptionConfigurationBuilder_rds() {
+		OptionConfigurationBuilder_rdsImpl optionConfigurationBuilder_rds = new OptionConfigurationBuilder_rdsImpl();
+		return optionConfigurationBuilder_rds;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public OptionGroupBuilder_rds createOptionGroupBuilder_rds() {
+		OptionGroupBuilder_rdsImpl optionGroupBuilder_rds = new OptionGroupBuilder_rdsImpl();
+		return optionGroupBuilder_rds;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public PortBuilder_ec2 createPortBuilder_ec2() {
+		PortBuilder_ec2Impl portBuilder_ec2 = new PortBuilder_ec2Impl();
+		return portBuilder_ec2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ProcessorFeaturesBuilder_rds createProcessorFeaturesBuilder_rds() {
+		ProcessorFeaturesBuilder_rdsImpl processorFeaturesBuilder_rds = new ProcessorFeaturesBuilder_rdsImpl();
+		return processorFeaturesBuilder_rds;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public OracleEeInstanceEnginePropsBuilder_rds createOracleEeInstanceEnginePropsBuilder_rds() {
+		OracleEeInstanceEnginePropsBuilder_rdsImpl oracleEeInstanceEnginePropsBuilder_rds = new OracleEeInstanceEnginePropsBuilder_rdsImpl();
+		return oracleEeInstanceEnginePropsBuilder_rds;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public OracleSe1InstanceEnginePropsBuilder_rds createOracleSe1InstanceEnginePropsBuilder_rds() {
+		OracleSe1InstanceEnginePropsBuilder_rdsImpl oracleSe1InstanceEnginePropsBuilder_rds = new OracleSe1InstanceEnginePropsBuilder_rdsImpl();
+		return oracleSe1InstanceEnginePropsBuilder_rds;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public OracleSe2InstanceEnginePropsBuilder_rds createOracleSe2InstanceEnginePropsBuilder_rds() {
+		OracleSe2InstanceEnginePropsBuilder_rdsImpl oracleSe2InstanceEnginePropsBuilder_rds = new OracleSe2InstanceEnginePropsBuilder_rdsImpl();
+		return oracleSe2InstanceEnginePropsBuilder_rds;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public OracleSeInstanceEnginePropsBuilder_rds createOracleSeInstanceEnginePropsBuilder_rds() {
+		OracleSeInstanceEnginePropsBuilder_rdsImpl oracleSeInstanceEnginePropsBuilder_rds = new OracleSeInstanceEnginePropsBuilder_rdsImpl();
+		return oracleSeInstanceEnginePropsBuilder_rds;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public PostgresInstanceEnginePropsBuilder_rds createPostgresInstanceEnginePropsBuilder_rds() {
+		PostgresInstanceEnginePropsBuilder_rdsImpl postgresInstanceEnginePropsBuilder_rds = new PostgresInstanceEnginePropsBuilder_rdsImpl();
+		return postgresInstanceEnginePropsBuilder_rds;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public SqlServerEeInstanceEnginePropsBuilder_rds createSqlServerEeInstanceEnginePropsBuilder_rds() {
+		SqlServerEeInstanceEnginePropsBuilder_rdsImpl sqlServerEeInstanceEnginePropsBuilder_rds = new SqlServerEeInstanceEnginePropsBuilder_rdsImpl();
+		return sqlServerEeInstanceEnginePropsBuilder_rds;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public SqlServerExInstanceEnginePropsBuilder_rds createSqlServerExInstanceEnginePropsBuilder_rds() {
+		SqlServerExInstanceEnginePropsBuilder_rdsImpl sqlServerExInstanceEnginePropsBuilder_rds = new SqlServerExInstanceEnginePropsBuilder_rdsImpl();
+		return sqlServerExInstanceEnginePropsBuilder_rds;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public SqlServerSeInstanceEnginePropsBuilder_rds createSqlServerSeInstanceEnginePropsBuilder_rds() {
+		SqlServerSeInstanceEnginePropsBuilder_rdsImpl sqlServerSeInstanceEnginePropsBuilder_rds = new SqlServerSeInstanceEnginePropsBuilder_rdsImpl();
+		return sqlServerSeInstanceEnginePropsBuilder_rds;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public SqlServerWebInstanceEnginePropsBuilder_rds createSqlServerWebInstanceEnginePropsBuilder_rds() {
+		SqlServerWebInstanceEnginePropsBuilder_rdsImpl sqlServerWebInstanceEnginePropsBuilder_rds = new SqlServerWebInstanceEnginePropsBuilder_rdsImpl();
+		return sqlServerWebInstanceEnginePropsBuilder_rds;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public MySqlInstanceEnginePropsBuilder_rds createMySqlInstanceEnginePropsBuilder_rds() {
+		MySqlInstanceEnginePropsBuilder_rdsImpl mySqlInstanceEnginePropsBuilder_rds = new MySqlInstanceEnginePropsBuilder_rdsImpl();
+		return mySqlInstanceEnginePropsBuilder_rds;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public MariaDbInstanceEnginePropsBuilder_rds createMariaDbInstanceEnginePropsBuilder_rds() {
+		MariaDbInstanceEnginePropsBuilder_rdsImpl mariaDbInstanceEnginePropsBuilder_rds = new MariaDbInstanceEnginePropsBuilder_rdsImpl();
+		return mariaDbInstanceEnginePropsBuilder_rds;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ParameterGroupBuilder_rds createParameterGroupBuilder_rds() {
+		ParameterGroupBuilder_rdsImpl parameterGroupBuilder_rds = new ParameterGroupBuilder_rdsImpl();
+		return parameterGroupBuilder_rds;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public DatabaseInstanceBuilder_rds createDatabaseInstanceBuilder_rds() {
+		DatabaseInstanceBuilder_rdsImpl databaseInstanceBuilder_rds = new DatabaseInstanceBuilder_rdsImpl();
+		return databaseInstanceBuilder_rds;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public ScheduledFargateTaskBuilder_patterns createScheduledFargateTaskBuilder_patterns() {
 		ScheduledFargateTaskBuilder_patternsImpl scheduledFargateTaskBuilder_patterns = new ScheduledFargateTaskBuilder_patternsImpl();
 		return scheduledFargateTaskBuilder_patterns;
@@ -4051,6 +4323,73 @@ public class AwsworkbenchFactoryImpl extends EFactoryImpl implements Awsworkbenc
 	 * @generated
 	 */
 	public String convertProtocolToString(EDataType eDataType, Object instanceValue) {
+		return instanceValue == null ? null : instanceValue.toString();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PerformanceInsightRetention createPerformanceInsightRetentionFromString(EDataType eDataType,
+			String initialValue) {
+		PerformanceInsightRetention result = PerformanceInsightRetention.get(initialValue);
+		if (result == null)
+			throw new IllegalArgumentException(
+					"The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+		return result;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String convertPerformanceInsightRetentionToString(EDataType eDataType, Object instanceValue) {
+		return instanceValue == null ? null : instanceValue.toString();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public StorageType createStorageTypeFromString(EDataType eDataType, String initialValue) {
+		StorageType result = StorageType.get(initialValue);
+		if (result == null)
+			throw new IllegalArgumentException(
+					"The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+		return result;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String convertStorageTypeToString(EDataType eDataType, Object instanceValue) {
+		return instanceValue == null ? null : instanceValue.toString();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public LicenseModel createLicenseModelFromString(EDataType eDataType, String initialValue) {
+		LicenseModel result = LicenseModel.get(initialValue);
+		if (result == null)
+			throw new IllegalArgumentException(
+					"The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+		return result;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String convertLicenseModelToString(EDataType eDataType, Object instanceValue) {
 		return instanceValue == null ? null : instanceValue.toString();
 	}
 

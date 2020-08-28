@@ -1021,6 +1021,107 @@ public class AwsworkbenchAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseTopicBuilder_sns(TopicBuilder_sns object) {
+			return createTopicBuilder_snsAdapter();
+		}
+
+		@Override
+		public Adapter caseEc2HealthCheckOptionsBuilder_autoscaling(Ec2HealthCheckOptionsBuilder_autoscaling object) {
+			return createEc2HealthCheckOptionsBuilder_autoscalingAdapter();
+		}
+
+		@Override
+		public Adapter caseAutoScalingGroupBuilder_autoscaling(AutoScalingGroupBuilder_autoscaling object) {
+			return createAutoScalingGroupBuilder_autoscalingAdapter();
+		}
+
+		@Override
+		public Adapter caseOptionConfigurationBuilder_rds(OptionConfigurationBuilder_rds object) {
+			return createOptionConfigurationBuilder_rdsAdapter();
+		}
+
+		@Override
+		public Adapter caseOptionGroupBuilder_rds(OptionGroupBuilder_rds object) {
+			return createOptionGroupBuilder_rdsAdapter();
+		}
+
+		@Override
+		public Adapter casePortBuilder_ec2(PortBuilder_ec2 object) {
+			return createPortBuilder_ec2Adapter();
+		}
+
+		@Override
+		public Adapter caseProcessorFeaturesBuilder_rds(ProcessorFeaturesBuilder_rds object) {
+			return createProcessorFeaturesBuilder_rdsAdapter();
+		}
+
+		@Override
+		public Adapter caseOracleEeInstanceEnginePropsBuilder_rds(OracleEeInstanceEnginePropsBuilder_rds object) {
+			return createOracleEeInstanceEnginePropsBuilder_rdsAdapter();
+		}
+
+		@Override
+		public Adapter caseOracleSe1InstanceEnginePropsBuilder_rds(OracleSe1InstanceEnginePropsBuilder_rds object) {
+			return createOracleSe1InstanceEnginePropsBuilder_rdsAdapter();
+		}
+
+		@Override
+		public Adapter caseOracleSe2InstanceEnginePropsBuilder_rds(OracleSe2InstanceEnginePropsBuilder_rds object) {
+			return createOracleSe2InstanceEnginePropsBuilder_rdsAdapter();
+		}
+
+		@Override
+		public Adapter caseOracleSeInstanceEnginePropsBuilder_rds(OracleSeInstanceEnginePropsBuilder_rds object) {
+			return createOracleSeInstanceEnginePropsBuilder_rdsAdapter();
+		}
+
+		@Override
+		public Adapter casePostgresInstanceEnginePropsBuilder_rds(PostgresInstanceEnginePropsBuilder_rds object) {
+			return createPostgresInstanceEnginePropsBuilder_rdsAdapter();
+		}
+
+		@Override
+		public Adapter caseSqlServerEeInstanceEnginePropsBuilder_rds(SqlServerEeInstanceEnginePropsBuilder_rds object) {
+			return createSqlServerEeInstanceEnginePropsBuilder_rdsAdapter();
+		}
+
+		@Override
+		public Adapter caseSqlServerExInstanceEnginePropsBuilder_rds(SqlServerExInstanceEnginePropsBuilder_rds object) {
+			return createSqlServerExInstanceEnginePropsBuilder_rdsAdapter();
+		}
+
+		@Override
+		public Adapter caseSqlServerSeInstanceEnginePropsBuilder_rds(SqlServerSeInstanceEnginePropsBuilder_rds object) {
+			return createSqlServerSeInstanceEnginePropsBuilder_rdsAdapter();
+		}
+
+		@Override
+		public Adapter caseSqlServerWebInstanceEnginePropsBuilder_rds(
+				SqlServerWebInstanceEnginePropsBuilder_rds object) {
+			return createSqlServerWebInstanceEnginePropsBuilder_rdsAdapter();
+		}
+
+		@Override
+		public Adapter caseMySqlInstanceEnginePropsBuilder_rds(MySqlInstanceEnginePropsBuilder_rds object) {
+			return createMySqlInstanceEnginePropsBuilder_rdsAdapter();
+		}
+
+		@Override
+		public Adapter caseMariaDbInstanceEnginePropsBuilder_rds(MariaDbInstanceEnginePropsBuilder_rds object) {
+			return createMariaDbInstanceEnginePropsBuilder_rdsAdapter();
+		}
+
+		@Override
+		public Adapter caseParameterGroupBuilder_rds(ParameterGroupBuilder_rds object) {
+			return createParameterGroupBuilder_rdsAdapter();
+		}
+
+		@Override
+		public Adapter caseDatabaseInstanceBuilder_rds(DatabaseInstanceBuilder_rds object) {
+			return createDatabaseInstanceBuilder_rdsAdapter();
+		}
+
+		@Override
 		public Adapter caseScheduledFargateTaskBuilder_patterns(ScheduledFargateTaskBuilder_patterns object) {
 			return createScheduledFargateTaskBuilder_patternsAdapter();
 		}
@@ -3594,6 +3695,286 @@ public class AwsworkbenchAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createScheduledFargateTaskImageOptionsBuilder_patternsAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.TopicBuilder_sns <em>Topic Builder sns</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.TopicBuilder_sns
+	 * @generated
+	 */
+	public Adapter createTopicBuilder_snsAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.Ec2HealthCheckOptionsBuilder_autoscaling <em>Ec2 Health Check Options Builder autoscaling</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.Ec2HealthCheckOptionsBuilder_autoscaling
+	 * @generated
+	 */
+	public Adapter createEc2HealthCheckOptionsBuilder_autoscalingAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.AutoScalingGroupBuilder_autoscaling <em>Auto Scaling Group Builder autoscaling</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AutoScalingGroupBuilder_autoscaling
+	 * @generated
+	 */
+	public Adapter createAutoScalingGroupBuilder_autoscalingAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.OptionConfigurationBuilder_rds <em>Option Configuration Builder rds</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.OptionConfigurationBuilder_rds
+	 * @generated
+	 */
+	public Adapter createOptionConfigurationBuilder_rdsAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.OptionGroupBuilder_rds <em>Option Group Builder rds</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.OptionGroupBuilder_rds
+	 * @generated
+	 */
+	public Adapter createOptionGroupBuilder_rdsAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.PortBuilder_ec2 <em>Port Builder ec2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.PortBuilder_ec2
+	 * @generated
+	 */
+	public Adapter createPortBuilder_ec2Adapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.ProcessorFeaturesBuilder_rds <em>Processor Features Builder rds</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.ProcessorFeaturesBuilder_rds
+	 * @generated
+	 */
+	public Adapter createProcessorFeaturesBuilder_rdsAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.OracleEeInstanceEnginePropsBuilder_rds <em>Oracle Ee Instance Engine Props Builder rds</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.OracleEeInstanceEnginePropsBuilder_rds
+	 * @generated
+	 */
+	public Adapter createOracleEeInstanceEnginePropsBuilder_rdsAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.OracleSe1InstanceEnginePropsBuilder_rds <em>Oracle Se1 Instance Engine Props Builder rds</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.OracleSe1InstanceEnginePropsBuilder_rds
+	 * @generated
+	 */
+	public Adapter createOracleSe1InstanceEnginePropsBuilder_rdsAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.OracleSe2InstanceEnginePropsBuilder_rds <em>Oracle Se2 Instance Engine Props Builder rds</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.OracleSe2InstanceEnginePropsBuilder_rds
+	 * @generated
+	 */
+	public Adapter createOracleSe2InstanceEnginePropsBuilder_rdsAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.OracleSeInstanceEnginePropsBuilder_rds <em>Oracle Se Instance Engine Props Builder rds</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.OracleSeInstanceEnginePropsBuilder_rds
+	 * @generated
+	 */
+	public Adapter createOracleSeInstanceEnginePropsBuilder_rdsAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.PostgresInstanceEnginePropsBuilder_rds <em>Postgres Instance Engine Props Builder rds</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.PostgresInstanceEnginePropsBuilder_rds
+	 * @generated
+	 */
+	public Adapter createPostgresInstanceEnginePropsBuilder_rdsAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.SqlServerEeInstanceEnginePropsBuilder_rds <em>Sql Server Ee Instance Engine Props Builder rds</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.SqlServerEeInstanceEnginePropsBuilder_rds
+	 * @generated
+	 */
+	public Adapter createSqlServerEeInstanceEnginePropsBuilder_rdsAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.SqlServerExInstanceEnginePropsBuilder_rds <em>Sql Server Ex Instance Engine Props Builder rds</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.SqlServerExInstanceEnginePropsBuilder_rds
+	 * @generated
+	 */
+	public Adapter createSqlServerExInstanceEnginePropsBuilder_rdsAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.SqlServerSeInstanceEnginePropsBuilder_rds <em>Sql Server Se Instance Engine Props Builder rds</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.SqlServerSeInstanceEnginePropsBuilder_rds
+	 * @generated
+	 */
+	public Adapter createSqlServerSeInstanceEnginePropsBuilder_rdsAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.SqlServerWebInstanceEnginePropsBuilder_rds <em>Sql Server Web Instance Engine Props Builder rds</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.SqlServerWebInstanceEnginePropsBuilder_rds
+	 * @generated
+	 */
+	public Adapter createSqlServerWebInstanceEnginePropsBuilder_rdsAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.MySqlInstanceEnginePropsBuilder_rds <em>My Sql Instance Engine Props Builder rds</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.MySqlInstanceEnginePropsBuilder_rds
+	 * @generated
+	 */
+	public Adapter createMySqlInstanceEnginePropsBuilder_rdsAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.MariaDbInstanceEnginePropsBuilder_rds <em>Maria Db Instance Engine Props Builder rds</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.MariaDbInstanceEnginePropsBuilder_rds
+	 * @generated
+	 */
+	public Adapter createMariaDbInstanceEnginePropsBuilder_rdsAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.ParameterGroupBuilder_rds <em>Parameter Group Builder rds</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.ParameterGroupBuilder_rds
+	 * @generated
+	 */
+	public Adapter createParameterGroupBuilder_rdsAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.DatabaseInstanceBuilder_rds <em>Database Instance Builder rds</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.DatabaseInstanceBuilder_rds
+	 * @generated
+	 */
+	public Adapter createDatabaseInstanceBuilder_rdsAdapter() {
 		return null;
 	}
 

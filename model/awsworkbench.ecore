@@ -4,7 +4,6 @@
   <eClassifiers xsi:type="ecore:EClass" name="ServiceResources" abstract="true">
     <eStructuralFeatures xsi:type="ecore:EReference" name="dependsON" upperBound="-1"
         eType="#//ServiceResources"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="exportResource" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="importExistingResource"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
@@ -4409,7 +4408,7 @@
     <eLiterals name="GP2" value="1"/>
     <eLiterals name="IO1" value="2"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" eSuperTypes="#//ServiceResources" name="OptionConfigurationBuilder_rds">
+  <eClassifiers xsi:type="ecore:EClass" name="OptionConfigurationBuilder_rds" eSuperTypes="#//ServiceResources">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name_java_lang_String_"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="port_java_lang_Number_"
@@ -4426,7 +4425,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="identifier" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="additionalCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" eSuperTypes="#//ServiceResources" name="OptionGroupBuilder_rds">
+  <eClassifiers xsi:type="ecore:EClass" name="OptionGroupBuilder_rds" eSuperTypes="#//ServiceResources">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="configurations_software_amazon_awscdk_services_rds_OptionConfiguration_AsList"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="engineWithIInstanceEngine_software_amazon_awscdk_services_rds_IInstanceEngine_AsReference"
@@ -4439,9 +4438,9 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="identifier" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="additionalCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" eSuperTypes="#//ServiceResources" name="PortBuilder_ec2">
+  <eClassifiers xsi:type="ecore:EClass" name="PortBuilder_ec2" eSuperTypes="#//ServiceResources">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="protocol_software_amazon_awscdk_services_ec2_Protocol_"
-        eType="ecore:EEnum #//Protocol"/>
+        eType="#//Protocol"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="stringRepresentation_java_lang_String_"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="fromPort_java_lang_Number_"
@@ -4454,7 +4453,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="identifier" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="additionalCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" eSuperTypes="#//ServiceResources" name="ProcessorFeaturesBuilder_rds">
+  <eClassifiers xsi:type="ecore:EClass" name="ProcessorFeaturesBuilder_rds" eSuperTypes="#//ServiceResources">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="coreCount_java_lang_Number_"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="threadsPerCore_java_lang_Number_"
@@ -4470,7 +4469,8 @@
     <eLiterals name="BRING_YOUR_OWN_LICENSE" value="1"/>
     <eLiterals name="GENERAL_PUBLIC_LICENSE" value="2"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" eSuperTypes="#//ServiceResources" name="OracleEeInstanceEnginePropsBuilder_rds">
+  <eClassifiers xsi:type="ecore:EClass" name="OracleEeInstanceEnginePropsBuilder_rds"
+      eSuperTypes="#//ServiceResources">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="versionWithOracleEngineVersion_software_amazon_awscdk_services_rds_OracleEngineVersion_AsReference"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="generatedClassName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
@@ -4479,7 +4479,8 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="identifier" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="additionalCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" eSuperTypes="#//ServiceResources" name="OracleSe1InstanceEnginePropsBuilder_rds">
+  <eClassifiers xsi:type="ecore:EClass" name="OracleSe1InstanceEnginePropsBuilder_rds"
+      eSuperTypes="#//ServiceResources">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="versionWithOracleLegacyEngineVersion_software_amazon_awscdk_services_rds_OracleLegacyEngineVersion_AsReference"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="generatedClassName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
@@ -4488,7 +4489,8 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="identifier" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="additionalCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" eSuperTypes="#//ServiceResources" name="OracleSe2InstanceEnginePropsBuilder_rds">
+  <eClassifiers xsi:type="ecore:EClass" name="OracleSe2InstanceEnginePropsBuilder_rds"
+      eSuperTypes="#//ServiceResources">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="versionWithOracleEngineVersion_software_amazon_awscdk_services_rds_OracleEngineVersion_AsReference"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="generatedClassName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
@@ -4497,7 +4499,8 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="identifier" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="additionalCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" eSuperTypes="#//ServiceResources" name="OracleSeInstanceEnginePropsBuilder_rds">
+  <eClassifiers xsi:type="ecore:EClass" name="OracleSeInstanceEnginePropsBuilder_rds"
+      eSuperTypes="#//ServiceResources">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="versionWithOracleLegacyEngineVersion_software_amazon_awscdk_services_rds_OracleLegacyEngineVersion_AsReference"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="generatedClassName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
@@ -4506,7 +4509,8 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="identifier" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="additionalCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" eSuperTypes="#//ServiceResources" name="PostgresInstanceEnginePropsBuilder_rds">
+  <eClassifiers xsi:type="ecore:EClass" name="PostgresInstanceEnginePropsBuilder_rds"
+      eSuperTypes="#//ServiceResources">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="versionWithPostgresEngineVersion_software_amazon_awscdk_services_rds_PostgresEngineVersion_AsReference"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="generatedClassName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
@@ -4515,7 +4519,8 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="identifier" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="additionalCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" eSuperTypes="#//ServiceResources" name="SqlServerEeInstanceEnginePropsBuilder_rds">
+  <eClassifiers xsi:type="ecore:EClass" name="SqlServerEeInstanceEnginePropsBuilder_rds"
+      eSuperTypes="#//ServiceResources">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="versionWithSqlServerEngineVersion_software_amazon_awscdk_services_rds_SqlServerEngineVersion_AsReference"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="generatedClassName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
@@ -4524,7 +4529,8 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="identifier" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="additionalCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" eSuperTypes="#//ServiceResources" name="SqlServerExInstanceEnginePropsBuilder_rds">
+  <eClassifiers xsi:type="ecore:EClass" name="SqlServerExInstanceEnginePropsBuilder_rds"
+      eSuperTypes="#//ServiceResources">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="versionWithSqlServerEngineVersion_software_amazon_awscdk_services_rds_SqlServerEngineVersion_AsReference"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="generatedClassName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
@@ -4533,7 +4539,8 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="identifier" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="additionalCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" eSuperTypes="#//ServiceResources" name="SqlServerSeInstanceEnginePropsBuilder_rds">
+  <eClassifiers xsi:type="ecore:EClass" name="SqlServerSeInstanceEnginePropsBuilder_rds"
+      eSuperTypes="#//ServiceResources">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="versionWithSqlServerEngineVersion_software_amazon_awscdk_services_rds_SqlServerEngineVersion_AsReference"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="generatedClassName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
@@ -4542,7 +4549,8 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="identifier" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="additionalCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" eSuperTypes="#//ServiceResources" name="SqlServerWebInstanceEnginePropsBuilder_rds">
+  <eClassifiers xsi:type="ecore:EClass" name="SqlServerWebInstanceEnginePropsBuilder_rds"
+      eSuperTypes="#//ServiceResources">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="versionWithSqlServerEngineVersion_software_amazon_awscdk_services_rds_SqlServerEngineVersion_AsReference"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="generatedClassName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
@@ -4551,7 +4559,8 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="identifier" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="additionalCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" eSuperTypes="#//ServiceResources" name="MySqlInstanceEnginePropsBuilder_rds">
+  <eClassifiers xsi:type="ecore:EClass" name="MySqlInstanceEnginePropsBuilder_rds"
+      eSuperTypes="#//ServiceResources">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="versionWithMysqlEngineVersion_software_amazon_awscdk_services_rds_MysqlEngineVersion_AsReference"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="generatedClassName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
@@ -4560,7 +4569,8 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="identifier" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="additionalCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" eSuperTypes="#//ServiceResources" name="MariaDbInstanceEnginePropsBuilder_rds">
+  <eClassifiers xsi:type="ecore:EClass" name="MariaDbInstanceEnginePropsBuilder_rds"
+      eSuperTypes="#//ServiceResources">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="versionWithMariaDbEngineVersion_software_amazon_awscdk_services_rds_MariaDbEngineVersion_AsReference"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="generatedClassName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
@@ -4569,7 +4579,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="identifier" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="additionalCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" eSuperTypes="#//ServiceResources" name="ParameterGroupBuilder_rds">
+  <eClassifiers xsi:type="ecore:EClass" name="ParameterGroupBuilder_rds" eSuperTypes="#//ServiceResources">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="engineWithIEngine_software_amazon_awscdk_services_rds_IEngine_AsReference"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="description_java_lang_String_"
@@ -4582,7 +4592,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="identifier" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="additionalCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" eSuperTypes="#//ServiceResources" name="DatabaseInstanceBuilder_rds">
+  <eClassifiers xsi:type="ecore:EClass" name="DatabaseInstanceBuilder_rds" eSuperTypes="#//ServiceResources">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="vpcWithIVpc_software_amazon_awscdk_services_ec2_IVpc_AsReference"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="autoMinorVersionUpgrade_java_lang_Boolean_"
@@ -4594,7 +4604,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="cloudwatchLogsExports_java_lang_String_AsList"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="cloudwatchLogsRetention_software_amazon_awscdk_services_logs_RetentionDays_"
-        eType="ecore:EEnum #//RetentionDays"/>
+        eType="#//RetentionDays"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="cloudwatchLogsRetentionRoleWithIRole_software_amazon_awscdk_services_iam_IRole_AsReference"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="copyTagsToSnapshot_java_lang_Boolean_"
@@ -4624,7 +4634,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="performanceInsightEncryptionKeyWithIKey_software_amazon_awscdk_services_kms_IKey_AsReference"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="performanceInsightRetention_software_amazon_awscdk_services_rds_PerformanceInsightRetention_"
-        eType="ecore:EEnum #//PerformanceInsightRetention"/>
+        eType="#//PerformanceInsightRetention"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="port_java_lang_Number_"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="preferredBackupWindow_java_lang_String_"
@@ -4634,11 +4644,11 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="processorFeaturesWithProcessorFeatures_software_amazon_awscdk_services_rds_ProcessorFeatures_AsReference"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="removalPolicy_software_amazon_awscdk_core_RemovalPolicy_"
-        eType="ecore:EEnum #//RemovalPolicy"/>
+        eType="#//RemovalPolicy"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="securityGroups_software_amazon_awscdk_services_ec2_ISecurityGroup_AsList"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="storageType_software_amazon_awscdk_services_rds_StorageType_"
-        eType="ecore:EEnum #//StorageType"/>
+        eType="#//StorageType"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="vpcPlacementWithSubnetSelection_software_amazon_awscdk_services_ec2_SubnetSelection_AsReference"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="engineWithIInstanceEngine_software_amazon_awscdk_services_rds_IInstanceEngine_AsReference"
@@ -4652,7 +4662,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="instanceTypeWithInstanceType_software_amazon_awscdk_services_ec2_InstanceType_AsReference"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="licenseModel_software_amazon_awscdk_services_rds_LicenseModel_"
-        eType="ecore:EEnum #//LicenseModel"/>
+        eType="#//LicenseModel"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="masterUserPasswordWithSecretValue_software_amazon_awscdk_core_SecretValue_AsReference"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="masterUserPasswordEncryptionKeyWithIKey_software_amazon_awscdk_services_kms_IKey_AsReference"
@@ -4675,7 +4685,6 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="identifier" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="additionalCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  
   <eClassifiers xsi:type="ecore:EClass" name="ScheduledFargateTaskBuilder_patterns"
       eSuperTypes="#//ServiceResources">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="scheduleWithSchedule_software_amazon_awscdk_services_applicationautoscaling_Schedule_AsReference"
@@ -4708,5 +4717,4 @@
         eType="#//Block" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="canDeploy" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
   </eClassifiers>
-  
 </ecore:EPackage>

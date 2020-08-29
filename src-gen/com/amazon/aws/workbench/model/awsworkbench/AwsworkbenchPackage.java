@@ -77,22 +77,13 @@ public interface AwsworkbenchPackage extends EPackage {
 	int SERVICE_RESOURCES__DEPENDS_ON = 0;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SERVICE_RESOURCES__EXPORT_RESOURCE = 1;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE = 2;
+	int SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE = 1;
 
 	/**
 	 * The number of structural features of the '<em>Service Resources</em>' class.
@@ -101,7 +92,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_RESOURCES_FEATURE_COUNT = 3;
+	int SERVICE_RESOURCES_FEATURE_COUNT = 2;
 
 	/**
 	 * The number of operations of the '<em>Service Resources</em>' class.
@@ -513,15 +504,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int FLOW_LOG_OPTIONS_BUILDER_EC2__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FLOW_LOG_OPTIONS_BUILDER_EC2__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -751,15 +733,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int VPC_BUILDER_EC2__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int VPC_BUILDER_EC2__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -985,15 +958,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int SUBNET_BUILDER_EC2__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SUBNET_BUILDER_EC2__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1110,15 +1074,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int SUBNET_SELECTION_BUILDER_EC2__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
-
-	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SUBNET_SELECTION_BUILDER_EC2__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
@@ -1259,15 +1214,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int GATEWAY_VPC_ENDPOINT_BUILDER_EC2__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int GATEWAY_VPC_ENDPOINT_BUILDER_EC2__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1378,15 +1324,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int METHOD_DEPLOYMENT_OPTIONS_BUILDER_APIGATEWAY__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
-
-	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int METHOD_DEPLOYMENT_OPTIONS_BUILDER_APIGATEWAY__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
@@ -1551,15 +1488,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int ENDPOINT_CONFIGURATION_BUILDER_APIGATEWAY__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ENDPOINT_CONFIGURATION_BUILDER_APIGATEWAY__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1660,15 +1588,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int STAGE_OPTIONS_BUILDER_APIGATEWAY__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
-
-	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int STAGE_OPTIONS_BUILDER_APIGATEWAY__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
@@ -1934,15 +1853,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int HOSTED_ZONE_BUILDER_ROUTE53__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int HOSTED_ZONE_BUILDER_ROUTE53__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2060,15 +1970,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int DNS_VALIDATED_CERTIFICATE_BUILDER_CERTIFICATEMANAGER__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
-
-	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DNS_VALIDATED_CERTIFICATE_BUILDER_CERTIFICATEMANAGER__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
@@ -2234,15 +2135,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int INTEGRATION_RESPONSE_BUILDER_APIGATEWAY__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTEGRATION_RESPONSE_BUILDER_APIGATEWAY__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2374,15 +2266,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int CERTIFICATE_BUILDER_CERTIFICATEMANAGER__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CERTIFICATE_BUILDER_CERTIFICATEMANAGER__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2504,15 +2387,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int DOMAIN_NAME_OPTIONS_BUILDER_APIGATEWAY__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DOMAIN_NAME_OPTIONS_BUILDER_APIGATEWAY__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2632,15 +2506,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int NETWORK_LOAD_BALANCER_BUILDER_ELASTICLOADBALANCINGV2__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
-
-	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int NETWORK_LOAD_BALANCER_BUILDER_ELASTICLOADBALANCINGV2__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
@@ -2786,15 +2651,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int VPC_LINK_BUILDER_APIGATEWAY__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int VPC_LINK_BUILDER_APIGATEWAY__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2903,15 +2759,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int INTEGRATION_OPTIONS_BUILDER_APIGATEWAY__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
-
-	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTEGRATION_OPTIONS_BUILDER_APIGATEWAY__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
@@ -3105,15 +2952,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int INTEGRATION_BUILDER_APIGATEWAY__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTEGRATION_BUILDER_APIGATEWAY__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3232,15 +3070,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int CORS_OPTIONS_BUILDER_APIGATEWAY__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
-
-	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CORS_OPTIONS_BUILDER_APIGATEWAY__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
@@ -3398,15 +3227,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int KEY_BUILDER_KMS__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int KEY_BUILDER_KMS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3554,15 +3374,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int DEAD_LETTER_QUEUE_BUILDER_SQS__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DEAD_LETTER_QUEUE_BUILDER_SQS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3662,15 +3473,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int QUEUE_BUILDER_SQS__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
-
-	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int QUEUE_BUILDER_SQS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
@@ -3871,15 +3673,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int VERSION_OPTIONS_BUILDER_LAMBDA__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int VERSION_OPTIONS_BUILDER_LAMBDA__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -4039,15 +3832,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int LAYER_VERSION_BUILDER_LAMBDA__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int LAYER_VERSION_BUILDER_LAMBDA__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -4177,15 +3961,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int SECURITY_GROUP_BUILDER_EC2__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SECURITY_GROUP_BUILDER_EC2__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -4303,15 +4078,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int FUNCTION_PROPS_BUILDER_LAMBDA__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
-
-	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FUNCTION_PROPS_BUILDER_LAMBDA__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
@@ -4670,15 +4436,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int FUNCTION_BUILDER_LAMBDA__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FUNCTION_BUILDER_LAMBDA__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -5034,15 +4791,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int REQUEST_AUTHORIZER_BUILDER_APIGATEWAY__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int REQUEST_AUTHORIZER_BUILDER_APIGATEWAY__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -5172,15 +4920,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int TOKEN_AUTHORIZER_BUILDER_APIGATEWAY__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
-
-	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TOKEN_AUTHORIZER_BUILDER_APIGATEWAY__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
@@ -5320,15 +5059,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int JSON_SCHEMA_BUILDER_APIGATEWAY__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
-
-	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int JSON_SCHEMA_BUILDER_APIGATEWAY__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
@@ -5772,15 +5502,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int MODEL_BUILDER_APIGATEWAY__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MODEL_BUILDER_APIGATEWAY__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -5910,15 +5631,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int REQUEST_VALIDATOR_OPTIONS_BUILDER_APIGATEWAY__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int REQUEST_VALIDATOR_OPTIONS_BUILDER_APIGATEWAY__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -6029,15 +5741,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int REQUEST_VALIDATOR_BUILDER_APIGATEWAY__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
-
-	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int REQUEST_VALIDATOR_BUILDER_APIGATEWAY__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
@@ -6162,15 +5865,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int METHOD_RESPONSE_BUILDER_APIGATEWAY__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int METHOD_RESPONSE_BUILDER_APIGATEWAY__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -6280,15 +5974,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int METHOD_OPTIONS_BUILDER_APIGATEWAY__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
-
-	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int METHOD_OPTIONS_BUILDER_APIGATEWAY__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
@@ -6469,15 +6154,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int REST_API_PROPS_BUILDER_APIGATEWAY__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
-
-	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int REST_API_PROPS_BUILDER_APIGATEWAY__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
@@ -6756,15 +6432,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int API_GATEWAY_TO_DYNAMO_DB_BUILDER_APIGATEWAYDYNAMODB__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int API_GATEWAY_TO_DYNAMO_DB_BUILDER_APIGATEWAYDYNAMODB__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -6925,15 +6592,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int LAMBDA_REST_API_PROPS_BUILDER_APIGATEWAY__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
-
-	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int LAMBDA_REST_API_PROPS_BUILDER_APIGATEWAY__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
@@ -7245,15 +6903,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int LAMBDA_REST_API_BUILDER_APIGATEWAY__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int LAMBDA_REST_API_BUILDER_APIGATEWAY__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -7560,15 +7209,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int API_GATEWAY_TO_LAMBDA_BUILDER_APIGATEWAYLAMBDA__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int API_GATEWAY_TO_LAMBDA_BUILDER_APIGATEWAYLAMBDA__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -7679,15 +7319,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int QUEUE_PROPS_BUILDER_SQS__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
-
-	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int QUEUE_PROPS_BUILDER_SQS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
@@ -7888,15 +7519,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int API_GATEWAY_TO_SQS_BUILDER_APIGATEWAYSQS__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int API_GATEWAY_TO_SQS_BUILDER_APIGATEWAYSQS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -8056,15 +7678,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int VERSION_BUILDER_LAMBDA__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
-
-	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int VERSION_BUILDER_LAMBDA__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
@@ -8236,15 +7849,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int LAMBDA_FUNCTION_ASSOCIATION_BUILDER_CLOUDFRONT__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int LAMBDA_FUNCTION_ASSOCIATION_BUILDER_CLOUDFRONT__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -8345,15 +7949,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int BEHAVIOR_BUILDER_CLOUDFRONT__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
-
-	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BEHAVIOR_BUILDER_CLOUDFRONT__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
@@ -8544,15 +8139,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int CUSTOM_ORIGIN_CONFIG_BUILDER_CLOUDFRONT__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CUSTOM_ORIGIN_CONFIG_BUILDER_CLOUDFRONT__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -8702,15 +8288,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int BLOCK_PUBLIC_ACCESS_BUILDER_S3__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BLOCK_PUBLIC_ACCESS_BUILDER_S3__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -8828,15 +8405,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int CORS_RULE_BUILDER_S3__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
-
-	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CORS_RULE_BUILDER_S3__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
@@ -8976,15 +8544,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int NONCURRENT_VERSION_TRANSITION_BUILDER_S3__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int NONCURRENT_VERSION_TRANSITION_BUILDER_S3__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -9085,15 +8644,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int TRANSITION_BUILDER_S3__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
-
-	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSITION_BUILDER_S3__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
@@ -9206,15 +8756,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int LIFECYCLE_RULE_BUILDER_S3__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
-
-	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int LIFECYCLE_RULE_BUILDER_S3__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
@@ -9396,15 +8937,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int BUCKET_METRICS_BUILDER_S3__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BUCKET_METRICS_BUILDER_S3__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -9515,15 +9047,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int REDIRECT_TARGET_BUILDER_S3__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int REDIRECT_TARGET_BUILDER_S3__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -9625,15 +9148,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int ROUTING_RULE_CONDITION_BUILDER_S3__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ROUTING_RULE_CONDITION_BUILDER_S3__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -9733,15 +9247,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int ROUTING_RULE_BUILDER_S3__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
-
-	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ROUTING_RULE_BUILDER_S3__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
@@ -9872,15 +9377,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int BUCKET_BUILDER_S3__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
-
-	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BUCKET_BUILDER_S3__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
@@ -10129,15 +9625,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int BUCKET_PROPS_BUILDER_S3__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BUCKET_PROPS_BUILDER_S3__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -10384,15 +9871,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int ORIGIN_ACCESS_IDENTITY_BUILDER_CLOUDFRONT__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ORIGIN_ACCESS_IDENTITY_BUILDER_CLOUDFRONT__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -10482,15 +9960,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int S3_ORIGIN_CONFIG_BUILDER_CLOUDFRONT__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
-
-	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int S3_ORIGIN_CONFIG_BUILDER_CLOUDFRONT__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
@@ -10593,15 +10062,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int SOURCE_CONFIGURATION_BUILDER_CLOUDFRONT__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
-
-	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SOURCE_CONFIGURATION_BUILDER_CLOUDFRONT__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
@@ -10735,15 +10195,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int ALIAS_CONFIGURATION_BUILDER_CLOUDFRONT__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ALIAS_CONFIGURATION_BUILDER_CLOUDFRONT__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -10864,15 +10315,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int LOGGING_CONFIGURATION_BUILDER_CLOUDFRONT__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int LOGGING_CONFIGURATION_BUILDER_CLOUDFRONT__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -10982,15 +10424,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int CLOUD_FRONT_WEB_DISTRIBUTION_PROPS_BUILDER_CLOUDFRONT__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
-
-	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CLOUD_FRONT_WEB_DISTRIBUTION_PROPS_BUILDER_CLOUDFRONT__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
@@ -11206,15 +10639,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int CLOUD_FRONT_TO_API_GATEWAY_BUILDER_CLOUDFRONTAPIGATEWAY__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CLOUD_FRONT_TO_API_GATEWAY_BUILDER_CLOUDFRONTAPIGATEWAY__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -11326,15 +10750,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int CLOUD_FRONT_TO_API_GATEWAY_TO_LAMBDA_BUILDER_CLOUDFRONTAPIGATEWAYLAMBDA__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
-
-	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CLOUD_FRONT_TO_API_GATEWAY_TO_LAMBDA_BUILDER_CLOUDFRONTAPIGATEWAYLAMBDA__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
@@ -11475,15 +10890,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int CLOUD_FRONT_TO_S3_BUILDER_CLOUDFRONTS3__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CLOUD_FRONT_TO_S3_BUILDER_CLOUDFRONTS3__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -11606,15 +11012,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int AUTO_VERIFIED_ATTRS_BUILDER_COGNITO__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int AUTO_VERIFIED_ATTRS_BUILDER_COGNITO__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -11713,15 +11110,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int USER_POOL_TRIGGERS_BUILDER_COGNITO__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
-
-	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int USER_POOL_TRIGGERS_BUILDER_COGNITO__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
@@ -11906,15 +11294,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int EMAIL_SETTINGS_BUILDER_COGNITO__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int EMAIL_SETTINGS_BUILDER_COGNITO__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -12013,15 +11392,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int PASSWORD_POLICY_BUILDER_COGNITO__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
-
-	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PASSWORD_POLICY_BUILDER_COGNITO__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
@@ -12161,15 +11531,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int MFA_SECOND_FACTOR_BUILDER_COGNITO__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MFA_SECOND_FACTOR_BUILDER_COGNITO__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -12268,15 +11629,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int REQUIRED_ATTRIBUTES_BUILDER_COGNITO__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
-
-	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int REQUIRED_ATTRIBUTES_BUILDER_COGNITO__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
@@ -12515,15 +11867,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int SIGN_IN_ALIASES_BUILDER_COGNITO__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SIGN_IN_ALIASES_BUILDER_COGNITO__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -12642,15 +11985,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int USER_INVITATION_CONFIG_BUILDER_COGNITO__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int USER_INVITATION_CONFIG_BUILDER_COGNITO__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -12758,15 +12092,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int USER_VERIFICATION_CONFIG_BUILDER_COGNITO__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
-
-	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int USER_VERIFICATION_CONFIG_BUILDER_COGNITO__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
@@ -12886,15 +12211,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int USER_POOL_PROPS_BUILDER_COGNITO__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
-
-	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int USER_POOL_PROPS_BUILDER_COGNITO__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
@@ -13136,15 +12452,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int USER_POOL_BUILDER_COGNITO__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int USER_POOL_BUILDER_COGNITO__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -13383,15 +12690,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int AUTH_FLOW_BUILDER_COGNITO__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int AUTH_FLOW_BUILDER_COGNITO__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -13519,15 +12817,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int OAUTH_FLOWS_BUILDER_COGNITO__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int OAUTH_FLOWS_BUILDER_COGNITO__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -13635,15 +12924,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int OAUTH_SETTINGS_BUILDER_COGNITO__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
-
-	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int OAUTH_SETTINGS_BUILDER_COGNITO__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
@@ -13755,15 +13035,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int USER_POOL_CLIENT_PROPS_BUILDER_COGNITO__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
-
-	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int USER_POOL_CLIENT_PROPS_BUILDER_COGNITO__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
@@ -13908,15 +13179,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int COGNITO_TO_API_GATEWAY_TO_LAMBDA_BUILDER_COGNITOAPIGATEWAYLAMBDA__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int COGNITO_TO_API_GATEWAY_TO_LAMBDA_BUILDER_COGNITOAPIGATEWAYLAMBDA__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -14055,15 +13317,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int BUILD_DEAD_LETTER_QUEUE_PROPS_BUILDER_CORE__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BUILD_DEAD_LETTER_QUEUE_PROPS_BUILDER_CORE__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -14164,15 +13417,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int BUILD_QUEUE_PROPS_BUILDER_CORE__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
-
-	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BUILD_QUEUE_PROPS_BUILDER_CORE__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
@@ -14287,15 +13531,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int BUILD_S3_BUCKET_PROPS_BUILDER_CORE__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BUILD_S3_BUCKET_PROPS_BUILDER_CORE__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -14398,15 +13633,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int BUILD_ENCRYPTION_KEY_PROPS_BUILDER_CORE__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BUILD_ENCRYPTION_KEY_PROPS_BUILDER_CORE__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -14497,15 +13723,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int COGNITO_OPTIONS_BUILDER_CORE__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
-
-	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int COGNITO_OPTIONS_BUILDER_CORE__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
@@ -14620,15 +13837,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int BUILD_KINESIS_STREAM_PROPS_BUILDER_CORE__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BUILD_KINESIS_STREAM_PROPS_BUILDER_CORE__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -14719,15 +13927,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int BUILD_KINESIS_ANALYTICS_APP_PROPS_BUILDER_CORE__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
-
-	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BUILD_KINESIS_ANALYTICS_APP_PROPS_BUILDER_CORE__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
@@ -14832,15 +14031,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int BUILD_LAMBDA_FUNCTION_PROPS_BUILDER_CORE__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BUILD_LAMBDA_FUNCTION_PROPS_BUILDER_CORE__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -14943,15 +14133,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int BUILD_DYNAMO_DB_TABLE_PROPS_BUILDER_CORE__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BUILD_DYNAMO_DB_TABLE_PROPS_BUILDER_CORE__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -15052,15 +14233,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int BUILD_TOPIC_PROPS_BUILDER_CORE__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
-
-	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BUILD_TOPIC_PROPS_BUILDER_CORE__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
@@ -15171,15 +14343,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int DYNAMO_DB_STREAM_TO_LAMBDA_BUILDER_DYNAMODBSTREAMLAMBDA__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
-
-	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DYNAMO_DB_STREAM_TO_LAMBDA_BUILDER_DYNAMODBSTREAMLAMBDA__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
@@ -15303,15 +14466,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int DYNAMO_DB_STREAM_TO_LAMBDA_TO_ELASTIC_SEARCH_AND_KIBANA_BUILDER_DYNAMODBSTREAMLAMBDAELASTICSEARCHKIBANA__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
-
-	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DYNAMO_DB_STREAM_TO_LAMBDA_TO_ELASTIC_SEARCH_AND_KIBANA_BUILDER_DYNAMODBSTREAMLAMBDAELASTICSEARCHKIBANA__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
@@ -15462,15 +14616,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int EVENT_BUS_BUILDER_EVENTS__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int EVENT_BUS_BUILDER_EVENTS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -15569,15 +14714,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int EVENT_PATTERN_BUILDER_EVENTS__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
-
-	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int EVENT_PATTERN_BUILDER_EVENTS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
@@ -15744,15 +14880,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int RULE_PROPS_BUILDER_EVENTS__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int RULE_PROPS_BUILDER_EVENTS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -15902,15 +15029,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int CRON_OPTIONS_BUILDER_EVENTS__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CRON_OPTIONS_BUILDER_EVENTS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -16047,15 +15165,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int EVENTS_RULE_TO_LAMBDA_BUILDER_EVENTSRULELAMBDA__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int EVENTS_RULE_TO_LAMBDA_BUILDER_EVENTSRULELAMBDA__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -16166,15 +15275,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int STATE_MACHINE_PROPS_BUILDER_STEPFUNCTIONS__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
-
-	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int STATE_MACHINE_PROPS_BUILDER_STEPFUNCTIONS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
@@ -16319,15 +15419,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int EVENTS_RULE_TO_STEP_FUNCTION_BUILDER_EVENTSRULESTEPFUNCTION__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int EVENTS_RULE_TO_STEP_FUNCTION_BUILDER_EVENTSRULESTEPFUNCTION__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -16431,15 +15522,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int IOT_TO_KINESIS_FIREHOSE_TO_S3_BUILDER_IOTKINESISFIREHOSES3__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
-
-	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IOT_TO_KINESIS_FIREHOSE_TO_S3_BUILDER_IOTKINESISFIREHOSES3__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
@@ -16567,15 +15649,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int IOT_TO_LAMBDA_BUILDER_IOTLAMBDA__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IOT_TO_LAMBDA_BUILDER_IOTLAMBDA__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -16686,15 +15759,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int IOT_TO_LAMBDA_TO_DYNAMO_DB_BUILDER_IOTLAMBDADYNAMODB__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
-
-	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IOT_TO_LAMBDA_TO_DYNAMO_DB_BUILDER_IOTLAMBDADYNAMODB__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
@@ -16830,15 +15894,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int KINESIS_FIREHOSE_TO_S3_BUILDER_KINESISFIREHOSES3__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int KINESIS_FIREHOSE_TO_S3_BUILDER_KINESISFIREHOSES3__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -16949,15 +16004,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int KINESIS_FIREHOSE_TO_ANALYTICS_AND_S3_BUILDER_KINESISFIREHOSES3KINESISANALYTICS__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
-
-	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int KINESIS_FIREHOSE_TO_ANALYTICS_AND_S3_BUILDER_KINESISFIREHOSES3KINESISANALYTICS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
@@ -17088,15 +16134,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int KINESIS_STREAMS_TO_LAMBDA_BUILDER_KINESISSTREAMSLAMBDA__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int KINESIS_STREAMS_TO_LAMBDA_BUILDER_KINESISSTREAMSLAMBDA__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -17218,15 +16255,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int TABLE_BUILDER_DYNAMODB__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
-
-	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TABLE_BUILDER_DYNAMODB__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
@@ -17444,15 +16472,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int LAMBDA_TO_DYNAMO_DB_BUILDER_LAMBDADYNAMODB__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int LAMBDA_TO_DYNAMO_DB_BUILDER_LAMBDADYNAMODB__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -17585,15 +16604,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int LAMBDA_TO_ELASTIC_SEARCH_AND_KIBANA_BUILDER_LAMBDAELASTICSEARCHKIBANA__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int LAMBDA_TO_ELASTIC_SEARCH_AND_KIBANA_BUILDER_LAMBDAELASTICSEARCHKIBANA__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -17720,15 +16730,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int LAMBDA_TO_S3_BUILDER_LAMBDAS3__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
-
-	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int LAMBDA_TO_S3_BUILDER_LAMBDAS3__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
@@ -17863,15 +16864,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int TOPIC_PROPS_BUILDER_SNS__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TOPIC_PROPS_BUILDER_SNS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -17980,15 +16972,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int LAMBDA_TO_SNS_BUILDER_LAMBDASNS__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
-
-	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int LAMBDA_TO_SNS_BUILDER_LAMBDASNS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
@@ -18118,15 +17101,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int LAMBDA_TO_SQS_BUILDER_LAMBDASQS__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
-
-	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int LAMBDA_TO_SQS_BUILDER_LAMBDASQS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
@@ -18289,15 +17263,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int LAMBDA_TO_STEP_FUNCTION_BUILDER_LAMBDASTEPFUNCTION__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int LAMBDA_TO_STEP_FUNCTION_BUILDER_LAMBDASTEPFUNCTION__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -18408,15 +17373,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int S3_TO_LAMBDA_BUILDER_S3LAMBDA__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
-
-	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int S3_TO_LAMBDA_BUILDER_S3LAMBDA__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
@@ -18539,15 +17495,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int S3_TO_STEP_FUNCTION_BUILDER_S3STEPFUNCTION__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
-
-	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int S3_TO_STEP_FUNCTION_BUILDER_S3STEPFUNCTION__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
@@ -18682,15 +17629,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int SNS_TO_LAMBDA_BUILDER_SNSLAMBDA__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SNS_TO_LAMBDA_BUILDER_SNSLAMBDA__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -18818,15 +17756,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int MANAGED_POLICY_BUILDER_IAM__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
-
-	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MANAGED_POLICY_BUILDER_IAM__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
@@ -18988,15 +17917,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int USER_BUILDER_IAM__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int USER_BUILDER_IAM__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -19146,15 +18066,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int GROUP_BUILDER_IAM__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int GROUP_BUILDER_IAM__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -19263,15 +18174,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int ROLE_BUILDER_IAM__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
-
-	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ROLE_BUILDER_IAM__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
@@ -19451,15 +18353,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int POLICY_STATEMENT_BUILDER_IAM__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int POLICY_STATEMENT_BUILDER_IAM__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -19627,15 +18520,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int POLICY_DOCUMENT_BUILDER_IAM__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int POLICY_DOCUMENT_BUILDER_IAM__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -19735,15 +18619,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int SQS_TO_LAMBDA_BUILDER_SQSLAMBDA__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
-
-	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SQS_TO_LAMBDA_BUILDER_SQSLAMBDA__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
@@ -19897,15 +18772,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int ATTRIBUTE_BUILDER_DYNAMODB__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ATTRIBUTE_BUILDER_DYNAMODB__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -20005,15 +18871,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int TABLE_PROPS_BUILDER_DYNAMODB__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
-
-	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TABLE_PROPS_BUILDER_DYNAMODB__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
@@ -20232,15 +19089,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int PRIVATE_DNS_NAMESPACE_BUILDER_SERVICEDISCOVERY__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRIVATE_DNS_NAMESPACE_BUILDER_SERVICEDISCOVERY__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -20352,15 +19200,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int PUBLIC_DNS_NAMESPACE_BUILDER_SERVICEDISCOVERY__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PUBLIC_DNS_NAMESPACE_BUILDER_SERVICEDISCOVERY__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -20462,15 +19301,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int HTTP_NAMESPACE_BUILDER_SERVICEDISCOVERY__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int HTTP_NAMESPACE_BUILDER_SERVICEDISCOVERY__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -20569,15 +19399,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int CLOUD_MAP_OPTIONS_BUILDER_ECS__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
-
-	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CLOUD_MAP_OPTIONS_BUILDER_ECS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
@@ -20710,15 +19531,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int BLOCK_DEVICE_BUILDER_AUTOSCALING__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BLOCK_DEVICE_BUILDER_AUTOSCALING__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -20827,15 +19639,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int HEALTH_CHECK_BUILDER_ECS__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
-
-	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int HEALTH_CHECK_BUILDER_ECS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
@@ -20968,15 +19771,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int AMAZON_LINUX_IMAGE_BUILDER_EC2__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int AMAZON_LINUX_IMAGE_BUILDER_EC2__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -21107,15 +19901,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int ROLLING_UPDATE_CONFIGURATION_BUILDER_AUTOSCALING__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
-
-	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ROLLING_UPDATE_CONFIGURATION_BUILDER_AUTOSCALING__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
@@ -21258,15 +20043,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int ADD_CAPACITY_OPTIONS_BUILDER_ECS__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
-
-	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ADD_CAPACITY_OPTIONS_BUILDER_ECS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
@@ -21585,15 +20361,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int CLOUD_MAP_NAMESPACE_OPTIONS_BUILDER_ECS__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CLOUD_MAP_NAMESPACE_OPTIONS_BUILDER_ECS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -21703,15 +20470,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int CLUSTER_BUILDER_ECS__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
-
-	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CLUSTER_BUILDER_ECS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
@@ -21842,15 +20600,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int APPLICATION_LOAD_BALANCER_BUILDER_ELASTICLOADBALANCINGV2__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
-
-	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int APPLICATION_LOAD_BALANCER_BUILDER_ELASTICLOADBALANCINGV2__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
@@ -22028,15 +20777,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int DOCKER_IMAGE_ASSET_BUILDER_ASSETS__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DOCKER_IMAGE_ASSET_BUILDER_ASSETS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -22193,15 +20933,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int ASSET_IMAGE_BUILDER_ECS__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ASSET_IMAGE_BUILDER_ECS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -22347,15 +21078,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int SECRET_STRING_GENERATOR_BUILDER_SECRETSMANAGER__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
-
-	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SECRET_STRING_GENERATOR_BUILDER_SECRETSMANAGER__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
@@ -22540,15 +21262,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int SECRET_BUILDER_SECRETSMANAGER__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SECRET_BUILDER_SECRETSMANAGER__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -22667,15 +21380,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int AWS_LOG_DRIVER_BUILDER_ECS__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
-
-	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int AWS_LOG_DRIVER_BUILDER_ECS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
@@ -22807,15 +21511,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int LOG_GROUP_BUILDER_LOGS__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int LOG_GROUP_BUILDER_LOGS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -22925,15 +21620,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int AWS_LOG_DRIVER_PROPS_BUILDER_ECS__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
-
-	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int AWS_LOG_DRIVER_PROPS_BUILDER_ECS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
@@ -23063,15 +21749,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int APPLICATION_LOAD_BALANCED_TASK_IMAGE_OPTIONS_BUILDER_PATTERNS__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
-
-	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int APPLICATION_LOAD_BALANCED_TASK_IMAGE_OPTIONS_BUILDER_PATTERNS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
@@ -23261,15 +21938,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int APP_MESH_PROXY_CONFIGURATION_PROPS_BUILDER_ECS__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int APP_MESH_PROXY_CONFIGURATION_PROPS_BUILDER_ECS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -23422,15 +22090,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int APP_MESH_PROXY_CONFIGURATION_BUILDER_ECS__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int APP_MESH_PROXY_CONFIGURATION_BUILDER_ECS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -23533,15 +22192,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int HOST_BUILDER_ECS__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int HOST_BUILDER_ECS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -23631,15 +22281,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int DOCKER_VOLUME_CONFIGURATION_BUILDER_ECS__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
-
-	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DOCKER_VOLUME_CONFIGURATION_BUILDER_ECS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
@@ -23771,15 +22412,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int VOLUME_BUILDER_ECS__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int VOLUME_BUILDER_ECS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -23889,15 +22521,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int EC2_TASK_DEFINITION_BUILDER_ECS__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
-
-	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int EC2_TASK_DEFINITION_BUILDER_ECS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
@@ -24069,15 +22692,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int APPLICATION_LOAD_BALANCED_EC2_SERVICE_BUILDER_PATTERNS__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
-
-	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int APPLICATION_LOAD_BALANCED_EC2_SERVICE_BUILDER_PATTERNS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
@@ -24383,15 +22997,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int FARGATE_TASK_DEFINITION_BUILDER_ECS__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FARGATE_TASK_DEFINITION_BUILDER_ECS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -24539,15 +23144,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int APPLICATION_LOAD_BALANCED_FARGATE_SERVICE_BUILDER_PATTERNS__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
-
-	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int APPLICATION_LOAD_BALANCED_FARGATE_SERVICE_BUILDER_PATTERNS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
@@ -24865,15 +23461,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int APPLICATION_MULTIPLE_TARGET_GROUPS_FARGATE_SERVICE_BUILDER_PATTERNS__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int APPLICATION_MULTIPLE_TARGET_GROUPS_FARGATE_SERVICE_BUILDER_PATTERNS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -25122,15 +23709,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int APPLICATION_LISTENER_PROPS_BUILDER_PATTERNS__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int APPLICATION_LISTENER_PROPS_BUILDER_PATTERNS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -25249,15 +23827,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int APPLICATION_LOAD_BALANCER_PROPS_BUILDER_PATTERNS__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
-
-	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int APPLICATION_LOAD_BALANCER_PROPS_BUILDER_PATTERNS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
@@ -25389,15 +23958,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int APPLICATION_TARGET_PROPS_BUILDER_PATTERNS__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
-
-	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int APPLICATION_TARGET_PROPS_BUILDER_PATTERNS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
@@ -25536,15 +24096,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int APPLICATION_LOAD_BALANCED_TASK_IMAGE_PROPS_BUILDER_PATTERNS__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
-
-	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int APPLICATION_LOAD_BALANCED_TASK_IMAGE_PROPS_BUILDER_PATTERNS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
@@ -25731,15 +24282,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int APPLICATION_MULTIPLE_TARGET_GROUPS_EC2_SERVICE_BUILDER_PATTERNS__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
-
-	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int APPLICATION_MULTIPLE_TARGET_GROUPS_EC2_SERVICE_BUILDER_PATTERNS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
@@ -25980,15 +24522,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int NETWORK_LOAD_BALANCED_TASK_IMAGE_OPTIONS_BUILDER_PATTERNS__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int NETWORK_LOAD_BALANCED_TASK_IMAGE_OPTIONS_BUILDER_PATTERNS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -26172,15 +24705,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int NETWORK_LOAD_BALANCED_FARGATE_SERVICE_BUILDER_PATTERNS__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
-
-	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int NETWORK_LOAD_BALANCED_FARGATE_SERVICE_BUILDER_PATTERNS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
@@ -26476,15 +25000,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int NETWORK_LOAD_BALANCED_EC2_SERVICE_BUILDER_PATTERNS__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int NETWORK_LOAD_BALANCED_EC2_SERVICE_BUILDER_PATTERNS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -26767,15 +25282,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int NETWORK_MULTIPLE_TARGET_GROUPS_EC2_SERVICE_BUILDER_PATTERNS__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int NETWORK_MULTIPLE_TARGET_GROUPS_EC2_SERVICE_BUILDER_PATTERNS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -27012,15 +25518,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int NETWORK_TARGET_PROPS_BUILDER_PATTERNS__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int NETWORK_TARGET_PROPS_BUILDER_PATTERNS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -27119,15 +25616,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int NETWORK_LOAD_BALANCED_TASK_IMAGE_PROPS_BUILDER_PATTERNS__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
-
-	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int NETWORK_LOAD_BALANCED_TASK_IMAGE_PROPS_BUILDER_PATTERNS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
@@ -27311,15 +25799,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int NETWORK_MULTIPLE_TARGET_GROUPS_FARGATE_SERVICE_BUILDER_PATTERNS__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
-
-	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int NETWORK_MULTIPLE_TARGET_GROUPS_FARGATE_SERVICE_BUILDER_PATTERNS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
@@ -27570,15 +26049,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int SCALING_INTERVAL_BUILDER_APPLICATIONAUTOSCALING__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCALING_INTERVAL_BUILDER_APPLICATIONAUTOSCALING__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -27686,15 +26156,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int QUEUE_PROCESSING_FARGATE_SERVICE_BUILDER_PATTERNS__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
-
-	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int QUEUE_PROCESSING_FARGATE_SERVICE_BUILDER_PATTERNS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
@@ -28008,15 +26469,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int CRON_OPTIONS_BUILDER_APPLICATIONAUTOSCALING__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CRON_OPTIONS_BUILDER_APPLICATIONAUTOSCALING__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -28153,15 +26605,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int SCHEDULED_EC2_TASK_DEFINITION_OPTIONS_BUILDER_PATTERNS__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEDULED_EC2_TASK_DEFINITION_OPTIONS_BUILDER_PATTERNS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -28253,15 +26696,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int SCHEDULED_EC2_TASK_IMAGE_OPTIONS_BUILDER_PATTERNS__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
-
-	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEDULED_EC2_TASK_IMAGE_OPTIONS_BUILDER_PATTERNS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
@@ -28425,15 +26859,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int SCHEDULED_EC2_TASK_BUILDER_PATTERNS__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEDULED_EC2_TASK_BUILDER_PATTERNS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -28583,15 +27008,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int QUEUE_PROCESSING_EC2_SERVICE_BUILDER_PATTERNS__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
-
-	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int QUEUE_PROCESSING_EC2_SERVICE_BUILDER_PATTERNS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
@@ -28904,15 +27320,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int SCHEDULED_FARGATE_TASK_DEFINITION_OPTIONS_BUILDER_PATTERNS__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEDULED_FARGATE_TASK_DEFINITION_OPTIONS_BUILDER_PATTERNS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -29006,15 +27413,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int SCHEDULED_FARGATE_TASK_IMAGE_OPTIONS_BUILDER_PATTERNS__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
-
-	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEDULED_FARGATE_TASK_IMAGE_OPTIONS_BUILDER_PATTERNS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
@@ -29170,15 +27568,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int TOPIC_BUILDER_SNS__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TOPIC_BUILDER_SNS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -29289,15 +27678,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int EC2_HEALTH_CHECK_OPTIONS_BUILDER_AUTOSCALING__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int EC2_HEALTH_CHECK_OPTIONS_BUILDER_AUTOSCALING__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -29388,15 +27768,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int AUTO_SCALING_GROUP_BUILDER_AUTOSCALING__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
-
-	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int AUTO_SCALING_GROUP_BUILDER_AUTOSCALING__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
@@ -29717,15 +28088,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int OPTION_CONFIGURATION_BUILDER_RDS__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int OPTION_CONFIGURATION_BUILDER_RDS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -29855,15 +28217,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int OPTION_GROUP_BUILDER_RDS__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int OPTION_GROUP_BUILDER_RDS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -29973,15 +28326,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int PORT_BUILDER_EC2__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
-
-	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PORT_BUILDER_EC2__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
@@ -30102,15 +28446,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int PROCESSOR_FEATURES_BUILDER_RDS__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PROCESSOR_FEATURES_BUILDER_RDS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -30211,15 +28546,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int ORACLE_EE_INSTANCE_ENGINE_PROPS_BUILDER_RDS__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ORACLE_EE_INSTANCE_ENGINE_PROPS_BUILDER_RDS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -30310,15 +28636,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int ORACLE_SE1_INSTANCE_ENGINE_PROPS_BUILDER_RDS__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
-
-	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ORACLE_SE1_INSTANCE_ENGINE_PROPS_BUILDER_RDS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
@@ -30413,15 +28730,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int ORACLE_SE2_INSTANCE_ENGINE_PROPS_BUILDER_RDS__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ORACLE_SE2_INSTANCE_ENGINE_PROPS_BUILDER_RDS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -30512,15 +28820,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int ORACLE_SE_INSTANCE_ENGINE_PROPS_BUILDER_RDS__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
-
-	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ORACLE_SE_INSTANCE_ENGINE_PROPS_BUILDER_RDS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
@@ -30615,15 +28914,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int POSTGRES_INSTANCE_ENGINE_PROPS_BUILDER_RDS__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int POSTGRES_INSTANCE_ENGINE_PROPS_BUILDER_RDS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -30714,15 +29004,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int SQL_SERVER_EE_INSTANCE_ENGINE_PROPS_BUILDER_RDS__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
-
-	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SQL_SERVER_EE_INSTANCE_ENGINE_PROPS_BUILDER_RDS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
@@ -30817,15 +29098,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int SQL_SERVER_EX_INSTANCE_ENGINE_PROPS_BUILDER_RDS__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SQL_SERVER_EX_INSTANCE_ENGINE_PROPS_BUILDER_RDS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -30916,15 +29188,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int SQL_SERVER_SE_INSTANCE_ENGINE_PROPS_BUILDER_RDS__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
-
-	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SQL_SERVER_SE_INSTANCE_ENGINE_PROPS_BUILDER_RDS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
@@ -31019,15 +29282,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int SQL_SERVER_WEB_INSTANCE_ENGINE_PROPS_BUILDER_RDS__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SQL_SERVER_WEB_INSTANCE_ENGINE_PROPS_BUILDER_RDS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -31118,15 +29372,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int MY_SQL_INSTANCE_ENGINE_PROPS_BUILDER_RDS__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
-
-	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MY_SQL_INSTANCE_ENGINE_PROPS_BUILDER_RDS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
@@ -31221,15 +29466,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	int MARIA_DB_INSTANCE_ENGINE_PROPS_BUILDER_RDS__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
 
 	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MARIA_DB_INSTANCE_ENGINE_PROPS_BUILDER_RDS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
-
-	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -31320,15 +29556,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int PARAMETER_GROUP_BUILDER_RDS__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
-
-	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PARAMETER_GROUP_BUILDER_RDS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
@@ -31440,15 +29667,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int DATABASE_INSTANCE_BUILDER_RDS__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
-
-	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DATABASE_INSTANCE_BUILDER_RDS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
@@ -31945,15 +30163,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @ordered
 	 */
 	int SCHEDULED_FARGATE_TASK_BUILDER_PATTERNS__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
-
-	/**
-	 * The feature id for the '<em><b>Export Resource</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHEDULED_FARGATE_TASK_BUILDER_PATTERNS__EXPORT_RESOURCE = SERVICE_RESOURCES__EXPORT_RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
@@ -32830,17 +31039,6 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getServiceResources_DependsON();
-
-	/**
-	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.ServiceResources#isExportResource <em>Export Resource</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Export Resource</em>'.
-	 * @see com.amazon.aws.workbench.model.awsworkbench.ServiceResources#isExportResource()
-	 * @see #getServiceResources()
-	 * @generated
-	 */
-	EAttribute getServiceResources_ExportResource();
 
 	/**
 	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.ServiceResources#getImportExistingResource <em>Import Existing Resource</em>}'.
@@ -59950,14 +58148,6 @@ public interface AwsworkbenchPackage extends EPackage {
 		 * @generated
 		 */
 		EReference SERVICE_RESOURCES__DEPENDS_ON = eINSTANCE.getServiceResources_DependsON();
-
-		/**
-		 * The meta object literal for the '<em><b>Export Resource</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute SERVICE_RESOURCES__EXPORT_RESOURCE = eINSTANCE.getServiceResources_ExportResource();
 
 		/**
 		 * The meta object literal for the '<em><b>Import Existing Resource</b></em>' attribute feature.

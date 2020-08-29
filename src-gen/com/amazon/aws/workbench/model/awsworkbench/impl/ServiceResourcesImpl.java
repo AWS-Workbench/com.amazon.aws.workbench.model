@@ -27,7 +27,6 @@ import org.eclipse.emf.ecore.util.EObjectResolvingEList;
  * </p>
  * <ul>
  *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.ServiceResourcesImpl#getDependsON <em>Depends ON</em>}</li>
- *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.ServiceResourcesImpl#isExportResource <em>Export Resource</em>}</li>
  *   <li>{@link com.amazon.aws.workbench.model.awsworkbench.impl.ServiceResourcesImpl#getImportExistingResource <em>Import Existing Resource</em>}</li>
  * </ul>
  *
@@ -43,26 +42,6 @@ public abstract class ServiceResourcesImpl extends MinimalEObjectImpl.Container 
 	 * @ordered
 	 */
 	protected EList<ServiceResources> dependsON;
-
-	/**
-	 * The default value of the '{@link #isExportResource() <em>Export Resource</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #isExportResource()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final boolean EXPORT_RESOURCE_EDEFAULT = false;
-
-	/**
-	 * The cached value of the '{@link #isExportResource() <em>Export Resource</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #isExportResource()
-	 * @generated
-	 * @ordered
-	 */
-	protected boolean exportResource = EXPORT_RESOURCE_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getImportExistingResource() <em>Import Existing Resource</em>}' attribute.
@@ -123,30 +102,6 @@ public abstract class ServiceResourcesImpl extends MinimalEObjectImpl.Container 
 	 * @generated
 	 */
 	@Override
-	public boolean isExportResource() {
-		return exportResource;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setExportResource(boolean newExportResource) {
-		boolean oldExportResource = exportResource;
-		exportResource = newExportResource;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET,
-					AwsworkbenchPackage.SERVICE_RESOURCES__EXPORT_RESOURCE, oldExportResource, exportResource));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public String getImportExistingResource() {
 		return importExistingResource;
 	}
@@ -176,8 +131,6 @@ public abstract class ServiceResourcesImpl extends MinimalEObjectImpl.Container 
 		switch (featureID) {
 		case AwsworkbenchPackage.SERVICE_RESOURCES__DEPENDS_ON:
 			return getDependsON();
-		case AwsworkbenchPackage.SERVICE_RESOURCES__EXPORT_RESOURCE:
-			return isExportResource();
 		case AwsworkbenchPackage.SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE:
 			return getImportExistingResource();
 		}
@@ -197,9 +150,6 @@ public abstract class ServiceResourcesImpl extends MinimalEObjectImpl.Container 
 			getDependsON().clear();
 			getDependsON().addAll((Collection<? extends ServiceResources>) newValue);
 			return;
-		case AwsworkbenchPackage.SERVICE_RESOURCES__EXPORT_RESOURCE:
-			setExportResource((Boolean) newValue);
-			return;
 		case AwsworkbenchPackage.SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE:
 			setImportExistingResource((String) newValue);
 			return;
@@ -218,9 +168,6 @@ public abstract class ServiceResourcesImpl extends MinimalEObjectImpl.Container 
 		case AwsworkbenchPackage.SERVICE_RESOURCES__DEPENDS_ON:
 			getDependsON().clear();
 			return;
-		case AwsworkbenchPackage.SERVICE_RESOURCES__EXPORT_RESOURCE:
-			setExportResource(EXPORT_RESOURCE_EDEFAULT);
-			return;
 		case AwsworkbenchPackage.SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE:
 			setImportExistingResource(IMPORT_EXISTING_RESOURCE_EDEFAULT);
 			return;
@@ -238,8 +185,6 @@ public abstract class ServiceResourcesImpl extends MinimalEObjectImpl.Container 
 		switch (featureID) {
 		case AwsworkbenchPackage.SERVICE_RESOURCES__DEPENDS_ON:
 			return dependsON != null && !dependsON.isEmpty();
-		case AwsworkbenchPackage.SERVICE_RESOURCES__EXPORT_RESOURCE:
-			return exportResource != EXPORT_RESOURCE_EDEFAULT;
 		case AwsworkbenchPackage.SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE:
 			return IMPORT_EXISTING_RESOURCE_EDEFAULT == null ? importExistingResource != null
 					: !IMPORT_EXISTING_RESOURCE_EDEFAULT.equals(importExistingResource);
@@ -258,9 +203,7 @@ public abstract class ServiceResourcesImpl extends MinimalEObjectImpl.Container 
 			return super.toString();
 
 		StringBuilder result = new StringBuilder(super.toString());
-		result.append(" (exportResource: ");
-		result.append(exportResource);
-		result.append(", importExistingResource: ");
+		result.append(" (importExistingResource: ");
 		result.append(importExistingResource);
 		result.append(')');
 		return result.toString();

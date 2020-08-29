@@ -2257,18 +2257,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	 * @generated
 	 */
 	@Override
-	public EAttribute getServiceResources_ExportResource() {
-		return (EAttribute) serviceResourcesEClass.getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
-	@Override
 	public EAttribute getServiceResources_ImportExistingResource() {
-		return (EAttribute) serviceResourcesEClass.getEStructuralFeatures().get(2);
+		return (EAttribute) serviceResourcesEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -27299,7 +27289,6 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 		// Create classes and their features
 		serviceResourcesEClass = createEClass(SERVICE_RESOURCES);
 		createEReference(serviceResourcesEClass, SERVICE_RESOURCES__DEPENDS_ON);
-		createEAttribute(serviceResourcesEClass, SERVICE_RESOURCES__EXPORT_RESOURCE);
 		createEAttribute(serviceResourcesEClass, SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE);
 
 		appBuilder_coreEClass = createEClass(APP_BUILDER_CORE);
@@ -31902,9 +31891,6 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 		initEReference(getServiceResources_DependsON(), this.getServiceResources(), null, "dependsON", null, 0, -1,
 				ServiceResources.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES,
 				!IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getServiceResources_ExportResource(), ecorePackage.getEBoolean(), "exportResource", null, 0, 1,
-				ServiceResources.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
-				!IS_DERIVED, IS_ORDERED);
 		initEAttribute(getServiceResources_ImportExistingResource(), ecorePackage.getEString(),
 				"importExistingResource", null, 0, 1, ServiceResources.class, !IS_TRANSIENT, !IS_VOLATILE,
 				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -36639,12 +36625,6 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 		initEAttribute(getEventPatternBuilder_events_Source_java_lang_String_AsList(), ecorePackage.getEString(),
 				"source_java_lang_String_AsList", null, 0, 1, EventPatternBuilder_events.class, !IS_TRANSIENT,
 				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initializeContents2();
-
-	}
-
-	public void initializeContents2() {
 		initEAttribute(getEventPatternBuilder_events_Time_java_lang_String_AsList(), ecorePackage.getEString(),
 				"time_java_lang_String_AsList", null, 0, 1, EventPatternBuilder_events.class, !IS_TRANSIENT,
 				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -36780,8 +36760,14 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 				"additionalCode", null, 0, 1, EventsRuleToLambdaBuilder_eventsrulelambda.class, !IS_TRANSIENT,
 				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
+		initializeContents2();
+
+	}
+
+	public void initializeContents2() {
 		initEClass(stateMachinePropsBuilder_stepfunctionsEClass, StateMachinePropsBuilder_stepfunctions.class,
 				"StateMachinePropsBuilder_stepfunctions", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
 		initEAttribute(
 				getStateMachinePropsBuilder_stepfunctions_DefinitionWithIChainable_software_amazon_awscdk_services_stepfunctions_IChainable_AsReference(),
 				ecorePackage.getEString(),

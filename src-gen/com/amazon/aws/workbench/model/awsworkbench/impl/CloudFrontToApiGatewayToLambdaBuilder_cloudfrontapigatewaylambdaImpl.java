@@ -142,7 +142,7 @@ public class CloudFrontToApiGatewayToLambdaBuilder_cloudfrontapigatewaylambdaImp
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GENERATED_CLASS_NAME_EDEFAULT = "software.amazon.awscdk.awsconstructs.services.cloudfrontapigatewaylambda.CloudFrontToApiGatewayToLambda";
+	protected static final String GENERATED_CLASS_NAME_EDEFAULT = "software.amazon.awsconstructs.services.cloudfrontapigatewaylambda.CloudFrontToApiGatewayToLambda";
 
 	/**
 	 * The cached value of the '{@link #getGeneratedClassName() <em>Generated Class Name</em>}' attribute.

@@ -100,7 +100,7 @@ public class KinesisFirehoseToS3Builder_kinesisfirehoses3Impl extends ServiceRes
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GENERATED_CLASS_NAME_EDEFAULT = "software.amazon.awscdk.awsconstructs.services.kinesisfirehoses3.KinesisFirehoseToS3";
+	protected static final String GENERATED_CLASS_NAME_EDEFAULT = "software.amazon.awsconstructs.services.kinesisfirehoses3.KinesisFirehoseToS3";
 
 	/**
 	 * The cached value of the '{@link #getGeneratedClassName() <em>Generated Class Name</em>}' attribute.

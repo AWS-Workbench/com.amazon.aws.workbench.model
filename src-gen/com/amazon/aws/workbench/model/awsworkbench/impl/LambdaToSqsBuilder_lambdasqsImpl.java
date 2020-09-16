@@ -204,7 +204,7 @@ public class LambdaToSqsBuilder_lambdasqsImpl extends ServiceResourcesImpl imple
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GENERATED_CLASS_NAME_EDEFAULT = "software.amazon.awscdk.awsconstructs.services.lambdasqs.LambdaToSqs";
+	protected static final String GENERATED_CLASS_NAME_EDEFAULT = "software.amazon.awsconstructs.services.lambdasqs.LambdaToSqs";
 
 	/**
 	 * The cached value of the '{@link #getGeneratedClassName() <em>Generated Class Name</em>}' attribute.

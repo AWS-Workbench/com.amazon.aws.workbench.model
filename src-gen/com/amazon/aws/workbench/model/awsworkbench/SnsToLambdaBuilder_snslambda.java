@@ -139,12 +139,12 @@ public interface SnsToLambdaBuilder_snslambda extends ServiceResources {
 
 	/**
 	 * Returns the value of the '<em><b>Generated Class Name</b></em>' attribute.
-	 * The default value is <code>"software.amazon.awscdk.awsconstructs.services.snslambda.SnsToLambda"</code>.
+	 * The default value is <code>"software.amazon.awsconstructs.services.snslambda.SnsToLambda"</code>.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Generated Class Name</em>' attribute.
 	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getSnsToLambdaBuilder_snslambda_GeneratedClassName()
-	 * @model default="software.amazon.awscdk.awsconstructs.services.snslambda.SnsToLambda" changeable="false"
+	 * @model default="software.amazon.awsconstructs.services.snslambda.SnsToLambda" changeable="false"
 	 * @generated
 	 */
 	String getGeneratedClassName();

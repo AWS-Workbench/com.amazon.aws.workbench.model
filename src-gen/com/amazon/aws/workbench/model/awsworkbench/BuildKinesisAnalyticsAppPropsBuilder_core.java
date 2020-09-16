@@ -71,12 +71,12 @@ public interface BuildKinesisAnalyticsAppPropsBuilder_core extends ServiceResour
 
 	/**
 	 * Returns the value of the '<em><b>Generated Class Name</b></em>' attribute.
-	 * The default value is <code>"software.amazon.awscdk.awsconstructs.services.core.BuildKinesisAnalyticsAppProps"</code>.
+	 * The default value is <code>"software.amazon.awsconstructs.services.core.BuildKinesisAnalyticsAppProps"</code>.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Generated Class Name</em>' attribute.
 	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getBuildKinesisAnalyticsAppPropsBuilder_core_GeneratedClassName()
-	 * @model default="software.amazon.awscdk.awsconstructs.services.core.BuildKinesisAnalyticsAppProps" changeable="false"
+	 * @model default="software.amazon.awsconstructs.services.core.BuildKinesisAnalyticsAppProps" changeable="false"
 	 * @generated
 	 */
 	String getGeneratedClassName();

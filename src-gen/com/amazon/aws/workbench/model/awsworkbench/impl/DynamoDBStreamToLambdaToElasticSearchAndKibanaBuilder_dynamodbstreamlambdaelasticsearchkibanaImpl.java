@@ -164,7 +164,7 @@ public class DynamoDBStreamToLambdaToElasticSearchAndKibanaBuilder_dynamodbstrea
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GENERATED_CLASS_NAME_EDEFAULT = "software.amazon.awscdk.awsconstructs.services.dynamodbstreamlambdaelasticsearchkibana.DynamoDBStreamToLambdaToElasticSearchAndKibana";
+	protected static final String GENERATED_CLASS_NAME_EDEFAULT = "software.amazon.awsconstructs.services.dynamodbstreamlambdaelasticsearchkibana.DynamoDBStreamToLambdaToElasticSearchAndKibana";
 
 	/**
 	 * The cached value of the '{@link #getGeneratedClassName() <em>Generated Class Name</em>}' attribute.

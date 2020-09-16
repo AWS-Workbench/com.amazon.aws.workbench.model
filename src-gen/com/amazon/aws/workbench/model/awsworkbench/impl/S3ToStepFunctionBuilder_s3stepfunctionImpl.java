@@ -142,7 +142,7 @@ public class S3ToStepFunctionBuilder_s3stepfunctionImpl extends ServiceResources
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GENERATED_CLASS_NAME_EDEFAULT = "software.amazon.awscdk.awsconstructs.services.s3stepfunction.S3ToStepFunction";
+	protected static final String GENERATED_CLASS_NAME_EDEFAULT = "software.amazon.awsconstructs.services.s3stepfunction.S3ToStepFunction";
 
 	/**
 	 * The cached value of the '{@link #getGeneratedClassName() <em>Generated Class Name</em>}' attribute.

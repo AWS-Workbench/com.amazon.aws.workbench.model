@@ -58,7 +58,7 @@ public class BuildKinesisStreamPropsBuilder_coreImpl extends ServiceResourcesImp
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GENERATED_CLASS_NAME_EDEFAULT = "software.amazon.awscdk.awsconstructs.services.core.BuildKinesisStreamProps";
+	protected static final String GENERATED_CLASS_NAME_EDEFAULT = "software.amazon.awsconstructs.services.core.BuildKinesisStreamProps";
 
 	/**
 	 * The cached value of the '{@link #getGeneratedClassName() <em>Generated Class Name</em>}' attribute.

@@ -79,7 +79,7 @@ public class BuildKinesisAnalyticsAppPropsBuilder_coreImpl extends ServiceResour
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GENERATED_CLASS_NAME_EDEFAULT = "software.amazon.awscdk.awsconstructs.services.core.BuildKinesisAnalyticsAppProps";
+	protected static final String GENERATED_CLASS_NAME_EDEFAULT = "software.amazon.awsconstructs.services.core.BuildKinesisAnalyticsAppProps";
 
 	/**
 	 * The cached value of the '{@link #getGeneratedClassName() <em>Generated Class Name</em>}' attribute.

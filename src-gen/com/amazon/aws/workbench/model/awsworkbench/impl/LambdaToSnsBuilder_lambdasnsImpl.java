@@ -141,7 +141,7 @@ public class LambdaToSnsBuilder_lambdasnsImpl extends ServiceResourcesImpl imple
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GENERATED_CLASS_NAME_EDEFAULT = "software.amazon.awscdk.awsconstructs.services.lambdasns.LambdaToSns";
+	protected static final String GENERATED_CLASS_NAME_EDEFAULT = "software.amazon.awsconstructs.services.lambdasns.LambdaToSns";
 
 	/**
 	 * The cached value of the '{@link #getGeneratedClassName() <em>Generated Class Name</em>}' attribute.

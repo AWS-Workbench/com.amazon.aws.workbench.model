@@ -121,7 +121,7 @@ public class IotToKinesisFirehoseToS3Builder_iotkinesisfirehoses3Impl extends Se
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GENERATED_CLASS_NAME_EDEFAULT = "software.amazon.awscdk.awsconstructs.services.iotkinesisfirehoses3.IotToKinesisFirehoseToS3";
+	protected static final String GENERATED_CLASS_NAME_EDEFAULT = "software.amazon.awsconstructs.services.iotkinesisfirehoses3.IotToKinesisFirehoseToS3";
 
 	/**
 	 * The cached value of the '{@link #getGeneratedClassName() <em>Generated Class Name</em>}' attribute.

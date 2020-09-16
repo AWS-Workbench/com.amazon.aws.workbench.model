@@ -100,7 +100,7 @@ public class LambdaToStepFunctionBuilder_lambdastepfunctionImpl extends ServiceR
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GENERATED_CLASS_NAME_EDEFAULT = "software.amazon.awscdk.awsconstructs.services.lambdastepfunction.LambdaToStepFunction";
+	protected static final String GENERATED_CLASS_NAME_EDEFAULT = "software.amazon.awsconstructs.services.lambdastepfunction.LambdaToStepFunction";
 
 	/**
 	 * The cached value of the '{@link #getGeneratedClassName() <em>Generated Class Name</em>}' attribute.

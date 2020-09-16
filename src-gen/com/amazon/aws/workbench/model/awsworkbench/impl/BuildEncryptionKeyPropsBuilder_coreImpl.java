@@ -58,7 +58,7 @@ public class BuildEncryptionKeyPropsBuilder_coreImpl extends ServiceResourcesImp
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GENERATED_CLASS_NAME_EDEFAULT = "software.amazon.awscdk.awsconstructs.services.core.BuildEncryptionKeyProps";
+	protected static final String GENERATED_CLASS_NAME_EDEFAULT = "software.amazon.awsconstructs.services.core.BuildEncryptionKeyProps";
 
 	/**
 	 * The cached value of the '{@link #getGeneratedClassName() <em>Generated Class Name</em>}' attribute.

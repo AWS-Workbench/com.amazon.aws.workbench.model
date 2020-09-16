@@ -117,12 +117,12 @@ public interface S3ToLambdaBuilder_s3lambda extends ServiceResources {
 
 	/**
 	 * Returns the value of the '<em><b>Generated Class Name</b></em>' attribute.
-	 * The default value is <code>"software.amazon.awscdk.awsconstructs.services.s3lambda.S3ToLambda"</code>.
+	 * The default value is <code>"software.amazon.awsconstructs.services.s3lambda.S3ToLambda"</code>.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Generated Class Name</em>' attribute.
 	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getS3ToLambdaBuilder_s3lambda_GeneratedClassName()
-	 * @model default="software.amazon.awscdk.awsconstructs.services.s3lambda.S3ToLambda" changeable="false"
+	 * @model default="software.amazon.awsconstructs.services.s3lambda.S3ToLambda" changeable="false"
 	 * @generated
 	 */
 	String getGeneratedClassName();

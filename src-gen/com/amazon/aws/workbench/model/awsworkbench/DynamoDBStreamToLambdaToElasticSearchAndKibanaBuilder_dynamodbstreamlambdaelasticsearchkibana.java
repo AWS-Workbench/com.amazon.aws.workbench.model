@@ -166,12 +166,12 @@ public interface DynamoDBStreamToLambdaToElasticSearchAndKibanaBuilder_dynamodbs
 
 	/**
 	 * Returns the value of the '<em><b>Generated Class Name</b></em>' attribute.
-	 * The default value is <code>"software.amazon.awscdk.awsconstructs.services.dynamodbstreamlambdaelasticsearchkibana.DynamoDBStreamToLambdaToElasticSearchAndKibana"</code>.
+	 * The default value is <code>"software.amazon.awsconstructs.services.dynamodbstreamlambdaelasticsearchkibana.DynamoDBStreamToLambdaToElasticSearchAndKibana"</code>.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Generated Class Name</em>' attribute.
 	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getDynamoDBStreamToLambdaToElasticSearchAndKibanaBuilder_dynamodbstreamlambdaelasticsearchkibana_GeneratedClassName()
-	 * @model default="software.amazon.awscdk.awsconstructs.services.dynamodbstreamlambdaelasticsearchkibana.DynamoDBStreamToLambdaToElasticSearchAndKibana" changeable="false"
+	 * @model default="software.amazon.awsconstructs.services.dynamodbstreamlambdaelasticsearchkibana.DynamoDBStreamToLambdaToElasticSearchAndKibana" changeable="false"
 	 * @generated
 	 */
 	String getGeneratedClassName();

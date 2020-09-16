@@ -93,12 +93,12 @@ public interface KinesisFirehoseToS3Builder_kinesisfirehoses3 extends ServiceRes
 
 	/**
 	 * Returns the value of the '<em><b>Generated Class Name</b></em>' attribute.
-	 * The default value is <code>"software.amazon.awscdk.awsconstructs.services.kinesisfirehoses3.KinesisFirehoseToS3"</code>.
+	 * The default value is <code>"software.amazon.awsconstructs.services.kinesisfirehoses3.KinesisFirehoseToS3"</code>.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Generated Class Name</em>' attribute.
 	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getKinesisFirehoseToS3Builder_kinesisfirehoses3_GeneratedClassName()
-	 * @model default="software.amazon.awscdk.awsconstructs.services.kinesisfirehoses3.KinesisFirehoseToS3" changeable="false"
+	 * @model default="software.amazon.awsconstructs.services.kinesisfirehoses3.KinesisFirehoseToS3" changeable="false"
 	 * @generated
 	 */
 	String getGeneratedClassName();

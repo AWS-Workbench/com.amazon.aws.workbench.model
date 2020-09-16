@@ -121,7 +121,7 @@ public class KinesisFirehoseToAnalyticsAndS3Builder_kinesisfirehoses3kinesisanal
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GENERATED_CLASS_NAME_EDEFAULT = "software.amazon.awscdk.awsconstructs.services.kinesisfirehoses3kinesisanalytics.KinesisFirehoseToAnalyticsAndS3";
+	protected static final String GENERATED_CLASS_NAME_EDEFAULT = "software.amazon.awsconstructs.services.kinesisfirehoses3kinesisanalytics.KinesisFirehoseToAnalyticsAndS3";
 
 	/**
 	 * The cached value of the '{@link #getGeneratedClassName() <em>Generated Class Name</em>}' attribute.

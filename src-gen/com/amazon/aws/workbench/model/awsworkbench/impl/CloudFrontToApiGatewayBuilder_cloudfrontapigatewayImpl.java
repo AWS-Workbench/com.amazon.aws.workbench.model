@@ -100,7 +100,7 @@ public class CloudFrontToApiGatewayBuilder_cloudfrontapigatewayImpl extends Serv
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GENERATED_CLASS_NAME_EDEFAULT = "software.amazon.awscdk.awsconstructs.services.cloudfrontapigateway.CloudFrontToApiGateway";
+	protected static final String GENERATED_CLASS_NAME_EDEFAULT = "software.amazon.awsconstructs.services.cloudfrontapigateway.CloudFrontToApiGateway";
 
 	/**
 	 * The cached value of the '{@link #getGeneratedClassName() <em>Generated Class Name</em>}' attribute.

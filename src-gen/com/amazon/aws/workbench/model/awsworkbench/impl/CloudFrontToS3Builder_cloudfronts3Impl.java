@@ -121,7 +121,7 @@ public class CloudFrontToS3Builder_cloudfronts3Impl extends ServiceResourcesImpl
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GENERATED_CLASS_NAME_EDEFAULT = "software.amazon.awscdk.awsconstructs.services.cloudfronts3.CloudFrontToS3";
+	protected static final String GENERATED_CLASS_NAME_EDEFAULT = "software.amazon.awsconstructs.services.cloudfronts3.CloudFrontToS3";
 
 	/**
 	 * The cached value of the '{@link #getGeneratedClassName() <em>Generated Class Name</em>}' attribute.

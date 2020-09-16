@@ -120,7 +120,7 @@ public class S3ToLambdaBuilder_s3lambdaImpl extends ServiceResourcesImpl impleme
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GENERATED_CLASS_NAME_EDEFAULT = "software.amazon.awscdk.awsconstructs.services.s3lambda.S3ToLambda";
+	protected static final String GENERATED_CLASS_NAME_EDEFAULT = "software.amazon.awsconstructs.services.s3lambda.S3ToLambda";
 
 	/**
 	 * The cached value of the '{@link #getGeneratedClassName() <em>Generated Class Name</em>}' attribute.

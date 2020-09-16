@@ -121,7 +121,7 @@ public class KinesisStreamsToLambdaBuilder_kinesisstreamslambdaImpl extends Serv
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GENERATED_CLASS_NAME_EDEFAULT = "software.amazon.awscdk.awsconstructs.services.kinesisstreamslambda.KinesisStreamsToLambda";
+	protected static final String GENERATED_CLASS_NAME_EDEFAULT = "software.amazon.awsconstructs.services.kinesisstreamslambda.KinesisStreamsToLambda";
 
 	/**
 	 * The cached value of the '{@link #getGeneratedClassName() <em>Generated Class Name</em>}' attribute.

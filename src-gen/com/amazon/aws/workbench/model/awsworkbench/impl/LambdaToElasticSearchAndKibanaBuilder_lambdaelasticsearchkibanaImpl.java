@@ -121,7 +121,7 @@ public class LambdaToElasticSearchAndKibanaBuilder_lambdaelasticsearchkibanaImpl
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GENERATED_CLASS_NAME_EDEFAULT = "software.amazon.awscdk.awsconstructs.services.lambdaelasticsearchkibana.LambdaToElasticSearchAndKibana";
+	protected static final String GENERATED_CLASS_NAME_EDEFAULT = "software.amazon.awsconstructs.services.lambdaelasticsearchkibana.LambdaToElasticSearchAndKibana";
 
 	/**
 	 * The cached value of the '{@link #getGeneratedClassName() <em>Generated Class Name</em>}' attribute.

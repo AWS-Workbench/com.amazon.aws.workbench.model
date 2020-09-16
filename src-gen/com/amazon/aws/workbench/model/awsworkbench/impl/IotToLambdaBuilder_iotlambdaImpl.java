@@ -99,7 +99,7 @@ public class IotToLambdaBuilder_iotlambdaImpl extends ServiceResourcesImpl imple
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GENERATED_CLASS_NAME_EDEFAULT = "software.amazon.awscdk.awsconstructs.services.iotlambda.IotToLambda";
+	protected static final String GENERATED_CLASS_NAME_EDEFAULT = "software.amazon.awsconstructs.services.iotlambda.IotToLambda";
 
 	/**
 	 * The cached value of the '{@link #getGeneratedClassName() <em>Generated Class Name</em>}' attribute.

@@ -142,12 +142,12 @@ public interface IotToLambdaToDynamoDBBuilder_iotlambdadynamodb extends ServiceR
 
 	/**
 	 * Returns the value of the '<em><b>Generated Class Name</b></em>' attribute.
-	 * The default value is <code>"software.amazon.awscdk.awsconstructs.services.iotlambdadynamodb.IotToLambdaToDynamoDB"</code>.
+	 * The default value is <code>"software.amazon.awsconstructs.services.iotlambdadynamodb.IotToLambdaToDynamoDB"</code>.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Generated Class Name</em>' attribute.
 	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getIotToLambdaToDynamoDBBuilder_iotlambdadynamodb_GeneratedClassName()
-	 * @model default="software.amazon.awscdk.awsconstructs.services.iotlambdadynamodb.IotToLambdaToDynamoDB" changeable="false"
+	 * @model default="software.amazon.awsconstructs.services.iotlambdadynamodb.IotToLambdaToDynamoDB" changeable="false"
 	 * @generated
 	 */
 	String getGeneratedClassName();

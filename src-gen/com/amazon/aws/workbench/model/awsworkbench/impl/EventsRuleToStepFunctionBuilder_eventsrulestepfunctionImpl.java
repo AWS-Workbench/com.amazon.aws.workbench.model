@@ -79,7 +79,7 @@ public class EventsRuleToStepFunctionBuilder_eventsrulestepfunctionImpl extends 
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GENERATED_CLASS_NAME_EDEFAULT = "software.amazon.awscdk.awsconstructs.services.eventsrulestepfunction.EventsRuleToStepFunction";
+	protected static final String GENERATED_CLASS_NAME_EDEFAULT = "software.amazon.awsconstructs.services.eventsrulestepfunction.EventsRuleToStepFunction";
 
 	/**
 	 * The cached value of the '{@link #getGeneratedClassName() <em>Generated Class Name</em>}' attribute.

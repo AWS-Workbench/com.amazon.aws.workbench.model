@@ -118,12 +118,12 @@ public interface LambdaToElasticSearchAndKibanaBuilder_lambdaelasticsearchkibana
 
 	/**
 	 * Returns the value of the '<em><b>Generated Class Name</b></em>' attribute.
-	 * The default value is <code>"software.amazon.awscdk.awsconstructs.services.lambdaelasticsearchkibana.LambdaToElasticSearchAndKibana"</code>.
+	 * The default value is <code>"software.amazon.awsconstructs.services.lambdaelasticsearchkibana.LambdaToElasticSearchAndKibana"</code>.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Generated Class Name</em>' attribute.
 	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getLambdaToElasticSearchAndKibanaBuilder_lambdaelasticsearchkibana_GeneratedClassName()
-	 * @model default="software.amazon.awscdk.awsconstructs.services.lambdaelasticsearchkibana.LambdaToElasticSearchAndKibana" changeable="false"
+	 * @model default="software.amazon.awsconstructs.services.lambdaelasticsearchkibana.LambdaToElasticSearchAndKibana" changeable="false"
 	 * @generated
 	 */
 	String getGeneratedClassName();

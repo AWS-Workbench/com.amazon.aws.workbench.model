@@ -142,7 +142,7 @@ public class IotToLambdaToDynamoDBBuilder_iotlambdadynamodbImpl extends ServiceR
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GENERATED_CLASS_NAME_EDEFAULT = "software.amazon.awscdk.awsconstructs.services.iotlambdadynamodb.IotToLambdaToDynamoDB";
+	protected static final String GENERATED_CLASS_NAME_EDEFAULT = "software.amazon.awsconstructs.services.iotlambdadynamodb.IotToLambdaToDynamoDB";
 
 	/**
 	 * The cached value of the '{@link #getGeneratedClassName() <em>Generated Class Name</em>}' attribute.

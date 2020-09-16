@@ -142,7 +142,7 @@ public class CognitoToApiGatewayToLambdaBuilder_cognitoapigatewaylambdaImpl exte
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GENERATED_CLASS_NAME_EDEFAULT = "software.amazon.awscdk.awsconstructs.services.cognitoapigatewaylambda.CognitoToApiGatewayToLambda";
+	protected static final String GENERATED_CLASS_NAME_EDEFAULT = "software.amazon.awsconstructs.services.cognitoapigatewaylambda.CognitoToApiGatewayToLambda";
 
 	/**
 	 * The cached value of the '{@link #getGeneratedClassName() <em>Generated Class Name</em>}' attribute.

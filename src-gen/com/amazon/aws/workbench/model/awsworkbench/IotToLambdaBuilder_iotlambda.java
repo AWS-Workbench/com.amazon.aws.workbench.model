@@ -95,12 +95,12 @@ public interface IotToLambdaBuilder_iotlambda extends ServiceResources {
 
 	/**
 	 * Returns the value of the '<em><b>Generated Class Name</b></em>' attribute.
-	 * The default value is <code>"software.amazon.awscdk.awsconstructs.services.iotlambda.IotToLambda"</code>.
+	 * The default value is <code>"software.amazon.awsconstructs.services.iotlambda.IotToLambda"</code>.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Generated Class Name</em>' attribute.
 	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getIotToLambdaBuilder_iotlambda_GeneratedClassName()
-	 * @model default="software.amazon.awscdk.awsconstructs.services.iotlambda.IotToLambda" changeable="false"
+	 * @model default="software.amazon.awsconstructs.services.iotlambda.IotToLambda" changeable="false"
 	 * @generated
 	 */
 	String getGeneratedClassName();

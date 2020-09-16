@@ -142,7 +142,7 @@ public class LambdaToDynamoDBBuilder_lambdadynamodbImpl extends ServiceResources
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GENERATED_CLASS_NAME_EDEFAULT = "software.amazon.awscdk.awsconstructs.services.lambdadynamodb.LambdaToDynamoDB";
+	protected static final String GENERATED_CLASS_NAME_EDEFAULT = "software.amazon.awsconstructs.services.lambdadynamodb.LambdaToDynamoDB";
 
 	/**
 	 * The cached value of the '{@link #getGeneratedClassName() <em>Generated Class Name</em>}' attribute.

@@ -34009,7 +34009,7 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getApiGatewayToDynamoDBBuilder_apigatewaydynamodb_GeneratedClassName(),
 				ecorePackage.getEString(), "generatedClassName",
-				"software.amazon.awscdk.awsconstructs.services.apigatewaydynamodb.ApiGatewayToDynamoDB", 0, 1,
+				"software.amazon.awsconstructs.services.apigatewaydynamodb.ApiGatewayToDynamoDB", 0, 1,
 				ApiGatewayToDynamoDBBuilder_apigatewaydynamodb.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE,
 				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getApiGatewayToDynamoDBBuilder_apigatewaydynamodb_VarName(), ecorePackage.getEString(),
@@ -34299,9 +34299,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 				ApiGatewayToLambdaBuilder_apigatewaylambda.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
 				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getApiGatewayToLambdaBuilder_apigatewaylambda_GeneratedClassName(), ecorePackage.getEString(),
-				"generatedClassName",
-				"software.amazon.awscdk.awsconstructs.services.apigatewaylambda.ApiGatewayToLambda", 0, 1,
-				ApiGatewayToLambdaBuilder_apigatewaylambda.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE,
+				"generatedClassName", "software.amazon.awsconstructs.services.apigatewaylambda.ApiGatewayToLambda", 0,
+				1, ApiGatewayToLambdaBuilder_apigatewaylambda.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE,
 				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getApiGatewayToLambdaBuilder_apigatewaylambda_VarName(), ecorePackage.getEString(), "varName",
 				null, 0, 1, ApiGatewayToLambdaBuilder_apigatewaylambda.class, !IS_TRANSIENT, !IS_VOLATILE,
@@ -34420,9 +34419,9 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 				ApiGatewayToSqsBuilder_apigatewaysqs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
 				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getApiGatewayToSqsBuilder_apigatewaysqs_GeneratedClassName(), ecorePackage.getEString(),
-				"generatedClassName", "software.amazon.awscdk.awsconstructs.services.apigatewaysqs.ApiGatewayToSqs", 0,
-				1, ApiGatewayToSqsBuilder_apigatewaysqs.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE,
-				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+				"generatedClassName", "software.amazon.awsconstructs.services.apigatewaysqs.ApiGatewayToSqs", 0, 1,
+				ApiGatewayToSqsBuilder_apigatewaysqs.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getApiGatewayToSqsBuilder_apigatewaysqs_VarName(), ecorePackage.getEString(), "varName", null, 0,
 				1, ApiGatewayToSqsBuilder_apigatewaysqs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
 				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -35358,7 +35357,7 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCloudFrontToApiGatewayBuilder_cloudfrontapigateway_GeneratedClassName(),
 				ecorePackage.getEString(), "generatedClassName",
-				"software.amazon.awscdk.awsconstructs.services.cloudfrontapigateway.CloudFrontToApiGateway", 0, 1,
+				"software.amazon.awsconstructs.services.cloudfrontapigateway.CloudFrontToApiGateway", 0, 1,
 				CloudFrontToApiGatewayBuilder_cloudfrontapigateway.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE,
 				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCloudFrontToApiGatewayBuilder_cloudfrontapigateway_VarName(), ecorePackage.getEString(),
@@ -35406,9 +35405,9 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCloudFrontToApiGatewayToLambdaBuilder_cloudfrontapigatewaylambda_GeneratedClassName(),
 				ecorePackage.getEString(), "generatedClassName",
-				"software.amazon.awscdk.awsconstructs.services.cloudfrontapigatewaylambda.CloudFrontToApiGatewayToLambda",
-				0, 1, CloudFrontToApiGatewayToLambdaBuilder_cloudfrontapigatewaylambda.class, !IS_TRANSIENT,
-				!IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+				"software.amazon.awsconstructs.services.cloudfrontapigatewaylambda.CloudFrontToApiGatewayToLambda", 0,
+				1, CloudFrontToApiGatewayToLambdaBuilder_cloudfrontapigatewaylambda.class, !IS_TRANSIENT, !IS_VOLATILE,
+				!IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCloudFrontToApiGatewayToLambdaBuilder_cloudfrontapigatewaylambda_VarName(),
 				ecorePackage.getEString(), "varName", null, 0, 1,
 				CloudFrontToApiGatewayToLambdaBuilder_cloudfrontapigatewaylambda.class, !IS_TRANSIENT, !IS_VOLATILE,
@@ -35445,7 +35444,7 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 				CloudFrontToS3Builder_cloudfronts3.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
 				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCloudFrontToS3Builder_cloudfronts3_GeneratedClassName(), ecorePackage.getEString(),
-				"generatedClassName", "software.amazon.awscdk.awsconstructs.services.cloudfronts3.CloudFrontToS3", 0, 1,
+				"generatedClassName", "software.amazon.awsconstructs.services.cloudfronts3.CloudFrontToS3", 0, 1,
 				CloudFrontToS3Builder_cloudfronts3.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE,
 				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCloudFrontToS3Builder_cloudfronts3_VarName(), ecorePackage.getEString(), "varName", null, 0,
@@ -36181,8 +36180,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCognitoToApiGatewayToLambdaBuilder_cognitoapigatewaylambda_GeneratedClassName(),
 				ecorePackage.getEString(), "generatedClassName",
-				"software.amazon.awscdk.awsconstructs.services.cognitoapigatewaylambda.CognitoToApiGatewayToLambda", 0,
-				1, CognitoToApiGatewayToLambdaBuilder_cognitoapigatewaylambda.class, !IS_TRANSIENT, !IS_VOLATILE,
+				"software.amazon.awsconstructs.services.cognitoapigatewaylambda.CognitoToApiGatewayToLambda", 0, 1,
+				CognitoToApiGatewayToLambdaBuilder_cognitoapigatewaylambda.class, !IS_TRANSIENT, !IS_VOLATILE,
 				!IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCognitoToApiGatewayToLambdaBuilder_cognitoapigatewaylambda_VarName(),
 				ecorePackage.getEString(), "varName", null, 0, 1,
@@ -36210,8 +36209,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 				BuildDeadLetterQueuePropsBuilder_core.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
 				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getBuildDeadLetterQueuePropsBuilder_core_GeneratedClassName(), ecorePackage.getEString(),
-				"generatedClassName", "software.amazon.awscdk.awsconstructs.services.core.BuildDeadLetterQueueProps", 0,
-				1, BuildDeadLetterQueuePropsBuilder_core.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE,
+				"generatedClassName", "software.amazon.awsconstructs.services.core.BuildDeadLetterQueueProps", 0, 1,
+				BuildDeadLetterQueuePropsBuilder_core.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE,
 				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getBuildDeadLetterQueuePropsBuilder_core_VarName(), ecorePackage.getEString(), "varName", null,
 				0, 1, BuildDeadLetterQueuePropsBuilder_core.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
@@ -36244,7 +36243,7 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 				BuildQueuePropsBuilder_core.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
 				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getBuildQueuePropsBuilder_core_GeneratedClassName(), ecorePackage.getEString(),
-				"generatedClassName", "software.amazon.awscdk.awsconstructs.services.core.BuildQueueProps", 0, 1,
+				"generatedClassName", "software.amazon.awsconstructs.services.core.BuildQueueProps", 0, 1,
 				BuildQueuePropsBuilder_core.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
 				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getBuildQueuePropsBuilder_core_VarName(), ecorePackage.getEString(), "varName", null, 0, 1,
@@ -36272,7 +36271,7 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 				BuildS3BucketPropsBuilder_core.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
 				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getBuildS3BucketPropsBuilder_core_GeneratedClassName(), ecorePackage.getEString(),
-				"generatedClassName", "software.amazon.awscdk.awsconstructs.services.core.BuildS3BucketProps", 0, 1,
+				"generatedClassName", "software.amazon.awsconstructs.services.core.BuildS3BucketProps", 0, 1,
 				BuildS3BucketPropsBuilder_core.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE,
 				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getBuildS3BucketPropsBuilder_core_VarName(), ecorePackage.getEString(), "varName", null, 0, 1,
@@ -36292,9 +36291,9 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 				BuildEncryptionKeyPropsBuilder_core.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
 				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getBuildEncryptionKeyPropsBuilder_core_GeneratedClassName(), ecorePackage.getEString(),
-				"generatedClassName", "software.amazon.awscdk.awsconstructs.services.core.BuildEncryptionKeyProps", 0,
-				1, BuildEncryptionKeyPropsBuilder_core.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE,
-				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+				"generatedClassName", "software.amazon.awsconstructs.services.core.BuildEncryptionKeyProps", 0, 1,
+				BuildEncryptionKeyPropsBuilder_core.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getBuildEncryptionKeyPropsBuilder_core_VarName(), ecorePackage.getEString(), "varName", null, 0,
 				1, BuildEncryptionKeyPropsBuilder_core.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
 				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -36326,7 +36325,7 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 				null, 0, 1, CognitoOptionsBuilder_core.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
 				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCognitoOptionsBuilder_core_GeneratedClassName(), ecorePackage.getEString(),
-				"generatedClassName", "software.amazon.awscdk.awsconstructs.services.core.CognitoOptions", 0, 1,
+				"generatedClassName", "software.amazon.awsconstructs.services.core.CognitoOptions", 0, 1,
 				CognitoOptionsBuilder_core.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
 				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCognitoOptionsBuilder_core_VarName(), ecorePackage.getEString(), "varName", null, 0, 1,
@@ -36346,9 +36345,9 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 				BuildKinesisStreamPropsBuilder_core.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
 				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getBuildKinesisStreamPropsBuilder_core_GeneratedClassName(), ecorePackage.getEString(),
-				"generatedClassName", "software.amazon.awscdk.awsconstructs.services.core.BuildKinesisStreamProps", 0,
-				1, BuildKinesisStreamPropsBuilder_core.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE,
-				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+				"generatedClassName", "software.amazon.awsconstructs.services.core.BuildKinesisStreamProps", 0, 1,
+				BuildKinesisStreamPropsBuilder_core.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getBuildKinesisStreamPropsBuilder_core_VarName(), ecorePackage.getEString(), "varName", null, 0,
 				1, BuildKinesisStreamPropsBuilder_core.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
 				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -36372,8 +36371,7 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 				BuildKinesisAnalyticsAppPropsBuilder_core.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
 				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getBuildKinesisAnalyticsAppPropsBuilder_core_GeneratedClassName(), ecorePackage.getEString(),
-				"generatedClassName",
-				"software.amazon.awscdk.awsconstructs.services.core.BuildKinesisAnalyticsAppProps", 0, 1,
+				"generatedClassName", "software.amazon.awsconstructs.services.core.BuildKinesisAnalyticsAppProps", 0, 1,
 				BuildKinesisAnalyticsAppPropsBuilder_core.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE,
 				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getBuildKinesisAnalyticsAppPropsBuilder_core_VarName(), ecorePackage.getEString(), "varName",
@@ -36401,9 +36399,9 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 				null, 0, 1, BuildLambdaFunctionPropsBuilder_core.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
 				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getBuildLambdaFunctionPropsBuilder_core_GeneratedClassName(), ecorePackage.getEString(),
-				"generatedClassName", "software.amazon.awscdk.awsconstructs.services.core.BuildLambdaFunctionProps", 0,
-				1, BuildLambdaFunctionPropsBuilder_core.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE,
-				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+				"generatedClassName", "software.amazon.awsconstructs.services.core.BuildLambdaFunctionProps", 0, 1,
+				BuildLambdaFunctionPropsBuilder_core.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getBuildLambdaFunctionPropsBuilder_core_VarName(), ecorePackage.getEString(), "varName", null, 0,
 				1, BuildLambdaFunctionPropsBuilder_core.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
 				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -36429,9 +36427,9 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 				BuildDynamoDBTablePropsBuilder_core.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
 				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getBuildDynamoDBTablePropsBuilder_core_GeneratedClassName(), ecorePackage.getEString(),
-				"generatedClassName", "software.amazon.awscdk.awsconstructs.services.core.BuildDynamoDBTableProps", 0,
-				1, BuildDynamoDBTablePropsBuilder_core.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE,
-				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+				"generatedClassName", "software.amazon.awsconstructs.services.core.BuildDynamoDBTableProps", 0, 1,
+				BuildDynamoDBTablePropsBuilder_core.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getBuildDynamoDBTablePropsBuilder_core_VarName(), ecorePackage.getEString(), "varName", null, 0,
 				1, BuildDynamoDBTablePropsBuilder_core.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
 				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -36457,7 +36455,7 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 				"topicProps_java_lang_Object_", null, 0, 1, BuildTopicPropsBuilder_core.class, !IS_TRANSIENT,
 				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getBuildTopicPropsBuilder_core_GeneratedClassName(), ecorePackage.getEString(),
-				"generatedClassName", "software.amazon.awscdk.awsconstructs.services.core.BuildTopicProps", 0, 1,
+				"generatedClassName", "software.amazon.awsconstructs.services.core.BuildTopicProps", 0, 1,
 				BuildTopicPropsBuilder_core.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
 				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getBuildTopicPropsBuilder_core_VarName(), ecorePackage.getEString(), "varName", null, 0, 1,
@@ -36500,7 +36498,7 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getDynamoDBStreamToLambdaBuilder_dynamodbstreamlambda_GeneratedClassName(),
 				ecorePackage.getEString(), "generatedClassName",
-				"software.amazon.awscdk.awsconstructs.services.dynamodbstreamlambda.DynamoDBStreamToLambda", 0, 1,
+				"software.amazon.awsconstructs.services.dynamodbstreamlambda.DynamoDBStreamToLambda", 0, 1,
 				DynamoDBStreamToLambdaBuilder_dynamodbstreamlambda.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE,
 				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getDynamoDBStreamToLambdaBuilder_dynamodbstreamlambda_VarName(), ecorePackage.getEString(),
@@ -36559,7 +36557,7 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 		initEAttribute(
 				getDynamoDBStreamToLambdaToElasticSearchAndKibanaBuilder_dynamodbstreamlambdaelasticsearchkibana_GeneratedClassName(),
 				ecorePackage.getEString(), "generatedClassName",
-				"software.amazon.awscdk.awsconstructs.services.dynamodbstreamlambdaelasticsearchkibana.DynamoDBStreamToLambdaToElasticSearchAndKibana",
+				"software.amazon.awsconstructs.services.dynamodbstreamlambdaelasticsearchkibana.DynamoDBStreamToLambdaToElasticSearchAndKibana",
 				0, 1,
 				DynamoDBStreamToLambdaToElasticSearchAndKibanaBuilder_dynamodbstreamlambdaelasticsearchkibana.class,
 				!IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED,
@@ -36746,9 +36744,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 				null, 0, 1, EventsRuleToLambdaBuilder_eventsrulelambda.class, !IS_TRANSIENT, !IS_VOLATILE,
 				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getEventsRuleToLambdaBuilder_eventsrulelambda_GeneratedClassName(), ecorePackage.getEString(),
-				"generatedClassName",
-				"software.amazon.awscdk.awsconstructs.services.eventsrulelambda.EventsRuleToLambda", 0, 1,
-				EventsRuleToLambdaBuilder_eventsrulelambda.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE,
+				"generatedClassName", "software.amazon.awsconstructs.services.eventsrulelambda.EventsRuleToLambda", 0,
+				1, EventsRuleToLambdaBuilder_eventsrulelambda.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE,
 				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getEventsRuleToLambdaBuilder_eventsrulelambda_VarName(), ecorePackage.getEString(), "varName",
 				null, 0, 1, EventsRuleToLambdaBuilder_eventsrulelambda.class, !IS_TRANSIENT, !IS_VOLATILE,
@@ -36760,20 +36757,21 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 				"additionalCode", null, 0, 1, EventsRuleToLambdaBuilder_eventsrulelambda.class, !IS_TRANSIENT,
 				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		initializeContents2();
-
-	}
-
-	public void initializeContents2() {
 		initEClass(stateMachinePropsBuilder_stepfunctionsEClass, StateMachinePropsBuilder_stepfunctions.class,
 				"StateMachinePropsBuilder_stepfunctions", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-
 		initEAttribute(
 				getStateMachinePropsBuilder_stepfunctions_DefinitionWithIChainable_software_amazon_awscdk_services_stepfunctions_IChainable_AsReference(),
 				ecorePackage.getEString(),
 				"definitionWithIChainable_software_amazon_awscdk_services_stepfunctions_IChainable_AsReference", null,
 				0, 1, StateMachinePropsBuilder_stepfunctions.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
 				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initializeContents2();
+
+	}
+
+	public void initializeContents2() {
+
 		initEAttribute(
 				getStateMachinePropsBuilder_stepfunctions_LogsWithLogOptions_software_amazon_awscdk_services_stepfunctions_LogOptions_AsReference(),
 				ecorePackage.getEString(),
@@ -36832,7 +36830,7 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getEventsRuleToStepFunctionBuilder_eventsrulestepfunction_GeneratedClassName(),
 				ecorePackage.getEString(), "generatedClassName",
-				"software.amazon.awscdk.awsconstructs.services.eventsrulestepfunction.EventsRuleToStepFunction", 0, 1,
+				"software.amazon.awsconstructs.services.eventsrulestepfunction.EventsRuleToStepFunction", 0, 1,
 				EventsRuleToStepFunctionBuilder_eventsrulestepfunction.class, !IS_TRANSIENT, !IS_VOLATILE,
 				!IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getEventsRuleToStepFunctionBuilder_eventsrulestepfunction_VarName(), ecorePackage.getEString(),
@@ -36875,7 +36873,7 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getIotToKinesisFirehoseToS3Builder_iotkinesisfirehoses3_GeneratedClassName(),
 				ecorePackage.getEString(), "generatedClassName",
-				"software.amazon.awscdk.awsconstructs.services.iotkinesisfirehoses3.IotToKinesisFirehoseToS3", 0, 1,
+				"software.amazon.awsconstructs.services.iotkinesisfirehoses3.IotToKinesisFirehoseToS3", 0, 1,
 				IotToKinesisFirehoseToS3Builder_iotkinesisfirehoses3.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE,
 				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getIotToKinesisFirehoseToS3Builder_iotkinesisfirehoses3_VarName(), ecorePackage.getEString(),
@@ -36910,7 +36908,7 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 				null, 0, 1, IotToLambdaBuilder_iotlambda.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
 				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getIotToLambdaBuilder_iotlambda_GeneratedClassName(), ecorePackage.getEString(),
-				"generatedClassName", "software.amazon.awscdk.awsconstructs.services.iotlambda.IotToLambda", 0, 1,
+				"generatedClassName", "software.amazon.awsconstructs.services.iotlambda.IotToLambda", 0, 1,
 				IotToLambdaBuilder_iotlambda.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
 				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getIotToLambdaBuilder_iotlambda_VarName(), ecorePackage.getEString(), "varName", null, 0, 1,
@@ -36956,7 +36954,7 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getIotToLambdaToDynamoDBBuilder_iotlambdadynamodb_GeneratedClassName(),
 				ecorePackage.getEString(), "generatedClassName",
-				"software.amazon.awscdk.awsconstructs.services.iotlambdadynamodb.IotToLambdaToDynamoDB", 0, 1,
+				"software.amazon.awsconstructs.services.iotlambdadynamodb.IotToLambdaToDynamoDB", 0, 1,
 				IotToLambdaToDynamoDBBuilder_iotlambdadynamodb.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE,
 				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getIotToLambdaToDynamoDBBuilder_iotlambdadynamodb_VarName(), ecorePackage.getEString(),
@@ -36989,9 +36987,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 				KinesisFirehoseToS3Builder_kinesisfirehoses3.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
 				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getKinesisFirehoseToS3Builder_kinesisfirehoses3_GeneratedClassName(), ecorePackage.getEString(),
-				"generatedClassName",
-				"software.amazon.awscdk.awsconstructs.services.kinesisfirehoses3.KinesisFirehoseToS3", 0, 1,
-				KinesisFirehoseToS3Builder_kinesisfirehoses3.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE,
+				"generatedClassName", "software.amazon.awsconstructs.services.kinesisfirehoses3.KinesisFirehoseToS3", 0,
+				1, KinesisFirehoseToS3Builder_kinesisfirehoses3.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE,
 				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getKinesisFirehoseToS3Builder_kinesisfirehoses3_VarName(), ecorePackage.getEString(), "varName",
 				null, 0, 1, KinesisFirehoseToS3Builder_kinesisfirehoses3.class, !IS_TRANSIENT, !IS_VOLATILE,
@@ -37031,7 +37028,7 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getKinesisFirehoseToAnalyticsAndS3Builder_kinesisfirehoses3kinesisanalytics_GeneratedClassName(),
 				ecorePackage.getEString(), "generatedClassName",
-				"software.amazon.awscdk.awsconstructs.services.kinesisfirehoses3kinesisanalytics.KinesisFirehoseToAnalyticsAndS3",
+				"software.amazon.awsconstructs.services.kinesisfirehoses3kinesisanalytics.KinesisFirehoseToAnalyticsAndS3",
 				0, 1, KinesisFirehoseToAnalyticsAndS3Builder_kinesisfirehoses3kinesisanalytics.class, !IS_TRANSIENT,
 				!IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getKinesisFirehoseToAnalyticsAndS3Builder_kinesisfirehoses3kinesisanalytics_VarName(),
@@ -37071,7 +37068,7 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getKinesisStreamsToLambdaBuilder_kinesisstreamslambda_GeneratedClassName(),
 				ecorePackage.getEString(), "generatedClassName",
-				"software.amazon.awscdk.awsconstructs.services.kinesisstreamslambda.KinesisStreamsToLambda", 0, 1,
+				"software.amazon.awsconstructs.services.kinesisstreamslambda.KinesisStreamsToLambda", 0, 1,
 				KinesisStreamsToLambdaBuilder_kinesisstreamslambda.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE,
 				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getKinesisStreamsToLambdaBuilder_kinesisstreamslambda_VarName(), ecorePackage.getEString(),
@@ -37187,8 +37184,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 				LambdaToDynamoDBBuilder_lambdadynamodb.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
 				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getLambdaToDynamoDBBuilder_lambdadynamodb_GeneratedClassName(), ecorePackage.getEString(),
-				"generatedClassName", "software.amazon.awscdk.awsconstructs.services.lambdadynamodb.LambdaToDynamoDB",
-				0, 1, LambdaToDynamoDBBuilder_lambdadynamodb.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE,
+				"generatedClassName", "software.amazon.awsconstructs.services.lambdadynamodb.LambdaToDynamoDB", 0, 1,
+				LambdaToDynamoDBBuilder_lambdadynamodb.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE,
 				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getLambdaToDynamoDBBuilder_lambdadynamodb_VarName(), ecorePackage.getEString(), "varName", null,
 				0, 1, LambdaToDynamoDBBuilder_lambdadynamodb.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
@@ -37229,9 +37226,9 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getLambdaToElasticSearchAndKibanaBuilder_lambdaelasticsearchkibana_GeneratedClassName(),
 				ecorePackage.getEString(), "generatedClassName",
-				"software.amazon.awscdk.awsconstructs.services.lambdaelasticsearchkibana.LambdaToElasticSearchAndKibana",
-				0, 1, LambdaToElasticSearchAndKibanaBuilder_lambdaelasticsearchkibana.class, !IS_TRANSIENT,
-				!IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+				"software.amazon.awsconstructs.services.lambdaelasticsearchkibana.LambdaToElasticSearchAndKibana", 0, 1,
+				LambdaToElasticSearchAndKibanaBuilder_lambdaelasticsearchkibana.class, !IS_TRANSIENT, !IS_VOLATILE,
+				!IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getLambdaToElasticSearchAndKibanaBuilder_lambdaelasticsearchkibana_VarName(),
 				ecorePackage.getEString(), "varName", null, 0, 1,
 				LambdaToElasticSearchAndKibanaBuilder_lambdaelasticsearchkibana.class, !IS_TRANSIENT, !IS_VOLATILE,
@@ -37276,7 +37273,7 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 				null, 0, 1, LambdaToS3Builder_lambdas3.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
 				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getLambdaToS3Builder_lambdas3_GeneratedClassName(), ecorePackage.getEString(),
-				"generatedClassName", "software.amazon.awscdk.awsconstructs.services.lambdas3.LambdaToS3", 0, 1,
+				"generatedClassName", "software.amazon.awsconstructs.services.lambdas3.LambdaToS3", 0, 1,
 				LambdaToS3Builder_lambdas3.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
 				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getLambdaToS3Builder_lambdas3_VarName(), ecorePackage.getEString(), "varName", null, 0, 1,
@@ -37340,7 +37337,7 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 				"topicProps_java_lang_Object_", null, 0, 1, LambdaToSnsBuilder_lambdasns.class, !IS_TRANSIENT,
 				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getLambdaToSnsBuilder_lambdasns_GeneratedClassName(), ecorePackage.getEString(),
-				"generatedClassName", "software.amazon.awscdk.awsconstructs.services.lambdasns.LambdaToSns", 0, 1,
+				"generatedClassName", "software.amazon.awsconstructs.services.lambdasns.LambdaToSns", 0, 1,
 				LambdaToSnsBuilder_lambdasns.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
 				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getLambdaToSnsBuilder_lambdasns_VarName(), ecorePackage.getEString(), "varName", null, 0, 1,
@@ -37397,7 +37394,7 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 				LambdaToSqsBuilder_lambdasqs.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
 				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getLambdaToSqsBuilder_lambdasqs_GeneratedClassName(), ecorePackage.getEString(),
-				"generatedClassName", "software.amazon.awscdk.awsconstructs.services.lambdasqs.LambdaToSqs", 0, 1,
+				"generatedClassName", "software.amazon.awsconstructs.services.lambdasqs.LambdaToSqs", 0, 1,
 				LambdaToSqsBuilder_lambdasqs.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
 				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getLambdaToSqsBuilder_lambdasqs_VarName(), ecorePackage.getEString(), "varName", null, 0, 1,
@@ -37433,7 +37430,7 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getLambdaToStepFunctionBuilder_lambdastepfunction_GeneratedClassName(),
 				ecorePackage.getEString(), "generatedClassName",
-				"software.amazon.awscdk.awsconstructs.services.lambdastepfunction.LambdaToStepFunction", 0, 1,
+				"software.amazon.awsconstructs.services.lambdastepfunction.LambdaToStepFunction", 0, 1,
 				LambdaToStepFunctionBuilder_lambdastepfunction.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE,
 				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getLambdaToStepFunctionBuilder_lambdastepfunction_VarName(), ecorePackage.getEString(),
@@ -37473,7 +37470,7 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 				null, 0, 1, S3ToLambdaBuilder_s3lambda.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
 				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getS3ToLambdaBuilder_s3lambda_GeneratedClassName(), ecorePackage.getEString(),
-				"generatedClassName", "software.amazon.awscdk.awsconstructs.services.s3lambda.S3ToLambda", 0, 1,
+				"generatedClassName", "software.amazon.awsconstructs.services.s3lambda.S3ToLambda", 0, 1,
 				S3ToLambdaBuilder_s3lambda.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
 				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getS3ToLambdaBuilder_s3lambda_VarName(), ecorePackage.getEString(), "varName", null, 0, 1,
@@ -37517,8 +37514,8 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 				S3ToStepFunctionBuilder_s3stepfunction.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
 				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getS3ToStepFunctionBuilder_s3stepfunction_GeneratedClassName(), ecorePackage.getEString(),
-				"generatedClassName", "software.amazon.awscdk.awsconstructs.services.s3stepfunction.S3ToStepFunction",
-				0, 1, S3ToStepFunctionBuilder_s3stepfunction.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE,
+				"generatedClassName", "software.amazon.awsconstructs.services.s3stepfunction.S3ToStepFunction", 0, 1,
+				S3ToStepFunctionBuilder_s3stepfunction.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE,
 				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getS3ToStepFunctionBuilder_s3stepfunction_VarName(), ecorePackage.getEString(), "varName", null,
 				0, 1, S3ToStepFunctionBuilder_s3stepfunction.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
@@ -37555,7 +37552,7 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 				"topicProps_java_lang_Object_", null, 0, 1, SnsToLambdaBuilder_snslambda.class, !IS_TRANSIENT,
 				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getSnsToLambdaBuilder_snslambda_GeneratedClassName(), ecorePackage.getEString(),
-				"generatedClassName", "software.amazon.awscdk.awsconstructs.services.snslambda.SnsToLambda", 0, 1,
+				"generatedClassName", "software.amazon.awsconstructs.services.snslambda.SnsToLambda", 0, 1,
 				SnsToLambdaBuilder_snslambda.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
 				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getSnsToLambdaBuilder_snslambda_VarName(), ecorePackage.getEString(), "varName", null, 0, 1,
@@ -37854,7 +37851,7 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 				SqsToLambdaBuilder_sqslambda.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
 				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getSqsToLambdaBuilder_sqslambda_GeneratedClassName(), ecorePackage.getEString(),
-				"generatedClassName", "software.amazon.awscdk.awsconstructs.services.sqslambda.SqsToLambda", 0, 1,
+				"generatedClassName", "software.amazon.awsconstructs.services.sqslambda.SqsToLambda", 0, 1,
 				SqsToLambdaBuilder_sqslambda.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
 				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getSqsToLambdaBuilder_sqslambda_VarName(), ecorePackage.getEString(), "varName", null, 0, 1,

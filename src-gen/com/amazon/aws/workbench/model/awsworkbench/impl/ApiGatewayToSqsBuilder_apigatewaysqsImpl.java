@@ -205,7 +205,7 @@ public class ApiGatewayToSqsBuilder_apigatewaysqsImpl extends ServiceResourcesIm
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GENERATED_CLASS_NAME_EDEFAULT = "software.amazon.awscdk.awsconstructs.services.apigatewaysqs.ApiGatewayToSqs";
+	protected static final String GENERATED_CLASS_NAME_EDEFAULT = "software.amazon.awsconstructs.services.apigatewaysqs.ApiGatewayToSqs";
 
 	/**
 	 * The cached value of the '{@link #getGeneratedClassName() <em>Generated Class Name</em>}' attribute.

@@ -209,12 +209,12 @@ public interface ApiGatewayToDynamoDBBuilder_apigatewaydynamodb extends ServiceR
 
 	/**
 	 * Returns the value of the '<em><b>Generated Class Name</b></em>' attribute.
-	 * The default value is <code>"software.amazon.awscdk.awsconstructs.services.apigatewaydynamodb.ApiGatewayToDynamoDB"</code>.
+	 * The default value is <code>"software.amazon.awsconstructs.services.apigatewaydynamodb.ApiGatewayToDynamoDB"</code>.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Generated Class Name</em>' attribute.
 	 * @see com.amazon.aws.workbench.model.awsworkbench.AwsworkbenchPackage#getApiGatewayToDynamoDBBuilder_apigatewaydynamodb_GeneratedClassName()
-	 * @model default="software.amazon.awscdk.awsconstructs.services.apigatewaydynamodb.ApiGatewayToDynamoDB" changeable="false"
+	 * @model default="software.amazon.awsconstructs.services.apigatewaydynamodb.ApiGatewayToDynamoDB" changeable="false"
 	 * @generated
 	 */
 	String getGeneratedClassName();

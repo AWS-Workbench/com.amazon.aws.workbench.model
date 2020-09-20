@@ -1922,6 +1922,33 @@ public class AwsworkbenchSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
+		case AwsworkbenchPackage.REST_API_BUILDER_APIGATEWAY: {
+			RestApiBuilder_apigateway restApiBuilder_apigateway = (RestApiBuilder_apigateway) theEObject;
+			T result = caseRestApiBuilder_apigateway(restApiBuilder_apigateway);
+			if (result == null)
+				result = caseServiceResources(restApiBuilder_apigateway);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.METHOD_BUILDER_APIGATEWAY: {
+			MethodBuilder_apigateway methodBuilder_apigateway = (MethodBuilder_apigateway) theEObject;
+			T result = caseMethodBuilder_apigateway(methodBuilder_apigateway);
+			if (result == null)
+				result = caseServiceResources(methodBuilder_apigateway);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case AwsworkbenchPackage.ADD_RULE_PROPS_BUILDER_ELASTICLOADBALANCINGV2: {
+			AddRulePropsBuilder_elasticloadbalancingv2 addRulePropsBuilder_elasticloadbalancingv2 = (AddRulePropsBuilder_elasticloadbalancingv2) theEObject;
+			T result = caseAddRulePropsBuilder_elasticloadbalancingv2(addRulePropsBuilder_elasticloadbalancingv2);
+			if (result == null)
+				result = caseServiceResources(addRulePropsBuilder_elasticloadbalancingv2);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
 		default:
 			return defaultCase(theEObject);
 		}
@@ -5012,6 +5039,51 @@ public class AwsworkbenchSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseBlock(Block object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Rest Api Builder apigateway</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Rest Api Builder apigateway</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseRestApiBuilder_apigateway(RestApiBuilder_apigateway object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Method Builder apigateway</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Method Builder apigateway</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseMethodBuilder_apigateway(MethodBuilder_apigateway object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Add Rule Props Builder elasticloadbalancingv2</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Add Rule Props Builder elasticloadbalancingv2</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseAddRulePropsBuilder_elasticloadbalancingv2(AddRulePropsBuilder_elasticloadbalancingv2 object) {
 		return null;
 	}
 

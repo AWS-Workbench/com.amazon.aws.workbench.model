@@ -3,6 +3,7 @@
 package com.amazon.aws.workbench.model.awsworkbench.impl;
 
 import com.amazon.aws.workbench.model.awsworkbench.AddCapacityOptionsBuilder_ecs;
+import com.amazon.aws.workbench.model.awsworkbench.AddRulePropsBuilder_elasticloadbalancingv2;
 import com.amazon.aws.workbench.model.awsworkbench.AliasConfigurationBuilder_cloudfront;
 import com.amazon.aws.workbench.model.awsworkbench.AmazonLinuxEdition;
 import com.amazon.aws.workbench.model.awsworkbench.AmazonLinuxGeneration;
@@ -148,6 +149,7 @@ import com.amazon.aws.workbench.model.awsworkbench.LogGroupBuilder_logs;
 import com.amazon.aws.workbench.model.awsworkbench.LoggingConfigurationBuilder_cloudfront;
 import com.amazon.aws.workbench.model.awsworkbench.ManagedPolicyBuilder_iam;
 import com.amazon.aws.workbench.model.awsworkbench.MariaDbInstanceEnginePropsBuilder_rds;
+import com.amazon.aws.workbench.model.awsworkbench.MethodBuilder_apigateway;
 import com.amazon.aws.workbench.model.awsworkbench.MethodDeploymentOptionsBuilder_apigateway;
 import com.amazon.aws.workbench.model.awsworkbench.MethodLoggingLevel;
 import com.amazon.aws.workbench.model.awsworkbench.MethodOptionsBuilder_apigateway;
@@ -205,6 +207,7 @@ import com.amazon.aws.workbench.model.awsworkbench.RequestAuthorizerBuilder_apig
 import com.amazon.aws.workbench.model.awsworkbench.RequestValidatorBuilder_apigateway;
 import com.amazon.aws.workbench.model.awsworkbench.RequestValidatorOptionsBuilder_apigateway;
 import com.amazon.aws.workbench.model.awsworkbench.RequiredAttributesBuilder_cognito;
+import com.amazon.aws.workbench.model.awsworkbench.RestApiBuilder_apigateway;
 import com.amazon.aws.workbench.model.awsworkbench.RestApiPropsBuilder_apigateway;
 import com.amazon.aws.workbench.model.awsworkbench.RetentionDays;
 import com.amazon.aws.workbench.model.awsworkbench.RoleBuilder_iam;
@@ -1715,6 +1718,27 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	 * @generated
 	 */
 	private EClass blockEClass = null;
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	private EClass restApiBuilder_apigatewayEClass = null;
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	private EClass methodBuilder_apigatewayEClass = null;
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	private EClass addRulePropsBuilder_elasticloadbalancingv2EClass = null;
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -26623,6 +26647,446 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 	 * @generated
 	 */
 	@Override
+	public EClass getRestApiBuilder_apigateway() {
+		return restApiBuilder_apigatewayEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getRestApiBuilder_apigateway_DefaultCorsPreflightOptionsWithCorsOptions_software_amazon_awscdk_services_apigateway_CorsOptions_AsReference() {
+		return (EAttribute) restApiBuilder_apigatewayEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getRestApiBuilder_apigateway_DefaultIntegrationWithIntegration_software_amazon_awscdk_services_apigateway_Integration_AsReference() {
+		return (EAttribute) restApiBuilder_apigatewayEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getRestApiBuilder_apigateway_DefaultMethodOptionsWithMethodOptions_software_amazon_awscdk_services_apigateway_MethodOptions_AsReference() {
+		return (EAttribute) restApiBuilder_apigatewayEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getRestApiBuilder_apigateway_CloudWatchRole_java_lang_Boolean_() {
+		return (EAttribute) restApiBuilder_apigatewayEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getRestApiBuilder_apigateway_Deploy_java_lang_Boolean_() {
+		return (EAttribute) restApiBuilder_apigatewayEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getRestApiBuilder_apigateway_DeployOptionsWithStageOptions_software_amazon_awscdk_services_apigateway_StageOptions_AsReference() {
+		return (EAttribute) restApiBuilder_apigatewayEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getRestApiBuilder_apigateway_DomainNameWithDomainNameOptions_software_amazon_awscdk_services_apigateway_DomainNameOptions_AsReference() {
+		return (EAttribute) restApiBuilder_apigatewayEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getRestApiBuilder_apigateway_EndpointExportName_java_lang_String_() {
+		return (EAttribute) restApiBuilder_apigatewayEClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getRestApiBuilder_apigateway_FailOnWarnings_java_lang_Boolean_() {
+		return (EAttribute) restApiBuilder_apigatewayEClass.getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getRestApiBuilder_apigateway_Parameters_java_lang_String__java_lang_String_AsMap() {
+		return (EAttribute) restApiBuilder_apigatewayEClass.getEStructuralFeatures().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getRestApiBuilder_apigateway_PolicyWithPolicyDocument_software_amazon_awscdk_services_iam_PolicyDocument_AsReference() {
+		return (EAttribute) restApiBuilder_apigatewayEClass.getEStructuralFeatures().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getRestApiBuilder_apigateway_RestApiName_java_lang_String_() {
+		return (EAttribute) restApiBuilder_apigatewayEClass.getEStructuralFeatures().get(11);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getRestApiBuilder_apigateway_RetainDeployments_java_lang_Boolean_() {
+		return (EAttribute) restApiBuilder_apigatewayEClass.getEStructuralFeatures().get(12);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getRestApiBuilder_apigateway_ApiKeySourceType_software_amazon_awscdk_services_apigateway_ApiKeySourceType_() {
+		return (EAttribute) restApiBuilder_apigatewayEClass.getEStructuralFeatures().get(13);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getRestApiBuilder_apigateway_BinaryMediaTypes_java_lang_String_AsList() {
+		return (EAttribute) restApiBuilder_apigatewayEClass.getEStructuralFeatures().get(14);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getRestApiBuilder_apigateway_CloneFromWithIRestApi_software_amazon_awscdk_services_apigateway_IRestApi_AsReference() {
+		return (EAttribute) restApiBuilder_apigatewayEClass.getEStructuralFeatures().get(15);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getRestApiBuilder_apigateway_Description_java_lang_String_() {
+		return (EAttribute) restApiBuilder_apigatewayEClass.getEStructuralFeatures().get(16);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getRestApiBuilder_apigateway_EndpointConfigurationWithEndpointConfiguration_software_amazon_awscdk_services_apigateway_EndpointConfiguration_AsReference() {
+		return (EAttribute) restApiBuilder_apigatewayEClass.getEStructuralFeatures().get(17);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getRestApiBuilder_apigateway_EndpointTypes_software_amazon_awscdk_services_apigateway_EndpointType_AsList() {
+		return (EAttribute) restApiBuilder_apigatewayEClass.getEStructuralFeatures().get(18);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getRestApiBuilder_apigateway_MinimumCompressionSize_java_lang_Number_() {
+		return (EAttribute) restApiBuilder_apigatewayEClass.getEStructuralFeatures().get(19);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getRestApiBuilder_apigateway_GeneratedClassName() {
+		return (EAttribute) restApiBuilder_apigatewayEClass.getEStructuralFeatures().get(20);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getRestApiBuilder_apigateway_VarName() {
+		return (EAttribute) restApiBuilder_apigatewayEClass.getEStructuralFeatures().get(21);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getRestApiBuilder_apigateway_Identifier() {
+		return (EAttribute) restApiBuilder_apigatewayEClass.getEStructuralFeatures().get(22);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getRestApiBuilder_apigateway_AdditionalCode() {
+		return (EAttribute) restApiBuilder_apigatewayEClass.getEStructuralFeatures().get(23);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EClass getMethodBuilder_apigateway() {
+		return methodBuilder_apigatewayEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getMethodBuilder_apigateway_HttpMethod_java_lang_String_() {
+		return (EAttribute) methodBuilder_apigatewayEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getMethodBuilder_apigateway_ResourceWithIResource_software_amazon_awscdk_services_apigateway_IResource_AsReference() {
+		return (EAttribute) methodBuilder_apigatewayEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getMethodBuilder_apigateway_IntegrationWithIntegration_software_amazon_awscdk_services_apigateway_Integration_AsReference() {
+		return (EAttribute) methodBuilder_apigatewayEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getMethodBuilder_apigateway_OptionsWithMethodOptions_software_amazon_awscdk_services_apigateway_MethodOptions_AsReference() {
+		return (EAttribute) methodBuilder_apigatewayEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getMethodBuilder_apigateway_GeneratedClassName() {
+		return (EAttribute) methodBuilder_apigatewayEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getMethodBuilder_apigateway_VarName() {
+		return (EAttribute) methodBuilder_apigatewayEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getMethodBuilder_apigateway_Identifier() {
+		return (EAttribute) methodBuilder_apigatewayEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getMethodBuilder_apigateway_AdditionalCode() {
+		return (EAttribute) methodBuilder_apigatewayEClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EClass getAddRulePropsBuilder_elasticloadbalancingv2() {
+		return addRulePropsBuilder_elasticloadbalancingv2EClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAddRulePropsBuilder_elasticloadbalancingv2_Conditions_software_amazon_awscdk_services_elasticloadbalancingv2_ListenerCondition_AsList() {
+		return (EAttribute) addRulePropsBuilder_elasticloadbalancingv2EClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAddRulePropsBuilder_elasticloadbalancingv2_HostHeader_java_lang_String_() {
+		return (EAttribute) addRulePropsBuilder_elasticloadbalancingv2EClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAddRulePropsBuilder_elasticloadbalancingv2_PathPattern_java_lang_String_() {
+		return (EAttribute) addRulePropsBuilder_elasticloadbalancingv2EClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAddRulePropsBuilder_elasticloadbalancingv2_PathPatterns_java_lang_String_AsList() {
+		return (EAttribute) addRulePropsBuilder_elasticloadbalancingv2EClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAddRulePropsBuilder_elasticloadbalancingv2_Priority_java_lang_Number_() {
+		return (EAttribute) addRulePropsBuilder_elasticloadbalancingv2EClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAddRulePropsBuilder_elasticloadbalancingv2_GeneratedClassName() {
+		return (EAttribute) addRulePropsBuilder_elasticloadbalancingv2EClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAddRulePropsBuilder_elasticloadbalancingv2_VarName() {
+		return (EAttribute) addRulePropsBuilder_elasticloadbalancingv2EClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAddRulePropsBuilder_elasticloadbalancingv2_Identifier() {
+		return (EAttribute) addRulePropsBuilder_elasticloadbalancingv2EClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAddRulePropsBuilder_elasticloadbalancingv2_AdditionalCode() {
+		return (EAttribute) addRulePropsBuilder_elasticloadbalancingv2EClass.getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
 	public EEnum getFlowLogTrafficType() {
 		return flowLogTrafficTypeEEnum;
 	}
@@ -31582,6 +32046,82 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 		createEReference(blockEClass, BLOCK__SUBBLOCKS);
 		createEAttribute(blockEClass, BLOCK__CAN_DEPLOY);
 
+		restApiBuilder_apigatewayEClass = createEClass(REST_API_BUILDER_APIGATEWAY);
+		createEAttribute(restApiBuilder_apigatewayEClass,
+				REST_API_BUILDER_APIGATEWAY__DEFAULT_CORS_PREFLIGHT_OPTIONS_WITH_CORS_OPTIONS_SOFTWARE_AMAZON_AWSCDK_SERVICES_APIGATEWAY_CORS_OPTIONS_AS_REFERENCE);
+		createEAttribute(restApiBuilder_apigatewayEClass,
+				REST_API_BUILDER_APIGATEWAY__DEFAULT_INTEGRATION_WITH_INTEGRATION_SOFTWARE_AMAZON_AWSCDK_SERVICES_APIGATEWAY_INTEGRATION_AS_REFERENCE);
+		createEAttribute(restApiBuilder_apigatewayEClass,
+				REST_API_BUILDER_APIGATEWAY__DEFAULT_METHOD_OPTIONS_WITH_METHOD_OPTIONS_SOFTWARE_AMAZON_AWSCDK_SERVICES_APIGATEWAY_METHOD_OPTIONS_AS_REFERENCE);
+		createEAttribute(restApiBuilder_apigatewayEClass,
+				REST_API_BUILDER_APIGATEWAY__CLOUD_WATCH_ROLE_JAVA_LANG_BOOLEAN_);
+		createEAttribute(restApiBuilder_apigatewayEClass, REST_API_BUILDER_APIGATEWAY__DEPLOY_JAVA_LANG_BOOLEAN_);
+		createEAttribute(restApiBuilder_apigatewayEClass,
+				REST_API_BUILDER_APIGATEWAY__DEPLOY_OPTIONS_WITH_STAGE_OPTIONS_SOFTWARE_AMAZON_AWSCDK_SERVICES_APIGATEWAY_STAGE_OPTIONS_AS_REFERENCE);
+		createEAttribute(restApiBuilder_apigatewayEClass,
+				REST_API_BUILDER_APIGATEWAY__DOMAIN_NAME_WITH_DOMAIN_NAME_OPTIONS_SOFTWARE_AMAZON_AWSCDK_SERVICES_APIGATEWAY_DOMAIN_NAME_OPTIONS_AS_REFERENCE);
+		createEAttribute(restApiBuilder_apigatewayEClass,
+				REST_API_BUILDER_APIGATEWAY__ENDPOINT_EXPORT_NAME_JAVA_LANG_STRING_);
+		createEAttribute(restApiBuilder_apigatewayEClass,
+				REST_API_BUILDER_APIGATEWAY__FAIL_ON_WARNINGS_JAVA_LANG_BOOLEAN_);
+		createEAttribute(restApiBuilder_apigatewayEClass,
+				REST_API_BUILDER_APIGATEWAY__PARAMETERS_JAVA_LANG_STRING_JAVA_LANG_STRING_AS_MAP);
+		createEAttribute(restApiBuilder_apigatewayEClass,
+				REST_API_BUILDER_APIGATEWAY__POLICY_WITH_POLICY_DOCUMENT_SOFTWARE_AMAZON_AWSCDK_SERVICES_IAM_POLICY_DOCUMENT_AS_REFERENCE);
+		createEAttribute(restApiBuilder_apigatewayEClass, REST_API_BUILDER_APIGATEWAY__REST_API_NAME_JAVA_LANG_STRING_);
+		createEAttribute(restApiBuilder_apigatewayEClass,
+				REST_API_BUILDER_APIGATEWAY__RETAIN_DEPLOYMENTS_JAVA_LANG_BOOLEAN_);
+		createEAttribute(restApiBuilder_apigatewayEClass,
+				REST_API_BUILDER_APIGATEWAY__API_KEY_SOURCE_TYPE_SOFTWARE_AMAZON_AWSCDK_SERVICES_APIGATEWAY_API_KEY_SOURCE_TYPE_);
+		createEAttribute(restApiBuilder_apigatewayEClass,
+				REST_API_BUILDER_APIGATEWAY__BINARY_MEDIA_TYPES_JAVA_LANG_STRING_AS_LIST);
+		createEAttribute(restApiBuilder_apigatewayEClass,
+				REST_API_BUILDER_APIGATEWAY__CLONE_FROM_WITH_IREST_API_SOFTWARE_AMAZON_AWSCDK_SERVICES_APIGATEWAY_IREST_API_AS_REFERENCE);
+		createEAttribute(restApiBuilder_apigatewayEClass, REST_API_BUILDER_APIGATEWAY__DESCRIPTION_JAVA_LANG_STRING_);
+		createEAttribute(restApiBuilder_apigatewayEClass,
+				REST_API_BUILDER_APIGATEWAY__ENDPOINT_CONFIGURATION_WITH_ENDPOINT_CONFIGURATION_SOFTWARE_AMAZON_AWSCDK_SERVICES_APIGATEWAY_ENDPOINT_CONFIGURATION_AS_REFERENCE);
+		createEAttribute(restApiBuilder_apigatewayEClass,
+				REST_API_BUILDER_APIGATEWAY__ENDPOINT_TYPES_SOFTWARE_AMAZON_AWSCDK_SERVICES_APIGATEWAY_ENDPOINT_TYPE_AS_LIST);
+		createEAttribute(restApiBuilder_apigatewayEClass,
+				REST_API_BUILDER_APIGATEWAY__MINIMUM_COMPRESSION_SIZE_JAVA_LANG_NUMBER_);
+		createEAttribute(restApiBuilder_apigatewayEClass, REST_API_BUILDER_APIGATEWAY__GENERATED_CLASS_NAME);
+		createEAttribute(restApiBuilder_apigatewayEClass, REST_API_BUILDER_APIGATEWAY__VAR_NAME);
+		createEAttribute(restApiBuilder_apigatewayEClass, REST_API_BUILDER_APIGATEWAY__IDENTIFIER);
+		createEAttribute(restApiBuilder_apigatewayEClass, REST_API_BUILDER_APIGATEWAY__ADDITIONAL_CODE);
+
+		methodBuilder_apigatewayEClass = createEClass(METHOD_BUILDER_APIGATEWAY);
+		createEAttribute(methodBuilder_apigatewayEClass, METHOD_BUILDER_APIGATEWAY__HTTP_METHOD_JAVA_LANG_STRING_);
+		createEAttribute(methodBuilder_apigatewayEClass,
+				METHOD_BUILDER_APIGATEWAY__RESOURCE_WITH_IRESOURCE_SOFTWARE_AMAZON_AWSCDK_SERVICES_APIGATEWAY_IRESOURCE_AS_REFERENCE);
+		createEAttribute(methodBuilder_apigatewayEClass,
+				METHOD_BUILDER_APIGATEWAY__INTEGRATION_WITH_INTEGRATION_SOFTWARE_AMAZON_AWSCDK_SERVICES_APIGATEWAY_INTEGRATION_AS_REFERENCE);
+		createEAttribute(methodBuilder_apigatewayEClass,
+				METHOD_BUILDER_APIGATEWAY__OPTIONS_WITH_METHOD_OPTIONS_SOFTWARE_AMAZON_AWSCDK_SERVICES_APIGATEWAY_METHOD_OPTIONS_AS_REFERENCE);
+		createEAttribute(methodBuilder_apigatewayEClass, METHOD_BUILDER_APIGATEWAY__GENERATED_CLASS_NAME);
+		createEAttribute(methodBuilder_apigatewayEClass, METHOD_BUILDER_APIGATEWAY__VAR_NAME);
+		createEAttribute(methodBuilder_apigatewayEClass, METHOD_BUILDER_APIGATEWAY__IDENTIFIER);
+		createEAttribute(methodBuilder_apigatewayEClass, METHOD_BUILDER_APIGATEWAY__ADDITIONAL_CODE);
+
+		addRulePropsBuilder_elasticloadbalancingv2EClass = createEClass(ADD_RULE_PROPS_BUILDER_ELASTICLOADBALANCINGV2);
+		createEAttribute(addRulePropsBuilder_elasticloadbalancingv2EClass,
+				ADD_RULE_PROPS_BUILDER_ELASTICLOADBALANCINGV2__CONDITIONS_SOFTWARE_AMAZON_AWSCDK_SERVICES_ELASTICLOADBALANCINGV2_LISTENER_CONDITION_AS_LIST);
+		createEAttribute(addRulePropsBuilder_elasticloadbalancingv2EClass,
+				ADD_RULE_PROPS_BUILDER_ELASTICLOADBALANCINGV2__HOST_HEADER_JAVA_LANG_STRING_);
+		createEAttribute(addRulePropsBuilder_elasticloadbalancingv2EClass,
+				ADD_RULE_PROPS_BUILDER_ELASTICLOADBALANCINGV2__PATH_PATTERN_JAVA_LANG_STRING_);
+		createEAttribute(addRulePropsBuilder_elasticloadbalancingv2EClass,
+				ADD_RULE_PROPS_BUILDER_ELASTICLOADBALANCINGV2__PATH_PATTERNS_JAVA_LANG_STRING_AS_LIST);
+		createEAttribute(addRulePropsBuilder_elasticloadbalancingv2EClass,
+				ADD_RULE_PROPS_BUILDER_ELASTICLOADBALANCINGV2__PRIORITY_JAVA_LANG_NUMBER_);
+		createEAttribute(addRulePropsBuilder_elasticloadbalancingv2EClass,
+				ADD_RULE_PROPS_BUILDER_ELASTICLOADBALANCINGV2__GENERATED_CLASS_NAME);
+		createEAttribute(addRulePropsBuilder_elasticloadbalancingv2EClass,
+				ADD_RULE_PROPS_BUILDER_ELASTICLOADBALANCINGV2__VAR_NAME);
+		createEAttribute(addRulePropsBuilder_elasticloadbalancingv2EClass,
+				ADD_RULE_PROPS_BUILDER_ELASTICLOADBALANCINGV2__IDENTIFIER);
+		createEAttribute(addRulePropsBuilder_elasticloadbalancingv2EClass,
+				ADD_RULE_PROPS_BUILDER_ELASTICLOADBALANCINGV2__ADDITIONAL_CODE);
+
 		// Create enums
 		flowLogTrafficTypeEEnum = createEEnum(FLOW_LOG_TRAFFIC_TYPE);
 		defaultInstanceTenancyEEnum = createEEnum(DEFAULT_INSTANCE_TENANCY);
@@ -31884,6 +32424,9 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 		parameterGroupBuilder_rdsEClass.getESuperTypes().add(this.getServiceResources());
 		databaseInstanceBuilder_rdsEClass.getESuperTypes().add(this.getServiceResources());
 		scheduledFargateTaskBuilder_patternsEClass.getESuperTypes().add(this.getServiceResources());
+		restApiBuilder_apigatewayEClass.getESuperTypes().add(this.getServiceResources());
+		methodBuilder_apigatewayEClass.getESuperTypes().add(this.getServiceResources());
+		addRulePropsBuilder_elasticloadbalancingv2EClass.getESuperTypes().add(this.getServiceResources());
 
 		// Initialize classes, features, and operations; add parameters
 		initEClass(serviceResourcesEClass, ServiceResources.class, "ServiceResources", IS_ABSTRACT, !IS_INTERFACE,
@@ -36765,13 +37308,6 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 				"definitionWithIChainable_software_amazon_awscdk_services_stepfunctions_IChainable_AsReference", null,
 				0, 1, StateMachinePropsBuilder_stepfunctions.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
 				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initializeContents2();
-
-	}
-
-	public void initializeContents2() {
-
 		initEAttribute(
 				getStateMachinePropsBuilder_stepfunctions_LogsWithLogOptions_software_amazon_awscdk_services_stepfunctions_LogOptions_AsReference(),
 				ecorePackage.getEString(),
@@ -37229,6 +37765,12 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 				"software.amazon.awsconstructs.services.lambdaelasticsearchkibana.LambdaToElasticSearchAndKibana", 0, 1,
 				LambdaToElasticSearchAndKibanaBuilder_lambdaelasticsearchkibana.class, !IS_TRANSIENT, !IS_VOLATILE,
 				!IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initializeContents2();
+
+	}
+
+	public void initializeContents2() {
+
 		initEAttribute(getLambdaToElasticSearchAndKibanaBuilder_lambdaelasticsearchkibana_VarName(),
 				ecorePackage.getEString(), "varName", null, 0, 1,
 				LambdaToElasticSearchAndKibanaBuilder_lambdaelasticsearchkibana.class, !IS_TRANSIENT, !IS_VOLATILE,
@@ -41694,6 +42236,192 @@ public class AwsworkbenchPackageImpl extends EPackageImpl implements Awsworkbenc
 				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getBlock_CanDeploy(), ecorePackage.getEBoolean(), "canDeploy", null, 0, 1, Block.class,
 				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(restApiBuilder_apigatewayEClass, RestApiBuilder_apigateway.class, "RestApiBuilder_apigateway",
+				!IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(
+				getRestApiBuilder_apigateway_DefaultCorsPreflightOptionsWithCorsOptions_software_amazon_awscdk_services_apigateway_CorsOptions_AsReference(),
+				ecorePackage.getEString(),
+				"defaultCorsPreflightOptionsWithCorsOptions_software_amazon_awscdk_services_apigateway_CorsOptions_AsReference",
+				null, 0, 1, RestApiBuilder_apigateway.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getRestApiBuilder_apigateway_DefaultIntegrationWithIntegration_software_amazon_awscdk_services_apigateway_Integration_AsReference(),
+				ecorePackage.getEString(),
+				"defaultIntegrationWithIntegration_software_amazon_awscdk_services_apigateway_Integration_AsReference",
+				null, 0, 1, RestApiBuilder_apigateway.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getRestApiBuilder_apigateway_DefaultMethodOptionsWithMethodOptions_software_amazon_awscdk_services_apigateway_MethodOptions_AsReference(),
+				ecorePackage.getEString(),
+				"defaultMethodOptionsWithMethodOptions_software_amazon_awscdk_services_apigateway_MethodOptions_AsReference",
+				null, 0, 1, RestApiBuilder_apigateway.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getRestApiBuilder_apigateway_CloudWatchRole_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "cloudWatchRole_java_lang_Boolean_", null, 0, 1,
+				RestApiBuilder_apigateway.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getRestApiBuilder_apigateway_Deploy_java_lang_Boolean_(), ecorePackage.getEBooleanObject(),
+				"deploy_java_lang_Boolean_", null, 0, 1, RestApiBuilder_apigateway.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getRestApiBuilder_apigateway_DeployOptionsWithStageOptions_software_amazon_awscdk_services_apigateway_StageOptions_AsReference(),
+				ecorePackage.getEString(),
+				"deployOptionsWithStageOptions_software_amazon_awscdk_services_apigateway_StageOptions_AsReference",
+				null, 0, 1, RestApiBuilder_apigateway.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getRestApiBuilder_apigateway_DomainNameWithDomainNameOptions_software_amazon_awscdk_services_apigateway_DomainNameOptions_AsReference(),
+				ecorePackage.getEString(),
+				"domainNameWithDomainNameOptions_software_amazon_awscdk_services_apigateway_DomainNameOptions_AsReference",
+				null, 0, 1, RestApiBuilder_apigateway.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getRestApiBuilder_apigateway_EndpointExportName_java_lang_String_(), ecorePackage.getEString(),
+				"endpointExportName_java_lang_String_", null, 0, 1, RestApiBuilder_apigateway.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getRestApiBuilder_apigateway_FailOnWarnings_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "failOnWarnings_java_lang_Boolean_", null, 0, 1,
+				RestApiBuilder_apigateway.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getRestApiBuilder_apigateway_Parameters_java_lang_String__java_lang_String_AsMap(),
+				ecorePackage.getEString(), "parameters_java_lang_String__java_lang_String_AsMap", null, 0, 1,
+				RestApiBuilder_apigateway.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getRestApiBuilder_apigateway_PolicyWithPolicyDocument_software_amazon_awscdk_services_iam_PolicyDocument_AsReference(),
+				ecorePackage.getEString(),
+				"policyWithPolicyDocument_software_amazon_awscdk_services_iam_PolicyDocument_AsReference", null, 0, 1,
+				RestApiBuilder_apigateway.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getRestApiBuilder_apigateway_RestApiName_java_lang_String_(), ecorePackage.getEString(),
+				"restApiName_java_lang_String_", null, 0, 1, RestApiBuilder_apigateway.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getRestApiBuilder_apigateway_RetainDeployments_java_lang_Boolean_(),
+				ecorePackage.getEBooleanObject(), "retainDeployments_java_lang_Boolean_", null, 0, 1,
+				RestApiBuilder_apigateway.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getRestApiBuilder_apigateway_ApiKeySourceType_software_amazon_awscdk_services_apigateway_ApiKeySourceType_(),
+				this.getApiKeySourceType(),
+				"apiKeySourceType_software_amazon_awscdk_services_apigateway_ApiKeySourceType_", null, 0, 1,
+				RestApiBuilder_apigateway.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getRestApiBuilder_apigateway_BinaryMediaTypes_java_lang_String_AsList(),
+				ecorePackage.getEString(), "binaryMediaTypes_java_lang_String_AsList", null, 0, 1,
+				RestApiBuilder_apigateway.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getRestApiBuilder_apigateway_CloneFromWithIRestApi_software_amazon_awscdk_services_apigateway_IRestApi_AsReference(),
+				ecorePackage.getEString(),
+				"cloneFromWithIRestApi_software_amazon_awscdk_services_apigateway_IRestApi_AsReference", null, 0, 1,
+				RestApiBuilder_apigateway.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getRestApiBuilder_apigateway_Description_java_lang_String_(), ecorePackage.getEString(),
+				"description_java_lang_String_", null, 0, 1, RestApiBuilder_apigateway.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getRestApiBuilder_apigateway_EndpointConfigurationWithEndpointConfiguration_software_amazon_awscdk_services_apigateway_EndpointConfiguration_AsReference(),
+				ecorePackage.getEString(),
+				"endpointConfigurationWithEndpointConfiguration_software_amazon_awscdk_services_apigateway_EndpointConfiguration_AsReference",
+				null, 0, 1, RestApiBuilder_apigateway.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getRestApiBuilder_apigateway_EndpointTypes_software_amazon_awscdk_services_apigateway_EndpointType_AsList(),
+				ecorePackage.getEString(),
+				"endpointTypes_software_amazon_awscdk_services_apigateway_EndpointType_AsList", null, 0, 1,
+				RestApiBuilder_apigateway.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getRestApiBuilder_apigateway_MinimumCompressionSize_java_lang_Number_(), ecorePackage.getEInt(),
+				"minimumCompressionSize_java_lang_Number_", null, 0, 1, RestApiBuilder_apigateway.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getRestApiBuilder_apigateway_GeneratedClassName(), ecorePackage.getEString(),
+				"generatedClassName", "software.amazon.awscdk.services.apigateway.RestApi", 0, 1,
+				RestApiBuilder_apigateway.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getRestApiBuilder_apigateway_VarName(), ecorePackage.getEString(), "varName", null, 0, 1,
+				RestApiBuilder_apigateway.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getRestApiBuilder_apigateway_Identifier(), ecorePackage.getEString(), "identifier", null, 0, 1,
+				RestApiBuilder_apigateway.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getRestApiBuilder_apigateway_AdditionalCode(), ecorePackage.getEString(), "additionalCode", null,
+				0, 1, RestApiBuilder_apigateway.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(methodBuilder_apigatewayEClass, MethodBuilder_apigateway.class, "MethodBuilder_apigateway",
+				!IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getMethodBuilder_apigateway_HttpMethod_java_lang_String_(), ecorePackage.getEString(),
+				"httpMethod_java_lang_String_", null, 0, 1, MethodBuilder_apigateway.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getMethodBuilder_apigateway_ResourceWithIResource_software_amazon_awscdk_services_apigateway_IResource_AsReference(),
+				ecorePackage.getEString(),
+				"resourceWithIResource_software_amazon_awscdk_services_apigateway_IResource_AsReference", null, 0, 1,
+				MethodBuilder_apigateway.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getMethodBuilder_apigateway_IntegrationWithIntegration_software_amazon_awscdk_services_apigateway_Integration_AsReference(),
+				ecorePackage.getEString(),
+				"integrationWithIntegration_software_amazon_awscdk_services_apigateway_Integration_AsReference", null,
+				0, 1, MethodBuilder_apigateway.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(
+				getMethodBuilder_apigateway_OptionsWithMethodOptions_software_amazon_awscdk_services_apigateway_MethodOptions_AsReference(),
+				ecorePackage.getEString(),
+				"optionsWithMethodOptions_software_amazon_awscdk_services_apigateway_MethodOptions_AsReference", null,
+				0, 1, MethodBuilder_apigateway.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getMethodBuilder_apigateway_GeneratedClassName(), ecorePackage.getEString(),
+				"generatedClassName", "software.amazon.awscdk.services.apigateway.Method", 0, 1,
+				MethodBuilder_apigateway.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getMethodBuilder_apigateway_VarName(), ecorePackage.getEString(), "varName", null, 0, 1,
+				MethodBuilder_apigateway.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getMethodBuilder_apigateway_Identifier(), ecorePackage.getEString(), "identifier", null, 0, 1,
+				MethodBuilder_apigateway.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getMethodBuilder_apigateway_AdditionalCode(), ecorePackage.getEString(), "additionalCode", null,
+				0, 1, MethodBuilder_apigateway.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+				!IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(addRulePropsBuilder_elasticloadbalancingv2EClass, AddRulePropsBuilder_elasticloadbalancingv2.class,
+				"AddRulePropsBuilder_elasticloadbalancingv2", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(
+				getAddRulePropsBuilder_elasticloadbalancingv2_Conditions_software_amazon_awscdk_services_elasticloadbalancingv2_ListenerCondition_AsList(),
+				ecorePackage.getEString(),
+				"conditions_software_amazon_awscdk_services_elasticloadbalancingv2_ListenerCondition_AsList", null, 0,
+				1, AddRulePropsBuilder_elasticloadbalancingv2.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAddRulePropsBuilder_elasticloadbalancingv2_HostHeader_java_lang_String_(),
+				ecorePackage.getEString(), "hostHeader_java_lang_String_", null, 0, 1,
+				AddRulePropsBuilder_elasticloadbalancingv2.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAddRulePropsBuilder_elasticloadbalancingv2_PathPattern_java_lang_String_(),
+				ecorePackage.getEString(), "pathPattern_java_lang_String_", null, 0, 1,
+				AddRulePropsBuilder_elasticloadbalancingv2.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAddRulePropsBuilder_elasticloadbalancingv2_PathPatterns_java_lang_String_AsList(),
+				ecorePackage.getEString(), "pathPatterns_java_lang_String_AsList", null, 0, 1,
+				AddRulePropsBuilder_elasticloadbalancingv2.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAddRulePropsBuilder_elasticloadbalancingv2_Priority_java_lang_Number_(),
+				ecorePackage.getEInt(), "priority_java_lang_Number_", null, 0, 1,
+				AddRulePropsBuilder_elasticloadbalancingv2.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAddRulePropsBuilder_elasticloadbalancingv2_GeneratedClassName(), ecorePackage.getEString(),
+				"generatedClassName", "software.amazon.awscdk.services.elasticloadbalancingv2.AddRuleProps", 0, 1,
+				AddRulePropsBuilder_elasticloadbalancingv2.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAddRulePropsBuilder_elasticloadbalancingv2_VarName(), ecorePackage.getEString(), "varName",
+				null, 0, 1, AddRulePropsBuilder_elasticloadbalancingv2.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAddRulePropsBuilder_elasticloadbalancingv2_Identifier(), ecorePackage.getEString(),
+				"identifier", null, 0, 1, AddRulePropsBuilder_elasticloadbalancingv2.class, !IS_TRANSIENT, !IS_VOLATILE,
+				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAddRulePropsBuilder_elasticloadbalancingv2_AdditionalCode(), ecorePackage.getEString(),
+				"additionalCode", null, 0, 1, AddRulePropsBuilder_elasticloadbalancingv2.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Initialize enums and add enum literals
 		initEEnum(flowLogTrafficTypeEEnum, FlowLogTrafficType.class, "FlowLogTrafficType");

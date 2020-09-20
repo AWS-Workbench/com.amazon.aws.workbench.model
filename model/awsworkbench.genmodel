@@ -3026,5 +3026,52 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference awsworkbench.ecore#//Block/subblocks"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//Block/canDeploy"/>
     </genClasses>
+    <genClasses ecoreClass="awsworkbench.ecore#//RestApiBuilder_apigateway">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//RestApiBuilder_apigateway/defaultCorsPreflightOptionsWithCorsOptions_software_amazon_awscdk_services_apigateway_CorsOptions_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//RestApiBuilder_apigateway/defaultIntegrationWithIntegration_software_amazon_awscdk_services_apigateway_Integration_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//RestApiBuilder_apigateway/defaultMethodOptionsWithMethodOptions_software_amazon_awscdk_services_apigateway_MethodOptions_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//RestApiBuilder_apigateway/cloudWatchRole_java_lang_Boolean_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//RestApiBuilder_apigateway/deploy_java_lang_Boolean_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//RestApiBuilder_apigateway/deployOptionsWithStageOptions_software_amazon_awscdk_services_apigateway_StageOptions_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//RestApiBuilder_apigateway/domainNameWithDomainNameOptions_software_amazon_awscdk_services_apigateway_DomainNameOptions_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//RestApiBuilder_apigateway/endpointExportName_java_lang_String_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//RestApiBuilder_apigateway/failOnWarnings_java_lang_Boolean_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//RestApiBuilder_apigateway/parameters_java_lang_String__java_lang_String_AsMap"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//RestApiBuilder_apigateway/policyWithPolicyDocument_software_amazon_awscdk_services_iam_PolicyDocument_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//RestApiBuilder_apigateway/restApiName_java_lang_String_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//RestApiBuilder_apigateway/retainDeployments_java_lang_Boolean_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//RestApiBuilder_apigateway/apiKeySourceType_software_amazon_awscdk_services_apigateway_ApiKeySourceType_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//RestApiBuilder_apigateway/binaryMediaTypes_java_lang_String_AsList"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//RestApiBuilder_apigateway/cloneFromWithIRestApi_software_amazon_awscdk_services_apigateway_IRestApi_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//RestApiBuilder_apigateway/description_java_lang_String_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//RestApiBuilder_apigateway/endpointConfigurationWithEndpointConfiguration_software_amazon_awscdk_services_apigateway_EndpointConfiguration_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//RestApiBuilder_apigateway/endpointTypes_software_amazon_awscdk_services_apigateway_EndpointType_AsList"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//RestApiBuilder_apigateway/minimumCompressionSize_java_lang_Number_"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//RestApiBuilder_apigateway/generatedClassName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//RestApiBuilder_apigateway/varName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//RestApiBuilder_apigateway/identifier"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//RestApiBuilder_apigateway/additionalCode"/>
+    </genClasses>
+    <genClasses ecoreClass="awsworkbench.ecore#//MethodBuilder_apigateway">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//MethodBuilder_apigateway/httpMethod_java_lang_String_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//MethodBuilder_apigateway/resourceWithIResource_software_amazon_awscdk_services_apigateway_IResource_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//MethodBuilder_apigateway/integrationWithIntegration_software_amazon_awscdk_services_apigateway_Integration_AsReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//MethodBuilder_apigateway/optionsWithMethodOptions_software_amazon_awscdk_services_apigateway_MethodOptions_AsReference"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//MethodBuilder_apigateway/generatedClassName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//MethodBuilder_apigateway/varName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//MethodBuilder_apigateway/identifier"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//MethodBuilder_apigateway/additionalCode"/>
+    </genClasses>
+    <genClasses ecoreClass="awsworkbench.ecore#//AddRulePropsBuilder_elasticloadbalancingv2">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AddRulePropsBuilder_elasticloadbalancingv2/conditions_software_amazon_awscdk_services_elasticloadbalancingv2_ListenerCondition_AsList"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AddRulePropsBuilder_elasticloadbalancingv2/hostHeader_java_lang_String_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AddRulePropsBuilder_elasticloadbalancingv2/pathPattern_java_lang_String_"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AddRulePropsBuilder_elasticloadbalancingv2/pathPatterns_java_lang_String_AsList"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AddRulePropsBuilder_elasticloadbalancingv2/priority_java_lang_Number_"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AddRulePropsBuilder_elasticloadbalancingv2/generatedClassName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AddRulePropsBuilder_elasticloadbalancingv2/varName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AddRulePropsBuilder_elasticloadbalancingv2/identifier"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute awsworkbench.ecore#//AddRulePropsBuilder_elasticloadbalancingv2/additionalCode"/>
+    </genClasses>
   </genPackages>
 </genmodel:GenModel>

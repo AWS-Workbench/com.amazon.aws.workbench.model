@@ -1132,6 +1132,22 @@ public class AwsworkbenchAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseRestApiBuilder_apigateway(RestApiBuilder_apigateway object) {
+			return createRestApiBuilder_apigatewayAdapter();
+		}
+
+		@Override
+		public Adapter caseMethodBuilder_apigateway(MethodBuilder_apigateway object) {
+			return createMethodBuilder_apigatewayAdapter();
+		}
+
+		@Override
+		public Adapter caseAddRulePropsBuilder_elasticloadbalancingv2(
+				AddRulePropsBuilder_elasticloadbalancingv2 object) {
+			return createAddRulePropsBuilder_elasticloadbalancingv2Adapter();
+		}
+
+		@Override
 		public Adapter defaultCase(EObject object) {
 			return createEObjectAdapter();
 		}
@@ -4003,6 +4019,48 @@ public class AwsworkbenchAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createBlockAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.RestApiBuilder_apigateway <em>Rest Api Builder apigateway</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.RestApiBuilder_apigateway
+	 * @generated
+	 */
+	public Adapter createRestApiBuilder_apigatewayAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.MethodBuilder_apigateway <em>Method Builder apigateway</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.MethodBuilder_apigateway
+	 * @generated
+	 */
+	public Adapter createMethodBuilder_apigatewayAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link com.amazon.aws.workbench.model.awsworkbench.AddRulePropsBuilder_elasticloadbalancingv2 <em>Add Rule Props Builder elasticloadbalancingv2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AddRulePropsBuilder_elasticloadbalancingv2
+	 * @generated
+	 */
+	public Adapter createAddRulePropsBuilder_elasticloadbalancingv2Adapter() {
 		return null;
 	}
 

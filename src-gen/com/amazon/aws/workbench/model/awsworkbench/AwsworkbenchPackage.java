@@ -30380,6 +30380,531 @@ public interface AwsworkbenchPackage extends EPackage {
 	int BLOCK_OPERATION_COUNT = 0;
 
 	/**
+	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.RestApiBuilder_apigatewayImpl <em>Rest Api Builder apigateway</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.RestApiBuilder_apigatewayImpl
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getRestApiBuilder_apigateway()
+	 * @generated
+	 */
+	int REST_API_BUILDER_APIGATEWAY = 204;
+
+	/**
+	 * The feature id for the '<em><b>Depends ON</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REST_API_BUILDER_APIGATEWAY__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
+
+	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REST_API_BUILDER_APIGATEWAY__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Default Cors Preflight Options With Cors Options software amazon awscdk services apigateway Cors Options As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REST_API_BUILDER_APIGATEWAY__DEFAULT_CORS_PREFLIGHT_OPTIONS_WITH_CORS_OPTIONS_SOFTWARE_AMAZON_AWSCDK_SERVICES_APIGATEWAY_CORS_OPTIONS_AS_REFERENCE = SERVICE_RESOURCES_FEATURE_COUNT
+			+ 0;
+
+	/**
+	 * The feature id for the '<em><b>Default Integration With Integration software amazon awscdk services apigateway Integration As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REST_API_BUILDER_APIGATEWAY__DEFAULT_INTEGRATION_WITH_INTEGRATION_SOFTWARE_AMAZON_AWSCDK_SERVICES_APIGATEWAY_INTEGRATION_AS_REFERENCE = SERVICE_RESOURCES_FEATURE_COUNT
+			+ 1;
+
+	/**
+	 * The feature id for the '<em><b>Default Method Options With Method Options software amazon awscdk services apigateway Method Options As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REST_API_BUILDER_APIGATEWAY__DEFAULT_METHOD_OPTIONS_WITH_METHOD_OPTIONS_SOFTWARE_AMAZON_AWSCDK_SERVICES_APIGATEWAY_METHOD_OPTIONS_AS_REFERENCE = SERVICE_RESOURCES_FEATURE_COUNT
+			+ 2;
+
+	/**
+	 * The feature id for the '<em><b>Cloud Watch Role java lang Boolean </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REST_API_BUILDER_APIGATEWAY__CLOUD_WATCH_ROLE_JAVA_LANG_BOOLEAN_ = SERVICE_RESOURCES_FEATURE_COUNT + 3;
+
+	/**
+	 * The feature id for the '<em><b>Deploy java lang Boolean </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REST_API_BUILDER_APIGATEWAY__DEPLOY_JAVA_LANG_BOOLEAN_ = SERVICE_RESOURCES_FEATURE_COUNT + 4;
+
+	/**
+	 * The feature id for the '<em><b>Deploy Options With Stage Options software amazon awscdk services apigateway Stage Options As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REST_API_BUILDER_APIGATEWAY__DEPLOY_OPTIONS_WITH_STAGE_OPTIONS_SOFTWARE_AMAZON_AWSCDK_SERVICES_APIGATEWAY_STAGE_OPTIONS_AS_REFERENCE = SERVICE_RESOURCES_FEATURE_COUNT
+			+ 5;
+
+	/**
+	 * The feature id for the '<em><b>Domain Name With Domain Name Options software amazon awscdk services apigateway Domain Name Options As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REST_API_BUILDER_APIGATEWAY__DOMAIN_NAME_WITH_DOMAIN_NAME_OPTIONS_SOFTWARE_AMAZON_AWSCDK_SERVICES_APIGATEWAY_DOMAIN_NAME_OPTIONS_AS_REFERENCE = SERVICE_RESOURCES_FEATURE_COUNT
+			+ 6;
+
+	/**
+	 * The feature id for the '<em><b>Endpoint Export Name java lang String </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REST_API_BUILDER_APIGATEWAY__ENDPOINT_EXPORT_NAME_JAVA_LANG_STRING_ = SERVICE_RESOURCES_FEATURE_COUNT + 7;
+
+	/**
+	 * The feature id for the '<em><b>Fail On Warnings java lang Boolean </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REST_API_BUILDER_APIGATEWAY__FAIL_ON_WARNINGS_JAVA_LANG_BOOLEAN_ = SERVICE_RESOURCES_FEATURE_COUNT + 8;
+
+	/**
+	 * The feature id for the '<em><b>Parameters java lang String java lang String As Map</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REST_API_BUILDER_APIGATEWAY__PARAMETERS_JAVA_LANG_STRING_JAVA_LANG_STRING_AS_MAP = SERVICE_RESOURCES_FEATURE_COUNT
+			+ 9;
+
+	/**
+	 * The feature id for the '<em><b>Policy With Policy Document software amazon awscdk services iam Policy Document As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REST_API_BUILDER_APIGATEWAY__POLICY_WITH_POLICY_DOCUMENT_SOFTWARE_AMAZON_AWSCDK_SERVICES_IAM_POLICY_DOCUMENT_AS_REFERENCE = SERVICE_RESOURCES_FEATURE_COUNT
+			+ 10;
+
+	/**
+	 * The feature id for the '<em><b>Rest Api Name java lang String </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REST_API_BUILDER_APIGATEWAY__REST_API_NAME_JAVA_LANG_STRING_ = SERVICE_RESOURCES_FEATURE_COUNT + 11;
+
+	/**
+	 * The feature id for the '<em><b>Retain Deployments java lang Boolean </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REST_API_BUILDER_APIGATEWAY__RETAIN_DEPLOYMENTS_JAVA_LANG_BOOLEAN_ = SERVICE_RESOURCES_FEATURE_COUNT + 12;
+
+	/**
+	 * The feature id for the '<em><b>Api Key Source Type software amazon awscdk services apigateway Api Key Source Type </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REST_API_BUILDER_APIGATEWAY__API_KEY_SOURCE_TYPE_SOFTWARE_AMAZON_AWSCDK_SERVICES_APIGATEWAY_API_KEY_SOURCE_TYPE_ = SERVICE_RESOURCES_FEATURE_COUNT
+			+ 13;
+
+	/**
+	 * The feature id for the '<em><b>Binary Media Types java lang String As List</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REST_API_BUILDER_APIGATEWAY__BINARY_MEDIA_TYPES_JAVA_LANG_STRING_AS_LIST = SERVICE_RESOURCES_FEATURE_COUNT + 14;
+
+	/**
+	 * The feature id for the '<em><b>Clone From With IRest Api software amazon awscdk services apigateway IRest Api As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REST_API_BUILDER_APIGATEWAY__CLONE_FROM_WITH_IREST_API_SOFTWARE_AMAZON_AWSCDK_SERVICES_APIGATEWAY_IREST_API_AS_REFERENCE = SERVICE_RESOURCES_FEATURE_COUNT
+			+ 15;
+
+	/**
+	 * The feature id for the '<em><b>Description java lang String </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REST_API_BUILDER_APIGATEWAY__DESCRIPTION_JAVA_LANG_STRING_ = SERVICE_RESOURCES_FEATURE_COUNT + 16;
+
+	/**
+	 * The feature id for the '<em><b>Endpoint Configuration With Endpoint Configuration software amazon awscdk services apigateway Endpoint Configuration As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REST_API_BUILDER_APIGATEWAY__ENDPOINT_CONFIGURATION_WITH_ENDPOINT_CONFIGURATION_SOFTWARE_AMAZON_AWSCDK_SERVICES_APIGATEWAY_ENDPOINT_CONFIGURATION_AS_REFERENCE = SERVICE_RESOURCES_FEATURE_COUNT
+			+ 17;
+
+	/**
+	 * The feature id for the '<em><b>Endpoint Types software amazon awscdk services apigateway Endpoint Type As List</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REST_API_BUILDER_APIGATEWAY__ENDPOINT_TYPES_SOFTWARE_AMAZON_AWSCDK_SERVICES_APIGATEWAY_ENDPOINT_TYPE_AS_LIST = SERVICE_RESOURCES_FEATURE_COUNT
+			+ 18;
+
+	/**
+	 * The feature id for the '<em><b>Minimum Compression Size java lang Number </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REST_API_BUILDER_APIGATEWAY__MINIMUM_COMPRESSION_SIZE_JAVA_LANG_NUMBER_ = SERVICE_RESOURCES_FEATURE_COUNT + 19;
+
+	/**
+	 * The feature id for the '<em><b>Generated Class Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REST_API_BUILDER_APIGATEWAY__GENERATED_CLASS_NAME = SERVICE_RESOURCES_FEATURE_COUNT + 20;
+
+	/**
+	 * The feature id for the '<em><b>Var Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REST_API_BUILDER_APIGATEWAY__VAR_NAME = SERVICE_RESOURCES_FEATURE_COUNT + 21;
+
+	/**
+	 * The feature id for the '<em><b>Identifier</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REST_API_BUILDER_APIGATEWAY__IDENTIFIER = SERVICE_RESOURCES_FEATURE_COUNT + 22;
+
+	/**
+	 * The feature id for the '<em><b>Additional Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REST_API_BUILDER_APIGATEWAY__ADDITIONAL_CODE = SERVICE_RESOURCES_FEATURE_COUNT + 23;
+
+	/**
+	 * The number of structural features of the '<em>Rest Api Builder apigateway</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REST_API_BUILDER_APIGATEWAY_FEATURE_COUNT = SERVICE_RESOURCES_FEATURE_COUNT + 24;
+
+	/**
+	 * The number of operations of the '<em>Rest Api Builder apigateway</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REST_API_BUILDER_APIGATEWAY_OPERATION_COUNT = SERVICE_RESOURCES_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.MethodBuilder_apigatewayImpl <em>Method Builder apigateway</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.MethodBuilder_apigatewayImpl
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getMethodBuilder_apigateway()
+	 * @generated
+	 */
+	int METHOD_BUILDER_APIGATEWAY = 205;
+
+	/**
+	 * The feature id for the '<em><b>Depends ON</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int METHOD_BUILDER_APIGATEWAY__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
+
+	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int METHOD_BUILDER_APIGATEWAY__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Http Method java lang String </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int METHOD_BUILDER_APIGATEWAY__HTTP_METHOD_JAVA_LANG_STRING_ = SERVICE_RESOURCES_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Resource With IResource software amazon awscdk services apigateway IResource As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int METHOD_BUILDER_APIGATEWAY__RESOURCE_WITH_IRESOURCE_SOFTWARE_AMAZON_AWSCDK_SERVICES_APIGATEWAY_IRESOURCE_AS_REFERENCE = SERVICE_RESOURCES_FEATURE_COUNT
+			+ 1;
+
+	/**
+	 * The feature id for the '<em><b>Integration With Integration software amazon awscdk services apigateway Integration As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int METHOD_BUILDER_APIGATEWAY__INTEGRATION_WITH_INTEGRATION_SOFTWARE_AMAZON_AWSCDK_SERVICES_APIGATEWAY_INTEGRATION_AS_REFERENCE = SERVICE_RESOURCES_FEATURE_COUNT
+			+ 2;
+
+	/**
+	 * The feature id for the '<em><b>Options With Method Options software amazon awscdk services apigateway Method Options As Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int METHOD_BUILDER_APIGATEWAY__OPTIONS_WITH_METHOD_OPTIONS_SOFTWARE_AMAZON_AWSCDK_SERVICES_APIGATEWAY_METHOD_OPTIONS_AS_REFERENCE = SERVICE_RESOURCES_FEATURE_COUNT
+			+ 3;
+
+	/**
+	 * The feature id for the '<em><b>Generated Class Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int METHOD_BUILDER_APIGATEWAY__GENERATED_CLASS_NAME = SERVICE_RESOURCES_FEATURE_COUNT + 4;
+
+	/**
+	 * The feature id for the '<em><b>Var Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int METHOD_BUILDER_APIGATEWAY__VAR_NAME = SERVICE_RESOURCES_FEATURE_COUNT + 5;
+
+	/**
+	 * The feature id for the '<em><b>Identifier</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int METHOD_BUILDER_APIGATEWAY__IDENTIFIER = SERVICE_RESOURCES_FEATURE_COUNT + 6;
+
+	/**
+	 * The feature id for the '<em><b>Additional Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int METHOD_BUILDER_APIGATEWAY__ADDITIONAL_CODE = SERVICE_RESOURCES_FEATURE_COUNT + 7;
+
+	/**
+	 * The number of structural features of the '<em>Method Builder apigateway</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int METHOD_BUILDER_APIGATEWAY_FEATURE_COUNT = SERVICE_RESOURCES_FEATURE_COUNT + 8;
+
+	/**
+	 * The number of operations of the '<em>Method Builder apigateway</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int METHOD_BUILDER_APIGATEWAY_OPERATION_COUNT = SERVICE_RESOURCES_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.AddRulePropsBuilder_elasticloadbalancingv2Impl <em>Add Rule Props Builder elasticloadbalancingv2</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AddRulePropsBuilder_elasticloadbalancingv2Impl
+	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getAddRulePropsBuilder_elasticloadbalancingv2()
+	 * @generated
+	 */
+	int ADD_RULE_PROPS_BUILDER_ELASTICLOADBALANCINGV2 = 206;
+
+	/**
+	 * The feature id for the '<em><b>Depends ON</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADD_RULE_PROPS_BUILDER_ELASTICLOADBALANCINGV2__DEPENDS_ON = SERVICE_RESOURCES__DEPENDS_ON;
+
+	/**
+	 * The feature id for the '<em><b>Import Existing Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADD_RULE_PROPS_BUILDER_ELASTICLOADBALANCINGV2__IMPORT_EXISTING_RESOURCE = SERVICE_RESOURCES__IMPORT_EXISTING_RESOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Conditions software amazon awscdk services elasticloadbalancingv2 Listener Condition As List</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADD_RULE_PROPS_BUILDER_ELASTICLOADBALANCINGV2__CONDITIONS_SOFTWARE_AMAZON_AWSCDK_SERVICES_ELASTICLOADBALANCINGV2_LISTENER_CONDITION_AS_LIST = SERVICE_RESOURCES_FEATURE_COUNT
+			+ 0;
+
+	/**
+	 * The feature id for the '<em><b>Host Header java lang String </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADD_RULE_PROPS_BUILDER_ELASTICLOADBALANCINGV2__HOST_HEADER_JAVA_LANG_STRING_ = SERVICE_RESOURCES_FEATURE_COUNT
+			+ 1;
+
+	/**
+	 * The feature id for the '<em><b>Path Pattern java lang String </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADD_RULE_PROPS_BUILDER_ELASTICLOADBALANCINGV2__PATH_PATTERN_JAVA_LANG_STRING_ = SERVICE_RESOURCES_FEATURE_COUNT
+			+ 2;
+
+	/**
+	 * The feature id for the '<em><b>Path Patterns java lang String As List</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADD_RULE_PROPS_BUILDER_ELASTICLOADBALANCINGV2__PATH_PATTERNS_JAVA_LANG_STRING_AS_LIST = SERVICE_RESOURCES_FEATURE_COUNT
+			+ 3;
+
+	/**
+	 * The feature id for the '<em><b>Priority java lang Number </b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADD_RULE_PROPS_BUILDER_ELASTICLOADBALANCINGV2__PRIORITY_JAVA_LANG_NUMBER_ = SERVICE_RESOURCES_FEATURE_COUNT + 4;
+
+	/**
+	 * The feature id for the '<em><b>Generated Class Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADD_RULE_PROPS_BUILDER_ELASTICLOADBALANCINGV2__GENERATED_CLASS_NAME = SERVICE_RESOURCES_FEATURE_COUNT + 5;
+
+	/**
+	 * The feature id for the '<em><b>Var Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADD_RULE_PROPS_BUILDER_ELASTICLOADBALANCINGV2__VAR_NAME = SERVICE_RESOURCES_FEATURE_COUNT + 6;
+
+	/**
+	 * The feature id for the '<em><b>Identifier</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADD_RULE_PROPS_BUILDER_ELASTICLOADBALANCINGV2__IDENTIFIER = SERVICE_RESOURCES_FEATURE_COUNT + 7;
+
+	/**
+	 * The feature id for the '<em><b>Additional Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADD_RULE_PROPS_BUILDER_ELASTICLOADBALANCINGV2__ADDITIONAL_CODE = SERVICE_RESOURCES_FEATURE_COUNT + 8;
+
+	/**
+	 * The number of structural features of the '<em>Add Rule Props Builder elasticloadbalancingv2</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADD_RULE_PROPS_BUILDER_ELASTICLOADBALANCINGV2_FEATURE_COUNT = SERVICE_RESOURCES_FEATURE_COUNT + 9;
+
+	/**
+	 * The number of operations of the '<em>Add Rule Props Builder elasticloadbalancingv2</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADD_RULE_PROPS_BUILDER_ELASTICLOADBALANCINGV2_OPERATION_COUNT = SERVICE_RESOURCES_OPERATION_COUNT + 0;
+
+	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.FlowLogTrafficType <em>Flow Log Traffic Type</em>}' enum.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -30387,7 +30912,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getFlowLogTrafficType()
 	 * @generated
 	 */
-	int FLOW_LOG_TRAFFIC_TYPE = 204;
+	int FLOW_LOG_TRAFFIC_TYPE = 207;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.DefaultInstanceTenancy <em>Default Instance Tenancy</em>}' enum.
@@ -30397,7 +30922,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getDefaultInstanceTenancy()
 	 * @generated
 	 */
-	int DEFAULT_INSTANCE_TENANCY = 205;
+	int DEFAULT_INSTANCE_TENANCY = 208;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.SubnetType <em>Subnet Type</em>}' enum.
@@ -30407,7 +30932,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getSubnetType()
 	 * @generated
 	 */
-	int SUBNET_TYPE = 206;
+	int SUBNET_TYPE = 209;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.ApiKeySourceType <em>Api Key Source Type</em>}' enum.
@@ -30417,7 +30942,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getApiKeySourceType()
 	 * @generated
 	 */
-	int API_KEY_SOURCE_TYPE = 207;
+	int API_KEY_SOURCE_TYPE = 210;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.EndpointType <em>Endpoint Type</em>}' enum.
@@ -30427,7 +30952,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getEndpointType()
 	 * @generated
 	 */
-	int ENDPOINT_TYPE = 208;
+	int ENDPOINT_TYPE = 211;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.MethodLoggingLevel <em>Method Logging Level</em>}' enum.
@@ -30437,7 +30962,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getMethodLoggingLevel()
 	 * @generated
 	 */
-	int METHOD_LOGGING_LEVEL = 209;
+	int METHOD_LOGGING_LEVEL = 212;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.ValidationMethod <em>Validation Method</em>}' enum.
@@ -30447,7 +30972,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getValidationMethod()
 	 * @generated
 	 */
-	int VALIDATION_METHOD = 210;
+	int VALIDATION_METHOD = 213;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.SecurityPolicy <em>Security Policy</em>}' enum.
@@ -30457,7 +30982,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getSecurityPolicy()
 	 * @generated
 	 */
-	int SECURITY_POLICY = 211;
+	int SECURITY_POLICY = 214;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.IntegrationType <em>Integration Type</em>}' enum.
@@ -30467,7 +30992,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getIntegrationType()
 	 * @generated
 	 */
-	int INTEGRATION_TYPE = 212;
+	int INTEGRATION_TYPE = 215;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.ContentHandling <em>Content Handling</em>}' enum.
@@ -30477,7 +31002,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getContentHandling()
 	 * @generated
 	 */
-	int CONTENT_HANDLING = 213;
+	int CONTENT_HANDLING = 216;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.ConnectionType <em>Connection Type</em>}' enum.
@@ -30487,7 +31012,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getConnectionType()
 	 * @generated
 	 */
-	int CONNECTION_TYPE = 214;
+	int CONNECTION_TYPE = 217;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.PassthroughBehavior <em>Passthrough Behavior</em>}' enum.
@@ -30497,7 +31022,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getPassthroughBehavior()
 	 * @generated
 	 */
-	int PASSTHROUGH_BEHAVIOR = 215;
+	int PASSTHROUGH_BEHAVIOR = 218;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.QueueEncryption <em>Queue Encryption</em>}' enum.
@@ -30507,7 +31032,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getQueueEncryption()
 	 * @generated
 	 */
-	int QUEUE_ENCRYPTION = 216;
+	int QUEUE_ENCRYPTION = 219;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.RetentionDays <em>Retention Days</em>}' enum.
@@ -30517,7 +31042,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getRetentionDays()
 	 * @generated
 	 */
-	int RETENTION_DAYS = 217;
+	int RETENTION_DAYS = 220;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.Tracing <em>Tracing</em>}' enum.
@@ -30527,7 +31052,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getTracing()
 	 * @generated
 	 */
-	int TRACING = 218;
+	int TRACING = 221;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.AuthorizationType <em>Authorization Type</em>}' enum.
@@ -30537,7 +31062,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getAuthorizationType()
 	 * @generated
 	 */
-	int AUTHORIZATION_TYPE = 219;
+	int AUTHORIZATION_TYPE = 222;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.JsonSchemaVersion <em>Json Schema Version</em>}' enum.
@@ -30547,7 +31072,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getJsonSchemaVersion()
 	 * @generated
 	 */
-	int JSON_SCHEMA_VERSION = 220;
+	int JSON_SCHEMA_VERSION = 223;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.JsonSchemaType <em>Json Schema Type</em>}' enum.
@@ -30557,7 +31082,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getJsonSchemaType()
 	 * @generated
 	 */
-	int JSON_SCHEMA_TYPE = 221;
+	int JSON_SCHEMA_TYPE = 224;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.CloudFrontAllowedCachedMethods <em>Cloud Front Allowed Cached Methods</em>}' enum.
@@ -30567,7 +31092,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getCloudFrontAllowedCachedMethods()
 	 * @generated
 	 */
-	int CLOUD_FRONT_ALLOWED_CACHED_METHODS = 222;
+	int CLOUD_FRONT_ALLOWED_CACHED_METHODS = 225;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.CloudFrontAllowedMethods <em>Cloud Front Allowed Methods</em>}' enum.
@@ -30577,7 +31102,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getCloudFrontAllowedMethods()
 	 * @generated
 	 */
-	int CLOUD_FRONT_ALLOWED_METHODS = 223;
+	int CLOUD_FRONT_ALLOWED_METHODS = 226;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.LambdaEdgeEventType <em>Lambda Edge Event Type</em>}' enum.
@@ -30587,7 +31112,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getLambdaEdgeEventType()
 	 * @generated
 	 */
-	int LAMBDA_EDGE_EVENT_TYPE = 224;
+	int LAMBDA_EDGE_EVENT_TYPE = 227;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.OriginSslPolicy <em>Origin Ssl Policy</em>}' enum.
@@ -30597,7 +31122,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getOriginSslPolicy()
 	 * @generated
 	 */
-	int ORIGIN_SSL_POLICY = 225;
+	int ORIGIN_SSL_POLICY = 228;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.OriginProtocolPolicy <em>Origin Protocol Policy</em>}' enum.
@@ -30607,7 +31132,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getOriginProtocolPolicy()
 	 * @generated
 	 */
-	int ORIGIN_PROTOCOL_POLICY = 226;
+	int ORIGIN_PROTOCOL_POLICY = 229;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.BucketAccessControl <em>Bucket Access Control</em>}' enum.
@@ -30617,7 +31142,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getBucketAccessControl()
 	 * @generated
 	 */
-	int BUCKET_ACCESS_CONTROL = 227;
+	int BUCKET_ACCESS_CONTROL = 230;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.HttpMethods <em>Http Methods</em>}' enum.
@@ -30627,7 +31152,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getHttpMethods()
 	 * @generated
 	 */
-	int HTTP_METHODS = 228;
+	int HTTP_METHODS = 231;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.BucketEncryption <em>Bucket Encryption</em>}' enum.
@@ -30637,7 +31162,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getBucketEncryption()
 	 * @generated
 	 */
-	int BUCKET_ENCRYPTION = 229;
+	int BUCKET_ENCRYPTION = 232;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.RedirectProtocol <em>Redirect Protocol</em>}' enum.
@@ -30647,7 +31172,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getRedirectProtocol()
 	 * @generated
 	 */
-	int REDIRECT_PROTOCOL = 230;
+	int REDIRECT_PROTOCOL = 233;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.HttpVersion <em>Http Version</em>}' enum.
@@ -30657,7 +31182,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getHttpVersion()
 	 * @generated
 	 */
-	int HTTP_VERSION = 231;
+	int HTTP_VERSION = 234;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.PriceClass <em>Price Class</em>}' enum.
@@ -30667,7 +31192,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getPriceClass()
 	 * @generated
 	 */
-	int PRICE_CLASS = 232;
+	int PRICE_CLASS = 235;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.ViewerProtocolPolicy <em>Viewer Protocol Policy</em>}' enum.
@@ -30677,7 +31202,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getViewerProtocolPolicy()
 	 * @generated
 	 */
-	int VIEWER_PROTOCOL_POLICY = 233;
+	int VIEWER_PROTOCOL_POLICY = 236;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.SecurityPolicyProtocol <em>Security Policy Protocol</em>}' enum.
@@ -30687,7 +31212,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getSecurityPolicyProtocol()
 	 * @generated
 	 */
-	int SECURITY_POLICY_PROTOCOL = 234;
+	int SECURITY_POLICY_PROTOCOL = 237;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.SSLMethod <em>SSL Method</em>}' enum.
@@ -30697,7 +31222,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getSSLMethod()
 	 * @generated
 	 */
-	int SSL_METHOD = 235;
+	int SSL_METHOD = 238;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.Mfa <em>Mfa</em>}' enum.
@@ -30707,7 +31232,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getMfa()
 	 * @generated
 	 */
-	int MFA = 236;
+	int MFA = 239;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.VerificationEmailStyle <em>Verification Email Style</em>}' enum.
@@ -30717,7 +31242,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getVerificationEmailStyle()
 	 * @generated
 	 */
-	int VERIFICATION_EMAIL_STYLE = 237;
+	int VERIFICATION_EMAIL_STYLE = 240;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.StateMachineType <em>State Machine Type</em>}' enum.
@@ -30727,7 +31252,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getStateMachineType()
 	 * @generated
 	 */
-	int STATE_MACHINE_TYPE = 238;
+	int STATE_MACHINE_TYPE = 241;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.Effect <em>Effect</em>}' enum.
@@ -30737,7 +31262,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getEffect()
 	 * @generated
 	 */
-	int EFFECT = 239;
+	int EFFECT = 242;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.AttributeType <em>Attribute Type</em>}' enum.
@@ -30747,7 +31272,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getAttributeType()
 	 * @generated
 	 */
-	int ATTRIBUTE_TYPE = 240;
+	int ATTRIBUTE_TYPE = 243;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.StreamViewType <em>Stream View Type</em>}' enum.
@@ -30757,7 +31282,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getStreamViewType()
 	 * @generated
 	 */
-	int STREAM_VIEW_TYPE = 241;
+	int STREAM_VIEW_TYPE = 244;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.RemovalPolicy <em>Removal Policy</em>}' enum.
@@ -30767,7 +31292,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getRemovalPolicy()
 	 * @generated
 	 */
-	int REMOVAL_POLICY = 242;
+	int REMOVAL_POLICY = 245;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.TableEncryption <em>Table Encryption</em>}' enum.
@@ -30777,7 +31302,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getTableEncryption()
 	 * @generated
 	 */
-	int TABLE_ENCRYPTION = 243;
+	int TABLE_ENCRYPTION = 246;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.BillingMode <em>Billing Mode</em>}' enum.
@@ -30787,7 +31312,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getBillingMode()
 	 * @generated
 	 */
-	int BILLING_MODE = 244;
+	int BILLING_MODE = 247;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.DnsRecordType <em>Dns Record Type</em>}' enum.
@@ -30797,7 +31322,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getDnsRecordType()
 	 * @generated
 	 */
-	int DNS_RECORD_TYPE = 245;
+	int DNS_RECORD_TYPE = 248;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.InstanceClass <em>Instance Class</em>}' enum.
@@ -30807,7 +31332,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getInstanceClass()
 	 * @generated
 	 */
-	int INSTANCE_CLASS = 246;
+	int INSTANCE_CLASS = 249;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.InstanceSize <em>Instance Size</em>}' enum.
@@ -30817,7 +31342,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getInstanceSize()
 	 * @generated
 	 */
-	int INSTANCE_SIZE = 247;
+	int INSTANCE_SIZE = 250;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.AmazonLinuxEdition <em>Amazon Linux Edition</em>}' enum.
@@ -30827,7 +31352,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getAmazonLinuxEdition()
 	 * @generated
 	 */
-	int AMAZON_LINUX_EDITION = 248;
+	int AMAZON_LINUX_EDITION = 251;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.AmazonLinuxGeneration <em>Amazon Linux Generation</em>}' enum.
@@ -30837,7 +31362,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getAmazonLinuxGeneration()
 	 * @generated
 	 */
-	int AMAZON_LINUX_GENERATION = 249;
+	int AMAZON_LINUX_GENERATION = 252;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.AmazonLinuxStorage <em>Amazon Linux Storage</em>}' enum.
@@ -30847,7 +31372,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getAmazonLinuxStorage()
 	 * @generated
 	 */
-	int AMAZON_LINUX_STORAGE = 250;
+	int AMAZON_LINUX_STORAGE = 253;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.AmazonLinuxVirt <em>Amazon Linux Virt</em>}' enum.
@@ -30857,7 +31382,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getAmazonLinuxVirt()
 	 * @generated
 	 */
-	int AMAZON_LINUX_VIRT = 251;
+	int AMAZON_LINUX_VIRT = 254;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.ScalingProcess <em>Scaling Process</em>}' enum.
@@ -30867,7 +31392,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getScalingProcess()
 	 * @generated
 	 */
-	int SCALING_PROCESS = 252;
+	int SCALING_PROCESS = 255;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.UpdateType <em>Update Type</em>}' enum.
@@ -30877,7 +31402,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getUpdateType()
 	 * @generated
 	 */
-	int UPDATE_TYPE = 253;
+	int UPDATE_TYPE = 256;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.NamespaceType <em>Namespace Type</em>}' enum.
@@ -30887,7 +31412,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getNamespaceType()
 	 * @generated
 	 */
-	int NAMESPACE_TYPE = 254;
+	int NAMESPACE_TYPE = 257;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.IpAddressType <em>Ip Address Type</em>}' enum.
@@ -30897,7 +31422,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getIpAddressType()
 	 * @generated
 	 */
-	int IP_ADDRESS_TYPE = 255;
+	int IP_ADDRESS_TYPE = 258;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.PropagatedTagSource <em>Propagated Tag Source</em>}' enum.
@@ -30907,7 +31432,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getPropagatedTagSource()
 	 * @generated
 	 */
-	int PROPAGATED_TAG_SOURCE = 256;
+	int PROPAGATED_TAG_SOURCE = 259;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.ApplicationProtocol <em>Application Protocol</em>}' enum.
@@ -30917,7 +31442,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getApplicationProtocol()
 	 * @generated
 	 */
-	int APPLICATION_PROTOCOL = 257;
+	int APPLICATION_PROTOCOL = 260;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.FollowMode <em>Follow Mode</em>}' enum.
@@ -30927,7 +31452,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getFollowMode()
 	 * @generated
 	 */
-	int FOLLOW_MODE = 258;
+	int FOLLOW_MODE = 261;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.Scope <em>Scope</em>}' enum.
@@ -30937,7 +31462,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getScope()
 	 * @generated
 	 */
-	int SCOPE = 259;
+	int SCOPE = 262;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.NetworkMode <em>Network Mode</em>}' enum.
@@ -30947,7 +31472,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getNetworkMode()
 	 * @generated
 	 */
-	int NETWORK_MODE = 260;
+	int NETWORK_MODE = 263;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.IpcMode <em>Ipc Mode</em>}' enum.
@@ -30957,7 +31482,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getIpcMode()
 	 * @generated
 	 */
-	int IPC_MODE = 261;
+	int IPC_MODE = 264;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.PidMode <em>Pid Mode</em>}' enum.
@@ -30967,7 +31492,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getPidMode()
 	 * @generated
 	 */
-	int PID_MODE = 262;
+	int PID_MODE = 265;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.FargatePlatformVersion <em>Fargate Platform Version</em>}' enum.
@@ -30977,7 +31502,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getFargatePlatformVersion()
 	 * @generated
 	 */
-	int FARGATE_PLATFORM_VERSION = 263;
+	int FARGATE_PLATFORM_VERSION = 266;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.Protocol <em>Protocol</em>}' enum.
@@ -30987,7 +31512,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getProtocol()
 	 * @generated
 	 */
-	int PROTOCOL = 264;
+	int PROTOCOL = 267;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.PerformanceInsightRetention <em>Performance Insight Retention</em>}' enum.
@@ -30997,7 +31522,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getPerformanceInsightRetention()
 	 * @generated
 	 */
-	int PERFORMANCE_INSIGHT_RETENTION = 265;
+	int PERFORMANCE_INSIGHT_RETENTION = 268;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.StorageType <em>Storage Type</em>}' enum.
@@ -31007,7 +31532,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getStorageType()
 	 * @generated
 	 */
-	int STORAGE_TYPE = 266;
+	int STORAGE_TYPE = 269;
 
 	/**
 	 * The meta object id for the '{@link com.amazon.aws.workbench.model.awsworkbench.LicenseModel <em>License Model</em>}' enum.
@@ -31017,7 +31542,7 @@ public interface AwsworkbenchPackage extends EPackage {
 	 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getLicenseModel()
 	 * @generated
 	 */
-	int LICENSE_MODEL = 267;
+	int LICENSE_MODEL = 270;
 
 	/**
 	 * Returns the meta object for class '{@link com.amazon.aws.workbench.model.awsworkbench.ServiceResources <em>Service Resources</em>}'.
@@ -57469,6 +57994,487 @@ public interface AwsworkbenchPackage extends EPackage {
 	EAttribute getBlock_CanDeploy();
 
 	/**
+	 * Returns the meta object for class '{@link com.amazon.aws.workbench.model.awsworkbench.RestApiBuilder_apigateway <em>Rest Api Builder apigateway</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Rest Api Builder apigateway</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.RestApiBuilder_apigateway
+	 * @generated
+	 */
+	EClass getRestApiBuilder_apigateway();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.RestApiBuilder_apigateway#getDefaultCorsPreflightOptionsWithCorsOptions_software_amazon_awscdk_services_apigateway_CorsOptions_AsReference <em>Default Cors Preflight Options With Cors Options software amazon awscdk services apigateway Cors Options As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Default Cors Preflight Options With Cors Options software amazon awscdk services apigateway Cors Options As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.RestApiBuilder_apigateway#getDefaultCorsPreflightOptionsWithCorsOptions_software_amazon_awscdk_services_apigateway_CorsOptions_AsReference()
+	 * @see #getRestApiBuilder_apigateway()
+	 * @generated
+	 */
+	EAttribute getRestApiBuilder_apigateway_DefaultCorsPreflightOptionsWithCorsOptions_software_amazon_awscdk_services_apigateway_CorsOptions_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.RestApiBuilder_apigateway#getDefaultIntegrationWithIntegration_software_amazon_awscdk_services_apigateway_Integration_AsReference <em>Default Integration With Integration software amazon awscdk services apigateway Integration As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Default Integration With Integration software amazon awscdk services apigateway Integration As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.RestApiBuilder_apigateway#getDefaultIntegrationWithIntegration_software_amazon_awscdk_services_apigateway_Integration_AsReference()
+	 * @see #getRestApiBuilder_apigateway()
+	 * @generated
+	 */
+	EAttribute getRestApiBuilder_apigateway_DefaultIntegrationWithIntegration_software_amazon_awscdk_services_apigateway_Integration_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.RestApiBuilder_apigateway#getDefaultMethodOptionsWithMethodOptions_software_amazon_awscdk_services_apigateway_MethodOptions_AsReference <em>Default Method Options With Method Options software amazon awscdk services apigateway Method Options As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Default Method Options With Method Options software amazon awscdk services apigateway Method Options As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.RestApiBuilder_apigateway#getDefaultMethodOptionsWithMethodOptions_software_amazon_awscdk_services_apigateway_MethodOptions_AsReference()
+	 * @see #getRestApiBuilder_apigateway()
+	 * @generated
+	 */
+	EAttribute getRestApiBuilder_apigateway_DefaultMethodOptionsWithMethodOptions_software_amazon_awscdk_services_apigateway_MethodOptions_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.RestApiBuilder_apigateway#getCloudWatchRole_java_lang_Boolean_ <em>Cloud Watch Role java lang Boolean </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Cloud Watch Role java lang Boolean </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.RestApiBuilder_apigateway#getCloudWatchRole_java_lang_Boolean_()
+	 * @see #getRestApiBuilder_apigateway()
+	 * @generated
+	 */
+	EAttribute getRestApiBuilder_apigateway_CloudWatchRole_java_lang_Boolean_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.RestApiBuilder_apigateway#getDeploy_java_lang_Boolean_ <em>Deploy java lang Boolean </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Deploy java lang Boolean </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.RestApiBuilder_apigateway#getDeploy_java_lang_Boolean_()
+	 * @see #getRestApiBuilder_apigateway()
+	 * @generated
+	 */
+	EAttribute getRestApiBuilder_apigateway_Deploy_java_lang_Boolean_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.RestApiBuilder_apigateway#getDeployOptionsWithStageOptions_software_amazon_awscdk_services_apigateway_StageOptions_AsReference <em>Deploy Options With Stage Options software amazon awscdk services apigateway Stage Options As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Deploy Options With Stage Options software amazon awscdk services apigateway Stage Options As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.RestApiBuilder_apigateway#getDeployOptionsWithStageOptions_software_amazon_awscdk_services_apigateway_StageOptions_AsReference()
+	 * @see #getRestApiBuilder_apigateway()
+	 * @generated
+	 */
+	EAttribute getRestApiBuilder_apigateway_DeployOptionsWithStageOptions_software_amazon_awscdk_services_apigateway_StageOptions_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.RestApiBuilder_apigateway#getDomainNameWithDomainNameOptions_software_amazon_awscdk_services_apigateway_DomainNameOptions_AsReference <em>Domain Name With Domain Name Options software amazon awscdk services apigateway Domain Name Options As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Domain Name With Domain Name Options software amazon awscdk services apigateway Domain Name Options As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.RestApiBuilder_apigateway#getDomainNameWithDomainNameOptions_software_amazon_awscdk_services_apigateway_DomainNameOptions_AsReference()
+	 * @see #getRestApiBuilder_apigateway()
+	 * @generated
+	 */
+	EAttribute getRestApiBuilder_apigateway_DomainNameWithDomainNameOptions_software_amazon_awscdk_services_apigateway_DomainNameOptions_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.RestApiBuilder_apigateway#getEndpointExportName_java_lang_String_ <em>Endpoint Export Name java lang String </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Endpoint Export Name java lang String </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.RestApiBuilder_apigateway#getEndpointExportName_java_lang_String_()
+	 * @see #getRestApiBuilder_apigateway()
+	 * @generated
+	 */
+	EAttribute getRestApiBuilder_apigateway_EndpointExportName_java_lang_String_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.RestApiBuilder_apigateway#getFailOnWarnings_java_lang_Boolean_ <em>Fail On Warnings java lang Boolean </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Fail On Warnings java lang Boolean </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.RestApiBuilder_apigateway#getFailOnWarnings_java_lang_Boolean_()
+	 * @see #getRestApiBuilder_apigateway()
+	 * @generated
+	 */
+	EAttribute getRestApiBuilder_apigateway_FailOnWarnings_java_lang_Boolean_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.RestApiBuilder_apigateway#getParameters_java_lang_String__java_lang_String_AsMap <em>Parameters java lang String java lang String As Map</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Parameters java lang String java lang String As Map</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.RestApiBuilder_apigateway#getParameters_java_lang_String__java_lang_String_AsMap()
+	 * @see #getRestApiBuilder_apigateway()
+	 * @generated
+	 */
+	EAttribute getRestApiBuilder_apigateway_Parameters_java_lang_String__java_lang_String_AsMap();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.RestApiBuilder_apigateway#getPolicyWithPolicyDocument_software_amazon_awscdk_services_iam_PolicyDocument_AsReference <em>Policy With Policy Document software amazon awscdk services iam Policy Document As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Policy With Policy Document software amazon awscdk services iam Policy Document As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.RestApiBuilder_apigateway#getPolicyWithPolicyDocument_software_amazon_awscdk_services_iam_PolicyDocument_AsReference()
+	 * @see #getRestApiBuilder_apigateway()
+	 * @generated
+	 */
+	EAttribute getRestApiBuilder_apigateway_PolicyWithPolicyDocument_software_amazon_awscdk_services_iam_PolicyDocument_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.RestApiBuilder_apigateway#getRestApiName_java_lang_String_ <em>Rest Api Name java lang String </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Rest Api Name java lang String </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.RestApiBuilder_apigateway#getRestApiName_java_lang_String_()
+	 * @see #getRestApiBuilder_apigateway()
+	 * @generated
+	 */
+	EAttribute getRestApiBuilder_apigateway_RestApiName_java_lang_String_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.RestApiBuilder_apigateway#getRetainDeployments_java_lang_Boolean_ <em>Retain Deployments java lang Boolean </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Retain Deployments java lang Boolean </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.RestApiBuilder_apigateway#getRetainDeployments_java_lang_Boolean_()
+	 * @see #getRestApiBuilder_apigateway()
+	 * @generated
+	 */
+	EAttribute getRestApiBuilder_apigateway_RetainDeployments_java_lang_Boolean_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.RestApiBuilder_apigateway#getApiKeySourceType_software_amazon_awscdk_services_apigateway_ApiKeySourceType_ <em>Api Key Source Type software amazon awscdk services apigateway Api Key Source Type </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Api Key Source Type software amazon awscdk services apigateway Api Key Source Type </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.RestApiBuilder_apigateway#getApiKeySourceType_software_amazon_awscdk_services_apigateway_ApiKeySourceType_()
+	 * @see #getRestApiBuilder_apigateway()
+	 * @generated
+	 */
+	EAttribute getRestApiBuilder_apigateway_ApiKeySourceType_software_amazon_awscdk_services_apigateway_ApiKeySourceType_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.RestApiBuilder_apigateway#getBinaryMediaTypes_java_lang_String_AsList <em>Binary Media Types java lang String As List</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Binary Media Types java lang String As List</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.RestApiBuilder_apigateway#getBinaryMediaTypes_java_lang_String_AsList()
+	 * @see #getRestApiBuilder_apigateway()
+	 * @generated
+	 */
+	EAttribute getRestApiBuilder_apigateway_BinaryMediaTypes_java_lang_String_AsList();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.RestApiBuilder_apigateway#getCloneFromWithIRestApi_software_amazon_awscdk_services_apigateway_IRestApi_AsReference <em>Clone From With IRest Api software amazon awscdk services apigateway IRest Api As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Clone From With IRest Api software amazon awscdk services apigateway IRest Api As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.RestApiBuilder_apigateway#getCloneFromWithIRestApi_software_amazon_awscdk_services_apigateway_IRestApi_AsReference()
+	 * @see #getRestApiBuilder_apigateway()
+	 * @generated
+	 */
+	EAttribute getRestApiBuilder_apigateway_CloneFromWithIRestApi_software_amazon_awscdk_services_apigateway_IRestApi_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.RestApiBuilder_apigateway#getDescription_java_lang_String_ <em>Description java lang String </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Description java lang String </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.RestApiBuilder_apigateway#getDescription_java_lang_String_()
+	 * @see #getRestApiBuilder_apigateway()
+	 * @generated
+	 */
+	EAttribute getRestApiBuilder_apigateway_Description_java_lang_String_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.RestApiBuilder_apigateway#getEndpointConfigurationWithEndpointConfiguration_software_amazon_awscdk_services_apigateway_EndpointConfiguration_AsReference <em>Endpoint Configuration With Endpoint Configuration software amazon awscdk services apigateway Endpoint Configuration As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Endpoint Configuration With Endpoint Configuration software amazon awscdk services apigateway Endpoint Configuration As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.RestApiBuilder_apigateway#getEndpointConfigurationWithEndpointConfiguration_software_amazon_awscdk_services_apigateway_EndpointConfiguration_AsReference()
+	 * @see #getRestApiBuilder_apigateway()
+	 * @generated
+	 */
+	EAttribute getRestApiBuilder_apigateway_EndpointConfigurationWithEndpointConfiguration_software_amazon_awscdk_services_apigateway_EndpointConfiguration_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.RestApiBuilder_apigateway#getEndpointTypes_software_amazon_awscdk_services_apigateway_EndpointType_AsList <em>Endpoint Types software amazon awscdk services apigateway Endpoint Type As List</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Endpoint Types software amazon awscdk services apigateway Endpoint Type As List</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.RestApiBuilder_apigateway#getEndpointTypes_software_amazon_awscdk_services_apigateway_EndpointType_AsList()
+	 * @see #getRestApiBuilder_apigateway()
+	 * @generated
+	 */
+	EAttribute getRestApiBuilder_apigateway_EndpointTypes_software_amazon_awscdk_services_apigateway_EndpointType_AsList();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.RestApiBuilder_apigateway#getMinimumCompressionSize_java_lang_Number_ <em>Minimum Compression Size java lang Number </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Minimum Compression Size java lang Number </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.RestApiBuilder_apigateway#getMinimumCompressionSize_java_lang_Number_()
+	 * @see #getRestApiBuilder_apigateway()
+	 * @generated
+	 */
+	EAttribute getRestApiBuilder_apigateway_MinimumCompressionSize_java_lang_Number_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.RestApiBuilder_apigateway#getGeneratedClassName <em>Generated Class Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Generated Class Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.RestApiBuilder_apigateway#getGeneratedClassName()
+	 * @see #getRestApiBuilder_apigateway()
+	 * @generated
+	 */
+	EAttribute getRestApiBuilder_apigateway_GeneratedClassName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.RestApiBuilder_apigateway#getVarName <em>Var Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Var Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.RestApiBuilder_apigateway#getVarName()
+	 * @see #getRestApiBuilder_apigateway()
+	 * @generated
+	 */
+	EAttribute getRestApiBuilder_apigateway_VarName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.RestApiBuilder_apigateway#getIdentifier <em>Identifier</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Identifier</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.RestApiBuilder_apigateway#getIdentifier()
+	 * @see #getRestApiBuilder_apigateway()
+	 * @generated
+	 */
+	EAttribute getRestApiBuilder_apigateway_Identifier();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.RestApiBuilder_apigateway#getAdditionalCode <em>Additional Code</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Additional Code</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.RestApiBuilder_apigateway#getAdditionalCode()
+	 * @see #getRestApiBuilder_apigateway()
+	 * @generated
+	 */
+	EAttribute getRestApiBuilder_apigateway_AdditionalCode();
+
+	/**
+	 * Returns the meta object for class '{@link com.amazon.aws.workbench.model.awsworkbench.MethodBuilder_apigateway <em>Method Builder apigateway</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Method Builder apigateway</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.MethodBuilder_apigateway
+	 * @generated
+	 */
+	EClass getMethodBuilder_apigateway();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.MethodBuilder_apigateway#getHttpMethod_java_lang_String_ <em>Http Method java lang String </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Http Method java lang String </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.MethodBuilder_apigateway#getHttpMethod_java_lang_String_()
+	 * @see #getMethodBuilder_apigateway()
+	 * @generated
+	 */
+	EAttribute getMethodBuilder_apigateway_HttpMethod_java_lang_String_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.MethodBuilder_apigateway#getResourceWithIResource_software_amazon_awscdk_services_apigateway_IResource_AsReference <em>Resource With IResource software amazon awscdk services apigateway IResource As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Resource With IResource software amazon awscdk services apigateway IResource As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.MethodBuilder_apigateway#getResourceWithIResource_software_amazon_awscdk_services_apigateway_IResource_AsReference()
+	 * @see #getMethodBuilder_apigateway()
+	 * @generated
+	 */
+	EAttribute getMethodBuilder_apigateway_ResourceWithIResource_software_amazon_awscdk_services_apigateway_IResource_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.MethodBuilder_apigateway#getIntegrationWithIntegration_software_amazon_awscdk_services_apigateway_Integration_AsReference <em>Integration With Integration software amazon awscdk services apigateway Integration As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Integration With Integration software amazon awscdk services apigateway Integration As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.MethodBuilder_apigateway#getIntegrationWithIntegration_software_amazon_awscdk_services_apigateway_Integration_AsReference()
+	 * @see #getMethodBuilder_apigateway()
+	 * @generated
+	 */
+	EAttribute getMethodBuilder_apigateway_IntegrationWithIntegration_software_amazon_awscdk_services_apigateway_Integration_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.MethodBuilder_apigateway#getOptionsWithMethodOptions_software_amazon_awscdk_services_apigateway_MethodOptions_AsReference <em>Options With Method Options software amazon awscdk services apigateway Method Options As Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Options With Method Options software amazon awscdk services apigateway Method Options As Reference</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.MethodBuilder_apigateway#getOptionsWithMethodOptions_software_amazon_awscdk_services_apigateway_MethodOptions_AsReference()
+	 * @see #getMethodBuilder_apigateway()
+	 * @generated
+	 */
+	EAttribute getMethodBuilder_apigateway_OptionsWithMethodOptions_software_amazon_awscdk_services_apigateway_MethodOptions_AsReference();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.MethodBuilder_apigateway#getGeneratedClassName <em>Generated Class Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Generated Class Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.MethodBuilder_apigateway#getGeneratedClassName()
+	 * @see #getMethodBuilder_apigateway()
+	 * @generated
+	 */
+	EAttribute getMethodBuilder_apigateway_GeneratedClassName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.MethodBuilder_apigateway#getVarName <em>Var Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Var Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.MethodBuilder_apigateway#getVarName()
+	 * @see #getMethodBuilder_apigateway()
+	 * @generated
+	 */
+	EAttribute getMethodBuilder_apigateway_VarName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.MethodBuilder_apigateway#getIdentifier <em>Identifier</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Identifier</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.MethodBuilder_apigateway#getIdentifier()
+	 * @see #getMethodBuilder_apigateway()
+	 * @generated
+	 */
+	EAttribute getMethodBuilder_apigateway_Identifier();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.MethodBuilder_apigateway#getAdditionalCode <em>Additional Code</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Additional Code</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.MethodBuilder_apigateway#getAdditionalCode()
+	 * @see #getMethodBuilder_apigateway()
+	 * @generated
+	 */
+	EAttribute getMethodBuilder_apigateway_AdditionalCode();
+
+	/**
+	 * Returns the meta object for class '{@link com.amazon.aws.workbench.model.awsworkbench.AddRulePropsBuilder_elasticloadbalancingv2 <em>Add Rule Props Builder elasticloadbalancingv2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Add Rule Props Builder elasticloadbalancingv2</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AddRulePropsBuilder_elasticloadbalancingv2
+	 * @generated
+	 */
+	EClass getAddRulePropsBuilder_elasticloadbalancingv2();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.AddRulePropsBuilder_elasticloadbalancingv2#getConditions_software_amazon_awscdk_services_elasticloadbalancingv2_ListenerCondition_AsList <em>Conditions software amazon awscdk services elasticloadbalancingv2 Listener Condition As List</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Conditions software amazon awscdk services elasticloadbalancingv2 Listener Condition As List</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AddRulePropsBuilder_elasticloadbalancingv2#getConditions_software_amazon_awscdk_services_elasticloadbalancingv2_ListenerCondition_AsList()
+	 * @see #getAddRulePropsBuilder_elasticloadbalancingv2()
+	 * @generated
+	 */
+	EAttribute getAddRulePropsBuilder_elasticloadbalancingv2_Conditions_software_amazon_awscdk_services_elasticloadbalancingv2_ListenerCondition_AsList();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.AddRulePropsBuilder_elasticloadbalancingv2#getHostHeader_java_lang_String_ <em>Host Header java lang String </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Host Header java lang String </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AddRulePropsBuilder_elasticloadbalancingv2#getHostHeader_java_lang_String_()
+	 * @see #getAddRulePropsBuilder_elasticloadbalancingv2()
+	 * @generated
+	 */
+	EAttribute getAddRulePropsBuilder_elasticloadbalancingv2_HostHeader_java_lang_String_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.AddRulePropsBuilder_elasticloadbalancingv2#getPathPattern_java_lang_String_ <em>Path Pattern java lang String </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Path Pattern java lang String </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AddRulePropsBuilder_elasticloadbalancingv2#getPathPattern_java_lang_String_()
+	 * @see #getAddRulePropsBuilder_elasticloadbalancingv2()
+	 * @generated
+	 */
+	EAttribute getAddRulePropsBuilder_elasticloadbalancingv2_PathPattern_java_lang_String_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.AddRulePropsBuilder_elasticloadbalancingv2#getPathPatterns_java_lang_String_AsList <em>Path Patterns java lang String As List</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Path Patterns java lang String As List</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AddRulePropsBuilder_elasticloadbalancingv2#getPathPatterns_java_lang_String_AsList()
+	 * @see #getAddRulePropsBuilder_elasticloadbalancingv2()
+	 * @generated
+	 */
+	EAttribute getAddRulePropsBuilder_elasticloadbalancingv2_PathPatterns_java_lang_String_AsList();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.AddRulePropsBuilder_elasticloadbalancingv2#getPriority_java_lang_Number_ <em>Priority java lang Number </em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Priority java lang Number </em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AddRulePropsBuilder_elasticloadbalancingv2#getPriority_java_lang_Number_()
+	 * @see #getAddRulePropsBuilder_elasticloadbalancingv2()
+	 * @generated
+	 */
+	EAttribute getAddRulePropsBuilder_elasticloadbalancingv2_Priority_java_lang_Number_();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.AddRulePropsBuilder_elasticloadbalancingv2#getGeneratedClassName <em>Generated Class Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Generated Class Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AddRulePropsBuilder_elasticloadbalancingv2#getGeneratedClassName()
+	 * @see #getAddRulePropsBuilder_elasticloadbalancingv2()
+	 * @generated
+	 */
+	EAttribute getAddRulePropsBuilder_elasticloadbalancingv2_GeneratedClassName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.AddRulePropsBuilder_elasticloadbalancingv2#getVarName <em>Var Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Var Name</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AddRulePropsBuilder_elasticloadbalancingv2#getVarName()
+	 * @see #getAddRulePropsBuilder_elasticloadbalancingv2()
+	 * @generated
+	 */
+	EAttribute getAddRulePropsBuilder_elasticloadbalancingv2_VarName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.AddRulePropsBuilder_elasticloadbalancingv2#getIdentifier <em>Identifier</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Identifier</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AddRulePropsBuilder_elasticloadbalancingv2#getIdentifier()
+	 * @see #getAddRulePropsBuilder_elasticloadbalancingv2()
+	 * @generated
+	 */
+	EAttribute getAddRulePropsBuilder_elasticloadbalancingv2_Identifier();
+
+	/**
+	 * Returns the meta object for the attribute '{@link com.amazon.aws.workbench.model.awsworkbench.AddRulePropsBuilder_elasticloadbalancingv2#getAdditionalCode <em>Additional Code</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Additional Code</em>'.
+	 * @see com.amazon.aws.workbench.model.awsworkbench.AddRulePropsBuilder_elasticloadbalancingv2#getAdditionalCode()
+	 * @see #getAddRulePropsBuilder_elasticloadbalancingv2()
+	 * @generated
+	 */
+	EAttribute getAddRulePropsBuilder_elasticloadbalancingv2_AdditionalCode();
+
+	/**
 	 * Returns the meta object for enum '{@link com.amazon.aws.workbench.model.awsworkbench.FlowLogTrafficType <em>Flow Log Traffic Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -79936,6 +80942,401 @@ public interface AwsworkbenchPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute BLOCK__CAN_DEPLOY = eINSTANCE.getBlock_CanDeploy();
+
+		/**
+		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.RestApiBuilder_apigatewayImpl <em>Rest Api Builder apigateway</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.RestApiBuilder_apigatewayImpl
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getRestApiBuilder_apigateway()
+		 * @generated
+		 */
+		EClass REST_API_BUILDER_APIGATEWAY = eINSTANCE.getRestApiBuilder_apigateway();
+
+		/**
+		 * The meta object literal for the '<em><b>Default Cors Preflight Options With Cors Options software amazon awscdk services apigateway Cors Options As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute REST_API_BUILDER_APIGATEWAY__DEFAULT_CORS_PREFLIGHT_OPTIONS_WITH_CORS_OPTIONS_SOFTWARE_AMAZON_AWSCDK_SERVICES_APIGATEWAY_CORS_OPTIONS_AS_REFERENCE = eINSTANCE
+				.getRestApiBuilder_apigateway_DefaultCorsPreflightOptionsWithCorsOptions_software_amazon_awscdk_services_apigateway_CorsOptions_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Default Integration With Integration software amazon awscdk services apigateway Integration As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute REST_API_BUILDER_APIGATEWAY__DEFAULT_INTEGRATION_WITH_INTEGRATION_SOFTWARE_AMAZON_AWSCDK_SERVICES_APIGATEWAY_INTEGRATION_AS_REFERENCE = eINSTANCE
+				.getRestApiBuilder_apigateway_DefaultIntegrationWithIntegration_software_amazon_awscdk_services_apigateway_Integration_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Default Method Options With Method Options software amazon awscdk services apigateway Method Options As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute REST_API_BUILDER_APIGATEWAY__DEFAULT_METHOD_OPTIONS_WITH_METHOD_OPTIONS_SOFTWARE_AMAZON_AWSCDK_SERVICES_APIGATEWAY_METHOD_OPTIONS_AS_REFERENCE = eINSTANCE
+				.getRestApiBuilder_apigateway_DefaultMethodOptionsWithMethodOptions_software_amazon_awscdk_services_apigateway_MethodOptions_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Cloud Watch Role java lang Boolean </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute REST_API_BUILDER_APIGATEWAY__CLOUD_WATCH_ROLE_JAVA_LANG_BOOLEAN_ = eINSTANCE
+				.getRestApiBuilder_apigateway_CloudWatchRole_java_lang_Boolean_();
+
+		/**
+		 * The meta object literal for the '<em><b>Deploy java lang Boolean </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute REST_API_BUILDER_APIGATEWAY__DEPLOY_JAVA_LANG_BOOLEAN_ = eINSTANCE
+				.getRestApiBuilder_apigateway_Deploy_java_lang_Boolean_();
+
+		/**
+		 * The meta object literal for the '<em><b>Deploy Options With Stage Options software amazon awscdk services apigateway Stage Options As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute REST_API_BUILDER_APIGATEWAY__DEPLOY_OPTIONS_WITH_STAGE_OPTIONS_SOFTWARE_AMAZON_AWSCDK_SERVICES_APIGATEWAY_STAGE_OPTIONS_AS_REFERENCE = eINSTANCE
+				.getRestApiBuilder_apigateway_DeployOptionsWithStageOptions_software_amazon_awscdk_services_apigateway_StageOptions_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Domain Name With Domain Name Options software amazon awscdk services apigateway Domain Name Options As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute REST_API_BUILDER_APIGATEWAY__DOMAIN_NAME_WITH_DOMAIN_NAME_OPTIONS_SOFTWARE_AMAZON_AWSCDK_SERVICES_APIGATEWAY_DOMAIN_NAME_OPTIONS_AS_REFERENCE = eINSTANCE
+				.getRestApiBuilder_apigateway_DomainNameWithDomainNameOptions_software_amazon_awscdk_services_apigateway_DomainNameOptions_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Endpoint Export Name java lang String </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute REST_API_BUILDER_APIGATEWAY__ENDPOINT_EXPORT_NAME_JAVA_LANG_STRING_ = eINSTANCE
+				.getRestApiBuilder_apigateway_EndpointExportName_java_lang_String_();
+
+		/**
+		 * The meta object literal for the '<em><b>Fail On Warnings java lang Boolean </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute REST_API_BUILDER_APIGATEWAY__FAIL_ON_WARNINGS_JAVA_LANG_BOOLEAN_ = eINSTANCE
+				.getRestApiBuilder_apigateway_FailOnWarnings_java_lang_Boolean_();
+
+		/**
+		 * The meta object literal for the '<em><b>Parameters java lang String java lang String As Map</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute REST_API_BUILDER_APIGATEWAY__PARAMETERS_JAVA_LANG_STRING_JAVA_LANG_STRING_AS_MAP = eINSTANCE
+				.getRestApiBuilder_apigateway_Parameters_java_lang_String__java_lang_String_AsMap();
+
+		/**
+		 * The meta object literal for the '<em><b>Policy With Policy Document software amazon awscdk services iam Policy Document As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute REST_API_BUILDER_APIGATEWAY__POLICY_WITH_POLICY_DOCUMENT_SOFTWARE_AMAZON_AWSCDK_SERVICES_IAM_POLICY_DOCUMENT_AS_REFERENCE = eINSTANCE
+				.getRestApiBuilder_apigateway_PolicyWithPolicyDocument_software_amazon_awscdk_services_iam_PolicyDocument_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Rest Api Name java lang String </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute REST_API_BUILDER_APIGATEWAY__REST_API_NAME_JAVA_LANG_STRING_ = eINSTANCE
+				.getRestApiBuilder_apigateway_RestApiName_java_lang_String_();
+
+		/**
+		 * The meta object literal for the '<em><b>Retain Deployments java lang Boolean </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute REST_API_BUILDER_APIGATEWAY__RETAIN_DEPLOYMENTS_JAVA_LANG_BOOLEAN_ = eINSTANCE
+				.getRestApiBuilder_apigateway_RetainDeployments_java_lang_Boolean_();
+
+		/**
+		 * The meta object literal for the '<em><b>Api Key Source Type software amazon awscdk services apigateway Api Key Source Type </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute REST_API_BUILDER_APIGATEWAY__API_KEY_SOURCE_TYPE_SOFTWARE_AMAZON_AWSCDK_SERVICES_APIGATEWAY_API_KEY_SOURCE_TYPE_ = eINSTANCE
+				.getRestApiBuilder_apigateway_ApiKeySourceType_software_amazon_awscdk_services_apigateway_ApiKeySourceType_();
+
+		/**
+		 * The meta object literal for the '<em><b>Binary Media Types java lang String As List</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute REST_API_BUILDER_APIGATEWAY__BINARY_MEDIA_TYPES_JAVA_LANG_STRING_AS_LIST = eINSTANCE
+				.getRestApiBuilder_apigateway_BinaryMediaTypes_java_lang_String_AsList();
+
+		/**
+		 * The meta object literal for the '<em><b>Clone From With IRest Api software amazon awscdk services apigateway IRest Api As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute REST_API_BUILDER_APIGATEWAY__CLONE_FROM_WITH_IREST_API_SOFTWARE_AMAZON_AWSCDK_SERVICES_APIGATEWAY_IREST_API_AS_REFERENCE = eINSTANCE
+				.getRestApiBuilder_apigateway_CloneFromWithIRestApi_software_amazon_awscdk_services_apigateway_IRestApi_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Description java lang String </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute REST_API_BUILDER_APIGATEWAY__DESCRIPTION_JAVA_LANG_STRING_ = eINSTANCE
+				.getRestApiBuilder_apigateway_Description_java_lang_String_();
+
+		/**
+		 * The meta object literal for the '<em><b>Endpoint Configuration With Endpoint Configuration software amazon awscdk services apigateway Endpoint Configuration As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute REST_API_BUILDER_APIGATEWAY__ENDPOINT_CONFIGURATION_WITH_ENDPOINT_CONFIGURATION_SOFTWARE_AMAZON_AWSCDK_SERVICES_APIGATEWAY_ENDPOINT_CONFIGURATION_AS_REFERENCE = eINSTANCE
+				.getRestApiBuilder_apigateway_EndpointConfigurationWithEndpointConfiguration_software_amazon_awscdk_services_apigateway_EndpointConfiguration_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Endpoint Types software amazon awscdk services apigateway Endpoint Type As List</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute REST_API_BUILDER_APIGATEWAY__ENDPOINT_TYPES_SOFTWARE_AMAZON_AWSCDK_SERVICES_APIGATEWAY_ENDPOINT_TYPE_AS_LIST = eINSTANCE
+				.getRestApiBuilder_apigateway_EndpointTypes_software_amazon_awscdk_services_apigateway_EndpointType_AsList();
+
+		/**
+		 * The meta object literal for the '<em><b>Minimum Compression Size java lang Number </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute REST_API_BUILDER_APIGATEWAY__MINIMUM_COMPRESSION_SIZE_JAVA_LANG_NUMBER_ = eINSTANCE
+				.getRestApiBuilder_apigateway_MinimumCompressionSize_java_lang_Number_();
+
+		/**
+		 * The meta object literal for the '<em><b>Generated Class Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute REST_API_BUILDER_APIGATEWAY__GENERATED_CLASS_NAME = eINSTANCE
+				.getRestApiBuilder_apigateway_GeneratedClassName();
+
+		/**
+		 * The meta object literal for the '<em><b>Var Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute REST_API_BUILDER_APIGATEWAY__VAR_NAME = eINSTANCE.getRestApiBuilder_apigateway_VarName();
+
+		/**
+		 * The meta object literal for the '<em><b>Identifier</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute REST_API_BUILDER_APIGATEWAY__IDENTIFIER = eINSTANCE.getRestApiBuilder_apigateway_Identifier();
+
+		/**
+		 * The meta object literal for the '<em><b>Additional Code</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute REST_API_BUILDER_APIGATEWAY__ADDITIONAL_CODE = eINSTANCE
+				.getRestApiBuilder_apigateway_AdditionalCode();
+
+		/**
+		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.MethodBuilder_apigatewayImpl <em>Method Builder apigateway</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.MethodBuilder_apigatewayImpl
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getMethodBuilder_apigateway()
+		 * @generated
+		 */
+		EClass METHOD_BUILDER_APIGATEWAY = eINSTANCE.getMethodBuilder_apigateway();
+
+		/**
+		 * The meta object literal for the '<em><b>Http Method java lang String </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute METHOD_BUILDER_APIGATEWAY__HTTP_METHOD_JAVA_LANG_STRING_ = eINSTANCE
+				.getMethodBuilder_apigateway_HttpMethod_java_lang_String_();
+
+		/**
+		 * The meta object literal for the '<em><b>Resource With IResource software amazon awscdk services apigateway IResource As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute METHOD_BUILDER_APIGATEWAY__RESOURCE_WITH_IRESOURCE_SOFTWARE_AMAZON_AWSCDK_SERVICES_APIGATEWAY_IRESOURCE_AS_REFERENCE = eINSTANCE
+				.getMethodBuilder_apigateway_ResourceWithIResource_software_amazon_awscdk_services_apigateway_IResource_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Integration With Integration software amazon awscdk services apigateway Integration As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute METHOD_BUILDER_APIGATEWAY__INTEGRATION_WITH_INTEGRATION_SOFTWARE_AMAZON_AWSCDK_SERVICES_APIGATEWAY_INTEGRATION_AS_REFERENCE = eINSTANCE
+				.getMethodBuilder_apigateway_IntegrationWithIntegration_software_amazon_awscdk_services_apigateway_Integration_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Options With Method Options software amazon awscdk services apigateway Method Options As Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute METHOD_BUILDER_APIGATEWAY__OPTIONS_WITH_METHOD_OPTIONS_SOFTWARE_AMAZON_AWSCDK_SERVICES_APIGATEWAY_METHOD_OPTIONS_AS_REFERENCE = eINSTANCE
+				.getMethodBuilder_apigateway_OptionsWithMethodOptions_software_amazon_awscdk_services_apigateway_MethodOptions_AsReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Generated Class Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute METHOD_BUILDER_APIGATEWAY__GENERATED_CLASS_NAME = eINSTANCE
+				.getMethodBuilder_apigateway_GeneratedClassName();
+
+		/**
+		 * The meta object literal for the '<em><b>Var Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute METHOD_BUILDER_APIGATEWAY__VAR_NAME = eINSTANCE.getMethodBuilder_apigateway_VarName();
+
+		/**
+		 * The meta object literal for the '<em><b>Identifier</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute METHOD_BUILDER_APIGATEWAY__IDENTIFIER = eINSTANCE.getMethodBuilder_apigateway_Identifier();
+
+		/**
+		 * The meta object literal for the '<em><b>Additional Code</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute METHOD_BUILDER_APIGATEWAY__ADDITIONAL_CODE = eINSTANCE.getMethodBuilder_apigateway_AdditionalCode();
+
+		/**
+		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.impl.AddRulePropsBuilder_elasticloadbalancingv2Impl <em>Add Rule Props Builder elasticloadbalancingv2</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AddRulePropsBuilder_elasticloadbalancingv2Impl
+		 * @see com.amazon.aws.workbench.model.awsworkbench.impl.AwsworkbenchPackageImpl#getAddRulePropsBuilder_elasticloadbalancingv2()
+		 * @generated
+		 */
+		EClass ADD_RULE_PROPS_BUILDER_ELASTICLOADBALANCINGV2 = eINSTANCE
+				.getAddRulePropsBuilder_elasticloadbalancingv2();
+
+		/**
+		 * The meta object literal for the '<em><b>Conditions software amazon awscdk services elasticloadbalancingv2 Listener Condition As List</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ADD_RULE_PROPS_BUILDER_ELASTICLOADBALANCINGV2__CONDITIONS_SOFTWARE_AMAZON_AWSCDK_SERVICES_ELASTICLOADBALANCINGV2_LISTENER_CONDITION_AS_LIST = eINSTANCE
+				.getAddRulePropsBuilder_elasticloadbalancingv2_Conditions_software_amazon_awscdk_services_elasticloadbalancingv2_ListenerCondition_AsList();
+
+		/**
+		 * The meta object literal for the '<em><b>Host Header java lang String </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ADD_RULE_PROPS_BUILDER_ELASTICLOADBALANCINGV2__HOST_HEADER_JAVA_LANG_STRING_ = eINSTANCE
+				.getAddRulePropsBuilder_elasticloadbalancingv2_HostHeader_java_lang_String_();
+
+		/**
+		 * The meta object literal for the '<em><b>Path Pattern java lang String </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ADD_RULE_PROPS_BUILDER_ELASTICLOADBALANCINGV2__PATH_PATTERN_JAVA_LANG_STRING_ = eINSTANCE
+				.getAddRulePropsBuilder_elasticloadbalancingv2_PathPattern_java_lang_String_();
+
+		/**
+		 * The meta object literal for the '<em><b>Path Patterns java lang String As List</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ADD_RULE_PROPS_BUILDER_ELASTICLOADBALANCINGV2__PATH_PATTERNS_JAVA_LANG_STRING_AS_LIST = eINSTANCE
+				.getAddRulePropsBuilder_elasticloadbalancingv2_PathPatterns_java_lang_String_AsList();
+
+		/**
+		 * The meta object literal for the '<em><b>Priority java lang Number </b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ADD_RULE_PROPS_BUILDER_ELASTICLOADBALANCINGV2__PRIORITY_JAVA_LANG_NUMBER_ = eINSTANCE
+				.getAddRulePropsBuilder_elasticloadbalancingv2_Priority_java_lang_Number_();
+
+		/**
+		 * The meta object literal for the '<em><b>Generated Class Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ADD_RULE_PROPS_BUILDER_ELASTICLOADBALANCINGV2__GENERATED_CLASS_NAME = eINSTANCE
+				.getAddRulePropsBuilder_elasticloadbalancingv2_GeneratedClassName();
+
+		/**
+		 * The meta object literal for the '<em><b>Var Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ADD_RULE_PROPS_BUILDER_ELASTICLOADBALANCINGV2__VAR_NAME = eINSTANCE
+				.getAddRulePropsBuilder_elasticloadbalancingv2_VarName();
+
+		/**
+		 * The meta object literal for the '<em><b>Identifier</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ADD_RULE_PROPS_BUILDER_ELASTICLOADBALANCINGV2__IDENTIFIER = eINSTANCE
+				.getAddRulePropsBuilder_elasticloadbalancingv2_Identifier();
+
+		/**
+		 * The meta object literal for the '<em><b>Additional Code</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ADD_RULE_PROPS_BUILDER_ELASTICLOADBALANCINGV2__ADDITIONAL_CODE = eINSTANCE
+				.getAddRulePropsBuilder_elasticloadbalancingv2_AdditionalCode();
 
 		/**
 		 * The meta object literal for the '{@link com.amazon.aws.workbench.model.awsworkbench.FlowLogTrafficType <em>Flow Log Traffic Type</em>}' enum.

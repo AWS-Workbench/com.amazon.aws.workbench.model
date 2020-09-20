@@ -463,6 +463,12 @@ public class AwsworkbenchFactoryImpl extends EFactoryImpl implements Awsworkbenc
 			return createScheduledFargateTaskBuilder_patterns();
 		case AwsworkbenchPackage.BLOCK:
 			return createBlock();
+		case AwsworkbenchPackage.REST_API_BUILDER_APIGATEWAY:
+			return createRestApiBuilder_apigateway();
+		case AwsworkbenchPackage.METHOD_BUILDER_APIGATEWAY:
+			return createMethodBuilder_apigateway();
+		case AwsworkbenchPackage.ADD_RULE_PROPS_BUILDER_ELASTICLOADBALANCINGV2:
+			return createAddRulePropsBuilder_elasticloadbalancingv2();
 		default:
 			throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -2981,6 +2987,39 @@ public class AwsworkbenchFactoryImpl extends EFactoryImpl implements Awsworkbenc
 	public Block createBlock() {
 		BlockImpl block = new BlockImpl();
 		return block;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public RestApiBuilder_apigateway createRestApiBuilder_apigateway() {
+		RestApiBuilder_apigatewayImpl restApiBuilder_apigateway = new RestApiBuilder_apigatewayImpl();
+		return restApiBuilder_apigateway;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public MethodBuilder_apigateway createMethodBuilder_apigateway() {
+		MethodBuilder_apigatewayImpl methodBuilder_apigateway = new MethodBuilder_apigatewayImpl();
+		return methodBuilder_apigateway;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public AddRulePropsBuilder_elasticloadbalancingv2 createAddRulePropsBuilder_elasticloadbalancingv2() {
+		AddRulePropsBuilder_elasticloadbalancingv2Impl addRulePropsBuilder_elasticloadbalancingv2 = new AddRulePropsBuilder_elasticloadbalancingv2Impl();
+		return addRulePropsBuilder_elasticloadbalancingv2;
 	}
 
 	/**

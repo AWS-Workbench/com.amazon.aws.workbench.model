@@ -1849,6 +1849,33 @@ public interface AwsworkbenchFactory extends EFactory {
 	Block createBlock();
 
 	/**
+	 * Returns a new object of class '<em>Rest Api Builder apigateway</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Rest Api Builder apigateway</em>'.
+	 * @generated
+	 */
+	RestApiBuilder_apigateway createRestApiBuilder_apigateway();
+
+	/**
+	 * Returns a new object of class '<em>Method Builder apigateway</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Method Builder apigateway</em>'.
+	 * @generated
+	 */
+	MethodBuilder_apigateway createMethodBuilder_apigateway();
+
+	/**
+	 * Returns a new object of class '<em>Add Rule Props Builder elasticloadbalancingv2</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Add Rule Props Builder elasticloadbalancingv2</em>'.
+	 * @generated
+	 */
+	AddRulePropsBuilder_elasticloadbalancingv2 createAddRulePropsBuilder_elasticloadbalancingv2();
+
+	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
